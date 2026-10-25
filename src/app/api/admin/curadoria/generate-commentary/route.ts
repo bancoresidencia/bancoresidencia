@@ -141,23 +141,44 @@ ${optionsSchemaExample}
   ]
 }`;
 
-        const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${geminiKey}`;
-        const aiRes = await fetch(url, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            contents: [{ parts: [{ text: prompt }] }],
-            generationConfig: {
-              responseMimeType: 'application/json',
-              temperature: 0.15
-            }
-          })
-        });
+        const candidateModels = [
+          'gemini-3.5-flash',
+          'gemini-flash-latest',
+          'gemini-3.8-flash',
+          'gemini-3-flash-preview',
+          'gemini-2.5-flash'
+        ];
 
-        if (aiRes.ok) {
-          const aiJson = await aiRes.json();
-          const rawText = aiJson.candidates?.[0]?.content?.parts?.[0]?.text;
-          if (rawText) {
+        let rawText: string | null = null;
+        for (const model of candidateModels) {
+          try {
+            const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${geminiKey}`;
+            const aiRes = await fetch(url, {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                contents: [{ parts: [{ text: prompt }] }],
+                generationConfig: {
+                  responseMimeType: 'application/json',
+                  temperature: 0.15
+                }
+              })
+            });
+
+            if (aiRes.ok) {
+              const aiJson = await aiRes.json();
+              rawText = aiJson.candidates?.[0]?.content?.parts?.[0]?.text || null;
+              if (rawText) break;
+            } else {
+              const errBody = await aiRes.text();
+              console.warn(`[GenerateCommentary API] Model ${model} returned ${aiRes.status}:`, errBody.slice(0, 120));
+            }
+          } catch (mErr) {
+            console.warn(`[GenerateCommentary API] Error calling model ${model}:`, mErr);
+          }
+        }
+
+        if (rawText) {
             let parsed = null;
             try {
               let clean = rawText.trim().replace(/^```json\s*/i, '').replace(/^```\s*/i, '').replace(/\s*```$/i, '').trim();
@@ -217,11 +238,10 @@ ${optionsSchemaExample}
               });
             }
           }
+        } catch (geminiErr) {
+          console.warn('[GenerateCommentary API] Falha na chamada Gemini, usando fallback estruturado:', geminiErr);
         }
-      } catch (geminiErr) {
-        console.warn('[GenerateCommentary API] Falha na chamada Gemini, usando fallback estruturado:', geminiErr);
       }
-    }
 
     // Fallback Estruturado Padrão-Ouro (Garante retorno instantâneo e robusto com marcações)
     const updatedOptions = options.map((opt) => {
