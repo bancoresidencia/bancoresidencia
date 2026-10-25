@@ -16,6 +16,37 @@ import {
   type FacetedHierarchyCountsResult
 } from './stratifiedQuizService';
 import { getQuestionCount } from '@/data/hierarchyCounts';
+import { clinicalHierarchy } from '@/data/mockQuestions';
+
+// Mapeamento em memória de Subfocos para Focos ancestrais indexados no PostgreSQL
+const subfocoToParentFocos = new Map<string, string[]>();
+
+export function getParentFocosForSubfocoList(subfocos: string[]): string[] {
+  if (subfocoToParentFocos.size === 0) {
+    clinicalHierarchy.forEach((esp) => {
+      esp.temas.forEach((tem) => {
+        tem.focos.forEach((foc) => {
+          foc.subfocos.forEach((sub) => {
+            const list = subfocoToParentFocos.get(sub) || [];
+            if (!list.includes(foc.foco)) {
+              list.push(foc.foco);
+            }
+            subfocoToParentFocos.set(sub, list);
+          });
+        });
+      });
+    });
+  }
+
+  const result = new Set<string>();
+  subfocos.forEach((s) => {
+    const parents = subfocoToParentFocos.get(s);
+    if (parents) {
+      parents.forEach((p) => result.add(p));
+    }
+  });
+  return Array.from(result);
+}
 
 export {
   sanitizePostgrestTerm,
@@ -298,9 +329,18 @@ export async function fetchQuestionsFromSupabase(
       const focoList = filters.focos.map((f) => `"${f}"`).join(',');
       contentOrParts.push(`foco.in.(${focoList})`);
     }
+    const parentFocos = (filters.subfocos && filters.subfocos.length > 0)
+      ? getParentFocosForSubfocoList(filters.subfocos)
+      : [];
+
     if (filters.subfocos && filters.subfocos.length > 0) {
       const subfocoList = filters.subfocos.map((s) => `"${s}"`).join(',');
-      contentOrParts.push(`subfoco.in.(${subfocoList})`);
+      if (parentFocos.length > 0) {
+        const parentFocoList = parentFocos.map((f) => `"${f}"`).join(',');
+        contentOrParts.push(`and(foco.in.(${parentFocoList}),subfoco.in.(${subfocoList}))`);
+      } else {
+        contentOrParts.push(`subfoco.in.(${subfocoList})`);
+      }
     }
 
     if (contentOrParts.length === 1) {
@@ -311,7 +351,11 @@ export async function fetchQuestionsFromSupabase(
       } else if (filters.focos && filters.focos.length > 0) {
         query = query.in('foco', filters.focos);
       } else if (filters.subfocos && filters.subfocos.length > 0) {
-        query = query.in('subfoco', filters.subfocos);
+        if (parentFocos.length > 0) {
+          query = query.in('foco', parentFocos).in('subfoco', filters.subfocos);
+        } else {
+          query = query.in('subfoco', filters.subfocos);
+        }
       }
     } else if (contentOrParts.length > 1) {
       query = query.or(contentOrParts.join(','));
@@ -396,7 +440,7 @@ export async function fetchQuestionsFromSupabase(
   const { data, error } = await query;
 
   if (error) {
-    console.error('Erro ao buscar questões do Supabase:', error);
+    console.error('Erro ao buscar questões do Supabase:', error.message || error.code || JSON.stringify(error));
     return {
       questions: [],
       total: 0,
@@ -517,9 +561,18 @@ export async function fetchQuestionsFromSupabase(
         const focoList = filters.focos.map((f) => `"${f}"`).join(',');
         countContentOrParts.push(`foco.in.(${focoList})`);
       }
+      const countParentFocos = (filters.subfocos && filters.subfocos.length > 0)
+        ? getParentFocosForSubfocoList(filters.subfocos)
+        : [];
+
       if (filters.subfocos && filters.subfocos.length > 0) {
         const subfocoList = filters.subfocos.map((s) => `"${s}"`).join(',');
-        countContentOrParts.push(`subfoco.in.(${subfocoList})`);
+        if (countParentFocos.length > 0) {
+          const parentFocoList = countParentFocos.map((f: string) => `"${f}"`).join(',');
+          countContentOrParts.push(`and(foco.in.(${parentFocoList}),subfoco.in.(${subfocoList}))`);
+        } else {
+          countContentOrParts.push(`subfoco.in.(${subfocoList})`);
+        }
       }
 
       if (countContentOrParts.length === 1) {
@@ -530,7 +583,11 @@ export async function fetchQuestionsFromSupabase(
         } else if (filters.focos && filters.focos.length > 0) {
           countQuery = countQuery.in('foco', filters.focos);
         } else if (filters.subfocos && filters.subfocos.length > 0) {
-          countQuery = countQuery.in('subfoco', filters.subfocos);
+          if (countParentFocos.length > 0) {
+            countQuery = countQuery.in('foco', countParentFocos).in('subfoco', filters.subfocos);
+          } else {
+            countQuery = countQuery.in('subfoco', filters.subfocos);
+          }
         }
       } else if (countContentOrParts.length > 1) {
         countQuery = countQuery.or(countContentOrParts.join(','));

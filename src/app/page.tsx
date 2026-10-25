@@ -619,18 +619,18 @@ export default function Home() {
       try {
         let questionIds: string[] | undefined;
         let effectivePageSize = sessionQuestionLimit
-          ? Math.min(200, Math.max(50, sessionQuestionLimit))
+          ? Math.min(200, Math.max(1, sessionQuestionLimit))
           : 50;
 
         if (activeListId) {
           const currentList = lists.find((l) => l.id === activeListId);
           if (currentList && currentList.questionIds.length > 0) {
             questionIds = currentList.questionIds;
-            effectivePageSize = Math.min(200, Math.max(50, currentList.questionIds.length));
+            effectivePageSize = Math.min(200, Math.max(1, currentList.questionIds.length));
           }
         } else if (bancoMode === 'resolucao' && sessionQuestionIds && sessionQuestionIds.length > 0) {
           questionIds = sessionQuestionIds;
-          effectivePageSize = Math.min(200, Math.max(50, sessionQuestionIds.length));
+          effectivePageSize = Math.min(200, Math.max(1, sessionQuestionIds.length));
         }
 
         const currentUserAnswers = userAnswersRef.current;
@@ -2090,6 +2090,7 @@ export default function Home() {
                     }}
                     totalAvailable={totalGlobalQuestions}
                     totalFiltered={totalSupabaseCount}
+                    isLoading={isLoadingSupabase}
                     onCreateListFromFilter={handleCreateListFromFilter}
                     onSelectDirectQuestion={(questionId) => {
                       const idx = filteredQuestions.findIndex((q) => q.id === questionId);

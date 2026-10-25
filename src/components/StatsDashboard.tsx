@@ -35,11 +35,13 @@ import {
   X,
   BookOpen,
   ArrowUpDown,
-  AlertOctagon
+  AlertOctagon,
+  Loader2
 } from 'lucide-react';
 import { UserStats, PerformanceFilterState, PeriodFilter, Modalidade, UserAnswerItem } from '@/types';
 import { useTheme } from '@/context/ThemeContext';
 import { clinicalHierarchy, mockInstitutionsList, mockBancas } from '@/data/mockQuestions';
+import { AIPerformanceMentorCard } from './AIPerformanceMentorCard';
 
 interface StatsDashboardProps {
   stats: UserStats;
@@ -181,6 +183,14 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
     subfoco?: string;
   } | null>(null);
   const [trainingMode, setTrainingMode] = useState<'erradas' | 'ineditas'>('erradas');
+  const [isRaioXTransitioning, setIsRaioXTransitioning] = useState<boolean>(false);
+  const [isStartingTraining, setIsStartingTraining] = useState<boolean>(false);
+
+  React.useEffect(() => {
+    setIsRaioXTransitioning(true);
+    const t = setTimeout(() => setIsRaioXTransitioning(false), 260);
+    return () => clearTimeout(t);
+  }, [selectedAreaFilter, selectedStatusFilter, subfocoSearch, dataScope]);
 
   // Toggle para expandir/recolher área específica
   const toggleExpandArea = useCallback((id: string) => {
@@ -1327,6 +1337,15 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
       ========================================================================== */}
       {activeSubTab === 'weaknesses' && (
         <div className="space-y-5 animate-in fade-in duration-200">
+          {/* Componente Mentor Clínico IA & Auditoria Psicométrica */}
+          <AIPerformanceMentorCard
+            stats={stats}
+            userAnswers={userAnswers || {}}
+            criticalSubfocos={hierarchyDetailedStats}
+            targetExam={filters.banca && filters.banca !== 'Todas' ? filters.banca : 'ENARE 2026'}
+            onStartRecoverySession={onNavigateToBancoWithSubfoco}
+          />
+
           {/* Topo com 3 Mini-KPIs */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-5 flex items-center gap-4">
@@ -1335,8 +1354,13 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               </div>
               <div className="flex-1">
                 <div className="flex items-center justify-between">
-                  <div className="text-3xl font-extrabold text-rose-500 font-mono">
-                    {dataScope === 'pessoal' ? criticalCount : '3.140'}
+                  <div className={`text-3xl font-extrabold text-rose-500 font-mono flex items-center gap-2 transition-all duration-200 ${
+                    isRaioXTransitioning ? 'opacity-40 scale-[0.98]' : 'opacity-100 scale-100'
+                  }`}>
+                    <span>{dataScope === 'pessoal' ? criticalCount : '3.140'}</span>
+                    {isRaioXTransitioning && (
+                      <Loader2 className="w-4 h-4 animate-spin text-rose-500" />
+                    )}
                   </div>
                   <button
                     type="button"
@@ -1365,10 +1389,15 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               </div>
               <div>
                 <div
-                  className="text-3xl font-extrabold font-mono"
+                  className={`text-3xl font-extrabold font-mono flex items-center gap-2 transition-all duration-200 ${
+                    isRaioXTransitioning ? 'opacity-40 scale-[0.98]' : 'opacity-100 scale-100'
+                  }`}
                   style={{ color: accentConfig.energyAccent.hex }}
                 >
-                  {dataScope === 'pessoal' ? diagnosticSummary.totalErros : '28.993'}
+                  <span>{dataScope === 'pessoal' ? diagnosticSummary.totalErros : '28.993'}</span>
+                  {isRaioXTransitioning && (
+                    <Loader2 className="w-4 h-4 animate-spin text-rose-500" />
+                  )}
                 </div>
                 <p className="text-[11px] font-bold uppercase tracking-wider text-slate-600 dark:text-zinc-400 mt-0.5">
                   Total de Erros Mapeados ({activeMetrics.label})
@@ -1389,10 +1418,15 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               </div>
               <div>
                 <div
-                  className="text-3xl font-extrabold font-mono"
+                  className={`text-3xl font-extrabold font-mono flex items-center gap-2 transition-all duration-200 ${
+                    isRaioXTransitioning ? 'opacity-40 scale-[0.98]' : 'opacity-100 scale-100'
+                  }`}
                   style={{ color: accentConfig.primaryHex }}
                 >
-                  {diagnosticSummary.mediaAproveitamento.toFixed(1)}%
+                  <span>{diagnosticSummary.mediaAproveitamento.toFixed(1)}%</span>
+                  {isRaioXTransitioning && (
+                    <Loader2 className="w-4 h-4 animate-spin" style={{ color: accentConfig.primaryHex }} />
+                  )}
                 </div>
                 <p className="text-[11px] font-bold uppercase tracking-wider text-slate-600 dark:text-zinc-400 mt-0.5">
                   Rendimento Médio no Filtro
@@ -1593,7 +1627,9 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                       <th className="py-3.5 pr-5 text-right">Ação</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-slate-200 dark:divide-[#1A1A20] text-xs">
+                  <tbody className={`divide-y divide-slate-200 dark:divide-[#1A1A20] text-xs transition-opacity duration-200 ${
+                    isRaioXTransitioning ? 'opacity-40' : 'opacity-100'
+                  }`}>
                     {paginatedSubfocos.map((item) => (
                       <tr key={item.id} className="hover:bg-slate-50 dark:hover:bg-[#17171C] transition-colors group">
                         <td className="py-4 pl-5">
@@ -1712,8 +1748,10 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                 )}
               </div>
             </div>
-          )}        </div>
+          )}
+        </div>
       )}
+
 
       {/* =========================================================================
           MODAL DE RECUPERAÇÃO ATIVA (DISPARADO POR "TREINAR" OU "FOCAR")
@@ -1797,20 +1835,39 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               </button>
               <button
                 type="button"
-                onClick={() => {
-                  if (onNavigateToBancoWithSubfoco) {
-                    onNavigateToBancoWithSubfoco(
-                      trainingModal.specialty || '',
-                      trainingModal.tema || '',
-                      trainingModal.subfoco || ''
-                    );
+                disabled={isStartingTraining}
+                onClick={async () => {
+                  try {
+                    setIsStartingTraining(true);
+                    if (onNavigateToBancoWithSubfoco) {
+                      await onNavigateToBancoWithSubfoco(
+                        trainingModal.specialty || '',
+                        trainingModal.tema || '',
+                        trainingModal.subfoco || ''
+                      );
+                    }
+                  } finally {
+                    setTimeout(() => {
+                      setIsStartingTraining(false);
+                      setTrainingModal(null);
+                    }, 400);
                   }
-                  setTrainingModal(null);
                 }}
-                className="bg-rose-600 hover:bg-rose-500 text-white text-xs font-bold px-5 py-2.5 rounded-xl shadow-lg shadow-rose-600/30 flex items-center gap-2 cursor-pointer transition-all"
+                className={`bg-rose-600 hover:bg-rose-500 text-white text-xs font-bold px-5 py-2.5 rounded-xl shadow-lg shadow-rose-600/30 flex items-center gap-2 cursor-pointer transition-all ${
+                  isStartingTraining ? 'opacity-80 cursor-wait' : ''
+                }`}
               >
-                <BookOpen className="w-3.5 h-3.5" />
-                <span>Iniciar Bateria Agora</span>
+                {isStartingTraining ? (
+                  <>
+                    <Loader2 className="w-3.5 h-3.5 animate-spin text-white" />
+                    <span>Iniciando Bateria...</span>
+                  </>
+                ) : (
+                  <>
+                    <BookOpen className="w-3.5 h-3.5" />
+                    <span>Iniciar Bateria Agora</span>
+                  </>
+                )}
               </button>
             </div>
           </div>

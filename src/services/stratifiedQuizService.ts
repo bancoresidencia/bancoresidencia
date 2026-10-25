@@ -1,6 +1,7 @@
 import { supabase } from '@/lib/supabase';
 import { ExtendedFilterState, resolveBancaList } from './questionService';
 import { hierarchyQuestionCounts } from '@/data/hierarchyCounts';
+import { sanitizePostgrestTerm } from '@/utils/security';
 
 // Cache em memória para contagens facetadas (TTL 60s)
 const facetedCountsCache = new Map<string, {
@@ -441,6 +442,14 @@ export async function generateStratifiedQuiz(
         q = q.eq('is_anulada', false);
       }
 
+      // Busca textual se fornecida
+      if (filters.search && filters.search.trim()) {
+        const sTerm = sanitizePostgrestTerm(filters.search);
+        if (sTerm.length >= 2) {
+          q = q.or(`foco.ilike.%${sTerm}%,subfoco.ilike.%${sTerm}%,tema.ilike.%${sTerm}%,banca.ilike.%${sTerm}%,code.ilike.%${sTerm}%`);
+        }
+      }
+
       // Modalidade
       if (filters.modalidades && filters.modalidades.length > 0) {
         const hasRevalida = filters.modalidades.some((m) => m.toLowerCase().includes('revalida'));
@@ -625,6 +634,18 @@ export async function generateStratifiedQuiz(
       }
       if (filters.temas && filters.temas.length > 0) {
         qComp = qComp.in('tema', filters.temas);
+      }
+      if (filters.focos && filters.focos.length > 0) {
+        qComp = qComp.in('foco', filters.focos);
+      }
+      if (filters.subfocos && filters.subfocos.length > 0) {
+        qComp = qComp.in('subfoco', filters.subfocos);
+      }
+      if (filters.search && filters.search.trim()) {
+        const sTerm = sanitizePostgrestTerm(filters.search);
+        if (sTerm.length >= 2) {
+          qComp = qComp.or(`foco.ilike.%${sTerm}%,subfoco.ilike.%${sTerm}%,tema.ilike.%${sTerm}%,banca.ilike.%${sTerm}%,code.ilike.%${sTerm}%`);
+        }
       }
       if (resolvedBancas.length > 0) {
         qComp = qComp.in('banca', resolvedBancas);

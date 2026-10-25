@@ -32,7 +32,8 @@ import {
   Plus,
   Minus,
   Shuffle,
-  Clock
+  Clock,
+  Loader2
 } from 'lucide-react';
 import {
   clinicalHierarchy,
@@ -45,6 +46,8 @@ import {
   type FacetedHierarchyCountsResult
 } from '@/services/questionService';
 import { useTheme } from '@/context/ThemeContext';
+import { SmartAIFilterModal } from './SmartAIFilterModal';
+import { BancaRaioXModal } from './BancaRaioXModal';
 
 interface AdvancedQuestionFiltersProps {
   filters: AdvancedFilterState;
@@ -52,6 +55,7 @@ interface AdvancedQuestionFiltersProps {
   onReset: () => void;
   totalAvailable: number;
   totalFiltered: number;
+  isLoading?: boolean;
   onCreateListFromFilter: () => void;
   onSelectDirectQuestion?: (questionId: string) => void;
   onStartSequentialSolving?: (limit?: number, quotasByItem?: Record<string, number>, currentFilters?: AdvancedFilterState) => void;
@@ -192,6 +196,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   onReset,
   totalAvailable,
   totalFiltered,
+  isLoading = false,
   onCreateListFromFilter,
   onStartSequentialSolving,
   isSidebarCollapsed = true,
@@ -205,6 +210,49 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   const [showCustomQtd, setShowCustomQtd] = useState<boolean>(false);
   const [isOptionsOpen, setIsOptionsOpen] = useState<boolean>(false);
   const [isYearsOpen, setIsYearsOpen] = useState<boolean>(false);
+  const [showSmartFilterModal, setShowSmartFilterModal] = useState<boolean>(false);
+  const [showRaioXModal, setShowRaioXModal] = useState<boolean>(false);
+  const [isFilterTransitioning, setIsFilterTransitioning] = useState<boolean>(false);
+  const [isStartingQuestions, setIsStartingQuestions] = useState<boolean>(false);
+
+  useEffect(() => {
+    setIsFilterTransitioning(true);
+    const t = setTimeout(() => {
+      setIsFilterTransitioning(false);
+    }, 280);
+    return () => clearTimeout(t);
+  }, [
+    filters.especialidades,
+    filters.temas,
+    filters.focos,
+    filters.subfocos,
+    filters.instituicoes,
+    filters.anos,
+    filters.dificuldade,
+    filters.modalidades,
+    filters.tipoQuestao,
+    filters.status,
+    filters.search,
+    filters.ocultarAnuladasErro,
+    filters.ultimos5Anos
+  ]);
+
+  const isCountLoading = isLoading || isFilterTransitioning;
+
+  const handleApplyAIFilters = (aiFilters: Partial<AdvancedFilterState>) => {
+    onChange({
+      ...filters,
+      ...aiFilters,
+      especialidades: aiFilters.especialidades !== undefined ? aiFilters.especialidades : filters.especialidades,
+      temas: aiFilters.temas !== undefined ? aiFilters.temas : filters.temas,
+      focos: aiFilters.focos !== undefined ? aiFilters.focos : filters.focos,
+      subfocos: aiFilters.subfocos !== undefined ? aiFilters.subfocos : filters.subfocos,
+      instituicoes: aiFilters.instituicoes !== undefined ? aiFilters.instituicoes : filters.instituicoes,
+      anos: aiFilters.anos !== undefined ? aiFilters.anos : filters.anos,
+      dificuldade: aiFilters.dificuldade !== undefined ? aiFilters.dificuldade : filters.dificuldade,
+      search: aiFilters.search !== undefined ? aiFilters.search : filters.search
+    });
+  };
 
   // Resumo dinâmico de opções selecionadas no card de Dificuldade, Formato e Opções
   const activeOptionsSummary = useMemo(() => {
@@ -776,7 +824,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
           <div className="flex flex-wrap items-center gap-2">
             <button
               type="button"
-              onClick={() => {}}
+              onClick={() => setShowSmartFilterModal(true)}
               className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800 border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-200 hover:text-zinc-900 dark:hover:text-white transition-all cursor-pointer shadow-2xs hover:border-[var(--primary-color)]/40"
             >
               <Sparkles className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
@@ -785,7 +833,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
             <button
               type="button"
-              onClick={() => {}}
+              onClick={() => setShowRaioXModal(true)}
               className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800 border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-200 hover:text-zinc-900 dark:hover:text-white transition-all cursor-pointer shadow-2xs hover:border-[var(--primary-color)]/40"
             >
               <Target className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
@@ -804,13 +852,25 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
         </div>
 
         {/* Lado Direito: Quantidade de Questões Encontradas */}
-        <div className="flex items-baseline gap-1.5 self-end md:self-auto">
-          <span className="text-2xl sm:text-3xl font-black text-zinc-900 dark:text-white tracking-tight font-sans">
-            {displayedQuestionCount.toLocaleString('pt-BR')}
-          </span>
-          <span className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 font-normal">
-            questões
-          </span>
+        <div className="flex items-center gap-2 self-end md:self-auto">
+          <div className="flex items-baseline gap-1.5 transition-all duration-200">
+            {isCountLoading && (
+              <Loader2
+                className="w-4 h-4 sm:w-5 sm:h-5 animate-spin self-center shrink-0 transition-opacity duration-200"
+                style={{ color: accentConfig.primaryHex }}
+              />
+            )}
+            <span
+              className={`text-2xl sm:text-3xl font-black text-zinc-900 dark:text-white tracking-tight font-sans transition-all duration-200 ${
+                isCountLoading ? 'opacity-40 scale-[0.98]' : 'opacity-100 scale-100'
+              }`}
+            >
+              {displayedQuestionCount.toLocaleString('pt-BR')}
+            </span>
+            <span className="text-xs sm:text-sm text-zinc-500 dark:text-zinc-400 font-normal">
+              questões
+            </span>
+          </div>
         </div>
       </div>
 
@@ -1879,18 +1939,35 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
               <button
                 type="button"
-                onClick={() => {
-                  const effectiveQuotas = getEffectiveQuotas();
-                  onStartSequentialSolving?.(resolveCount, effectiveQuotas, filters);
+                disabled={isStartingQuestions || displayedQuestionCount === 0}
+                onClick={async () => {
+                  try {
+                    setIsStartingQuestions(true);
+                    const effectiveQuotas = getEffectiveQuotas();
+                    await onStartSequentialSolving?.(resolveCount, effectiveQuotas, filters);
+                  } finally {
+                    setTimeout(() => setIsStartingQuestions(false), 2000);
+                  }
                 }}
-                className="flex items-center gap-2 px-5 py-2 rounded-xl text-white font-bold text-xs sm:text-sm shadow-md transition-all cursor-pointer active:scale-98 hover:opacity-95"
+                className={`flex items-center gap-2 px-5 py-2 rounded-xl text-white font-bold text-xs sm:text-sm shadow-md transition-all cursor-pointer active:scale-98 hover:opacity-95 ${
+                  isStartingQuestions ? 'opacity-80 cursor-wait' : ''
+                }`}
                 style={{
                   backgroundColor: accentConfig.primaryHex,
                   boxShadow: `0 4px 14px ${accentConfig.bgRgba}`
                 }}
               >
-                <Play className="w-4 h-4 fill-white" />
-                <span>Iniciar ({resolveCount})</span>
+                {isStartingQuestions ? (
+                  <>
+                    <Loader2 className="w-4 h-4 animate-spin text-white" />
+                    <span>Iniciando caderno...</span>
+                  </>
+                ) : (
+                  <>
+                    <Play className="w-4 h-4 fill-white" />
+                    <span>Iniciar ({resolveCount})</span>
+                  </>
+                )}
               </button>
             </div>
           </div>
@@ -2027,18 +2104,35 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             </button>
             <button
               type="button"
-              onClick={() => {
+              disabled={isStartingQuestions}
+              onClick={async () => {
                 setIsCotasDrawerOpen(false);
-                const effectiveQuotas = getEffectiveQuotas();
-                onStartSequentialSolving?.(resolveCount, effectiveQuotas, filters);
+                try {
+                  setIsStartingQuestions(true);
+                  const effectiveQuotas = getEffectiveQuotas();
+                  await onStartSequentialSolving?.(resolveCount, effectiveQuotas, filters);
+                } finally {
+                  setTimeout(() => setIsStartingQuestions(false), 2000);
+                }
               }}
-              className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-white font-bold text-xs transition-colors cursor-pointer shadow-md hover:opacity-95"
+              className={`flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-white font-bold text-xs transition-colors cursor-pointer shadow-md hover:opacity-95 ${
+                isStartingQuestions ? 'opacity-80 cursor-wait' : ''
+              }`}
               style={{
                 backgroundColor: accentConfig.primaryHex
               }}
             >
-              <Play className="w-3.5 h-3.5 fill-white" />
-              <span>Iniciar com estas Cotas</span>
+              {isStartingQuestions ? (
+                <>
+                  <Loader2 className="w-3.5 h-3.5 animate-spin text-white" />
+                  <span>Iniciando...</span>
+                </>
+              ) : (
+                <>
+                  <Play className="w-3.5 h-3.5 fill-white" />
+                  <span>Iniciar com estas Cotas</span>
+                </>
+              )}
             </button>
           </div>
         </div>
@@ -2193,6 +2287,41 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
           </div>
         </div>
       )}
+      {/* Modal de Filtro com Inteligência Artificial */}
+      <SmartAIFilterModal
+        isOpen={showSmartFilterModal}
+        onClose={() => setShowSmartFilterModal(false)}
+        initialCount={resolveCount}
+        onApplyAndStart={async (aiFilters, quantity) => {
+          setShowSmartFilterModal(false);
+          const finalCount = quantity && quantity > 0 ? quantity : resolveCount;
+          setResolveCount(finalCount);
+
+          const mergedFilters: AdvancedFilterState = {
+            ...filters,
+            ...aiFilters,
+            especialidades: aiFilters.especialidades !== undefined ? aiFilters.especialidades : filters.especialidades,
+            temas: aiFilters.temas !== undefined ? aiFilters.temas : filters.temas,
+            focos: aiFilters.focos !== undefined ? aiFilters.focos : filters.focos,
+            subfocos: aiFilters.subfocos !== undefined ? aiFilters.subfocos : filters.subfocos,
+            instituicoes: aiFilters.instituicoes !== undefined ? aiFilters.instituicoes : filters.instituicoes,
+            anos: aiFilters.anos !== undefined ? aiFilters.anos : filters.anos,
+            dificuldade: aiFilters.dificuldade !== undefined ? aiFilters.dificuldade : filters.dificuldade,
+            search: aiFilters.search !== undefined ? aiFilters.search : filters.search
+          };
+
+          onChange(mergedFilters);
+          await onStartSequentialSolving?.(finalCount, undefined, mergedFilters);
+        }}
+      />
+
+      {/* Modal de Raio-X da Banca */}
+      <BancaRaioXModal
+        isOpen={showRaioXModal}
+        onClose={() => setShowRaioXModal(false)}
+        onApplyFilters={handleApplyAIFilters}
+        initialBanca={filters.instituicoes[0] || 'ENARE'}
+      />
     </div>
   );
 };
