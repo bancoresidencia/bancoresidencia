@@ -42,44 +42,56 @@ export interface PercentileTier {
   textLight: string;
   textDark: string;
   glowRgba: string;
+  cardBgDark: string;
+  cardBgLight: string;
+  cardBorderDark: string;
+  cardBorderLight: string;
 }
 
 /**
  * Cores e Tiers de Percentil:
- * - 0 a 30: #603027 (Bronze)
- * - 30 a 50: #CE8946 (Cobre)
- * - 50 a 70: #94A3B8 (Prata) - Alto contraste no modo claro garantido com #334155!
- * - 70 a 85: #EAB308 (Ouro)
- * - 85 a 90: #10B981 (Esmeralda)
- * - 90 a 98: #06B6D4 (Diamante)
- * - 98 a 99: #EF4444 (Elite)
+ * - 0 a 30: #B86835 (Bronze Metálico Nobre)
+ * - 30 a 50: #D97706 (Cobre Ambarado)
+ * - 50 a 70: #94A3B8 (Prata Metálica)
+ * - 70 a 85: #EAB308 (Ouro Radiante)
+ * - 85 a 90: #10B981 (Esmeralda Cirúrgica)
+ * - 90 a 98: #06B6D4 (Diamante Cristalino)
+ * - 98 a 99: #EF4444 (Elite Rubro)
  */
 export const PERCENTILE_TIERS: PercentileTier[] = [
   {
     min: 0,
     max: 30,
-    color: '#603027',
+    color: '#B86835',
     name: 'Bronze',
     rangeLabel: '0 - 30',
-    bgRgba: 'rgba(96, 48, 39, 0.16)',
-    borderRgba: 'rgba(96, 48, 39, 0.55)',
-    textContrast: '#EAA698',
-    textLight: '#603027',
-    textDark: '#FCA5A5',
-    glowRgba: 'rgba(96, 48, 39, 0.35)'
+    bgRgba: 'rgba(184, 104, 53, 0.16)',
+    borderRgba: 'rgba(184, 104, 53, 0.50)',
+    textContrast: '#8C3F16',
+    textLight: '#8C3F16',
+    textDark: '#F5AC82',
+    glowRgba: 'rgba(184, 104, 53, 0.35)',
+    cardBgDark: 'linear-gradient(135deg, rgba(184, 104, 53, 0.22) 0%, rgba(18, 18, 21, 0.95) 75%)',
+    cardBgLight: 'linear-gradient(135deg, rgba(184, 104, 53, 0.14) 0%, #ffffff 80%)',
+    cardBorderDark: 'rgba(184, 104, 53, 0.45)',
+    cardBorderLight: 'rgba(184, 104, 53, 0.35)'
   },
   {
     min: 30,
     max: 50,
-    color: '#CE8946',
+    color: '#D97706',
     name: 'Cobre',
     rangeLabel: '30 - 50',
-    bgRgba: 'rgba(206, 137, 70, 0.16)',
-    borderRgba: 'rgba(206, 137, 70, 0.55)',
+    bgRgba: 'rgba(217, 119, 6, 0.16)',
+    borderRgba: 'rgba(217, 119, 6, 0.50)',
     textContrast: '#9A3412',
     textLight: '#9A3412',
     textDark: '#FDBA74',
-    glowRgba: 'rgba(206, 137, 70, 0.35)'
+    glowRgba: 'rgba(217, 119, 6, 0.35)',
+    cardBgDark: 'linear-gradient(135deg, rgba(217, 119, 6, 0.22) 0%, rgba(18, 18, 21, 0.95) 75%)',
+    cardBgLight: 'linear-gradient(135deg, rgba(217, 119, 6, 0.14) 0%, #ffffff 80%)',
+    cardBorderDark: 'rgba(217, 119, 6, 0.45)',
+    cardBorderLight: 'rgba(217, 119, 6, 0.35)'
   },
   {
     min: 50,
@@ -89,10 +101,14 @@ export const PERCENTILE_TIERS: PercentileTier[] = [
     rangeLabel: '50 - 70',
     bgRgba: 'rgba(148, 163, 184, 0.18)',
     borderRgba: 'rgba(148, 163, 184, 0.60)',
-    textContrast: '#475569',
-    textLight: '#334155', // Garante legibilidade nítida no modo claro!
+    textContrast: '#334155',
+    textLight: '#334155',
     textDark: '#E2E8F0',
-    glowRgba: 'rgba(148, 163, 184, 0.30)'
+    glowRgba: 'rgba(148, 163, 184, 0.30)',
+    cardBgDark: 'linear-gradient(135deg, rgba(148, 163, 184, 0.24) 0%, rgba(18, 18, 21, 0.95) 75%)',
+    cardBgLight: 'linear-gradient(135deg, rgba(148, 163, 184, 0.16) 0%, #ffffff 80%)',
+    cardBorderDark: 'rgba(148, 163, 184, 0.50)',
+    cardBorderLight: 'rgba(148, 163, 184, 0.35)'
   },
   {
     min: 70,
@@ -105,7 +121,11 @@ export const PERCENTILE_TIERS: PercentileTier[] = [
     textContrast: '#854D0E',
     textLight: '#854D0E',
     textDark: '#FEF08A',
-    glowRgba: 'rgba(234, 179, 8, 0.35)'
+    glowRgba: 'rgba(234, 179, 8, 0.35)',
+    cardBgDark: 'linear-gradient(135deg, rgba(234, 179, 8, 0.22) 0%, rgba(18, 18, 21, 0.95) 75%)',
+    cardBgLight: 'linear-gradient(135deg, rgba(234, 179, 8, 0.15) 0%, #ffffff 80%)',
+    cardBorderDark: 'rgba(234, 179, 8, 0.50)',
+    cardBorderLight: 'rgba(234, 179, 8, 0.40)'
   },
   {
     min: 85,
@@ -118,7 +138,11 @@ export const PERCENTILE_TIERS: PercentileTier[] = [
     textContrast: '#065F46',
     textLight: '#065F46',
     textDark: '#6EE7B7',
-    glowRgba: 'rgba(16, 185, 129, 0.35)'
+    glowRgba: 'rgba(16, 185, 129, 0.35)',
+    cardBgDark: 'linear-gradient(135deg, rgba(16, 185, 129, 0.22) 0%, rgba(18, 18, 21, 0.95) 75%)',
+    cardBgLight: 'linear-gradient(135deg, rgba(16, 185, 129, 0.14) 0%, #ffffff 80%)',
+    cardBorderDark: 'rgba(16, 185, 129, 0.50)',
+    cardBorderLight: 'rgba(16, 185, 129, 0.35)'
   },
   {
     min: 90,
@@ -126,12 +150,16 @@ export const PERCENTILE_TIERS: PercentileTier[] = [
     color: '#06B6D4',
     name: 'Diamante',
     rangeLabel: '90 - 97',
-    bgRgba: 'rgba(6, 182, 212, 0.16)',
+    bgRgba: 'rgba(6, 182, 212, 0.18)',
     borderRgba: 'rgba(6, 182, 212, 0.65)',
     textContrast: '#0E7490',
     textLight: '#0E7490',
     textDark: '#67E8F9',
-    glowRgba: 'rgba(6, 182, 212, 0.45)'
+    glowRgba: 'rgba(6, 182, 212, 0.45)',
+    cardBgDark: 'linear-gradient(135deg, rgba(6, 182, 212, 0.22) 0%, rgba(18, 18, 21, 0.95) 75%)',
+    cardBgLight: 'linear-gradient(135deg, rgba(6, 182, 212, 0.14) 0%, #ffffff 80%)',
+    cardBorderDark: 'rgba(6, 182, 212, 0.55)',
+    cardBorderLight: 'rgba(6, 182, 212, 0.40)'
   },
   {
     min: 98,
@@ -144,7 +172,11 @@ export const PERCENTILE_TIERS: PercentileTier[] = [
     textContrast: '#991B1B',
     textLight: '#991B1B',
     textDark: '#FCA5A5',
-    glowRgba: 'rgba(239, 68, 68, 0.55)'
+    glowRgba: 'rgba(239, 68, 68, 0.55)',
+    cardBgDark: 'linear-gradient(135deg, rgba(239, 68, 68, 0.24) 0%, rgba(18, 18, 21, 0.95) 75%)',
+    cardBgLight: 'linear-gradient(135deg, rgba(239, 68, 68, 0.15) 0%, #ffffff 80%)',
+    cardBorderDark: 'rgba(239, 68, 68, 0.60)',
+    cardBorderLight: 'rgba(239, 68, 68, 0.45)'
   }
 ];
 
@@ -156,12 +188,16 @@ export function getPercentileColor(percentile: number | null | undefined): Perce
       color: '#64748b',
       name: 'Calibrando',
       rangeLabel: 'N/A',
-      bgRgba: 'rgba(100, 116, 139, 0.15)',
-      borderRgba: 'rgba(100, 116, 139, 0.4)',
+      bgRgba: 'rgba(100, 116, 139, 0.14)',
+      borderRgba: 'rgba(100, 116, 139, 0.40)',
       textContrast: '#64748b',
       textLight: '#475569',
       textDark: '#94a3b8',
-      glowRgba: 'rgba(100, 116, 139, 0.2)'
+      glowRgba: 'rgba(100, 116, 139, 0.20)',
+      cardBgDark: 'linear-gradient(135deg, rgba(100, 116, 139, 0.14) 0%, rgba(18, 18, 21, 0.98) 75%)',
+      cardBgLight: 'linear-gradient(135deg, rgba(100, 116, 139, 0.08) 0%, #ffffff 80%)',
+      cardBorderDark: 'rgba(100, 116, 139, 0.35)',
+      cardBorderLight: 'rgba(100, 116, 139, 0.25)'
     };
   }
 

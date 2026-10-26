@@ -77,7 +77,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   modalidade,
   onStartOfficialExam
 }) => {
-  const { accentConfig } = useTheme();
+  const { accentConfig, mode } = useTheme();
 
   // Animação suave e flat do aproveitamento ao carregar a página (sem pesar o site)
   const [animatedAccuracy, setAnimatedAccuracy] = useState<number>(0);
@@ -193,8 +193,12 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   const todayStudyMinutes = Math.round(todayAnswered * 2.5);
   const timeGoalPercentage = Math.min(100, Math.round((todayStudyMinutes / (dailyTimeGoal || 1)) * 100));
 
-  // Tier cromático do percentil
+  // Tier cromático do percentil independente com suporte a modo claro/escuro
   const percentileTier = getPercentileColor(stats.percentileInfo.percentile);
+  const isPercentileCalibrating = stats.percentileInfo.status === 'locked' || stats.percentileInfo.status === 'unranked';
+  const percentileCardBg = mode === 'light' ? percentileTier.cardBgLight : percentileTier.cardBgDark;
+  const percentileCardBorder = mode === 'light' ? percentileTier.cardBorderLight : percentileTier.cardBorderDark;
+  const percentileTextColor = mode === 'light' ? percentileTier.textLight : percentileTier.textDark;
 
   // Histórico de Provas Oficiais e Simulados Recentes
   const [officialExamsHistory, setOfficialExamsHistory] = useState<RecentExamRecord[]>(() => getRecentOfficialExams());
@@ -608,33 +612,39 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
             </div>
           </div>
 
-          {/* Card 3: Percentil Oficial Destacado e Compacto */}
+          {/* Card 3: Percentil Oficial Destacado e Específico por Classificação */}
           <div
-            className="bento-card bg-white dark:bg-[#121215] rounded-2xl p-5 shadow-xs flex flex-col justify-between min-h-[180px] space-y-3.5 border border-zinc-200/90 dark:border-zinc-800 transition-all duration-300"
+            className="bento-card relative overflow-hidden rounded-2xl p-5 shadow-sm flex flex-col justify-between min-h-[180px] space-y-3.5 border transition-all duration-300"
+            style={{
+              background: percentileCardBg,
+              borderColor: percentileCardBorder,
+              boxShadow: `0 4px 20px -2px ${percentileTier.glowRgba}`
+            }}
           >
             <div>
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <div
-                    className="w-8 h-8 rounded-xl flex items-center justify-center shadow-xs border border-zinc-200/60 dark:border-zinc-800/80"
+                    className="w-8 h-8 rounded-xl flex items-center justify-center shadow-xs border transition-colors"
                     style={{
-                      backgroundColor: accentConfig.bgRgba,
-                      color: accentConfig.primaryHex
+                      backgroundColor: percentileTier.bgRgba,
+                      borderColor: percentileTier.borderRgba,
+                      color: percentileTier.color
                     }}
                   >
                     <Medal className="w-4 h-4" />
                   </div>
-                  <span className="text-xs font-bold text-zinc-700 dark:text-zinc-300 uppercase tracking-wider">
+                  <span className="text-xs font-bold text-zinc-800 dark:text-zinc-200 uppercase tracking-wider">
                     Percentil Oficial
                   </span>
                 </div>
-                {stats.percentileInfo.status !== 'locked' && stats.percentileInfo.status !== 'unranked' ? (
+                {!isPercentileCalibrating ? (
                   <span
-                    className="text-[10px] font-bold font-sans px-2.5 py-0.5 rounded-md border"
+                    className="text-[10px] font-bold font-sans px-2.5 py-0.5 rounded-md border transition-colors shadow-xs"
                     style={{
-                      backgroundColor: accentConfig.bgRgba,
-                      borderColor: accentConfig.borderRgba,
-                      color: accentConfig.primaryHex
+                      backgroundColor: percentileTier.bgRgba,
+                      borderColor: percentileTier.borderRgba,
+                      color: percentileTextColor
                     }}
                   >
                     Top {Math.max(1, 100 - (stats.percentileInfo.percentile || 0))}%
@@ -648,32 +658,33 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 )}
               </div>
 
-              {stats.percentileInfo.status !== 'locked' && stats.percentileInfo.status !== 'unranked' ? (
+              {!isPercentileCalibrating ? (
                 <div className="pt-2 space-y-2.5">
                   <div className="flex items-baseline gap-2.5">
                     <span
                       className="text-2xl sm:text-3xl font-black font-sans tracking-tight"
-                      style={{ color: accentConfig.primaryHex }}
+                      style={{ color: percentileTextColor }}
                     >
                       P{stats.percentileInfo.percentile}
                     </span>
                     <span
-                      className="text-xs font-bold px-2 py-0.5 rounded-md border"
+                      className="text-xs font-bold px-2 py-0.5 rounded-md border shadow-xs transition-colors"
                       style={{
-                        backgroundColor: accentConfig.bgRgba,
-                        borderColor: accentConfig.borderRgba,
-                        color: accentConfig.primaryHex
+                        backgroundColor: percentileTier.bgRgba,
+                        borderColor: percentileTier.borderRgba,
+                        color: percentileTextColor
                       }}
                     >
                       Nível {percentileTier.name}
                     </span>
                   </div>
-                  <div className="w-full bg-zinc-100 dark:bg-zinc-900 rounded-full h-2 overflow-hidden border border-zinc-200/60 dark:border-zinc-800">
+                  <div className="w-full bg-zinc-900/30 dark:bg-black/40 rounded-full h-2 overflow-hidden border border-zinc-200/50 dark:border-white/10">
                     <div
                       className="h-2 rounded-full transition-all duration-700 ease-out"
                       style={{
                         width: `${Math.max(5, stats.percentileInfo.percentile || 0)}%`,
-                        backgroundColor: accentConfig.primaryHex
+                        backgroundColor: percentileTier.color,
+                        boxShadow: `0 0 10px ${percentileTier.glowRgba}`
                       }}
                     />
                   </div>
@@ -690,16 +701,16 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     <span
                       className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-bold border"
                       style={{
-                        backgroundColor: accentConfig.bgRgba,
-                        borderColor: accentConfig.borderRgba,
-                        color: accentConfig.primaryHex
+                        backgroundColor: percentileTier.bgRgba,
+                        borderColor: percentileTier.borderRgba,
+                        color: percentileTextColor
                       }}
                     >
-                      <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ backgroundColor: accentConfig.primaryHex }} />
+                      <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ backgroundColor: percentileTier.color }} />
                       Calibrando
                     </span>
                   </div>
-                  <div className="w-full bg-zinc-100 dark:bg-zinc-900 rounded-full h-2 overflow-hidden border border-zinc-200/60 dark:border-zinc-800">
+                  <div className="w-full bg-zinc-900/30 dark:bg-black/40 rounded-full h-2 overflow-hidden border border-zinc-200/50 dark:border-white/10">
                     <div
                       className="h-2 rounded-full transition-all duration-700 ease-out"
                       style={{
@@ -712,7 +723,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                             )
                           )
                         )}%`,
-                        backgroundColor: accentConfig.primaryHex
+                        backgroundColor: percentileTier.color
                       }}
                     />
                   </div>
@@ -720,14 +731,14 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
               )}
             </div>
 
-            <div className="pt-2.5 flex items-center justify-between text-xs border-t border-zinc-100 dark:border-zinc-800/80">
-              {stats.percentileInfo.status !== 'locked' && stats.percentileInfo.status !== 'unranked' ? (
-                <span className="text-[11px] text-zinc-500 dark:text-zinc-400">
-                  À frente de <strong className="font-sans font-bold text-zinc-800 dark:text-zinc-200">{stats.percentileInfo.percentile}%</strong> dos candidatos
+            <div className="pt-2.5 flex items-center justify-between text-xs border-t border-zinc-200/40 dark:border-white/10">
+              {!isPercentileCalibrating ? (
+                <span className="text-[11px] text-zinc-600 dark:text-zinc-400">
+                  À frente de <strong className="font-sans font-bold text-zinc-900 dark:text-zinc-100">{stats.percentileInfo.percentile}%</strong> dos candidatos
                 </span>
               ) : (
-                <span className="text-[11px] text-zinc-500 dark:text-zinc-400">
-                  Progresso TRI: <strong className="font-sans font-bold text-zinc-800 dark:text-zinc-200">{150 - (stats.percentileInfo.missingForApprox || 150)}/150</strong>
+                <span className="text-[11px] text-zinc-600 dark:text-zinc-400">
+                  Progresso TRI: <strong className="font-sans font-bold text-zinc-900 dark:text-zinc-100">{150 - (stats.percentileInfo.missingForApprox || 150)}/150</strong>
                 </span>
               )}
 
@@ -735,7 +746,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 type="button"
                 onClick={() => onNavigate('ranking')}
                 className="text-xs font-bold hover:underline cursor-pointer flex items-center gap-1 shrink-0 ml-auto transition-colors"
-                style={{ color: accentConfig.primaryHex }}
+                style={{ color: percentileTextColor }}
               >
                 <span>Ranking Oficial</span>
                 <ArrowRight className="w-3.5 h-3.5" />

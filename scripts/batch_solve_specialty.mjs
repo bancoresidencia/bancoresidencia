@@ -5,6 +5,7 @@ import { solveQuestionDeep, updateQuestionsInSupabase } from './solve_questions_
 // Mapeamento de arquivos por especialidade
 const SPECIALTY_FILES = {
   urologia: 'data/urologia_final_questions.json',
+  nefrologia: 'data/nefrologia_final_questions.json',
   ginecologia: 'data/ginecologia_final_questions.json',
   obstetricia: 'data/obstetricia_final_questions.json',
   pediatria: 'data/pediatria_final_questions.json',
@@ -79,7 +80,7 @@ async function main() {
     return;
   }
 
-  const CONCURRENCY = 5; // 5 contas paralelas simultâneas configuradas no pool
+  const CONCURRENCY = 4; // 4 contas paralelas simultâneas configuradas no pool de 7 chaves
   let processedCount = 0;
   let batchBuffer = [];
   const startTime = Date.now();
@@ -88,8 +89,11 @@ async function main() {
   for (let i = 0; i < pending.length; i += CONCURRENCY) {
     const chunk = pending.slice(i, i + CONCURRENCY);
     const results = await Promise.all(
-      chunk.map(async q => {
+      chunk.map(async (q, idx) => {
         try {
+          if (idx > 0) {
+            await new Promise(r => setTimeout(r, idx * 400));
+          }
           return await solveQuestionDeep(q);
         } catch (err) {
           console.error(`Erro ao resolver ${q.id}:`, err.message);
@@ -101,8 +105,8 @@ async function main() {
     const successfulThisChunk = results.filter(Boolean);
     if (successfulThisChunk.length === 0) {
       consecutiveFailures++;
-      if (consecutiveFailures >= 3) {
-        console.log('\n🛑 Atenção: Múltiplas falhas consecutivas em todas as 5 contas.');
+      if (consecutiveFailures >= 5) {
+        console.log('\n🛑 Atenção: Múltiplas falhas consecutivas em todas as contas.');
         console.log('📌 Provável esgotamento da cota diária do Google AI Studio nas chaves.');
         console.log('💾 Salvando o estado com segurança no checkpoint antes de parar...');
         break;
@@ -161,6 +165,11 @@ async function main() {
       await updateQuestionsInSupabase(batchBuffer);
     }
     console.log(`💾 Buffer final sincronizado.`);
+  }
+
+  if (consecutiveFailures >= 5) {
+    console.log('❌ Processamento interrompido devido a falhas consecutivas de cota.');
+    process.exit(1);
   }
 
   console.log('\n======================================================');

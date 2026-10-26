@@ -12,14 +12,17 @@ if (fs.existsSync('.env.local')) {
 
 // .env.local tem precedência absoluta sobre o ambiente anterior
 // Carrega todas as chaves disponíveis no pool para rotação paralela
-const API_KEYS = [
-  env.GEMINI_API_KEY_1,
-  env.GEMINI_API_KEY_2,
-  env.GEMINI_API_KEY_3,
-  env.GEMINI_API_KEY_4,
-  env.GEMINI_API_KEY_5,
-  env.GEMINI_API_KEY
-].filter((k, idx, self) => k && self.indexOf(k) === idx);
+const API_KEYS = Object.keys(env)
+  .filter(k => k.startsWith('GEMINI_API_KEY'))
+  .sort((a, b) => {
+    const numA = parseInt(a.replace(/\D/g, '') || '0', 10);
+    const numB = parseInt(b.replace(/\D/g, '') || '0', 10);
+    return numA - numB;
+  })
+  .map(k => env[k])
+  .filter((k, idx, self) => k && self.indexOf(k) === idx);
+
+console.log(`🔑 Pool de API Keys carregado: ${API_KEYS.length} chaves disponíveis.`);
 
 let keyIndex = 0;
 function getNextApiKey() {
@@ -86,11 +89,9 @@ function getRelevantBookThemes(specialty, tema) {
 
 // Modelos prioritários com alta velocidade, raciocínio clínico e cotas ativas
 const AVAILABLE_MODELS = [
-  'gemini-3.8-flash',
-  'gemini-3.5-flash',
   'gemini-3.1-flash-lite',
-  'gemini-3.5-flash-lite',
-  'gemini-3.7-flash'
+  'gemini-3-flash-preview',
+  'gemini-flash-lite-latest'
 ];
 let currentModelIndex = 0;
 
@@ -212,18 +213,14 @@ ${optionsSchemaExample}
       if (!res.ok) {
         const errText = await res.text();
         if (res.status === 429) {
-          if (errText.includes('RESOURCE_EXHAUSTED') || errText.includes('Quota exceeded')) {
-            rotateModel('cota 429 esgotada');
-            await new Promise(r => setTimeout(r, 1000));
-            continue;
-          }
-          const backoffWait = Math.min(attempt * 2000, 6000);
-          await new Promise(r => setTimeout(r, backoffWait));
+          const waitTime = Math.min(attempt * 2000, 8000);
+          rotateModel('429 rate limit');
+          await new Promise(r => setTimeout(r, waitTime));
           continue;
         }
         if (res.status === 503 || res.status === 500) {
           rotateModel(`HTTP ${res.status} alta demanda`);
-          await new Promise(r => setTimeout(r, 1500));
+          await new Promise(r => setTimeout(r, 2000));
           continue;
         }
         if (res.status === 404) {
@@ -256,6 +253,11 @@ ${optionsSchemaExample}
           const lastB = sanitized.lastIndexOf('}');
           parsed = JSON.parse(sanitized.slice(firstB, lastB + 1));
         } catch (e) {
+          if (attempt < 8) {
+            rotateModel('JSON malformado');
+            await new Promise(r => setTimeout(r, 1000));
+            continue;
+          }
           throw new Error(`JSON inválido retornado pelo modelo: ${e.message}`);
         }
       }
