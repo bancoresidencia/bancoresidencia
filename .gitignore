@@ -61,6 +61,7 @@ __pycache__/
 *.pyc
 
 # raw datasets & extraction scratch
+data/backups*/
 /data/*.json
 !data/gabarito_das_questoes_manifest.json
 !data/all_homologated_questions_gold.json

@@ -2,8 +2,6 @@
 
 import React, { useState, useMemo, useCallback } from 'react';
 import {
-  BarChart,
-  Bar,
   XAxis,
   YAxis,
   Tooltip,
@@ -11,10 +9,13 @@ import {
   PieChart,
   Pie,
   Cell,
-  CartesianGrid
+  CartesianGrid,
+  AreaChart,
+  Area
 } from 'recharts';
 import {
   Calendar,
+  CalendarDays,
   Search,
   Filter,
   AlertTriangle,
@@ -73,7 +74,8 @@ const quickPeriodConfig: Record<string, { factor: number; label: string; trendVo
   '6m': { factor: 0.85, label: '6M', trendVolume: '+29.0%', trendAproveitamento: '+3.8%' },
   '2026.1': { factor: 0.75, label: '2026.1', trendVolume: '+22.4%', trendAproveitamento: '+1.9%' },
   '2026.2': { factor: 0.90, label: '2026.2', trendVolume: '+31.2%', trendAproveitamento: '+2.8%' },
-  'all': { factor: 1.0, label: 'Tudo', trendVolume: '+14.2%', trendAproveitamento: '+5.4%' }
+  'all': { factor: 1.0, label: 'Tudo', trendVolume: '+14.2%', trendAproveitamento: '+5.4%' },
+  'custom': { factor: 0.65, label: 'Personalizado', trendVolume: '+21.0%', trendAproveitamento: '+3.0%' }
 };
 
 type StatsSubTab = 'overview' | 'specialties' | 'weaknesses';
@@ -95,35 +97,40 @@ const CustomBarTooltip: React.FC<CustomBarTooltipProps> = ({ active, payload, la
   if (active && payload && payload.length) {
     const data = payload[0].payload;
     const taxa = data.resolvidas > 0 ? ((data.acertos / data.resolvidas) * 100).toFixed(1) : '0.0';
+    const isGood = Number(taxa) >= 70;
     return (
-      <div className="bg-[var(--bg-card)]/95 backdrop-blur-md border border-[var(--card-border)] rounded-xl p-3.5 shadow-2xl min-w-[175px] text-xs">
+      <div className="bg-[var(--bg-card)]/95 backdrop-blur-md border border-[var(--card-border)] rounded-xl p-3.5 shadow-2xl min-w-[185px] text-xs">
         <div className="flex items-center justify-between border-b border-[var(--card-border)] pb-2 mb-2.5">
-          <span className="font-bold text-slate-900 dark:text-white uppercase tracking-wider">{label}</span>
-          <span className="text-[11px] font-semibold px-2 py-0.5 rounded bg-slate-100 dark:bg-zinc-800/60 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-700">
+          <span className="font-bold text-slate-900 dark:text-white uppercase tracking-wider font-heading">{label}</span>
+          <span className={`text-[11px] font-semibold px-2 py-0.5 rounded-full border ${
+            isGood
+              ? 'text-emerald-700 dark:text-emerald-400 bg-emerald-500/10 border-emerald-500/25'
+              : 'text-amber-700 dark:text-amber-400 bg-amber-500/10 border-amber-500/25'
+          }`}>
             {taxa}% acerto
           </span>
         </div>
         <div className="space-y-1.5">
           <div className="flex items-center justify-between">
-            <span className="text-slate-600 dark:text-zinc-400 flex items-center gap-1.5">
-              <span className="w-2 h-2 rounded-full bg-slate-400 dark:bg-zinc-400" />
-              Resolvidas:
+            <span className="text-slate-600 dark:text-zinc-400 flex items-center gap-1.5 font-medium">
+              <span className="w-2 h-2 rounded-full bg-slate-400 dark:bg-zinc-500" />
+              Total Feitas:
             </span>
-            <span className="font-bold text-slate-900 dark:text-white font-mono">{data.resolvidas}</span>
+            <span className="font-bold text-slate-900 dark:text-white font-sans tabular-nums">{data.resolvidas}</span>
           </div>
           <div className="flex items-center justify-between">
             <span className="text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5 font-medium">
               <span className="w-2 h-2 rounded-full bg-emerald-500" />
               Acertos:
             </span>
-            <span className="font-bold text-emerald-600 dark:text-emerald-400 font-mono">{data.acertos}</span>
+            <span className="font-bold text-emerald-600 dark:text-emerald-400 font-sans tabular-nums">{data.acertos}</span>
           </div>
           <div className="flex items-center justify-between">
             <span className="text-rose-600 dark:text-rose-400 flex items-center gap-1.5 font-medium">
               <span className="w-2 h-2 rounded-full bg-rose-500" />
               Erros:
             </span>
-            <span className="font-bold text-rose-600 dark:text-rose-400 font-mono">{data.erros}</span>
+            <span className="font-bold text-rose-600 dark:text-rose-400 font-sans tabular-nums">{data.erros}</span>
           </div>
         </div>
       </div>
@@ -138,7 +145,6 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
   onFilterChange,
   onResetFilters,
   onNavigateToBancoWithSubfoco,
-  onNavigateToRanking,
   userAnswers = {},
   onNavigateToCadernoErros
 }) => {
@@ -146,9 +152,6 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
 
   // Sub-abas principais: Visão Geral | Especialidades | Raio-X de Erros
   const [activeSubTab, setActiveSubTab] = useState<StatsSubTab>('overview');
-
-  // Alternador do modo de visualização do gráfico temporal
-  const [chartMode, setChartMode] = useState<'empilhado' | 'comparativo'>('empilhado');
 
   // Controle de expansão da tabela sanfona de especialidades
   const [expandedAreas, setExpandedAreas] = useState<string[]>(['clinica', 'ginecologia', 'cirurgia']);
@@ -159,6 +162,14 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
   // Controle do menu dropdown flutuante de instituições & bancas
   const [isFilterDropdownOpen, setIsFilterDropdownOpen] = useState(false);
   const [instSearch, setInstSearch] = useState('');
+
+  // Controle do seletor de calendário e período
+  const [isCalendarOpen, setIsCalendarOpen] = useState(false);
+  const [tempStartDate, setTempStartDate] = useState(filters.customStartDate || '');
+  const [tempEndDate, setTempEndDate] = useState(filters.customEndDate || '');
+
+  // Toggle do gráfico integrado na Visão Geral: Especialidades vs Temas
+  const [overviewBreakdownType, setOverviewBreakdownType] = useState<'especialidades' | 'temas'>('especialidades');
 
   // Filtros da aba Raio-X de Erros
   const [selectedAreaFilter, setSelectedAreaFilter] = useState<string>('Todas');
@@ -206,42 +217,160 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
     );
   }, []);
 
-  // Métricas ativas com base no período
+  // Helper para rótulo legível do período selecionado
+  const getPeriodDisplayLabel = useCallback(() => {
+    if (filters.period === 'custom' && filters.customStartDate && filters.customEndDate) {
+      const s = filters.customStartDate.split('-');
+      const e = filters.customEndDate.split('-');
+      if (s.length === 3 && e.length === 3) {
+        return `${s[2]}/${s[1]} - ${e[2]}/${e[1]}`;
+      }
+      return 'Personalizado';
+    }
+    const map: Record<string, string> = {
+      '7d': 'Últimos 7 dias',
+      '30d': 'Últimos 30 dias',
+      'mes': 'Mês Atual',
+      '6m': 'Últimos 6 meses',
+      '2026.1': 'Semestre 2026.1',
+      '2026.2': 'Semestre 2026.2',
+      'all': 'Todo o Histórico'
+    };
+    return map[filters.period] || 'Período';
+  }, [filters.period, filters.customStartDate, filters.customEndDate]);
+
+  // Métricas ativas com base no período e nas respostas reais do aluno (userAnswers)
   const activeMetrics = useMemo(() => {
     const q = quickPeriodConfig[filters.period] || quickPeriodConfig['all'];
     const factor = q.factor;
 
-    const baseAnswered = stats.totalAnswered || 0;
-    const answered = Math.round(baseAnswered * factor);
-    const correct = Math.round((stats.totalCorrect || 0) * factor);
-    const incorrect = Math.max(0, answered - correct);
-    const accuracy = answered > 0 ? (correct / answered) * 100 : stats.accuracyRate || 0;
-    const unique = Math.round((stats.uniqueAnswered || baseAnswered) * factor);
-    const ineditas = Math.round(unique * 0.9);
+    // 1. Filtragem das respostas reais do usuário
+    const allAnswers = Object.values(userAnswers);
+    let filteredAnswers: UserAnswerItem[] = [];
+    let now = 0;
 
-    // Mapeia histórico diário enriquecido com chaves para gráfico empilhado e comparativo
-    const chartData = (stats.historyByDay && stats.historyByDay.length > 0 ? stats.historyByDay : [
-      { date: 'Seg', answered: 14, correct: 11 },
-      { date: 'Ter', answered: 22, correct: 17 },
-      { date: 'Qua', answered: 18, correct: 14 },
-      { date: 'Qui', answered: 28, correct: 22 },
-      { date: 'Sex', answered: 25, correct: 20 },
-      { date: 'Sáb', answered: 12, correct: 9 },
-      { date: 'Hoje', answered: 15, correct: 12 }
-    ]).map((d) => {
-      const ans = Math.round(d.answered * factor);
-      const cor = Math.round(d.correct * factor);
-      const err = Math.max(0, ans - cor);
-      return {
-        label: d.date,
-        date: d.date,
-        answered: ans,
-        correct: cor,
-        resolvidas: ans,
-        acertos: cor,
-        erros: err
-      };
-    });
+    if (allAnswers.length > 0) {
+      // eslint-disable-next-line react-hooks/purity
+      now = Date.now();
+      filteredAnswers = allAnswers.filter((ans) => {
+        // Filtro por instituição
+        if (filters.institutions.length > 0) {
+          const ansBanca = ans.banca || '';
+          const matchInst = filters.institutions.some((inst) =>
+            ansBanca.toLowerCase().includes(inst.toLowerCase())
+          );
+          if (!matchInst) return false;
+        }
+
+        // Filtro por banca
+        if (filters.banca !== 'Todas as Bancas' && ans.banca !== filters.banca) {
+          return false;
+        }
+
+        // Filtro por período
+        const ts = ans.timestamp || now;
+        if (filters.period === 'custom' && filters.customStartDate && filters.customEndDate) {
+          const start = new Date(filters.customStartDate).getTime();
+          const end = new Date(filters.customEndDate + 'T23:59:59').getTime();
+          return ts >= start && ts <= end;
+        }
+        if (filters.period === '7d') return ts >= now - 7 * 86400000;
+        if (filters.period === '30d') return ts >= now - 30 * 86400000;
+        if (filters.period === 'mes') {
+          const startOfMonth = new Date(new Date(now).getFullYear(), new Date(now).getMonth(), 1).getTime();
+          return ts >= startOfMonth;
+        }
+        if (filters.period === '6m') return ts >= now - 180 * 86400000;
+        if (filters.period === '2026.1') {
+          const start = new Date('2026-01-01').getTime();
+          const end = new Date('2026-06-30T23:59:59').getTime();
+          return ts >= start && ts <= end;
+        }
+        if (filters.period === '2026.2') {
+          const start = new Date('2026-07-01').getTime();
+          const end = new Date('2026-12-31T23:59:59').getTime();
+          return ts >= start && ts <= end;
+        }
+        return true; // 'all'
+      });
+    }
+
+    const hasRealAnswers = filteredAnswers.length > 0;
+      const answered = hasRealAnswers
+        ? filteredAnswers.length
+        : Math.round((stats.totalAnswered || 0) * factor);
+      const correct = hasRealAnswers
+        ? filteredAnswers.filter((a) => a.isCorrect).length
+        : Math.round((stats.totalCorrect || 0) * factor);
+      const incorrect = Math.max(0, answered - correct);
+      const accuracy = answered > 0 ? (correct / answered) * 100 : stats.accuracyRate || 0;
+      const unique = Math.round((stats.uniqueAnswered || (stats.totalAnswered || 0)) * factor);
+      const ineditas = Math.round(unique * 0.9);
+
+      // Mapeamento diário contínuo para o gráfico de linhas (Feitas vs Acertos)
+      let chartData: {
+        label: string;
+        date: string;
+        answered: number;
+        correct: number;
+        resolvidas: number;
+        acertos: number;
+        erros: number;
+      }[] = [];
+
+      if (hasRealAnswers) {
+        const dailyMap: Record<string, { label: string; date: string; timestamp: number; resolvidas: number; acertos: number; erros: number }> = {};
+        filteredAnswers.forEach((ans) => {
+          const d = new Date(ans.timestamp || now);
+        const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+        const label = `${String(d.getDate()).padStart(2, '0')}/${String(d.getMonth() + 1).padStart(2, '0')}`;
+        if (!dailyMap[key]) {
+          dailyMap[key] = { label, date: key, timestamp: d.getTime(), resolvidas: 0, acertos: 0, erros: 0 };
+        }
+        dailyMap[key].resolvidas++;
+        if (ans.isCorrect) dailyMap[key].acertos++;
+        else dailyMap[key].erros++;
+      });
+
+      const sortedDays = Object.values(dailyMap).sort((a, b) => a.timestamp - b.timestamp);
+      if (sortedDays.length >= 2) {
+        chartData = sortedDays.map((d) => ({
+          label: d.label,
+          date: d.date,
+          answered: d.resolvidas,
+          correct: d.acertos,
+          resolvidas: d.resolvidas,
+          acertos: d.acertos,
+          erros: d.erros
+        }));
+      }
+    }
+
+    // Fallback gracioso para visualização suave com dados harmonizados
+    if (chartData.length === 0) {
+      chartData = (stats.historyByDay && stats.historyByDay.length > 0 ? stats.historyByDay : [
+        { date: 'Seg, 20', answered: 16, correct: 12 },
+        { date: 'Ter, 21', answered: 24, correct: 19 },
+        { date: 'Qua, 22', answered: 20, correct: 16 },
+        { date: 'Qui, 23', answered: 32, correct: 26 },
+        { date: 'Sex, 24', answered: 28, correct: 22 },
+        { date: 'Sáb, 25', answered: 15, correct: 12 },
+        { date: 'Hoje', answered: 18, correct: 15 }
+      ]).map((d) => {
+        const ans = Math.max(1, Math.round(d.answered * factor));
+        const cor = Math.min(ans, Math.max(0, Math.round(d.correct * factor)));
+        const err = Math.max(0, ans - cor);
+        return {
+          label: d.date,
+          date: d.date,
+          answered: ans,
+          correct: cor,
+          resolvidas: ans,
+          acertos: cor,
+          erros: err
+        };
+      });
+    }
 
     return {
       factor,
@@ -256,7 +385,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
       ineditas,
       chartData
     };
-  }, [filters.period, stats]);
+  }, [filters, stats, userAnswers]);
 
   // Especialidades mapeadas com as cores dinâmicas do tema ativo
   const dynamicSpecialties = useMemo(() => {
@@ -357,6 +486,49 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
     });
   }, [stats, activeMetrics, dynamicSpecialties]);
 
+  // Top Temas para o novo gráfico integrado da Visão Geral
+  const topThemesList = useMemo(() => {
+    const list: {
+      nome: string;
+      specialty: string;
+      resolvidas: number;
+      acertos: number;
+      erros: number;
+      taxa: number;
+    }[] = [];
+
+    specialtiesBreakdown.forEach((spec) => {
+      spec.temas.forEach((t) => {
+        if (t.resolvidas > 0) {
+          list.push({
+            nome: t.nome,
+            specialty: spec.nome,
+            resolvidas: t.resolvidas,
+            acertos: t.acertos,
+            erros: t.erros,
+            taxa: t.taxa
+          });
+        }
+      });
+    });
+
+    list.sort((a, b) => b.resolvidas - a.resolvidas);
+    if (list.length >= 3) {
+      return list.slice(0, 6);
+    }
+
+    // Amostra representativa caso não haja temas suficientes no período
+    const baseTotal = activeMetrics.answered || 60;
+    return [
+      { nome: 'Cardiologia & ECG', specialty: 'Clínica Médica', resolvidas: Math.max(8, Math.round(baseTotal * 0.22)), acertos: Math.max(6, Math.round(baseTotal * 0.22 * 0.75)), erros: Math.round(baseTotal * 0.22 * 0.25), taxa: 75.0 },
+      { nome: 'Trauma & ATLS', specialty: 'Cirurgia Geral', resolvidas: Math.max(7, Math.round(baseTotal * 0.18)), acertos: Math.max(5, Math.round(baseTotal * 0.18 * 0.68)), erros: Math.round(baseTotal * 0.18 * 0.32), taxa: 68.0 },
+      { nome: 'Pré-Natal & Obstetrícia', specialty: 'Ginecologia', resolvidas: Math.max(6, Math.round(baseTotal * 0.16)), acertos: Math.max(5, Math.round(baseTotal * 0.16 * 0.82)), erros: Math.round(baseTotal * 0.16 * 0.18), taxa: 82.0 },
+      { nome: 'Neonatologia & Vacinas', specialty: 'Pediatria', resolvidas: Math.max(6, Math.round(baseTotal * 0.15)), acertos: Math.max(4, Math.round(baseTotal * 0.15 * 0.72)), erros: Math.round(baseTotal * 0.15 * 0.28), taxa: 72.0 },
+      { nome: 'Atenção Primária & SUS', specialty: 'Preventiva', resolvidas: Math.max(5, Math.round(baseTotal * 0.14)), acertos: Math.max(4, Math.round(baseTotal * 0.14 * 0.85)), erros: Math.round(baseTotal * 0.14 * 0.15), taxa: 85.0 },
+      { nome: 'Infectologia & Sepse', specialty: 'Clínica Médica', resolvidas: Math.max(5, Math.round(baseTotal * 0.12)), acertos: Math.max(3, Math.round(baseTotal * 0.12 * 0.64)), erros: Math.round(baseTotal * 0.12 * 0.36), taxa: 64.0 }
+    ];
+  }, [specialtiesBreakdown, activeMetrics.answered]);
+
   // Volume total somado das 6 especialidades para base do Donut
   const totalSpecialtiesVolume = useMemo(() => {
     const sum = specialtiesBreakdown.reduce((acc, curr) => acc + curr.resolvidas, 0);
@@ -403,7 +575,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
         }
       > = {};
 
-      Object.entries(userAnswers).forEach(([_, ans]) => {
+      Object.values(userAnswers).forEach((ans) => {
         let spec = ans.specialty;
         if (!spec) return;
         if (spec === 'Cirurgia') spec = 'Cirurgia Geral';
@@ -659,35 +831,118 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
 
         {/* Lado Direito: Período + Modalidade + Drawer de Bancas & Reset [Imagem 5] */}
         <div className="flex flex-wrap items-center gap-2">
-          {/* Seletor de Período em Pílulas */}
-          <div className="flex items-center bg-[var(--bg-card)] border border-[var(--card-border)] rounded-xl p-1">
-            <span className="text-[11px] text-slate-500 dark:text-zinc-500 px-2 flex items-center gap-1 font-medium">
-              <Calendar className="w-3 h-3 text-slate-400 dark:text-zinc-500" />
-              Período:
-            </span>
-            {[
-              { id: '7d', label: '7D' },
-              { id: '30d', label: '30D' },
-              { id: '2026.2', label: '2026.2' },
-              { id: 'all', label: 'Tudo' }
-            ].map((p) => {
-              const isSelected = filters.period === p.id;
-              return (
-                <button
-                  key={p.id}
-                  type="button"
-                  onClick={() => onFilterChange({ ...filters, period: p.id as PeriodFilter })}
-                  className={`px-2.5 py-1 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
-                    isSelected
-                      ? 'text-white shadow-sm font-bold'
-                      : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-100 hover:bg-slate-100 dark:hover:bg-zinc-800/40'
-                  }`}
-                  style={isSelected ? { backgroundColor: accentConfig.primaryHex } : undefined}
-                >
-                  {p.label}
-                </button>
-              );
-            })}
+          {/* Seletor de Período & Calendário */}
+          <div className="relative">
+            <button
+              type="button"
+              onClick={() => setIsCalendarOpen(!isCalendarOpen)}
+              className="flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs font-semibold bg-[var(--bg-card)] border border-[var(--card-border)] text-slate-700 dark:text-zinc-200 hover:border-slate-400 dark:hover:border-zinc-700 transition-colors cursor-pointer shadow-xs"
+              title="Filtrar por data no calendário ou atalhos"
+            >
+              <CalendarDays className="w-3.5 h-3.5 text-emerald-500" />
+              <span>{getPeriodDisplayLabel()}</span>
+              <ChevronDown className="w-3 h-3 text-slate-400 dark:text-zinc-500" />
+            </button>
+
+            {isCalendarOpen && (
+              <div className="absolute left-0 sm:right-auto z-40 mt-1.5 w-76 bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl shadow-2xl p-4 space-y-3.5 animate-in fade-in zoom-in-95 duration-150">
+                <div className="flex items-center justify-between pb-2 border-b border-[var(--card-border)]">
+                  <span className="text-xs font-bold text-slate-900 dark:text-white flex items-center gap-1.5 font-heading">
+                    <Calendar className="w-3.5 h-3.5 text-emerald-500" />
+                    Filtrar por Período
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => setIsCalendarOpen(false)}
+                    className="text-slate-400 hover:text-slate-600 dark:hover:text-white p-1 rounded-md cursor-pointer"
+                  >
+                    <X className="w-3.5 h-3.5" />
+                  </button>
+                </div>
+
+                {/* Presets rápidos */}
+                <div>
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-zinc-400 block mb-1.5">
+                    Atalhos de Estudo
+                  </span>
+                  <div className="grid grid-cols-2 gap-1.5 text-xs">
+                    {[
+                      { id: '7d', label: 'Últimos 7 dias' },
+                      { id: '30d', label: 'Últimos 30 dias' },
+                      { id: 'mes', label: 'Mês Atual' },
+                      { id: '6m', label: 'Últimos 6 meses' },
+                      { id: '2026.1', label: 'Semestre 2026.1' },
+                      { id: '2026.2', label: 'Semestre 2026.2' },
+                      { id: 'all', label: 'Todo o Histórico' }
+                    ].map((preset) => {
+                      const isSel = filters.period === preset.id;
+                      return (
+                        <button
+                          key={preset.id}
+                          type="button"
+                          onClick={() => {
+                            onFilterChange({ ...filters, period: preset.id as PeriodFilter });
+                            setIsCalendarOpen(false);
+                          }}
+                          className={`px-2.5 py-1.5 rounded-lg text-left text-xs font-medium transition-colors cursor-pointer ${
+                            isSel
+                              ? 'bg-emerald-500/15 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 font-bold'
+                              : 'bg-slate-100 dark:bg-zinc-900/70 border border-slate-200/80 dark:border-zinc-800 text-slate-700 dark:text-zinc-300 hover:bg-slate-200 dark:hover:bg-zinc-800'
+                          }`}
+                        >
+                          {preset.label}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                {/* Intervalo Personalizado no Calendário */}
+                <div className="pt-2 border-t border-[var(--card-border)] space-y-2">
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-zinc-400 block">
+                    Intervalo no Calendário
+                  </span>
+                  <div className="grid grid-cols-2 gap-2 text-xs">
+                    <div>
+                      <label className="text-[10px] text-slate-500 dark:text-zinc-400 block mb-0.5">De:</label>
+                      <input
+                        type="date"
+                        value={tempStartDate}
+                        onChange={(e) => setTempStartDate(e.target.value)}
+                        className="w-full px-2 py-1 text-xs rounded-lg bg-slate-50 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-slate-800 dark:text-zinc-200 focus:outline-none focus:border-emerald-500"
+                      />
+                    </div>
+                    <div>
+                      <label className="text-[10px] text-slate-500 dark:text-zinc-400 block mb-0.5">Até:</label>
+                      <input
+                        type="date"
+                        value={tempEndDate}
+                        onChange={(e) => setTempEndDate(e.target.value)}
+                        className="w-full px-2 py-1 text-xs rounded-lg bg-slate-50 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-slate-800 dark:text-zinc-200 focus:outline-none focus:border-emerald-500"
+                      />
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    disabled={!tempStartDate || !tempEndDate}
+                    onClick={() => {
+                      if (tempStartDate && tempEndDate) {
+                        onFilterChange({
+                          ...filters,
+                          period: 'custom',
+                          customStartDate: tempStartDate,
+                          customEndDate: tempEndDate
+                        });
+                        setIsCalendarOpen(false);
+                      }
+                    }}
+                    className="w-full py-1.5 text-xs font-bold text-center text-white rounded-xl bg-emerald-600 hover:bg-emerald-500 disabled:opacity-40 disabled:cursor-not-allowed transition-colors shadow-xs cursor-pointer"
+                  >
+                    Aplicar Intervalo
+                  </button>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Modalidade */}
@@ -815,7 +1070,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
       </div>
 
       {/* =========================================================================
-          ABA 1: VISÃO GERAL (4 KPIS + GRÁFICO TEMPORAL DUAL)
+          ABA 1: VISÃO GERAL (4 KPIS + GRÁFICO DE LINHAS DIÁRIO + ÁREAS/TEMAS)
       ========================================================================== */}
       {activeSubTab === 'overview' && (
         <div className="space-y-6 animate-in fade-in duration-200">
@@ -833,7 +1088,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     {activeMetrics.trendVolume}
                   </span>
                 </div>
-                <div className="text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-1 font-mono">
+                <div className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-1 font-sans tabular-nums">
                   {activeMetrics.answered}
                 </div>
                 <p className="text-xs text-slate-600 dark:text-zinc-400">
@@ -843,10 +1098,9 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               </div>
               <div className="mt-5 w-full bg-slate-100 dark:bg-zinc-800 h-1.5 rounded-full overflow-hidden">
                 <div
-                  className="h-full rounded-full transition-all duration-500"
+                  className="h-full rounded-full transition-all duration-500 bg-slate-400 dark:bg-zinc-500"
                   style={{
-                    width: `${Math.min(100, Math.round((activeMetrics.answered / 500) * 100))}%`,
-                    backgroundColor: accentConfig.primaryHex
+                    width: `${Math.min(100, Math.round((activeMetrics.answered / 500) * 100))}%`
                   }}
                 />
               </div>
@@ -859,12 +1113,12 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                   <span className="text-[11px] font-bold uppercase tracking-wider text-slate-600 dark:text-zinc-400">
                     Acertos Líquidos
                   </span>
-                  <span className="inline-flex items-center gap-1 text-[11px] font-medium text-slate-600 dark:text-zinc-400 bg-slate-100 dark:bg-[#1B1B20] border border-slate-200 dark:border-zinc-800 px-2 py-0.5 rounded-full">
-                    <CircleCheck className="w-3 h-3 text-emerald-500 dark:text-emerald-400" />
+                  <span className="inline-flex items-center gap-1 text-[11px] font-medium text-emerald-700 dark:text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded-full">
+                    <CircleCheck className="w-3 h-3 text-emerald-500" />
                     Consistente
                   </span>
                 </div>
-                <div className="text-4xl font-extrabold text-emerald-600 dark:text-emerald-400 tracking-tight mb-1 font-mono">
+                <div className="text-3xl sm:text-4xl font-extrabold text-emerald-600 dark:text-emerald-400 tracking-tight mb-1 font-sans tabular-nums">
                   {activeMetrics.correct}
                 </div>
                 <p className="text-xs text-slate-600 dark:text-zinc-400">
@@ -901,7 +1155,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     {activeMetrics.trendAproveitamento}
                   </span>
                 </div>
-                <div className="text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-1 font-mono">
+                <div className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-1 font-sans tabular-nums">
                   {activeMetrics.accuracy.toFixed(1)}%
                 </div>
                 <p className="text-xs text-slate-600 dark:text-zinc-400">
@@ -937,7 +1191,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     Ideal &lt; 2m 30s
                   </span>
                 </div>
-                <div className="text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-1 font-mono">
+                <div className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-1 font-sans tabular-nums">
                   1m 48s
                 </div>
                 <p className="text-xs text-slate-600 dark:text-zinc-400">Tempo médio / questão</p>
@@ -951,95 +1205,268 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
             </div>
           </div>
 
-          {/* Gráfico de Evolução Temporal Dual */}
-          <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-6 space-y-5">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          {/* Gráfico de Evolução Diária (Linhas: Feitas vs Acertos) */}
+          <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-5 sm:p-6 space-y-4">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
               <div>
                 <div className="flex items-center gap-2.5">
-                  <h2 className="text-base font-bold text-slate-900 dark:text-white">
-                    Evolução Temporal ({activeMetrics.label})
+                  <h2 className="text-base font-bold text-slate-900 dark:text-white font-heading">
+                    Evolução Diária de Resoluções
                   </h2>
-                  <span className="text-[11px] font-medium px-2 py-0.5 rounded-md bg-slate-100 dark:bg-[#1C1C22] text-slate-600 dark:text-zinc-400 border border-slate-200 dark:border-[#27272F]">
-                    Histórico do Período
+                  <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
+                    {activeMetrics.label}
                   </span>
                 </div>
-                <p className="text-xs text-slate-600 dark:text-zinc-400 mt-1">
-                  Proporção limpa de questões resolvidas, acertos e erros ao longo do período selecionado
+                <p className="text-xs text-slate-600 dark:text-zinc-400 mt-0.5">
+                  Acompanhamento diário contínuo de questões resolvidas e acertos obtidos
                 </p>
               </div>
 
-              <div className="flex flex-wrap items-center gap-4">
-                {/* Alternador Empilhado vs Comparativo */}
-                <div className="flex items-center bg-slate-100 dark:bg-[#0C0C0E] p-1 rounded-lg border border-slate-200 dark:border-[#222227] text-[11px]">
-                  <button
-                    type="button"
-                    onClick={() => setChartMode('empilhado')}
-                    className={`px-2.5 py-1 rounded-md font-medium transition-colors cursor-pointer ${
-                      chartMode === 'empilhado' ? 'bg-white dark:bg-[#222228] text-slate-900 dark:text-white shadow-xs' : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200'
-                    }`}
-                  >
-                    Empilhado (Acertos + Erros)
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setChartMode('comparativo')}
-                    className={`px-2.5 py-1 rounded-md font-medium transition-colors cursor-pointer ${
-                      chartMode === 'comparativo' ? 'bg-white dark:bg-[#222228] text-slate-900 dark:text-white shadow-xs' : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200'
-                    }`}
-                  >
-                    Volume vs Acertos
-                  </button>
-                </div>
-
-                {/* Legenda Dinâmica */}
-                {chartMode === 'empilhado' ? (
-                  <div className="flex items-center gap-3 text-xs">
-                    <span className="flex items-center gap-1.5 text-slate-700 dark:text-zinc-300 font-medium">
-                      <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: accentConfig.primaryHex }} />
-                      Acertos
-                    </span>
-                    <span className="flex items-center gap-1.5 text-slate-700 dark:text-zinc-300 font-medium">
-                      <span className="w-2.5 h-2.5 rounded-full bg-rose-500" />
-                      Erros
-                    </span>
-                  </div>
-                ) : (
-                  <div className="flex items-center gap-3 text-xs">
-                    <span className="flex items-center gap-1.5 text-slate-700 dark:text-zinc-300 font-medium">
-                      <span className="w-2.5 h-2.5 rounded-full bg-slate-500 dark:bg-zinc-600" />
-                      Resolvidas (Total)
-                    </span>
-                    <span className="flex items-center gap-1.5 text-slate-700 dark:text-zinc-300 font-medium">
-                      <span className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: accentConfig.primaryHex }} />
-                      Acertos
-                    </span>
-                  </div>
-                )}
+              {/* Legenda Soft */}
+              <div className="flex items-center gap-4 text-xs">
+                <span className="flex items-center gap-1.5 text-slate-600 dark:text-zinc-300 font-medium">
+                  <span className="w-2.5 h-2.5 rounded-full bg-slate-400 dark:bg-zinc-500" />
+                  Feitas (Total)
+                </span>
+                <span className="flex items-center gap-1.5 text-slate-600 dark:text-zinc-300 font-medium">
+                  <span className="w-2.5 h-2.5 rounded-full bg-emerald-500" />
+                  Acertos
+                </span>
+                <span className="flex items-center gap-1.5 text-slate-600 dark:text-zinc-300 font-medium">
+                  <span className="w-2.5 h-2.5 rounded-full bg-rose-500" />
+                  Erros
+                </span>
               </div>
             </div>
 
-            <div className="h-72 w-full">
+            <div className="h-56 sm:h-60 w-full pt-2">
               <ResponsiveContainer width="100%" height="100%">
-                <BarChart data={activeMetrics.chartData} margin={{ top: 10, right: 10, left: -20, bottom: 0 }} barGap={8}>
-                  <CartesianGrid strokeDasharray="3 3" vertical={false} stroke={mode === 'dark' ? '#1F1F25' : '#E2E8F0'} />
-                  <XAxis dataKey="label" axisLine={{ stroke: mode === 'dark' ? '#27272A' : '#CBD5E1' }} tickLine={false} tick={{ fill: mode === 'dark' ? '#71717A' : '#64748B', fontSize: 12 }} dy={8} />
-                  <YAxis axisLine={false} tickLine={false} tick={{ fill: mode === 'dark' ? '#71717A' : '#64748B', fontSize: 12 }} />
-                  <Tooltip cursor={{ fill: mode === 'dark' ? 'rgba(255, 255, 255, 0.04)' : 'rgba(0, 0, 0, 0.04)', radius: 8 }} content={<CustomBarTooltip />} />
-
-                  {chartMode === 'empilhado' ? (
-                    <>
-                      <Bar dataKey="acertos" stackId="a" fill={accentConfig.primaryHex} radius={[0, 0, 6, 6]} maxBarSize={52} />
-                      <Bar dataKey="erros" stackId="a" fill="#EF4444" radius={[6, 6, 0, 0]} maxBarSize={52} />
-                    </>
-                  ) : (
-                    <>
-                      <Bar dataKey="resolvidas" fill={mode === 'dark' ? '#3F3F46' : '#94A3B8'} radius={[6, 6, 0, 0]} maxBarSize={40} />
-                      <Bar dataKey="acertos" fill={accentConfig.primaryHex} radius={[6, 6, 0, 0]} maxBarSize={40} />
-                    </>
-                  )}
-                </BarChart>
+                <AreaChart data={activeMetrics.chartData} margin={{ top: 8, right: 12, left: -22, bottom: 0 }}>
+                  <defs>
+                    <linearGradient id="softGreenGrad" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="5%" stopColor="#10B981" stopOpacity={0.20} />
+                      <stop offset="95%" stopColor="#10B981" stopOpacity={0.0} />
+                    </linearGradient>
+                    <linearGradient id="softNeutralGrad" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="5%" stopColor={mode === 'dark' ? '#71717A' : '#94A3B8'} stopOpacity={0.12} />
+                      <stop offset="95%" stopColor={mode === 'dark' ? '#71717A' : '#94A3B8'} stopOpacity={0.0} />
+                    </linearGradient>
+                  </defs>
+                  <CartesianGrid strokeDasharray="3 3" vertical={false} stroke={mode === 'dark' ? '#27272A' : '#E2E8F0'} strokeOpacity={0.6} />
+                  <XAxis
+                    dataKey="label"
+                    axisLine={{ stroke: mode === 'dark' ? '#27272A' : '#CBD5E1' }}
+                    tickLine={false}
+                    tick={{ fill: mode === 'dark' ? '#71717A' : '#64748B', fontSize: 11, fontWeight: 500 }}
+                    dy={8}
+                  />
+                  <YAxis
+                    axisLine={false}
+                    tickLine={false}
+                    tick={{ fill: mode === 'dark' ? '#71717A' : '#64748B', fontSize: 11 }}
+                  />
+                  <Tooltip content={<CustomBarTooltip />} />
+                  <Area
+                    type="monotone"
+                    dataKey="resolvidas"
+                    name="Total Feitas"
+                    stroke={mode === 'dark' ? '#71717A' : '#94A3B8'}
+                    strokeWidth={2}
+                    fillOpacity={1}
+                    fill="url(#softNeutralGrad)"
+                    activeDot={{ r: 4, stroke: mode === 'dark' ? '#71717A' : '#94A3B8', strokeWidth: 2, fill: mode === 'dark' ? '#121215' : '#ffffff' }}
+                  />
+                  <Area
+                    type="monotone"
+                    dataKey="acertos"
+                    name="Acertos"
+                    stroke="#10B981"
+                    strokeWidth={2.5}
+                    fillOpacity={1}
+                    fill="url(#softGreenGrad)"
+                    activeDot={{ r: 5, stroke: '#10B981', strokeWidth: 2, fill: mode === 'dark' ? '#121215' : '#ffffff' }}
+                  />
+                </AreaChart>
               </ResponsiveContainer>
             </div>
+          </div>
+
+          {/* Gráfico Integrado de Acompanhamento por Especialidades ou Temas */}
+          <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-5 sm:p-6 space-y-4">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+              <div>
+                <h3 className="text-base font-bold text-slate-900 dark:text-white font-heading">
+                  Desempenho por Especialidade & Temas
+                </h3>
+                <p className="text-xs text-slate-600 dark:text-zinc-400 mt-0.5">
+                  Proporção de acertos e volume estudado nas grandes áreas ou tópicos específicos
+                </p>
+              </div>
+
+              {/* Alternador Especialidades vs Temas */}
+              <div className="flex items-center bg-slate-100 dark:bg-zinc-900/90 p-1 rounded-xl border border-slate-200 dark:border-zinc-800 text-xs self-start sm:self-auto">
+                <button
+                  type="button"
+                  onClick={() => setOverviewBreakdownType('especialidades')}
+                  className={`px-3 py-1.5 rounded-lg font-semibold transition-all cursor-pointer ${
+                    overviewBreakdownType === 'especialidades'
+                      ? 'bg-white dark:bg-zinc-800 text-slate-900 dark:text-white shadow-xs'
+                      : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200'
+                  }`}
+                >
+                  Por Especialidade
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setOverviewBreakdownType('temas')}
+                  className={`px-3 py-1.5 rounded-lg font-semibold transition-all cursor-pointer ${
+                    overviewBreakdownType === 'temas'
+                      ? 'bg-white dark:bg-zinc-800 text-slate-900 dark:text-white shadow-xs'
+                      : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200'
+                  }`}
+                >
+                  Por Tema
+                </button>
+              </div>
+            </div>
+
+            {/* Lista com Barras Soft */}
+            {overviewBreakdownType === 'especialidades' ? (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-1">
+                {specialtiesBreakdown.map((spec) => {
+                  const hasQuestions = spec.resolvidas > 0;
+                  const isGood = spec.taxa >= 70;
+                  return (
+                    <div
+                      key={spec.id}
+                      className="p-3.5 rounded-xl bg-slate-50 dark:bg-zinc-900/50 border border-slate-200/80 dark:border-zinc-800/80 space-y-2 hover:border-slate-300 dark:hover:border-zinc-700 transition-colors"
+                    >
+                      <div className="flex items-center justify-between text-xs">
+                        <div className="flex items-center gap-2 truncate">
+                          <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: spec.cor }} />
+                          <span className="font-semibold text-slate-800 dark:text-zinc-200 truncate font-heading">
+                            {spec.nome}
+                          </span>
+                        </div>
+                        <span className="text-slate-500 dark:text-zinc-400 font-sans tabular-nums shrink-0 font-medium">
+                          {spec.resolvidas} feitas
+                        </span>
+                      </div>
+
+                      {/* Barra Soft */}
+                      <div className="w-full bg-slate-200 dark:bg-zinc-800 h-2 rounded-full overflow-hidden flex">
+                        {hasQuestions ? (
+                          <>
+                            <div
+                              className="h-full bg-emerald-500 rounded-l-full transition-all duration-500"
+                              style={{ width: `${Math.min(100, spec.taxa)}%` }}
+                              title={`Acertos: ${spec.acertos}`}
+                            />
+                            {spec.erros > 0 && (
+                              <div
+                                className="h-full bg-rose-500/30 rounded-r-full transition-all duration-500"
+                                style={{ width: `${Math.max(0, 100 - spec.taxa)}%` }}
+                                title={`Erros: ${spec.erros}`}
+                              />
+                            )}
+                          </>
+                        ) : (
+                          <div className="h-full w-full bg-transparent" />
+                        )}
+                      </div>
+
+                      {/* Rodapé do Item */}
+                      <div className="flex items-center justify-between text-[11px] pt-0.5">
+                        <div className="flex items-center gap-2 text-slate-500 dark:text-zinc-400">
+                          <span className="text-emerald-600 dark:text-emerald-400 font-medium">
+                            {spec.acertos} acertos
+                          </span>
+                          <span>·</span>
+                          <span className="text-rose-600 dark:text-rose-400 font-medium">
+                            {spec.erros} erros
+                          </span>
+                        </div>
+                        <span
+                          className={`font-bold font-sans tabular-nums px-2 py-0.5 rounded-full border ${
+                            !hasQuestions
+                              ? 'text-slate-400 dark:text-zinc-500 border-transparent bg-transparent'
+                              : isGood
+                              ? 'text-emerald-700 dark:text-emerald-400 bg-emerald-500/10 border-emerald-500/25'
+                              : 'text-amber-700 dark:text-amber-400 bg-amber-500/10 border-amber-500/25'
+                          }`}
+                        >
+                          {hasQuestions ? `${spec.taxa.toFixed(1)}%` : '0.0%'}
+                        </span>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-1">
+                {topThemesList.map((t, idx) => {
+                  const isGood = t.taxa >= 70;
+                  return (
+                    <div
+                      key={`${t.nome}-${idx}`}
+                      className="p-3.5 rounded-xl bg-slate-50 dark:bg-zinc-900/50 border border-slate-200/80 dark:border-zinc-800/80 space-y-2 hover:border-slate-300 dark:hover:border-zinc-700 transition-colors"
+                    >
+                      <div className="flex items-center justify-between text-xs">
+                        <div className="truncate pr-2">
+                          <span className="font-semibold text-slate-800 dark:text-zinc-200 truncate block font-heading">
+                            {t.nome}
+                          </span>
+                          <span className="text-[10px] text-slate-500 dark:text-zinc-500">
+                            {t.specialty}
+                          </span>
+                        </div>
+                        <span className="text-slate-500 dark:text-zinc-400 font-sans tabular-nums shrink-0 font-medium">
+                          {t.resolvidas} feitas
+                        </span>
+                      </div>
+
+                      {/* Barra Soft */}
+                      <div className="w-full bg-slate-200 dark:bg-zinc-800 h-2 rounded-full overflow-hidden flex">
+                        <div
+                          className="h-full bg-emerald-500 rounded-l-full transition-all duration-500"
+                          style={{ width: `${Math.min(100, t.taxa)}%` }}
+                          title={`Acertos: ${t.acertos}`}
+                        />
+                        {t.erros > 0 && (
+                          <div
+                            className="h-full bg-rose-500/30 rounded-r-full transition-all duration-500"
+                            style={{ width: `${Math.max(0, 100 - t.taxa)}%` }}
+                            title={`Erros: ${t.erros}`}
+                          />
+                        )}
+                      </div>
+
+                      {/* Rodapé do Item */}
+                      <div className="flex items-center justify-between text-[11px] pt-0.5">
+                        <div className="flex items-center gap-2 text-slate-500 dark:text-zinc-400">
+                          <span className="text-emerald-600 dark:text-emerald-400 font-medium">
+                            {t.acertos} acertos
+                          </span>
+                          <span>·</span>
+                          <span className="text-rose-600 dark:text-rose-400 font-medium">
+                            {t.erros} erros
+                          </span>
+                        </div>
+                        <span
+                          className={`font-bold font-sans tabular-nums px-2 py-0.5 rounded-full border ${
+                            isGood
+                              ? 'text-emerald-700 dark:text-emerald-400 bg-emerald-500/10 border-emerald-500/25'
+                              : 'text-amber-700 dark:text-amber-400 bg-amber-500/10 border-amber-500/25'
+                          }`}
+                        >
+                          {t.taxa.toFixed(1)}%
+                        </span>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
           </div>
         </div>
       )}
@@ -1093,7 +1520,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     <span className="text-[11px] font-semibold text-slate-600 dark:text-zinc-400 line-clamp-1 max-w-[130px]">
                       {donutData[hoveredPieIndex].name}
                     </span>
-                    <span className="text-2xl font-extrabold text-slate-900 dark:text-white mt-0.5 font-mono">
+                    <span className="text-2xl font-extrabold text-slate-900 dark:text-white mt-0.5 font-sans tabular-nums">
                       {donutData[hoveredPieIndex].value}
                     </span>
                     <span className="text-[11px] font-bold text-emerald-600 dark:text-emerald-400">
@@ -1105,7 +1532,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     <span className="text-[11px] uppercase tracking-wider font-bold text-slate-500 dark:text-zinc-500">
                       Volume Total
                     </span>
-                    <span className="text-3xl font-extrabold text-slate-900 dark:text-white mt-0.5 font-mono">
+                    <span className="text-3xl font-extrabold text-slate-900 dark:text-white mt-0.5 font-sans tabular-nums">
                       {totalSpecialtiesVolume === 1 && activeMetrics.answered === 0 ? 0 : totalSpecialtiesVolume}
                     </span>
                     <span className="text-[11px] text-slate-600 dark:text-zinc-400">6 Especialidades</span>
@@ -1130,8 +1557,8 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                       <span className="text-slate-800 dark:text-zinc-200 font-medium truncate">{item.nome}</span>
                     </div>
                     <div className="flex items-center gap-3 shrink-0">
-                      <span className="text-slate-500 dark:text-zinc-400 font-mono">{item.resolvidas} q.</span>
-                      <span className="font-bold text-slate-900 dark:text-white w-12 text-right font-mono">
+                      <span className="text-slate-500 dark:text-zinc-400 font-sans tabular-nums">{item.resolvidas} q.</span>
+                      <span className="font-bold text-slate-900 dark:text-white w-12 text-right font-sans tabular-nums">
                         {item.resolvidas > 0 ? pct : '0.0'}%
                       </span>
                     </div>
@@ -1191,10 +1618,10 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                                 {area.temas.length} temas estudados
                               </span>
                             </td>
-                            <td className="py-3.5 text-center font-semibold text-slate-800 dark:text-zinc-200 font-mono">
+                            <td className="py-3.5 text-center font-semibold text-slate-800 dark:text-zinc-200 font-sans tabular-nums">
                               {area.resolvidas}
                             </td>
-                            <td className="py-3.5 text-center font-mono">
+                            <td className="py-3.5 text-center font-sans tabular-nums">
                               <span className="text-emerald-600 dark:text-emerald-400 font-bold">{area.acertos}</span>
                               <span className="text-slate-400 dark:text-zinc-600 mx-1">/</span>
                               <span className="text-rose-600 dark:text-rose-400 font-medium">{area.erros}</span>
@@ -1207,7 +1634,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                                     style={{ width: `${area.taxa}%`, backgroundColor: area.cor }}
                                   />
                                 </div>
-                                <span className="font-bold text-slate-900 dark:text-white w-12 text-right font-mono">
+                                <span className="font-bold text-slate-900 dark:text-white w-12 text-right font-sans tabular-nums">
                                   {area.taxa.toFixed(1)}%
                                 </span>
                               </div>
@@ -1248,8 +1675,8 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                                       <span className="w-1.5 h-1.5 rounded-full bg-slate-400 dark:bg-zinc-600" />
                                       <span>{tema.nome}</span>
                                     </td>
-                                    <td className="py-2.5 text-center text-slate-600 dark:text-zinc-400 font-mono">{tema.resolvidas}</td>
-                                    <td className="py-2.5 text-center font-mono">
+                                    <td className="py-2.5 text-center text-slate-600 dark:text-zinc-400 font-sans tabular-nums">{tema.resolvidas}</td>
+                                    <td className="py-2.5 text-center font-sans tabular-nums">
                                       <span className="text-emerald-600 dark:text-emerald-400 font-semibold">{tema.acertos}</span>
                                       <span className="text-slate-400 dark:text-zinc-600 mx-1">/</span>
                                       <span className="text-rose-600 dark:text-rose-400">{tema.erros}</span>
@@ -1265,7 +1692,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                                           />
                                         </div>
                                         <span
-                                          className={`font-semibold w-12 text-right font-mono ${
+                                          className={`font-semibold w-12 text-right font-sans tabular-nums ${
                                             tema.taxa < 65 ? 'text-rose-600 dark:text-rose-400' : tema.taxa < 75 ? 'text-amber-600 dark:text-amber-400' : 'text-emerald-600 dark:text-emerald-400'
                                           }`}
                                         >
@@ -1354,7 +1781,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               </div>
               <div className="flex-1">
                 <div className="flex items-center justify-between">
-                  <div className={`text-3xl font-extrabold text-rose-500 font-mono flex items-center gap-2 transition-all duration-200 ${
+                  <div className={`text-3xl font-extrabold text-rose-500 font-sans tabular-nums flex items-center gap-2 transition-all duration-200 ${
                     isRaioXTransitioning ? 'opacity-40 scale-[0.98]' : 'opacity-100 scale-100'
                   }`}>
                     <span>{dataScope === 'pessoal' ? criticalCount : '3.140'}</span>
@@ -1389,7 +1816,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               </div>
               <div>
                 <div
-                  className={`text-3xl font-extrabold font-mono flex items-center gap-2 transition-all duration-200 ${
+                  className={`text-3xl font-extrabold font-sans tabular-nums flex items-center gap-2 transition-all duration-200 ${
                     isRaioXTransitioning ? 'opacity-40 scale-[0.98]' : 'opacity-100 scale-100'
                   }`}
                   style={{ color: accentConfig.energyAccent.hex }}
@@ -1418,7 +1845,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               </div>
               <div>
                 <div
-                  className={`text-3xl font-extrabold font-mono flex items-center gap-2 transition-all duration-200 ${
+                  className={`text-3xl font-extrabold font-sans tabular-nums flex items-center gap-2 transition-all duration-200 ${
                     isRaioXTransitioning ? 'opacity-40 scale-[0.98]' : 'opacity-100 scale-100'
                   }`}
                   style={{ color: accentConfig.primaryHex }}
@@ -1659,7 +2086,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                         <td className="py-4">
                           <div className="font-semibold text-slate-800 dark:text-zinc-200">{item.specialty}</div>
                         </td>
-                        <td className="py-4 font-mono">
+                        <td className="py-4 font-sans tabular-nums">
                           <div className="font-bold text-rose-600 dark:text-rose-400">{item.errors} erros</div>
                           <div className="text-[11px] text-slate-500 dark:text-zinc-500">
                             {item.correct}/{item.total} q.
@@ -1667,7 +2094,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                         </td>
                         <td className="py-4">
                           <div className="flex flex-col gap-1.5">
-                            <span className="font-bold text-slate-900 dark:text-white font-mono">{item.accuracy.toFixed(1)}%</span>
+                            <span className="font-bold text-slate-900 dark:text-white font-sans tabular-nums">{item.accuracy.toFixed(1)}%</span>
                             <div className="w-32 bg-slate-200 dark:bg-[#1F1F26] h-1.5 rounded-full overflow-hidden">
                               <div
                                 className={`h-full rounded-full ${
@@ -1733,7 +2160,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     >
                       <ChevronLeft className="w-3.5 h-3.5" />
                     </button>
-                    <span className="font-mono text-slate-600 dark:text-zinc-400 font-semibold">
+                    <span className="font-sans tabular-nums text-slate-600 dark:text-zinc-400 font-semibold">
                       {currentPage} / {totalPages}
                     </span>
                     <button
@@ -1787,11 +2214,11 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               </div>
               <div className="flex justify-between">
                 <span className="text-slate-500 dark:text-zinc-400">Erros registrados:</span>
-                <span className="font-bold text-rose-600 dark:text-rose-400 font-mono">{trainingModal.erros} questões</span>
+                <span className="font-bold text-rose-600 dark:text-rose-400 font-sans tabular-nums">{trainingModal.erros} questões</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-slate-500 dark:text-zinc-400">Aproveitamento atual:</span>
-                <span className="font-bold text-emerald-600 dark:text-emerald-400 font-mono">
+                <span className="font-bold text-emerald-600 dark:text-emerald-400 font-sans tabular-nums">
                   {trainingModal.rendimento.toFixed(1)}% (Meta: 80%)
                 </span>
               </div>
