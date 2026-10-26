@@ -138,6 +138,13 @@ export type ErrorReasonType =
   | 'tempo_esgotado'
   | 'outro';
 
+export interface AttemptRecord {
+  letter: 'A' | 'B' | 'C' | 'D' | 'E';
+  isCorrect: boolean;
+  timestamp: number;
+  errorReason?: ErrorReasonType;
+}
+
 export interface UserAnswerItem {
   letter: 'A' | 'B' | 'C' | 'D' | 'E';
   isCorrect: boolean;
@@ -155,6 +162,12 @@ export interface UserAnswerItem {
   studentNotes?: string;
   statusRetrial?: 'pendente' | 'recuperado';
   lastRetriedAt?: number;
+  // Rastreabilidade do Erro para Sessão de Revisão às Cegas
+  previousLetter?: 'A' | 'B' | 'C' | 'D' | 'E';
+  previousIsCorrect?: boolean;
+  previousTimestamp?: number;
+  previousErrorReason?: ErrorReasonType;
+  attempts?: AttemptRecord[];
 }
 
 export interface PerformanceFilterState {

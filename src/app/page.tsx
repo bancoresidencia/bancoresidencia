@@ -975,6 +975,26 @@ export default function Home() {
     const prevAnswer = userAnswers[questionId];
     const isRetrialRecovery = prevAnswer && !prevAnswer.isCorrect && finalIsCorrect;
 
+    // Preserva o erro original ou a tentativa anterior para diagnóstico comparativo
+    const previousLetter = prevAnswer?.previousLetter || (!prevAnswer?.isCorrect ? prevAnswer?.letter : undefined);
+    const previousIsCorrect = prevAnswer?.previousIsCorrect !== undefined ? prevAnswer.previousIsCorrect : prevAnswer?.isCorrect;
+    const previousTimestamp = prevAnswer?.previousTimestamp || prevAnswer?.timestamp;
+    const previousErrorReason = prevAnswer?.previousErrorReason || prevAnswer?.errorReason;
+
+    const previousAttempts = prevAnswer?.attempts || (prevAnswer ? [{
+      letter: prevAnswer.letter,
+      isCorrect: prevAnswer.isCorrect,
+      timestamp: prevAnswer.timestamp,
+      errorReason: prevAnswer.errorReason
+    }] : []);
+
+    const newAttempt = {
+      letter: selectedLetter,
+      isCorrect: finalIsCorrect,
+      timestamp: answerTimestamp,
+      errorReason: finalIsCorrect ? undefined : prevAnswer?.errorReason
+    };
+
     const answerObj: UserAnswerItem = {
       ...prevAnswer,
       letter: selectedLetter,
@@ -994,7 +1014,12 @@ export default function Home() {
         : finalIsCorrect
         ? prevAnswer?.statusRetrial || undefined
         : 'pendente',
-      lastRetriedAt: isRetrialRecovery ? answerTimestamp : prevAnswer?.lastRetriedAt
+      lastRetriedAt: isRetrialRecovery ? answerTimestamp : prevAnswer?.lastRetriedAt,
+      previousLetter,
+      previousIsCorrect,
+      previousTimestamp,
+      previousErrorReason,
+      attempts: [...previousAttempts, newAttempt]
     };
 
     setUserAnswers((prev) => {

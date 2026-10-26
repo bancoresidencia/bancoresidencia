@@ -280039,5 +280039,663 @@
       "Williams Obstetrics, 26th Edition",
       "Manual de Gestação de Alto Risco (Ministério da Saúde)"
     ]
+  },
+  {
+    "id": "3f224a39-aace-4803-a4e4-c316f26f6154",
+    "code": "HIAEEINSTEIN-2020-OBS-6348",
+    "institution": "HIAE/Einstein - Hospital Israelita Albert Einstein (SP)",
+    "banca": "HIAE/Einstein",
+    "year": 2020,
+    "tipo_prova": "Prova 1",
+    "modalidade": "Residência Médica",
+    "especialidade": "Obstetrícia",
+    "tema": "Trabalho de Parto e Parto",
+    "foco": "Lacerações Perineais: Classificação e Reparo",
+    "subfoco": "Técnicas de Episiotomia e Reparo",
+    "difficulty": "Médio",
+    "type": "Múltipla escolha",
+    "is_anulada": false,
+    "statement": "Durante o parto vaginal de feto macrossômico, o obstetra pede consentimento da parturiente para realizar episiotomia médiolateral direita, caso seja necessário, e é autorizado. Assim, se decidir realizar esse procedimento, deverá fazê-lo",
+    "options": [
+      {
+        "letter": "A",
+        "text": "no momento em que o polo cefálico distende o períneo, em ângulo de 60º da linhamédia.",
+        "explanation": "A episiotomia mediolateral deve ser realizada **no momento em que o polo cefálico distende o períneo (coroamento)**, com a incisão partindo da comissura posterior da vulva em um **ângulo de 45º a 60º em relação à linha média**, visando evitar a lesão do esfíncter anal."
+      },
+      {
+        "letter": "B",
+        "text": "imediatamente antes do desprendimento dos ombros, seccionado o introito vaginal.",
+        "explanation": "A realização da episiotomia **imediatamente antes do desprendimento dos ombros é tardia**, pois o objetivo do procedimento é ampliar o canal de parto para a passagem do polo cefálico, que é o maior diâmetro fetal."
+      },
+      {
+        "letter": "C",
+        "text": "durante a distensão perineal, na linha média, seccionado o músculo levantador do ânus.",
+        "explanation": "A incisão na **linha média (episiotomia mediana) é contraindicada** devido ao alto risco de extensão para o esfíncter anal e reto (lacerações de 3º e 4º graus), além de seccionar desnecessariamente estruturas musculares que poderiam ser preservadas."
+      },
+      {
+        "letter": "D",
+        "text": "imediatamente antes da inserção do fórceps de Simpson, seccionado o introitovaginal.",
+        "explanation": "A episiotomia **não é um procedimento profilático rotineiro para o uso de fórceps**; sua indicação deve ser baseada na necessidade de ampliação do introito vaginal e não no instrumento utilizado, sendo o momento da incisão incorreto nesta alternativa."
+      },
+      {
+        "letter": "E",
+        "text": "quando o polo cefálico atinge a posição +2, em ângulo de 45º com a linha média.",
+        "explanation": "A posição +2 de DeLee indica que o polo cefálico está ao nível das espinhas isquiáticas, sendo **muito precoce para a realização da episiotomia**, que deve ocorrer apenas quando o períneo está adelgaçado e distendido pelo polo cefálico."
+      }
+    ],
+    "correct_answer": "A",
+    "commentary": "A episiotomia mediolateral é um procedimento cirúrgico que visa ampliar o introito vaginal para facilitar o desprendimento fetal. A técnica correta preconiza a incisão no momento do coroamento, quando o períneo está sob máxima tensão, utilizando um ângulo de 45º a 60º em relação à linha média. Este ângulo é crucial para desviar a incisão da musculatura do esfíncter anal externo e do canal anal, prevenindo lacerações perineais graves. A prática baseada em evidências atuais desencoraja o uso rotineiro da episiotomia, reservando-a para casos de distocia de ombros, partos instrumentais com períneo rígido ou risco iminente de laceração grave.\n\nPrincipal Motivo de Erro:\nO principal motivo que leva o aluno ao erro nesta questão é a **confusão entre o momento ideal da incisão (coroamento) e a angulação correta**, além da crença errônea de que a episiotomia mediana seria uma opção aceitável ou que o procedimento deveria ser realizado precocemente.\n\nTake-Home Message:\nA episiotomia mediolateral deve ser realizada no coroamento, com ângulo de 45º a 60º, para evitar a lesão do esfíncter anal; a episiotomia mediana é proscrita devido ao risco elevado de lacerações de 3º e 4º graus.\n\nEvolução de Diretrizes:\nEm 2020, as diretrizes já enfatizavam o uso restrito da episiotomia. Atualmente, a recomendação da OMS e do Ministério da Saúde permanece no sentido de evitar a episiotomia de rotina, reforçando que o uso indiscriminado não previne lacerações graves nem disfunções do assoalho pélvico, sendo a técnica mediolateral a única aceitável caso a indicação clínica seja confirmada.\n\nReferências:\n• Rezende Obstetrícia\n• Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO) - Manual de Assistência ao Parto\n• World Health Organization (WHO) Recommendations: Intrapartum care for a positive childbirth experience",
+    "images": [],
+    "correctAnswer": "A",
+    "is_official": true,
+    "provenance": "oficial_drive_tematico",
+    "official_book": "Mecanismo de Parto e Fases Clínicas do Parto.pdf.json",
+    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a **confusão entre o momento ideal da incisão (coroamento) e a angulação correta**, além da crença errônea de que a episiotomia mediana seria uma opção aceitável ou que o procedimento deveria ser realizado precocemente.",
+    "takeHomeMessage": "A episiotomia mediolateral deve ser realizada no coroamento, com ângulo de 45º a 60º, para evitar a lesão do esfíncter anal; a episiotomia mediana é proscrita devido ao risco elevado de lacerações de 3º e 4º graus.",
+    "guidelineEvolution": "Em 2020, as diretrizes já enfatizavam o uso restrito da episiotomia. Atualmente, a recomendação da OMS e do Ministério da Saúde permanece no sentido de evitar a episiotomia de rotina, reforçando que o uso indiscriminado não previne lacerações graves nem disfunções do assoalho pélvico, sendo a técnica mediolateral a única aceitável caso a indicação clínica seja confirmada.",
+    "references": [
+      "Rezende Obstetrícia",
+      "Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO) - Manual de Assistência ao Parto",
+      "World Health Organization (WHO) Recommendations: Intrapartum care for a positive childbirth experience"
+    ]
+  },
+  {
+    "id": "2f58811a-fe07-4957-9b14-794de57c8e33",
+    "code": "UNBHUB-2020-OBS-6349",
+    "institution": "UnB/HUB - Hospital Universitário de Brasília (DF)",
+    "banca": "UnB/HUB",
+    "year": 2020,
+    "tipo_prova": "Prova 1",
+    "modalidade": "Residência Médica",
+    "especialidade": "Obstetrícia",
+    "tema": "Intercorrências Clínicas na Gestação",
+    "foco": "Sífilis na Gestação: Diagnóstico e Tratamento",
+    "subfoco": "Tratamento da Sífilis na Gestação",
+    "difficulty": "Fácil",
+    "type": "Múltipla escolha",
+    "is_anulada": false,
+    "statement": "Com relação às demandas de saúde na atenção primária à saúde (APS), relacionadas às doenças infecciosas e transmissíveis, julgue o item que se segue. Situação hipotética: Um casal heterossexual compareceu a consultório médico para uma avaliação pré-concepcional. O médico solicitou a realização de teste rápido para sífilis. Tanto o homem quanto a mulher estavam assintomáticos e informaram que nunca tinham sido submetidos a esse tipo de exame. O resultado para ambos foi positivo, e o teste VDRL revelou a seguinte titulação: 1/64 (homem) e 1/32 (mulher). Assertiva: Nessa situação, o casal deve ser tratado com benzilpenicilina benzatina IM na dose de 2,4 milhões UI (1,2 milhão UI em cada glúteo) uma vez por semana durante duas semanas. Após esse período de tratamento, o casal deve realizar novo teste não treponêmico, para monitoramento.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Certo.",
+        "explanation": "A assertiva está incorreta pois a posologia descrita para o tratamento da sífilis latente tardia ou de duração ignorada é de **três doses semanais de 2,4 milhões UI de benzilpenicilina benzatina**, e não duas. Além disso, o monitoramento clínico e laboratorial (VDRL) deve ser realizado trimestralmente, e não apenas 'após esse período de tratamento'."
+      },
+      {
+        "letter": "B",
+        "text": "Errado.",
+        "explanation": "A assertiva está incorreta pois o esquema terapêutico para sífilis latente tardia ou de duração ignorada exige **três doses semanais de 2,4 milhões UI de benzilpenicilina benzatina**, totalizando 7,2 milhões UI. O intervalo de duas semanas proposto na questão é insuficiente para a cobertura terapêutica adequada, configurando erro de conduta."
+      }
+    ],
+    "correct_answer": "B",
+    "commentary": "O tratamento da sífilis depende do estadiamento clínico. A sífilis recente (primária, secundária ou latente recente < 1 ano) é tratada com dose única de 2,4 milhões UI de benzilpenicilina benzatina. Já a sífilis latente tardia, latente de duração ignorada ou terciária exige o esquema de **três doses semanais de 2,4 milhões UI**, com intervalo máximo de 14 dias entre as doses. Caso o intervalo entre as doses seja superior a 14 dias, o tratamento deve ser reiniciado. O seguimento com testes não treponêmicos (VDRL) deve ser realizado **trimestralmente** no primeiro ano após o tratamento, visando avaliar a queda dos títulos (queda de pelo menos duas diluições em 6 meses ou negativação).\n\nPrincipal Motivo de Erro:\nO principal motivo de erro é a **confusão entre os esquemas terapêuticos** (dose única vs. três doses) e a negligência quanto ao protocolo de seguimento trimestral, essencial para o controle de cura.\n\nTake-Home Message:\nSífilis latente tardia ou de duração ignorada requer **três doses semanais de 2,4 milhões UI** de penicilina benzatina, com seguimento trimestral via VDRL.\n\nEvolução de Diretrizes:\nAs diretrizes do Ministério da Saúde permanecem consistentes quanto ao esquema de três doses para sífilis latente tardia/duração ignorada. A mudança mais relevante nos últimos anos foi a priorização da benzilpenicilina benzatina como única droga eficaz para gestantes, sem alternativas terapêuticas equivalentes em eficácia para prevenção da sífilis congênita.\n\nReferências:\n• Ministério da Saúde. Protocolo Clínico e Diretrizes Terapêuticas para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis (IST).\n• Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO). Tratado de Obstetrícia.",
+    "images": [],
+    "correctAnswer": "B",
+    "official_audit": {
+      "verified": true,
+      "source": "drive_knowledge_book",
+      "book": "Arboviroses (Dengue, Chikungunya e Zika).pdf.json",
+      "specialty": "Infecto"
+    },
+    "mainErrorReason": "O principal motivo de erro é a **confusão entre os esquemas terapêuticos** (dose única vs. três doses) e a negligência quanto ao protocolo de seguimento trimestral, essencial para o controle de cura.",
+    "takeHomeMessage": "Sífilis latente tardia ou de duração ignorada requer **três doses semanais de 2,4 milhões UI** de penicilina benzatina, com seguimento trimestral via VDRL.",
+    "guidelineEvolution": "As diretrizes do Ministério da Saúde permanecem consistentes quanto ao esquema de três doses para sífilis latente tardia/duração ignorada. A mudança mais relevante nos últimos anos foi a priorização da benzilpenicilina benzatina como única droga eficaz para gestantes, sem alternativas terapêuticas equivalentes em eficácia para prevenção da sífilis congênita.",
+    "references": [
+      "Ministério da Saúde. Protocolo Clínico e Diretrizes Terapêuticas para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis (IST).",
+      "Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO). Tratado de Obstetrícia."
+    ]
+  },
+  {
+    "id": "6f4ad98a-0972-4c64-96f7-73ac00163331",
+    "code": "UNICAMPHC-2019-OBS-6350",
+    "institution": "UNICAMP/HC - Hospital de Clínicas da Unicamp - Campinas (SP)",
+    "banca": "UNICAMP/HC",
+    "year": 2019,
+    "tipo_prova": "Prova 1",
+    "modalidade": "Residência Médica",
+    "especialidade": "Obstetrícia",
+    "tema": "Trabalho de Parto e Parto",
+    "foco": "Distocias",
+    "subfoco": "Desproporção Cefalopélvica (DCP) e Parada da Dilatação",
+    "difficulty": "Fácil",
+    "type": "Múltipla escolha",
+    "is_anulada": false,
+    "statement": "Mulher, 25a, G1P0A0C0, com idade gestacional de 39 semanas e 3 dias apresenta evolução do trabalho de parto segundo o partograma abaixo:O DIAGNÓSTICO É:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Parada secundária da descida por desproporção céfalo-pélvica.",
+        "explanation": "A **parada secundária da descida** é caracterizada pela ausência de progressão da apresentação fetal no canal de parto por um período de pelo menos uma hora após a fase de aceleração máxima, sendo a **desproporção céfalo-pélvica (DCP)** a etiologia mecânica clássica que impede a progressão, mesmo com contratilidade uterina adequada."
+      },
+      {
+        "letter": "B",
+        "text": "Parada secundaria da dilatação por distocia funcional.",
+        "explanation": "A **parada secundária da dilatação** ocorre quando não há progressão da dilatação cervical por um período de duas horas ou mais; no caso clínico, a dilatação já atingiu o colo total ou está em fase de descida, tornando o termo **distocia funcional** impreciso para descrever a falha na progressão da descida."
+      },
+      {
+        "letter": "C",
+        "text": "Fase ativa prolongada por contratilidade uterina insuficiente.",
+        "explanation": "A **fase ativa prolongada** refere-se a uma velocidade de dilatação inferior a 1 cm/hora, o que não condiz com o quadro de parada de progressão da apresentação fetal após o período de dilatação já avançado ou completo, sendo a **contratilidade uterina insuficiente** uma causa de distocia funcional, não de parada mecânica da descida."
+      },
+      {
+        "letter": "D",
+        "text": "Parto taquitócico por distocia funcional.",
+        "explanation": "O **parto taquitócico** é definido por uma dinâmica uterina excessiva (mais de 5 contrações em 10 minutos), o que levaria a uma evolução rápida e não a uma **parada de progressão da descida**, tornando esta alternativa fisiopatologicamente contraditória com o diagnóstico de parada."
+      }
+    ],
+    "correct_answer": "A",
+    "commentary": "O diagnóstico de distocias no trabalho de parto baseia-se na análise da curva de Friedman ou nos critérios da OMS. A parada secundária da descida ocorre quando a apresentação fetal não progride no plano de DeLee por um período superior a 60 minutos. Quando a contratilidade uterina é adequada (avaliada por ocitocina ou monitorização interna) e não há progressão, a suspeita clínica principal é a **desproporção céfalo-pélvica (DCP)**, que impede a insinuação ou o desprendimento fetal. A avaliação clínica deve considerar a relação entre o diâmetro cefálico fetal e a bacia materna, sendo a cesariana a via de parto indicada após a falha na progressão.\n\nPrincipal Motivo de Erro:\nO principal motivo que leva o aluno ao erro nesta questão é a **confusão entre os critérios de parada de dilatação e parada de descida**, além da dificuldade em diferenciar distocias funcionais (dinâmicas) de distocias mecânicas (DCP).\n\nTake-Home Message:\nParada secundária da descida por mais de 1 hora, na presença de contratilidade uterina adequada, é **sugestiva de desproporção céfalo-pélvica**, exigindo reavaliação obstétrica imediata.\n\nEvolução de Diretrizes:\nEmbora os critérios de Friedman tenham sido revisados pelo ACOG e pela OMS (que hoje preconizam uma fase ativa mais lenta, a partir de 5 cm de dilatação), o conceito de parada secundária da descida como indicação de desproporção mecânica permanece um pilar na prática obstétrica para evitar o prolongamento desnecessário do trabalho de parto.\n\nReferências:\n• Rezende, Obstetrícia Fundamental\n• Williams Obstetrics, 25th Edition\n• Diretrizes de Atenção à Gestante: A Operação Cesariana (Ministério da Saúde)",
+    "images": [
+      "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2019/mulher-25a-g1p0a0c0-com-idade-gestacional-de-39-semanas-e-3-01.webp"
+    ],
+    "correctAnswer": "A",
+    "official_audit": {
+      "verified": true,
+      "source": "drive_knowledge_book",
+      "book": "Partograma e Distocia.pdf.json",
+      "specialty": "Obstetrícia"
+    },
+    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a **confusão entre os critérios de parada de dilatação e parada de descida**, além da dificuldade em diferenciar distocias funcionais (dinâmicas) de distocias mecânicas (DCP).",
+    "takeHomeMessage": "Parada secundária da descida por mais de 1 hora, na presença de contratilidade uterina adequada, é **sugestiva de desproporção céfalo-pélvica**, exigindo reavaliação obstétrica imediata.",
+    "guidelineEvolution": "Embora os critérios de Friedman tenham sido revisados pelo ACOG e pela OMS (que hoje preconizam uma fase ativa mais lenta, a partir de 5 cm de dilatação), o conceito de parada secundária da descida como indicação de desproporção mecânica permanece um pilar na prática obstétrica para evitar o prolongamento desnecessário do trabalho de parto.",
+    "references": [
+      "Rezende, Obstetrícia Fundamental",
+      "Williams Obstetrics, 25th Edition",
+      "Diretrizes de Atenção à Gestante: A Operação Cesariana (Ministério da Saúde)"
+    ]
+  },
+  {
+    "id": "10338658-a1be-4e9e-99e6-e7d7970e7e8e",
+    "code": "HFA-2016-OBS-6351",
+    "institution": "HFA - Hospital das Forças Armadas (DF)",
+    "banca": "HFA",
+    "year": 2016,
+    "tipo_prova": "Prova 1",
+    "modalidade": "Residência Médica",
+    "especialidade": "Obstetrícia",
+    "tema": "Trabalho de Parto e Parto",
+    "foco": "Distocias",
+    "subfoco": "Distocia de Trajeto: Sinais de Parto Obstruído e Risco de Ruptura Uterina",
+    "difficulty": "Médio",
+    "type": "Múltipla escolha",
+    "is_anulada": false,
+    "statement": "Paciente primigesta, sem patologias prévias, com gestação de 41 semanas, é internada para resolução de gestação. No momento em que se encontra em franco trabalho de parto, já com oito cm de dilatação, bolsa íntegra e ultilização de ocitocina para estimulação das contrações uterinas, apresenta queixa de contrações excessivamente dolorosas. Nesse momento, o exame clínico evidencia a gestante com palidez, sudorese, agitação, taquicardia e hipersistolia, BCF = 160 bpm/min, discreto sagramento via vaginal e presença dos sinais de Bandl e Frommel. A esse respeito, assinale a alternativa que indica a principal hipótese diagnóstica (HD) para o caso e a melhor conduta (CD) nessa situação.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "HD: trabalho de parto taquitócito, CD: suspensão da ocitocina com reavaliação em 30 minutos",
+        "explanation": "O **trabalho de parto taquitócito** refere-se a contrações frequentes e intensas, mas não explica a presença dos sinais patognomônicos de Bandl e Frommel, que indicam uma desproporção cefalopélvica ou obstrução mecânica com risco iminente de rotura uterina, tornando a **suspensão da ocitocina insuficiente** para evitar a catástrofe obstétrica."
+      },
+      {
+        "letter": "B",
+        "text": "HD: descolamento prematuro de placenta; CD: suspensão da ocitocina + amniotomia com reavaliação em 30 minutos",
+        "explanation": "O quadro clínico de **descolamento prematuro de placenta (DPP)** cursa classicamente com hipertonia uterina e sofrimento fetal, porém a presença dos anéis de Bandl e Frommel é **específica da iminência de rotura uterina**, não sendo sinais de DPP. Além disso, a conduta de aguardar 30 minutos é **inaceitável diante de uma emergência obstétrica**."
+      },
+      {
+        "letter": "C",
+        "text": "HD: descolamento prematuro de placenta; CD: indicação imediata de cesárea de urgência",
+        "explanation": "Embora a cesárea de urgência seja a conduta correta, a hipótese diagnóstica de **descolamento prematuro de placenta está incorreta**, pois os sinais clínicos descritos (Bandl e Frommel) são **patognomônicos de iminência de rotura uterina** por obstrução mecânica."
+      },
+      {
+        "letter": "D",
+        "text": "HD: iminência de rotura uterina; CD: suspensão da ocitocina + amniotomia com reavaliação em 30 minutos",
+        "explanation": "A hipótese diagnóstica está correta, porém a conduta de **suspensão da ocitocina e amniotomia com reavaliação em 30 minutos é temerária e contraindicada**, pois o útero já apresenta sinais de exaustão e risco iminente de rotura, exigindo **intervenção cirúrgica imediata** para salvar a vida da mãe e do feto."
+      },
+      {
+        "letter": "E",
+        "text": "HD: iminência de rotura uterina; CD: indicação imediata de cesárea de urgência",
+        "explanation": "A presença dos sinais de Bandl (sulco transversal entre o segmento inferior distendido e o corpo uterino contraído) e Frommel (ligamentos redondos tensos e dolorosos) confirma a **iminência de rotura uterina**, sendo a **cesárea de urgência a única conduta capaz de prevenir a rotura completa** e suas graves complicações hemorrágicas e fetais."
+      }
+    ],
+    "correct_answer": "E",
+    "commentary": "O quadro clínico descreve uma distocia funcional ou mecânica grave em trabalho de parto, onde a hiperestimulação uterina (iatrogênica pelo uso de ocitocina) sobre um útero que encontra resistência (provável desproporção cefalopélvica) leva à formação do anel de Bandl (limite entre o segmento inferior distendido e o corpo uterino) e ao estiramento dos ligamentos redondos (sinal de Frommel). Estes sinais indicam que o útero atingiu seu limite de elasticidade. A conduta padrão-ouro é a **interrupção imediata do trabalho de parto via cesárea**, pois a rotura uterina é uma emergência com alta morbimortalidade materna e fetal.\n\nPrincipal Motivo de Erro:\nO principal motivo que leva o aluno ao erro nesta questão é a **confusão entre os sinais de hipertonia uterina do DPP (útero lenhoso) e os sinais mecânicos de obstrução (Bandl e Frommel)**, além da hesitação em indicar a cesárea imediata frente a sinais de iminência de rotura.\n\nTake-Home Message:\nSinais de Bandl e Frommel são sinônimos de iminência de rotura uterina; diante deles, a conduta é cesárea de emergência, sem qualquer tentativa de conduta expectante.\n\nEvolução de Diretrizes:\nO manejo da iminência de rotura uterina permanece inalterado desde a época da prova: o diagnóstico clínico dos sinais de Bandl e Frommel impõe a cesárea imediata como medida de salvamento, independentemente da evolução do trabalho de parto.\n\nReferências:\n• Rezende Obstetrícia (Montenegro & Rezende)\n• Williams Obstetrics (Cunningham et al.)\n• Manual de Assistência ao Parto - FEBRASGO",
+    "images": [],
+    "correctAnswer": "E",
+    "isAnulada": false,
+    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a **confusão entre os sinais de hipertonia uterina do DPP (útero lenhoso) e os sinais mecânicos de obstrução (Bandl e Frommel)**, além da hesitação em indicar a cesárea imediata frente a sinais de iminência de rotura.",
+    "takeHomeMessage": "Sinais de Bandl e Frommel são sinônimos de iminência de rotura uterina; diante deles, a conduta é cesárea de emergência, sem qualquer tentativa de conduta expectante.",
+    "guidelineEvolution": "O manejo da iminência de rotura uterina permanece inalterado desde a época da prova: o diagnóstico clínico dos sinais de Bandl e Frommel impõe a cesárea imediata como medida de salvamento, independentemente da evolução do trabalho de parto.",
+    "references": [
+      "Rezende Obstetrícia (Montenegro & Rezende)",
+      "Williams Obstetrics (Cunningham et al.)",
+      "Manual de Assistência ao Parto - FEBRASGO"
+    ]
+  },
+  {
+    "id": "b225718a-e166-4a0b-b48e-6af756d3ee3c",
+    "code": "HEJAYMENEVES-2017-OBS-6352",
+    "institution": "HE Jayme Neves - Hospital Escola Jayme dos Santos Neves (ES)",
+    "banca": "HE Jayme Neves",
+    "year": 2017,
+    "tipo_prova": "Prova 1",
+    "modalidade": "Residência Médica",
+    "especialidade": "Obstetrícia",
+    "tema": "Assistência Pré-natal",
+    "foco": "Modificações Fisiológicas da Gravidez",
+    "subfoco": "Função e Adaptações Renais",
+    "difficulty": "Fácil",
+    "type": "Múltipla escolha",
+    "is_anulada": false,
+    "statement": "Das adaptações do organismo materno à gravidez, podemos citar, EXCETO:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Redução da resistência vascular periférica.",
+        "explanation": "A resistência vascular periférica sofre uma **redução significativa** durante a gestação, mediada pelo aumento de progesterona, óxido nítrico e prostaglandinas vasodilatadoras, visando acomodar o aumento do volume sanguíneo e garantir a perfusão placentária."
+      },
+      {
+        "letter": "B",
+        "text": "Aumento do tempo de esvaziamento gástrico.",
+        "explanation": "Ocorre uma **redução da motilidade gastrointestinal** e um aumento do tempo de esvaziamento gástrico devido aos níveis elevados de progesterona, que promovem relaxamento da musculatura lisa, predispondo a gestante a náuseas, vômitos e maior risco de aspiração."
+      },
+      {
+        "letter": "C",
+        "text": "Aumento do volume plasmático e dos fatores de coagulação.",
+        "explanation": "O volume plasmático apresenta um **aumento progressivo** (cerca de 40-50%), acompanhado por um estado de hipercoagulabilidade fisiológica, caracterizado pelo aumento dos fatores de coagulação (como fibrinogênio e fatores VII, VIII, IX, X) e redução da atividade fibrinolítica."
+      },
+      {
+        "letter": "D",
+        "text": "Diminuição do fluxo plasmático renal e da taxa de filtração glomerular.",
+        "explanation": "Ocorre, na verdade, um **aumento do fluxo plasmático renal (cerca de 50-80%) e da taxa de filtração glomerular (cerca de 50%)** desde o início da gestação, o que explica a redução dos níveis séricos de creatinina e ureia na mulher grávida."
+      },
+      {
+        "letter": "E",
+        "text": "Aumento do débito cardíaco.",
+        "explanation": "O débito cardíaco sofre um **aumento progressivo** (cerca de 30-50%) durante a gravidez, resultante tanto do aumento do volume sistólico quanto da elevação da frequência cardíaca, para suprir as demandas metabólicas do feto e da placenta."
+      }
+    ],
+    "correct_answer": "D",
+    "commentary": "A gestação impõe um estado de **hipervolemia e hiperfiltração renal**. O aumento da taxa de filtração glomerular (TFG) é uma adaptação fundamental para a excreção eficiente de resíduos metabólicos fetais e maternos. A redução da resistência vascular periférica, aliada ao aumento do débito cardíaco, garante a manutenção da pressão arterial apesar da vasodilatação sistêmica. A progesterona atua como o principal hormônio responsável pelo relaxamento da musculatura lisa, afetando tanto o sistema vascular quanto o trato gastrointestinal.\n\nPrincipal Motivo de Erro:\nO principal motivo que leva o aluno ao erro é a **confusão entre as adaptações fisiológicas da gravidez e as alterações observadas em estados patológicos ou no envelhecimento**, onde a função renal tende a declinar, enquanto na gestação ela é acentuadamente aumentada.\n\nTake-Home Message:\nNa gravidez, **tudo aumenta (débito cardíaco, TFG, volume plasmático)**, exceto a resistência vascular periférica e os níveis de creatinina sérica, que diminuem.\n\nEvolução de Diretrizes:\nO conhecimento sobre a hemodinâmica renal na gestação permanece consolidado. As diretrizes atuais mantêm o entendimento de que a TFG aumenta precocemente, sendo um marcador fisiológico da adaptação materna, sem alterações significativas nas recomendações clínicas desde 2017.\n\nReferências:\n• Rezende Obstetrícia\n• Williams Obstetrics, 25th Edition\n• Manual de Gestação de Alto Risco - Ministério da Saúde",
+    "images": [],
+    "correctAnswer": "D",
+    "isAnulada": false,
+    "mainErrorReason": "O principal motivo que leva o aluno ao erro é a **confusão entre as adaptações fisiológicas da gravidez e as alterações observadas em estados patológicos ou no envelhecimento**, onde a função renal tende a declinar, enquanto na gestação ela é acentuadamente aumentada.",
+    "takeHomeMessage": "Na gravidez, **tudo aumenta (débito cardíaco, TFG, volume plasmático)**, exceto a resistência vascular periférica e os níveis de creatinina sérica, que diminuem.",
+    "guidelineEvolution": "O conhecimento sobre a hemodinâmica renal na gestação permanece consolidado. As diretrizes atuais mantêm o entendimento de que a TFG aumenta precocemente, sendo um marcador fisiológico da adaptação materna, sem alterações significativas nas recomendações clínicas desde 2017.",
+    "references": [
+      "Rezende Obstetrícia",
+      "Williams Obstetrics, 25th Edition",
+      "Manual de Gestação de Alto Risco - Ministério da Saúde"
+    ]
+  },
+  {
+    "id": "0f5f6dee-2425-4454-9ff1-fe557b5120f5",
+    "code": "SANTACASADEB-2025-OBS-6354",
+    "institution": "Santa Casa de Belo Horizonte (MG)",
+    "banca": "Santa Casa de Belo Horizonte (MG)",
+    "year": 2025,
+    "tipo_prova": "Prova 1",
+    "modalidade": "Residência Médica",
+    "especialidade": "Obstetrícia",
+    "tema": "Doenças Hipertensivas na Gestação",
+    "foco": "Pré-eclâmpsia e Eclâmpsia",
+    "subfoco": "Pré-eclâmpsia com Sinais de Gravidade",
+    "difficulty": "Fácil",
+    "type": "Múltipla escolha",
+    "is_anulada": false,
+    "statement": "Os distúrbios hipertensivos permanecem entre os mais significativos e desafiadores da obstetrícia, o modo como a gravidez incita a pressão ou a agrava ainda permanece sem resposta. Suas repercussões sobre o binômio podem ter desfechos muito desfavoráveis, sendo um dos membros da tríade fatal: hipertensão, hemorragia e infecção. Sobre os distúrbios da pressão e a gravides, esta CORRETO afirmar:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A incidência de eclâmpsia tem se mantido a mesma nos últimos anos, mesmo em áreas com maior disponibilidade da medicina.",
+        "explanation": "A incidência de eclâmpsia tem **diminuído significativamente** nas últimas décadas em países com acesso adequado ao pré-natal e assistência obstétrica de qualidade, devido ao diagnóstico precoce da pré-eclâmpsia e ao uso profilático de sulfato de magnésio."
+      },
+      {
+        "letter": "B",
+        "text": "O aumento da creatinina acima de 1mg/dl e em mais de três vezes das enzimas hepáticas, porém sem plaquetopenia associada não são considerados critérios de gravidade da pré-eclâmpsia.",
+        "explanation": "O aumento da creatinina acima de 1,1 mg/dL (ou o dobro da basal) e a elevação das enzimas hepáticas (AST/ALT) em qualquer valor, quando associados a sintomas de gravidade ou disfunção orgânica, **já configuram critérios de gravidade da pré-eclâmpsia**, mesmo na ausência de plaquetopenia."
+      },
+      {
+        "letter": "C",
+        "text": "O diagnóstico de hipertensão gestacional é realizado com medidas de maiores ou iguais a 140/90mmHg na segunda metade da gestação com proteinúria inferior a 500 mg em 24 horas.",
+        "explanation": "O diagnóstico de hipertensão gestacional exige a ausência de proteinúria e de outros critérios de gravidade. A presença de proteinúria (mesmo que inferior a 500 mg/24h) **já classifica o quadro como pré-eclâmpsia**, visto que a definição atual de pré-eclâmpsia não depende mais estritamente da proteinúria, mas da disfunção orgânica materna."
+      },
+      {
+        "letter": "D",
+        "text": "A fisiopatologia da pré-eclâmpsia pode envolver a primeira exposição da mulher as vilosidades coriônicas, a superabundância dessas vilosidades, condições pré-existentes endoteliais e predisposição genética.",
+        "explanation": "A fisiopatologia da pré-eclâmpsia é multifatorial e baseia-se na **falha da placentação (invasão trofoblástica incompleta)**, sendo classicamente associada à primeira exposição ao antígeno paterno (vilosidades coriônicas), à sobrecarga antigênica (gestação múltipla, mola hidatiforme), a doenças endoteliais prévias e à predisposição genética."
+      }
+    ],
+    "correct_answer": "D",
+    "commentary": "A pré-eclâmpsia é uma síndrome sistêmica caracterizada por uma resposta inflamatória exagerada a uma placentação anômala. O conceito central reside na **má adaptação das artérias espiraladas**, que não sofrem a transformação fisiológica necessária para tornarem-se vasos de baixa resistência. Isso gera isquemia placentária, liberação de fatores antiangiogênicos (como sFlt-1) e disfunção endotelial generalizada. A tríade clássica de hipertensão, proteinúria e edema foi substituída por critérios de disfunção orgânica (renal, hepática, neurológica, hematológica ou uteroplacentária), tornando o diagnóstico mais dinâmico e clínico.\n\nPrincipal Motivo de Erro:\nO principal motivo que leva o aluno ao erro nesta questão é a **confusão entre os critérios diagnósticos atuais (que valorizam a disfunção orgânica) e os critérios obsoletos (que focavam excessivamente na proteinúria quantitativa)**, além de subestimar a importância da elevação isolada de enzimas hepáticas como marcador de gravidade.\n\nTake-Home Message:\nA pré-eclâmpsia é uma doença da placentação; **qualquer disfunção orgânica materna (renal, hepática, neurológica ou hematológica) na vigência de hipertensão gestacional define a gravidade**, independentemente da proteinúria.\n\nEvolução de Diretrizes:\nAs diretrizes evoluíram do foco exclusivo na proteinúria (≥300mg/24h) para a inclusão de critérios de gravidade clínica e laboratorial (disfunção orgânica). O conceito de 'pré-eclâmpsia sem proteinúria' é hoje plenamente aceito e consolidado pela ACOG e pela FEBRASGO.\n\nReferências:\n• Manual de Orientação em Obstetrícia - FEBRASGO (Hipertensão na Gestação)\n• ACOG Practice Bulletin No. 222: Gestational Hypertension and Preeclampsia",
+    "images": [],
+    "correctAnswer": "D",
+    "gabaritoHomologado": true,
+    "gabaritoFonte": "MedBrave_Strict_Match",
+    "gabaritoCruzadoEm": "2026-10-21T02:57:49.994Z",
+    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a **confusão entre os critérios diagnósticos atuais (que valorizam a disfunção orgânica) e os critérios obsoletos (que focavam excessivamente na proteinúria quantitativa)**, além de subestimar a importância da elevação isolada de enzimas hepáticas como marcador de gravidade.",
+    "takeHomeMessage": "A pré-eclâmpsia é uma doença da placentação; **qualquer disfunção orgânica materna (renal, hepática, neurológica ou hematológica) na vigência de hipertensão gestacional define a gravidade**, independentemente da proteinúria.",
+    "guidelineEvolution": "As diretrizes evoluíram do foco exclusivo na proteinúria (≥300mg/24h) para a inclusão de critérios de gravidade clínica e laboratorial (disfunção orgânica). O conceito de 'pré-eclâmpsia sem proteinúria' é hoje plenamente aceito e consolidado pela ACOG e pela FEBRASGO.",
+    "references": [
+      "Manual de Orientação em Obstetrícia - FEBRASGO (Hipertensão na Gestação)",
+      "ACOG Practice Bulletin No. 222: Gestational Hypertension and Preeclampsia"
+    ]
+  },
+  {
+    "id": "14d1ee7a-0ff2-44fa-9acc-7402b0798acb",
+    "code": "UERJHUPE-2026-OBS-6355",
+    "institution": "UERJ/HUPE - Hospital Universitário Pedro Ernesto (RJ)",
+    "banca": "UERJ/HUPE",
+    "year": 2026,
+    "tipo_prova": "Prova 1",
+    "modalidade": "Residência Médica",
+    "especialidade": "Obstetrícia",
+    "tema": "Trabalho de Parto e Parto",
+    "foco": "Trabalho de Parto: Fases, Períodos e Assistência",
+    "subfoco": "Assistência e Condutas no Parto Normal",
+    "difficulty": "Fácil",
+    "type": "Múltipla escolha",
+    "is_anulada": false,
+    "statement": "Em relação ao acompanhamento do trabalho de parto, é correto afirmar que:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A assistência ao parto deve ser realizada por enfermeiras obstétricas, obstetrizes, médicos de família com capacitação em obstetrícia ou médico obstetra.",
+        "explanation": "A assistência ao parto de baixo risco é uma competência multiprofissional consolidada, sendo a **equipe multidisciplinar composta por enfermeiras obstétricas, obstetrizes e médicos (obstetras ou de família com capacitação)** o padrão-ouro preconizado pelas diretrizes de humanização do parto e nascimento para garantir a autonomia e a segurança da parturiente."
+      },
+      {
+        "letter": "B",
+        "text": "Apesar de ser permitida a deambulação, o repouso no leito possui vantagens como encurtamento do trabalho de parto e redução do risco de cesariana.",
+        "explanation": "O **repouso no leito não possui vantagens** sobre a deambulação; pelo contrário, a posição supina ou o repouso forçado estão associados a um trabalho de parto mais prolongado, maior desconforto materno e aumento da compressão aortocava, sendo a **deambulação e posições verticais incentivadas** por reduzirem o tempo de dilatação e a necessidade de analgesia."
+      },
+      {
+        "letter": "C",
+        "text": "Mulheres em trabalho de parto podem ingerir somente água, desde que não estejam sob o efeito de opioides nem apresentarem fatores de risco.",
+        "explanation": "A restrição alimentar é uma prática obsoleta para gestantes de baixo risco; as diretrizes atuais recomendam que a **ingestão de dieta leve e líquidos é permitida e encorajada**, não se limitando apenas à água, mesmo em trabalho de parto, pois auxilia na manutenção do aporte energético materno."
+      },
+      {
+        "letter": "D",
+        "text": "Internações precoces, na fase latente do parto, contribuem para prevenção de intervenções desnecessárias.",
+        "explanation": "A internação na fase latente do parto é considerada uma **intervenção desnecessária** que aumenta a probabilidade de medicalização excessiva (como ocitocina e amniotomia), sendo o manejo expectante em ambiente domiciliar ou ambulatorial a conduta recomendada até o estabelecimento da fase ativa."
+      }
+    ],
+    "correct_answer": "A",
+    "commentary": "A assistência ao parto contemporânea baseia-se no modelo de **atenção humanizada**, que prioriza o protagonismo da mulher e a redução de intervenções desnecessárias. A equipe multiprofissional é fundamental para a desmedicalização do processo fisiológico. O manejo do trabalho de parto deve focar em **medidas não farmacológicas**, como a liberdade de movimentação, o suporte emocional contínuo e a oferta de dieta, evitando a internação precoce que frequentemente leva à cascata de intervenções (o chamado 'efeito cascata').\n\nPrincipal Motivo de Erro:\nO principal motivo que leva o aluno ao erro nesta questão é a **resistência em aceitar a autonomia de profissionais não médicos** na assistência ao parto, bem como a crença em práticas hospitalares tradicionais e intervencionistas (como o jejum e o repouso no leito) que já foram refutadas pela medicina baseada em evidências.\n\nTake-Home Message:\nO parto de baixo risco é um evento fisiológico que deve ser conduzido com o **mínimo de intervenções**, priorizando a liberdade de movimento, a oferta de dieta e a assistência por equipe multiprofissional qualificada.\n\nEvolução de Diretrizes:\nAs diretrizes permanecem consistentes com as recomendações da OMS e do Ministério da Saúde, que reforçam a transição do modelo biomédico intervencionista para o modelo de assistência humanizada, consolidado desde a década de 2010 e mantido como padrão atual.\n\nReferências:\n• Diretrizes Nacionais de Assistência ao Parto Normal (Ministério da Saúde)\n• WHO Recommendations: Intrapartum Care for a Positive Childbirth Experience\n• Rezende Obstetrícia (Montenegro & Rezende)",
+    "images": [],
+    "correctAnswer": "A",
+    "official_audit": {
+      "verified": true,
+      "source": "official_exam_pdf",
+      "exam_id": "UERJ_2026",
+      "question_number": 60,
+      "answer": "A"
+    },
+    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a **resistência em aceitar a autonomia de profissionais não médicos** na assistência ao parto, bem como a crença em práticas hospitalares tradicionais e intervencionistas (como o jejum e o repouso no leito) que já foram refutadas pela medicina baseada em evidências.",
+    "takeHomeMessage": "O parto de baixo risco é um evento fisiológico que deve ser conduzido com o **mínimo de intervenções**, priorizando a liberdade de movimento, a oferta de dieta e a assistência por equipe multiprofissional qualificada.",
+    "guidelineEvolution": "As diretrizes permanecem consistentes com as recomendações da OMS e do Ministério da Saúde, que reforçam a transição do modelo biomédico intervencionista para o modelo de assistência humanizada, consolidado desde a década de 2010 e mantido como padrão atual.",
+    "references": [
+      "Diretrizes Nacionais de Assistência ao Parto Normal (Ministério da Saúde)",
+      "WHO Recommendations: Intrapartum Care for a Positive Childbirth Experience",
+      "Rezende Obstetrícia (Montenegro & Rezende)"
+    ]
+  },
+  {
+    "id": "fbcd38b2-31e5-4c55-87da-5fbce268d575",
+    "code": "UDIHOSPITAL-2019-OBS-6357",
+    "institution": "UDI Hospital - Hospital UDI São Luís (MA)",
+    "banca": "UDI Hospital",
+    "year": 2019,
+    "tipo_prova": "Prova 1",
+    "modalidade": "Residência Médica",
+    "especialidade": "Obstetrícia",
+    "tema": "Trabalho de Parto e Parto",
+    "foco": "Pós-datismo e Gestação Prolongada",
+    "subfoco": "Complicações Maternas e Fetais",
+    "difficulty": "Fácil",
+    "type": "Múltipla escolha",
+    "is_anulada": false,
+    "statement": "Paciente, com 32 ANOS, G3P2 (2 cesarianas prévias) , IG=42 semanas (DUM / Ultrassonografia do 1º trimestre). Pré-natal sem alterações e não apresenta comorbidades. Ao ex: Estado Geral Bom, eupnéica, corada, PA = 110 X 70 mmHg. ABD:gravídico (AU = 40 cm), tônus normal, sem dinâmica uterina, BCF + (142/min/QIE). toque: colo fechado, sem esvaecimento, posterior, cefálico, -2 de De Lee com bolsa íntegra. Qual a conduta mais adequada?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Orientações sobre trabalho de parto, seguido de internação para indução do trabalho de parto com misoprostol.",
+        "explanation": "A indução do parto em pacientes com **duas cesarianas prévias (cicatriz uterina prévia)** apresenta risco aumentado de rotura uterina, sendo, portanto, contraindicada na maioria dos protocolos obstétricos, especialmente em um colo desfavorável (Bishop desfavorável)."
+      },
+      {
+        "letter": "B",
+        "text": "Orientações sobre trabalho de parto, seguido de internação para realização de parto cesáreo, devido gravidez pós-termo e iteratividade.",
+        "explanation": "A gestação prolongada (≥ 42 semanas) associada à **iteratividade (duas cesarianas prévias)** torna a cesariana eletiva a conduta mais segura, visto que o risco de rotura uterina em tentativa de parto vaginal após duas cesáreas supera os benefícios, configurando uma indicação absoluta de interrupção cirúrgica."
+      },
+      {
+        "letter": "C",
+        "text": "Orientações sobre trabalho de parto, seguido de descolamento do bolsão amniótico e retorno quando necessário ou após uma semana.",
+        "explanation": "O descolamento das membranas (manobra de Hamilton) é uma técnica para indução do parto, mas é **contraindicado em pacientes com cicatriz uterina prévia**, devido ao risco de desencadear trabalho de parto em um útero cicatricial, aumentando o risco de deiscência ou rotura."
+      },
+      {
+        "letter": "D",
+        "text": "Solicitar ultrassonografia com doppler para definição de conduta sobre indução do parto ou realizar cesariana.",
+        "explanation": "Embora o Doppler seja útil na avaliação da vitalidade fetal, a **conduta de aguardar ou induzir o parto** é limitada pela história obstétrica da paciente; a presença de duas cesarianas prévias já define a via de parto, tornando a avaliação de vitalidade apenas um suporte, não o determinante da via de parto."
+      },
+      {
+        "letter": "E",
+        "text": "Solicitar ultrassonografia para estimativa de peso fetal, caso paciente não entre em trabalho de parto em 7 dias, prosseguir com interrupção da gestação.",
+        "explanation": "A conduta de **aguardar 7 dias** em uma gestação de 42 semanas com cicatriz uterina prévia é temerária, pois expõe o feto aos riscos da insuficiência placentária e a gestante ao risco de rotura uterina, sendo uma conduta expectante inadequada para o quadro clínico apresentado."
+      }
+    ],
+    "correct_answer": "B",
+    "commentary": "A paciente apresenta uma gestação prolongada (42 semanas) associada a uma cicatriz uterina prévia (duas cesarianas). O manejo da gestação prolongada visa reduzir a morbimortalidade perinatal associada à insuficiência placentária. Contudo, a presença de duas cesarianas prévias impõe uma restrição severa à indução do trabalho de parto devido ao risco de rotura uterina. Portanto, a **interrupção da gestação por via cesárea** é a conduta que minimiza os riscos materno-fetais, sendo a iteratividade o fator determinante para a escolha da via de parto, independentemente da idade gestacional avançada.\n\nPrincipal Motivo de Erro:\nO principal motivo de erro é a **negligência quanto ao risco de rotura uterina** em pacientes com duas cesarianas prévias, levando o aluno a considerar a indução do parto (misoprostol ou métodos mecânicos) como uma opção viável, ignorando a contraindicação absoluta ou relativa de alto risco para o parto vaginal após duas cesáreas.\n\nTake-Home Message:\nEm gestações de 42 semanas com duas cesarianas prévias, a **cesariana eletiva é a conduta de escolha**, pois o risco de rotura uterina contraindica a indução do trabalho de parto.\n\nEvolução de Diretrizes:\nNa época da prova (2019), o consenso já era consolidado quanto ao risco de rotura uterina em pacientes com duas ou mais cesarianas. Atualmente, as diretrizes mantêm a mesma postura: o parto vaginal após duas cesarianas (VBAC-2) é desencorajado devido ao aumento significativo do risco de rotura uterina, sendo a cesariana a via preferencial.\n\nReferências:\n• Rezende Obstetrícia\n• Manual de Gestação de Alto Risco - Ministério da Saúde\n• ACOG Practice Bulletin: Management of Late-Term and Postterm Pregnancies",
+    "images": [],
+    "correctAnswer": "B",
+    "isAnulada": false,
+    "mainErrorReason": "O principal motivo de erro é a **negligência quanto ao risco de rotura uterina** em pacientes com duas cesarianas prévias, levando o aluno a considerar a indução do parto (misoprostol ou métodos mecânicos) como uma opção viável, ignorando a contraindicação absoluta ou relativa de alto risco para o parto vaginal após duas cesáreas.",
+    "takeHomeMessage": "Em gestações de 42 semanas com duas cesarianas prévias, a **cesariana eletiva é a conduta de escolha**, pois o risco de rotura uterina contraindica a indução do trabalho de parto.",
+    "guidelineEvolution": "Na época da prova (2019), o consenso já era consolidado quanto ao risco de rotura uterina em pacientes com duas ou mais cesarianas. Atualmente, as diretrizes mantêm a mesma postura: o parto vaginal após duas cesarianas (VBAC-2) é desencorajado devido ao aumento significativo do risco de rotura uterina, sendo a cesariana a via preferencial.",
+    "references": [
+      "Rezende Obstetrícia",
+      "Manual de Gestação de Alto Risco - Ministério da Saúde",
+      "ACOG Practice Bulletin: Management of Late-Term and Postterm Pregnancies"
+    ]
+  },
+  {
+    "id": "cdd1345a-13af-4b7b-bfbd-57dd86641abc",
+    "code": "PSUGO-2023-OBS-6358",
+    "institution": "PSU-GO - Processo Seletivo Unificado de Goiás",
+    "banca": "PSU-GO",
+    "year": 2023,
+    "tipo_prova": "Prova 1",
+    "modalidade": "Residência Médica",
+    "especialidade": "Obstetrícia",
+    "tema": "Abortamento",
+    "foco": "Doença Trofoblástica Gestacional",
+    "subfoco": "Aspectos Gerais e Definição da DTG",
+    "difficulty": "Fácil",
+    "type": "Múltipla escolha",
+    "is_anulada": false,
+    "statement": "A doença trofoblástica gestacional (DTG) é um evento patológico relacionado com a fertilização aberrante, representando formas clínicas distintas, geralmente evolutivas, sistematizadas por Ewing (1910) em:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "mola hidatiforme (MH), mola invasora e carcinoma espinocelular.",
+        "explanation": "A inclusão do **carcinoma espinocelular** é incorreta, pois este é uma neoplasia epitelial maligna de origem ectodérmica (comum em colo uterino), não possuindo relação com a proliferação anormal do trofoblasto gestacional."
+      },
+      {
+        "letter": "B",
+        "text": "mola hidatiforme (MH), mola invasora e coriocarcinoma.",
+        "explanation": "A classificação de Ewing (1910) estabeleceu o espectro da doença trofoblástica gestacional (DTG) baseando-se na progressão histopatológica e no potencial invasivo, compreendendo a **mola hidatiforme (benigna), a mola invasora e o coriocarcinoma (malignos)**."
+      },
+      {
+        "letter": "C",
+        "text": "mola invasora (MI), mola hidatiforme e adenocarcinoma.",
+        "explanation": "O **adenocarcinoma** é uma neoplasia glandular epitelial que não faz parte do espectro da DTG, a qual é caracterizada especificamente pela proliferação anormal do epitélio trofoblástico (citotrofoblasto e sinciciotrofoblasto)."
+      },
+      {
+        "letter": "D",
+        "text": "mola hidatiforme (MH), molinvasora e carcinossarcoma.",
+        "explanation": "O **carcinossarcoma** (tumor misto maligno) é uma entidade histológica distinta, composta por elementos epiteliais e mesenquimais malignos, não sendo classificado como uma forma de DTG segundo a sistematização clássica de Ewing."
+      }
+    ],
+    "correct_answer": "B",
+    "commentary": "A Doença Trofoblástica Gestacional (DTG) engloba um grupo heterogêneo de patologias decorrentes de uma fertilização anômala. A classificação de Ewing, embora histórica, fundamenta a base do espectro clínico: a **mola hidatiforme** (completa ou parcial), que representa a forma proliferativa benigna; a **mola invasora**, que se caracteriza pela penetração do trofoblasto no miométrio; e o **coriocarcinoma**, a forma mais agressiva e metastática, composta por células trofoblásticas anaplásicas sem a formação de vilosidades coriônicas. O diagnóstico e seguimento clínico baseiam-se fundamentalmente na dosagem seriada do **hCG (gonadotrofina coriônica humana)**, marcador sensível e específico para o monitoramento da atividade trofoblástica.\n\nPrincipal Motivo de Erro:\nO principal motivo de erro é a **confusão entre neoplasias ginecológicas gerais** (como carcinomas de colo ou endométrio) e as **neoplasias trofoblásticas específicas**, que possuem origem biológica distinta (tecido placentário).\n\nTake-Home Message:\nA DTG é um espectro de proliferação trofoblástica que evolui da **mola hidatiforme** para formas malignas como a **mola invasora e o coriocarcinoma**, sendo o **hCG** o pilar diagnóstico e de seguimento.\n\nEvolução de Diretrizes:\nA classificação de Ewing permanece como base histórica. Atualmente, a FIGO (Federação Internacional de Ginecologia e Obstetrícia) utiliza uma classificação mais abrangente que inclui o Tumor Trofoblástico do Sítio Placentário (TTSP) e o Tumor Trofoblástico Epitelioide, mas a tríade clássica de Ewing continua sendo o conceito fundamental cobrado em provas de residência.\n\nReferências:\n• Rezende Obstetrícia (Montenegro & Rezende)\n• Tratado de Ginecologia da FEBRASGO\n• FIGO staging for gestational trophoblastic neoplasia",
+    "images": [],
+    "correctAnswer": "B",
+    "isAnulada": false,
+    "source": "questmed",
+    "mainErrorReason": "O principal motivo de erro é a **confusão entre neoplasias ginecológicas gerais** (como carcinomas de colo ou endométrio) e as **neoplasias trofoblásticas específicas**, que possuem origem biológica distinta (tecido placentário).",
+    "takeHomeMessage": "A DTG é um espectro de proliferação trofoblástica que evolui da **mola hidatiforme** para formas malignas como a **mola invasora e o coriocarcinoma**, sendo o **hCG** o pilar diagnóstico e de seguimento.",
+    "guidelineEvolution": "A classificação de Ewing permanece como base histórica. Atualmente, a FIGO (Federação Internacional de Ginecologia e Obstetrícia) utiliza uma classificação mais abrangente que inclui o Tumor Trofoblástico do Sítio Placentário (TTSP) e o Tumor Trofoblástico Epitelioide, mas a tríade clássica de Ewing continua sendo o conceito fundamental cobrado em provas de residência.",
+    "references": [
+      "Rezende Obstetrícia (Montenegro & Rezende)",
+      "Tratado de Ginecologia da FEBRASGO",
+      "FIGO staging for gestational trophoblastic neoplasia"
+    ]
+  },
+  {
+    "id": "e2649855-7228-4ec7-b1c5-8a2e603a088c",
+    "code": "SANTACASADEM-2020-OBS-6359",
+    "institution": "Santa Casa de Maceió (AL)",
+    "banca": "Santa Casa de Maceió (AL)",
+    "year": 2020,
+    "tipo_prova": "Prova 1",
+    "modalidade": "Residência Médica",
+    "especialidade": "Obstetrícia",
+    "tema": "Trabalho de Parto e Parto",
+    "foco": "Amniorrexe Prematura: Corioamnionite e Profilaxias",
+    "subfoco": "Definição e Epidemiologia da RPM",
+    "difficulty": "Médio",
+    "type": "Múltipla escolha",
+    "is_anulada": false,
+    "statement": "Uma gestante de 32 semanas é internada em uma maternidade de alto risco com diagnóstico de amniorrexe prematura. A complicação que não é esperada nesse caso é:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Descolamento prematuro de placenta.",
+        "explanation": "O descolamento prematuro de placenta (DPP) é uma complicação **frequentemente associada à amniorrexe prematura (RPMO)**, especialmente em casos de polidrâmnio ou infecção intra-amniótica, devido à descompressão súbita da cavidade uterina."
+      },
+      {
+        "letter": "B",
+        "text": "Sofrimento fetal.",
+        "explanation": "O sofrimento fetal é uma **consequência esperada e comum** na RPMO, decorrente da hipóxia crônica por insuficiência placentária, infecção ascendente ou, secundariamente, pela oligodramnia severa que compromete a reserva funcional fetal."
+      },
+      {
+        "letter": "C",
+        "text": "Compressão de cordão umbilical.",
+        "explanation": "A compressão de cordão umbilical é um evento **tipicamente associado a quadros de oligodramnia severa ou prolapso de cordão**, mas, na fisiopatologia clássica da RPMO sem trabalho de parto ativo ou prolapso, a compressão funicular **não é considerada uma complicação direta ou esperada da rotura das membranas em si**."
+      },
+      {
+        "letter": "D",
+        "text": "Corioamnionite.",
+        "explanation": "A corioamnionite é a **complicação infecciosa mais temida e esperada** na RPMO, sendo a principal causa de morbidade materna e neonatal, decorrente da ascensão de microrganismos da flora vaginal para o espaço amniótico após a quebra da barreira mecânica."
+      }
+    ],
+    "correct_answer": "C",
+    "commentary": "[POSSÍVEL ERRO DE GABARITO / QUESTÃO PASSÍVEL DE ANULAÇÃO]\nEmbora a banca considere a alternativa C como a correta, a literatura obstétrica clássica (como o Rezende e o Williams) reconhece que a oligodramnia secundária à RPMO pode, sim, levar à compressão de cordão umbilical. A questão é tecnicamente falha, pois a compressão de cordão é uma complicação possível e documentada em casos de RPMO com oligodramnia acentuada. A banca provavelmente considerou a compressão de cordão como um evento mais restrito ao prolapso de cordão ou trabalho de parto avançado, ignorando a fisiopatologia da compressão por redução do volume de líquido amniótico.\n\nA **amniorrexe prematura (RPMO)** altera drasticamente o ambiente intrauterino. A perda de líquido amniótico leva à **oligodramnia**, que predispõe a **deformidades fetais (sequência de Potter)**, **hipoplasia pulmonar** e **sofrimento fetal** por compressão funicular ou insuficiência placentária. A **corioamnionite** é a complicação infecciosa mandatória, enquanto o **descolamento prematuro de placenta** ocorre pela retração uterina súbita. A banca, ao eleger a compressão de cordão como 'não esperada', incorre em imprecisão técnica, visto que a redução do volume de líquido é um fator de risco direto para a compressão funicular.\n\nPrincipal Motivo de Erro:\nO aluno tende a considerar a compressão de cordão como uma complicação esperada devido à **oligodramnia**, o que é clinicamente correto, levando ao erro ao tentar encontrar uma alternativa que não guarde relação com a patologia.\n\nTake-Home Message:\nA **RPMO** tem como tríade de complicações principais: **infecção (corioamnionite)**, **sofrimento fetal** e **descolamento prematuro de placenta**; a compressão de cordão é uma consequência direta da **oligodramnia severa**.\n\nEvolução de Diretrizes:\nAs diretrizes de 2020 e as atuais (FEBRASGO/ACOG) mantêm o manejo conservador para RPMO pré-termo (antibioticoterapia, corticoide e neuroproteção), reconhecendo a compressão de cordão como um risco real em casos de oligodramnia, o que torna a questão tecnicamente controversa.\n\nReferências:\n• Rezende Obstetrícia\n• Williams Obstetrics, 25th Edition\n• Manual de Orientação em Obstetrícia - FEBRASGO",
+    "images": [],
+    "correctAnswer": "C",
+    "gabaritoHomologado": true,
+    "gabaritoFonte": "MedBrave_Strict_Match",
+    "gabaritoCruzadoEm": "2026-10-21T02:57:49.994Z",
+    "mainErrorReason": "O aluno tende a considerar a compressão de cordão como uma complicação esperada devido à **oligodramnia**, o que é clinicamente correto, levando ao erro ao tentar encontrar uma alternativa que não guarde relação com a patologia.",
+    "takeHomeMessage": "A **RPMO** tem como tríade de complicações principais: **infecção (corioamnionite)**, **sofrimento fetal** e **descolamento prematuro de placenta**; a compressão de cordão é uma consequência direta da **oligodramnia severa**.",
+    "guidelineEvolution": "As diretrizes de 2020 e as atuais (FEBRASGO/ACOG) mantêm o manejo conservador para RPMO pré-termo (antibioticoterapia, corticoide e neuroproteção), reconhecendo a compressão de cordão como um risco real em casos de oligodramnia, o que torna a questão tecnicamente controversa.",
+    "references": [
+      "Rezende Obstetrícia",
+      "Williams Obstetrics, 25th Edition",
+      "Manual de Orientação em Obstetrícia - FEBRASGO"
+    ]
+  },
+  {
+    "id": "cf38bb27-e564-4065-bd0a-96f00e7f9eb1",
+    "code": "HFCF-2019-OBS-6361",
+    "institution": "HFCF - Hospital Federal Cardoso Fontes (RJ)",
+    "banca": "HFCF",
+    "year": 2019,
+    "tipo_prova": "Prova 1",
+    "modalidade": "Residência Médica",
+    "especialidade": "Obstetrícia",
+    "tema": "Trabalho de Parto e Parto",
+    "foco": "Estática Fetal",
+    "subfoco": "Situação Fetal: Longitudinal, Transversa e Oblíqua",
+    "difficulty": "Fácil",
+    "type": "Múltipla escolha",
+    "is_anulada": false,
+    "statement": "Avalie a figura abaixo. A situação, posição, variedade de posição e amplitude de rotação são, respectivamente:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Oblíqua / occipito direita posterior / direita / 135º",
+        "explanation": "A situação é **obliqua**, o que está incorreto, pois o eixo longitudinal do feto coincide com o eixo longitudinal do útero materno, caracterizando uma situação longitudinal."
+      },
+      {
+        "letter": "B",
+        "text": "Longitudinal / direita / occipito direita posterior / 135º",
+        "explanation": "A situação é longitudinal, a posição é direita (dorso fetal voltado para o lado direito da mãe) e a variedade de posição é **occipito direita posterior (ODP)**, exigindo uma rotação interna de **135º** para que o occipício alcance a sínfise púbica (occipito-púbica)."
+      },
+      {
+        "letter": "C",
+        "text": "Longitudinal / esquerda / occipito esquerda posterior / 135º",
+        "explanation": "A posição é **esquerda**, o que está incorreto, pois o dorso fetal está voltado para o lado direito da mãe, e a variedade de posição **occipito esquerda posterior** é incompatível com a imagem apresentada."
+      },
+      {
+        "letter": "D",
+        "text": "Transversa / direita / occipito direita posterior / 45º",
+        "explanation": "A situação é **transversa**, o que está incorreto, pois o feto encontra-se em situação longitudinal, e a amplitude de rotação de **45º** é insuficiente para uma variedade posterior atingir a posição occipito-púbica."
+      }
+    ],
+    "correct_answer": "B",
+    "commentary": "A estática fetal define a relação entre o feto e o canal de parto. Na **situação longitudinal**, o maior eixo fetal coincide com o materno. A **posição** é determinada pelo dorso fetal em relação ao lado materno (neste caso, direito). A **variedade de posição** é definida pela relação entre o ponto de referência fetal (occipício) e os pontos de referência da pelve materna. Em uma variedade **occipito direita posterior (ODP)**, o occipício está a 135º da sínfise púbica. Para o desprendimento, o feto deve realizar uma rotação interna de 135º no sentido anti-horário para atingir a posição occipito-púbica (OP), ou 45º no sentido horário para atingir a posição occipito-sacra (OS).\n\nPrincipal Motivo de Erro:\nO principal motivo que leva o aluno ao erro nesta questão é a **confusão na contagem dos graus de rotação** a partir dos pontos de referência da pelve materna e a dificuldade em identificar corretamente o lado do dorso fetal na representação gráfica.\n\nTake-Home Message:\nNa variedade occipito posterior, o feto necessita de uma rotação interna de 135º para atingir a posição occipito-púbica, sendo este um mecanismo de parto mais prolongado que as variedades anteriores.\n\nEvolução de Diretrizes:\nOs conceitos de estática fetal e mecanismos de parto permanecem inalterados na literatura obstétrica clássica, mantendo-se a mesma nomenclatura e os mesmos graus de rotação descritos nos tratados de obstetrícia de referência.\n\nReferências:\n• Rezende Obstetrícia Fundamental\n• Williams Obstetrics",
+    "images": [
+      "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2019/avalie-a-figura-abaixo-a-situacao-posicao-variedade-de-posic-01.webp"
+    ],
+    "correctAnswer": "B",
+    "isAnulada": false,
+    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a **confusão na contagem dos graus de rotação** a partir dos pontos de referência da pelve materna e a dificuldade em identificar corretamente o lado do dorso fetal na representação gráfica.",
+    "takeHomeMessage": "Na variedade occipito posterior, o feto necessita de uma rotação interna de 135º para atingir a posição occipito-púbica, sendo este um mecanismo de parto mais prolongado que as variedades anteriores.",
+    "guidelineEvolution": "Os conceitos de estática fetal e mecanismos de parto permanecem inalterados na literatura obstétrica clássica, mantendo-se a mesma nomenclatura e os mesmos graus de rotação descritos nos tratados de obstetrícia de referência.",
+    "references": [
+      "Rezende Obstetrícia Fundamental",
+      "Williams Obstetrics"
+    ]
+  },
+  {
+    "id": "2f996f2e-0899-4984-816c-6ee0c2cbf3eb",
+    "code": "CEPOA-2019-OBS-6363",
+    "institution": "CEPOA - Centro de Estudos e Pesquisas Oculistas Associados (RJ)",
+    "banca": "CEPOA",
+    "year": 2019,
+    "tipo_prova": "Prova 1",
+    "modalidade": "Residência Médica",
+    "especialidade": "Obstetrícia",
+    "tema": "Intercorrências Clínicas na Gestação",
+    "foco": "Hepatites B e C na Gestação: Via de Parto e Imunoprofilaxia do RN",
+    "subfoco": "Hepatite B: Infecção Aguda/Recente na Gestação",
+    "difficulty": "Médio",
+    "type": "Múltipla escolha",
+    "is_anulada": false,
+    "statement": "Os resultados de exames pré natais mostrando sorologia para hepatite com HBsAG negativo, anti-HBsAG positivo, anti-HBc positivo, anti-HBe positivo, indicam:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "A gestante apresenta hepatite B crônica",
+        "explanation": "A presença de HBsAg negativo **exclui a infecção ativa pelo vírus da hepatite B**, tornando incorreta a afirmação de hepatite B crônica, que exigiria a persistência do antígeno de superfície por mais de 6 meses."
+      },
+      {
+        "letter": "B",
+        "text": "A gestante apresenta hepatite C crônica",
+        "explanation": "A sorologia apresentada refere-se exclusivamente a marcadores do vírus da hepatite B (HBV). A hepatite C é diagnosticada pela pesquisa de anti-HCV e, se positivo, confirmada por **RNA-HCV (PCR), não tendo relação com os marcadores de HBV citados**."
+      },
+      {
+        "letter": "C",
+        "text": "A paciente foi vacinada para hepatite B",
+        "explanation": "A vacinação isolada induz apenas a produção de anti-HBs. A presença de anti-HBc (anticorpo contra o antígeno do core) indica **contato prévio com o vírus selvagem**, o que não ocorre após a vacinação, que utiliza apenas o HBsAg purificado."
+      },
+      {
+        "letter": "D",
+        "text": "A paciente teve contato com o vírus da hepatite B e esta imune.",
+        "explanation": "O perfil HBsAg negativo, anti-HBs positivo e anti-HBc positivo indica que o paciente **teve contato prévio com o vírus da hepatite B e desenvolveu imunidade natural**, sendo o anti-HBs o marcador de proteção a longo prazo."
+      }
+    ],
+    "correct_answer": "D",
+    "commentary": "O diagnóstico sorológico da hepatite B baseia-se na interpretação combinada de três marcadores principais: HBsAg, anti-HBc (IgG) e anti-HBs. O HBsAg negativo indica ausência de infecção atual. O anti-HBc positivo (IgG) confirma exposição prévia ao vírus selvagem (diferenciando da vacinação). O anti-HBs positivo confirma a **soroconversão e a imunidade adquirida**. A presença de anti-HBe positivo indica que o vírus não está em replicação ativa, o que é consistente com a fase de resolução da infecção ou estado de portador inativo após contato prévio.\n\nPrincipal Motivo de Erro:\nO principal motivo de erro é a **confusão entre o perfil sorológico de imunidade vacinal (apenas anti-HBs positivo) e o perfil de imunidade por infecção natural (anti-HBs e anti-HBc positivos)**.\n\nTake-Home Message:\nA presença de anti-HBc positivo é o **divisor de águas que diferencia a imunidade por infecção natural da imunidade conferida pela vacina**.\n\nEvolução de Diretrizes:\nO entendimento da interpretação sorológica do HBV permanece inalterado desde 2019, seguindo os critérios estabelecidos pelo Ministério da Saúde e consensos da Sociedade Brasileira de Hepatologia.\n\nReferências:\n• Ministério da Saúde. Protocolo Clínico e Diretrizes Terapêuticas para Hepatites Virais e Outras Infecções Transmissíveis.\n• Rezende Obstetrícia, 13ª Edição.\n• Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO) - Manual de Orientação em Obstetrícia.",
+    "images": [],
+    "correctAnswer": "D",
+    "isAnulada": false,
+    "mainErrorReason": "O principal motivo de erro é a **confusão entre o perfil sorológico de imunidade vacinal (apenas anti-HBs positivo) e o perfil de imunidade por infecção natural (anti-HBs e anti-HBc positivos)**.",
+    "takeHomeMessage": "A presença de anti-HBc positivo é o **divisor de águas que diferencia a imunidade por infecção natural da imunidade conferida pela vacina**.",
+    "guidelineEvolution": "O entendimento da interpretação sorológica do HBV permanece inalterado desde 2019, seguindo os critérios estabelecidos pelo Ministério da Saúde e consensos da Sociedade Brasileira de Hepatologia.",
+    "references": [
+      "Ministério da Saúde. Protocolo Clínico e Diretrizes Terapêuticas para Hepatites Virais e Outras Infecções Transmissíveis.",
+      "Rezende Obstetrícia, 13ª Edição.",
+      "Federação Brasileira das Associações de Ginecologia e Obstetrícia (FEBRASGO) - Manual de Orientação em Obstetrícia."
+    ]
   }
 ]
