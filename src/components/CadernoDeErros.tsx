@@ -32,67 +32,9 @@ const SIX_SPECIALTIES = [
   'Medicina Preventiva e Social'
 ];
 
-export const ERROR_REASON_CONFIG: Record<
-  ErrorReasonType,
-  { label: string; icon: string; bg: string; text: string; border: string; desc: string }
-> = {
-  lacuna_teorica: {
-    label: 'Lacuna Teórica',
-    icon: '🧠',
-    bg: 'bg-rose-500/10 dark:bg-rose-500/15',
-    text: 'text-rose-700 dark:text-rose-300',
-    border: 'border-rose-300 dark:border-rose-800/60',
-    desc: 'Não lembrava do conceito, critério ou conduta.'
-  },
-  desatencao: {
-    label: 'Falta de Atenção',
-    icon: '⚡',
-    bg: 'bg-amber-500/10 dark:bg-amber-500/15',
-    text: 'text-amber-700 dark:text-amber-300',
-    border: 'border-amber-300 dark:border-amber-800/60',
-    desc: 'Sabia o conteúdo, mas errou por leitura rápida ou distração.'
-  },
-  duvida_entre_duas: {
-    label: 'Dúvida entre 2',
-    icon: '⚖️',
-    bg: 'bg-sky-500/10 dark:bg-sky-500/15',
-    text: 'text-sky-700 dark:text-sky-300',
-    border: 'border-sky-300 dark:border-sky-800/60',
-    desc: 'Eliminou as outras, mas escolheu o distrator final.'
-  },
-  interpretacao: {
-    label: 'Interpretação',
-    icon: '📄',
-    bg: 'bg-indigo-500/10 dark:bg-indigo-500/15',
-    text: 'text-indigo-700 dark:text-indigo-300',
-    border: 'border-indigo-300 dark:border-indigo-800/60',
-    desc: 'Confundiu o comando da questão ou enunciado longo.'
-  },
-  pegadinha: {
-    label: 'Pegadinha de Banca',
-    icon: '🪤',
-    bg: 'bg-purple-500/10 dark:bg-purple-500/15',
-    text: 'text-purple-700 dark:text-purple-300',
-    border: 'border-purple-300 dark:border-purple-800/60',
-    desc: 'Exceção ou detalhe capcioso formulado pela banca.'
-  },
-  tempo_esgotado: {
-    label: 'Pressão de Tempo',
-    icon: '⏳',
-    bg: 'bg-orange-500/10 dark:bg-orange-500/15',
-    text: 'text-orange-700 dark:text-orange-300',
-    border: 'border-orange-300 dark:border-orange-800/60',
-    desc: 'Sem tempo para raciocinar, precisou chutar.'
-  },
-  outro: {
-    label: 'Outro Motivo',
-    icon: '📌',
-    bg: 'bg-zinc-500/10 dark:bg-zinc-500/15',
-    text: 'text-zinc-700 dark:text-zinc-300',
-    border: 'border-zinc-300 dark:border-zinc-700/60',
-    desc: 'Outro fator pessoal ou questão ambígua.'
-  }
-};
+import { CadernoErrosReviewSession } from './CadernoErrosReviewSession';
+import { ERROR_REASON_CONFIG } from '@/utils/errorReasons';
+export { ERROR_REASON_CONFIG };
 
 interface CadernoDeErrosProps {
   userAnswers: Record<string, UserAnswerItem>;
@@ -140,6 +82,7 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
   const [savedNotesAlert, setSavedNotesAlert] = useState<Record<string, boolean>>({});
   const [retryingQuestionId, setRetryingQuestionId] = useState<string | null>(null);
   const [selectedRetryOption, setSelectedRetryOption] = useState<Record<string, 'A' | 'B' | 'C' | 'D' | 'E'>>({});
+  const [reviewSessionQuestionIds, setReviewSessionQuestionIds] = useState<string[] | null>(null);
 
   // 1. Coleta todas as entradas de respostas que foram erradas (ou marcadas no caderno de erros)
   const errorEntries = useMemo(() => {
@@ -335,6 +278,21 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
     setRetryingQuestionId(null);
   };
 
+  // Se o aluno iniciou uma Sessão de Revisão Ativa às Cegas, exibe a interface focada de teste
+  if (reviewSessionQuestionIds && reviewSessionQuestionIds.length > 0) {
+    return (
+      <CadernoErrosReviewSession
+        questionIds={reviewSessionQuestionIds}
+        questionsMap={questionsMap}
+        userAnswers={userAnswers}
+        onAnswerQuestion={onAnswerQuestion}
+        onUpdateAnswerMeta={onUpdateAnswerMeta}
+        onClose={() => setReviewSessionQuestionIds(null)}
+        onNavigateToBanco={onNavigateToBanco}
+      />
+    );
+  }
+
   return (
     <div className="space-y-6 animate-in fade-in duration-200">
       {/* 1. Header do Caderno de Erros com Visual de Excelência Médica */}
@@ -366,12 +324,12 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
             </div>
           </div>
 
-          {/* Botão de Ação Rápida: Iniciar Bateria com os Erros Filtrados */}
+          {/* Botão de Ação Rápida: Iniciar Lista de Revisão Ativa às Cegas */}
           {filteredEntries.length > 0 && (
-            <div className="flex items-center gap-2">
+            <div className="flex flex-wrap items-center gap-2">
               <button
                 type="button"
-                onClick={() => onStartTreinoErros(filteredEntries.map((e) => e.questionId))}
+                onClick={() => setReviewSessionQuestionIds(filteredEntries.map((e) => e.questionId))}
                 className="w-full sm:w-auto px-5 py-2.5 rounded-xl text-white text-xs font-bold transition-all cursor-pointer shadow-md flex items-center justify-center gap-2 hover:scale-102 active:scale-98"
                 style={{
                   backgroundColor: accentConfig.primaryHex,
@@ -379,7 +337,7 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
                 }}
               >
                 <Zap className="w-4 h-4 fill-white" />
-                <span>Treinar estes Erros ({filteredEntries.length})</span>
+                <span>Iniciar Revisão às Cegas ({filteredEntries.length})</span>
               </button>
             </div>
           )}
@@ -692,15 +650,20 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 p-3 rounded-2xl bg-slate-50 dark:bg-zinc-900/60 border border-slate-200/70 dark:border-zinc-800/60 text-xs">
                   <div className="flex items-center gap-2.5">
                     <div className="w-7 h-7 rounded-lg bg-rose-500/15 border border-rose-500/30 text-rose-600 dark:text-rose-400 font-bold font-mono flex items-center justify-center shrink-0">
-                      {answer.letter}
+                      {answer.previousLetter || answer.letter}
                     </div>
                     <div>
                       <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-zinc-500 block">
-                        Você Marcou
+                        {answer.previousLetter ? 'Você Havia Marcado Antes' : 'Você Marcou'}
                       </span>
                       <span className="font-semibold text-rose-600 dark:text-rose-400">
-                        Alternativa {answer.letter} (Incorreta)
+                        Alternativa {answer.previousLetter || answer.letter} (Incorreta)
                       </span>
+                      {answer.previousLetter && isRecuperada && (
+                        <span className="text-[10px] text-emerald-600 dark:text-emerald-400 block font-semibold mt-0.5">
+                          ✓ Superada na revisão (Alternativa {answer.letter})
+                        </span>
+                      )}
                     </div>
                   </div>
 
@@ -933,16 +896,27 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
                     </button>
                   </div>
 
-                  <div className="flex items-center gap-2">
-                    {/* Botão Refazer Questão */}
+                  <div className="flex flex-wrap items-center gap-2">
+                    {/* Botão Revisar às Cegas (Sessão Dedicada sem Spoilers) */}
+                    <button
+                      type="button"
+                      onClick={() => setReviewSessionQuestionIds([questionId])}
+                      className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold text-white transition-all cursor-pointer shadow-xs hover:scale-102"
+                      style={{ backgroundColor: accentConfig.primaryHex }}
+                    >
+                      <Zap className="w-3.5 h-3.5 fill-white" />
+                      <span>Revisar às Cegas</span>
+                    </button>
+
+                    {/* Botão Refazer Questão no Card */}
                     {!isRecuperada && (
                       <button
                         type="button"
                         onClick={() => setRetryingQuestionId(isRetrying ? null : questionId)}
-                        className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-bold bg-rose-500/10 hover:bg-rose-500/15 text-rose-700 dark:text-rose-300 border border-rose-500/25 transition-all cursor-pointer"
+                        className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-zinc-800 hover:bg-slate-200 dark:hover:bg-zinc-700 text-slate-700 dark:text-zinc-300 border border-slate-200 dark:border-zinc-700 transition-all cursor-pointer"
                       >
                         <RotateCcw className="w-3.5 h-3.5" />
-                        <span>{isRetrying ? 'Fechar Treino' : 'Refazer Questão'}</span>
+                        <span>{isRetrying ? 'Fechar Treino' : 'Refazer no Card'}</span>
                       </button>
                     )}
 
