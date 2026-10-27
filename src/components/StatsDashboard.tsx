@@ -1672,7 +1672,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
           <DailyHabitsAndHourlyExplorer
             userAnswers={userAnswers}
             period={filters.period}
-            dailyGoal={stats.dailyGoal || 30}
+            dailyGoal={30}
             totalAnsweredInPeriod={activeMetrics.answered}
           />
         </div>

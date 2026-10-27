@@ -22,12 +22,12 @@ import {
   HelpCircle,
   Check
 } from 'lucide-react';
-import { Question } from '@/types';
+import { Question, UserAnswerItem } from '@/types';
 import { useTheme } from '@/context/ThemeContext';
 
 export interface SessionPerformanceViewProps {
   questions: Question[];
-  userAnswers: Record<string, { selectedOption: string; isCorrect: boolean }>;
+  userAnswers: Record<string, UserAnswerItem>;
   onReturnToFilters: () => void;
   onReviewAll: () => void;
   onNavigateToQuestion: (questionId: string) => void;
