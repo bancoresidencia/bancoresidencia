@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { callGeminiAi } from '@/lib/gemini';
+import { callGeminiAi, parseCleanJson } from '@/lib/gemini';
 
 interface CachedDiagnosis {
   timestamp: number;
@@ -98,17 +98,7 @@ Responda OBRIGATORIAMENTE em JSON válido:
 `;
 
     const rawResponse = await callGeminiAi(prompt, { temperature: 0.2, responseMimeType: 'application/json' });
-    let parsed: Record<string, unknown>;
-    try {
-      parsed = JSON.parse(rawResponse);
-    } catch {
-      const match = rawResponse.match(/\{[\s\S]*\}/);
-      if (match) {
-        parsed = JSON.parse(match[0]);
-      } else {
-        throw new Error('Falha ao processar resposta estruturada da IA.');
-      }
-    }
+    const parsed = parseCleanJson<Record<string, unknown>>(rawResponse);
 
     diagnosisCache.set(cacheKey, { timestamp: Date.now(), data: parsed });
 

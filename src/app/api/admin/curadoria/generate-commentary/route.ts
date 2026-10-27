@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { callGeminiAi, parseCleanJson, getAllGeminiKeys } from '@/lib/gemini';
 
 export const dynamic = 'force-dynamic';
 
@@ -23,22 +24,7 @@ interface GenerateCommentaryBody {
   currentCommentary?: string;
 }
 
-function getAvailableGeminiKey(): string | null {
-  const envKeys = [
-    process.env.GEMINI_API_KEY,
-    process.env.GEMINI_API_KEY_1,
-    process.env.GEMINI_API_KEY_2,
-    process.env.GEMINI_API_KEY_3,
-    process.env.GEMINI_API_KEY_4,
-    process.env.GEMINI_API_KEY_5
-  ].filter((k): k is string => Boolean(k && k.trim().length > 10));
 
-  if (envKeys.length > 0) {
-    const randomIdx = Math.floor(Math.random() * envKeys.length);
-    return envKeys[randomIdx];
-  }
-  return null;
-}
 
 function sanitizeText(txt: string): string {
   if (!txt) return '';
@@ -80,10 +66,10 @@ export async function POST(req: NextRequest) {
     const goldOption = options.find((o) => o.letter.toUpperCase() === goldAnswer);
     const goldOptionText = goldOption?.text || (goldAnswer === 'ANULADA' ? 'Questão Anulada' : '');
 
-    const geminiKey = getAvailableGeminiKey();
+    const hasGeminiKeys = getAllGeminiKeys().length > 0;
 
     // Se tiver chave Gemini disponível, gera via IA Médica de Alta Performance
-    if (geminiKey) {
+    if (hasGeminiKeys) {
       try {
         const formattedOptions = options
           .map((o) => `[Alternativa ${o.letter}]: ${o.text}`)
@@ -141,56 +127,20 @@ ${optionsSchemaExample}
   ]
 }`;
 
-        const candidateModels = [
-          'gemini-3.5-flash',
-          'gemini-flash-latest',
-          'gemini-3.8-flash',
-          'gemini-3-flash-preview',
-          'gemini-2.5-flash'
-        ];
-
-        let rawText: string | null = null;
-        for (const model of candidateModels) {
-          try {
-            const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${geminiKey}`;
-            const aiRes = await fetch(url, {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify({
-                contents: [{ parts: [{ text: prompt }] }],
-                generationConfig: {
-                  responseMimeType: 'application/json',
-                  temperature: 0.15
-                }
-              })
-            });
-
-            if (aiRes.ok) {
-              const aiJson = await aiRes.json();
-              rawText = aiJson.candidates?.[0]?.content?.parts?.[0]?.text || null;
-              if (rawText) break;
-            } else {
-              const errBody = await aiRes.text();
-              console.warn(`[GenerateCommentary API] Model ${model} returned ${aiRes.status}:`, errBody.slice(0, 120));
-            }
-          } catch (mErr) {
-            console.warn(`[GenerateCommentary API] Error calling model ${model}:`, mErr);
-          }
-        }
+        const rawText = await callGeminiAi(prompt, {
+          temperature: 0.15,
+          responseMimeType: 'application/json'
+        });
 
         if (rawText) {
-            let parsed = null;
-            try {
-              let clean = rawText.trim().replace(/^```json\s*/i, '').replace(/^```\s*/i, '').replace(/\s*```$/i, '').trim();
-              const firstB = clean.indexOf('{');
-              const lastB = clean.lastIndexOf('}');
-              if (firstB !== -1 && lastB !== -1 && lastB > firstB) {
-                clean = clean.slice(firstB, lastB + 1);
-              }
-              parsed = JSON.parse(clean);
-            } catch (err) {
-              console.warn('[GenerateCommentary API] Parse JSON error:', err);
-            }
+          const parsed = parseCleanJson<{
+            optionExplanations?: Record<string, string>;
+            finalCommentary?: string;
+            mainErrorReason?: string;
+            takeHomeMessage?: string;
+            guidelineEvolution?: string;
+            references?: string[];
+          }>(rawText);
 
             if (parsed && parsed.optionExplanations) {
               const optionExplanations: Record<string, string> = {};

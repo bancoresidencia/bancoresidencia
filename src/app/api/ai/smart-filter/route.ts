@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { callGeminiAi } from '@/lib/gemini';
+import { callGeminiAi, parseCleanJson } from '@/lib/gemini';
 import { reconcileAIFilters } from '@/utils/taxonomyMatcher';
 
 export const dynamic = 'force-dynamic';
@@ -75,7 +75,11 @@ Responda ESTRITAMENTE em formato JSON com o seguinte schema:
       responseMimeType: 'application/json'
     });
 
-    const parsed = JSON.parse(rawResponse);
+    const parsed = parseCleanJson<{
+      summary?: string;
+      quantidade?: number;
+      filters?: Record<string, unknown>;
+    }>(rawResponse);
 
     // Reconcilia os filtros retornados com a taxonomia oficial do banco de dados (busca por semelhante)
     const reconciled = reconcileAIFilters(

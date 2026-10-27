@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { supabase } from '@/lib/supabase';
 import { resolveBancaList } from '@/services/questionService';
-import { callGeminiAi } from '@/lib/gemini';
+import { callGeminiAi, parseCleanJson } from '@/lib/gemini';
 
 export const dynamic = 'force-dynamic';
 
@@ -101,7 +101,7 @@ Responda ESTRITAMENTE em formato JSON com o seguinte schema:
         temperature: 0.2,
         responseMimeType: 'application/json'
       });
-      aiAnalysis = JSON.parse(rawAi);
+      aiAnalysis = parseCleanJson(rawAi);
     } catch (e: unknown) {
       const msg = e instanceof Error ? e.message : String(e);
       console.warn('Falha na análise Gemini para Raio-X da Banca:', msg);
