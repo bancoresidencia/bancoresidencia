@@ -97,15 +97,62 @@ Responda OBRIGATORIAMENTE em JSON válido:
 }
 `;
 
-    const rawResponse = await callGeminiAi(prompt, { temperature: 0.2, responseMimeType: 'application/json' });
-    const parsed = parseCleanJson<Record<string, unknown>>(rawResponse);
+    try {
+      const rawResponse = await callGeminiAi(prompt, { temperature: 0.2, responseMimeType: 'application/json' });
+      const parsed = parseCleanJson<Record<string, unknown>>(rawResponse);
 
-    diagnosisCache.set(cacheKey, { timestamp: Date.now(), data: parsed });
+      diagnosisCache.set(cacheKey, { timestamp: Date.now(), data: parsed });
 
-    return NextResponse.json({
-      success: true,
-      ...parsed
-    });
+      return NextResponse.json({
+        success: true,
+        ...parsed
+      });
+    } catch (aiError: unknown) {
+      console.warn('[Performance Mentor] Gemini indisponível ou cota esgotada. Ativando fallback psicométrico instantâneo:', aiError);
+
+      const topCritical = Array.isArray(criticalSubfocos) && criticalSubfocos.length > 0 ? criticalSubfocos[0] : null;
+      const criticalSubfoco = topCritical?.subfoco || 'Condutas de Primeira Linha e Emergências';
+      const criticalTema = topCritical?.tema || topCritical?.specialty || 'Clínica Médica e Cirurgia';
+      const criticalSpecialty = topCritical?.specialty || 'Especialidade Prioritária';
+
+      const thetaFormatted = typeof theta === 'number' ? theta.toFixed(2) : String(theta || '1.0');
+      const rateFormatted = accuracyRate > 0 ? `${accuracyRate.toFixed(1)}%` : 'em consolidação';
+
+      const fallbackData = {
+        isAiGenerated: false,
+        diagnosticoPontos: [
+          `**Aproveitamento Global:** Desempenho geral de ${rateFormatted} com percentil estimado em **${percentil}**, exigindo ajuste fino para atingir a zona de corte em ${targetExam}.`,
+          `**Perfil de Discriminação:** O escore Theta atual de **${thetaFormatted}** indica retenção teórica básica, mas vulnerabilidade a distratores em questões de média complexidade.`
+        ],
+        alertaTRIPontos: [
+          `**Curva Psicométrica:** Erros repetidos em conceitos fundamentais depreciam a coerência pedagógica no modelo TRI, derrubando o escore final.`,
+          `**Impacto TRI:** A prioridade absoluta é blindar acertos nas questões de fácil e média dificuldade para garantir a máxima pontuação psicométrica.`
+        ],
+        padraoErrosPontos: [
+          `**Ponto de Sangria:** Concentração crítica de erros identificada em **${criticalSubfoco}**, onde a inversão de conduta imediata tem gerado perdas recorrentes.`,
+          `**Armadilha de Banca:** Pegadinhas clássicas da banca de ${targetExam} explorando dosagens limítrofes e contraindicações relativas como distratores prioritários.`
+        ],
+        planoDeAcaoImediato: [
+          `**Ação 1:** Revisar o fluxograma padrão-ouro e critérios diagnósticos de **${criticalSubfoco}**.`,
+          `**Ação 2:** Resolver bloco direcionado de 15 questões focadas exclusivamente em **${criticalSubfoco}** para consolidar o padrão mental.`,
+          `**Ação 3:** Realizar revisão cega no Caderno de Erros das questões erradas recentemente para validação da retenção em 48h.`
+        ],
+        recomendacaoPratica: {
+          specialty: criticalSpecialty,
+          tema: criticalTema,
+          subfoco: criticalSubfoco,
+          questoesSugeridas: 15,
+          motivo: `Subfoco com maior índice de erros e alto impacto direto na curva psicométrica do ${targetExam}.`
+        }
+      };
+
+      diagnosisCache.set(cacheKey, { timestamp: Date.now(), data: fallbackData });
+
+      return NextResponse.json({
+        success: true,
+        ...fallbackData
+      });
+    }
   } catch (error: unknown) {
     console.error('Erro na rota de auditoria de performance IA:', error);
     const msg = error instanceof Error ? error.message : 'Falha ao gerar auditoria de desempenho com IA.';
