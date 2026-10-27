@@ -197,24 +197,9 @@ export const AIPerformanceMentorCard: React.FC<AIPerformanceMentorCardProps> = (
           <div>
             <div className="flex items-center gap-2">
               <h3 className="text-xs sm:text-sm font-bold text-slate-900 dark:text-white tracking-tight">
-                Mentor Clínico IA — Auditoria Psicométrica & Padrões
+                Mentor IA
               </h3>
-              <span className="text-[9px] uppercase font-bold tracking-wider px-1.5 py-0.2 rounded-md bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20">
-                Gemini 3.5
-              </span>
-              <span className={`text-[9px] font-bold px-1.5 py-0.2 rounded-md border ${
-                isExpanded 
-                  ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/20' 
-                  : 'bg-slate-200/60 dark:bg-zinc-800 text-slate-600 dark:text-zinc-400 border-slate-300/40 dark:border-zinc-700'
-              }`}>
-                {isExpanded ? 'Aberto' : 'Recolhido'}
-              </span>
             </div>
-            <p className="text-[11px] text-slate-500 dark:text-zinc-400">
-              {isExpanded
-                ? `Diagnóstico direto em tópicos e prescrição cirúrgica para ${targetExam}`
-                : `Toque para expandir a auditoria direta em tópicos para ${targetExam}`}
-            </p>
           </div>
         </div>
 
@@ -234,12 +219,14 @@ export const AIPerformanceMentorCard: React.FC<AIPerformanceMentorCardProps> = (
             </button>
           )}
 
-          <div className="flex items-center gap-1.5 text-xs font-bold px-3 py-1.5 rounded-xl border border-slate-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-slate-700 dark:text-zinc-200 shadow-2xs">
-            <span>{isExpanded ? 'Recolher' : 'Expandir Mentor'}</span>
+          <div
+            className="flex items-center justify-center w-8 h-8 rounded-xl border border-slate-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-slate-700 dark:text-zinc-200 shadow-2xs hover:bg-slate-100 dark:hover:bg-zinc-700 transition-colors"
+            title={isExpanded ? 'Recolher Mentor' : 'Expandir Mentor'}
+          >
             {isExpanded ? (
-              <ChevronUp className="w-3.5 h-3.5" />
+              <ChevronUp className="w-4 h-4" />
             ) : (
-              <ChevronDown className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
+              <ChevronDown className="w-4 h-4" style={{ color: accentConfig.primaryHex }} />
             )}
           </div>
         </div>

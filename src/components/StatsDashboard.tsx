@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo, useCallback } from 'react';
+import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import {
   XAxis,
   YAxis,
@@ -15,7 +15,6 @@ import {
 } from 'recharts';
 import {
   Calendar,
-  CalendarDays,
   Search,
   Filter,
   AlertTriangle,
@@ -25,6 +24,7 @@ import {
   RotateCcw,
   Check,
   ChevronDown,
+  ChevronUp,
   Sparkles,
   Stethoscope,
   Target,
@@ -37,12 +37,137 @@ import {
   BookOpen,
   ArrowUpDown,
   AlertOctagon,
-  Loader2
+  Loader2,
+  Baby,
+  HeartPulse,
+  Activity,
+  ShieldAlert,
+  Scissors,
+  ShieldCheck,
+  Flower2,
+  Footprints
 } from 'lucide-react';
 import { UserStats, PerformanceFilterState, PeriodFilter, Modalidade, UserAnswerItem } from '@/types';
 import { useTheme } from '@/context/ThemeContext';
 import { clinicalHierarchy, mockInstitutionsList, mockBancas } from '@/data/mockQuestions';
 import { AIPerformanceMentorCard } from './AIPerformanceMentorCard';
+import { DailyHabitsAndHourlyExplorer } from './DailyHabitsAndHourlyExplorer';
+
+// Ícone anatômico de Ginecologia: Útero, colo uterino, trompas de Falópio e ovários bilaterais
+export const UterusIcon: React.FC<{ className?: string; strokeWidth?: number; style?: React.CSSProperties }> = ({
+  className = 'w-5 h-5',
+  strokeWidth = 2,
+  style
+}) => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={strokeWidth}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+    style={style}
+  >
+    {/* Fundo e corpo uterino com colo (cérvix) */}
+    <path d="M8.5 10c0 4 2 5.5 2 9.5h3c0-4 2-5.5 2-9.5" />
+    <path d="M8.5 10c1-1.2 2.2-1.8 3.5-1.8s2.5.6 3.5 1.8" />
+    {/* Trompa de Falópio esquerda com fímbrias */}
+    <path d="M8.5 10C6.5 7.8 4.5 6 2.5 7c-1.3.8-1 3.2.5 3.8" />
+    {/* Trompa de Falópio direita com fímbrias */}
+    <path d="M15.5 10c2-2.2 4-4 6-3 1.3.8 1 3.2-.5 3.8" />
+    {/* Ovários bilaterais */}
+    <circle cx="3.5" cy="13" r="1.8" />
+    <circle cx="20.5" cy="13" r="1.8" />
+  </svg>
+);
+
+// Ícone clínico de Obstetrícia: Gestante com barriga crescida e acolhimento materno
+export const PregnantWomanIcon: React.FC<{ className?: string; strokeWidth?: number; style?: React.CSSProperties }> = ({
+  className = 'w-5 h-5',
+  strokeWidth = 2,
+  style
+}) => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth={strokeWidth}
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+    style={style}
+  >
+    {/* Cabeça */}
+    <circle cx="11" cy="4" r="2.2" />
+    {/* Coluna e postura dorsal */}
+    <path d="M8.5 7.5v13.5" />
+    {/* Silhueta com barriga gravídica volumosa e proeminente */}
+    <path d="M10.8 7.5c1 .5 1.5 1.2 1.5 2.2 0 .6.3 1 .8 1.4 2 .8 4.2 2.2 4.2 4.9 0 2.8-2.2 4.5-4.8 4.5H10" />
+    {/* Perna de apoio */}
+    <path d="M11.5 20.5v1.5" />
+    {/* Mão materna acariciando a barriga */}
+    <path d="M12.2 11c.8 1 2 2 3.4 2.2" />
+  </svg>
+);
+
+// Componente de Contagem Fluida com Interpolação Ease-Out
+export const AnimatedCounter: React.FC<{
+  value: number;
+  decimals?: number;
+  suffix?: string;
+  duration?: number;
+  className?: string;
+  formatAsTime?: boolean;
+}> = ({ value, decimals = 0, suffix = '', duration = 750, className = '', formatAsTime = false }) => {
+  const [displayValue, setDisplayValue] = useState<number>(0);
+  const startTimeRef = useRef<number | null>(null);
+  const startValRef = useRef<number>(0);
+
+  useEffect(() => {
+    const startVal = startValRef.current;
+    const targetVal = value;
+    let animFrame: number;
+    startTimeRef.current = null;
+
+    const easeOutCubic = (t: number) => 1 - Math.pow(1 - t, 3);
+
+    const animate = (timestamp: number) => {
+      if (!startTimeRef.current) startTimeRef.current = timestamp;
+      const elapsed = timestamp - startTimeRef.current;
+      const progress = Math.min(1, elapsed / duration);
+      const easedProgress = easeOutCubic(progress);
+
+      const current = startVal + (targetVal - startVal) * easedProgress;
+      setDisplayValue(current);
+
+      if (progress < 1) {
+        animFrame = requestAnimationFrame(animate);
+      } else {
+        setDisplayValue(targetVal);
+        startValRef.current = targetVal;
+      }
+    };
+
+    animFrame = requestAnimationFrame(animate);
+    return () => {
+      cancelAnimationFrame(animFrame);
+    };
+  }, [value, duration]);
+
+  if (formatAsTime) {
+    const totalSecs = Math.round(displayValue);
+    const m = Math.floor(totalSecs / 60);
+    const s = totalSecs % 60;
+    return <span className={className}>{m}m {s.toString().padStart(2, '0')}s</span>;
+  }
+
+  const formatted = decimals > 0
+    ? displayValue.toFixed(decimals)
+    : Math.round(displayValue).toLocaleString('pt-BR');
+
+  return <span className={className}>{formatted}{suffix}</span>;
+};
 
 interface StatsDashboardProps {
   stats: UserStats;
@@ -85,6 +210,7 @@ interface CustomBarTooltipProps {
   payload?: Array<{
     payload: {
       label: string;
+      date?: string;
       resolvidas: number;
       acertos: number;
       erros: number;
@@ -98,10 +224,11 @@ const CustomBarTooltip: React.FC<CustomBarTooltipProps> = ({ active, payload, la
     const data = payload[0].payload;
     const taxa = data.resolvidas > 0 ? ((data.acertos / data.resolvidas) * 100).toFixed(1) : '0.0';
     const isGood = Number(taxa) >= 70;
+    const displayTitle = data.date && data.date !== data.label ? `${data.label} (${data.date})` : (data.date || label);
     return (
       <div className="bg-[var(--bg-card)]/95 backdrop-blur-md border border-[var(--card-border)] rounded-xl p-3.5 shadow-2xl min-w-[185px] text-xs">
         <div className="flex items-center justify-between border-b border-[var(--card-border)] pb-2 mb-2.5">
-          <span className="font-bold text-slate-900 dark:text-white uppercase tracking-wider font-heading">{label}</span>
+          <span className="font-bold text-slate-900 dark:text-white uppercase tracking-wider font-heading">{displayTitle}</span>
           <span className={`text-[11px] font-semibold px-2 py-0.5 rounded-full border ${
             isGood
               ? 'text-emerald-700 dark:text-emerald-400 bg-emerald-500/10 border-emerald-500/25'
@@ -153,23 +280,100 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
   // Sub-abas principais: Visão Geral | Especialidades | Raio-X de Erros
   const [activeSubTab, setActiveSubTab] = useState<StatsSubTab>('overview');
 
-  // Controle de expansão da tabela sanfona de especialidades
-  const [expandedAreas, setExpandedAreas] = useState<string[]>(['clinica', 'ginecologia', 'cirurgia']);
+  // Controle de expansão da tabela sanfona de especialidades e legenda (Imagem 3)
+  const [expandedAreas, setExpandedAreas] = useState<string[]>([]);
+  const [isLegendExpanded, setIsLegendExpanded] = useState<boolean>(true);
 
-  // Hover ativo no gráfico Donut de Especialidades
+  const toggleAreaExpansion = (areaId: string) => {
+    setExpandedAreas((prev) =>
+      prev.includes(areaId) ? prev.filter((id) => id !== areaId) : [...prev, areaId]
+    );
+  };
+
+  // Drawer lateral para temas da especialidade
+  const [selectedSpecialtyForDrawer, setSelectedSpecialtyForDrawer] = useState<{
+    id: string;
+    nome: string;
+    cor: string;
+    resolvidas: number;
+    acertos: number;
+    erros: number;
+    taxa: number;
+    temas: Array<{ nome: string; resolvidas: number; acertos: number; erros: number; taxa: number }>;
+  } | null>(null);
+  const [isSpecialtyDrawerOpen, setIsSpecialtyDrawerOpen] = useState<boolean>(false);
+  const [drawerTemaSearch, setDrawerTemaSearch] = useState<string>('');
+  const [drawerTemaFilter, setDrawerTemaFilter] = useState<'all' | 'errors' | 'good'>('all');
+
+  // Estados de controle de filtros, busca de instituições e calendário
   const [hoveredPieIndex, setHoveredPieIndex] = useState<number | null>(null);
+  const [isFilterDropdownOpen, setIsFilterDropdownOpen] = useState<boolean>(false);
+  const [instSearch, setInstSearch] = useState<string>('');
+  const [isCalendarOpen, setIsCalendarOpen] = useState<boolean>(false);
+  const [tempStartDate, setTempStartDate] = useState<string>(filters.customStartDate || '');
+  const [tempEndDate, setTempEndDate] = useState<string>(filters.customEndDate || '');
 
-  // Controle do menu dropdown flutuante de instituições & bancas
-  const [isFilterDropdownOpen, setIsFilterDropdownOpen] = useState(false);
-  const [instSearch, setInstSearch] = useState('');
+  const SPECIALTY_CARD_CONFIG: Record<string, {
+    icon: React.ComponentType<{ className?: string; strokeWidth?: number }>;
+    bgLight: string;
+    bgDark: string;
+    textColor: string;
+    borderLight: string;
+    borderDark: string;
+  }> = {
+    clinica: {
+      icon: Stethoscope,
+      bgLight: 'bg-blue-500/10',
+      bgDark: 'dark:bg-blue-500/20',
+      textColor: 'text-blue-600 dark:text-blue-400',
+      borderLight: 'border-blue-500/30',
+      borderDark: 'dark:border-blue-500/40'
+    },
+    cirurgia: {
+      icon: Scissors,
+      bgLight: 'bg-emerald-500/10',
+      bgDark: 'dark:bg-emerald-500/20',
+      textColor: 'text-emerald-600 dark:text-emerald-400',
+      borderLight: 'border-emerald-500/30',
+      borderDark: 'dark:border-emerald-500/40'
+    },
+    pediatria: {
+      icon: Baby,
+      bgLight: 'bg-amber-500/10',
+      bgDark: 'dark:bg-amber-500/20',
+      textColor: 'text-amber-600 dark:text-amber-400',
+      borderLight: 'border-amber-500/30',
+      borderDark: 'dark:border-amber-500/40'
+    },
+    ginecologia: {
+      icon: UterusIcon,
+      bgLight: 'bg-pink-500/10',
+      bgDark: 'dark:bg-pink-500/20',
+      textColor: 'text-pink-600 dark:text-pink-400',
+      borderLight: 'border-pink-500/30',
+      borderDark: 'dark:border-pink-500/40'
+    },
+    obstetricia: {
+      icon: PregnantWomanIcon,
+      bgLight: 'bg-purple-500/10',
+      bgDark: 'dark:bg-purple-500/20',
+      textColor: 'text-purple-600 dark:text-purple-400',
+      borderLight: 'border-purple-500/30',
+      borderDark: 'dark:border-purple-500/40'
+    },
+    preventiva: {
+      icon: ShieldCheck,
+      bgLight: 'bg-cyan-500/10',
+      bgDark: 'dark:bg-cyan-500/20',
+      textColor: 'text-cyan-600 dark:text-cyan-400',
+      borderLight: 'border-cyan-500/30',
+      borderDark: 'dark:border-cyan-500/40'
+    }
+  };
 
-  // Controle do seletor de calendário e período
-  const [isCalendarOpen, setIsCalendarOpen] = useState(false);
-  const [tempStartDate, setTempStartDate] = useState(filters.customStartDate || '');
-  const [tempEndDate, setTempEndDate] = useState(filters.customEndDate || '');
-
-  // Toggle do gráfico integrado na Visão Geral: Especialidades vs Temas
-  const [overviewBreakdownType, setOverviewBreakdownType] = useState<'especialidades' | 'temas'>('especialidades');
+  const getSpecialtyCardIcon = (id: string) => {
+    return SPECIALTY_CARD_CONFIG[id]?.icon || Stethoscope;
+  };
 
   // Filtros da aba Raio-X de Erros
   const [selectedAreaFilter, setSelectedAreaFilter] = useState<string>('Todas');
@@ -307,8 +511,191 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
       const unique = Math.round((stats.uniqueAnswered || (stats.totalAnswered || 0)) * factor);
       const ineditas = Math.round(unique * 0.9);
 
-      // Mapeamento diário contínuo para o gráfico de linhas (Feitas vs Acertos)
-      let chartData: {
+      // Geração de buckets adaptativos estritamente sincronizados com o filtro de período
+      const nowObj = new Date();
+      const monthNames = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
+      const dayNames = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'];
+
+      interface BucketDef {
+        label: string;
+        date: string;
+        startTs: number;
+        endTs: number;
+        weight: number;
+      }
+
+      const buckets: BucketDef[] = [];
+
+      if (filters.period === '7d') {
+        for (let i = 6; i >= 0; i--) {
+          const d = new Date(nowObj);
+          d.setDate(d.getDate() - i);
+          const startTs = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 0, 0, 0, 0).getTime();
+          const endTs = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 23, 59, 59, 999).getTime();
+          const label = i === 0 ? 'Hoje' : dayNames[d.getDay()];
+          const date = `${String(d.getDate()).padStart(2, '0')}/${String(d.getMonth() + 1).padStart(2, '0')}`;
+          buckets.push({
+            label,
+            date,
+            startTs,
+            endTs,
+            weight: 0.08 + (6 - i) * 0.03
+          });
+        }
+      } else if (filters.period === '30d') {
+        const stepDays = 4;
+        const numPoints = 8;
+        for (let i = numPoints - 1; i >= 0; i--) {
+          const d = new Date(nowObj);
+          d.setDate(d.getDate() - i * stepDays);
+          const startTs = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 0, 0, 0, 0).getTime();
+          const endTs = startTs + stepDays * 86400000 - 1;
+          const label = i === 0 ? 'Hoje' : `${String(d.getDate()).padStart(2, '0')}/${String(d.getMonth() + 1).padStart(2, '0')}`;
+          buckets.push({
+            label,
+            date: label,
+            startTs,
+            endTs,
+            weight: 0.07 + (numPoints - 1 - i) * 0.02
+          });
+        }
+      } else if (filters.period === 'mes') {
+        const curYear = nowObj.getFullYear();
+        const curMonth = nowObj.getMonth();
+        const curDay = nowObj.getDate();
+        const numPoints = Math.min(7, Math.max(4, Math.ceil(curDay / 4)));
+        const step = Math.max(1, Math.floor(curDay / numPoints));
+
+        for (let i = 0; i < numPoints; i++) {
+          const day = Math.min(curDay, 1 + i * step);
+          const startTs = new Date(curYear, curMonth, day, 0, 0, 0, 0).getTime();
+          const endTs = startTs + step * 86400000 - 1;
+          const label = i === numPoints - 1 ? 'Hoje' : `${String(day).padStart(2, '0')}/${monthNames[curMonth]}`;
+          buckets.push({
+            label,
+            date: label,
+            startTs,
+            endTs,
+            weight: 0.09 + i * 0.03
+          });
+        }
+      } else if (filters.period === '6m') {
+        // 6 Meses consecutivos mapeados perfeitamente
+        for (let i = 5; i >= 0; i--) {
+          const d = new Date(nowObj.getFullYear(), nowObj.getMonth() - i, 1);
+          const y = d.getFullYear();
+          const m = d.getMonth();
+          const startTs = new Date(y, m, 1, 0, 0, 0, 0).getTime();
+          const endTs = new Date(y, m + 1, 0, 23, 59, 59, 999).getTime();
+          const label = monthNames[m];
+          buckets.push({
+            label,
+            date: `${monthNames[m]}/${String(y).slice(2)}`,
+            startTs,
+            endTs,
+            weight: 0.09 + (5 - i) * 0.035
+          });
+        }
+      } else if (filters.period === '2026.1') {
+        for (let m = 0; m < 6; m++) {
+          const startTs = new Date(2026, m, 1, 0, 0, 0, 0).getTime();
+          const endTs = new Date(2026, m + 1, 0, 23, 59, 59, 999).getTime();
+          buckets.push({
+            label: monthNames[m],
+            date: `${monthNames[m]}/26`,
+            startTs,
+            endTs,
+            weight: 0.11 + m * 0.025
+          });
+        }
+      } else if (filters.period === '2026.2') {
+        for (let m = 6; m < 12; m++) {
+          const startTs = new Date(2026, m, 1, 0, 0, 0, 0).getTime();
+          const endTs = new Date(2026, m + 1, 0, 23, 59, 59, 999).getTime();
+          buckets.push({
+            label: monthNames[m],
+            date: `${monthNames[m]}/26`,
+            startTs,
+            endTs,
+            weight: 0.11 + (m - 6) * 0.025
+          });
+        }
+      } else if (filters.period === 'all') {
+        for (let i = 7; i >= 0; i--) {
+          const d = new Date(nowObj.getFullYear(), nowObj.getMonth() - i, 1);
+          const y = d.getFullYear();
+          const m = d.getMonth();
+          const startTs = new Date(y, m, 1, 0, 0, 0, 0).getTime();
+          const endTs = new Date(y, m + 1, 0, 23, 59, 59, 999).getTime();
+          buckets.push({
+            label: monthNames[m],
+            date: `${monthNames[m]}/${String(y).slice(2)}`,
+            startTs,
+            endTs,
+            weight: 0.08 + (7 - i) * 0.02
+          });
+        }
+      } else if (filters.period === 'custom' && filters.customStartDate && filters.customEndDate) {
+        const start = new Date(filters.customStartDate).getTime();
+        const end = new Date(filters.customEndDate + 'T23:59:59').getTime();
+        const diffDays = Math.max(1, Math.round((end - start) / 86400000));
+        const numPoints = Math.min(8, Math.max(4, diffDays));
+        const stepMs = (end - start) / numPoints;
+
+        for (let i = 0; i < numPoints; i++) {
+          const pStart = start + i * stepMs;
+          const pEnd = pStart + stepMs;
+          const d = new Date(pStart);
+          const label = `${String(d.getDate()).padStart(2, '0')}/${String(d.getMonth() + 1).padStart(2, '0')}`;
+          buckets.push({
+            label,
+            date: label,
+            startTs: pStart,
+            endTs: pEnd,
+            weight: 1 / numPoints
+          });
+        }
+      } else {
+        for (let i = 6; i >= 0; i--) {
+          const d = new Date(nowObj);
+          d.setDate(d.getDate() - i);
+          const startTs = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 0, 0, 0, 0).getTime();
+          const endTs = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 23, 59, 59, 999).getTime();
+          const label = i === 0 ? 'Hoje' : dayNames[d.getDay()];
+          buckets.push({
+            label,
+            date: label,
+            startTs,
+            endTs,
+            weight: 0.08 + (6 - i) * 0.03
+          });
+        }
+      }
+
+      // Normaliza pesos
+      const sumWeights = buckets.reduce((acc, b) => acc + b.weight, 0);
+      if (sumWeights > 0) {
+        buckets.forEach((b) => {
+          b.weight = b.weight / sumWeights;
+        });
+      }
+
+      // Agrupa respostas reais que caem no intervalo de cada bucket
+      const bucketRealStats = buckets.map((b) => {
+        const answersInBucket = filteredAnswers.filter(
+          (ans) => (ans.timestamp || now) >= b.startTs && (ans.timestamp || now) <= b.endTs
+        );
+        const correctInBucket = answersInBucket.filter((a) => a.isCorrect).length;
+        return {
+          realCount: answersInBucket.length,
+          realCorrect: correctInBucket
+        };
+      });
+
+      const totalRealInBuckets = bucketRealStats.reduce((acc, s) => acc + s.realCount, 0);
+      const hasSufficientRealData = totalRealInBuckets >= 12;
+
+      const chartData: {
         label: string;
         date: string;
         answered: number;
@@ -316,53 +703,29 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
         resolvidas: number;
         acertos: number;
         erros: number;
-      }[] = [];
+      }[] = buckets.map((b, idx) => {
+        let ans: number;
+        let cor: number;
 
-      if (hasRealAnswers) {
-        const dailyMap: Record<string, { label: string; date: string; timestamp: number; resolvidas: number; acertos: number; erros: number }> = {};
-        filteredAnswers.forEach((ans) => {
-          const d = new Date(ans.timestamp || now);
-        const key = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
-        const label = `${String(d.getDate()).padStart(2, '0')}/${String(d.getMonth() + 1).padStart(2, '0')}`;
-        if (!dailyMap[key]) {
-          dailyMap[key] = { label, date: key, timestamp: d.getTime(), resolvidas: 0, acertos: 0, erros: 0 };
+        if (hasSufficientRealData) {
+          ans = bucketRealStats[idx].realCount;
+          cor = bucketRealStats[idx].realCorrect;
+        } else {
+          // Harmoniza dados proporcionais à métrica do período, integrando respostas reais quando existentes
+          const simAns = Math.max(1, Math.round(answered * b.weight));
+          const simCor = Math.min(simAns, Math.max(0, Math.round(simAns * (accuracy / 100))));
+
+          const realAns = bucketRealStats[idx].realCount;
+          const realCor = bucketRealStats[idx].realCorrect;
+
+          ans = Math.max(simAns, realAns);
+          cor = realAns > 0 ? Math.min(ans, simCor + realCor) : simCor;
         }
-        dailyMap[key].resolvidas++;
-        if (ans.isCorrect) dailyMap[key].acertos++;
-        else dailyMap[key].erros++;
-      });
 
-      const sortedDays = Object.values(dailyMap).sort((a, b) => a.timestamp - b.timestamp);
-      if (sortedDays.length >= 2) {
-        chartData = sortedDays.map((d) => ({
-          label: d.label,
-          date: d.date,
-          answered: d.resolvidas,
-          correct: d.acertos,
-          resolvidas: d.resolvidas,
-          acertos: d.acertos,
-          erros: d.erros
-        }));
-      }
-    }
-
-    // Fallback gracioso para visualização suave com dados harmonizados
-    if (chartData.length === 0) {
-      chartData = (stats.historyByDay && stats.historyByDay.length > 0 ? stats.historyByDay : [
-        { date: 'Seg, 20', answered: 16, correct: 12 },
-        { date: 'Ter, 21', answered: 24, correct: 19 },
-        { date: 'Qua, 22', answered: 20, correct: 16 },
-        { date: 'Qui, 23', answered: 32, correct: 26 },
-        { date: 'Sex, 24', answered: 28, correct: 22 },
-        { date: 'Sáb, 25', answered: 15, correct: 12 },
-        { date: 'Hoje', answered: 18, correct: 15 }
-      ]).map((d) => {
-        const ans = Math.max(1, Math.round(d.answered * factor));
-        const cor = Math.min(ans, Math.max(0, Math.round(d.correct * factor)));
         const err = Math.max(0, ans - cor);
         return {
-          label: d.date,
-          date: d.date,
+          label: b.label,
+          date: b.date,
           answered: ans,
           correct: cor,
           resolvidas: ans,
@@ -370,7 +733,6 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
           erros: err
         };
       });
-    }
 
     return {
       factor,
@@ -774,7 +1136,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
       {/* =========================================================================
           BARRA SUPERIOR: NAVEGAÇÃO DE ABAS + PERÍODO + FILTROS DE BANCAS
       ========================================================================== */}
-      <div className="sticky top-0 z-20 -mx-4 px-4 sm:-mx-6 sm:px-6 py-3 bg-[var(--bg-page)]/95 backdrop-blur-md border-b border-[var(--card-border)] flex flex-col lg:flex-row lg:items-center justify-between gap-3">
+      <div className="sticky top-[4.5rem] z-20 -mx-4 px-4 sm:-mx-6 sm:px-6 py-3 bg-[var(--bg-page)]/95 dark:bg-[#09090b]/95 backdrop-blur-md border-b border-[var(--card-border)] shadow-xs flex flex-col lg:flex-row lg:items-center justify-between gap-3 transition-colors">
         {/* Lado Esquerdo: Abas Principais Segmentadas */}
         <div className="flex items-center gap-1.5 bg-[var(--bg-card)] p-1.5 rounded-xl border border-[var(--card-border)] w-fit">
           <button
@@ -836,10 +1198,9 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
             <button
               type="button"
               onClick={() => setIsCalendarOpen(!isCalendarOpen)}
-              className="flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs font-semibold bg-[var(--bg-card)] border border-[var(--card-border)] text-slate-700 dark:text-zinc-200 hover:border-slate-400 dark:hover:border-zinc-700 transition-colors cursor-pointer shadow-xs"
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-[var(--bg-card)] border border-[var(--card-border)] text-slate-700 dark:text-zinc-200 hover:border-slate-400 dark:hover:border-zinc-700 transition-colors cursor-pointer shadow-xs"
               title="Filtrar por data no calendário ou atalhos"
             >
-              <CalendarDays className="w-3.5 h-3.5 text-emerald-500" />
               <span>{getPeriodDisplayLabel()}</span>
               <ChevronDown className="w-3 h-3 text-slate-400 dark:text-zinc-500" />
             </button>
@@ -1089,16 +1450,16 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                   </span>
                 </div>
                 <div className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-1 font-sans tabular-nums">
-                  {activeMetrics.answered}
+                  <AnimatedCounter value={activeMetrics.answered} />
                 </div>
                 <p className="text-xs text-slate-600 dark:text-zinc-400">
-                  {activeMetrics.unique} únicas e{' '}
-                  <span className="text-slate-800 dark:text-zinc-200 font-medium">{activeMetrics.ineditas} inéditas</span>
+                  <AnimatedCounter value={activeMetrics.unique} /> únicas e{' '}
+                  <span className="text-slate-800 dark:text-zinc-200 font-medium"><AnimatedCounter value={activeMetrics.ineditas} /> inéditas</span>
                 </p>
               </div>
               <div className="mt-5 w-full bg-slate-100 dark:bg-zinc-800 h-1.5 rounded-full overflow-hidden">
                 <div
-                  className="h-full rounded-full transition-all duration-500 bg-slate-400 dark:bg-zinc-500"
+                  className="h-full rounded-full transition-all duration-700 ease-out bg-slate-400 dark:bg-zinc-500"
                   style={{
                     width: `${Math.min(100, Math.round((activeMetrics.answered / 500) * 100))}%`
                   }}
@@ -1119,15 +1480,15 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                   </span>
                 </div>
                 <div className="text-3xl sm:text-4xl font-extrabold text-emerald-600 dark:text-emerald-400 tracking-tight mb-1 font-sans tabular-nums">
-                  {activeMetrics.correct}
+                  <AnimatedCounter value={activeMetrics.correct} />
                 </div>
                 <p className="text-xs text-slate-600 dark:text-zinc-400">
-                  <span className="text-rose-600 dark:text-rose-400 font-medium">{activeMetrics.incorrect} erros</span> mapeados no período
+                  <span className="text-rose-600 dark:text-rose-400 font-medium"><AnimatedCounter value={activeMetrics.incorrect} /> erros</span> mapeados no período
                 </p>
               </div>
               <div className="mt-5 w-full bg-slate-100 dark:bg-zinc-800 h-1.5 rounded-full overflow-hidden">
                 <div
-                  className="bg-emerald-500 h-full rounded-full transition-all duration-500"
+                  className="bg-emerald-500 h-full rounded-full transition-all duration-700 ease-out"
                   style={{ width: `${Math.min(100, activeMetrics.accuracy)}%` }}
                 />
               </div>
@@ -1156,7 +1517,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                   </span>
                 </div>
                 <div className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-1 font-sans tabular-nums">
-                  {activeMetrics.accuracy.toFixed(1)}%
+                  <AnimatedCounter value={activeMetrics.accuracy} decimals={1} suffix="%" />
                 </div>
                 <p className="text-xs text-slate-600 dark:text-zinc-400">
                   Taxa bruta (meta:{' '}
@@ -1165,7 +1526,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               </div>
               <div className="mt-5 w-full bg-slate-100 dark:bg-zinc-800 h-1.5 rounded-full relative">
                 <div
-                  className="bg-emerald-500 h-full rounded-full transition-all duration-500"
+                  className="bg-emerald-500 h-full rounded-full transition-all duration-700 ease-out"
                   style={{ width: `${Math.min(100, activeMetrics.accuracy)}%` }}
                 />
                 <div
@@ -1192,13 +1553,13 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                   </span>
                 </div>
                 <div className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-1 font-sans tabular-nums">
-                  1m 48s
+                  <AnimatedCounter value={108} formatAsTime />
                 </div>
                 <p className="text-xs text-slate-600 dark:text-zinc-400">Tempo médio / questão</p>
               </div>
               <div className="mt-5 w-full bg-slate-100 dark:bg-zinc-800 h-1.5 rounded-full overflow-hidden">
                 <div
-                  className="h-full rounded-full transition-all duration-500 w-[65%]"
+                  className="h-full rounded-full transition-all duration-700 ease-out w-[65%]"
                   style={{ backgroundColor: accentConfig.timeAccent.hex }}
                 />
               </div>
@@ -1211,14 +1572,30 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               <div>
                 <div className="flex items-center gap-2.5">
                   <h2 className="text-base font-bold text-slate-900 dark:text-white font-heading">
-                    Evolução Diária de Resoluções
+                    {filters.period === '6m' || filters.period === '2026.1' || filters.period === '2026.2' || filters.period === 'all'
+                      ? 'Evolução Mensal de Resoluções'
+                      : filters.period === '30d'
+                      ? 'Evolução nos Últimos 30 Dias'
+                      : filters.period === 'mes'
+                      ? 'Evolução no Mês Atual'
+                      : filters.period === 'custom'
+                      ? 'Evolução no Período Selecionado'
+                      : 'Evolução Diária de Resoluções'}
                   </h2>
                   <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
                     {activeMetrics.label}
                   </span>
                 </div>
                 <p className="text-xs text-slate-600 dark:text-zinc-400 mt-0.5">
-                  Acompanhamento diário contínuo de questões resolvidas e acertos obtidos
+                  {filters.period === '6m' || filters.period === '2026.1' || filters.period === '2026.2' || filters.period === 'all'
+                    ? 'Acompanhamento mensal contínuo de questões resolvidas e acertos obtidos'
+                    : filters.period === '30d'
+                    ? 'Acompanhamento de questões resolvidas e acertos ao longo dos últimos 30 dias'
+                    : filters.period === 'mes'
+                    ? 'Acompanhamento contínuo de questões resolvidas e acertos no mês corrente'
+                    : filters.period === 'custom'
+                    ? 'Acompanhamento de questões resolvidas e acertos no período customizado'
+                    : 'Acompanhamento diário contínuo de questões resolvidas e acertos obtidos'}
                 </p>
               </div>
 
@@ -1291,183 +1668,13 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
             </div>
           </div>
 
-          {/* Gráfico Integrado de Acompanhamento por Especialidades ou Temas */}
-          <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-5 sm:p-6 space-y-4">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-              <div>
-                <h3 className="text-base font-bold text-slate-900 dark:text-white font-heading">
-                  Desempenho por Especialidade & Temas
-                </h3>
-                <p className="text-xs text-slate-600 dark:text-zinc-400 mt-0.5">
-                  Proporção de acertos e volume estudado nas grandes áreas ou tópicos específicos
-                </p>
-              </div>
-
-              {/* Alternador Especialidades vs Temas */}
-              <div className="flex items-center bg-slate-100 dark:bg-zinc-900/90 p-1 rounded-xl border border-slate-200 dark:border-zinc-800 text-xs self-start sm:self-auto">
-                <button
-                  type="button"
-                  onClick={() => setOverviewBreakdownType('especialidades')}
-                  className={`px-3 py-1.5 rounded-lg font-semibold transition-all cursor-pointer ${
-                    overviewBreakdownType === 'especialidades'
-                      ? 'bg-white dark:bg-zinc-800 text-slate-900 dark:text-white shadow-xs'
-                      : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200'
-                  }`}
-                >
-                  Por Especialidade
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setOverviewBreakdownType('temas')}
-                  className={`px-3 py-1.5 rounded-lg font-semibold transition-all cursor-pointer ${
-                    overviewBreakdownType === 'temas'
-                      ? 'bg-white dark:bg-zinc-800 text-slate-900 dark:text-white shadow-xs'
-                      : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200'
-                  }`}
-                >
-                  Por Tema
-                </button>
-              </div>
-            </div>
-
-            {/* Lista com Barras Soft */}
-            {overviewBreakdownType === 'especialidades' ? (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-1">
-                {specialtiesBreakdown.map((spec) => {
-                  const hasQuestions = spec.resolvidas > 0;
-                  const isGood = spec.taxa >= 70;
-                  return (
-                    <div
-                      key={spec.id}
-                      className="p-3.5 rounded-xl bg-slate-50 dark:bg-zinc-900/50 border border-slate-200/80 dark:border-zinc-800/80 space-y-2 hover:border-slate-300 dark:hover:border-zinc-700 transition-colors"
-                    >
-                      <div className="flex items-center justify-between text-xs">
-                        <div className="flex items-center gap-2 truncate">
-                          <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: spec.cor }} />
-                          <span className="font-semibold text-slate-800 dark:text-zinc-200 truncate font-heading">
-                            {spec.nome}
-                          </span>
-                        </div>
-                        <span className="text-slate-500 dark:text-zinc-400 font-sans tabular-nums shrink-0 font-medium">
-                          {spec.resolvidas} feitas
-                        </span>
-                      </div>
-
-                      {/* Barra Soft */}
-                      <div className="w-full bg-slate-200 dark:bg-zinc-800 h-2 rounded-full overflow-hidden flex">
-                        {hasQuestions ? (
-                          <>
-                            <div
-                              className="h-full bg-emerald-500 rounded-l-full transition-all duration-500"
-                              style={{ width: `${Math.min(100, spec.taxa)}%` }}
-                              title={`Acertos: ${spec.acertos}`}
-                            />
-                            {spec.erros > 0 && (
-                              <div
-                                className="h-full bg-rose-500/30 rounded-r-full transition-all duration-500"
-                                style={{ width: `${Math.max(0, 100 - spec.taxa)}%` }}
-                                title={`Erros: ${spec.erros}`}
-                              />
-                            )}
-                          </>
-                        ) : (
-                          <div className="h-full w-full bg-transparent" />
-                        )}
-                      </div>
-
-                      {/* Rodapé do Item */}
-                      <div className="flex items-center justify-between text-[11px] pt-0.5">
-                        <div className="flex items-center gap-2 text-slate-500 dark:text-zinc-400">
-                          <span className="text-emerald-600 dark:text-emerald-400 font-medium">
-                            {spec.acertos} acertos
-                          </span>
-                          <span>·</span>
-                          <span className="text-rose-600 dark:text-rose-400 font-medium">
-                            {spec.erros} erros
-                          </span>
-                        </div>
-                        <span
-                          className={`font-bold font-sans tabular-nums px-2 py-0.5 rounded-full border ${
-                            !hasQuestions
-                              ? 'text-slate-400 dark:text-zinc-500 border-transparent bg-transparent'
-                              : isGood
-                              ? 'text-emerald-700 dark:text-emerald-400 bg-emerald-500/10 border-emerald-500/25'
-                              : 'text-amber-700 dark:text-amber-400 bg-amber-500/10 border-amber-500/25'
-                          }`}
-                        >
-                          {hasQuestions ? `${spec.taxa.toFixed(1)}%` : '0.0%'}
-                        </span>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            ) : (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3 pt-1">
-                {topThemesList.map((t, idx) => {
-                  const isGood = t.taxa >= 70;
-                  return (
-                    <div
-                      key={`${t.nome}-${idx}`}
-                      className="p-3.5 rounded-xl bg-slate-50 dark:bg-zinc-900/50 border border-slate-200/80 dark:border-zinc-800/80 space-y-2 hover:border-slate-300 dark:hover:border-zinc-700 transition-colors"
-                    >
-                      <div className="flex items-center justify-between text-xs">
-                        <div className="truncate pr-2">
-                          <span className="font-semibold text-slate-800 dark:text-zinc-200 truncate block font-heading">
-                            {t.nome}
-                          </span>
-                          <span className="text-[10px] text-slate-500 dark:text-zinc-500">
-                            {t.specialty}
-                          </span>
-                        </div>
-                        <span className="text-slate-500 dark:text-zinc-400 font-sans tabular-nums shrink-0 font-medium">
-                          {t.resolvidas} feitas
-                        </span>
-                      </div>
-
-                      {/* Barra Soft */}
-                      <div className="w-full bg-slate-200 dark:bg-zinc-800 h-2 rounded-full overflow-hidden flex">
-                        <div
-                          className="h-full bg-emerald-500 rounded-l-full transition-all duration-500"
-                          style={{ width: `${Math.min(100, t.taxa)}%` }}
-                          title={`Acertos: ${t.acertos}`}
-                        />
-                        {t.erros > 0 && (
-                          <div
-                            className="h-full bg-rose-500/30 rounded-r-full transition-all duration-500"
-                            style={{ width: `${Math.max(0, 100 - t.taxa)}%` }}
-                            title={`Erros: ${t.erros}`}
-                          />
-                        )}
-                      </div>
-
-                      {/* Rodapé do Item */}
-                      <div className="flex items-center justify-between text-[11px] pt-0.5">
-                        <div className="flex items-center gap-2 text-slate-500 dark:text-zinc-400">
-                          <span className="text-emerald-600 dark:text-emerald-400 font-medium">
-                            {t.acertos} acertos
-                          </span>
-                          <span>·</span>
-                          <span className="text-rose-600 dark:text-rose-400 font-medium">
-                            {t.erros} erros
-                          </span>
-                        </div>
-                        <span
-                          className={`font-bold font-sans tabular-nums px-2 py-0.5 rounded-full border ${
-                            isGood
-                              ? 'text-emerald-700 dark:text-emerald-400 bg-emerald-500/10 border-emerald-500/25'
-                              : 'text-amber-700 dark:text-amber-400 bg-amber-500/10 border-amber-500/25'
-                          }`}
-                        >
-                          {t.taxa.toFixed(1)}%
-                        </span>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            )}
-          </div>
+          {/* Análise de Hábitos Diários, Cronobiologia e Gráfico de Horas */}
+          <DailyHabitsAndHourlyExplorer
+            userAnswers={userAnswers}
+            period={filters.period}
+            dailyGoal={stats.dailyGoal || 30}
+            totalAnsweredInPeriod={activeMetrics.answered}
+          />
         </div>
       )}
 
@@ -1480,9 +1687,6 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
           <div className="lg:col-span-4 bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-6 flex flex-col justify-between">
             <div>
               <h2 className="text-base font-bold text-slate-900 dark:text-white">Distribuição por Grande Área</h2>
-              <p className="text-xs text-slate-600 dark:text-zinc-400 mt-0.5">
-                Proporção do volume estudado nas 6 especialidades centrais
-              </p>
             </div>
 
             <div className="h-64 w-full relative my-4 flex items-center justify-center">
@@ -1541,200 +1745,238 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               </div>
             </div>
 
-            {/* Legenda Vertical com as 6 Áreas */}
-            <div className="space-y-2 pt-3 border-t border-[var(--card-border)]">
-              {specialtiesBreakdown.map((item, idx) => {
-                const pct = ((item.resolvidas / totalSpecialtiesVolume) * 100).toFixed(1);
-                return (
-                  <div
-                    key={item.id}
-                    onMouseEnter={() => setHoveredPieIndex(idx)}
-                    onMouseLeave={() => setHoveredPieIndex(null)}
-                    className="flex items-center justify-between text-xs py-1 px-2 rounded-lg hover:bg-slate-100 dark:hover:bg-zinc-800/40 transition-colors cursor-pointer"
-                  >
-                    <div className="flex items-center gap-2.5 truncate">
-                      <span className="w-2.5 h-2.5 rounded-sm shrink-0" style={{ backgroundColor: item.cor }} />
-                      <span className="text-slate-800 dark:text-zinc-200 font-medium truncate">{item.nome}</span>
-                    </div>
-                    <div className="flex items-center gap-3 shrink-0">
-                      <span className="text-slate-500 dark:text-zinc-400 font-sans tabular-nums">{item.resolvidas} q.</span>
-                      <span className="font-bold text-slate-900 dark:text-white w-12 text-right font-sans tabular-nums">
-                        {item.resolvidas > 0 ? pct : '0.0'}%
-                      </span>
-                    </div>
-                  </div>
-                );
-              })}
+            {/* Legenda Vertical com as 6 Áreas (Opção de Expandir/Recolher com Seta - Imagem 3) */}
+            <div className="pt-3 border-t border-[var(--card-border)]">
+              <div 
+                onClick={() => setIsLegendExpanded(!isLegendExpanded)}
+                className="flex items-center justify-between text-xs py-1 px-1 text-slate-700 dark:text-zinc-300 hover:text-slate-900 dark:hover:text-white transition-colors cursor-pointer select-none"
+              >
+                <div className="flex items-center gap-2">
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-zinc-400">
+                    Detalhamento por Área
+                  </span>
+                  <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-slate-100 dark:bg-zinc-800 text-slate-500 font-sans tabular-nums font-semibold">
+                    6
+                  </span>
+                </div>
+                <div
+                  className="w-6 h-6 rounded-md flex items-center justify-center bg-slate-100 dark:bg-zinc-800 text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors"
+                  title={isLegendExpanded ? 'Recolher áreas' : 'Expandir áreas'}
+                >
+                  {isLegendExpanded ? (
+                    <ChevronUp className="w-3.5 h-3.5" />
+                  ) : (
+                    <ChevronDown className="w-3.5 h-3.5" />
+                  )}
+                </div>
+              </div>
+
+              {isLegendExpanded && (
+                <div className="space-y-1 pt-2 animate-in fade-in duration-200">
+                  {specialtiesBreakdown.map((item, idx) => {
+                    const pct = ((item.resolvidas / totalSpecialtiesVolume) * 100).toFixed(1);
+                    const isItemExpanded = expandedAreas.includes(item.id);
+
+                    return (
+                      <div
+                        key={item.id}
+                        className="rounded-lg transition-colors hover:bg-slate-50 dark:hover:bg-zinc-800/30"
+                      >
+                        <div
+                          onMouseEnter={() => setHoveredPieIndex(idx)}
+                          onMouseLeave={() => setHoveredPieIndex(null)}
+                          onClick={() => toggleAreaExpansion(item.id)}
+                          className="flex items-center justify-between text-xs py-1.5 px-2 cursor-pointer select-none"
+                        >
+                          <div className="flex items-center gap-2.5 truncate">
+                            <span className="w-2.5 h-2.5 rounded-sm shrink-0" style={{ backgroundColor: item.cor }} />
+                            <span className="text-slate-800 dark:text-zinc-200 font-medium truncate">{item.nome}</span>
+                          </div>
+                          <div className="flex items-center gap-2.5 shrink-0">
+                            <span className="text-slate-500 dark:text-zinc-400 font-sans tabular-nums">{item.resolvidas} q.</span>
+                            <span className="font-bold text-slate-900 dark:text-white w-12 text-right font-sans tabular-nums">
+                              {item.resolvidas > 0 ? pct : '0.0'}%
+                            </span>
+                            <div className="w-4 h-4 flex items-center justify-center text-slate-400 hover:text-slate-700 dark:hover:text-zinc-200">
+                              {isItemExpanded ? (
+                                <ChevronUp className="w-3.5 h-3.5" />
+                              ) : (
+                                <ChevronDown className="w-3.5 h-3.5" />
+                              )}
+                            </div>
+                          </div>
+                        </div>
+
+                        {/* Detalhamento inline ao expandir a especialidade individual */}
+                        {isItemExpanded && (
+                          <div className="pl-5 pr-2 pb-2 pt-1 space-y-1.5 border-l-2 ml-3 my-1" style={{ borderColor: item.cor }}>
+                            <div className="text-[10px] font-semibold text-slate-500 dark:text-zinc-400 flex items-center justify-between">
+                              <span>{item.acertos} acertos · {item.erros} erros</span>
+                              <span
+                                className="font-bold"
+                                style={{
+                                  color: item.taxa >= 70 ? '#10B981' : item.taxa >= 60 ? '#F59E0B' : '#EF4444'
+                                }}
+                              >
+                                {item.taxa.toFixed(1)}% acerto
+                              </span>
+                            </div>
+                            {item.temas.slice(0, 3).map((t, tIdx) => (
+                              <div key={tIdx} className="flex items-center justify-between text-[11px] text-slate-600 dark:text-zinc-400">
+                                <span className="truncate pr-2">{t.nome}</span>
+                                <span className="tabular-nums font-semibold shrink-0">{t.resolvidas} q. ({t.taxa.toFixed(0)}%)</span>
+                              </div>
+                            ))}
+                            <button
+                              type="button"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                setSelectedSpecialtyForDrawer(item);
+                                setDrawerTemaFilter('all');
+                                setDrawerTemaSearch('');
+                                setIsSpecialtyDrawerOpen(true);
+                              }}
+                              className="text-[11px] font-bold flex items-center gap-1 hover:underline pt-0.5 cursor-pointer"
+                              style={{ color: accentConfig.primaryHex }}
+                            >
+                              Ver todos os temas no Raio-X <ChevronRight className="w-3 h-3" />
+                            </button>
+                          </div>
+                        )}
+                      </div>
+                    );
+                  })}
+                </div>
+              )}
             </div>
           </div>
 
-          {/* Coluna Direita: Tabela Sanfona Especialidade ➔ Tema [Imagem 2] */}
+          {/* Coluna Direita: 6 Cards de Especialidades ➔ Drawer com Temas */}
           <div className="lg:col-span-8 bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-6 flex flex-col justify-between">
             <div>
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-5">
-                <div>
-                  <h2 className="text-base font-bold text-slate-900 dark:text-white">Quadro Geral & Aproveitamento por Especialidade</h2>
-                  <p className="text-xs text-slate-600 dark:text-zinc-400 mt-0.5">
-                    Clique em qualquer Especialidade para expandir seus temas resolvidos e iniciar treinos direcionados
-                  </p>
-                </div>
-                <button
-                  type="button"
-                  onClick={toggleExpandAll}
-                  className="text-xs font-semibold px-3 py-1.5 rounded-lg btn-secondary-adaptive cursor-pointer self-start sm:self-auto shadow-xs"
-                >
-                  {expandedAreas.length === SIX_FILTER_SPECIALTIES.length ? 'Recolher Todas' : 'Expandir Todas'}
-                </button>
+              <div className="mb-5">
+                <h2 className="text-base font-bold text-slate-900 dark:text-white">Quadro Geral & Aproveitamento por Especialidade</h2>
               </div>
 
-              <div className="overflow-x-auto">
-                <table className="w-full text-left border-collapse">
-                  <thead>
-                    <tr className="border-b border-slate-200 dark:border-[#1F1F25] text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-zinc-400">
-                      <th className="pb-3 pl-2">Especialidade / Tema</th>
-                      <th className="pb-3 text-center">Resolvidas</th>
-                      <th className="pb-3 text-center">Acertos / Erros</th>
-                      <th className="pb-3 w-44">Aproveitamento</th>
-                      <th className="pb-3 text-right pr-2">Ação</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-slate-200 dark:divide-[#1A1A20] text-xs">
-                    {specialtiesBreakdown.map((area) => {
-                      const isExpanded = expandedAreas.includes(area.id);
-                      return (
-                        <React.Fragment key={area.id}>
-                          {/* Linha da Especialidade-Mãe */}
-                          <tr
-                            onClick={() => toggleExpandArea(area.id)}
-                            className="hover:bg-slate-50 dark:hover:bg-[#18181D] transition-colors cursor-pointer group"
-                          >
-                            <td className="py-3.5 pl-2 font-bold text-slate-900 dark:text-white flex items-center gap-2.5">
-                              <span className="text-slate-400 dark:text-zinc-500 group-hover:text-slate-900 dark:group-hover:text-white transition-colors">
-                                {isExpanded ? <ChevronDown className="w-4 h-4" /> : <ChevronRight className="w-4 h-4" />}
-                              </span>
-                              <span className="w-2.5 h-2.5 rounded-full shrink-0" style={{ backgroundColor: area.cor }} />
-                              <span>{area.nome}</span>
-                              <span className="text-[10px] font-normal text-slate-600 dark:text-zinc-400 bg-slate-100 dark:bg-[#1C1C22] border border-slate-200 dark:border-zinc-800 px-1.5 py-0.5 rounded">
-                                {area.temas.length} temas estudados
-                              </span>
-                            </td>
-                            <td className="py-3.5 text-center font-semibold text-slate-800 dark:text-zinc-200 font-sans tabular-nums">
-                              {area.resolvidas}
-                            </td>
-                            <td className="py-3.5 text-center font-sans tabular-nums">
-                              <span className="text-emerald-600 dark:text-emerald-400 font-bold">{area.acertos}</span>
-                              <span className="text-slate-400 dark:text-zinc-600 mx-1">/</span>
-                              <span className="text-rose-600 dark:text-rose-400 font-medium">{area.erros}</span>
-                            </td>
-                            <td className="py-3.5">
-                              <div className="flex items-center gap-2.5">
-                                <div className="flex-1 bg-slate-100 dark:bg-[#1F1F26] h-2 rounded-full overflow-hidden">
-                                  <div
-                                    className="h-full rounded-full transition-all duration-300"
-                                    style={{ width: `${area.taxa}%`, backgroundColor: area.cor }}
-                                  />
-                                </div>
-                                <span className="font-bold text-slate-900 dark:text-white w-12 text-right font-sans tabular-nums">
-                                  {area.taxa.toFixed(1)}%
-                                </span>
-                              </div>
-                            </td>
-                            <td
-                              className="py-3.5 pr-2 text-right"
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                setTrainingModal({
-                                  titulo: area.nome,
-                                  subtitulo: 'Caderno Inteligente da Especialidade',
-                                  erros: area.erros,
-                                  rendimento: area.taxa,
-                                  specialty: area.nome
-                                });
-                              }}
-                            >
-                              <button
-                                type="button"
-                                className="text-rose-600 dark:text-rose-400 hover:text-rose-700 dark:hover:text-rose-300 font-bold inline-flex items-center gap-1 px-2.5 py-1 rounded-lg hover:bg-rose-500/10 transition-colors cursor-pointer"
-                              >
-                                <span>Treinar</span>
-                                <ChevronRight className="w-3.5 h-3.5" />
-                              </button>
-                            </td>
-                          </tr>
+              {/* Grid com os 6 Cards em 2 Colunas e 3 Linhas */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {specialtiesBreakdown.map((area) => {
+                  const cfg = SPECIALTY_CARD_CONFIG[area.id] || {
+                    icon: Stethoscope,
+                    bgLight: 'bg-slate-500/10',
+                    bgDark: 'dark:bg-zinc-800',
+                    textColor: 'text-slate-700 dark:text-zinc-300',
+                    borderLight: 'border-slate-300',
+                    borderDark: 'dark:border-zinc-700'
+                  };
+                  const IconComp = cfg.icon;
+                  const hasQuestions = area.resolvidas > 0;
+                  const isGood = area.taxa >= 70;
+                  const isMedium = area.taxa >= 60 && area.taxa < 70;
 
-                          {/* Linhas-Filhas: Temas Resolvidos (Renderizados SOMENTE se resolvidas > 0) */}
-                          {isExpanded && (
+                  return (
+                    <div
+                      key={area.id}
+                      onClick={() => {
+                        setSelectedSpecialtyForDrawer(area);
+                        setDrawerTemaFilter('all');
+                        setDrawerTemaSearch('');
+                        setIsSpecialtyDrawerOpen(true);
+                      }}
+                      className="group p-4 sm:p-4.5 rounded-xl bg-slate-50/70 hover:bg-slate-100/90 dark:bg-zinc-900/40 dark:hover:bg-zinc-900/80 border border-slate-200 dark:border-zinc-800 hover:border-slate-300 dark:hover:border-zinc-700 transition-all duration-200 cursor-pointer flex flex-col justify-between space-y-3.5 shadow-2xs hover:shadow-xs"
+                    >
+                      {/* Topo do Card: Ícone com contraste UX + Título da Especialidade + Total Feitas à Direita (Estilo Imagem 2) */}
+                      <div className="flex items-center justify-between gap-3">
+                        <div className="flex items-center gap-3 min-w-0">
+                          <div
+                            className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 border shadow-2xs transition-transform group-hover:scale-105"
+                            style={{
+                              backgroundColor: accentConfig.bgRgba,
+                              borderColor: accentConfig.borderRgba,
+                              color: accentConfig.primaryHex
+                            }}
+                          >
+                            <IconComp className="w-5 h-5" strokeWidth={2.2} />
+                          </div>
+                          <h3 className="text-sm sm:text-base font-bold text-slate-900 dark:text-white truncate">
+                            {area.nome}
+                          </h3>
+                        </div>
+
+                        {/* Total feitas alinhado à direita (Estilo Imagem 2) */}
+                        <span className="text-xs text-slate-500 dark:text-zinc-400 font-sans tabular-nums shrink-0 font-medium">
+                          {area.resolvidas} {area.resolvidas === 1 ? 'feita' : 'feitas'}
+                        </span>
+                      </div>
+
+                      {/* Barra de Progresso Dual (Estilo Imagem 2) */}
+                      <div className="space-y-2">
+                        <div className="w-full bg-slate-200 dark:bg-zinc-800 h-2 rounded-full overflow-hidden flex">
+                          {hasQuestions ? (
                             <>
-                              {area.temas.length > 0 ? (
-                                area.temas.map((tema, idx) => (
-                                  <tr
-                                    key={`${area.id}-tema-${idx}`}
-                                    className="bg-slate-50/80 hover:bg-slate-100/90 dark:bg-[#0E0E11] dark:hover:bg-[#141419] text-slate-700 dark:text-zinc-300 transition-colors"
-                                  >
-                                    <td className="py-2.5 pl-10 pr-2 flex items-center gap-2 text-xs text-slate-700 dark:text-zinc-300">
-                                      <span className="w-1.5 h-1.5 rounded-full bg-slate-400 dark:bg-zinc-600" />
-                                      <span>{tema.nome}</span>
-                                    </td>
-                                    <td className="py-2.5 text-center text-slate-600 dark:text-zinc-400 font-sans tabular-nums">{tema.resolvidas}</td>
-                                    <td className="py-2.5 text-center font-sans tabular-nums">
-                                      <span className="text-emerald-600 dark:text-emerald-400 font-semibold">{tema.acertos}</span>
-                                      <span className="text-slate-400 dark:text-zinc-600 mx-1">/</span>
-                                      <span className="text-rose-600 dark:text-rose-400">{tema.erros}</span>
-                                    </td>
-                                    <td className="py-2.5">
-                                      <div className="flex items-center gap-2.5">
-                                        <div className="flex-1 bg-slate-200 dark:bg-[#1A1A20] h-1.5 rounded-full overflow-hidden">
-                                          <div
-                                            className={`h-full rounded-full transition-all duration-300 ${
-                                              tema.taxa < 65 ? 'bg-rose-500' : tema.taxa < 75 ? 'bg-amber-500' : 'bg-emerald-500'
-                                            }`}
-                                            style={{ width: `${tema.taxa}%` }}
-                                          />
-                                        </div>
-                                        <span
-                                          className={`font-semibold w-12 text-right font-sans tabular-nums ${
-                                            tema.taxa < 65 ? 'text-rose-600 dark:text-rose-400' : tema.taxa < 75 ? 'text-amber-600 dark:text-amber-400' : 'text-emerald-600 dark:text-emerald-400'
-                                          }`}
-                                        >
-                                          {tema.taxa.toFixed(1)}%
-                                        </span>
-                                      </div>
-                                    </td>
-                                    <td className="py-2.5 pr-2 text-right">
-                                      <button
-                                        type="button"
-                                        onClick={() =>
-                                          setTrainingModal({
-                                            titulo: tema.nome,
-                                            subtitulo: area.nome,
-                                            erros: tema.erros,
-                                            rendimento: tema.taxa,
-                                            specialty: area.nome,
-                                            tema: tema.nome
-                                          })
-                                        }
-                                        className="text-slate-500 dark:text-zinc-400 hover:text-rose-600 dark:hover:text-rose-400 font-semibold inline-flex items-center gap-1 px-2 py-0.5 rounded hover:bg-rose-500/10 transition-colors cursor-pointer"
-                                      >
-                                        <span>Focar</span>
-                                        <ChevronRight className="w-3.5 h-3.5" />
-                                      </button>
-                                    </td>
-                                  </tr>
-                                ))
-                              ) : (
-                                <tr className="bg-slate-50/80 dark:bg-[#0E0E11] text-slate-500 dark:text-zinc-500">
-                                  <td colSpan={5} className="py-3 pl-10 pr-4 text-xs italic">
-                                    Nenhum tema resolvido nesta especialidade ainda. Resolva questões no Banco para mapear seu desempenho.
-                                  </td>
-                                </tr>
+                              <div
+                                className="h-full bg-emerald-500 rounded-l-full transition-all duration-300"
+                                style={{ width: `${Math.min(100, area.taxa)}%` }}
+                                title={`Acertos: ${area.acertos}`}
+                              />
+                              {area.erros > 0 && (
+                                <div
+                                  className="h-full bg-rose-500/40 dark:bg-rose-500/35 rounded-r-full transition-all duration-300"
+                                  style={{ width: `${Math.max(0, 100 - area.taxa)}%` }}
+                                  title={`Erros: ${area.erros}`}
+                                />
                               )}
                             </>
+                          ) : (
+                            <div className="h-full w-full bg-transparent" />
                           )}
-                        </React.Fragment>
-                      );
-                    })}
-                  </tbody>
-                </table>
+                        </div>
+
+                        {/* Linha de Contagem e Aproveitamento (Estilo Exato da Imagem 2) */}
+                        <div className="flex items-center justify-between text-xs pt-0.5">
+                          <div className="flex items-center gap-2">
+                            <span className="text-emerald-600 dark:text-emerald-400 font-medium font-sans tabular-nums">
+                              {area.acertos} {area.acertos === 1 ? 'acerto' : 'acertos'}
+                            </span>
+                            <span className="text-slate-300 dark:text-zinc-600 font-bold">·</span>
+                            <span className="text-rose-600 dark:text-rose-400 font-medium font-sans tabular-nums">
+                              {area.erros} {area.erros === 1 ? 'erro' : 'erros'}
+                            </span>
+                          </div>
+
+                          {/* Badge de Porcentagem à direita (Estilo Imagem 2) */}
+                          <span
+                            className={`font-bold font-sans tabular-nums px-2.5 py-0.5 rounded-full border text-xs shrink-0 ${
+                              !hasQuestions
+                                ? 'text-slate-400 dark:text-zinc-500 border-slate-200/80 dark:border-zinc-800 bg-slate-100/60 dark:bg-zinc-900/60'
+                                : isGood
+                                ? 'text-emerald-700 dark:text-emerald-400 bg-emerald-500/10 border-emerald-500/25'
+                                : isMedium
+                                ? 'text-amber-700 dark:text-amber-400 bg-amber-500/10 border-amber-500/25'
+                                : 'text-rose-700 dark:text-rose-400 bg-rose-500/10 border-rose-500/25'
+                            }`}
+                          >
+                            {area.taxa.toFixed(1)}%
+                          </span>
+                        </div>
+                      </div>
+
+                      {/* Rodapé do Card */}
+                      <div className="pt-2 border-t border-slate-200/60 dark:border-zinc-800/60 flex items-center justify-between text-xs">
+                        <span className="text-xs text-slate-500 dark:text-zinc-400 font-medium">
+                          {area.temas.length} {area.temas.length === 1 ? 'tema estudado' : 'temas estudados'}
+                        </span>
+
+                        <span
+                          className="text-xs font-bold flex items-center gap-0.5 group-hover:translate-x-0.5 transition-transform"
+                          style={{ color: accentConfig.primaryHex }}
+                        >
+                          Ver Temas <ChevronRight className="w-3.5 h-3.5" />
+                        </span>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
 
@@ -1784,7 +2026,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                   <div className={`text-3xl font-extrabold text-rose-500 font-sans tabular-nums flex items-center gap-2 transition-all duration-200 ${
                     isRaioXTransitioning ? 'opacity-40 scale-[0.98]' : 'opacity-100 scale-100'
                   }`}>
-                    <span>{dataScope === 'pessoal' ? criticalCount : '3.140'}</span>
+                    <AnimatedCounter value={dataScope === 'pessoal' ? criticalCount : 3140} />
                     {isRaioXTransitioning && (
                       <Loader2 className="w-4 h-4 animate-spin text-rose-500" />
                     )}
@@ -1821,7 +2063,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                   }`}
                   style={{ color: accentConfig.energyAccent.hex }}
                 >
-                  <span>{dataScope === 'pessoal' ? diagnosticSummary.totalErros : '28.993'}</span>
+                  <AnimatedCounter value={dataScope === 'pessoal' ? diagnosticSummary.totalErros : 28993} />
                   {isRaioXTransitioning && (
                     <Loader2 className="w-4 h-4 animate-spin text-rose-500" />
                   )}
@@ -1850,7 +2092,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                   }`}
                   style={{ color: accentConfig.primaryHex }}
                 >
-                  <span>{diagnosticSummary.mediaAproveitamento.toFixed(1)}%</span>
+                  <AnimatedCounter value={diagnosticSummary.mediaAproveitamento} decimals={1} suffix="%" />
                   {isRaioXTransitioning && (
                     <Loader2 className="w-4 h-4 animate-spin" style={{ color: accentConfig.primaryHex }} />
                   )}
@@ -2087,17 +2329,21 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                           <div className="font-semibold text-slate-800 dark:text-zinc-200">{item.specialty}</div>
                         </td>
                         <td className="py-4 font-sans tabular-nums">
-                          <div className="font-bold text-rose-600 dark:text-rose-400">{item.errors} erros</div>
+                          <div className="font-bold text-rose-600 dark:text-rose-400">
+                            <AnimatedCounter value={item.errors} /> {item.errors === 1 ? 'erro' : 'erros'}
+                          </div>
                           <div className="text-[11px] text-slate-500 dark:text-zinc-500">
-                            {item.correct}/{item.total} q.
+                            <AnimatedCounter value={item.correct} />/<AnimatedCounter value={item.total} /> q.
                           </div>
                         </td>
                         <td className="py-4">
                           <div className="flex flex-col gap-1.5">
-                            <span className="font-bold text-slate-900 dark:text-white font-sans tabular-nums">{item.accuracy.toFixed(1)}%</span>
+                            <span className="font-bold text-slate-900 dark:text-white font-sans tabular-nums">
+                              <AnimatedCounter value={item.accuracy} decimals={1} suffix="%" />
+                            </span>
                             <div className="w-32 bg-slate-200 dark:bg-[#1F1F26] h-1.5 rounded-full overflow-hidden">
                               <div
-                                className={`h-full rounded-full ${
+                                className={`h-full rounded-full transition-all duration-700 ease-out ${
                                   item.accuracy < 60 ? 'bg-rose-500' : item.accuracy < 75 ? 'bg-amber-500' : 'bg-emerald-500'
                                 }`}
                                 style={{ width: `${item.accuracy}%` }}
@@ -2295,6 +2541,255 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     <span>Iniciar Bateria Agora</span>
                   </>
                 )}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+      {/* DRAWER CENTRAL: TEMAS DA ESPECIALIDADE SELECIONADA */}
+      {isSpecialtyDrawerOpen && selectedSpecialtyForDrawer && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-5 md:p-6 animate-in fade-in duration-200">
+          {/* Backdrop */}
+          <div
+            className="fixed inset-0 bg-black/70 backdrop-blur-sm transition-opacity cursor-pointer"
+            onClick={() => setIsSpecialtyDrawerOpen(false)}
+          />
+
+          {/* Painel Central do Drawer com Bordas do Restante da Plataforma */}
+          <div className="relative w-full max-w-2xl lg:max-w-3xl bg-white dark:bg-[#121215] border border-slate-200 dark:border-zinc-800 rounded-2xl shadow-2xl flex flex-col z-10 max-h-[85vh] sm:max-h-[80vh] overflow-hidden animate-in zoom-in-95 duration-200">
+            {/* Header do Drawer */}
+            <div className="p-4 sm:p-5 border-b border-slate-200 dark:border-zinc-800 flex items-center justify-between shrink-0 bg-slate-50/50 dark:bg-zinc-900/30">
+              <div className="flex items-center gap-3 min-w-0">
+                {(() => {
+                  const cfg = SPECIALTY_CARD_CONFIG[selectedSpecialtyForDrawer.id] || {
+                    icon: Stethoscope
+                  };
+                  const IconComp = cfg.icon;
+                  return (
+                    <div
+                      className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 border shadow-2xs"
+                      style={{
+                        backgroundColor: accentConfig.bgRgba,
+                        borderColor: accentConfig.borderRgba,
+                        color: accentConfig.primaryHex
+                      }}
+                    >
+                      <IconComp className="w-5 h-5" strokeWidth={2.2} />
+                    </div>
+                  );
+                })()}
+                <div className="min-w-0">
+                  <h3 className="text-base font-black text-slate-900 dark:text-white truncate tracking-tight">
+                    {selectedSpecialtyForDrawer.nome}
+                  </h3>
+                  <p className="text-xs text-slate-500 dark:text-zinc-400">
+                    {selectedSpecialtyForDrawer.temas.length} {selectedSpecialtyForDrawer.temas.length === 1 ? 'tema avaliado' : 'temas avaliados'} • {selectedSpecialtyForDrawer.resolvidas} questões
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-2">
+                <span
+                  className={`px-2.5 py-1 rounded-lg text-xs font-black font-sans tabular-nums ${
+                    selectedSpecialtyForDrawer.taxa >= 75
+                      ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20'
+                      : selectedSpecialtyForDrawer.taxa >= 65
+                      ? 'bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20'
+                      : 'bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-500/20'
+                  }`}
+                >
+                  {selectedSpecialtyForDrawer.taxa.toFixed(1)}%
+                </span>
+                <button
+                  type="button"
+                  onClick={() => setIsSpecialtyDrawerOpen(false)}
+                  className="p-1.5 rounded-xl text-slate-400 hover:text-slate-700 dark:hover:text-zinc-200 hover:bg-slate-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
+                  title="Fechar painel (Esc)"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+            </div>
+
+            {/* Barra de Busca & Filtros Rápidos */}
+            <div className="p-3 border-b border-slate-200/80 dark:border-zinc-800/80 bg-slate-50/30 dark:bg-zinc-900/20 space-y-2 shrink-0">
+              <div className="relative">
+                <Search className="w-3.5 h-3.5 absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 dark:text-zinc-500" />
+                <input
+                  type="text"
+                  value={drawerTemaSearch}
+                  onChange={(e) => setDrawerTemaSearch(e.target.value)}
+                  placeholder="Buscar tema clínico..."
+                  className="w-full pl-8 pr-3 py-1.5 rounded-lg text-xs bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-slate-800 dark:text-zinc-200 placeholder-slate-400 dark:placeholder-zinc-500 focus:outline-hidden focus:ring-1 focus:ring-rose-500"
+                />
+              </div>
+
+              <div className="flex items-center justify-between text-xs">
+                <span className="text-[11px] font-bold text-slate-500 dark:text-zinc-400">
+                  Filtro:
+                </span>
+                <div className="flex items-center gap-1">
+                  <button
+                    type="button"
+                    onClick={() => setDrawerTemaFilter('all')}
+                    className={`px-2 py-0.5 rounded-md text-[11px] font-semibold transition-all cursor-pointer ${
+                      drawerTemaFilter === 'all'
+                        ? 'bg-slate-900 dark:bg-white text-white dark:text-slate-900'
+                        : 'text-slate-600 dark:text-zinc-400 hover:bg-slate-200/60 dark:hover:bg-zinc-800'
+                    }`}
+                  >
+                    Todos ({selectedSpecialtyForDrawer.temas.length})
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setDrawerTemaFilter('errors')}
+                    className={`px-2 py-0.5 rounded-md text-[11px] font-semibold transition-all cursor-pointer ${
+                      drawerTemaFilter === 'errors'
+                        ? 'bg-rose-600 text-white'
+                        : 'text-slate-600 dark:text-zinc-400 hover:bg-slate-200/60 dark:hover:bg-zinc-800'
+                    }`}
+                  >
+                    Com Erros ({selectedSpecialtyForDrawer.temas.filter((t) => t.erros > 0).length})
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setDrawerTemaFilter('good')}
+                    className={`px-2 py-0.5 rounded-md text-[11px] font-semibold transition-all cursor-pointer ${
+                      drawerTemaFilter === 'good'
+                        ? 'bg-emerald-600 text-white'
+                        : 'text-slate-600 dark:text-zinc-400 hover:bg-slate-200/60 dark:hover:bg-zinc-800'
+                    }`}
+                  >
+                    ≥ 75% ({selectedSpecialtyForDrawer.temas.filter((t) => t.taxa >= 75).length})
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Lista dos Temas com Rolagem */}
+            <div className="flex-1 overflow-y-auto p-4 sm:p-5 space-y-3">
+              {(() => {
+                const q = drawerTemaSearch.trim().toLowerCase();
+                const filtered = selectedSpecialtyForDrawer.temas.filter((t) => {
+                  if (q && !t.nome.toLowerCase().includes(q)) return false;
+                  if (drawerTemaFilter === 'errors') return t.erros > 0;
+                  if (drawerTemaFilter === 'good') return t.taxa >= 75;
+                  return true;
+                });
+
+                if (filtered.length === 0) {
+                  return (
+                    <div className="py-12 text-center text-xs text-slate-400 space-y-1">
+                      <Target className="w-7 h-7 text-slate-400 mx-auto mb-1 opacity-70" />
+                      <p className="font-bold text-slate-700 dark:text-zinc-300">
+                        Nenhum tema encontrado com este filtro
+                      </p>
+                      <p className="text-slate-500 dark:text-zinc-500">
+                        {drawerTemaSearch ? 'Tente outro termo na busca.' : 'Ajuste o filtro acima para ver outros tópicos.'}
+                      </p>
+                    </div>
+                  );
+                }
+
+                return filtered.map((tema, idx) => {
+                  const isHigh = tema.taxa >= 75;
+                  const isMedium = tema.taxa >= 65 && tema.taxa < 75;
+
+                  return (
+                    <div
+                      key={idx}
+                      className="p-3.5 rounded-xl bg-slate-50 dark:bg-zinc-900/60 border border-slate-200 dark:border-zinc-800 space-y-2.5 transition-colors hover:border-slate-300 dark:hover:border-zinc-700"
+                    >
+                      <div className="flex items-start justify-between gap-2">
+                        <div className="space-y-0.5 min-w-0">
+                          <h4 className="text-xs sm:text-sm font-bold text-slate-900 dark:text-white leading-snug">
+                            {tema.nome}
+                          </h4>
+                          <span className="text-[11px] text-slate-500 dark:text-zinc-400 font-sans tabular-nums block">
+                            {tema.resolvidas} {tema.resolvidas === 1 ? 'questão' : 'questões'} • {tema.acertos} acertos / {tema.erros} erros
+                          </span>
+                        </div>
+
+                        <span
+                          className={`px-2 py-0.5 rounded-md text-[11px] font-bold font-sans tabular-nums shrink-0 ${
+                            isHigh
+                              ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20'
+                              : isMedium
+                              ? 'bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20'
+                              : 'bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-500/20'
+                          }`}
+                        >
+                          {tema.taxa.toFixed(1)}%
+                        </span>
+                      </div>
+
+                      {/* Barra de Aproveitamento do Tema */}
+                      <div className="w-full h-1.5 rounded-full bg-slate-200 dark:bg-zinc-800 overflow-hidden">
+                        <div
+                          className={`h-full rounded-full transition-all duration-300 ${
+                            isHigh ? 'bg-emerald-500' : isMedium ? 'bg-amber-500' : 'bg-rose-500'
+                          }`}
+                          style={{ width: `${tema.taxa}%` }}
+                        />
+                      </div>
+
+                      {/* Ação de Treino para o Tema */}
+                      <div className="pt-1 flex items-center justify-between">
+                        <span className="text-[10px] text-slate-400 dark:text-zinc-500">
+                          {tema.erros > 0 ? `${tema.erros} questões para revisar` : '100% de precisão'}
+                        </span>
+
+                        <button
+                          type="button"
+                          onClick={() => {
+                            setTrainingModal({
+                              titulo: tema.nome,
+                              subtitulo: selectedSpecialtyForDrawer.nome,
+                              erros: tema.erros,
+                              rendimento: tema.taxa,
+                              specialty: selectedSpecialtyForDrawer.nome,
+                              tema: tema.nome
+                            });
+                          }}
+                          className="text-xs font-bold inline-flex items-center gap-1 px-2.5 py-1 rounded-lg transition-colors cursor-pointer hover:bg-slate-100 dark:hover:bg-zinc-800"
+                          style={{ color: selectedSpecialtyForDrawer.cor }}
+                        >
+                          <span>Treinar Tema</span>
+                          <ChevronRight className="w-3.5 h-3.5" />
+                        </button>
+                      </div>
+                    </div>
+                  );
+                });
+              })()}
+            </div>
+
+            {/* Footer do Drawer */}
+            <div className="p-4 border-t border-slate-200 dark:border-zinc-800 bg-slate-50/50 dark:bg-zinc-900/30 flex items-center justify-between gap-3 shrink-0">
+              <button
+                type="button"
+                onClick={() => {
+                  setTrainingModal({
+                    titulo: selectedSpecialtyForDrawer.nome,
+                    subtitulo: 'Caderno Inteligente da Especialidade',
+                    erros: selectedSpecialtyForDrawer.erros,
+                    rendimento: selectedSpecialtyForDrawer.taxa,
+                    specialty: selectedSpecialtyForDrawer.nome
+                  });
+                }}
+                className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs font-bold text-white shadow-xs transition-all cursor-pointer hover:opacity-90"
+                style={{ backgroundColor: accentConfig.primaryHex }}
+              >
+                <BookOpen className="w-3.5 h-3.5" />
+                <span>Treinar Especialidade Completa</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => setIsSpecialtyDrawerOpen(false)}
+                className="px-4 py-2 rounded-xl border border-slate-200 dark:border-zinc-800 text-xs font-bold text-slate-600 dark:text-zinc-400 hover:bg-slate-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
+              >
+                Fechar
               </button>
             </div>
           </div>

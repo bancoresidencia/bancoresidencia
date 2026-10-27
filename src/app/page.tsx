@@ -59,6 +59,7 @@ const AdminReportedQuestions = dynamic(
 );
 
 import { ReportIssueDrawer } from '@/components/ReportIssueDrawer';
+import { SessionPerformanceView } from '@/components/SessionPerformanceView';
 
 const StatsDashboard = dynamic(
   () => import('@/components/StatsDashboard').then((mod) => mod.StatsDashboard),
@@ -2191,295 +2192,31 @@ export default function Home() {
                 </div>
               ) : bancoMode === 'resultado' ? (
                 /* MODO 3: TELA DE RESULTADOS E PRINCIPAIS PONTOS A SEREM MELHOR ESTUDADOS */
-                <div className="space-y-6 animate-in fade-in duration-200">
-                  {(() => {
-                    const sessionQuestions = filteredQuestions;
-                    const sessionAnswered = sessionQuestions.filter((q) => userAnswers[q.id]);
-                    const sessionCorrect = sessionAnswered.filter((q) => userAnswers[q.id]?.isCorrect);
-                    const sessionIncorrect = sessionAnswered.filter(
-                      (q) => !userAnswers[q.id]?.isCorrect && !q.isAnulada && q.correctAnswer !== 'ANULADA'
-                    );
-                    const answeredCount = sessionAnswered.length;
-                    const correctCount = sessionCorrect.length;
-                    const incorrectCount = sessionIncorrect.length;
-                    const accuracyRate = answeredCount > 0 ? Math.round((correctCount / answeredCount) * 100) : 0;
-
-                    // Diagnóstico clínico inteligente por tema
-                    const weakPointsMap = new Map<
-                      string,
-                      {
-                        specialty: string;
-                        tema: string;
-                        count: number;
-                        focos: string[];
-                        questions: Question[];
-                      }
-                    >();
-
-                    sessionIncorrect.forEach((q) => {
-                      const key = `${q.especialidade} - ${q.tema}`;
-                      if (!weakPointsMap.has(key)) {
-                        weakPointsMap.set(key, {
-                          specialty: q.especialidade,
-                          tema: q.tema,
-                          count: 0,
-                          focos: [],
-                          questions: []
-                        });
-                      }
-                      const entry = weakPointsMap.get(key)!;
-                      entry.count++;
-                      entry.questions.push(q);
-                      if (q.foco && !entry.focos.includes(q.foco)) {
-                        entry.focos.push(q.foco);
-                      }
-                      if (q.subfoco && !entry.focos.includes(q.subfoco)) {
-                        entry.focos.push(q.subfoco);
-                      }
-                    });
-
-                    const weakPoints = Array.from(weakPointsMap.values()).sort((a, b) => b.count - a.count);
-
-                    return (
-                      <>
-                        {/* Header com Resumo Geral */}
-                        <div className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-xs space-y-6">
-                          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 dark:border-slate-800 pb-6">
-                            <div className="flex items-center gap-3.5">
-                              <div
-                                className="w-12 h-12 rounded-2xl flex items-center justify-center shadow-sm shrink-0"
-                                style={{ backgroundColor: accentConfig.bgRgba, color: accentConfig.primaryHex }}
-                              >
-                                <Trophy className="w-6 h-6" />
-                              </div>
-                              <div>
-                                <div className="flex items-center gap-2">
-                                  <span className="px-2.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-blue-50 dark:bg-blue-950/60 text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-blue-800/60">
-                                    Resolução Sequencial Finalizada
-                                  </span>
-                                </div>
-                                <h2 className="font-heading text-xl sm:text-2xl font-black text-slate-900 dark:text-white mt-1">
-                                  Desempenho da Sessão
-                                </h2>
-                                <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-                                  Confira suas métricas de precisão e os principais focos clínicos recomendados para estudo.
-                                </p>
-                              </div>
-                            </div>
-
-                            {/* Botão de Retorno Rápido aos Filtros */}
-                            <button
-                              type="button"
-                              onClick={() => setBancoMode('filtros')}
-                              className="flex items-center justify-center gap-2 px-5 py-2.5 rounded-2xl text-xs font-bold text-white shadow-md transition-all hover:scale-102 cursor-pointer shrink-0"
-                              style={{ backgroundColor: accentConfig.primaryHex }}
-                            >
-                              <SlidersHorizontal className="w-3.5 h-3.5" />
-                              <span>Retornar aos Filtros</span>
-                            </button>
-                          </div>
-
-                          {/* Grid de 4 Métricas */}
-                          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-                            <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 space-y-1">
-                              <span className="text-[11px] font-bold text-slate-500 dark:text-slate-400 block">Total de Questões</span>
-                              <span className="text-2xl sm:text-3xl font-black font-sans text-slate-900 dark:text-white">
-                                {sessionQuestions.length}
-                              </span>
-                              <span className="text-[10px] text-slate-400 block">no lote selecionado</span>
-                            </div>
-
-                            <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 space-y-1">
-                              <span className="text-[11px] font-bold text-slate-500 dark:text-slate-400 block">Respondidas</span>
-                              <span className="text-2xl sm:text-3xl font-black font-sans text-slate-900 dark:text-white">
-                                {answeredCount}
-                              </span>
-                              <span className="text-[10px] text-slate-400 block">
-                                {answeredCount === sessionQuestions.length ? '100% resolvidas' : `${sessionQuestions.length - answeredCount} pendentes`}
-                              </span>
-                            </div>
-
-                            <div className="p-4 rounded-2xl bg-emerald-50/50 dark:bg-emerald-950/20 border border-emerald-200/80 dark:border-emerald-900/50 space-y-1">
-                              <span className="text-[11px] font-bold text-emerald-700 dark:text-emerald-400 block flex items-center gap-1">
-                                <CheckCircle2 className="w-3.5 h-3.5" /> Acertos
-                              </span>
-                              <div className="flex items-baseline gap-2">
-                                <span className="text-2xl sm:text-3xl font-black font-sans text-emerald-600 dark:text-emerald-400">
-                                  {correctCount}
-                                </span>
-                                <span className="text-xs font-bold text-emerald-600/80 dark:text-emerald-400/80 font-sans">
-                                  ({accuracyRate}%)
-                                </span>
-                              </div>
-                              <span className="text-[10px] text-emerald-600/70 dark:text-emerald-400/70 block">aproveitamento</span>
-                            </div>
-
-                            <div className="p-4 rounded-2xl bg-rose-50/50 dark:bg-rose-950/20 border border-rose-200/80 dark:border-rose-900/50 space-y-1">
-                              <span className="text-[11px] font-bold text-rose-700 dark:text-rose-400 block flex items-center gap-1">
-                                <XCircle className="w-3.5 h-3.5" /> Erros
-                              </span>
-                              <div className="flex items-baseline gap-2">
-                                <span className="text-2xl sm:text-3xl font-black font-sans text-rose-600 dark:text-rose-400">
-                                  {incorrectCount}
-                                </span>
-                                <span className="text-xs font-bold text-rose-600/80 dark:text-rose-400/80 font-sans">
-                                  ({answeredCount > 0 ? 100 - accuracyRate : 0}%)
-                                </span>
-                              </div>
-                              <span className="text-[10px] text-rose-600/70 dark:text-rose-400/70 block">necessitam revisão</span>
-                            </div>
-                          </div>
-                        </div>
-
-                        {/* SEÇÃO PRINCIPAIS PONTOS A SEREM MELHOR ESTUDADOS */}
-                        <div className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-xs space-y-5">
-                          <div className="flex items-center gap-3">
-                            <div className="w-10 h-10 rounded-2xl bg-amber-500/10 text-amber-500 flex items-center justify-center shrink-0">
-                              <AlertTriangle className="w-5 h-5" />
-                            </div>
-                            <div>
-                              <h3 className="font-heading text-base sm:text-lg font-black text-slate-900 dark:text-white">
-                                Principais Pontos a Serem Melhor Estudados
-                              </h3>
-                              <p className="text-xs text-slate-500 dark:text-slate-400">
-                                Diagnóstico baseado nos erros e dúvidas identificados durante esta sessão sequencial.
-                              </p>
-                            </div>
-                          </div>
-
-                          {weakPoints.length > 0 ? (
-                            <div className="space-y-4 pt-2">
-                              {weakPoints.map((item, idx) => (
-                                <div
-                                  key={idx}
-                                  className="p-5 rounded-2xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800 space-y-3 transition-all hover:border-amber-400/50"
-                                >
-                                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-                                    <div className="flex flex-wrap items-center gap-2">
-                                      <span className="px-2.5 py-0.5 rounded-lg text-[10px] font-extrabold uppercase tracking-wide bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300">
-                                        {item.specialty}
-                                      </span>
-                                      <h4 className="text-sm font-extrabold text-slate-900 dark:text-white">
-                                        {item.tema}
-                                      </h4>
-                                    </div>
-                                    <div className="flex items-center gap-2 shrink-0">
-                                      <span className="px-2.5 py-0.5 rounded-full text-xs font-bold bg-rose-100 dark:bg-rose-950/60 text-rose-700 dark:text-rose-300 border border-rose-200 dark:border-rose-900">
-                                        {item.count} {item.count === 1 ? 'erro' : 'erros'}
-                                      </span>
-                                    </div>
-                                  </div>
-
-                                  {/* Subtópicos e focos específicos do erro */}
-                                  {item.focos.length > 0 && (
-                                    <div className="flex flex-wrap items-center gap-1.5 text-xs">
-                                      <span className="text-[11px] font-semibold text-slate-400">Focos prioritários:</span>
-                                      {item.focos.map((fc, fIdx) => (
-                                        <span
-                                          key={fIdx}
-                                          className="px-2 py-0.5 rounded-md bg-amber-50 dark:bg-amber-950/40 text-amber-700 dark:text-amber-300 border border-amber-200 dark:border-amber-900 text-[11px] font-medium"
-                                        >
-                                          {fc}
-                                        </span>
-                                      ))}
-                                    </div>
-                                  )}
-
-                                  {/* Recomendação de Estudo direcionada */}
-                                  <div className="p-3 rounded-xl bg-white dark:bg-slate-950/70 border border-slate-200/80 dark:border-slate-800/80 text-xs text-slate-700 dark:text-slate-300 space-y-1">
-                                    <span className="font-bold text-amber-600 dark:text-amber-400 block">
-                                      💡 Recomendação de Fixação:
-                                    </span>
-                                    <p className="leading-relaxed">
-                                      {item.specialty.includes('Ginecologia')
-                                        ? 'Revisar diretrizes do Ministério da Saúde para rastreio de câncer de colo de útero (condutas em LIEBG, LIEAG e ASC-US) e vacinação contra HPV.'
-                                        : item.specialty.includes('Obstetrícia')
-                                        ? 'Focar no diagnóstico e manejo agudo das síndromes hipertensivas (sulfatação de pré-eclâmpsia com sinais de gravidade) e vitalidade fetal.'
-                                        : item.specialty.includes('Cirurgia')
-                                        ? 'Rever escores clínicos diagnósticos (Alvarado para apendicite), anatomia de hérnias inguinais e critérios de indicação cirúrgica de urgência.'
-                                        : item.specialty.includes('Clínica')
-                                        ? 'Revisar critérios de indicação dialítica de urgência, controle de hipercalemia grave e condução de cetoacidose diabética e sepse.'
-                                        : item.specialty.includes('Pediatria')
-                                        ? 'Priorizar marcos de desenvolvimento infantil (PNI), manejo de desidratação (Planos A, B e C) e pneumonias comunitárias.'
-                                        : `Aprofundar nos critérios diagnósticos e terapêuticos de ${item.tema} e resolver questões com foco nos erros cometidos.`}
-                                    </p>
-                                  </div>
-
-                                  {/* Atalhos para ver as questões que o aluno errou */}
-                                  <div className="flex flex-wrap items-center gap-2 pt-1 text-xs">
-                                    <span className="text-[11px] text-slate-400">Ir para a questão com erro:</span>
-                                    {item.questions.map((q) => {
-                                      const qIdx = filteredQuestions.findIndex((itemQ) => itemQ.id === q.id);
-                                      return (
-                                        <button
-                                          key={q.id}
-                                          type="button"
-                                          onClick={() => {
-                                            if (qIdx !== -1) {
-                                              setCurrentQuestionIndex(qIdx);
-                                              setBancoMode('resolucao');
-                                              setQuestionTimer(0);
-                                            }
-                                          }}
-                                          className="px-2.5 py-1 rounded-lg border border-slate-200 dark:border-slate-800 text-[11px] font-mono font-bold text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
-                                        >
-                                          {q.code} →
-                                        </button>
-                                      );
-                                    })}
-                                  </div>
-                                </div>
-                              ))}
-                            </div>
-                          ) : (
-                            <div className="p-6 rounded-2xl bg-emerald-50/60 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-800 text-center space-y-2">
-                              <Sparkles className="w-8 h-8 text-emerald-500 mx-auto" />
-                              <h4 className="text-base font-extrabold text-emerald-800 dark:text-emerald-300">
-                                Excelente! Nenhum erro registrado nesta sessão.
-                              </h4>
-                              <p className="text-xs text-emerald-700 dark:text-emerald-400 max-w-lg mx-auto">
-                                Você acertou 100% das questões respondidas. Para continuar evoluindo, teste filtros com nível de dificuldade &quot;Difícil&quot; ou explore novos temas clínicos.
-                              </p>
-                            </div>
-                          )}
-                        </div>
-
-                        {/* Barra de Ações Inferior: Retornar à tela de filtros */}
-                        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-5 rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-xs">
-                          <button
-                            type="button"
-                            onClick={() => {
-                              setBancoMode('resolucao');
-                              setCurrentQuestionIndex(0);
-                              setQuestionTimer(0);
-                            }}
-                            className="flex items-center gap-2 px-5 py-2.5 rounded-2xl border border-slate-200 dark:border-slate-800 text-xs font-bold text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all cursor-pointer shadow-xs"
-                          >
-                            <RotateCcw className="w-4 h-4" />
-                            <span>Revisar Questões Desta Sessão</span>
-                          </button>
-
-                          <button
-                            type="button"
-                            onClick={() => setBancoMode('filtros')}
-                            className="flex items-center gap-2 px-7 py-3 rounded-2xl text-xs sm:text-sm font-extrabold text-white shadow-lg transition-all hover:scale-102 cursor-pointer"
-                            style={{ backgroundColor: accentConfig.primaryHex }}
-                          >
-                            <SlidersHorizontal className="w-4 h-4" />
-                            <span>Concluir e Voltar aos Filtros →</span>
-                          </button>
-                        </div>
-                      </>
-                    );
-                  })()}
-                </div>
+                <SessionPerformanceView
+                  questions={filteredQuestions}
+                  userAnswers={userAnswers}
+                  onReturnToFilters={() => setBancoMode('filtros')}
+                  onReviewAll={() => {
+                    setBancoMode('resolucao');
+                    setCurrentQuestionIndex(0);
+                    setQuestionTimer(0);
+                  }}
+                  onNavigateToQuestion={(questionId) => {
+                    const qIdx = filteredQuestions.findIndex((itemQ) => itemQ.id === questionId);
+                    if (qIdx !== -1) {
+                      setCurrentQuestionIndex(qIdx);
+                      setBancoMode('resolucao');
+                      setQuestionTimer(0);
+                    }
+                  }}
+                />
               ) : (
                 /* MODO 2: RESOLUÇÃO SEQUENCIAL QUESTÃO A QUESTÃO (ESTRUTURA DA IMAGEM 2) */
                 <div className="space-y-5 animate-in fade-in duration-200">
                   {visibleQuestions.length > 0 ? (
                     <>
                       {/* BARRA SUPERIOR SEQUENCIAL (MODELO DA IMAGEM 2 COM RÉGUA RETRÁTIL DA IMAGEM 1) */}
-                      <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 rounded-2xl px-3 sm:px-4 py-2.5 sm:py-3 shadow-xs flex flex-col gap-2.5">
+                      <div className="sticky top-[4.5rem] z-20 bg-white/95 dark:bg-[#121215]/95 backdrop-blur-md border border-zinc-200/90 dark:border-zinc-800/80 rounded-2xl px-3 sm:px-4 py-2.5 sm:py-3 shadow-sm flex flex-col gap-2.5 transition-colors">
                         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3">
                           {/* Esquerda: Widget de Progresso Circular Retrátil (Modelo da Imagem 2) */}
                           <div className="flex items-center gap-3">
@@ -2714,63 +2451,6 @@ export default function Home() {
                               <Keyboard className="w-4 h-4 text-blue-600 dark:text-blue-400 group-hover:scale-110 transition-transform" />
                               <span className="hidden sm:inline text-xs font-bold">Atalhos</span>
                             </button>
-
-                            {/* Seletor Rápido: Mais Recentes vs Aleatório */}
-                            <div className="hidden sm:inline-flex items-center rounded-xl p-0.5 bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-                              <button
-                                type="button"
-                                onClick={() => {
-                                  if (advancedFilters.aleatorizar) {
-                                    setAdvancedFilters((prev) => ({ ...prev, aleatorizar: false }));
-                                    setSessionQuestionIds(null);
-                                    setQuestionsPage(1);
-                                    setCurrentQuestionIndex(0);
-                                    setSupabaseQuestions((prev) =>
-                                      [...prev].sort((a, b) => {
-                                        const diff = (b.year || 0) - (a.year || 0);
-                                        return diff !== 0 ? diff : a.id.localeCompare(b.id);
-                                      })
-                                    );
-                                  }
-                                }}
-                                className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
-                                  !advancedFilters.aleatorizar
-                                    ? 'text-white shadow-xs'
-                                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
-                                }`}
-                                style={{
-                                  backgroundColor: !advancedFilters.aleatorizar ? accentConfig.primaryHex : undefined
-                                }}
-                                title="Modo Mais Recentes: prioriza e ordena pelas questões dos anos mais novos"
-                              >
-                                <Clock className="w-3 h-3" />
-                                <span>Recentes</span>
-                              </button>
-                              <button
-                                type="button"
-                                onClick={() => {
-                                  if (!advancedFilters.aleatorizar) {
-                                    setAdvancedFilters((prev) => ({ ...prev, aleatorizar: true }));
-                                    setSessionQuestionIds(null);
-                                    setQuestionsPage(1);
-                                    setCurrentQuestionIndex(0);
-                                    setSupabaseQuestions((prev) => shuffleArray([...prev]));
-                                  }
-                                }}
-                                className={`flex items-center gap-1 px-2.5 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
-                                  advancedFilters.aleatorizar
-                                    ? 'text-white shadow-xs'
-                                    : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
-                                }`}
-                                style={{
-                                  backgroundColor: advancedFilters.aleatorizar ? accentConfig.primaryHex : undefined
-                                }}
-                                title="Modo Aleatório: distribui de forma uniforme por múltiplos anos e bancas"
-                              >
-                                <Shuffle className="w-3 h-3" />
-                                <span>Aleatório</span>
-                              </button>
-                            </div>
 
                             {/* Botão de Filtros (Apenas Ícones) */}
                             <button
