@@ -39,7 +39,7 @@ export const GlobalSearchBar: React.FC<GlobalSearchBarProps> = ({
   onSelectList,
   onSelectQuestion,
   lists = [],
-  placeholder = 'Pesquisa geral (questões, temas, especialidades, bancas)...'
+  placeholder = 'Buscar questões, temas, bancas...'
 }) => {
   const { accentConfig, mode } = useTheme();
   const [query, setQuery] = useState('');

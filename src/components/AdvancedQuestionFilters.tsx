@@ -214,6 +214,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   const [showRaioXModal, setShowRaioXModal] = useState<boolean>(false);
   const [isFilterTransitioning, setIsFilterTransitioning] = useState<boolean>(false);
   const [isStartingQuestions, setIsStartingQuestions] = useState<boolean>(false);
+  const [mobileTab, setMobileTab] = useState<'conteudo' | 'bancas'>('conteudo');
 
   useEffect(() => {
     setIsFilterTransitioning(true);
@@ -271,6 +272,34 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     }
     return parts;
   }, [filters.dificuldade, filters.tipoQuestao, filters.ocultarAnuladasErro, filters.ocultarRevisadas]);
+
+  // Contadores de filtros ativos para as abas mobile
+  const activeConteudoCount = useMemo(() => {
+    return (
+      (filters.especialidades?.length || 0) +
+      (filters.temas?.length || 0) +
+      (filters.focos?.length || 0) +
+      (filters.subfocos?.length || 0)
+    );
+  }, [filters.especialidades, filters.temas, filters.focos, filters.subfocos]);
+
+  const activeBancasCount = useMemo(() => {
+    let count = (filters.instituicoes?.length || 0) + (filters.anos?.length || 0);
+    if (filters.dificuldade && filters.dificuldade !== 'Todas') count++;
+    if (filters.status && filters.status !== 'Todas') count++;
+    if (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') count++;
+    if (filters.ocultarAnuladasErro) count++;
+    if (filters.ocultarRevisadas) count++;
+    return count;
+  }, [
+    filters.instituicoes,
+    filters.anos,
+    filters.dificuldade,
+    filters.status,
+    filters.tipoQuestao,
+    filters.ocultarAnuladasErro,
+    filters.ocultarRevisadas
+  ]);
 
   // Mini-seletor de Cotas e Distribuição Proporcional (Round-Robin)
   const [quotasByItem, setQuotasByItem] = useState<Record<string, number>>({});
@@ -762,15 +791,15 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   }, [filters]);
 
   return (
-    <div className="text-slate-900 dark:text-slate-100 h-full flex flex-col justify-between min-h-0 space-y-2 font-sans select-none pb-16 sm:pb-14">
+    <div className="text-slate-900 dark:text-slate-100 h-full flex flex-col justify-between min-h-0 space-y-2.5 font-sans select-none pb-36 sm:pb-32 lg:pb-16">
       {/* =========================================================================
           1. HEADER SUPERIOR / CARD PRINCIPAL (ESTILO IMAGEM 1)
          ========================================================================= */}
-      <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 px-4 sm:px-5 py-2.5 sm:py-3 rounded-2xl shadow-sm shrink-0 flex flex-col md:flex-row md:items-center justify-between gap-3">
+      <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 px-3 sm:px-5 py-2.5 sm:py-3 rounded-2xl shadow-sm shrink-0 flex flex-col md:flex-row md:items-center justify-between gap-2.5 sm:gap-3">
         {/* Lado Esquerdo: Modalidades no topo e Botões de Ação Rápida logo abaixo */}
-        <div className="flex flex-col gap-2 items-start">
+        <div className="flex flex-col gap-2 items-start w-full md:w-auto">
           {/* Grupo de Modalidades */}
-          <div className="flex items-center gap-1 p-0.5 rounded-xl bg-slate-100 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800/80">
+          <div className="flex items-center gap-1 p-0.5 rounded-xl bg-slate-100 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800/80 w-full sm:w-auto overflow-x-auto no-scrollbar">
             <button
               type="button"
               onClick={() => onChange({ ...filters, modalidades: ['Residência Médica'] })}
@@ -852,7 +881,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
         </div>
 
         {/* Lado Direito: Quantidade de Questões Encontradas */}
-        <div className="flex items-center gap-2 self-end md:self-auto">
+        <div className="flex items-center justify-between md:justify-end gap-2 w-full md:w-auto pt-1 md:pt-0 border-t md:border-t-0 border-zinc-100 dark:border-zinc-800/80">
+          <span className="text-[11px] font-semibold text-zinc-500 dark:text-zinc-400 md:hidden">
+            Total Disponível:
+          </span>
           <div className="flex items-baseline gap-1.5 transition-all duration-200">
             {isCountLoading && (
               <Loader2
@@ -861,7 +893,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               />
             )}
             <span
-              className={`text-2xl sm:text-3xl font-black text-zinc-900 dark:text-white tracking-tight font-sans transition-all duration-200 ${
+              className={`text-xl sm:text-3xl font-black text-zinc-900 dark:text-white tracking-tight font-sans transition-all duration-200 ${
                 isCountLoading ? 'opacity-40 scale-[0.98]' : 'opacity-100 scale-100'
               }`}
             >
@@ -875,21 +907,69 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       </div>
 
       {/* =========================================================================
-          2. CORPO PRINCIPAL EM 2 COLUNAS (ESQUERDA 57% | DIREITA 43% - ESTILO IMAGEM 1)
+          SELETOR DE ABAS MOBILE (VISÍVEL APENAS EM TELAS < LG)
+         ========================================================================= */}
+      <div className="flex lg:hidden items-center p-1 rounded-2xl bg-zinc-100 dark:bg-zinc-900/90 border border-zinc-200 dark:border-zinc-800 shrink-0 gap-1">
+        <button
+          type="button"
+          onClick={() => setMobileTab('conteudo')}
+          className={`flex-1 flex items-center justify-center gap-2 py-2 px-3 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+            mobileTab === 'conteudo'
+              ? 'text-white shadow-sm'
+              : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
+          }`}
+          style={{
+            backgroundColor: mobileTab === 'conteudo' ? accentConfig.primaryHex : undefined
+          }}
+        >
+          <Layers className="w-3.5 h-3.5 shrink-0" />
+          <span>Conteúdo Clínico</span>
+          {activeConteudoCount > 0 && (
+            <span className={`px-1.5 py-0.5 rounded-full text-[10px] font-mono font-bold ${
+              mobileTab === 'conteudo' ? 'bg-white/20 text-white' : 'bg-zinc-200 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200'
+            }`}>
+              {activeConteudoCount}
+            </span>
+          )}
+        </button>
+
+        <button
+          type="button"
+          onClick={() => setMobileTab('bancas')}
+          className={`flex-1 flex items-center justify-center gap-2 py-2 px-3 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+            mobileTab === 'bancas'
+              ? 'text-white shadow-sm'
+              : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
+          }`}
+          style={{
+            backgroundColor: mobileTab === 'bancas' ? accentConfig.primaryHex : undefined
+          }}
+        >
+          <Building2 className="w-3.5 h-3.5 shrink-0" />
+          <span>Bancas & Critérios</span>
+          {activeBancasCount > 0 && (
+            <span className={`px-1.5 py-0.5 rounded-full text-[10px] font-mono font-bold ${
+              mobileTab === 'bancas' ? 'bg-white/20 text-white' : 'bg-zinc-200 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-200'
+            }`}>
+              {activeBancasCount}
+            </span>
+          )}
+        </button>
+      </div>
+
+      {/* =========================================================================
+          2. CORPO PRINCIPAL (MOBILE: 1 COLUNA POR ABA | DESKTOP: 2 COLUNAS LADO A LADO)
          ========================================================================= */}
       <div 
-        className="w-full flex-1 min-h-0 items-stretch"
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'minmax(0, 57fr) minmax(0, 43fr)',
-          gap: '14px'
-        }}
+        className="w-full flex-1 min-h-0 items-stretch flex flex-col lg:grid lg:grid-cols-[57fr_43fr] gap-3.5"
       >
         {/* -----------------------------------------------------------------------
             COLUNA DA ESQUERDA (57%): ESPECIALIDADES, TEMAS E SUBFOCOS
            ----------------------------------------------------------------------- */}
         <div 
-          className="rounded-3xl p-3.5 sm:p-4 flex flex-col shadow-sm bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 overflow-hidden h-full min-h-0"
+          className={`rounded-3xl p-3.5 sm:p-4 flex-col shadow-sm bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 overflow-hidden h-full min-h-0 ${
+            mobileTab === 'conteudo' ? 'flex' : 'hidden lg:flex'
+          }`}
         >
           {/* Topo do Card de Conteúdo */}
           <div className="flex items-center justify-between gap-2 pb-2.5 border-b border-zinc-100 dark:border-zinc-800/80 mb-2 shrink-0">
@@ -1314,7 +1394,9 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             COLUNA DA DIREITA (43%): BANCO, STATUS, DIFICULDADE, ANOS (ESTILO IMAGEM 1)
            ----------------------------------------------------------------------- */}
         <div 
-          className="rounded-3xl p-3.5 sm:p-4 flex flex-col shadow-sm bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 overflow-hidden h-full min-h-0 space-y-3"
+          className={`rounded-3xl p-3.5 sm:p-4 flex-col shadow-sm bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 overflow-hidden h-full min-h-0 space-y-3 ${
+            mobileTab === 'bancas' ? 'flex' : 'hidden lg:flex'
+          }`}
         >
           {/* 1. Instituições e Bancas */}
           <div className="space-y-1.5 shrink-0">
@@ -1758,72 +1840,76 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
         <div 
           className={`fixed bottom-0 right-0 z-30 transition-all duration-300 ${
             isSidebarCollapsed ? 'left-0 md:left-20' : 'left-0 md:left-64'
-          } bg-white/95 dark:bg-[#09090b]/95 backdrop-blur-md border-t border-zinc-200 dark:border-zinc-800 px-4 sm:px-6 py-2.5 sm:py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.06)] dark:shadow-[0_-8px_25px_rgba(0,0,0,0.6)] select-none`}
+          } bg-white/95 dark:bg-[#09090b]/95 backdrop-blur-md border-t border-zinc-200 dark:border-zinc-800 px-3 sm:px-6 py-2 sm:py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.06)] dark:shadow-[0_-8px_25px_rgba(0,0,0,0.6)] select-none`}
         >
-          <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-3 w-full">
-            {/* Lado Esquerdo: Filtros Ativos + Tags + Limpar (Estilo Imagem 2) */}
-            <div className="flex flex-wrap items-center gap-2">
-              <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-700 dark:text-zinc-300">
+          <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-2 sm:gap-3 w-full">
+            {/* Linha 1 no Mobile / Lado Esquerdo no Desktop: Filtros Ativos + Tags + Limpar */}
+            <div className="flex items-center justify-between lg:justify-start gap-2 min-w-0 overflow-hidden">
+              <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-700 dark:text-zinc-300 shrink-0">
                 <SlidersHorizontal className="w-3.5 h-3.5 shrink-0" style={{ color: accentConfig.primaryHex }} />
                 <span>Filtros ({activeTags.length}):</span>
               </div>
 
-              {/* Tags Ativas Removíveis (Estilo Imagem 2) */}
-              {activeTags.map((t) => (
-                <span
-                  key={t.id}
-                  className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold border"
-                  style={{
-                    backgroundColor: accentConfig.bgRgba,
-                    borderColor: accentConfig.borderRgba,
-                    color: accentConfig.primaryHex
-                  }}
-                >
-                  <span>{t.label}</span>
-                  <button
-                    type="button"
-                    onClick={t.onRemove}
-                    className="hover:opacity-75 cursor-pointer ml-0.5 text-xs"
-                    style={{ color: accentConfig.primaryHex }}
+              {/* Tags Ativas Removíveis com rolagem horizontal compacta */}
+              <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5 min-w-0">
+                {activeTags.map((t) => (
+                  <span
+                    key={t.id}
+                    className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-semibold border shrink-0"
+                    style={{
+                      backgroundColor: accentConfig.bgRgba,
+                      borderColor: accentConfig.borderRgba,
+                      color: accentConfig.primaryHex
+                    }}
                   >
-                    ✕
-                  </button>
-                </span>
-              ))}
+                    <span className="truncate max-w-[130px]">{t.label}</span>
+                    <button
+                      type="button"
+                      onClick={t.onRemove}
+                      className="hover:opacity-75 cursor-pointer ml-0.5 text-xs"
+                      style={{ color: accentConfig.primaryHex }}
+                    >
+                      ✕
+                    </button>
+                  </span>
+                ))}
+              </div>
 
               {activeTags.length > 0 && (
                 <button
                   type="button"
                   onClick={onReset}
-                  className="flex items-center gap-1 text-xs text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white font-medium ml-1.5 cursor-pointer transition-colors"
+                  className="flex items-center gap-1 text-[11px] text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white font-medium shrink-0 cursor-pointer transition-colors"
                 >
                   <RotateCcw className="w-3 h-3" />
-                  <span>Limpar</span>
+                  <span className="hidden sm:inline">Limpar</span>
                 </button>
               )}
             </div>
 
-            {/* Lado Direito: Cotas + Quantidade + Salvar Lista + Iniciar (Estilo Imagem 2) */}
-            <div className="flex flex-wrap items-center gap-2.5">
+            {/* Linha 2 no Mobile / Lado Direito no Desktop: Cotas + Qtd + Recentes/Aleatório + Salvar + Iniciar */}
+            <div className="flex items-center justify-between lg:justify-end gap-1.5 sm:gap-2.5 shrink-0 w-full lg:w-auto">
+              {/* Cotas (se houver) */}
               {itemsToConfigure.length > 1 && (
                 <button
                   type="button"
                   onClick={() => setIsCotasDrawerOpen(!isCotasDrawerOpen)}
-                  className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer border ${
+                  className={`flex items-center gap-1 px-2 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer border shrink-0 ${
                     isCotasDrawerOpen
                       ? 'bg-amber-500/20 border-amber-500 text-amber-700 dark:text-amber-300 shadow-sm'
-                      : 'bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800 border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white'
+                      : 'bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800 border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300'
                   }`}
-                  title="Personalizar cotas por filtro ou balancear proporcionalmente"
+                  title="Personalizar cotas por filtro"
                 >
                   <PieChart className="w-3.5 h-3.5 text-amber-500 dark:text-amber-400" />
-                  <span>Cotas ({itemsToConfigure.length})</span>
-                  <ChevronUp className={`w-3 h-3 transition-transform duration-200 ${isCotasDrawerOpen ? 'rotate-180' : ''}`} />
+                  <span className="hidden sm:inline">Cotas</span>
+                  <span>({itemsToConfigure.length})</span>
                 </button>
               )}
 
-              <div className="flex items-center gap-1.5 text-xs text-zinc-600 dark:text-zinc-400">
-                <span className="font-semibold mr-0.5 text-zinc-600 dark:text-zinc-400">Qtd:</span>
+              {/* Seletor de Quantidade */}
+              <div className="flex items-center gap-1 text-xs text-zinc-600 dark:text-zinc-400 shrink-0">
+                <span className="font-semibold text-[11px] text-zinc-500 dark:text-zinc-400 hidden sm:inline mr-0.5">Qtd:</span>
                 {[20, 50, 100].map((num) => (
                   <button
                     key={num}
@@ -1832,10 +1918,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                       setResolveCount(num);
                       setShowCustomQtd(false);
                     }}
-                    className={`px-2.5 py-1 rounded-md text-xs font-bold transition-all cursor-pointer ${
+                    className={`px-2 py-1 rounded-md text-xs font-bold transition-all cursor-pointer ${
                       resolveCount === num && !showCustomQtd
                         ? 'text-white shadow-xs'
-                        : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
+                        : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white bg-zinc-100 dark:bg-zinc-900 sm:bg-transparent'
                     }`}
                     style={{
                       backgroundColor: resolveCount === num && !showCustomQtd ? accentConfig.primaryHex : undefined
@@ -1848,7 +1934,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                 <button
                   type="button"
                   onClick={() => setShowCustomQtd(!showCustomQtd)}
-                  className={`px-2.5 py-1 rounded-md text-xs font-medium border border-zinc-300 dark:border-zinc-700 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-all cursor-pointer ${
+                  className={`px-1.5 py-1 rounded-md text-[11px] font-medium border border-zinc-300 dark:border-zinc-700 text-zinc-600 dark:text-zinc-400 transition-all cursor-pointer ${
                     showCustomQtd || ![20, 50, 100].includes(resolveCount)
                       ? 'text-white font-bold'
                       : ''
@@ -1858,7 +1944,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                     borderColor: (showCustomQtd || ![20, 50, 100].includes(resolveCount)) ? accentConfig.primaryHex : undefined
                   }}
                 >
-                  Outro
+                  +
                 </button>
 
                 {showCustomQtd && (
@@ -1871,25 +1957,22 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                       const val = parseInt(e.target.value) || 0;
                       setResolveCount(Math.max(1, Math.min(200, val)));
                     }}
-                    className="w-13 text-center font-bold text-xs bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 rounded-md py-1 text-zinc-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-[var(--primary-color)] ml-0.5"
+                    className="w-12 text-center font-bold text-xs bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 rounded-md py-1 text-zinc-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-[var(--primary-color)]"
                     placeholder="Qtd"
                   />
                 )}
               </div>
 
-              {/* Seletor Segmentado: Mais Recentes vs Aleatório */}
-              <div className="inline-flex items-center rounded-xl p-0.5 bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">
+              {/* Modo: Mais Recentes vs Aleatório */}
+              <div className="inline-flex items-center rounded-xl p-0.5 bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 shrink-0">
                 <button
                   type="button"
                   onClick={() => {
                     if (filters.aleatorizar) {
-                      onChange({
-                        ...filters,
-                        aleatorizar: false
-                      });
+                      onChange({ ...filters, aleatorizar: false });
                     }
                   }}
-                  className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                  className={`p-1.5 sm:px-2.5 sm:py-1 rounded-lg text-xs font-bold transition-all cursor-pointer flex items-center gap-1 ${
                     !filters.aleatorizar
                       ? 'text-white shadow-xs'
                       : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
@@ -1897,23 +1980,20 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                   style={{
                     backgroundColor: !filters.aleatorizar ? accentConfig.primaryHex : undefined
                   }}
-                  title="Modo Mais Recentes: prioriza e ordena pelas questões dos anos mais novos (2026, 2025...)"
+                  title="Modo Mais Recentes"
                 >
                   <Clock className="w-3.5 h-3.5" />
-                  <span>Mais Recentes</span>
+                  <span className="hidden sm:inline">Recentes</span>
                 </button>
 
                 <button
                   type="button"
                   onClick={() => {
                     if (!filters.aleatorizar) {
-                      onChange({
-                        ...filters,
-                        aleatorizar: true
-                      });
+                      onChange({ ...filters, aleatorizar: true });
                     }
                   }}
-                  className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                  className={`p-1.5 sm:px-2.5 sm:py-1 rounded-lg text-xs font-bold transition-all cursor-pointer flex items-center gap-1 ${
                     filters.aleatorizar
                       ? 'text-white shadow-xs'
                       : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
@@ -1921,22 +2001,25 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                   style={{
                     backgroundColor: filters.aleatorizar ? accentConfig.primaryHex : undefined
                   }}
-                  title="Modo Aleatório: mistura completamente questões, anos e bancas de forma randômica"
+                  title="Modo Aleatório"
                 >
                   <Shuffle className="w-3.5 h-3.5" />
-                  <span>Aleatório</span>
+                  <span className="hidden sm:inline">Aleatório</span>
                 </button>
               </div>
 
+              {/* Botão Salvar Lista */}
               <button
                 type="button"
                 onClick={onCreateListFromFilter}
-                className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold bg-zinc-100 hover:bg-zinc-200 text-zinc-800 border border-zinc-300 dark:bg-zinc-800 dark:hover:bg-zinc-700 dark:text-zinc-100 dark:border-zinc-700 transition-colors cursor-pointer shadow-xs"
+                className="p-2 sm:px-3 sm:py-1.5 rounded-xl text-xs font-semibold bg-zinc-100 hover:bg-zinc-200 text-zinc-800 border border-zinc-300 dark:bg-zinc-800 dark:hover:bg-zinc-700 dark:text-zinc-100 dark:border-zinc-700 transition-colors cursor-pointer shadow-xs shrink-0 flex items-center gap-1"
+                title="Salvar como Caderno / Lista"
               >
-                <ListPlus className="w-4 h-4 text-zinc-700 dark:text-zinc-200" />
-                <span>Salvar Lista</span>
+                <ListPlus className="w-4 h-4" />
+                <span className="hidden sm:inline">Salvar</span>
               </button>
 
+              {/* Botão Primário Iniciar */}
               <button
                 type="button"
                 disabled={isStartingQuestions || displayedQuestionCount === 0}
@@ -1949,7 +2032,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                     setTimeout(() => setIsStartingQuestions(false), 2000);
                   }
                 }}
-                className={`flex items-center gap-2 px-5 py-2 rounded-xl text-white font-bold text-xs sm:text-sm shadow-md transition-all cursor-pointer active:scale-98 hover:opacity-95 ${
+                className={`flex-1 sm:flex-initial flex items-center justify-center gap-1.5 px-3.5 sm:px-5 py-2 rounded-xl text-white font-bold text-xs sm:text-sm shadow-md transition-all cursor-pointer active:scale-98 hover:opacity-95 shrink-0 ${
                   isStartingQuestions ? 'opacity-80 cursor-wait' : ''
                 }`}
                 style={{
@@ -1960,12 +2043,12 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                 {isStartingQuestions ? (
                   <>
                     <Loader2 className="w-4 h-4 animate-spin text-white" />
-                    <span>Iniciando caderno...</span>
+                    <span className="truncate">Iniciando...</span>
                   </>
                 ) : (
                   <>
-                    <Play className="w-4 h-4 fill-white" />
-                    <span>Iniciar ({resolveCount})</span>
+                    <Play className="w-4 h-4 fill-white shrink-0" />
+                    <span className="truncate">Iniciar ({resolveCount})</span>
                   </>
                 )}
               </button>

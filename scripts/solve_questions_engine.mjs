@@ -89,18 +89,37 @@ function getRelevantBookThemes(specialty, tema) {
 
 // Modelos prioritários com alta velocidade, raciocínio clínico e cotas ativas
 const AVAILABLE_MODELS = [
-  'gemini-3.1-flash-lite',
-  'gemini-3.1-flash-lite-preview'
+  'gemini-3.6-flash',
+  'gemini-3.5-flash'
 ];
-let currentModelIndex = 0;
 
-function getActiveModel() {
-  return AVAILABLE_MODELS[currentModelIndex % AVAILABLE_MODELS.length];
+const exhaustedPairs = new Set(); // Armazena `${keyIndex}_${model}`
+
+export function getNextPair() {
+  const totalSlots = API_KEYS.length * AVAILABLE_MODELS.length;
+  for (let step = 0; step < totalSlots; step++) {
+    const kIdx = (keyIndex + step) % API_KEYS.length;
+    for (const model of AVAILABLE_MODELS) {
+      const pairKey = `${kIdx}_${model}`;
+      if (!exhaustedPairs.has(pairKey)) {
+        keyIndex = (kIdx + 1) % API_KEYS.length;
+        return {
+          key: API_KEYS[kIdx],
+          keyIdx: kIdx,
+          model
+        };
+      }
+    }
+  }
+  return null;
 }
 
-function rotateModel(reason = '') {
-  currentModelIndex = (currentModelIndex + 1) % AVAILABLE_MODELS.length;
-  console.log(`🔄 Alternando modelo para: ${AVAILABLE_MODELS[currentModelIndex]} ${reason ? '(' + reason + ')' : ''}`);
+export function markPairExhausted(keyIdx, model, reason = '') {
+  const pairKey = `${keyIdx}_${model}`;
+  if (!exhaustedPairs.has(pairKey)) {
+    exhaustedPairs.add(pairKey);
+    console.log(`⛔ Chave [${keyIdx + 1}/${API_KEYS.length}] esgotou cota diária no modelo [${model}] (${reason}).`);
+  }
 }
 
 /**
@@ -186,9 +205,12 @@ ${optionsSchemaExample}
   ]
 }`;
 
-  for (let attempt = 1; attempt <= 8; attempt++) {
-    const activeKey = getNextApiKey();
-    const activeModel = getActiveModel();
+  for (let attempt = 1; attempt <= 12; attempt++) {
+    const pair = getNextPair();
+    if (!pair) {
+      throw new Error('Todas as combinações de chaves e modelos esgotaram suas cotas diárias no Google AI Studio.');
+    }
+    const { key: activeKey, keyIdx, model: activeModel } = pair;
     const url = `https://generativelanguage.googleapis.com/v1beta/models/${activeModel}:generateContent?key=${activeKey}`;
 
     const controller = new AbortController();
@@ -212,18 +234,20 @@ ${optionsSchemaExample}
       if (!res.ok) {
         const errText = await res.text();
         if (res.status === 429) {
-          const waitTime = Math.min(attempt * 2000, 8000);
-          rotateModel('429 rate limit');
+          if (errText.includes('requests per day limit exceeded') || errText.includes('GenerateRequestsPerDay')) {
+            markPairExhausted(keyIdx, activeModel, 'cota diária esgotada');
+            continue;
+          }
+          const waitTime = Math.min(attempt * 1000, 4000);
           await new Promise(r => setTimeout(r, waitTime));
           continue;
         }
         if (res.status === 503 || res.status === 500) {
-          rotateModel(`HTTP ${res.status} alta demanda`);
-          await new Promise(r => setTimeout(r, 2000));
+          await new Promise(r => setTimeout(r, 1500));
           continue;
         }
         if (res.status === 404) {
-          rotateModel('modelo 404');
+          markPairExhausted(keyIdx, activeModel, 'modelo não disponível 404');
           continue;
         }
         throw new Error(`HTTP ${res.status}: ${errText.slice(0, 150)}`);

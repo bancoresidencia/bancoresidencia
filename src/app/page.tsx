@@ -2036,7 +2036,7 @@ export default function Home() {
             activeTab === 'home' && !user
               ? 'p-0 max-w-none overflow-x-hidden'
               : activeTab === 'banco' && bancoMode === 'filtros'
-              ? 'px-4 sm:px-6 max-w-6xl h-[calc(100vh-4.75rem)] max-h-[calc(100vh-4.75rem)] flex flex-col justify-between py-2 sm:py-2.5 overflow-hidden'
+              ? 'px-3 sm:px-6 max-w-6xl lg:h-[calc(100vh-4.75rem)] lg:max-h-[calc(100vh-4.75rem)] flex flex-col justify-between py-2 sm:py-2.5 lg:overflow-hidden'
               : 'px-4 sm:px-6 max-w-6xl py-9 sm:py-10 space-y-9 sm:space-y-11'
           }`}
         >

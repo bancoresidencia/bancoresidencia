@@ -80,7 +80,7 @@ async function main() {
     return;
   }
 
-  const CONCURRENCY = 4; // 4 contas paralelas simultâneas configuradas no pool de 7 chaves
+  const CONCURRENCY = 3; // 3 requisições simultâneas distribuídas suavemente no pool de 8 chaves
   let processedCount = 0;
   let batchBuffer = [];
   const startTime = Date.now();
@@ -92,7 +92,7 @@ async function main() {
       chunk.map(async (q, idx) => {
         try {
           if (idx > 0) {
-            await new Promise(r => setTimeout(r, idx * 400));
+            await new Promise(r => setTimeout(r, idx * 600));
           }
           return await solveQuestionDeep(q);
         } catch (err) {
@@ -105,7 +105,7 @@ async function main() {
     const successfulThisChunk = results.filter(Boolean);
     if (successfulThisChunk.length === 0) {
       consecutiveFailures++;
-      if (consecutiveFailures >= 5) {
+      if (consecutiveFailures >= 8) {
         console.log('\n🛑 Atenção: Múltiplas falhas consecutivas em todas as contas.');
         console.log('📌 Provável esgotamento da cota diária do Google AI Studio nas chaves.');
         console.log('💾 Salvando o estado com segurança no checkpoint antes de parar...');
@@ -153,8 +153,8 @@ async function main() {
       console.log(`💾 Checkpoint salvo em disco e sincronizado no Supabase.`);
     }
 
-    // Pausa balanceada para estabilidade das 5 conexões
-    await new Promise(r => setTimeout(r, 800));
+    // Pausa balanceada para estabilidade das conexões e respeito ao RPM
+    await new Promise(r => setTimeout(r, 1200));
   }
 
   // Flush final do buffer residual
