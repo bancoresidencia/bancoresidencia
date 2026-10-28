@@ -848,7 +848,6 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
       : (historicalAnswer ? (isAnuladaQuestion || historicalAnswer.isCorrect) : false)
   );
   const isUserCorrect = isAnswered && (isAnuladaQuestion || pendingSelected === resolvedCorrectAnswer);
-  const previousLetter = userAnswer || historicalAnswer?.letter;
 
   const selectionColorClass =
     activeHighlighterColor === 'green'
@@ -1302,19 +1301,12 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
           {/* BARRA DE AÇÃO: BOTÃO "RESOLVER" */}
           {!isAnswered ? (
             <div className="pt-2 flex flex-col gap-2">
-              <div className="flex flex-wrap items-center justify-between gap-2">
-                {hasPreviousAnswer ? (
-                  <span className="text-[11px] text-zinc-500 dark:text-zinc-400 font-medium">
-                    Refazendo questão (resposta anterior: opção {previousLetter})
-                  </span>
-                ) : (
-                  <div />
-                )}
+              <div className="flex items-center justify-end gap-2">
                 <button
                   type="button"
                   onClick={handleConfirmAnswer}
                   disabled={!pendingSelected || isSubmittingAnswer}
-                  title={pendingSelected ? (hasPreviousAnswer ? 'Resolver novamente' : 'Resolver questão') : 'Selecione uma alternativa'}
+                  title={pendingSelected ? 'Resolver questão' : 'Selecione uma alternativa'}
                   className={`flex items-center justify-center gap-2 px-6 py-2.5 rounded-xl text-xs font-extrabold shadow-sm transition-all cursor-pointer ${
                     pendingSelected && !isSubmittingAnswer
                       ? 'text-white hover:scale-102 active:scale-98 shadow-md'
@@ -1333,11 +1325,6 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                     <>
                       <Loader2 className="w-3.5 h-3.5 animate-spin" />
                       <span>Resolvendo...</span>
-                    </>
-                  ) : hasPreviousAnswer ? (
-                    <>
-                      <RotateCcw className="w-3.5 h-3.5" />
-                      <span>Resolver Novamente</span>
                     </>
                   ) : (
                     <>
