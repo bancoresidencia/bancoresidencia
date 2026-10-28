@@ -278,6 +278,10 @@ export default function Home() {
     userAnswersRef.current = userAnswers;
   }, [userAnswers]);
 
+  // Respostas registradas especificamente durante a sessão ativa de resolução atual
+  // Permite que questões feitas em sessões passadas comecem limpas para refazer, exibindo o card informativo
+  const [sessionAnswers, setSessionAnswers] = useState<Record<string, { letter: 'A' | 'B' | 'C' | 'D' | 'E'; isCorrect: boolean }>>({});
+
   // Contagem dinâmica de erros pendentes na conta para badges e navegação
   const pendingErrorsCount = useMemo(() => {
     return Object.values(userAnswers).filter(
@@ -919,7 +923,7 @@ export default function Home() {
     }
 
     // 4. Padrão: Janela deslizante de 50 questões base + 1 a cada acerto/erro (teto 200)
-    const solvedInSession = filteredQuestions.filter((q) => !!userAnswers[q.id]).length;
+    const solvedInSession = filteredQuestions.filter((q) => !!sessionAnswers[q.id]).length;
     const targetCount = Math.min(
       200,
       Math.min(
@@ -937,7 +941,7 @@ export default function Home() {
     return slice;
   }, [
     filteredQuestions,
-    userAnswers,
+    sessionAnswers,
     currentQuestionIndex,
     activeListId,
     lists,
@@ -1140,6 +1144,14 @@ export default function Home() {
       return nextAnswers;
     });
 
+    setSessionAnswers((prev) => ({
+      ...prev,
+      [questionId]: {
+        letter: selectedLetter,
+        isCorrect: finalIsCorrect
+      }
+    }));
+
     // Sincroniza em segundo plano com a tabela user_answers do Supabase para a conta do aluno
     if (user?.id && user.id !== DEFAULT_DEMO_USER.id) {
       const supabase = createClient();
@@ -1227,6 +1239,7 @@ export default function Home() {
     if (!questionIds || questionIds.length === 0) return;
     setSessionQuestionIds(questionIds);
     setSessionQuestionLimit(questionIds.length);
+    setSessionAnswers({});
     setCurrentQuestionIndex(0);
     setQuestionsPage(1);
     setBancoMode('resolucao');
@@ -1302,6 +1315,7 @@ export default function Home() {
       if (config.startSolvingImmediately) {
         setActiveListId(newList.id);
         setSessionQuestionLimit(null);
+        setSessionAnswers({});
         setActiveTab('banco');
         setBancoMode('resolucao');
         setCurrentQuestionIndex(0);
@@ -2316,6 +2330,7 @@ export default function Home() {
                       }
                       setActiveListId(null);
                       setSessionQuestionIds(null);
+                      setSessionAnswers({});
                       setQuestionTimer(0);
                       setBancoMode('resolucao');
                     }}
@@ -2334,6 +2349,7 @@ export default function Home() {
                       setAdvancedFilters(activeFilters);
                       setActiveListId(null);
                       setSessionQuestionLimit(finalLimit);
+                      setSessionAnswers({});
                       setCurrentQuestionIndex(0);
                       setQuestionTimer(0);
 
@@ -2420,7 +2436,7 @@ export default function Home() {
                             </button>
 
                             {(() => {
-                              const answeredCount = visibleQuestions.filter((q) => !!userAnswers[q.id]).length;
+                              const answeredCount = visibleQuestions.filter((q) => !!sessionAnswers[q.id]).length;
                               const progressPercent = visibleQuestions.length > 0
                                 ? Math.round((answeredCount / visibleQuestions.length) * 100)
                                 : 0;
@@ -2722,9 +2738,10 @@ export default function Home() {
                             >
                               {visibleQuestions.map((q, idx) => {
                                 const isCurrent = idx === Math.min(currentQuestionIndex, visibleQuestions.length - 1);
-                                const ans = userAnswers[q.id];
-                                const isAnswered = !!ans;
-                                const isCorrect = ans?.isCorrect;
+                                const sessionAns = sessionAnswers[q.id];
+                                const isAnsweredInSession = Boolean(sessionAns);
+                                const isCorrectInSession = sessionAns?.isCorrect;
+                                const hasHistoricalAnswer = Boolean(userAnswers[q.id]);
 
                                 return (
                                   <button
@@ -2737,19 +2754,28 @@ export default function Home() {
                                       setCurrentQuestionIndex(idx);
                                       setQuestionTimer(0);
                                     }}
-                                    className={`w-8 h-8 sm:w-9 sm:h-9 rounded-full font-sans font-black text-sm sm:text-[15px] flex items-center justify-center shrink-0 transition-all cursor-pointer ${
+                                    className={`relative w-8 h-8 sm:w-9 sm:h-9 rounded-full font-sans font-black text-sm sm:text-[15px] flex items-center justify-center shrink-0 transition-all cursor-pointer ${
                                       isCurrent
                                         ? 'text-white shadow-md ring-2 ring-offset-1 ring-blue-500/40'
-                                        : isAnswered
-                                        ? isCorrect
+                                        : isAnsweredInSession
+                                        ? isCorrectInSession
                                           ? 'bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 border border-emerald-300 dark:border-emerald-700/60'
                                           : 'bg-rose-50 dark:bg-rose-950/40 text-rose-600 dark:text-rose-400 border border-rose-300 dark:border-rose-700/60'
+                                        : hasHistoricalAnswer
+                                        ? 'bg-amber-500/10 text-amber-700 dark:text-amber-300 border border-amber-500/30 hover:bg-amber-500/20'
                                         : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'
                                     }`}
                                     style={isCurrent ? { backgroundColor: accentConfig.primaryHex } : undefined}
-                                    title={`Questão ${idx + 1}${isAnswered ? (isCorrect ? ' (Correta)' : ' (Incorreta)') : ''}`}
+                                    title={`Questão ${idx + 1}${
+                                      isAnsweredInSession
+                                        ? isCorrectInSession ? ' (Correta nesta sessão)' : ' (Incorreta nesta sessão)'
+                                        : hasHistoricalAnswer ? ' (Já resolvida anteriormente - clique para refazer)' : ''
+                                    }`}
                                   >
-                                    {idx + 1}
+                                    <span>{idx + 1}</span>
+                                    {hasHistoricalAnswer && !isAnsweredInSession && !isCurrent && (
+                                      <span className="absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full bg-amber-500 ring-1 ring-white dark:ring-zinc-900" />
+                                    )}
                                   </button>
                                 );
                               })}
@@ -2792,24 +2818,35 @@ export default function Home() {
                       </div>
 
                       {/* QUESTÃO ATUAL EM SEQUÊNCIA (CARD FOCADO) */}
-                      {visibleQuestions[Math.min(currentQuestionIndex, visibleQuestions.length - 1)] && (
-                        <QuestionCard
-                          key={visibleQuestions[Math.min(currentQuestionIndex, visibleQuestions.length - 1)].id}
-                          question={visibleQuestions[Math.min(currentQuestionIndex, visibleQuestions.length - 1)]}
-                          index={Math.min(currentQuestionIndex, visibleQuestions.length - 1)}
-                          total={visibleQuestions.length}
-                          onAnswer={handleAnswer}
-                          userAnswer={userAnswers[visibleQuestions[Math.min(currentQuestionIndex, visibleQuestions.length - 1)].id]?.letter}
-                          fontSize={fontSize}
-                          onChangeFontSize={handleFontSizeChange}
-                          folders={folders}
-                          onCreateFolder={handleCreateFolder}
-                          onSaveToFolder={handleSaveQuestionToFolder}
-                          savedFolderIds={savedQuestionsFolderMap[visibleQuestions[Math.min(currentQuestionIndex, visibleQuestions.length - 1)].id] || []}
-                          activeHighlighterColor={activeHighlighterColor}
-                          onSelectHighlighterColor={setActiveHighlighterColor}
-                        />
-                      )}
+                      {visibleQuestions[Math.min(currentQuestionIndex, visibleQuestions.length - 1)] && (() => {
+                        const currentQ = visibleQuestions[Math.min(currentQuestionIndex, visibleQuestions.length - 1)];
+                        const sessionAns = sessionAnswers[currentQ.id];
+                        const histAns = userAnswers[currentQ.id];
+
+                        return (
+                          <QuestionCard
+                            key={currentQ.id}
+                            question={currentQ}
+                            index={Math.min(currentQuestionIndex, visibleQuestions.length - 1)}
+                            total={visibleQuestions.length}
+                            onAnswer={handleAnswer}
+                            userAnswer={sessionAns?.letter}
+                            historicalAnswer={histAns ? {
+                              letter: histAns.letter,
+                              isCorrect: histAns.isCorrect,
+                              timestamp: histAns.timestamp
+                            } : undefined}
+                            fontSize={fontSize}
+                            onChangeFontSize={handleFontSizeChange}
+                            folders={folders}
+                            onCreateFolder={handleCreateFolder}
+                            onSaveToFolder={handleSaveQuestionToFolder}
+                            savedFolderIds={savedQuestionsFolderMap[currentQ.id] || []}
+                            activeHighlighterColor={activeHighlighterColor}
+                            onSelectHighlighterColor={setActiveHighlighterColor}
+                          />
+                        );
+                      })()}
 
                       {/* NAVEGAÇÃO SEQUENCIAL INFERIOR */}
                       <div className="flex items-center justify-between gap-3 pt-2">

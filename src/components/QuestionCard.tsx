@@ -40,6 +40,11 @@ interface QuestionCardProps {
   total: number;
   onAnswer: (questionId: string, selectedLetter: 'A' | 'B' | 'C' | 'D' | 'E', isCorrect: boolean) => void;
   userAnswer?: 'A' | 'B' | 'C' | 'D' | 'E';
+  historicalAnswer?: {
+    letter: 'A' | 'B' | 'C' | 'D' | 'E';
+    isCorrect: boolean;
+    timestamp?: number;
+  };
   fontSize?: 'sm' | 'base' | 'lg';
   onChangeFontSize?: (size: 'sm' | 'base' | 'lg') => void;
   isBookmarked?: boolean;
@@ -146,6 +151,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   total,
   onAnswer,
   userAnswer,
+  historicalAnswer,
   fontSize = 'sm',
   onChangeFontSize,
   isBookmarked,
@@ -813,9 +819,15 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   };
 
   const isAnuladaQuestion = Boolean(activeQuestion.isAnulada || activeQuestion.correctAnswer === 'ANULADA');
-  const hasPreviousAnswer = !!userAnswer;
-  const previousIsCorrect = hasPreviousAnswer && (isAnuladaQuestion || userAnswer === activeQuestion.correctAnswer);
+  const hasHistoricalAnswer = Boolean(historicalAnswer && historicalAnswer.letter);
+  const hasPreviousAnswer = Boolean(userAnswer || hasHistoricalAnswer);
+  const previousIsCorrect = Boolean(
+    userAnswer
+      ? (isAnuladaQuestion || userAnswer === activeQuestion.correctAnswer)
+      : (historicalAnswer ? (isAnuladaQuestion || historicalAnswer.isCorrect) : false)
+  );
   const isUserCorrect = isAnswered && (isAnuladaQuestion || pendingSelected === activeQuestion.correctAnswer);
+  const previousLetter = userAnswer || historicalAnswer?.letter;
 
   const selectionColorClass =
     activeHighlighterColor === 'green'
@@ -845,12 +857,16 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
               <span>{question.year}</span>
             </span>
 
-            {/* Mini-card de Status de Resolução Anterior */}
-            {hasPreviousAnswer && (
+            {/* Mini-card de Status de Resolução Anterior ou na Sessão */}
+            {(hasPreviousAnswer || isAnswered) && (
               <div
                 className={`flex items-center gap-1.5 px-2.5 py-1 text-[11px] font-bold rounded-xl border shadow-xs transition-all ${
                   isAnuladaQuestion
                     ? 'bg-amber-50 dark:bg-amber-950/40 border-amber-200 dark:border-amber-800/60 text-amber-800 dark:text-amber-300'
+                    : isAnswered
+                    ? isUserCorrect
+                      ? 'bg-emerald-50 dark:bg-emerald-950/40 border-emerald-200 dark:border-emerald-800/60 text-emerald-800 dark:text-emerald-300'
+                      : 'bg-rose-50 dark:bg-rose-950/40 border-rose-200 dark:border-rose-800/60 text-rose-800 dark:text-rose-300'
                     : previousIsCorrect
                     ? 'bg-emerald-50 dark:bg-emerald-950/40 border-emerald-200 dark:border-emerald-800/60 text-emerald-800 dark:text-emerald-300'
                     : 'bg-rose-50 dark:bg-rose-950/40 border-rose-200 dark:border-rose-800/60 text-rose-800 dark:text-rose-300'
@@ -858,21 +874,29 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
               >
                 {isAnuladaQuestion ? (
                   <AlertCircle className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400 shrink-0" />
+                ) : isAnswered ? (
+                  isUserCorrect ? (
+                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
+                  ) : (
+                    <XCircle className="w-3.5 h-3.5 text-rose-600 dark:text-rose-400 shrink-0" />
+                  )
                 ) : previousIsCorrect ? (
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
                 ) : (
                   <XCircle className="w-3.5 h-3.5 text-rose-600 dark:text-rose-400 shrink-0" />
                 )}
-                <span>Resolvida</span>
-                <button
-                  type="button"
-                  onClick={handleStartReSolve}
-                  title="Resolver novamente esta questão"
-                  className="ml-1 inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md text-[10px] font-extrabold bg-white dark:bg-zinc-900 border border-current hover:opacity-80 transition-all cursor-pointer shadow-2xs"
-                >
-                  <RotateCcw className="w-2.5 h-2.5" />
-                  <span>Refazer</span>
-                </button>
+                <span>{isAnswered ? 'Resolvida nesta sessão' : 'Resolvida anteriormente'}</span>
+                {isAnswered && (
+                  <button
+                    type="button"
+                    onClick={handleStartReSolve}
+                    title="Resolver novamente esta questão"
+                    className="ml-1 inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md text-[10px] font-extrabold bg-white dark:bg-zinc-900 border border-current hover:opacity-80 transition-all cursor-pointer shadow-2xs"
+                  >
+                    <RotateCcw className="w-2.5 h-2.5" />
+                    <span>Refazer</span>
+                  </button>
+                )}
               </div>
             )}
 
@@ -1039,6 +1063,38 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
               />
             </div>
           ))}
+        </div>
+      )}
+
+      {/* Card Informativo: Questão já resolvida em sessão anterior */}
+      {historicalAnswer && !isAnswered && (
+        <div className="flex items-start gap-3.5 p-4 rounded-2xl bg-amber-500/10 dark:bg-amber-950/25 border border-amber-500/30 dark:border-amber-800/50 text-amber-950 dark:text-amber-200 shadow-2xs transition-all animate-in fade-in duration-200">
+          <div className={`w-8 h-8 rounded-xl flex items-center justify-center shrink-0 mt-0.5 border ${
+            historicalAnswer.isCorrect
+              ? 'bg-emerald-100 dark:bg-emerald-950/60 text-emerald-600 dark:text-emerald-400 border-emerald-300 dark:border-emerald-700/60'
+              : 'bg-rose-100 dark:bg-rose-950/60 text-rose-600 dark:text-rose-400 border-rose-300 dark:border-rose-700/60'
+          }`}>
+            <RotateCcw className="w-4 h-4" />
+          </div>
+          <div className="space-y-1 min-w-0 flex-1">
+            <div className="flex items-center gap-2 flex-wrap">
+              <span className="text-xs font-bold text-amber-950 dark:text-amber-100">
+                Questão já resolvida em sessão anterior
+              </span>
+              <span
+                className={`text-[10px] font-extrabold px-2 py-0.5 rounded-full ${
+                  historicalAnswer.isCorrect
+                    ? 'bg-emerald-100 dark:bg-emerald-950/80 text-emerald-800 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/60'
+                    : 'bg-rose-100 dark:bg-rose-950/80 text-rose-800 dark:text-rose-300 border border-rose-200 dark:border-rose-800/60'
+                }`}
+              >
+                {historicalAnswer.isCorrect ? 'Acertou anteriormente' : 'Errou anteriormente'}
+              </span>
+            </div>
+            <p className="text-xs text-amber-900/90 dark:text-amber-200/90 leading-relaxed">
+              Sua resposta registrada anteriormente foi a alternativa <span className="font-extrabold text-amber-950 dark:text-white">({historicalAnswer.letter})</span>. Ela está liberada para você resolver novamente nesta sessão e testar sua retenção de conteúdo!
+            </p>
+          </div>
         </div>
       )}
 
@@ -1258,7 +1314,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
               <div className="flex flex-wrap items-center justify-between gap-2">
                 {hasPreviousAnswer ? (
                   <span className="text-[11px] text-zinc-500 dark:text-zinc-400 font-medium">
-                    Refazendo questão (resposta anterior: opção {userAnswer})
+                    Refazendo questão (resposta anterior: opção {previousLetter})
                   </span>
                 ) : (
                   <div />
