@@ -86,6 +86,11 @@ interface QuestionDbRow {
 }
 
 function mapRowToQuestion(row: QuestionDbRow): Question {
+  // Higieniza as alternativas para remover explicações prévias antes da confirmação do aluno
+  const cleanOptions = Array.isArray(row.options)
+    ? row.options.map((opt) => ({ letter: opt.letter, text: opt.text }))
+    : [];
+
   return {
     id: row.id,
     code: row.code || '',
@@ -104,7 +109,7 @@ function mapRowToQuestion(row: QuestionDbRow): Question {
     type: row.type || 'Múltipla escolha',
     isAnulada: Boolean(row.is_anulada),
     statement: row.statement || '',
-    options: Array.isArray(row.options) ? row.options : [],
+    options: cleanOptions,
     correctAnswer: (row.correct_answer as Question['correctAnswer']) || '',
     commentary: row.commentary || '',
     images: Array.isArray(row.images) ? row.images : []
@@ -245,8 +250,9 @@ export async function fetchQuestionsFromSupabase(
   const now = Date.now();
   const hasFreshCache = cachedCountEntry && (now - cachedCountEntry.timestamp < 90000);
 
-  // Consulta ultrarrápida: não solicita count exact na query pesada de dados para evitar timeout 57014
-  let query = supabase.from('questions').select('*');
+  // Consulta segura e protegida contra raspagem: omite correct_answer e commentary na busca pública
+  const SAFE_QUESTION_COLUMNS = 'id, code, institution, banca, year, tipo_prova, modalidade, especialidade, tema, foco, subfoco, difficulty, type, is_anulada, statement, options, images';
+  let query = supabase.from('questions').select(SAFE_QUESTION_COLUMNS);
 
   // Regra de Gabarito: Todas as 132.965 questões presentes por padrão
   if (filters.gabaritoStatus === 'sem_gabarito') {

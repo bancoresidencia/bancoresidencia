@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
+import { verifyAdminSession } from '@/lib/supabase/adminAuth';
+import { recordAuditEvent } from '@/lib/audit';
 
 export const dynamic = 'force-dynamic';
 
@@ -18,6 +20,15 @@ const VALID_LETTERS = new Set(['A', 'B', 'C', 'D', 'E', 'ANULADA', '']);
 
 export async function POST(req: NextRequest) {
   try {
+    // 1. Verificação estrita de autorização de Administrador / Curador
+    const auth = await verifyAdminSession(req);
+    if (!auth.authorized) {
+      return NextResponse.json(
+        { success: false, error: auth.error || 'Acesso negado: permissões insuficientes.' },
+        { status: auth.status }
+      );
+    }
+
     const supabaseAdmin = getSupabaseAdmin();
     const body = await req.json();
     const {
@@ -45,6 +56,29 @@ export async function POST(req: NextRequest) {
         { success: false, error: `Alternativa inválida: "${targetAnswer}". Esperado A, B, C, D, E ou vazio.` },
         { status: 400 }
       );
+    }
+
+    // 2. Captura do snapshot anterior para rastreabilidade e integridade da auditoria
+    let previousRow: { id: string; correct_answer?: string; is_anulada?: boolean; commentary?: string } | null = null;
+    try {
+      const prevRes = await supabaseAdmin
+        .from('questions')
+        .select('id, correct_answer, is_anulada, commentary')
+        .eq('id', questionId)
+        .maybeSingle();
+
+      if (prevRes.data) {
+        previousRow = prevRes.data;
+      } else {
+        const byCodePrev = await supabaseAdmin
+          .from('questions')
+          .select('id, correct_answer, is_anulada, commentary')
+          .eq('code', questionId)
+          .maybeSingle();
+        previousRow = byCodePrev.data || null;
+      }
+    } catch (prevErr) {
+      console.warn('[API Curadoria] Aviso ao ler estado anterior da questão:', prevErr);
     }
 
     const updatePayload: Record<string, unknown> = {
@@ -114,7 +148,38 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // Se reportId foi fornecido, atualiza o report para resolved no Supabase
+    const clientIp =
+      req.headers.get('x-forwarded-for')?.split(',')[0].trim() ||
+      req.headers.get('x-real-ip') ||
+      'unknown-ip';
+
+    // 3. Registro imutável de auditoria da alteração de gabarito
+    const auditAction = updatePayload.is_anulada ? 'ANULATE_QUESTION' : 'UPDATE_GABARITO';
+    await recordAuditEvent({
+      userId: auth.user?.id || null,
+      userEmail: auth.user?.email || (auth.isM2M ? 'm2m-service-role' : null),
+      userRole: auth.role || 'admin',
+      action: auditAction,
+      entityType: 'question',
+      entityId: data[0].id,
+      oldValues: previousRow
+        ? {
+            correct_answer: previousRow.correct_answer,
+            is_anulada: previousRow.is_anulada,
+            commentary_preview: previousRow.commentary ? previousRow.commentary.slice(0, 200) : null
+          }
+        : null,
+      newValues: {
+        correct_answer: updatePayload.correct_answer,
+        is_anulada: updatePayload.is_anulada,
+        has_new_commentary: Boolean(updatePayload.commentary)
+      },
+      reason: reportId ? `Resolução da denúncia #${reportId}` : 'Curadoria manual de gabarito',
+      ipAddress: clientIp,
+      userAgent: req.headers.get('user-agent')
+    });
+
+    // Se reportId foi fornecido, atualiza o report para resolved no Supabase e audita
     if (reportId && typeof reportId === 'string') {
       try {
         await supabaseAdmin
@@ -122,9 +187,23 @@ export async function POST(req: NextRequest) {
           .update({
             status: 'resolved',
             admin_notes: `Gabarito retificado para [${normAnswer}] e comentário padrão-ouro homologado pelo administrador.`,
-            resolved_at: new Date().toISOString()
+            resolved_at: new Date().toISOString(),
+            resolved_by: auth.user?.id || null
           })
           .eq('id', reportId);
+
+        await recordAuditEvent({
+          userId: auth.user?.id || null,
+          userEmail: auth.user?.email || (auth.isM2M ? 'm2m-service-role' : null),
+          userRole: auth.role || 'admin',
+          action: 'RESOLVE_REPORT',
+          entityType: 'question_report',
+          entityId: reportId,
+          newValues: { status: 'resolved', associated_question_id: data[0].id },
+          reason: `Denúncia resolvida com atualização do gabarito para [${normAnswer}]`,
+          ipAddress: clientIp,
+          userAgent: req.headers.get('user-agent')
+        });
       } catch (repErr) {
         console.warn('[API Curadoria] Aviso ao atualizar report:', repErr);
       }

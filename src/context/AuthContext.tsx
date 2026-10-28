@@ -59,8 +59,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         .eq('id', supabaseUser.id)
         .maybeSingle();
 
-      const appRole = (supabaseUser.app_metadata?.role as string) || (supabaseUser.user_metadata?.role as string);
-      const role = (profile?.role || appRole || 'student') as 'admin' | 'student';
+      const appRole = supabaseUser.app_metadata?.role as string | undefined;
+      const rawRole = profile?.role || appRole || 'student';
+      const role: 'admin' | 'curator' | 'student' =
+        rawRole === 'curador' ? 'curator' : (rawRole as 'admin' | 'curator' | 'student');
 
       const targetExamName =
         (supabaseUser.user_metadata?.target_exam_name as string) ||
@@ -323,7 +325,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     return updateProfile({ avatarUrl });
   };
 
-  const isAdmin = Boolean(user && user.role === 'admin');
+  const isAdmin = Boolean(user && (user.role === 'admin' || user.role === 'curator'));
 
   return (
     <AuthContext.Provider

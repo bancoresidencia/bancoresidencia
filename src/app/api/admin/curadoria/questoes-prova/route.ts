@@ -3,6 +3,7 @@ import { createClient } from '@supabase/supabase-js';
 import fs from 'fs';
 import path from 'path';
 import { Question, StudyModalidade } from '@/types';
+import { verifyAdminSession } from '@/lib/supabase/adminAuth';
 
 export const dynamic = 'force-dynamic';
 
@@ -55,6 +56,15 @@ function getExamIdsIndex(): Record<string, string[]> {
 
 export async function GET(req: NextRequest) {
   try {
+    // 1. Verificação estrita de autorização de Administrador / Curador
+    const auth = await verifyAdminSession(req);
+    if (!auth.authorized) {
+      return NextResponse.json(
+        { success: false, error: auth.error || 'Acesso negado: permissões insuficientes.' },
+        { status: auth.status }
+      );
+    }
+
     const supabaseAdmin = getSupabaseAdmin();
     const { searchParams } = new URL(req.url);
     const examKey = searchParams.get('examKey');

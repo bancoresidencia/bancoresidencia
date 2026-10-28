@@ -26,7 +26,8 @@ import {
   Check,
   RotateCcw,
   Sparkles,
-  AlertCircle
+  AlertCircle,
+  Loader2
 } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
 import { QuestionComments } from './QuestionComments';
@@ -166,6 +167,22 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
   const [isAnswered, setIsAnswered] = useState<boolean>(!!userAnswer);
   const [showCommentary, setShowCommentary] = useState<boolean>(!!userAnswer);
 
+  // Overrides dinâmicos obtidos sob demanda via endpoint seguro /api/questions/solve
+  const [resolvedOverrides, setResolvedOverrides] = useState<Partial<Question>>({});
+  const [isSubmittingAnswer, setIsSubmittingAnswer] = useState<boolean>(false);
+  const [solveError, setSolveError] = useState<string | null>(null);
+
+  const activeQuestion = useMemo<Question>(() => {
+    return {
+      ...question,
+      ...resolvedOverrides,
+      options:
+        resolvedOverrides.options && resolvedOverrides.options.length > 0
+          ? resolvedOverrides.options
+          : question.options
+    };
+  }, [question, resolvedOverrides]);
+
   // Estado de alternativas riscadas/cortadas pelo aluno
   const [eliminatedOptions, setEliminatedOptions] = useState<Record<string, boolean>>({});
 
@@ -196,12 +213,12 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
 
   // Detecção de gabarito sob suspeita/possível erro da banca
   const isSuspectKey = useMemo(() => {
-    const comm = question.commentary || '';
+    const comm = activeQuestion.commentary || '';
     return (
       comm.includes('[POSSÍVEL ERRO DE GABARITO') ||
       comm.includes('POSSIVEL ERRO DE GABARITO')
     );
-  }, [question.commentary]);
+  }, [activeQuestion.commentary]);
 
   // Estados de Marcador de Texto (Highlight)
   const [highlights, setHighlights] = useState<TextHighlight[]>([]);
@@ -241,6 +258,9 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
   const [prevQuestionKey, setPrevQuestionKey] = useState(currentKey);
   if (prevQuestionKey !== currentKey) {
     setPrevQuestionKey(currentKey);
+    setResolvedOverrides({});
+    setIsSubmittingAnswer(false);
+    setSolveError(null);
     setPendingSelected(userAnswer || null);
     setIsAnswered(!!userAnswer);
     setShowCommentary(!!userAnswer);
@@ -250,6 +270,39 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
     setHighlights([]);
     setHoveredOptionLetter(null);
   }
+
+  // Carrega sob demanda gabarito e comentários caso a questão tenha sido respondida previamente
+  useEffect(() => {
+    if (userAnswer && !activeQuestion.correctAnswer) {
+      let isMounted = true;
+      fetch('/api/questions/solve', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          questionId: question.id,
+          selectedOption: userAnswer
+        })
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          if (isMounted && data.success) {
+            setResolvedOverrides({
+              correctAnswer: data.correctAnswer,
+              commentary: data.commentary,
+              options: data.options && data.options.length > 0 ? data.options : question.options,
+              isAnulada: data.isAnulada
+            });
+          }
+        })
+        .catch((err) => {
+          console.warn('[QuestionCard] Falha ao carregar detalhes da questão resolvida:', err);
+        });
+
+      return () => {
+        isMounted = false;
+      };
+    }
+  }, [userAnswer, question.id, activeQuestion.correctAnswer, question.options]);
 
   // Alterna expansão da justificativa de uma alternativa específica
   const toggleOptionExplanation = (letter: string) => {
@@ -261,12 +314,12 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
 
   // Separação inteligente das justificativas das alternativas, comentário final, motivo de erro e take-home message
   const { optionExplanations, finalCommentary, mainErrorReason, takeHomeMessage, guidelineEvolution, references } = useMemo(() => {
-    const rawCommentary = question.commentary || '';
+    const rawCommentary = activeQuestion.commentary || '';
     const explanations: Record<string, string> = {};
 
-    // 1. Justificativas diretas de question.options se existirem
-    if (question.options) {
-      question.options.forEach((opt: { letter: string; text: string; explanation?: string }) => {
+    // 1. Justificativas diretas de activeQuestion.options se existirem
+    if (activeQuestion.options) {
+      activeQuestion.options.forEach((opt: { letter: string; text: string; explanation?: string }) => {
         if (opt.explanation) {
           explanations[opt.letter] = opt.explanation;
         }
@@ -274,10 +327,10 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
     }
 
     let cleanedFinal = rawCommentary;
-    let extractedError = question.mainErrorReason || '';
-    let extractedTakeHome = question.takeHomeMessage || '';
-    let extractedGuideline = question.guidelineEvolution || '';
-    let extractedRefs: string[] = question.references ? [...question.references] : [];
+    let extractedError = activeQuestion.mainErrorReason || '';
+    let extractedTakeHome = activeQuestion.takeHomeMessage || '';
+    let extractedGuideline = activeQuestion.guidelineEvolution || '';
+    let extractedRefs: string[] = activeQuestion.references ? [...activeQuestion.references] : [];
 
     // Função de sanitização: remove qualquer menção a termos comerciais/concorrentes
     const sanitizeText = (txt: string): string => {
@@ -386,8 +439,8 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
       .map(sanitizeText)
       .filter((r) => !/^(te[oó]ricas?|base te[oó]rica|refer[eê]ncias?)\b/i.test(r.trim()));
 
-    if (!cleanedFinal.trim() && question.correctAnswer) {
-      cleanedFinal = `Gabarito Oficial: Alternativa ${question.correctAnswer}.`;
+    if (!cleanedFinal.trim() && activeQuestion.correctAnswer) {
+      cleanedFinal = `Gabarito Oficial: Alternativa ${activeQuestion.correctAnswer}.`;
     }
 
     return {
@@ -399,13 +452,13 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
       references: extractedRefs
     };
   }, [
-    question.commentary,
-    question.options,
-    question.correctAnswer,
-    question.mainErrorReason,
-    question.takeHomeMessage,
-    question.guidelineEvolution,
-    question.references
+    activeQuestion.commentary,
+    activeQuestion.options,
+    activeQuestion.correctAnswer,
+    activeQuestion.mainErrorReason,
+    activeQuestion.takeHomeMessage,
+    activeQuestion.guidelineEvolution,
+    activeQuestion.references
   ]);
 
   // Captura seleção de texto dentro do enunciado e destaca automaticamente com a cor ativa
@@ -475,14 +528,54 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
   };
 
   // Envio final ao apertar o botão "Resolver"
-  const handleConfirmAnswer = () => {
-    if (isAnswered || !pendingSelected) return;
-    setIsAnswered(true);
-    const isAnuladaQuestion = Boolean(question.isAnulada || question.correctAnswer === 'ANULADA');
-    // Questões anuladas pela banca nunca devem contar como erro ao aluno confirmar
-    const isCorrect = isAnuladaQuestion ? true : pendingSelected === question.correctAnswer;
-    onAnswer(question.id, pendingSelected, isCorrect);
-    setShowCommentary(true);
+  const handleConfirmAnswer = async () => {
+    if (isAnswered || !pendingSelected || isSubmittingAnswer) return;
+
+    // Se o gabarito oficial já estiver carregado no objeto da questão:
+    if (activeQuestion.correctAnswer) {
+      setIsAnswered(true);
+      const isAnulada = Boolean(activeQuestion.isAnulada || activeQuestion.correctAnswer === 'ANULADA');
+      const isCorrect = isAnulada ? true : pendingSelected === activeQuestion.correctAnswer;
+      onAnswer(question.id, pendingSelected, isCorrect);
+      setShowCommentary(true);
+      return;
+    }
+
+    // Consulta segura e homologação em tempo real via API /api/questions/solve
+    try {
+      setIsSubmittingAnswer(true);
+      setSolveError(null);
+
+      const res = await fetch('/api/questions/solve', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          questionId: question.id,
+          selectedOption: pendingSelected
+        })
+      });
+
+      const data = await res.json();
+      if (!res.ok || !data.success) {
+        throw new Error(data.error || 'Erro ao validar resolução da questão.');
+      }
+
+      setResolvedOverrides({
+        correctAnswer: data.correctAnswer,
+        commentary: data.commentary,
+        options: data.options && data.options.length > 0 ? data.options : question.options,
+        isAnulada: data.isAnulada
+      });
+
+      setIsAnswered(true);
+      onAnswer(question.id, pendingSelected, data.isCorrect);
+      setShowCommentary(true);
+    } catch (err) {
+      console.error('[QuestionCard] Falha ao resolver questão:', err);
+      setSolveError(err instanceof Error ? err.message : 'Falha na comunicação com o servidor.');
+    } finally {
+      setIsSubmittingAnswer(false);
+    }
   };
 
   // Atalhos de teclado: 1 a 5 ou A a E, Enter para finalizar, Backspace/Del para riscar e C para gabarito
@@ -532,7 +625,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
 
       // Se pressionou V e já respondeu, permite alternar justificativa da opção selecionada ou em hover
       if ((e.key === 'v' || e.key === 'V') && isAnswered) {
-        const targetLetter = (hoveredOptionLetter || pendingSelected || question.correctAnswer) as 'A' | 'B' | 'C' | 'D' | 'E' | undefined;
+        const targetLetter = (hoveredOptionLetter || pendingSelected || activeQuestion.correctAnswer) as 'A' | 'B' | 'C' | 'D' | 'E' | undefined;
         if (targetLetter) {
           e.preventDefault();
           toggleOptionExplanation(targetLetter);
@@ -576,7 +669,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
 
       const letter = keyMap[e.key] || keyMap[e.code];
       if (letter) {
-        const hasOption = question.options?.some((opt) => opt.letter === letter);
+        const hasOption = activeQuestion.options?.some((opt) => opt.letter === letter);
         if (hasOption) {
           if (!isAnswered) {
             e.preventDefault();
@@ -591,7 +684,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
 
       // Tecla Enter para finalizar (confirmar resposta da questão)
       if (e.key === 'Enter') {
-        if (!isAnswered && pendingSelected) {
+        if (!isAnswered && pendingSelected && !isSubmittingAnswer) {
           e.preventDefault();
           handleConfirmAnswer();
         }
@@ -676,10 +769,10 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
     );
   };
 
-  const isAnuladaQuestion = Boolean(question.isAnulada || question.correctAnswer === 'ANULADA');
+  const isAnuladaQuestion = Boolean(activeQuestion.isAnulada || activeQuestion.correctAnswer === 'ANULADA');
   const hasPreviousAnswer = !!userAnswer;
-  const previousIsCorrect = hasPreviousAnswer && (isAnuladaQuestion || userAnswer === question.correctAnswer);
-  const isUserCorrect = isAnswered && (isAnuladaQuestion || pendingSelected === question.correctAnswer);
+  const previousIsCorrect = hasPreviousAnswer && (isAnuladaQuestion || userAnswer === activeQuestion.correctAnswer);
+  const isUserCorrect = isAnswered && (isAnuladaQuestion || pendingSelected === activeQuestion.correctAnswer);
 
   const selectionColorClass =
     activeHighlighterColor === 'green'
@@ -907,12 +1000,12 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
       )}
 
       {/* Alternativas (Múltipla Escolha) com Riscador e Seleção Prévia */}
-      {question.options && question.options.length > 0 ? (
+      {activeQuestion.options && activeQuestion.options.length > 0 ? (
         <div className="space-y-3 pt-2">
-          {question.options.map((option) => {
+          {activeQuestion.options.map((option) => {
             const isEliminated = !!eliminatedOptions[option.letter];
             const isPending = pendingSelected === option.letter;
-            const isCorrect = option.letter === question.correctAnswer;
+            const isCorrect = option.letter === activeQuestion.correctAnswer;
 
             // Estilos condicionais (Antes de Responder vs Depois de Responder)
             let optionContainerStyle =
@@ -1104,8 +1197,8 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                           explanationText ||
                             (isCorrect
                               ? 'Alternativa correta segundo o gabarito oficial da banca examinadora.'
-                              : (question.correctAnswer
-                                  ? `Alternativa incorreta. O gabarito oficial definido pela banca é a Alternativa ${question.correctAnswer}.`
+                              : (activeQuestion.correctAnswer
+                                  ? `Alternativa incorreta. O gabarito oficial definido pela banca é a Alternativa ${activeQuestion.correctAnswer}.`
                                   : 'Gabarito oficial em processo de homologação por provas públicas.'))
                         )}
                       </div>
@@ -1118,36 +1211,59 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
 
           {/* BARRA DE AÇÃO: BOTÃO "RESOLVER" */}
           {!isAnswered ? (
-            <div className="pt-2 flex flex-wrap items-center justify-between gap-2">
-              {hasPreviousAnswer ? (
-                <span className="text-[11px] text-zinc-500 dark:text-zinc-400 font-medium">
-                  Refazendo questão (resposta anterior: opção {userAnswer})
-                </span>
-              ) : (
-                <div />
+            <div className="pt-2 flex flex-col gap-2">
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                {hasPreviousAnswer ? (
+                  <span className="text-[11px] text-zinc-500 dark:text-zinc-400 font-medium">
+                    Refazendo questão (resposta anterior: opção {userAnswer})
+                  </span>
+                ) : (
+                  <div />
+                )}
+                <button
+                  type="button"
+                  onClick={handleConfirmAnswer}
+                  disabled={!pendingSelected || isSubmittingAnswer}
+                  title={pendingSelected ? (hasPreviousAnswer ? 'Resolver novamente' : 'Resolver questão') : 'Selecione uma alternativa'}
+                  className={`flex items-center justify-center gap-2 px-6 py-2.5 rounded-xl text-xs font-extrabold shadow-sm transition-all cursor-pointer ${
+                    pendingSelected && !isSubmittingAnswer
+                      ? 'text-white hover:scale-102 active:scale-98 shadow-md'
+                      : 'bg-slate-200 dark:bg-slate-800 text-slate-400 cursor-not-allowed'
+                  }`}
+                  style={
+                    pendingSelected && !isSubmittingAnswer
+                      ? {
+                          backgroundColor: accentConfig.primaryHex,
+                          boxShadow: `0 4px 14px 0 ${accentConfig.bgRgba}`
+                        }
+                      : undefined
+                  }
+                >
+                  {isSubmittingAnswer ? (
+                    <>
+                      <Loader2 className="w-3.5 h-3.5 animate-spin" />
+                      <span>Resolvendo...</span>
+                    </>
+                  ) : hasPreviousAnswer ? (
+                    <>
+                      <RotateCcw className="w-3.5 h-3.5" />
+                      <span>Resolver Novamente</span>
+                    </>
+                  ) : (
+                    <>
+                      <Send className="w-3.5 h-3.5" />
+                      <span>Resolver</span>
+                    </>
+                  )}
+                </button>
+              </div>
+
+              {solveError && (
+                <div className="flex items-center gap-1.5 text-xs text-rose-600 dark:text-rose-400 font-semibold p-2.5 rounded-xl bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-900/60 animate-in fade-in duration-150">
+                  <AlertCircle className="w-3.5 h-3.5 shrink-0" />
+                  <span>{solveError}</span>
+                </div>
               )}
-              <button
-                type="button"
-                onClick={handleConfirmAnswer}
-                disabled={!pendingSelected}
-                title={pendingSelected ? (hasPreviousAnswer ? 'Resolver novamente' : 'Resolver questão') : 'Selecione uma alternativa'}
-                className={`flex items-center justify-center gap-2 px-6 py-2.5 rounded-xl text-xs font-extrabold shadow-sm transition-all cursor-pointer ${
-                  pendingSelected
-                    ? 'text-white hover:scale-102 active:scale-98 shadow-md'
-                    : 'bg-slate-200 dark:bg-slate-800 text-slate-400 cursor-not-allowed'
-                }`}
-                style={
-                  pendingSelected
-                    ? {
-                        backgroundColor: accentConfig.primaryHex,
-                        boxShadow: `0 4px 14px 0 ${accentConfig.bgRgba}`
-                      }
-                    : undefined
-                }
-              >
-                {hasPreviousAnswer ? <RotateCcw className="w-3.5 h-3.5" /> : <Send className="w-3.5 h-3.5" />}
-                <span>{hasPreviousAnswer ? 'Resolver Novamente' : 'Resolver'}</span>
-              </button>
             </div>
           ) : null}
         </div>
@@ -1238,9 +1354,9 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-4.5 h-4.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
                     <span>
-                      {question.options && question.options.length > 0
-                        ? (question.correctAnswer
-                            ? `Gabarito Oficial: Alternativa ${question.correctAnswer}`
+                      {activeQuestion.options && activeQuestion.options.length > 0
+                        ? (activeQuestion.correctAnswer
+                            ? `Gabarito Oficial: Alternativa ${activeQuestion.correctAnswer}`
                             : 'Gabarito Oficial: Em processo de homologação por provas públicas')
                         : 'Padrão de Resposta Oficial:'}
                     </span>

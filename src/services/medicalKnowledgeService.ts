@@ -68,10 +68,22 @@ export const medicalKnowledgeService = {
   },
 
   /**
-   * Baixa e carrega o conteúdo completo de um livro do Supabase Storage
+   * Baixa e carrega o conteúdo completo de um livro através do proxy seguro da API
+   * com proteção contra scraping acelerado e sem expor o bucket para acesso público anônimo
    */
   async fetchBookContent(storagePath: string): Promise<MedicalBookContent | null> {
     try {
+      if (typeof window !== 'undefined') {
+        const response = await fetch(`/api/knowledge/book?path=${encodeURIComponent(storagePath)}`);
+        if (!response.ok) {
+          console.error('[MedicalKnowledge] Falha ao obter livro:', response.statusText);
+          return null;
+        }
+        const json = await response.json();
+        return (json.data as MedicalBookContent) || null;
+      }
+
+      // Fallback para execução server-side ou scripts com cliente Supabase direto
       const { data, error } = await supabase.storage
         .from('medical-knowledge')
         .download(storagePath);

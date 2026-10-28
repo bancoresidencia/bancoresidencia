@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs';
 import path from 'path';
+import { verifyAdminSession } from '@/lib/supabase/adminAuth';
 
 export const dynamic = 'force-dynamic';
 
@@ -112,6 +113,15 @@ function loadExamsFromStorage(): PriorityExamItem[] {
 
 export async function GET(req: NextRequest) {
   try {
+    // 1. Verificação estrita de autorização de Administrador / Curador
+    const auth = await verifyAdminSession(req);
+    if (!auth.authorized) {
+      return NextResponse.json(
+        { success: false, error: auth.error || 'Acesso negado: permissões insuficientes.' },
+        { status: auth.status }
+      );
+    }
+
     const { searchParams } = new URL(req.url);
     const tier = searchParams.get('tier'); // 'ouro' | 'prata' | 'bronze' | 'critica' | 'blindada' | 'todas'
     const search = (searchParams.get('search') || '').toLowerCase().trim();

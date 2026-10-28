@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { callGeminiAi, parseCleanJson, getAllGeminiKeys } from '@/lib/gemini';
+import { verifyAdminSession } from '@/lib/supabase/adminAuth';
+import { recordAuditEvent } from '@/lib/audit';
 
 export const dynamic = 'force-dynamic';
 
@@ -40,6 +42,15 @@ function sanitizeText(txt: string): string {
 
 export async function POST(req: NextRequest) {
   try {
+    // 1. Verificação estrita de autorização de Administrador / Curador
+    const auth = await verifyAdminSession(req);
+    if (!auth.authorized) {
+      return NextResponse.json(
+        { success: false, error: auth.error || 'Acesso negado: permissões insuficientes.' },
+        { status: auth.status }
+      );
+    }
+
     const body: GenerateCommentaryBody = await req.json();
     const {
       statement,
@@ -175,6 +186,31 @@ ${optionsSchemaExample}
                 .filter(Boolean)
                 .join('')
                 .trim();
+
+              const clientIp =
+                req.headers.get('x-forwarded-for')?.split(',')[0].trim() ||
+                req.headers.get('x-real-ip') ||
+                'unknown-ip';
+
+              if (body.questionId) {
+                recordAuditEvent({
+                  userId: auth.user?.id || null,
+                  userEmail: auth.user?.email || (auth.isM2M ? 'm2m-service-role' : null),
+                  userRole: auth.role || 'admin',
+                  action: 'GENERATE_COMMENTARY',
+                  entityType: 'question',
+                  entityId: body.questionId,
+                  newValues: {
+                    isAiGenerated: true,
+                    goldAnswer,
+                    especialidade,
+                    tema
+                  },
+                  reason: 'Geração de comentário com IA médica padrão-ouro',
+                  ipAddress: clientIp,
+                  userAgent: req.headers.get('user-agent')
+                }).catch((e) => console.warn('[GenerateCommentary] Aviso ao auditar:', e));
+              }
 
               return NextResponse.json({
                 success: true,
