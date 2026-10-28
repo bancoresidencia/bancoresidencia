@@ -182,15 +182,25 @@ export async function POST(req: NextRequest) {
     // Se reportId foi fornecido, atualiza o report para resolved no Supabase e audita
     if (reportId && typeof reportId === 'string') {
       try {
-        await supabaseAdmin
+        const repPayload: Record<string, unknown> = {
+          status: 'resolved',
+          admin_notes: `Gabarito retificado para [${normAnswer}] e comentário padrão-ouro homologado pelo administrador.`,
+          resolved_at: new Date().toISOString(),
+          resolved_by: auth.user?.id || null
+        };
+
+        const { error: repUpdateErr } = await supabaseAdmin
           .from('question_reports')
-          .update({
-            status: 'resolved',
-            admin_notes: `Gabarito retificado para [${normAnswer}] e comentário padrão-ouro homologado pelo administrador.`,
-            resolved_at: new Date().toISOString(),
-            resolved_by: auth.user?.id || null
-          })
+          .update(repPayload)
           .eq('id', reportId);
+
+        if (repUpdateErr && repUpdateErr.message.includes('admin_notes')) {
+          delete repPayload.admin_notes;
+          await supabaseAdmin
+            .from('question_reports')
+            .update(repPayload)
+            .eq('id', reportId);
+        }
 
         await recordAuditEvent({
           userId: auth.user?.id || null,

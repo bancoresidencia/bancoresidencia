@@ -1071,56 +1071,63 @@ export async function reportQuestionIssue(
     return { success: false, message: 'ID da questão inválido.' };
   }
 
-  const reportId = generateUuid();
-  const now = new Date().toISOString();
-
-  // 1. Armazena localmente para conferência instantânea e modo offline
-  if (typeof window !== 'undefined') {
-    try {
-      const raw = localStorage.getItem('bancoresidencia_reported_questions');
-      const list = raw ? JSON.parse(raw) : [];
-      list.unshift({
-        id: reportId,
-        questionId,
-        userId: userMeta?.id || null,
-        userEmail: userMeta?.email || null,
-        userName: userMeta?.name || 'Estudante',
-        reason,
-        details: details || '',
-        status: 'pending',
-        createdAt: now
-      });
-      localStorage.setItem('bancoresidencia_reported_questions', JSON.stringify(list));
-    } catch {
-      // ignore
-    }
+  const cleanDetails = (details || '').trim();
+  if (cleanDetails.length < 3) {
+    return { success: false, message: 'Por favor, adicione uma justificativa com pelo menos 3 caracteres.' };
   }
 
-  // 2. Envia ao Supabase de forma segura com colunas estritamente compatíveis
   try {
-    const { data: { user } } = await supabase.auth.getUser();
-    const finalUserId = userMeta?.id || user?.id || null;
+    const res = await fetch('/api/reports', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        questionId,
+        reason,
+        details: cleanDetails,
+        userMeta
+      })
+    });
 
-    const insertPayload: Record<string, unknown> = {
-      id: reportId,
-      question_id: questionId,
-      user_id: isValidUuid(finalUserId) ? finalUserId : null,
-      reason,
-      details: details || '',
-      status: 'pending',
-      created_at: now
-    };
-
-    const { error } = await supabase.from('question_reports').insert(insertPayload);
-
-    if (error) {
-      console.warn('Registro de report via Supabase retornou aviso:', error.message);
+    const data = await res.json();
+    if (res.ok && data.success) {
+      // Salva no cache local para exibição instantânea offline
+      if (typeof window !== 'undefined') {
+        try {
+          const raw = localStorage.getItem('bancoresidencia_reported_questions');
+          const list = raw ? JSON.parse(raw) : [];
+          list.unshift({
+            id: data.reportId,
+            questionId,
+            userId: userMeta?.id || null,
+            userEmail: userMeta?.email || null,
+            userName: userMeta?.name || 'Estudante',
+            reason,
+            details: cleanDetails,
+            status: 'pending',
+            createdAt: new Date().toISOString()
+          });
+          localStorage.setItem('bancoresidencia_reported_questions', JSON.stringify(list));
+        } catch {
+          // ignore
+        }
+      }
+      return {
+        success: true,
+        message: data.message || 'Apontamento registrado com sucesso. A equipe médica irá auditar!'
+      };
     }
-  } catch (err) {
-    console.warn('Falha no envio remoto do report da questão:', err);
-  }
 
-  return { success: true, message: 'Apontamento registrado com sucesso. A banca médica irá revisar!' };
+    return {
+      success: false,
+      message: data.error || 'Erro ao enviar apontamento. Tente novamente.'
+    };
+  } catch (err) {
+    console.warn('[questionService] Falha de rede ao reportar questão:', err);
+    return {
+      success: false,
+      message: 'Erro de conexão ao enviar apontamento. Verifique sua rede e tente novamente.'
+    };
+  }
 }
 
 interface QuestionReportDbRow {
@@ -1147,80 +1154,59 @@ interface QuestionReportDbRow {
 
 /**
  * Busca a lista de questões reportadas para o painel de auditoria do Administrador,
- * cruzando automaticamente os dados com a tabela de estudantes cadastrados (profiles).
+ * consumindo diretamente a API segura de backend que consulta o Supabase via Service Role.
  */
 export async function fetchReportedQuestionsForAdmin(statusFilter?: string): Promise<QuestionReport[]> {
-  const reportsMap = new Map<string, QuestionReport>();
-
-  // Normalização do filtro para o Supabase ('in_progress' na UI é 'in_review' no banco)
-  const dbStatusFilter = statusFilter === 'in_progress' ? 'in_review' : statusFilter;
-
   // Sincroniza eventuais denúncias locais pendentes no navegador atual antes de buscar
   if (typeof window !== 'undefined') {
     await syncPendingLocalReportsToSupabase().catch(() => {});
   }
 
-  // 1. Busca do Supabase
   try {
-    let query = supabase
-      .from('question_reports')
-      .select('*')
-      .order('created_at', { ascending: false });
+    const url = statusFilter && statusFilter !== 'all'
+      ? `/api/admin/reports?status=${encodeURIComponent(statusFilter)}`
+      : '/api/admin/reports';
 
-    if (dbStatusFilter && dbStatusFilter !== 'all') {
-      query = query.eq('status', dbStatusFilter);
-    }
+    const res = await fetch(url, {
+      method: 'GET',
+      headers: { 'Content-Type': 'application/json' },
+      cache: 'no-store'
+    });
 
-    const { data, error } = await query.limit(200);
-    if (!error && data) {
-      (data as unknown as QuestionReportDbRow[]).forEach((row) => {
-        const rawStatus = row.status as unknown as string;
-        const uiStatus: ReportStatus = rawStatus === 'in_review' ? 'in_progress' : (row.status || 'pending');
-        reportsMap.set(row.id, {
-          id: row.id,
-          questionId: row.question_id,
-          userId: row.user_id,
-          userEmail: row.user_email,
-          userName: row.user_name || 'Estudante',
-          reason: row.reason,
-          details: row.details || '',
-          status: uiStatus,
-          adminNotes: row.admin_notes || null,
-          createdAt: row.created_at || new Date().toISOString(),
-          resolvedAt: row.resolved_at || null
-        });
-      });
+    if (res.ok) {
+      const data = await res.json();
+      if (data.success && Array.isArray(data.reports)) {
+        return data.reports;
+      }
+    } else {
+      console.warn('[questionService] API /api/admin/reports retornou status:', res.status);
     }
   } catch (err) {
-    console.warn('Erro ao carregar reports do Supabase:', err);
+    console.warn('[questionService] Falha ao consultar /api/admin/reports:', err);
   }
 
-  // 2. Mescla com reports locais (fallback robusto para offline/desenvolvimento)
+  // Fallback offline caso o servidor esteja inacessível
   if (typeof window !== 'undefined') {
     try {
       const raw = localStorage.getItem('bancoresidencia_reported_questions');
       if (raw) {
         const localList = JSON.parse(raw);
         if (Array.isArray(localList)) {
-          (localList as QuestionReportDbRow[]).forEach((item) => {
-            const id = item.id || `rep_${item.questionId || item.question_id}_${item.timestamp || item.createdAt}`;
-            if (!reportsMap.has(id)) {
-              if (!statusFilter || statusFilter === 'all' || item.status === statusFilter) {
-                reportsMap.set(id, {
-                  id,
-                  questionId: item.questionId || item.question_id,
-                  userId: item.user_id || item.userId || null,
-                  userEmail: item.user_email || item.userEmail || null,
-                  userName: item.user_name || item.userName || 'Estudante',
-                  reason: item.reason,
-                  details: item.details || '',
-                  status: item.status || 'pending',
-                  adminNotes: item.admin_notes || item.adminNotes || null,
-                  createdAt: item.created_at || item.createdAt || item.timestamp || new Date().toISOString()
-                });
-              }
-            }
-          });
+          return (localList as QuestionReportDbRow[]).filter((item) => {
+            if (!statusFilter || statusFilter === 'all') return true;
+            return item.status === statusFilter;
+          }).map((item) => ({
+            id: item.id || `rep_${item.questionId || item.question_id}_${item.timestamp || item.createdAt}`,
+            questionId: item.questionId || item.question_id,
+            userId: item.user_id || item.userId || null,
+            userEmail: item.user_email || item.userEmail || null,
+            userName: item.user_name || item.userName || 'Estudante',
+            reason: item.reason,
+            details: item.details || '',
+            status: item.status || 'pending',
+            adminNotes: item.admin_notes || item.adminNotes || null,
+            createdAt: item.created_at || item.createdAt || item.timestamp || new Date().toISOString()
+          }));
         }
       }
     } catch {
@@ -1228,173 +1214,63 @@ export async function fetchReportedQuestionsForAdmin(statusFilter?: string): Pro
     }
   }
 
-  const reportsList = Array.from(reportsMap.values());
-  if (reportsList.length === 0) return [];
-
-  // 3. Enriquecer com dados dos Estudantes Cadastrados (tabela 'profiles' do Supabase)
-  try {
-    const userIds = Array.from(
-      new Set(reportsList.map((r) => r.userId).filter((id): id is string => Boolean(id) && isValidUuid(id)))
-    );
-    const userEmails = Array.from(
-      new Set(reportsList.map((r) => r.userEmail?.toLowerCase()).filter((e): e is string => Boolean(e)))
-    );
-
-    if (userIds.length > 0 || userEmails.length > 0) {
-      let profilesData: Array<{
-        id: string;
-        name: string | null;
-        email: string | null;
-        college: string | null;
-        specialty_target: string | null;
-        avatar_url: string | null;
-        role: string | null;
-      }> = [];
-
-      if (userIds.length > 0) {
-        const { data: pById } = await supabase
-          .from('profiles')
-          .select('id, name, email, college, specialty_target, avatar_url, role')
-          .in('id', userIds);
-        if (pById) profilesData = [...profilesData, ...pById];
-      }
-
-      if (userEmails.length > 0) {
-        const { data: pByEmail } = await supabase
-          .from('profiles')
-          .select('id, name, email, college, specialty_target, avatar_url, role')
-          .in('email', userEmails);
-        if (pByEmail) profilesData = [...profilesData, ...pByEmail];
-      }
-
-      const profileById = new Map<string, typeof profilesData[0]>();
-      const profileByEmail = new Map<string, typeof profilesData[0]>();
-
-      profilesData.forEach((p) => {
-        if (p.id) profileById.set(p.id, p);
-        if (p.email) profileByEmail.set(p.email.toLowerCase(), p);
-      });
-
-      reportsList.forEach((rep) => {
-        const p = (rep.userId ? profileById.get(rep.userId) : null) ||
-                  (rep.userEmail ? profileByEmail.get(rep.userEmail.toLowerCase()) : null);
-
-        if (p) {
-          rep.userName = p.name || rep.userName || 'Estudante';
-          rep.userEmail = p.email || rep.userEmail;
-          rep.userId = p.id || rep.userId;
-          rep.userProfile = {
-            id: p.id,
-            name: p.name || undefined,
-            email: p.email || undefined,
-            college: p.college || undefined,
-            specialtyTarget: p.specialty_target || undefined,
-            avatarUrl: p.avatar_url || undefined,
-            role: p.role || undefined,
-            isRegistered: true
-          };
-        }
-      });
-    }
-  } catch (err) {
-    console.warn('Erro ao enriquecer reports com dados de perfis de estudantes:', err);
-  }
-
-  // 4. Enriquecer com dados das questões correspondentes (banca, ano, enunciado, etc.)
-  try {
-    const questionIds = Array.from(new Set(reportsList.map((r) => r.questionId)));
-    const { data: qData } = await supabase
-      .from('questions')
-      .select('id, code, institution, banca, year, especialidade, tema, statement, options, correct_answer, commentary')
-      .in('id', questionIds);
-
-    if (qData && qData.length > 0) {
-      const qMap = new Map(qData.map((q) => [q.id, q]));
-      reportsList.forEach((rep) => {
-        const qRow = qMap.get(rep.questionId);
-        if (qRow) {
-          rep.question = {
-            id: qRow.id,
-            code: qRow.code,
-            institution: qRow.institution,
-            banca: qRow.banca,
-            year: qRow.year,
-            especialidade: qRow.especialidade,
-            tema: qRow.tema,
-            statement: qRow.statement,
-            options: qRow.options,
-            correctAnswer: qRow.correct_answer,
-            commentary: qRow.commentary || ''
-          };
-        }
-      });
-    }
-  } catch (err) {
-    console.warn('Erro ao enriquecer reports com dados das questões:', err);
-  }
-
-  return reportsList;
+  return [];
 }
 
 /**
- * Atualiza o status de uma denúncia/report pelo Administrador
+ * Atualiza o status de uma denúncia/report pelo Administrador via API segura do Supabase
  */
 export async function updateQuestionReportStatus(
   reportId: string,
   status: ReportStatus,
   adminNotes?: string
 ): Promise<{ success: boolean; message: string }> {
-  const now = new Date().toISOString();
-  // Mapeia status da UI ('in_progress') para o check constraint do Supabase ('in_review')
-  const dbStatus = status === 'in_progress' ? 'in_review' : status;
-
-  // 1. Atualiza no Supabase
   try {
-    const { data: { user } } = await supabase.auth.getUser();
-    const updatePayload: Record<string, unknown> = {
-      status: dbStatus,
-      resolved_at: status === 'resolved' ? now : null
-    };
+    const res = await fetch('/api/admin/reports', {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        reportId,
+        status,
+        adminNotes
+      })
+    });
 
-    if (user?.id && isValidUuid(user.id)) {
-      updatePayload.resolved_by = user.id;
-    }
-
-    await supabase
-      .from('question_reports')
-      .update(updatePayload)
-      .eq('id', reportId);
-  } catch (err) {
-    console.warn('Falha ao atualizar status de report no Supabase:', err);
-  }
-
-  // 2. Atualiza no localStorage
-  if (typeof window !== 'undefined') {
-    try {
-      const raw = localStorage.getItem('bancoresidencia_reported_questions');
-      if (raw) {
-        const list = JSON.parse(raw);
-        if (Array.isArray(list)) {
-          const updated = (list as QuestionReportDbRow[]).map((item) => {
-            if (item.id === reportId || item.questionId === reportId) {
-              return {
-                ...item,
-                status,
-                adminNotes: adminNotes || item.adminNotes,
-                resolvedAt: status === 'resolved' ? now : item.resolvedAt
-              };
+    const data = await res.json();
+    if (res.ok && data.success) {
+      // Sincroniza cache local imediato
+      if (typeof window !== 'undefined') {
+        try {
+          const raw = localStorage.getItem('bancoresidencia_reported_questions');
+          if (raw) {
+            const list = JSON.parse(raw);
+            if (Array.isArray(list)) {
+              const updated = (list as QuestionReportDbRow[]).map((item) => {
+                if (item.id === reportId || item.questionId === reportId) {
+                  return {
+                    ...item,
+                    status,
+                    adminNotes: adminNotes || item.adminNotes,
+                    resolvedAt: status === 'resolved' ? new Date().toISOString() : item.resolvedAt
+                  };
+                }
+                return item;
+              });
+              localStorage.setItem('bancoresidencia_reported_questions', JSON.stringify(updated));
             }
-            return item;
-          });
-          localStorage.setItem('bancoresidencia_reported_questions', JSON.stringify(updated));
+          }
+        } catch {
+          // ignore
         }
       }
-    } catch {
-      // ignore
+      return { success: true, message: data.message || `Status atualizado para "${status}".` };
     }
-  }
 
-  return { success: true, message: `Status atualizado para "${status}".` };
+    return { success: false, message: data.error || 'Erro ao atualizar status.' };
+  } catch (err) {
+    console.error('[questionService] Falha de comunicação ao atualizar report:', err);
+    return { success: false, message: 'Erro de conexão ao atualizar status do reporte.' };
+  }
 }
 
 /**
