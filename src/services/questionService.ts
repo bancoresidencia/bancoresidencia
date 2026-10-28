@@ -18,6 +18,9 @@ import {
 import { getQuestionCount } from '@/data/hierarchyCounts';
 import { clinicalHierarchy } from '@/data/mockQuestions';
 
+// Projeção segura de colunas: omite estritamente correct_answer e commentary contra scraping
+export const SAFE_QUESTION_COLUMNS = 'id, code, institution, banca, year, tipo_prova, modalidade, especialidade, tema, foco, subfoco, difficulty, type, is_anulada, statement, options, images';
+
 // Mapeamento em memória de Subfocos para Focos ancestrais indexados no PostgreSQL
 const subfocoToParentFocos = new Map<string, string[]>();
 
@@ -271,7 +274,6 @@ export async function fetchQuestionsFromSupabase(
   const hasFreshCache = cachedCountEntry && (now - cachedCountEntry.timestamp < 90000);
 
   // Consulta segura e protegida contra raspagem: omite correct_answer e commentary na busca pública
-  const SAFE_QUESTION_COLUMNS = 'id, code, institution, banca, year, tipo_prova, modalidade, especialidade, tema, foco, subfoco, difficulty, type, is_anulada, statement, options, images';
   let query = supabase.from('questions').select(SAFE_QUESTION_COLUMNS);
 
   // Regra de Gabarito: Todas as 132.965 questões presentes por padrão

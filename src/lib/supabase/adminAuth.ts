@@ -10,6 +10,7 @@ export interface AdminAuthResult {
   role?: string;
   error?: string;
   status: number;
+  isM2M?: boolean;
 }
 
 /**
@@ -34,7 +35,8 @@ export async function verifyAdminSession(req?: NextRequest): Promise<AdminAuthRe
           return {
             authorized: true,
             role: 'service_role',
-            status: 200
+            status: 200,
+            isM2M: true
           };
         }
       }
