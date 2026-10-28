@@ -49,6 +49,10 @@ const SHORTCUT_GROUPS: ShortcutGroup[] = [
     category: 'Navegação e Sequência',
     items: [
       {
+        keys: ['Esc', 'Alt + ←'],
+        description: 'Voltar para a página anterior / sair da resolução'
+      },
+      {
         keys: ['→', 'J'],
         description: 'Avançar para a próxima questão'
       },
@@ -63,10 +67,6 @@ const SHORTCUT_GROUPS: ShortcutGroup[] = [
       {
         keys: ['?'],
         description: 'Abrir / Fechar este guia de atalhos'
-      },
-      {
-        keys: ['Esc'],
-        description: 'Fechar modais e painéis suspensos'
       }
     ]
   },

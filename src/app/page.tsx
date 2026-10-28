@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo, useRef, useEffect } from 'react';
+import React, { useState, useMemo, useRef, useEffect, useCallback } from 'react';
 import dynamic from 'next/dynamic';
 import { initialFolders, initialLists } from '@/data/mockLists';
 import { AdvancedQuestionFilters } from '@/components/AdvancedQuestionFilters';
@@ -92,7 +92,8 @@ import {
   fetchQuestionsFromSupabase,
   fetchTotalQuestionsCount,
   fetchQuestionIdsForListCriteria,
-  shuffleArray
+  shuffleArray,
+  syncPendingLocalReportsToSupabase
 } from '@/services/questionService';
 import {
   loadUserFolders,
@@ -191,6 +192,13 @@ export default function Home() {
     document.addEventListener('mousedown', handleClickOutside);
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
+
+  // Recuperação e sincronização de denúncias que ficaram retidas no navegador dos alunos
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      syncPendingLocalReportsToSupabase(user).catch(() => {});
+    }
+  }, [user]);
 
   // Perfil do Aluno e Metas dinâmicas
   const studentName = user?.name || 'Dr. Lucas Rocha';
@@ -391,6 +399,73 @@ export default function Home() {
   const [isQuestionSequenceOpen, setIsQuestionSequenceOpen] = useState<boolean>(false);
   // Modal de orientação de atalhos de teclado (Imagem 3)
   const [isShortcutsModalOpen, setIsShortcutsModalOpen] = useState<boolean>(false);
+
+  // Histórico contextual para botão "Voltar" e atalho de teclado (Esc ou Alt + ←)
+  const [previousView, setPreviousView] = useState<{
+    tab: ActiveTab;
+    mode?: 'filtros' | 'resolucao' | 'resultado';
+    label: string;
+  } | null>(null);
+
+  // Salva continuamente a posição da questão atual da lista ativa no localStorage e no estado
+  useEffect(() => {
+    if (!activeListId || currentQuestionIndex < 0) return;
+    try {
+      localStorage.setItem(`bancoresidencia_list_last_index_${activeListId}`, String(currentQuestionIndex));
+    } catch {}
+
+    setLists((prev) => {
+      let changed = false;
+      const nextLists = prev.map((l) => {
+        if (l.id === activeListId && l.lastQuestionIndex !== currentQuestionIndex) {
+          changed = true;
+          return {
+            ...l,
+            lastQuestionIndex: currentQuestionIndex
+          };
+        }
+        return l;
+      });
+      if (changed) {
+        if (typeof window !== 'undefined') {
+          try {
+            const key = user?.id ? `bancoresidencia_lists_${user.id}` : 'bancoresidencia_lists_guest';
+            localStorage.setItem(key, JSON.stringify(nextLists));
+            localStorage.setItem('bancoresidencia_lists', JSON.stringify(nextLists));
+          } catch {}
+        }
+        return nextLists;
+      }
+      return prev;
+    });
+  }, [currentQuestionIndex, activeListId, user?.id]);
+
+  // Função centralizada para retornar à página anterior preservando o progresso da lista
+  const handleBackToPreviousView = useCallback(() => {
+    // 1. Salva índice da lista ativa se houver
+    if (activeListId) {
+      try {
+        localStorage.setItem(`bancoresidencia_list_last_index_${activeListId}`, String(currentQuestionIndex));
+      } catch {}
+    }
+
+    // 2. Retorna para a tela de origem
+    if (previousView) {
+      setActiveTab(previousView.tab);
+      if (previousView.tab === 'banco') {
+        setBancoMode(previousView.mode || 'filtros');
+      }
+      return;
+    }
+
+    // 3. Fallbacks naturais
+    if (activeListId) {
+      setActiveListId(null);
+      setActiveTab('listas');
+    } else {
+      setBancoMode('filtros');
+    }
+  }, [activeListId, currentQuestionIndex, previousView]);
 
   // Fecha o dropdown de cores do marca-texto da barra superior ao clicar fora
   useEffect(() => {
@@ -886,6 +961,15 @@ export default function Home() {
         return;
       }
 
+      // Atalho Esc ou Alt + ArrowLeft para retornar à página anterior
+      if (e.key === 'Escape' || (e.altKey && e.key === 'ArrowLeft')) {
+        if (!isShortcutsModalOpen && !isReportDrawerOpen && !isCreateCadernoModalOpen) {
+          e.preventDefault();
+          handleBackToPreviousView();
+          return;
+        }
+      }
+
       // Atalho ? para abrir o modal de atalhos de teclado
       if (e.key === '?' || (e.key === '/' && e.shiftKey)) {
         e.preventDefault();
@@ -965,7 +1049,19 @@ export default function Home() {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [activeTab, bancoMode, visibleQuestions.length, totalSupabaseCount, filteredQuestions, currentQuestionIndex, fontSize]);
+  }, [
+    activeTab,
+    bancoMode,
+    visibleQuestions.length,
+    totalSupabaseCount,
+    filteredQuestions,
+    currentQuestionIndex,
+    fontSize,
+    isShortcutsModalOpen,
+    isReportDrawerOpen,
+    isCreateCadernoModalOpen,
+    handleBackToPreviousView
+  ]);
 
   const handleAnswer = (questionId: string, selectedLetter: 'A' | 'B' | 'C' | 'D' | 'E', isCorrect: boolean) => {
     const q = supabaseQuestions.find((item) => item.id === questionId);
@@ -1069,13 +1165,16 @@ export default function Home() {
               ...l,
               completedQuestions: nextCompleted,
               progressPercentage: Math.round((nextCompleted / l.totalQuestions) * 100),
-              lastStudiedAt: 'Agora mesmo'
+              lastStudiedAt: 'Agora mesmo',
+              lastQuestionIndex: currentQuestionIndex
             };
           }
           return l;
         });
         if (typeof window !== 'undefined') {
           try {
+            const key = user?.id ? `bancoresidencia_lists_${user.id}` : 'bancoresidencia_lists_guest';
+            localStorage.setItem(key, JSON.stringify(nextLists));
             localStorage.setItem('bancoresidencia_lists', JSON.stringify(nextLists));
           } catch (e) {
             console.error(e);
@@ -1384,6 +1483,13 @@ export default function Home() {
   };
 
   const handleContinueList = (list: QuestionList) => {
+    // 1. Registra a tela de origem para o botão "Voltar" e atalho de teclado (Esc)
+    setPreviousView({
+      tab: activeTab,
+      mode: activeTab === 'banco' ? bancoMode : undefined,
+      label: activeTab === 'home' ? 'Início' : activeTab === 'listas' ? 'Minhas Listas' : 'Voltar'
+    });
+
     setActiveListId(list.id);
     if (typeof window !== 'undefined') {
       try {
@@ -1392,7 +1498,54 @@ export default function Home() {
     }
     setActiveTab('banco');
     setBancoMode('resolucao');
-    setCurrentQuestionIndex(0);
+
+    // 2. Determina o índice de onde o aluno parou
+    let targetIndex = 0;
+    let savedIndex: number | undefined = list.lastQuestionIndex;
+    if (savedIndex === undefined && typeof window !== 'undefined') {
+      try {
+        const raw = localStorage.getItem(`bancoresidencia_list_last_index_${list.id}`);
+        if (raw !== null) {
+          const parsed = parseInt(raw, 10);
+          if (!isNaN(parsed) && parsed >= 0) {
+            savedIndex = parsed;
+          }
+        }
+      } catch {}
+    }
+
+    if (savedIndex !== undefined && savedIndex >= 0 && savedIndex < list.questionIds.length) {
+      targetIndex = savedIndex;
+      const currentQId = list.questionIds[savedIndex];
+      const isCurrentAnswered = Boolean(userAnswersRef.current[currentQId]);
+      if (isCurrentAnswered) {
+        // Encontra a primeira questão pendente a partir do índice salvo
+        const nextUnansweredIdx = list.questionIds.findIndex(
+          (qid, idx) => idx >= savedIndex! && !userAnswersRef.current[qid]
+        );
+        if (nextUnansweredIdx !== -1) {
+          targetIndex = nextUnansweredIdx;
+        } else {
+          // Se todas após o índice já foram respondidas, busca na lista inteira
+          const firstUnansweredIdx = list.questionIds.findIndex(
+            (qid) => !userAnswersRef.current[qid]
+          );
+          if (firstUnansweredIdx !== -1) {
+            targetIndex = firstUnansweredIdx;
+          }
+        }
+      }
+    } else {
+      // Se não havia índice salvo, busca a primeira questão não respondida da lista
+      const firstUnansweredIdx = list.questionIds.findIndex(
+        (qid) => !userAnswersRef.current[qid]
+      );
+      if (firstUnansweredIdx !== -1) {
+        targetIndex = firstUnansweredIdx;
+      }
+    }
+
+    setCurrentQuestionIndex(targetIndex);
     setQuestionTimer(0);
   };
 
@@ -1402,6 +1555,10 @@ export default function Home() {
     banca?: string,
     examDetails?: OfficialExamItem
   ) => {
+    setPreviousView({
+      tab: activeTab,
+      label: 'Provas Oficiais'
+    });
     saveRecentOfficialExam({
       id: `${institution}-${year}`,
       institution,
@@ -1760,7 +1917,7 @@ export default function Home() {
         activeTab={activeTab}
         onNavigate={(tab) => {
           setActiveTab(tab);
-          if (tab === 'banco') setBancoMode('filtros');
+          if (tab === 'banco' && !activeListId) setBancoMode('filtros');
           setMobileMenuOpen(false);
         }}
         modalidade={performanceFilters.modalidade}
@@ -1791,7 +1948,7 @@ export default function Home() {
             <GlobalSearchBar
               onNavigate={(tab) => {
                 setActiveTab(tab);
-                if (tab === 'banco') setBancoMode('filtros');
+                if (tab === 'banco' && !activeListId) setBancoMode('filtros');
                 setMobileMenuOpen(false);
               }}
               onSearchQuestions={(searchTerm) => {
@@ -1816,9 +1973,18 @@ export default function Home() {
                 }));
               }}
               onSelectList={(listId) => {
-                setActiveListId(listId);
+                const target = lists.find((l) => l.id === listId);
+                if (target) {
+                  handleContinueList(target);
+                } else {
+                  setActiveListId(listId);
+                }
               }}
               onSelectQuestion={(questionId) => {
+                setPreviousView({
+                  tab: activeTab,
+                  label: 'Busca'
+                });
                 setActiveTab('banco');
                 setBancoMode('resolucao');
                 const q = supabaseQuestions.find((item) => item.id === questionId);
@@ -2011,7 +2177,7 @@ export default function Home() {
                   onClick={() => {
                     const nextTab = item.id as ActiveTab;
                     setActiveTab(nextTab);
-                    if (nextTab === 'banco') setBancoMode('filtros');
+                    if (nextTab === 'banco' && !activeListId) setBancoMode('filtros');
                     setMobileMenuOpen(false);
                   }}
                   className={`w-full text-left px-4 py-3 rounded-xl text-xs font-bold transition-all ${
@@ -2062,7 +2228,7 @@ export default function Home() {
                 allLists={lists}
                 onNavigate={(tab) => {
                   setActiveTab(tab);
-                  if (tab === 'banco') setBancoMode('filtros');
+                  if (tab === 'banco' && !activeListId) setBancoMode('filtros');
                 }}
                 onContinueList={handleContinueList}
                 modalidade={performanceFilters.modalidade}
@@ -2086,11 +2252,12 @@ export default function Home() {
                   </div>
                   <button
                     type="button"
-                    onClick={() => setActiveListId(null)}
+                    onClick={handleBackToPreviousView}
                     className="flex items-center gap-1.5 font-bold text-blue-600 dark:text-blue-400 hover:underline cursor-pointer"
+                    title={`Retornar para ${previousView?.label || 'a tela anterior'} (Esc)`}
                   >
                     <ArrowLeft className="w-3.5 h-3.5" />
-                    <span>Voltar para Questões Avulsas</span>
+                    <span>{previousView?.label ? `Voltar para ${previousView.label}` : 'Voltar para Listas'}</span>
                   </button>
                 </div>
               )}
@@ -2119,6 +2286,11 @@ export default function Home() {
                     isLoading={isLoadingSupabase}
                     onCreateListFromFilter={handleCreateListFromFilter}
                     onSelectDirectQuestion={(questionId) => {
+                      setPreviousView({
+                        tab: 'banco',
+                        mode: 'filtros',
+                        label: 'Filtros'
+                      });
                       const idx = filteredQuestions.findIndex((q) => q.id === questionId);
                       if (idx !== -1) {
                         setCurrentQuestionIndex(idx);
@@ -2147,6 +2319,11 @@ export default function Home() {
                       quotas?: Record<string, number>,
                       explicitFilters?: AdvancedFilterState
                     ) => {
+                      setPreviousView({
+                        tab: 'banco',
+                        mode: 'filtros',
+                        label: 'Filtros'
+                      });
                       const finalLimit = limit ? Math.min(200, Math.max(1, limit)) : 200;
                       const activeFilters = explicitFilters || advancedFilters;
                       setAdvancedFilters(activeFilters);
@@ -2218,8 +2395,25 @@ export default function Home() {
                       {/* BARRA SUPERIOR SEQUENCIAL (MODELO DA IMAGEM 2 COM RÉGUA RETRÁTIL DA IMAGEM 1) */}
                       <div className="sticky top-[4.5rem] z-20 bg-white/95 dark:bg-[#121215]/95 backdrop-blur-md border border-zinc-200/90 dark:border-zinc-800/80 rounded-2xl px-3 sm:px-4 py-2.5 sm:py-3 shadow-sm flex flex-col gap-2.5 transition-colors">
                         <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-3">
-                          {/* Esquerda: Widget de Progresso Circular Retrátil (Modelo da Imagem 2) */}
-                          <div className="flex items-center gap-3">
+                          {/* Esquerda: Botão Voltar para Tela Anterior + Widget de Progresso Circular Retrátil */}
+                          <div className="flex items-center gap-2.5 sm:gap-3 flex-wrap sm:flex-nowrap">
+                            {/* Botão de Retorno à Página Anterior */}
+                            <button
+                              type="button"
+                              onClick={handleBackToPreviousView}
+                              className="flex items-center gap-1.5 sm:gap-2 px-3 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-zinc-800/80 dark:hover:bg-zinc-700/80 border border-slate-200/80 dark:border-zinc-700/60 text-slate-700 dark:text-zinc-200 text-xs font-bold transition-all cursor-pointer shadow-xs group shrink-0 active:scale-98"
+                              title={`Retornar para ${previousView?.label || 'a tela anterior'} (Atalho: Esc ou Alt + ←)`}
+                            >
+                              <ArrowLeft className="w-3.5 h-3.5 text-slate-500 dark:text-zinc-400 group-hover:-translate-x-0.5 transition-transform" />
+                              <span className="hidden sm:inline">
+                                {previousView?.label ? `Voltar (${previousView.label})` : 'Voltar'}
+                              </span>
+                              <span className="sm:hidden">Voltar</span>
+                              <kbd className="hidden md:inline-flex items-center px-1.5 py-0.5 text-[10px] font-mono font-semibold text-slate-500 dark:text-zinc-400 bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-700/70 rounded shadow-2xs">
+                                Esc
+                              </kbd>
+                            </button>
+
                             {(() => {
                               const answeredCount = visibleQuestions.filter((q) => !!userAnswers[q.id]).length;
                               const progressPercent = visibleQuestions.length > 0
@@ -2487,14 +2681,13 @@ export default function Home() {
                             {activeListId && (
                               <button
                                 type="button"
-                                onClick={() => {
-                                  setActiveListId(null);
-                                  setActiveTab('listas');
-                                }}
-                                className="px-3.5 py-1.5 rounded-xl text-xs font-extrabold text-white shadow-sm transition-transform hover:scale-105 cursor-pointer"
+                                onClick={handleBackToPreviousView}
+                                className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-extrabold text-white shadow-sm transition-transform hover:scale-105 cursor-pointer"
                                 style={{ backgroundColor: '#0284c7' }}
+                                title="Sair do caderno e retornar (Esc)"
                               >
-                                Sair do Caderno
+                                <ArrowLeft className="w-3.5 h-3.5" />
+                                <span>Sair do Caderno</span>
                               </button>
                             )}
                           </div>

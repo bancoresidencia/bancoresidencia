@@ -961,6 +961,22 @@ export async function fetchAdminCurationStats(
   };
 }
 
+function isValidUuid(id?: string | null): boolean {
+  if (!id) return false;
+  return /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(id);
+}
+
+function generateUuid(): string {
+  if (typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function') {
+    return crypto.randomUUID();
+  }
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {
+    const r = (Math.random() * 16) | 0;
+    const v = c === 'x' ? r : (r & 0x3) | 0x8;
+    return v.toString(16);
+  });
+}
+
 /**
  * Registra denúncia ou apontamento de erro em questão com comentários do estudante
  */
@@ -974,7 +990,7 @@ export async function reportQuestionIssue(
     return { success: false, message: 'ID da questão inválido.' };
   }
 
-  const reportId = typeof crypto !== 'undefined' && crypto.randomUUID ? crypto.randomUUID() : `rep_${Date.now()}`;
+  const reportId = generateUuid();
   const now = new Date().toISOString();
 
   // 1. Armazena localmente para conferência instantânea e modo offline
@@ -999,27 +1015,25 @@ export async function reportQuestionIssue(
     }
   }
 
-  // 2. Envia ao Supabase se disponível
+  // 2. Envia ao Supabase de forma segura com colunas estritamente compatíveis
   try {
     const { data: { user } } = await supabase.auth.getUser();
     const finalUserId = userMeta?.id || user?.id || null;
-    const finalUserEmail = userMeta?.email || user?.email || null;
-    const finalUserName = userMeta?.name || user?.user_metadata?.full_name || 'Estudante';
 
-    const { error } = await supabase.from('question_reports').insert({
+    const insertPayload: Record<string, unknown> = {
       id: reportId,
       question_id: questionId,
-      user_id: finalUserId,
-      user_email: finalUserEmail,
-      user_name: finalUserName,
+      user_id: isValidUuid(finalUserId) ? finalUserId : null,
       reason,
       details: details || '',
       status: 'pending',
       created_at: now
-    });
+    };
+
+    const { error } = await supabase.from('question_reports').insert(insertPayload);
 
     if (error) {
-      console.warn('Registro de report via Supabase retornou aviso (tabela opcional):', error.message);
+      console.warn('Registro de report via Supabase retornou aviso:', error.message);
     }
   } catch (err) {
     console.warn('Falha no envio remoto do report da questão:', err);
@@ -1050,10 +1064,19 @@ interface QuestionReportDbRow {
 }
 
 /**
- * Busca a lista de questões reportadas para o painel de auditoria do Administrador
+ * Busca a lista de questões reportadas para o painel de auditoria do Administrador,
+ * cruzando automaticamente os dados com a tabela de estudantes cadastrados (profiles).
  */
 export async function fetchReportedQuestionsForAdmin(statusFilter?: string): Promise<QuestionReport[]> {
   const reportsMap = new Map<string, QuestionReport>();
+
+  // Normalização do filtro para o Supabase ('in_progress' na UI é 'in_review' no banco)
+  const dbStatusFilter = statusFilter === 'in_progress' ? 'in_review' : statusFilter;
+
+  // Sincroniza eventuais denúncias locais pendentes no navegador atual antes de buscar
+  if (typeof window !== 'undefined') {
+    await syncPendingLocalReportsToSupabase().catch(() => {});
+  }
 
   // 1. Busca do Supabase
   try {
@@ -1062,13 +1085,15 @@ export async function fetchReportedQuestionsForAdmin(statusFilter?: string): Pro
       .select('*')
       .order('created_at', { ascending: false });
 
-    if (statusFilter && statusFilter !== 'all') {
-      query = query.eq('status', statusFilter);
+    if (dbStatusFilter && dbStatusFilter !== 'all') {
+      query = query.eq('status', dbStatusFilter);
     }
 
     const { data, error } = await query.limit(200);
     if (!error && data) {
       (data as unknown as QuestionReportDbRow[]).forEach((row) => {
+        const rawStatus = row.status as unknown as string;
+        const uiStatus: ReportStatus = rawStatus === 'in_review' ? 'in_progress' : (row.status || 'pending');
         reportsMap.set(row.id, {
           id: row.id,
           questionId: row.question_id,
@@ -1077,7 +1102,7 @@ export async function fetchReportedQuestionsForAdmin(statusFilter?: string): Pro
           userName: row.user_name || 'Estudante',
           reason: row.reason,
           details: row.details || '',
-          status: row.status || 'pending',
+          status: uiStatus,
           adminNotes: row.admin_notes || null,
           createdAt: row.created_at || new Date().toISOString(),
           resolvedAt: row.resolved_at || null
@@ -1088,7 +1113,7 @@ export async function fetchReportedQuestionsForAdmin(statusFilter?: string): Pro
     console.warn('Erro ao carregar reports do Supabase:', err);
   }
 
-  // 2. Mescla com reports locais (fallback robusto)
+  // 2. Mescla com reports locais (fallback robusto para offline/desenvolvimento)
   if (typeof window !== 'undefined') {
     try {
       const raw = localStorage.getItem('bancoresidencia_reported_questions');
@@ -1102,7 +1127,7 @@ export async function fetchReportedQuestionsForAdmin(statusFilter?: string): Pro
                 reportsMap.set(id, {
                   id,
                   questionId: item.questionId || item.question_id,
-                  userId: item.user_id || null,
+                  userId: item.user_id || item.userId || null,
                   userEmail: item.user_email || item.userEmail || null,
                   userName: item.user_name || item.userName || 'Estudante',
                   reason: item.reason,
@@ -1124,7 +1149,76 @@ export async function fetchReportedQuestionsForAdmin(statusFilter?: string): Pro
   const reportsList = Array.from(reportsMap.values());
   if (reportsList.length === 0) return [];
 
-  // 3. Enriquecer com dados das questões correspondentes (banca, ano, enunciado, etc.)
+  // 3. Enriquecer com dados dos Estudantes Cadastrados (tabela 'profiles' do Supabase)
+  try {
+    const userIds = Array.from(
+      new Set(reportsList.map((r) => r.userId).filter((id): id is string => Boolean(id) && isValidUuid(id)))
+    );
+    const userEmails = Array.from(
+      new Set(reportsList.map((r) => r.userEmail?.toLowerCase()).filter((e): e is string => Boolean(e)))
+    );
+
+    if (userIds.length > 0 || userEmails.length > 0) {
+      let profilesData: Array<{
+        id: string;
+        name: string | null;
+        email: string | null;
+        college: string | null;
+        specialty_target: string | null;
+        avatar_url: string | null;
+        role: string | null;
+      }> = [];
+
+      if (userIds.length > 0) {
+        const { data: pById } = await supabase
+          .from('profiles')
+          .select('id, name, email, college, specialty_target, avatar_url, role')
+          .in('id', userIds);
+        if (pById) profilesData = [...profilesData, ...pById];
+      }
+
+      if (userEmails.length > 0) {
+        const { data: pByEmail } = await supabase
+          .from('profiles')
+          .select('id, name, email, college, specialty_target, avatar_url, role')
+          .in('email', userEmails);
+        if (pByEmail) profilesData = [...profilesData, ...pByEmail];
+      }
+
+      const profileById = new Map<string, typeof profilesData[0]>();
+      const profileByEmail = new Map<string, typeof profilesData[0]>();
+
+      profilesData.forEach((p) => {
+        if (p.id) profileById.set(p.id, p);
+        if (p.email) profileByEmail.set(p.email.toLowerCase(), p);
+      });
+
+      reportsList.forEach((rep) => {
+        const p = (rep.userId ? profileById.get(rep.userId) : null) ||
+                  (rep.userEmail ? profileByEmail.get(rep.userEmail.toLowerCase()) : null);
+
+        if (p) {
+          rep.userName = p.name || rep.userName || 'Estudante';
+          rep.userEmail = p.email || rep.userEmail;
+          rep.userId = p.id || rep.userId;
+          rep.userProfile = {
+            id: p.id,
+            name: p.name || undefined,
+            email: p.email || undefined,
+            college: p.college || undefined,
+            specialtyTarget: p.specialty_target || undefined,
+            avatarUrl: p.avatar_url || undefined,
+            role: p.role || undefined,
+            isRegistered: true
+          };
+        }
+      });
+    }
+  } catch (err) {
+    console.warn('Erro ao enriquecer reports com dados de perfis de estudantes:', err);
+  }
+
+  // 4. Enriquecer com dados das questões correspondentes (banca, ano, enunciado, etc.)
   try {
     const questionIds = Array.from(new Set(reportsList.map((r) => r.questionId)));
     const { data: qData } = await supabase
@@ -1169,16 +1263,24 @@ export async function updateQuestionReportStatus(
   adminNotes?: string
 ): Promise<{ success: boolean; message: string }> {
   const now = new Date().toISOString();
+  // Mapeia status da UI ('in_progress') para o check constraint do Supabase ('in_review')
+  const dbStatus = status === 'in_progress' ? 'in_review' : status;
 
   // 1. Atualiza no Supabase
   try {
+    const { data: { user } } = await supabase.auth.getUser();
+    const updatePayload: Record<string, unknown> = {
+      status: dbStatus,
+      resolved_at: status === 'resolved' ? now : null
+    };
+
+    if (user?.id && isValidUuid(user.id)) {
+      updatePayload.resolved_by = user.id;
+    }
+
     await supabase
       .from('question_reports')
-      .update({
-        status,
-        admin_notes: adminNotes || null,
-        resolved_at: status === 'resolved' ? now : null
-      })
+      .update(updatePayload)
       .eq('id', reportId);
   } catch (err) {
     console.warn('Falha ao atualizar status de report no Supabase:', err);
@@ -1211,6 +1313,70 @@ export async function updateQuestionReportStatus(
   }
 
   return { success: true, message: `Status atualizado para "${status}".` };
+}
+
+/**
+ * Sincroniza denúncias pendentes salvas no localStorage do aluno diretamente para o Supabase.
+ * Permite recuperar automaticamente denúncias feitas antes da correção estrutural de banco.
+ */
+export async function syncPendingLocalReportsToSupabase(currentUser?: { id?: string; email?: string } | null): Promise<number> {
+  if (typeof window !== 'undefined') {
+    try {
+      const raw = localStorage.getItem('bancoresidencia_reported_questions');
+      if (!raw) return 0;
+
+      const list = JSON.parse(raw);
+      if (!Array.isArray(list) || list.length === 0) return 0;
+
+      let syncedCount = 0;
+      const updatedList = [];
+
+      const { data: authData } = await supabase.auth.getUser().catch(() => ({ data: { user: null } }));
+      const activeUserId = currentUser?.id || authData?.user?.id || null;
+
+      for (const item of list) {
+        if (item._synced) {
+          updatedList.push(item);
+          continue;
+        }
+
+        const reportId = isValidUuid(item.id) ? item.id : generateUuid();
+        const targetUserId = item.userId || item.user_id || activeUserId;
+
+        const payload: Record<string, unknown> = {
+          id: reportId,
+          question_id: item.questionId || item.question_id,
+          user_id: isValidUuid(targetUserId) ? targetUserId : null,
+          reason: item.reason || 'Apontamento de erro em questão',
+          details: item.details || '',
+          status: item.status === 'in_progress' ? 'in_review' : (item.status || 'pending'),
+          created_at: item.createdAt || item.created_at || item.timestamp || new Date().toISOString()
+        };
+
+        const { error } = await supabase.from('question_reports').upsert(payload, { onConflict: 'id' });
+        if (!error) {
+          syncedCount++;
+          updatedList.push({
+            ...item,
+            id: reportId,
+            _synced: true
+          });
+        } else {
+          updatedList.push(item);
+        }
+      }
+
+      if (syncedCount > 0) {
+        localStorage.setItem('bancoresidencia_reported_questions', JSON.stringify(updatedList));
+      }
+
+      return syncedCount;
+    } catch (err) {
+      console.warn('Erro ao sincronizar reports locais pendentes:', err);
+      return 0;
+    }
+  }
+  return 0;
 }
 
 /**

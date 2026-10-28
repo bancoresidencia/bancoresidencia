@@ -880,8 +880,16 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         <h4 className="font-heading text-base sm:text-lg font-bold text-slate-900 dark:text-zinc-100" title={item.title}>
                           {item.title}
                         </h4>
-                        <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-zinc-400">
+                        <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-zinc-400 flex-wrap">
                           <span>{item.completedQuestions} de {item.totalQuestions} questões resolvidas</span>
+                          {item.lastQuestionIndex !== undefined && item.lastQuestionIndex > 0 && (
+                            <>
+                              <span>•</span>
+                              <span className="font-semibold text-blue-600 dark:text-blue-400">
+                                Parou na questão {item.lastQuestionIndex + 1}
+                              </span>
+                            </>
+                          )}
                           {item.lastStudiedAt && (
                             <>
                               <span>•</span>
@@ -911,7 +919,11 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           }}
                         >
                           <Play className="w-3.5 h-3.5 fill-white" />
-                          <span>Continuar Caderno</span>
+                          <span>
+                            {item.lastQuestionIndex !== undefined && item.lastQuestionIndex > 0
+                              ? `Continuar (Q${item.lastQuestionIndex + 1})`
+                              : 'Continuar Caderno'}
+                          </span>
                         </button>
                       </div>
                     </div>

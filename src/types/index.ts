@@ -114,12 +114,24 @@ export type ReportReason =
 
 export type ReportStatus = 'pending' | 'in_progress' | 'resolved' | 'dismissed';
 
+export interface StudentProfileSummary {
+  id?: string;
+  name?: string;
+  email?: string;
+  college?: string;
+  specialtyTarget?: string;
+  avatarUrl?: string;
+  role?: string;
+  isRegistered?: boolean;
+}
+
 export interface QuestionReport {
   id: string;
   questionId: string;
   userId?: string | null;
   userEmail?: string | null;
   userName?: string | null;
+  userProfile?: StudentProfileSummary;
   reason: ReportReason | string;
   details: string;
   status: ReportStatus;
@@ -314,6 +326,8 @@ export interface QuestionList {
   lastStudiedAt: string;
   inProgress: boolean;
   progressPercentage: number;
+  lastQuestionIndex?: number;
+  lastQuestionId?: string;
   createdAt?: string;
   updatedAt?: string;
 }

@@ -865,10 +865,16 @@ export const ListManager: React.FC<ListManagerProps> = ({
                       {list.title}
                     </h4>
 
-                    <div className="flex items-center gap-2.5 text-xs text-slate-500 dark:text-slate-400 font-medium">
+                    <div className="flex items-center gap-2.5 text-xs text-slate-500 dark:text-slate-400 font-medium flex-wrap">
                       <span>{list.completedQuestions} de {list.totalQuestions} questões resolvidas</span>
                       <span>•</span>
                       <span className="font-bold text-slate-700 dark:text-slate-300">{list.progressPercentage}%</span>
+                      {list.lastQuestionIndex !== undefined && list.lastQuestionIndex > 0 && (
+                        <>
+                          <span>•</span>
+                          <span className="text-blue-600 dark:text-blue-400 font-semibold">Parou na Q{list.lastQuestionIndex + 1}</span>
+                        </>
+                      )}
                       <span>•</span>
                       <span>{list.lastStudiedAt}</span>
                     </div>
@@ -911,7 +917,13 @@ export const ListManager: React.FC<ListManagerProps> = ({
                       className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-white text-xs font-bold transition-all cursor-pointer shadow-sm hover:scale-102"
                       style={{ backgroundColor: accentConfig.primaryHex }}
                     >
-                      <span>{list.completedQuestions > 0 && list.completedQuestions < list.totalQuestions ? 'Continuar' : 'Resolver'}</span>
+                      <span>
+                        {list.lastQuestionIndex !== undefined && list.lastQuestionIndex > 0
+                          ? `Continuar (Q${list.lastQuestionIndex + 1})`
+                          : list.completedQuestions > 0 && list.completedQuestions < list.totalQuestions
+                          ? 'Continuar'
+                          : 'Resolver'}
+                      </span>
                       <ArrowRight className="w-3.5 h-3.5" />
                     </button>
                   </div>

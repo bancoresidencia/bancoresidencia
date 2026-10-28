@@ -15,7 +15,9 @@ import {
   Sparkles,
   Eye,
   Edit3,
-  X
+  X,
+  UserCheck,
+  GraduationCap
 } from 'lucide-react';
 import { QuestionReport, ReportStatus, QuestionOption, Question } from '@/types';
 import {
@@ -103,7 +105,11 @@ export const AdminReportedQuestions: React.FC = () => {
         const matchBanca = rep.question?.banca?.toLowerCase().includes(q) || rep.question?.institution?.toLowerCase().includes(q);
         const matchDetails = rep.details.toLowerCase().includes(q);
         const matchReason = rep.reason.toLowerCase().includes(q);
-        const matchStudent = (rep.userName || '').toLowerCase().includes(q) || (rep.userEmail || '').toLowerCase().includes(q);
+        const matchStudent = (rep.userName || '').toLowerCase().includes(q) ||
+                             (rep.userEmail || '').toLowerCase().includes(q) ||
+                             (rep.userProfile?.name || '').toLowerCase().includes(q) ||
+                             (rep.userProfile?.college || '').toLowerCase().includes(q) ||
+                             (rep.userProfile?.specialtyTarget || '').toLowerCase().includes(q);
         if (!matchCode && !matchBanca && !matchDetails && !matchReason && !matchStudent) {
           return false;
         }
@@ -462,10 +468,46 @@ export const AdminReportedQuestions: React.FC = () => {
                         </span>
                       )}
                     </div>
-                    <p className="text-[11px] text-zinc-400">
-                      Reportado por <strong className="text-zinc-700 dark:text-zinc-300">{report.userName || 'Estudante'}</strong>
-                      {report.userEmail ? ` (${report.userEmail})` : ''} em {new Date(report.createdAt).toLocaleString('pt-BR')}
-                    </p>
+                    <div className="flex flex-wrap items-center gap-1.5 pt-0.5">
+                      <p className="text-[11px] text-zinc-400 flex flex-wrap items-center gap-1.5">
+                        <span>Reportado por</span>
+                        <strong className="text-zinc-800 dark:text-zinc-200 font-semibold">
+                          {report.userProfile?.name || report.userName || 'Estudante'}
+                        </strong>
+                        {report.userProfile?.isRegistered && (
+                          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[9px] font-bold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
+                            <UserCheck className="w-2.5 h-2.5" />
+                            Aluno Cadastrado
+                          </span>
+                        )}
+                        {(report.userProfile?.email || report.userEmail) && (
+                          <span className="text-zinc-500 dark:text-zinc-500">
+                            ({report.userProfile?.email || report.userEmail})
+                          </span>
+                        )}
+                        <span className="text-zinc-400">
+                          em {new Date(report.createdAt).toLocaleString('pt-BR')}
+                        </span>
+                      </p>
+                    </div>
+                    {(report.userProfile?.college || report.userProfile?.specialtyTarget) && (
+                      <div className="flex flex-wrap items-center gap-2 text-[10px] text-zinc-500 dark:text-zinc-400 pt-0.5">
+                        {report.userProfile.college && (
+                          <span className="inline-flex items-center gap-1">
+                            <GraduationCap className="w-3 h-3 text-zinc-400" />
+                            <span>{report.userProfile.college}</span>
+                          </span>
+                        )}
+                        {report.userProfile.college && report.userProfile.specialtyTarget && (
+                          <span>•</span>
+                        )}
+                        {report.userProfile.specialtyTarget && (
+                          <span className="font-medium text-blue-600 dark:text-blue-400">
+                            Alvo: {report.userProfile.specialtyTarget}
+                          </span>
+                        )}
+                      </div>
+                    )}
                   </div>
 
                   {/* Badges de Status e Categoria */}

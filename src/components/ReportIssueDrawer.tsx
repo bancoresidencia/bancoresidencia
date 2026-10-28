@@ -12,6 +12,7 @@ interface ReportIssueDrawerProps {
   question: Question | null;
   user?: {
     id?: string;
+    name?: string;
     email?: string;
     user_metadata?: { full_name?: string };
   } | null;
@@ -73,10 +74,11 @@ export const ReportIssueDrawer: React.FC<ReportIssueDrawerProps> = ({
     setErrorMsg(null);
 
     try {
+      const studentName = user?.name || user?.user_metadata?.full_name || (user?.email ? user.email.split('@')[0] : 'Estudante');
       const userMeta = {
         id: user?.id,
         email: user?.email,
-        name: user?.user_metadata?.full_name || user?.email?.split('@')[0] || 'Estudante'
+        name: studentName
       };
 
       const result = await reportQuestionIssue(
