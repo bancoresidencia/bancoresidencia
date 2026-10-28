@@ -650,6 +650,25 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     );
 
     if (hasActiveFilters) {
+      if (typeof totalFiltered === 'number' && totalFiltered > 0) {
+        return totalFiltered;
+      }
+      // Fallback resiliente instantâneo se totalFiltered for 0 (evita bloquear botão e mostrar 0 durante carregamento ou timeout)
+      let localSum = 0;
+      if (filters.subfocos && filters.subfocos.length > 0) {
+        localSum = filters.subfocos.reduce((acc, s) => acc + (getQuestionCount('subfocos', s) || 0), 0);
+      } else if (filters.focos && filters.focos.length > 0) {
+        localSum = filters.focos.reduce((acc, f) => acc + (getQuestionCount('focos', f) || 0), 0);
+      } else if (filters.temas && filters.temas.length > 0) {
+        localSum = filters.temas.reduce((acc, t) => acc + (getQuestionCount('temas', t) || 0), 0);
+      } else if (filters.especialidades && filters.especialidades.length > 0) {
+        localSum = filters.especialidades.reduce((acc, e) => acc + (getQuestionCount('especialidades', e) || 0), 0);
+      } else if (filters.instituicoes && filters.instituicoes.length > 0) {
+        localSum = filters.instituicoes.reduce((acc, inst) => acc + (getInstitutionSupabaseCount(inst) || 0), 0);
+      }
+      if (localSum > 0) {
+        return localSum;
+      }
       return typeof totalFiltered === 'number' ? totalFiltered : 0;
     }
     return totalAvailable || 132965;

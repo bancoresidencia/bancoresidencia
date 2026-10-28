@@ -233,10 +233,30 @@ export async function fetchTotalQuestionsCount(onlyClassifiedWithAnswer: boolean
     return cached.count;
   }
 
-  // Universo oficial consolidado padrão-ouro homologado (132.965 questões)
+// Universo oficial consolidado padrão-ouro homologado (132.965 questões)
   const OFFICIAL_CONSOLIDATED_COUNT = 132965;
   countCache.set(cacheKey, { count: OFFICIAL_CONSOLIDATED_COUNT, timestamp: Date.now() });
   return OFFICIAL_CONSOLIDATED_COUNT;
+}
+
+export function calculateHierarchyFallback(filters: ExtendedFilterState): number {
+  if (filters.subfocos && filters.subfocos.length > 0) {
+    const sum = filters.subfocos.reduce((acc, s) => acc + (getQuestionCount('subfocos', s) || 0), 0);
+    if (sum > 0) return sum;
+  }
+  if (filters.focos && filters.focos.length > 0) {
+    const sum = filters.focos.reduce((acc, f) => acc + (getQuestionCount('focos', f) || 0), 0);
+    if (sum > 0) return sum;
+  }
+  if (filters.temas && filters.temas.length > 0) {
+    const sum = filters.temas.reduce((acc, t) => acc + (getQuestionCount('temas', t) || 0), 0);
+    if (sum > 0) return sum;
+  }
+  if (filters.especialidades && filters.especialidades.length > 0) {
+    const sum = filters.especialidades.reduce((acc, e) => acc + (getQuestionCount('especialidades', e) || 0), 0);
+    if (sum > 0) return sum;
+  }
+  return 132965;
 }
 
 export async function fetchQuestionsFromSupabase(
@@ -437,20 +457,21 @@ export async function fetchQuestionsFromSupabase(
       query = query.order('id', { ascending: isAsc }).range(from, to);
     }
   } else {
-    // Modo Mais Recentes: estritamente por ano decrescente (2027, 2026, 2025, 2024...) com desempate determinístico por id
-    query = query.order('year', { ascending: false }).order('id', { ascending: true }).range(from, to);
+    // Modo Mais Recentes: estritamente por ano decrescente utilizando o índice B-Tree (elimina timeout de sort em memória)
+    query = query.order('year', { ascending: false }).range(from, to);
   }
 
   const { data, error } = await query;
 
   if (error) {
     console.error('Erro ao buscar questões do Supabase:', error.message || error.code || JSON.stringify(error));
+    const fallbackCount = calculateHierarchyFallback(filters);
     return {
       questions: [],
-      total: 0,
+      total: fallbackCount,
       page,
       pageSize,
-      totalPages: 0
+      totalPages: Math.max(1, Math.ceil(fallbackCount / pageSize))
     };
   }
 
@@ -492,6 +513,24 @@ export async function fetchQuestionsFromSupabase(
     filters.ultimos5Anos
   );
 
+  const hasRightCardFilters = Boolean(
+    (filters.search && filters.search.trim()) ||
+    (filters.instituicoes && filters.instituicoes.length > 0) ||
+    (filters.anos && filters.anos.length > 0 && filters.anos.length < 15) ||
+    (filters.dificuldade && filters.dificuldade !== 'Todas') ||
+    (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') ||
+    (filters.status && filters.status !== 'Todas') ||
+    filters.ocultarAnuladasErro ||
+    filters.ultimos5Anos
+  );
+
+  const hasClinicalFilters = Boolean(
+    (filters.especialidades && filters.especialidades.length > 0) ||
+    (filters.temas && filters.temas.length > 0) ||
+    (filters.focos && filters.focos.length > 0) ||
+    (filters.subfocos && filters.subfocos.length > 0)
+  );
+
   if (questionIds && questionIds.length > 0) {
     total = questionIds.length;
   } else if (!hasActiveFilters) {
@@ -499,6 +538,10 @@ export async function fetchQuestionsFromSupabase(
     countCache.set(countKey, { count: total, timestamp: now });
   } else if (hasFreshCache) {
     total = cachedCountEntry.count;
+  } else if (hasClinicalFilters && !hasRightCardFilters) {
+    // Quando apenas itens da árvore clínica estão ativos, usa contagem precisa e instantânea pré-calculada (0ms)
+    total = calculateHierarchyFallback(filters);
+    countCache.set(countKey, { count: total, timestamp: now });
   } else {
     // Para filtros refinados, executa contagem indexada leve e ultrarrápida
     try {

@@ -413,6 +413,10 @@ export async function generateStratifiedQuiz(
         q = q.eq('especialidade', 'Pediatria');
       } else if (item === 'Ginecologia e Obstetrícia') {
         q = q.in('especialidade', ['Ginecologia e Obstetrícia', 'Ginecologia', 'Obstetrícia']);
+      } else if (item === 'Obstetrícia') {
+        q = q.in('especialidade', ['Obstetrícia', 'Ginecologia e Obstetrícia']);
+      } else if (item === 'Ginecologia') {
+        q = q.in('especialidade', ['Ginecologia', 'Ginecologia e Obstetrícia']);
       } else if (item === 'Medicina Preventiva' || item === 'Medicina Preventiva e Social') {
         q = q.in('especialidade', ['Medicina Preventiva e Social', 'Medicina Preventiva']);
       } else {
