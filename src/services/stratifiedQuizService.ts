@@ -404,16 +404,13 @@ export async function generateStratifiedQuiz(
         .from('questions')
         .select('id, especialidade, tema, foco, subfoco, banca, year, difficulty');
 
-      // Regra de Gabarito: Todas as questões presentes por padrão
-      if (filters.gabaritoStatus === 'sem_gabarito') {
-        q = q.or('correct_answer.is.null,correct_answer.eq.').eq('is_anulada', false);
-      } else if (filters.gabaritoStatus === 'com_gabarito') {
-        q = q.or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true');
-      }
-
-      // Conteúdo: Especialidade / Tema / Foco / Subfoco
-      if (item === 'Cirurgia Geral' || item === 'Cirurgia') {
+      // Conteúdo: Mapeamento de Especialidades principais com índice direto B-Tree
+      if (item === 'Clínica Médica') {
+        q = q.eq('especialidade', 'Clínica Médica');
+      } else if (item === 'Cirurgia Geral' || item === 'Cirurgia') {
         q = q.in('especialidade', ['Cirurgia', 'Cirurgia Geral']);
+      } else if (item === 'Pediatria') {
+        q = q.eq('especialidade', 'Pediatria');
       } else if (item === 'Ginecologia e Obstetrícia') {
         q = q.in('especialidade', ['Ginecologia e Obstetrícia', 'Ginecologia', 'Obstetrícia']);
       } else if (item === 'Medicina Preventiva' || item === 'Medicina Preventiva e Social') {
@@ -608,10 +605,10 @@ export async function generateStratifiedQuiz(
       let qComp = supabase
         .from('questions')
         .select('id, banca, year')
-        .or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true')
         .not('especialidade', 'is', null)
         .neq('especialidade', '')
-        .neq('especialidade', 'Não Classificada');
+        .neq('especialidade', 'Não Classificada')
+        .eq('is_anulada', false);
 
       if (!filters.aleatorizar) {
         qComp = qComp.order('year', { ascending: false }).order('id', { ascending: true });

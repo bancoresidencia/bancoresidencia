@@ -255,10 +255,8 @@ export async function fetchQuestionsFromSupabase(
   let query = supabase.from('questions').select(SAFE_QUESTION_COLUMNS);
 
   // Regra de Gabarito: Todas as 132.965 questões presentes por padrão
-  if (filters.gabaritoStatus === 'sem_gabarito') {
-    query = query.or('correct_answer.is.null,correct_answer.eq.').eq('is_anulada', false);
-  } else if (filters.gabaritoStatus === 'com_gabarito') {
-    query = query.or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true');
+  if (filters.ocultarAnuladasErro) {
+    query = query.eq('is_anulada', false);
   }
 
   // Filtro de Status do Aluno via IDs diretos
@@ -508,10 +506,8 @@ export async function fetchQuestionsFromSupabase(
         .from('questions')
         .select('id', { count: 'exact', head: true });
 
-      if (filters.gabaritoStatus === 'sem_gabarito') {
-        countQuery = countQuery.or('correct_answer.is.null,correct_answer.eq.').eq('is_anulada', false);
-      } else if (filters.gabaritoStatus === 'com_gabarito') {
-        countQuery = countQuery.or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true');
+      if (filters.ocultarAnuladasErro) {
+        countQuery = countQuery.eq('is_anulada', false);
       }
 
       if (filters.status === 'Resolvidas') {
@@ -685,13 +681,12 @@ export async function searchQuestionsDirect(
     if (/^[A-Za-z0-9_-]{3,}$/.test(q)) {
       const { data, error } = await supabase
         .from('questions')
-        .select('*')
+        .select(SAFE_QUESTION_COLUMNS)
         .or(`code.ilike.%${q}%,banca.ilike.%${q}%,foco.ilike.%${q}%`)
-        .or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true')
         .limit(limit);
 
       if (!error && data && data.length > 0) {
-        return data.map(mapRowToQuestion);
+        return (data as unknown as QuestionDbRow[]).map(mapRowToQuestion);
       }
     }
 
@@ -705,24 +700,22 @@ export async function searchQuestionsDirect(
 
     const { data, error } = await supabase
       .from('questions')
-      .select('*')
+      .select(SAFE_QUESTION_COLUMNS)
       .or(`foco.ilike.%${primaryTerm}%,subfoco.ilike.%${primaryTerm}%,tema.ilike.%${primaryTerm}%,banca.ilike.%${primaryTerm}%`)
-      .or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true')
       .limit(limit);
 
     if (!error && data && data.length > 0) {
-      return data.map(mapRowToQuestion);
+      return (data as unknown as QuestionDbRow[]).map(mapRowToQuestion);
     }
 
     // Fallback por código aproximado
     const { data: codeData } = await supabase
       .from('questions')
-      .select('*')
+      .select(SAFE_QUESTION_COLUMNS)
       .ilike('code', `%${primaryTerm}%`)
-      .or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true')
       .limit(limit);
 
-    return (codeData || []).map(mapRowToQuestion);
+    return (codeData as unknown as QuestionDbRow[] || []).map(mapRowToQuestion);
   } catch (err) {
     console.error('Erro na busca direta de questões:', err);
     return [];
@@ -732,7 +725,7 @@ export async function searchQuestionsDirect(
 export async function fetchQuestionById(id: string): Promise<Question | null> {
   const { data, error } = await supabase
     .from('questions')
-    .select('*')
+    .select(SAFE_QUESTION_COLUMNS)
     .eq('id', id)
     .single();
 
