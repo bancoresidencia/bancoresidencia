@@ -1056,6 +1056,7 @@ interface QuestionReportDbRow {
   resolved_at?: string | null;
   timestamp?: string;
   questionId?: string;
+  userId?: string | null;
   userName?: string;
   userEmail?: string;
   adminNotes?: string | null;
