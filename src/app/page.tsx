@@ -278,6 +278,9 @@ export default function Home() {
     userAnswersRef.current = userAnswers;
   }, [userAnswers]);
 
+  // Evita corrida de requisição duplicada caso uma sessão recém-iniciada já tenha buscado as questões completas
+  const skipNextLoadQuestionsRef = useRef<boolean>(false);
+
   // Contagem dinâmica de erros pendentes na conta para badges e navegação
   const pendingErrorsCount = useMemo(() => {
     return Object.values(userAnswers).filter(
@@ -384,7 +387,18 @@ export default function Home() {
     setSessionExclusionSnapshot(snapshot);
   }, [bancoMode, advancedFilters]);
 
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const saved = localStorage.getItem('bancoresidencia_active_resolution_index');
+        if (saved !== null) {
+          const parsed = parseInt(saved, 10);
+          if (!isNaN(parsed) && parsed >= 0) return parsed;
+        }
+      } catch {}
+    }
+    return 0;
+  });
   const [questionTimer, setQuestionTimer] = useState<number>(0);
   const [bookmarkedQuestionIds, setBookmarkedQuestionIds] = useState<Record<string, boolean>>({});
   const [reportedQuestionIds, setReportedQuestionIds] = useState<Record<string, boolean>>({});
@@ -407,9 +421,17 @@ export default function Home() {
     label: string;
   } | null>(null);
 
-  // Salva continuamente a posição da questão atual da lista ativa no localStorage e no estado
+  // Salva continuamente a posição da questão atual (sessão de resolução geral e listas) no localStorage e no estado
   useEffect(() => {
-    if (!activeListId || currentQuestionIndex < 0) return;
+    if (currentQuestionIndex < 0) return;
+
+    if (bancoMode === 'resolucao') {
+      try {
+        localStorage.setItem('bancoresidencia_active_resolution_index', String(currentQuestionIndex));
+      } catch {}
+    }
+
+    if (!activeListId) return;
     try {
       localStorage.setItem(`bancoresidencia_list_last_index_${activeListId}`, String(currentQuestionIndex));
     } catch {}
@@ -438,14 +460,18 @@ export default function Home() {
       }
       return prev;
     });
-  }, [currentQuestionIndex, activeListId, user?.id]);
+  }, [currentQuestionIndex, activeListId, bancoMode, user?.id]);
 
   // Função centralizada para retornar à página anterior preservando o progresso da lista
   const handleBackToPreviousView = useCallback(() => {
-    // 1. Salva índice da lista ativa se houver
+    // 1. Salva índice da sessão se houver
     if (activeListId) {
       try {
         localStorage.setItem(`bancoresidencia_list_last_index_${activeListId}`, String(currentQuestionIndex));
+      } catch {}
+    } else if (bancoMode === 'resolucao') {
+      try {
+        localStorage.setItem('bancoresidencia_active_resolution_index', String(currentQuestionIndex));
       } catch {}
     }
 
@@ -465,7 +491,7 @@ export default function Home() {
     } else {
       setBancoMode('filtros');
     }
-  }, [activeListId, currentQuestionIndex, previousView]);
+  }, [activeListId, bancoMode, currentQuestionIndex, previousView]);
 
   // Fecha o dropdown de cores do marca-texto da barra superior ao clicar fora
   useEffect(() => {
@@ -691,6 +717,23 @@ export default function Home() {
   useEffect(() => {
     let isCancelled = false;
     const loadQuestions = async () => {
+      // Se a sessão recém-iniciada já buscou e injetou as questões completas, ignora a busca redundante
+      if (skipNextLoadQuestionsRef.current) {
+        skipNextLoadQuestionsRef.current = false;
+        return;
+      }
+
+      // Se já estiver no modo resolução e todas as questões da sessão já estiverem carregadas em memória, não refaz
+      if (
+        bancoMode === 'resolucao' &&
+        sessionQuestionIds &&
+        sessionQuestionIds.length > 0 &&
+        supabaseQuestions.length >= sessionQuestionIds.length &&
+        sessionQuestionIds.every((id) => supabaseQuestions.some((q) => q.id === id))
+      ) {
+        return;
+      }
+
       setIsLoadingSupabase(true);
       try {
         let questionIds: string[] | undefined;
@@ -1922,7 +1965,7 @@ export default function Home() {
         activeTab={activeTab}
         onNavigate={(tab) => {
           setActiveTab(tab);
-          if (tab === 'banco' && !activeListId) setBancoMode('filtros');
+          if (tab === 'banco' && bancoMode !== 'resolucao') setBancoMode('filtros');
           setMobileMenuOpen(false);
         }}
         modalidade={performanceFilters.modalidade}
@@ -1953,7 +1996,7 @@ export default function Home() {
             <GlobalSearchBar
               onNavigate={(tab) => {
                 setActiveTab(tab);
-                if (tab === 'banco' && !activeListId) setBancoMode('filtros');
+                if (tab === 'banco' && bancoMode !== 'resolucao') setBancoMode('filtros');
                 setMobileMenuOpen(false);
               }}
               onSearchQuestions={(searchTerm) => {
@@ -2182,7 +2225,7 @@ export default function Home() {
                   onClick={() => {
                     const nextTab = item.id as ActiveTab;
                     setActiveTab(nextTab);
-                    if (nextTab === 'banco' && !activeListId) setBancoMode('filtros');
+                    if (nextTab === 'banco' && bancoMode !== 'resolucao') setBancoMode('filtros');
                     setMobileMenuOpen(false);
                   }}
                   className={`w-full text-left px-4 py-3 rounded-xl text-xs font-bold transition-all ${
@@ -2233,7 +2276,7 @@ export default function Home() {
                 allLists={lists}
                 onNavigate={(tab) => {
                   setActiveTab(tab);
-                  if (tab === 'banco' && !activeListId) setBancoMode('filtros');
+                  if (tab === 'banco' && bancoMode !== 'resolucao') setBancoMode('filtros');
                 }}
                 onContinueList={handleContinueList}
                 modalidade={performanceFilters.modalidade}
@@ -2258,11 +2301,11 @@ export default function Home() {
                   <button
                     type="button"
                     onClick={handleBackToPreviousView}
-                    className="flex items-center gap-1.5 font-bold text-blue-600 dark:text-blue-400 hover:underline cursor-pointer"
+                    className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-blue-100/80 hover:bg-blue-200/80 dark:bg-blue-900/40 dark:hover:bg-blue-800/40 text-blue-700 dark:text-blue-300 font-semibold cursor-pointer text-xs transition-colors shrink-0"
                     title={`Retornar para ${previousView?.label || 'a tela anterior'} (Esc)`}
                   >
                     <ArrowLeft className="w-3.5 h-3.5" />
-                    <span>{previousView?.label ? `Voltar para ${previousView.label}` : 'Voltar para Listas'}</span>
+                    <span>Voltar</span>
                   </button>
                 </div>
               )}
@@ -2356,6 +2399,7 @@ export default function Home() {
                             balancedIds
                           );
                           if (fullRes.questions && fullRes.questions.length > 0) {
+                            skipNextLoadQuestionsRef.current = true;
                             setSupabaseQuestions(fullRes.questions);
                           }
                         } else {
@@ -2406,15 +2450,12 @@ export default function Home() {
                             <button
                               type="button"
                               onClick={handleBackToPreviousView}
-                              className="flex items-center gap-1.5 sm:gap-2 px-3 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 dark:bg-zinc-800/80 dark:hover:bg-zinc-700/80 border border-slate-200/80 dark:border-zinc-700/60 text-slate-700 dark:text-zinc-200 text-xs font-bold transition-all cursor-pointer shadow-xs group shrink-0 active:scale-98"
+                              className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800/80 dark:hover:bg-zinc-700/80 border border-zinc-200/80 dark:border-zinc-700/60 text-zinc-700 dark:text-zinc-200 text-xs font-semibold transition-all cursor-pointer shadow-xs group shrink-0 active:scale-95"
                               title={`Retornar para ${previousView?.label || 'a tela anterior'} (Atalho: Esc ou Alt + ←)`}
                             >
-                              <ArrowLeft className="w-3.5 h-3.5 text-slate-500 dark:text-zinc-400 group-hover:-translate-x-0.5 transition-transform" />
-                              <span className="hidden sm:inline">
-                                {previousView?.label ? `Voltar (${previousView.label})` : 'Voltar'}
-                              </span>
-                              <span className="sm:hidden">Voltar</span>
-                              <kbd className="hidden md:inline-flex items-center px-1.5 py-0.5 text-[10px] font-mono font-semibold text-slate-500 dark:text-zinc-400 bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-700/70 rounded shadow-2xs">
+                              <ArrowLeft className="w-3.5 h-3.5 text-zinc-500 dark:text-zinc-400 group-hover:-translate-x-0.5 transition-transform" />
+                              <span>Voltar</span>
+                              <kbd className="hidden sm:inline-flex items-center px-1.5 py-0.5 text-[10px] font-mono text-zinc-400 dark:text-zinc-400 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-700/70 rounded">
                                 Esc
                               </kbd>
                             </button>

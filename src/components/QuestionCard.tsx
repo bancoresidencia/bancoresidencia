@@ -312,6 +312,27 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     }));
   };
 
+  // Resolução robusta do gabarito oficial com fallback inteligente para comentário ou justificativas
+  const resolvedCorrectAnswer = useMemo(() => {
+    const rawAnswer = activeQuestion.correctAnswer || question.correctAnswer;
+    if (rawAnswer && rawAnswer.trim()) {
+      return rawAnswer.trim().toUpperCase() as 'A' | 'B' | 'C' | 'D' | 'E' | 'ANULADA';
+    }
+    const comm = activeQuestion.commentary || question.commentary || '';
+    const match = comm.match(/(?:Gabarito(?:\s*Oficial)?|Resposta(?:\s*Correta)?):\s*(?:Alternativa\s*)?([A-E]|ANULADA)\b/i);
+    if (match) {
+      return match[1].toUpperCase() as 'A' | 'B' | 'C' | 'D' | 'E' | 'ANULADA';
+    }
+    const opts = activeQuestion.options || question.options;
+    if (opts) {
+      const found = opts.find((o) =>
+        o.explanation && /^(?:Alternativa|Opção)?\s*correta\b/i.test(o.explanation.trim())
+      );
+      if (found) return found.letter as 'A' | 'B' | 'C' | 'D' | 'E';
+    }
+    return '';
+  }, [activeQuestion.correctAnswer, activeQuestion.commentary, activeQuestion.options, question.correctAnswer, question.commentary, question.options]);
+
   // Separação inteligente das justificativas das alternativas, comentário final, motivo de erro e take-home message
   const { optionExplanations, finalCommentary, mainErrorReason, takeHomeMessage, guidelineEvolution, references } = useMemo(() => {
     const rawCommentary = activeQuestion.commentary || '';
@@ -439,8 +460,8 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
       .map(sanitizeText)
       .filter((r) => !/^(te[oó]ricas?|base te[oó]rica|refer[eê]ncias?)\b/i.test(r.trim()));
 
-    if (!cleanedFinal.trim() && activeQuestion.correctAnswer) {
-      cleanedFinal = `Gabarito Oficial: Alternativa ${activeQuestion.correctAnswer}.`;
+    if (!cleanedFinal.trim() && resolvedCorrectAnswer) {
+      cleanedFinal = `Gabarito Oficial: Alternativa ${resolvedCorrectAnswer}.`;
     }
 
     return {
@@ -454,7 +475,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   }, [
     activeQuestion.commentary,
     activeQuestion.options,
-    activeQuestion.correctAnswer,
+    resolvedCorrectAnswer,
     activeQuestion.mainErrorReason,
     activeQuestion.takeHomeMessage,
     activeQuestion.guidelineEvolution,
@@ -569,11 +590,11 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   const handleConfirmAnswer = async () => {
     if (isAnswered || !pendingSelected || isSubmittingAnswer) return;
 
-    // Se o gabarito oficial já estiver carregado no objeto da questão:
-    if (activeQuestion.correctAnswer) {
+    // Se o gabarito oficial já estiver carregado no objeto da questão ou deduzido via fallback:
+    if (resolvedCorrectAnswer) {
       setIsAnswered(true);
-      const isAnulada = Boolean(activeQuestion.isAnulada || activeQuestion.correctAnswer === 'ANULADA');
-      const isCorrect = isAnulada ? true : pendingSelected === activeQuestion.correctAnswer;
+      const isAnulada = Boolean(activeQuestion.isAnulada || resolvedCorrectAnswer === 'ANULADA');
+      const isCorrect = isAnulada ? true : pendingSelected === resolvedCorrectAnswer;
       onAnswer(question.id, pendingSelected, isCorrect);
       setShowCommentary(true);
       return;
@@ -668,7 +689,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
 
       // Se pressionou V e já respondeu, permite alternar justificativa da opção selecionada ou em hover
       if ((e.key === 'v' || e.key === 'V') && isAnswered) {
-        const targetLetter = (hoveredOptionLetter || pendingSelected || activeQuestion.correctAnswer) as 'A' | 'B' | 'C' | 'D' | 'E' | undefined;
+        const targetLetter = (hoveredOptionLetter || pendingSelected || resolvedCorrectAnswer) as 'A' | 'B' | 'C' | 'D' | 'E' | undefined;
         if (targetLetter) {
           e.preventDefault();
           toggleOptionExplanation(targetLetter);
@@ -812,10 +833,10 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     );
   };
 
-  const isAnuladaQuestion = Boolean(activeQuestion.isAnulada || activeQuestion.correctAnswer === 'ANULADA');
+  const isAnuladaQuestion = Boolean(activeQuestion.isAnulada || resolvedCorrectAnswer === 'ANULADA');
   const hasPreviousAnswer = !!userAnswer;
-  const previousIsCorrect = hasPreviousAnswer && (isAnuladaQuestion || userAnswer === activeQuestion.correctAnswer);
-  const isUserCorrect = isAnswered && (isAnuladaQuestion || pendingSelected === activeQuestion.correctAnswer);
+  const previousIsCorrect = hasPreviousAnswer && (isAnuladaQuestion || userAnswer === resolvedCorrectAnswer);
+  const isUserCorrect = isAnswered && (isAnuladaQuestion || pendingSelected === resolvedCorrectAnswer);
 
   const selectionColorClass =
     activeHighlighterColor === 'green'
@@ -1048,7 +1069,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
           {activeQuestion.options.map((option) => {
             const isEliminated = !!eliminatedOptions[option.letter];
             const isPending = pendingSelected === option.letter;
-            const isCorrect = option.letter === activeQuestion.correctAnswer;
+            const isCorrect = option.letter === resolvedCorrectAnswer;
 
             // Estilos condicionais (Antes de Responder vs Depois de Responder)
             let optionContainerStyle =
@@ -1240,8 +1261,8 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                           explanationText ||
                             (isCorrect
                               ? 'Alternativa correta segundo o gabarito oficial da banca examinadora.'
-                              : (activeQuestion.correctAnswer
-                                  ? `Alternativa incorreta. O gabarito oficial definido pela banca é a Alternativa ${activeQuestion.correctAnswer}.`
+                              : (resolvedCorrectAnswer
+                                  ? `Alternativa incorreta. O gabarito oficial definido pela banca é a Alternativa ${resolvedCorrectAnswer}.`
                                   : 'Gabarito oficial em processo de homologação por provas públicas.'))
                         )}
                       </div>
@@ -1398,8 +1419,8 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                     <CheckCircle2 className="w-4.5 h-4.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
                     <span>
                       {activeQuestion.options && activeQuestion.options.length > 0
-                        ? (activeQuestion.correctAnswer
-                            ? `Gabarito Oficial: Alternativa ${activeQuestion.correctAnswer}`
+                        ? (resolvedCorrectAnswer
+                            ? `Gabarito Oficial: Alternativa ${resolvedCorrectAnswer}`
                             : 'Gabarito Oficial: Em processo de homologação por provas públicas')
                         : 'Padrão de Resposta Oficial:'}
                     </span>
