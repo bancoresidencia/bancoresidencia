@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useRef, useEffect, useMemo } from 'react';
+import React, { useState, useRef, useEffect, useMemo, useCallback } from 'react';
 import { Question } from '@/types';
 import {
   CheckCircle2,
@@ -140,7 +140,7 @@ const isOptionImage = (text?: string): boolean => {
   );
 };
 
-export const QuestionCard: React.FC<QuestionCardProps> = ({
+export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   question,
   index,
   total,
@@ -507,6 +507,38 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
     }));
   };
 
+  // Cache de pré-carregamento em memória por alternativa (percepção de 0ms ao clicar em Resolver)
+  const prefetchPromisesRef = useRef<Record<string, Promise<{
+    success: boolean;
+    correctAnswer: 'A' | 'B' | 'C' | 'D' | 'E' | '' | 'ANULADA';
+    commentary: string;
+    options: Question['options'];
+    isAnulada: boolean;
+    isCorrect: boolean;
+    error?: string;
+  }> | undefined>>({});
+
+  const prefetchSolve = useCallback((letter: 'A' | 'B' | 'C' | 'D' | 'E') => {
+    const key = `${question.id}_${letter}`;
+    if (key in prefetchPromisesRef.current && prefetchPromisesRef.current[key]) return;
+
+    const promise = fetch('/api/questions/solve', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        questionId: question.id,
+        selectedOption: letter
+      })
+    })
+      .then((res) => res.json())
+      .catch((err) => {
+        delete prefetchPromisesRef.current[key];
+        throw err;
+      });
+
+    prefetchPromisesRef.current[key] = promise;
+  }, [question.id]);
+
   // Seleciona a alternativa ou expande justificativa pós-resolução
   const handleSelectOption = (letter: 'A' | 'B' | 'C' | 'D' | 'E') => {
     if (isAnswered) {
@@ -518,6 +550,11 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
       setEliminatedOptions((prev) => ({ ...prev, [letter]: false }));
     }
     setPendingSelected(letter);
+
+    // Pré-carregamento instantâneo em background (enquanto o aluno lê/revisa antes de clicar em Resolver)
+    if (!activeQuestion.correctAnswer) {
+      prefetchSolve(letter);
+    }
   };
 
   // Permite ao aluno re-resolver a questão já respondida
@@ -525,6 +562,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
     setIsAnswered(false);
     setPendingSelected(null);
     setShowCommentary(false);
+    prefetchPromisesRef.current = {};
   };
 
   // Envio final ao apertar o botão "Resolver"
@@ -541,23 +579,28 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
       return;
     }
 
-    // Consulta segura e homologação em tempo real via API /api/questions/solve
+    // Consulta segura e homologação em tempo real (utiliza o prefetch instantâneo se já iniciado)
     try {
       setIsSubmittingAnswer(true);
       setSolveError(null);
 
-      const res = await fetch('/api/questions/solve', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          questionId: question.id,
-          selectedOption: pendingSelected
-        })
-      });
+      const key = `${question.id}_${pendingSelected}`;
+      let dataPromise = prefetchPromisesRef.current[key];
+      if (!dataPromise) {
+        dataPromise = fetch('/api/questions/solve', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            questionId: question.id,
+            selectedOption: pendingSelected
+          })
+        }).then((res) => res.json());
+        prefetchPromisesRef.current[key] = dataPromise;
+      }
 
-      const data = await res.json();
-      if (!res.ok || !data.success) {
-        throw new Error(data.error || 'Erro ao validar resolução da questão.');
+      const data = await dataPromise;
+      if (!data || !data.success) {
+        throw new Error(data?.error || 'Erro ao validar resolução da questão.');
       }
 
       setResolvedOverrides({
@@ -1513,4 +1556,6 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({
       )}
     </article>
   );
-};
+});
+
+QuestionCard.displayName = 'QuestionCard';

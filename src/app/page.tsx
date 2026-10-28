@@ -1125,12 +1125,17 @@ export default function Home() {
         [questionId]: answerObj
       };
       if (typeof window !== 'undefined') {
-        try {
-          const storageKey = getUserAnswersStorageKey(user?.id);
-          localStorage.setItem(storageKey, JSON.stringify(nextAnswers));
-        } catch (e) {
-          console.error(e);
-        }
+        const schedule = typeof window.requestIdleCallback === 'function'
+          ? window.requestIdleCallback
+          : (cb: () => void) => setTimeout(cb, 0);
+        schedule(() => {
+          try {
+            const storageKey = getUserAnswersStorageKey(user?.id);
+            localStorage.setItem(storageKey, JSON.stringify(nextAnswers));
+          } catch (e) {
+            console.error(e);
+          }
+        });
       }
       return nextAnswers;
     });

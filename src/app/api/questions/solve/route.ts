@@ -51,6 +51,19 @@ function isRateLimited(ip: string): boolean {
   return false;
 }
 
+// Cache em memória no Serverless Edge com TTL de 30 minutos para gabaritos
+interface CachedQuestionData {
+  id: string;
+  code: string;
+  correct_answer: string;
+  is_anulada: boolean;
+  commentary: string;
+  options: unknown[];
+  cachedAt: number;
+}
+const questionCache = new Map<string, CachedQuestionData>();
+const CACHE_TTL_MS = 30 * 60 * 1000;
+
 export async function POST(req: NextRequest) {
   try {
     // 1. Verificação de Rate Limit por IP
@@ -93,29 +106,59 @@ export async function POST(req: NextRequest) {
       }
     }
 
-    const supabaseAdmin = getSupabaseAdmin();
+    const now = Date.now();
+    let row: {
+      id: string;
+      code?: string;
+      correct_answer?: string;
+      is_anulada?: boolean;
+      commentary?: string;
+      options?: unknown[];
+    } | null = null;
 
-    // 4. Busca do gabarito e comentários no banco via Service Role (Gabarito Oculto)
-    let { data: row, error } = await supabaseAdmin
-      .from('questions')
-      .select('id, code, correct_answer, is_anulada, commentary, options')
-      .eq('id', questionId)
-      .maybeSingle();
-
-    if (!row && !error) {
-      // Fallback por código da questão
-      const byCodeRes = await supabaseAdmin
+    // 4. Cache em memória ultra-rápido (0ms)
+    const cached = questionCache.get(questionId);
+    if (cached && now - cached.cachedAt < CACHE_TTL_MS) {
+      row = cached;
+    } else {
+      const supabaseAdmin = getSupabaseAdmin();
+      const { data, error } = await supabaseAdmin
         .from('questions')
         .select('id, code, correct_answer, is_anulada, commentary, options')
-        .eq('code', questionId)
+        .eq('id', questionId)
         .maybeSingle();
-      row = byCodeRes.data;
-      error = byCodeRes.error;
-    }
 
-    if (error) {
-      console.error('[API Solve] Erro ao consultar questão:', error);
-      return NextResponse.json({ success: false, error: 'Erro no banco de dados.' }, { status: 500 });
+      if (!data && !error) {
+        const byCodeRes = await supabaseAdmin
+          .from('questions')
+          .select('id, code, correct_answer, is_anulada, commentary, options')
+          .eq('code', questionId)
+          .maybeSingle();
+        row = byCodeRes.data;
+      } else {
+        row = data;
+      }
+
+      if (error) {
+        console.error('[API Solve] Erro ao consultar questão:', error);
+        return NextResponse.json({ success: false, error: 'Erro no banco de dados.' }, { status: 500 });
+      }
+
+      if (row) {
+        const cacheEntry: CachedQuestionData = {
+          id: row.id,
+          code: row.code || '',
+          correct_answer: row.correct_answer || '',
+          is_anulada: Boolean(row.is_anulada),
+          commentary: row.commentary || '',
+          options: Array.isArray(row.options) ? row.options : [],
+          cachedAt: now
+        };
+        questionCache.set(row.id, cacheEntry);
+        if (row.code) {
+          questionCache.set(row.code, cacheEntry);
+        }
+      }
     }
 
     if (!row) {
@@ -125,7 +168,7 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // 5. Avaliação da resposta
+    // 5. Avaliação instantânea da resposta
     const isAnulada = Boolean(row.is_anulada || row.correct_answer === 'ANULADA');
     const goldAnswer = (row.correct_answer || (isAnulada ? 'ANULADA' : '')).trim().toUpperCase();
     const studentChoice = typeof selectedOption === 'string' ? selectedOption.trim().toUpperCase() : '';
@@ -134,31 +177,38 @@ export async function POST(req: NextRequest) {
       ? true
       : studentChoice.length > 0 && studentChoice === goldAnswer;
 
-    // 6. Sincronização automática com a conta do aluno se logado
-    if (studentChoice) {
-      try {
-        const supabaseServer = await createSupabaseServerClient();
-        const {
-          data: { user }
-        } = await supabaseServer.auth.getUser();
+    // 6. Sincronização desacoplada em background (NÃO bloqueia o retorno do gabarito ao aluno)
+    if (studentChoice && row.id) {
+      const targetQuestionId = row.id;
+      const targetChoice = studentChoice;
+      const targetIsCorrect = isCorrect;
+      
+      // Executa de forma assíncrona desacoplada
+      (async () => {
+        try {
+          const supabaseServer = await createSupabaseServerClient();
+          const { data: { user } } = await supabaseServer.auth.getUser();
 
-        if (user) {
-          await supabaseAdmin.from('user_answers').upsert(
-            {
-              user_id: user.id,
-              question_id: row.id,
-              selected_option: studentChoice,
-              is_correct: isCorrect,
-              answered_at: new Date().toISOString()
-            },
-            { onConflict: 'user_id,question_id' }
-          );
+          if (user) {
+            const supabaseAdmin = getSupabaseAdmin();
+            await supabaseAdmin.from('user_answers').upsert(
+              {
+                user_id: user.id,
+                question_id: targetQuestionId,
+                selected_option: targetChoice,
+                is_correct: targetIsCorrect,
+                answered_at: new Date().toISOString()
+              },
+              { onConflict: 'user_id,question_id' }
+            );
+          }
+        } catch (authSyncErr) {
+          console.warn('[API Solve] Aviso ao registrar histórico em background:', authSyncErr);
         }
-      } catch (authSyncErr) {
-        console.warn('[API Solve] Aviso ao registrar histórico do aluno:', authSyncErr);
-      }
+      })().catch(() => {});
     }
 
+    // Resposta imediata em poucos milissegundos
     return NextResponse.json({
       success: true,
       questionId: row.id,
