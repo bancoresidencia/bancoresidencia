@@ -9,6 +9,7 @@ export interface AuditEventParams {
     | 'ANULATE_QUESTION'
     | 'RESTORE_QUESTION'
     | 'RESOLVE_REPORT'
+    | 'UPDATE_REPORT_STATUS'
     | 'GENERATE_COMMENTARY'
     | 'MANUAL_OVERRIDE'
     | 'BULK_IMPORT';
@@ -54,22 +55,21 @@ export async function recordAuditEvent(params: AuditEventParams): Promise<{ succ
       new_values: params.newValues || null,
       reason: params.reason || null,
       ip_address: params.ipAddress || null,
-      user_agent: params.userAgent ? params.userAgent.slice(0, 500) : null,
+      user_agent: params.userAgent || null,
       created_at: new Date().toISOString()
     };
 
     const { error } = await supabaseAdmin.from('audit_logs').insert(payload);
 
     if (error) {
-      // Se a tabela ainda não existir no ambiente de testes ou antes da migração, apenas loga warning
-      console.warn('[Audit Log] Aviso ao registrar auditoria no Supabase:', error.message);
+      console.warn('[AuditLog] Aviso ao persistir log de auditoria:', error.message);
       return { success: false, error: error.message };
     }
 
     return { success: true };
   } catch (err: unknown) {
-    const msg = err instanceof Error ? err.message : 'Erro desconhecido ao registrar auditoria';
-    console.warn('[Audit Log] Exceção capturada ao registrar auditoria:', msg);
+    const msg = err instanceof Error ? err.message : 'Falha ao registrar auditoria';
+    console.warn('[AuditLog] Exceção ao gravar log de auditoria:', msg);
     return { success: false, error: msg };
   }
 }

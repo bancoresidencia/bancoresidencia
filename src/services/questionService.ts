@@ -1,5 +1,5 @@
 import { supabase } from '@/lib/supabase';
-import { Question, AdvancedFilterState, QuestionReport, ReportStatus } from '@/types';
+import { Question, QuestionOption, AdvancedFilterState, QuestionReport, ReportStatus } from '@/types';
 import {
   sanitizePostgrestTerm,
   validateQuestionId,
