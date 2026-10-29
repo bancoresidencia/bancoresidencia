@@ -1,5 +1,5 @@
 import { NextRequest } from 'next/server';
-import { User } from '@supabase/supabase-js';
+import { User, createClient as createSupabaseClient } from '@supabase/supabase-js';
 import { createClient } from '@/lib/supabase/server';
 
 import { isPrivilegedRole } from '@/utils/security';
@@ -13,25 +13,41 @@ export interface AdminAuthResult {
   isM2M?: boolean;
 }
 
+function getSupabaseAdmin() {
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://placeholder.supabase.co';
+  const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'placeholder-key';
+  return createSupabaseClient(supabaseUrl, supabaseKey, {
+    auth: {
+      persistSession: false,
+      autoRefreshToken: false
+    }
+  });
+}
+
 /**
  * Validador rigoroso de autenticação e permissões administrativas/curadoria
  * para rotas do servidor (Next.js Route Handlers).
  *
  * Regras:
  * 1. Suporta M2M seguro via Authorization: Bearer <SUPABASE_SERVICE_ROLE_KEY>.
- * 2. Em chamadas de browser, valida os cookies de sessão assinados via Supabase Auth.
- * 3. Valida se o usuário possui role 'admin', 'curador' ou 'curator' em app_metadata ou na tabela profiles.
- * 4. NUNCA confia em user_metadata (para evitar privilege escalation).
+ * 2. Suporta token JWT Bearer do usuário autenticado via Authorization: Bearer <access_token>.
+ * 3. Valida cookies de sessão assinados via Supabase Auth (SSR).
+ * 4. Valida se o usuário possui role privilegiada em app_metadata ou na tabela profiles.
+ * 5. NUNCA confia em user_metadata (para evitar privilege escalation).
  */
 export async function verifyAdminSession(req?: NextRequest): Promise<AdminAuthResult> {
   try {
-    // 1. Suporte a Machine-to-Machine com Service Role Key
+    const supabaseAdmin = getSupabaseAdmin();
+
+    // 1. Verificação via Cabeçalho Authorization
     if (req) {
       const authHeader = req.headers.get('authorization');
-      const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
-      if (authHeader && serviceRoleKey) {
+      if (authHeader) {
         const token = authHeader.replace(/^Bearer\s+/i, '').trim();
-        if (token === serviceRoleKey) {
+        const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+
+        // 1.1 Machine-to-Machine com Service Role Key
+        if (serviceRoleKey && token === serviceRoleKey) {
           return {
             authorized: true,
             role: 'service_role',
@@ -39,17 +55,67 @@ export async function verifyAdminSession(req?: NextRequest): Promise<AdminAuthRe
             isM2M: true
           };
         }
+
+        // 1.2 Usuário autenticado enviando token JWT Bearer (fallback resiliente para falhas de cookies)
+        if (token && token.length > 20) {
+          try {
+            const { data: { user: tokenUser }, error: tokenErr } = await supabaseAdmin.auth.getUser(token);
+            if (!tokenErr && tokenUser) {
+              const appRole = tokenUser.app_metadata?.role as string | undefined;
+              if (isPrivilegedRole(appRole)) {
+                return {
+                  authorized: true,
+                  user: tokenUser,
+                  role: appRole,
+                  status: 200
+                };
+              }
+
+              const { data: profile } = await supabaseAdmin
+                .from('profiles')
+                .select('role')
+                .eq('id', tokenUser.id)
+                .maybeSingle();
+
+              if (profile && isPrivilegedRole(profile.role)) {
+                return {
+                  authorized: true,
+                  user: tokenUser,
+                  role: profile.role,
+                  status: 200
+                };
+              }
+
+              return {
+                authorized: false,
+                error: 'Acesso negado: sua conta não possui privilégios de administrador ou curador.',
+                status: 403
+              };
+            }
+          } catch {
+            // Continua para validação por cookies
+          }
+        }
       }
     }
 
     // 2. Validação da sessão de cookies via Supabase Server Client
-    const supabase = await createClient();
-    const {
-      data: { user },
-      error: userError
-    } = await supabase.auth.getUser();
+    let user: User | null = null;
+    try {
+      const supabase = await createClient();
+      const {
+        data: { user: cookieUser },
+        error: userError
+      } = await supabase.auth.getUser();
 
-    if (userError || !user) {
+      if (!userError && cookieUser) {
+        user = cookieUser;
+      }
+    } catch {
+      // Ignora erro de cookieStore e segue para validação
+    }
+
+    if (!user) {
       return {
         authorized: false,
         error: 'Acesso não autorizado: faça login como administrador para continuar.',
@@ -68,8 +134,8 @@ export async function verifyAdminSession(req?: NextRequest): Promise<AdminAuthRe
       };
     }
 
-    // 4. Checagem na tabela public.profiles
-    const { data: profile, error: profileError } = await supabase
+    // 4. Checagem na tabela public.profiles via Service Role (para não ser bloqueado por RLS)
+    const { data: profile, error: profileError } = await supabaseAdmin
       .from('profiles')
       .select('role')
       .eq('id', user.id)

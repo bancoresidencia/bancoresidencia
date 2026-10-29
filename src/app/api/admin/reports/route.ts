@@ -53,7 +53,7 @@ export async function GET(req: NextRequest) {
       query = query.eq('status', dbStatusFilter);
     }
 
-    const { data: rawReports, error: repError } = await query.limit(300);
+    const { data: rawReports, error: repError } = await query.limit(500);
 
     if (repError) {
       console.error('[API Admin Reports] Erro ao buscar denúncias no Supabase:', repError);
@@ -68,7 +68,7 @@ export async function GET(req: NextRequest) {
     }
 
     // 1. Coleta IDs únicos das questões para busca em lote
-    const questionIds = Array.from(
+    const questionIdentifiers = Array.from(
       new Set(
         rawReports
           .map((r: { question_id?: string }) => r.question_id)
@@ -87,11 +87,11 @@ export async function GET(req: NextRequest) {
 
     // 3. Executa queries em paralelo para enriquecer os dados
     const [questionsRes, profilesRes] = await Promise.all([
-      questionIds.length > 0
+      questionIdentifiers.length > 0
         ? supabaseAdmin
             .from('questions')
             .select('id, code, institution, banca, year, especialidade, tema, statement, options, correct_answer, commentary, is_anulada')
-            .in('id', questionIds)
+            .in('id', questionIdentifiers)
         : Promise.resolve({ data: [] }),
       userIds.length > 0
         ? supabaseAdmin
@@ -105,7 +105,24 @@ export async function GET(req: NextRequest) {
     if (questionsRes.data) {
       (questionsRes.data as Array<Record<string, unknown>>).forEach((q) => {
         if (q.id) questionMap.set(String(q.id), q);
+        if (q.code) questionMap.set(String(q.code), q);
       });
+    }
+
+    // Fallback: se houver questões que não foram encontradas por id, tenta por 'code'
+    const missingIdentifiers = questionIdentifiers.filter((id) => !questionMap.has(id));
+    if (missingIdentifiers.length > 0) {
+      const { data: byCodeData } = await supabaseAdmin
+        .from('questions')
+        .select('id, code, institution, banca, year, especialidade, tema, statement, options, correct_answer, commentary, is_anulada')
+        .in('code', missingIdentifiers);
+
+      if (byCodeData) {
+        (byCodeData as Array<Record<string, unknown>>).forEach((q) => {
+          if (q.id) questionMap.set(String(q.id), q);
+          if (q.code) questionMap.set(String(q.code), q);
+        });
+      }
     }
 
     const profileMap = new Map<string, Record<string, unknown>>();

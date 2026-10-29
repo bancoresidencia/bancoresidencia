@@ -862,6 +862,8 @@ export async function updateQuestionAnswer(
     correctAnswer: 'A' | 'B' | 'C' | 'D' | 'E' | 'ANULADA' | '';
     isAnulada?: boolean;
     commentary?: string;
+    options?: QuestionOption[];
+    reportId?: string;
   }
 ): Promise<{ success: boolean; error?: string }> {
   try {
@@ -875,23 +877,52 @@ export async function updateQuestionAnswer(
       return { success: false, error: 'Alternativa correta inválida (esperado A, B, C, D, E, ANULADA ou vazio).' };
     }
 
-    // 3. Salvar via API Route segura (Supabase Service Role, bypassa RLS de forma garantida)
+    // 3. Obtém token de autorização do administrador se ativo
+    let authHeader: Record<string, string> = {};
+    try {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (session?.access_token) {
+        authHeader = { Authorization: "Bearer " + session.access_token };
+      }
+    } catch {
+      // continua sem header
+    }
+
+    // 4. Salvar via API Route segura (Supabase Service Role, bypassa RLS de forma garantida)
     const res = await fetch('/api/admin/curadoria/update-gabarito', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        ...authHeader
       },
       body: JSON.stringify({
         questionId: id,
         correctAnswer: data.correctAnswer,
         isAnulada: data.isAnulada,
-        commentary: data.commentary
+        commentary: data.commentary,
+        options: data.options,
+        reportId: data.reportId
       })
     });
 
     const json = await res.json();
     if (!res.ok || !json.success) {
       return { success: false, error: json.error || 'Erro ao salvar gabarito no banco de dados.' };
+    }
+
+    // Dispara evento global em tempo real para sincronizar todo o site
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(
+        new CustomEvent('bancoresidencia_question_updated', {
+          detail: {
+            questionId: id,
+            correctAnswer: data.correctAnswer,
+            isAnulada: data.isAnulada,
+            commentary: data.commentary,
+            options: data.options
+          }
+        })
+      );
     }
 
     return { success: true };
@@ -1163,13 +1194,26 @@ export async function fetchReportedQuestionsForAdmin(statusFilter?: string): Pro
   }
 
   try {
+    let authHeader: Record<string, string> = {};
+    try {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (session?.access_token) {
+        authHeader = { Authorization: "Bearer " + session.access_token };
+      }
+    } catch {
+      // continua sem header
+    }
+
     const url = statusFilter && statusFilter !== 'all'
       ? `/api/admin/reports?status=${encodeURIComponent(statusFilter)}`
       : '/api/admin/reports';
 
     const res = await fetch(url, {
       method: 'GET',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        ...authHeader
+      },
       cache: 'no-store'
     });
 
@@ -1226,9 +1270,22 @@ export async function updateQuestionReportStatus(
   adminNotes?: string
 ): Promise<{ success: boolean; message: string }> {
   try {
+    let authHeader: Record<string, string> = {};
+    try {
+      const { data: { session } } = await supabase.auth.getSession();
+      if (session?.access_token) {
+        authHeader = { Authorization: "Bearer " + session.access_token };
+      }
+    } catch {
+      // continua sem header
+    }
+
     const res = await fetch('/api/admin/reports', {
       method: 'PATCH',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        ...authHeader
+      },
       body: JSON.stringify({
         reportId,
         status,
@@ -1274,8 +1331,8 @@ export async function updateQuestionReportStatus(
 }
 
 /**
- * Sincroniza denúncias pendentes salvas no localStorage do aluno diretamente para o Supabase.
- * Permite recuperar automaticamente denúncias feitas antes da correção estrutural de banco.
+ * Sincroniza denúncias pendentes salvas no localStorage do aluno diretamente para o Supabase
+ * através da API de backend (usando Service Role para contornar qualquer restrição RLS com segurança).
  */
 export async function syncPendingLocalReportsToSupabase(currentUser?: { id?: string; email?: string } | null): Promise<number> {
   if (typeof window !== 'undefined') {
@@ -1286,49 +1343,23 @@ export async function syncPendingLocalReportsToSupabase(currentUser?: { id?: str
       const list = JSON.parse(raw);
       if (!Array.isArray(list) || list.length === 0) return 0;
 
-      let syncedCount = 0;
-      const updatedList = [];
+      const pending = list.filter((item) => !item._synced);
+      if (pending.length === 0) return 0;
 
-      const { data: authData } = await supabase.auth.getUser().catch(() => ({ data: { user: null } }));
-      const activeUserId = currentUser?.id || authData?.user?.id || null;
+      const res = await fetch('/api/reports', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ reports: pending })
+      });
 
-      for (const item of list) {
-        if (item._synced) {
-          updatedList.push(item);
-          continue;
-        }
-
-        const reportId = isValidUuid(item.id) ? item.id : generateUuid();
-        const targetUserId = item.userId || item.user_id || activeUserId;
-
-        const payload: Record<string, unknown> = {
-          id: reportId,
-          question_id: item.questionId || item.question_id,
-          user_id: isValidUuid(targetUserId) ? targetUserId : null,
-          reason: item.reason || 'Apontamento de erro em questão',
-          details: item.details || '',
-          status: item.status === 'in_progress' ? 'in_review' : (item.status || 'pending'),
-          created_at: item.createdAt || item.created_at || item.timestamp || new Date().toISOString()
-        };
-
-        const { error } = await supabase.from('question_reports').upsert(payload, { onConflict: 'id' });
-        if (!error) {
-          syncedCount++;
-          updatedList.push({
-            ...item,
-            id: reportId,
-            _synced: true
-          });
-        } else {
-          updatedList.push(item);
+      if (res.ok) {
+        const data = await res.json();
+        if (data.success) {
+          const updatedList = list.map((item) => ({ ...item, _synced: true }));
+          localStorage.setItem('bancoresidencia_reported_questions', JSON.stringify(updatedList));
+          return data.syncedCount || pending.length;
         }
       }
-
-      if (syncedCount > 0) {
-        localStorage.setItem('bancoresidencia_reported_questions', JSON.stringify(updatedList));
-      }
-
-      return syncedCount;
     } catch (err) {
       console.warn('Erro ao sincronizar reports locais pendentes:', err);
       return 0;

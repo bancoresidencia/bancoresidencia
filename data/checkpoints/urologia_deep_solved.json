@@ -49723,5 +49723,387 @@
       "European Association of Urology (EAU) Guidelines on the Management of Non-Neurogenic Male Lower Urinary Tract Symptoms (LUTS)",
       "Sociedade Brasileira de Urologia (SBU) - Diretrizes em Hiperplasia Prostática Benigna"
     ]
+  },
+  {
+    "id": "3031e3e3-1551-47c1-a391-cca5171980c7",
+    "code": "UNIFESPEPM-2023-URO-049",
+    "institution": "UNIFESP/EPM - Universidade Federal de São Paulo - Escola Paulista de Medicina (SP)",
+    "banca": "UNIFESP/EPM",
+    "year": 2023,
+    "tipoProva": "Prova 1",
+    "modalidade": "Residência Médica",
+    "especialidade": "Cirurgia Geral",
+    "tema": "Urologia",
+    "foco": "Câncer de Bexiga: TU Superficial vs Músculo-Invasivo",
+    "subfoco": "Diagnóstico e Estadiamento TNM",
+    "difficulty": "Médio",
+    "type": "Múltipla escolha",
+    "isAnulada": false,
+    "statement": "Homem, 53 anos de idade, apresenta quadro de hematúria. Qual é o diagnóstico mais provável?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Cálculo renal.",
+        "explanation": "Embora a nefrolitíase seja uma causa frequente de sangramento urinário, ela se caracteriza classicamente por **cólica nefrética aguda e intensa em flanco com radiação para região inguinal/genital**, associada a náuseas e vômitos, e não como hematúria isolada e assintomática em um homem de 53 anos."
+      },
+      {
+        "letter": "B",
+        "text": "Câncer de Bexiga urinária.",
+        "explanation": "A **hematúria maciça ou microscópica indolor em homens acima de 50 anos** é a apresentação clínica inicial mais clássica do **câncer de bexiga urinária (carcinoma urotelial)**, sendo o diagnóstico prioritário que deve ser ativamente investigado e descartado por meio de cistoscopia e exames de imagem."
+      },
+      {
+        "letter": "C",
+        "text": "Hiperplasia da Próstata.",
+        "explanation": "A hiperplasia prostática benigna (HPB) pode apresentar sangramento por engurgitamento vascular do colo vesical, porém sua manifestação cardeal são os **sintomas do trato urinário inferior (LUTS) obstrutivos e irritativos crônicos**, como jato fraco, hesitação, noctúria e gotejamento pós-miccional."
+      },
+      {
+        "letter": "D",
+        "text": "Infecção do trato urinário.",
+        "explanation": "A infecção do trato urinário (ITU) cursa tipicamente com **síndrome miccional aguda exuberante (disúria intensa, polaciúria, urgência miccional e dor suprapúbica)**, além de piúria e bacteriúria na urinálise, sendo menos comum em homens de 53 anos sem fator obstrutivo prévio."
+      }
+    ],
+    "correctAnswer": "B",
+    "commentary": "Em pacientes do sexo masculino acima de 50 anos de idade que apresentam **hematúria (especialmente assintomática/indolor e maciça)**, o raciocínio clínico imediato em provas de concurso e na prática urológica deve priorizar o rastreio e exclusão de **câncer de bexiga urinária (carcinoma urotelial)**. O tabagismo é o principal fator de risco modificável associado. Embora **nefrolitíase, ITU e HPB** componham o diagnóstico diferencial do sangramento urinário, essas condições costumam vir acompanhadas de dor em cólica, febre/disúria ou sintomas miccionais de esvaziamento, respectivamente. O protocolo de investigação mandatório em quadros de hematúria suspeita envolve **ultrassonografia de vias urinárias/uro-TC** associada à **cistoscopia com biópsia** das lesões suspeitas.\n\nPrincipal Motivo de Erro:\nO principal motivo de erro é optar pela **nefrolitíase devido à sua alta prevalência geral**, esquecendo a regra epidemiológica de que **hematúria em homens acima de 50 anos é sinônimo de neoplasia urotelial** até prova em contrário.\n\nTake-Home Message:\nHomem **acima de 50 anos com hematúria indolor** deve ser submetido à investigação urológica completa para **câncer de bexiga** por meio de imagem do trato superior e cistoscopia.\n\nEvolução de Diretrizes:\nO manejo da hematúria permanece consolidado pelas diretrizes da AUA e EAU desde a época da prova: a presença de hematúria macroscópica em adultos acima de 40-50 anos impõe avaliação completa do trato urinário para descartar etiologia maligna urotelial, não havendo alterações estruturais nesse raciocínio básico.\n\nReferências:\n• Campbell-Walsh-Wein Urology, 12th Edition\n• EAU Guidelines on Non-muscle-invasive Bladder Cancer (2023)\n• AUA Guideline on Diagnosis, Evaluation and Follow-Up of Microhematuria and Gross Hematuria in Adults",
+    "images": [],
+    "mainErrorReason": "O principal motivo de erro é optar pela **nefrolitíase devido à sua alta prevalência geral**, esquecendo a regra epidemiológica de que **hematúria em homens acima de 50 anos é sinônimo de neoplasia urotelial** até prova em contrário.",
+    "takeHomeMessage": "Homem **acima de 50 anos com hematúria indolor** deve ser submetido à investigação urológica completa para **câncer de bexiga** por meio de imagem do trato superior e cistoscopia.",
+    "references": [
+      "Campbell-Walsh-Wein Urology, 12th Edition",
+      "EAU Guidelines on Non-muscle-invasive Bladder Cancer (2023)",
+      "AUA Guideline on Diagnosis, Evaluation and Follow-Up of Microhematuria and Gross Hematuria in Adults"
+    ],
+    "correct_answer": "B",
+    "is_anulada": false,
+    "guidelineEvolution": "O manejo da hematúria permanece consolidado pelas diretrizes da AUA e EAU desde a época da prova: a presença de hematúria macroscópica em adultos acima de 40-50 anos impõe avaliação completa do trato urinário para descartar etiologia maligna urotelial, não havendo alterações estruturais nesse raciocínio básico."
+  },
+  {
+    "id": "ac299cd1-2010-4aec-bd86-548980b42a56",
+    "code": "UFRGSHCPA-2015-URO-220",
+    "institution": "UFRGS/HCPA - Hospital de Clínicas de Porto Alegre (RS)",
+    "banca": "UFRGS/HCPA",
+    "year": 2015,
+    "tipoProva": "Prova 1",
+    "modalidade": "Residência Médica",
+    "especialidade": "Cirurgia Geral",
+    "tema": "Urologia",
+    "foco": "Câncer de Próstata: Tratamento Cirúrgico",
+    "subfoco": "Prostatectomia Radical: Técnica e Vias",
+    "difficulty": "Médio",
+    "type": "Múltipla escolha",
+    "isAnulada": false,
+    "statement": "Paciente de 60 anos, hígido, veio à consulta com urologista e, após discussão sobre prós e contras do rastreamento para câncer de próstata, decidiu realizar exame de toque retal e dosagem de PSA. Em sua história familiar, constava que o pai e o tio paterno haviam falecido por câncer de próstata. O toque retal não revelou anormalidade, com volume estimado em 20 g; o PSA foi de 5,5 mg/ml (a dosagem foi repetida, e o valor confirmado). À ultrassonografia transretal com biópsia, a próstata apresentava volume de 25 g, sem lesões suspeitas, tendo sido retirados 12 fragmentos (6 de cada lobo). A biópsia foi positiva para adenocarcinoma prostático, com 7 (3+4) pontos pela Escala de Gleason, em 1 fragmento do lobo direito (20% do fragmento comprometido). Com base nas informações, todas as opções terapêuticas abaixo poderiam ser oferecidas ao paciente, exceto uma. Assinale-a.",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Observação.",
+        "explanation": "**Observação (Watchful Waiting)** é a conduta **contraindicada (opção a ser assinalada)** para este paciente. Trata-se de uma Literatura Médica Oficial não curativa voltada a pacientes assintomáticos com expectativa de vida inferior a 10 anos ou com comorbidades graves, na qual o tratamento (paliativo) só é iniciado se houver progressão sintomática. Como o paciente tem apenas 60 anos, é hígido e apresenta expectativa de vida superior a 10-15 anos, a simples observação paliativa priva o paciente da oportunidade de cura."
+      },
+      {
+        "letter": "B",
+        "text": "Vigilância ativa.",
+        "explanation": "A **vigilância ativa (Active Surveillance)** pode ser oferecida em cenários selecionados de risco intermediário favorável (Gleason 3+4 em apenas 1 fragmento de 12, acometimento tumoral de apenas 20% e PSA < 10 ng/mL). Diferente da observação pura, a vigilância ativa possui intenção curativa postergada, reavaliando o paciente periodicamente com PSA, toque retal, ressonância magnética e rebiópsias para intervir se houver progressão."
+      },
+      {
+        "letter": "C",
+        "text": "Prostatectomia radical.",
+        "explanation": "A **prostatectomia radical** é a opção **padrão-ouro com intenção curativa** para pacientes jovens (60 anos), hígidos e com tumor de próstata localizado de risco intermediário, oferecendo excelente controle oncológico a longo prazo e estadiamento patológico completo."
+      },
+      {
+        "letter": "D",
+        "text": "Radioterapia externa.",
+        "explanation": "A **radioterapia conformacional externa** (associada ou não à privação androgênica de curta duração) é uma **alternativa curativa validada e equivalente** à cirurgia para o tratamento do câncer de próstata localizado de risco intermediário em pacientes candidatos ao tratamento definitivo."
+      },
+      {
+        "letter": "E",
+        "text": "Braquiterapia.",
+        "explanation": "A **braquiterapia** (radioterapia intersticial com sementes de Baixa Taxa de Dose - BTD) é uma **opção curativa eficaz** para adenocarcinoma prostático de risco intermediário favorável em próstatas de pequeno volume (25 g, sem sintomas obstrutivos severos e sem ressecção endoscópica prévia)."
+      }
+    ],
+    "correctAnswer": "A",
+    "commentary": "O paciente em questão apresenta 60 anos, sem comorbidades (hígido), com expectativa de vida bem superior a 10 anos. Diagnosticou-se um adenocarcinoma de próstata localizado classificado como **risco intermediário favorável** (PSA 5,5 ng/mL, toque retal normal [T1c], e biópsia com Gleason 7 [3+4] em apenas 1 de 12 fragmentos, com 20% do fragmento comprometido).\n\nPara pacientes com **expectativa de vida > 10 anos** e doença localizada, o objetivo do manejo deve ser o tratamento com **intenção curativa** (Prostatectomia Radical, Radioterapia Externa ou Braquiterapia) ou, em casos muito bem selecionados de risco intermediário favorável, a **Vigilância Ativa** com protocolo rigoroso de seguimento.\n\nA **Observação (Watchful Waiting)** destina-se exclusivamente a pacientes idosos, frágeis ou com expectativa de vida reduzida (< 10 anos), onde os riscos das terapias curativas superam os benefícios e o tratamento androgênico é postergado até o aparecimento de sintomas metastáticos ou locais. Portanto, a **observação** não deve ser oferecida a este paciente.\n\nPrincipal Motivo de Erro:\nO principal motivo de erro é a **confusão conceitual entre Vigilância Ativa e Observação (Watchful Waiting)**. A vigilância ativa tem intenção curativa postergada e monitoramento rigoroso em pacientes com longa expectativa de vida; a observação é uma conduta paliativa conservadora voltada para pacientes com baixa expectativa de vida ou graves comorbidades.\n\nTake-Home Message:\nPacientes jovens (expectativa de vida > 10 anos) e hígidos com câncer de próstata localizado **NÃO** devem receber **observação paliativa (Watchful Waiting)**; eles devem ser propostos a tratamentos com **intenção curativa** ou **vigilância ativa** rigorosa.\n\nEvolução de Diretrizes:\nTanto na época da prova (2015) quanto nas diretrizes atuais (EAU, AUA e NCCN), a distinção formal entre Observação (Watchful Waiting - paliativa) e Vigilância Ativa (Active Surveillance - curativa postergada) permanece estrita. A indicação de observação exige expectativa de vida < 10 anos, conceito que se mantém inalterado.\n\nReferências:\n• EAU Guidelines on Prostate Cancer (European Association of Urology)\n• NCCN Clinical Practice Guidelines in Oncology: Prostate Cancer\n• Campbell-Walsh Urology (11th and 12th Editions)",
+    "images": [],
+    "mainErrorReason": "O principal motivo de erro é a **confusão conceitual entre Vigilância Ativa e Observação (Watchful Waiting)**. A vigilância ativa tem intenção curativa postergada e monitoramento rigoroso em pacientes com longa expectativa de vida; a observação é uma conduta paliativa conservadora voltada para pacientes com baixa expectativa de vida ou graves comorbidades.",
+    "takeHomeMessage": "Pacientes jovens (expectativa de vida > 10 anos) e hígidos com câncer de próstata localizado **NÃO** devem receber **observação paliativa (Watchful Waiting)**; eles devem ser propostos a tratamentos com **intenção curativa** ou **vigilância ativa** rigorosa.",
+    "guidelineEvolution": "Tanto na época da prova (2015) quanto nas diretrizes atuais (EAU, AUA e NCCN), a distinção formal entre Observação (Watchful Waiting - paliativa) e Vigilância Ativa (Active Surveillance - curativa postergada) permanece estrita. A indicação de observação exige expectativa de vida < 10 anos, conceito que se mantém inalterado.",
+    "references": [
+      "EAU Guidelines on Prostate Cancer (European Association of Urology)",
+      "NCCN Clinical Practice Guidelines in Oncology: Prostate Cancer",
+      "Campbell-Walsh Urology (11th and 12th Editions)"
+    ],
+    "correct_answer": "A",
+    "is_anulada": false
+  },
+  {
+    "id": "7d86a85f-308a-4678-9297-30c80f0406b0",
+    "code": "UFRJHUCFF-2015-URO-350",
+    "institution": "UFRJ/HUCFF - Hospital Universitário Clementino Fraga Filho (RJ)",
+    "banca": "UFRJ/HUCFF",
+    "year": 2015,
+    "tipoProva": "Prova 1",
+    "modalidade": "Residência Médica",
+    "especialidade": "Cirurgia Geral",
+    "tema": "Urologia",
+    "foco": "Afecções Escrotais Agudas: Torção, Orquite, Epididimite",
+    "subfoco": "Torção Testicular: Diagnóstico e Manejo de Emergência",
+    "difficulty": "Difícil",
+    "type": "Múltipla escolha",
+    "isAnulada": false,
+    "statement": "A estratégia cirúrgica prevista para torção testicular de até 4 horas de evolução é distorcer e:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "fixar o cordão espermático contralateral.",
+        "explanation": "A realização da fixação **apenas do lado contralateral** é errônea, pois deixa o testículo afetado desprotegido, mantendo o risco iminente de **recorrente retorção ipsilateral**."
+      },
+      {
+        "letter": "B",
+        "text": "não fixar cordão espermático.",
+        "explanation": "A conduta de **não realizar a fixação** de nenhuma estrutura é inaceitável, pois a taxa de retorção sem a orquidopexia é extremamente alta devido à persistência do defeito anatômico de fixação."
+      },
+      {
+        "letter": "C",
+        "text": "fixar somente o cordão espermático afetado.",
+        "explanation": "Fixar **somente o lado acometido** negligencia o fato de que a anomalia anatômica predisponente (deformidade em badalo de sino) é **bilateral em até 80-90% dos casos**, expondo o testículo contralateral a risco futuro de isquemia."
+      },
+      {
+        "letter": "D",
+        "text": "fixar o cordão espermático bilateralmente.",
+        "explanation": "A destorção cirúrgica seguida da **fixação (orquidopexia) bilateral** é a conduta mandatória e padrão-ouro. Devido ao caráter **predominantemente bilateral do defeito anatômico**, a fixação de ambos os lados previne recidivas ipsilaterais e futuros episódios contralaterais."
+      }
+    ],
+    "correctAnswer": "D",
+    "commentary": "A torção testicular constitui uma emergência cirúrgica cuja janela terapêutica ideal para preservação da viabilidade gonadal é de até 6 horas. A causa subjacente mais frequente é a **deformidade em badalo de sino** (badalo de sino / bell-clapper deformity), em que a túnica vaginal recobre excessivamente o testículo e o cordão, permitindo sua livre rotação no escroto. Como essa variação anatômica é **frequentemente bilateral**, a exploração cirúrgica do escroto agudo exige obrigatoriamente a destorção, avaliação de viabilidade e a **orquidopexia/fixação bilateral**, mesmo se o testículo afetado for viável ou necessitar de orquiectomia.\n\nPrincipal Motivo de Erro:\nO principal motivo de erro é achar que a conduta cirúrgica deve abordar **apenas o lado sintomático**, desconhecendo que a predisposição anatômica para a torção afeta **ambos os lados** na maioria dos pacientes.\n\nTake-Home Message:\nNa suspeita e confirmação de torção testicular com testículo viável, a conduta é sempre destorção e **orquidopexia bilateral** no mesmo ato cirúrgico.\n\nEvolução de Diretrizes:\nA recomendação de **fixação bilateral** para a torção testicular permanece inalterada como padrão-ouro absoluto tanto na literatura da época quanto nas diretrizes urológicas e cirúrgicas atuais (AUA e EAU).\n\nReferências:\n• Campbell-Walsh-Wein Urology, 12th Edition\n• European Association of Urology (EAU) Guidelines - Paediatric Urology / Paediatric Scrotum\n• Sabiston Textbook of Surgery, 21st Edition",
+    "images": [],
+    "correct_answer": "D",
+    "mainErrorReason": "O principal motivo de erro é achar que a conduta cirúrgica deve abordar **apenas o lado sintomático**, desconhecendo que a predisposição anatômica para a torção afeta **ambos os lados** na maioria dos pacientes.",
+    "takeHomeMessage": "Na suspeita e confirmação de torção testicular com testículo viável, a conduta é sempre destorção e **orquidopexia bilateral** no mesmo ato cirúrgico.",
+    "references": [
+      "Campbell-Walsh-Wein Urology, 12th Edition",
+      "European Association of Urology (EAU) Guidelines - Paediatric Urology / Paediatric Scrotum",
+      "Sabiston Textbook of Surgery, 21st Edition"
+    ],
+    "is_anulada": false,
+    "guidelineEvolution": "A recomendação de **fixação bilateral** para a torção testicular permanece inalterada como padrão-ouro absoluto tanto na literatura da época quanto nas diretrizes urológicas e cirúrgicas atuais (AUA e EAU)."
+  },
+  {
+    "id": "0d6abc99-a067-4aca-aec5-c8b339fcf309",
+    "code": "UNIVERSIDADE-2016-URO-625",
+    "institution": "Universidade do Estado do Pará - Belém",
+    "banca": "Universidade do Estado do Pará",
+    "year": 2016,
+    "tipoProva": "Prova 1",
+    "modalidade": "Residência Médica",
+    "especialidade": "Cirurgia Geral",
+    "tema": "Urologia",
+    "foco": "Litíase Urinária: Diagnóstico e Abordagem",
+    "subfoco": "Tratamento Intervencionista: LECO, Ureteroscopia e Percutânea",
+    "difficulty": "Difícil",
+    "type": "Múltipla escolha",
+    "isAnulada": false,
+    "statement": "Sobre a Urolitíase é correto afirmar que:",
+    "options": [
+      {
+        "letter": "A",
+        "text": "a complicação mais frequente da Litotripsia Extraxorpórea por Onda de Choque (LEOC) é o hematoma renal.",
+        "explanation": "A complicação mais comum da LEOC é a **hematúria macroscópica autolimitada** (presente em quase 100% dos casos) e a cólica renal por eliminação de fragmentos (*steinstrasse*). O **hematoma renal** sintomático é uma complicação rara, ocorrendo em menos de 1% dos procedimentos."
+      },
+      {
+        "letter": "B",
+        "text": "Indica-se tratamento ureteroscópico para cálculos ureterais obstrutivos com diâmetro acima de 6 mm.",
+        "explanation": "Cálculos ureterais com diâmetro **superior a 6 mm** apresentam taxas de eliminação espontânea significativamente baixas (inferiores a 20%), além de maior risco de obstrução persistente e lesão renal. Portanto, a **intervenção ativa via ureteroscopia (ureterorrenolitotripsia)** é a conduta indicada."
+      },
+      {
+        "letter": "C",
+        "text": "A LEOC pode ser realizada em gestantes.",
+        "explanation": "A gestação é uma **contraindicação absoluta** para a realização de LEOC, devido aos riscos de descolamento placentário, indução de trabalho de parto prematuro e danos diretos pela onda de choque ao feto."
+      },
+      {
+        "letter": "D",
+        "text": "A LEOC é a melhor conduta para cálculos calicinais inferiores com diâmetro superior a 20 mm.",
+        "explanation": "Para cálculos de polo inferior maiores que **20 mm (2 cm)**, a LEOC apresenta baixa eficácia na eliminação dos fragmentos por fatores gravitacionais e anatômicos. Nesses casos, a **nefrolitotripsia percutânea (NLPC)** é a conduta padrão-ouro."
+      },
+      {
+        "letter": "E",
+        "text": "A Nefrolitotripsia Percutânea não é indicada para cálculos piélicos com diâmetros superior a 20 mm.",
+        "explanation": "A nefrolitotripsia percutânea (NLPC) **é a principal indicação e o tratamento padrão-ouro** para cálculos renal/piélicos com diâmetro **superior a 20 mm**, devido às suas altíssimas taxas de *stone-free* em um único procedimento."
+      }
+    ],
+    "correctAnswer": "B",
+    "commentary": "O manejo da **urolitíase** fundamenta-se na localização, no tamanho do cálculo e nas condições clínicas do paciente. Cálculos ureterais maiores que **5 a 6 mm** apresentam uma queda drástica na probabilidade de eliminação espontânea, tornando necessária a intervenção urológica ativa, sendo a **ureterorrenolitotripsia (ureteroscopia)** o procedimento de escolha, especialmente no ureter médio e distal ou em casos obstrutivos. Para cálculos renais volumosos (diâmetro **> 20 mm**), o método de escolha é a **nefrolitotripsia percutânea (NLPC)**, enquanto a **LEOC** fica reservada para litíases renais < 20 mm (ou < 10 mm no polo inferior). Cabe destacar que a **gestação** é contraindicação absoluta para a LEOC, devendo-se optar por passagem de duplo J ou ureteroscopia com holmium laser em gestantes sintomáticas e refratárias ao tratamento conservador.\n\nPrincipal Motivo de Erro:\nO principal ponto de erro é a confusão quanto aos **limites de tamanho para eliminação espontânea** versus necessidade de intervenção, além de esquecer que cálculos **> 20 mm** exigem **nefrolitotripsia percutânea** e não LEOC.\n\nTake-Home Message:\nCálculos ureterais obstrutivos **> 6 mm** exigem intervenção como a **ureteroscopia**; cálculos renais **> 20 mm** indicam **NLPC**; e a **gestação** é contraindicação absoluta à **LEOC**.\n\nEvolução de Diretrizes:\nAs recomendações históricas e atuais da EAU (European Association of Urology) e da AUA (American Urological Association) mantêm-se consistentes: cálculos ureterais > 6 mm têm indicação de intervenção ativa (ureteroscopia), cálculos renais > 20 mm têm a NLPC como primeira linha, e a LEOC permanece absolutamente contraindicada em gestantes.\n\nReferências:\n• European Association of Urology (EAU) Guidelines on Urolithiasis\n• American Urological Association (AUA) Surgical Management of Stones Guideline\n• Campbell-Walsh Urology, 11th Edition",
+    "images": [],
+    "correct_answer": "B",
+    "is_anulada": false,
+    "mainErrorReason": "O principal ponto de erro é a confusão quanto aos **limites de tamanho para eliminação espontânea** versus necessidade de intervenção, além de esquecer que cálculos **> 20 mm** exigem **nefrolitotripsia percutânea** e não LEOC.",
+    "takeHomeMessage": "Cálculos ureterais obstrutivos **> 6 mm** exigem intervenção como a **ureteroscopia**; cálculos renais **> 20 mm** indicam **NLPC**; e a **gestação** é contraindicação absoluta à **LEOC**.",
+    "guidelineEvolution": "As recomendações históricas e atuais da EAU (European Association of Urology) e da AUA (American Urological Association) mantêm-se consistentes: cálculos ureterais > 6 mm têm indicação de intervenção ativa (ureteroscopia), cálculos renais > 20 mm têm a NLPC como primeira linha, e a LEOC permanece absolutamente contraindicada em gestantes.",
+    "references": [
+      "European Association of Urology (EAU) Guidelines on Urolithiasis",
+      "American Urological Association (AUA) Surgical Management of Stones Guideline",
+      "Campbell-Walsh Urology, 11th Edition"
+    ]
+  },
+  {
+    "id": "844311f4-0f1a-499d-9dbe-8a90313dd440",
+    "code": "HUFMJ-2024-URO-841",
+    "institution": "HU-FMJ - Hospital Universitário da Faculdade de Medicina de Jundiaí (SP)",
+    "banca": "HU-FMJ",
+    "year": 2024,
+    "tipoProva": "Prova 1",
+    "modalidade": "Residência Médica",
+    "especialidade": "Cirurgia Geral",
+    "tema": "Urologia",
+    "foco": "Afecções Escrotais Agudas: Torção, Orquite, Epididimite",
+    "subfoco": "Outras Afecções Escrotais Agudas e Crônicas",
+    "difficulty": "Médio",
+    "type": "Múltipla escolha",
+    "isAnulada": false,
+    "statement": "Acerca do priapismo, assinale a alternativa correta",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Pacientes jovens que fazem uso recreativo de estimulantes sexuais podem evoluir para priapismo isquêmico.",
+        "explanation": "O uso recreativo isolado de **estimulantes sexuais orais (como inibidores da PDE-5)** raramente causa priapismo isquêmico em indivíduos jovens sem fatores de risco hematológicos ou associação com drogas de abuso vasoativas, não sendo considerado um gatilho farmacológico direto isolado habitual."
+      },
+      {
+        "letter": "B",
+        "text": "As ereções decorrentes do priapismo não isquêmico geralmente são totalmente rígidas e muito dolorosas, caracterizando uma emergência e, frequentemente, necessitando de aspiração do corpo cavernoso.",
+        "explanation": "No priapismo não isquêmico (alto fluxo), a ereção é **indolora e parcialmente rígida (tumescência sem rigidez plena)**, não constituindo uma **emergência médica imediata nem indicando aspiração cavernosa** de rotina."
+      },
+      {
+        "letter": "C",
+        "text": "O priapismo isquêmico é uma ereção não persistente, relacionada a estímulo sexual em pacientes com distúrbios subjacentes (por exemplo, doença falciforme ou doença maligna hematológica).",
+        "explanation": "O priapismo isquêmico define-se como uma ereção **persistente (duração > 4 horas) e dolorosa**, que ocorre **independentemente ou mantida além da cessação do estímulo sexual**."
+      },
+      {
+        "letter": "D",
+        "text": "No priapismo isquêmico, a aspiração terapêutica (com ou sem irrigação) ou injeção intracavernosa de simpatomiméticos (por exemplo, fenilefrina) pode ser utilizada como intervenção inicial, associada ao tratamento sistêmico do transtorno subjacente.",
+        "explanation": "O priapismo isquêmico é uma emergência urológica cujo manejo inicial padrão-ouro envolve a **aspiração de sangue estagnado do corpo cavernoso, irrigação com soro fisiológico e injeção intracavernosa de agonista alfa-adrenérgico (fenilefrina)**, concomitantemente com a abordagem da causa de base (como hidratação/oxigenação na anemia falciforme)."
+      },
+      {
+        "letter": "E",
+        "text": "A tumescência crônica, bem tolerada, sem rigidez total do pênis é uma alteração relacionada ao priapismo não isquêmico e deve ser tratada inicialmente com cirurgia, pela baixa chance de resolução espontânea.",
+        "explanation": "O priapismo não isquêmico apresenta alta taxa de resolução espontânea (até 60%), sendo a **observação clínica e compressão perineal a conduta inicial**, e **não a cirurgia precoce**."
+      }
+    ],
+    "correctAnswer": "D",
+    "commentary": "O priapismo é uma emergência urológica caracterizada por ereção dolorosa e persistente por mais de 4 horas sem relação com desejo sexual. O **priapismo isquêmico (baixo fluxo)** representa mais de 95% dos casos, decorrente da falha no relaxamento do músculo liso cavernoso e aprisionamento sanguíneo com acidose, hipercapnia e hipóxia. O manejo imediato visa descompressão cavernosa por meio de **aspiração e irrigação associadas à aplicação intracavernosa de simpatomiméticos (fenilefrina)** para promover vasoconstrição e detumescência, associado ao suporte da doença subjacente. Por outro lado, o **priapismo não isquêmico (alto fluxo)** é secundário a trauma com fístula arteriocavernosa, cursa com ereção indolor e indolente, devendo ser conduzido inicialmente de forma conservadora.\n\nPrincipal Motivo de Erro:\nO erro mais frequente é confundir o manejo do priapismo isquêmico (emergência que exige aspiração e fenilefrina intracavernosa) com o priapismo não isquêmico (conservador/observação), além de não reconhecer que a intervenção médica local independe mas deve ser acompanhada do tratamento da causa sistêmica.\n\nTake-Home Message:\nPriapismo isquêmico é emergência de baixo fluxo com acidose local: tratar imediatamente com aspiração cavernosa e fenilefrina intracavernosa. Priapismo não isquêmico é alto fluxo por trauma: conduta inicial é observação.\n\nEvolução de Diretrizes:\nAs diretrizes da EAU e AUA mantêm-se alinhadas: priapismo isquêmico requer descompressão cavernosa imediata com aspiração/irrigação e fenilefrina intracavernosa em até 4 a 6 horas para prevenir fibrose cavernosa e disfunção erétil irreversível.\n\nReferências:\n• EAU Guidelines on Sexual and Reproductive Health (2024)\n• AUA Guideline on the Management of Priapism (2022/2024)\n• Campbell-Walsh-Wein Urology (12th Edition)",
+    "images": [],
+    "correct_answer": "D",
+    "is_official": true,
+    "provenance": "oficial_drive_tematico",
+    "official_book": "Urologia.pdf.json",
+    "is_anulada": false,
+    "mainErrorReason": "O erro mais frequente é confundir o manejo do priapismo isquêmico (emergência que exige aspiração e fenilefrina intracavernosa) com o priapismo não isquêmico (conservador/observação), além de não reconhecer que a intervenção médica local independe mas deve ser acompanhada do tratamento da causa sistêmica.",
+    "takeHomeMessage": "Priapismo isquêmico é emergência de baixo fluxo com acidose local: tratar imediatamente com aspiração cavernosa e fenilefrina intracavernosa. Priapismo não isquêmico é alto fluxo por trauma: conduta inicial é observação.",
+    "guidelineEvolution": "As diretrizes da EAU e AUA mantêm-se alinhadas: priapismo isquêmico requer descompressão cavernosa imediata com aspiração/irrigação e fenilefrina intracavernosa em até 4 a 6 horas para prevenir fibrose cavernosa e disfunção erétil irreversível.",
+    "references": [
+      "EAU Guidelines on Sexual and Reproductive Health (2024)",
+      "AUA Guideline on the Management of Priapism (2022/2024)",
+      "Campbell-Walsh-Wein Urology (12th Edition)"
+    ]
+  },
+  {
+    "id": "ad89770f-4f57-4dd3-8ae0-66dfa690781e",
+    "code": "SESGO-2018-URO-849",
+    "institution": "SES-GO - Secretaria de Estado de Saúde de Goiás",
+    "banca": "SES-GO",
+    "year": 2018,
+    "tipoProva": "Prova 1",
+    "modalidade": "Residência Médica",
+    "especialidade": "Cirurgia Geral",
+    "tema": "Urologia",
+    "foco": "Hiperplasia Prostática Benigna (HPB): Diagnóstico e Tratamento",
+    "subfoco": "HPB: Aspectos Anatômicos e Fisiopatológicos",
+    "difficulty": "Médio",
+    "type": "Múltipla escolha",
+    "isAnulada": false,
+    "statement": "Qual é o principal neurotransmissor periférico responsável pelo relaxamento da musculatura lisa dos corpos cavernosos e pela ereção?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Acetilcolina.",
+        "explanation": "A acetilcolina estimula a síntese de óxido nítrico no endotélio vascular e inibe a liberação simpática de noradrenalina, contudo **não atua como o efetor intracelular direto do relaxamento da musculatura lisa cavernosa**."
+      },
+      {
+        "letter": "B",
+        "text": "Óxido nítrico.",
+        "explanation": "Embora o óxido nítrico (NO) seja, do ponto de vista fisiológico estrito, o **principal neurotransmissor não-adrenérgico não-colinérgico (NANC)** liberado pelos nervos cavernosos, a banca considerou o **efetor intracelular a montante da cascata de relaxamento** como a alternativa correta."
+      },
+      {
+        "letter": "C",
+        "text": "Cálcio.",
+        "explanation": "O aumento dos níveis de **cálcio citosólico livre** promove a **ativação da cinase de cadeia leve de miosina e contração muscular**, sendo a chave para a manutenção do estado de flacidez peniana e não do relaxamento."
+      },
+      {
+        "letter": "D",
+        "text": "GMP cíclico.",
+        "explanation": "O **GMP cíclico (GMPc)** atua ativando a **proteína cinase G (PKG)**, que promove o **sequestro do cálcio intracelular e a hiperpolarização da membrana**, resultando diretamente no relaxamento da musculatura lisa dos corpos cavernosos e permitindo o aporte sanguíneo para a ereção."
+      }
+    ],
+    "correctAnswer": "D",
+    "commentary": "[POSSÍVEL ERRO DE GABARITO / QUESTÃO PASSÍVEL DE ANULAÇÃO]\nA banca examinadora considerou a Alternativa D (GMP cíclico) como gabarito oficial. Fisiologicamente, o GMP cíclico é classificado como um segundo mensageiro intracelular e não como um neurotransmissor. O principal neurotransmissor periférico não-adrenérgico não-colinérgico (NANC) responsável pela deflagração da ereção é o óxido nítrico (NO).\n\nA ereção peniana é um fenômeno neurovascular dependente do relaxamento da musculatura lisa dos corpos cavernosos e arteríolas helicinas. Em resposta ao estímulo sexual, as terminações nervosas periféricas não-adrenérgicas não-colinérgicas (NANC) e o endotélio liberam **óxido nítrico (NO)**. O NO difunde-se para as células musculares lisas cavernosas e ativa a enzima **guanilato ciclase solúvel**, a qual converte GTP em **GMP cíclico (GMPc)**. O acúmulo de **GMPc** ativa a **proteína cinase G (PKG)**, levando ao bloqueio dos canais de cálcio voltagem-dependentes, efluxo de potássio e hiperpolarização celular. A subsequente queda expressiva do **cálcio citosólico** promove o relaxamento muscular cavernoso, permitindo o ingurgitamento vascular peniano.\n\nPrincipal Motivo de Erro:\nO principal motivo de erro é a confusão conceitual entre o **neurotransmissor (óxido nítrico)**, que transmite o sinal nervoso na fenda sináptica, e o **segundo mensageiro intracelular (GMP cíclico)**, que executa o sinal na cascata bioquímica celular.\n\nTake-Home Message:\nO **óxido nítrico (NO)** é o neurotransmissor primário da ereção, enquanto o **GMP cíclico (GMPc)** é o segundo mensageiro que reduz o cálcio intracelular e promove o relaxamento cavernoso.\n\nEvolução de Diretrizes:\nOs conceitos fundamentais da fisiologia erétil permanecem consolidados na literatura médica contemporânea. Os inibidores da fosfodiesterase tipo 5 (iPDE5), como a sildenafila e tadalafila, continuam sendo a terapia de primeira linha para a disfunção erétil, atuando na inibição da degradação do **GMP cíclico** e prolongando o relaxamento da musculatura cavernosa.\n\nReferências:\n• Campbell-Walsh-Wein Urology (12th Edition)\n• Diretrizes da Sociedade Brasileira de Urologia (SBU) - Disfunção Erétil\n• EAU Guidelines on Sexual and Reproductive Health (European Association of Urology)",
+    "images": [],
+    "correct_answer": "D",
+    "is_anulada": false,
+    "mainErrorReason": "O principal motivo de erro é a confusão conceitual entre o **neurotransmissor (óxido nítrico)**, que transmite o sinal nervoso na fenda sináptica, e o **segundo mensageiro intracelular (GMP cíclico)**, que executa o sinal na cascata bioquímica celular.",
+    "takeHomeMessage": "O **óxido nítrico (NO)** é o neurotransmissor primário da ereção, enquanto o **GMP cíclico (GMPc)** é o segundo mensageiro que reduz o cálcio intracelular e promove o relaxamento cavernoso.",
+    "guidelineEvolution": "Os conceitos fundamentais da fisiologia erétil permanecem consolidados na literatura médica contemporânea. Os inibidores da fosfodiesterase tipo 5 (iPDE5), como a sildenafila e tadalafila, continuam sendo a terapia de primeira linha para a disfunção erétil, atuando na inibição da degradação do **GMP cíclico** e prolongando o relaxamento da musculatura cavernosa.",
+    "references": [
+      "Campbell-Walsh-Wein Urology (12th Edition)",
+      "Diretrizes da Sociedade Brasileira de Urologia (SBU) - Disfunção Erétil",
+      "EAU Guidelines on Sexual and Reproductive Health (European Association of Urology)"
+    ]
+  },
+  {
+    "id": "b4c460b5-e0e0-40dc-bda3-3f59ae9f615f",
+    "code": "SESGO-2015-URO-856",
+    "institution": "SES-GO - Secretaria de Estado de Saúde de Goiás",
+    "banca": "SES-GO",
+    "year": 2015,
+    "tipoProva": "Prova 1",
+    "modalidade": "Residência Médica",
+    "especialidade": "Cirurgia Geral",
+    "tema": "Urologia",
+    "foco": "Hiperplasia Prostática Benigna (HPB): Diagnóstico e Tratamento",
+    "subfoco": "Tratamento Clínico: Alfa-bloqueadores e 5-ARIs",
+    "difficulty": "Difícil",
+    "type": "Múltipla escolha",
+    "isAnulada": false,
+    "statement": "Dentre os medicamentos usados no tratamento da hiperplasia prostática, qual é o que pode interferir em cirurgias para cataratas, por causar frouxidão da íris?",
+    "options": [
+      {
+        "letter": "A",
+        "text": "Finasteride.",
+        "explanation": "Os inibidores da 5-alfa-redutase, como a finasterida, atuam exclusivamente bloqueando a conversão enzimática da testosterona em di-hidrotestosterona (DHT), reduzindo o volume prostático ao longo do tempo. **Não possuem ação sobre receptores adrenérgicos da íris**, não estando associados à síndrome da íris flácida."
+      },
+      {
+        "letter": "B",
+        "text": "Tamsulosina",
+        "explanation": "A tamsulosina é um antagonista **alfa-1A adrenérgico uro-seletivo** altamente empregado no tratamento da HPB. Como o músculo dilatador da íris possui alta densidade de receptores alfa-1A, o uso desse fármaco causa perda do tônus do estroma iridiano, culminando na **Síndrome da Íris Flácida Intraoperatória (IFIS)** durante cirurgias de catarata."
+      },
+      {
+        "letter": "C",
+        "text": "Doxazosina.",
+        "explanation": "A doxazosina é um antagonista alfa-1 adrenérgico não seletivo. Embora pertença à classe dos alfabloqueadores, apresenta **menor afinidade e seletividade pelos receptores alfa-1A oculares do que a tamsulosina**, apresentando um risco consideravelmente menor e não sendo a causa clássica da complicação citada."
+      },
+      {
+        "letter": "D",
+        "text": "Dutasteride.",
+        "explanation": "A dutasterida é um inibidor duplo das isoenzimas tipo 1 e tipo 2 da 5-alfa-redutase. Sua ação é puramente hormonal e tecidual prostática, **sem qualquer afinidade pelos receptores do músculo dilatador da íris**, sendo isenta de complicações durante a facectomia."
+      }
+    ],
+    "correctAnswer": "B",
+    "commentary": "A **tamsulosina** é o alfabloqueador com maior seletividade pelos receptores alfa-1A, presentes em grande quantidade na próstata, colo vesical e também no músculo dilatador da íris. A inibição prolongada desses receptores no olho causa diminuição permanente ou duradoura do tônus iridiano, levando à **Síndrome da Íris Flácida Intraoperatória (IFIS)** durante a cirurgia de catarata (facectomia por facoemulsificação). A IFIS é caracterizada por miose progressiva intraoperatória, estroma iridiano flácido e ondulante e alta tendência ao prolapso da íris pelas incisões cirúrgicas, o que aumenta o risco de complicações cirúrgicas se o oftalmologista não estiver previamente ciente do uso da medicação.\n\nPrincipal Motivo de Erro:\nO principal motivo de erro é a **falta de associação entre a seletividade de subtipo receptor (alfa-1A)** da tamsulosina e a fisiopatologia ocular, levando o aluno a **generalizar erroneamente o risco para todos os alfabloqueadores** ou a confundir a classe com os inibidores da 5-alfa-redutase.\n\nTake-Home Message:\nO uso de **tamsulosina** é o principal fator de risco para a **Síndrome da Íris Flácida Intraoperatória (IFIS)** em cirurgias de catarata devido ao bloqueio específico dos receptores **alfa-1A da íris**.\n\nEvolução de Diretrizes:\nA relação entre a tamsulosina e a IFIS, descrita em 2005, já era um conceito consolidado em 2015 e permanece inalterada nas diretrizes atuais. A AUA e a EAU recomendam que os pacientes informem o uso de tamsulosina ao oftalmologista antes da cirurgia de catarata, visto que a interrupção temporária do fármaco semanas antes do procedimento não garante a reversão do tônus iridiano.\n\nReferências:\n• Campbell-Walsh-Wein Urology (11th / 12th Editions)\n• European Association of Urology (EAU) Guidelines on Non-Neurogenic Male LUTS / BPH\n• American Urological Association (AUA) Guideline: Management of Lower Urinary Tract Symptoms Attributed to Benign Prostatic Hyperplasia",
+    "images": [],
+    "correct_answer": "B",
+    "is_anulada": false,
+    "mainErrorReason": "O principal motivo de erro é a **falta de associação entre a seletividade de subtipo receptor (alfa-1A)** da tamsulosina e a fisiopatologia ocular, levando o aluno a **generalizar erroneamente o risco para todos os alfabloqueadores** ou a confundir a classe com os inibidores da 5-alfa-redutase.",
+    "takeHomeMessage": "O uso de **tamsulosina** é o principal fator de risco para a **Síndrome da Íris Flácida Intraoperatória (IFIS)** em cirurgias de catarata devido ao bloqueio específico dos receptores **alfa-1A da íris**.",
+    "guidelineEvolution": "A relação entre a tamsulosina e a IFIS, descrita em 2005, já era um conceito consolidado em 2015 e permanece inalterada nas diretrizes atuais. A AUA e a EAU recomendam que os pacientes informem o uso de tamsulosina ao oftalmologista antes da cirurgia de catarata, visto que a interrupção temporária do fármaco semanas antes do procedimento não garante a reversão do tônus iridiano.",
+    "references": [
+      "Campbell-Walsh-Wein Urology (11th / 12th Editions)",
+      "European Association of Urology (EAU) Guidelines on Non-Neurogenic Male LUTS / BPH",
+      "American Urological Association (AUA) Guideline: Management of Lower Urinary Tract Symptoms Attributed to Benign Prostatic Hyperplasia"
+    ]
   }
 ]

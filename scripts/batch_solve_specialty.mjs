@@ -80,86 +80,71 @@ async function main() {
     return;
   }
 
-  const CONCURRENCY = 3; // 3 requisições simultâneas distribuídas suavemente no pool de 8 chaves
+  const CONCURRENCY = 4; // 4 streams simultâneos contínuos (respeita 15 RPM por chave)
   let processedCount = 0;
   let batchBuffer = [];
   const startTime = Date.now();
 
-  let consecutiveFailures = 0;
-  for (let i = 0; i < pending.length; i += CONCURRENCY) {
-    const chunk = pending.slice(i, i + CONCURRENCY);
-    const results = await Promise.all(
-      chunk.map(async (q, idx) => {
-        try {
-          if (idx > 0) {
-            await new Promise(r => setTimeout(r, idx * 600));
+  let queueIndex = 0;
+  const workers = Array.from({ length: CONCURRENCY }, async (_, workerId) => {
+    // Stagger inicial suave para diluir as conexões iniciais
+    await new Promise(r => setTimeout(r, workerId * 600));
+
+    while (queueIndex < pending.length) {
+      const currentIdx = queueIndex++;
+      const q = pending[currentIdx];
+      if (!q) break;
+
+      try {
+        const solved = await solveQuestionDeep(q);
+        if (solved && solved.id) {
+          solvedMap.set(solved.id, solved);
+          batchBuffer.push(solved);
+          processedCount++;
+
+          const originalIndex = questions.findIndex(item => item.id === solved.id);
+          if (originalIndex !== -1) {
+            questions[originalIndex] = {
+              ...questions[originalIndex],
+              correctAnswer: solved.correctAnswer,
+              commentary: solved.commentary,
+              mainErrorReason: solved.mainErrorReason,
+              takeHomeMessage: solved.takeHomeMessage,
+              guidelineEvolution: solved.guidelineEvolution,
+              references: solved.references,
+              options: solved.options
+            };
           }
-          return await solveQuestionDeep(q);
-        } catch (err) {
-          console.error(`Erro ao resolver ${q.id}:`, err.message);
-          return null;
+
+          const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+          const rate = ((processedCount / (Date.now() - startTime)) * 1000).toFixed(2);
+          console.log(`⚡ Progresso: ${processedCount}/${pending.length} (${Math.round((processedCount / pending.length) * 100)}%) | ${rate} q/s | [${solved.id.slice(0, 8)}]`);
+
+          // Sincroniza checkpoint e Supabase de forma otimizada a cada 15 questões
+          if (batchBuffer.length >= 15) {
+            fs.writeFileSync(checkpointPath, JSON.stringify(Array.from(solvedMap.values())));
+            if (processedCount % 60 === 0) {
+              fs.writeFileSync(filePath, JSON.stringify(questions, null, 2));
+            }
+            if (syncSupabase && batchBuffer.length > 0) {
+              const toSync = [...batchBuffer];
+              updateQuestionsInSupabase(toSync).catch(e => console.error('Erro sync Supabase:', e.message));
+            }
+            batchBuffer = [];
+            console.log(`💾 Checkpoint salvo em disco e sincronizado no Supabase.`);
+          }
         }
-      })
-    );
-
-    const successfulThisChunk = results.filter(Boolean);
-    if (successfulThisChunk.length === 0) {
-      consecutiveFailures++;
-      if (consecutiveFailures >= 8) {
-        console.log('\n🛑 Atenção: Múltiplas falhas consecutivas em todas as contas.');
-        console.log('📌 Provável esgotamento da cota diária do Google AI Studio nas chaves.');
-        console.log('💾 Salvando o estado com segurança no checkpoint antes de parar...');
-        break;
-      }
-    } else {
-      consecutiveFailures = 0;
-    }
-
-    for (const solved of results) {
-      if (solved && solved.id) {
-        solvedMap.set(solved.id, solved);
-        batchBuffer.push(solved);
-        processedCount++;
-
-        // Atualiza em memória a questão no array principal
-        const originalIndex = questions.findIndex(q => q.id === solved.id);
-        if (originalIndex !== -1) {
-          questions[originalIndex] = {
-            ...questions[originalIndex],
-            correctAnswer: solved.correctAnswer,
-            commentary: solved.commentary,
-            mainErrorReason: solved.mainErrorReason,
-            takeHomeMessage: solved.takeHomeMessage,
-            guidelineEvolution: solved.guidelineEvolution,
-            references: solved.references,
-            options: solved.options
-          };
-        }
+      } catch (err) {
+        console.error(`Erro ao resolver ${q.id}:`, err.message);
       }
     }
+  });
 
-    const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
-    const rate = (processedCount / (Date.now() - startTime) * 1000).toFixed(2);
-    console.log(`⚡ Progresso: ${processedCount}/${pending.length} (${Math.round((processedCount / pending.length) * 100)}%) | ${rate} q/s | Tempo: ${elapsed}s`);
-
-    // Sincroniza em disco e Supabase a cada 10 questões
-    if (batchBuffer.length >= 10) {
-      fs.writeFileSync(checkpointPath, JSON.stringify(Array.from(solvedMap.values()), null, 2));
-      fs.writeFileSync(filePath, JSON.stringify(questions, null, 2));
-      if (syncSupabase && batchBuffer.length > 0) {
-        await updateQuestionsInSupabase(batchBuffer);
-      }
-      batchBuffer = [];
-      console.log(`💾 Checkpoint salvo em disco e sincronizado no Supabase.`);
-    }
-
-    // Pausa balanceada para estabilidade das conexões e respeito ao RPM
-    await new Promise(r => setTimeout(r, 1200));
-  }
+  await Promise.all(workers);
 
   // Flush final do buffer residual
   if (batchBuffer.length > 0) {
-    fs.writeFileSync(checkpointPath, JSON.stringify(Array.from(solvedMap.values()), null, 2));
+    fs.writeFileSync(checkpointPath, JSON.stringify(Array.from(solvedMap.values())));
     fs.writeFileSync(filePath, JSON.stringify(questions, null, 2));
     if (syncSupabase) {
       await updateQuestionsInSupabase(batchBuffer);
@@ -167,10 +152,6 @@ async function main() {
     console.log(`💾 Buffer final sincronizado.`);
   }
 
-  if (consecutiveFailures >= 5) {
-    console.log('❌ Processamento interrompido devido a falhas consecutivas de cota.');
-    process.exit(1);
-  }
 
   console.log('\n======================================================');
   console.log(`🎉 RODADA FINALIZADA COM SUCESSO!`);

@@ -24,6 +24,76 @@ function isValidUuid(id?: string | null): boolean {
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
+    const supabaseAdmin = getSupabaseAdmin();
+
+    // 1. Tenta identificar se há usuário autenticado via cookies da sessão
+    let sessionUserId: string | null = null;
+    let sessionUserEmail: string | null = null;
+    let sessionUserName: string | null = null;
+
+    try {
+      const serverSupabase = await createServerClient();
+      const { data: { user } } = await serverSupabase.auth.getUser();
+      if (user) {
+        sessionUserId = user.id;
+        sessionUserEmail = user.email || null;
+        sessionUserName = (user.user_metadata?.name as string) || (user.user_metadata?.full_name as string) || null;
+      }
+    } catch {
+      // Ignora erro de sessão de cookies
+    }
+
+    // Suporte a Sincronização em Lote (Batch Sync) vinda de syncPendingLocalReportsToSupabase
+    if (Array.isArray(body.reports) && body.reports.length > 0) {
+      let insertedCount = 0;
+      for (const item of body.reports) {
+        const qId = item.questionId || item.question_id;
+        if (!qId) continue;
+
+        const reportId = isValidUuid(item.id) ? item.id : crypto.randomUUID();
+        const repDetails = typeof item.details === 'string' ? item.details.trim() : '';
+        const repReason = item.reason || 'Erro no gabarito ou enunciado';
+        const repStatus = item.status === 'in_progress' ? 'in_review' : (item.status || 'pending');
+
+        const baseRow: Record<string, unknown> = {
+          id: reportId,
+          question_id: String(qId),
+          user_id: isValidUuid(item.userId || item.user_id) ? (item.userId || item.user_id) : sessionUserId,
+          reason: repReason,
+          details: repDetails,
+          status: repStatus,
+          created_at: item.createdAt || item.created_at || new Date().toISOString()
+        };
+
+        const enrichedRow = {
+          ...baseRow,
+          ...(item.userName || sessionUserName ? { user_name: item.userName || sessionUserName } : {}),
+          ...(item.userEmail || sessionUserEmail ? { user_email: item.userEmail || sessionUserEmail } : {})
+        };
+
+        // Upsert para garantir idempotência
+        const { error } = await supabaseAdmin.from('question_reports').upsert(enrichedRow, { onConflict: 'id' });
+
+        if (error && (error.message.includes('column') || error.message.includes('foreign key'))) {
+          // Fallback seguro sem FK inválida ou sem colunas novas
+          if (error.message.includes('foreign key')) {
+            baseRow.user_id = null;
+          }
+          const retryRes = await supabaseAdmin.from('question_reports').upsert(baseRow, { onConflict: 'id' });
+          if (!retryRes.error) insertedCount++;
+        } else if (!error) {
+          insertedCount++;
+        }
+      }
+
+      return NextResponse.json({
+        success: true,
+        syncedCount: insertedCount,
+        message: `${insertedCount} denúncias sincronizadas com o banco central.`
+      });
+    }
+
+    // Fluxo Padrão: Inserção de Reporte Individual
     const { questionId, reason, details, userMeta } = body;
 
     if (!questionId || typeof questionId !== 'string') {
@@ -40,35 +110,17 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // 1. Tenta identificar se há usuário autenticado via cookies da sessão
-    let finalUserId: string | null = null;
-    let finalUserEmail: string | null = null;
-    let finalUserName: string | null = userMeta?.name || 'Estudante';
-
-    try {
-      const serverSupabase = await createServerClient();
-      const { data: { user } } = await serverSupabase.auth.getUser();
-      if (user) {
-        finalUserId = user.id;
-        finalUserEmail = user.email || null;
-        finalUserName = (user.user_metadata?.name as string) || (user.user_metadata?.full_name as string) || finalUserName;
-      }
-    } catch {
-      // Ignora erro de sessão de cookies e segue com userMeta
-    }
+    let finalUserId = sessionUserId;
+    const finalUserEmail = sessionUserEmail || userMeta?.email || null;
+    const finalUserName = sessionUserName || userMeta?.name || 'Estudante';
 
     if (!finalUserId && userMeta?.id && isValidUuid(userMeta.id)) {
       finalUserId = userMeta.id;
     }
-    if (!finalUserEmail && userMeta?.email) {
-      finalUserEmail = userMeta.email;
-    }
 
     const reportId = crypto.randomUUID();
     const now = new Date().toISOString();
-    const supabaseAdmin = getSupabaseAdmin();
 
-    // 2. Insere no Supabase via Service Role Key (garante que todos os admins recebam sem restrição de RLS)
     const basePayload: Record<string, unknown> = {
       id: reportId,
       question_id: questionId,
@@ -79,7 +131,6 @@ export async function POST(req: NextRequest) {
       created_at: now
     };
 
-    // Tenta primeiro com colunas extras caso existam (user_name, user_email)
     const enrichedPayload = {
       ...basePayload,
       ...(finalUserName ? { user_name: finalUserName } : {}),
@@ -88,9 +139,13 @@ export async function POST(req: NextRequest) {
 
     let { error } = await supabaseAdmin.from('question_reports').insert(enrichedPayload);
 
-    // Se falhar por coluna inexistente, faz fallback para o payload estrito
-    if (error && error.message.includes('column')) {
-      const fallbackRes = await supabaseAdmin.from('question_reports').insert(basePayload);
+    // Fallback 1: se der erro de coluna (migration não rodada) ou erro de foreign key de usuário
+    if (error) {
+      const retryPayload = { ...basePayload };
+      if (error.message.includes('foreign key')) {
+        retryPayload.user_id = null;
+      }
+      const fallbackRes = await supabaseAdmin.from('question_reports').insert(retryPayload);
       error = fallbackRes.error;
     }
 

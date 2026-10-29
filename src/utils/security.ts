@@ -39,13 +39,12 @@ export function validateAnswerOption(answer: unknown): boolean {
   return VALID_ANSWERS.has(answer.toUpperCase().trim());
 }
 
-export const VALID_ADMIN_ROLES = new Set(['admin', 'curador', 'curator']);
+export const VALID_ADMIN_ROLES = new Set(['admin', 'curador', 'curator', 'superadmin']);
 
 /**
  * Valida se uma role possui privilégios de administração ou curadoria
  */
 export function isPrivilegedRole(role: unknown): boolean {
-  if (typeof role !== 'string') return false;
+  if (!role || typeof role !== 'string') return false;
   return VALID_ADMIN_ROLES.has(role.toLowerCase().trim());
 }
-

@@ -634,12 +634,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
   // --- CÁLCULO DINÂMICO DE QUESTÕES ENCONTRADAS (INTERSECÇÃO REAL DO BANCO DE DADOS) ---
   const displayedQuestionCount = useMemo(() => {
-    const hasActiveFilters = Boolean(
+    const hasRightCardFilters = Boolean(
       (filters.search && filters.search.trim()) ||
-      (filters.especialidades && filters.especialidades.length > 0) ||
-      (filters.temas && filters.temas.length > 0) ||
-      (filters.focos && filters.focos.length > 0) ||
-      (filters.subfocos && filters.subfocos.length > 0) ||
       (filters.instituicoes && filters.instituicoes.length > 0) ||
       (filters.anos && filters.anos.length > 0 && filters.anos.length < YEARS_LIST.length) ||
       (filters.dificuldade && filters.dificuldade !== 'Todas') ||
@@ -649,11 +645,41 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       filters.ultimos5Anos
     );
 
+    const hasClinicalFilters = Boolean(
+      (filters.especialidades && filters.especialidades.length > 0) ||
+      (filters.temas && filters.temas.length > 0) ||
+      (filters.focos && filters.focos.length > 0) ||
+      (filters.subfocos && filters.subfocos.length > 0)
+    );
+
+    const hasActiveFilters = hasClinicalFilters || hasRightCardFilters;
+
     if (hasActiveFilters) {
-      if (typeof totalFiltered === 'number' && totalFiltered > 0) {
+      // 1. Resposta instantânea (0ms): Quando o estudante seleciona itens na árvore clínica
+      // e não há outros filtros cruzados na direita (bancas, anos, status, etc.),
+      // a soma local do catálogo pré-calculado é 100% idêntica ao banco e instantânea no clique!
+      if (hasClinicalFilters && !hasRightCardFilters) {
+        let clinicalSum = 0;
+        if (filters.subfocos && filters.subfocos.length > 0) {
+          clinicalSum = filters.subfocos.reduce((acc, s) => acc + (getQuestionCount('subfocos', s) || 0), 0);
+        } else if (filters.focos && filters.focos.length > 0) {
+          clinicalSum = filters.focos.reduce((acc, f) => acc + (getQuestionCount('focos', f) || 0), 0);
+        } else if (filters.temas && filters.temas.length > 0) {
+          clinicalSum = filters.temas.reduce((acc, t) => acc + (getQuestionCount('temas', t) || 0), 0);
+        } else if (filters.especialidades && filters.especialidades.length > 0) {
+          clinicalSum = filters.especialidades.reduce((acc, e) => acc + (getQuestionCount('especialidades', e) || 0), 0);
+        }
+        if (clinicalSum > 0) {
+          return clinicalSum;
+        }
+      }
+
+      // 2. Se há resposta real da API com contagem cruzada válida e diferente do total inicial global
+      if (typeof totalFiltered === 'number' && totalFiltered > 0 && totalFiltered !== 132965) {
         return totalFiltered;
       }
-      // Fallback resiliente instantâneo se totalFiltered for 0 (evita bloquear botão e mostrar 0 durante carregamento ou timeout)
+
+      // 3. Fallback inteligente durante carregamento ou debounce:
       let localSum = 0;
       if (filters.subfocos && filters.subfocos.length > 0) {
         localSum = filters.subfocos.reduce((acc, s) => acc + (getQuestionCount('subfocos', s) || 0), 0);

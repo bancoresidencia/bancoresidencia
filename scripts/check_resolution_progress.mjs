@@ -3,6 +3,7 @@ import path from 'path';
 
 const SPECIALTY_FILES = {
   urologia: { name: 'Urologia', path: 'data/urologia_final_questions.json' },
+  nefrologia: { name: 'Nefrologia', path: 'data/nefrologia_final_questions.json' },
   ginecologia: { name: 'Ginecologia', path: 'data/ginecologia_final_questions.json' },
   obstetricia: { name: 'Obstetrícia', path: 'data/obstetricia_final_questions.json' },
   pediatria: { name: 'Pediatria', path: 'data/pediatria_final_questions.json' },

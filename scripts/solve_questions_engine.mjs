@@ -87,8 +87,12 @@ function getRelevantBookThemes(specialty, tema) {
   return books.slice(0, 3).map(b => b.theme);
 }
 
-// Modelos prioritários com alta velocidade, raciocínio clínico e cotas ativas
+// Modelos prioritários ordenados por maior cota diária e velocidade
 const AVAILABLE_MODELS = [
+  'gemini-3.1-flash-lite',
+  'gemini-3.5-flash-lite',
+  'gemini-flash-lite-latest',
+  'gemini-3-flash-preview',
   'gemini-3.6-flash',
   'gemini-3.5-flash'
 ];
@@ -234,11 +238,18 @@ ${optionsSchemaExample}
       if (!res.ok) {
         const errText = await res.text();
         if (res.status === 429) {
-          if (errText.includes('requests per day limit exceeded') || errText.includes('GenerateRequestsPerDay')) {
+          const isDailyLimit =
+            errText.includes('requests per day limit exceeded') ||
+            errText.includes('GenerateRequestsPerDay') ||
+            errText.includes('PerDayPerProject') ||
+            errText.includes('per day');
+
+          if (isDailyLimit) {
             markPairExhausted(keyIdx, activeModel, 'cota diária esgotada');
             continue;
           }
-          const waitTime = Math.min(attempt * 1000, 4000);
+          // Limite transitório por minuto (RPM): aguarda brevemente e avança para outro par
+          const waitTime = Math.min(attempt * 1000, 3000);
           await new Promise(r => setTimeout(r, waitTime));
           continue;
         }
@@ -277,7 +288,7 @@ ${optionsSchemaExample}
           parsed = JSON.parse(sanitized.slice(firstB, lastB + 1));
         } catch (e) {
           if (attempt < 8) {
-            rotateModel('JSON malformado');
+            console.warn('⚠️ Tentando novamente após JSON malformado...');
             await new Promise(r => setTimeout(r, 1000));
             continue;
           }
@@ -361,7 +372,7 @@ ${optionsSchemaExample}
     } catch (err) {
       clearTimeout(timeoutId);
       if (err.name === 'AbortError') {
-        rotateModel('timeout 60s');
+        console.warn('⚠️ Timeout de 60s atingido, alternando par chave/modelo...');
         continue;
       }
       if (attempt < 4) {

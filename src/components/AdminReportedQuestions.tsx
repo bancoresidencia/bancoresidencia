@@ -133,6 +133,72 @@ export const AdminReportedQuestions: React.FC = () => {
     }
   };
 
+  // Estado e handler de Atualização Direta e Automática no Supabase (1 clique)
+  const [quickSavingReportId, setQuickSavingReportId] = useState<string | null>(null);
+
+  const handleQuickUpdateGabarito = async (report: QuestionReport, newLetter: string) => {
+    const isAnulada = newLetter === 'ANULADA';
+    setQuickSavingReportId(report.id);
+
+    try {
+      const res = await fetch('/api/admin/curadoria/update-gabarito', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          questionId: report.questionId,
+          correctAnswer: newLetter,
+          isAnulada,
+          reportId: report.id
+        })
+      });
+
+      const data = await res.json();
+      if (res.ok && data.success) {
+        setReports((prev) =>
+          prev.map((r) => {
+            if (r.id === report.id) {
+              return {
+                ...r,
+                status: 'resolved',
+                adminNotes: `Gabarito retificado automaticamente para [${newLetter}] e denúncia resolvida pelo administrador.`,
+                resolvedAt: new Date().toISOString(),
+                question: {
+                  ...r.question,
+                  correctAnswer: newLetter as Question['correctAnswer'],
+                  isAnulada
+                }
+              };
+            }
+            return r;
+          })
+        );
+
+        // Dispara evento global em tempo real para sincronizar todo o site
+        if (typeof window !== 'undefined') {
+          window.dispatchEvent(
+            new CustomEvent('bancoresidencia_question_updated', {
+              detail: {
+                questionId: report.questionId,
+                correctAnswer: newLetter,
+                isAnulada
+              }
+            })
+          );
+        }
+
+        setActionSuccessMsg(`Gabarito da questão atualizado para "${newLetter}" no Supabase de maneira automática!`);
+        setTimeout(() => setActionSuccessMsg(null), 4000);
+      } else {
+        alert(data.error || 'Erro ao atualizar gabarito no Supabase.');
+      }
+    } catch (err) {
+      console.error('Erro na atualização rápida do gabarito:', err);
+      alert('Falha de conexão ao atualizar gabarito no Supabase.');
+    } finally {
+      setQuickSavingReportId(null);
+    }
+  };
+
   // Inicia o processo de homologação: seleciona a nova alternativa e gera o comentário clínico
   const handleStartGabaritoStaging = async (report: QuestionReport, newLetter: string) => {
     const q = report.question;
@@ -600,34 +666,48 @@ export const AdminReportedQuestions: React.FC = () => {
 
                 {/* Ações Administrativas de Auditoria */}
                 <div className="pt-3 border-t border-zinc-100 dark:border-zinc-800/80 flex flex-wrap items-center justify-between gap-3">
-                  {/* Seletor de Nova Alternativa Correta para Homologação */}
+                  {/* Seletor de Nova Alternativa Correta: Atualização Automática no Supabase */}
                   <div className="flex flex-wrap items-center gap-1.5">
                     <span className="text-[11px] font-bold text-zinc-500 dark:text-zinc-400 mr-1">
-                      Corrigir Gabarito:
+                      Substituir Gabarito:
                     </span>
                     {(['A', 'B', 'C', 'D', 'E', 'ANULADA'] as const).map((letra) => {
-                      const isStaged = staging && staging.reportId === report.id && staging.newLetter === letra;
+                      const isSavingThis = quickSavingReportId === report.id;
                       const isCurrentDb = q?.correctAnswer === letra;
+                      const isStaged = staging && staging.reportId === report.id && staging.newLetter === letra;
 
                       return (
                         <button
                           key={letra}
                           type="button"
-                          onClick={() => handleStartGabaritoStaging(report, letra)}
+                          disabled={isSavingThis}
+                          onClick={() => handleQuickUpdateGabarito(report, letra)}
                           className={`px-2.5 py-1 rounded-md text-[11px] font-mono font-bold transition-all cursor-pointer flex items-center gap-1 ${
                             isStaged
                               ? 'bg-amber-500 text-white ring-2 ring-amber-400 ring-offset-2 dark:ring-offset-zinc-900 shadow-sm'
                               : isCurrentDb
-                              ? 'bg-emerald-500 text-white'
-                              : 'bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700'
+                              ? 'bg-emerald-600 text-white shadow-xs'
+                              : 'bg-zinc-100 dark:bg-zinc-800 hover:bg-emerald-500 hover:text-white dark:hover:bg-emerald-600 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700'
                           }`}
-                          title={`Selecionar [${letra}], recriar comentário e visualizar prévia antes de salvar`}
+                          title={`Substituir imediatamente por [${letra}] e gravar automaticamente no Supabase`}
                         >
-                          {isStaged && <Sparkles className="w-3 h-3 animate-pulse" />}
+                          {isSavingThis ? <RotateCcw className="w-3 h-3 animate-spin" /> : null}
+                          {isStaged && !isSavingThis ? <Sparkles className="w-3 h-3 animate-pulse" /> : null}
                           <span>{letra}</span>
                         </button>
                       );
                     })}
+
+                    {/* Curadoria Aprofundada com IA (Opcional) */}
+                    <button
+                      type="button"
+                      onClick={() => handleStartGabaritoStaging(report, q?.correctAnswer || 'A')}
+                      className="ml-1 px-2.5 py-1 rounded-md text-[10px] font-bold text-amber-600 dark:text-amber-400 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-500/20 flex items-center gap-1 cursor-pointer transition-colors"
+                      title="Abrir curadoria profunda com IA para gerar raciocínio clínico e justificativas de alternativas"
+                    >
+                      <Sparkles className="w-3 h-3" />
+                      <span>Curadoria IA</span>
+                    </button>
                   </div>
 
                   {/* Botões de Transição de Status */}
