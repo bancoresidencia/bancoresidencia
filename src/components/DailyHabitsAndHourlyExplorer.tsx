@@ -234,28 +234,6 @@ export const DailyHabitsAndHourlyExplorer: React.FC<DailyHabitsAndHourlyExplorer
       };
     });
 
-    // Se o dia selecionado for Hoje e não houver questões registradas ainda,
-    // mas temos totalAnsweredInPeriod > 0, harmonizamos uma distribuição demonstrativa elegante
-    const totalDayResolvidas = hours.reduce((acc, h) => acc + h.resolvidas, 0);
-    if (totalDayResolvidas === 0 && selectedDate === todayStr && totalAnsweredInPeriod > 0) {
-      // Simulação realista de estudo distribuído ao longo dos turnos de hoje
-      const demoHours = [
-        { h: 8, q: 4, cor: 3 },
-        { h: 9, q: 7, cor: 6 },
-        { h: 10, q: 6, cor: 5 },
-        { h: 14, q: 5, cor: 4 },
-        { h: 15, q: 8, cor: 7 },
-        { h: 19, q: 6, cor: 4 },
-        { h: 20, q: 5, cor: 3 }
-      ];
-      demoHours.forEach(({ h, q, cor }) => {
-        hours[h].resolvidas = q;
-        hours[h].acertos = cor;
-        hours[h].erros = q - cor;
-        hours[h].taxa = (cor / q) * 100;
-      });
-    }
-
     return hours;
   }, [answersByDateAndHour, selectedDate, todayStr, totalAnsweredInPeriod]);
 
@@ -319,18 +297,7 @@ export const DailyHabitsAndHourlyExplorer: React.FC<DailyHabitsAndHourlyExplorer
       }
     });
 
-    // Se houver poucas respostas reais, enriquece proporcionalmente com dados coerentes
-    if (totalAnswersExamined < 8) {
-      shifts.morning.resolvidas = 38;
-      shifts.morning.acertos = 31;
-      shifts.afternoon.resolvidas = 42;
-      shifts.afternoon.acertos = 33;
-      shifts.night.resolvidas = 25;
-      shifts.night.acertos = 17;
-      shifts.dawn.resolvidas = 6;
-      shifts.dawn.acertos = 3;
-      totalAnswersExamined = 111;
-    }
+
 
     const calcShift = (s: {
       resolvidas: number;
@@ -353,9 +320,15 @@ export const DailyHabitsAndHourlyExplorer: React.FC<DailyHabitsAndHourlyExplorer
     const night = calcShift(shifts.night);
     const dawn = calcShift(shifts.dawn);
 
-    // Identificação de fadiga cognitiva (queda >= 12% em relação ao melhor turno)
-    const bestShift = [morning, afternoon, night, dawn].reduce((max, curr) => (curr.taxa > max.taxa ? curr : max), morning);
-    const fatigueAlert = (night.taxa > 0 && bestShift.taxa - night.taxa >= 12) || (dawn.taxa > 0 && bestShift.taxa - dawn.taxa >= 14);
+    // Identificação de fadiga cognitiva (queda >= 12% em relação ao melhor turno com dados reais)
+    const activeShifts = [morning, afternoon, night, dawn].filter((s) => s.resolvidas > 0);
+    const bestShift = activeShifts.length > 0
+      ? activeShifts.reduce((max, curr) => (curr.taxa > max.taxa ? curr : max), activeShifts[0])
+      : morning;
+    const fatigueAlert = totalAnswersExamined >= 8 && (
+      (night.taxa > 0 && bestShift.taxa - night.taxa >= 12) ||
+      (dawn.taxa > 0 && bestShift.taxa - dawn.taxa >= 14)
+    );
 
     return {
       shifts: [morning, afternoon, night, dawn],
@@ -374,13 +347,13 @@ export const DailyHabitsAndHourlyExplorer: React.FC<DailyHabitsAndHourlyExplorer
     else if (period === '6m') daysCount = 180;
     else if (period === 'all') daysCount = 240;
 
-    const answered = totalAnsweredInPeriod > 0 ? totalAnsweredInPeriod : Object.keys(userAnswers).length || 84;
-    const mediaDiaria = Math.max(1, Math.round(answered / daysCount));
+    const answered = totalAnsweredInPeriod > 0 ? totalAnsweredInPeriod : Object.keys(userAnswers).length;
+    const mediaDiaria = answered > 0 ? Math.max(1, Math.round(answered / daysCount)) : 0;
     const projecaoMensal = Math.round(mediaDiaria * 30);
 
     // Contagem de dias ativos no histórico
-    const activeDays = Object.keys(answersByDateAndHour).length || Math.min(daysCount, 6);
-    const regularidade = Math.min(100, Math.round((activeDays / daysCount) * 100));
+    const activeDays = Object.keys(answersByDateAndHour).length;
+    const regularidade = daysCount > 0 ? Math.min(100, Math.round((activeDays / daysCount) * 100)) : 0;
 
     return {
       mediaDiaria,

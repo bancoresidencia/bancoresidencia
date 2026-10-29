@@ -61,7 +61,6 @@ interface StudentHomeDashboardProps {
   onNavigate: (tab: ActiveTab) => void;
   onContinueList: (list: QuestionList) => void;
   modalidade: Modalidade;
-  onSimulatePercentile?: (percentile: number) => void;
   onStartOfficialExam?: (institution: string, year: number) => void;
 }
 

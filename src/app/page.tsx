@@ -292,15 +292,6 @@ export default function Home() {
     ).length;
   }, [userAnswers]);
 
-  // Simulação de questões extras
-  const [simulatedExtraAnswers, setSimulatedExtraAnswers] = useState<{ total: number; correct: number; unique: number; reviews: number; repeated: number }>({
-    total: 0,
-    correct: 0,
-    unique: 0,
-    reviews: 0,
-    repeated: 0
-  });
-
   // Filtros Avançados
   const [advancedFilters, setAdvancedFilters] = useState<AdvancedFilterState>({
     search: '',
@@ -577,7 +568,15 @@ export default function Home() {
   useEffect(() => {
     if (typeof window === 'undefined') return;
 
-    const storageKey = getUserAnswersStorageKey(user?.id);
+    if (!user) {
+      setUserAnswers({});
+      return;
+    }
+
+    const storageKey = getUserAnswersStorageKey(user.id);
+    const isRealUser = Boolean(user.id && user.id !== DEFAULT_DEMO_USER.id);
+    const accountCreationTs = user.createdAt ? new Date(user.createdAt).getTime() : 0;
+
     let loaded: Record<string, UserAnswerItem> = {};
     try {
       const saved = localStorage.getItem(storageKey);
@@ -585,26 +584,24 @@ export default function Home() {
         loaded = JSON.parse(saved);
       }
 
-      // Se for um aluno autenticado em conta real e houver respostas registradas anteriormente como visitante,
-      // migra essas respostas automaticamente para a conta dele para garantir continuidade sem perda de dados
-      if (user?.id && user.id !== DEFAULT_DEMO_USER.id) {
-        const guestSaved = localStorage.getItem('bancoresidencia_user_answers_guest');
-        if (guestSaved) {
+      // Higienização de dados locais: se for usuário real e houver itens com timestamp anterior ao cadastro, remove-os
+      if (isRealUser && accountCreationTs > 0) {
+        let hadCorruptedAnswers = false;
+        const cleaned: Record<string, UserAnswerItem> = {};
+        Object.entries(loaded).forEach(([qId, ans]) => {
+          const ansTs = ans.timestamp || 0;
+          if (ansTs === 0 || ansTs >= accountCreationTs - 120000) {
+            cleaned[qId] = ans;
+          } else {
+            hadCorruptedAnswers = true;
+          }
+        });
+        if (hadCorruptedAnswers) {
+          loaded = cleaned;
           try {
-            const guestAnswers: Record<string, UserAnswerItem> = JSON.parse(guestSaved);
-            let hasNewFromGuest = false;
-            Object.entries(guestAnswers).forEach(([qId, ans]) => {
-              if (!loaded[qId]) {
-                loaded[qId] = ans;
-                hasNewFromGuest = true;
-              }
-            });
-            if (hasNewFromGuest) {
-              localStorage.setItem(storageKey, JSON.stringify(loaded));
-              localStorage.removeItem('bancoresidencia_user_answers_guest');
-            }
-          } catch {
-            // ignore
+            localStorage.setItem(storageKey, JSON.stringify(loaded));
+          } catch (e) {
+            console.error(e);
           }
         }
       }
@@ -615,72 +612,101 @@ export default function Home() {
     setUserAnswers(loaded);
 
     // Se estiver logado em conta real no Supabase, sincroniza com o banco de dados remoto
-    if (user?.id && user.id !== DEFAULT_DEMO_USER.id) {
+    if (isRealUser) {
       const supabase = createClient();
-      supabase
+
+      // 1. Limpeza no Supabase de quaisquer registros errôneos com data anterior ao cadastro do aluno
+      if (accountCreationTs > 0) {
+        supabase
+          .from('user_answers')
+          .delete()
+          .eq('user_id', user.id)
+          .lt('answered_at', new Date(accountCreationTs - 120000).toISOString())
+          .then(({ error: delErr }) => {
+            if (delErr) {
+              console.error('Erro ao higienizar respostas anteriores ao cadastro no Supabase:', delErr);
+            }
+          });
+      }
+
+      // 2. Consulta apenas respostas válidas do aluno
+      let query = supabase
         .from('user_answers')
         .select('question_id, selected_option, is_correct, answered_at')
-        .eq('user_id', user.id)
-        .then(({ data, error }) => {
-          if (!error && data) {
-            setUserAnswers((prev) => {
-              const merged = { ...prev };
-              let changed = false;
-              const remoteQuestionIds = new Set(data.map((r) => r.question_id));
+        .eq('user_id', user.id);
 
-              // 1. Incorpora respostas remotas para a máquina local
-              data.forEach((row) => {
-                if (!merged[row.question_id]) {
-                  changed = true;
-                  const q = supabaseQuestions.find((item) => item.id === row.question_id);
-                  merged[row.question_id] = {
-                    letter: row.selected_option as 'A' | 'B' | 'C' | 'D' | 'E',
-                    isCorrect: row.is_correct,
-                    timestamp: new Date(row.answered_at).getTime(),
-                    difficulty: q?.difficulty || 'Médio',
-                    isAnulada: q?.isAnulada || false,
-                    specialty: q?.especialidade,
-                    tema: q?.tema,
-                    foco: q?.foco,
-                    subfoco: q?.subfoco
-                  };
-                }
-              });
+      if (accountCreationTs > 0) {
+        query = query.gte('answered_at', new Date(accountCreationTs - 120000).toISOString());
+      }
 
-              // 2. Se houver respostas locais que ainda não estão no Supabase, faz o upload em segundo plano
-              const missingInRemote = Object.entries(prev).filter(([qId]) => !remoteQuestionIds.has(qId));
-              if (missingInRemote.length > 0) {
-                const upsertPayload = missingInRemote.map(([qId, ans]) => ({
-                  user_id: user.id,
-                  question_id: qId,
-                  selected_option: ans.letter,
-                  is_correct: ans.isCorrect,
-                  answered_at: new Date(ans.timestamp || Date.now()).toISOString()
-                }));
-                supabase
-                  .from('user_answers')
-                  .upsert(upsertPayload, { onConflict: 'user_id,question_id' })
-                  .then(({ error: upsertErr }) => {
-                    if (upsertErr) {
-                      console.error('Erro ao sincronizar respostas pendentes com Supabase:', upsertErr);
-                    }
-                  });
+      query.then(({ data, error }) => {
+        if (!error && data) {
+          setUserAnswers(() => {
+            const merged: Record<string, UserAnswerItem> = { ...loaded };
+            let changed = false;
+            const remoteQuestionIds = new Set(data.map((r) => r.question_id));
+
+            // Incorpora respostas remotas
+            data.forEach((row) => {
+              const rowTs = new Date(row.answered_at).getTime();
+              if (accountCreationTs > 0 && rowTs < accountCreationTs - 120000) return;
+
+              if (!merged[row.question_id]) {
+                changed = true;
+                const q = supabaseQuestions.find((item) => item.id === row.question_id);
+                merged[row.question_id] = {
+                  letter: row.selected_option as 'A' | 'B' | 'C' | 'D' | 'E',
+                  isCorrect: row.is_correct,
+                  timestamp: rowTs,
+                  difficulty: q?.difficulty || 'Médio',
+                  isAnulada: q?.isAnulada || false,
+                  specialty: q?.especialidade,
+                  tema: q?.tema,
+                  foco: q?.foco,
+                  subfoco: q?.subfoco
+                };
               }
-
-              if (changed) {
-                try {
-                  localStorage.setItem(storageKey, JSON.stringify(merged));
-                } catch (e) {
-                  console.error(e);
-                }
-                return merged;
-              }
-              return prev;
             });
-          }
-        });
+
+            // Se houver respostas locais válidas que ainda não estão no Supabase, faz o upload
+            const missingInRemote = Object.entries(loaded).filter(([qId, ans]) => {
+              if (remoteQuestionIds.has(qId)) return false;
+              const ansTs = ans.timestamp || 0;
+              if (accountCreationTs > 0 && ansTs > 0 && ansTs < accountCreationTs - 120000) return false;
+              return true;
+            });
+
+            if (missingInRemote.length > 0) {
+              const upsertPayload = missingInRemote.map(([qId, ans]) => ({
+                user_id: user.id,
+                question_id: qId,
+                selected_option: ans.letter,
+                is_correct: ans.isCorrect,
+                answered_at: new Date(ans.timestamp || Date.now()).toISOString()
+              }));
+              supabase
+                .from('user_answers')
+                .upsert(upsertPayload, { onConflict: 'user_id,question_id' })
+                .then(({ error: upsertErr }) => {
+                  if (upsertErr) {
+                    console.error('Erro ao sincronizar respostas pendentes com Supabase:', upsertErr);
+                  }
+                });
+            }
+
+            if (changed) {
+              try {
+                localStorage.setItem(storageKey, JSON.stringify(merged));
+              } catch (e) {
+                console.error(e);
+              }
+            }
+            return merged;
+          });
+        }
+      });
     }
-  }, [user?.id, supabaseQuestions]);
+  }, [user?.id, user?.createdAt, supabaseQuestions]);
   const [totalSupabaseCount, setTotalSupabaseCount] = useState<number>(132965);
   const [totalGlobalQuestions, setTotalGlobalQuestions] = useState<number>(132965);
   const [isLoadingSupabase, setIsLoadingSupabase] = useState<boolean>(false);
@@ -1289,25 +1315,6 @@ export default function Home() {
     setActiveTab('banco');
   };
 
-  const handleSimulateDemoQuestions = (amount: number) => {
-    setSimulatedExtraAnswers((prev) => {
-      const nextTotal = prev.total + amount;
-      const addedCorrect = Math.round(amount * 0.78);
-      const nextCorrect = prev.correct + addedCorrect;
-      const nextUnique = prev.unique + Math.round(amount * 0.75);
-      const nextReviews = prev.reviews + Math.round(amount * 0.15);
-      const nextRepeated = prev.repeated + (amount - Math.round(amount * 0.75) - Math.round(amount * 0.15));
-
-      return {
-        total: nextTotal,
-        correct: nextCorrect,
-        unique: nextUnique,
-        reviews: nextReviews,
-        repeated: nextRepeated
-      };
-    });
-  };
-
   // Criar nova lista diretamente a partir do filtro configurado: abre o modal de distribuição por especialidade/tema/foco/subfoco e seleção de pasta
   const handleCreateListFromFilter = () => {
     setIsCreateCadernoModalOpen(true);
@@ -1666,23 +1673,16 @@ export default function Home() {
     setBancoMode('filtros');
   };
 
-  // Simulação / Teste de Percentil (padrão null para exibir estatísticas 100% reais do aluno)
-  const [simulatedTestPercentile, setSimulatedTestPercentile] = useState<number | null>(null);
-
   // Cálculo das estatísticas reais e funcionais em tempo real
   const stats: UserStats = useMemo(() => {
-    const rawAnswered = Object.keys(userAnswers).length;
-    const rawCorrect = Object.values(userAnswers).filter((a) => a.isCorrect).length;
-    const rawIncorrect = rawAnswered - rawCorrect;
-
-    const totalAnswered = rawAnswered + simulatedExtraAnswers.total;
-    const totalCorrect = rawCorrect + simulatedExtraAnswers.correct;
-    const totalIncorrect = rawIncorrect + (simulatedExtraAnswers.total - simulatedExtraAnswers.correct);
+    const totalAnswered = Object.keys(userAnswers).length;
+    const totalCorrect = Object.values(userAnswers).filter((a) => a.isCorrect).length;
+    const totalIncorrect = totalAnswered - totalCorrect;
 
     const accuracyRate = totalAnswered > 0 ? (totalCorrect / totalAnswered) * 100 : 0;
     const uniqueAnswered = totalAnswered;
-    const reviews = simulatedExtraAnswers.reviews;
-    const repeated = simulatedExtraAnswers.repeated;
+    const reviews = 0;
+    const repeated = 0;
 
     const userAttemptsList: UserAttempt[] = Object.entries(userAnswers).map(([qid, a]) => ({
       question_id: qid,
@@ -1697,25 +1697,12 @@ export default function Home() {
       subfoco: a.subfoco
     }));
 
-    let percentileInfo = calculatePercentile({
+    const percentileInfo = calculatePercentile({
       totalAnswered,
       totalCorrect,
       filters: performanceFilters,
       attempts: userAttemptsList.length > 0 ? userAttemptsList : undefined
     });
-
-    if (simulatedTestPercentile !== null) {
-      percentileInfo = {
-        ...percentileInfo,
-        percentile: simulatedTestPercentile,
-        status: simulatedTestPercentile >= 70 ? 'official' : 'provisional',
-        missingForApprox: 0,
-        missingForOfficial: 0,
-        adjustedScore: (simulatedTestPercentile / 100) * 1.85,
-        eligibleTotalStudents: 850,
-        rankPosition: Math.max(1, Math.round((1 - simulatedTestPercentile / 100) * 850))
-      };
-    }
 
     // Mapa das 6 especialidades médicas oficiais dos filtros
     const specialtyMap: Record<string, { total: number; correct: number }> = {
@@ -1770,26 +1757,6 @@ export default function Home() {
         }
       }
     });
-
-    if (simulatedExtraAnswers.total > 0) {
-      const specs = [
-        'Clínica Médica',
-        'Cirurgia Geral',
-        'Pediatria',
-        'Ginecologia',
-        'Obstetrícia',
-        'Medicina Preventiva e Social'
-      ];
-      const perSpec = Math.floor(simulatedExtraAnswers.total / specs.length);
-      const studentRatio = totalAnswered > 0 ? (totalCorrect / totalAnswered) : 0.70;
-      specs.forEach((sp) => {
-        if (!specialtyMap[sp]) {
-          specialtyMap[sp] = { total: 0, correct: 0 };
-        }
-        specialtyMap[sp].total += perSpec;
-        specialtyMap[sp].correct += Math.round(perSpec * studentRatio);
-      });
-    }
 
     const bySpecialty = Object.entries(specialtyMap).map(([specialty, val]) => ({
       specialty,
@@ -1889,7 +1856,7 @@ export default function Home() {
       bySpecialty,
       byTheme
     };
-  }, [userAnswers, simulatedExtraAnswers, performanceFilters, simulatedTestPercentile, supabaseQuestions]);
+  }, [userAnswers, performanceFilters, supabaseQuestions]);
 
   // Procura a última lista que o aluno estava resolvendo (por ID persistido, em andamento, ou mais recente)
   const recentList = useMemo(() => {
@@ -1918,15 +1885,7 @@ export default function Home() {
     name: studentName
   });
 
-  const displayedRanking = officialRanking.map((item) => {
-    if (item.name.includes('(Você)') && simulatedTestPercentile !== null) {
-      return {
-        ...item,
-        percentile: simulatedTestPercentile
-      };
-    }
-    return item;
-  });
+  const displayedRanking = officialRanking;
 
   if (isLoading) {
     return (
@@ -2294,7 +2253,6 @@ export default function Home() {
                 }}
                 onContinueList={handleContinueList}
                 modalidade={performanceFilters.modalidade}
-                onSimulatePercentile={(p) => setSimulatedTestPercentile(p)}
                 onStartOfficialExam={handleStartOfficialExam}
               />
             )
@@ -3005,9 +2963,9 @@ export default function Home() {
               stats={stats}
               filters={performanceFilters}
               userAnswers={userAnswers}
+              user={user}
               onFilterChange={setPerformanceFilters}
               onResetFilters={handleResetPerformanceFilters}
-              onSimulateDemoQuestions={handleSimulateDemoQuestions}
               onNavigateToBancoWithSubfoco={handleNavigateToBancoWithSubfoco}
               onNavigateToCadernoErros={() => {
                 setActiveTab('caderno_erros');
@@ -3023,10 +2981,9 @@ export default function Home() {
                 ranking={displayedRanking}
                 filters={performanceFilters}
                 userQuestions={stats.totalAnswered}
-                userPercentile={simulatedTestPercentile ?? stats.percentileInfo.percentile ?? 78}
+                userPercentile={stats.percentileInfo.percentile ?? 78}
                 userCorrect={stats.totalCorrect}
                 userName={studentName}
-                onSimulateDemoQuestions={handleSimulateDemoQuestions}
               />
             </div>
           )}

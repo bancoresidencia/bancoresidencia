@@ -52,6 +52,8 @@ import {
   Footprints
 } from 'lucide-react';
 import { UserStats, PerformanceFilterState, PeriodFilter, Modalidade, UserAnswerItem } from '@/types';
+import { UserAccount } from '@/types/auth';
+import { DEFAULT_DEMO_USER } from '@/context/AuthContext';
 import { useTheme } from '@/context/ThemeContext';
 import { clinicalHierarchy, mockInstitutionsList, mockBancas } from '@/data/mockQuestions';
 import { AIPerformanceMentorCard } from './AIPerformanceMentorCard';
@@ -178,11 +180,11 @@ interface StatsDashboardProps {
   filters: PerformanceFilterState;
   onFilterChange: (filters: PerformanceFilterState) => void;
   onResetFilters: () => void;
-  onSimulateDemoQuestions?: (amount: number) => void;
   onNavigateToBancoWithSubfoco?: (specialty: string, tema: string, subfoco: string) => void;
   onNavigateToRanking?: () => void;
   userAnswers?: Record<string, UserAnswerItem>;
   onNavigateToCadernoErros?: (specialty?: string, tema?: string) => void;
+  user?: UserAccount | null;
 }
 
 // 6 Especialidades Médicas Oficiais dos Filtros da Plataforma
@@ -293,7 +295,8 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
   onResetFilters,
   onNavigateToBancoWithSubfoco,
   userAnswers = {},
-  onNavigateToCadernoErros
+  onNavigateToCadernoErros,
+  user
 }) => {
   const { mode, accentConfig } = useTheme();
 
@@ -469,6 +472,9 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
     const q = quickPeriodConfig[filters.period] || quickPeriodConfig['all'];
     const factor = q.factor;
 
+    const isRealUser = Boolean(user?.id && user.id !== DEFAULT_DEMO_USER.id);
+    const accountCreationTs = user?.createdAt ? new Date(user.createdAt).getTime() : 0;
+
     // 1. Filtragem das respostas reais do usuário
     const allAnswers = Object.values(userAnswers);
     let filteredAnswers: UserAnswerItem[] = [];
@@ -478,6 +484,12 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
       // eslint-disable-next-line react-hooks/purity
       now = Date.now();
       filteredAnswers = allAnswers.filter((ans) => {
+        // Bloqueio rigoroso de contaminação: qualquer questão com data anterior à criação da conta do aluno é desconsiderada
+        const ts = ans.timestamp || now;
+        if (isRealUser && accountCreationTs > 0 && ts < accountCreationTs - 120000) {
+          return false;
+        }
+
         // Filtro por instituição
         if (filters.institutions.length > 0) {
           const ansBanca = ans.banca || '';
@@ -493,7 +505,6 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
         }
 
         // Filtro por período
-        const ts = ans.timestamp || now;
         if (filters.period === 'custom' && filters.customStartDate && filters.customEndDate) {
           const start = new Date(filters.customStartDate).getTime();
           const end = new Date(filters.customEndDate + 'T23:59:59').getTime();
@@ -522,135 +533,144 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
     }
 
     const hasRealAnswers = filteredAnswers.length > 0;
-      const answered = hasRealAnswers
-        ? filteredAnswers.length
-        : Math.round((stats.totalAnswered || 0) * factor);
-      const correct = hasRealAnswers
-        ? filteredAnswers.filter((a) => a.isCorrect).length
-        : Math.round((stats.totalCorrect || 0) * factor);
-      const incorrect = Math.max(0, answered - correct);
-      const accuracy = answered > 0 ? (correct / answered) * 100 : stats.accuracyRate || 0;
-      const unique = Math.round((stats.uniqueAnswered || (stats.totalAnswered || 0)) * factor);
-      const ineditas = Math.round(unique * 0.9);
+    let answered = 0;
+    let correct = 0;
+    let accuracy = 0;
 
-      // Geração de buckets diários sincronizados com o período selecionado
-      const nowObj = new Date();
-      const todayStart = new Date(nowObj.getFullYear(), nowObj.getMonth(), nowObj.getDate(), 0, 0, 0, 0).getTime();
-      const todayEnd = new Date(nowObj.getFullYear(), nowObj.getMonth(), nowObj.getDate(), 23, 59, 59, 999).getTime();
+    if (hasRealAnswers) {
+      answered = filteredAnswers.length;
+      correct = filteredAnswers.filter((a) => a.isCorrect).length;
+      accuracy = answered > 0 ? (correct / answered) * 100 : 0;
+    } else if (!isRealUser && (stats.totalAnswered || 0) > 0) {
+      // Apenas em modo demonstração local se houver simulação manual de questões
+      answered = Math.round((stats.totalAnswered || 0) * factor);
+      correct = Math.round((stats.totalCorrect || 0) * factor);
+      accuracy = answered > 0 ? (correct / answered) * 100 : stats.accuracyRate || 0;
+    }
 
-      let startDateTs: number;
-      let endDateTs: number = todayEnd;
+    const incorrect = Math.max(0, answered - correct);
+    const unique = answered;
+    const ineditas = Math.round(unique * 0.9);
 
-      if (filters.period === '7d') {
-        startDateTs = todayStart - 6 * 86400000;
-      } else if (filters.period === '30d') {
-        // Padrão: 30 dias contínuos diários
-        startDateTs = todayStart - 29 * 86400000;
-      } else if (filters.period === '3m') {
-        // 3 Meses (~90 dias diários)
-        startDateTs = todayStart - 89 * 86400000;
-      } else if (filters.period === '6m') {
-        // 6 Meses (~180 dias diários)
-        startDateTs = todayStart - 179 * 86400000;
-      } else if (filters.period === 'mes') {
-        // Mês atual do dia 1 até hoje
-        startDateTs = new Date(nowObj.getFullYear(), nowObj.getMonth(), 1, 0, 0, 0, 0).getTime();
-      } else if (filters.period === 'custom' && filters.customStartDate && filters.customEndDate) {
-        const s = new Date(filters.customStartDate + 'T00:00:00').getTime();
-        const e = new Date(filters.customEndDate + 'T23:59:59').getTime();
-        startDateTs = Math.min(s, e);
-        endDateTs = Math.max(s, e);
-      } else if (filters.period === '2026.1') {
-        startDateTs = new Date(2026, 0, 1, 0, 0, 0, 0).getTime();
-        endDateTs = new Date(2026, 5, 30, 23, 59, 59, 999).getTime();
-      } else if (filters.period === '2026.2') {
-        startDateTs = new Date(2026, 6, 1, 0, 0, 0, 0).getTime();
-        endDateTs = new Date(2026, 11, 31, 23, 59, 59, 999).getTime();
+    // Geração de buckets diários sincronizados com o período selecionado
+    const nowObj = new Date();
+    const todayStart = new Date(nowObj.getFullYear(), nowObj.getMonth(), nowObj.getDate(), 0, 0, 0, 0).getTime();
+    const todayEnd = new Date(nowObj.getFullYear(), nowObj.getMonth(), nowObj.getDate(), 23, 59, 59, 999).getTime();
+
+    let startDateTs: number;
+    let endDateTs: number = todayEnd;
+
+    if (filters.period === '7d') {
+      startDateTs = todayStart - 6 * 86400000;
+    } else if (filters.period === '30d') {
+      // Padrão: 30 dias contínuos diários
+      startDateTs = todayStart - 29 * 86400000;
+    } else if (filters.period === '3m') {
+      // 3 Meses (~90 dias diários)
+      startDateTs = todayStart - 89 * 86400000;
+    } else if (filters.period === '6m') {
+      // 6 Meses (~180 dias diários)
+      startDateTs = todayStart - 179 * 86400000;
+    } else if (filters.period === 'mes') {
+      // Mês atual do dia 1 até hoje
+      startDateTs = new Date(nowObj.getFullYear(), nowObj.getMonth(), 1, 0, 0, 0, 0).getTime();
+    } else if (filters.period === 'custom' && filters.customStartDate && filters.customEndDate) {
+      const s = new Date(filters.customStartDate + 'T00:00:00').getTime();
+      const e = new Date(filters.customEndDate + 'T23:59:59').getTime();
+      startDateTs = Math.min(s, e);
+      endDateTs = Math.max(s, e);
+    } else if (filters.period === '2026.1') {
+      startDateTs = new Date(2026, 0, 1, 0, 0, 0, 0).getTime();
+      endDateTs = new Date(2026, 5, 30, 23, 59, 59, 999).getTime();
+    } else if (filters.period === '2026.2') {
+      startDateTs = new Date(2026, 6, 1, 0, 0, 0, 0).getTime();
+      endDateTs = new Date(2026, 11, 31, 23, 59, 59, 999).getTime();
+    } else {
+      // 'all' ou fallback: até máx 90 dias ou primeira resposta
+      if (filteredAnswers.length > 0) {
+        const minTs = Math.min(...filteredAnswers.map((a) => a.timestamp || todayStart));
+        startDateTs = Math.max(minTs, todayStart - 89 * 86400000);
+      } else if (isRealUser && accountCreationTs > 0) {
+        startDateTs = Math.max(accountCreationTs, todayStart - 29 * 86400000);
       } else {
-        // 'all' ou fallback: até máx 90 dias ou primeira resposta
-        if (filteredAnswers.length > 0) {
-          const minTs = Math.min(...filteredAnswers.map((a) => a.timestamp || todayStart));
-          startDateTs = Math.max(minTs, todayStart - 89 * 86400000);
-        } else {
-          startDateTs = todayStart - 29 * 86400000;
-        }
+        startDateTs = todayStart - 29 * 86400000;
       }
+    }
 
-      const totalDays = Math.max(1, Math.min(185, Math.round((endDateTs - startDateTs) / 86400000) + 1));
-      const daysOfWeekShort = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'];
-      const monthNamesLong = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
+    const totalDays = Math.max(1, Math.min(185, Math.round((endDateTs - startDateTs) / 86400000) + 1));
+    const daysOfWeekShort = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'];
+    const monthNamesLong = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
 
-      interface DailyRawItem {
-        label: string;
-        date: string;
-        dateFull: string;
-        resolvidas: number;
-        acertos: number;
-        erros: number;
-      }
+    interface DailyRawItem {
+      label: string;
+      date: string;
+      dateFull: string;
+      resolvidas: number;
+      acertos: number;
+      erros: number;
+    }
 
-      const dailyRawItems: DailyRawItem[] = [];
+    const dailyRawItems: DailyRawItem[] = [];
 
-      for (let i = 0; i < totalDays; i++) {
-        const d = new Date(startDateTs + i * 86400000);
-        const dayStart = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 0, 0, 0, 0).getTime();
-        const dayEnd = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 23, 59, 59, 999).getTime();
+    for (let i = 0; i < totalDays; i++) {
+      const d = new Date(startDateTs + i * 86400000);
+      const dayStart = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 0, 0, 0, 0).getTime();
+      const dayEnd = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 23, 59, 59, 999).getTime();
 
-        const dayStr = String(d.getDate()).padStart(2, '0');
-        const monthStr = String(d.getMonth() + 1).padStart(2, '0');
-        const dateFormatted = `${dayStr}/${monthStr}`;
-        const isToday = d.toDateString() === nowObj.toDateString();
-        const label = isToday ? 'Hoje' : dateFormatted;
-        const dateFull = `${daysOfWeekShort[d.getDay()]}, ${d.getDate()} de ${monthNamesLong[d.getMonth()]}`;
+      const dayStr = String(d.getDate()).padStart(2, '0');
+      const monthStr = String(d.getMonth() + 1).padStart(2, '0');
+      const dateFormatted = `${dayStr}/${monthStr}`;
+      const isToday = d.toDateString() === nowObj.toDateString();
+      const label = isToday ? 'Hoje' : dateFormatted;
+      const dateFull = `${daysOfWeekShort[d.getDay()]}, ${d.getDate()} de ${monthNamesLong[d.getMonth()]}`;
 
-        let dayAns = 0;
-        let dayCor = 0;
+      let dayAns = 0;
+      let dayCor = 0;
 
-        if (hasRealAnswers) {
-          const answersInDay = filteredAnswers.filter((ans) => {
-            const ts = ans.timestamp || (hasRealAnswers ? 0 : now);
-            return ts >= dayStart && ts <= dayEnd;
-          });
-          dayCor = answersInDay.filter((a) => a.isCorrect).length;
-          dayAns = answersInDay.length;
-        } else {
-          // Se não houver respostas em userAnswers, mas houver stats agregados
-          const simWeight = (1 / totalDays) * (0.8 + 0.4 * Math.sin(i / 3));
-          dayAns = Math.max(0, Math.round(answered * simWeight));
-          dayCor = Math.min(dayAns, Math.max(0, Math.round(dayAns * (accuracy / 100))));
-        }
-
-        const dayErr = Math.max(0, dayAns - dayCor);
-
-        dailyRawItems.push({
-          label,
-          date: dateFormatted,
-          dateFull,
-          resolvidas: dayAns,
-          acertos: dayCor,
-          erros: dayErr
+      // Se o dia for anterior ao cadastro em conta real, total de resoluções é estritamente 0
+      if (isRealUser && accountCreationTs > 0 && dayEnd < accountCreationTs - 120000) {
+        dayAns = 0;
+        dayCor = 0;
+      } else if (hasRealAnswers) {
+        const answersInDay = filteredAnswers.filter((ans) => {
+          const ts = ans.timestamp || 0;
+          return ts >= dayStart && ts <= dayEnd;
         });
+        dayCor = answersInDay.filter((a) => a.isCorrect).length;
+        dayAns = answersInDay.length;
       }
 
-      // Cálculo de Média Móvel Suave (Linha de Tendência)
-      const windowSize = totalDays <= 10 ? 2 : totalDays <= 31 ? 3 : 5;
+      const dayErr = Math.max(0, dayAns - dayCor);
 
-      const chartData = dailyRawItems.map((item, idx) => {
-        const startIdx = Math.max(0, idx - windowSize + 1);
-        const slice = dailyRawItems.slice(startIdx, idx + 1);
-        const avgTotal = slice.reduce((acc, curr) => acc + curr.resolvidas, 0) / slice.length;
-        const avgAcertos = slice.reduce((acc, curr) => acc + curr.acertos, 0) / slice.length;
-
-        return {
-          ...item,
-          answered: item.resolvidas,
-          correct: item.acertos,
-          trendTotal: Number(avgTotal.toFixed(1)),
-          trendAcertos: Number(avgAcertos.toFixed(1))
-        };
+      dailyRawItems.push({
+        label,
+        date: dateFormatted,
+        dateFull,
+        resolvidas: dayAns,
+        acertos: dayCor,
+        erros: dayErr
       });
+    }
+
+    // Cálculo de Média Móvel Suave (Linha de Tendência)
+    const windowSize = totalDays <= 10 ? 2 : totalDays <= 31 ? 3 : 5;
+
+    const chartData = dailyRawItems.map((item, idx) => {
+      const startIdx = Math.max(0, idx - windowSize + 1);
+      const slice = dailyRawItems.slice(startIdx, idx + 1);
+      const avgTotal = slice.reduce((acc, curr) => acc + curr.resolvidas, 0) / slice.length;
+      const avgAcertos = slice.reduce((acc, curr) => acc + curr.acertos, 0) / slice.length;
 
       return {
+        ...item,
+        answered: item.resolvidas,
+        correct: item.acertos,
+        trendTotal: Number(avgTotal.toFixed(1)),
+        trendAcertos: Number(avgAcertos.toFixed(1))
+      };
+    });
+
+    return {
       factor,
       label: q.label,
       trendVolume: q.trendVolume,
@@ -658,12 +678,13 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
       answered,
       correct,
       incorrect,
-      accuracy,
+      accuracy: Math.round(accuracy),
       unique,
       ineditas,
-      chartData
+      chartData,
+      dailyRawItems
     };
-  }, [filters, stats, userAnswers]);
+  }, [filters, stats, userAnswers, user]);
 
   // Especialidades mapeadas com as cores dinâmicas do tema ativo
   const dynamicSpecialties = useMemo(() => {

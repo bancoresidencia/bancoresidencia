@@ -13,7 +13,6 @@ interface OfficialRankingProps {
   userPercentile?: number;
   userCorrect?: number;
   userName?: string;
-  onSimulateDemoQuestions?: (amount: number) => void;
 }
 
 export const OfficialRanking: React.FC<OfficialRankingProps> = ({
@@ -22,8 +21,7 @@ export const OfficialRanking: React.FC<OfficialRankingProps> = ({
   userQuestions,
   userPercentile,
   userCorrect = 0,
-  userName = 'Você',
-  onSimulateDemoQuestions
+  userName = 'Você'
 }) => {
   const { accentConfig, mode } = useTheme();
   const [activeRankingTab, setActiveRankingTab] = useState<'official' | 'provisional'>('official');
@@ -200,24 +198,6 @@ export const OfficialRanking: React.FC<OfficialRankingProps> = ({
               )}
             </div>
           </div>
-          {onSimulateDemoQuestions && (
-            <div className="flex sm:flex-col gap-2 shrink-0 w-full sm:w-auto">
-              <button
-                type="button"
-                onClick={() => onSimulateDemoQuestions(150)}
-                className="px-3 py-1.5 rounded-xl text-xs font-bold bg-amber-600 hover:bg-amber-500 text-white transition-all cursor-pointer shadow-xs text-center"
-              >
-                Simular +150
-              </button>
-              <button
-                type="button"
-                onClick={() => onSimulateDemoQuestions(500)}
-                className="px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-800 dark:bg-slate-700 hover:bg-slate-700 dark:hover:bg-slate-600 text-white transition-all cursor-pointer shadow-xs text-center"
-              >
-                Simular +500
-              </button>
-            </div>
-          )}
         </div>
       )}
 
