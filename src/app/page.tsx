@@ -568,14 +568,8 @@ export default function Home() {
   useEffect(() => {
     if (typeof window === 'undefined') return;
 
-    if (!user) {
-      setUserAnswers({});
-      return;
-    }
-
-    const storageKey = getUserAnswersStorageKey(user.id);
-    const isRealUser = Boolean(user.id && user.id !== DEFAULT_DEMO_USER.id);
-    const accountCreationTs = user.createdAt ? new Date(user.createdAt).getTime() : 0;
+    const storageKey = getUserAnswersStorageKey(user?.id);
+    const isRealUser = Boolean(user?.id && user.id !== DEFAULT_DEMO_USER.id);
 
     let loaded: Record<string, UserAnswerItem> = {};
     try {
@@ -584,24 +578,26 @@ export default function Home() {
         loaded = JSON.parse(saved);
       }
 
-      // Higienização de dados locais: se for usuário real e houver itens com timestamp anterior ao cadastro, remove-os
-      if (isRealUser && accountCreationTs > 0) {
-        let hadCorruptedAnswers = false;
-        const cleaned: Record<string, UserAnswerItem> = {};
-        Object.entries(loaded).forEach(([qId, ans]) => {
-          const ansTs = ans.timestamp || 0;
-          if (ansTs === 0 || ansTs >= accountCreationTs - 120000) {
-            cleaned[qId] = ans;
-          } else {
-            hadCorruptedAnswers = true;
-          }
-        });
-        if (hadCorruptedAnswers) {
-          loaded = cleaned;
+      // Se for um aluno autenticado em conta real e houver respostas registradas anteriormente como visitante,
+      // migra essas respostas automaticamente para a conta dele para garantir continuidade sem perda de dados
+      if (isRealUser) {
+        const guestSaved = localStorage.getItem('bancoresidencia_user_answers_guest');
+        if (guestSaved) {
           try {
-            localStorage.setItem(storageKey, JSON.stringify(loaded));
-          } catch (e) {
-            console.error(e);
+            const guestAnswers: Record<string, UserAnswerItem> = JSON.parse(guestSaved);
+            let hasNewFromGuest = false;
+            Object.entries(guestAnswers).forEach(([qId, ans]) => {
+              if (!loaded[qId]) {
+                loaded[qId] = ans;
+                hasNewFromGuest = true;
+              }
+            });
+            if (hasNewFromGuest) {
+              localStorage.setItem(storageKey, JSON.stringify(loaded));
+              localStorage.removeItem('bancoresidencia_user_answers_guest');
+            }
+          } catch {
+            // ignore
           }
         }
       }
@@ -612,68 +608,102 @@ export default function Home() {
     setUserAnswers(loaded);
 
     // Se estiver logado em conta real no Supabase, sincroniza com o banco de dados remoto
-    if (isRealUser) {
+    if (isRealUser && user?.id) {
       const supabase = createClient();
 
-      // 1. Limpeza no Supabase de quaisquer registros errôneos com data anterior ao cadastro do aluno
-      if (accountCreationTs > 0) {
-        supabase
-          .from('user_answers')
-          .delete()
-          .eq('user_id', user.id)
-          .lt('answered_at', new Date(accountCreationTs - 120000).toISOString())
-          .then(({ error: delErr }) => {
-            if (delErr) {
-              console.error('Erro ao higienizar respostas anteriores ao cadastro no Supabase:', delErr);
-            }
-          });
-      }
-
-      // 2. Consulta apenas respostas válidas do aluno
-      let query = supabase
+      // Consulta todas as respostas registradas do aluno
+      supabase
         .from('user_answers')
         .select('question_id, selected_option, is_correct, answered_at')
-        .eq('user_id', user.id);
-
-      if (accountCreationTs > 0) {
-        query = query.gte('answered_at', new Date(accountCreationTs - 120000).toISOString());
-      }
-
-      query.then(({ data, error }) => {
-        if (!error && data) {
-          setUserAnswers(() => {
+        .eq('user_id', user.id)
+        .then(async ({ data, error }) => {
+          if (!error && data) {
+            const remoteQuestionIds = new Set(data.map((r) => r.question_id));
             const merged: Record<string, UserAnswerItem> = { ...loaded };
             let changed = false;
-            const remoteQuestionIds = new Set(data.map((r) => r.question_id));
 
-            // Incorpora respostas remotas
+            // Identifica questões remotas que precisam de metadados clínicos completos
+            const needMetadataIds = data
+              .map((r) => r.question_id)
+              .filter((id) => !merged[id] || !merged[id].specialty || !merged[id].banca);
+
+            // Busca metadados das questões faltantes em lotes de 100
+            const metadataMap = new Map<string, {
+              especialidade?: string;
+              tema?: string;
+              foco?: string;
+              subfoco?: string;
+              banca?: string;
+              difficulty?: 'Fácil' | 'Médio' | 'Difícil' | 'Desconhecido';
+              isAnulada?: boolean;
+              code?: string;
+            }>();
+
+            if (needMetadataIds.length > 0) {
+              const chunkSize = 100;
+              for (let i = 0; i < needMetadataIds.length; i += chunkSize) {
+                const chunk = needMetadataIds.slice(i, i + chunkSize);
+                try {
+                  const { data: qRows } = await supabase
+                    .from('questions')
+                    .select('id, especialidade, tema, foco, subfoco, banca, difficulty, is_anulada, code')
+                    .in('id', chunk);
+
+                  if (qRows) {
+                    qRows.forEach((qr) => {
+                      metadataMap.set(qr.id, {
+                        especialidade: qr.especialidade,
+                        tema: qr.tema,
+                        foco: qr.foco,
+                        subfoco: qr.subfoco,
+                        banca: qr.banca,
+                        difficulty: qr.difficulty as 'Fácil' | 'Médio' | 'Difícil' | 'Desconhecido',
+                        isAnulada: Boolean(qr.is_anulada),
+                        code: qr.code
+                      });
+                    });
+                  }
+                } catch (metaErr) {
+                  console.error('Erro ao buscar metadados das questões do aluno:', metaErr);
+                }
+              }
+            }
+
+            // Incorpora respostas remotas enriquecidas com metadados
             data.forEach((row) => {
               const rowTs = new Date(row.answered_at).getTime();
-              if (accountCreationTs > 0 && rowTs < accountCreationTs - 120000) return;
+              const existing = merged[row.question_id];
+              const qMeta = metadataMap.get(row.question_id) || supabaseQuestions.find((item) => item.id === row.question_id);
 
-              if (!merged[row.question_id]) {
+              if (!existing) {
                 changed = true;
-                const q = supabaseQuestions.find((item) => item.id === row.question_id);
                 merged[row.question_id] = {
                   letter: row.selected_option as 'A' | 'B' | 'C' | 'D' | 'E',
                   isCorrect: row.is_correct,
                   timestamp: rowTs,
-                  difficulty: q?.difficulty || 'Médio',
-                  isAnulada: q?.isAnulada || false,
-                  specialty: q?.especialidade,
-                  tema: q?.tema,
-                  foco: q?.foco,
-                  subfoco: q?.subfoco
+                  difficulty: qMeta?.difficulty || 'Médio',
+                  isAnulada: qMeta?.isAnulada || false,
+                  specialty: qMeta?.especialidade,
+                  tema: qMeta?.tema,
+                  foco: qMeta?.foco,
+                  subfoco: qMeta?.subfoco,
+                  banca: qMeta?.banca,
+                  code: qMeta?.code
                 };
+              } else if (!existing.specialty && qMeta?.especialidade) {
+                changed = true;
+                existing.specialty = qMeta.especialidade;
+                existing.tema = qMeta.tema || existing.tema;
+                existing.foco = qMeta.foco || existing.foco;
+                existing.subfoco = qMeta.subfoco || existing.subfoco;
+                existing.banca = qMeta.banca || existing.banca;
+                existing.code = qMeta.code || existing.code;
               }
             });
 
             // Se houver respostas locais válidas que ainda não estão no Supabase, faz o upload
-            const missingInRemote = Object.entries(loaded).filter(([qId, ans]) => {
-              if (remoteQuestionIds.has(qId)) return false;
-              const ansTs = ans.timestamp || 0;
-              if (accountCreationTs > 0 && ansTs > 0 && ansTs < accountCreationTs - 120000) return false;
-              return true;
+            const missingInRemote = Object.entries(loaded).filter(([qId]) => {
+              return !remoteQuestionIds.has(qId);
             });
 
             if (missingInRemote.length > 0) {
@@ -701,12 +731,11 @@ export default function Home() {
                 console.error(e);
               }
             }
-            return merged;
-          });
-        }
-      });
+            setUserAnswers(merged);
+          }
+        });
     }
-  }, [user?.id, user?.createdAt, supabaseQuestions]);
+  }, [user?.id, supabaseQuestions]);
   const [totalSupabaseCount, setTotalSupabaseCount] = useState<number>(132965);
   const [totalGlobalQuestions, setTotalGlobalQuestions] = useState<number>(132965);
   const [isLoadingSupabase, setIsLoadingSupabase] = useState<boolean>(false);

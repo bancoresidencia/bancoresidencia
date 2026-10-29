@@ -473,7 +473,6 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
     const factor = q.factor;
 
     const isRealUser = Boolean(user?.id && user.id !== DEFAULT_DEMO_USER.id);
-    const accountCreationTs = user?.createdAt ? new Date(user.createdAt).getTime() : 0;
 
     // 1. Filtragem das respostas reais do usuário
     const allAnswers = Object.values(userAnswers);
@@ -484,14 +483,10 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
       // eslint-disable-next-line react-hooks/purity
       now = Date.now();
       filteredAnswers = allAnswers.filter((ans) => {
-        // Bloqueio rigoroso de contaminação: qualquer questão com data anterior à criação da conta do aluno é desconsiderada
         const ts = ans.timestamp || now;
-        if (isRealUser && accountCreationTs > 0 && ts < accountCreationTs - 120000) {
-          return false;
-        }
 
         // Filtro por instituição
-        if (filters.institutions.length > 0) {
+        if (filters.institutions && filters.institutions.length > 0) {
           const ansBanca = ans.banca || '';
           const matchInst = filters.institutions.some((inst) =>
             ansBanca.toLowerCase().includes(inst.toLowerCase())
@@ -500,7 +495,13 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
         }
 
         // Filtro por banca
-        if (filters.banca !== 'Todas as Bancas' && ans.banca !== filters.banca) {
+        if (
+          filters.banca &&
+          filters.banca !== 'Todas' &&
+          filters.banca !== 'Todas as Bancas' && filters.banca !== 'Todas' &&
+          ans.banca &&
+          ans.banca !== filters.banca
+        ) {
           return false;
         }
 
@@ -590,8 +591,9 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
       if (filteredAnswers.length > 0) {
         const minTs = Math.min(...filteredAnswers.map((a) => a.timestamp || todayStart));
         startDateTs = Math.max(minTs, todayStart - 89 * 86400000);
-      } else if (isRealUser && accountCreationTs > 0) {
-        startDateTs = Math.max(accountCreationTs, todayStart - 29 * 86400000);
+      } else if (isRealUser && user?.createdAt) {
+        const accTs = new Date(user.createdAt).getTime();
+        startDateTs = accTs > 0 ? Math.max(accTs, todayStart - 29 * 86400000) : todayStart - 29 * 86400000;
       } else {
         startDateTs = todayStart - 29 * 86400000;
       }
@@ -627,11 +629,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
       let dayAns = 0;
       let dayCor = 0;
 
-      // Se o dia for anterior ao cadastro em conta real, total de resoluções é estritamente 0
-      if (isRealUser && accountCreationTs > 0 && dayEnd < accountCreationTs - 120000) {
-        dayAns = 0;
-        dayCor = 0;
-      } else if (hasRealAnswers) {
+      if (hasRealAnswers) {
         const answersInDay = filteredAnswers.filter((ans) => {
           const ts = ans.timestamp || 0;
           return ts >= dayStart && ts <= dayEnd;
@@ -1071,6 +1069,59 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
   return (
     <div className="space-y-6">
       {/* =========================================================================
+          CABEÇALHO DE IDENTIFICAÇÃO DO ALUNO E STATUS DE VÍNCULO
+      ========================================================================== */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-4 sm:p-5 bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl shadow-xs transition-colors">
+        <div className="flex items-center gap-3.5">
+          <div
+            className="w-11 h-11 rounded-2xl flex items-center justify-center font-extrabold text-sm shadow-inner shrink-0"
+            style={{
+              backgroundColor: `${accentConfig.primaryHex}18`,
+              borderColor: `${accentConfig.primaryHex}35`,
+              color: accentConfig.primaryHex,
+              borderWidth: 1
+            }}
+          >
+            {user?.name ? user.name.split(' ').map((n) => n[0]).slice(0, 2).join('').toUpperCase() : 'MR'}
+          </div>
+          <div>
+            <div className="flex flex-wrap items-center gap-2">
+              <h1 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white font-heading tracking-tight">
+                Desempenho de {user?.name || 'Médico Residente'}
+              </h1>
+              <span className="inline-flex items-center gap-1.5 text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/25">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                {user?.id && user.id !== DEFAULT_DEMO_USER.id ? 'Conta Vinculada' : 'Modo Visitante'}
+              </span>
+            </div>
+            <p className="text-xs text-slate-500 dark:text-zinc-400 mt-0.5">
+              {user?.specialtyTarget ? `Foco: ${user.specialtyTarget}` : 'Preparação para Residência Médica'}
+              {user?.college ? ` • ${user.college}` : ''}
+              {` • ${activeMetrics.answered} resoluções registradas no período`}
+            </p>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-4 self-start sm:self-auto border-t sm:border-t-0 pt-3 sm:pt-0 border-[var(--card-border)] w-full sm:w-auto justify-between sm:justify-end">
+          <div className="text-left sm:text-right">
+            <span className="text-[10px] uppercase font-bold text-slate-500 dark:text-zinc-400 tracking-wider block">
+              Aproveitamento Geral
+            </span>
+            <span className="text-lg font-black text-emerald-600 dark:text-emerald-400 tabular-nums">
+              {activeMetrics.accuracy}%
+            </span>
+          </div>
+          <div className="text-left sm:text-right">
+            <span className="text-[10px] uppercase font-bold text-slate-500 dark:text-zinc-400 tracking-wider block">
+              Acertos Líquidos
+            </span>
+            <span className="text-lg font-black text-slate-900 dark:text-white tabular-nums">
+              {activeMetrics.correct} <span className="text-xs font-medium text-slate-500 dark:text-zinc-400">/ {activeMetrics.answered}</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      {/* =========================================================================
           BARRA SUPERIOR: NAVEGAÇÃO DE ABAS + PERÍODO + FILTROS DE BANCAS
       ========================================================================== */}
       <div className="sticky top-[4.5rem] z-20 -mx-4 px-4 sm:-mx-6 sm:px-6 py-3 bg-[var(--bg-page)]/95 dark:bg-[#09090b]/95 backdrop-blur-md border-b border-[var(--card-border)] shadow-xs flex flex-col lg:flex-row lg:items-center justify-between gap-3 transition-colors">
@@ -1265,7 +1316,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               <span>
                 {filters.institutions.length > 0
                   ? `${filters.institutions.length} Inst.`
-                  : filters.banca !== 'Todas as Bancas'
+                  : filters.banca !== 'Todas as Bancas' && filters.banca !== 'Todas'
                   ? filters.banca
                   : 'Todas'}
               </span>
