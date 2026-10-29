@@ -135,6 +135,8 @@ export const AdminReportedQuestions: React.FC = () => {
 
   // Estado e handler de Atualização Direta e Automática no Supabase (1 clique)
   const [quickSavingReportId, setQuickSavingReportId] = useState<string | null>(null);
+  // Confirmação pendente: { reportId, letter } — aguarda 2º clique para executar
+  const [pendingConfirm, setPendingConfirm] = useState<{ reportId: string; letter: string } | null>(null);
 
   const handleQuickUpdateGabarito = async (report: QuestionReport, newLetter: string) => {
     const isAnulada = newLetter === 'ANULADA';
@@ -675,25 +677,53 @@ export const AdminReportedQuestions: React.FC = () => {
                       const isSavingThis = quickSavingReportId === report.id;
                       const isCurrentDb = q?.correctAnswer === letra;
                       const isStaged = staging && staging.reportId === report.id && staging.newLetter === letra;
+                      const isPendingThis =
+                        pendingConfirm?.reportId === report.id && pendingConfirm?.letter === letra;
+
+                      const handleLetterClick = () => {
+                        if (isCurrentDb) return; // já é o gabarito atual, nada a fazer
+                        if (isPendingThis) {
+                          // 2º clique: confirma e executa
+                          setPendingConfirm(null);
+                          handleQuickUpdateGabarito(report, letra);
+                        } else {
+                          // 1º clique: entra em modo de confirmação pendente
+                          setPendingConfirm({ reportId: report.id, letter: letra });
+                          // Cancela a confirmação automaticamente após 4 s se não houver 2º clique
+                          setTimeout(() => {
+                            setPendingConfirm((prev) =>
+                              prev?.reportId === report.id && prev?.letter === letra ? null : prev
+                            );
+                          }, 4000);
+                        }
+                      };
 
                       return (
                         <button
                           key={letra}
                           type="button"
                           disabled={isSavingThis}
-                          onClick={() => handleQuickUpdateGabarito(report, letra)}
+                          onClick={handleLetterClick}
                           className={`px-2.5 py-1 rounded-md text-[11px] font-mono font-bold transition-all cursor-pointer flex items-center gap-1 ${
-                            isStaged
+                            isPendingThis
+                              ? 'bg-orange-500 text-white ring-2 ring-orange-400 ring-offset-2 dark:ring-offset-zinc-900 shadow-sm animate-pulse'
+                              : isStaged
                               ? 'bg-amber-500 text-white ring-2 ring-amber-400 ring-offset-2 dark:ring-offset-zinc-900 shadow-sm'
                               : isCurrentDb
-                              ? 'bg-emerald-600 text-white shadow-xs'
+                              ? 'bg-emerald-600 text-white shadow-xs cursor-default'
                               : 'bg-zinc-100 dark:bg-zinc-800 hover:bg-emerald-500 hover:text-white dark:hover:bg-emerald-600 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700'
                           }`}
-                          title={`Substituir imediatamente por [${letra}] e gravar automaticamente no Supabase`}
+                          title={
+                            isPendingThis
+                              ? `Clique novamente para confirmar [${letra}] — cancela em 4 s`
+                              : isCurrentDb
+                              ? `Gabarito atual: [${letra}]`
+                              : `Clique 1× para selecionar, clique 2× para gravar [${letra}] no Supabase`
+                          }
                         >
                           {isSavingThis ? <RotateCcw className="w-3 h-3 animate-spin" /> : null}
                           {isStaged && !isSavingThis ? <Sparkles className="w-3 h-3 animate-pulse" /> : null}
-                          <span>{letra}</span>
+                          <span>{isPendingThis ? `✓ ${letra}?` : letra}</span>
                         </button>
                       );
                     })}

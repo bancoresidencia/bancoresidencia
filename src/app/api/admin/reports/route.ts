@@ -85,44 +85,54 @@ export async function GET(req: NextRequest) {
       )
     );
 
-    // 3. Executa queries em paralelo para enriquecer os dados
-    const [questionsRes, profilesRes] = await Promise.all([
-      questionIdentifiers.length > 0
-        ? supabaseAdmin
-            .from('questions')
-            .select('id, code, institution, banca, year, especialidade, tema, statement, options, correct_answer, commentary, is_anulada')
-            .in('id', questionIdentifiers)
-        : Promise.resolve({ data: [] }),
+    // 3. Separa identifiers: UUIDs (busca por id) e não-UUIDs (busca por code)
+    const uuidIdentifiers = questionIdentifiers.filter((id) => isValidUuid(id));
+    const codeIdentifiers = questionIdentifiers.filter((id) => !isValidUuid(id));
+
+    const questionSelect = 'id, code, institution, banca, year, especialidade, tema, statement, options, correct_answer, commentary, is_anulada';
+
+    // Executa queries em paralelo: por UUID, por código e profiles
+    const [byIdRes, byCodeRes, profilesRes] = await Promise.all([
+      uuidIdentifiers.length > 0
+        ? supabaseAdmin.from('questions').select(questionSelect).in('id', uuidIdentifiers)
+        : Promise.resolve({ data: [] as Record<string, unknown>[] }),
+      codeIdentifiers.length > 0
+        ? supabaseAdmin.from('questions').select(questionSelect).in('code', codeIdentifiers)
+        : Promise.resolve({ data: [] as Record<string, unknown>[] }),
       userIds.length > 0
         ? supabaseAdmin
             .from('profiles')
             .select('id, name, email, college, specialty_target, avatar_url, role')
             .in('id', userIds)
-        : Promise.resolve({ data: [] })
+        : Promise.resolve({ data: [] as Record<string, unknown>[] })
     ]);
 
+    // Constrói o mapa indexando tanto por UUID quanto por code para cobertura máxima
     const questionMap = new Map<string, Record<string, unknown>>();
-    if (questionsRes.data) {
-      (questionsRes.data as Array<Record<string, unknown>>).forEach((q) => {
-        if (q.id) questionMap.set(String(q.id), q);
-        if (q.code) questionMap.set(String(q.code), q);
-      });
-    }
+    const indexQuestion = (q: Record<string, unknown>) => {
+      if (q.id) questionMap.set(String(q.id), q);
+      if (q.code) questionMap.set(String(q.code), q);
+    };
+    if (byIdRes.data) (byIdRes.data as Array<Record<string, unknown>>).forEach(indexQuestion);
+    if (byCodeRes.data) (byCodeRes.data as Array<Record<string, unknown>>).forEach(indexQuestion);
 
-    // Fallback: se houver questões que não foram encontradas por id, tenta por 'code'
+    // Fallback extra: qualquer identifier ainda ausente é buscado tanto por id quanto por code
     const missingIdentifiers = questionIdentifiers.filter((id) => !questionMap.has(id));
     if (missingIdentifiers.length > 0) {
-      const { data: byCodeData } = await supabaseAdmin
-        .from('questions')
-        .select('id, code, institution, banca, year, especialidade, tema, statement, options, correct_answer, commentary, is_anulada')
-        .in('code', missingIdentifiers);
+      const missingUuids = missingIdentifiers.filter((id) => isValidUuid(id));
+      const missingCodes = missingIdentifiers.filter((id) => !isValidUuid(id));
 
-      if (byCodeData) {
-        (byCodeData as Array<Record<string, unknown>>).forEach((q) => {
-          if (q.id) questionMap.set(String(q.id), q);
-          if (q.code) questionMap.set(String(q.code), q);
-        });
-      }
+      const [fallbackById, fallbackByCode] = await Promise.all([
+        missingUuids.length > 0
+          ? supabaseAdmin.from('questions').select(questionSelect).in('id', missingUuids)
+          : Promise.resolve({ data: [] as Record<string, unknown>[] }),
+        missingCodes.length > 0
+          ? supabaseAdmin.from('questions').select(questionSelect).in('code', missingCodes)
+          : Promise.resolve({ data: [] as Record<string, unknown>[] })
+      ]);
+
+      if (fallbackById.data) (fallbackById.data as Array<Record<string, unknown>>).forEach(indexQuestion);
+      if (fallbackByCode.data) (fallbackByCode.data as Array<Record<string, unknown>>).forEach(indexQuestion);
     }
 
     const profileMap = new Map<string, Record<string, unknown>>();
