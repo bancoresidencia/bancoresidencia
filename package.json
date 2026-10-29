@@ -34,7 +34,9 @@
     "match:medbrave": "node scripts/match_medbrave_strict.mjs",
     "download:images": "node scripts/download_medbrave_images.mjs",
     "token:medbrave": "node scripts/set_medbrave_token.mjs",
-    "login:medbrave": "node scripts/open_medevo_login.mjs"
+    "login:medbrave": "node scripts/open_medevo_login.mjs",
+    "solve:pipeline": "node scripts/solve_pipeline.mjs",
+    "solve:specialty": "node scripts/batch_solve_specialty.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.7",

@@ -2,6 +2,8 @@ import { spawn } from 'child_process';
 import path from 'path';
 
 const specialties = [
+  'nefrologia',
+  'ginecologia',
   'obstetricia',
   'pediatria',
   'cirurgia',

@@ -91,3 +91,4 @@ CREATE INDEX IF NOT EXISTS idx_question_reports_created_at    ON public.question
 CREATE INDEX IF NOT EXISTS idx_question_reports_status_cat    ON public.question_reports(status, created_at DESC);
 
 COMMIT;
+

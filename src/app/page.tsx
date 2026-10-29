@@ -343,7 +343,7 @@ export default function Home() {
   // Filtros de Desempenho e Ranking (Padrão: 6 meses e Residência)
   const [performanceFilters, setPerformanceFilters] = useState<PerformanceFilterState>({
     modalidade: 'Residência',
-    period: '6m',
+    period: '30d',
     institutions: [],
     banca: 'Todas'
   });
@@ -371,7 +371,7 @@ export default function Home() {
   const handleResetPerformanceFilters = () => {
     setPerformanceFilters({
       modalidade: 'Residência',
-      period: '6m',
+      period: '30d',
       institutions: [],
       banca: 'Todas'
     });

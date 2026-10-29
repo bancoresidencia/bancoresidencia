@@ -82,7 +82,9 @@ async function main() {
 
   const CONCURRENCY = 4; // 4 streams simultâneos contínuos (respeita 15 RPM por chave)
   let processedCount = 0;
+  let lastFileSaveCount = 0;
   let batchBuffer = [];
+  let shouldAbort = false;
   const startTime = Date.now();
 
   let queueIndex = 0;
@@ -91,6 +93,7 @@ async function main() {
     await new Promise(r => setTimeout(r, workerId * 600));
 
     while (queueIndex < pending.length) {
+      if (shouldAbort) break;
       const currentIdx = queueIndex++;
       const q = pending[currentIdx];
       if (!q) break;
@@ -123,8 +126,9 @@ async function main() {
           // Sincroniza checkpoint e Supabase de forma otimizada a cada 15 questões
           if (batchBuffer.length >= 15) {
             fs.writeFileSync(checkpointPath, JSON.stringify(Array.from(solvedMap.values())));
-            if (processedCount % 60 === 0) {
+            if (processedCount - lastFileSaveCount >= 50) {
               fs.writeFileSync(filePath, JSON.stringify(questions, null, 2));
+              lastFileSaveCount = processedCount;
             }
             if (syncSupabase && batchBuffer.length > 0) {
               const toSync = [...batchBuffer];
@@ -136,6 +140,11 @@ async function main() {
         }
       } catch (err) {
         console.error(`Erro ao resolver ${q.id}:`, err.message);
+        if (err.message && err.message.includes('esgotaram suas cotas diárias')) {
+          console.error(`🛑 TODAS AS CHAVES ESGOTARAM COTA. Interrompendo para evitar loop vazio.`);
+          shouldAbort = true;
+          break;
+        }
       }
     }
   });
@@ -152,6 +161,11 @@ async function main() {
     console.log(`💾 Buffer final sincronizado.`);
   }
 
+
+  if (shouldAbort) {
+    console.error('🛑 Execução interrompida por esgotamento de cotas em todas as chaves.');
+    process.exit(1);
+  }
 
   console.log('\n======================================================');
   console.log(`🎉 RODADA FINALIZADA COM SUCESSO!`);

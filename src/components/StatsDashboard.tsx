@@ -10,8 +10,12 @@ import {
   Pie,
   Cell,
   CartesianGrid,
-  AreaChart,
-  Area
+
+
+  ComposedChart,
+  Bar,
+  Line,
+  LabelList
 } from 'recharts';
 import {
   Calendar,
@@ -196,6 +200,7 @@ const quickPeriodConfig: Record<string, { factor: number; label: string; trendVo
   '7d': { factor: 0.22, label: '7D', trendVolume: '+18.0%', trendAproveitamento: '-2.1%' },
   '30d': { factor: 0.52, label: '30D', trendVolume: '+24.5%', trendAproveitamento: '+4.2%' },
   'mes': { factor: 0.42, label: 'Mês', trendVolume: '+16.3%', trendAproveitamento: '+3.1%' },
+  '3m': { factor: 0.70, label: '3M', trendVolume: '+26.0%', trendAproveitamento: '+3.5%' },
   '6m': { factor: 0.85, label: '6M', trendVolume: '+29.0%', trendAproveitamento: '+3.8%' },
   '2026.1': { factor: 0.75, label: '2026.1', trendVolume: '+22.4%', trendAproveitamento: '+1.9%' },
   '2026.2': { factor: 0.90, label: '2026.2', trendVolume: '+31.2%', trendAproveitamento: '+2.8%' },
@@ -205,12 +210,22 @@ const quickPeriodConfig: Record<string, { factor: number; label: string; trendVo
 
 type StatsSubTab = 'overview' | 'specialties' | 'weaknesses';
 
+interface CustomEvolutionLabelProps {
+  x?: number | string;
+  y?: number | string;
+  width?: number | string;
+  index?: number;
+}
+
 interface CustomBarTooltipProps {
   active?: boolean;
   payload?: Array<{
     payload: {
       label: string;
       date?: string;
+      dateFull?: string;
+      trendTotal?: number;
+      trendAcertos?: number;
       resolvidas: number;
       acertos: number;
       erros: number;
@@ -223,8 +238,9 @@ const CustomBarTooltip: React.FC<CustomBarTooltipProps> = ({ active, payload, la
   if (active && payload && payload.length) {
     const data = payload[0].payload;
     const taxa = data.resolvidas > 0 ? ((data.acertos / data.resolvidas) * 100).toFixed(1) : '0.0';
+    const taxaErros = data.resolvidas > 0 ? ((data.erros / data.resolvidas) * 100).toFixed(1) : '0.0';
     const isGood = Number(taxa) >= 70;
-    const displayTitle = data.date && data.date !== data.label ? `${data.label} (${data.date})` : (data.date || label);
+    const displayTitle = data.dateFull || (data.date && data.date !== data.label ? `${data.label} (${data.date})` : (data.date || label));
     return (
       <div className="bg-[var(--bg-card)]/95 backdrop-blur-md border border-[var(--card-border)] rounded-xl p-3.5 shadow-2xl min-w-[185px] text-xs">
         <div className="flex items-center justify-between border-b border-[var(--card-border)] pb-2 mb-2.5">
@@ -250,14 +266,18 @@ const CustomBarTooltip: React.FC<CustomBarTooltipProps> = ({ active, payload, la
               <span className="w-2 h-2 rounded-full bg-emerald-500" />
               Acertos:
             </span>
-            <span className="font-bold text-emerald-600 dark:text-emerald-400 font-sans tabular-nums">{data.acertos}</span>
+            <span className="font-bold text-emerald-600 dark:text-emerald-400 font-sans tabular-nums">
+              {data.acertos} <span className="text-[10px] font-normal text-emerald-600/80 dark:text-emerald-400/80">({taxa}%)</span>
+            </span>
           </div>
           <div className="flex items-center justify-between">
             <span className="text-rose-600 dark:text-rose-400 flex items-center gap-1.5 font-medium">
               <span className="w-2 h-2 rounded-full bg-rose-500" />
               Erros:
             </span>
-            <span className="font-bold text-rose-600 dark:text-rose-400 font-sans tabular-nums">{data.erros}</span>
+            <span className="font-bold text-rose-600 dark:text-rose-400 font-sans tabular-nums">
+              {data.erros} <span className="text-[10px] font-normal text-rose-600/80 dark:text-rose-400/80">({taxaErros}%)</span>
+            </span>
           </div>
         </div>
       </div>
@@ -434,6 +454,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
     const map: Record<string, string> = {
       '7d': 'Últimos 7 dias',
       '30d': 'Últimos 30 dias',
+      '3m': 'Últimos 3 meses',
       'mes': 'Mês Atual',
       '6m': 'Últimos 6 meses',
       '2026.1': 'Semestre 2026.1',
@@ -484,6 +505,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
           const startOfMonth = new Date(new Date(now).getFullYear(), new Date(now).getMonth(), 1).getTime();
           return ts >= startOfMonth;
         }
+        if (filters.period === '3m') return ts >= now - 90 * 86400000;
         if (filters.period === '6m') return ts >= now - 180 * 86400000;
         if (filters.period === '2026.1') {
           const start = new Date('2026-01-01').getTime();
@@ -511,230 +533,124 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
       const unique = Math.round((stats.uniqueAnswered || (stats.totalAnswered || 0)) * factor);
       const ineditas = Math.round(unique * 0.9);
 
-      // Geração de buckets adaptativos estritamente sincronizados com o filtro de período
+      // Geração de buckets diários sincronizados com o período selecionado
       const nowObj = new Date();
-      const monthNames = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez'];
-      const dayNames = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'];
+      const todayStart = new Date(nowObj.getFullYear(), nowObj.getMonth(), nowObj.getDate(), 0, 0, 0, 0).getTime();
+      const todayEnd = new Date(nowObj.getFullYear(), nowObj.getMonth(), nowObj.getDate(), 23, 59, 59, 999).getTime();
 
-      interface BucketDef {
-        label: string;
-        date: string;
-        startTs: number;
-        endTs: number;
-        weight: number;
-      }
-
-      const buckets: BucketDef[] = [];
+      let startDateTs: number;
+      let endDateTs: number = todayEnd;
 
       if (filters.period === '7d') {
-        for (let i = 6; i >= 0; i--) {
-          const d = new Date(nowObj);
-          d.setDate(d.getDate() - i);
-          const startTs = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 0, 0, 0, 0).getTime();
-          const endTs = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 23, 59, 59, 999).getTime();
-          const label = i === 0 ? 'Hoje' : dayNames[d.getDay()];
-          const date = `${String(d.getDate()).padStart(2, '0')}/${String(d.getMonth() + 1).padStart(2, '0')}`;
-          buckets.push({
-            label,
-            date,
-            startTs,
-            endTs,
-            weight: 0.08 + (6 - i) * 0.03
-          });
-        }
+        startDateTs = todayStart - 6 * 86400000;
       } else if (filters.period === '30d') {
-        const stepDays = 4;
-        const numPoints = 8;
-        for (let i = numPoints - 1; i >= 0; i--) {
-          const d = new Date(nowObj);
-          d.setDate(d.getDate() - i * stepDays);
-          const startTs = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 0, 0, 0, 0).getTime();
-          const endTs = startTs + stepDays * 86400000 - 1;
-          const label = i === 0 ? 'Hoje' : `${String(d.getDate()).padStart(2, '0')}/${String(d.getMonth() + 1).padStart(2, '0')}`;
-          buckets.push({
-            label,
-            date: label,
-            startTs,
-            endTs,
-            weight: 0.07 + (numPoints - 1 - i) * 0.02
-          });
-        }
-      } else if (filters.period === 'mes') {
-        const curYear = nowObj.getFullYear();
-        const curMonth = nowObj.getMonth();
-        const curDay = nowObj.getDate();
-        const numPoints = Math.min(7, Math.max(4, Math.ceil(curDay / 4)));
-        const step = Math.max(1, Math.floor(curDay / numPoints));
-
-        for (let i = 0; i < numPoints; i++) {
-          const day = Math.min(curDay, 1 + i * step);
-          const startTs = new Date(curYear, curMonth, day, 0, 0, 0, 0).getTime();
-          const endTs = startTs + step * 86400000 - 1;
-          const label = i === numPoints - 1 ? 'Hoje' : `${String(day).padStart(2, '0')}/${monthNames[curMonth]}`;
-          buckets.push({
-            label,
-            date: label,
-            startTs,
-            endTs,
-            weight: 0.09 + i * 0.03
-          });
-        }
+        // Padrão: 30 dias contínuos diários
+        startDateTs = todayStart - 29 * 86400000;
+      } else if (filters.period === '3m') {
+        // 3 Meses (~90 dias diários)
+        startDateTs = todayStart - 89 * 86400000;
       } else if (filters.period === '6m') {
-        // 6 Meses consecutivos mapeados perfeitamente
-        for (let i = 5; i >= 0; i--) {
-          const d = new Date(nowObj.getFullYear(), nowObj.getMonth() - i, 1);
-          const y = d.getFullYear();
-          const m = d.getMonth();
-          const startTs = new Date(y, m, 1, 0, 0, 0, 0).getTime();
-          const endTs = new Date(y, m + 1, 0, 23, 59, 59, 999).getTime();
-          const label = monthNames[m];
-          buckets.push({
-            label,
-            date: `${monthNames[m]}/${String(y).slice(2)}`,
-            startTs,
-            endTs,
-            weight: 0.09 + (5 - i) * 0.035
-          });
-        }
-      } else if (filters.period === '2026.1') {
-        for (let m = 0; m < 6; m++) {
-          const startTs = new Date(2026, m, 1, 0, 0, 0, 0).getTime();
-          const endTs = new Date(2026, m + 1, 0, 23, 59, 59, 999).getTime();
-          buckets.push({
-            label: monthNames[m],
-            date: `${monthNames[m]}/26`,
-            startTs,
-            endTs,
-            weight: 0.11 + m * 0.025
-          });
-        }
-      } else if (filters.period === '2026.2') {
-        for (let m = 6; m < 12; m++) {
-          const startTs = new Date(2026, m, 1, 0, 0, 0, 0).getTime();
-          const endTs = new Date(2026, m + 1, 0, 23, 59, 59, 999).getTime();
-          buckets.push({
-            label: monthNames[m],
-            date: `${monthNames[m]}/26`,
-            startTs,
-            endTs,
-            weight: 0.11 + (m - 6) * 0.025
-          });
-        }
-      } else if (filters.period === 'all') {
-        for (let i = 7; i >= 0; i--) {
-          const d = new Date(nowObj.getFullYear(), nowObj.getMonth() - i, 1);
-          const y = d.getFullYear();
-          const m = d.getMonth();
-          const startTs = new Date(y, m, 1, 0, 0, 0, 0).getTime();
-          const endTs = new Date(y, m + 1, 0, 23, 59, 59, 999).getTime();
-          buckets.push({
-            label: monthNames[m],
-            date: `${monthNames[m]}/${String(y).slice(2)}`,
-            startTs,
-            endTs,
-            weight: 0.08 + (7 - i) * 0.02
-          });
-        }
+        // 6 Meses (~180 dias diários)
+        startDateTs = todayStart - 179 * 86400000;
+      } else if (filters.period === 'mes') {
+        // Mês atual do dia 1 até hoje
+        startDateTs = new Date(nowObj.getFullYear(), nowObj.getMonth(), 1, 0, 0, 0, 0).getTime();
       } else if (filters.period === 'custom' && filters.customStartDate && filters.customEndDate) {
-        const start = new Date(filters.customStartDate).getTime();
-        const end = new Date(filters.customEndDate + 'T23:59:59').getTime();
-        const diffDays = Math.max(1, Math.round((end - start) / 86400000));
-        const numPoints = Math.min(8, Math.max(4, diffDays));
-        const stepMs = (end - start) / numPoints;
-
-        for (let i = 0; i < numPoints; i++) {
-          const pStart = start + i * stepMs;
-          const pEnd = pStart + stepMs;
-          const d = new Date(pStart);
-          const label = `${String(d.getDate()).padStart(2, '0')}/${String(d.getMonth() + 1).padStart(2, '0')}`;
-          buckets.push({
-            label,
-            date: label,
-            startTs: pStart,
-            endTs: pEnd,
-            weight: 1 / numPoints
-          });
-        }
+        const s = new Date(filters.customStartDate + 'T00:00:00').getTime();
+        const e = new Date(filters.customEndDate + 'T23:59:59').getTime();
+        startDateTs = Math.min(s, e);
+        endDateTs = Math.max(s, e);
+      } else if (filters.period === '2026.1') {
+        startDateTs = new Date(2026, 0, 1, 0, 0, 0, 0).getTime();
+        endDateTs = new Date(2026, 5, 30, 23, 59, 59, 999).getTime();
+      } else if (filters.period === '2026.2') {
+        startDateTs = new Date(2026, 6, 1, 0, 0, 0, 0).getTime();
+        endDateTs = new Date(2026, 11, 31, 23, 59, 59, 999).getTime();
       } else {
-        for (let i = 6; i >= 0; i--) {
-          const d = new Date(nowObj);
-          d.setDate(d.getDate() - i);
-          const startTs = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 0, 0, 0, 0).getTime();
-          const endTs = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 23, 59, 59, 999).getTime();
-          const label = i === 0 ? 'Hoje' : dayNames[d.getDay()];
-          buckets.push({
-            label,
-            date: label,
-            startTs,
-            endTs,
-            weight: 0.08 + (6 - i) * 0.03
-          });
+        // 'all' ou fallback: até máx 90 dias ou primeira resposta
+        if (filteredAnswers.length > 0) {
+          const minTs = Math.min(...filteredAnswers.map((a) => a.timestamp || todayStart));
+          startDateTs = Math.max(minTs, todayStart - 89 * 86400000);
+        } else {
+          startDateTs = todayStart - 29 * 86400000;
         }
       }
 
-      // Normaliza pesos
-      const sumWeights = buckets.reduce((acc, b) => acc + b.weight, 0);
-      if (sumWeights > 0) {
-        buckets.forEach((b) => {
-          b.weight = b.weight / sumWeights;
-        });
-      }
+      const totalDays = Math.max(1, Math.min(185, Math.round((endDateTs - startDateTs) / 86400000) + 1));
+      const daysOfWeekShort = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'];
+      const monthNamesLong = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
 
-      // Agrupa respostas reais que caem no intervalo de cada bucket
-      const bucketRealStats = buckets.map((b) => {
-        const answersInBucket = filteredAnswers.filter(
-          (ans) => (ans.timestamp || now) >= b.startTs && (ans.timestamp || now) <= b.endTs
-        );
-        const correctInBucket = answersInBucket.filter((a) => a.isCorrect).length;
-        return {
-          realCount: answersInBucket.length,
-          realCorrect: correctInBucket
-        };
-      });
-
-      const totalRealInBuckets = bucketRealStats.reduce((acc, s) => acc + s.realCount, 0);
-      const hasSufficientRealData = totalRealInBuckets >= 12;
-
-      const chartData: {
+      interface DailyRawItem {
         label: string;
         date: string;
-        answered: number;
-        correct: number;
+        dateFull: string;
         resolvidas: number;
         acertos: number;
         erros: number;
-      }[] = buckets.map((b, idx) => {
-        let ans: number;
-        let cor: number;
+      }
 
-        if (hasSufficientRealData) {
-          ans = bucketRealStats[idx].realCount;
-          cor = bucketRealStats[idx].realCorrect;
+      const dailyRawItems: DailyRawItem[] = [];
+
+      for (let i = 0; i < totalDays; i++) {
+        const d = new Date(startDateTs + i * 86400000);
+        const dayStart = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 0, 0, 0, 0).getTime();
+        const dayEnd = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 23, 59, 59, 999).getTime();
+
+        const dayStr = String(d.getDate()).padStart(2, '0');
+        const monthStr = String(d.getMonth() + 1).padStart(2, '0');
+        const dateFormatted = `${dayStr}/${monthStr}`;
+        const isToday = d.toDateString() === nowObj.toDateString();
+        const label = isToday ? 'Hoje' : dateFormatted;
+        const dateFull = `${daysOfWeekShort[d.getDay()]}, ${d.getDate()} de ${monthNamesLong[d.getMonth()]}`;
+
+        let dayAns = 0;
+        let dayCor = 0;
+
+        if (hasRealAnswers) {
+          const answersInDay = filteredAnswers.filter((ans) => {
+            const ts = ans.timestamp || (hasRealAnswers ? 0 : now);
+            return ts >= dayStart && ts <= dayEnd;
+          });
+          dayCor = answersInDay.filter((a) => a.isCorrect).length;
+          dayAns = answersInDay.length;
         } else {
-          // Harmoniza dados proporcionais à métrica do período, integrando respostas reais quando existentes
-          const simAns = Math.max(1, Math.round(answered * b.weight));
-          const simCor = Math.min(simAns, Math.max(0, Math.round(simAns * (accuracy / 100))));
-
-          const realAns = bucketRealStats[idx].realCount;
-          const realCor = bucketRealStats[idx].realCorrect;
-
-          ans = Math.max(simAns, realAns);
-          cor = realAns > 0 ? Math.min(ans, simCor + realCor) : simCor;
+          // Se não houver respostas em userAnswers, mas houver stats agregados
+          const simWeight = (1 / totalDays) * (0.8 + 0.4 * Math.sin(i / 3));
+          dayAns = Math.max(0, Math.round(answered * simWeight));
+          dayCor = Math.min(dayAns, Math.max(0, Math.round(dayAns * (accuracy / 100))));
         }
 
-        const err = Math.max(0, ans - cor);
+        const dayErr = Math.max(0, dayAns - dayCor);
+
+        dailyRawItems.push({
+          label,
+          date: dateFormatted,
+          dateFull,
+          resolvidas: dayAns,
+          acertos: dayCor,
+          erros: dayErr
+        });
+      }
+
+      // Cálculo de Média Móvel Suave (Linha de Tendência)
+      const windowSize = totalDays <= 10 ? 2 : totalDays <= 31 ? 3 : 5;
+
+      const chartData = dailyRawItems.map((item, idx) => {
+        const startIdx = Math.max(0, idx - windowSize + 1);
+        const slice = dailyRawItems.slice(startIdx, idx + 1);
+        const avgTotal = slice.reduce((acc, curr) => acc + curr.resolvidas, 0) / slice.length;
+        const avgAcertos = slice.reduce((acc, curr) => acc + curr.acertos, 0) / slice.length;
+
         return {
-          label: b.label,
-          date: b.date,
-          answered: ans,
-          correct: cor,
-          resolvidas: ans,
-          acertos: cor,
-          erros: err
+          ...item,
+          answered: item.resolvidas,
+          correct: item.acertos,
+          trendTotal: Number(avgTotal.toFixed(1)),
+          trendAcertos: Number(avgAcertos.toFixed(1))
         };
       });
 
-    return {
+      return {
       factor,
       label: q.label,
       trendVolume: q.trendVolume,
@@ -1228,12 +1144,11 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                   </span>
                   <div className="grid grid-cols-2 gap-1.5 text-xs">
                     {[
+                      { id: '30d', label: '30 Dias (Padrão)' },
+                      { id: '3m', label: '3 Meses' },
+                      { id: '6m', label: '6 Meses' },
                       { id: '7d', label: 'Últimos 7 dias' },
-                      { id: '30d', label: 'Últimos 30 dias' },
                       { id: 'mes', label: 'Mês Atual' },
-                      { id: '6m', label: 'Últimos 6 meses' },
-                      { id: '2026.1', label: 'Semestre 2026.1' },
-                      { id: '2026.2', label: 'Semestre 2026.2' },
                       { id: 'all', label: 'Todo o Histórico' }
                     ].map((preset) => {
                       const isSel = filters.period === preset.id;
@@ -1566,72 +1481,97 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
             </div>
           </div>
 
-          {/* Gráfico de Evolução Diária (Linhas: Feitas vs Acertos) */}
+          {/* Gráfico de Evolução Diária (Barras Empilhadas + Tendência Suave) */}
           <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-5 sm:p-6 space-y-4">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-              <div>
-                <div className="flex items-center gap-2.5">
-                  <h2 className="text-base font-bold text-slate-900 dark:text-white font-heading">
-                    {filters.period === '6m' || filters.period === '2026.1' || filters.period === '2026.2' || filters.period === 'all'
-                      ? 'Evolução Mensal de Resoluções'
-                      : filters.period === '30d'
-                      ? 'Evolução nos Últimos 30 Dias'
-                      : filters.period === 'mes'
-                      ? 'Evolução no Mês Atual'
-                      : filters.period === 'custom'
-                      ? 'Evolução no Período Selecionado'
-                      : 'Evolução Diária de Resoluções'}
-                  </h2>
-                  <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
-                    {activeMetrics.label}
-                  </span>
+              {/* Título limpo 'Evolução' e Pílulas Rápidas de Período */}
+              <div className="flex flex-wrap items-center gap-3">
+                <h2 className="text-base font-bold text-slate-900 dark:text-white font-heading tracking-tight">
+                  Evolução
+                </h2>
+
+                {/* Seletor rápido de janelas: 30D (Padrão), 3M, 6M, Livre */}
+                <div className="flex items-center bg-slate-100 dark:bg-zinc-900/90 p-0.5 rounded-xl border border-slate-200/80 dark:border-zinc-800 text-xs">
+                  <button
+                    type="button"
+                    onClick={() => onFilterChange({ ...filters, period: '30d' })}
+                    className={`px-2.5 py-1 rounded-lg font-semibold transition-all cursor-pointer ${
+                      filters.period === '30d'
+                        ? 'bg-emerald-500 text-white shadow-xs'
+                        : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white'
+                    }`}
+                  >
+                    30 Dias
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => onFilterChange({ ...filters, period: '3m' })}
+                    className={`px-2.5 py-1 rounded-lg font-semibold transition-all cursor-pointer ${
+                      filters.period === '3m'
+                        ? 'bg-emerald-500 text-white shadow-xs'
+                        : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white'
+                    }`}
+                  >
+                    3 Meses
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => onFilterChange({ ...filters, period: '6m' })}
+                    className={`px-2.5 py-1 rounded-lg font-semibold transition-all cursor-pointer ${
+                      filters.period === '6m'
+                        ? 'bg-emerald-500 text-white shadow-xs'
+                        : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white'
+                    }`}
+                  >
+                    6 Meses
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setIsCalendarOpen(true)}
+                    className={`px-2.5 py-1 rounded-lg font-semibold transition-all cursor-pointer flex items-center gap-1 ${
+                      filters.period === 'custom'
+                        ? 'bg-emerald-500 text-white shadow-xs'
+                        : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white'
+                    }`}
+                  >
+                    <Calendar className="w-3 h-3" />
+                    <span>Livre</span>
+                  </button>
                 </div>
-                <p className="text-xs text-slate-600 dark:text-zinc-400 mt-0.5">
-                  {filters.period === '6m' || filters.period === '2026.1' || filters.period === '2026.2' || filters.period === 'all'
-                    ? 'Acompanhamento mensal contínuo de questões resolvidas e acertos obtidos'
-                    : filters.period === '30d'
-                    ? 'Acompanhamento de questões resolvidas e acertos ao longo dos últimos 30 dias'
-                    : filters.period === 'mes'
-                    ? 'Acompanhamento contínuo de questões resolvidas e acertos no mês corrente'
-                    : filters.period === 'custom'
-                    ? 'Acompanhamento de questões resolvidas e acertos no período customizado'
-                    : 'Acompanhamento diário contínuo de questões resolvidas e acertos obtidos'}
-                </p>
               </div>
 
-              {/* Legenda Soft */}
-              <div className="flex items-center gap-4 text-xs">
+              {/* Legenda Concisa */}
+              <div className="flex items-center gap-3.5 text-xs flex-wrap">
                 <span className="flex items-center gap-1.5 text-slate-600 dark:text-zinc-300 font-medium">
-                  <span className="w-2.5 h-2.5 rounded-full bg-slate-400 dark:bg-zinc-500" />
-                  Feitas (Total)
+                  <span className="w-2.5 h-2.5 rounded-xs bg-emerald-500" />
+                  Acertos (Topo)
                 </span>
                 <span className="flex items-center gap-1.5 text-slate-600 dark:text-zinc-300 font-medium">
-                  <span className="w-2.5 h-2.5 rounded-full bg-emerald-500" />
-                  Acertos
+                  <span className="w-2.5 h-2.5 rounded-xs bg-rose-500" />
+                  Erros (Base)
                 </span>
                 <span className="flex items-center gap-1.5 text-slate-600 dark:text-zinc-300 font-medium">
-                  <span className="w-2.5 h-2.5 rounded-full bg-rose-500" />
-                  Erros
+                  <span className="w-3.5 h-0.5 bg-slate-400 dark:bg-zinc-400 opacity-60" />
+                  Tendência
                 </span>
               </div>
             </div>
 
-            <div className="h-56 sm:h-60 w-full pt-2">
+            <div className="h-64 sm:h-72 w-full pt-2">
               <ResponsiveContainer width="100%" height="100%">
-                <AreaChart data={activeMetrics.chartData} margin={{ top: 8, right: 12, left: -22, bottom: 0 }}>
-                  <defs>
-                    <linearGradient id="softGreenGrad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="5%" stopColor="#10B981" stopOpacity={0.20} />
-                      <stop offset="95%" stopColor="#10B981" stopOpacity={0.0} />
-                    </linearGradient>
-                    <linearGradient id="softNeutralGrad" x1="0" y1="0" x2="0" y2="1">
-                      <stop offset="5%" stopColor={mode === 'dark' ? '#71717A' : '#94A3B8'} stopOpacity={0.12} />
-                      <stop offset="95%" stopColor={mode === 'dark' ? '#71717A' : '#94A3B8'} stopOpacity={0.0} />
-                    </linearGradient>
-                  </defs>
-                  <CartesianGrid strokeDasharray="3 3" vertical={false} stroke={mode === 'dark' ? '#27272A' : '#E2E8F0'} strokeOpacity={0.6} />
+                <ComposedChart
+                  data={activeMetrics.chartData}
+                  margin={{ top: 20, right: 12, left: -22, bottom: 0 }}
+                >
+                  <CartesianGrid
+                    strokeDasharray="3 3"
+                    vertical={false}
+                    stroke={mode === 'dark' ? '#27272A' : '#E2E8F0'}
+                    strokeOpacity={0.6}
+                  />
                   <XAxis
                     dataKey="label"
+                    minTickGap={16}
                     axisLine={{ stroke: mode === 'dark' ? '#27272A' : '#CBD5E1' }}
                     tickLine={false}
                     tick={{ fill: mode === 'dark' ? '#71717A' : '#64748B', fontSize: 11, fontWeight: 500 }}
@@ -1643,27 +1583,106 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     tick={{ fill: mode === 'dark' ? '#71717A' : '#64748B', fontSize: 11 }}
                   />
                   <Tooltip content={<CustomBarTooltip />} />
-                  <Area
-                    type="monotone"
-                    dataKey="resolvidas"
-                    name="Total Feitas"
-                    stroke={mode === 'dark' ? '#71717A' : '#94A3B8'}
-                    strokeWidth={2}
-                    fillOpacity={1}
-                    fill="url(#softNeutralGrad)"
-                    activeDot={{ r: 4, stroke: mode === 'dark' ? '#71717A' : '#94A3B8', strokeWidth: 2, fill: mode === 'dark' ? '#121215' : '#ffffff' }}
-                  />
-                  <Area
-                    type="monotone"
+
+                  {/* Barra Vermelha Abaixo (Erros) */}
+                  <Bar
+                    dataKey="erros"
+                    name="Erros"
+                    stackId="evolution"
+                    fill="#F43F5E"
+                    maxBarSize={filters.period === '6m' ? 10 : filters.period === '3m' ? 14 : 26}
+                  >
+                    <LabelList
+                      dataKey="resolvidas"
+                      position="top"
+                      content={(props: CustomEvolutionLabelProps) => {
+                        const { x, y, width, index } = props;
+                        const item = index !== undefined ? activeMetrics.chartData[index] : undefined;
+                        // Exibe total acima da barra se só houver erros naquele dia
+                        if (!item || item.resolvidas === 0 || item.acertos > 0) return null;
+                        return (
+                          <text
+                            x={Number(x) + Number(width) / 2}
+                            y={Number(y) - 6}
+                            fill={mode === 'dark' ? '#A1A1AA' : '#64748B'}
+                            textAnchor="middle"
+                            fontSize={10}
+                            fontWeight={700}
+                          >
+                            {item.resolvidas}
+                          </text>
+                        );
+                      }}
+                    />
+                  </Bar>
+
+                  {/* Barra Verde Acima (Acertos) */}
+                  <Bar
                     dataKey="acertos"
                     name="Acertos"
-                    stroke="#10B981"
-                    strokeWidth={2.5}
-                    fillOpacity={1}
-                    fill="url(#softGreenGrad)"
-                    activeDot={{ r: 5, stroke: '#10B981', strokeWidth: 2, fill: mode === 'dark' ? '#121215' : '#ffffff' }}
+                    stackId="evolution"
+                    fill="#10B981"
+                    radius={[3, 3, 0, 0]}
+                    maxBarSize={filters.period === '6m' ? 10 : filters.period === '3m' ? 14 : 26}
+                  >
+                    <LabelList
+                      dataKey="resolvidas"
+                      position="top"
+                      content={(props: CustomEvolutionLabelProps) => {
+                        const { x, y, width, index } = props;
+                        const item = index !== undefined ? activeMetrics.chartData[index] : undefined;
+                        // Exibe total acima da barra no topo da pilha
+                        if (!item || item.resolvidas === 0 || item.acertos === 0) return null;
+                        return (
+                          <text
+                            x={Number(x) + Number(width) / 2}
+                            y={Number(y) - 6}
+                            fill={mode === 'dark' ? '#A1A1AA' : '#64748B'}
+                            textAnchor="middle"
+                            fontSize={10}
+                            fontWeight={700}
+                          >
+                            {item.resolvidas}
+                          </text>
+                        );
+                      }}
+                    />
+                  </Bar>
+
+                  {/* Linha de Tendência de Questões Totais (Opacidade reduzida) */}
+                  <Line
+                    type="monotone"
+                    dataKey="trendTotal"
+                    name="Tendência Total"
+                    stroke={mode === 'dark' ? '#94A3B8' : '#64748B'}
+                    strokeWidth={2}
+                    strokeOpacity={0.4}
+                    dot={false}
+                    activeDot={{
+                      r: 3.5,
+                      stroke: mode === 'dark' ? '#94A3B8' : '#64748B',
+                      strokeWidth: 1.5,
+                      fill: mode === 'dark' ? '#18181b' : '#ffffff'
+                    }}
                   />
-                </AreaChart>
+
+                  {/* Linha de Tendência de Acertos (Opacidade reduzida) */}
+                  <Line
+                    type="monotone"
+                    dataKey="trendAcertos"
+                    name="Tendência Acertos"
+                    stroke="#10B981"
+                    strokeWidth={2}
+                    strokeOpacity={0.55}
+                    dot={false}
+                    activeDot={{
+                      r: 3.5,
+                      stroke: '#10B981',
+                      strokeWidth: 1.5,
+                      fill: mode === 'dark' ? '#18181b' : '#ffffff'
+                    }}
+                  />
+                </ComposedChart>
               </ResponsiveContainer>
             </div>
           </div>
