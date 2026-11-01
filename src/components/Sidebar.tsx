@@ -17,7 +17,8 @@ import {
   AlertOctagon,
   Flag,
   Brain,
-  FileText
+  FileText,
+  ShieldAlert
 } from 'lucide-react';
 import { ActiveTab, Modalidade } from '@/types';
 import { useTheme } from '@/context/ThemeContext';
@@ -65,7 +66,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
     ...(isAdmin
       ? [
           { id: 'curadoria' as ActiveTab, label: 'Curadoria de Gabaritos', icon: ShieldCheck },
-          { id: 'reportes' as ActiveTab, label: 'Questões Reportadas', icon: Flag }
+          { id: 'reportes' as ActiveTab, label: 'Questões Reportadas', icon: Flag },
+          { id: 'auditoria_medevo' as ActiveTab, label: 'Higienização MedEvo', icon: ShieldAlert, badge: 410 }
         ]
       : [])
   ];
