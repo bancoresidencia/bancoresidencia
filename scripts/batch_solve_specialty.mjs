@@ -84,7 +84,7 @@ async function main() {
   const pending = questions
     .filter(q => {
       const ans = (q.correctAnswer || q.correct_answer || '').toUpperCase().trim();
-      return VALID_ANSWERS.has(ans) && !q.isAnulada && !solvedMap.has(q.id);
+      return VALID_ANSWERS.has(ans) && !q.isAnulada && !solvedMap.has(q.id) && Array.isArray(q.options) && q.options.length >= 2;
     })
     .slice(0, limit);
   console.log(`⏳ Questões homologadas a processar nesta rodada: ${pending.length}\n`);

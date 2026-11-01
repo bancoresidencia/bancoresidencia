@@ -6,29 +6,13 @@ import { createClient } from '@/lib/supabase/client';
 
 const STORAGE_CURRENT_USER_KEY = 'bancoresidencia_current_user';
 
-export const DEFAULT_DEMO_USER: UserAccount = {
-  id: 'user-demo-1',
-  name: 'Dr. Lucas Rocha',
-  email: 'lucas.rocha@med.br',
-  role: 'student',
-  avatarUrl: '',
-  specialtyTarget: 'Clínica Médica',
-  college: 'Faculdade de Medicina (USP)',
-  graduationYear: 2025,
-  dailyGoal: 30,
-  phone: '(11) 98765-4321',
-  state: 'SP',
-  targetExamName: 'ENARE 2026',
-  targetExamDate: '2026-11-01',
-  createdAt: '2026-01-15T10:00:00.000Z'
-};
-
 interface AuthContextType {
   user: UserAccount | null;
   isAuthenticated: boolean;
   isAdmin: boolean;
   isLoading: boolean;
   login: (email: string, password: string) => Promise<{ success: boolean; message?: string }>;
+  loginWithGoogle: () => Promise<{ success: boolean; message?: string }>;
   register: (data: {
     name: string;
     email: string;
@@ -41,7 +25,6 @@ interface AuthContextType {
   updateProfile: (data: UpdateProfileData) => Promise<{ success: boolean; message?: string }>;
   updatePassword: (currentPassword: string, newPassword: string) => Promise<{ success: boolean; message?: string }>;
   updateAvatar: (avatarUrl: string) => Promise<{ success: boolean; message?: string }>;
-  loginAsDemo: () => void;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -76,12 +59,24 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         (typeof window !== 'undefined' ? localStorage.getItem(`user_target_exam_date_${supabaseUser.id}`) : null) ||
         undefined;
 
+      const name =
+        profile?.name ||
+        (supabaseUser.user_metadata?.name as string) ||
+        (supabaseUser.user_metadata?.full_name as string) ||
+        (supabaseUser.email ? supabaseUser.email.split('@')[0] : 'Médico Residente');
+
+      const avatarUrl =
+        profile?.avatar_url ||
+        (supabaseUser.user_metadata?.avatar_url as string) ||
+        (supabaseUser.user_metadata?.picture as string) ||
+        '';
+
       return {
         id: supabaseUser.id,
-        name: profile?.name || (supabaseUser.user_metadata?.name as string) || (supabaseUser.email ? supabaseUser.email.split('@')[0] : 'Médico Residente'),
+        name,
         email: supabaseUser.email || '',
         role,
-        avatarUrl: profile?.avatar_url || '',
+        avatarUrl,
         specialtyTarget: profile?.specialty_target || (supabaseUser.user_metadata?.specialty_target as string) || 'Clínica Médica',
         college: profile?.college || (supabaseUser.user_metadata?.college as string) || '',
         graduationYear: profile?.graduation_year || (supabaseUser.user_metadata?.graduation_year as number) || 2026,
@@ -93,12 +88,22 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         createdAt: profile?.created_at || supabaseUser.created_at || new Date().toISOString()
       };
     } catch {
+      const name =
+        (supabaseUser.user_metadata?.name as string) ||
+        (supabaseUser.user_metadata?.full_name as string) ||
+        'Médico Residente';
+
+      const avatarUrl =
+        (supabaseUser.user_metadata?.avatar_url as string) ||
+        (supabaseUser.user_metadata?.picture as string) ||
+        '';
+
       return {
         id: supabaseUser.id,
-        name: (supabaseUser.user_metadata?.name as string) || 'Médico Residente',
+        name,
         email: supabaseUser.email || '',
         role: 'student',
-        avatarUrl: '',
+        avatarUrl,
         specialtyTarget: 'Clínica Médica',
         college: '',
         graduationYear: 2026,
@@ -122,18 +127,9 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
           const account = await mapSupabaseUserToAccount(session.user);
           if (isMounted) setUser(account);
         } else if (isMounted) {
-          // Checa se há usuário demo local ativo
-          const savedUserRaw = localStorage.getItem(STORAGE_CURRENT_USER_KEY);
-          if (savedUserRaw) {
-            const parsed = JSON.parse(savedUserRaw);
-            if (parsed?.id === DEFAULT_DEMO_USER.id) {
-              setUser(DEFAULT_DEMO_USER);
-            } else {
-              setUser(null);
-            }
-          } else {
-            setUser(null);
-          }
+          // Remove resquícios de credenciais de demonstração ou sessões antigas
+          localStorage.removeItem(STORAGE_CURRENT_USER_KEY);
+          setUser(null);
         }
       } catch {
         if (isMounted) setUser(null);
@@ -163,13 +159,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const login = async (email: string, password: string): Promise<{ success: boolean; message?: string }> => {
     const normalizedEmail = email.trim().toLowerCase();
 
-    // Suporte ao usuário de demonstração local
-    if (normalizedEmail === DEFAULT_DEMO_USER.email.toLowerCase() && password === 'med123') {
-      setUser(DEFAULT_DEMO_USER);
-      localStorage.setItem(STORAGE_CURRENT_USER_KEY, JSON.stringify(DEFAULT_DEMO_USER));
-      return { success: true };
-    }
-
     try {
       const { data, error } = await supabase.auth.signInWithPassword({
         email: normalizedEmail,
@@ -189,6 +178,26 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       return { success: true };
     } catch {
       return { success: false, message: 'Erro de conexão com o servidor de autenticação.' };
+    }
+  };
+
+  const loginWithGoogle = async (): Promise<{ success: boolean; message?: string }> => {
+    try {
+      const origin = typeof window !== 'undefined' ? window.location.origin : '';
+      const { error } = await supabase.auth.signInWithOAuth({
+        provider: 'google',
+        options: {
+          redirectTo: `${origin}/auth/callback`
+        }
+      });
+
+      if (error) {
+        return { success: false, message: error.message };
+      }
+
+      return { success: true };
+    } catch {
+      return { success: false, message: 'Falha ao conectar com o serviço de autenticação Google.' };
     }
   };
 
@@ -241,26 +250,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
   };
 
-  const loginAsDemo = () => {
-    setUser(DEFAULT_DEMO_USER);
-    localStorage.setItem(STORAGE_CURRENT_USER_KEY, JSON.stringify(DEFAULT_DEMO_USER));
-  };
-
   const updateProfile = async (data: UpdateProfileData): Promise<{ success: boolean; message?: string }> => {
     if (!user) return { success: false, message: 'Usuário não autenticado.' };
-
-    // Se estiver em modo demo local
-    if (user.id === DEFAULT_DEMO_USER.id) {
-      const updated = { ...user, ...data };
-      setUser(updated);
-      localStorage.setItem(STORAGE_CURRENT_USER_KEY, JSON.stringify(updated));
-      if (data.targetExamName) localStorage.setItem(`user_target_exam_name_${user.id}`, data.targetExamName);
-      if (data.targetExamDate) localStorage.setItem(`user_target_exam_date_${user.id}`, data.targetExamDate);
-      if (typeof window !== 'undefined') {
-        window.dispatchEvent(new Event('bancoresidencia_target_exam_changed'));
-      }
-      return { success: true, message: 'Perfil demo atualizado!' };
-    }
 
     try {
       const updatePayload: Record<string, unknown> = {};
@@ -306,10 +297,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const updatePassword = async (currentPassword: string, newPassword: string): Promise<{ success: boolean; message?: string }> => {
     if (!user) return { success: false, message: 'Usuário não autenticado.' };
 
-    if (user.id === DEFAULT_DEMO_USER.id) {
-      return { success: true, message: 'Senha atualizada na conta de demonstração.' };
-    }
-
     try {
       const { error } = await supabase.auth.updateUser({ password: newPassword });
       if (error) {
@@ -341,12 +328,12 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         isAdmin,
         isLoading,
         login,
+        loginWithGoogle,
         register,
         logout,
         updateProfile,
         updatePassword,
-        updateAvatar,
-        loginAsDemo
+        updateAvatar
       }}
     >
       {children}

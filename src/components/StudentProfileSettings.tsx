@@ -214,7 +214,7 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
     }
   };
 
-  const userInitials = (name || 'Lucas Rocha')
+  const userInitials = (name || user?.name || 'Médico Residente')
     .split(' ')
     .filter(Boolean)
     .slice(0, 2)

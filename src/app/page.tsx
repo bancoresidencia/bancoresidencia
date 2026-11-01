@@ -16,7 +16,7 @@ import { AuthScreen } from '@/components/AuthScreen';
 import { LandingPage } from '@/components/LandingPage';
 import { StudentProfileSettings } from '@/components/StudentProfileSettings';
 import { useTheme } from '@/context/ThemeContext';
-import { useAuth, DEFAULT_DEMO_USER } from '@/context/AuthContext';
+import { useAuth } from '@/context/AuthContext';
 import { createClient } from '@/lib/supabase/client';
 
 const OfficialExams = dynamic(
@@ -169,7 +169,7 @@ import { KeyboardShortcutsModal } from '@/components/KeyboardShortcutsModal';
 
 export default function Home() {
   const { accentConfig } = useTheme();
-  const { user, isAuthenticated, isAdmin, isLoading, loginAsDemo, logout } = useAuth();
+  const { user, isAuthenticated, isAdmin, isLoading, logout } = useAuth();
   const { success, warning, info } = useToast();
   const {
     isUpgradeModalOpen,
@@ -223,7 +223,7 @@ export default function Home() {
   }, [user]);
 
   // Perfil do Aluno e Metas dinâmicas
-  const studentName = user?.name || 'Dr. Lucas Rocha';
+  const studentName = user?.name || 'Médico Residente';
   const [customDailyGoal, setCustomDailyGoal] = useState<number | null>(null);
   const dailyGoal = customDailyGoal ?? user?.dailyGoal ?? 30;
 
@@ -596,7 +596,7 @@ export default function Home() {
     if (typeof window === 'undefined') return;
 
     const storageKey = getUserAnswersStorageKey(user?.id);
-    const isRealUser = Boolean(user?.id && user.id !== DEFAULT_DEMO_USER.id);
+    const isRealUser = Boolean(user?.id);
 
     let loaded: Record<string, UserAnswerItem> = {};
     try {
@@ -1278,7 +1278,7 @@ export default function Home() {
     }));
 
     // Sincroniza em segundo plano com a tabela user_answers do Supabase para a conta do aluno
-    if (user?.id && user.id !== DEFAULT_DEMO_USER.id) {
+    if (user?.id) {
       const supabase = createClient();
       supabase
         .from('user_answers')
@@ -1967,7 +1967,7 @@ export default function Home() {
             setAuthModal({ isOpen: true, mode, planTitle });
           }}
           onLoginDemo={() => {
-            loginAsDemo();
+            setAuthModal({ isOpen: true, mode: 'login' });
           }}
         />
 
@@ -2304,7 +2304,7 @@ export default function Home() {
             !user ? (
               <LandingPage
                 onOpenAuth={(mode = 'login', planTitle) => setAuthModal({ isOpen: true, mode, planTitle })}
-                onLoginDemo={loginAsDemo}
+                onLoginDemo={() => setAuthModal({ isOpen: true, mode: 'login' })}
               />
             ) : (
               <StudentHomeDashboard

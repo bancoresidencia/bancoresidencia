@@ -16,7 +16,6 @@ import {
   Sparkles,
   ArrowRight,
   ShieldCheck,
-  Award,
   X
 } from 'lucide-react';
 
@@ -33,7 +32,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
   onClose,
   selectedPlanTitle
 }) => {
-  const { login, register, loginAsDemo } = useAuth();
+  const { login, loginWithGoogle, register } = useAuth();
   const { accentConfig } = useTheme();
 
   // 'login' | 'register'
@@ -53,6 +52,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
 
   // UI States
   const [loading, setLoading] = useState(false);
+  const [googleLoading, setGoogleLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [successMsg, setSuccessMsg] = useState<string | null>(null);
 
@@ -153,10 +153,19 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
     }
   };
 
-  const handleQuickDemo = () => {
-    loginAsDemo();
-    setSuccessMsg('Acessando com a conta de demonstração (Dr. Lucas Rocha)...');
-    if (onSuccess) setTimeout(onSuccess, 400);
+  const handleGoogleSubmit = async () => {
+    resetMessages();
+    setGoogleLoading(true);
+    try {
+      const res = await loginWithGoogle();
+      if (!res.success) {
+        setErrorMsg(res.message || 'Falha ao autenticar com o Google.');
+        setGoogleLoading(false);
+      }
+    } catch {
+      setErrorMsg('Ocorreu um erro inesperado ao conectar com a conta Google.');
+      setGoogleLoading(false);
+    }
   };
 
 
@@ -267,6 +276,47 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
             </div>
           )}
 
+          {/* Botão de Autenticação Social Google */}
+          <div className="space-y-3">
+            <button
+              type="button"
+              onClick={handleGoogleSubmit}
+              disabled={loading || googleLoading}
+              className="w-full py-2.5 px-4 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900/90 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-800 dark:text-slate-100 text-xs font-bold transition-all flex items-center justify-center gap-2.5 cursor-pointer shadow-xs hover:border-slate-400 dark:hover:border-slate-600 disabled:opacity-50"
+            >
+              <svg className="w-4 h-4 shrink-0" viewBox="0 0 24 24">
+                <path
+                  fill="#4285F4"
+                  d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"
+                />
+                <path
+                  fill="#34A853"
+                  d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.34 24 12 24z"
+                />
+                <path
+                  fill="#FBBC05"
+                  d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"
+                />
+                <path
+                  fill="#EA4335"
+                  d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.34 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"
+                />
+              </svg>
+              <span>{googleLoading ? 'Redirecionando para o Google...' : 'Continuar com o Google'}</span>
+            </button>
+
+            <div className="relative">
+              <div className="absolute inset-0 flex items-center">
+                <div className="w-full border-t border-slate-200 dark:border-slate-800" />
+              </div>
+              <div className="relative flex justify-center text-[10px] uppercase tracking-wider font-bold">
+                <span className="bg-white dark:bg-[var(--bg-card)] px-3 text-slate-400 dark:text-slate-500">
+                  {mode === 'login' ? 'ou entre com e-mail' : 'ou cadastre com e-mail'}
+                </span>
+              </div>
+            </div>
+          </div>
+
           {/* ================= FORMULÁRIO DE LOGIN ================= */}
           {mode === 'login' ? (
             <form onSubmit={handleLoginSubmit} className="space-y-4">
@@ -283,7 +333,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="ex: lucas.rocha@med.br"
+                    placeholder="seu.email@medicina.com.br"
                     className="w-full pl-10 pr-4 py-2.5 text-xs bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400 transition-all"
                   />
                 </div>
@@ -294,16 +344,6 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
                   <label className="block text-xs font-bold text-slate-700 dark:text-slate-300">
                     Senha de Acesso
                   </label>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setEmail('lucas.rocha@med.br');
-                      setPassword('med123');
-                    }}
-                    className="text-[11px] font-bold text-blue-600 dark:text-blue-400 hover:underline cursor-pointer"
-                  >
-                    Preencher conta Demo
-                  </button>
                 </div>
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
@@ -511,28 +551,6 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
               </button>
             </form>
           )}
-
-          {/* Divisor */}
-          <div className="relative my-4">
-            <div className="absolute inset-0 flex items-center">
-              <div className="w-full border-t border-slate-200 dark:border-slate-800" />
-            </div>
-            <div className="relative flex justify-center text-[11px] uppercase tracking-wider font-bold">
-              <span className="bg-white dark:bg-[var(--bg-card)] px-3 text-zinc-400">
-                Ou acesso rápido
-              </span>
-            </div>
-          </div>
-
-          {/* Botão de Demonstração Instantânea */}
-          <button
-            type="button"
-            onClick={handleQuickDemo}
-            className="w-full py-2.5 px-4 rounded-xl border border-slate-200 dark:border-slate-700/80 bg-slate-50 dark:bg-slate-900/60 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-bold transition-all flex items-center justify-center gap-2 cursor-pointer group"
-          >
-            <Award className="w-4 h-4 text-amber-500 group-hover:scale-110 transition-transform" />
-            <span>Acessar com Conta Demo (Dr. Lucas Rocha - P78)</span>
-          </button>
 
         </div>
       </div>

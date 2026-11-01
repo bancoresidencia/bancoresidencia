@@ -53,7 +53,7 @@ import {
 } from 'lucide-react';
 import { UserStats, PerformanceFilterState, PeriodFilter, Modalidade, UserAnswerItem } from '@/types';
 import { UserAccount } from '@/types/auth';
-import { DEFAULT_DEMO_USER } from '@/context/AuthContext';
+// Authenticated user metrics
 import { useTheme } from '@/context/ThemeContext';
 import { clinicalHierarchy, mockInstitutionsList, mockBancas } from '@/data/mockQuestions';
 import { AIPerformanceMentorCard } from './AIPerformanceMentorCard';
@@ -472,7 +472,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
     const q = quickPeriodConfig[filters.period] || quickPeriodConfig['all'];
     const factor = q.factor;
 
-    const isRealUser = Boolean(user?.id && user.id !== DEFAULT_DEMO_USER.id);
+    const isRealUser = Boolean(user?.id);
 
     // 1. Filtragem das respostas reais do usuário
     const allAnswers = Object.values(userAnswers);
@@ -542,7 +542,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
       answered = filteredAnswers.length;
       correct = filteredAnswers.filter((a) => a.isCorrect).length;
       accuracy = answered > 0 ? (correct / answered) * 100 : 0;
-    } else if (!isRealUser && (stats.totalAnswered || 0) > 0) {
+    } else if (false) {
       // Apenas em modo demonstração local se houver simulação manual de questões
       answered = Math.round((stats.totalAnswered || 0) * factor);
       correct = Math.round((stats.totalCorrect || 0) * factor);
