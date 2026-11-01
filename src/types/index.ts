@@ -50,6 +50,9 @@ export interface AdvancedFilterState {
   ocultarRevisadas: boolean;
   ultimos5Anos: boolean;
   aleatorizar?: boolean;
+  userSolvedIds?: string[];
+  userCorrectIds?: string[];
+  userWrongIds?: string[];
 }
 
 export interface QuestionOption {
@@ -102,7 +105,9 @@ export interface Question {
 
 export type Modalidade = 'Residência' | 'Revalida' | 'Graduação / Internato';
 export type PeriodFilter = '7d' | '30d' | 'mes' | '3m' | '6m' | '2026.1' | '2026.2' | 'all' | 'custom';
-export type ActiveTab = 'home' | 'banco' | 'caderno_erros' | 'listas' | 'provas' | 'simulados' | 'stats' | 'ranking' | 'configuracoes' | 'curadoria' | 'reportes';
+export type ActiveTab = 'home' | 'banco' | 'caderno_erros' | 'flashcards' | 'resumos' | 'listas' | 'provas' | 'simulados' | 'stats' | 'ranking' | 'configuracoes' | 'curadoria' | 'reportes' | 'auditoria_medevo';
+
+export * from './flashcards';
 
 export type ReportReason =
   | 'Gabarito divergente / incorreto'

@@ -15,7 +15,9 @@ import {
   PanelLeftOpen,
   ShieldCheck,
   AlertOctagon,
-  Flag
+  Flag,
+  Brain,
+  FileText
 } from 'lucide-react';
 import { ActiveTab, Modalidade } from '@/types';
 import { useTheme } from '@/context/ThemeContext';
@@ -52,8 +54,10 @@ export const Sidebar: React.FC<SidebarProps> = ({
       icon: AlertOctagon,
       badge: pendingErrorsCount > 0 ? pendingErrorsCount : undefined
     },
+    { id: 'flashcards', label: 'Flashcards', icon: Brain },
+    { id: 'resumos', label: 'Resumos Clínicos', icon: BookOpen },
     { id: 'listas', label: 'Listas & Pastas', icon: FolderOpen },
-    { id: 'provas', label: 'Provas na Íntegra', icon: BookOpen },
+    { id: 'provas', label: 'Provas na Íntegra', icon: FileText },
     { id: 'simulados', label: 'Simulados Oficiais', icon: ClipboardCheck },
     { id: 'stats', label: 'Meu Desempenho', icon: BarChart3 },
     { id: 'ranking', label: 'Ranking Oficial', icon: Trophy },

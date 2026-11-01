@@ -410,10 +410,11 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
           <button
             type="button"
             onClick={onClose}
-            className="flex items-center gap-1 px-3 py-1.5 rounded-xl text-xs font-bold bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-slate-700 dark:text-zinc-300 hover:bg-slate-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
+            className="w-8 h-8 flex items-center justify-center rounded-xl bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-slate-700 dark:text-zinc-300 hover:bg-slate-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0 active:scale-95"
+            title="Voltar ao Caderno de Erros (Esc)"
+            aria-label="Voltar ao Caderno de Erros"
           >
-            <ChevronLeft className="w-3.5 h-3.5" />
-            <span>Voltar ao Caderno</span>
+            <ChevronLeft className="w-4 h-4" />
           </button>
 
           <div className="h-4 w-px bg-slate-200 dark:border-zinc-800" />

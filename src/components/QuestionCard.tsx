@@ -45,8 +45,8 @@ interface QuestionCardProps {
     isCorrect: boolean;
     timestamp?: number;
   };
-  fontSize?: 'sm' | 'base' | 'lg';
-  onChangeFontSize?: (size: 'sm' | 'base' | 'lg') => void;
+  fontSize?: 'xs' | 'sm' | 'base' | 'lg' | 'xl';
+  onChangeFontSize?: (size: 'xs' | 'sm' | 'base' | 'lg' | 'xl') => void;
   isBookmarked?: boolean;
   onToggleBookmark?: (questionId: string) => void;
   folders?: Folder[];
@@ -259,11 +259,8 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     });
   };
 
-  // Sincroniza estado de forma limpa durante a renderização quando a questão ou a resposta mudam
-  const currentKey = `${question.id}-${userAnswer || ''}`;
-  const [prevQuestionKey, setPrevQuestionKey] = useState(currentKey);
-  if (prevQuestionKey !== currentKey) {
-    setPrevQuestionKey(currentKey);
+  // Sincroniza estado de forma limpa quando a questão ou a resposta mudam
+  useEffect(() => {
     setResolvedOverrides({});
     setIsSubmittingAnswer(false);
     setSolveError(null);
@@ -275,7 +272,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     setOpenTopics({});
     setHighlights([]);
     setHoveredOptionLetter(null);
-  }
+  }, [question.id, userAnswer]);
 
   // Carrega sob demanda gabarito e comentários caso a questão tenha sido respondida previamente
   useEffect(() => {
@@ -765,34 +762,62 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [isAnswered, pendingSelected, question, isFolderModalOpen, hoveredOptionLetter]);
 
-  // Mapeamento dinâmico de fontes ergonômicas com alta visibilidade médica
+  // Mapeamento dinâmico de 5 níveis de fontes ergonômicas com alta visibilidade médica
   const statementSizeClass =
-    fontSize === 'sm'
+    fontSize === 'xs'
+      ? 'text-[14px] sm:text-[14.5px] leading-[1.65]'
+      : fontSize === 'sm'
       ? 'text-[15px] sm:text-[15.5px] leading-[1.75]'
+      : fontSize === 'base'
+      ? 'text-[16.5px] sm:text-[17px] leading-[1.8]'
       : fontSize === 'lg'
       ? 'text-[18px] sm:text-[19px] leading-[1.85]'
-      : 'text-[16.5px] sm:text-[17px] leading-[1.8]';
+      : 'text-[20px] sm:text-[21px] leading-[1.9]';
 
   const optionSizeClass =
-    fontSize === 'sm'
+    fontSize === 'xs'
+      ? 'text-[12.5px] sm:text-[13px] leading-relaxed'
+      : fontSize === 'sm'
       ? 'text-[13.5px] sm:text-[14px] leading-relaxed'
+      : fontSize === 'base'
+      ? 'text-[14.5px] sm:text-[15px] leading-relaxed'
       : fontSize === 'lg'
       ? 'text-[16px] sm:text-[17px] leading-relaxed'
-      : 'text-[14.5px] sm:text-[15px] leading-relaxed';
+      : 'text-[17.5px] sm:text-[18.5px] leading-relaxed';
 
   const optionPaddingClass =
-    fontSize === 'sm'
-      ? 'p-3.5 sm:p-4 rounded-xl gap-3.5'
+    fontSize === 'xs'
+      ? 'p-2 sm:p-3 rounded-xl gap-2 sm:gap-3'
+      : fontSize === 'sm'
+      ? 'p-2.5 sm:p-4 rounded-xl gap-2.5 sm:gap-3.5'
+      : fontSize === 'base'
+      ? 'p-3 sm:p-4.5 rounded-xl gap-2.5 sm:gap-4'
       : fontSize === 'lg'
-      ? 'p-4.5 sm:p-5.5 rounded-2xl gap-4.5'
-      : 'p-4 sm:p-4.5 rounded-xl gap-4';
+      ? 'p-3.5 sm:p-5.5 rounded-2xl gap-3 sm:gap-4.5'
+      : 'p-4 sm:p-6 rounded-2xl gap-3.5 sm:gap-5';
 
   const badgeSizeClass =
-    fontSize === 'sm'
-      ? 'w-7 h-7 text-xs font-black'
+    fontSize === 'xs'
+      ? 'w-6 h-6 sm:w-6.5 sm:h-6.5 text-[11px] font-black shrink-0'
+      : fontSize === 'sm'
+      ? 'w-6.5 h-6.5 sm:w-7 sm:h-7 text-xs font-black shrink-0'
+      : fontSize === 'base'
+      ? 'w-7 h-7 sm:w-8 sm:h-8 text-xs sm:text-sm font-black shrink-0'
       : fontSize === 'lg'
-      ? 'w-9 h-9 text-sm font-black'
-      : 'w-8 h-8 text-xs sm:text-sm font-black';
+      ? 'w-8 h-8 sm:w-9 sm:h-9 text-xs sm:text-sm font-black shrink-0'
+      : 'w-9 h-9 sm:w-10 sm:h-10 text-sm sm:text-base font-black shrink-0';
+
+  // Tamanho substancialmente ampliado e ergonômico para justificativas e comentários médicos
+  const justificationSizeClass =
+    fontSize === 'xs'
+      ? 'text-[13px] sm:text-[13.5px] leading-relaxed'
+      : fontSize === 'sm'
+      ? 'text-[14px] sm:text-[14.5px] leading-relaxed'
+      : fontSize === 'base'
+      ? 'text-[15.5px] sm:text-[16px] leading-relaxed'
+      : fontSize === 'lg'
+      ? 'text-[17px] sm:text-[17.5px] leading-relaxed'
+      : 'text-[18.5px] sm:text-[19px] leading-relaxed';
 
   // Renderizador do enunciado com suporte a destaques múltiplos do marca-texto
   const renderHighlightedStatement = (statement: string) => {
@@ -1270,7 +1295,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                     className="w-full mt-3 pt-3 border-t border-slate-200/80 dark:border-slate-800/80 animate-in fade-in duration-150"
                   >
                     <div
-                      className={`p-3.5 rounded-xl border text-xs sm:text-[13px] leading-relaxed ${
+                      className={`p-3.5 sm:p-4 rounded-xl border ${
                         isCorrect
                           ? 'bg-emerald-50/90 dark:bg-emerald-950/40 border-emerald-200 dark:border-emerald-800/60 text-emerald-950 dark:text-emerald-200'
                           : 'bg-slate-50 dark:bg-slate-900/90 border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-200'
@@ -1281,7 +1306,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                           Justificativa da Alternativa {option.letter}:
                         </span>
                       </div>
-                      <div className="font-normal whitespace-pre-line text-slate-700 dark:text-slate-300">
+                      <div className={`font-normal whitespace-pre-line ${justificationSizeClass} text-slate-800 dark:text-slate-200`}>
                         {renderFormattedText(
                           explanationText ||
                             (isCorrect
@@ -1440,13 +1465,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                   </div>
                 </div>
                 <div
-                  className={`${
-                    fontSize === 'sm'
-                      ? 'text-[12.5px] sm:text-[13px] leading-relaxed'
-                      : fontSize === 'lg'
-                      ? 'text-sm sm:text-base leading-relaxed'
-                      : 'text-xs sm:text-sm leading-relaxed'
-                  } font-normal text-slate-800 dark:text-slate-300 whitespace-pre-line`}
+                  className={`${justificationSizeClass} font-normal text-slate-800 dark:text-slate-200 whitespace-pre-line`}
                 >
                   {renderFormattedText(finalCommentary)}
                 </div>

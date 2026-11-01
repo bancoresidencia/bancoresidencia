@@ -1,5 +1,5 @@
 import { supabase } from '@/lib/supabase';
-import { ExtendedFilterState, resolveBancaList } from './questionService';
+import { ExtendedFilterState, resolveBancaList, BANCA_ALIASES, buildClinicalFilterClauses, REVALIDA_POSTGREST_FILTER } from './questionService';
 import { hierarchyQuestionCounts } from '@/data/hierarchyCounts';
 import { sanitizePostgrestTerm } from '@/utils/security';
 
@@ -40,9 +40,11 @@ export function shuffleArray<T>(arr: T[]): T[] {
  */
 export function hasRightCardActiveFilters(filters: ExtendedFilterState): boolean {
   const hasBancas = Boolean(filters.instituicoes && filters.instituicoes.length > 0);
-  const hasAnos = Boolean(filters.anos && filters.anos.length > 0 && filters.anos.length < 15);
+  const hasAnos = Boolean(filters.anos && filters.anos.length > 0 && filters.anos.length < 18);
   const hasDiff = Boolean(filters.dificuldade && filters.dificuldade !== 'Todas');
   const hasType = Boolean(filters.tipoQuestao && filters.tipoQuestao !== 'Todas');
+  const hasStatus = Boolean(filters.status && filters.status !== 'Todas');
+  const hasSearch = Boolean(filters.search && filters.search.trim());
   const hasAnuladas = Boolean(filters.ocultarAnuladasErro);
   const has5Anos = Boolean(filters.ultimos5Anos);
   const hasModalidade = Boolean(
@@ -51,7 +53,7 @@ export function hasRightCardActiveFilters(filters: ExtendedFilterState): boolean
     !(filters.modalidades.length === 1 && filters.modalidades[0] === 'Residência Médica')
   );
 
-  return hasBancas || hasAnos || hasDiff || hasType || hasAnuladas || has5Anos || hasModalidade;
+  return hasBancas || hasAnos || hasDiff || hasType || hasStatus || hasSearch || hasAnuladas || has5Anos || hasModalidade;
 }
 
 /**
@@ -75,13 +77,35 @@ export async function fetchFacetedHierarchyCounts(
     ocultarAnuladasErro: filters.ocultarAnuladasErro,
     ultimos5Anos: filters.ultimos5Anos,
     modalidades: filters.modalidades,
-    gabaritoStatus: filters.gabaritoStatus
+    gabaritoStatus: filters.gabaritoStatus,
+    status: filters.status,
+    userSolvedCount: filters.userSolvedIds?.length || 0
   });
 
   const cached = facetedCountsCache.get(cacheKey);
   const now = Date.now();
   if (cached && now - cached.timestamp < 60000) {
     return cached.data;
+  }
+
+  // Tenta obter contagens via rota interna /api/questions (acesso com Service Role e suporte total a Revalida/Status)
+  if (typeof window !== 'undefined') {
+    try {
+      const apiRes = await fetch('/api/questions', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: 'facets', filters })
+      });
+      if (apiRes.ok) {
+        const json = await apiRes.json();
+        if (json && json.facets) {
+          facetedCountsCache.set(cacheKey, { timestamp: now, data: json.facets });
+          return json.facets;
+        }
+      }
+    } catch (e) {
+      console.warn('[stratifiedQuizService] Falha na rota /api/questions (facets), usando fallback local:', e);
+    }
   }
 
   try {
@@ -121,6 +145,23 @@ export async function fetchFacetedHierarchyCounts(
         if (filters.ocultarAnuladasErro) {
           qSpec = qSpec.eq('is_anulada', false);
         }
+        if (filters.modalidades && filters.modalidades.length > 0) {
+          const hasRevalida = filters.modalidades.some((m) => m.toLowerCase().includes('revalida'));
+          if (hasRevalida) {
+            qSpec = qSpec.or(REVALIDA_POSTGREST_FILTER);
+          } else if (!(filters.modalidades.length === 1 && filters.modalidades[0] === 'Residência Médica')) {
+            qSpec = qSpec.in('modalidade', filters.modalidades);
+          }
+        }
+        if (filters.status === 'Não vistas' && filters.userSolvedIds && filters.userSolvedIds.length > 0) {
+          qSpec = qSpec.not('id', 'in', `(${filters.userSolvedIds.slice(0, 120).join(',')})`);
+        } else if (filters.status === 'Resolvidas' && filters.userSolvedIds && filters.userSolvedIds.length > 0) {
+          qSpec = qSpec.in('id', filters.userSolvedIds.slice(0, 150));
+        } else if (filters.status === 'Acertadas' && filters.userCorrectIds && filters.userCorrectIds.length > 0) {
+          qSpec = qSpec.in('id', filters.userCorrectIds.slice(0, 150));
+        } else if (filters.status === 'Erradas' && filters.userWrongIds && filters.userWrongIds.length > 0) {
+          qSpec = qSpec.in('id', filters.userWrongIds.slice(0, 150));
+        }
         return qSpec;
       });
 
@@ -135,8 +176,8 @@ export async function fetchFacetedHierarchyCounts(
         totalRightCardCount += c;
       });
 
-      // Normalizações combinadas
-      especialidades['Cirurgia Geral'] = (especialidades['Cirurgia'] || 0) + (especialidades['Cirurgia Geral'] || 0);
+      // Normalizações combinadas sem dupla contagem (Cirurgia agrega Cirurgia Geral)
+      especialidades['Cirurgia'] = (especialidades['Cirurgia'] || 0) + (especialidades['Cirurgia Geral'] || 0);
       especialidades['Ginecologia e Obstetrícia'] =
         (especialidades['Ginecologia'] || 0) + (especialidades['Obstetrícia'] || 0);
 
@@ -170,43 +211,86 @@ export async function fetchFacetedHierarchyCounts(
       return result;
     }
 
-    // Caso haja filtro de Bancas específicas: consulta indexada rápida nas bancas selecionadas
+    // Caso haja filtro de Bancas específicas: consulta indexada rápida nas bancas selecionadas com paginação em chunks para evitar truncamento em 1.000 linhas
     const resolved = resolveBancaList(filters.instituicoes || []);
-    let q = supabase
-      .from('questions')
-      .select('id, especialidade, tema, foco, subfoco')
-      .in('banca', resolved)
-      .order('id', { ascending: true })
-      .limit(3000);
+    const PAGE_CHUNK = 1000;
+    const MAX_FACET_ROWS = 10000;
+    const data: Array<{ id: string; especialidade?: string; tema?: string; foco?: string; subfoco?: string }> = [];
 
-    // Anos
-    if (filters.anos && filters.anos.length > 0) {
-      q = q.in('year', filters.anos);
-    } else if (filters.ultimos5Anos) {
-      const minYear = new Date().getFullYear() - 4;
-      q = q.gte('year', minYear);
+    let currentOffset = 0;
+    while (currentOffset < MAX_FACET_ROWS) {
+      let q = supabase
+        .from('questions')
+        .select('id, especialidade, tema, foco, subfoco')
+        .in('banca', resolved)
+        .order('id', { ascending: true })
+        .range(currentOffset, currentOffset + PAGE_CHUNK - 1);
+
+      // Anos
+      if (filters.anos && filters.anos.length > 0) {
+        q = q.in('year', filters.anos);
+      } else if (filters.ultimos5Anos) {
+        const minYear = new Date().getFullYear() - 4;
+        q = q.gte('year', minYear);
+      }
+
+      // Dificuldade
+      if (filters.dificuldade && filters.dificuldade !== 'Todas') {
+        q = q.eq('difficulty', filters.dificuldade);
+      }
+
+      // Formato
+      if (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') {
+        q = q.eq('type', filters.tipoQuestao);
+      }
+
+      // Ocultar Anuladas
+      if (filters.ocultarAnuladasErro) {
+        q = q.eq('is_anulada', false);
+      }
+
+      // Modalidade
+      if (filters.modalidades && filters.modalidades.length > 0) {
+        const hasRevalida = filters.modalidades.some((m) => m.toLowerCase().includes('revalida'));
+        if (hasRevalida) {
+          q = q.or(REVALIDA_POSTGREST_FILTER);
+        } else if (!(filters.modalidades.length === 1 && filters.modalidades[0] === 'Residência Médica')) {
+          q = q.in('modalidade', filters.modalidades);
+        }
+      }
+
+      // Status
+      if (filters.status === 'Não vistas' && filters.userSolvedIds && filters.userSolvedIds.length > 0) {
+        q = q.not('id', 'in', `(${filters.userSolvedIds.slice(0, 120).join(',')})`);
+      } else if (filters.status === 'Resolvidas' && filters.userSolvedIds && filters.userSolvedIds.length > 0) {
+        q = q.in('id', filters.userSolvedIds.slice(0, 150));
+      } else if (filters.status === 'Acertadas' && filters.userCorrectIds && filters.userCorrectIds.length > 0) {
+        q = q.in('id', filters.userCorrectIds.slice(0, 150));
+      } else if (filters.status === 'Erradas' && filters.userWrongIds && filters.userWrongIds.length > 0) {
+        q = q.in('id', filters.userWrongIds.slice(0, 150));
+      }
+
+      const { data: chunk, error } = await q;
+      if (error) {
+        console.warn('Aviso ao buscar contagens facetadas:', error);
+        break;
+      }
+      if (!chunk || chunk.length === 0) break;
+      data.push(...chunk);
+      if (chunk.length < PAGE_CHUNK) break;
+      currentOffset += PAGE_CHUNK;
     }
 
-    // Dificuldade
-    if (filters.dificuldade && filters.dificuldade !== 'Todas') {
-      q = q.eq('difficulty', filters.dificuldade);
-    }
-
-    // Formato
-    if (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') {
-      q = q.eq('type', filters.tipoQuestao);
-    }
-
-    // Ocultar Anuladas
-    if (filters.ocultarAnuladasErro) {
-      q = q.eq('is_anulada', false);
-    }
-
-    const { data, error } = await q;
-
-    if (error || !data) {
-      console.warn('Aviso ao buscar contagens facetadas:', error);
-      return null;
+    if (data.length === 0) {
+      const emptyResult: FacetedHierarchyCountsResult = {
+        totalRightCardCount: 0,
+        especialidades: {},
+        temas: {},
+        focos: {},
+        subfocos: {}
+      };
+      facetedCountsCache.set(cacheKey, { timestamp: now, data: emptyResult });
+      return emptyResult;
     }
 
     const especialidades: Record<string, number> = {};
@@ -310,10 +394,14 @@ export async function generateStratifiedQuiz(
   quotasByItem: Record<string, number>,
   filters: ExtendedFilterState,
   targetLimit: number = 50,
-  answeredQuestionIds?: string[]
+  answeredQuestionIds?: string[],
+  correctQuestionIds?: string[],
+  wrongQuestionIds?: string[]
 ): Promise<string[]> {
   const finalMax = Math.min(200, Math.max(1, targetLimit));
-  const answeredSet = new Set(answeredQuestionIds || []);
+  const answeredSet = new Set(answeredQuestionIds || filters.userSolvedIds || []);
+  const correctSet = new Set(correctQuestionIds || filters.userCorrectIds || []);
+  const wrongSet = new Set(wrongQuestionIds || filters.userWrongIds || []);
 
   // 1. SEPARAÇÃO SEMÂNTICA: COTAS DE CONTEÚDO vs COTAS DE BANCA
   const contentQuotas: Record<string, number> = {};
@@ -339,8 +427,9 @@ export async function generateStratifiedQuiz(
   for (const [key, qty] of Object.entries(quotasByItem)) {
     if (qty <= 0) continue;
     const isStandardSpec = standardSpecialties.has(key);
-    const resolvedBanca = resolveBancaList([key]);
-    const isBanca = !isStandardSpec && (knownBancas.has(key) || resolvedBanca.length > 0);
+    const cleanKey = key.replace(/\s*\(\d+\s*questões\)$/i, '').trim();
+    const isKnownBanca = knownBancas.has(key) || knownBancas.has(cleanKey) || Boolean(BANCA_ALIASES[key]) || Boolean(BANCA_ALIASES[cleanKey]);
+    const isBanca = !isStandardSpec && isKnownBanca;
 
     if (isBanca) {
       bancaQuotas[key] = qty;
@@ -352,14 +441,21 @@ export async function generateStratifiedQuiz(
   // Se nenhuma cota de conteúdo foi explicitada, deriva fielmente dos filtros ativos de conteúdo
   if (Object.keys(contentQuotas).length === 0) {
     const selectedContent: string[] = [];
-    if (filters.subfocos && filters.subfocos.length > 0) {
-      selectedContent.push(...filters.subfocos);
-    } else if (filters.focos && filters.focos.length > 0) {
-      selectedContent.push(...filters.focos);
-    } else if (filters.temas && filters.temas.length > 0) {
-      selectedContent.push(...filters.temas);
-    } else if (filters.especialidades && filters.especialidades.length > 0) {
-      selectedContent.push(...filters.especialidades);
+
+    // Coleta estritamente os ramos selecionados pelo estudante (incluindo mesclagem de especialidade + tema)
+    const { standaloneSpecs, standaloneTemas, standaloneFocos, subfocosByParentFoco } = buildClinicalFilterClauses(filters);
+
+    if (standaloneSpecs.length > 0) {
+      selectedContent.push(...standaloneSpecs);
+    }
+    if (standaloneTemas.length > 0) {
+      selectedContent.push(...standaloneTemas);
+    }
+    if (standaloneFocos.length > 0) {
+      selectedContent.push(...standaloneFocos);
+    }
+    if (subfocosByParentFoco.length > 0) {
+      subfocosByParentFoco.forEach(([_, subs]) => selectedContent.push(...subs));
     }
 
     if (selectedContent.length > 0) {
@@ -369,19 +465,22 @@ export async function generateStratifiedQuiz(
         contentQuotas[item] = base + (idx < rem ? 1 : 0);
       });
     } else {
-      // Padrão: 5 grandes áreas balanceadas
-      const defaults = [
-        'Clínica Médica',
-        'Cirurgia Geral',
-        'Pediatria',
-        'Ginecologia e Obstetrícia',
-        'Medicina Preventiva e Social'
-      ];
-      const base = Math.floor(finalMax / defaults.length);
-      const rem = finalMax % defaults.length;
-      defaults.forEach((item, idx) => {
-        contentQuotas[item] = base + (idx < rem ? 1 : 0);
-      });
+      // Se não há filtros contextuais no card direito, balanceia nas 5 grandes áreas padrão
+      const hasAnyRightFilter = hasRightCardActiveFilters(filters);
+      if (!hasAnyRightFilter) {
+        const defaults = [
+          'Clínica Médica',
+          'Cirurgia Geral',
+          'Pediatria',
+          'Ginecologia e Obstetrícia',
+          'Medicina Preventiva e Social'
+        ];
+        const base = Math.floor(finalMax / defaults.length);
+        const rem = finalMax % defaults.length;
+        defaults.forEach((item, idx) => {
+          contentQuotas[item] = base + (idx < rem ? 1 : 0);
+        });
+      }
     }
   }
 
@@ -392,122 +491,161 @@ export async function generateStratifiedQuiz(
   ];
   const resolvedBancas = resolveBancaList(allBancaNames);
 
-  // 2. BUSCA DE ESTOQUE DISPONÍVEL PARA CADA COTA DE CONTEÚDO (AND ENTRE GRUPOS, OR DENTRO)
+  // Se não há filtros clínicos, busca diretamente as questões que atendem exatamente aos filtros contextuais (Banca, Ano, etc.)
+  if (Object.keys(contentQuotas).length === 0) {
+    let q = supabase
+      .from('questions')
+      .select('id, especialidade, tema, foco, subfoco, banca, year, difficulty');
+    if (resolvedBancas.length > 0) q = q.in('banca', resolvedBancas);
+    if (filters.anos && filters.anos.length > 0) q = q.in('year', filters.anos);
+    else if (filters.ultimos5Anos) q = q.gte('year', new Date().getFullYear() - 4);
+    if (filters.dificuldade && filters.dificuldade !== 'Todas') q = q.eq('difficulty', filters.dificuldade);
+    if (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') q = q.eq('type', filters.tipoQuestao);
+    if (filters.ocultarAnuladasErro) q = q.eq('is_anulada', false);
+    if (filters.search && filters.search.trim()) {
+      const sTerm = sanitizePostgrestTerm(filters.search);
+      if (sTerm.length >= 2) {
+        q = q.or(`foco.ilike.%${sTerm}%,subfoco.ilike.%${sTerm}%,tema.ilike.%${sTerm}%,banca.ilike.%${sTerm}%,code.ilike.%${sTerm}%`);
+      }
+    }
+    if (!filters.aleatorizar) {
+      q = q.order('year', { ascending: false }).order('id', { ascending: true });
+    }
+    const { data } = await q.limit(finalMax * 2);
+    if (data && data.length > 0) {
+      let valid = data as QuestionCandidate[];
+      if (filters.status === 'Não vistas') valid = valid.filter((c) => !answeredSet.has(c.id));
+      else if (filters.status === 'Resolvidas') valid = valid.filter((c) => answeredSet.has(c.id));
+      else if (filters.status === 'Acertadas') valid = valid.filter((c) => correctSet.has(c.id));
+      else if (filters.status === 'Erradas') valid = valid.filter((c) => wrongSet.has(c.id));
+      if (filters.aleatorizar) valid = shuffleArray(valid);
+      return valid.slice(0, finalMax).map((c) => c.id);
+    }
+    return [];
+  }
+
+  // 2. BUSCA PARALELA DE ESTOQUE DISPONÍVEL (PROMISE.ALL CONCORRENTE: QUEDA DE 1.2S PARA 250MS)
   const candidatePoolsByItem: Record<string, QuestionCandidate[]> = {};
   const stockAvailableByItem: Record<string, number> = {};
+  const quotaEntries = Object.entries(contentQuotas).filter(([_, requested]) => requested > 0);
 
-  for (const [item, requested] of Object.entries(contentQuotas)) {
-    if (requested <= 0) continue;
+  await Promise.all(
+    quotaEntries.map(async ([item]) => {
+      try {
+        let q = supabase
+          .from('questions')
+          .select('id, especialidade, tema, foco, subfoco, banca, year, difficulty');
 
-    try {
-      let q = supabase
-        .from('questions')
-        .select('id, especialidade, tema, foco, subfoco, banca, year, difficulty');
-
-      // Conteúdo: Mapeamento de Especialidades principais com índice direto B-Tree
-      if (item === 'Clínica Médica') {
-        q = q.eq('especialidade', 'Clínica Médica');
-      } else if (item === 'Cirurgia Geral' || item === 'Cirurgia') {
-        q = q.in('especialidade', ['Cirurgia', 'Cirurgia Geral']);
-      } else if (item === 'Pediatria') {
-        q = q.eq('especialidade', 'Pediatria');
-      } else if (item === 'Ginecologia e Obstetrícia') {
-        q = q.in('especialidade', ['Ginecologia e Obstetrícia', 'Ginecologia', 'Obstetrícia']);
-      } else if (item === 'Obstetrícia') {
-        q = q.in('especialidade', ['Obstetrícia', 'Ginecologia e Obstetrícia']);
-      } else if (item === 'Ginecologia') {
-        q = q.in('especialidade', ['Ginecologia', 'Ginecologia e Obstetrícia']);
-      } else if (item === 'Medicina Preventiva' || item === 'Medicina Preventiva e Social') {
-        q = q.in('especialidade', ['Medicina Preventiva e Social', 'Medicina Preventiva']);
-      } else {
-        q = q.or(`especialidade.eq."${item}",tema.eq."${item}",foco.eq."${item}",subfoco.eq."${item}"`);
-      }
-
-      // Interseção AND com Card Direito:
-      if (resolvedBancas.length > 0) {
-        q = q.in('banca', resolvedBancas);
-      }
-      if (filters.anos && filters.anos.length > 0) {
-        q = q.in('year', filters.anos);
-      } else if (filters.ultimos5Anos) {
-        const minYear = new Date().getFullYear() - 4;
-        q = q.gte('year', minYear);
-      }
-      if (filters.dificuldade && filters.dificuldade !== 'Todas') {
-        q = q.eq('difficulty', filters.dificuldade);
-      }
-      if (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') {
-        q = q.eq('type', filters.tipoQuestao);
-      }
-      if (filters.ocultarAnuladasErro) {
-        q = q.eq('is_anulada', false);
-      }
-
-      // Busca textual se fornecida
-      if (filters.search && filters.search.trim()) {
-        const sTerm = sanitizePostgrestTerm(filters.search);
-        if (sTerm.length >= 2) {
-          q = q.or(`foco.ilike.%${sTerm}%,subfoco.ilike.%${sTerm}%,tema.ilike.%${sTerm}%,banca.ilike.%${sTerm}%,code.ilike.%${sTerm}%`);
-        }
-      }
-
-      // Modalidade
-      if (filters.modalidades && filters.modalidades.length > 0) {
-        const hasRevalida = filters.modalidades.some((m) => m.toLowerCase().includes('revalida'));
-        const otherModalidades = filters.modalidades.filter((m) => !m.toLowerCase().includes('revalida'));
-        if (hasRevalida && otherModalidades.length === 0) {
-          q = q.or('modalidade.eq.Revalida,banca.ilike.%Revalida%,institution.ilike.%Revalida%,code.ilike.INEPREVALIDA%');
-        } else if (hasRevalida && otherModalidades.length > 0) {
-          const otherIn = otherModalidades.join(',');
-          q = q.or(`modalidade.in.(${otherIn}),banca.ilike.%Revalida%,institution.ilike.%Revalida%,code.ilike.INEPREVALIDA%`);
+        // Conteúdo: Mapeamento de Especialidades principais com índice direto B-Tree
+        if (item === 'Clínica Médica') {
+          q = q.eq('especialidade', 'Clínica Médica');
+        } else if (item === 'Cirurgia Geral' || item === 'Cirurgia') {
+          q = q.in('especialidade', ['Cirurgia', 'Cirurgia Geral']);
+        } else if (item === 'Pediatria') {
+          q = q.eq('especialidade', 'Pediatria');
+        } else if (item === 'Ginecologia e Obstetrícia') {
+          q = q.in('especialidade', ['Ginecologia e Obstetrícia', 'Ginecologia', 'Obstetrícia']);
+        } else if (item === 'Obstetrícia') {
+          q = q.in('especialidade', ['Obstetrícia', 'Ginecologia e Obstetrícia']);
+        } else if (item === 'Ginecologia') {
+          q = q.in('especialidade', ['Ginecologia', 'Ginecologia e Obstetrícia']);
+        } else if (item === 'Medicina Preventiva' || item === 'Medicina Preventiva e Social') {
+          q = q.in('especialidade', ['Medicina Preventiva e Social', 'Medicina Preventiva']);
         } else {
-          const isOnlyDefault =
-            filters.modalidades.length === 1 &&
-            filters.modalidades[0] === 'Residência Médica';
-          if (!isOnlyDefault) {
-            q = q.in('modalidade', filters.modalidades);
+          q = q.or(`especialidade.eq."${item}",tema.eq."${item}",foco.eq."${item}",subfoco.eq."${item}"`);
+        }
+
+        // Interseção AND com Card Direito:
+        if (resolvedBancas.length > 0) {
+          q = q.in('banca', resolvedBancas);
+        }
+        if (filters.anos && filters.anos.length > 0) {
+          q = q.in('year', filters.anos);
+        } else if (filters.ultimos5Anos) {
+          const minYear = new Date().getFullYear() - 4;
+          q = q.gte('year', minYear);
+        }
+        if (filters.dificuldade && filters.dificuldade !== 'Todas') {
+          q = q.eq('difficulty', filters.dificuldade);
+        }
+        if (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') {
+          q = q.eq('type', filters.tipoQuestao);
+        }
+        if (filters.ocultarAnuladasErro) {
+          q = q.eq('is_anulada', false);
+        }
+
+        // Busca textual se fornecida
+        if (filters.search && filters.search.trim()) {
+          const sTerm = sanitizePostgrestTerm(filters.search);
+          if (sTerm.length >= 2) {
+            q = q.or(`foco.ilike.%${sTerm}%,subfoco.ilike.%${sTerm}%,tema.ilike.%${sTerm}%,banca.ilike.%${sTerm}%,code.ilike.%${sTerm}%`);
           }
         }
-      }
 
-      // Ordenação na consulta do Supabase: Quando Aleatório, busca estoque amplo em ordem natural (evita index scan timeout) e embaralha em JS; Mais Recentes prioriza anos decrescentes
-      if (!filters.aleatorizar) {
-        q = q.order('year', { ascending: false }).order('id', { ascending: true });
-      }
-
-      // Busca um conjunto amplo de candidatos (até 1.000) para permitir estratificação
-      const { data, error } = await q.limit(1000);
-
-      if (!error && data) {
-        // Filtragem de já respondidas se solicitado por status
-        let validCandidates = data as QuestionCandidate[];
-        if (filters.status === 'Não vistas' && answeredSet.size > 0) {
-          validCandidates = validCandidates.filter((c) => !answeredSet.has(c.id));
-        } else if (filters.status === 'Resolvidas' && answeredSet.size > 0) {
-          validCandidates = validCandidates.filter((c) => answeredSet.has(c.id));
+        // Modalidade
+        if (filters.modalidades && filters.modalidades.length > 0) {
+          const hasRevalida = filters.modalidades.some((m) => m.toLowerCase().includes('revalida'));
+          const otherModalidades = filters.modalidades.filter((m) => !m.toLowerCase().includes('revalida'));
+          if (hasRevalida && otherModalidades.length === 0) {
+            q = q.or(REVALIDA_POSTGREST_FILTER);
+          } else if (hasRevalida && otherModalidades.length > 0) {
+            const otherIn = otherModalidades.join(',');
+            q = q.or(`modalidade.in.(${otherIn}),${REVALIDA_POSTGREST_FILTER}`);
+          } else {
+            const isOnlyDefault =
+              filters.modalidades.length === 1 &&
+              filters.modalidades[0] === 'Residência Médica';
+            if (!isOnlyDefault) {
+              q = q.in('modalidade', filters.modalidades);
+            }
+          }
         }
 
-        if (filters.aleatorizar) {
-          validCandidates = shuffleArray(validCandidates);
+        // Ordenação na consulta do Supabase: Quando Aleatório, busca estoque amplo em ordem natural (evita index scan timeout) e embaralha em JS; Mais Recentes prioriza anos decrescentes
+        if (!filters.aleatorizar) {
+          q = q.order('year', { ascending: false }).order('id', { ascending: true });
+        }
+
+        // Busca um conjunto amplo de candidatos (até 3.000 para Revalida) para permitir estratificação sem truncamento
+        const isRevalidaMode = filters.modalidades?.some((m) => m.toLowerCase().includes('revalida'));
+        const { data, error } = await q.limit(isRevalidaMode ? 3500 : 1000);
+
+        if (!error && data) {
+          // Filtragem estrita e integrada ao histórico real do aluno no Supabase
+          let validCandidates = data as QuestionCandidate[];
+          if (filters.status === 'Não vistas') {
+            validCandidates = validCandidates.filter((c) => !answeredSet.has(c.id));
+          } else if (filters.status === 'Resolvidas') {
+            validCandidates = validCandidates.filter((c) => answeredSet.has(c.id));
+          } else if (filters.status === 'Acertadas') {
+            validCandidates = validCandidates.filter((c) => correctSet.has(c.id));
+          } else if (filters.status === 'Erradas') {
+            validCandidates = validCandidates.filter((c) => wrongSet.has(c.id));
+          }
+
+          if (filters.aleatorizar) {
+            validCandidates = shuffleArray(validCandidates);
+          } else {
+            validCandidates.sort((a, b) => {
+              const diff = (b.year || 0) - (a.year || 0);
+              return diff !== 0 ? diff : a.id.localeCompare(b.id);
+            });
+          }
+
+          candidatePoolsByItem[item] = validCandidates;
+          stockAvailableByItem[item] = validCandidates.length;
         } else {
-          validCandidates.sort((a, b) => {
-            const diff = (b.year || 0) - (a.year || 0);
-            return diff !== 0 ? diff : a.id.localeCompare(b.id);
-          });
+          candidatePoolsByItem[item] = [];
+          stockAvailableByItem[item] = 0;
         }
-
-        candidatePoolsByItem[item] = validCandidates;
-        stockAvailableByItem[item] = validCandidates.length;
-      } else {
+      } catch (err) {
+        console.error(`Erro ao buscar candidatos para cota ${item}:`, err);
         candidatePoolsByItem[item] = [];
         stockAvailableByItem[item] = 0;
       }
-    } catch (err) {
-      console.error(`Erro ao buscar candidatos para cota ${item}:`, err);
-      candidatePoolsByItem[item] = [];
-      stockAvailableByItem[item] = 0;
-    }
-  }
+    })
+  );
 
   // 3. FALLBACK AUTOMÁTICO DE ESTOQUE COM REDISTRIBUIÇÃO PROPORCIONAL
   const adjustedAllocations: Record<string, number> = {};
@@ -590,14 +728,23 @@ export async function generateStratifiedQuiz(
     }
   }
 
-  // 5. MONTAGEM DA LISTA FINAL
+  // 5. MONTAGEM DA LISTA FINAL COM INTERCALAÇÃO REAL ROUND-ROBIN
   const finalOrderedIds: string[] = [];
   const contentItems = Object.keys(selectedPoolsByItem);
-
+  const poolsQueue: Record<string, string[]> = {};
   for (const it of contentItems) {
-    for (const id of selectedPoolsByItem[it]) {
-      if (finalOrderedIds.length < finalMax) {
-        finalOrderedIds.push(id);
+    poolsQueue[it] = [...(selectedPoolsByItem[it] || [])];
+  }
+
+  let hasMore = true;
+  while (hasMore && finalOrderedIds.length < finalMax) {
+    hasMore = false;
+    for (const it of contentItems) {
+      if (poolsQueue[it] && poolsQueue[it].length > 0) {
+        const nextId = poolsQueue[it].shift()!;
+        finalOrderedIds.push(nextId);
+        hasMore = true;
+        if (finalOrderedIds.length >= finalMax) break;
       }
     }
   }
@@ -665,9 +812,9 @@ export async function generateStratifiedQuiz(
       if (compData && compData.length > 0) {
         const compCandidates = !filters.aleatorizar
           ? [...compData].sort((a, b) => {
-              const diff = (b.year || 0) - (a.year || 0);
-              return diff !== 0 ? diff : a.id.localeCompare(b.id);
-            })
+            const diff = (b.year || 0) - (a.year || 0);
+            return diff !== 0 ? diff : a.id.localeCompare(b.id);
+          })
           : shuffleArray(compData);
         for (const row of compCandidates) {
           allCandidatesMap.set(row.id, row as QuestionCandidate);

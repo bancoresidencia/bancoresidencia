@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useRef, useEffect } from 'react';
 import {
   BarChart,
   Bar,
@@ -18,11 +18,11 @@ import {
   Moon,
   ChevronLeft,
   ChevronRight,
+  ChevronDown,
   Zap,
   TrendingUp,
   AlertTriangle,
-  Flame,
-  CalendarDays
+  Flame
 } from 'lucide-react';
 import { UserAnswerItem } from '@/types';
 import { useTheme } from '@/context/ThemeContext';
@@ -56,6 +56,21 @@ const formatHumanDate = (dateStr: string): string => {
     return dateStr;
   }
 };
+
+// Formata data no padrão brasileiro DD/MM/AAAA
+const formatDateBR = (dateStr: string): string => {
+  try {
+    const [y, m, d] = dateStr.split('-');
+    return `${d}/${m}/${y}`;
+  } catch {
+    return dateStr;
+  }
+};
+
+const MONTH_NAMES = [
+  'Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho',
+  'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'
+];
 
 // Tooltip refinado do gráfico de horas
 interface HourlyTooltipProps {
@@ -168,33 +183,90 @@ export const DailyHabitsAndHourlyExplorer: React.FC<DailyHabitsAndHourlyExplorer
     return map;
   }, [userAnswers]);
 
-  // Lista dos últimos 7 dias para navegação rápida em chips
-  const quickDaysList = useMemo(() => {
-    const list: { dateStr: string; dayLabel: string; count: number; isToday: boolean }[] = [];
-    const now = new Date();
-    const dayNames = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'];
+  // Estado do calendário interativo para selecionar qualquer dia
+  const [isCalendarOpen, setIsCalendarOpen] = useState(false);
+  const calendarRef = useRef<HTMLDivElement>(null);
 
-    for (let i = 6; i >= 0; i--) {
-      const d = new Date(now);
-      d.setDate(d.getDate() - i);
-      const str = toLocalDateStr(d);
-      const dayAnswers = answersByDateAndHour[str];
-      let total = 0;
-      if (dayAnswers) {
-        Object.values(dayAnswers).forEach((h) => {
-          total += h.resolvidas;
+  const [calYear, setCalYear] = useState(() => {
+    const [y] = (todayStr || '2026-10-31').split('-').map(Number);
+    return y;
+  });
+  const [calMonth, setCalMonth] = useState(() => {
+    const [, m] = (todayStr || '2026-10-31').split('-').map(Number);
+    return m - 1;
+  });
+
+
+  // Fecha calendário ao clicar fora
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (calendarRef.current && !calendarRef.current.contains(e.target as Node)) {
+        setIsCalendarOpen(false);
+      }
+    };
+    if (isCalendarOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isCalendarOpen]);
+
+  // Células do mês no calendário
+  const calendarDays = useMemo(() => {
+    const firstDayIndex = new Date(calYear, calMonth, 1).getDay();
+    const daysInMonth = new Date(calYear, calMonth + 1, 0).getDate();
+
+    const cells: Array<{
+      dateStr: string;
+      dayNum: number;
+      isFuture: boolean;
+      isSelected: boolean;
+      isToday: boolean;
+      hasActivity: boolean;
+      activityCount: number;
+    } | null> = [];
+
+    // Preenchimento dos dias vazios do início da semana
+    for (let i = 0; i < firstDayIndex; i++) {
+      cells.push(null);
+    }
+
+    // Dias do mês
+    for (let d = 1; d <= daysInMonth; d++) {
+      const dateStr = `${calYear}-${String(calMonth + 1).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
+      const isFuture = dateStr > todayStr;
+      const isSelected = dateStr === selectedDate;
+      const isToday = dateStr === todayStr;
+
+      let activityCount = 0;
+      const dayData = answersByDateAndHour[dateStr];
+      if (dayData) {
+        Object.values(dayData).forEach((h) => {
+          activityCount += h.resolvidas;
         });
       }
 
-      list.push({
-        dateStr: str,
-        dayLabel: i === 0 ? 'Hoje' : `${dayNames[d.getDay()]} ${String(d.getDate()).padStart(2, '0')}`,
-        count: total,
-        isToday: i === 0
+      cells.push({
+        dateStr,
+        dayNum: d,
+        isFuture,
+        isSelected,
+        isToday,
+        hasActivity: activityCount > 0,
+        activityCount
       });
     }
-    return list;
-  }, [answersByDateAndHour]);
+
+    return cells;
+  }, [calYear, calMonth, selectedDate, todayStr, answersByDateAndHour]);
+
+  const isNextMonthDisabled = useMemo(() => {
+    const [todayY, todayM] = todayStr.split('-').map(Number);
+    if (calYear > todayY) return true;
+    if (calYear === todayY && calMonth >= todayM - 1) return true;
+    return false;
+  }, [calYear, calMonth, todayStr]);
 
   // Navegação: dia anterior / próximo dia
   const handlePrevDay = () => {
@@ -586,7 +658,7 @@ export const DailyHabitsAndHourlyExplorer: React.FC<DailyHabitsAndHourlyExplorer
             </p>
           </div>
 
-          {/* Seletor de Data Interativo */}
+          {/* Seletor de Data com Calendário Interativo */}
           <div className="flex items-center gap-2 flex-wrap">
             <button
               onClick={handlePrevDay}
@@ -596,17 +668,147 @@ export const DailyHabitsAndHourlyExplorer: React.FC<DailyHabitsAndHourlyExplorer
               <ChevronLeft className="w-4 h-4" />
             </button>
 
-            <div className="relative flex items-center">
-              <CalendarIcon className="w-4 h-4 text-slate-600 dark:text-zinc-400 absolute left-3 pointer-events-none" />
-              <input
-                type="date"
-                value={selectedDate}
-                max={todayStr}
-                onChange={(e) => {
-                  if (e.target.value) setSelectedDate(e.target.value);
+            {/* Popover de Calendário Interativo para Escolher Qualquer Dia */}
+            <div className="relative" ref={calendarRef}>
+              <button
+                type="button"
+                onClick={() => {
+                  if (!isCalendarOpen) {
+                    const [y, m] = selectedDate.split('-').map(Number);
+                    setCalYear(y);
+                    setCalMonth(m - 1);
+                  }
+                  setIsCalendarOpen((prev) => !prev);
                 }}
-                className="pl-9 pr-3 py-1.5 text-xs font-semibold rounded-xl border border-[var(--card-border)] bg-[var(--bg-card)] text-slate-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-emerald-500/30 cursor-pointer"
-              />
+                className="flex items-center gap-2 px-3 py-1.5 text-xs font-bold rounded-xl border border-[var(--card-border)] bg-[var(--bg-card)] hover:border-emerald-500/50 text-slate-900 dark:text-white transition-all shadow-xs cursor-pointer group"
+                title="Abrir calendário para selecionar qualquer dia"
+              >
+                <CalendarIcon className="w-4 h-4 text-emerald-500 group-hover:scale-110 transition-transform" />
+                <span className="font-mono">{formatDateBR(selectedDate)}</span>
+                <ChevronDown className={`w-3.5 h-3.5 text-slate-400 transition-transform duration-200 ${isCalendarOpen ? 'rotate-180' : ''}`} />
+              </button>
+
+              {isCalendarOpen && (
+                <div className="absolute right-0 sm:right-auto sm:left-0 top-full mt-2 z-50 w-72 bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl shadow-2xl p-3.5 space-y-3 animate-in fade-in zoom-in-95 duration-150 select-none">
+                  {/* Cabeçalho do Mês / Ano */}
+                  <div className="flex items-center justify-between">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        if (calMonth === 0) {
+                          setCalMonth(11);
+                          setCalYear((y) => y - 1);
+                        } else {
+                          setCalMonth((m) => m - 1);
+                        }
+                      }}
+                      className="p-1 rounded-lg hover:bg-[var(--bg-muted)] text-slate-700 dark:text-zinc-300 transition-colors cursor-pointer"
+                      title="Mês anterior"
+                    >
+                      <ChevronLeft className="w-4 h-4" />
+                    </button>
+
+                    <span className="text-xs font-bold text-slate-900 dark:text-white capitalize">
+                      {MONTH_NAMES[calMonth]} {calYear}
+                    </span>
+
+                    <button
+                      type="button"
+                      disabled={isNextMonthDisabled}
+                      onClick={() => {
+                        if (calMonth === 11) {
+                          setCalMonth(0);
+                          setCalYear((y) => y + 1);
+                        } else {
+                          setCalMonth((m) => m + 1);
+                        }
+                      }}
+                      className={`p-1 rounded-lg transition-colors ${
+                        isNextMonthDisabled
+                          ? 'opacity-30 cursor-not-allowed text-slate-400'
+                          : 'hover:bg-[var(--bg-muted)] text-slate-700 dark:text-zinc-300 cursor-pointer'
+                      }`}
+                      title="Próximo mês"
+                    >
+                      <ChevronRight className="w-4 h-4" />
+                    </button>
+                  </div>
+
+                  {/* Dias da Semana */}
+                  <div className="grid grid-cols-7 gap-1 text-center text-[10px] font-bold text-slate-500 dark:text-zinc-400 uppercase tracking-wider">
+                    {['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'].map((day) => (
+                      <div key={day} className="py-1">
+                        {day}
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Grid de Dias */}
+                  <div className="grid grid-cols-7 gap-1">
+                    {calendarDays.map((cell, idx) => {
+                      if (!cell) {
+                        return <div key={`empty-${idx}`} className="h-8" />;
+                      }
+
+                      const { dateStr, dayNum, isFuture, isSelected, isToday, hasActivity, activityCount } = cell;
+
+                      return (
+                        <button
+                          key={dateStr}
+                          type="button"
+                          disabled={isFuture}
+                          onClick={() => {
+                            setSelectedDate(dateStr);
+                            setIsCalendarOpen(false);
+                          }}
+                          className={`relative h-8 rounded-lg text-xs font-semibold flex flex-col items-center justify-center transition-all cursor-pointer ${
+                            isSelected
+                              ? 'bg-emerald-500 text-white font-bold shadow-xs'
+                              : isToday
+                              ? 'border border-emerald-500 text-emerald-600 dark:text-emerald-400 bg-emerald-500/10'
+                              : isFuture
+                              ? 'opacity-25 cursor-not-allowed text-slate-400 dark:text-zinc-600'
+                              : 'hover:bg-[var(--bg-muted)] text-slate-800 dark:text-zinc-200'
+                          }`}
+                          title={`${dayNum} de ${MONTH_NAMES[calMonth]} de ${calYear}${
+                            activityCount > 0 ? ` (${activityCount} resolvidas)` : ''
+                          }`}
+                        >
+                          <span>{dayNum}</span>
+                          {hasActivity && !isSelected && (
+                            <span className="w-1 h-1 rounded-full bg-emerald-500 absolute bottom-1" />
+                          )}
+                          {hasActivity && isSelected && (
+                            <span className="w-1 h-1 rounded-full bg-white absolute bottom-1" />
+                          )}
+                        </button>
+                      );
+                    })}
+                  </div>
+
+                  {/* Rodapé do Popover */}
+                  <div className="pt-2 border-t border-[var(--card-border)] flex items-center justify-between text-xs">
+                    <span className="text-[10px] text-slate-500 dark:text-zinc-400 flex items-center gap-1">
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+                      Com resoluções
+                    </span>
+
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setSelectedDate(todayStr);
+                        const [y, m] = todayStr.split('-').map(Number);
+                        setCalYear(y);
+                        setCalMonth(m - 1);
+                        setIsCalendarOpen(false);
+                      }}
+                      className="text-[11px] font-bold text-emerald-600 dark:text-emerald-400 hover:underline cursor-pointer"
+                    >
+                      Ir para Hoje
+                    </button>
+                  </div>
+                </div>
+              )}
             </div>
 
             <button
@@ -631,39 +833,6 @@ export const DailyHabitsAndHourlyExplorer: React.FC<DailyHabitsAndHourlyExplorer
               </button>
             )}
           </div>
-        </div>
-
-        {/* Chips de Navegação Rápida (Últimos 7 dias) */}
-        <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
-          <span className="text-[11px] font-semibold text-slate-600 dark:text-zinc-400 whitespace-nowrap flex items-center gap-1 mr-1">
-            <CalendarDays className="w-3.5 h-3.5" />
-            Dias recentes:
-          </span>
-          {quickDaysList.map((d) => {
-            const isSelected = selectedDate === d.dateStr;
-            return (
-              <button
-                key={d.dateStr}
-                onClick={() => setSelectedDate(d.dateStr)}
-                className={`px-3 py-1 rounded-xl text-xs font-medium whitespace-nowrap transition-all flex items-center gap-1.5 cursor-pointer border ${
-                  isSelected
-                    ? 'bg-emerald-500 text-white border-emerald-500 shadow-xs'
-                    : 'bg-[var(--bg-muted)]/40 hover:bg-[var(--bg-muted)] text-slate-700 dark:text-zinc-300 border-[var(--card-border)]'
-                }`}
-              >
-                <span>{d.dayLabel}</span>
-                {d.count > 0 && (
-                  <span
-                    className={`text-[10px] px-1.5 py-0.2 rounded-full font-bold ${
-                      isSelected ? 'bg-white/20 text-white' : 'bg-slate-200 dark:bg-zinc-800 text-slate-600 dark:text-zinc-400'
-                    }`}
-                  >
-                    {d.count}
-                  </span>
-                )}
-              </button>
-            );
-          })}
         </div>
 
         {/* Resumo Rápido do Dia Selecionado */}

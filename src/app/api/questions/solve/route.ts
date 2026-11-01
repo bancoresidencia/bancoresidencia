@@ -134,6 +134,9 @@ export async function POST(req: NextRequest) {
           .select('id, code, correct_answer, is_anulada, commentary, options')
           .eq('code', questionId)
           .maybeSingle();
+        if (byCodeRes.error) {
+          console.error('[API Solve] Erro ao consultar questão por código:', byCodeRes.error);
+        }
         row = byCodeRes.data;
       } else {
         row = data;

@@ -6,7 +6,8 @@ import {
   AdvancedFilterState,
   QuestionStatus,
   QuestionDifficulty,
-  QuestionType
+  QuestionType,
+  UserAnswerItem
 } from '@/types';
 import {
   Search,
@@ -24,6 +25,7 @@ import {
   BookOpen,
   ListPlus,
   Play,
+  Ban,
   SlidersHorizontal,
   Stethoscope,
   MapPin,
@@ -51,6 +53,7 @@ import { BancaRaioXModal } from './BancaRaioXModal';
 
 interface AdvancedQuestionFiltersProps {
   filters: AdvancedFilterState;
+  userAnswers?: Record<string, UserAnswerItem>;
   onChange: (filters: AdvancedFilterState) => void;
   onReset: () => void;
   totalAvailable: number;
@@ -63,7 +66,7 @@ interface AdvancedQuestionFiltersProps {
   embedded?: boolean;
 }
 
-// Bancas mais concorridas para acesso rápido em 1 clique (conforme imagem)
+// Bancas mais concorridas para acesso rápido em 1 clique (Residência Médica)
 const POPULAR_BANCAS_1CLIQUE = [
   { label: 'ENARE', key: 'ENARE' },
   { label: 'USP-SP', key: 'USP/HCFMUSP' },
@@ -72,6 +75,25 @@ const POPULAR_BANCAS_1CLIQUE = [
   { label: 'SURCE', key: 'SURCE' },
   { label: 'PSU-MG', key: 'PSU-MG' },
   { label: 'UNIFESP', key: 'UNIFESP/EPM' }
+];
+
+// Bancas oficiais para o Exame de Revalidação de Diplomas Médicos (Revalida)
+const REVALIDA_BANCAS_1CLIQUE = [
+  { label: 'INEP Revalida', key: 'INEP Revalida' },
+  { label: 'Revalida USP (FMRP)', key: 'FMRP-USP' },
+  { label: 'UFMT Revalida', key: 'UFMT Revalida' },
+  { label: 'UEPA Revalida', key: 'UEPA Revalida' },
+  { label: 'UNIRG Revalida', key: 'UNIRG Revalida' }
+];
+
+// Bancas / Sociedades para Especialidades e Título de Especialista (R+ / Título)
+const RPLUS_BANCAS_1CLIQUE = [
+  { label: 'TEGO (Ginecologia/Obstetrícia)', key: 'TEGO' },
+  { label: 'TEP (Pediatria)', key: 'TEP' },
+  { label: 'TECM (Clínica Médica)', key: 'TECM' },
+  { label: 'CBC (Cirurgia)', key: 'CBC' },
+  { label: 'SBC (Cardiologia)', key: 'SBC' },
+  { label: 'SBOT (Ortopedia)', key: 'SBOT' }
 ];
 
 
@@ -93,6 +115,16 @@ export interface UfInstitutionItem {
 }
 
 // Catálogo formatado com contagens de questões com gabarito consolidado
+
+// Catálogo específico e exclusivo para o Exame de Revalidação de Diplomas Médicos (Revalida)
+const REVALIDA_INSTITUTIONS_CATALOG: UfInstitutionItem[] = [
+  { sigla: 'INEP Revalida', uf: 'Nacional', nome: 'INEP - Exame Nacional de Revalidação de Diplomas Médicos', count: '2.040 questões', key: 'INEP Revalida' },
+  { sigla: 'UFMT Revalida', uf: 'MT', nome: 'Universidade Federal de Mato Grosso - Revalidação', count: '523 questões', key: 'UFMT Revalida' },
+  { sigla: 'UEPA Revalida', uf: 'PA', nome: 'Universidade do Estado do Pará - Revalidação', count: '105 questões', key: 'UEPA Revalida' },
+  { sigla: 'UNIRG Revalida', uf: 'TO', nome: 'Universidade de Gurupi - Revalidação', count: '50 questões', key: 'UNIRG Revalida' },
+  { sigla: 'FMRP-USP Revalida', uf: 'SP', nome: 'Faculdade de Medicina de Ribeirão Preto (USP) - Revalidação', count: '203 questões', key: 'FMRP-USP' },
+];
+
 const UF_INSTITUTIONS_CATALOG: UfInstitutionItem[] = [
   // Nacional
   { sigla: 'ENARE', uf: 'Nacional', nome: 'Exame Nacional de Residência (EBSERH)', count: '2.150 questões', key: 'ENARE' },
@@ -190,8 +222,43 @@ const UF_INSTITUTIONS_CATALOG: UfInstitutionItem[] = [
   { sigla: 'UFRR', uf: 'RR', nome: 'Universidade Federal de Roraima (HGR)', count: '1.310 questões', key: 'UFRR' }
 ];
 
+const CANONICAL_BANCA_KEY_MAP: Record<string, string> = {
+  'usp-sp': 'USP/HCFMUSP',
+  'usp/hcfmusp': 'USP/HCFMUSP',
+  'fuvest - usp': 'USP/HCFMUSP',
+  'unicamp': 'UNICAMP/HC',
+  'unicamp/hc': 'UNICAMP/HC',
+  'unifesp': 'UNIFESP/EPM',
+  'unifesp/epm': 'UNIFESP/EPM',
+  'santa casa sp': 'Santa Casa de São Paulo',
+  'santa casa de são paulo': 'Santa Casa de São Paulo',
+  'hiae / einstein': 'Einstein',
+  'einstein': 'Einstein',
+  'hcpa / ufrgs': 'HCPA',
+  'hcpa': 'HCPA',
+  'puc-pr': 'Pontifícia Universidade Católica do Paraná',
+  'pontifícia universidade católica do paraná': 'Pontifícia Universidade Católica do Paraná',
+  'hub / unb': 'UnB',
+  'unb': 'UnB'
+};
+
+export function getCanonicalBancaKey(raw: string): string {
+  const norm = (raw || '').trim().toLowerCase();
+  if (CANONICAL_BANCA_KEY_MAP[norm]) return CANONICAL_BANCA_KEY_MAP[norm];
+  const item =
+    UF_INSTITUTIONS_CATALOG.find(
+      (c) => c.sigla.toLowerCase() === norm || c.key.toLowerCase() === norm || c.nome.toLowerCase() === norm
+    ) ||
+    REVALIDA_INSTITUTIONS_CATALOG.find(
+      (c) => c.sigla.toLowerCase() === norm || c.key.toLowerCase() === norm || c.nome.toLowerCase() === norm
+    );
+  if (item) return item.key;
+  return raw.trim();
+}
+
 export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = ({
   filters,
+  userAnswers = {},
   onChange,
   onReset,
   totalAvailable,
@@ -217,11 +284,28 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   const [mobileTab, setMobileTab] = useState<'conteudo' | 'bancas'>('conteudo');
 
   useEffect(() => {
-    setIsFilterTransitioning(true);
-    const t = setTimeout(() => {
+    // Só ativa o spinner de transição se houver filtros ativos no Card Direito (bancas, anos, status, etc.)
+    // que necessitam de consulta assíncrona ao banco. Filtros clínicos na árvore local respondem instantaneamente (0ms)
+    const hasRightCard = Boolean(
+      (filters.search && filters.search.trim()) ||
+      (filters.instituicoes && filters.instituicoes.length > 0) ||
+      (filters.anos && filters.anos.length > 0 && filters.anos.length < YEARS_LIST.length) ||
+      (filters.dificuldade && filters.dificuldade !== 'Todas') ||
+      (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') ||
+      (filters.status && filters.status !== 'Todas') ||
+      filters.ocultarAnuladasErro ||
+      filters.ultimos5Anos
+    );
+
+    if (hasRightCard) {
+      setIsFilterTransitioning(true);
+      const t = setTimeout(() => {
+        setIsFilterTransitioning(false);
+      }, 180);
+      return () => clearTimeout(t);
+    } else {
       setIsFilterTransitioning(false);
-    }, 280);
-    return () => clearTimeout(t);
+    }
   }, [
     filters.especialidades,
     filters.temas,
@@ -312,14 +396,25 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     let isMounted = true;
     const timer = setTimeout(async () => {
       try {
-        const res = await fetchFacetedHierarchyCounts(filters);
+        const answeredIds = Object.keys(userAnswers || {});
+        const correctIds = Object.entries(userAnswers || {}).filter(([_, a]) => a.isCorrect).map(([id]) => id);
+        const wrongIds = Object.entries(userAnswers || {}).filter(([_, a]) => !a.isCorrect).map(([id]) => id);
+
+        const enrichedFilters: AdvancedFilterState = {
+          ...filters,
+          userSolvedIds: answeredIds,
+          userCorrectIds: correctIds,
+          userWrongIds: wrongIds
+        };
+
+        const res = await fetchFacetedHierarchyCounts(enrichedFilters);
         if (isMounted) {
           setFacetedCounts(res);
         }
       } catch {
         if (isMounted) setFacetedCounts(null);
       }
-    }, 250);
+    }, 200);
 
     return () => {
       isMounted = false;
@@ -332,7 +427,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     filters.tipoQuestao,
     filters.ocultarAnuladasErro,
     filters.ultimos5Anos,
-    filters.modalidades
+    filters.modalidades,
+    filters.status,
+    filters.search,
+    userAnswers
   ]);
 
   // Identificação dinâmica de filtros selecionados para cotas (evitando duplicar pai e filho)
@@ -434,6 +532,17 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
   // Modalidade ativa
   const currentModalidade = filters.modalidades[0] || 'Residência Médica';
+
+  // Conjunto dinâmico de bancas em destaque (1 clique) conforme a modalidade selecionada
+  const activeQuickBancas = useMemo(() => {
+    if (currentModalidade === 'Revalida') {
+      return REVALIDA_BANCAS_1CLIQUE;
+    }
+    if (currentModalidade.startsWith('R+') || currentModalidade.startsWith('Título')) {
+      return RPLUS_BANCAS_1CLIQUE;
+    }
+    return POPULAR_BANCAS_1CLIQUE;
+  }, [currentModalidade]);
 
 
   // --- LÓGICA DE MULTI-SELEÇÃO DE ESPECIALIDADES (SOMA / UNIÃO) ---
@@ -575,13 +684,14 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   };
 
   // --- FILTROS DE INSTITUIÇÃO ---
-  const toggleInstituicao = (bancaKey: string) => {
+  const toggleInstituicao = (rawBancaKey: string) => {
+    const canonical = getCanonicalBancaKey(rawBancaKey);
     const exists = filters.instituicoes.some(
-      (inst) => inst.toLowerCase() === bancaKey.toLowerCase()
+      (inst) => getCanonicalBancaKey(inst).toLowerCase() === canonical.toLowerCase()
     );
     const next = exists
-      ? filters.instituicoes.filter((i) => i.toLowerCase() !== bancaKey.toLowerCase())
-      : [...filters.instituicoes, bancaKey];
+      ? filters.instituicoes.filter((i) => getCanonicalBancaKey(i).toLowerCase() !== canonical.toLowerCase())
+      : [...filters.instituicoes.filter((i) => getCanonicalBancaKey(i).toLowerCase() !== canonical.toLowerCase()), canonical];
 
     onChange({
       ...filters,
@@ -592,17 +702,22 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   const filteredBancasSearch = useMemo(() => {
     if (!deferredInstSearch.trim()) return [];
     const q = deferredInstSearch.toLowerCase().trim();
-    return medicalInstitutionsDirectory
+    const sourceCatalog =
+      currentModalidade === 'Revalida'
+        ? [...REVALIDA_INSTITUTIONS_CATALOG, ...medicalInstitutionsDirectory]
+        : medicalInstitutionsDirectory;
+    return sourceCatalog
       .filter((inst) => inst.sigla.toLowerCase().includes(q) || inst.nome.toLowerCase().includes(q))
       .slice(0, 8);
-  }, [deferredInstSearch]);
+  }, [deferredInstSearch, currentModalidade]);
 
   const catalogFilteredByUf = useMemo(() => {
-    if (selectedUfTab === 'Todas') return UF_INSTITUTIONS_CATALOG;
-    return UF_INSTITUTIONS_CATALOG.filter(
+    const baseCatalog = currentModalidade === 'Revalida' ? REVALIDA_INSTITUTIONS_CATALOG : UF_INSTITUTIONS_CATALOG;
+    if (selectedUfTab === 'Todas') return baseCatalog;
+    return baseCatalog.filter(
       (inst) => inst.uf.toLowerCase() === selectedUfTab.toLowerCase()
     );
-  }, [selectedUfTab]);
+  }, [selectedUfTab, currentModalidade]);
 
   // --- ANOS ---
   const toggleYear = (y: number) => {
@@ -632,8 +747,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     });
   };
 
-  // --- CÁLCULO DINÂMICO DE QUESTÕES ENCONTRADAS (INTERSECÇÃO REAL DO BANCO DE DADOS) ---
+    // --- CÁLCULO DINÂMICO DE QUESTÕES ENCONTRADAS (INTERSECÇÃO REAL DO BANCO DE DADOS) ---
   const displayedQuestionCount = useMemo(() => {
+    const isRevalidaMode = filters.modalidades?.length === 1 && filters.modalidades[0] === 'Revalida';
+
     const hasRightCardFilters = Boolean(
       (filters.search && filters.search.trim()) ||
       (filters.instituicoes && filters.instituicoes.length > 0) ||
@@ -642,7 +759,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') ||
       (filters.status && filters.status !== 'Todas') ||
       filters.ocultarAnuladasErro ||
-      filters.ultimos5Anos
+      filters.ultimos5Anos ||
+      isRevalidaMode
     );
 
     const hasClinicalFilters = Boolean(
@@ -655,9 +773,36 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     const hasActiveFilters = hasClinicalFilters || hasRightCardFilters;
 
     if (hasActiveFilters) {
-      // 1. Resposta instantânea (0ms): Quando o estudante seleciona itens na árvore clínica
-      // e não há outros filtros cruzados na direita (bancas, anos, status, etc.),
-      // a soma local do catálogo pré-calculado é 100% idêntica ao banco e instantânea no clique!
+      if (isRevalidaMode) {
+        if (typeof totalFiltered === 'number' && totalFiltered !== 132965) {
+          return totalFiltered;
+        }
+        if (facetedCounts) {
+          if (filters.subfocos && filters.subfocos.length > 0) {
+            const sum = filters.subfocos.reduce((acc, s) => acc + (facetedCounts.subfocos[s] || 0), 0);
+            if (sum > 0) return sum;
+          } else if (filters.focos && filters.focos.length > 0) {
+            const sum = filters.focos.reduce((acc, f) => acc + (facetedCounts.focos[f] || 0), 0);
+            if (sum > 0) return sum;
+          } else if (filters.temas && filters.temas.length > 0) {
+            const sum = filters.temas.reduce((acc, t) => acc + (facetedCounts.temas[t] || 0), 0);
+            if (sum > 0) return sum;
+          } else if (filters.especialidades && filters.especialidades.length > 0) {
+            const sum = filters.especialidades.reduce((acc, e) => acc + (facetedCounts.especialidades[e] || 0), 0);
+            if (sum > 0) return sum;
+          }
+          if (typeof facetedCounts.totalRightCardCount === 'number' && facetedCounts.totalRightCardCount > 0) {
+            return facetedCounts.totalRightCardCount;
+          }
+        }
+        if (filters.instituicoes && filters.instituicoes.length > 0) {
+          const instSum = filters.instituicoes.reduce((acc, inst) => acc + (getInstitutionSupabaseCount(inst) || 0), 0);
+          if (instSum > 0) return instSum;
+        }
+        return 2921;
+      }
+
+      // 1. Resposta instantânea (0ms) para Residência Geral
       if (hasClinicalFilters && !hasRightCardFilters) {
         let clinicalSum = 0;
         if (filters.subfocos && filters.subfocos.length > 0) {
@@ -674,8 +819,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
         }
       }
 
-      // 2. Se há resposta real da API com contagem cruzada válida e diferente do total inicial global
-      if (typeof totalFiltered === 'number' && totalFiltered > 0 && totalFiltered !== 132965) {
+      // 2. Se há resposta real da API com contagem cruzada válida
+      if (typeof totalFiltered === 'number' && totalFiltered !== 132965) {
         return totalFiltered;
       }
 
@@ -701,6 +846,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   }, [
     totalAvailable,
     totalFiltered,
+    filters.modalidades,
     filters.search,
     filters.especialidades,
     filters.temas,
@@ -718,6 +864,15 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   // Filtros ativos para renderizar tags
   const activeTags = useMemo(() => {
     const tags: { id: string; label: string; onRemove: () => void }[] = [];
+
+    // Modalidade Revalida (tag de escopo)
+    if (filters.modalidades && filters.modalidades.length === 1 && filters.modalidades[0] === 'Revalida') {
+      tags.push({
+        id: 'mod-revalida',
+        label: 'Revalida',
+        onRemove: () => onChange({ ...filters, modalidades: ['Residência Médica'], instituicoes: [] })
+      });
+    }
 
     // Anos
     if (filters.anos.length > 0) {
@@ -836,7 +991,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   }, [filters]);
 
   return (
-    <div className="text-slate-900 dark:text-slate-100 h-full flex flex-col justify-between min-h-0 space-y-2.5 font-sans select-none pb-36 sm:pb-32 lg:pb-16">
+    <div className="text-slate-900 dark:text-slate-100 h-full flex flex-col justify-between min-h-0 space-y-2.5 font-sans select-none pb-[calc(env(safe-area-inset-bottom,0px)+128px)] sm:pb-32 lg:pb-16">
       {/* =========================================================================
           1. HEADER SUPERIOR / CARD PRINCIPAL (ESTILO IMAGEM 1)
          ========================================================================= */}
@@ -847,7 +1002,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
           <div className="flex items-center gap-1 p-0.5 rounded-xl bg-slate-100 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800/80 w-full sm:w-auto overflow-x-auto no-scrollbar">
             <button
               type="button"
-              onClick={() => onChange({ ...filters, modalidades: ['Residência Médica'] })}
+              onClick={() => onChange({ ...filters, modalidades: ['Residência Médica'], instituicoes: filters.instituicoes.filter(i => !i.toLowerCase().includes('revalida')) })}
               className={`px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-bold transition-all cursor-pointer ${
                 currentModalidade === 'Residência Médica'
                   ? 'text-white shadow-sm'
@@ -862,7 +1017,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
             <button
               type="button"
-              onClick={() => onChange({ ...filters, modalidades: ['Revalida'] })}
+              onClick={() => onChange({ ...filters, modalidades: ['Revalida'], instituicoes: filters.instituicoes.filter(i => i.toLowerCase().includes('revalida') || i.includes('FMRP') || i === 'FMRP-USP') })}
               className={`px-3.5 py-1.5 rounded-lg text-xs sm:text-sm font-medium transition-all cursor-pointer ${
                 currentModalidade === 'Revalida'
                   ? 'text-white font-bold shadow-sm'
@@ -1012,7 +1167,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             COLUNA DA ESQUERDA (57%): ESPECIALIDADES, TEMAS E SUBFOCOS
            ----------------------------------------------------------------------- */}
         <div 
-          className={`rounded-3xl p-3.5 sm:p-4 flex-col shadow-sm bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 overflow-hidden h-full min-h-0 ${
+          className={`rounded-3xl p-3.5 sm:p-4 flex-col shadow-sm bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 overflow-hidden h-full min-h-0 max-h-[65vh] lg:max-h-none ${
             mobileTab === 'conteudo' ? 'flex' : 'hidden lg:flex'
           }`}
         >
@@ -1466,7 +1621,13 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                 type="text"
                 value={instSearch}
                 onChange={(e) => setInstSearch(e.target.value)}
-                placeholder="Buscar banca por sigla, nome ou estado (ex: ENARE, USP, SURCE, SP...)"
+                placeholder={
+                  currentModalidade === 'Revalida'
+                    ? 'Buscar banca do Revalida (ex: INEP, UFMT, UEPA, USP)...'
+                    : currentModalidade.startsWith('R+') || currentModalidade.startsWith('Título')
+                    ? 'Buscar sociedade ou título (ex: TEGO, TEP, TECM, SBC)...'
+                    : 'Buscar banca por sigla, nome ou estado (ex: ENARE, USP, SURCE, SP...)'
+                }
                 className="w-full rounded-xl pl-9 pr-8 py-1.5 text-xs text-zinc-900 dark:text-white placeholder:text-zinc-400 dark:placeholder:text-zinc-500 bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 focus:outline-none focus:ring-1 focus:ring-[var(--primary-color)] font-sans"
               />
               {instSearch && (
@@ -1490,7 +1651,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                     key={b.sigla}
                     type="button"
                     onClick={() => {
-                      toggleInstituicao(b.sigla);
+                      toggleInstituicao(getCanonicalBancaKey(b.sigla));
                       setInstSearch('');
                     }}
                     className="w-full text-left px-2 py-1 rounded hover:bg-zinc-100 dark:hover:bg-zinc-800/50 text-zinc-800 dark:text-zinc-200 hover:text-zinc-900 dark:hover:text-white flex items-center justify-between"
@@ -1530,9 +1691,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
             {/* Chips das Mais Concorridas */}
             <div className="flex flex-wrap gap-1.5 pt-1">
-                {POPULAR_BANCAS_1CLIQUE.map((banca) => {
+                {activeQuickBancas.map((banca) => {
+                  const canonicalTarget = getCanonicalBancaKey(banca.key);
                   const isSelected = filters.instituicoes.some(
-                    (inst) => inst.toLowerCase() === banca.key.toLowerCase()
+                    (inst) => getCanonicalBancaKey(inst).toLowerCase() === canonicalTarget.toLowerCase()
                   );
                   return (
                     <button
@@ -1558,31 +1720,34 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               </div>
           </div>
 
-          {/* 2. Status da Questão */}
+          {/* 2. Status da Questão (Integrado ao Histórico do Aluno no Supabase) */}
           <div className="space-y-2 pt-2 border-t border-zinc-100 dark:border-zinc-800/80 shrink-0">
             <div className="flex items-center justify-between">
               <span className="text-xs font-bold text-zinc-900 dark:text-zinc-100">Status da Questão</span>
-              <span className="text-[11px] text-zinc-500 dark:text-zinc-400 font-medium">Todo o banco</span>
             </div>
             <div className="grid grid-cols-5 gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">
               {(['Todas', 'Não vistas', 'Erradas', 'Resolvidas', 'Acertadas'] as QuestionStatus[]).map(
                 (st) => {
                   const isActive = filters.status === st;
+
                   return (
                     <button
                       key={st}
                       type="button"
                       onClick={() => onChange({ ...filters, status: st })}
-                      className={`py-1.5 text-center rounded-lg text-xs transition-all cursor-pointer truncate px-1 ${
+                      className={`py-1.5 text-center rounded-lg text-xs transition-all cursor-pointer truncate px-1 flex items-center justify-center font-medium ${
                         isActive
                           ? 'text-white shadow-sm font-bold'
                           : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 hover:bg-zinc-200/60 dark:hover:bg-zinc-800/50'
                       }`}
                       style={{
-                        backgroundColor: isActive ? accentConfig.primaryHex : undefined
+                        backgroundColor: isActive
+                          ? (st === 'Erradas' ? '#dc2626' : accentConfig.primaryHex)
+                          : undefined
                       }}
+                      title={st}
                     >
-                      {st}
+                      <span className="truncate">{st}</span>
                     </button>
                   );
                 }
@@ -1850,7 +2015,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
                   {/* Pílulas de Anos em Linha Única Horizontal com Rolagem Lateral */}
                   <div className="flex items-center gap-1.5 overflow-x-auto py-1.5 custom-scrollbar scroll-smooth">
-                    {YEARS_LIST.map((y) => {
+                    {(currentModalidade === 'Revalida' ? YEARS_LIST.filter(y => y <= 2026) : YEARS_LIST).map((y) => {
                       const isSelected = filters.anos.includes(y);
                       return (
                         <button
@@ -1886,33 +2051,35 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
           className={`fixed bottom-0 right-0 z-30 transition-all duration-300 ${
             isSidebarCollapsed ? 'left-0 md:left-20' : 'left-0 md:left-64'
           } bg-white/95 dark:bg-[#09090b]/95 backdrop-blur-md border-t border-zinc-200 dark:border-zinc-800 px-3 sm:px-6 py-2 sm:py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.06)] dark:shadow-[0_-8px_25px_rgba(0,0,0,0.6)] select-none`}
+          style={{ paddingBottom: 'max(10px, env(safe-area-inset-bottom, 10px))' }}
         >
           <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-2 sm:gap-3 w-full">
-            {/* Linha 1 no Mobile / Lado Esquerdo no Desktop: Filtros Ativos + Tags + Limpar */}
-            <div className="flex items-center justify-between lg:justify-start gap-2 min-w-0 overflow-hidden">
+            {/* Linha 1 no Mobile / Lado Esquerdo no Desktop: Filtros Ativos + Tags em Múltiplas Fileiras + Limpar */}
+            <div className="flex items-center justify-between lg:justify-start gap-2 flex-1 min-w-0">
               <div className="flex items-center gap-1.5 text-xs font-bold text-zinc-700 dark:text-zinc-300 shrink-0">
                 <SlidersHorizontal className="w-3.5 h-3.5 shrink-0" style={{ color: accentConfig.primaryHex }} />
-                <span>Filtros ({activeTags.length}):</span>
+                <span className="whitespace-nowrap">Filtros ({activeTags.length}):</span>
               </div>
 
-              {/* Tags Ativas Removíveis com rolagem horizontal compacta */}
-              <div className="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5 min-w-0">
+              {/* Tags Ativas Removíveis com quebra inteligente em 2 ou mais fileiras */}
+              <div className="flex flex-wrap items-center gap-1.5 max-h-24 overflow-y-auto custom-scrollbar py-0.5 flex-1 min-w-0">
                 {activeTags.map((t) => (
                   <span
                     key={t.id}
-                    className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-semibold border shrink-0"
+                    className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-semibold border"
                     style={{
                       backgroundColor: accentConfig.bgRgba,
                       borderColor: accentConfig.borderRgba,
                       color: accentConfig.primaryHex
                     }}
                   >
-                    <span className="truncate max-w-[130px]">{t.label}</span>
+                    <span className="truncate max-w-[140px]">{t.label}</span>
                     <button
                       type="button"
                       onClick={t.onRemove}
-                      className="hover:opacity-75 cursor-pointer ml-0.5 text-xs"
+                      className="hover:opacity-75 cursor-pointer ml-0.5 text-xs font-bold leading-none"
                       style={{ color: accentConfig.primaryHex }}
+                      title={`Remover filtro ${t.label}`}
                     >
                       ✕
                     </button>
@@ -1924,7 +2091,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                 <button
                   type="button"
                   onClick={onReset}
-                  className="flex items-center gap-1 text-[11px] text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white font-medium shrink-0 cursor-pointer transition-colors"
+                  className="flex items-center gap-1 text-[11px] text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white font-medium shrink-0 cursor-pointer transition-colors px-1.5 py-1 rounded-md hover:bg-zinc-100 dark:hover:bg-zinc-800"
+                  title="Limpar todos os filtros"
                 >
                   <RotateCcw className="w-3 h-3" />
                   <span className="hidden sm:inline">Limpar</span>
@@ -2067,22 +2235,27 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               {/* Botão Primário Iniciar */}
               <button
                 type="button"
-                disabled={isStartingQuestions || displayedQuestionCount === 0}
+                disabled={isStartingQuestions || displayedQuestionCount === 0 || isLoading}
                 onClick={async () => {
+                  if (displayedQuestionCount === 0) return;
                   try {
                     setIsStartingQuestions(true);
                     const effectiveQuotas = getEffectiveQuotas();
                     await onStartSequentialSolving?.(resolveCount, effectiveQuotas, filters);
                   } finally {
-                    setTimeout(() => setIsStartingQuestions(false), 2000);
+                    setIsStartingQuestions(false);
                   }
                 }}
-                className={`flex-1 sm:flex-initial flex items-center justify-center gap-1.5 px-3.5 sm:px-5 py-2 rounded-xl text-white font-bold text-xs sm:text-sm shadow-md transition-all cursor-pointer active:scale-98 hover:opacity-95 shrink-0 ${
-                  isStartingQuestions ? 'opacity-80 cursor-wait' : ''
+                className={`flex-1 sm:flex-initial flex items-center justify-center gap-1.5 px-3.5 sm:px-5 py-2 rounded-xl text-white font-bold text-xs sm:text-sm shadow-md transition-all shrink-0 ${
+                  displayedQuestionCount === 0
+                    ? 'opacity-50 cursor-not-allowed bg-zinc-400 dark:bg-zinc-700'
+                    : isStartingQuestions
+                    ? 'opacity-80 cursor-wait'
+                    : 'cursor-pointer active:scale-98 hover:opacity-95'
                 }`}
                 style={{
-                  backgroundColor: accentConfig.primaryHex,
-                  boxShadow: `0 4px 14px ${accentConfig.bgRgba}`
+                  backgroundColor: displayedQuestionCount === 0 ? undefined : accentConfig.primaryHex,
+                  boxShadow: displayedQuestionCount === 0 ? undefined : `0 4px 14px ${accentConfig.bgRgba}`
                 }}
               >
                 {isStartingQuestions ? (
@@ -2090,10 +2263,17 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                     <Loader2 className="w-4 h-4 animate-spin text-white" />
                     <span className="truncate">Iniciando...</span>
                   </>
+                ) : displayedQuestionCount === 0 ? (
+                  <>
+                    <Ban className="w-4 h-4 text-white/80 shrink-0" />
+                    <span className="truncate">Sem questões (0)</span>
+                  </>
                 ) : (
                   <>
                     <Play className="w-4 h-4 fill-white shrink-0" />
-                    <span className="truncate">Iniciar ({resolveCount})</span>
+                    <span className="truncate">
+                      Iniciar ({Math.min(resolveCount, displayedQuestionCount)})
+                    </span>
                   </>
                 )}
               </button>
@@ -2298,7 +2478,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             </div>
 
             {/* Abas Horizontais de UF (Todas as 27 UFs + Nacional + Todas) */}
-            <div className="flex flex-wrap items-center gap-1 py-2 border-b border-zinc-200 dark:border-zinc-800">
+            <div className="flex items-center gap-1 py-2 border-b border-zinc-200 dark:border-zinc-800 overflow-x-auto no-scrollbar shrink-0">
               {UF_LIST.map((uf) => {
                 const isUfActive = selectedUfTab.toLowerCase() === uf.toLowerCase();
                 return (
@@ -2306,7 +2486,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                     key={uf}
                     type="button"
                     onClick={() => setSelectedUfTab(uf)}
-                    className={`px-2.5 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+                    className={`px-2.5 py-1 rounded-lg text-xs font-bold transition-all cursor-pointer shrink-0 ${
                       isUfActive
                         ? 'text-white shadow-md'
                         : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800/40 bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800'
@@ -2326,10 +2506,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             <div className="flex-1 overflow-y-auto py-3.5 pr-1.5 custom-scrollbar">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
                 {catalogFilteredByUf.map((item) => {
+                  const targetCanonical = getCanonicalBancaKey(item.key);
                   const isChecked = filters.instituicoes.some(
                     (inst) =>
-                      inst.toLowerCase() === item.key.toLowerCase() ||
-                      inst.toLowerCase() === item.sigla.toLowerCase()
+                      getCanonicalBancaKey(inst).toLowerCase() === targetCanonical.toLowerCase()
                   );
 
                   return (

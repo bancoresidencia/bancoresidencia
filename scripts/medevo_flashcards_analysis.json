@@ -1,0 +1,372 @@
+{
+  "url": "https://www.medevo.com.br/flashcards",
+  "linksFound": [
+    {
+      "text": "",
+      "href": "/flashcards",
+      "classes": "flex items-center justify-start gap-2 group/sidebar py-1.5 transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg px-2 web-sidebar-link"
+    }
+  ],
+  "domAnalysis": {
+    "title": "MedEvo — A plataforma que acelera sua evolução médica",
+    "headings": [
+      "",
+      "",
+      "",
+      "",
+      "Flashcards",
+      "Seu espaço de estudo",
+      "Sessões recentes"
+    ],
+    "cardsSample": [
+      {
+        "tagName": "SECTION",
+        "className": "web-sidebar-group",
+        "text": ""
+      },
+      {
+        "tagName": "SECTION",
+        "className": "web-sidebar-group",
+        "text": ""
+      },
+      {
+        "tagName": "SECTION",
+        "className": "web-sidebar-group",
+        "text": ""
+      },
+      {
+        "tagName": "SECTION",
+        "className": "web-sidebar-group",
+        "text": ""
+      },
+      {
+        "tagName": "SECTION",
+        "className": "web-sidebar-group",
+        "text": ""
+      },
+      {
+        "tagName": "DIV",
+        "className": "flashcards-home-shell",
+        "text": "Flashcards\n\nRevisões de hoje e suas últimas sessões.\n\nSeu treino de hoje\nRevisões em dia\n0 cards concluídos hoje\nExplorar flashcards\nSeu espaço de est"
+      },
+      {
+        "tagName": "DIV",
+        "className": "flashcards-home-container",
+        "text": "Flashcards\n\nRevisões de hoje e suas últimas sessões.\n\nSeu treino de hoje\nRevisões em dia\n0 cards concluídos hoje\nExplorar flashcards\nSeu espaço de est"
+      },
+      {
+        "tagName": "HEADER",
+        "className": "flashcards-home-header",
+        "text": "Flashcards\n\nRevisões de hoje e suas últimas sessões."
+      },
+      {
+        "tagName": "SPAN",
+        "className": "flashcards-home-illustration",
+        "text": ""
+      },
+      {
+        "tagName": "svg",
+        "className": {},
+        "text": ""
+      },
+      {
+        "tagName": "MAIN",
+        "className": "flashcards-home-main",
+        "text": "Seu treino de hoje\nRevisões em dia\n0 cards concluídos hoje\nExplorar flashcards\nSeu espaço de estudo\nEstudar flashcards\nEscolha cards da plataforma ou "
+      },
+      {
+        "tagName": "SECTION",
+        "className": "flashcards-daily-review flashcards-daily-journey",
+        "text": "Seu treino de hoje\nRevisões em dia\n0 cards concluídos hoje\nExplorar flashcards"
+      },
+      {
+        "tagName": "SPAN",
+        "className": "flashcards-daily-review-icon",
+        "text": ""
+      },
+      {
+        "tagName": "DIV",
+        "className": "flashcards-daily-review-copy",
+        "text": "Seu treino de hoje\nRevisões em dia\n0 cards concluídos hoje"
+      },
+      {
+        "tagName": "DIV",
+        "className": "flashcards-daily-progress",
+        "text": "0 cards concluídos hoje"
+      },
+      {
+        "tagName": "DIV",
+        "className": "flashcards-home-workspace",
+        "text": "Seu espaço de estudo\nEstudar flashcards\nEscolha cards da plataforma ou da sua biblioteca.\nGerenciar flashcards\nCrie, edite, importe e organize seus ca"
+      },
+      {
+        "tagName": "SECTION",
+        "className": "flashcards-home-surface",
+        "text": "Seu espaço de estudo\nEstudar flashcards\nEscolha cards da plataforma ou da sua biblioteca.\nGerenciar flashcards\nCrie, edite, importe e organize seus ca"
+      },
+      {
+        "tagName": "DIV",
+        "className": "flashcards-home-section-heading",
+        "text": "Seu espaço de estudo"
+      },
+      {
+        "tagName": "DIV",
+        "className": "flashcards-destination-list",
+        "text": "Estudar flashcards\nEscolha cards da plataforma ou da sua biblioteca.\nGerenciar flashcards\nCrie, edite, importe e organize seus cards.\nConfigurações\nAj"
+      },
+      {
+        "tagName": "SPAN",
+        "className": "flashcards-destination-icon",
+        "text": ""
+      },
+      {
+        "tagName": "svg",
+        "className": {},
+        "text": ""
+      },
+      {
+        "tagName": "SPAN",
+        "className": "flashcards-destination-copy",
+        "text": "Estudar flashcards\nEscolha cards da plataforma ou da sua biblioteca."
+      },
+      {
+        "tagName": "SPAN",
+        "className": "flashcards-destination-icon tool-icon-badge tool-tone-indigo",
+        "text": ""
+      },
+      {
+        "tagName": "SPAN",
+        "className": "flashcards-destination-copy",
+        "text": "Gerenciar flashcards\nCrie, edite, importe e organize seus cards."
+      },
+      {
+        "tagName": "SPAN",
+        "className": "tool-icon-badge tool-tone-blue flashcards-destination-icon",
+        "text": ""
+      },
+      {
+        "tagName": "SPAN",
+        "className": "flashcards-destination-copy",
+        "text": "Configurações\nAjuste o algoritmo e suas preferências de revisão."
+      },
+      {
+        "tagName": "DIV",
+        "className": "flashcards-home-footer",
+        "text": "Como funciona a revisão FSRS-6?"
+      },
+      {
+        "tagName": "BUTTON",
+        "className": "flashcards-fsrs-trigger",
+        "text": "Como funciona a revisão FSRS-6?"
+      },
+      {
+        "tagName": "SECTION",
+        "className": "flashcards-activity flashcards-home-surface",
+        "text": "Sessões recentes\n\nSuas sessões aparecerão aqui.\n\nEscolher cards"
+      },
+      {
+        "tagName": "HEADER",
+        "className": "flashcards-activity-heading",
+        "text": "Sessões recentes"
+      }
+    ],
+    "interactiveSample": [
+      {
+        "type": "BUTTON",
+        "text": "Abrir ferramentas rápidas",
+        "className": "medevo-floating-tools-trigger  ",
+        "href": ""
+      },
+      {
+        "type": "BUTTON",
+        "text": "Expandir menu lateral",
+        "className": "web-sidebar-collapse-toggle",
+        "href": ""
+      },
+      {
+        "type": "A",
+        "text": "Início",
+        "className": "flex items-center justify-start gap-2 group/sidebar py-1.5 transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg px-2 web-sidebar-link",
+        "href": "/"
+      },
+      {
+        "type": "A",
+        "text": "Questões",
+        "className": "flex items-center justify-start gap-2 group/sidebar py-1.5 transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg px-2 web-sidebar-link",
+        "href": "/questions"
+      },
+      {
+        "type": "A",
+        "text": "Flashcards",
+        "className": "flex items-center justify-start gap-2 group/sidebar py-1.5 transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg px-2 web-sidebar-link",
+        "href": "/flashcards"
+      },
+      {
+        "type": "A",
+        "text": "Material de Apoio",
+        "className": "flex items-center justify-start gap-2 group/sidebar py-1.5 transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg px-2 web-sidebar-link",
+        "href": "/material-apoio"
+      },
+      {
+        "type": "A",
+        "text": "Caderno de Revisão",
+        "className": "flex items-center justify-start gap-2 group/sidebar py-1.5 transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg px-2 web-sidebar-link",
+        "href": "/revisoes"
+      },
+      {
+        "type": "A",
+        "text": "Anotações",
+        "className": "flex items-center justify-start gap-2 group/sidebar py-1.5 transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg px-2 web-sidebar-link",
+        "href": "/anotacoes"
+      },
+      {
+        "type": "A",
+        "text": "Cronograma",
+        "className": "flex items-center justify-start gap-2 group/sidebar py-1.5 transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg px-2 web-sidebar-link",
+        "href": "/cronograma"
+      },
+      {
+        "type": "A",
+        "text": "Simulados",
+        "className": "flex items-center justify-start gap-2 group/sidebar py-1.5 transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg px-2 web-sidebar-link",
+        "href": "/simulados"
+      },
+      {
+        "type": "A",
+        "text": "DNA da Prova",
+        "className": "flex items-center justify-start gap-2 group/sidebar py-1.5 transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg px-2 web-sidebar-link",
+        "href": "/dna-prova"
+      },
+      {
+        "type": "A",
+        "text": "StudyLab",
+        "className": "flex items-center justify-start gap-2 group/sidebar py-1.5 transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg px-2 web-sidebar-link",
+        "href": "/notebook"
+      },
+      {
+        "type": "A",
+        "text": "Dr Will",
+        "className": "flex items-center justify-start gap-2 group/sidebar py-1.5 transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg px-2 web-sidebar-link",
+        "href": "/dr-will"
+      },
+      {
+        "type": "A",
+        "text": "Progresso",
+        "className": "flex items-center justify-start gap-2 group/sidebar py-1.5 transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg px-2 web-sidebar-link",
+        "href": "/progress"
+      },
+      {
+        "type": "A",
+        "text": "Loja MedEvo",
+        "className": "flex items-center justify-start gap-2 group/sidebar py-1.5 transition-colors duration-200 hover:bg-gray-100 dark:hover:bg-gray-800 rounded-lg px-2 web-sidebar-link",
+        "href": "/loja"
+      },
+      {
+        "type": "BUTTON",
+        "text": "Iniciar Pomodoro",
+        "className": "web-sidebar-action-button web-sidebar-pomodoro-button web-sidebar-pomodoro-entry",
+        "href": ""
+      },
+      {
+        "type": "BUTTON",
+        "text": "1",
+        "className": "relative p-2 rounded-lg transition-all duration-200 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500",
+        "href": ""
+      },
+      {
+        "type": "BUTTON",
+        "text": "Modo Noturno - Clique para alterar",
+        "className": "rounded-full transition-all duration-200 shadow-lg hover:scale-105 active:scale-95 p-1 bg-gradient-to-r from-gray-700 to-gray-800 text-yellow-400 hover:from-gray-600 hover:to-gray-700 border border-gray-600 web-sidebar-action-button",
+        "href": ""
+      },
+      {
+        "type": "BUTTON",
+        "text": "J",
+        "className": "web-sidebar-profile-trigger focus:outline-none w-full",
+        "href": ""
+      },
+      {
+        "type": "A",
+        "text": "BLACK MEDEVO · 20% OFF + PedBook Premium grátis\nVer ofertas",
+        "className": "black-freemium-banner-link",
+        "href": "/planos"
+      },
+      {
+        "type": "BUTTON",
+        "text": "Explorar flashcards",
+        "className": "",
+        "href": ""
+      },
+      {
+        "type": "BUTTON",
+        "text": "Estudar flashcards\nEscolha cards da plataforma ou da sua biblioteca.",
+        "className": "",
+        "href": ""
+      },
+      {
+        "type": "BUTTON",
+        "text": "Gerenciar flashcards\nCrie, edite, importe e organize seus cards.",
+        "className": "",
+        "href": ""
+      },
+      {
+        "type": "BUTTON",
+        "text": "Configurações\nAjuste o algoritmo e suas preferências de revisão.",
+        "className": "",
+        "href": ""
+      },
+      {
+        "type": "BUTTON",
+        "text": "Como funciona a revisão FSRS-6?",
+        "className": "flashcards-fsrs-trigger",
+        "href": ""
+      },
+      {
+        "type": "BUTTON",
+        "text": "Atualizar sessões recentes",
+        "className": "",
+        "href": ""
+      },
+      {
+        "type": "BUTTON",
+        "text": "Escolher cards",
+        "className": "flashcards-activity-link",
+        "href": ""
+      }
+    ],
+    "fullTextSnippet": "1\nJ\nBLACK MEDEVO · 20% OFF + PedBook Premium grátis\nVer ofertas\nFlashcards\n\nRevisões de hoje e suas últimas sessões.\n\nSeu treino de hoje\nRevisões em dia\n0 cards concluídos hoje\nExplorar flashcards\nSeu espaço de estudo\nEstudar flashcards\nEscolha cards da plataforma ou da sua biblioteca.\nGerenciar flashcards\nCrie, edite, importe e organize seus cards.\nConfigurações\nAjuste o algoritmo e suas preferências de revisão.\nComo funciona a revisão FSRS-6?\nSessões recentes\n\nSuas sessões aparecerão aqui.\n\nEscolher cards"
+  },
+  "apiLogs": [
+    {
+      "url": "https://data.medevo.com.br/rest/v1/user_preferences?select=id%2Cuser_id%2Ctutorial_completed%2Cfilter_tutorial_completed%2Cdiscord_community_dialog_dismissed%2Cerror_notebook_shuffle_alternatives%2Cflashcard_comment_expanded_by_default%2Ccinematic_viewed%2Ctarget_specialty%2Cstudy_months%2Cpreferences_completed%2Ctarget_institutions_unknown%2Cdark_mode_enabled%2Ctheme_mode%2Creading_font_preference%2Cschedule_view_preference%2Cui_experience%2Cui_experience_chosen_at%2Chas_seen_drwill_context_tutorial%2Chas_seen_contextual_notes_tutorial%2Csound_enabled%2Cduel_invites_enabled%2Cshow_online_status%2Chide_timers%2Cguided_study_enabled%2Cguided_study_home_view%2Cstore_review_feedback_mission%2Ccreated_at%2Cupdated_at&user_id=eq.42b72274-561d-41a4-a4c0-db17e83b1fe0",
+      "status": 200,
+      "payloadSnippet": "[{\"id\":\"c94c25c0-74c0-486d-907f-8b6c44d9c3cf\",\"user_id\":\"42b72274-561d-41a4-a4c0-db17e83b1fe0\",\"tutorial_completed\":false,\"filter_tutorial_completed\":true,\"discord_community_dialog_dismissed\":true,\"error_notebook_shuffle_alternatives\":false,\"flashcard_comment_expanded_by_default\":false,\"cinematic_viewed\":false,\"target_specialty\":null,\"study_months\":null,\"preferences_completed\":true,\"target_institutions_unknown\":true,\"dark_mode_enabled\":false,\"theme_mode\":\"dark\",\"reading_font_preference\":\"default\",\"schedule_view_preference\":\"auto\",\"ui_experience\":null,\"ui_experience_chosen_at\":null,\"has_seen_drwill_context_tutorial\":true,\"has_seen_contextual_notes_tutorial\":false,\"sound_enabled\":true,\"duel_invites_enabled\":true,\"show_online_status\":true,\"hide_timers\":false,\"guided_study_enabled\":true,\"guided_study_home_view\":\"compact\",\"store_review_feedback_mission\":{},\"created_at\":\"2026-10-17T19:16:58.074771+00:00\",\"updated_at\":\"2026-10-21T01:16:12.557+00:00\"}]"
+    },
+    {
+      "url": "https://data.medevo.com.br/rest/v1/user_preferences?select=id%2Cuser_id%2Ctutorial_completed%2Cfilter_tutorial_completed%2Cdiscord_community_dialog_dismissed%2Cerror_notebook_shuffle_alternatives%2Cflashcard_comment_expanded_by_default%2Ccinematic_viewed%2Ctarget_specialty%2Cstudy_months%2Cpreferences_completed%2Ctarget_institutions_unknown%2Cdark_mode_enabled%2Ctheme_mode%2Creading_font_preference%2Cschedule_view_preference%2Cui_experience%2Cui_experience_chosen_at%2Chas_seen_drwill_context_tutorial%2Chas_seen_contextual_notes_tutorial%2Csound_enabled%2Cduel_invites_enabled%2Cshow_online_status%2Chide_timers%2Cguided_study_enabled%2Cguided_study_home_view%2Cstore_review_feedback_mission%2Ccreated_at%2Cupdated_at&user_id=eq.42b72274-561d-41a4-a4c0-db17e83b1fe0",
+      "status": 200,
+      "payloadSnippet": "[{\"id\":\"c94c25c0-74c0-486d-907f-8b6c44d9c3cf\",\"user_id\":\"42b72274-561d-41a4-a4c0-db17e83b1fe0\",\"tutorial_completed\":false,\"filter_tutorial_completed\":true,\"discord_community_dialog_dismissed\":true,\"error_notebook_shuffle_alternatives\":false,\"flashcard_comment_expanded_by_default\":false,\"cinematic_viewed\":false,\"target_specialty\":null,\"study_months\":null,\"preferences_completed\":true,\"target_institutions_unknown\":true,\"dark_mode_enabled\":false,\"theme_mode\":\"dark\",\"reading_font_preference\":\"default\",\"schedule_view_preference\":\"auto\",\"ui_experience\":null,\"ui_experience_chosen_at\":null,\"has_seen_drwill_context_tutorial\":true,\"has_seen_contextual_notes_tutorial\":false,\"sound_enabled\":true,\"duel_invites_enabled\":true,\"show_online_status\":true,\"hide_timers\":false,\"guided_study_enabled\":true,\"guided_study_home_view\":\"compact\",\"store_review_feedback_mission\":{},\"created_at\":\"2026-10-17T19:16:58.074771+00:00\",\"updated_at\":\"2026-10-21T01:16:12.557+00:00\"}]"
+    },
+    {
+      "url": "https://data.medevo.com.br/rest/v1/rpc/sync_studylab_flashcards_to_library",
+      "status": 200,
+      "payloadSnippet": "{\"success\": true, \"due_count\": 0, \"new_count\": 0, \"cards_created\": 0, \"deleted_total\": 0, \"links_created\": 0, \"eligible_total\": 0, \"progress_applied\": 0, \"materialized_total\": 0}"
+    },
+    {
+      "url": "https://data.medevo.com.br/rest/v1/rpc/get_flashcard_session_history",
+      "status": 200,
+      "payloadSnippet": "{\"page\": 1, \"total\": 0, \"sessions\": [], \"page_size\": 3}"
+    },
+    {
+      "url": "https://data.medevo.com.br/rest/v1/rpc/get_today_plan_flashcard_summary",
+      "status": 200,
+      "payloadSnippet": "{\"total\": 0, \"overdue\": 0, \"dueToday\": 0, \"metadata\": {\"timezone\": \"America/Sao_Paulo\", \"todayDate\": \"2026-10-29\", \"generatedAt\": \"2026-10-29T19:44:47.875933+00:00\"}, \"newCards\": 0, \"recovery\": {\"todayDate\": \"2026-10-29\", \"dailyLimit\": 40, \"generatedAt\": \"2026-10-29T19:44:47.875933+00:00\", \"backlogTotal\": 0, \"plannedToday\": 0, \"recoveryDays\": 0, \"overflowTotal\": 0, \"completedToday\": 0, \"includeStudyLab\": true, \"lastPlannedDate\": null, \"nextPlannedDate\": null, \"createdOrUpdated\": 0, \"recoveryModeEnabled\": false, \"prioritizeEssentials\": true}, \"rawDueToday\": 0}"
+    },
+    {
+      "url": "https://data.medevo.com.br/rest/v1/rpc/check_user_subscription_status",
+      "status": 200,
+      "payloadSnippet": "{\"status\": \"free\", \"premium\": false, \"expires_at\": null, \"free_limit\": {\"limit\": 10, \"allowed\": true, \"remaining\": 10, \"is_premium\": false, \"warning_at\": 7, \"show_warning\": false, \"limit_reached\": false, \"feature_enabled\": true, \"questions_today\": 0}, \"flashcard_limit\": {\"limit\": 20, \"remaining\": 20, \"is_premium\": false, \"warning_at\": 15, \"show_warning\": false, \"limit_reached\": false, \"feature_enabled\": true, \"flashcards_today\": 0}, \"asaas_customer_id\": null, \"flashcard_settings\": {\"maximum_interval\": 365, \"desired_retention\": 0.90}, \"ambassador_benefit_active\": false, \"ambassador_benefit_status\": \"inactive\", \"ambassador_benefit_suspension_reason\": null}"
+    }
+  ],
+  "timestamp": "2026-10-29T19:44:51.105Z"
+}

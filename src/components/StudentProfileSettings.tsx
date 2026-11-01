@@ -26,8 +26,8 @@ import {
 } from 'lucide-react';
 
 interface StudentProfileSettingsProps {
-  fontSize: 'sm' | 'base' | 'lg';
-  onChangeFontSize: (size: 'sm' | 'base' | 'lg') => void;
+  fontSize: 'xs' | 'sm' | 'base' | 'lg' | 'xl';
+  onChangeFontSize: (size: 'xs' | 'sm' | 'base' | 'lg' | 'xl') => void;
   onLogout: () => void;
 }
 
@@ -754,43 +754,28 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
               <label className="block text-xs font-bold text-slate-700 dark:text-slate-300">
                 Tamanho de Fonte Padrão para Resolução de Questões
               </label>
-              <div className="flex items-center gap-2">
-                <button
-                  type="button"
-                  onClick={() => onChangeFontSize('sm')}
-                  className={`px-4 py-2 rounded-xl text-xs font-extrabold transition-all cursor-pointer ${
-                    fontSize === 'sm'
-                      ? 'text-white shadow-sm'
-                      : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300'
-                  }`}
-                  style={fontSize === 'sm' ? { backgroundColor: accentConfig.primaryHex } : undefined}
-                >
-                  A- Compacta (Recomendada)
-                </button>
-                <button
-                  type="button"
-                  onClick={() => onChangeFontSize('base')}
-                  className={`px-4 py-2 rounded-xl text-xs font-extrabold transition-all cursor-pointer ${
-                    fontSize === 'base'
-                      ? 'text-white shadow-sm'
-                      : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300'
-                  }`}
-                  style={fontSize === 'base' ? { backgroundColor: accentConfig.primaryHex } : undefined}
-                >
-                  A Média
-                </button>
-                <button
-                  type="button"
-                  onClick={() => onChangeFontSize('lg')}
-                  className={`px-4 py-2 rounded-xl text-xs font-extrabold transition-all cursor-pointer ${
-                    fontSize === 'lg'
-                      ? 'text-white shadow-sm'
-                      : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300'
-                  }`}
-                  style={fontSize === 'lg' ? { backgroundColor: accentConfig.primaryHex } : undefined}
-                >
-                  A+ Grande
-                </button>
+              <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+                {[
+                  { id: 'xs' as const, label: 'A-- Muito Compacta' },
+                  { id: 'sm' as const, label: 'A- Compacta' },
+                  { id: 'base' as const, label: 'A Padrão' },
+                  { id: 'lg' as const, label: 'A+ Grande' },
+                  { id: 'xl' as const, label: 'A++ Muito Grande' },
+                ].map((f) => (
+                  <button
+                    key={f.id}
+                    type="button"
+                    onClick={() => onChangeFontSize(f.id)}
+                    className={`px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs font-extrabold transition-all cursor-pointer ${
+                      fontSize === f.id
+                        ? 'text-white shadow-sm'
+                        : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700'
+                    }`}
+                    style={fontSize === f.id ? { backgroundColor: accentConfig.primaryHex } : undefined}
+                  >
+                    {f.label}
+                  </button>
+                ))}
               </div>
             </div>
 

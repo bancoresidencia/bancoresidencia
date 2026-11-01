@@ -305,7 +305,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
 
   // Controle de expansão da tabela sanfona de especialidades e legenda (Imagem 3)
   const [expandedAreas, setExpandedAreas] = useState<string[]>([]);
-  const [isLegendExpanded, setIsLegendExpanded] = useState<boolean>(true);
+  const [isLegendExpanded, setIsLegendExpanded] = useState<boolean>(false);
 
   const toggleAreaExpansion = (areaId: string) => {
     setExpandedAreas((prev) =>
@@ -1069,59 +1069,6 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
   return (
     <div className="space-y-6">
       {/* =========================================================================
-          CABEÇALHO DE IDENTIFICAÇÃO DO ALUNO E STATUS DE VÍNCULO
-      ========================================================================== */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-4 sm:p-5 bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl shadow-xs transition-colors">
-        <div className="flex items-center gap-3.5">
-          <div
-            className="w-11 h-11 rounded-2xl flex items-center justify-center font-extrabold text-sm shadow-inner shrink-0"
-            style={{
-              backgroundColor: `${accentConfig.primaryHex}18`,
-              borderColor: `${accentConfig.primaryHex}35`,
-              color: accentConfig.primaryHex,
-              borderWidth: 1
-            }}
-          >
-            {user?.name ? user.name.split(' ').map((n) => n[0]).slice(0, 2).join('').toUpperCase() : 'MR'}
-          </div>
-          <div>
-            <div className="flex flex-wrap items-center gap-2">
-              <h1 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white font-heading tracking-tight">
-                Desempenho de {user?.name || 'Médico Residente'}
-              </h1>
-              <span className="inline-flex items-center gap-1.5 text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/25">
-                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                {user?.id && user.id !== DEFAULT_DEMO_USER.id ? 'Conta Vinculada' : 'Modo Visitante'}
-              </span>
-            </div>
-            <p className="text-xs text-slate-500 dark:text-zinc-400 mt-0.5">
-              {user?.specialtyTarget ? `Foco: ${user.specialtyTarget}` : 'Preparação para Residência Médica'}
-              {user?.college ? ` • ${user.college}` : ''}
-              {` • ${activeMetrics.answered} resoluções registradas no período`}
-            </p>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-4 self-start sm:self-auto border-t sm:border-t-0 pt-3 sm:pt-0 border-[var(--card-border)] w-full sm:w-auto justify-between sm:justify-end">
-          <div className="text-left sm:text-right">
-            <span className="text-[10px] uppercase font-bold text-slate-500 dark:text-zinc-400 tracking-wider block">
-              Aproveitamento Geral
-            </span>
-            <span className="text-lg font-black text-emerald-600 dark:text-emerald-400 tabular-nums">
-              {activeMetrics.accuracy}%
-            </span>
-          </div>
-          <div className="text-left sm:text-right">
-            <span className="text-[10px] uppercase font-bold text-slate-500 dark:text-zinc-400 tracking-wider block">
-              Acertos Líquidos
-            </span>
-            <span className="text-lg font-black text-slate-900 dark:text-white tabular-nums">
-              {activeMetrics.correct} <span className="text-xs font-medium text-slate-500 dark:text-zinc-400">/ {activeMetrics.answered}</span>
-            </span>
-          </div>
-        </div>
-      </div>
-      {/* =========================================================================
           BARRA SUPERIOR: NAVEGAÇÃO DE ABAS + PERÍODO + FILTROS DE BANCAS
       ========================================================================== */}
       <div className="sticky top-[4.5rem] z-20 -mx-4 px-4 sm:-mx-6 sm:px-6 py-3 bg-[var(--bg-page)]/95 dark:bg-[#09090b]/95 backdrop-blur-md border-b border-[var(--card-border)] shadow-xs flex flex-col lg:flex-row lg:items-center justify-between gap-3 transition-colors">
@@ -1181,11 +1128,27 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
 
         {/* Lado Direito: Período + Modalidade + Drawer de Bancas & Reset [Imagem 5] */}
         <div className="flex flex-wrap items-center gap-2">
+          {/* Backdrop transparente para fechar dropdowns ao clicar fora */}
+          {(isCalendarOpen || isFilterDropdownOpen) && (
+            <div
+              className="fixed inset-0 z-30 bg-transparent"
+              onClick={() => {
+                setIsCalendarOpen(false);
+                setIsFilterDropdownOpen(false);
+              }}
+            />
+          )}
+
           {/* Seletor de Período & Calendário */}
           <div className="relative">
             <button
               type="button"
-              onClick={() => setIsCalendarOpen(!isCalendarOpen)}
+              onClick={() => {
+                setIsCalendarOpen((prev) => {
+                  if (!prev) setIsFilterDropdownOpen(false);
+                  return !prev;
+                });
+              }}
               className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-[var(--bg-card)] border border-[var(--card-border)] text-slate-700 dark:text-zinc-200 hover:border-slate-400 dark:hover:border-zinc-700 transition-colors cursor-pointer shadow-xs"
               title="Filtrar por data no calendário ou atalhos"
             >
@@ -1309,7 +1272,12 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
           <div className="relative">
             <button
               type="button"
-              onClick={() => setIsFilterDropdownOpen(!isFilterDropdownOpen)}
+              onClick={() => {
+                setIsFilterDropdownOpen((prev) => {
+                  if (!prev) setIsCalendarOpen(false);
+                  return !prev;
+                });
+              }}
               className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold bg-[var(--bg-card)] border border-[var(--card-border)] text-slate-700 dark:text-zinc-300 hover:border-slate-400 dark:hover:border-zinc-700 transition-colors cursor-pointer"
             >
               <Filter className="w-3 h-3 text-slate-400 dark:text-zinc-500" />

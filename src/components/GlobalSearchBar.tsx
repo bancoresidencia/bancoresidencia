@@ -203,7 +203,9 @@ export const GlobalSearchBar: React.FC<GlobalSearchBarProps> = ({
     { label: 'Ginecologia', type: 'esp', action: () => { onSelectSpecialty('Ginecologia e Obstetrícia'); onNavigate('banco'); setIsOpen(false); } },
     { label: 'Pré-eclâmpsia', type: 'search', action: () => handleExecuteGeneralSearch('Pré-eclâmpsia') },
     { label: 'Clínica Médica', type: 'esp', action: () => { onSelectSpecialty('Clínica Médica'); onNavigate('banco'); setIsOpen(false); } },
-    { label: 'Simulados Oficiais', type: 'nav', action: () => { onNavigate('simulados'); setIsOpen(false); } }
+    { label: 'Simulados Oficiais', type: 'nav', action: () => { onNavigate('simulados'); setIsOpen(false); } },
+    { label: 'Flashcards', type: 'nav', action: () => { onNavigate('flashcards'); setIsOpen(false); } },
+    { label: 'Resumos Clínicos', type: 'nav', action: () => { onNavigate('resumos'); setIsOpen(false); } }
   ];
 
   return (

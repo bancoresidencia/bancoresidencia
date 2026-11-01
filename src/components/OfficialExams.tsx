@@ -341,10 +341,11 @@ export const OfficialExams: React.FC<OfficialExamsProps> = ({ onStartExam }) => 
               <button
                 type="button"
                 onClick={handleResetToInstitutions}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-slate-200 dark:border-slate-700 text-xs font-bold text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-800/90 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors cursor-pointer"
+                className="w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center rounded-xl border border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-800/90 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors cursor-pointer shrink-0 active:scale-95"
+                title="Voltar para todas as instituições"
+                aria-label="Voltar para todas as instituições"
               >
-                <ArrowLeft className="w-3.5 h-3.5" />
-                <span>Todas as Instituições</span>
+                <ArrowLeft className="w-4 h-4" />
               </button>
 
               <div className="h-4 w-px bg-slate-200 dark:bg-slate-800 hidden sm:block" />

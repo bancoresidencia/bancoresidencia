@@ -1,0 +1,791 @@
+[
+  {
+    "id": "03cba394-791a-40b2-9e45-c01e1a3ce58c",
+    "code": "SUSSP-2021-CLM-35847",
+    "banca": "SUS-SP",
+    "year": 2021,
+    "hits": [
+      {
+        "field": "statement",
+        "match": "MedEvo",
+        "snippet": "...m) o diagnóstico dessa taquiarritmia: (Imagem adaptada pela MedEvo para fins educacionais, devido a restrições de uso da imagem original.)"
+      }
+    ]
+  },
+  {
+    "id": "09888f71-f291-489b-86ee-e5b1392e8481",
+    "code": "UNICAMPHC-2018-PED-22403",
+    "banca": "UNICAMP/HC",
+    "year": 2018,
+    "hits": [
+      {
+        "field": "statement",
+        "match": "MedEvo",
+        "snippet": "...ação ocular devem ser respectivamente: Imagem adaptada pela MedEvo para fins educacionais, pois a imagem original não pode ser republicada."
+      }
+    ]
+  },
+  {
+    "id": "16a66a15-daa6-4ec0-bf77-33a53c6fdd07",
+    "code": "HUFMJ-2014-CLM-35272",
+    "banca": "HU-FMJ",
+    "year": 2014,
+    "hits": [
+      {
+        "field": "statement",
+        "match": "MedEvo",
+        "snippet": "...ctivamente: Observe a imagem a seguir. Imagem adaptada pela MedEvo; a reprodução da imagem original não é utilizada por restrição de direito..."
+      }
+    ]
+  },
+  {
+    "id": "16ddde32-17be-439c-8377-7b660e0d8c1a",
+    "code": "CMC-2014-GIN-12042",
+    "banca": "CMC",
+    "year": 2014,
+    "hits": [
+      {
+        "field": "statement",
+        "match": "MedEvo",
+        "snippet": "... provavelmente apresenta: Imagem ilustrativa adaptada pela MedEvo; a figura original da prova não foi reutilizada."
+      }
+    ]
+  },
+  {
+    "id": "16ff17f3-7373-42e3-8b64-40ffdd8646e6",
+    "code": "USPHCRP-2021-MPS-7251",
+    "banca": "USP/HCRP",
+    "year": 2021,
+    "hits": [
+      {
+        "field": "statement",
+        "match": "MedEvo",
+        "snippet": "...o canto superior direito da tela) Tabela reconstituída pela MedEvo a partir dos dados apresentados na prova original; as inconsistências num..."
+      }
+    ]
+  },
+  {
+    "id": "189c4b71-935f-4e3f-8744-78f5cd102f2d",
+    "code": "USPHCFMUSP-2026-PED-23531",
+    "banca": "USP/HCFMUSP",
+    "year": 2026,
+    "hits": [
+      {
+        "field": "options[A].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
+      },
+      {
+        "field": "options[B].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
+      },
+      {
+        "field": "options[C].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
+      },
+      {
+        "field": "options[D].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
+      }
+    ]
+  },
+  {
+    "id": "318c5ad8-a394-456f-b3a7-4c718ede365d",
+    "code": "USPHCFMUSP-2026-PED-23534",
+    "banca": "USP/HCFMUSP",
+    "year": 2026,
+    "hits": [
+      {
+        "field": "statement",
+        "match": "MedEvo",
+        "snippet": "...mais adequada nesse momento. [Imagem clínica adaptada pela MedEvo: ilustração educacional produzida em modelo de silicone, pois a fotografi..."
+      }
+    ]
+  },
+  {
+    "id": "3e57bf94-4524-4d7e-a0f5-43c80a41c2c2",
+    "code": "USPHCFMUSP-2023-GIN-7367",
+    "banca": "USP/HCFMUSP",
+    "year": 2023,
+    "hits": [
+      {
+        "field": "options[A].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1780685541746-0.64..."
+      },
+      {
+        "field": "options[B].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1780685555602-0.15..."
+      },
+      {
+        "field": "options[C].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1780685570408-0.51..."
+      },
+      {
+        "field": "options[D].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1780685582331-0.86..."
+      }
+    ]
+  },
+  {
+    "id": "3f0e96ab-13d2-473c-bbb2-f5a0c33a948d",
+    "code": "UNESPHCFMB-2026-MPS-21612",
+    "banca": "UNESP/HCFMB",
+    "year": 2026,
+    "hits": [
+      {
+        "field": "options[A].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/homem-recem-chegad..."
+      },
+      {
+        "field": "options[B].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/homem-recem-chegad..."
+      },
+      {
+        "field": "options[C].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/homem-recem-chegad..."
+      },
+      {
+        "field": "options[D].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/homem-recem-chegad..."
+      }
+    ]
+  },
+  {
+    "id": "4028cef4-ecd3-4032-8dbb-507baa8f806c",
+    "code": "SUSSP-2023-CLM-35855",
+    "banca": "SUS-SP",
+    "year": 2023,
+    "hits": [
+      {
+        "field": "statement",
+        "match": "MedEvo",
+        "snippet": "...conduta adequada, nesse caso clínico. (Imagem adaptada pela MedEvo para fins educacionais, devido a restrições de uso da imagem original.)"
+      }
+    ]
+  },
+  {
+    "id": "4181ee80-8622-42d7-85a6-ea6f9933d6f8",
+    "code": "UNESPHCFMB-2021-MPS-7506",
+    "banca": "UNESP/HCFMB",
+    "year": 2021,
+    "hits": [
+      {
+        "field": "options[A].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1781113247263-0.60..."
+      },
+      {
+        "field": "options[B].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1781113279007-0.05..."
+      },
+      {
+        "field": "options[C].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1781113289572-0.59..."
+      },
+      {
+        "field": "options[D].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1781113302841-0.49..."
+      }
+    ]
+  },
+  {
+    "id": "438e0cc1-a27d-404e-b0d8-562ea4af1d22",
+    "code": "USPHCFMUSP-2026-PED-23533",
+    "banca": "USP/HCFMUSP",
+    "year": 2026,
+    "hits": [
+      {
+        "field": "statement",
+        "match": "MEDEVO",
+        "snippet": "...e hoje? (QUESTAO PROIBIDA PELO ECA, PORTANTO ADAPTADA PELA MEDEVO)"
+      }
+    ]
+  },
+  {
+    "id": "46d816cb-d3af-409d-b7fa-d40bde060a8d",
+    "code": "FACULDADEDEM-2025-CIR-19038",
+    "banca": "Faculdade de Medicina de Marília",
+    "year": 2025,
+    "hits": [
+      {
+        "field": "statement",
+        "match": "MedEvo",
+        "snippet": "...a a seguir: [Imagem original não disponível nesta versão da MedEvo.] O diagnóstico provável do paciente é:"
+      }
+    ]
+  },
+  {
+    "id": "49a4954e-1f2e-45d0-b207-713a0c5fa131",
+    "code": "USPHCFMUSP-2026-PED-23540",
+    "banca": "USP/HCFMUSP",
+    "year": 2026,
+    "hits": [
+      {
+        "field": "options[A].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
+      },
+      {
+        "field": "options[B].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
+      },
+      {
+        "field": "options[C].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
+      },
+      {
+        "field": "options[D].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
+      }
+    ]
+  },
+  {
+    "id": "4cb31248-3584-4bec-abe1-bdd15c0ff72b",
+    "code": "HUFMJ-2014-CIR-19456",
+    "banca": "HU-FMJ",
+    "year": 2014,
+    "hits": [
+      {
+        "field": "statement",
+        "match": "MedEvo",
+        "snippet": "...implica em: Observe a imagem a seguir. Imagem adaptada pela MedEvo; a reprodução da imagem original não é utilizada por restrição de direito..."
+      }
+    ]
+  },
+  {
+    "id": "4db01c36-cc2d-484b-8c16-90a86e14c8c5",
+    "code": "USPHCFMUSP-2023-PED-7929",
+    "banca": "USP/HCFMUSP",
+    "year": 2023,
+    "hits": [
+      {
+        "field": "options[A].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1774407017470-0.40..."
+      },
+      {
+        "field": "options[B].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1774407030851-0.88..."
+      },
+      {
+        "field": "options[C].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1774407040822-0.35..."
+      },
+      {
+        "field": "options[D].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1774407048494-0.60..."
+      }
+    ]
+  },
+  {
+    "id": "5a464742-5a80-4005-8264-41182f75ca55",
+    "code": "USPHCFMUSP-2023-CIR-10056",
+    "banca": "USP/HCFMUSP",
+    "year": 2023,
+    "hits": [
+      {
+        "field": "options[A].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2023/A%20(1).png"
+      },
+      {
+        "field": "options[B].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2023/B.png"
+      },
+      {
+        "field": "options[C].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2023/C.png"
+      },
+      {
+        "field": "options[D].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2023/D.png"
+      }
+    ]
+  },
+  {
+    "id": "7a000ec0-22e3-4f0e-9f4d-c97539633262",
+    "code": "USPHCFMUSP-2026-PED-23530",
+    "banca": "USP/HCFMUSP",
+    "year": 2026,
+    "hits": [
+      {
+        "field": "options[A].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
+      },
+      {
+        "field": "options[B].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
+      },
+      {
+        "field": "options[C].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
+      },
+      {
+        "field": "options[D].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
+      }
+    ]
+  },
+  {
+    "id": "7d4d88c7-6bfc-4e73-a6d2-ca2b385bf164",
+    "code": "HMG-2021-GIN-7717",
+    "banca": "HMG",
+    "year": 2021,
+    "hits": [
+      {
+        "field": "statement",
+        "match": "MEDEVO",
+        "snippet": "...ase na imagem, é correto afirmar que: IMAGEM ADAPTADA PELA MEDEVO"
+      }
+    ]
+  },
+  {
+    "id": "883e14f8-9bf7-4b7c-932c-e7542079919f",
+    "code": "HUFMJ-2021-PED-19323",
+    "banca": "HU-FMJ",
+    "year": 2021,
+    "hits": [
+      {
+        "field": "options[A].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1781453143590-0.89..."
+      },
+      {
+        "field": "options[B].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1781453155772-0.22..."
+      },
+      {
+        "field": "options[C].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1781453165641-0.00..."
+      },
+      {
+        "field": "options[D].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1781453175254-0.06..."
+      },
+      {
+        "field": "options[E].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1781453185255-0.06..."
+      }
+    ]
+  },
+  {
+    "id": "917eb734-4ed0-4bc8-a12d-b985d0c77ba4",
+    "code": "HUFMJ-2014-CLM-35281",
+    "banca": "HU-FMJ",
+    "year": 2014,
+    "hits": [
+      {
+        "field": "statement",
+        "match": "MedEvo",
+        "snippet": "...o cardíaco? Observe a imagem a seguir. Imagem adaptada pela MedEvo; a reprodução da imagem original não é utilizada por restrição de direito..."
+      }
+    ]
+  },
+  {
+    "id": "9ef1b605-7b76-4d0a-805e-24a8dd1069ac",
+    "code": "SUSSP-2017-PED-22412",
+    "banca": "SUS-SP",
+    "year": 2017,
+    "hits": [
+      {
+        "field": "statement",
+        "match": "MedEvo",
+        "snippet": "... respectivamente, às fases: Imagem da tabela adaptada pela MedEvo para fins educacionais, pois a reprodução da imagem original não foi util..."
+      }
+    ]
+  },
+  {
+    "id": "a038d54f-f3a8-4679-9aac-abdad31865bc",
+    "code": "USPHCFMUSP-2026-CLM-37360",
+    "banca": "USP/HCFMUSP",
+    "year": 2026,
+    "hits": [
+      {
+        "field": "options[A].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-53-anos-de-..."
+      },
+      {
+        "field": "options[B].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-53-anos-de-..."
+      },
+      {
+        "field": "options[C].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-53-anos-de-..."
+      },
+      {
+        "field": "options[D].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-53-anos-de-..."
+      }
+    ]
+  },
+  {
+    "id": "a3aaed81-d791-45ce-b994-e7ae07be99de",
+    "code": "CMC-2014-PED-21408",
+    "banca": "CMC",
+    "year": 2014,
+    "hits": [
+      {
+        "field": "statement",
+        "match": "MedEvo",
+        "snippet": "... afirmações é verdadeira? Imagem ilustrativa adaptada pela MedEvo; a figura original da prova não foi reutilizada."
+      }
+    ]
+  },
+  {
+    "id": "a6c92eba-4de2-4bd0-900d-a1ae776b0fca",
+    "code": "UNICAMPHC-2020-CIR-19768",
+    "banca": "UNICAMP/HC",
+    "year": 2020,
+    "hits": [
+      {
+        "field": "statement",
+        "match": "MedEvo",
+        "snippet": "...utadorizada de tórax: O diagnóstico é: Imagem adaptada pela MedEvo para fins educacionais, pois a imagem original não pode ser republicada."
+      }
+    ]
+  },
+  {
+    "id": "a8393839-3002-42cb-a1f1-69fb2c5a601c",
+    "code": "USPHCFMUSP-2026-PED-23529",
+    "banca": "USP/HCFMUSP",
+    "year": 2026,
+    "hits": [
+      {
+        "field": "options[A].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
+      },
+      {
+        "field": "options[B].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
+      },
+      {
+        "field": "options[C].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
+      },
+      {
+        "field": "options[D].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
+      }
+    ]
+  },
+  {
+    "id": "a865172c-a9e7-49d4-ae15-7f7889bf07aa",
+    "code": "USPHCFMUSP-2026-CIR-20802",
+    "banca": "USP/HCFMUSP",
+    "year": 2026,
+    "hits": [
+      {
+        "field": "options[A].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-64-anos-de-..."
+      },
+      {
+        "field": "options[B].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-64-anos-de-..."
+      },
+      {
+        "field": "options[C].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-64-anos-de-..."
+      },
+      {
+        "field": "options[D].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-64-anos-de-..."
+      }
+    ]
+  },
+  {
+    "id": "a8917a8d-63c9-4e99-8266-630aa9a48e79",
+    "code": "USPHCFMUSP-2026-CLM-37362",
+    "banca": "USP/HCFMUSP",
+    "year": 2026,
+    "hits": [
+      {
+        "field": "options[A].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-74-anos-de-..."
+      },
+      {
+        "field": "options[B].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-74-anos-de-..."
+      },
+      {
+        "field": "options[C].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-74-anos-de-..."
+      },
+      {
+        "field": "options[D].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-74-anos-de-..."
+      }
+    ]
+  },
+  {
+    "id": "aa2cd7e4-0201-4a4b-89fc-f4f1172054b8",
+    "code": "SUSSP-2021-CLM-35852",
+    "banca": "SUS-SP",
+    "year": 2021,
+    "hits": [
+      {
+        "field": "statement",
+        "match": "MedEvo",
+        "snippet": "...ção do quadro clínico dessa paciente. (Imagem adaptada pela MedEvo para fins educacionais, devido a restrições de uso da imagem original.)"
+      }
+    ]
+  },
+  {
+    "id": "be320faf-c38d-40f2-89e6-587489ef8eac",
+    "code": "USPHCFMUSP-2026-CLM-37358",
+    "banca": "USP/HCFMUSP",
+    "year": 2026,
+    "hits": [
+      {
+        "field": "options[A].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
+      },
+      {
+        "field": "options[B].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
+      },
+      {
+        "field": "options[C].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
+      },
+      {
+        "field": "options[D].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
+      }
+    ]
+  },
+  {
+    "id": "c105873e-208b-4256-b560-c56812c311fa",
+    "code": "HUFMJ-2014-CLM-35287",
+    "banca": "HU-FMJ",
+    "year": 2014,
+    "hits": [
+      {
+        "field": "statement",
+        "match": "MedEvo",
+        "snippet": "...or conduta: Observe a imagem a seguir. Imagem adaptada pela MedEvo; a reprodução da imagem original não é utilizada por restrição de direito..."
+      }
+    ]
+  },
+  {
+    "id": "c6ff96ee-fe07-4c6a-b764-5073ab863fac",
+    "code": "SUSSP-2016-CIR-19775",
+    "banca": "SUS-SP",
+    "year": 2016,
+    "hits": [
+      {
+        "field": "statement",
+        "match": "MedEvo",
+        "snippet": "...l diagnóstico e conduta: Imagem radiográfica adaptada pela MedEvo para fins educacionais, pois a reprodução da imagem original não foi util..."
+      }
+    ]
+  },
+  {
+    "id": "c779c856-d92f-4589-b1b2-b07bb0c472d9",
+    "code": "USPHCFMUSP-2024-OBS-5393",
+    "banca": "USP/HCFMUSP",
+    "year": 2024,
+    "hits": [
+      {
+        "field": "options[A].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779112223063-0.16..."
+      },
+      {
+        "field": "options[B].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779112235489-0.79..."
+      },
+      {
+        "field": "options[C].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779112245858-0.11..."
+      },
+      {
+        "field": "options[D].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779112254390-0.80..."
+      }
+    ]
+  },
+  {
+    "id": "df584597-ad12-4413-a2be-ecc80f7b031c",
+    "code": "HAOC-2021-CIR-16588",
+    "banca": "HAOC",
+    "year": 2021,
+    "hits": [
+      {
+        "field": "options[A].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1780763278532-0.53..."
+      },
+      {
+        "field": "options[B].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1780763287265-0.77..."
+      },
+      {
+        "field": "options[C].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1780763306681-0.24..."
+      },
+      {
+        "field": "options[D].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1780763332550-0.84..."
+      },
+      {
+        "field": "options[E].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1780763342322-0.22..."
+      }
+    ]
+  },
+  {
+    "id": "e3e264a4-c733-4804-940a-561659fb9e26",
+    "code": "USPHCFMUSP-2026-PED-23527",
+    "banca": "USP/HCFMUSP",
+    "year": 2026,
+    "hits": [
+      {
+        "field": "options[A].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/durante-o-atendime..."
+      },
+      {
+        "field": "options[B].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/durante-o-atendime..."
+      },
+      {
+        "field": "options[C].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/durante-o-atendime..."
+      },
+      {
+        "field": "options[D].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/durante-o-atendime..."
+      }
+    ]
+  },
+  {
+    "id": "f1f90dd8-977a-410d-907f-5dde8face480",
+    "code": "USPHCFMUSP-2026-CIR-20800",
+    "banca": "USP/HCFMUSP",
+    "year": 2026,
+    "hits": [
+      {
+        "field": "options[A].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-66-anos-de-..."
+      },
+      {
+        "field": "options[B].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-66-anos-de-..."
+      },
+      {
+        "field": "options[C].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-66-anos-de-..."
+      },
+      {
+        "field": "options[D].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-66-anos-de-..."
+      }
+    ]
+  },
+  {
+    "id": "f6c9ec2c-b652-4b26-9928-c5b5d219874a",
+    "code": "CMC-2014-CLM-34491",
+    "banca": "CMC",
+    "year": 2014,
+    "hits": [
+      {
+        "field": "statement",
+        "match": "MedEvo",
+        "snippet": "...nte, pode corresponder à: Imagem ilustrativa adaptada pela MedEvo; a figura original da prova não foi reutilizada."
+      }
+    ]
+  },
+  {
+    "id": "fc6ae507-e855-400d-ad82-9274ffac3ae2",
+    "code": "UNESPHCFMB-2021-MPS-16429",
+    "banca": "UNESP/HCFMB",
+    "year": 2021,
+    "hits": [
+      {
+        "field": "options[A].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779721473755-0.62..."
+      },
+      {
+        "field": "options[B].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779721481788-0.00..."
+      },
+      {
+        "field": "options[C].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779721489959-0.80..."
+      },
+      {
+        "field": "options[D].text",
+        "match": "medevo",
+        "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779721497536-0.69..."
+      }
+    ]
+  }
+]

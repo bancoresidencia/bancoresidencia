@@ -1,14 +1,18 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
+import { createClient as createSupabaseServerClient } from '@/lib/supabase/server';
 import {
   ExtendedFilterState,
   resolveBancaList,
-  getParentFocosForSubfocoList,
+  buildClinicalFilterClauses,
   sanitizePostgrestTerm,
   shuffleArray,
-  calculateHierarchyFallback
+  calculateHierarchyFallback,
+  getClinicalSearchTerms,
+  REVALIDA_POSTGREST_FILTER
 } from '@/services/questionService';
 import { Question } from '@/types';
+import { hierarchyQuestionCounts } from '@/data/hierarchyCounts';
 
 export const dynamic = 'force-dynamic';
 
@@ -22,6 +26,8 @@ function getSupabaseAdmin() {
     }
   });
 }
+
+const SAFE_QUESTION_COLUMNS = 'id, code, institution, banca, year, tipo_prova, modalidade, especialidade, tema, foco, subfoco, difficulty, type, is_anulada, statement, options, images';
 
 interface QuestionDbRow {
   id: string;
@@ -80,22 +86,28 @@ function applyQuestionFilters(query: any, filters: ExtendedFilterState, question
     query = query.or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true');
   }
 
-  // Filtro de Status do Aluno via IDs diretos
+  // Filtro de Status do Aluno via IDs diretos (100% integrado ao Supabase com limite seguro de URL)
   if (filters.status === 'Resolvidas') {
     if (filters.userSolvedIds && filters.userSolvedIds.length > 0) {
-      query = query.in('id', filters.userSolvedIds.slice(0, 2000));
+      query = query.in('id', filters.userSolvedIds.slice(0, 150));
+    } else {
+      query = query.eq('id', '00000000-0000-0000-0000-000000000000');
     }
   } else if (filters.status === 'Acertadas') {
     if (filters.userCorrectIds && filters.userCorrectIds.length > 0) {
-      query = query.in('id', filters.userCorrectIds.slice(0, 2000));
+      query = query.in('id', filters.userCorrectIds.slice(0, 150));
+    } else {
+      query = query.eq('id', '00000000-0000-0000-0000-000000000000');
     }
   } else if (filters.status === 'Erradas') {
     if (filters.userWrongIds && filters.userWrongIds.length > 0) {
-      query = query.in('id', filters.userWrongIds.slice(0, 2000));
+      query = query.in('id', filters.userWrongIds.slice(0, 150));
+    } else {
+      query = query.eq('id', '00000000-0000-0000-0000-000000000000');
     }
   } else if (filters.status === 'Não vistas') {
     if (filters.userSolvedIds && filters.userSolvedIds.length > 0) {
-      query = query.not('id', 'in', `(${filters.userSolvedIds.slice(0, 500).join(',')})`);
+      query = query.not('id', 'in', `(${filters.userSolvedIds.slice(0, 120).join(',')})`);
     }
   }
 
@@ -105,84 +117,36 @@ function applyQuestionFilters(query: any, filters: ExtendedFilterState, question
     return query;
   }
 
-  // 1. Busca textual otimizada com sanitização estrita de PostgREST
+  // 1. Busca textual otimizada com sanitização estrita de PostgREST e suporte a acentuação clínica
   if (filters.search && filters.search.trim()) {
     const q = sanitizePostgrestTerm(filters.search);
     if (q.length >= 2) {
-      if (/^[A-Za-z0-9_-]{3,}$/.test(q)) {
-        query = query.or(`code.ilike.%${q}%,foco.ilike.%${q}%,tema.ilike.%${q}%,banca.ilike.%${q}%`);
-      } else {
-        query = query.or(`foco.ilike.%${q}%,subfoco.ilike.%${q}%,tema.ilike.%${q}%,banca.ilike.%${q}%`, `code.ilike.%${q}%`);
-      }
+      const variants = getClinicalSearchTerms(q);
+      const searchClauses = variants.flatMap((term) => [
+        `foco.ilike.%${term}%`,
+        `subfoco.ilike.%${term}%`,
+        `tema.ilike.%${term}%`,
+        `code.ilike.%${term}%`
+      ]);
+      query = query.or(searchClauses.join(','));
     }
   }
 
-  // 2. Árvore Clínica: SOMA / UNIÃO entre ramos diferentes e normalização ampla
-  const specs = new Set<string>();
-  if (filters.especialidades && filters.especialidades.length > 0) {
-    filters.especialidades.forEach((sp: string) => {
-      specs.add(sp);
-      if (sp === 'Cirurgia Geral' || sp === 'Cirurgia') {
-        specs.add('Cirurgia');
-        specs.add('Cirurgia Geral');
-      }
-      if (sp === 'Ginecologia e Obstetrícia') {
-        specs.add('Ginecologia');
-        specs.add('Obstetrícia');
-      } else if (sp === 'Ginecologia' || sp === 'Obstetrícia') {
-        specs.add(sp);
-        specs.add('Ginecologia e Obstetrícia');
-      }
-      if (sp === 'Medicina Preventiva' || sp === 'Medicina Preventiva e Social') {
-        specs.add('Medicina Preventiva e Social');
-        specs.add('Medicina Preventiva');
-      }
-    });
-  }
+  // 2. Árvore Clínica: Refinamento Pai -> Filho e SOMA / UNIÃO entre ramos diferentes
+  const { orParts, standaloneSpecs, standaloneTemas, standaloneFocos } = buildClinicalFilterClauses(filters);
 
-  const contentOrParts: string[] = [];
-  if (specs.size > 0) {
-    const specList = Array.from(specs).map((s) => `"${s}"`).join(',');
-    contentOrParts.push(`especialidade.in.(${specList})`);
-  }
-  if (filters.temas && filters.temas.length > 0) {
-    const temaList = filters.temas.map((t: string) => `"${t}"`).join(',');
-    contentOrParts.push(`tema.in.(${temaList})`);
-  }
-  if (filters.focos && filters.focos.length > 0) {
-    const focoList = filters.focos.map((f: string) => `"${f}"`).join(',');
-    contentOrParts.push(`foco.in.(${focoList})`);
-  }
-  const parentFocos = (filters.subfocos && filters.subfocos.length > 0)
-    ? getParentFocosForSubfocoList(filters.subfocos)
-    : [];
-
-  if (filters.subfocos && filters.subfocos.length > 0) {
-    const subfocoList = filters.subfocos.map((s: string) => `"${s}"`).join(',');
-    if (parentFocos.length > 0) {
-      const parentFocoList = parentFocos.map((f) => `"${f}"`).join(',');
-      contentOrParts.push(`and(foco.in.(${parentFocoList}),subfoco.in.(${subfocoList}))`);
+  if (orParts.length === 1) {
+    if (standaloneSpecs.length > 0) {
+      query = query.in('especialidade', standaloneSpecs);
+    } else if (standaloneTemas.length > 0) {
+      query = query.in('tema', standaloneTemas);
+    } else if (standaloneFocos.length > 0) {
+      query = query.in('foco', standaloneFocos);
     } else {
-      contentOrParts.push(`subfoco.in.(${subfocoList})`);
+      query = query.or(orParts[0]);
     }
-  }
-
-  if (contentOrParts.length === 1) {
-    if (specs.size > 0) {
-      query = query.in('especialidade', Array.from(specs));
-    } else if (filters.temas && filters.temas.length > 0) {
-      query = query.in('tema', filters.temas);
-    } else if (filters.focos && filters.focos.length > 0) {
-      query = query.in('foco', filters.focos);
-    } else if (filters.subfocos && filters.subfocos.length > 0) {
-      if (parentFocos.length > 0) {
-        query = query.in('foco', parentFocos).in('subfoco', filters.subfocos);
-      } else {
-        query = query.in('subfoco', filters.subfocos);
-      }
-    }
-  } else if (contentOrParts.length > 1) {
-    query = query.or(contentOrParts.join(','));
+  } else if (orParts.length > 1) {
+    query = query.or(orParts.join(','));
   }
 
   // 3. Modalidade (com suporte refinado a Revalida e Residência)
@@ -191,10 +155,10 @@ function applyQuestionFilters(query: any, filters: ExtendedFilterState, question
     const otherModalidades = filters.modalidades.filter((m: string) => !m.toLowerCase().includes('revalida'));
 
     if (hasRevalida && otherModalidades.length === 0) {
-      query = query.or('modalidade.eq.Revalida,banca.ilike.%Revalida%,institution.ilike.%Revalida%,code.ilike.INEPREVALIDA%');
+      query = query.or(REVALIDA_POSTGREST_FILTER);
     } else if (hasRevalida && otherModalidades.length > 0) {
       const otherIn = otherModalidades.join(',');
-      query = query.or(`modalidade.in.(${otherIn}),banca.ilike.%Revalida%,institution.ilike.%Revalida%,code.ilike.INEPREVALIDA%`);
+      query = query.or(`modalidade.in.(${otherIn}),${REVALIDA_POSTGREST_FILTER}`);
     } else {
       const isOnlyDefaultResidencia =
         filters.modalidades.length === 1 &&
@@ -258,8 +222,166 @@ export async function POST(req: NextRequest) {
       questionIds
     } = body;
 
-    // 1. Constroi a query base aplicando todos os filtros
-    let dataQuery = supabaseAdmin.from('questions').select('*');
+    // Se o filtro de status estiver ativo e os IDs ainda não tiverem sido fornecidos pelo client, consulta no Supabase
+    if (filters.status && filters.status !== 'Todas') {
+      if (!filters.userSolvedIds && !filters.userCorrectIds && !filters.userWrongIds) {
+        try {
+          const supabaseServer = await createSupabaseServerClient();
+          const { data: { user } } = await supabaseServer.auth.getUser();
+          if (user?.id) {
+            const { data: userAnswersData } = await supabaseAdmin
+              .from('user_answers')
+              .select('question_id, is_correct')
+              .eq('user_id', user.id);
+            const rows = (userAnswersData || []) as unknown as Array<{ question_id: string; is_correct: boolean }>;
+            if (rows.length > 0) {
+              filters.userSolvedIds = rows.map((r) => r.question_id);
+              filters.userCorrectIds = rows.filter((r) => r.is_correct).map((r) => r.question_id);
+              filters.userWrongIds = rows.filter((r) => !r.is_correct).map((r) => r.question_id);
+            }
+          }
+        } catch {
+          // prossegue normalmente
+        }
+      }
+    }
+
+    // Se a requisição for para contagens facetadas da árvore clínica (Dynamic Hierarchy Facets)
+    if (body.action === 'facets') {
+      const isRevalida = Boolean(filters.modalidades?.some((m: string) => m.toLowerCase().includes('revalida')));
+      const hasBancas = Boolean(filters.instituicoes && filters.instituicoes.length > 0);
+      const isRPlusOrTitulo = Boolean(filters.modalidades?.some((m: string) => m.startsWith('R+') || m.startsWith('Título')));
+
+      // Clona filtros removendo a árvore clínica para calcular a distribuição em todos os nós
+      const filtersWithoutClinical: ExtendedFilterState = {
+        ...filters,
+        especialidades: [],
+        temas: [],
+        focos: [],
+        subfocos: []
+      };
+
+      if (isRevalida || hasBancas || isRPlusOrTitulo) {
+        // Volume moderado (<= 10.000 questões): busca linhas indexadas de especialidade, tema, foco, subfoco
+        const CHUNK = 1000;
+        let offset = 0;
+        const allRows: Array<{ id: string; especialidade?: string; tema?: string; foco?: string; subfoco?: string }> = [];
+
+        while (offset < 10000) {
+          let chunkQuery = supabaseAdmin
+            .from('questions')
+            .select('id, especialidade, tema, foco, subfoco');
+          chunkQuery = applyQuestionFilters(chunkQuery, filtersWithoutClinical);
+          const { data: chunk, error: chunkErr } = await chunkQuery.range(offset, offset + CHUNK - 1);
+          if (chunkErr || !chunk || chunk.length === 0) break;
+          allRows.push(...chunk);
+          if (chunk.length < CHUNK) break;
+          offset += CHUNK;
+        }
+
+        const especialidades: Record<string, number> = {};
+        const temas: Record<string, number> = {};
+        const focos: Record<string, number> = {};
+        const subfocos: Record<string, number> = {};
+        const totalRightCardCount = allRows.length;
+
+        for (const row of allRows) {
+          const esp = row.especialidade;
+          const tem = row.tema;
+          const foc = row.foco;
+          const sub = row.subfoco;
+
+          if (esp) {
+            // Normalizar especialidade para os nós da árvore clínica (Cirurgia Geral agrega em Cirurgia sem duplicar)
+            const normalizedEsp = (esp === 'Cirurgia Geral' ? 'Cirurgia' : esp);
+            especialidades[normalizedEsp] = (especialidades[normalizedEsp] || 0) + 1;
+            if (normalizedEsp !== esp) {
+              especialidades[esp] = (especialidades[esp] || 0) + 1;
+            }
+            if (normalizedEsp === 'Ginecologia' || normalizedEsp === 'Obstetrícia') {
+              especialidades['Ginecologia e Obstetrícia'] = (especialidades['Ginecologia e Obstetrícia'] || 0) + 1;
+            }
+          }
+          if (tem) temas[tem] = (temas[tem] || 0) + 1;
+          if (foc) focos[foc] = (focos[foc] || 0) + 1;
+          if (sub) subfocos[sub] = (subfocos[sub] || 0) + 1;
+        }
+
+        return NextResponse.json({
+          facets: {
+            totalRightCardCount,
+            especialidades,
+            temas,
+            focos,
+            subfocos
+          }
+        });
+      } else {
+        // Modo Geral de Residência: contagem exata das grandes áreas
+        const specs = [
+          'Clínica Médica',
+          'Cirurgia',
+          'Cirurgia Geral',
+          'Pediatria',
+          'Ginecologia',
+          'Obstetrícia',
+          'Medicina Preventiva e Social'
+        ];
+
+        const specPromises = specs.map(async (sp) => {
+          let qSpec = supabaseAdmin
+            .from('questions')
+            .select('id', { count: 'exact', head: true })
+            .eq('especialidade', sp);
+          qSpec = applyQuestionFilters(qSpec, filtersWithoutClinical);
+          const { count } = await qSpec;
+          return { sp, count: count || 0 };
+        });
+
+        const specResults = await Promise.all(specPromises);
+        const especialidades: Record<string, number> = {};
+        let totalRightCardCount = 0;
+
+        specResults.forEach(({ sp, count }) => {
+          especialidades[sp] = count;
+          totalRightCardCount += count;
+        });
+
+        especialidades['Cirurgia Geral'] = (especialidades['Cirurgia'] || 0) + (especialidades['Cirurgia Geral'] || 0);
+        especialidades['Ginecologia e Obstetrícia'] = (especialidades['Ginecologia'] || 0) + (especialidades['Obstetrícia'] || 0);
+
+        const globalTotal = 132965;
+        const overallRatio = globalTotal > 0 ? totalRightCardCount / globalTotal : 1;
+
+        const temas: Record<string, number> = {};
+        const focos: Record<string, number> = {};
+        const subfocos: Record<string, number> = {};
+
+        for (const [t, count] of Object.entries(hierarchyQuestionCounts.temas || {})) {
+          temas[t] = Math.max(0, Math.round((count as number) * overallRatio));
+        }
+        for (const [f, count] of Object.entries(hierarchyQuestionCounts.focos || {})) {
+          focos[f] = Math.max(0, Math.round((count as number) * overallRatio));
+        }
+        for (const [s, count] of Object.entries(hierarchyQuestionCounts.subfocos || {})) {
+          subfocos[s] = Math.max(0, Math.round((count as number) * overallRatio));
+        }
+
+        return NextResponse.json({
+          facets: {
+            totalRightCardCount,
+            especialidades,
+            temas,
+            focos,
+            subfocos
+          }
+        });
+      }
+    }
+
+    // 1. Constroi a query base aplicando todos os filtros (omite correct_answer e commentary na listagem padrão)
+    const selectCols = body.includeGabarito ? '*' : SAFE_QUESTION_COLUMNS;
+    let dataQuery = supabaseAdmin.from('questions').select(selectCols);
     dataQuery = applyQuestionFilters(dataQuery, filters, questionIds);
 
     // 2. Paginação com ordenação dinâmica
@@ -278,14 +400,17 @@ export async function POST(req: NextRequest) {
     }
 
     // 3. Cálculo preciso do total filtrado de questões
+    const isRevalida = Boolean(filters.modalidades?.some((m: string) => m.toLowerCase().includes('revalida')));
+    const baseTotal = isRevalida ? 2921 : 132965;
     const hasActiveFilters = Boolean(
+      isRevalida ||
       (filters.search && filters.search.trim()) ||
       (filters.especialidades && filters.especialidades.length > 0) ||
       (filters.temas && filters.temas.length > 0) ||
       (filters.focos && filters.focos.length > 0) ||
       (filters.subfocos && filters.subfocos.length > 0) ||
       (filters.instituicoes && filters.instituicoes.length > 0) ||
-      (filters.anos && filters.anos.length > 0 && filters.anos.length < 15) ||
+      (filters.anos && filters.anos.length > 0 && filters.anos.length < 18) ||
       (filters.dificuldade && filters.dificuldade !== 'Todas') ||
       (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') ||
       (filters.status && filters.status !== 'Todas') ||
@@ -296,7 +421,7 @@ export async function POST(req: NextRequest) {
     const hasRightCardFilters = Boolean(
       (filters.search && filters.search.trim()) ||
       (filters.instituicoes && filters.instituicoes.length > 0) ||
-      (filters.anos && filters.anos.length > 0 && filters.anos.length < 15) ||
+      (filters.anos && filters.anos.length > 0 && filters.anos.length < 18) ||
       (filters.dificuldade && filters.dificuldade !== 'Todas') ||
       (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') ||
       (filters.status && filters.status !== 'Todas') ||
@@ -311,7 +436,7 @@ export async function POST(req: NextRequest) {
       (filters.subfocos && filters.subfocos.length > 0)
     );
 
-    let total = 132965;
+    let total = baseTotal;
 
     // Executa busca de dados e contagem precisa
     let countPromise: Promise<number>;
@@ -319,7 +444,7 @@ export async function POST(req: NextRequest) {
     if (questionIds && questionIds.length > 0) {
       countPromise = Promise.resolve(questionIds.length);
     } else if (!hasActiveFilters) {
-      countPromise = Promise.resolve(132965);
+      countPromise = Promise.resolve(baseTotal);
     } else if (hasClinicalFilters && !hasRightCardFilters) {
       // Quando apenas filtros clínicos estão ativos, calcula instantaneamente a soma exata (0ms)
       countPromise = Promise.resolve(calculateHierarchyFallback(filters));
@@ -355,7 +480,7 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    let questions = (data || []).map(mapRowToQuestion);
+    let questions = (data || []).map((row) => mapRowToQuestion(row as unknown as QuestionDbRow));
 
     if (questionIds && questionIds.length > 0) {
       const idMap = new Map(questions.map((q) => [q.id, q]));
