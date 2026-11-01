@@ -91,7 +91,7 @@ const SHORTCUT_GROUPS: ShortcutGroup[] = [
       },
       {
         keys: ['S'],
-        description: 'Salvar questão em um caderno / pasta'
+        description: 'Ativar modo riscar texto selecionado (Tachado)'
       }
     ]
   }

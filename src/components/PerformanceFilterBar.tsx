@@ -112,8 +112,10 @@ export const PerformanceFilterBar: React.FC<PerformanceFilterBarProps> = ({
             onChange={(e) => onChange({ ...filters, period: e.target.value as PeriodFilter })}
             className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 text-sm text-zinc-900 dark:text-white font-medium rounded-xl px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] cursor-pointer shadow-sm"
           >
-            <option value="7d">Últimos 7 dias</option>
-            <option value="30d">Últimos 30 dias (Padrão)</option>
+            <option value="1d">1 Dia (Hoje)</option>
+            <option value="1d">1 Dia (Hoje)</option>
+            <option value="7d">7 Dias (Padrão)</option>
+            <option value="30d">Últimos 30 dias</option>
             <option value="mes">Mês Atual</option>
             <option value="6m">Últimos 6 meses</option>
             <option value="3m">Últimos 3 meses</option>

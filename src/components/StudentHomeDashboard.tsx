@@ -486,7 +486,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   };
 
   // Filtro de período para o Raio-X das Especialidades (Drawer Imagem 5)
-  const [specialtyPeriod, setSpecialtyPeriod] = useState<PeriodFilter>('30d');
+  const [specialtyPeriod, setSpecialtyPeriod] = useState<PeriodFilter>('7d');
   const [customStartDate, setCustomStartDate] = useState<string>('');
   const [customEndDate, setCustomEndDate] = useState<string>('');
   const [isPeriodDrawerOpen, setIsPeriodDrawerOpen] = useState<boolean>(false);
@@ -501,14 +501,15 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       return 'Personalizado';
     }
     const map: Record<string, string> = {
-      '7d': 'Últimos 7 dias',
-      '30d': '30 Dias (Padrão)',
+      '1d': '1 Dia (Hoje)',
+      '7d': '7 Dias (Padrão)',
+      '30d': '30 Dias',
       'mes': 'Mês Atual',
       '3m': '3 Meses',
       '6m': '6 Meses',
       'all': 'Todo o Histórico'
     };
-    return map[specialtyPeriod] || '30 Dias';
+    return map[specialtyPeriod] || '7 Dias (Padrão)';
   };
 
   const [currentTime] = useState(() => Date.now());
@@ -528,6 +529,10 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
         const end = new Date(customEndDate + 'T23:59:59').getTime();
         return ts >= start && ts <= end;
       }
+      if (specialtyPeriod === '1d') {
+        const startOfDay = new Date(new Date(now).getFullYear(), new Date(now).getMonth(), new Date(now).getDate(), 0, 0, 0, 0).getTime();
+        return ts >= startOfDay;
+      }
       if (specialtyPeriod === '7d') return ts >= now - 7 * 86400000;
       if (specialtyPeriod === '30d') return ts >= now - 30 * 86400000;
       if (specialtyPeriod === 'mes') {
@@ -538,7 +543,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       if (specialtyPeriod === '6m') return ts >= now - 180 * 86400000;
       return true; // 'all'
     });
-  }, [userAnswers, specialtyPeriod, customStartDate, customEndDate]);
+  }, [userAnswers, specialtyPeriod, customStartDate, customEndDate, currentTime]);
 
 
   // Helper de correspondência de área clínica (separando Ginecologia e Obstetrícia)
@@ -694,7 +699,10 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     let startDateTs: number;
     let endDateTs: number = todayEnd;
 
-    if (specialtyPeriod === '7d') {
+    if (specialtyPeriod === '1d') {
+      startDateTs = todayStart;
+      endDateTs = todayEnd;
+    } else if (specialtyPeriod === '7d') {
       startDateTs = todayStart - 6 * 86400000;
     } else if (specialtyPeriod === '30d') {
       startDateTs = todayStart - 29 * 86400000;
@@ -710,7 +718,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       startDateTs = Math.min(s, e);
       endDateTs = Math.max(s, e);
     } else {
-      startDateTs = todayStart - 29 * 86400000;
+      startDateTs = todayStart - 6 * 86400000;
     }
 
     const totalDays = Math.max(1, Math.min(185, Math.round((endDateTs - startDateTs) / 86400000) + 1));
@@ -734,49 +742,88 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
     const rawDaily: DailyPoint[] = [];
 
-    for (let i = 0; i < totalDays; i++) {
-      const d = new Date(startDateTs + i * 86400000);
-      const dayStart = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 0, 0, 0, 0).getTime();
-      const dayEnd = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 23, 59, 59, 999).getTime();
+    // Se o período for de 1 Dia (Hoje), exibe a evolução por faixas de horários do dia
+    if (specialtyPeriod === '1d') {
+      const timeSlots = [
+        { label: '00h-04h', startH: 0, endH: 4 },
+        { label: '04h-08h', startH: 4, endH: 8 },
+        { label: '08h-12h', startH: 8, endH: 12 },
+        { label: '12h-16h', startH: 12, endH: 16 },
+        { label: '16h-20h', startH: 16, endH: 20 },
+        { label: '20h-24h', startH: 20, endH: 24 }
+      ];
 
-      const dayStr = String(d.getDate()).padStart(2, '0');
-      const monthStr = String(d.getMonth() + 1).padStart(2, '0');
-      const dateFormatted = `${dayStr}/${monthStr}`;
+      for (const slot of timeSlots) {
+        const slotStart = todayStart + slot.startH * 3600000;
+        const slotEnd = todayStart + slot.endH * 3600000 - 1;
 
-      let dayAns = 0;
-      let dayCor = 0;
+        let dayAns = 0;
+        let dayCor = 0;
 
-      if (hasSpecialtyAnswers) {
-        const answersInDay = specialtyAnswers.filter((ans) => {
-          const ts = ans.timestamp || 0;
-          return ts >= dayStart && ts <= dayEnd;
+        if (hasSpecialtyAnswers) {
+          const answersInSlot = specialtyAnswers.filter((ans) => {
+            const ts = ans.timestamp || 0;
+            return ts >= slotStart && ts <= slotEnd;
+          });
+          dayCor = answersInSlot.filter((a) => a.isCorrect).length;
+          dayAns = answersInSlot.length;
+        }
+
+        const dayErr = Math.max(0, dayAns - dayCor);
+
+        rawDaily.push({
+          label: slot.label,
+          date: slot.label,
+          resolvidas: dayAns,
+          acertos: dayCor,
+          erros: dayErr
         });
-        dayCor = answersInDay.filter((a) => a.isCorrect).length;
-        dayAns = answersInDay.length;
-      } else if (stats.historyByDay && stats.historyByDay.length > 0) {
-        const dateKey = `${d.getFullYear()}-${monthStr}-${dayStr}`;
-        const found = stats.historyByDay.find((h) => h.date === dateKey);
-        if (found) {
-          if (isGeral) {
-            dayAns = found.answered;
-            dayCor = found.correct;
-          } else {
-            const proportion = selectedAreaId === 'clinica' ? 0.25 : 0.15;
-            dayAns = Math.round(found.answered * proportion);
-            dayCor = Math.round(found.correct * proportion);
+      }
+    } else {
+      for (let i = 0; i < totalDays; i++) {
+        const d = new Date(startDateTs + i * 86400000);
+        const dayStart = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 0, 0, 0, 0).getTime();
+        const dayEnd = new Date(d.getFullYear(), d.getMonth(), d.getDate(), 23, 59, 59, 999).getTime();
+
+        const dayStr = String(d.getDate()).padStart(2, '0');
+        const monthStr = String(d.getMonth() + 1).padStart(2, '0');
+        const dateFormatted = `${dayStr}/${monthStr}`;
+
+        let dayAns = 0;
+        let dayCor = 0;
+
+        if (hasSpecialtyAnswers) {
+          const answersInDay = specialtyAnswers.filter((ans) => {
+            const ts = ans.timestamp || 0;
+            return ts >= dayStart && ts <= dayEnd;
+          });
+          dayCor = answersInDay.filter((a) => a.isCorrect).length;
+          dayAns = answersInDay.length;
+        } else if (stats.historyByDay && stats.historyByDay.length > 0) {
+          const dateKey = `${d.getFullYear()}-${monthStr}-${dayStr}`;
+          const found = stats.historyByDay.find((h) => h.date === dateKey);
+          if (found) {
+            if (isGeral) {
+              dayAns = found.answered;
+              dayCor = found.correct;
+            } else {
+              const proportion = selectedAreaId === 'clinica' ? 0.25 : 0.15;
+              dayAns = Math.round(found.answered * proportion);
+              dayCor = Math.round(found.correct * proportion);
+            }
           }
         }
+
+        const dayErr = Math.max(0, dayAns - dayCor);
+
+        rawDaily.push({
+          label: dateFormatted,
+          date: dateFormatted,
+          resolvidas: dayAns,
+          acertos: dayCor,
+          erros: dayErr
+        });
       }
-
-      const dayErr = Math.max(0, dayAns - dayCor);
-
-      rawDaily.push({
-        label: dateFormatted,
-        date: dateFormatted,
-        resolvidas: dayAns,
-        acertos: dayCor,
-        erros: dayErr
-      });
     }
 
     // Média móvel suave de tendência
@@ -1462,10 +1509,136 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
         </div>
       </section>
 
-      {/* 2. RAIO-X CLÍNICO DAS 5 GRANDES ÁREAS (IMAGEM 1 REMOVIDA) */}
+      {/* 2. RECOMENDAÇÃO DO DIA E RETENÇÃO ACIMA DO RAIO-X DAS ESPECIALIDADES */}
       <section className="space-y-4">
-        <div>
-          {/* Card 1 (Largura Total da Seção): Raio-X das 6 Grandes Áreas com Donut e Gráficos de Acertos por Especialidade */}
+        <div className="space-y-4">
+          {/* Card 1 (Topo): Recomendação do Dia + Retenção & Repetição Espaçada (Imagem 2) */}
+          <div className="w-full bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-4 sm:p-6 shadow-xs relative overflow-hidden group">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-5 sm:gap-6 items-center">
+              {/* Bloco 1 (Esquerda - 6 cols): Recomendação do Dia */}
+              <div className="md:col-span-6 space-y-2.5 relative">
+                <div className="flex items-center gap-2">
+                  <span
+                    className="px-2 py-0.5 rounded-md font-bold text-[10px] uppercase tracking-wider border inline-block"
+                    style={{
+                      backgroundColor: accentConfig.bgRgba,
+                      borderColor: accentConfig.borderRgba,
+                      color: accentConfig.primaryHex
+                    }}
+                  >
+                    Recomendação do Dia
+                  </span>
+                  {recommendedArea.hasData && (
+                    <span className="text-[11px] font-semibold text-amber-600 dark:text-amber-400">
+                      Aproveitamento: {recommendedArea.accuracy}%
+                    </span>
+                  )}
+                </div>
+
+                <div>
+                  <h4 className="font-heading text-base sm:text-lg font-bold text-slate-900 dark:text-zinc-100 flex items-center gap-2">
+                    <span>Praticar {recommendedArea.label}</span>
+                  </h4>
+                  <p className="text-xs text-slate-600 dark:text-zinc-400 leading-relaxed mt-0.5">
+                    {recommendedArea.hasData
+                      ? `Menor rendimento registrado (${recommendedArea.accuracy}%). Foco prioritário de alavancagem.`
+                      : `Área essencial com alta incidência nas provas.`}
+                  </p>
+                </div>
+
+                <div className="pt-1">
+                  <button
+                    type="button"
+                    onClick={() => handlePracticeArea(recommendedArea.filterName)}
+                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-white text-xs sm:text-sm font-bold transition-all cursor-pointer shadow-sm hover:opacity-95 active:scale-98"
+                    style={{
+                      backgroundColor: accentConfig.primaryHex,
+                      boxShadow: `0 3px 10px ${accentConfig.bgRgba}`
+                    }}
+                  >
+                    <Play className="w-3.5 h-3.5 fill-white" />
+                    <span>Treinar {recommendedArea.label}</span>
+                  </button>
+                </div>
+              </div>
+
+              {/* Bloco 2 (Direita - 6 cols): Retenção & Repetição Espaçada (Caderno de Erros + Flashcards) */}
+              <div className="md:col-span-6 border-t md:border-t-0 md:border-l border-slate-100 dark:border-zinc-800/80 pt-4 md:pt-0 md:pl-6 space-y-2.5">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 block">
+                  Retenção & Repetição Espaçada
+                </span>
+
+                <div className="space-y-2">
+                  {/* Botão Caderno de Erros -> Abre Drawer Central */}
+                  <div
+                    onClick={() => {
+                      setActiveCentralDrawer('caderno_erros');
+                      setDrawerSearch('');
+                      setDrawerErrorSpecialty('Todas');
+                    }}
+                    className="flex items-center justify-between p-2.5 rounded-xl border border-rose-500/20 bg-rose-500/5 hover:bg-rose-500/10 cursor-pointer transition-all group"
+                    title="Abrir central de foco do Caderno de Erros"
+                  >
+                    <div className="flex items-center gap-2.5 min-w-0">
+                      <div className="w-8 h-8 rounded-lg bg-rose-500/15 text-rose-500 flex items-center justify-center shrink-0">
+                        <AlertOctagon className="w-4 h-4" />
+                      </div>
+                      <div className="min-w-0">
+                        <div className="text-xs font-bold text-zinc-800 dark:text-zinc-200 group-hover:text-rose-500 transition-colors truncate">
+                          Caderno de Erros
+                        </div>
+                        <div className="text-[10px] text-zinc-500 dark:text-zinc-400 truncate">
+                          {pendingErrorsCount > 0 ? `${pendingErrorsCount} pendentes de reteste` : 'Tudo em dia'}
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-1.5 shrink-0">
+                      <span className="text-[10px] font-bold text-rose-500 hidden sm:inline">
+                        Ver Foco
+                      </span>
+                      <ChevronRight className="w-4 h-4 text-zinc-400 group-hover:translate-x-0.5 group-hover:text-rose-500 transition-all" />
+                    </div>
+                  </div>
+
+                  {/* Botão Flashcards -> Abre Drawer Central */}
+                  <div
+                    onClick={() => {
+                      setActiveCentralDrawer('flashcards');
+                      setDrawerSearch('');
+                      setDrawerFlashcardSpecialty('Todas');
+                    }}
+                    className="flex items-center justify-between p-2.5 rounded-xl border border-zinc-200/80 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/50 hover:bg-zinc-100 dark:hover:bg-zinc-800/80 cursor-pointer transition-all group"
+                    title="Abrir central de foco dos Flashcards"
+                  >
+                    <div className="flex items-center gap-2.5 min-w-0">
+                      <div
+                        className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0"
+                        style={{ backgroundColor: accentConfig.bgRgba, color: accentConfig.primaryHex }}
+                      >
+                        <Brain className="w-4 h-4" />
+                      </div>
+                      <div className="min-w-0">
+                        <div className="text-xs font-bold text-zinc-800 dark:text-zinc-200 group-hover:text-white transition-colors truncate">
+                          Flashcards Mnemônicos
+                        </div>
+                        <div className="text-[10px] text-zinc-500 dark:text-zinc-400 truncate">
+                          {flashcardsStats.dueToday > 0 ? `${flashcardsStats.dueToday} para hoje • FSRS` : 'Revisão do Dia • FSRS'}
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-1.5 shrink-0">
+                      <span className="text-[10px] font-bold text-slate-500 dark:text-zinc-400 hidden sm:inline">
+                        Ver Foco
+                      </span>
+                      <ChevronRight className="w-4 h-4 text-zinc-400 group-hover:translate-x-0.5 group-hover:text-white transition-all" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 2 (Abaixo): Raio-X das 6 Grandes Áreas com Donut e Gráficos de Acertos por Especialidade */}
           <div className="w-full bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-4 sm:p-6 shadow-xs space-y-4">
             <div className="flex items-center justify-between gap-2 pb-2 border-b border-slate-100 dark:border-zinc-800/80">
               <div className="flex items-center gap-2">
@@ -1510,10 +1683,11 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           setHoveredPieIndex(index);
                         }}
                         onMouseLeave={() => setHoveredPieIndex(null)}
-                        onClick={(_, index) => {
-                          if (donutData[index]) {
-                            const clickedId = donutData[index].id;
-                            setSelectedAreaId((prev) => (prev === clickedId ? 'geral' : clickedId));
+                        onClick={(entry: Record<string, unknown>, index: number) => {
+                          const item = entry as { id?: string; payload?: { id?: string } } | undefined;
+                          const targetId = item?.id || item?.payload?.id || (typeof index === 'number' && donutData[index]?.id);
+                          if (targetId) {
+                            setSelectedAreaId((prev) => (prev === targetId ? 'geral' : targetId));
                           }
                         }}
                         stroke="none"
@@ -1537,6 +1711,9 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                               fill={entry.cor}
                               opacity={opacity}
                               className="transition-opacity duration-200 cursor-pointer"
+                              onClick={() => {
+                                setSelectedAreaId((prev) => (prev === entry.id ? 'geral' : entry.id));
+                              }}
                             />
                           );
                         })}
@@ -1598,8 +1775,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     type="button"
                     onClick={() => setSelectedAreaId('geral')}
                     className={`px-2 py-0.5 rounded-md text-[10px] font-bold transition-all cursor-pointer flex items-center gap-1 border ${selectedAreaId === 'geral'
-                        ? 'shadow-xs scale-105 border-slate-400 dark:border-zinc-500 bg-slate-200/60 dark:bg-zinc-800 text-slate-900 dark:text-white'
-                        : 'opacity-70 hover:opacity-100 hover:scale-102 border-transparent text-slate-600 dark:text-zinc-400'
+                      ? 'shadow-xs scale-105 border-slate-400 dark:border-zinc-500 bg-slate-200/60 dark:bg-zinc-800 text-slate-900 dark:text-white'
+                      : 'opacity-70 hover:opacity-100 hover:scale-102 border-transparent text-slate-600 dark:text-zinc-400'
                       }`}
                     title="Visualizar evolução geral (todas as áreas)"
                   >
@@ -1615,8 +1792,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         type="button"
                         onClick={() => setSelectedAreaId((prev) => (prev === area.id ? 'geral' : area.id))}
                         className={`px-2 py-0.5 rounded-md text-[10px] font-bold transition-all cursor-pointer flex items-center gap-1.5 border ${isSelected
-                            ? 'shadow-xs scale-105'
-                            : 'opacity-70 hover:opacity-100 hover:scale-102'
+                          ? 'shadow-xs scale-105'
+                          : 'opacity-70 hover:opacity-100 hover:scale-102'
                           }`}
                         style={{
                           backgroundColor: isSelected ? `${area.colorHex}22` : 'transparent',
@@ -1766,132 +1943,6 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
               </div>
             </div>
           </div>
-
-          {/* Card 2 (Largura Total Embaixo do Primeiro - Imagem 2): Recomendação do Dia + Retenção & Repetição Espaçada */}
-          <div className="w-full bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-4 sm:p-6 shadow-xs relative overflow-hidden group">
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-5 sm:gap-6 items-center">
-              {/* Bloco 1 (Esquerda - 6 cols): Recomendação do Dia */}
-              <div className="md:col-span-6 space-y-2.5 relative">
-                <div className="flex items-center gap-2">
-                  <span
-                    className="px-2 py-0.5 rounded-md font-bold text-[10px] uppercase tracking-wider border inline-block"
-                    style={{
-                      backgroundColor: accentConfig.bgRgba,
-                      borderColor: accentConfig.borderRgba,
-                      color: accentConfig.primaryHex
-                    }}
-                  >
-                    Recomendação do Dia
-                  </span>
-                  {recommendedArea.hasData && (
-                    <span className="text-[11px] font-semibold text-amber-600 dark:text-amber-400">
-                      Aproveitamento: {recommendedArea.accuracy}%
-                    </span>
-                  )}
-                </div>
-
-                <div>
-                  <h4 className="font-heading text-base sm:text-lg font-bold text-slate-900 dark:text-zinc-100 flex items-center gap-2">
-                    <span>Praticar {recommendedArea.label}</span>
-                  </h4>
-                  <p className="text-xs text-slate-600 dark:text-zinc-400 leading-relaxed mt-0.5">
-                    {recommendedArea.hasData
-                      ? `Menor rendimento registrado (${recommendedArea.accuracy}%). Foco prioritário de alavancagem.`
-                      : `Área essencial com alta incidência nas provas.`}
-                  </p>
-                </div>
-
-                <div className="pt-1">
-                  <button
-                    type="button"
-                    onClick={() => handlePracticeArea(recommendedArea.filterName)}
-                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-white text-xs sm:text-sm font-bold transition-all cursor-pointer shadow-sm hover:opacity-95 active:scale-98"
-                    style={{
-                      backgroundColor: accentConfig.primaryHex,
-                      boxShadow: `0 3px 10px ${accentConfig.bgRgba}`
-                    }}
-                  >
-                    <Play className="w-3.5 h-3.5 fill-white" />
-                    <span>Treinar {recommendedArea.label}</span>
-                  </button>
-                </div>
-              </div>
-
-              {/* Bloco 2 (Direita - 6 cols): Retenção & Repetição Espaçada (Caderno de Erros + Flashcards) */}
-              <div className="md:col-span-6 border-t md:border-t-0 md:border-l border-slate-100 dark:border-zinc-800/80 pt-4 md:pt-0 md:pl-6 space-y-2.5">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 block">
-                  Retenção & Repetição Espaçada
-                </span>
-
-                <div className="space-y-2">
-                  {/* Botão Caderno de Erros -> Abre Drawer Central */}
-                  <div
-                    onClick={() => {
-                      setActiveCentralDrawer('caderno_erros');
-                      setDrawerSearch('');
-                      setDrawerErrorSpecialty('Todas');
-                    }}
-                    className="flex items-center justify-between p-2.5 rounded-xl border border-rose-500/20 bg-rose-500/5 hover:bg-rose-500/10 cursor-pointer transition-all group"
-                    title="Abrir central de foco do Caderno de Erros"
-                  >
-                    <div className="flex items-center gap-2.5 min-w-0">
-                      <div className="w-8 h-8 rounded-lg bg-rose-500/15 text-rose-500 flex items-center justify-center shrink-0">
-                        <AlertOctagon className="w-4 h-4" />
-                      </div>
-                      <div className="min-w-0">
-                        <div className="text-xs font-bold text-zinc-800 dark:text-zinc-200 group-hover:text-rose-500 transition-colors truncate">
-                          Caderno de Erros
-                        </div>
-                        <div className="text-[10px] text-zinc-500 dark:text-zinc-400 truncate">
-                          {pendingErrorsCount > 0 ? `${pendingErrorsCount} pendentes de reteste` : 'Tudo em dia'}
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-1.5 shrink-0">
-                      <span className="text-[10px] font-bold text-rose-500 hidden sm:inline">
-                        Ver Foco
-                      </span>
-                      <ChevronRight className="w-4 h-4 text-zinc-400 group-hover:translate-x-0.5 group-hover:text-rose-500 transition-all" />
-                    </div>
-                  </div>
-
-                  {/* Botão Flashcards -> Abre Drawer Central */}
-                  <div
-                    onClick={() => {
-                      setActiveCentralDrawer('flashcards');
-                      setDrawerSearch('');
-                      setDrawerFlashcardSpecialty('Todas');
-                    }}
-                    className="flex items-center justify-between p-2.5 rounded-xl border border-zinc-200/80 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/50 hover:bg-zinc-100 dark:hover:bg-zinc-800/80 cursor-pointer transition-all group"
-                    title="Abrir central de foco dos Flashcards"
-                  >
-                    <div className="flex items-center gap-2.5 min-w-0">
-                      <div
-                        className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0"
-                        style={{ backgroundColor: accentConfig.bgRgba, color: accentConfig.primaryHex }}
-                      >
-                        <Brain className="w-4 h-4" />
-                      </div>
-                      <div className="min-w-0">
-                        <div className="text-xs font-bold text-zinc-800 dark:text-zinc-200 group-hover:text-white transition-colors truncate">
-                          Flashcards Mnemônicos
-                        </div>
-                        <div className="text-[10px] text-zinc-500 dark:text-zinc-400 truncate">
-                          {flashcardsStats.dueToday > 0 ? `${flashcardsStats.dueToday} para hoje • FSRS` : 'Revisão do Dia • FSRS'}
-                        </div>
-                      </div>
-                    </div>
-                    <div className="flex items-center gap-1.5 shrink-0">
-                      <span className="text-[10px] font-bold text-slate-500 dark:text-zinc-400 hidden sm:inline">
-                        Ver Foco
-                      </span>
-                      <ChevronRight className="w-4 h-4 text-zinc-400 group-hover:translate-x-0.5 group-hover:text-white transition-all" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -1904,8 +1955,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
               type="button"
               onClick={() => setStudyResumeTab('cadernos')}
               className={`rounded-lg px-3 sm:px-3.5 py-1.5 text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer whitespace-nowrap ${studyResumeTab === 'cadernos'
-                  ? 'text-white shadow-xs'
-                  : 'text-slate-500 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white'
+                ? 'text-white shadow-xs'
+                : 'text-slate-500 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white'
                 }`}
               style={{
                 backgroundColor: studyResumeTab === 'cadernos' ? accentConfig.primaryHex : 'transparent'
@@ -1919,8 +1970,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
               type="button"
               onClick={() => setStudyResumeTab('provas')}
               className={`rounded-lg px-3 sm:px-3.5 py-1.5 text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer whitespace-nowrap ${studyResumeTab === 'provas'
-                  ? 'text-white shadow-xs'
-                  : 'text-slate-500 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white'
+                ? 'text-white shadow-xs'
+                : 'text-slate-500 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white'
                 }`}
               style={{
                 backgroundColor: studyResumeTab === 'provas' ? accentConfig.primaryHex : 'transparent'
@@ -1938,8 +1989,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
               type="button"
               onClick={() => setStudyResumeTab('simulados')}
               className={`rounded-lg px-3 sm:px-3.5 py-1.5 text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer whitespace-nowrap ${studyResumeTab === 'simulados'
-                  ? 'text-white shadow-xs'
-                  : 'text-slate-500 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white'
+                ? 'text-white shadow-xs'
+                : 'text-slate-500 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white'
                 }`}
               style={{
                 backgroundColor: studyResumeTab === 'simulados' ? accentConfig.primaryHex : 'transparent'
@@ -2910,38 +2961,43 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       Catálogo Completo de Provas
                     </div>
                     {drawerSearchResults.length > 0 ? (
-                      drawerSearchResults.map((item, idx) => (
-                        <div
-                          key={`${item.institution.id}-${item.exam.year}-${idx}`}
-                          className="p-3.5 rounded-2xl border border-slate-200/90 dark:border-zinc-800 bg-white dark:bg-[#121620] hover:border-slate-300 dark:hover:border-zinc-700 transition-all flex items-center justify-between gap-3 shadow-2xs"
-                        >
-                          <div className="min-w-0 flex-1">
-                            <div className="flex items-center gap-2">
-                              <span className="font-heading font-bold text-xs sm:text-sm text-slate-900 dark:text-white">
-                                {item.institution.shortName} {item.exam.year}
-                              </span>
-                              <span className="text-[10px] px-2 py-0.5 rounded-md font-mono bg-slate-100 dark:bg-zinc-800 text-slate-600 dark:text-zinc-400">
-                                {item.exam.questionCount || 100}q
-                              </span>
-                            </div>
-                            <p className="text-[11px] text-slate-500 dark:text-zinc-400 truncate mt-0.5">
-                              {item.institution.name}
-                            </p>
-                          </div>
-                          <button
-                            type="button"
-                            onClick={() => {
-                              setActiveCentralDrawer(null);
-                              handleLaunchOfficialExam(item.institution.shortName, item.exam.year, item.exam.questionCount || 100);
-                            }}
-                            className="shrink-0 flex items-center gap-1 px-3.5 py-1.5 rounded-xl text-white text-xs font-bold transition-all cursor-pointer shadow-xs hover:opacity-95"
-                            style={{ backgroundColor: accentConfig.primaryHex }}
+                      drawerSearchResults.map((item, idx) => {
+                        const annCount = item.exam.annulledCount || 0;
+                        const sumCount = (item.exam.questionCount || 0) + annCount;
+                        const nominalQ = sumCount === 100 ? 100 : (item.exam.questionCount || 100);
+                        return (
+                          <div
+                            key={`${item.institution.id}-${item.exam.year}-${idx}`}
+                            className="p-3.5 rounded-2xl border border-slate-200/90 dark:border-zinc-800 bg-white dark:bg-[#121620] hover:border-slate-300 dark:hover:border-zinc-700 transition-all flex items-center justify-between gap-3 shadow-2xs"
                           >
-                            <Play className="w-3 h-3 fill-white" />
-                            <span>Iniciar</span>
-                          </button>
-                        </div>
-                      ))
+                            <div className="min-w-0 flex-1">
+                              <div className="flex items-center gap-2">
+                                <span className="font-heading font-bold text-xs sm:text-sm text-slate-900 dark:text-white">
+                                  {item.institution.shortName} {item.exam.year}
+                                </span>
+                                <span className="text-[10px] px-2 py-0.5 rounded-md font-mono bg-slate-100 dark:bg-zinc-800 text-slate-600 dark:text-zinc-400">
+                                  {nominalQ}q
+                                </span>
+                              </div>
+                              <p className="text-[11px] text-slate-500 dark:text-zinc-400 truncate mt-0.5">
+                                {item.institution.name}
+                              </p>
+                            </div>
+                            <button
+                              type="button"
+                              onClick={() => {
+                                setActiveCentralDrawer(null);
+                                handleLaunchOfficialExam(item.institution.shortName, item.exam.year, nominalQ);
+                              }}
+                              className="shrink-0 flex items-center gap-1 px-3.5 py-1.5 rounded-xl text-white text-xs font-bold transition-all cursor-pointer shadow-xs hover:opacity-95"
+                              style={{ backgroundColor: accentConfig.primaryHex }}
+                            >
+                              <Play className="w-3 h-3 fill-white" />
+                              <span>Iniciar</span>
+                            </button>
+                          </div>
+                        );
+                      })
                     ) : (
                       <div className="py-8 text-center text-xs text-slate-400 dark:text-zinc-500">
                         Nenhuma prova encontrada com este filtro.
@@ -3408,11 +3464,12 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 </span>
                 <div className="grid grid-cols-2 gap-2 text-xs">
                   {[
-                    { id: '30d', label: '30 Dias (Padrão)' },
+                    { id: '1d', label: '1 Dia (Hoje)' },
+                    { id: '7d', label: '7 Dias (Padrão)' },
+                    { id: '30d', label: 'Últimos 30 dias' },
+                    { id: 'mes', label: 'Mês Atual' },
                     { id: '3m', label: '3 Meses' },
                     { id: '6m', label: '6 Meses' },
-                    { id: '7d', label: 'Últimos 7 dias' },
-                    { id: 'mes', label: 'Mês Atual' },
                     { id: 'all', label: 'Todo o Histórico' }
                   ].map((preset) => {
                     const isSel = specialtyPeriod === preset.id;
@@ -3425,8 +3482,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           setIsPeriodDrawerOpen(false);
                         }}
                         className={`px-3 py-2 rounded-xl text-left text-xs font-semibold transition-all cursor-pointer border ${isSel
-                            ? 'bg-emerald-500/15 border-emerald-500 text-emerald-700 dark:text-emerald-400 font-bold shadow-2xs'
-                            : 'bg-slate-50 dark:bg-zinc-900/70 border-slate-200/80 dark:border-zinc-800 text-slate-700 dark:text-zinc-300 hover:bg-slate-100 dark:hover:bg-zinc-800'
+                          ? 'bg-emerald-500/15 border-emerald-500 text-emerald-700 dark:text-emerald-400 font-bold shadow-2xs'
+                          : 'bg-slate-50 dark:bg-zinc-900/70 border-slate-200/80 dark:border-zinc-800 text-slate-700 dark:text-zinc-300 hover:bg-slate-100 dark:hover:bg-zinc-800'
                           }`}
                       >
                         {preset.label}

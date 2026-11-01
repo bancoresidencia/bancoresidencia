@@ -142,6 +142,7 @@ import {
   Heart,
   Bookmark,
   Highlighter,
+  Strikethrough,
   ChevronDown,
   Play,
   CheckCircle2,
@@ -353,10 +354,10 @@ export default function Home() {
     }
   }, []);
 
-  // Filtros de Desempenho e Ranking (Padrão: 6 meses e Residência)
+  // Filtros de Desempenho e Ranking (Padrão: 7 dias e Residência)
   const [performanceFilters, setPerformanceFilters] = useState<PerformanceFilterState>({
     modalidade: 'Residência',
-    period: '30d',
+    period: '7d',
     institutions: [],
     banca: 'Todas'
   });
@@ -384,7 +385,7 @@ export default function Home() {
   const handleResetPerformanceFilters = () => {
     setPerformanceFilters({
       modalidade: 'Residência',
-      period: '30d',
+      period: '7d',
       institutions: [],
       banca: 'Todas'
     });
@@ -430,6 +431,7 @@ export default function Home() {
   const [activeHighlighterColor, setActiveHighlighterColor] = useState<HighlighterColor>('yellow');
   const [isTopHighlighterMenuOpen, setIsTopHighlighterMenuOpen] = useState<boolean>(false);
   const topHighlighterMenuRef = useRef<HTMLDivElement>(null);
+  const [isStrikethroughActive, setIsStrikethroughActive] = useState<boolean>(false);
 
   // Controle de visibilidade da régua sequencial retrátil de questões (Imagem 1)
   const [isQuestionSequenceOpen, setIsQuestionSequenceOpen] = useState<boolean>(false);
@@ -1120,6 +1122,14 @@ export default function Home() {
         return;
       }
 
+      // Atalho S para alternar modo riscar texto (tachado)
+      if (e.key === 's' || e.key === 'S') {
+        e.preventDefault();
+        setIsStrikethroughActive((prev) => !prev);
+        window.dispatchEvent(new CustomEvent('apply-strikethrough-selection'));
+        return;
+      }
+
       // Atalho B para favoritar a questão atual
       if (e.key === 'b' || e.key === 'B') {
         const currQ = filteredQuestions[Math.min(currentQuestionIndex, filteredQuestions.length - 1)];
@@ -1690,7 +1700,10 @@ export default function Home() {
       institutionFullName: banca || institution,
       year,
       modality: 'acesso_direto',
-      totalQuestions: examDetails?.questionCount || 100,
+      totalQuestions:
+        examDetails && (examDetails.questionCount + (examDetails.annulledCount || 0) === 100)
+          ? 100
+          : (examDetails?.questionCount || 100),
       answeredQuestions: 0,
       correctAnswers: 0,
       status: 'em_andamento'
@@ -2674,13 +2687,14 @@ export default function Home() {
                                 <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 z-50 w-max min-w-max flex items-center gap-2 px-3 py-1.5 bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800 rounded-full shadow-xl animate-in fade-in zoom-in-95 duration-150">
                                   {(['yellow', 'green', 'pink', 'blue', 'orange', 'purple'] as HighlighterColor[]).map((colorKey) => {
                                     const c = HIGHLIGHTER_COLORS[colorKey];
-                                    const isSelected = activeHighlighterColor === colorKey;
+                                    const isSelected = activeHighlighterColor === colorKey && !isStrikethroughActive;
                                     return (
                                       <button
                                         key={colorKey}
                                         type="button"
                                         onClick={() => {
                                           setActiveHighlighterColor(colorKey);
+                                          setIsStrikethroughActive(false);
                                           setIsTopHighlighterMenuOpen(false);
                                         }}
                                         title={`Marca-texto ${c.name}`}
@@ -2698,9 +2712,54 @@ export default function Home() {
                                       </button>
                                     );
                                   })}
+                                  <div className="h-4 w-px bg-zinc-200 dark:bg-zinc-700 mx-0.5" />
+                                  <button
+                                    type="button"
+                                    onClick={() => {
+                                      setIsStrikethroughActive(true);
+                                      setIsTopHighlighterMenuOpen(false);
+                                      window.dispatchEvent(new CustomEvent('apply-strikethrough-selection'));
+                                    }}
+                                    title="Riscar texto selecionado (Tachado) [S]"
+                                    className={`w-6 h-6 rounded-full transition-all cursor-pointer flex items-center justify-center border shrink-0 ${
+                                      isStrikethroughActive
+                                        ? 'bg-rose-100 text-rose-600 border-rose-400 ring-2 ring-rose-400/60'
+                                        : 'bg-slate-100 dark:bg-zinc-800 text-slate-700 dark:text-zinc-300 border-transparent hover:bg-rose-50 dark:hover:bg-rose-950/40'
+                                    }`}
+                                  >
+                                    <Strikethrough className="w-3.5 h-3.5" />
+                                  </button>
                                 </div>
                               )}
                             </div>
+
+                            {/* Botão de Riscar / Tachado de Texto Selecionado */}
+                            <button
+                              type="button"
+                              onMouseDown={(e) => {
+                                // Evita desselecionar texto na página ao clicar
+                                e.preventDefault();
+                              }}
+                              onClick={() => {
+                                setIsStrikethroughActive((prev) => !prev);
+                                window.dispatchEvent(new CustomEvent('apply-strikethrough-selection'));
+                              }}
+                              title={
+                                isStrikethroughActive
+                                  ? 'Modo Riscar Texto (Tachado) ATIVO [S]. Clique para desativar ou selecione texto para riscar.'
+                                  : 'Riscar texto selecionado (Tachado) [S]. Clique para ativar modo risco.'
+                              }
+                              className={`flex items-center gap-1.5 px-2.5 py-1.5 border rounded-xl transition-all cursor-pointer shadow-xs group ${
+                                isStrikethroughActive
+                                  ? 'bg-rose-50 dark:bg-rose-950/40 border-rose-300 dark:border-rose-700/60 text-rose-600 dark:text-rose-400 font-bold ring-2 ring-rose-400/40'
+                                  : 'bg-slate-50 dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300'
+                              }`}
+                            >
+                              <Strikethrough className="w-3.5 h-3.5 group-hover:scale-110 transition-transform" />
+                              <span className="text-[11px] font-bold hidden sm:inline">
+                                {isStrikethroughActive ? 'Riscando' : 'Riscar'}
+                              </span>
+                            </button>
 
                             {/* Seletor de Tamanho de Fonte Retrátil / Ocultável (Estilo Idêntico ao Marcador de Texto) */}
                             <div ref={topFontSizeMenuRef} className="relative inline-flex items-center">
@@ -3015,6 +3074,8 @@ export default function Home() {
                             savedFolderIds={savedQuestionsFolderMap[currentQ.id] || []}
                             activeHighlighterColor={activeHighlighterColor}
                             onSelectHighlighterColor={setActiveHighlighterColor}
+                            isStrikethroughActive={isStrikethroughActive}
+                            onToggleStrikethrough={() => setIsStrikethroughActive((prev) => !prev)}
                           />
                         );
                       })()}
