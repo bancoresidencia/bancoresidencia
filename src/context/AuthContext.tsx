@@ -154,6 +154,34 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
     async function initSession() {
       try {
+        // 1. Processa código de autenticação OAuth se presente na URL (?code=...)
+        if (typeof window !== 'undefined') {
+          const urlParams = new URLSearchParams(window.location.search);
+          const authCode = urlParams.get('code');
+          if (authCode) {
+            try {
+              const { data: exchangeData, error: exchangeError } = await supabase.auth.exchangeCodeForSession(authCode);
+              if (!exchangeError && exchangeData?.session?.user) {
+                // Limpa o ?code da barra de endereços mantendo a URL limpa
+                const cleanUrl = window.location.pathname + (window.location.hash || '');
+                window.history.replaceState({}, document.title, cleanUrl);
+
+                const account = await mapSupabaseUserToAccount(exchangeData.session.user);
+                if (isMounted) {
+                  setUser(account);
+                  setIsLoading(false);
+                  return;
+                }
+              } else if (exchangeError) {
+                console.warn('[AuthContext] Erro ao trocar código OAuth:', exchangeError.message);
+              }
+            } catch (exchangeErr) {
+              console.warn('[AuthContext] Falha na troca do código OAuth:', exchangeErr);
+            }
+          }
+        }
+
+        // 2. Busca a sessão existente
         const { data: { session } } = await supabase.auth.getSession();
 
         if (session?.user && isMounted) {
@@ -220,7 +248,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       const { error } = await supabase.auth.signInWithOAuth({
         provider: 'google',
         options: {
-          redirectTo: `${origin}/auth/callback`
+          redirectTo: origin
         }
       });
 
