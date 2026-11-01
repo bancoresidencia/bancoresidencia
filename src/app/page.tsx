@@ -2712,23 +2712,6 @@ export default function Home() {
                                       </button>
                                     );
                                   })}
-                                  <div className="h-4 w-px bg-zinc-200 dark:bg-zinc-700 mx-0.5" />
-                                  <button
-                                    type="button"
-                                    onClick={() => {
-                                      setIsStrikethroughActive(true);
-                                      setIsTopHighlighterMenuOpen(false);
-                                      window.dispatchEvent(new CustomEvent('apply-strikethrough-selection'));
-                                    }}
-                                    title="Riscar texto selecionado (Tachado) [S]"
-                                    className={`w-6 h-6 rounded-full transition-all cursor-pointer flex items-center justify-center border shrink-0 ${
-                                      isStrikethroughActive
-                                        ? 'bg-rose-100 text-rose-600 border-rose-400 ring-2 ring-rose-400/60'
-                                        : 'bg-slate-100 dark:bg-zinc-800 text-slate-700 dark:text-zinc-300 border-transparent hover:bg-rose-50 dark:hover:bg-rose-950/40'
-                                    }`}
-                                  >
-                                    <Strikethrough className="w-3.5 h-3.5" />
-                                  </button>
                                 </div>
                               )}
                             </div>

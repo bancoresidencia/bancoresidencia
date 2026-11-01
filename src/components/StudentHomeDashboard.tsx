@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   Flame,
   Target,
@@ -484,6 +484,51 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     if (accuracy >= 75) return { label: 'Forte', color: 'text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 border-emerald-500/20' };
     if (accuracy >= 60) return { label: 'Regular', color: 'text-blue-600 dark:text-blue-400 bg-blue-500/10 border-blue-500/20' };
     return { label: 'Reforçar', color: 'text-amber-600 dark:text-amber-400 bg-amber-500/10 border-amber-500/20' };
+  };
+
+  // Animação Hero da Medalha do Percentil Oficial (entra no centro do card e volta ao normal)
+  const [isMedalAnimating, setIsMedalAnimating] = useState(true);
+  const percentileCardRef = useRef<HTMLDivElement>(null);
+  const percentileMedalRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const updateCenter = () => {
+      if (percentileCardRef.current && percentileMedalRef.current) {
+        const cardRect = percentileCardRef.current.getBoundingClientRect();
+        const medalRect = percentileMedalRef.current.getBoundingClientRect();
+        const dx = cardRect.left + cardRect.width / 2 - (medalRect.left + medalRect.width / 2);
+        const dy = cardRect.top + cardRect.height / 2 - (medalRect.top + medalRect.height / 2);
+        percentileCardRef.current.style.setProperty('--medal-center-x', `${dx}px`);
+        percentileCardRef.current.style.setProperty('--medal-center-y', `${dy}px`);
+      }
+    };
+
+    updateCenter();
+    window.addEventListener('resize', updateCenter);
+
+    const t = setTimeout(() => {
+      setIsMedalAnimating(false);
+    }, 1800);
+
+    return () => {
+      clearTimeout(t);
+      window.removeEventListener('resize', updateCenter);
+    };
+  }, []);
+
+  const triggerMedalAnimation = () => {
+    setIsMedalAnimating(false);
+    setTimeout(() => {
+      if (percentileCardRef.current && percentileMedalRef.current) {
+        const cardRect = percentileCardRef.current.getBoundingClientRect();
+        const medalRect = percentileMedalRef.current.getBoundingClientRect();
+        const dx = cardRect.left + cardRect.width / 2 - (medalRect.left + medalRect.width / 2);
+        const dy = cardRect.top + cardRect.height / 2 - (medalRect.top + medalRect.height / 2);
+        percentileCardRef.current.style.setProperty('--medal-center-x', `${dx}px`);
+        percentileCardRef.current.style.setProperty('--medal-center-y', `${dy}px`);
+      }
+      setIsMedalAnimating(true);
+    }, 20);
   };
 
   // Filtro de período para o Raio-X das Especialidades (Drawer Imagem 5)
@@ -1368,25 +1413,34 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
           {/* Card 3: Percentil Oficial Destacado e Específico por Classificação */}
           <div
-            className="bento-card relative overflow-hidden rounded-2xl p-5 shadow-sm flex flex-col justify-between min-h-[180px] space-y-3.5 border transition-all duration-300"
+            ref={percentileCardRef}
+            className="bento-card relative overflow-hidden rounded-2xl p-5 shadow-sm flex flex-col justify-between min-h-[180px] space-y-3.5 border transition-all duration-300 group"
             style={{
               background: percentileCardBg,
               borderColor: percentileCardBorder,
               boxShadow: `0 4px 20px -2px ${percentileTier.glowRgba}`
             }}
           >
+            {isMedalAnimating && (
+              <div className="absolute inset-0 bg-gradient-to-b from-amber-500/10 via-amber-500/5 to-transparent pointer-events-none rounded-2xl animate-in fade-in duration-300" />
+            )}
             <div>
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
                   <div
-                    className="w-8 h-8 rounded-xl flex items-center justify-center shadow-xs border transition-colors"
+                    ref={percentileMedalRef}
+                    onClick={triggerMedalAnimation}
+                    title="Clique para repetir animação da medalha"
+                    className={`w-8 h-8 rounded-xl flex items-center justify-center shadow-xs border transition-colors cursor-pointer ${
+                      isMedalAnimating ? 'animate-medal-takeover' : 'hover:scale-110 active:scale-95'
+                    }`}
                     style={{
                       backgroundColor: percentileTier.bgRgba,
                       borderColor: percentileTier.borderRgba,
                       color: percentileTier.color
                     }}
                   >
-                    <Medal className="w-4 h-4" />
+                    <Medal className={`w-4 h-4 transition-transform duration-300 ${isMedalAnimating ? 'scale-110' : ''}`} />
                   </div>
                   <span className="text-xs font-bold text-zinc-800 dark:text-zinc-200 uppercase tracking-wider">
                     Percentil Oficial

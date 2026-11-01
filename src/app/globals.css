@@ -246,3 +246,32 @@ html.light ::-webkit-scrollbar-thumb:hover {
   animation-play-state: paused;
 }
 
+/* Animação Hero da Medalha do Percentil Oficial (entra no centro do card e volta ao normal) */
+@keyframes medalTakeover {
+  0% {
+    transform: translate(var(--medal-center-x, 120px), var(--medal-center-y, 65px)) scale(2.7);
+    box-shadow: 0 0 35px 10px rgba(245, 158, 11, 0.45), 0 10px 25px -5px rgba(0, 0, 0, 0.25);
+    z-index: 40;
+  }
+  38% {
+    transform: translate(var(--medal-center-x, 120px), var(--medal-center-y, 65px)) scale(2.9) rotate(-4deg);
+    box-shadow: 0 0 50px 14px rgba(245, 158, 11, 0.65), 0 15px 30px -5px rgba(0, 0, 0, 0.35);
+    z-index: 40;
+  }
+  55% {
+    transform: translate(var(--medal-center-x, 120px), var(--medal-center-y, 65px)) scale(2.8) rotate(3deg);
+    box-shadow: 0 0 40px 10px rgba(245, 158, 11, 0.5), 0 12px 25px -5px rgba(0, 0, 0, 0.3);
+    z-index: 40;
+  }
+  100% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    z-index: 1;
+  }
+}
+
+.animate-medal-takeover {
+  animation: medalTakeover 1.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transform-origin: center center;
+  will-change: transform, box-shadow;
+}
