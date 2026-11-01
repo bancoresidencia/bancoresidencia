@@ -1,285 +1,288 @@
-@import "tailwindcss";
-
-@custom-variant dark (&:where(.dark, .dark *));
-
-:root {
-  --background: #fafafa;
-  --foreground: #18181b;
-  --card: #ffffff;
-  --card-foreground: #18181b;
-  --card-border: #e4e4e7;
-  --muted: #f4f4f5;
-  --muted-foreground: #71717a;
-  --accent-muted: rgba(37, 99, 235, 0.08);
-  --primary-color: #2563eb;
-  --primary-hover: #1d4ed8;
-  --ring: #2563eb;
-  --bg-page: #fafafa;
-  --bg-card: #ffffff;
-  --bg-input: #ffffff;
-  --border-input: #e4e4e7;
-  --ring-focus: var(--primary-color);
-  --time-accent-color: #0ea5e9;
-  --time-accent-bg: rgba(14, 165, 233, 0.14);
-  --accuracy-accent-color: #14b8a6;
-  --accuracy-accent-bg: rgba(20, 184, 166, 0.14);
-  --energy-accent-color: #f59e0b;
-  --energy-accent-bg: rgba(245, 158, 11, 0.14);
-}
-
-html.dark {
-  --background: #09090b;
-  --foreground: #f4f4f5;
-  --card: #121215;
-  --card-foreground: #f4f4f5;
-  --card-border: #27272a;
-  --muted: #18181b;
-  --muted-foreground: #a1a1aa;
-  --accent-muted: rgba(37, 99, 235, 0.15);
-  --primary-color: #2563eb;
-  --primary-hover: #3b82f6;
-  --ring: var(--primary-color);
-  --bg-page: #09090b;
-  --bg-card: #121215;
-  --bg-input: #18181b;
-  --border-input: #27272a;
-  --ring-focus: var(--primary-color);
-  --time-accent-color: #0ea5e9;
-  --time-accent-bg: rgba(14, 165, 233, 0.14);
-  --accuracy-accent-color: #14b8a6;
-  --accuracy-accent-bg: rgba(20, 184, 166, 0.14);
-  --energy-accent-color: #f59e0b;
-  --energy-accent-bg: rgba(245, 158, 11, 0.14);
-}
-
-/* Modo Monocromático Estrito (Preto e Branco Puro) */
-html.theme-monochrome.dark {
-  --primary-color: #f4f4f5;
-  --primary-hover: #ffffff;
-  --ring: #f4f4f5;
-  --ring-focus: #f4f4f5;
-  --glow-color: rgba(255, 255, 255, 0.08);
-  --accent-muted: rgba(255, 255, 255, 0.06);
-}
-
-html.theme-monochrome:not(.dark) {
-  --primary-color: #18181b;
-  --primary-hover: #09090b;
-  --ring: #18181b;
-  --ring-focus: #18181b;
-  --glow-color: rgba(0, 0, 0, 0.08);
-  --accent-muted: rgba(0, 0, 0, 0.04);
-}
-
-.input-adaptive {
-  background-color: var(--bg-input);
-  border-color: var(--card-border);
-  color: var(--foreground);
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
-}
-
-.input-adaptive:focus {
-  outline: none;
-  border-color: var(--primary-color);
-  box-shadow: 0 0 0 2px var(--glow-color);
-}
-
-/* Botões Secundários Adaptativos (ex: Expandir Todas, Ver Detalhes, Modais) */
-.btn-secondary-adaptive {
-  background-color: var(--bg-card);
-  border: 1px solid var(--card-border);
-  color: var(--muted-foreground);
-  transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.btn-secondary-adaptive:hover {
-  border-color: var(--accent-border);
-  color: var(--foreground);
-  background-color: var(--accent-subtle);
-}
-
-/* Badges Semânticos Adaptativos por Tema */
-.badge-theme-adaptive {
-  background-color: var(--accent-subtle);
-  border: 1px solid var(--accent-border);
-  color: var(--accent-primary);
-}
-
-.badge-time-adaptive {
-  background-color: var(--time-accent-bg);
-  border: 1px solid var(--time-accent-border);
-  color: var(--time-accent-color);
-}
-
-.badge-accuracy-adaptive {
-  background-color: var(--accuracy-accent-bg);
-  border: 1px solid var(--accuracy-accent-border);
-  color: var(--accuracy-accent-color);
-}
-
-.badge-energy-adaptive {
-  background-color: var(--energy-accent-bg);
-  border: 1px solid var(--energy-accent-border);
-  color: var(--energy-accent-color);
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-card-border: var(--card-border);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-primary: var(--primary-color);
-  --color-primary-hover: var(--primary-hover);
-  --color-accent-subtle: var(--accent-subtle);
-  --color-accent-border: var(--accent-border);
-  --color-time-accent: var(--time-accent-color);
-  --color-accuracy-accent: var(--accuracy-accent-color);
-  --color-energy-accent: var(--energy-accent-color);
-  --font-heading: var(--font-sans), var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-sans: var(--font-sans), var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-}
-
-html {
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-  background-color: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans);
-  line-height: 1.6;
-  letter-spacing: -0.011em;
-  transition: background-color 0.25s cubic-bezier(0.16, 1, 0.3, 1), color 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
-  letter-spacing: -0.025em;
-}
-
-/* Scrollbar refinada e ergonômica */
-::-webkit-scrollbar {
-  width: 7px;
-  height: 7px;
-}
-
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #27272a;
-  border-radius: 9999px;
-}
-
-html.light ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #3f3f46;
-}
-
-html.light ::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
-}
-
-/* Utilitário para ocultar barras de rolagem mantendo a navegação ativa */
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-/* Micro-animações e utilitários de polimento visual */
-.glow-sm {
-  box-shadow: 0 0 15px -3px var(--glow-color, rgba(37, 99, 235, 0.25));
-}
-
-.glow-md {
-  box-shadow: 0 0 25px -4px var(--glow-color, rgba(37, 99, 235, 0.35));
-}
-
-.bento-card {
-  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease;
-}
-
-.bento-card:hover {
-  transform: translateY(-2px);
-}
-
-/* Suporte a preferência de movimento reduzido */
-@media (prefers-reduced-motion: reduce) {
-  *, ::before, ::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-/* Loop Infinito de Bancas (Marquee) */
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.animate-marquee {
-  display: flex;
-  width: max-content;
-  animation: marquee 72s linear infinite;
-}
-
-.animate-marquee:hover {
-  animation-play-state: paused;
-}
-
-/* Animação Hero da Medalha do Percentil Oficial (entra no centro do card e volta ao normal) */
-@keyframes medalTakeover {
-  0% {
-    transform: translate(var(--medal-center-x, 120px), var(--medal-center-y, 65px)) scale(2.8);
-    background-color: var(--medal-bg, #ffffff);
-    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.25), 0 0 35px 8px rgba(245, 158, 11, 0.5);
-    z-index: 50;
-  }
-  38% {
-    transform: translate(var(--medal-center-x, 120px), var(--medal-center-y, 65px)) scale(3.1) rotate(-4deg);
-    background-color: var(--medal-bg, #ffffff);
-    box-shadow: 0 15px 40px -5px rgba(0, 0, 0, 0.35), 0 0 50px 14px rgba(245, 158, 11, 0.65);
-    z-index: 50;
-  }
-  55% {
-    transform: translate(var(--medal-center-x, 120px), var(--medal-center-y, 65px)) scale(2.9) rotate(3deg);
-    background-color: var(--medal-bg, #ffffff);
-    box-shadow: 0 12px 35px -5px rgba(0, 0, 0, 0.3), 0 0 40px 10px rgba(245, 158, 11, 0.5);
-    z-index: 50;
-  }
-  100% {
-    transform: translate(0, 0) scale(1) rotate(0deg);
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    z-index: 1;
-  }
-}
-
-.animate-medal-takeover {
-  animation: medalTakeover 1.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  transform-origin: center center;
-  will-change: transform, box-shadow;
-  --medal-bg: #ffffff;
-}
-
-.dark .animate-medal-takeover {
-  --medal-bg: #18181b;
-}
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #fafafa;
+  --foreground: #18181b;
+  --card: #ffffff;
+  --card-foreground: #18181b;
+  --card-border: #e4e4e7;
+  --muted: #f4f4f5;
+  --muted-foreground: #71717a;
+  --accent-muted: rgba(37, 99, 235, 0.08);
+  --primary-color: #2563eb;
+  --primary-hover: #1d4ed8;
+  --ring: #2563eb;
+  --bg-page: #fafafa;
+  --bg-card: #ffffff;
+  --bg-input: #ffffff;
+  --border-input: #e4e4e7;
+  --ring-focus: var(--primary-color);
+  --time-accent-color: #0ea5e9;
+  --time-accent-bg: rgba(14, 165, 233, 0.14);
+  --accuracy-accent-color: #14b8a6;
+  --accuracy-accent-bg: rgba(20, 184, 166, 0.14);
+  --energy-accent-color: #f59e0b;
+  --energy-accent-bg: rgba(245, 158, 11, 0.14);
+}
+
+html.dark {
+  --background: #09090b;
+  --foreground: #f4f4f5;
+  --card: #121215;
+  --card-foreground: #f4f4f5;
+  --card-border: #27272a;
+  --muted: #18181b;
+  --muted-foreground: #a1a1aa;
+  --accent-muted: rgba(37, 99, 235, 0.15);
+  --primary-color: #2563eb;
+  --primary-hover: #3b82f6;
+  --ring: var(--primary-color);
+  --bg-page: #09090b;
+  --bg-card: #121215;
+  --bg-input: #18181b;
+  --border-input: #27272a;
+  --ring-focus: var(--primary-color);
+  --time-accent-color: #0ea5e9;
+  --time-accent-bg: rgba(14, 165, 233, 0.14);
+  --accuracy-accent-color: #14b8a6;
+  --accuracy-accent-bg: rgba(20, 184, 166, 0.14);
+  --energy-accent-color: #f59e0b;
+  --energy-accent-bg: rgba(245, 158, 11, 0.14);
+}
+
+/* Modo Monocromático Estrito (Preto e Branco Puro) */
+html.theme-monochrome.dark {
+  --primary-color: #f4f4f5;
+  --primary-hover: #ffffff;
+  --ring: #f4f4f5;
+  --ring-focus: #f4f4f5;
+  --glow-color: rgba(255, 255, 255, 0.08);
+  --accent-muted: rgba(255, 255, 255, 0.06);
+}
+
+html.theme-monochrome:not(.dark) {
+  --primary-color: #18181b;
+  --primary-hover: #09090b;
+  --ring: #18181b;
+  --ring-focus: #18181b;
+  --glow-color: rgba(0, 0, 0, 0.08);
+  --accent-muted: rgba(0, 0, 0, 0.04);
+}
+
+.input-adaptive {
+  background-color: var(--bg-input);
+  border-color: var(--card-border);
+  color: var(--foreground);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.input-adaptive:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px var(--glow-color);
+}
+
+/* Botões Secundários Adaptativos (ex: Expandir Todas, Ver Detalhes, Modais) */
+.btn-secondary-adaptive {
+  background-color: var(--bg-card);
+  border: 1px solid var(--card-border);
+  color: var(--muted-foreground);
+  transition: all 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.btn-secondary-adaptive:hover {
+  border-color: var(--accent-border);
+  color: var(--foreground);
+  background-color: var(--accent-subtle);
+}
+
+/* Badges Semânticos Adaptativos por Tema */
+.badge-theme-adaptive {
+  background-color: var(--accent-subtle);
+  border: 1px solid var(--accent-border);
+  color: var(--accent-primary);
+}
+
+.badge-time-adaptive {
+  background-color: var(--time-accent-bg);
+  border: 1px solid var(--time-accent-border);
+  color: var(--time-accent-color);
+}
+
+.badge-accuracy-adaptive {
+  background-color: var(--accuracy-accent-bg);
+  border: 1px solid var(--accuracy-accent-border);
+  color: var(--accuracy-accent-color);
+}
+
+.badge-energy-adaptive {
+  background-color: var(--energy-accent-bg);
+  border: 1px solid var(--energy-accent-border);
+  color: var(--energy-accent-color);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-card-border: var(--card-border);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-primary: var(--primary-color);
+  --color-primary-hover: var(--primary-hover);
+  --color-accent-subtle: var(--accent-subtle);
+  --color-accent-border: var(--accent-border);
+  --color-time-accent: var(--time-accent-color);
+  --color-accuracy-accent: var(--accuracy-accent-color);
+  --color-energy-accent: var(--energy-accent-color);
+  --font-heading: var(--font-sans), var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: var(--font-sans), var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  letter-spacing: -0.011em;
+  transition: background-color 0.25s cubic-bezier(0.16, 1, 0.3, 1), color 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.025em;
+}
+
+/* Scrollbar refinada e ergonômica */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 9999px;
+}
+
+html.light ::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+html.light ::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Utilitário para ocultar barras de rolagem mantendo a navegação ativa */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Micro-animações e utilitários de polimento visual */
+.glow-sm {
+  box-shadow: 0 0 15px -3px var(--glow-color, rgba(37, 99, 235, 0.25));
+}
+
+.glow-md {
+  box-shadow: 0 0 25px -4px var(--glow-color, rgba(37, 99, 235, 0.35));
+}
+
+.bento-card {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease;
+}
+
+.bento-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Suporte a preferência de movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Loop Infinito de Bancas (Marquee) */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 72s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Animação Hero da Medalha do Percentil Oficial (entra no centro do card e volta ao normal) */
+@keyframes medalTakeover {
+  0% {
+    transform: translate(var(--medal-center-x, 120px), var(--medal-center-y, 65px)) scale(2.8);
+    background-color: var(--medal-bg, #ffffff) !important;
+    box-shadow: 0 12px 35px -5px rgba(0, 0, 0, 0.3), 0 0 40px 10px rgba(245, 158, 11, 0.55);
+    z-index: 50;
+  }
+  38% {
+    transform: translate(var(--medal-center-x, 120px), var(--medal-center-y, 65px)) scale(3.1) rotate(-4deg);
+    background-color: var(--medal-bg, #ffffff) !important;
+    box-shadow: 0 16px 45px -5px rgba(0, 0, 0, 0.4), 0 0 55px 15px rgba(245, 158, 11, 0.7);
+    z-index: 50;
+  }
+  55% {
+    transform: translate(var(--medal-center-x, 120px), var(--medal-center-y, 65px)) scale(2.9) rotate(3deg);
+    background-color: var(--medal-bg, #ffffff) !important;
+    box-shadow: 0 14px 40px -5px rgba(0, 0, 0, 0.35), 0 0 45px 12px rgba(245, 158, 11, 0.6);
+    z-index: 50;
+  }
+  100% {
+    transform: translate(0, 0) scale(1) rotate(0deg);
+    background-color: var(--medal-bg, #ffffff) !important;
+    box-shadow: 0 2px 6px -1px rgba(0, 0, 0, 0.08);
+    z-index: 1;
+  }
+}
+
+.animate-medal-takeover {
+  animation: medalTakeover 1.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transform-origin: center center;
+  will-change: transform, box-shadow;
+  --medal-bg: #ffffff;
+  background-color: var(--medal-bg, #ffffff) !important;
+}
+
+.dark .animate-medal-takeover {
+  --medal-bg: #18181b;
+  background-color: #18181b !important;
+}
