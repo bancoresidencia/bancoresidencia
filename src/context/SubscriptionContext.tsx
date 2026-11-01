@@ -72,7 +72,7 @@ export function SubscriptionProvider({ children }: { children: React.ReactNode }
   const [isUpgradeModalOpen, setIsUpgradeModalOpenState] = useState(false);
   const [selectedPlanForCheckout, setSelectedPlanForCheckout] = useState<PlanDefinition | null>(null);
   const [isLimitReached, setIsLimitReached] = useState(false);
-  const [currentTimestamp, setCurrentTimestamp] = useState(() => Date.now());
+  const [currentTimestamp] = useState(() => Date.now());
 
   const [dailyResolvedCount, setDailyResolvedCount] = useState<number>(() => {
     if (typeof window === 'undefined') return 0;
@@ -83,10 +83,6 @@ export function SubscriptionProvider({ children }: { children: React.ReactNode }
       return 0;
     }
   });
-
-  useEffect(() => {
-    setCurrentTimestamp(Date.now());
-  }, []);
 
   // Checagem de Administrador / Curador
   const isAdmin = Boolean(

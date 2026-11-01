@@ -173,7 +173,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   onToggleStrikethrough
 }) => {
   const { accentConfig } = useTheme();
-  const { plan: userPlan, dailyResolvedCount, isFreeLimitReached, setIsUpgradeModalOpen } = useSubscription();
+  const { plan: userPlan, dailyResolvedCount, isFreeLimitReached, openUpgradeModal } = useSubscription();
 
   // Modal para salvar em pastas de 3 níveis
   const [isFolderModalOpen, setIsFolderModalOpen] = useState(false);
@@ -703,7 +703,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     if (isAnswered || !pendingSelected || isSubmittingAnswer) return;
 
     if (isFreeLimitReached) {
-      setIsUpgradeModalOpen(true);
+      openUpgradeModal(null, true);
       return;
     }
 
@@ -1032,7 +1032,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
             {userPlan === 'free' && (
               <button
                 type="button"
-                onClick={() => setIsUpgradeModalOpen(true)}
+                onClick={() => openUpgradeModal(null, dailyResolvedCount >= 10)}
                 title="Você tem 10 questões gratuitas por dia. Clique para desbloquear o acesso ilimitado!"
                 className="inline-flex items-center gap-1.5 px-2.5 py-1 text-[11px] font-bold rounded-xl border border-amber-500/30 bg-amber-500/10 text-amber-700 dark:text-amber-400 hover:bg-amber-500/20 transition-all cursor-pointer shadow-2xs"
               >
