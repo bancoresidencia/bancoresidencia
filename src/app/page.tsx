@@ -3093,6 +3093,7 @@ export default function Home() {
           {activeTab === 'caderno_erros' && (
             <CadernoDeErros
               userAnswers={userAnswers}
+              bookmarkedQuestionIds={bookmarkedQuestionIds}
               onUpdateAnswerMeta={handleUpdateAnswerMeta}
               onAnswerQuestion={handleAnswer}
               onStartTreinoErros={handleStartTreinoErros}

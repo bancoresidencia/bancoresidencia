@@ -65,6 +65,20 @@ async function main() {
     } catch {}
   }
 
+  // Sementeia também questões já resolvidas presentes no arquivo principal
+  let existingInFile = 0;
+  questions.forEach(q => {
+    if (q && q.id && (q.mainErrorReason || (q.commentary && q.commentary.includes('Principal Motivo')))) {
+      if (!solvedMap.has(q.id)) {
+        solvedMap.set(q.id, q);
+        existingInFile++;
+      }
+    }
+  });
+  if (existingInFile > 0) {
+    console.log(`📂 Incorporadas ${existingInFile} questões já aprofundadas presentes no arquivo principal.`);
+  }
+
   // Filtra ESTRITAMENTE questões com gabarito oficial homologado (A, B, C, D, E) e não anuladas
   const VALID_ANSWERS = new Set(['A', 'B', 'C', 'D', 'E']);
   const pending = questions

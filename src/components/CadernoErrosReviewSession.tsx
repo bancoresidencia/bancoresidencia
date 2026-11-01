@@ -19,16 +19,42 @@ import {
   Brain,
   Scissors,
   ArrowRight,
-  HelpCircle
+  HelpCircle,
+  Shuffle,
+  Save,
+  CheckCheck
 } from 'lucide-react';
-import { UserAnswerItem, ErrorReasonType, Question } from '@/types';
+import {
+  UserAnswerItem,
+  ErrorReasonType,
+  Question,
+  ActiveReviewSessionState,
+  ReviewSessionMode,
+  ReviewSessionAnswerRecord
+} from '@/types';
 import { useTheme } from '@/context/ThemeContext';
 import { ERROR_REASON_CONFIG } from '@/utils/errorReasons';
+import {
+  shuffleQuestionOptions,
+  ShuffledQuestionResult,
+  OptionLetter
+} from '@/utils/shuffleOptions';
+import {
+  saveActiveReviewSession,
+  clearActiveReviewSession
+} from '@/services/reviewSessionService';
 
 interface CadernoErrosReviewSessionProps {
   questionIds: string[];
   questionsMap: Record<string, Question>;
   userAnswers: Record<string, UserAnswerItem>;
+  initialState?: ActiveReviewSessionState | null;
+  sessionMode?: ReviewSessionMode;
+  filterSummary?: {
+    specialty?: string;
+    reason?: string;
+    totalAvailable: number;
+  };
   onAnswerQuestion: (
     questionId: string,
     selectedLetter: 'A' | 'B' | 'C' | 'D' | 'E',
@@ -46,32 +72,49 @@ interface CadernoErrosReviewSessionProps {
   onNavigateToBanco?: (specialty?: string, tema?: string, subfoco?: string) => void;
 }
 
-interface SessionAnswerRecord {
-  letter: 'A' | 'B' | 'C' | 'D' | 'E';
-  isCorrect: boolean;
-  timestamp: number;
-}
-
 export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps> = ({
   questionIds,
   questionsMap,
   userAnswers,
+  initialState,
+  sessionMode = 'erros',
+  filterSummary,
   onAnswerQuestion,
   onUpdateAnswerMeta,
   onClose
 }) => {
   const { accentConfig } = useTheme();
 
-  const [currentIndex, setCurrentIndex] = useState<number>(0);
-  const [sessionAnswers, setSessionAnswers] = useState<Record<string, SessionAnswerRecord>>({});
+  const [sessionId] = useState<string>(() => initialState?.sessionId || `rev_${Date.now()}`);
+  const [startedAt] = useState<number>(() => initialState?.startedAt || Date.now());
+
+  const [currentIndex, setCurrentIndex] = useState<number>(() => {
+    if (initialState && typeof initialState.currentIndex === 'number') {
+      return Math.min(Math.max(0, initialState.currentIndex), questionIds.length - 1);
+    }
+    return 0;
+  });
+
+  const [sessionAnswers, setSessionAnswers] = useState<Record<string, ReviewSessionAnswerRecord>>(
+    () => initialState?.sessionAnswers || {}
+  );
+
+  const [shuffleAlternatives, setShuffleAlternatives] = useState<boolean>(
+    () => initialState?.shuffleAlternatives ?? true
+  );
+
   const [selectedOption, setSelectedOption] = useState<'A' | 'B' | 'C' | 'D' | 'E' | null>(null);
-  const [eliminatedOptions, setEliminatedOptions] = useState<Record<string, Record<string, boolean>>>({});
+  const [eliminatedOptions, setEliminatedOptions] = useState<Record<string, Record<string, boolean>>>(
+    () => initialState?.eliminatedOptions || {}
+  );
+
   const [expandedComments, setExpandedComments] = useState<Record<string, boolean>>({});
   const [expandedNotes, setExpandedNotes] = useState<Record<string, boolean>>({});
   const [localNotes, setLocalNotes] = useState<Record<string, string>>({});
   const [savedNotesAlert, setSavedNotesAlert] = useState<Record<string, boolean>>({});
   const [isSessionFinished, setIsSessionFinished] = useState<boolean>(false);
   const [questionTimer, setQuestionTimer] = useState<number>(0);
+  const [saveIndicator, setSaveIndicator] = useState<boolean>(false);
 
   const currentQId = questionIds[currentIndex];
   const currentQuestion = questionsMap[currentQId];
@@ -84,6 +127,49 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
     (!originalAnswer?.isCorrect ? originalAnswer?.letter : undefined) ||
     originalAnswer?.attempts?.find((a) => !a.isCorrect)?.letter;
 
+  // Embaralhamento Inteligente de Alternativas
+  const processedOptions = useMemo<ShuffledQuestionResult | null>(() => {
+    if (!currentQuestion) return null;
+    return shuffleQuestionOptions(
+      currentQuestion.options || [],
+      currentQuestion.correctAnswer || '',
+      shuffleAlternatives,
+      previousMistakeLetter as OptionLetter | undefined
+    );
+  }, [currentQuestion, shuffleAlternatives, previousMistakeLetter]);
+
+  const displayOptions = processedOptions?.options || currentQuestion?.options || [];
+  const effectiveCorrectAnswer = processedOptions?.newCorrectAnswer || currentQuestion?.correctAnswer || '';
+  const effectivePreviousMistakeLetter = processedOptions?.remappedPreviousLetter || previousMistakeLetter;
+
+  // Persistência contínua e automática no LocalStorage
+  useEffect(() => {
+    if (isSessionFinished) return;
+    saveActiveReviewSession({
+      sessionId,
+      startedAt,
+      lastUpdatedAt: Date.now(),
+      questionIds,
+      currentIndex,
+      shuffleAlternatives,
+      sessionMode,
+      sessionAnswers,
+      eliminatedOptions,
+      filterSummary
+    });
+  }, [
+    sessionId,
+    startedAt,
+    questionIds,
+    currentIndex,
+    shuffleAlternatives,
+    sessionMode,
+    sessionAnswers,
+    eliminatedOptions,
+    filterSummary,
+    isSessionFinished
+  ]);
+
   // Temporizador da questão
   useEffect(() => {
     if (isSessionFinished || !!currentSessionAnswer) return;
@@ -93,7 +179,7 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
     return () => clearInterval(interval);
   }, [currentSessionAnswer, isSessionFinished, currentQId]);
 
-  // Reseta seleção temporária ao mudar de questão (a menos que já tenha respondido nesta sessão)
+  // Reseta seleção temporária ao mudar de questão
   useEffect(() => {
     if (currentSessionAnswer) {
       setSelectedOption(currentSessionAnswer.letter);
@@ -102,6 +188,26 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
       setQuestionTimer(0);
     }
   }, [currentIndex, currentSessionAnswer]);
+
+  // Salvar e fechar com tranquilidade
+  const handleSaveAndExit = () => {
+    saveActiveReviewSession({
+      sessionId,
+      startedAt,
+      lastUpdatedAt: Date.now(),
+      questionIds,
+      currentIndex,
+      shuffleAlternatives,
+      sessionMode,
+      sessionAnswers,
+      eliminatedOptions,
+      filterSummary
+    });
+    setSaveIndicator(true);
+    setTimeout(() => {
+      onClose();
+    }, 400);
+  };
 
   // Helper para renderizar negrito
   const renderFormattedText = (text: string | null | undefined) => {
@@ -119,16 +225,22 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
     });
   };
 
+  const currentElims = eliminatedOptions[currentQId] || {};
+
   // Alterna eliminação/risco da alternativa
   const toggleEliminate = (e: React.MouseEvent, letter: string) => {
     e.stopPropagation();
+    const willEliminate = !currentElims[letter];
+    if (willEliminate && selectedOption === letter) {
+      setSelectedOption(null);
+    }
     setEliminatedOptions((prev) => {
       const qElims = prev[currentQId] || {};
       return {
         ...prev,
         [currentQId]: {
           ...qElims,
-          [letter]: !qElims[letter]
+          [letter]: willEliminate
         }
       };
     });
@@ -141,7 +253,7 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
     const isAnulada = Boolean(
       currentQuestion.isAnulada || currentQuestion.correctAnswer === 'ANULADA'
     );
-    const isCorrect = isAnulada || selectedOption === currentQuestion.correctAnswer;
+    const isCorrect = isAnulada || selectedOption === effectiveCorrectAnswer;
 
     // Registra na sessão atual
     setSessionAnswers((prev) => ({
@@ -149,14 +261,20 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
       [currentQId]: {
         letter: selectedOption,
         isCorrect,
-        timestamp: Date.now()
+        timestamp: Date.now(),
+        timeSpent: questionTimer
       }
     }));
 
-    // Dispara atualização global no sistema
-    onAnswerQuestion(currentQId, selectedOption, isCorrect);
+    // Converte a letra exibida (embaralhada) para a letra original da prova para não corromper o banco
+    const originalLetterToStore = (
+      processedOptions?.newToOriginalMapping[selectedOption] || selectedOption
+    ) as 'A' | 'B' | 'C' | 'D' | 'E';
 
-    // Se acertou, promove o status
+    // Dispara atualização global no sistema com a letra oficial
+    onAnswerQuestion(currentQId, originalLetterToStore, isCorrect);
+
+    // Se acertou, promove o status para recuperado
     if (isCorrect) {
       onUpdateAnswerMeta(currentQId, { statusRetrial: 'recuperado' });
     }
@@ -197,7 +315,16 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
       const key = e.key.toUpperCase();
       if (['A', 'B', 'C', 'D', 'E'].includes(key) && !currentSessionAnswer) {
         const letter = key as 'A' | 'B' | 'C' | 'D' | 'E';
-        if (currentQuestion?.options?.some((opt) => opt.letter === letter)) {
+        if (displayOptions?.some((opt) => opt.letter === letter)) {
+          if (currentElims[letter]) {
+            setEliminatedOptions((prev) => ({
+              ...prev,
+              [currentQId]: {
+                ...(prev[currentQId] || {}),
+                [letter]: false
+              }
+            }));
+          }
           setSelectedOption(letter);
         }
       } else if (e.key === 'Enter') {
@@ -207,6 +334,7 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
           if (currentIndex < questionIds.length - 1) {
             setCurrentIndex((prev) => prev + 1);
           } else {
+            clearActiveReviewSession();
             setIsSessionFinished(true);
           }
         }
@@ -215,12 +343,19 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [currentSessionAnswer, selectedOption, currentIndex, questionIds.length, isSessionFinished, currentQuestion]);
-
-  const currentElims = eliminatedOptions[currentQId] || {};
+  }, [
+    currentSessionAnswer,
+    selectedOption,
+    currentIndex,
+    questionIds.length,
+    isSessionFinished,
+    displayOptions,
+    currentElims,
+    currentQId
+  ]);
 
   // ==========================================
-  // TELA DE DESFECHO: RESUMO DA SESSÃO DE ERROS
+  // TELA DE DESFECHO: RESUMO DA SESSÃO DE REVISÃO
   // ==========================================
   if (isSessionFinished) {
     const persistentErrorIds = questionIds.filter((id) => {
@@ -247,7 +382,7 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
               Sessão de Revisão Concluída!
             </h2>
             <p className="text-xs sm:text-sm text-slate-500 dark:text-zinc-400 max-w-lg mx-auto">
-              Você revisou suas questões erradas através do método de recuperação ativa às cegas. Veja sua taxa de superação abaixo:
+              Você revisou suas questões através de recuperação ativa às cegas{shuffleAlternatives ? ' com alternativas embaralhadas' : ''}. Veja sua taxa de superação:
             </p>
           </div>
 
@@ -301,7 +436,7 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
               Diagnóstico Questão a Questão:
             </h3>
 
-            <div className="space-y-2">
+            <div className="space-y-2 max-h-72 overflow-y-auto pr-1">
               {questionIds.map((qId, idx) => {
                 const q = questionsMap[qId];
                 const orig = userAnswers[qId];
@@ -381,10 +516,13 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
 
             <button
               type="button"
-              onClick={onClose}
+              onClick={() => {
+                clearActiveReviewSession();
+                onClose();
+              }}
               className="px-5 py-2.5 rounded-xl text-xs font-bold bg-slate-100 dark:bg-zinc-800 text-slate-700 dark:text-zinc-200 hover:bg-slate-200 dark:hover:bg-zinc-700 transition-colors cursor-pointer"
             >
-              Voltar ao Caderno de Erros
+              Voltar ao Caderno de Revisão
             </button>
           </div>
         </div>
@@ -404,31 +542,67 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
 
   return (
     <div className="space-y-4 animate-in fade-in duration-200">
-      {/* 1. Header Focado da Sessão de Revisão */}
+      {/* 1. Header Focado da Sessão de Revisão com Controles de Resiliência */}
       <div className="bg-white dark:bg-[var(--bg-card)] border border-slate-200 dark:border-zinc-800/80 p-4 rounded-3xl shadow-xs flex flex-wrap items-center justify-between gap-3">
         <div className="flex items-center gap-2">
           <button
             type="button"
-            onClick={onClose}
+            onClick={handleSaveAndExit}
             className="w-8 h-8 flex items-center justify-center rounded-xl bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-slate-700 dark:text-zinc-300 hover:bg-slate-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer shrink-0 active:scale-95"
-            title="Voltar ao Caderno de Erros (Esc)"
-            aria-label="Voltar ao Caderno de Erros"
+            title="Salvar e Voltar ao Caderno (Esc)"
+            aria-label="Salvar e Voltar ao Caderno"
           >
             <ChevronLeft className="w-4 h-4" />
           </button>
 
-          <div className="h-4 w-px bg-slate-200 dark:border-zinc-800" />
+          <div className="h-4 w-px bg-slate-200 dark:bg-zinc-800" />
 
           <span className="text-xs font-bold text-slate-900 dark:text-white flex items-center gap-1.5">
             <span
               className="w-2 h-2 rounded-full"
               style={{ backgroundColor: accentConfig.primaryHex }}
             />
-            Revisão Ativa de Erros
+            {sessionMode === 'completa' ? 'Revisão Consolidada (Erros + Favoritos)' : 'Revisão Ativa de Erros'}
           </span>
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3">
+          {/* Botão de Toggle de Embaralhamento de Alternativas */}
+          <button
+            type="button"
+            onClick={() => setShuffleAlternatives((prev) => !prev)}
+            className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl text-[11px] font-semibold border transition-all cursor-pointer ${
+              shuffleAlternatives
+                ? 'bg-purple-500/10 text-purple-700 dark:text-purple-300 border-purple-500/30'
+                : 'bg-slate-100 dark:bg-zinc-900 text-slate-500 dark:text-zinc-400 border-slate-200 dark:border-zinc-800'
+            }`}
+            title="Embaralha as alternativas para eliminar o viés de memorização da letra do gabarito"
+          >
+            <Shuffle className="w-3.5 h-3.5" />
+            <span className="hidden sm:inline">Embaralhar:</span>
+            <span className="font-bold">{shuffleAlternatives ? 'Ativado' : 'Desativado'}</span>
+          </button>
+
+          {/* Salvar e Sair */}
+          <button
+            type="button"
+            onClick={handleSaveAndExit}
+            className="flex items-center gap-1 px-3 py-1.5 rounded-xl text-[11px] font-bold bg-slate-100 dark:bg-zinc-900 hover:bg-slate-200 dark:hover:bg-zinc-800 text-slate-700 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800 transition-colors cursor-pointer"
+            title="Salva o progresso atual para continuar mais tarde"
+          >
+            {saveIndicator ? (
+              <>
+                <CheckCheck className="w-3.5 h-3.5 text-emerald-500" />
+                <span className="text-emerald-600 dark:text-emerald-400">Salvo!</span>
+              </>
+            ) : (
+              <>
+                <Save className="w-3.5 h-3.5" />
+                <span className="hidden sm:inline">Pausar e Salvar</span>
+              </>
+            )}
+          </button>
+
           {/* Temporizador */}
           <div className="flex items-center gap-1 text-xs text-slate-500 dark:text-zinc-400 font-mono">
             <Clock className="w-3.5 h-3.5" />
@@ -438,100 +612,93 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
             </span>
           </div>
 
-          {/* Contador de Questão e Barra de Progresso */}
-          <div className="flex items-center gap-2">
-            <span className="text-xs font-semibold text-slate-500 dark:text-zinc-400">
-              Questão <strong className="text-slate-900 dark:text-white font-mono">{currentIndex + 1}</strong> de{' '}
-              <span className="font-mono">{questionIds.length}</span>
-            </span>
-
-            <div className="w-20 sm:w-28 h-2 bg-slate-100 dark:bg-zinc-900 rounded-full overflow-hidden border border-slate-200/60 dark:border-zinc-800">
-              <div
-                className="h-full rounded-full transition-all duration-300"
-                style={{
-                  width: `${((currentIndex + 1) / questionIds.length) * 100}%`,
-                  backgroundColor: accentConfig.primaryHex
-                }}
-              />
-            </div>
-          </div>
+          {/* Progresso Numérico */}
+          <span className="text-xs font-mono font-bold px-2.5 py-1 rounded-xl bg-slate-100 dark:bg-zinc-900 text-slate-800 dark:text-zinc-200 border border-slate-200 dark:border-zinc-800">
+            {currentIndex + 1} / {questionIds.length}
+          </span>
         </div>
       </div>
 
-      {/* 2. Card Principal da Questão */}
-      <div className="bg-white dark:bg-[var(--bg-card)] border border-slate-200 dark:border-zinc-800/80 rounded-3xl p-5 sm:p-7 shadow-xs space-y-6">
-        {/* Topo do Card: Metadados da Questão */}
-        <div className="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-slate-100 dark:border-zinc-800/80">
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="text-xs font-bold px-3 py-1 rounded-xl bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-slate-800 dark:text-zinc-200 flex items-center gap-1.5 shadow-2xs">
-              <Building className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
-              <span>{currentQuestion?.banca || originalAnswer?.banca || 'Banca Oficial'}</span>
-              <span className="text-slate-400">•</span>
-              <span>{currentQuestion?.year || originalAnswer?.year || '2025'}</span>
-            </span>
+      {/* Barra de Progresso Fina */}
+      <div className="w-full h-1.5 rounded-full bg-slate-100 dark:bg-zinc-800/80 overflow-hidden">
+        <div
+          className="h-full transition-all duration-300"
+          style={{
+            width: `${((currentIndex + 1) / questionIds.length) * 100}%`,
+            backgroundColor: accentConfig.primaryHex
+          }}
+        />
+      </div>
 
-            {(currentQuestion?.code || originalAnswer?.code) && (
-              <span className="text-[11px] font-mono text-slate-500 dark:text-zinc-400 font-bold bg-slate-50 dark:bg-zinc-900/60 px-2 py-0.5 rounded-lg border border-slate-200/60 dark:border-zinc-800">
-                #{currentQuestion?.code || originalAnswer?.code}
+      {/* 2. Card Central da Questão */}
+      <div className="bg-white dark:bg-[var(--bg-card)] border border-slate-200 dark:border-zinc-800/80 p-5 sm:p-7 rounded-3xl shadow-xs space-y-6">
+        {/* Metadados e Tags Clínicas */}
+        <div className="flex flex-wrap items-center justify-between gap-3 text-xs border-b border-slate-100 dark:border-zinc-800/80 pb-4">
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="font-bold text-slate-900 dark:text-white font-mono">
+              #{currentQuestion?.code || currentQId.slice(0, 8)}
+            </span>
+            <span className="text-slate-300 dark:text-zinc-700">•</span>
+            <span className="font-semibold text-slate-700 dark:text-zinc-300">
+              {currentQuestion?.banca || 'Banca Oficial'}
+            </span>
+            <span className="text-slate-300 dark:text-zinc-700">•</span>
+            <span className="text-slate-500 dark:text-zinc-400">
+              {currentQuestion?.year || 'Ano'}
+            </span>
+            {currentQuestion?.especialidade && (
+              <>
+                <span className="text-slate-300 dark:text-zinc-700">•</span>
+                <span className="px-2 py-0.5 rounded-md font-semibold text-[11px] bg-slate-100 dark:bg-zinc-800 text-slate-700 dark:text-zinc-300">
+                  {currentQuestion.especialidade}
+                </span>
+              </>
+            )}
+            {currentQuestion?.tema && (
+              <span className="px-2 py-0.5 rounded-md font-semibold text-[11px] bg-slate-100 dark:bg-zinc-800 text-slate-600 dark:text-zinc-400">
+                {currentQuestion.tema}
               </span>
             )}
-
-            <span className="text-xs text-slate-600 dark:text-zinc-400 font-medium flex items-center gap-1">
-              <Layers className="w-3.5 h-3.5 text-slate-400" />
-              <span>{originalAnswer?.specialty || currentQuestion?.especialidade}</span>
-              {(originalAnswer?.tema || currentQuestion?.tema) && (
-                <span>• {originalAnswer?.tema || currentQuestion?.tema}</span>
-              )}
-            </span>
           </div>
 
-          <div className="flex items-center gap-2">
-            <span className="text-[11px] font-bold px-2.5 py-1 rounded-lg bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-500/20 uppercase tracking-wider">
-              {isAnswered ? (isCurrentCorrect ? 'Superada' : 'Ainda com Dificuldade') : 'Em Resolução Cega'}
-            </span>
-          </div>
-        </div>
-
-        {/* Enunciado da Questão */}
-        <div className="text-slate-950 dark:text-zinc-100 text-[15px] sm:text-[16px] leading-relaxed font-normal whitespace-pre-line text-justify select-text">
-          {currentQuestion?.statement ? (
-            renderFormattedText(currentQuestion.statement)
-          ) : (
-            <p className="text-slate-400 italic">Carregando detalhes do enunciado...</p>
+          {/* Tag de Motivo do Erro Original */}
+          {currentReasonKey && ERROR_REASON_CONFIG[currentReasonKey] && (
+            <div
+              className={`flex items-center gap-1.5 px-2.5 py-1 rounded-xl text-[11px] font-bold border ${ERROR_REASON_CONFIG[currentReasonKey].bg} ${ERROR_REASON_CONFIG[currentReasonKey].text} ${ERROR_REASON_CONFIG[currentReasonKey].border}`}
+            >
+              <span>{ERROR_REASON_CONFIG[currentReasonKey].label}</span>
+            </div>
           )}
         </div>
 
-        {/* Imagens Anexadas se houver */}
-        {((currentQuestion?.images && currentQuestion.images.length > 0) || currentQuestion?.imageUrl) && (
-          <div className="pt-1 flex flex-col gap-3">
-            {(currentQuestion.images || (currentQuestion.imageUrl ? [currentQuestion.imageUrl] : [])).map((imgUrl, i) => (
-              <div
-                key={i}
-                className="rounded-2xl overflow-hidden border border-slate-200 dark:border-zinc-800 bg-slate-50 dark:bg-zinc-900/60 p-2.5 max-w-2xl shadow-inner"
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={imgUrl}
-                  alt={`Imagem ${i + 1} da questão`}
-                  className="w-full h-auto object-contain rounded-xl max-h-[460px]"
-                  loading="lazy"
-                />
-              </div>
-            ))}
+        {/* Enunciado da Questão */}
+        <div className="text-slate-900 dark:text-zinc-100 text-sm sm:text-base leading-relaxed font-normal">
+          {renderFormattedText(currentQuestion?.statement || 'Carregando enunciado...')}
+        </div>
+
+        {/* Imagem da questão (se houver) */}
+        {currentQuestion?.imageUrl && (
+          <div className="rounded-2xl overflow-hidden border border-slate-200 dark:border-zinc-800 max-w-xl mx-auto">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={currentQuestion.imageUrl}
+              alt="Material complementar da questão"
+              className="w-full h-auto object-contain max-h-96"
+            />
           </div>
         )}
 
         {/* ======================================================== */}
-        {/* BLOCO COMPARATIVO REVELADO APÓS A RESPOSTA (O CORE DO PEDIDO) */}
+        {/* FEEDBACK PÓS-RESPOSTA: O COMPARATIVO TRIPLO CIRÚRGICO */}
         {/* ======================================================== */}
         {isAnswered && (
-          <div className="space-y-3 animate-in fade-in slide-in-from-top-2 duration-200">
-            {/* Banner de Celebração ou Reforço */}
+          <div className="space-y-4 animate-in fade-in duration-200 pt-2 border-t border-slate-100 dark:border-zinc-800/80">
+            {/* Banner de Resultado */}
             <div
-              className={`p-3.5 rounded-2xl border flex items-center justify-between gap-3 ${
+              className={`p-4 rounded-2xl border flex items-center justify-between gap-3 ${
                 isCurrentCorrect
-                  ? 'bg-emerald-500/10 border-emerald-500/30 text-emerald-800 dark:text-emerald-300'
-                  : 'bg-rose-500/10 border-rose-500/30 text-rose-800 dark:text-rose-300'
+                  ? 'bg-emerald-500/10 border-emerald-500/30 text-emerald-900 dark:text-emerald-200'
+                  : 'bg-rose-500/10 border-rose-500/30 text-rose-900 dark:text-rose-200'
               }`}
             >
               <div className="flex items-center gap-2.5">
@@ -595,7 +762,7 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
                 </div>
               </div>
 
-              {/* Coluna 2: O que ele tinha marcado anteriormente (O REQUISITO CENTRAL!) */}
+              {/* Coluna 2: O que ele tinha marcado anteriormente */}
               <div className="p-3 rounded-xl bg-white dark:bg-zinc-900 border border-slate-200/80 dark:border-zinc-800 space-y-1 shadow-2xs">
                 <span className="text-[10px] font-bold uppercase tracking-wider text-rose-500/90 dark:text-rose-400/90 block flex items-center gap-1">
                   <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
@@ -603,11 +770,11 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
                 </span>
                 <div className="flex items-center gap-2">
                   <span className="w-7 h-7 rounded-lg bg-rose-500/15 border border-rose-500/30 text-rose-600 dark:text-rose-400 font-mono font-bold flex items-center justify-center text-xs">
-                    {previousMistakeLetter || '?'}
+                    {effectivePreviousMistakeLetter || '?'}
                   </span>
                   <div>
                     <span className="text-xs font-bold text-rose-600 dark:text-rose-400 block">
-                      Alternativa {previousMistakeLetter || 'Não registrada'}
+                      Alternativa {effectivePreviousMistakeLetter || 'Não registrada'}
                     </span>
                     {originalAnswer?.timestamp && (
                       <span className="text-[10px] text-slate-400 dark:text-zinc-500">
@@ -626,10 +793,10 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
                 </span>
                 <div className="flex items-center gap-2">
                   <span className="w-7 h-7 rounded-lg bg-emerald-500/15 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 font-mono font-bold flex items-center justify-center text-xs">
-                    {currentQuestion?.correctAnswer || '?'}
+                    {effectiveCorrectAnswer || '?'}
                   </span>
                   <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400">
-                    Alternativa {currentQuestion?.correctAnswer || 'Oficial'}
+                    Alternativa {effectiveCorrectAnswer || 'Oficial'}
                   </span>
                 </div>
               </div>
@@ -640,15 +807,15 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
               <strong className="text-slate-900 dark:text-white">Análise da Tentativa: </strong>
               {isCurrentCorrect ? (
                 <span>
-                  Você eliminou o distrator anterior (Alternativa {previousMistakeLetter}) e selecionou a conduta correta (Alternativa {currentQuestion?.correctAnswer}). Parabéns pela evolução!
+                  Você eliminou o distrator anterior (Alternativa {effectivePreviousMistakeLetter}) e selecionou a conduta correta (Alternativa {effectiveCorrectAnswer}). Parabéns pela evolução!
                 </span>
-              ) : currentSessionAnswer.letter === previousMistakeLetter ? (
+              ) : currentSessionAnswer.letter === effectivePreviousMistakeLetter ? (
                 <span className="text-rose-600 dark:text-rose-400 font-semibold">
-                  Atenção: você voltou a marcar a mesma alternativa {previousMistakeLetter} da primeira tentativa. Esse distrator representa sua principal armadilha nesta questão.
+                  Atenção: você voltou a marcar a mesma alternativa ({effectivePreviousMistakeLetter}) da primeira tentativa. Esse distrator representa sua principal armadilha nesta questão.
                 </span>
               ) : (
                 <span>
-                  Você mudou de alternativa (marcou {previousMistakeLetter} da primeira vez e agora marcou {currentSessionAnswer.letter}), mas ainda caiu em outro distrator. O gabarito oficial é a Alternativa {currentQuestion?.correctAnswer}.
+                  Você mudou de alternativa (marcou {effectivePreviousMistakeLetter} da primeira vez e agora marcou {currentSessionAnswer.letter}), mas ainda caiu em outro distrator. O gabarito oficial é a Alternativa {effectiveCorrectAnswer}.
                 </span>
               )}
             </div>
@@ -657,11 +824,13 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
 
         {/* 3. Alternativas (Renderização Limpa na Fase Cega vs Revelada no Pós-Resposta) */}
         <div className="space-y-2.5 pt-2">
-          {currentQuestion?.options?.map((option) => {
-            const isEliminated = !!currentElims[option.letter];
-            const isChosen = (isAnswered ? currentSessionAnswer.letter : selectedOption) === option.letter;
-            const isCorrectOption = isAnswered && option.letter === currentQuestion.correctAnswer;
-            const isPreviousMistake = isAnswered && option.letter === previousMistakeLetter;
+          {displayOptions.map((option) => {
+            const isEliminated = !isAnswered && !!currentElims[option.letter];
+            const isChosen =
+              !isEliminated &&
+              (isAnswered ? currentSessionAnswer.letter : selectedOption) === option.letter;
+            const isCorrectOption = isAnswered && option.letter === effectiveCorrectAnswer;
+            const isPreviousMistake = isAnswered && option.letter === effectivePreviousMistakeLetter;
 
             // Estilos visuais quando ainda NÃO respondida (Cega)
             let optionClass =
@@ -694,6 +863,15 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
                 key={option.letter}
                 onClick={() => {
                   if (!isAnswered) {
+                    if (currentElims[option.letter]) {
+                      setEliminatedOptions((prev) => ({
+                        ...prev,
+                        [currentQId]: {
+                          ...(prev[currentQId] || {}),
+                          [option.letter]: false
+                        }
+                      }));
+                    }
                     setSelectedOption(option.letter);
                   }
                 }}
@@ -727,47 +905,45 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
                       {option.text}
                     </span>
 
-                    {/* Tags Explicativas Pós-Resposta */}
+                    {/* Tag Explicativa no Pós-Resposta */}
                     {isAnswered && (
-                      <div className="flex flex-wrap items-center gap-1.5 pt-1">
+                      <div className="flex flex-wrap items-center gap-2 pt-1">
                         {isCorrectOption && (
-                          <span className="text-[10px] font-extrabold px-2 py-0.5 rounded-md bg-emerald-500/20 text-emerald-700 dark:text-emerald-300 uppercase tracking-wider flex items-center gap-1">
-                            <Check className="w-3 h-3 stroke-[2.5]" />
-                            Gabarito Oficial
+                          <span className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-1">
+                            <CheckCircle2 className="w-3 h-3" />
+                            Gabarito Correto
                           </span>
                         )}
-                        {isChosen && (
-                          <span
-                            className={`text-[10px] font-extrabold px-2 py-0.5 rounded-md uppercase tracking-wider ${
-                              isCurrentCorrect
-                                ? 'bg-emerald-500/20 text-emerald-700 dark:text-emerald-300'
-                                : 'bg-rose-500/20 text-rose-700 dark:text-rose-300'
-                            }`}
-                          >
-                            Você Marcou Agora
+                        {isPreviousMistake && !isCorrectOption && (
+                          <span className="text-[10px] font-bold text-rose-600 dark:text-rose-400 flex items-center gap-1">
+                            <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
+                            Seu Erro Anterior
                           </span>
                         )}
-                        {isPreviousMistake && (
-                          <span className="text-[10px] font-bold px-2 py-0.5 rounded-md bg-rose-500/15 text-rose-700 dark:text-rose-300 border border-rose-500/30 uppercase tracking-wider">
-                            Marcada Anteriormente
-                          </span>
-                        )}
+                      </div>
+                    )}
+
+                    {/* Explicação da Alternativa Específica */}
+                    {isAnswered && option.explanation && (
+                      <div className="pt-2 text-[11px] text-slate-600 dark:text-zinc-400 border-t border-slate-100 dark:border-zinc-800/60 leading-normal">
+                        <strong className="text-slate-800 dark:text-zinc-200">Justificativa: </strong>
+                        {option.explanation}
                       </div>
                     )}
                   </div>
                 </div>
 
-                {/* Botão de Riscar/Eliminar Alternativa (apenas na fase cega) */}
+                {/* Ferramenta de Riscar/Eliminar Alternativa (Fase Cega) */}
                 {!isAnswered && (
                   <button
                     type="button"
                     onClick={(e) => toggleEliminate(e, option.letter)}
-                    title={isEliminated ? 'Restaurar alternativa' : 'Riscar/eliminar alternativa'}
-                    className={`p-1.5 rounded-xl border transition-all cursor-pointer ${
+                    className={`p-1.5 rounded-xl border transition-all cursor-pointer shrink-0 ${
                       isEliminated
-                        ? 'bg-rose-500/15 text-rose-600 border-rose-500/30'
-                        : 'text-slate-400 hover:text-slate-600 dark:hover:text-zinc-200 border-transparent hover:border-slate-200 dark:hover:border-zinc-800'
+                        ? 'bg-rose-500/10 text-rose-600 dark:text-rose-400 border-rose-500/30'
+                        : 'bg-transparent text-slate-400 hover:text-slate-600 dark:hover:text-zinc-300 border-transparent hover:border-slate-200 dark:hover:border-zinc-800'
                     }`}
+                    title={isEliminated ? 'Restaurar alternativa' : 'Eliminar/Riscar alternativa'}
                   >
                     <Scissors className="w-3.5 h-3.5" />
                   </button>
@@ -777,23 +953,19 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
           })}
         </div>
 
-        {/* 4. Ações Principais: Botão Confirmar Resposta (Fase Cega) */}
+        {/* 4. Botão de Confirmar Resposta (Quando Não Respondida) */}
         {!isAnswered && (
-          <div className="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-slate-100 dark:border-zinc-800/80">
-            <span className="text-xs text-slate-400 dark:text-zinc-500 italic">
-              Dica: Selecione a alternativa e aperte <strong>Enter</strong> ou clique em Confirmar.
+          <div className="flex items-center justify-between gap-3 pt-3 border-t border-slate-100 dark:border-zinc-800/80">
+            <span className="text-[11px] text-slate-400 dark:text-zinc-500 hidden sm:inline">
+              Dica: Use as teclas <strong>A</strong>, <strong>B</strong>, <strong>C</strong>, <strong>D</strong>, <strong>E</strong> e <strong>Enter</strong>.
             </span>
 
             <button
               type="button"
               disabled={!selectedOption}
               onClick={handleConfirmAnswer}
-              className={`px-6 py-2.5 rounded-xl text-xs font-bold transition-all shadow-md flex items-center gap-2 ${
-                selectedOption
-                  ? 'text-white cursor-pointer hover:scale-102 active:scale-98'
-                  : 'bg-slate-200 dark:bg-zinc-800 text-slate-400 dark:text-zinc-600 cursor-not-allowed shadow-none'
-              }`}
-              style={selectedOption ? { backgroundColor: accentConfig.primaryHex } : undefined}
+              className="w-full sm:w-auto px-6 py-2.5 rounded-xl text-xs font-bold text-white transition-all cursor-pointer shadow-md disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center gap-2 hover:scale-102"
+              style={{ backgroundColor: accentConfig.primaryHex }}
             >
               <span>Confirmar Resposta</span>
               <ArrowRight className="w-4 h-4" />
@@ -801,50 +973,12 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
           </div>
         )}
 
-        {/* 5. Comentário do Professor, Metacognição e Navegação (Fase Pós-Resposta) */}
+        {/* ======================================================== */}
+        {/* EXPANSÃO DE RECURSOS PEDAGÓGICOS (PÓS-RESPOSTA) */}
+        {/* ======================================================== */}
         {isAnswered && (
-          <div className="space-y-4 pt-3 border-t border-slate-100 dark:border-zinc-800/80">
-            {/* Seletor Metacognitivo: Por que errou? (Se errou ou quiser atualizar) */}
-            <div className="p-3.5 rounded-2xl bg-slate-50 dark:bg-zinc-900 border border-slate-200/80 dark:border-zinc-800 space-y-2">
-              <div className="flex items-center justify-between text-xs">
-                <span className="font-bold text-slate-800 dark:text-zinc-200 flex items-center gap-1.5">
-                  <Brain className="w-3.5 h-3.5 text-slate-400" />
-                  Classificação Metacognitiva do Erro:
-                </span>
-                {currentReasonKey && ERROR_REASON_CONFIG[currentReasonKey] && (
-                  <span className="text-[11px] text-slate-500 italic">
-                    {ERROR_REASON_CONFIG[currentReasonKey].desc}
-                  </span>
-                )}
-              </div>
-
-              <div className="flex flex-wrap items-center gap-1.5">
-                {Object.entries(ERROR_REASON_CONFIG).map(([reasonKey, config]) => {
-                  const isSelected = currentReasonKey === reasonKey;
-                  return (
-                    <button
-                      key={reasonKey}
-                      type="button"
-                      onClick={() => {
-                        const next = isSelected ? undefined : (reasonKey as ErrorReasonType);
-                        onUpdateAnswerMeta(currentQId, { errorReason: next });
-                      }}
-                      className={`px-2.5 py-1 rounded-xl text-xs font-semibold transition-all cursor-pointer flex items-center gap-1.5 border ${
-                        isSelected
-                          ? `${config.bg} ${config.text} ${config.border} shadow-2xs font-bold scale-102`
-                          : 'bg-white dark:bg-zinc-800 text-slate-600 dark:text-zinc-400 border-slate-200 dark:border-zinc-700 hover:text-slate-900'
-                      }`}
-                    >
-                      <span>{config.icon}</span>
-                      <span>{config.label}</span>
-                      {isSelected && <Check className="w-3 h-3 ml-0.5" />}
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-
-            {/* Comentário do Professor & Take-Home Message */}
+          <div className="space-y-4 pt-4 border-t border-slate-100 dark:border-zinc-800/80">
+            {/* Botão de Abrir Comentário do Professor */}
             {currentQuestion?.commentary && (
               <div className="space-y-2">
                 <button
@@ -855,24 +989,28 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
                       [currentQId]: !prev[currentQId]
                     }))
                   }
-                  className="w-full flex items-center justify-between p-3.5 rounded-2xl bg-emerald-500/10 hover:bg-emerald-500/15 border border-emerald-500/20 text-emerald-800 dark:text-emerald-300 text-xs font-bold transition-colors cursor-pointer"
+                  className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-700 dark:text-zinc-300 bg-slate-100 dark:bg-zinc-800/80 hover:bg-slate-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
                 >
-                  <div className="flex items-center gap-2">
-                    <Sparkles className="w-4 h-4 text-emerald-600" />
-                    <span>Comentário Padrão-Ouro da Banca & Resolução Completa</span>
-                  </div>
-                  <span>{isCommentOpen ? 'Recolher' : 'Expandir Comentário'}</span>
+                  <BookOpen className="w-3.5 h-3.5" />
+                  <span>
+                    {isCommentOpen ? 'Ocultar Explicação Completa' : 'Ver Explicação do Professor'}
+                  </span>
                 </button>
 
                 {isCommentOpen && (
-                  <div className="p-4 rounded-2xl bg-emerald-50/70 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-800/50 space-y-3 animate-in fade-in duration-150">
-                    <p className="text-xs sm:text-[13px] leading-relaxed text-slate-800 dark:text-zinc-200 whitespace-pre-line font-normal">
+                  <div className="p-4 rounded-2xl bg-slate-50 dark:bg-zinc-900/80 border border-slate-200 dark:border-zinc-800 space-y-3 text-xs leading-relaxed text-slate-800 dark:text-zinc-200 animate-in fade-in duration-150">
+                    <div>
+                      <h5 className="font-bold text-slate-900 dark:text-white mb-1">
+                        Comentário Padrão-Ouro:
+                      </h5>
                       {renderFormattedText(currentQuestion.commentary)}
-                    </p>
+                    </div>
 
                     {currentQuestion.takeHomeMessage && (
-                      <div className="p-3 rounded-xl bg-white/80 dark:bg-black/40 border border-emerald-300/60 dark:border-emerald-700/40 text-xs font-medium text-emerald-950 dark:text-emerald-200">
-                        <strong className="font-bold">Take-Home Message: </strong>
+                      <div className="p-3 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-900 dark:text-purple-200">
+                        <strong className="block text-[11px] uppercase tracking-wider text-purple-700 dark:text-purple-300 mb-0.5">
+                          💡 Mensagem para Levar para a Prova (Take Home Message):
+                        </strong>
                         {currentQuestion.takeHomeMessage}
                       </div>
                     )}
@@ -965,13 +1103,16 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
                     className="px-5 py-2.5 rounded-xl text-xs font-bold text-white transition-all cursor-pointer shadow-md flex items-center gap-1.5 hover:scale-102"
                     style={{ backgroundColor: accentConfig.primaryHex }}
                   >
-                    <span>Próxima Questão dos Erros</span>
+                    <span>Próxima Questão</span>
                     <ChevronRight className="w-4 h-4" />
                   </button>
                 ) : (
                   <button
                     type="button"
-                    onClick={() => setIsSessionFinished(true)}
+                    onClick={() => {
+                      clearActiveReviewSession();
+                      setIsSessionFinished(true);
+                    }}
                     className="px-6 py-2.5 rounded-xl text-xs font-extrabold text-white transition-all cursor-pointer shadow-md flex items-center gap-2 hover:scale-102"
                     style={{ backgroundColor: accentConfig.primaryHex }}
                   >

@@ -525,9 +525,13 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   const toggleEliminateOption = (letter: string, e: React.MouseEvent) => {
     e.stopPropagation();
     if (isAnswered) return;
+    const willEliminate = !eliminatedOptions[letter];
+    if (willEliminate && pendingSelected === letter) {
+      setPendingSelected(null);
+    }
     setEliminatedOptions((prev) => ({
       ...prev,
-      [letter]: !prev[letter]
+      [letter]: willEliminate
     }));
   };
 
@@ -668,16 +672,14 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
           const targetLetter = (pendingSelected || hoveredOptionLetter) as 'A' | 'B' | 'C' | 'D' | 'E' | null;
           if (targetLetter) {
             e.preventDefault();
-            setEliminatedOptions((prev) => {
-              const nextEliminated = !prev[targetLetter];
-              if (nextEliminated && pendingSelected === targetLetter) {
-                setPendingSelected(null);
-              }
-              return {
-                ...prev,
-                [targetLetter]: nextEliminated
-              };
-            });
+            const willEliminate = !eliminatedOptions[targetLetter];
+            if (willEliminate && pendingSelected === targetLetter) {
+              setPendingSelected(null);
+            }
+            setEliminatedOptions((prev) => ({
+              ...prev,
+              [targetLetter]: willEliminate
+            }));
             return;
           }
         }
@@ -1117,8 +1119,8 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
       {activeQuestion.options && activeQuestion.options.length > 0 ? (
         <div className="space-y-3 pt-2">
           {activeQuestion.options.map((option) => {
-            const isEliminated = !!eliminatedOptions[option.letter];
-            const isPending = pendingSelected === option.letter;
+            const isEliminated = !isAnswered && !!eliminatedOptions[option.letter];
+            const isPending = !isEliminated && pendingSelected === option.letter;
             const isCorrect = option.letter === resolvedCorrectAnswer;
 
             // Estilos condicionais (Antes de Responder vs Depois de Responder)
@@ -1129,12 +1131,12 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
             const explanationText = optionExplanations[option.letter];
 
             if (!isAnswered) {
-              if (isPending) {
-                optionContainerStyle =
-                  'border-blue-500 dark:border-blue-400 bg-blue-50/70 dark:bg-blue-950/50 text-blue-950 dark:text-blue-100 ring-2 ring-blue-500/30 shadow-sm font-semibold';
-              } else if (isEliminated) {
+              if (isEliminated) {
                 optionContainerStyle =
                   'border-zinc-200 dark:border-zinc-800/60 bg-zinc-50/80 dark:bg-zinc-900/30 text-zinc-400 dark:text-zinc-500 opacity-60';
+              } else if (isPending) {
+                optionContainerStyle =
+                  'border-blue-500 dark:border-blue-400 bg-blue-50/70 dark:bg-blue-950/50 text-blue-950 dark:text-blue-100 ring-2 ring-blue-500/30 shadow-sm font-semibold';
               }
             } else {
               // Já respondeu
@@ -1181,10 +1183,10 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                           ? 'bg-amber-600 text-white'
                           : isAnswered && isPending && !isCorrect
                           ? 'bg-rose-600 text-white'
-                          : isPending
-                          ? 'text-white shadow-sm'
                           : isEliminated
                           ? 'bg-slate-100 dark:bg-slate-900 text-slate-400 line-through'
+                          : isPending
+                          ? 'text-white shadow-sm'
                           : 'bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700'
                       }`}
                       style={!isAnswered && isPending ? {
@@ -1213,7 +1215,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                     ) : (
                       <span
                         className={`${optionSizeClass} flex-1 pt-0.5 font-medium transition-all ${
-                          isEliminated && !isPending && !isAnswered
+                          isEliminated && !isAnswered
                             ? 'line-through text-slate-400 dark:text-slate-500 opacity-60 italic'
                             : ''
                         }`}

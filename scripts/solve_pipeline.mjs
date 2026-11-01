@@ -1,7 +1,8 @@
 import { spawn } from 'child_process';
 import path from 'path';
 
-const specialties = [
+const ALL_SPECIALTIES = [
+  'urologia',
   'nefrologia',
   'ginecologia',
   'obstetricia',
@@ -11,13 +12,13 @@ const specialties = [
   'clinica'
 ];
 
-function runSpecialty(spec) {
+function runSpecialty(spec, extraArgs = []) {
   return new Promise((resolve, reject) => {
     console.log(`\n======================================================`);
     console.log(`🚀 [PIPELINE] INICIANDO ESPECIALIDADE: ${spec.toUpperCase()}`);
     console.log(`======================================================\n`);
 
-    const child = spawn('node', ['scripts/batch_solve_specialty.mjs', spec], {
+    const child = spawn('node', ['scripts/batch_solve_specialty.mjs', spec, ...extraArgs], {
       stdio: 'inherit',
       cwd: process.cwd()
     });
@@ -39,15 +40,49 @@ function runSpecialty(spec) {
 }
 
 async function runPipeline() {
-  console.log('🏁 INICIANDO PIPELINE SEQUENCIAL AUTOMÁTICO');
-  console.log(`📋 Fila: ${specialties.map(s => s.toUpperCase()).join(' ➔ ')}\n`);
+  const rawArgs = process.argv.slice(2);
+  let targetSpecs = [...ALL_SPECIALTIES];
 
-  for (const spec of specialties) {
-    try {
-      await runSpecialty(spec);
-    } catch (err) {
-      console.error(`🛑 Interrupção do pipeline em ${spec}:`, err.message);
-      process.exit(1);
+  // Se o primeiro argumento for o nome de uma especialidade, filtra ou inicia a partir dela
+  const firstArg = (rawArgs[0] || '').toLowerCase();
+  const matchedIdx = ALL_SPECIALTIES.indexOf(firstArg);
+  const forwardArgs = [];
+
+  if (matchedIdx !== -1) {
+    if (rawArgs.includes('--only')) {
+      targetSpecs = [ALL_SPECIALTIES[matchedIdx]];
+    } else {
+      targetSpecs = ALL_SPECIALTIES.slice(matchedIdx);
+    }
+    // Repassa os argumentos restantes após o nome da especialidade
+    for (let i = 1; i < rawArgs.length; i++) {
+      if (rawArgs[i] !== '--only') forwardArgs.push(rawArgs[i]);
+    }
+  } else {
+    forwardArgs.push(...rawArgs);
+  }
+
+  console.log('🏁 INICIANDO PIPELINE SEQUENCIAL AUTOMÁTICO COM AUTO-RETRY');
+  console.log(`📋 Fila: ${targetSpecs.map(s => s.toUpperCase()).join(' ➔ ')}`);
+  if (forwardArgs.length > 0) {
+    console.log(`⚙️ Argumentos extras repassados: ${forwardArgs.join(' ')}`);
+  }
+  console.log('');
+
+  for (const spec of targetSpecs) {
+    let completed = false;
+    let attempt = 1;
+    while (!completed) {
+      try {
+        await runSpecialty(spec, forwardArgs);
+        completed = true;
+      } catch (err) {
+        console.error(`\n⚠️ Pausa temporária em ${spec.toUpperCase()}: ${err.message}`);
+        console.log(`⏳ Aguardando 5 minutos para renovação de cotas no Google AI Studio (Tentativa ${attempt})...`);
+        attempt++;
+        await new Promise(r => setTimeout(r, 5 * 60 * 1000));
+        console.log(`\n🔄 Retomando execução da especialidade ${spec.toUpperCase()}...`);
+      }
     }
   }
 

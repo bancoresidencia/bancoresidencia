@@ -16,11 +16,31 @@ import {
   X,
   Check,
   Send,
-  Zap
+  Zap,
+  Shuffle,
+  Bookmark,
+  Layers,
+  TrendingUp,
+  Play
 } from 'lucide-react';
-import { UserAnswerItem, ErrorReasonType, Question } from '@/types';
+import {
+  UserAnswerItem,
+  ErrorReasonType,
+  Question,
+  ActiveReviewSessionState,
+  ReviewSessionMode
+} from '@/types';
 import { useTheme } from '@/context/ThemeContext';
 import { fetchQuestionsFromSupabase } from '@/services/questionService';
+import { CadernoErrosReviewSession } from './CadernoErrosReviewSession';
+import { ERROR_REASON_CONFIG } from '@/utils/errorReasons';
+import {
+  getActiveReviewSession,
+  clearActiveReviewSession,
+  calculateReviewCycleMetrics
+} from '@/services/reviewSessionService';
+
+export { ERROR_REASON_CONFIG };
 
 const SIX_SPECIALTIES = [
   'Todas',
@@ -32,12 +52,9 @@ const SIX_SPECIALTIES = [
   'Medicina Preventiva e Social'
 ];
 
-import { CadernoErrosReviewSession } from './CadernoErrosReviewSession';
-import { ERROR_REASON_CONFIG } from '@/utils/errorReasons';
-export { ERROR_REASON_CONFIG };
-
 interface CadernoDeErrosProps {
   userAnswers: Record<string, UserAnswerItem>;
+  bookmarkedQuestionIds?: Record<string, boolean>;
   onUpdateAnswerMeta: (
     questionId: string,
     meta: {
@@ -57,12 +74,20 @@ interface CadernoDeErrosProps {
 
 export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
   userAnswers,
+  bookmarkedQuestionIds = {},
   onUpdateAnswerMeta,
   onAnswerQuestion,
   onStartTreinoErros,
   onNavigateToBanco
 }) => {
   const { accentConfig } = useTheme();
+
+  // Modo Dual: "Erros (apenas erros pendentes)" vs "Lista completa (Erros e Favoritos)"
+  const [reviewModeTab, setReviewModeTab] = useState<ReviewSessionMode>('erros');
+
+  // Sessão de Revisão Ativa Resiliente (Recuperada de LocalStorage)
+  const [activeSession, setActiveSession] = useState<ActiveReviewSessionState | null>(null);
+  const [restoredSessionToRun, setRestoredSessionToRun] = useState<ActiveReviewSessionState | null>(null);
 
   // Estados de Filtros do Caderno
   const [selectedSpecialty, setSelectedSpecialty] = useState<string>('Todas');
@@ -82,21 +107,67 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
   const [savedNotesAlert, setSavedNotesAlert] = useState<Record<string, boolean>>({});
   const [retryingQuestionId, setRetryingQuestionId] = useState<string | null>(null);
   const [selectedRetryOption, setSelectedRetryOption] = useState<Record<string, 'A' | 'B' | 'C' | 'D' | 'E'>>({});
+
+  // Sessão Ativa às Cegas
   const [reviewSessionQuestionIds, setReviewSessionQuestionIds] = useState<string[] | null>(null);
 
-  // 1. Coleta todas as entradas de respostas que foram erradas (ou marcadas no caderno de erros)
+  // 1. Verifica no carregamento se há sessão ativa salva
+  useEffect(() => {
+    const saved = getActiveReviewSession();
+    if (saved) {
+      setActiveSession(saved);
+    }
+  }, []);
+
+  // 2. Coleta todas as entradas de respostas erradas
   const errorEntries = useMemo(() => {
     return Object.entries(userAnswers)
       .filter(([, ans]) => !ans.isCorrect || ans.statusRetrial === 'recuperado')
       .map(([qid, ans]) => ({
         questionId: qid,
-        answer: ans
+        answer: ans,
+        isFavorite: Boolean(bookmarkedQuestionIds[qid])
       }));
-  }, [userAnswers]);
+  }, [userAnswers, bookmarkedQuestionIds]);
 
-  // Carrega as questões completas em lote a partir dos IDs errados que ainda não estão em cache
+  // Lista unificada para a aba "Lista completa" (Erros + Favoritos)
+  const allReviewEntries = useMemo(() => {
+    if (reviewModeTab === 'erros') {
+      return errorEntries;
+    }
+
+    // Modo "Lista completa": reúne erros + favoritos
+    const map = new Map<string, { questionId: string; answer: UserAnswerItem; isFavorite: boolean }>();
+
+    // Adiciona erros
+    errorEntries.forEach((e) => {
+      map.set(e.questionId, e);
+    });
+
+    // Adiciona favoritos que ainda não estavam na lista de erros
+    Object.entries(bookmarkedQuestionIds).forEach(([qid, isFav]) => {
+      if (isFav && !map.has(qid)) {
+        map.set(qid, {
+          questionId: qid,
+          answer: userAnswers[qid] || {
+            letter: 'A',
+            isCorrect: false,
+            timestamp: 0,
+            difficulty: 'Médio',
+            isAnulada: false,
+            statusRetrial: 'pendente'
+          },
+          isFavorite: true
+        });
+      }
+    });
+
+    return Array.from(map.values());
+  }, [errorEntries, bookmarkedQuestionIds, reviewModeTab, userAnswers]);
+
+  // Carrega as questões completas em lote a partir dos IDs que ainda não estão em cache
   useEffect(() => {
-    const missingIds = errorEntries
+    const missingIds = allReviewEntries
       .map((e) => e.questionId)
       .filter((id) => !questionsMap[id]);
 
@@ -105,7 +176,6 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
     let isMounted = true;
     setIsLoadingQuestions(true);
 
-    // Carrega em lotes de até 100 para evitar queries gigantes
     const batch = missingIds.slice(0, 100);
     fetchQuestionsFromSupabase({}, 1, batch.length, batch)
       .then((res) => {
@@ -120,7 +190,7 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
           });
         }
       })
-      .catch((err) => console.error('Erro ao carregar detalhes das questões erradas:', err))
+      .catch((err) => console.error('Erro ao carregar detalhes das questões para revisão:', err))
       .finally(() => {
         if (isMounted) setIsLoadingQuestions(false);
       });
@@ -128,9 +198,14 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
     return () => {
       isMounted = false;
     };
-  }, [errorEntries, questionsMap]);
+  }, [allReviewEntries, questionsMap]);
 
-  // 2. Estatísticas Consolidadas do Caderno de Erros
+  // 3. Métricas do Ciclo de Revisão e Topografia Clínica
+  const reviewCycleMetrics = useMemo(() => {
+    return calculateReviewCycleMetrics(userAnswers, questionsMap);
+  }, [userAnswers, questionsMap]);
+
+  // 4. Estatísticas Consolidadas do Caderno de Erros
   const statsSummary = useMemo(() => {
     const total = errorEntries.length;
     const pendentes = errorEntries.filter((e) => (e.answer.statusRetrial || 'pendente') === 'pendente').length;
@@ -178,9 +253,9 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
     };
   }, [errorEntries, questionsMap]);
 
-  // 3. Filtragem e Ordenação da Lista
+  // 5. Filtragem e Ordenação da Lista Exibida
   const filteredEntries = useMemo(() => {
-    const result = errorEntries.filter((e) => {
+    const result = allReviewEntries.filter((e) => {
       const q = questionsMap[e.questionId];
       const ans = e.answer;
 
@@ -249,54 +324,149 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
     });
 
     return result;
-  }, [errorEntries, questionsMap, selectedStatus, selectedSpecialty, selectedReason, searchQuery, sortBy]);
+  }, [
+    allReviewEntries,
+    questionsMap,
+    selectedStatus,
+    selectedSpecialty,
+    selectedReason,
+    searchQuery,
+    sortBy
+  ]);
 
-  // Manipulador de salvar anotação pessoal do aluno
-  const handleSaveNotes = (questionId: string) => {
-    const text = localNotes[questionId];
+  // Manipulador de salvar anotação pessoal no card
+  const handleSaveNotes = (qId: string) => {
+    const text = localNotes[qId];
     if (text === undefined) return;
-    onUpdateAnswerMeta(questionId, { studentNotes: text.trim() });
-    setSavedNotesAlert((prev) => ({ ...prev, [questionId]: true }));
+    onUpdateAnswerMeta(qId, { studentNotes: text.trim() });
+    setSavedNotesAlert((prev) => ({ ...prev, [qId]: true }));
     setTimeout(() => {
-      setSavedNotesAlert((prev) => ({ ...prev, [questionId]: false }));
+      setSavedNotesAlert((prev) => ({ ...prev, [qId]: false }));
     }, 2000);
   };
 
-  // Re-responder a questão diretamente no card para recuperação ativa
-  const handleConfirmRetry = (questionId: string) => {
+  // Submissão rápida no card da questão
+  const handleQuickRetryAnswer = (questionId: string) => {
     const q = questionsMap[questionId];
-    const selected = selectedRetryOption[questionId];
-    if (!q || !selected) return;
+    const letter = selectedRetryOption[questionId];
+    if (!q || !letter) return;
 
-    const isCorrect = q.correctAnswer === selected || q.correctAnswer === 'ANULADA';
-    onAnswerQuestion(questionId, selected, isCorrect);
+    const isAnulada = Boolean(q.isAnulada || q.correctAnswer === 'ANULADA');
+    const isCorrect = isAnulada || letter === q.correctAnswer;
+
+    onAnswerQuestion(questionId, letter, isCorrect);
 
     if (isCorrect) {
       onUpdateAnswerMeta(questionId, { statusRetrial: 'recuperado' });
+      setRetryingQuestionId(null);
     }
-
-    setRetryingQuestionId(null);
   };
 
-  // Se o aluno iniciou uma Sessão de Revisão Ativa às Cegas, exibe a interface focada de teste
+  // Retomada da sessão ativa salva
+  const handleResumeActiveSession = () => {
+    if (!activeSession) return;
+    setRestoredSessionToRun(activeSession);
+    setReviewSessionQuestionIds(activeSession.questionIds);
+  };
+
+  // Descarte da sessão ativa salva
+  const handleDiscardActiveSession = () => {
+    clearActiveReviewSession();
+    setActiveSession(null);
+  };
+
+  // Iniciar nova sessão ativa
+  const handleStartNewSession = (questionIds: string[]) => {
+    setRestoredSessionToRun(null);
+    setReviewSessionQuestionIds(questionIds);
+  };
+
+  // Se o aluno está em uma Sessão de Revisão Ativa, exibe a interface focada de teste
   if (reviewSessionQuestionIds && reviewSessionQuestionIds.length > 0) {
     return (
       <CadernoErrosReviewSession
         questionIds={reviewSessionQuestionIds}
         questionsMap={questionsMap}
         userAnswers={userAnswers}
+        initialState={restoredSessionToRun}
+        sessionMode={reviewModeTab}
+        filterSummary={{
+          specialty: selectedSpecialty !== 'Todas' ? selectedSpecialty : undefined,
+          reason: selectedReason !== 'todos' ? selectedReason : undefined,
+          totalAvailable: filteredEntries.length
+        }}
         onAnswerQuestion={onAnswerQuestion}
         onUpdateAnswerMeta={onUpdateAnswerMeta}
-        onClose={() => setReviewSessionQuestionIds(null)}
+        onClose={() => {
+          setReviewSessionQuestionIds(null);
+          setRestoredSessionToRun(null);
+          // Atualiza status da sessão ativa
+          const current = getActiveReviewSession();
+          setActiveSession(current);
+        }}
         onNavigateToBanco={onNavigateToBanco}
       />
     );
   }
 
+  const totalFavoritosCount = Object.values(bookmarkedQuestionIds).filter(Boolean).length;
+  const totalCompletaCount = allReviewEntries.length;
+
   return (
     <div className="space-y-6 animate-in fade-in duration-200">
-      {/* 1. Header do Caderno de Erros com Visual de Excelência Médica */}
-      <div className="bg-white dark:bg-[var(--bg-card)] border border-slate-200 dark:border-zinc-800/80 p-5 sm:p-6 rounded-3xl shadow-xs">
+      {/* 1. Header do Caderno com Abas Dual Mode (Erros vs Lista Completa) */}
+      <div className="bg-white dark:bg-[var(--bg-card)] border border-slate-200 dark:border-zinc-800/80 p-5 sm:p-6 rounded-3xl shadow-xs space-y-4">
+        {/* Toggle de Modo: "Erros" vs "Lista Completa" */}
+        <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 dark:border-zinc-800/80 pb-4">
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={() => setReviewModeTab('erros')}
+              className={`px-4 py-2 rounded-2xl text-xs font-bold transition-all cursor-pointer flex items-center gap-2 ${
+                reviewModeTab === 'erros'
+                  ? 'bg-rose-500/15 text-rose-700 dark:text-rose-300 border border-rose-500/30 shadow-xs'
+                  : 'bg-slate-100 dark:bg-zinc-900 text-slate-600 dark:text-zinc-400 border border-slate-200 dark:border-zinc-800 hover:text-slate-900'
+              }`}
+            >
+              <AlertOctagon className="w-3.5 h-3.5" />
+              <span>Erros: {statsSummary.pendentes} para revisar</span>
+            </button>
+
+            <button
+              type="button"
+              onClick={() => setReviewModeTab('completa')}
+              className={`px-4 py-2 rounded-2xl text-xs font-bold transition-all cursor-pointer flex items-center gap-2 ${
+                reviewModeTab === 'completa'
+                  ? 'text-white shadow-xs'
+                  : 'bg-slate-100 dark:bg-zinc-900 text-slate-600 dark:text-zinc-400 border border-slate-200 dark:border-zinc-800 hover:text-slate-900'
+              }`}
+              style={
+                reviewModeTab === 'completa' ? { backgroundColor: accentConfig.primaryHex } : undefined
+              }
+            >
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>Lista completa ({totalCompletaCount} itens • {statsSummary.pendentes} erros, {totalFavoritosCount} favoritos)</span>
+            </button>
+          </div>
+
+          {/* Botão de Iniciar Sessão Imediata com Embaralhamento */}
+          {filteredEntries.length > 0 && (
+            <button
+              type="button"
+              onClick={() => handleStartNewSession(filteredEntries.map((e) => e.questionId))}
+              className="w-full sm:w-auto px-5 py-2.5 rounded-xl text-white text-xs font-bold transition-all cursor-pointer shadow-md flex items-center justify-center gap-2 hover:scale-102 active:scale-98"
+              style={{
+                backgroundColor: accentConfig.primaryHex,
+                boxShadow: `0 6px 16px -4px ${accentConfig.bgRgba}`
+              }}
+            >
+              <Zap className="w-4 h-4 fill-white" />
+              <span>Iniciar Revisão às Cegas ({filteredEntries.length})</span>
+            </button>
+          )}
+        </div>
+
+        {/* Título Principal & Descrição */}
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div className="flex items-center gap-3.5">
             <div
@@ -307,92 +477,218 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
                 border: `1px solid ${accentConfig.borderRgba}`
               }}
             >
-              <AlertOctagon className="w-6 h-6 stroke-[2]" />
+              {reviewModeTab === 'completa' ? (
+                <Sparkles className="w-6 h-6 stroke-[2]" />
+              ) : (
+                <AlertOctagon className="w-6 h-6 stroke-[2]" />
+              )}
             </div>
             <div>
               <div className="flex items-center gap-2">
                 <h1 className="font-heading text-lg sm:text-xl font-black text-slate-900 dark:text-zinc-100 tracking-tight">
-                  Caderno de Erros
+                  {reviewModeTab === 'completa'
+                    ? 'Caderno de Revisão Completa'
+                    : 'Caderno de Erros'}
                 </h1>
                 <span className="text-[10px] font-bold px-2 py-0.5 rounded-md bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-500/20 uppercase tracking-wider">
                   Recuperação Ativa
                 </span>
+                <span className="text-[10px] font-bold px-2 py-0.5 rounded-md bg-purple-500/10 text-purple-600 dark:text-purple-400 border border-purple-500/20 uppercase tracking-wider flex items-center gap-1">
+                  <Shuffle className="w-3 h-3" />
+                  Anti-Vício
+                </span>
               </div>
               <p className="text-xs text-slate-500 dark:text-zinc-400 mt-0.5">
-                Avalie cada questão errada, classifique a causa do erro e domine seus pontos fracos para não errar na prova.
+                {reviewModeTab === 'completa'
+                  ? 'Revisão integrada unindo questões erradas e marcadas com estrela para consolidação clínica pré-prova.'
+                  : 'Avalie cada questão errada, classifique a causa do erro e domine seus pontos fracos para não errar na prova.'}
               </p>
             </div>
           </div>
-
-          {/* Botão de Ação Rápida: Iniciar Lista de Revisão Ativa às Cegas */}
-          {filteredEntries.length > 0 && (
-            <div className="flex flex-wrap items-center gap-2">
-              <button
-                type="button"
-                onClick={() => setReviewSessionQuestionIds(filteredEntries.map((e) => e.questionId))}
-                className="w-full sm:w-auto px-5 py-2.5 rounded-xl text-white text-xs font-bold transition-all cursor-pointer shadow-md flex items-center justify-center gap-2 hover:scale-102 active:scale-98"
-                style={{
-                  backgroundColor: accentConfig.primaryHex,
-                  boxShadow: `0 6px 16px -4px ${accentConfig.bgRgba}`
-                }}
-              >
-                <Zap className="w-4 h-4 fill-white" />
-                <span>Iniciar Revisão às Cegas ({filteredEntries.length})</span>
-              </button>
-            </div>
-          )}
         </div>
 
-        {/* 2. Mini-KPIs em Cards de Alta Densidade */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-5 pt-5 border-t border-slate-100 dark:border-zinc-800/80">
-          <div className="bg-slate-50 dark:bg-zinc-900/60 p-3.5 rounded-2xl border border-slate-200/70 dark:border-zinc-800/60">
-            <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-zinc-400 block">
-              Erros Mapeados
-            </span>
-            <div className="text-2xl font-black font-mono text-slate-900 dark:text-zinc-100 mt-0.5">
-              {statsSummary.total}
+        {/* 2. Banner de Retomada Resiliente de Sessão Ativa */}
+        {activeSession && (
+          <div className="bg-gradient-to-r from-amber-500/15 via-amber-500/10 to-transparent border border-amber-500/30 p-4 sm:p-5 rounded-3xl shadow-sm flex flex-col sm:flex-row sm:items-center justify-between gap-3 animate-in fade-in duration-200">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-2xl bg-amber-500/20 text-amber-600 dark:text-amber-400 flex items-center justify-center shrink-0">
+                <RotateCcw className="w-5 h-5 stroke-[2.2]" />
+              </div>
+              <div>
+                <div className="text-xs sm:text-sm font-bold text-slate-900 dark:text-zinc-100 flex items-center gap-2">
+                  <span>Continuar revisão em andamento</span>
+                  <span className="text-[10px] px-2 py-0.5 rounded-md font-mono bg-amber-500/20 text-amber-700 dark:text-amber-300 font-bold uppercase">
+                    Em aberto
+                  </span>
+                </div>
+                <p className="text-[11px] text-slate-500 dark:text-zinc-400 mt-0.5">
+                  {Object.keys(activeSession.sessionAnswers || {}).length} / {activeSession.questionIds.length} questões respondidas • modo {activeSession.sessionMode === 'completa' ? 'Lista Completa' : 'Apenas Erros'}
+                </p>
+              </div>
             </div>
-            <span className="text-[10px] text-slate-400 dark:text-zinc-500">questões registradas na conta</span>
+
+            <div className="flex items-center gap-2 shrink-0">
+              <button
+                type="button"
+                onClick={handleResumeActiveSession}
+                className="px-4 py-2 rounded-xl text-xs font-bold text-white bg-amber-600 hover:bg-amber-500 shadow-sm transition-all cursor-pointer flex items-center gap-1.5"
+              >
+                <Play className="w-3.5 h-3.5 fill-white" />
+                <span>Continuar Revisão</span>
+              </button>
+              <button
+                type="button"
+                onClick={handleDiscardActiveSession}
+                className="px-3 py-2 rounded-xl text-xs font-medium text-slate-500 hover:text-rose-600 dark:hover:text-rose-400 hover:bg-rose-500/10 transition-colors cursor-pointer"
+              >
+                Descartar
+              </button>
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* 3. Tríade do Ciclo de Revisão e Topografia Clínica de Erros */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        {/* Coluna 1 & 2: Resumo do Ciclo e Temas com Mais Erros */}
+        <div className="lg:col-span-2 bg-white dark:bg-[var(--bg-card)] border border-slate-200 dark:border-zinc-800/80 p-5 rounded-3xl space-y-4 shadow-xs">
+          <div className="flex items-center justify-between">
+            <h3 className="text-xs font-bold text-slate-900 dark:text-zinc-100 uppercase tracking-wider flex items-center gap-2">
+              <Brain className="w-4 h-4 text-purple-500" />
+              Resumo das Revisões & Ciclo Ativo
+            </h3>
+            <span className="text-[11px] font-mono text-slate-400 dark:text-zinc-500">
+              {reviewCycleMetrics.totalNoCaderno} no caderno
+            </span>
           </div>
 
-          <div className="bg-slate-50 dark:bg-zinc-900/60 p-3.5 rounded-2xl border border-slate-200/70 dark:border-zinc-800/60">
-            <span className="text-[10px] font-bold uppercase tracking-wider text-rose-600 dark:text-rose-400 block flex items-center gap-1">
-              <span className="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse" />
-              Pendentes de Acerto
-            </span>
-            <div className="text-2xl font-black font-mono text-rose-600 dark:text-rose-400 mt-0.5">
-              {statsSummary.pendentes}
+          <div className="grid grid-cols-3 gap-3">
+            <div className="p-3.5 rounded-2xl bg-rose-500/10 border border-rose-500/20">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-rose-600 dark:text-rose-400 block">
+                Para Revisar
+              </span>
+              <div className="text-2xl font-black font-mono text-rose-600 dark:text-rose-400 mt-0.5">
+                {reviewCycleMetrics.paraRevisar}
+              </div>
+              <span className="text-[10px] text-slate-400 dark:text-zinc-500">pendentes de superação</span>
             </div>
-            <span className="text-[10px] text-slate-400 dark:text-zinc-500">precisam ser refeitas</span>
+
+            <div className="p-3.5 rounded-2xl bg-amber-500/10 border border-amber-500/20">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400 block">
+                Agendadas
+              </span>
+              <div className="text-2xl font-black font-mono text-amber-600 dark:text-amber-400 mt-0.5">
+                {reviewCycleMetrics.agendadas}
+              </div>
+              <span className="text-[10px] text-slate-400 dark:text-zinc-500">em ciclo futuro</span>
+            </div>
+
+            <div className="p-3.5 rounded-2xl bg-emerald-500/10 border border-emerald-500/20">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 block">
+                Fora do Ciclo
+              </span>
+              <div className="text-2xl font-black font-mono text-emerald-600 dark:text-emerald-400 mt-0.5">
+                {reviewCycleMetrics.foraDoCiclo}
+              </div>
+              <span className="text-[10px] text-slate-400 dark:text-zinc-500">erros recuperados</span>
+            </div>
           </div>
 
-          <div className="bg-slate-50 dark:bg-zinc-900/60 p-3.5 rounded-2xl border border-slate-200/70 dark:border-zinc-800/60">
-            <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 block flex items-center gap-1">
-              <CheckCircle2 className="w-3 h-3 text-emerald-500" />
-              Já Recuperadas
-            </span>
-            <div className="text-2xl font-black font-mono text-emerald-600 dark:text-emerald-400 mt-0.5">
-              {statsSummary.recuperadas}
+          {/* Temas com Mais Erros (Foco Clínico Direto) */}
+          <div className="pt-2 border-t border-slate-100 dark:border-zinc-800/80">
+            <div className="text-xs font-bold text-slate-700 dark:text-zinc-300 mb-2.5 flex items-center justify-between">
+              <span className="flex items-center gap-1.5">
+                <TrendingUp className="w-3.5 h-3.5 text-rose-500" />
+                Temas com Mais Erros (Vulnerabilidades Clínicas):
+              </span>
+              <span className="text-[10px] text-slate-400 dark:text-zinc-500">Clique para filtrar</span>
             </div>
-            <span className="text-[10px] text-slate-400 dark:text-zinc-500">acertadas em re-tentativa</span>
+
+            <div className="flex flex-wrap items-center gap-2">
+              {reviewCycleMetrics.topTemas.length > 0 ? (
+                reviewCycleMetrics.topTemas.map((t) => {
+                  const isFiltered = searchQuery === t.tema;
+                  return (
+                    <button
+                      key={t.tema}
+                      type="button"
+                      onClick={() => setSearchQuery(isFiltered ? '' : t.tema)}
+                      className={`px-3 py-1.5 rounded-xl text-xs border transition-colors cursor-pointer flex items-center gap-2 ${
+                        isFiltered
+                          ? 'bg-rose-500 text-white border-rose-500 shadow-xs'
+                          : 'bg-slate-100 dark:bg-zinc-900 border-slate-200 dark:border-zinc-800 hover:border-slate-300 dark:hover:border-zinc-700 text-slate-800 dark:text-zinc-200'
+                      }`}
+                    >
+                      <span>{t.tema}</span>
+                      <span
+                        className={`px-1.5 py-0.2 rounded-md text-[10px] font-bold font-mono ${
+                          isFiltered
+                            ? 'bg-white/20 text-white'
+                            : 'bg-rose-500/15 text-rose-600 dark:text-rose-400'
+                        }`}
+                      >
+                        {t.count}
+                      </span>
+                    </button>
+                  );
+                })
+              ) : (
+                <span className="text-xs text-slate-400 dark:text-zinc-500">
+                  Nenhum erro registrado ainda.
+                </span>
+              )}
+            </div>
+          </div>
+        </div>
+
+        {/* Coluna 3: Especialidades com Mais Erros */}
+        <div className="bg-white dark:bg-[var(--bg-card)] border border-slate-200 dark:border-zinc-800/80 p-5 rounded-3xl space-y-3 shadow-xs">
+          <div className="flex items-center justify-between">
+            <h3 className="text-xs font-bold text-slate-900 dark:text-zinc-100 uppercase tracking-wider flex items-center gap-2">
+              <AlertOctagon className="w-4 h-4 text-rose-500" />
+              Especialidades com Mais Erros
+            </h3>
+            <span className="text-[10px] text-slate-400 dark:text-zinc-500">Top áreas</span>
           </div>
 
-          <div className="bg-slate-50 dark:bg-zinc-900/60 p-3.5 rounded-2xl border border-slate-200/70 dark:border-zinc-800/60">
-            <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-zinc-400 block">
-              Taxa de Superação
-            </span>
-            <div
-              className="text-2xl font-black font-mono mt-0.5"
-              style={{ color: accentConfig.primaryHex }}
-            >
-              {statsSummary.taxaRecuperacao.toFixed(0)}%
-            </div>
-            <span className="text-[10px] text-slate-400 dark:text-zinc-500">dos erros já foram dominados</span>
+          <div className="space-y-2.5 pt-1">
+            {reviewCycleMetrics.topEspecialidades.slice(0, 5).map((e) => {
+              const maxCount = reviewCycleMetrics.topEspecialidades[0]?.count || 1;
+              const percent = Math.min(100, Math.max(10, Math.round((e.count / maxCount) * 100)));
+              const isSelected = selectedSpecialty === e.especialidade;
+
+              return (
+                <div
+                  key={e.especialidade}
+                  onClick={() => setSelectedSpecialty(isSelected ? 'Todas' : e.especialidade)}
+                  className={`p-2.5 rounded-xl border transition-colors cursor-pointer space-y-1.5 ${
+                    isSelected
+                      ? 'bg-rose-500/10 border-rose-500/40 text-rose-900 dark:text-rose-200 shadow-2xs'
+                      : 'bg-slate-50 dark:bg-zinc-900/50 border-slate-200/60 dark:border-zinc-800/60 hover:border-slate-300 dark:hover:border-zinc-700'
+                  }`}
+                >
+                  <div className="flex items-center justify-between text-xs">
+                    <span className="font-semibold text-slate-800 dark:text-zinc-200">
+                      {e.especialidade}
+                    </span>
+                    <span className="font-bold font-mono text-rose-600 dark:text-rose-400">
+                      {e.count} {e.count === 1 ? 'erro' : 'erros'}
+                    </span>
+                  </div>
+                  <div className="w-full h-1.5 bg-slate-200 dark:bg-zinc-800 rounded-full overflow-hidden">
+                    <div
+                      className="h-full bg-rose-500 rounded-full transition-all"
+                      style={{ width: `${percent}%` }}
+                    />
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
 
-      {/* 3. Barra de Filtros: Especialidades, Status, Motivo e Busca */}
+      {/* 4. Barra de Filtros: Especialidades, Status, Motivo e Busca */}
       <div className="bg-white dark:bg-[var(--bg-card)] border border-slate-200 dark:border-zinc-800/80 p-4 rounded-3xl space-y-3 shadow-xs">
         {/* Pílulas de Especialidades */}
         <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-thin">
@@ -460,7 +756,7 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
                 onClick={() => setSelectedStatus('todos')}
                 className={`px-2.5 py-1 rounded-lg transition-colors cursor-pointer ${
                   selectedStatus === 'todos'
-                    ? 'bg-white dark:bg-zinc-800 text-slate-900 dark:text-white font-bold shadow-xs'
+                    ? 'bg-white dark:bg-zinc-800 text-slate-900 dark:text-zinc-100 font-bold shadow-xs'
                     : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-200'
                 }`}
               >
@@ -468,40 +764,40 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
               </button>
             </div>
 
-            {/* Dropdown Filtro por Motivo do Erro */}
+            {/* Filtro por Motivo do Erro */}
             <select
               value={selectedReason}
               onChange={(e) => setSelectedReason(e.target.value)}
-              className="px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-xs font-semibold text-slate-700 dark:text-zinc-300 focus:outline-hidden cursor-pointer"
+              className="text-xs font-medium px-3 py-1.5 rounded-xl bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-slate-700 dark:text-zinc-300 focus:outline-hidden cursor-pointer"
             >
-              <option value="todos">Todos os Motivos</option>
-              <option value="sem_classificacao">Sem Classificação ({statsSummary.byReason.sem_classificacao})</option>
-              {Object.entries(ERROR_REASON_CONFIG).map(([key, config]) => (
-                <option key={key} value={key}>
-                  {config.icon} {config.label} ({statsSummary.byReason[key] || 0})
+              <option value="todos">Todos os Motivos do Erro</option>
+              <option value="sem_classificacao">Sem Classificação ({statsSummary.byReason.sem_classificacao || 0})</option>
+              {Object.entries(ERROR_REASON_CONFIG).map(([k, cfg]) => (
+                <option key={k} value={k}>
+                  {cfg.label} ({statsSummary.byReason[k] || 0})
                 </option>
               ))}
             </select>
           </div>
 
           <div className="flex items-center gap-2 w-full sm:w-auto">
-            {/* Campo de Busca Rápida */}
-            <div className="relative flex-1 sm:w-56">
-              <Search className="w-3.5 h-3.5 text-slate-400 dark:text-zinc-500 absolute left-3 top-1/2 -translate-y-1/2" />
+            {/* Campo de Busca Textual */}
+            <div className="relative flex-1 sm:w-60">
+              <Search className="w-3.5 h-3.5 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
               <input
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Buscar banca, tema, código..."
-                className="w-full pl-8 pr-3 py-1.5 text-xs rounded-xl bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-slate-900 dark:text-zinc-100 placeholder-slate-400 dark:placeholder-zinc-500 focus:outline-hidden"
+                placeholder="Buscar tema, código, anotação..."
+                className="w-full pl-8 pr-3 py-1.5 text-xs rounded-xl bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-slate-900 dark:text-zinc-100 placeholder-slate-400 focus:outline-hidden"
               />
               {searchQuery && (
                 <button
                   type="button"
                   onClick={() => setSearchQuery('')}
-                  className="absolute right-2 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600"
+                  className="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600"
                 >
-                  <X className="w-3.5 h-3.5" />
+                  <X className="w-3 h-3" />
                 </button>
               )}
             </div>
@@ -510,7 +806,7 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value as 'recentes' | 'antigas' | 'especialidade')}
-              className="px-2.5 py-1.5 rounded-xl bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-xs font-semibold text-slate-700 dark:text-zinc-300 focus:outline-hidden cursor-pointer"
+              className="text-xs font-medium px-2.5 py-1.5 rounded-xl bg-slate-100 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-slate-700 dark:text-zinc-300 focus:outline-hidden cursor-pointer"
             >
               <option value="recentes">Mais recentes</option>
               <option value="antigas">Mais antigas</option>
@@ -520,228 +816,194 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
         </div>
       </div>
 
-      {/* 4. Lista dos Cards de Erro */}
+      {/* 5. Lista de Cards das Questões */}
       {filteredEntries.length === 0 ? (
-        <div className="bg-white dark:bg-[var(--bg-card)] border border-slate-200 dark:border-zinc-800/80 rounded-3xl p-10 text-center space-y-3">
-          <div className="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-500 flex items-center justify-center mx-auto">
-            <CheckCircle2 className="w-7 h-7" />
+        <div className="p-12 text-center bg-white dark:bg-[var(--bg-card)] border border-slate-200 dark:border-zinc-800/80 rounded-3xl space-y-3 shadow-xs">
+          <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 text-emerald-500 mx-auto flex items-center justify-center">
+            <CheckCircle2 className="w-6 h-6 stroke-[2]" />
           </div>
-          <h3 className="text-base font-bold text-slate-900 dark:text-white">
-            {errorEntries.length === 0
-              ? 'Nenhum erro registrado na sua conta ainda!'
-              : 'Nenhuma questão encontrada com os filtros selecionados.'}
+          <h3 className="text-sm font-bold text-slate-800 dark:text-zinc-200">
+            Nenhuma questão encontrada com estes filtros
           </h3>
-          <p className="text-xs text-slate-500 dark:text-zinc-400 max-w-md mx-auto">
-            {errorEntries.length === 0
-              ? 'Conforme você resolver questões no Banco de Questões, qualquer erro cometido será salvo aqui automaticamente para você diagnosticar e revisar.'
-              : 'Experimente limpar os filtros de especialidade, status ou busca para visualizar outras questões erradas.'}
+          <p className="text-xs text-slate-500 dark:text-zinc-400 max-w-sm mx-auto">
+            {selectedStatus === 'pendente'
+              ? 'Excelente! Você não possui erros pendentes com os critérios selecionados.'
+              : 'Tente alterar os filtros de especialidade, status ou motivo para visualizar mais itens.'}
           </p>
-          {errorEntries.length === 0 ? (
-            <button
-              type="button"
-              onClick={() => onNavigateToBanco()}
-              className="mt-2 px-5 py-2.5 rounded-xl text-white text-xs font-bold transition-all cursor-pointer shadow-sm hover:scale-102"
-              style={{ backgroundColor: accentConfig.primaryHex }}
-            >
-              Ir para o Banco de Questões
-            </button>
-          ) : (
+          {(selectedSpecialty !== 'Todas' || selectedStatus !== 'pendente' || selectedReason !== 'todos' || searchQuery) && (
             <button
               type="button"
               onClick={() => {
                 setSelectedSpecialty('Todas');
-                setSelectedStatus('todos');
+                setSelectedStatus('pendente');
                 setSelectedReason('todos');
                 setSearchQuery('');
               }}
-              className="mt-2 px-4 py-2 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-zinc-800 text-slate-700 dark:text-zinc-300 hover:bg-slate-200 cursor-pointer"
+              className="text-xs font-bold text-emerald-600 dark:text-emerald-400 hover:underline cursor-pointer"
             >
-              Limpar Filtros
+              Limpar todos os filtros
             </button>
           )}
         </div>
       ) : (
         <div className="space-y-4">
-          {filteredEntries.map((entry) => {
-            const { questionId, answer } = entry;
+          <div className="flex items-center justify-between text-xs text-slate-500 dark:text-zinc-400 px-1 font-mono">
+            <span>
+              Exibindo <strong>{filteredEntries.length}</strong> de {statsSummary.total} questões registradas
+            </span>
+            {isLoadingQuestions && (
+              <span className="text-[11px] text-amber-500 flex items-center gap-1">
+                <span className="w-1.5 h-1.5 rounded-full bg-amber-500 animate-ping" />
+                Carregando detalhes do banco...
+              </span>
+            )}
+          </div>
+
+          {filteredEntries.map(({ questionId, answer, isFavorite }) => {
             const q = questionsMap[questionId];
-            const isRecuperada = answer.statusRetrial === 'recuperado';
+            const isRecuperada = (answer.statusRetrial || 'pendente') === 'recuperado';
             const isCommentOpen = !!expandedComments[questionId];
             const isNotesOpen = !!expandedNotes[questionId];
             const isRetrying = retryingQuestionId === questionId;
-            const currentRetryOption = selectedRetryOption[questionId];
-
             const currentReasonKey = answer.errorReason;
-            const currentReason = currentReasonKey ? ERROR_REASON_CONFIG[currentReasonKey] : null;
-
-            const dateStr = answer.timestamp
-              ? new Date(answer.timestamp).toLocaleDateString('pt-BR', {
-                  day: '2-digit',
-                  month: '2-digit',
-                  year: 'numeric'
-                })
-              : 'Data recente';
+            const reasonConfig = currentReasonKey ? ERROR_REASON_CONFIG[currentReasonKey] : null;
 
             return (
               <div
                 key={questionId}
-                className={`bg-white dark:bg-[var(--bg-card)] border rounded-3xl p-5 sm:p-6 transition-all duration-200 shadow-xs space-y-4 ${
+                className={`bg-white dark:bg-[var(--bg-card)] border rounded-3xl p-5 sm:p-6 space-y-4 shadow-xs transition-all ${
                   isRecuperada
-                    ? 'border-emerald-500/30 dark:border-emerald-500/20 bg-emerald-500/[0.02]'
+                    ? 'border-emerald-500/30 dark:border-emerald-500/20 bg-emerald-500/5'
                     : 'border-slate-200 dark:border-zinc-800/80 hover:border-slate-300 dark:hover:border-zinc-700'
                 }`}
               >
-                {/* Cabeçalho do Card */}
-                <div className="flex flex-wrap items-center justify-between gap-2.5">
+                {/* Linha Superior: Cabeçalho do Card */}
+                <div className="flex flex-wrap items-center justify-between gap-2.5 pb-3 border-b border-slate-100 dark:border-zinc-800/80 text-xs">
                   <div className="flex flex-wrap items-center gap-2">
-                    {/* Badge Status do Erro */}
+                    {/* Código / ID */}
+                    <span className="font-bold text-slate-900 dark:text-zinc-100 font-mono">
+                      #{q?.code || questionId.slice(0, 8)}
+                    </span>
+
+                    <span className="text-slate-300 dark:text-zinc-700">•</span>
+
+                    {/* Banca & Ano */}
+                    <span className="font-semibold text-slate-700 dark:text-zinc-300">
+                      {q?.banca || answer.banca || 'Banca Oficial'}
+                    </span>
+                    <span className="text-slate-500 dark:text-zinc-400">
+                      {q?.year || answer.year || '2025'}
+                    </span>
+
+                    {/* Especialidade & Tema */}
+                    {(q?.especialidade || answer.specialty) && (
+                      <>
+                        <span className="text-slate-300 dark:text-zinc-700">•</span>
+                        <span className="px-2 py-0.5 rounded-md font-semibold text-[11px] bg-slate-100 dark:bg-zinc-800 text-slate-700 dark:text-zinc-300">
+                          {q?.especialidade || answer.specialty}
+                        </span>
+                      </>
+                    )}
+                    {(q?.tema || answer.tema) && (
+                      <span className="px-2 py-0.5 rounded-md font-semibold text-[11px] bg-slate-100 dark:bg-zinc-800 text-slate-600 dark:text-zinc-400">
+                        {q?.tema || answer.tema}
+                      </span>
+                    )}
+
+                    {isFavorite && (
+                      <span className="px-2 py-0.5 rounded-md font-semibold text-[10px] bg-amber-500/10 text-amber-700 dark:text-amber-400 border border-amber-500/20 flex items-center gap-1">
+                        <Bookmark className="w-3 h-3 fill-amber-500" />
+                        Favorita
+                      </span>
+                    )}
+                  </div>
+
+                  <div className="flex items-center gap-2">
+                    {/* Status Retrial */}
                     {isRecuperada ? (
-                      <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[10px] font-extrabold uppercase tracking-wider bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 border border-emerald-500/30">
+                      <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 border border-emerald-500/30 flex items-center gap-1">
                         <CheckCircle2 className="w-3 h-3" />
                         Recuperada
                       </span>
                     ) : (
-                      <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[10px] font-extrabold uppercase tracking-wider bg-rose-500/15 text-rose-700 dark:text-rose-400 border border-rose-500/30">
-                        <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
-                        Pendente de Acerto
+                      <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-rose-500/15 text-rose-700 dark:text-rose-400 border border-rose-500/30 flex items-center gap-1">
+                        <span className="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse" />
+                        Pendente
                       </span>
                     )}
 
-                    {/* Badge da Banca & Ano */}
-                    <span className="text-xs font-bold text-slate-800 dark:text-zinc-200 bg-slate-100 dark:bg-zinc-800/60 px-2.5 py-0.5 rounded-md border border-slate-200/60 dark:border-zinc-700/60">
-                      {q?.banca || answer.banca || 'Banca Oficial'} • {q?.year || answer.year || '2025'}
+                    {/* Data em que errou */}
+                    {answer.timestamp && (
+                      <span className="text-[11px] text-slate-400 dark:text-zinc-500 hidden sm:inline">
+                        {new Date(answer.timestamp).toLocaleDateString('pt-BR')}
+                      </span>
+                    )}
+                  </div>
+                </div>
+
+                {/* Linha Metacognitiva: Diagnóstico do Erro & Letra Marcada */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 p-3 rounded-2xl bg-slate-50 dark:bg-zinc-900/60 border border-slate-200/60 dark:border-zinc-800/60 text-xs">
+                  {/* Alternativa marcada pelo aluno */}
+                  <div className="flex items-center gap-2">
+                    <span className="text-slate-500 dark:text-zinc-400">Você errou marcando:</span>
+                    <span className="w-6 h-6 rounded-lg bg-rose-500/15 text-rose-600 dark:text-rose-400 font-mono font-bold flex items-center justify-center text-xs border border-rose-500/30">
+                      {answer.letter || '?'}
                     </span>
-
-                    {/* Código da Questão */}
-                    {(q?.code || answer.code) && (
-                      <span className="text-[11px] font-mono text-slate-500 dark:text-zinc-400 font-semibold">
-                        #{q?.code || answer.code}
-                      </span>
-                    )}
-
-                    {/* Especialidade / Tema / Subfoco */}
-                    <span className="text-xs text-slate-600 dark:text-zinc-400 font-medium">
-                      {answer.specialty || q?.especialidade}
-                      {(answer.tema || q?.tema) && ` • ${answer.tema || q?.tema}`}
-                      {(answer.subfoco || q?.subfoco) && ` > ${answer.subfoco || q?.subfoco}`}
+                    <span className="text-slate-400 dark:text-zinc-500 text-[11px]">
+                      (Gabarito Oficial: <strong>{q?.correctAnswer || '?'}</strong>)
                     </span>
                   </div>
 
-                  <div className="flex items-center gap-2 text-xs text-slate-400 dark:text-zinc-500">
-                    <Clock className="w-3.5 h-3.5" />
-                    <span>{dateStr}</span>
+                  {/* Seletor do Motivo do Erro */}
+                  <div className="flex items-center gap-2 justify-start sm:justify-end">
+                    <span className="text-slate-500 dark:text-zinc-400 shrink-0">Motivo:</span>
+                    <select
+                      value={currentReasonKey || 'sem_classificacao'}
+                      onChange={(e) => {
+                        const val = e.target.value === 'sem_classificacao' ? undefined : (e.target.value as ErrorReasonType);
+                        onUpdateAnswerMeta(questionId, { errorReason: val });
+                      }}
+                      className={`text-xs font-medium px-2.5 py-1 rounded-xl border focus:outline-hidden cursor-pointer ${
+                        reasonConfig
+                          ? `${reasonConfig.bg} ${reasonConfig.text} ${reasonConfig.border} font-bold`
+                          : 'bg-white dark:bg-zinc-900 border-slate-200 dark:border-zinc-800 text-slate-800 dark:text-zinc-200'
+                      }`}
+                    >
+                      <option value="sem_classificacao">Classificar motivo do erro...</option>
+                      {Object.entries(ERROR_REASON_CONFIG).map(([k, cfg]) => (
+                        <option key={k} value={k}>
+                          {cfg.label}
+                        </option>
+                      ))}
+                    </select>
                   </div>
                 </div>
 
                 {/* Enunciado da Questão */}
-                <div className="text-slate-900 dark:text-zinc-100 text-xs sm:text-sm leading-relaxed font-normal">
-                  {q?.statement ? (
-                    <p className="whitespace-pre-line line-clamp-4 hover:line-clamp-none transition-all">
-                      {q.statement}
-                    </p>
-                  ) : (
-                    <p className="text-slate-400 dark:text-zinc-500 italic">
-                      {isLoadingQuestions ? 'Carregando enunciado da questão...' : 'Enunciado disponível na resolução.'}
-                    </p>
-                  )}
+                <div className="text-slate-900 dark:text-zinc-100 text-xs sm:text-sm leading-relaxed line-clamp-4 font-normal">
+                  {q?.statement || 'Carregando enunciado da questão...'}
                 </div>
 
-                {/* Bloco Comparativo Visual: Resposta do Aluno vs Gabarito Oficial */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 p-3 rounded-2xl bg-slate-50 dark:bg-zinc-900/60 border border-slate-200/70 dark:border-zinc-800/60 text-xs">
-                  <div className="flex items-center gap-2.5">
-                    <div className="w-7 h-7 rounded-lg bg-rose-500/15 border border-rose-500/30 text-rose-600 dark:text-rose-400 font-bold font-mono flex items-center justify-center shrink-0">
-                      {answer.previousLetter || answer.letter}
-                    </div>
-                    <div>
-                      <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-zinc-500 block">
-                        {answer.previousLetter ? 'Você Havia Marcado Antes' : 'Você Marcou'}
-                      </span>
-                      <span className="font-semibold text-rose-600 dark:text-rose-400">
-                        Alternativa {answer.previousLetter || answer.letter} (Incorreta)
-                      </span>
-                      {answer.previousLetter && isRecuperada && (
-                        <span className="text-[10px] text-emerald-600 dark:text-emerald-400 block font-semibold mt-0.5">
-                          ✓ Superada na revisão (Alternativa {answer.letter})
-                        </span>
-                      )}
-                    </div>
-                  </div>
-
-                  <div className="flex items-center gap-2.5">
-                    <div className="w-7 h-7 rounded-lg bg-emerald-500/15 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 font-bold font-mono flex items-center justify-center shrink-0">
-                      {q?.correctAnswer || '?'}
-                    </div>
-                    <div>
-                      <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-zinc-500 block">
-                        Gabarito Oficial
-                      </span>
-                      <span className="font-semibold text-emerald-600 dark:text-emerald-400">
-                        Alternativa {q?.correctAnswer || 'Oficial da Banca'}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Seletor Metacognitivo: Motivo do Erro */}
-                <div className="space-y-1.5 pt-1">
-                  <div className="flex items-center justify-between text-xs">
-                    <span className="font-bold text-slate-700 dark:text-zinc-300 flex items-center gap-1.5">
-                      <Brain className="w-3.5 h-3.5 text-slate-400" />
-                      Classificação Metacognitiva (Por que você errou?):
-                    </span>
-                    {currentReason && (
-                      <span className="text-[11px] text-slate-500 dark:text-zinc-400 italic">
-                        {currentReason.desc}
-                      </span>
-                    )}
-                  </div>
-
-                  <div className="flex flex-wrap items-center gap-1.5">
-                    {Object.entries(ERROR_REASON_CONFIG).map(([reasonKey, config]) => {
-                      const isSelected = currentReasonKey === reasonKey;
-                      return (
-                        <button
-                          key={reasonKey}
-                          type="button"
-                          onClick={() => {
-                            const next = isSelected ? undefined : (reasonKey as ErrorReasonType);
-                            onUpdateAnswerMeta(questionId, { errorReason: next });
-                          }}
-                          className={`px-2.5 py-1 rounded-xl text-xs font-semibold transition-all cursor-pointer flex items-center gap-1.5 border ${
-                            isSelected
-                              ? `${config.bg} ${config.text} ${config.border} shadow-xs font-bold scale-102`
-                              : 'bg-slate-100/70 dark:bg-zinc-900/60 text-slate-600 dark:text-zinc-400 border-slate-200/70 dark:border-zinc-800 hover:text-slate-900 dark:hover:text-zinc-200'
-                          }`}
-                        >
-                          <span>{config.icon}</span>
-                          <span>{config.label}</span>
-                          {isSelected && <Check className="w-3 h-3 ml-0.5" />}
-                        </button>
-                      );
-                    })}
-                  </div>
-                </div>
-
-                {/* Área de Re-tentativa Interativa no Próprio Card */}
-                {isRetrying && q?.options && q.options.length > 0 && (
-                  <div className="p-4 rounded-2xl bg-slate-50 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 space-y-3 animate-in fade-in duration-150">
-                    <div className="flex items-center justify-between">
-                      <span className="text-xs font-bold text-slate-800 dark:text-zinc-200 flex items-center gap-1.5">
-                        <RotateCcw className="w-3.5 h-3.5 text-rose-500" />
-                        Tente responder novamente agora:
+                {/* Treino de Retrial Embutido no Card (Se o usuário clicou em "Refazer") */}
+                {isRetrying && q && (
+                  <div className="p-4 rounded-2xl bg-slate-50 dark:bg-zinc-900/90 border border-slate-200 dark:border-zinc-800 space-y-3 animate-in fade-in duration-150">
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="font-bold text-slate-800 dark:text-zinc-200 flex items-center gap-1.5">
+                        <Zap className="w-3.5 h-3.5 text-amber-500 fill-amber-500" />
+                        Refazer Questão (Treino Imediato):
                       </span>
                       <button
                         type="button"
                         onClick={() => setRetryingQuestionId(null)}
-                        className="text-xs text-slate-400 hover:text-slate-600 cursor-pointer"
+                        className="text-slate-400 hover:text-slate-600 dark:hover:text-zinc-200"
                       >
-                        Fechar
+                        <X className="w-4 h-4" />
                       </button>
                     </div>
 
                     <div className="space-y-2">
-                      {q.options.map((opt) => {
-                        const isChosen = currentRetryOption === opt.letter;
+                      {q.options?.map((opt) => {
+                        const isSelected = selectedRetryOption[questionId] === opt.letter;
                         return (
                           <div
                             key={opt.letter}
@@ -751,52 +1013,43 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
                                 [questionId]: opt.letter
                               }))
                             }
-                            className={`p-3 rounded-xl border text-xs flex items-start gap-3 cursor-pointer transition-all ${
-                              isChosen
-                                ? 'bg-white dark:bg-zinc-800 border-slate-900 dark:border-white shadow-xs font-medium'
-                                : 'bg-white/60 dark:bg-zinc-800/40 border-slate-200 dark:border-zinc-800 text-slate-700 dark:text-zinc-300 hover:bg-white dark:hover:bg-zinc-800'
+                            className={`p-3 rounded-xl border text-xs flex items-start gap-2.5 cursor-pointer transition-all ${
+                              isSelected
+                                ? 'bg-slate-900 dark:bg-white text-white dark:text-black font-semibold border-transparent shadow-xs'
+                                : 'bg-white dark:bg-zinc-900 border-slate-200 dark:border-zinc-800 text-slate-800 dark:text-zinc-200 hover:bg-slate-50 dark:hover:bg-zinc-800'
                             }`}
                           >
-                            <span
-                              className={`w-6 h-6 rounded-md font-mono font-bold flex items-center justify-center shrink-0 text-xs ${
-                                isChosen
-                                  ? 'bg-slate-900 dark:bg-white text-white dark:text-black'
-                                  : 'bg-slate-100 dark:bg-zinc-700 text-slate-700 dark:text-zinc-200'
-                              }`}
-                            >
+                            <span className="w-5 h-5 rounded-md font-mono font-bold flex items-center justify-center shrink-0 text-[11px] bg-slate-200/50 dark:bg-zinc-800">
                               {opt.letter}
                             </span>
-                            <span className="leading-relaxed pt-0.5">{opt.text}</span>
+                            <span className="flex-1 leading-relaxed">{opt.text}</span>
                           </div>
                         );
                       })}
                     </div>
 
-                    <div className="flex justify-end gap-2 pt-1">
+                    <div className="flex justify-end gap-2 pt-2">
                       <button
                         type="button"
                         onClick={() => setRetryingQuestionId(null)}
-                        className="px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-500 hover:text-slate-800 cursor-pointer"
+                        className="px-3 py-1.5 rounded-xl text-xs font-semibold text-slate-600 dark:text-zinc-400 hover:bg-slate-200 dark:hover:bg-zinc-800 transition-colors"
                       >
                         Cancelar
                       </button>
                       <button
                         type="button"
-                        disabled={!currentRetryOption}
-                        onClick={() => handleConfirmRetry(questionId)}
-                        className={`px-4 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer shadow-xs ${
-                          currentRetryOption
-                            ? 'bg-emerald-600 hover:bg-emerald-500 text-white shadow-emerald-600/20'
-                            : 'bg-slate-200 dark:bg-zinc-800 text-slate-400 cursor-not-allowed'
-                        }`}
+                        disabled={!selectedRetryOption[questionId]}
+                        onClick={() => handleQuickRetryAnswer(questionId)}
+                        className="px-4 py-1.5 rounded-xl text-xs font-bold text-white transition-all cursor-pointer shadow-xs disabled:opacity-40"
+                        style={{ backgroundColor: accentConfig.primaryHex }}
                       >
-                        Confirmar Nova Resposta
+                        Confirmar Gabarito
                       </button>
                     </div>
                   </div>
                 )}
 
-                {/* Comentário do Professor & Justificativa Completa (Expansível) */}
+                {/* Comentário Padrão-Ouro da Banca (Expansível) */}
                 {isCommentOpen && q?.commentary && (
                   <div className="p-4 rounded-2xl bg-emerald-50/70 dark:bg-emerald-950/20 border border-emerald-200 dark:border-emerald-800/50 space-y-2 animate-in fade-in duration-150">
                     <div className="flex items-center gap-1.5 text-xs font-bold text-emerald-800 dark:text-emerald-300">
@@ -897,10 +1150,10 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
                   </div>
 
                   <div className="flex flex-wrap items-center gap-2">
-                    {/* Botão Revisar às Cegas (Sessão Dedicada sem Spoilers) */}
+                    {/* Botão Revisar às Cegas (Sessão Dedicada com Embaralhamento) */}
                     <button
                       type="button"
-                      onClick={() => setReviewSessionQuestionIds([questionId])}
+                      onClick={() => handleStartNewSession([questionId])}
                       className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold text-white transition-all cursor-pointer shadow-xs hover:scale-102"
                       style={{ backgroundColor: accentConfig.primaryHex }}
                     >
