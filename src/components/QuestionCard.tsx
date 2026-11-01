@@ -55,6 +55,8 @@ interface QuestionCardProps {
   savedFolderIds?: string[];
   activeHighlighterColor?: HighlighterColor;
   onSelectHighlighterColor?: (color: HighlighterColor) => void;
+  isStrikethroughActive?: boolean;
+  onToggleStrikethrough?: () => void;
 }
 
 export type HighlighterColor = 'yellow' | 'green' | 'pink' | 'blue' | 'orange' | 'purple';
@@ -127,10 +129,13 @@ export const HIGHLIGHTER_COLORS: Record<
   }
 };
 
+export type TextMarkStyle = 'highlight' | 'strike';
+
 interface TextHighlight {
   id: string;
   text: string;
   color: HighlighterColor;
+  style?: TextMarkStyle;
 }
 
 // Verifica se o texto da alternativa é uma imagem (URL ou caminho local)
@@ -161,7 +166,9 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   onSaveToFolder,
   savedFolderIds = [],
   activeHighlighterColor: propHighlighterColor,
-  onSelectHighlighterColor
+  onSelectHighlighterColor,
+  isStrikethroughActive = false,
+  onToggleStrikethrough
 }) => {
   const { accentConfig } = useTheme();
 
@@ -485,33 +492,128 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     activeQuestion.references
   ]);
 
-  // Captura seleção de texto dentro do enunciado e destaca automaticamente com a cor ativa
+  // Helper que verifica se o caractere faz parte de uma palavra (suporte a acentuação e números)
+  const isWordCharacter = (char: string) => /[\p{L}\p{N}_]/u.test(char);
+
+  // Expande a seleção para as bordas completas das palavras para nunca quebrar palavras ao meio
+  const expandRangeToWordBoundaries = (range: Range, statementText: string): string => {
+    try {
+      // 1. Expande o início se estiver no meio de uma palavra em nó de texto
+      if (range.startContainer.nodeType === Node.TEXT_NODE) {
+        const text = range.startContainer.textContent || '';
+        let startOffset = range.startOffset;
+        if (startOffset > 0 && isWordCharacter(text[startOffset - 1])) {
+          while (startOffset > 0 && isWordCharacter(text[startOffset - 1])) {
+            startOffset--;
+          }
+          range.setStart(range.startContainer, startOffset);
+        }
+      }
+
+      // 2. Expande o final se estiver no meio de uma palavra em nó de texto
+      if (range.endContainer.nodeType === Node.TEXT_NODE) {
+        const text = range.endContainer.textContent || '';
+        let endOffset = range.endOffset;
+        if (endOffset < text.length && isWordCharacter(text[endOffset])) {
+          while (endOffset < text.length && isWordCharacter(text[endOffset])) {
+            endOffset++;
+          }
+          range.setEnd(range.endContainer, endOffset);
+        }
+      }
+    } catch {
+      // continua com seleção padrão se DOM range manipulation falhar
+    }
+
+    let result = range.toString().trim();
+
+    // 3. Fallback inteligente usando o enunciado completo
+    if (statementText && result.length >= 2) {
+      const idx = statementText.indexOf(result);
+      if (idx !== -1) {
+        let start = idx;
+        while (start > 0 && isWordCharacter(statementText[start - 1])) {
+          start--;
+        }
+        let end = idx + result.length;
+        while (end < statementText.length && isWordCharacter(statementText[end])) {
+          end++;
+        }
+        result = statementText.slice(start, end).trim();
+      }
+    }
+
+    return result;
+  };
+
+  // Captura seleção de texto dentro do enunciado e destaca ou risca automaticamente com palavras inteiras
   const handleStatementMouseUp = () => {
     const selection = window.getSelection();
     if (!selection || selection.isCollapsed) {
       return;
     }
 
-    const selectedText = selection.toString().trim();
-    if (selectedText.length >= 2) {
-      addHighlight(selectedText, activeHighlighterColor);
+    try {
+      const range = selection.getRangeAt(0);
+      const snappedText = expandRangeToWordBoundaries(range, question.statement);
+      if (snappedText.length >= 2) {
+        if (isStrikethroughActive) {
+          addHighlight(snappedText, 'yellow', 'strike');
+        } else {
+          addHighlight(snappedText, activeHighlighterColor, 'highlight');
+        }
+      }
+    } catch {
+      const selectedText = selection.toString().trim();
+      if (selectedText.length >= 2) {
+        if (isStrikethroughActive) {
+          addHighlight(selectedText, 'yellow', 'strike');
+        } else {
+          addHighlight(selectedText, activeHighlighterColor, 'highlight');
+        }
+      }
     }
   };
 
-  const addHighlight = (text: string, color: HighlighterColor) => {
+  const addHighlight = (text: string, color: HighlighterColor, style: TextMarkStyle = 'highlight') => {
     if (!text.trim()) return;
-    // Evita duplicar exatamente o mesmo trecho com a mesma cor
-    const alreadyExists = highlights.some((h) => h.text === text && h.color === color);
-    if (!alreadyExists) {
+    setHighlights((prev) => {
+      // Se já houver marcação no mesmo texto, remove para sobrescrever/atualizar
+      const filtered = prev.filter((h) => h.text.toLowerCase() !== text.toLowerCase());
       const newHighlight: TextHighlight = {
         id: `hl-${Date.now()}-${Math.random().toString(36).slice(2, 6)}`,
         text,
-        color
+        color,
+        style
       };
-      setHighlights((prev) => [...prev, newHighlight]);
-    }
+      return [...filtered, newHighlight];
+    });
     window.getSelection()?.removeAllRanges();
   };
+
+  // Listener para riscar imediatamente caso o usuário tenha texto selecionado e clique na barra superior
+  useEffect(() => {
+    const handleApplyStrike = () => {
+      const selection = window.getSelection();
+      if (selection && !selection.isCollapsed) {
+        try {
+          const range = selection.getRangeAt(0);
+          const snappedText = expandRangeToWordBoundaries(range, question.statement);
+          if (snappedText.length >= 2) {
+            addHighlight(snappedText, 'yellow', 'strike');
+          }
+        } catch {
+          const raw = selection.toString().trim();
+          if (raw.length >= 2) {
+            addHighlight(raw, 'yellow', 'strike');
+          }
+        }
+      }
+    };
+
+    window.addEventListener('apply-strikethrough-selection', handleApplyStrike);
+    return () => window.removeEventListener('apply-strikethrough-selection', handleApplyStrike);
+  }, [question.statement, isStrikethroughActive]);
 
   const removeHighlight = (id: string) => {
     setHighlights((prev) => prev.filter((h) => h.id !== id));
@@ -843,6 +945,19 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
           );
 
           if (matchedHl) {
+            if (matchedHl.style === 'strike') {
+              return (
+                <span
+                  key={i}
+                  onClick={() => removeHighlight(matchedHl.id)}
+                  title="Clique para remover o tachado (risco)"
+                  className="cursor-pointer line-through decoration-rose-500/80 dark:decoration-rose-400 decoration-[2.5px] text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300 font-medium px-0.5 rounded transition-all hover:bg-rose-500/10"
+                >
+                  {part}
+                </span>
+              );
+            }
+
             const colorConfig = HIGHLIGHTER_COLORS[matchedHl.color] || HIGHLIGHTER_COLORS.yellow;
 
             return (
@@ -876,8 +991,9 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   );
   const isUserCorrect = isAnswered && (isAnuladaQuestion || pendingSelected === resolvedCorrectAnswer);
 
-  const selectionColorClass =
-    activeHighlighterColor === 'green'
+  const selectionColorClass = isStrikethroughActive
+    ? 'selection:bg-rose-200 dark:selection:bg-rose-900 selection:text-rose-950 dark:selection:text-rose-100'
+    : activeHighlighterColor === 'green'
       ? 'selection:bg-emerald-300 dark:selection:bg-emerald-400 selection:text-black dark:selection:text-black'
       : activeHighlighterColor === 'pink'
       ? 'selection:bg-pink-300 dark:selection:bg-pink-400 selection:text-black dark:selection:text-black'

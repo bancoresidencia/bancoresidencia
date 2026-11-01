@@ -199,6 +199,7 @@ export const SIX_FILTER_SPECIALTIES = [
 
 // Dados temporais parametrizados por período
 const quickPeriodConfig: Record<string, { factor: number; label: string; trendVolume: string; trendAproveitamento: string }> = {
+  '1d': { factor: 0.1, label: '1D', trendVolume: '+10.0%', trendAproveitamento: '+1.5%' },
   '7d': { factor: 0.22, label: '7D', trendVolume: '+18.0%', trendAproveitamento: '-2.1%' },
   '30d': { factor: 0.52, label: '30D', trendVolume: '+24.5%', trendAproveitamento: '+4.2%' },
   'mes': { factor: 0.42, label: 'Mês', trendVolume: '+16.3%', trendAproveitamento: '+3.1%' },

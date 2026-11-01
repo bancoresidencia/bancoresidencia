@@ -234,22 +234,20 @@ export const OfficialExams: React.FC<OfficialExamsProps> = ({ onStartExam }) => 
                   setSelectedYear(null);
                   setSelectedExam(null);
                 }}
-                className={`flex items-center gap-2 px-3.5 py-2 rounded-2xl text-xs font-bold transition-all cursor-pointer whitespace-nowrap shrink-0 ${
-                  isSelected
+                className={`flex items-center gap-2 px-3.5 py-2 rounded-2xl text-xs font-bold transition-all cursor-pointer whitespace-nowrap shrink-0 ${isSelected
                     ? 'text-white shadow-xs'
                     : 'text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/60'
-                }`}
+                  }`}
                 style={{
                   backgroundColor: isSelected ? accentConfig.primaryHex : undefined
                 }}
               >
                 <span>{m.title}</span>
                 <span
-                  className={`text-[10px] font-black px-1.5 py-0.2 rounded-md ${
-                    isSelected
+                  className={`text-[10px] font-black px-1.5 py-0.2 rounded-md ${isSelected
                       ? 'bg-white/20 text-white'
                       : 'bg-slate-200/80 dark:bg-slate-800 text-slate-600 dark:text-slate-300'
-                  }`}
+                    }`}
                 >
                   {m.examsCount}
                 </span>
@@ -317,11 +315,10 @@ export const OfficialExams: React.FC<OfficialExamsProps> = ({ onStartExam }) => 
                 key={feat.id}
                 type="button"
                 onClick={() => handleSelectInstitution(feat)}
-                className={`px-2.5 py-1 rounded-xl text-xs font-bold transition-all cursor-pointer shrink-0 border ${
-                  selectedInstitution?.id === feat.id
+                className={`px-2.5 py-1 rounded-xl text-xs font-bold transition-all cursor-pointer shrink-0 border ${selectedInstitution?.id === feat.id
                     ? 'border-blue-500 text-blue-600 dark:text-blue-400 bg-blue-500/10'
                     : 'bg-white dark:bg-slate-900/60 border-slate-200 dark:border-slate-800 text-slate-600 dark:text-slate-300 hover:border-slate-300 dark:hover:border-slate-700'
-                }`}
+                  }`}
               >
                 {feat.shortName}
               </button>
@@ -432,22 +429,20 @@ export const OfficialExams: React.FC<OfficialExamsProps> = ({ onStartExam }) => 
                       setSelectedYear(y.year);
                       setSelectedExam(null);
                     }}
-                    className={`flex items-center gap-2 px-4 py-2.5 rounded-2xl font-mono font-bold text-xs transition-all cursor-pointer shrink-0 border ${
-                      isActive
+                    className={`flex items-center gap-2 px-4 py-2.5 rounded-2xl font-mono font-bold text-xs transition-all cursor-pointer shrink-0 border ${isActive
                         ? 'text-white shadow-xs border-transparent'
                         : 'bg-white dark:bg-[var(--bg-card)] border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:border-zinc-300 dark:hover:border-zinc-700'
-                    }`}
+                      }`}
                     style={{
                       backgroundColor: isActive ? accentConfig.primaryHex : undefined
                     }}
                   >
                     <span className="text-sm font-black">{y.year}</span>
                     <span
-                      className={`text-[10px] px-1.5 py-0.2 rounded-md ${
-                        isActive
+                      className={`text-[10px] px-1.5 py-0.2 rounded-md ${isActive
                           ? 'bg-white/20 text-white'
                           : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 border border-slate-200/60 dark:border-slate-700/60'
-                      }`}
+                        }`}
                     >
                       {y.examsCount} {y.examsCount === 1 ? 'caderno' : 'cadernos'}
                     </span>
@@ -476,14 +471,20 @@ export const OfficialExams: React.FC<OfficialExamsProps> = ({ onStartExam }) => 
                     ? `Caderno ${exam.booklet}`
                     : exam.assessmentType || 'Caderno Geral Oficial';
 
+                  // Reconciliação inteligente de Total Nominal
+                  const STANDARD_TIERS = [120, 100, 80, 75, 60, 50, 45, 40, 30, 25];
+                  const annCount = exam.annulledCount || 0;
+                  const sumCount = exam.questionCount + annCount;
+                  const isReconciledByAnnulled = !STANDARD_TIERS.includes(exam.questionCount) && STANDARD_TIERS.includes(sumCount);
+                  const nominalTotal = isReconciledByAnnulled ? sumCount : exam.questionCount;
+
                   return (
                     <div
                       key={exam.id}
-                      className={`bento-card bg-white dark:bg-[var(--bg-card)] border rounded-3xl p-5 sm:p-6 transition-all duration-200 flex flex-col justify-between space-y-4 shadow-xs ${
-                        isSelected
+                      className={`bento-card bg-white dark:bg-[var(--bg-card)] border rounded-3xl p-5 sm:p-6 transition-all duration-200 flex flex-col justify-between space-y-4 shadow-xs ${isSelected
                           ? 'ring-2 ring-blue-500 border-transparent shadow-md'
                           : 'border-slate-200 dark:border-slate-800/80 hover:border-slate-300 dark:hover:border-slate-700'
-                      }`}
+                        }`}
                     >
                       <div className="space-y-2">
                         <div className="flex items-center justify-between gap-2">
@@ -492,10 +493,10 @@ export const OfficialExams: React.FC<OfficialExamsProps> = ({ onStartExam }) => 
                           </h4>
                         </div>
 
-                        {/* Metadados limpos sem anuladas e sem alertas */}
+                        {/* Metadados com Total Nominal limpos */}
                         <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400">
                           <span className="font-bold text-slate-700 dark:text-slate-300">
-                            {exam.questionCount} questões
+                            {nominalTotal} questões
                           </span>
                           <span>•</span>
                           <span>Objetiva</span>
@@ -511,7 +512,10 @@ export const OfficialExams: React.FC<OfficialExamsProps> = ({ onStartExam }) => 
                               selectedInstitution.shortName,
                               exam.year,
                               selectedInstitution.name,
-                              exam,
+                              {
+                                ...exam,
+                                questionCount: nominalTotal
+                              },
                               'exam'
                             )
                           }
@@ -529,7 +533,10 @@ export const OfficialExams: React.FC<OfficialExamsProps> = ({ onStartExam }) => 
                               selectedInstitution.shortName,
                               exam.year,
                               selectedInstitution.name,
-                              exam,
+                              {
+                                ...exam,
+                                questionCount: nominalTotal
+                              },
                               'study'
                             )
                           }
