@@ -157,6 +157,22 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
     setSelectedPlanModal(plan);
   };
 
+  const handleStartPlanCheckout = (planId: string, mode: 'register' | 'login' = 'register') => {
+    if (typeof window !== 'undefined') {
+      try {
+        sessionStorage.setItem('pending_checkout_plan', planId);
+        localStorage.setItem('pending_checkout_plan', planId);
+        const url = new URL(window.location.href);
+        url.searchParams.set('plan', planId);
+        url.searchParams.set('checkout', '1');
+        window.history.replaceState({}, '', url.toString());
+      } catch {
+        // ignore
+      }
+    }
+    onOpenAuth(mode, planId);
+  };
+
   const scrollToSection = (id: string) => {
     const el = document.getElementById(id);
     if (el) {
@@ -634,7 +650,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
                   <div className="mt-8 pt-4">
                     <button
                       type="button"
-                      onClick={() => onOpenAuth('register', plan.id)}
+                      onClick={() => handleStartPlanCheckout(plan.id, 'register')}
                       className={`w-full py-3 px-4 rounded-xl text-xs font-extrabold transition-all cursor-pointer flex items-center justify-center gap-2 ${
                         isAnual
                           ? 'bg-blue-600 hover:bg-blue-500 text-white shadow-lg shadow-blue-500/25'
@@ -840,7 +856,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
                 type="button"
                 onClick={() => {
                   setSelectedPlanModal(null);
-                  onOpenAuth('register', selectedPlanModal.id);
+                  handleStartPlanCheckout(selectedPlanModal.id, 'register');
                 }}
                 className="w-full py-3 px-4 rounded-xl text-xs font-extrabold text-white shadow-lg transition-all hover:scale-102 cursor-pointer flex items-center justify-center gap-2"
                 style={{ backgroundColor: accentConfig.primaryHex }}
@@ -853,7 +869,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
                 type="button"
                 onClick={() => {
                   setSelectedPlanModal(null);
-                  onOpenAuth('login', selectedPlanModal.id);
+                  handleStartPlanCheckout(selectedPlanModal.id, 'login');
                 }}
                 className="w-full py-2.5 px-4 rounded-xl text-xs font-bold text-slate-700 dark:text-slate-300 bg-slate-100 dark:bg-slate-800/80 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all cursor-pointer text-center"
               >

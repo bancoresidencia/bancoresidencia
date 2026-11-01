@@ -128,7 +128,8 @@ import { OfficialExamItem } from '@/types/officialExams';
 import { useToast } from '@/components/Toast';
 import { SubscriptionModal } from '@/components/SubscriptionModal';
 import { useSubscription } from '@/hooks/useSubscription';
-import { PLANS, PlanDefinition } from '@/config/plans';
+import { EmbeddedCheckoutScreen } from '@/components/EmbeddedCheckoutScreen';
+import { PLANS, PlanDefinition, PlanId } from '@/config/plans';
 import {
   Stethoscope,
   Menu,
@@ -196,6 +197,34 @@ export default function Home() {
   const [pendingCheckoutPlan, setPendingCheckoutPlan] = useState<PlanDefinition | null>(null);
   const [selectedCheckoutPlan, setSelectedCheckoutPlan] = useState<PlanDefinition | null>(null);
   const [isLimitReachedModalOpen, setIsLimitReachedModalOpen] = useState(false);
+
+  // Detecta intenção de compra pendente (URL params ou localStorage)
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    try {
+      const searchParams = new URLSearchParams(window.location.search);
+      const planParam = searchParams.get('plan') as PlanId | null;
+      const isCheckoutParam = searchParams.get('checkout') === '1';
+
+      const storedPlan = (sessionStorage.getItem('pending_checkout_plan') || localStorage.getItem('pending_checkout_plan')) as PlanId | null;
+
+      const targetPlanId = (planParam && PLANS[planParam]) ? planParam : (storedPlan && PLANS[storedPlan]) ? storedPlan : null;
+
+      if (targetPlanId && PLANS[targetPlanId]) {
+        const planDef = PLANS[targetPlanId];
+        setPendingCheckoutPlan(planDef);
+
+        if (!isAuthenticated || !user) {
+          if (isCheckoutParam || planParam) {
+            setAuthModal({ isOpen: true, mode: 'register', planTitle: targetPlanId });
+          }
+        }
+      }
+    } catch {
+      // ignore
+    }
+  }, [isAuthenticated, user]);
 
   const handleOpenAuth = useCallback((mode: 'login' | 'register' = 'login', planIdentifier?: string) => {
     if (planIdentifier) {
@@ -2013,10 +2042,10 @@ export default function Home() {
       <div className="min-h-screen bg-[var(--bg-page)] text-[var(--foreground)] flex flex-col">
         <LandingPage
           onOpenAuth={(mode = 'login', planTitle) => {
-            setAuthModal({ isOpen: true, mode, planTitle });
+            handleOpenAuth(mode, planTitle);
           }}
           onLoginDemo={() => {
-            setAuthModal({ isOpen: true, mode: 'login' });
+            handleOpenAuth('login');
           }}
         />
 
@@ -2027,12 +2056,65 @@ export default function Home() {
                 initialMode={authModal.mode}
                 selectedPlanTitle={authModal.planTitle}
                 onClose={() => setAuthModal({ isOpen: false, mode: 'login' })}
-                onSuccess={() => setAuthModal({ isOpen: false, mode: 'login' })}
+                onSuccess={(intendedPlan) => {
+                  setAuthModal({ isOpen: false, mode: 'login' });
+                  const target = (intendedPlan || authModal.planTitle) as PlanId | undefined;
+                  if (target && PLANS[target]) {
+                    setPendingCheckoutPlan(PLANS[target]);
+                  } else {
+                    const stored = (sessionStorage.getItem('pending_checkout_plan') || localStorage.getItem('pending_checkout_plan')) as PlanId | null;
+                    if (stored && PLANS[stored]) {
+                      setPendingCheckoutPlan(PLANS[stored]);
+                    }
+                  }
+                }}
               />
             </div>
           </div>
         )}
       </div>
+    );
+  }
+
+  // ---------------------------------------------------------------------------
+  // GATEKEEPER DE CHECKOUT ONBOARDING (ANTES DO ACESSO À PLATAFORMA)
+  // ---------------------------------------------------------------------------
+  const isUserFree = !user?.subscriptionPlan || user?.subscriptionPlan === 'free' || isSubscriptionExpired;
+  if (pendingCheckoutPlan && isUserFree && !isAdmin) {
+    return (
+      <EmbeddedCheckoutScreen
+        initialPlan={pendingCheckoutPlan}
+        onSuccess={() => {
+          setPendingCheckoutPlan(null);
+          if (typeof window !== 'undefined') {
+            try {
+              sessionStorage.removeItem('pending_checkout_plan');
+              localStorage.removeItem('pending_checkout_plan');
+              const url = new URL(window.location.href);
+              url.searchParams.delete('plan');
+              url.searchParams.delete('checkout');
+              window.history.replaceState({}, '', url.pathname);
+            } catch {
+              // ignore
+            }
+          }
+        }}
+        onTestFree={() => {
+          setPendingCheckoutPlan(null);
+          if (typeof window !== 'undefined') {
+            try {
+              sessionStorage.removeItem('pending_checkout_plan');
+              localStorage.removeItem('pending_checkout_plan');
+              const url = new URL(window.location.href);
+              url.searchParams.delete('plan');
+              url.searchParams.delete('checkout');
+              window.history.replaceState({}, '', url.pathname);
+            } catch {
+              // ignore
+            }
+          }
+        }}
+      />
     );
   }
 

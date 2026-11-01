@@ -19,6 +19,7 @@
     "upload:knowledge": "node scripts/upload_knowledge_to_supabase.mjs",
     "pull:knowledge": "node scripts/sync_knowledge_from_supabase.mjs",
     "status:gabaritos": "node scripts/check_all_specialties_status.mjs",
+    "export:hierarchy": "node scripts/export_complete_hierarchy.mjs",
     "check:google": "node scripts/check_google_auth.mjs",
     "status:coleta": "python scripts/coletor_provaderesidencia/monitor.py",
     "sync:gabaritos": "node scripts/sync_gabaritos_from_supabase.mjs",

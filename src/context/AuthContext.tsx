@@ -255,10 +255,21 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         }
       }
 
+      // Preserva intenção de plano pendente se houver no storage
+      let callbackNext = '/';
+      if (typeof window !== 'undefined') {
+        const pendingPlan = localStorage.getItem('pending_checkout_plan') || sessionStorage.getItem('pending_checkout_plan');
+        if (pendingPlan) {
+          callbackNext = `/?plan=${encodeURIComponent(pendingPlan)}&checkout=1`;
+        }
+      }
+
+      const finalRedirectTo = `${redirectUrl}/auth/callback?next=${encodeURIComponent(callbackNext)}`;
+
       const { error } = await supabase.auth.signInWithOAuth({
         provider: 'google',
         options: {
-          redirectTo: redirectUrl
+          redirectTo: finalRedirectTo
         }
       });
 

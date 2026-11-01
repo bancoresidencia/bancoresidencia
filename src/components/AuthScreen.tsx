@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 
 interface AuthScreenProps {
-  onSuccess?: () => void;
+  onSuccess?: (planTitle?: string) => void;
   initialMode?: 'login' | 'register';
   onClose?: () => void;
   selectedPlanTitle?: string;
@@ -35,6 +35,12 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
 }) => {
   const { login, loginWithGoogle, register } = useAuth();
   const { accentConfig } = useTheme();
+
+  const planDisplayName = selectedPlanTitle === 'monthly' ? 'Plano Mensal'
+    : selectedPlanTitle === 'semiannual' ? 'Plano Semestral'
+    : selectedPlanTitle === 'annual' ? 'Plano Anual'
+    : selectedPlanTitle === 'biennial' ? 'Plano Bienal'
+    : selectedPlanTitle;
 
   // 'login' | 'register'
   const [mode, setMode] = useState<'login' | 'register'>(initialMode);
@@ -99,7 +105,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
       const res = await login(email, password);
       if (res.success) {
         setSuccessMsg('Login realizado com sucesso! Redirecionando...');
-        if (onSuccess) setTimeout(onSuccess, 500);
+        if (onSuccess) setTimeout(() => onSuccess(selectedPlanTitle), 500);
       } else {
         setErrorMsg(res.message || 'Falha ao realizar login.');
       }
@@ -145,7 +151,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
 
       if (res.success) {
         setSuccessMsg('Conta criada com sucesso! Seja bem-vindo ao Banco Residência.');
-        if (onSuccess) setTimeout(onSuccess, 600);
+        if (onSuccess) setTimeout(() => onSuccess(selectedPlanTitle), 600);
       } else {
         setErrorMsg(res.message || 'Não foi possível cadastrar.');
       }
@@ -222,14 +228,20 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
 
           {/* Destaque do Plano Selecionado (se houver) */}
           {selectedPlanTitle && (
-            <div className="mt-4 px-3.5 py-2.5 rounded-2xl bg-blue-500/10 border border-blue-500/25 text-blue-700 dark:text-blue-300 text-xs font-semibold flex items-center justify-between gap-2 animate-fadeIn">
-              <div className="flex items-center gap-2">
-                <Sparkles className="w-4 h-4 text-blue-600 dark:text-blue-400 shrink-0" />
-                <span>Plano selecionado: <strong className="font-extrabold">{selectedPlanTitle}</strong></span>
+            <div className="mt-4 p-3.5 rounded-2xl bg-gradient-to-r from-blue-500/10 via-emerald-500/10 to-transparent border border-blue-500/25 text-xs animate-fadeIn space-y-1.5">
+              <div className="flex items-center justify-between gap-2">
+                <div className="flex items-center gap-2 text-blue-700 dark:text-blue-300 font-bold">
+                  <Sparkles className="w-4 h-4 text-blue-600 dark:text-blue-400 shrink-0" />
+                  <span>Plano selecionado: <strong className="font-extrabold text-slate-900 dark:text-white">{planDisplayName}</strong></span>
+                </div>
+                <span className="text-[10px] font-black uppercase tracking-wider bg-blue-600 text-white px-2 py-0.5 rounded-md">
+                  100% Liberado
+                </span>
               </div>
-              <span className="text-[10px] font-bold uppercase tracking-wider bg-blue-600 text-white px-2 py-0.5 rounded-md">
-                Todas as funções
-              </span>
+              <div className="flex items-center gap-1.5 text-[11px] font-semibold text-emerald-700 dark:text-emerald-400">
+                <ShieldCheck className="w-3.5 h-3.5 shrink-0" />
+                <span>Garantia de 7 dias com <strong>Reembolso Instantâneo em 1 clique</strong>.</span>
+              </div>
             </div>
           )}
 
