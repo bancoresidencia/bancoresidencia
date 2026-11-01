@@ -57,7 +57,8 @@ import {
   XAxis,
   YAxis,
   Tooltip,
-  CartesianGrid
+  CartesianGrid,
+  type PieSectorDataItem
 } from 'recharts';
 import { UserStats, QuestionList, ActiveTab, Modalidade, UserAnswerItem, PeriodFilter } from '@/types';
 import { UterusIcon, PregnantWomanIcon } from './StatsDashboard';
@@ -1683,7 +1684,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           setHoveredPieIndex(index);
                         }}
                         onMouseLeave={() => setHoveredPieIndex(null)}
-                        onClick={(entry: Record<string, unknown>, index: number) => {
+                        onClick={(entry: PieSectorDataItem, index: number) => {
                           const item = entry as { id?: string; payload?: { id?: string } } | undefined;
                           const targetId = item?.id || item?.payload?.id || (typeof index === 'number' && donutData[index]?.id);
                           if (targetId) {
