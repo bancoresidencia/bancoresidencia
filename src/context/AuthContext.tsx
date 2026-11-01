@@ -244,11 +244,20 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const loginWithGoogle = async (): Promise<{ success: boolean; message?: string }> => {
     try {
-      const origin = typeof window !== 'undefined' ? window.location.origin : '';
+      // Define URL de retorno com prioridade para o domínio de produção oficial
+      let redirectUrl = 'https://bancoresidencia-kappa.vercel.app';
+      if (typeof window !== 'undefined') {
+        if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+          redirectUrl = window.location.origin;
+        } else {
+          redirectUrl = window.location.origin || 'https://bancoresidencia-kappa.vercel.app';
+        }
+      }
+
       const { error } = await supabase.auth.signInWithOAuth({
         provider: 'google',
         options: {
-          redirectTo: origin
+          redirectTo: redirectUrl
         }
       });
 
