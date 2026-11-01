@@ -1,6 +1,6 @@
 'use client';
 
-import React, { createContext, useContext, useState, useCallback, useMemo, useEffect } from 'react';
+import React, { createContext, useContext, useState, useCallback, useMemo } from 'react';
 import { useAuth } from '@/context/AuthContext';
 import { PlanDefinition } from '@/config/plans';
 import { SubscriptionModal } from '@/components/SubscriptionModal';
