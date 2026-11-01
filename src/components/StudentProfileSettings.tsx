@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { useAuth } from '@/context/AuthContext';
 import { useTheme } from '@/context/ThemeContext';
+import { validatePasswordRequirements } from '@/utils/security';
 import {
   User,
   Lock,
@@ -189,8 +190,9 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
       return;
     }
 
-    if (newPassword.length < 6) {
-      setStatusMsg({ type: 'error', text: 'A nova senha deve ter no mínimo 6 caracteres.' });
+    const validation = validatePasswordRequirements(newPassword);
+    if (!validation.isValid) {
+      setStatusMsg({ type: 'error', text: validation.errorMessage || 'A nova senha deve conter no mínimo 6 caracteres, uma letra maiúscula, um número e um símbolo.' });
       return;
     }
 
@@ -731,6 +733,47 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
                 />
               </div>
             </div>
+
+            {/* Checklist de requisitos para troca de senha */}
+            {(() => {
+              const val = validatePasswordRequirements(newPassword);
+              return (
+                <div className="p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200/80 dark:border-slate-800 text-[11px] space-y-2">
+                  <div className="flex items-center justify-between text-[10px] font-bold text-slate-500 uppercase tracking-wider">
+                    <span>Requisitos obrigatórios da nova senha:</span>
+                    <span className={val.isValid ? "text-emerald-600 dark:text-emerald-400 font-extrabold" : "text-slate-400"}>
+                      {val.isValid ? "Requisitos atendidos ✓" : "Obrigatório"}
+                    </span>
+                  </div>
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-[11px]">
+                    <div className={`flex items-center gap-1.5 transition-colors ${val.hasMinLength ? "text-emerald-600 dark:text-emerald-400 font-bold" : "text-slate-400 dark:text-slate-500"}`}>
+                      <div className={`w-3.5 h-3.5 rounded-full flex items-center justify-center text-[9px] shrink-0 ${val.hasMinLength ? "bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400" : "bg-slate-200 dark:bg-slate-800"}`}>
+                        {val.hasMinLength ? "✓" : "•"}
+                      </div>
+                      <span>Min 6 dígitos</span>
+                    </div>
+                    <div className={`flex items-center gap-1.5 transition-colors ${val.hasUppercase ? "text-emerald-600 dark:text-emerald-400 font-bold" : "text-slate-400 dark:text-slate-500"}`}>
+                      <div className={`w-3.5 h-3.5 rounded-full flex items-center justify-center text-[9px] shrink-0 ${val.hasUppercase ? "bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400" : "bg-slate-200 dark:bg-slate-800"}`}>
+                        {val.hasUppercase ? "✓" : "•"}
+                      </div>
+                      <span>1 Maiúscula</span>
+                    </div>
+                    <div className={`flex items-center gap-1.5 transition-colors ${val.hasNumber ? "text-emerald-600 dark:text-emerald-400 font-bold" : "text-slate-400 dark:text-slate-500"}`}>
+                      <div className={`w-3.5 h-3.5 rounded-full flex items-center justify-center text-[9px] shrink-0 ${val.hasNumber ? "bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400" : "bg-slate-200 dark:bg-slate-800"}`}>
+                        {val.hasNumber ? "✓" : "•"}
+                      </div>
+                      <span>1 Número</span>
+                    </div>
+                    <div className={`flex items-center gap-1.5 transition-colors ${val.hasSymbol ? "text-emerald-600 dark:text-emerald-400 font-bold" : "text-slate-400 dark:text-slate-500"}`}>
+                      <div className={`w-3.5 h-3.5 rounded-full flex items-center justify-center text-[9px] shrink-0 ${val.hasSymbol ? "bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400" : "bg-slate-200 dark:bg-slate-800"}`}>
+                        {val.hasSymbol ? "✓" : "•"}
+                      </div>
+                      <span>1 Símbolo</span>
+                    </div>
+                  </div>
+                </div>
+              );
+            })()}
 
             <div className="pt-2 flex justify-start">
               <button

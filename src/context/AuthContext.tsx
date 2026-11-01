@@ -3,6 +3,7 @@
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import { UserAccount, UpdateProfileData } from '@/types/auth';
 import { createClient } from '@/lib/supabase/client';
+import { validatePasswordRequirements } from '@/utils/security';
 
 const STORAGE_CURRENT_USER_KEY = 'bancoresidencia_current_user';
 
@@ -281,6 +282,11 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   }): Promise<{ success: boolean; message?: string }> => {
     const normalizedEmail = data.email.trim().toLowerCase();
 
+    const validation = validatePasswordRequirements(data.password);
+    if (!validation.isValid) {
+      return { success: false, message: validation.errorMessage || 'A senha não atende aos requisitos de segurança.' };
+    }
+
     try {
       const { data: res, error } = await supabase.auth.signUp({
         email: normalizedEmail,
@@ -366,6 +372,11 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const updatePassword = async (currentPassword: string, newPassword: string): Promise<{ success: boolean; message?: string }> => {
     if (!user) return { success: false, message: 'Usuário não autenticado.' };
+
+    const validation = validatePasswordRequirements(newPassword);
+    if (!validation.isValid) {
+      return { success: false, message: validation.errorMessage || 'A nova senha não atende aos requisitos de segurança.' };
+    }
 
     try {
       const { error } = await supabase.auth.updateUser({ password: newPassword });
