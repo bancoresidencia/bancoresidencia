@@ -179,7 +179,8 @@ export default function Home() {
     plan,
     questionsRemainingToday,
     canSolveQuestion,
-    incrementDailyCount
+    incrementDailyCount,
+    openUpgradeModal
   } = useSubscription();
 
   const [authModal, setAuthModal] = useState<{
@@ -209,19 +210,14 @@ export default function Home() {
   }, []);
 
   const handleAuthSuccess = useCallback(() => {
-    setAuthModal((prev) => {
-      const isRegisterMode = prev.mode === 'register';
-      return { isOpen: false, mode: 'login' };
-    });
+    setAuthModal({ isOpen: false, mode: 'login' });
     if (pendingCheckoutPlan) {
-      setSelectedCheckoutPlan(pendingCheckoutPlan);
-      setIsUpgradeModalOpen(true);
+      openUpgradeModal(pendingCheckoutPlan);
       setPendingCheckoutPlan(null);
     } else {
-      setSelectedCheckoutPlan(null);
-      setIsUpgradeModalOpen(true);
+      openUpgradeModal();
     }
-  }, [pendingCheckoutPlan, setIsUpgradeModalOpen]);
+  }, [pendingCheckoutPlan, openUpgradeModal]);
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [sidebarCollapsed, setSidebarCollapsed] = useState<boolean>(true);

@@ -53,6 +53,7 @@ export interface PasswordValidationResult {
   isValid: boolean;
   hasMinLength: boolean;
   hasUppercase: boolean;
+  hasLowercase: boolean;
   hasNumber: boolean;
   hasSymbol: boolean;
   errorMessage?: string;
@@ -60,20 +61,21 @@ export interface PasswordValidationResult {
 
 /**
  * Validação de políticas de senha da plataforma
- * Regras: Mínimo 6 caracteres, pelo menos uma letra maiúscula, um número e um símbolo.
+ * Regras: Mínimo 6 caracteres, letras maiúsculas e minúsculas, um número e um símbolo.
  */
 export function validatePasswordRequirements(password: string): PasswordValidationResult {
   const pwd = password || '';
   const hasMinLength = pwd.length >= 6;
   const hasUppercase = /[A-Z]/.test(pwd);
+  const hasLowercase = /[a-z]/.test(pwd);
   const hasNumber = /[0-9]/.test(pwd);
   const hasSymbol = /[^A-Za-z0-9]/.test(pwd);
 
   let errorMessage: string | undefined;
   if (!hasMinLength) {
     errorMessage = 'A senha deve conter no mínimo 6 caracteres.';
-  } else if (!hasUppercase) {
-    errorMessage = 'A senha deve conter pelo menos uma letra maiúscula (A-Z).';
+  } else if (!hasUppercase || !hasLowercase) {
+    errorMessage = 'A senha deve conter letras maiúsculas e minúsculas.';
   } else if (!hasNumber) {
     errorMessage = 'A senha deve conter pelo menos um número (0-9).';
   } else if (!hasSymbol) {
@@ -81,9 +83,10 @@ export function validatePasswordRequirements(password: string): PasswordValidati
   }
 
   return {
-    isValid: hasMinLength && hasUppercase && hasNumber && hasSymbol,
+    isValid: hasMinLength && hasUppercase && hasLowercase && hasNumber && hasSymbol,
     hasMinLength,
     hasUppercase,
+    hasLowercase,
     hasNumber,
     hasSymbol,
     errorMessage

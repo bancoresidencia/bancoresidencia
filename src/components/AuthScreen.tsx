@@ -533,41 +533,22 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
                 </div>
               </div>
 
-              {/* Checklist de requisitos de segurança da senha */}
-              <div className="p-3 rounded-2xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200/80 dark:border-slate-800 text-[11px] space-y-2">
-                <div className="flex items-center justify-between text-[10px] font-bold text-slate-500 uppercase tracking-wider">
-                  <span>Requisitos de segurança da senha:</span>
-                  <span className={passwordValidation.isValid ? 'text-emerald-600 dark:text-emerald-400 font-extrabold' : 'text-slate-400'}>
-                    {passwordValidation.isValid ? 'Requisitos atendidos ✓' : 'Obrigatório'}
-                  </span>
-                </div>
-                <div className="grid grid-cols-2 gap-2 text-[11px]">
-                  <div className={`flex items-center gap-1.5 transition-colors ${passwordValidation.hasMinLength ? 'text-emerald-600 dark:text-emerald-400 font-bold' : 'text-slate-400 dark:text-slate-500'}`}>
-                    <div className={`w-3.5 h-3.5 rounded-full flex items-center justify-center text-[9px] shrink-0 ${passwordValidation.hasMinLength ? 'bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400' : 'bg-slate-200 dark:bg-slate-800'}`}>
-                      {passwordValidation.hasMinLength ? '✓' : '•'}
-                    </div>
-                    <span>Mínimo 6 caracteres</span>
-                  </div>
-                  <div className={`flex items-center gap-1.5 transition-colors ${passwordValidation.hasUppercase ? 'text-emerald-600 dark:text-emerald-400 font-bold' : 'text-slate-400 dark:text-slate-500'}`}>
-                    <div className={`w-3.5 h-3.5 rounded-full flex items-center justify-center text-[9px] shrink-0 ${passwordValidation.hasUppercase ? 'bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400' : 'bg-slate-200 dark:bg-slate-800'}`}>
-                      {passwordValidation.hasUppercase ? '✓' : '•'}
-                    </div>
-                    <span>1 Letra maiúscula (A-Z)</span>
-                  </div>
-                  <div className={`flex items-center gap-1.5 transition-colors ${passwordValidation.hasNumber ? 'text-emerald-600 dark:text-emerald-400 font-bold' : 'text-slate-400 dark:text-slate-500'}`}>
-                    <div className={`w-3.5 h-3.5 rounded-full flex items-center justify-center text-[9px] shrink-0 ${passwordValidation.hasNumber ? 'bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400' : 'bg-slate-200 dark:bg-slate-800'}`}>
-                      {passwordValidation.hasNumber ? '✓' : '•'}
-                    </div>
-                    <span>1 Número (0-9)</span>
-                  </div>
-                  <div className={`flex items-center gap-1.5 transition-colors ${passwordValidation.hasSymbol ? 'text-emerald-600 dark:text-emerald-400 font-bold' : 'text-slate-400 dark:text-slate-500'}`}>
-                    <div className={`w-3.5 h-3.5 rounded-full flex items-center justify-center text-[9px] shrink-0 ${passwordValidation.hasSymbol ? 'bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400' : 'bg-slate-200 dark:bg-slate-800'}`}>
-                      {passwordValidation.hasSymbol ? '✓' : '•'}
-                    </div>
-                    <span>1 Símbolo (!@#$%*)</span>
-                  </div>
-                </div>
-              </div>
+              {/* Indicação sutil de requisitos de segurança da senha */}
+              <p
+                className={`text-[11px] leading-relaxed transition-colors ${
+                  password && !passwordValidation.isValid
+                    ? 'text-amber-600 dark:text-amber-400 font-medium'
+                    : 'text-slate-500 dark:text-slate-400'
+                }`}
+              >
+                {password && !passwordValidation.isValid ? (
+                  <span>A senha deve conter letras maiúsculas e minúsculas, um número e um símbolo.</span>
+                ) : password && passwordValidation.isValid ? (
+                  <span className="text-emerald-600 dark:text-emerald-400 font-medium">✓ Senha atende a todos os requisitos</span>
+                ) : (
+                  <span>A senha deve conter letras maiúsculas e minúsculas, um número e um símbolo.</span>
+                )}
+              </p>
 
               {/* Botão Cadastrar */}
               <button
