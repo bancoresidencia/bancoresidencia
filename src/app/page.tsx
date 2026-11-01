@@ -128,6 +128,7 @@ import { OfficialExamItem } from '@/types/officialExams';
 import { useToast } from '@/components/Toast';
 import { SubscriptionModal } from '@/components/SubscriptionModal';
 import { useSubscription } from '@/hooks/useSubscription';
+import { PLANS, PlanDefinition } from '@/config/plans';
 import {
   Stethoscope,
   Menu,
@@ -190,6 +191,37 @@ export default function Home() {
     mode: 'login'
   });
   const [activeTab, setActiveTab] = useState<ActiveTab>('home');
+
+  const [pendingCheckoutPlan, setPendingCheckoutPlan] = useState<PlanDefinition | null>(null);
+  const [selectedCheckoutPlan, setSelectedCheckoutPlan] = useState<PlanDefinition | null>(null);
+  const [isLimitReachedModalOpen, setIsLimitReachedModalOpen] = useState(false);
+
+  const handleOpenAuth = useCallback((mode: 'login' | 'register' = 'login', planIdentifier?: string) => {
+    if (planIdentifier) {
+      const found = Object.values(PLANS).find(
+        (p) => p.id === planIdentifier || p.name.toLowerCase() === planIdentifier.toLowerCase()
+      );
+      if (found) {
+        setPendingCheckoutPlan(found);
+      }
+    }
+    setAuthModal({ isOpen: true, mode, planTitle: planIdentifier });
+  }, []);
+
+  const handleAuthSuccess = useCallback(() => {
+    setAuthModal((prev) => {
+      const isRegisterMode = prev.mode === 'register';
+      return { isOpen: false, mode: 'login' };
+    });
+    if (pendingCheckoutPlan) {
+      setSelectedCheckoutPlan(pendingCheckoutPlan);
+      setIsUpgradeModalOpen(true);
+      setPendingCheckoutPlan(null);
+    } else {
+      setSelectedCheckoutPlan(null);
+      setIsUpgradeModalOpen(true);
+    }
+  }, [pendingCheckoutPlan, setIsUpgradeModalOpen]);
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [sidebarCollapsed, setSidebarCollapsed] = useState<boolean>(true);
@@ -1203,6 +1235,14 @@ export default function Home() {
   ]);
 
   const handleAnswer = (questionId: string, selectedLetter: 'A' | 'B' | 'C' | 'D' | 'E', isCorrect: boolean) => {
+    if (!canSolveQuestion()) {
+      setIsLimitReachedModalOpen(true);
+      setSelectedCheckoutPlan(null);
+      setIsUpgradeModalOpen(true);
+      return;
+    }
+    incrementDailyCount();
+
     const q = supabaseQuestions.find((item) => item.id === questionId);
     const answerTimestamp = Date.now();
     const isAnuladaQuestion = Boolean(q?.isAnulada || q?.correctAnswer === 'ANULADA');

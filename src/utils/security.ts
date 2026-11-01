@@ -48,3 +48,44 @@ export function isPrivilegedRole(role: unknown): boolean {
   if (!role || typeof role !== 'string') return false;
   return VALID_ADMIN_ROLES.has(role.toLowerCase().trim());
 }
+
+export interface PasswordValidationResult {
+  isValid: boolean;
+  hasMinLength: boolean;
+  hasUppercase: boolean;
+  hasNumber: boolean;
+  hasSymbol: boolean;
+  errorMessage?: string;
+}
+
+/**
+ * Validação de políticas de senha da plataforma
+ * Regras: Mínimo 6 caracteres, pelo menos uma letra maiúscula, um número e um símbolo.
+ */
+export function validatePasswordRequirements(password: string): PasswordValidationResult {
+  const pwd = password || '';
+  const hasMinLength = pwd.length >= 6;
+  const hasUppercase = /[A-Z]/.test(pwd);
+  const hasNumber = /[0-9]/.test(pwd);
+  const hasSymbol = /[^A-Za-z0-9]/.test(pwd);
+
+  let errorMessage: string | undefined;
+  if (!hasMinLength) {
+    errorMessage = 'A senha deve conter no mínimo 6 caracteres.';
+  } else if (!hasUppercase) {
+    errorMessage = 'A senha deve conter pelo menos uma letra maiúscula (A-Z).';
+  } else if (!hasNumber) {
+    errorMessage = 'A senha deve conter pelo menos um número (0-9).';
+  } else if (!hasSymbol) {
+    errorMessage = 'A senha deve conter pelo menos um símbolo (ex: !@#$%&*?).';
+  }
+
+  return {
+    isValid: hasMinLength && hasUppercase && hasNumber && hasSymbol,
+    hasMinLength,
+    hasUppercase,
+    hasNumber,
+    hasSymbol,
+    errorMessage
+  };
+}

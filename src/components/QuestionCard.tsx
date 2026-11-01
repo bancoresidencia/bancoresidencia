@@ -27,9 +27,11 @@ import {
   RotateCcw,
   Sparkles,
   AlertCircle,
-  Loader2
+  Loader2,
+  Zap
 } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
+import { useSubscription } from '@/hooks/useSubscription';
 import { QuestionComments } from './QuestionComments';
 import { SendQuestionToFolderModal } from './SendQuestionToFolderModal';
 import { Folder } from '@/types';
@@ -171,6 +173,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   onToggleStrikethrough
 }) => {
   const { accentConfig } = useTheme();
+  const { plan: userPlan, dailyResolvedCount, isFreeLimitReached, setIsUpgradeModalOpen } = useSubscription();
 
   // Modal para salvar em pastas de 3 níveis
   const [isFolderModalOpen, setIsFolderModalOpen] = useState(false);
@@ -699,6 +702,11 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   const handleConfirmAnswer = async () => {
     if (isAnswered || !pendingSelected || isSubmittingAnswer) return;
 
+    if (isFreeLimitReached) {
+      setIsUpgradeModalOpen(true);
+      return;
+    }
+
     // Se o gabarito oficial já estiver carregado no objeto da questão ou deduzido via fallback:
     if (resolvedCorrectAnswer) {
       setIsAnswered(true);
@@ -1019,6 +1027,20 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
               <span className="text-slate-400">•</span>
               <span>{question.year}</span>
             </span>
+
+            {/* Badge de Cota Diária do Plano Free (10 questões/dia) */}
+            {userPlan === 'free' && (
+              <button
+                type="button"
+                onClick={() => setIsUpgradeModalOpen(true)}
+                title="Você tem 10 questões gratuitas por dia. Clique para desbloquear o acesso ilimitado!"
+                className="inline-flex items-center gap-1.5 px-2.5 py-1 text-[11px] font-bold rounded-xl border border-amber-500/30 bg-amber-500/10 text-amber-700 dark:text-amber-400 hover:bg-amber-500/20 transition-all cursor-pointer shadow-2xs"
+              >
+                <Zap className="w-3 h-3 text-amber-500 fill-amber-500" />
+                <span>{dailyResolvedCount}/10 hoje</span>
+                <span className="text-[10px] underline ml-0.5 font-extrabold">Liberar Ilimitado</span>
+              </button>
+            )}
 
             {/* Mini-card de Status de Resolução Anterior ou na Sessão */}
             {(hasPreviousAnswer || isAnswered) && (

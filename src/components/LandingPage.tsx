@@ -20,7 +20,7 @@ import {
 import { LandingDemoQuestionsSection } from '@/components/LandingDemoQuestionsSection';
 
 export interface PricingPlan {
-  id: 'mensal' | 'semestral' | 'anual' | 'bienal';
+  id: 'monthly' | 'semiannual' | 'annual' | 'biennial' | 'mensal' | 'semestral' | 'anual' | 'bienal';
   name: string;
   badge?: string;
   isPopular?: boolean;
@@ -34,7 +34,7 @@ export interface PricingPlan {
 
 const PRICING_PLANS: PricingPlan[] = [
   {
-    id: 'mensal',
+    id: 'monthly',
     name: 'Plano Mensal',
     pricePerMonth: '49,90',
     billingText: 'Cobrado mensalmente',
@@ -52,13 +52,13 @@ const PRICING_PLANS: PricingPlan[] = [
     ]
   },
   {
-    id: 'semestral',
+    id: 'semiannual',
     name: 'Plano Semestral',
     badge: 'RETA FINAL',
-    pricePerMonth: '39,90',
-    billingText: 'R$ 239,40 a cada 6 meses',
+    pricePerMonth: '29,90',
+    billingText: 'R$ 179,40 em até 6x de R$ 29,90',
     periodLabel: 'por mês',
-    savings: 'Economize 20%',
+    savings: 'Economize 40%',
     description: 'Planejado para o semestre de reta final e resolução intensa de provas.',
     features: [
       'Acesso completo a +130.000 questões comentadas',
@@ -72,14 +72,14 @@ const PRICING_PLANS: PricingPlan[] = [
     ]
   },
   {
-    id: 'anual',
+    id: 'annual',
     name: 'Plano Anual',
     badge: 'MAIS ESCOLHIDO',
     isPopular: true,
-    pricePerMonth: '29,90',
-    billingText: 'R$ 358,80 por ano (ou 12x de R$ 29,90)',
+    pricePerMonth: '25,90',
+    billingText: 'R$ 310,80 por ano em até 12x de R$ 25,90',
     periodLabel: 'por mês',
-    savings: 'Economize 40%',
+    savings: 'Economize 48%',
     description: 'A preparação completa de 1 ano para garantir sua vaga na residência dos sonhos.',
     features: [
       'Acesso completo a +130.000 questões comentadas',
@@ -93,7 +93,7 @@ const PRICING_PLANS: PricingPlan[] = [
     ]
   },
   {
-    id: 'bienal',
+    id: 'biennial',
     name: 'Plano Bienal',
     badge: 'MAIOR ECONOMIA',
     pricePerMonth: '19,90',
@@ -553,8 +553,8 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
           {/* Grid com os 4 Planos */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
             {PRICING_PLANS.map((plan) => {
-              const isAnual = plan.id === 'anual';
-              const isBienal = plan.id === 'bienal';
+              const isAnual = plan.id === 'annual' || plan.id === 'anual';
+              const isBienal = plan.id === 'biennial' || plan.id === 'bienal';
 
               return (
                 <div
@@ -634,7 +634,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
                   <div className="mt-8 pt-4">
                     <button
                       type="button"
-                      onClick={() => handleSelectPlan(plan)}
+                      onClick={() => onOpenAuth('register', plan.id)}
                       className={`w-full py-3 px-4 rounded-xl text-xs font-extrabold transition-all cursor-pointer flex items-center justify-center gap-2 ${
                         isAnual
                           ? 'bg-blue-600 hover:bg-blue-500 text-white shadow-lg shadow-blue-500/25'
@@ -840,7 +840,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
                 type="button"
                 onClick={() => {
                   setSelectedPlanModal(null);
-                  onOpenAuth('register', selectedPlanModal.name);
+                  onOpenAuth('register', selectedPlanModal.id);
                 }}
                 className="w-full py-3 px-4 rounded-xl text-xs font-extrabold text-white shadow-lg transition-all hover:scale-102 cursor-pointer flex items-center justify-center gap-2"
                 style={{ backgroundColor: accentConfig.primaryHex }}
@@ -853,7 +853,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
                 type="button"
                 onClick={() => {
                   setSelectedPlanModal(null);
-                  onOpenAuth('login', selectedPlanModal.name);
+                  onOpenAuth('login', selectedPlanModal.id);
                 }}
                 className="w-full py-2.5 px-4 rounded-xl text-xs font-bold text-slate-700 dark:text-slate-300 bg-slate-100 dark:bg-slate-800/80 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all cursor-pointer text-center"
               >

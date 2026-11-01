@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { X, Check, Sparkles, Zap, ShieldCheck } from 'lucide-react';
+import { X, Check, Sparkles, Zap, ShieldCheck, AlertCircle } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
 import { PlanType } from '@/hooks/useSubscription';
 import { PLANS, PlanDefinition } from '@/config/plans';
@@ -11,16 +11,24 @@ interface SubscriptionModalProps {
   isOpen: boolean;
   onClose: () => void;
   currentPlan?: PlanType;
+  initialPlan?: PlanDefinition | null;
+  limitReached?: boolean;
 }
 
 export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
   isOpen,
-  onClose
+  onClose,
+  initialPlan = null,
+  limitReached = false
 }) => {
   const { accentConfig } = useTheme();
-  const [selectedPlanForCheckout, setSelectedPlanForCheckout] = useState<PlanDefinition | null>(null);
+  const [selectedPlanOverride, setSelectedPlanOverride] = useState<PlanDefinition | null | 'NONE'>(null);
 
   if (!isOpen) return null;
+
+  const selectedPlanForCheckout = selectedPlanOverride === 'NONE'
+    ? null
+    : (selectedPlanOverride || initialPlan || null);
 
   const planList = [
     PLANS.biennial,
@@ -29,10 +37,15 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
     PLANS.monthly
   ];
 
+  const handleClose = () => {
+    setSelectedPlanOverride(null);
+    onClose();
+  };
+
   return (
     <div
       className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm animate-in fade-in"
-      onClick={onClose}
+      onClick={handleClose}
     >
       <div
         className="relative w-full max-w-5xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-3xl shadow-2xl p-6 sm:p-8 max-h-[92vh] overflow-y-auto"
@@ -40,21 +53,30 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
       >
         <button
           type="button"
-          onClick={onClose}
+          onClick={handleClose}
           className="absolute top-5 right-5 p-2 rounded-2xl bg-slate-100 dark:bg-slate-800 text-slate-500 hover:text-slate-800 dark:hover:text-white transition-colors z-10"
           aria-label="Fechar modal"
         >
           <X className="w-5 h-5" />
         </button>
 
+        {limitReached && !selectedPlanForCheckout && (
+          <div className="mb-6 p-4 rounded-2xl bg-amber-500/10 border border-amber-500/30 flex items-center gap-3 text-amber-700 dark:text-amber-400 text-xs font-semibold animate-in slide-in-from-top-2">
+            <AlertCircle className="w-5 h-5 shrink-0 text-amber-500" />
+            <div>
+              <strong>Limite Diário Atingido:</strong> Você resolveu suas 10 questões diárias gratuitas de hoje. Escolha um plano abaixo para ter resolução 100% ilimitada, métricas TRI calibradas e gabaritos completos!
+            </div>
+          </div>
+        )}
+
         {selectedPlanForCheckout ? (
           /* TELA DO CHECKOUT TRANSPARENTE MERCADO PAGO */
           <div className="max-w-2xl mx-auto py-2">
             <MercadoPagoCheckout
               plan={selectedPlanForCheckout}
-              onBack={() => setSelectedPlanForCheckout(null)}
+              onBack={() => setSelectedPlanOverride('NONE')}
               onSuccess={() => {
-                setSelectedPlanForCheckout(null);
+                setSelectedPlanOverride(null);
                 onClose();
               }}
             />
@@ -147,7 +169,7 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
                     <button
                       type="button"
                       onClick={() => {
-                        setSelectedPlanForCheckout(plan);
+                        setSelectedPlanOverride(plan);
                       }}
                       className={`w-full py-2.5 rounded-xl font-bold text-xs transition-transform hover:scale-[1.02] flex items-center justify-center gap-1.5 mt-2 ${
                         isHighlighted

@@ -18,7 +18,7 @@ export interface SubscriptionFeatures {
 export const PLAN_CONFIGS: Record<PlanType, SubscriptionFeatures> = {
   free: {
     name: 'Gratuito',
-    maxDailyQuestions: 25,
+    maxDailyQuestions: 10,
     hasIRTMetrics: false,
     hasOfficialExamsFull: false,
     hasCustomNotebooks: true,
@@ -48,6 +48,7 @@ export const PLAN_CONFIGS: Record<PlanType, SubscriptionFeatures> = {
 export function useSubscription() {
   const { user } = useAuth();
   const [isUpgradeModalOpen, setIsUpgradeModalOpen] = useState(false);
+  const [currentTimestamp] = useState(() => Date.now());
   const [dailyResolvedCount, setDailyResolvedCount] = useState<number>(() => {
     if (typeof window === 'undefined') return 0;
     try {
@@ -58,7 +59,34 @@ export function useSubscription() {
     }
   });
 
-  const plan: PlanType = (user?.subscriptionPlan as PlanType) || 'free';
+  // Checagem de Administrador / Curador
+  const isAdmin = Boolean(
+    user && (
+      user.role === 'admin' ||
+      user.role === 'curator' ||
+      user.role === 'curador' ||
+      user.role === 'superadmin'
+    )
+  );
+
+  // Checagem de Expiração da Assinatura
+  const isSubscriptionExpired = Boolean(
+    user?.subscriptionExpiresAt &&
+    new Date(user.subscriptionExpiresAt).getTime() <= currentTimestamp
+  );
+
+  // Plano Efetivo
+  let plan: PlanType = 'free';
+  if (isAdmin) {
+    plan = 'pro';
+  } else if (
+    (user?.subscriptionPlan === 'pro' || user?.subscriptionPlan === 'premium') &&
+    user?.subscriptionStatus === 'active' &&
+    !isSubscriptionExpired
+  ) {
+    plan = user.subscriptionPlan as PlanType;
+  }
+
   const planConfig = PLAN_CONFIGS[plan] || PLAN_CONFIGS.free;
 
   const incrementDailyCount = useCallback(() => {
@@ -75,10 +103,16 @@ export function useSubscription() {
   }, []);
 
   const canSolveQuestion = useCallback(() => {
-    if (user?.role === 'admin' || user?.role === 'curator') return true;
+    if (isAdmin) return true;
     if (planConfig.maxDailyQuestions === Infinity) return true;
     return dailyResolvedCount < planConfig.maxDailyQuestions;
-  }, [user?.role, planConfig.maxDailyQuestions, dailyResolvedCount]);
+  }, [isAdmin, planConfig.maxDailyQuestions, dailyResolvedCount]);
+
+  const isFreeLimitReached = Boolean(
+    !isAdmin &&
+    planConfig.maxDailyQuestions !== Infinity &&
+    dailyResolvedCount >= planConfig.maxDailyQuestions
+  );
 
   const questionsRemainingToday =
     planConfig.maxDailyQuestions === Infinity
@@ -88,10 +122,13 @@ export function useSubscription() {
   return {
     plan,
     planConfig,
+    isAdmin,
+    isSubscriptionExpired,
     isUpgradeModalOpen,
     setIsUpgradeModalOpen,
     dailyResolvedCount,
     questionsRemainingToday,
+    isFreeLimitReached,
     canSolveQuestion,
     incrementDailyCount
   };

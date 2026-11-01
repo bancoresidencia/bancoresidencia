@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { useAuth } from '@/context/AuthContext';
 import { useTheme } from '@/context/ThemeContext';
+import { validatePasswordRequirements } from '@/utils/security';
 import {
   Stethoscope,
   Mail,
@@ -82,6 +83,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
   };
 
   const passwordStrength = getPasswordStrength(password);
+  const passwordValidation = validatePasswordRequirements(password);
 
   const handleLoginSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -120,8 +122,9 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
       setErrorMsg('Por favor, insira um endereço de e-mail válido.');
       return;
     }
-    if (password.length < 6) {
-      setErrorMsg('A senha deve conter no mínimo 6 caracteres.');
+    const validation = validatePasswordRequirements(password);
+    if (!validation.isValid) {
+      setErrorMsg(validation.errorMessage || 'A senha deve conter no mínimo 6 caracteres, uma letra maiúscula, um número e um símbolo.');
       return;
     }
     if (password !== confirmPassword) {
@@ -496,7 +499,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
                       required
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
-                      placeholder="Mínimo 6 dígitos"
+                      placeholder="Letra, número e símbolo"
                       className="w-full px-3 py-2.5 text-xs bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400"
                     />
                   </div>
@@ -527,6 +530,42 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
                     placeholder="Repita a senha"
                     className="w-full px-3 py-2.5 text-xs bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400"
                   />
+                </div>
+              </div>
+
+              {/* Checklist de requisitos de segurança da senha */}
+              <div className="p-3 rounded-2xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200/80 dark:border-slate-800 text-[11px] space-y-2">
+                <div className="flex items-center justify-between text-[10px] font-bold text-slate-500 uppercase tracking-wider">
+                  <span>Requisitos de segurança da senha:</span>
+                  <span className={passwordValidation.isValid ? 'text-emerald-600 dark:text-emerald-400 font-extrabold' : 'text-slate-400'}>
+                    {passwordValidation.isValid ? 'Requisitos atendidos ✓' : 'Obrigatório'}
+                  </span>
+                </div>
+                <div className="grid grid-cols-2 gap-2 text-[11px]">
+                  <div className={`flex items-center gap-1.5 transition-colors ${passwordValidation.hasMinLength ? 'text-emerald-600 dark:text-emerald-400 font-bold' : 'text-slate-400 dark:text-slate-500'}`}>
+                    <div className={`w-3.5 h-3.5 rounded-full flex items-center justify-center text-[9px] shrink-0 ${passwordValidation.hasMinLength ? 'bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400' : 'bg-slate-200 dark:bg-slate-800'}`}>
+                      {passwordValidation.hasMinLength ? '✓' : '•'}
+                    </div>
+                    <span>Mínimo 6 caracteres</span>
+                  </div>
+                  <div className={`flex items-center gap-1.5 transition-colors ${passwordValidation.hasUppercase ? 'text-emerald-600 dark:text-emerald-400 font-bold' : 'text-slate-400 dark:text-slate-500'}`}>
+                    <div className={`w-3.5 h-3.5 rounded-full flex items-center justify-center text-[9px] shrink-0 ${passwordValidation.hasUppercase ? 'bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400' : 'bg-slate-200 dark:bg-slate-800'}`}>
+                      {passwordValidation.hasUppercase ? '✓' : '•'}
+                    </div>
+                    <span>1 Letra maiúscula (A-Z)</span>
+                  </div>
+                  <div className={`flex items-center gap-1.5 transition-colors ${passwordValidation.hasNumber ? 'text-emerald-600 dark:text-emerald-400 font-bold' : 'text-slate-400 dark:text-slate-500'}`}>
+                    <div className={`w-3.5 h-3.5 rounded-full flex items-center justify-center text-[9px] shrink-0 ${passwordValidation.hasNumber ? 'bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400' : 'bg-slate-200 dark:bg-slate-800'}`}>
+                      {passwordValidation.hasNumber ? '✓' : '•'}
+                    </div>
+                    <span>1 Número (0-9)</span>
+                  </div>
+                  <div className={`flex items-center gap-1.5 transition-colors ${passwordValidation.hasSymbol ? 'text-emerald-600 dark:text-emerald-400 font-bold' : 'text-slate-400 dark:text-slate-500'}`}>
+                    <div className={`w-3.5 h-3.5 rounded-full flex items-center justify-center text-[9px] shrink-0 ${passwordValidation.hasSymbol ? 'bg-emerald-100 dark:bg-emerald-950 text-emerald-600 dark:text-emerald-400' : 'bg-slate-200 dark:bg-slate-800'}`}>
+                      {passwordValidation.hasSymbol ? '✓' : '•'}
+                    </div>
+                    <span>1 Símbolo (!@#$%*)</span>
+                  </div>
                 </div>
               </div>
 
