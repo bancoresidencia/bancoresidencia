@@ -19,6 +19,7 @@
     "upload:knowledge": "node scripts/upload_knowledge_to_supabase.mjs",
     "pull:knowledge": "node scripts/sync_knowledge_from_supabase.mjs",
     "status:gabaritos": "node scripts/check_all_specialties_status.mjs",
+    "check:google": "node scripts/check_google_auth.mjs",
     "status:coleta": "python scripts/coletor_provaderesidencia/monitor.py",
     "sync:gabaritos": "node scripts/sync_gabaritos_from_supabase.mjs",
     "sync:medcurso": "node scripts/sync_medcurso_from_supabase.mjs",
@@ -40,10 +41,12 @@
     "solve:status": "node scripts/check_resolution_progress.mjs"
   },
   "dependencies": {
+    "@mercadopago/sdk-react": "^1.0.7",
     "@supabase/ssr": "^0.12.7",
     "@supabase/supabase-js": "^2.117.2",
     "clsx": "^2.1.1",
     "lucide-react": "^1.49.0",
+    "mercadopago": "^3.6.1",
     "mermaid": "^12.2.0",
     "next": "16.3.8",
     "pdf-parse": "^2.4.5",

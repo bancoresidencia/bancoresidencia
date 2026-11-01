@@ -25,6 +25,7 @@ interface AuthContextType {
   updateProfile: (data: UpdateProfileData) => Promise<{ success: boolean; message?: string }>;
   updatePassword: (currentPassword: string, newPassword: string) => Promise<{ success: boolean; message?: string }>;
   updateAvatar: (avatarUrl: string) => Promise<{ success: boolean; message?: string }>;
+  refreshUser: () => Promise<void>;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -71,6 +72,33 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         (supabaseUser.user_metadata?.picture as string) ||
         '';
 
+      const subscriptionPlan =
+        (profile as Record<string, unknown>)?.subscription_plan as 'free' | 'pro' | 'premium' ||
+        (supabaseUser.app_metadata?.subscription_plan as 'free' | 'pro' | 'premium') ||
+        (supabaseUser.user_metadata?.subscription_plan as 'free' | 'pro' | 'premium') ||
+        'free';
+
+      const subscriptionStatus =
+        (profile as Record<string, unknown>)?.subscription_status as 'active' | 'trialing' | 'canceled' | 'past_due' | 'inactive' | 'refunded' ||
+        (supabaseUser.app_metadata?.subscription_status as 'active' | 'trialing' | 'canceled' | 'past_due' | 'inactive' | 'refunded') ||
+        (supabaseUser.user_metadata?.subscription_status as 'active' | 'trialing' | 'canceled' | 'past_due' | 'inactive' | 'refunded') ||
+        'inactive';
+
+      const subscriptionDuration =
+        (profile as Record<string, unknown>)?.subscription_duration as 'monthly' | 'semiannual' | 'annual' | 'biennial' ||
+        (supabaseUser.user_metadata?.subscription_duration as 'monthly' | 'semiannual' | 'annual' | 'biennial') ||
+        undefined;
+
+      const subscriptionExpiresAt =
+        ((profile as Record<string, unknown>)?.subscription_expires_at as string) ||
+        (supabaseUser.user_metadata?.subscription_expires_at as string) ||
+        undefined;
+
+      const guaranteeExpiresAt =
+        ((profile as Record<string, unknown>)?.guarantee_expires_at as string) ||
+        (supabaseUser.user_metadata?.guarantee_expires_at as string) ||
+        undefined;
+
       return {
         id: supabaseUser.id,
         name,
@@ -85,6 +113,11 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         state: profile?.state || '',
         targetExamName,
         targetExamDate,
+        subscriptionPlan,
+        subscriptionStatus,
+        subscriptionDuration,
+        subscriptionExpiresAt,
+        guaranteeExpiresAt,
         createdAt: profile?.created_at || supabaseUser.created_at || new Date().toISOString()
       };
     } catch {
@@ -312,6 +345,18 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     return updateProfile({ avatarUrl });
   };
 
+  const refreshUser = useCallback(async () => {
+    try {
+      const { data: { user: currentUser } } = await supabase.auth.getUser();
+      if (currentUser) {
+        const updated = await mapSupabaseUserToAccount(currentUser);
+        setUser(updated);
+      }
+    } catch (err) {
+      console.error('Erro ao recarregar usuário:', err);
+    }
+  }, [supabase, mapSupabaseUserToAccount]);
+
   const isAdmin = Boolean(
     user &&
       (user.role === 'admin' ||
@@ -333,7 +378,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         logout,
         updateProfile,
         updatePassword,
-        updateAvatar
+        updateAvatar,
+        refreshUser
       }}
     >
       {children}

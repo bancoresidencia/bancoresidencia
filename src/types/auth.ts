@@ -12,8 +12,10 @@ export interface UserAccount {
   state?: string;
   role?: 'admin' | 'curator' | 'curador' | 'superadmin' | 'student';
   subscriptionPlan?: 'free' | 'pro' | 'premium';
-  subscriptionStatus?: 'active' | 'trialing' | 'canceled' | 'past_due' | 'inactive';
+  subscriptionStatus?: 'active' | 'trialing' | 'canceled' | 'past_due' | 'inactive' | 'refunded';
+  subscriptionDuration?: 'monthly' | 'semiannual' | 'annual' | 'biennial';
   subscriptionExpiresAt?: string;
+  guaranteeExpiresAt?: string;
   createdAt: string;
   targetExamName?: string;
   targetExamDate?: string;

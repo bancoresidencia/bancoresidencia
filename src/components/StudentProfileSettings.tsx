@@ -22,7 +22,8 @@ import {
   Crown,
   ShieldCheck,
   Check,
-  Zap
+  Zap,
+  RotateCcw
 } from 'lucide-react';
 
 interface StudentProfileSettingsProps {
@@ -45,7 +46,9 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
   onChangeFontSize,
   onLogout,
 }) => {
-  const { user, updateProfile, updatePassword, updateAvatar } = useAuth();
+  const { user, updateProfile, updatePassword, updateAvatar, refreshUser } = useAuth();
+  const [isRefunding, setIsRefunding] = useState(false);
+  const [refundMessage, setRefundMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
   const { accentConfig } = useTheme();
 
   // Abas de Configurações
@@ -211,6 +214,40 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
       setStatusMsg({ type: 'error', text: 'Erro ao processar a troca de senha.' });
     } finally {
       setLoading(false);
+    }
+  };
+
+
+  const handleRequestRefund = async () => {
+    if (!window.confirm('Tem certeza de que deseja solicitar o estorno integral da sua assinatura? Seu acesso PRO será revogado imediatamente e o estorno será processado pelo Mercado Pago de forma incontestável.')) {
+      return;
+    }
+
+    setIsRefunding(true);
+    setRefundMessage(null);
+
+    try {
+      const res = await fetch('/api/checkout/refund', { method: 'POST' });
+      const data = await res.json();
+
+      if (!res.ok || !data.success) {
+        throw new Error(data.error || 'Erro ao processar estorno.');
+      }
+
+      setRefundMessage({
+        type: 'success',
+        text: 'Reembolso aprovado com sucesso! O valor foi estornado e sua conta retornou ao plano gratuito.'
+      });
+      if (refreshUser) {
+        await refreshUser();
+      }
+    } catch (err) {
+      setRefundMessage({
+        type: 'error',
+        text: err instanceof Error ? err.message : 'Falha ao solicitar reembolso.'
+      });
+    } finally {
+      setIsRefunding(false);
     }
   };
 
@@ -944,6 +981,49 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
             </div>
 
             {/* Comparativo de Privilégios e Recursos */}
+            
+            {/* Mensagem de Feedback de Reembolso */}
+            {refundMessage && (
+              <div
+                className={`p-4 rounded-2xl text-xs font-semibold flex items-center gap-2.5 ${
+                  refundMessage.type === 'success'
+                    ? 'bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 text-emerald-800 dark:text-emerald-300'
+                    : 'bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-800 text-rose-800 dark:text-rose-300'
+                }`}
+              >
+                {refundMessage.type === 'success' ? <CheckCircle2 className="w-4 h-4 shrink-0" /> : <AlertCircle className="w-4 h-4 shrink-0" />}
+                <span>{refundMessage.text}</span>
+              </div>
+            )}
+
+            {/* Card de Garantia de 7 Dias e Cancelamento */}
+            {user?.subscriptionPlan === 'pro' && (
+              <div className="p-5 rounded-2xl border border-emerald-500/30 bg-emerald-500/5 dark:bg-emerald-950/20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                <div className="space-y-1">
+                  <div className="flex items-center gap-2 text-xs font-bold text-emerald-600 dark:text-emerald-400">
+                    <ShieldCheck className="w-4 h-4" />
+                    Garantia Incondicional de 7 Dias do Mercado Pago
+                  </div>
+                  <p className="text-xs text-slate-600 dark:text-slate-300">
+                    {user?.subscriptionExpiresAt
+                      ? `Assinatura ativa até ${new Date(user.subscriptionExpiresAt).toLocaleDateString('pt-BR')}. `
+                      : 'Assinatura ativa. '}
+                    Caso queira cancelar dentro do período de 7 dias, seu estorno é processado automaticamente sem burocracia.
+                  </p>
+                </div>
+
+                <button
+                  type="button"
+                  onClick={handleRequestRefund}
+                  disabled={isRefunding}
+                  className="px-4 py-2.5 rounded-xl border border-rose-300 dark:border-rose-800 text-rose-600 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/40 text-xs font-bold shrink-0 flex items-center gap-1.5 transition-all disabled:opacity-50"
+                >
+                  <RotateCcw className="w-3.5 h-3.5" />
+                  {isRefunding ? 'Processando Estorno...' : 'Solicitar Reembolso (7 Dias)'}
+                </button>
+              </div>
+            )}
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {/* Card Perfil do Assinante */}
               <div className={`p-5 rounded-2xl border transition-all ${
