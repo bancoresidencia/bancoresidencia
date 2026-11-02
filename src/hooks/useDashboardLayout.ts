@@ -25,6 +25,7 @@ export function useDashboardLayout(
               return {
                 ...def,
                 colSpan: found.colSpan ?? def.colSpan,
+                customHeight: found.customHeight ?? def.customHeight,
                 order: found.order ?? def.order,
                 isVisible: found.isVisible ?? def.isVisible,
                 settings: {
@@ -82,6 +83,20 @@ export function useDashboardLayout(
       setCards((prev) => {
         const next = prev.map((c) =>
           c.id === cardId ? { ...c, colSpan: newColSpan } : c
+        );
+        saveToStorage(next);
+        return next;
+      });
+    },
+    [saveToStorage]
+  );
+
+  // Atualiza altura personalizada (pixels) de um card específico
+  const updateCardHeight = useCallback(
+    (cardId: string, newHeight: number) => {
+      setCards((prev) => {
+        const next = prev.map((c) =>
+          c.id === cardId ? { ...c, customHeight: newHeight } : c
         );
         saveToStorage(next);
         return next;
@@ -201,6 +216,7 @@ export function useDashboardLayout(
     visibleCards,
     hiddenCards,
     updateColSpan,
+    updateCardHeight,
     updateCardSettings,
     moveCard,
     reorderCard,

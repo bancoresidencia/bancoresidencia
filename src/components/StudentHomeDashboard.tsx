@@ -1166,12 +1166,16 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     return '';
   });
 
+  const DEFAULT_GOOGLE_CLIENT_ID = '323022146503-csbd1pq8s2g22l3mghaaea4kocl2acfn.apps.googleusercontent.com';
+
   const [googleClientId, setGoogleClientId] = useState<string>(() => {
     if (typeof window !== 'undefined') {
-      return localStorage.getItem('bancoresidencia_google_client_id') || process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID || '';
+      return localStorage.getItem('bancoresidencia_google_client_id') || process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID || DEFAULT_GOOGLE_CLIENT_ID;
     }
-    return process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID || '';
+    return process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID || DEFAULT_GOOGLE_CLIENT_ID;
   });
+
+  const [showAdvancedClientId, setShowAdvancedClientId] = useState(false);
 
   const [exportingSlotId, setExportingSlotId] = useState<string | null>(null);
 
@@ -5954,20 +5958,14 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     </p>
                   </div>
                 ) : (
-                  <div className="space-y-3">
-                    <div>
-                      <label className="text-xs font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
-                        Google Client ID (OAuth 2.0)
-                      </label>
-                      <input
-                        type="text"
-                        value={googleClientId}
-                        onChange={(e) => setGoogleClientId(e.target.value)}
-                        placeholder="Ex: 123456789-abc.apps.googleusercontent.com"
-                        className="w-full text-xs px-3 py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#18181b] text-zinc-900 dark:text-white focus:outline-none focus:border-blue-500 transition-colors font-mono"
-                      />
-                      <p className="text-[10px] text-zinc-400 mt-1">
-                        Obtido no Google Cloud Console (Credenciais &gt; ID do cliente OAuth 2.0).
+                  <div className="space-y-4">
+                    <div className="p-4 rounded-2xl bg-blue-50/60 dark:bg-blue-950/20 border border-blue-200/60 dark:border-blue-900/40 text-xs space-y-1.5">
+                      <div className="font-bold text-blue-900 dark:text-blue-300 flex items-center gap-1.5">
+                        <GoogleIcon className="w-4 h-4" />
+                        <span>Sincronização Direta com Google Agenda</span>
+                      </div>
+                      <p className="text-[11px] text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                        Conecte sua conta do Google com 1 clique para ler sua rotina médica de hoje e salvar seus blocos de estudo da plataforma diretamente no seu calendário.
                       </p>
                     </div>
 
@@ -5975,11 +5973,36 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       type="button"
                       disabled={isSyncingCalendar || !googleClientId.trim()}
                       onClick={handleConnectGoogleViaApi}
-                      className="w-full py-3 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-zinc-900 dark:text-white text-xs font-bold flex items-center justify-center gap-2.5 transition-all shadow-xs cursor-pointer disabled:opacity-50"
+                      className="w-full py-3.5 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-zinc-900 dark:text-white text-xs font-bold flex items-center justify-center gap-2.5 transition-all shadow-sm cursor-pointer disabled:opacity-50 hover:shadow-md"
                     >
                       <GoogleIcon className="w-4 h-4" />
-                      <span>{isSyncingCalendar ? 'Abrindo autenticação Google...' : 'Entrar com Google e Autorizar Agenda'}</span>
+                      <span>{isSyncingCalendar ? 'Abrindo autenticação Google...' : 'Continuar com o Google'}</span>
                     </button>
+
+                    <div className="pt-0.5">
+                      <button
+                        type="button"
+                        onClick={() => setShowAdvancedClientId(!showAdvancedClientId)}
+                        className="text-[10px] text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 underline cursor-pointer"
+                      >
+                        {showAdvancedClientId ? 'Ocultar ID do Cliente' : 'Configurações de Desenvolvedor (Client ID)'}
+                      </button>
+
+                      {showAdvancedClientId && (
+                        <div className="mt-2 p-2.5 rounded-xl bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-800 space-y-1">
+                          <label className="text-[10px] font-bold text-zinc-700 dark:text-zinc-300 block">
+                            Google Client ID (OAuth 2.0)
+                          </label>
+                          <input
+                            type="text"
+                            value={googleClientId}
+                            onChange={(e) => setGoogleClientId(e.target.value)}
+                            placeholder="Ex: 123456789-abc.apps.googleusercontent.com"
+                            className="w-full text-[10px] px-2.5 py-1.5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#18181b] text-zinc-900 dark:text-white focus:outline-none focus:border-blue-500 transition-colors font-mono"
+                          />
+                        </div>
+                      )}
+                    </div>
                   </div>
                 )}
               </div>

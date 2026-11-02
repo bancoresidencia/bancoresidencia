@@ -18,6 +18,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Banco Residência Médica | Plataforma de Alta Performance",
   description: "Plataforma de alta performance para preparação para Residência Médica com métricas, percentil calibrado e simulados oficiais",
+  verification: {
+    google: "WcJXbqVmrkob5mCp0ref0IbF1ANcT76ldFjlicER4cQ",
+  },
   icons: {
     icon: [
       { url: "/favicon.svg", type: "image/svg+xml" },
@@ -45,6 +48,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
+        <meta name="google-site-verification" content="WcJXbqVmrkob5mCp0ref0IbF1ANcT76ldFjlicER4cQ" />
         <script
           dangerouslySetInnerHTML={{
             __html: `

@@ -336,3 +336,74 @@ html.light ::-webkit-scrollbar-thumb:hover {
   --medal-bg: #18181b;
   background-color: #18181b !important;
 }
+
+
+/* =========================================================================
+   DASHBOARD FIGMA FLUID CONTAINER QUERIES & ADAPTIVE CONTENT
+   Fontes, botões, números e espaçamentos reagem à largura do próprio card
+========================================================================= */
+.card-fluid-container {
+  container-type: inline-size;
+}
+
+/* 1. Modo Ultracompacto (< 280px / 1 a 3 colunas) */
+@container (max-width: 320px) {
+  .card-action-text {
+    display: none !important;
+  }
+}
+
+@container (max-width: 280px) {
+  .bento-card {
+    padding: 0.75rem !important;
+  }
+  .card-title, h1, h2, h4 {
+    font-size: 0.8rem !important;
+    line-height: 1.15 !important;
+  }
+  .tabular-nums, .text-3xl, .text-4xl, .text-2xl {
+    font-size: 1.25rem !important;
+    line-height: 1.2 !important;
+  }
+  .text-xs {
+    font-size: 0.65rem !important;
+  }
+  .card-actions-wrapper, .flex-wrap {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0.35rem !important;
+  }
+  .card-actions-wrapper button, button.sm\:w-auto {
+    width: 100% !important;
+    padding: 0.35rem 0.6rem !important;
+    font-size: 0.7rem !important;
+  }
+  .card-hide-on-compact {
+    display: none !important;
+  }
+}
+
+/* 2. Modo Médio (281px - 440px / 4 a 6 colunas) */
+@container (min-width: 281px) and (max-width: 440px) {
+  .bento-card {
+    padding: 1rem !important;
+  }
+  .tabular-nums, .text-3xl, .text-4xl {
+    font-size: 1.65rem !important;
+  }
+  .text-xs {
+    font-size: 0.72rem !important;
+  }
+}
+
+
+/* Controles de personalização interna (Ligar/Desligar ícones e detalhes) */
+.hide-all-icons svg:not(.figma-control svg):not(.figma-popover svg) {
+  display: none !important;
+}
+
+.hide-all-details .card-hide-on-compact,
+.hide-all-details .text-\[10px\],
+.hide-all-details .text-\[11px\] {
+  display: none !important;
+}

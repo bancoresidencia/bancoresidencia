@@ -1,4 +1,4 @@
-export type DashboardColSpan = 3 | 4 | 6 | 8 | 12;
+export type DashboardColSpan = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 
 export interface CardInternalSettings {
   showIcons?: boolean;
@@ -11,6 +11,7 @@ export interface DashboardCardConfig {
   title: string;
   description?: string;
   colSpan: DashboardColSpan;
+  customHeight?: number;
   order: number;
   isVisible: boolean;
   minColSpan?: DashboardColSpan;

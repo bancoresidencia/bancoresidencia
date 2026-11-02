@@ -3,11 +3,15 @@
 import React, { createContext, useContext } from 'react';
 import { DashboardColSpan, CardInternalSettings } from '@/types/dashboardLayout';
 
-interface CardLayoutContextValue {
+export interface CardLayoutContextValue {
   colSpan: DashboardColSpan;
   settings: CardInternalSettings;
   isSelected: boolean;
   isCustomizing: boolean;
+  isExtraSmall: boolean; // span <= 3
+  isSmall: boolean;      // span <= 5
+  isMedium: boolean;     // span 6..7
+  isLarge: boolean;      // span >= 8
 }
 
 const CardLayoutContext = createContext<CardLayoutContextValue>({
@@ -15,6 +19,10 @@ const CardLayoutContext = createContext<CardLayoutContextValue>({
   settings: { showIcons: true, showDetails: true, compactMode: false },
   isSelected: false,
   isCustomizing: false,
+  isExtraSmall: false,
+  isSmall: false,
+  isMedium: false,
+  isLarge: true,
 });
 
 export const CardLayoutProvider: React.FC<{
