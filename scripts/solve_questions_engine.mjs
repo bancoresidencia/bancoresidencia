@@ -103,9 +103,10 @@ function getRelevantBookThemes(specialty, tema) {
 
 // Modelos prioritários ordenados por maior cota diária e velocidade
 const AVAILABLE_MODELS = [
-  'gemini-3.1-flash-lite',
-  'gemini-3.1-flash-lite-preview',
+  'gemini-3.5-flash-lite',
   'gemini-flash-lite-latest',
+  'gemini-3.5-flash',
+  'gemini-3.6-flash',
   'gemini-3-flash-preview'
 ];
 
@@ -241,7 +242,8 @@ ${optionsSchemaExample}
           contents: [{ parts: [{ text: prompt }] }],
           generationConfig: {
             responseMimeType: 'application/json',
-            temperature: 0.15
+            temperature: 0.15,
+            maxOutputTokens: 8192
           }
         }),
         signal: controller.signal
@@ -258,20 +260,26 @@ ${optionsSchemaExample}
           continue;
         }
         if (res.status === 429) {
+          const isPerMinute =
+            errText.includes('PerMinute') ||
+            errText.includes('RequestsPerMinute') ||
+            errText.includes('rate limit exceeded') ||
+            errText.includes('RATE_LIMIT_EXCEEDED');
+
           const isDailyLimit =
-            errText.includes('requests per day limit exceeded') ||
-            errText.includes('GenerateRequestsPerDay') ||
-            errText.includes('PerDayPerProject') ||
-            errText.includes('per day') ||
-            errText.includes('exceeded your current quota') ||
-            errText.includes('quota');
+            !isPerMinute && (
+              errText.includes('requests per day limit exceeded') ||
+              errText.includes('GenerateRequestsPerDay') ||
+              errText.includes('PerDayPerProject') ||
+              errText.includes('per day')
+            );
 
           if (isDailyLimit) {
             markPairExhausted(keyIdx, activeModel, 'cota diária esgotada');
             continue;
           }
           // Limite transitório por minuto (RPM): aguarda brevemente e avança para outro par
-          const waitTime = Math.min(attempt * 1000, 3000);
+          const waitTime = Math.min(attempt * 1500, 5000);
           await new Promise(r => setTimeout(r, waitTime));
           continue;
         }

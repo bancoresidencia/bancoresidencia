@@ -296,6 +296,27 @@ html.light ::-webkit-scrollbar-thumb:hover {
   animation-play-state: paused;
 }
 
+/* Ticker continuo e suave da barra de anuncio promocional (Black de Lancamento) */
+@keyframes marqueeBanner {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-banner {
+  display: flex;
+  width: max-content;
+  animation: marqueeBanner 30s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee-banner:hover {
+  animation-play-state: paused;
+}
+
 /* Animação Hero da Medalha do Percentil Oficial (entra no centro do card e volta ao normal) */
 @keyframes medalTakeover {
   0% {

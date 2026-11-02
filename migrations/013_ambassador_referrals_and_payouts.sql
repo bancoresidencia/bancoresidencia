@@ -117,3 +117,4 @@ CREATE POLICY "Usuário insere solicitação de reembolso de plano"
   ON public.ambassador_refund_requests FOR INSERT
   TO authenticated
   WITH CHECK (user_id = auth.uid());
+

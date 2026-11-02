@@ -126,3 +126,9 @@ scripts/gemini_*.json
 scripts/gemini_*.html
 
 data/checkpoints/
+
+# Nexmed private session & progress
+scripts/nexmed_config.json
+scripts/nexmed_progress.json
+scripts/nexmed_questoes_gabaritos.jsonl
+scripts/*.jsonl

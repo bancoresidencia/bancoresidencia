@@ -250,3 +250,4 @@ if (testsPassed === testsTotal) {
 } else {
   process.exit(1);
 }
+

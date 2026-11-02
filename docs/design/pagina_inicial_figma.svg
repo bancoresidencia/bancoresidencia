@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 820" width="1440" height="820" style="background:#0a0c10; font-family:'Plus Jakarta Sans', Inter, -apple-system, sans-serif;">
+  <defs>
+    <style>
+      .font-sans { font-family: 'Plus Jakarta Sans', Inter, system-ui, -apple-system, sans-serif; }
+      .bold { font-weight: 700; }
+      .extrabold { font-weight: 800; }
+      .medium { font-weight: 500; }
+    </style>
+    <!-- Background Glow -->
+    <radialGradient id="heroGlow" cx="50%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- ========================================== -->
+  <!-- 1. BARRA BLACK DE LANÇAMENTO (TICKER)      -->
+  <!-- ========================================== -->
+  <g id="Top_Banner_Black_Lancamento">
+    <rect x="0" y="0" width="1440" height="38" fill="#070709" stroke="#f59e0b" stroke-opacity="0.3" stroke-width="1" />
+    
+    <g transform="translate(180, 24)">
+      <!-- Sparkle Icon -->
+      <path d="M0 -7 L2 -2 L7 0 L2 2 L0 7 L-2 2 L-7 0 L-2 -2 Z" fill="#fbbf24" />
+      
+      <!-- Black de Lancamento -->
+      <text x="14" y="0" fill="#fbbf24" font-size="12" font-weight="800" letter-spacing="1">BLACK DE LANÇAMENTO</text>
+      
+      <text x="185" y="-1" fill="#fbbf24" font-size="11" opacity="0.8">✳</text>
+      
+      <text x="205" y="0" fill="#ffffff" font-size="12" font-weight="700">40% DE DESCONTO EM TODOS OS PLANOS</text>
+      
+      <text x="490" y="-1" fill="#fbbf24" font-size="11" opacity="0.8">✳</text>
+      
+      <text x="510" y="0" fill="#fde68a" font-size="12" font-weight="700">ATÉ O DIA 30/11</text>
+      
+      <text x="625" y="-1" fill="#fbbf24" font-size="11" opacity="0.8">✳</text>
+      
+      <!-- Badge 50 Primeiros -->
+      <rect x="645" y="-13" width="96" height="18" rx="9" fill="#f59e0b" fill-opacity="0.2" stroke="#fbbf24" stroke-opacity="0.6" stroke-width="1" />
+      <text x="693" y="0" fill="#fef08a" font-size="10" font-weight="800" text-anchor="middle">50 PRIMEIROS</text>
+      
+      <text x="752" y="-1" fill="#fbbf24" font-size="11" opacity="0.8">✳</text>
+      
+      <text x="772" y="0" fill="#fbbf24" font-size="12" font-weight="800">VER OFERTAS →</text>
+    </g>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 2. CABEÇALHO OFICIAL (HEADER)              -->
+  <!-- ========================================== -->
+  <g id="Header_Bar" transform="translate(0, 38)">
+    <rect x="0" y="0" width="1440" height="72" fill="#0c0f14" stroke="#1e293b" stroke-width="1" />
+    
+    <!-- Logo & Nome -->
+    <g id="Logo_Group" transform="translate(140, 16)">
+      <!-- Circle Icon -->
+      <circle cx="20" cy="20" r="19" fill="#000000" stroke="#38bdf8" stroke-width="2" />
+      <text x="20" y="26" fill="#ffffff" font-size="16" font-weight="800" text-anchor="middle">BR</text>
+      
+      <!-- Brand Name -->
+      <text x="48" y="18" fill="#ffffff" font-size="16" font-weight="700" letter-spacing="-0.3">Banco</text>
+      <text x="48" y="34" fill="#ffffff" font-size="16" font-weight="700" letter-spacing="-0.3">Residência</text>
+    </g>
+    
+    <!-- Navigation Links -->
+    <g id="Nav_Links" transform="translate(420, 42)">
+      <text x="0" y="0" fill="#94a3b8" font-size="13" font-weight="600">Banco de Questões</text>
+      <text x="150" y="0" fill="#94a3b8" font-size="13" font-weight="600">Material de Estudo</text>
+      <text x="290" y="0" fill="#94a3b8" font-size="13" font-weight="600">Flashcards</text>
+      <text x="390" y="0" fill="#94a3b8" font-size="13" font-weight="600">FAQ</text>
+      <text x="445" y="0" fill="#94a3b8" font-size="13" font-weight="600">Embaixadores</text>
+    </g>
+    
+    <!-- Right Actions -->
+    <g id="Header_Right" transform="translate(1120, 20)">
+      <!-- Theme Icon Pill -->
+      <rect x="0" y="0" width="48" height="32" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
+      <circle cx="16" cy="16" r="5" fill="#38bdf8" />
+      
+      <!-- Criar Conta -->
+      <rect x="58" y="0" width="90" height="32" rx="10" fill="#161b22" stroke="#30363d" stroke-width="1" />
+      <text x="103" y="21" fill="#ffffff" font-size="12" font-weight="600" text-anchor="middle">Criar Conta</text>
+      
+      <!-- Entrar Button -->
+      <rect x="158" y="0" width="70" height="32" rx="10" fill="#38bdf8" />
+      <text x="193" y="21" fill="#ffffff" font-size="12" font-weight="700" text-anchor="middle">Entrar</text>
+    </g>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 3. HERO SECTION (+130 MIL QUESTÕES)        -->
+  <!-- ========================================== -->
+  <g id="Hero_Section" transform="translate(0, 110)">
+    <!-- Radial Glow Background -->
+    <rect x="0" y="0" width="1440" height="520" fill="url(#heroGlow)" />
+    
+    <!-- Badge Superior -->
+    <g id="Badge_Plataforma_Oficial" transform="translate(720, 40)">
+      <rect x="-150" y="0" width="300" height="28" rx="14" fill="rgba(30, 58, 138, 0.4)" stroke="rgba(59, 130, 246, 0.5)" stroke-width="1" />
+      <circle cx="-130" cy="14" r="3.5" fill="#38bdf8" />
+      <text x="5" y="18" fill="#93c5fd" font-size="11" font-weight="700" text-anchor="middle">Plataforma Oficial de Residência Médica 2026</text>
+    </g>
+    
+    <!-- Coluna Esquerda: +130 MIL QUESTÕES -->
+    <g id="Headline_130_Mil" transform="translate(140, 130)">
+      <text x="0" y="44" fill="#ffffff" font-size="46" font-weight="800" letter-spacing="-1.5">+130 MIL</text>
+      <text x="0" y="88" fill="#ffffff" font-size="38" font-weight="800" letter-spacing="-1">QUESTÕES</text>
+    </g>
+    
+    <!-- Coluna Direita: 3 Frases de Destaque -->
+    <g id="Bullets_Clinicos" transform="translate(620, 125)">
+      <!-- Bullet 1 -->
+      <g transform="translate(0, 10)">
+        <circle cx="4" cy="4" r="3.5" fill="#38bdf8" />
+        <text x="18" y="9" fill="#ffffff" font-size="17" font-weight="500">Filtros detalhados, de todos os assuntos.</text>
+      </g>
+      
+      <!-- Bullet 2 -->
+      <g transform="translate(0, 48)">
+        <circle cx="4" cy="4" r="3.5" fill="#38bdf8" />
+        <text x="18" y="9" fill="#ffffff" font-size="17" font-weight="500">Flashcards que certamente estarão no dia da prova.</text>
+      </g>
+      
+      <!-- Bullet 3 -->
+      <g transform="translate(0, 86)">
+        <circle cx="4" cy="4" r="3.5" fill="#38bdf8" />
+        <text x="18" y="9" fill="#ffffff" font-size="17" font-weight="500">Materiais com base nas diretrizes e questões das provas.</text>
+      </g>
+    </g>
+
+    <!-- ========================================== -->
+    <!-- 4. CARDS DE NAVEGAÇÃO RÁPIDA (SUAVES)      -->
+    <!-- ========================================== -->
+    <g id="Cards_Navegacao_Rapida" transform="translate(140, 270)">
+      
+      <!-- Card 1: Banco de Questoes -->
+      <g id="Card_Banco_Questoes" transform="translate(0, 0)">
+        <rect x="0" y="0" width="272" height="52" rx="14" fill="#161b22" stroke="#30363d" stroke-width="1" />
+        <rect x="12" y="11" width="30" height="30" rx="8" fill="#3b82f6" fill-opacity="0.15" />
+        <circle cx="27" cy="26" r="6" fill="none" stroke="#3b82f6" stroke-width="2" />
+        <text x="52" y="31" fill="#f0f6fc" font-size="13" font-weight="700">Banco de Questões</text>
+        <path d="M246 26 L252 26 M249 22 L253 26 L249 30" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+      
+      <!-- Card 2: Flashcards -->
+      <g id="Card_Flashcards" transform="translate(296, 0)">
+        <rect x="0" y="0" width="272" height="52" rx="14" fill="#161b22" stroke="#30363d" stroke-width="1" />
+        <rect x="12" y="11" width="30" height="30" rx="8" fill="#a855f7" fill-opacity="0.15" />
+        <path d="M22 23 C22 20 25 18 27 18 C29 18 32 20 32 23 C32 26 29 27 27 30 L27 33" stroke="#a855f7" stroke-width="2" fill="none" />
+        <text x="52" y="31" fill="#f0f6fc" font-size="13" font-weight="700">Flashcards</text>
+        <path d="M246 26 L252 26 M249 22 L253 26 L249 30" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+      
+      <!-- Card 3: Materiais Completos -->
+      <g id="Card_Materiais_Completos" transform="translate(592, 0)">
+        <rect x="0" y="0" width="272" height="52" rx="14" fill="#161b22" stroke="#30363d" stroke-width="1" />
+        <rect x="12" y="11" width="30" height="30" rx="8" fill="#10b981" fill-opacity="0.15" />
+        <path d="M21 21 C24 20 27 21 27 21 C27 21 30 20 33 21 L33 31 C30 30 27 31 27 31 C27 31 24 30 21 31 Z" stroke="#10b981" stroke-width="1.5" fill="none" />
+        <text x="52" y="31" fill="#f0f6fc" font-size="13" font-weight="700">Materiais Completos</text>
+        <path d="M246 26 L252 26 M249 22 L253 26 L249 30" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+      
+      <!-- Card 4: Estatisticas -->
+      <g id="Card_Estatisticas" transform="translate(888, 0)">
+        <rect x="0" y="0" width="272" height="52" rx="14" fill="#161b22" stroke="#30363d" stroke-width="1" />
+        <rect x="12" y="11" width="30" height="30" rx="8" fill="#f59e0b" fill-opacity="0.15" />
+        <path d="M23 31 L23 27 M27 31 L27 23 M31 31 L31 19" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" />
+        <text x="52" y="31" fill="#f0f6fc" font-size="13" font-weight="700">Estatísticas</text>
+        <path d="M246 26 L252 26 M249 22 L253 26 L249 30" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      </g>
+
+    </g>
+
+    <!-- ========================================== -->
+    <!-- 5. BANCAS LOGOS TICKER                     -->
+    <!-- ========================================== -->
+    <g id="Bancas_Carousel" transform="translate(140, 360)">
+      <!-- 7 Sample Bancas Badges -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="130" height="46" rx="14" fill="#161b22" stroke="#30363d" stroke-width="1" />
+        <text x="65" y="28" fill="#ffffff" font-size="12" font-weight="800" text-anchor="middle">ENARE</text>
+      </g>
+      <g transform="translate(150, 0)">
+        <rect x="0" y="0" width="130" height="46" rx="14" fill="#161b22" stroke="#30363d" stroke-width="1" />
+        <text x="65" y="28" fill="#ffffff" font-size="12" font-weight="800" text-anchor="middle">USP-SP</text>
+      </g>
+      <g transform="translate(300, 0)">
+        <rect x="0" y="0" width="130" height="46" rx="14" fill="#161b22" stroke="#30363d" stroke-width="1" />
+        <text x="65" y="28" fill="#ffffff" font-size="12" font-weight="800" text-anchor="middle">UNIFESP</text>
+      </g>
+      <g transform="translate(450, 0)">
+        <rect x="0" y="0" width="130" height="46" rx="14" fill="#161b22" stroke="#30363d" stroke-width="1" />
+        <text x="65" y="28" fill="#ffffff" font-size="12" font-weight="800" text-anchor="middle">AMRIGS</text>
+      </g>
+      <g transform="translate(600, 0)">
+        <rect x="0" y="0" width="130" height="46" rx="14" fill="#161b22" stroke="#30363d" stroke-width="1" />
+        <text x="65" y="28" fill="#ffffff" font-size="12" font-weight="800" text-anchor="middle">AMP-PR</text>
+      </g>
+      <g transform="translate(750, 0)">
+        <rect x="0" y="0" width="130" height="46" rx="14" fill="#161b22" stroke="#30363d" stroke-width="1" />
+        <text x="65" y="28" fill="#ffffff" font-size="12" font-weight="800" text-anchor="middle">SUS-SP</text>
+      </g>
+      <g transform="translate(900, 0)">
+        <rect x="0" y="0" width="130" height="46" rx="14" fill="#161b22" stroke="#30363d" stroke-width="1" />
+        <text x="65" y="28" fill="#ffffff" font-size="12" font-weight="800" text-anchor="middle">SURCE</text>
+      </g>
+      <g transform="translate(1050, 0)">
+        <rect x="0" y="0" width="110" height="46" rx="14" fill="#161b22" stroke="#30363d" stroke-width="1" />
+        <text x="55" y="28" fill="#ffffff" font-size="12" font-weight="800" text-anchor="middle">UERJ</text>
+      </g>
+    </g>
+
+    <!-- ========================================== -->
+    <!-- 6. BOTOES CTA PRINCIPAIS                   -->
+    <!-- ========================================== -->
+    <g id="CTA_Buttons" transform="translate(520, 440)">
+      <!-- Ver Planos -->
+      <rect x="0" y="0" width="190" height="46" rx="14" fill="#38bdf8" />
+      <text x="95" y="28" fill="#ffffff" font-size="13" font-weight="800" text-anchor="middle">Ver Planos e Assinar →</text>
+      
+      <!-- Comecar Gratuitamente -->
+      <rect x="210" y="0" width="190" height="46" rx="14" fill="#161b22" stroke="#30363d" stroke-width="1" />
+      <text x="305" y="28" fill="#ffffff" font-size="13" font-weight="700" text-anchor="middle">Começar Gratuitamente</text>
+    </g>
+
+  </g>
+</svg>

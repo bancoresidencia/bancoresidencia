@@ -94,7 +94,7 @@ async function main() {
     return;
   }
 
-  const CONCURRENCY = 4; // 4 streams simultâneos contínuos (respeita 15 RPM por chave)
+  const CONCURRENCY = 6; // 6 streams simultâneos contínuos (distribuídos no pool de chaves)
   let processedCount = 0;
   let lastFileSaveCount = 0;
   let batchBuffer = [];
@@ -167,14 +167,15 @@ async function main() {
 
   // Flush final do buffer residual
   if (batchBuffer.length > 0) {
-    fs.writeFileSync(checkpointPath, JSON.stringify(Array.from(solvedMap.values())));
-    fs.writeFileSync(filePath, JSON.stringify(questions, null, 2));
     if (syncSupabase) {
       await updateQuestionsInSupabase(batchBuffer);
     }
-    console.log(`💾 Buffer final sincronizado.`);
+    batchBuffer = [];
+    console.log('💾 Buffer final sincronizado no Supabase.');
   }
-
+  fs.writeFileSync(checkpointPath, JSON.stringify(Array.from(solvedMap.values())));
+  fs.writeFileSync(filePath, JSON.stringify(questions, null, 2));
+  console.log('💾 Checkpoint e arquivo consolidado salvos em disco.');
 
   if (shouldAbort) {
     console.error('🛑 Execução interrompida por esgotamento de cotas em todas as chaves.');

@@ -154,6 +154,13 @@ const TOP_FEATURED_BANCAS: FeaturedBanca[] = [
   { id: 'amp', name: 'AMP', logo: 'AMP', logoSlug: 'amp' }
 ];
 
+const QUICK_NAV_BUTTONS = [
+  { id: 'questoes', label: 'BANCO DE QUESTÕES' },
+  { id: 'flashcards', label: 'FLASHCARDS' },
+  { id: 'material-estudo', label: 'MATERIAIS COMPLETOS' },
+  { id: 'estatisticas', label: 'ESTATÍSTICAS' },
+];
+
 interface LandingPageProps {
   onOpenAuth: (mode?: 'login' | 'register', planTitle?: string) => void;
   onLoginDemo?: () => void;
@@ -165,6 +172,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openFaqId, setOpenFaqId] = useState<string | null>('faq-1');
   const [demoFlashcardFlipped, setDemoFlashcardFlipped] = useState(false);
+  const [hoveredNavBtn, setHoveredNavBtn] = useState<string | null>(null);
 
   const handleStartPlanCheckout = (planId: string, mode: 'register' | 'login' = 'register') => {
     if (typeof window !== 'undefined') {
@@ -192,67 +200,61 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 flex flex-col selection:bg-[var(--primary-color)] selection:text-white transition-colors duration-200">
       {/* =========================================================================
-          BANNER PROMOCIONAL SUPERIOR (BLACK DE LANÇAMENTO - MEDEVO INSPIRATION)
+          BANNER PROMOCIONAL SUPERIOR (BLACK DE LANÇAMENTO - TICKER ANDANDO SUAVE)
           ========================================================================= */}
       <aside
         aria-label="Promoção Black de Lançamento"
         onClick={() => scrollToSection('planos')}
-        className="w-full bg-[#0a0a0c] text-white border-b border-amber-500/25 py-2.5 px-3 sm:px-4 cursor-pointer relative overflow-hidden group select-none transition-all duration-200 hover:bg-black"
+        className="w-full bg-[#08080a] text-white border-b border-amber-500/30 py-2 sm:py-2.5 cursor-pointer relative overflow-hidden group select-none transition-all duration-200 hover:bg-black"
         style={{
-          boxShadow: '0 2px 20px rgba(245, 158, 11, 0.12)'
+          boxShadow: '0 2px 15px rgba(245, 158, 11, 0.14)'
         }}
       >
         {/* Glow sutil de fundo dourado/amber */}
-        <div className="absolute inset-0 bg-gradient-to-r from-amber-500/15 via-transparent to-amber-500/15 pointer-events-none" />
-        <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-96 h-12 bg-amber-500/20 blur-xl pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-r from-amber-500/10 via-transparent to-amber-500/10 pointer-events-none" />
 
-        {/* Visualização Desktop */}
-        <div className="hidden lg:flex max-w-7xl mx-auto items-center justify-center gap-3 text-center text-xs sm:text-[13px] relative z-10">
-          <span className="font-black uppercase tracking-wider text-amber-400 drop-shadow-[0_0_10px_rgba(251,191,36,0.6)] flex items-center gap-1.5 shrink-0">
-            <span>BLACK DE LANÇAMENTO</span>
-          </span>
+        {/* Fades laterais para efeito infinito nas bordas */}
+        <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-12 sm:w-24 bg-gradient-to-r from-[#08080a] via-[#08080a]/80 to-transparent z-10" />
+        <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-12 sm:w-24 bg-gradient-to-l from-[#08080a] via-[#08080a]/80 to-transparent z-10" />
 
-          <span className="text-amber-400 text-xs shrink-0 select-none">✳</span>
+        {/* Track Animado Ticker (Andando Infinitamente, pausa no hover) */}
+        <div className="animate-marquee-banner flex items-center gap-8 sm:gap-12 select-none relative z-10">
+          {[0, 1, 2, 3].map((idx) => (
+            <div key={idx} className="flex items-center gap-2.5 sm:gap-4 shrink-0 whitespace-nowrap">
+              {/* Badge Black de Lançamento com Sparkle */}
+              <span className="font-extrabold uppercase tracking-wider text-amber-400 drop-shadow-[0_0_10px_rgba(251,191,36,0.6)] flex items-center gap-1.5 shrink-0 text-xs sm:text-[13px] md:text-sm">
+                <Sparkles className="w-3.5 h-3.5 text-amber-400 shrink-0 animate-pulse" />
+                <span>BLACK DE LANÇAMENTO</span>
+              </span>
 
-          <span className="font-extrabold text-white tracking-tight shrink-0 drop-shadow-xs">
-            40% DE DESCONTO EM TODOS OS PLANOS
-          </span>
+              <span className="text-amber-400 text-xs select-none opacity-80 shrink-0">✳</span>
 
-          <span className="text-amber-400 text-xs shrink-0 select-none">✳</span>
+              {/* Texto 40% de Desconto */}
+              <span className="font-extrabold text-white tracking-tight shrink-0 drop-shadow-xs text-xs sm:text-[13px] md:text-sm">
+                40% DE DESCONTO EM TODOS OS PLANOS
+              </span>
 
-          <span className="font-bold text-amber-300 shrink-0">
-            ATÉ O DIA 30/11
-          </span>
+              <span className="text-amber-400 text-xs select-none opacity-80 shrink-0">✳</span>
 
-          <span className="text-amber-400 text-xs shrink-0 select-none">✳</span>
+              {/* Data limite */}
+              <span className="font-bold text-amber-300 shrink-0 text-xs sm:text-[13px] md:text-sm">
+                ATÉ O DIA 30/11
+              </span>
 
-          <span className="bg-amber-400/20 text-amber-300 border border-amber-400/50 px-2.5 py-0.5 rounded-full font-black text-[11px] uppercase tracking-wider shadow-[0_0_10px_rgba(251,191,36,0.2)] shrink-0">
-            50 PRIMEIROS
-          </span>
+              <span className="text-amber-400 text-xs select-none opacity-80 shrink-0">✳</span>
 
-          <span className="inline-flex items-center gap-1 font-bold text-amber-400 group-hover:text-amber-200 transition-all group-hover:translate-x-0.5 ml-1 shrink-0">
-            <span>· VER OFERTAS</span>
-            <ArrowRight className="w-3.5 h-3.5" />
-          </span>
-        </div>
+              {/* Tag 50 Primeiros */}
+              <span className="bg-gradient-to-r from-amber-400/20 to-amber-500/15 text-amber-200 border border-amber-400/50 px-2.5 py-0.5 rounded-full font-black text-[10px] sm:text-[11px] uppercase tracking-wider shadow-[0_0_10px_rgba(251,191,36,0.25)] shrink-0">
+                50 PRIMEIROS
+              </span>
 
-        {/* Visualização Mobile & Telas Menores */}
-        <div className="lg:hidden flex items-center justify-center gap-2 text-[11px] relative z-10 whitespace-nowrap overflow-x-auto no-scrollbar py-0.5">
-          <span className="font-black uppercase text-amber-400 shrink-0">
-            BLACK DE LANÇAMENTO
-          </span>
-          <span className="text-amber-400 text-[10px] shrink-0">✳</span>
-          <span className="font-extrabold text-white shrink-0">
-            40% OFF EM TODOS OS PLANOS
-          </span>
-          <span className="text-amber-400 text-[10px] shrink-0">✳</span>
-          <span className="font-bold text-amber-300 shrink-0">
-            ATÉ 30/11
-          </span>
-          <span className="bg-amber-400/20 text-amber-300 border border-amber-400/40 px-2 py-0.2 rounded-full font-black text-[10px] shrink-0">
-            50 PRIMEIROS
-          </span>
-          <ArrowRight className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+              {/* Link Ver Ofertas */}
+              <span className="inline-flex items-center gap-1 font-bold text-amber-400 group-hover:text-amber-200 transition-colors ml-1 shrink-0 text-xs sm:text-[13px] md:text-sm underline decoration-amber-400/50 underline-offset-2">
+                <span>VER OFERTAS</span>
+                <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+              </span>
+            </div>
+          ))}
         </div>
       </aside>
 
@@ -443,29 +445,69 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
       <section className="relative overflow-hidden pt-12 pb-16 sm:pt-20 sm:pb-24 border-b border-zinc-200/80 dark:border-zinc-800/80 bg-gradient-to-b from-white via-zinc-50 to-zinc-100 dark:from-[var(--bg-input)] dark:via-[var(--bg-page)] dark:to-black">
         {/* Glow de fundo */}
         <div
-          className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] rounded-full blur-3xl opacity-20 pointer-events-none"
+          className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] sm:w-[950px] h-[350px] rounded-full blur-3xl opacity-20 pointer-events-none transition-colors duration-500"
           style={{ backgroundColor: accentConfig.primaryHex }}
         />
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10 text-center">
-          {/* Badge de Destaque */}
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800/80 text-blue-700 dark:text-blue-300 text-xs font-extrabold mb-6 shadow-xs animate-fadeIn">
-            <span className="w-2 h-2 rounded-full bg-blue-600 dark:bg-blue-400 animate-pulse" />
-            <span>Plataforma Oficial de Residência Médica 2026</span>
+          {/* =========================================================================
+              HEADLINE HERO CENTRALIZADA (AMPLIADA, COM BRILHO DIFUSO NA COR DO TEMA)
+              ========================================================================= */}
+          <div className="relative flex justify-center items-center w-full max-w-6xl mx-auto px-2 sm:px-4 select-none py-1">
+            {/* Brilho suave diretamente atrás da headline na cor do tema */}
+            <div
+              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-[980px] h-[190px] sm:h-[260px] rounded-full blur-3xl pointer-events-none transition-all duration-500 opacity-20 dark:opacity-30"
+              style={{
+                background: `radial-gradient(ellipse at center, ${accentConfig.primaryHex} 0%, ${accentConfig.primaryHex}33 45%, transparent 75%)`
+              }}
+            />
+
+            {/* Dark Mode: SVG ampliado (1110px) com brilho nativo */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/Headline_130_Mil.svg"
+              alt="+130 MIL QUESTÕES — Filtros detalhados, Flashcards e Materiais"
+              className="relative z-10 hidden dark:block w-full max-w-[1080px] lg:max-w-[1140px] h-auto object-contain mx-auto pointer-events-none"
+              loading="eager"
+            />
+            {/* Light Mode: SVG ampliado (1110px) */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/Headline_130_Mil_light.svg"
+              alt="+130 MIL QUESTÕES — Filtros detalhados, Flashcards e Materiais"
+              className="relative z-10 block dark:hidden w-full max-w-[1080px] lg:max-w-[1140px] h-auto object-contain mx-auto pointer-events-none"
+              loading="eager"
+            />
           </div>
 
-          {/* Frase Principal Exigida */}
-          <h1 className="font-heading text-3xl sm:text-5xl md:text-6xl font-black tracking-tight text-slate-900 dark:text-white max-w-4xl mx-auto leading-[1.15]">
-            <span className="text-sky-500 dark:text-sky-400 font-black">+130.000 questões</span> para estudo de residência médica.
-            <span className="block mt-2 sm:mt-3 text-slate-800 dark:text-slate-100">
-              Sem distrações, apenas estudo.
-            </span>
-          </h1>
-
-          {/* Subtítulo Objetivo */}
-          <p className="mt-5 sm:mt-6 text-sm sm:text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto font-normal leading-relaxed">
-            Filtros cirúrgicos, caderno com todas as provas oficiais na íntegra e acompanhamento detalhado de pontos fracos. Tudo o que você precisa para ser aprovado, sem ruídos.
-          </p>
+          {/* =========================================================================
+              4 BOTÕES DE NAVEGAÇÃO RÁPIDA (ADAPTADOS À TEMÁTICA, MAIÚSCULOS E SUAVES)
+              ========================================================================= */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3.5 mt-8 sm:mt-10 w-full max-w-4xl mx-auto relative z-10">
+            {QUICK_NAV_BUTTONS.map((btn) => {
+              const isHovered = hoveredNavBtn === btn.id;
+              return (
+                <button
+                  key={btn.id}
+                  type="button"
+                  onClick={() => scrollToSection(btn.id)}
+                  onMouseEnter={() => setHoveredNavBtn(btn.id)}
+                  onMouseLeave={() => setHoveredNavBtn(null)}
+                  className="h-11 sm:h-12 px-3 sm:px-5 rounded-full bg-white/80 dark:bg-zinc-900/60 backdrop-blur-md text-zinc-700 dark:text-zinc-200 border transition-all duration-200 cursor-pointer flex items-center justify-center text-center font-bold text-[11px] sm:text-xs tracking-wider uppercase active:scale-[0.98]"
+                  style={{
+                    borderColor: isHovered ? accentConfig.primaryHex : 'rgba(160, 174, 192, 0.25)',
+                    color: isHovered ? accentConfig.primaryHex : undefined,
+                    backgroundColor: isHovered ? `${accentConfig.primaryHex}15` : undefined,
+                    boxShadow: isHovered
+                      ? `0 0 20px -2px ${accentConfig.primaryHex}45, 0 4px 12px -2px ${accentConfig.bgRgba}`
+                      : '0 1px 3px rgba(0, 0, 0, 0.05)',
+                  }}
+                >
+                  {btn.label}
+                </button>
+              );
+            })}
+          </div>
 
           {/* =========================================================================
               CARROSSEL INFINITO (MARQUEE) COM AS PRINCIPAIS BANCAS DO ACERVO
@@ -786,7 +828,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           {/* PILAR 1: FUNÇÃO DAS QUESTÕES */}
-          <div id="questoes" className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div id="recurso-questoes" className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
             <div className="space-y-4">
               <div
                 className="w-12 h-12 rounded-2xl flex items-center justify-center text-white shadow-md transition-transform group-hover:scale-105 duration-200"
@@ -859,7 +901,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
           </div>
 
           {/* PILAR 3: ACOMPANHAMENTO DETALHADO */}
-          <div className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+          <div id="estatisticas" className="scroll-mt-24 p-6 sm:p-8 rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
             <div className="space-y-4">
               <div className="w-12 h-12 rounded-2xl flex items-center justify-center text-white bg-emerald-600 shadow-md transition-transform group-hover:scale-105 duration-200">
                 <BarChart3 className="w-6 h-6" />
