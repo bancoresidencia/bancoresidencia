@@ -96,135 +96,147 @@ function isLocalhost(): boolean {
 }
 
 /**
- * Constrói o redirect_uri correto para o ambiente atual
+ * Constrói o redirect_uri para o fluxo OAuth implícito (página client-side)
  */
 export function getGoogleOAuthRedirectUri(): string {
   if (typeof window === 'undefined') return '';
-  return `${window.location.origin}/api/auth/google/callback`;
+  return `${window.location.origin}/auth/google/callback`;
 }
 
 /**
- * OPÇÃO 2 — FLUXO PRINCIPAL (Redirect, sem popup):
- * Inicia o fluxo OAuth Authorization Code com redirecionamento.
- * Não depende de popup — funciona em produção Vercel, Chrome com pop-up bloqueados etc.
+ * OPÇÃO 2 — FLUXO PRINCIPAL (Redirect Implicit, sem popup, sem client_secret):
+ * Usa o fluxo OAuth 2.0 Implicit Grant (response_type=token) diretamente.
+ * Redireciona o navegador para o Google que, após autorização, redireciona para
+ * /auth/google/callback#access_token=xxx (a página lê o hash e salva no localStorage).
  *
- * O Google redireciona de volta para /api/auth/google/callback?code=...
- * que por sua vez redireciona para /#google_access_token=...
+ * Vantagens:
+ * - Não requer GOOGLE_CLIENT_SECRET no servidor
+ * - Não usa popup (sem bloqueio de popup em produção)
+ * - Funciona em todos os ambientes (Vercel, localhost)
  *
- * Para usar este fluxo, adicione no Google Cloud Console:
- *   Authorized redirect URIs:
- *     - https://bancoresidencia-kappa.vercel.app/api/auth/google/callback
- *     - https://bancoresidencia.vercel.app/api/auth/google/callback
- *     - http://localhost:3000/api/auth/google/callback
+ * Adicione no Google Cloud Console → Authorized Redirect URIs:
+ *   - https://bancoresidencia.vercel.app/auth/google/callback
+ *   - https://bancoresidencia-kappa.vercel.app/auth/google/callback
+ *   - http://localhost:3000/auth/google/callback
  */
-export async function startGoogleOAuthRedirect(clientId: string): Promise<void> {
-  await loadGoogleGsiScript();
-  const google = (window as any).google;
-
-  if (!google?.accounts?.oauth2) {
-    throw new Error('Google Identity Services não está disponível no navegador.');
-  }
+export function startGoogleOAuthRedirect(clientId: string): void {
+  if (typeof window === 'undefined') return;
 
   const redirectUri = getGoogleOAuthRedirectUri();
+  const scope = [
+    'https://www.googleapis.com/auth/calendar.events',
+    'https://www.googleapis.com/auth/calendar.readonly',
+  ].join(' ');
 
-  return new Promise<void>((resolve, reject) => {
-    try {
-      const codeClient = google.accounts.oauth2.initCodeClient({
-        client_id: clientId,
-        scope: 'https://www.googleapis.com/auth/calendar.events https://www.googleapis.com/auth/calendar.readonly',
-        ux_mode: 'redirect',
-        redirect_uri: redirectUri,
-        // state: preserva a URL atual para retornar após auth
-        state: window.location.pathname + window.location.search,
-      });
-
-      // requestCode() redireciona o navegador para o Google — não retorna
-      codeClient.requestCode();
-      resolve(); // nunca chegará aqui normalmente (página redireciona)
-    } catch (err) {
-      reject(err);
-    }
+  // Fluxo implícito: response_type=token → Google retorna access_token direto no hash
+  // Não precisa de client_secret para trocar código
+  const params = new URLSearchParams({
+    client_id: clientId,
+    redirect_uri: redirectUri,
+    response_type: 'token',
+    scope,
+    include_granted_scopes: 'true',
+    prompt: 'select_account',
   });
+
+  window.location.href = `https://accounts.google.com/o/oauth2/v2/auth?${params.toString()}`;
 }
 
 /**
- * OPÇÃO 2 — FLUXO FALLBACK (Popup, para localhost):
- * Inicializa o fluxo OAuth Token Client com abertura de popup.
- * Use apenas como fallback quando o redirect não for possível.
+ * OPÇÃO 2 — DISPARO DE AUTENTICAÇÃO DIRETA VIA POPUP (GIS Token Client):
+ * Executa de forma síncrona se a biblioteca já estiver no window para
+ * PREVENIR bloqueio de popups pelos navegadores (Chrome/Edge/Safari).
  */
-export async function requestGoogleCalendarAccessToken(
+export function requestGoogleCalendarAccessToken(
   clientId: string,
   onSuccess: (accessToken: string) => void,
   onError: (error: any) => void
-): Promise<void> {
+): void {
   try {
-    await loadGoogleGsiScript();
-    const google = (window as any).google;
+    const google = typeof window !== 'undefined' ? (window as any).google : null;
 
-    if (!google?.accounts?.oauth2) {
-      throw new Error('Google Identity Services não está disponível no navegador.');
-    }
+    const executeTokenRequest = (g: any) => {
+      let isDone = false;
+      const timeoutTimer = setTimeout(() => {
+        if (!isDone) {
+          isDone = true;
+          onError(new Error('Tempo limite esgotado. Clique em "Continuar com o Google" para tentar novamente.'));
+        }
+      }, 120000);
 
-    let isDone = false;
-    let timeoutTimer: any = null;
+      const tokenClient = g.accounts.oauth2.initTokenClient({
+        client_id: clientId,
+        scope: 'https://www.googleapis.com/auth/calendar.events https://www.googleapis.com/auth/calendar.readonly',
+        callback: (resp: any) => {
+          isDone = true;
+          clearTimeout(timeoutTimer);
+          if (resp?.error) {
+            onError(resp);
+          } else if (resp?.access_token) {
+            onSuccess(resp.access_token);
+          } else {
+            onError(new Error('Nenhum token retornado pelo Google.'));
+          }
+        }
+      });
 
-    const cleanup = () => {
-      isDone = true;
-      if (timeoutTimer) clearTimeout(timeoutTimer);
+      tokenClient.requestAccessToken({ prompt: 'select_account' });
     };
 
-    // Tempo limite de 2 minutos para o usuário concluir o login
-    timeoutTimer = setTimeout(() => {
-      if (!isDone) {
-        cleanup();
-        onError(new Error('Tempo limite esgotado. Clique em "Continuar com o Google" para tentar novamente.'));
-      }
-    }, 120000);
+    // 1. Se GIS já carregou no <head>, executa imediatamente (zero delay = popup 100% liberado)
+    if (google?.accounts?.oauth2) {
+      executeTokenRequest(google);
+      return;
+    }
 
-    const tokenClient = google.accounts.oauth2.initTokenClient({
-      client_id: clientId,
-      scope: 'https://www.googleapis.com/auth/calendar.events https://www.googleapis.com/auth/calendar.readonly',
-      callback: (resp: any) => {
-        cleanup();
-        if (resp.error) {
-          onError(resp);
-        } else if (resp.access_token) {
-          onSuccess(resp.access_token);
+    // 2. Fallback caso a biblioteca ainda não tenha finalizado o download
+    loadGoogleGsiScript()
+      .then(() => {
+        const g = (window as any).google;
+        if (!g?.accounts?.oauth2) {
+          throw new Error('Google Identity Services não está disponível.');
         }
-      }
-    });
-
-    // Abre imediatamente o popup de seleção de conta do Google
-    tokenClient.requestAccessToken({ prompt: 'select_account' });
+        executeTokenRequest(g);
+      })
+      .catch((err) => onError(err));
   } catch (err) {
     onError(err);
   }
 }
 
 /**
- * OPÇÃO 2: Verifica se há um access_token na URL (hash fragment) após redirect OAuth
- * Chame esta função na inicialização do componente para capturar o token retornado
- * pelo fluxo de redirecionamento.
- *
- * Retorna o token se encontrado, ou null se não houver token na URL.
- * Limpa automaticamente o hash da URL após extrair o token.
+ * OPÇÃO 2: Verifica se há um access_token na URL (hash fragment ou search params)
+ * Suporta formatos padrão:
+ *   #access_token=...
+ *   #google_access_token=...
+ *   ?access_token=...
  */
 export function extractGoogleTokenFromUrlHash(): string | null {
   if (typeof window === 'undefined') return null;
 
-  const hash = window.location.hash;
-  if (!hash || !hash.includes('google_access_token=')) return null;
-
   try {
-    // Remove o '#' inicial e parseia os parâmetros
-    const params = new URLSearchParams(hash.replace(/^#/, ''));
-    const token = params.get('google_access_token');
+    // 1. Busca no Hash
+    const hash = window.location.hash.replace(/^#/, '');
+    if (hash) {
+      const hashParams = new URLSearchParams(hash);
+      const token = hashParams.get('access_token') || hashParams.get('google_access_token');
+      if (token) {
+        const cleanUrl = window.location.pathname + window.location.search;
+        window.history.replaceState(null, '', cleanUrl);
+        return decodeURIComponent(token);
+      }
+    }
 
-    if (token) {
-      // Limpa o hash da URL sem recarregar a página
-      const cleanUrl = window.location.pathname + window.location.search;
+    // 2. Busca na Query
+    const searchParams = new URLSearchParams(window.location.search);
+    const searchToken = searchParams.get('access_token') || searchParams.get('google_access_token');
+    if (searchToken) {
+      searchParams.delete('access_token');
+      searchParams.delete('google_access_token');
+      const newQuery = searchParams.toString();
+      const cleanUrl = window.location.pathname + (newQuery ? `?${newQuery}` : '');
       window.history.replaceState(null, '', cleanUrl);
-      return decodeURIComponent(token);
+      return decodeURIComponent(searchToken);
     }
   } catch {
     // ignora erros de parsing

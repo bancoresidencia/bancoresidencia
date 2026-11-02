@@ -1190,10 +1190,60 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
   // ── Captura o access_token após redirect OAuth do Google ──────────────────
   useEffect(() => {
-    // Verifica se retornou de um redirect OAuth do Google com token no hash
+    // Verifica se retornou do /auth/google/callback com flag "just connected"
+    const justConnected = sessionStorage.getItem('bancoresidencia_google_just_connected');
+    if (justConnected === 'true') {
+      sessionStorage.removeItem('bancoresidencia_google_just_connected');
+
+      // Token já salvo no localStorage pela callback page — pega daqui
+      const storedToken = typeof window !== 'undefined'
+        ? localStorage.getItem('bancoresidencia_google_access_token') || ''
+        : '';
+
+      if (storedToken) {
+        setGoogleAccessToken(storedToken);
+        setCalendarSyncMode('api');
+        setIsGoogleCalendarConnected(true);
+        setIsSyncingCalendar(true);
+        setCalendarSyncError(null);
+
+        fetchTodayEventsFromGoogleApi(storedToken)
+          .then((events) => {
+            setRealCalendarEvents(events as any);
+            const nowStr = `Hoje às ${new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}`;
+            setLastCalendarSyncTime(nowStr);
+            if (typeof window !== 'undefined') {
+              localStorage.setItem('bancoresidencia_real_calendar_events', JSON.stringify(events));
+              localStorage.setItem('bancoresidencia_google_last_sync', nowStr);
+            }
+            const msg = events.length > 0
+              ? `${events.length} evento(s) sincronizados via Google Calendar!`
+              : 'Conectado via Google Calendar! Nenhum evento para hoje.';
+            setCalendarSyncSuccessMsg(msg);
+          })
+          .catch((err) => {
+            setCalendarSyncError(err?.message || 'Falha ao buscar eventos do Google Calendar.');
+          })
+          .finally(() => {
+            setIsSyncingCalendar(false);
+          });
+        return;
+      }
+    }
+
+    // Verifica se a callback page salvou um erro no sessionStorage
+    const sessionError = typeof window !== 'undefined'
+      ? sessionStorage.getItem('bancoresidencia_google_auth_error')
+      : null;
+    if (sessionError) {
+      sessionStorage.removeItem('bancoresidencia_google_auth_error');
+      setCalendarSyncError(sessionError);
+      return;
+    }
+
+    // Fallback: verifica token no hash (fluxo legado) 
     const tokenFromHash = extractGoogleTokenFromUrlHash();
     if (tokenFromHash) {
-      // Token capturado! Inicia sincronização automática
       setGoogleAccessToken(tokenFromHash);
       setCalendarSyncMode('api');
       if (typeof window !== 'undefined') {
@@ -1324,7 +1374,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     setIsGoogleModalOpen(false);
   };
 
-  const handleConnectGoogleViaApi = async () => {
+  const handleConnectGoogleViaApi = () => {
     const cId = (googleClientId || '').trim();
     if (!cId) {
       setCalendarSyncError('Informe um Google Client ID válido para conectar via Google API.');
@@ -1335,57 +1385,64 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     setCalendarSyncError(null);
     setCalendarSyncSuccessMsg(null);
 
-    try {
-      // Usa fluxo de REDIRECIONAMENTO (sem popup) — funciona em produção Vercel
-      // O Google redireciona de volta para /api/auth/google/callback?code=...
-      // que por sua vez redireciona para /#google_access_token=...
-      await startGoogleOAuthRedirect(cId);
-      // startGoogleOAuthRedirect redireciona o navegador — código abaixo não executa normalmente
-    } catch (err: any) {
-      // Fallback: se redirect falhar por algum motivo, tenta popup
-      setCalendarSyncError(null);
-      requestGoogleCalendarAccessToken(
-        cId,
-        async (accessToken) => {
-          try {
-            setGoogleAccessToken(accessToken);
-            if (typeof window !== 'undefined') {
-              localStorage.setItem('bancoresidencia_google_access_token', accessToken);
-              localStorage.setItem('bancoresidencia_google_client_id', cId);
-              localStorage.setItem('bancoresidencia_google_calendar_mode', 'api');
-            }
+    // Disparo direto síncrono via GIS Token Client (sem delay = popup sempre liberado)
+    requestGoogleCalendarAccessToken(
+      cId,
+      async (accessToken) => {
+        try {
+          setGoogleAccessToken(accessToken);
+          setIsGoogleCalendarConnected(true);
+          setCalendarSyncMode('api');
 
-            const events = await fetchTodayEventsFromGoogleApi(accessToken);
-            setRealCalendarEvents(events as any);
-            const nowStr = `Hoje às ${new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}`;
-            setLastCalendarSyncTime(nowStr);
-            setIsGoogleCalendarConnected(true);
-            setCalendarSyncMode('api');
-
-            if (typeof window !== 'undefined') {
-              localStorage.setItem('bancoresidencia_google_calendar_connected', 'true');
-              localStorage.setItem('bancoresidencia_real_calendar_events', JSON.stringify(events));
-              localStorage.setItem('bancoresidencia_google_last_sync', nowStr);
-            }
-
-            if (events.length > 0) {
-              setCalendarSyncSuccessMsg(`${events.length} evento(s) sincronizados via Google Calendar API!`);
-            } else {
-              setCalendarSyncSuccessMsg('Conectado via Google API! Nenhum evento para hoje (rotina livre de estudos).');
-            }
-            setIsGoogleModalOpen(false);
-          } catch (fetchErr: any) {
-            setCalendarSyncError(fetchErr?.message || 'Falha ao buscar eventos da Google Calendar API.');
-          } finally {
-            setIsSyncingCalendar(false);
+          if (typeof window !== 'undefined') {
+            localStorage.setItem('bancoresidencia_google_access_token', accessToken);
+            localStorage.setItem('bancoresidencia_google_client_id', cId);
+            localStorage.setItem('bancoresidencia_google_calendar_mode', 'api');
+            localStorage.setItem('bancoresidencia_google_calendar_connected', 'true');
           }
-        },
-        (oauthErr) => {
+
+          const events = await fetchTodayEventsFromGoogleApi(accessToken);
+          setRealCalendarEvents(events as any);
+          const nowStr = `Hoje às ${new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}`;
+          setLastCalendarSyncTime(nowStr);
+
+          if (typeof window !== 'undefined') {
+            localStorage.setItem('bancoresidencia_real_calendar_events', JSON.stringify(events));
+            localStorage.setItem('bancoresidencia_google_last_sync', nowStr);
+          }
+
+          if (events.length > 0) {
+            setCalendarSyncSuccessMsg(`${events.length} evento(s) sincronizados via Google Calendar API!`);
+          } else {
+            setCalendarSyncSuccessMsg('Conectado via Google API! Nenhum evento para hoje (rotina livre de estudos).');
+          }
+          setIsGoogleModalOpen(false);
+        } catch (fetchErr: any) {
+          setCalendarSyncError(fetchErr?.message || 'Falha ao buscar eventos da Google Calendar API.');
+        } finally {
           setIsSyncingCalendar(false);
-          setCalendarSyncError(oauthErr?.message || oauthErr?.error || 'Autorização Google cancelada ou recusada.');
         }
-      );
+      },
+      (oauthErr) => {
+        setIsSyncingCalendar(false);
+        const rawMsg = oauthErr?.message || oauthErr?.error || '';
+        if (rawMsg.includes('popup_closed') || rawMsg.includes('fechada antes da confirmação')) {
+          setCalendarSyncError('A janela de autenticação foi fechada antes da confirmação. Ao reabrir, se ver a tela vermelha de aviso, clique em "Avançado" ➔ "Acessar Banco Residência" para autorizar.');
+        } else {
+          setCalendarSyncError(rawMsg || 'Autorização Google cancelada ou recusada.');
+        }
+      }
+    );
+  };
+
+  const handleConnectGoogleViaRedirect = () => {
+    const cId = (googleClientId || '').trim();
+    if (!cId) {
+      setCalendarSyncError('Informe um Google Client ID válido.');
+      return;
     }
+    setIsSyncingCalendar(true);
+    startGoogleOAuthRedirect(cId);
   };
 
   const handleDisconnectGoogleCalendar = () => {
@@ -2500,7 +2557,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                   </div>
 
                   {/* VISÃO EXPANDIDA ADAPTATIVA: Calendário Oficial de Provas & Ofensiva Semanal */}
-                  {((cardConfig.customHeight && cardConfig.customHeight >= 150) || cardConfig.colSpan >= 8) && (
+                  {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 220) && (
                     <div className="pt-2.5 border-t border-slate-100 dark:border-zinc-800/80 flex flex-wrap items-center justify-between gap-2.5 text-xs animate-in fade-in duration-200">
                       <div className="flex items-center gap-2">
                         <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400">Prazos Oficiais:</span>
@@ -2666,7 +2723,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     )}
 
                     {/* VISÃO EXPANDIDA ADAPTATIVA: Sessões Programadas do Dia */}
-                    {((cardConfig.customHeight && cardConfig.customHeight >= 220) || cardConfig.colSpan >= 6) && (
+                    {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 250) && (
                       <div className="pt-2.5 space-y-1.5 border-t border-zinc-100 dark:border-zinc-800/80 animate-in fade-in duration-200">
                         <div className="flex items-center justify-between text-[11px]">
                           <span className="font-bold text-zinc-700 dark:text-zinc-300">Sessões Programadas</span>
@@ -2684,7 +2741,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         </div>
 
                         {/* VISÃO HIPER-EXPANDIDA (Altura >= 270px): Velocímetro & Meta Semanal */}
-                        {((cardConfig.customHeight && cardConfig.customHeight >= 270) || (cardConfig.colSpan >= 6 && cardConfig.customHeight && cardConfig.customHeight >= 240)) && (
+                        {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 300) && (
                           <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between text-[10px] text-zinc-500 dark:text-zinc-400">
                             <span className="flex items-center gap-1 font-medium">
                               <Clock className="w-3 h-3 text-blue-500" />
@@ -2838,7 +2895,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     </div>
 
                     {/* VISÃO EXPANDIDA ADAPTATIVA: Taxa por Grau de Dificuldade da Banca */}
-                    {((cardConfig.customHeight && cardConfig.customHeight >= 220) || cardConfig.colSpan >= 6) && (
+                    {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 250) && (
                       <div className="pt-2.5 space-y-1.5 border-t border-zinc-100 dark:border-zinc-800/80 animate-in fade-in duration-200">
                         <div className="flex items-center justify-between text-[11px]">
                           <span className="font-bold text-zinc-700 dark:text-zinc-300">Desempenho por Dificuldade</span>
@@ -2860,7 +2917,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         </div>
 
                         {/* VISÃO HIPER-EXPANDIDA (Altura >= 270px): Nota TRI Estimada */}
-                        {((cardConfig.customHeight && cardConfig.customHeight >= 270) || (cardConfig.colSpan >= 6 && cardConfig.customHeight && cardConfig.customHeight >= 240)) && (
+                        {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 300) && (
                           <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between text-[10px] text-zinc-500 dark:text-zinc-400">
                             <span className="flex items-center gap-1 font-medium">
                               <Sparkles className="w-3 h-3 text-amber-500" />
@@ -3006,7 +3063,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     )}
 
                     {/* VISÃO EXPANDIDA ADAPTATIVA: Curva Normal de Distribuição TRI (Gaussiana) */}
-                    {((cardConfig.customHeight && cardConfig.customHeight >= 220) || cardConfig.colSpan >= 6) && (
+                    {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 250) && (
                       <div className="pt-2 pb-1 space-y-2 border-t border-zinc-100 dark:border-zinc-800/80 animate-in fade-in duration-200">
                         <div className="flex items-center justify-between text-[11px]">
                           <span className="font-bold text-zinc-700 dark:text-zinc-300 flex items-center gap-1.5">
@@ -3086,7 +3143,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         </div>
 
                         {/* Gap para Nota de Corte nas Residências Alvo */}
-                        {((cardConfig.customHeight && cardConfig.customHeight >= 270) || (cardConfig.colSpan >= 6 && cardConfig.customHeight && cardConfig.customHeight >= 240)) && (
+                        {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 300) && (
                           <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 space-y-1.5 animate-in fade-in duration-200">
                             <div className="flex items-center justify-between text-[11px]">
                               <span className="font-bold text-zinc-700 dark:text-zinc-300 flex items-center gap-1">
@@ -3221,7 +3278,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                   </div>
 
                   {/* VISÃO EXPANDIDA ADAPTATIVA: Top Subtemas Críticos da Área */}
-                  {((cardConfig.customHeight && cardConfig.customHeight >= 220) || cardConfig.colSpan >= 6) && (
+                  {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 250) && (
                     <div className="pt-2.5 space-y-2 border-t border-zinc-100 dark:border-zinc-800/80 animate-in fade-in duration-200">
                       <div className="flex items-center justify-between text-[11px]">
                         <span className="font-bold text-zinc-700 dark:text-zinc-300 flex items-center gap-1.5">
@@ -3249,7 +3306,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         ))}
                       </div>
 
-                      {((cardConfig.customHeight && cardConfig.customHeight >= 280) || (cardConfig.colSpan >= 6 && cardConfig.customHeight && cardConfig.customHeight >= 250)) && (
+                      {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 300) && (
                         <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between text-[10px] text-zinc-500 dark:text-zinc-400">
                           <span>Impacto no Percentil: <strong className="text-emerald-600 dark:text-emerald-400">+6.8 pontos</strong></span>
                           <span>Tempo Médio Sugerido: <strong>35 minutos</strong></span>
@@ -3366,7 +3423,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     </div>
 
                     {/* VISÃO EXPANDIDA ADAPTATIVA: Focos Críticos de Reteste */}
-                    {((cardConfig.customHeight && cardConfig.customHeight >= 220) || cardConfig.colSpan >= 6) && (
+                    {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 250) && (
                       <div className="pt-2.5 pb-1 space-y-2 border-t border-zinc-100 dark:border-zinc-800/80 animate-in fade-in duration-200">
                         <div className="flex items-center justify-between text-[11px]">
                           <span className="font-bold text-zinc-700 dark:text-zinc-300 flex items-center gap-1.5">
@@ -3469,7 +3526,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     </div>
 
                     {/* VISÃO EXPANDIDA ADAPTATIVA: Pegadinha Fatal da Banca & Treino Direto */}
-                    {((cardConfig.customHeight && cardConfig.customHeight >= 220) || cardConfig.colSpan >= 6) && (
+                    {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 250) && (
                       <div className="pt-2 space-y-1.5 border-t border-zinc-100 dark:border-zinc-800/80 animate-in fade-in duration-200">
                         {activeDetailedMnemonic.bancaTrap && (
                           <div className="p-2 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-900 dark:text-amber-300 text-xs">
@@ -3483,7 +3540,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           </div>
                         )}
 
-                        {((cardConfig.customHeight && cardConfig.customHeight >= 280) || (cardConfig.colSpan >= 6 && cardConfig.customHeight && cardConfig.customHeight >= 250)) && (
+                        {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 300) && (
                           <div className="flex items-center justify-between p-2 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800 text-[10px]">
                             <span className="text-zinc-600 dark:text-zinc-400 truncate max-w-[260px]">
                               {activeDetailedMnemonic.examFrequency || 'Alta frequência nas provas'}
@@ -3677,7 +3734,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         ))}
                       </div>
 
-                      {((cardConfig.customHeight && cardConfig.customHeight >= 280) || (cardConfig.colSpan >= 6 && cardConfig.customHeight && cardConfig.customHeight >= 250)) && (
+                      {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 250) && (
                         <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between text-[10px] text-zinc-500 dark:text-zinc-400">
                           <span>Tempo Planejado: <strong>4h 30m</strong></span>
                           <span className="text-emerald-600 dark:text-emerald-400 font-bold">Cronobiologia Otimizada</span>
@@ -4027,7 +4084,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       </div>
 
                     {/* VISÃO EXPANDIDA ADAPTATIVA: Benchmark Comparativo das 6 Grandes Áreas */}
-                    {((cardConfig.customHeight && cardConfig.customHeight >= 280) || cardConfig.colSpan >= 8) && (
+                    {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 550) && (
                       <div className="pt-3 border-t border-slate-100 dark:border-zinc-800/80 space-y-2 animate-in fade-in duration-200">
                         <div className="flex items-center justify-between text-xs">
                           <span className="font-bold text-slate-800 dark:text-zinc-200 flex items-center gap-1.5">
@@ -4767,7 +4824,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                   })()}
 
                   {/* VISÃO EXPANDIDA ADAPTATIVA: Grid de Navegação Direta de Todos os Módulos */}
-                  {((cardConfig.customHeight && cardConfig.customHeight >= 220) || cardConfig.colSpan >= 10) && (
+                  {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 260) && (
                     <div className="pt-3 border-t border-zinc-100 dark:border-zinc-800/80 space-y-2 animate-in fade-in duration-200">
                       <div className="flex items-center justify-between text-xs px-1">
                         <span className="font-bold text-zinc-700 dark:text-zinc-300 flex items-center gap-1.5">
@@ -6506,17 +6563,39 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       <span>{isSyncingCalendar ? 'Abrindo autenticação Google...' : 'Continuar com o Google'}</span>
                     </button>
 
-                    <div className="pt-0.5">
-                      <button
-                        type="button"
-                        onClick={() => setShowAdvancedClientId(!showAdvancedClientId)}
-                        className="text-[10px] text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 underline cursor-pointer"
-                      >
-                        {showAdvancedClientId ? 'Ocultar ID do Cliente' : 'Configurações de Desenvolvedor (Client ID)'}
-                      </button>
+                    {/* Dica essencial para tela "O Google não verificou este app" */}
+                    <div className="p-3 rounded-xl bg-amber-500/10 border border-amber-500/20 text-[11px] text-amber-800 dark:text-amber-300 space-y-1">
+                      <div className="font-bold flex items-center gap-1.5">
+                        <AlertTriangle className="w-3.5 h-3.5 text-amber-500 shrink-0" />
+                        <span>Passo ao abrir a janela do Google:</span>
+                      </div>
+                      <p className="leading-relaxed text-zinc-600 dark:text-zinc-400">
+                        Se aparecer a tela <em>"O Google não verificou este app"</em>, clique em <strong>"Avançado"</strong> (canto inferior esquerdo) e depois em <strong>"Acessar Banco Residência (não seguro)"</strong> para autorizar a sincronização.
+                      </p>
+                    </div>
+
+                    <div className="pt-0.5 space-y-2">
+                      <div className="flex items-center justify-between text-[10px]">
+                        <button
+                          type="button"
+                          onClick={handleConnectGoogleViaRedirect}
+                          className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400 underline cursor-pointer"
+                          title="Usar redirecionamento de tela inteira em vez de janela popup"
+                        >
+                          Abrir por redirecionamento de página
+                        </button>
+
+                        <button
+                          type="button"
+                          onClick={() => setShowAdvancedClientId(!showAdvancedClientId)}
+                          className="text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 underline cursor-pointer"
+                        >
+                          {showAdvancedClientId ? 'Ocultar Client ID' : 'Client ID'}
+                        </button>
+                      </div>
 
                       {showAdvancedClientId && (
-                        <div className="mt-2 p-2.5 rounded-xl bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-800 space-y-1">
+                        <div className="p-2.5 rounded-xl bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-800 space-y-1">
                           <label className="text-[10px] font-bold text-zinc-700 dark:text-zinc-300 block">
                             Google Client ID (OAuth 2.0)
                           </label>

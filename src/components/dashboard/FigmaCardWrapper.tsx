@@ -321,68 +321,54 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
       {/* CONTROLES ESTILO FIGMA (SOMENTE NO CARD SELECIONADO) */}
       {isCustomizing && isSelected && (
         <>
-          {/* BOLA DO CANTO SUPERIOR ESQUERDO (NW) - Redimensiona Diagonal */}
+          {/* NÓ DO CANTO SUPERIOR ESQUERDO (NW) */}
           <div
             onPointerDown={(e) => handleResizeStart(e, 'left', 'top')}
-            className="figma-control absolute -top-2.5 -left-2.5 w-5 h-5 bg-white dark:bg-zinc-900 border-2 border-blue-600 rounded-full cursor-nwse-resize z-50 shadow-lg hover:scale-125 active:scale-150 transition-transform flex items-center justify-center pointer-events-auto touch-none"
-            title="Arraste a bola diagonal para encolher ou aumentar largura e altura"
-          >
-            <div className="w-1.5 h-1.5 bg-blue-600 rounded-full pointer-events-none" />
-          </div>
+            className="figma-control absolute -top-1.5 -left-1.5 w-3 h-3 bg-white dark:bg-zinc-900 border-2 border-blue-600 rounded-full cursor-nwse-resize z-50 shadow-xs hover:scale-150 transition-transform pointer-events-auto touch-none"
+            title="Redimensionar (diagonal)"
+          />
 
-          {/* BOLA DO CANTO INFERIOR ESQUERDO (SW) - Redimensiona Diagonal */}
+          {/* NÓ DO CANTO INFERIOR ESQUERDO (SW) */}
           <div
             onPointerDown={(e) => handleResizeStart(e, 'left', 'bottom')}
-            className="figma-control absolute -bottom-2.5 -left-2.5 w-5 h-5 bg-white dark:bg-zinc-900 border-2 border-blue-600 rounded-full cursor-nesw-resize z-50 shadow-lg hover:scale-125 active:scale-150 transition-transform flex items-center justify-center pointer-events-auto touch-none"
-            title="Arraste a bola diagonal para encolher ou aumentar largura e altura"
-          >
-            <div className="w-1.5 h-1.5 bg-blue-600 rounded-full pointer-events-none" />
-          </div>
+            className="figma-control absolute -bottom-1.5 -left-1.5 w-3 h-3 bg-white dark:bg-zinc-900 border-2 border-blue-600 rounded-full cursor-nesw-resize z-50 shadow-xs hover:scale-150 transition-transform pointer-events-auto touch-none"
+            title="Redimensionar (diagonal)"
+          />
 
-          {/* ALÇA LATERAL ESQUERDA - Apenas Largura */}
+          {/* ALÇA LATERAL ESQUERDA - Indicador Fino */}
           <div
             onPointerDown={(e) => handleResizeStart(e, 'left', 'none')}
-            className="figma-control absolute -left-2 top-1/2 -translate-y-1/2 w-4 h-12 bg-white dark:bg-zinc-900 border-2 border-blue-500 rounded-full flex items-center justify-center cursor-ew-resize z-50 shadow-lg hover:scale-110 active:scale-125 transition-transform touch-none"
-            title="Arraste para redimensionar a largura pela esquerda"
-          >
-            <div className="w-0.5 h-4 bg-blue-500 rounded-full pointer-events-none" />
-          </div>
+            className="figma-control absolute -left-1 top-1/2 -translate-y-1/2 w-1.5 h-8 bg-blue-500 hover:bg-blue-600 rounded-full cursor-ew-resize z-50 shadow-xs hover:w-2 transition-all touch-none"
+            title="Redimensionar largura"
+          />
 
-          {/* BOLA DO CANTO SUPERIOR DIREITO (NE) - Redimensiona Diagonal */}
+          {/* NÓ DO CANTO SUPERIOR DIREITO (NE) */}
           <div
             onPointerDown={(e) => handleResizeStart(e, 'right', 'top')}
-            className="figma-control absolute -top-2.5 -right-2.5 w-5 h-5 bg-white dark:bg-zinc-900 border-2 border-blue-600 rounded-full cursor-nesw-resize z-50 shadow-lg hover:scale-125 active:scale-150 transition-transform flex items-center justify-center pointer-events-auto touch-none"
-            title="Arraste a bola diagonal para encolher ou aumentar largura e altura"
-          >
-            <div className="w-1.5 h-1.5 bg-blue-600 rounded-full pointer-events-none" />
-          </div>
+            className="figma-control absolute -top-1.5 -right-1.5 w-3 h-3 bg-white dark:bg-zinc-900 border-2 border-blue-600 rounded-full cursor-nesw-resize z-50 shadow-xs hover:scale-150 transition-transform pointer-events-auto touch-none"
+            title="Redimensionar (diagonal)"
+          />
 
-          {/* BOLA DO CANTO INFERIOR DIREITO (SE) - Redimensiona Diagonal */}
+          {/* NÓ DO CANTO INFERIOR DIREITO (SE) */}
           <div
             onPointerDown={(e) => handleResizeStart(e, 'right', 'bottom')}
-            className="figma-control absolute -bottom-2.5 -right-2.5 w-5 h-5 bg-white dark:bg-zinc-900 border-2 border-blue-600 rounded-full cursor-nwse-resize z-50 shadow-lg hover:scale-125 active:scale-150 transition-transform flex items-center justify-center pointer-events-auto touch-none"
-            title="Arraste a bola diagonal para encolher ou aumentar largura e altura"
-          >
-            <div className="w-1.5 h-1.5 bg-blue-600 rounded-full pointer-events-none" />
-          </div>
+            className="figma-control absolute -bottom-1.5 -right-1.5 w-3 h-3 bg-white dark:bg-zinc-900 border-2 border-blue-600 rounded-full cursor-nwse-resize z-50 shadow-xs hover:scale-150 transition-transform pointer-events-auto touch-none"
+            title="Redimensionar (diagonal)"
+          />
 
-          {/* ALÇA LATERAL DIREITA - Apenas Largura */}
+          {/* ALÇA LATERAL DIREITA - Indicador Fino */}
           <div
             onPointerDown={(e) => handleResizeStart(e, 'right', 'none')}
-            className="figma-control absolute -right-2 top-1/2 -translate-y-1/2 w-4 h-12 bg-white dark:bg-zinc-900 border-2 border-blue-500 rounded-full flex items-center justify-center cursor-ew-resize z-50 shadow-lg hover:scale-110 active:scale-125 transition-transform touch-none"
-            title="Arraste para redimensionar a largura pela direita"
-          >
-            <div className="w-0.5 h-4 bg-blue-500 rounded-full pointer-events-none" />
-          </div>
+            className="figma-control absolute -right-1 top-1/2 -translate-y-1/2 w-1.5 h-8 bg-blue-500 hover:bg-blue-600 rounded-full cursor-ew-resize z-50 shadow-xs hover:w-2 transition-all touch-none"
+            title="Redimensionar largura"
+          />
 
-          {/* ALÇA INFERIOR CENTRAL - Apenas Altura */}
+          {/* ALÇA INFERIOR CENTRAL - Indicador Fino */}
           <div
             onPointerDown={(e) => handleResizeStart(e, 'none', 'bottom')}
-            className="figma-control absolute -bottom-2 left-1/2 -translate-x-1/2 h-4 w-14 bg-white dark:bg-zinc-900 border-2 border-blue-500 rounded-full flex items-center justify-center cursor-ns-resize z-50 shadow-lg hover:scale-110 active:scale-125 transition-transform touch-none"
-            title="Arraste para redimensionar a altura"
-          >
-            <div className="h-0.5 w-5 bg-blue-500 rounded-full pointer-events-none" />
-          </div>
+            className="figma-control absolute -bottom-1 left-1/2 -translate-x-1/2 h-1.5 w-10 bg-blue-500 hover:bg-blue-600 rounded-full cursor-ns-resize z-50 shadow-xs hover:h-2 transition-all touch-none"
+            title="Redimensionar altura"
+          />
 
           {/* BARRA SUPERIOR DE AÇÕES NO TOPO DO CARD SELECIONADO */}
           <div className="figma-control absolute -top-8 left-0 right-0 z-50 flex items-center justify-between px-2 text-xs pointer-events-auto">
