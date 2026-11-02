@@ -3474,6 +3474,22 @@ export default function Home() {
         onClose={() => setIsShortcutsModalOpen(false)}
       />
 
+      {/* Onboarding Interativo Guiado (Pós-Cadastro / Primeiro Acesso Estilo MedEvo Otimizado) */}
+      <OnboardingModal
+        isOpen={isOnboardingOpen}
+        onClose={() => setIsOnboardingOpen(false)}
+        onComplete={(action) => {
+          setIsOnboardingOpen(false);
+          if (action === 'plans') {
+            setIsUpgradeModalOpen(true);
+          } else if (action === 'questions') {
+            setActiveTab('questions');
+          } else {
+            setActiveTab('home');
+          }
+        }}
+      />
+
       {/* Drawer Lateral de Apontamento e Reporte de Erro em Questão */}
       <ReportIssueDrawer
         isOpen={isReportDrawerOpen}

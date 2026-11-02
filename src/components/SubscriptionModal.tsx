@@ -242,11 +242,10 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
 
               {couponFeedback && (
                 <div
-                  className={`mt-2 p-2.5 rounded-xl text-xs flex items-center gap-2 ${
-                    couponFeedback.type === 'success'
+                  className={`mt-2 p-2.5 rounded-xl text-xs flex items-center gap-2 ${couponFeedback.type === 'success'
                       ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30'
                       : 'bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-500/30'
-                  }`}
+                    }`}
                 >
                   {couponFeedback.type === 'success' ? (
                     <Check className="w-4 h-4 shrink-0" />
@@ -279,11 +278,10 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
                 return (
                   <div
                     key={plan.id}
-                    className={`flex flex-col pt-8 sm:pt-9 pb-5 px-5 rounded-3xl border transition-all relative ${
-                      isHighlighted
+                    className={`flex flex-col pt-8 sm:pt-9 pb-5 px-5 rounded-3xl border transition-all relative ${isHighlighted
                         ? 'border-2 shadow-xl bg-slate-900 text-white dark:bg-slate-950 ring-1 ring-white/10'
                         : 'border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-950/40 text-slate-900 dark:text-white'
-                    }`}
+                      }`}
                     style={isHighlighted ? { borderColor: accentConfig.primaryHex } : {}}
                   >
                     {/* Badge com whitespace-nowrap e posicionamento elevado que NUNCA quebra em 2 linhas */}
@@ -395,11 +393,10 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
                       onClick={() => {
                         setSelectedPlanOverride(plan);
                       }}
-                      className={`w-full py-3 rounded-2xl font-black text-xs transition-transform hover:scale-[1.02] flex items-center justify-center gap-1.5 mt-2 cursor-pointer shadow-md ${
-                        isHighlighted
+                      className={`w-full py-3 rounded-2xl font-black text-xs transition-transform hover:scale-[1.02] flex items-center justify-center gap-1.5 mt-2 cursor-pointer shadow-md ${isHighlighted
                           ? 'text-white'
                           : 'bg-slate-900 text-white dark:bg-white dark:text-slate-900'
-                      }`}
+                        }`}
                       style={isHighlighted ? { backgroundColor: accentConfig.primaryHex } : {}}
                     >
                       <Zap className="w-3.5 h-3.5 fill-current" />
