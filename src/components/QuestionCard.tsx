@@ -1413,11 +1413,12 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                           : isEliminated
                           ? 'bg-slate-100 dark:bg-slate-900 text-slate-400 line-through'
                           : isPending
-                          ? 'text-white shadow-sm'
+                          ? 'shadow-sm'
                           : 'bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700'
                       }`}
                       style={!isAnswered && isPending ? {
                         backgroundColor: accentConfig.primaryHex,
+                        color: accentConfig.primaryContrastHex,
                         boxShadow: `0 0 0 2px ${accentConfig.borderRgba}`
                       } : undefined}
                     >
@@ -1578,13 +1579,14 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                   title={pendingSelected ? 'Resolver questão' : 'Selecione uma alternativa'}
                   className={`flex items-center justify-center gap-2 px-6 py-2.5 rounded-xl text-xs font-extrabold shadow-sm transition-all cursor-pointer ${
                     pendingSelected && !isSubmittingAnswer
-                      ? 'text-white hover:scale-102 active:scale-98 shadow-md'
+                      ? 'hover:scale-102 active:scale-98 shadow-md'
                       : 'bg-slate-200 dark:bg-slate-800 text-slate-400 cursor-not-allowed'
                   }`}
                   style={
                     pendingSelected && !isSubmittingAnswer
                       ? {
                           backgroundColor: accentConfig.primaryHex,
+                          color: accentConfig.primaryContrastHex,
                           boxShadow: `0 4px 14px 0 ${accentConfig.bgRgba}`
                         }
                       : undefined

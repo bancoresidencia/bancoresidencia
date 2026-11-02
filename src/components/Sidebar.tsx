@@ -137,17 +137,18 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   : 'w-full px-2.5 py-2 gap-2.5 justify-start'
               } ${
                 isActive
-                  ? 'text-white shadow-xs'
+                  ? 'shadow-xs'
                   : 'text-slate-500 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-100 hover:bg-slate-100/80 dark:hover:bg-zinc-900'
               }`}
               style={{
-                backgroundColor: isActive ? accentConfig.primaryHex : undefined
+                backgroundColor: isActive ? accentConfig.primaryHex : undefined,
+                color: isActive ? accentConfig.primaryContrastHex : undefined
               }}
             >
               <div className="relative">
                 <Icon
                   className={`w-4.5 h-4.5 shrink-0 stroke-[1.8] ${
-                    isActive ? 'text-white' : 'text-slate-500 dark:text-zinc-400 group-hover:text-slate-900 dark:group-hover:text-zinc-200'
+                    isActive ? '' : 'text-slate-500 dark:text-zinc-400 group-hover:text-slate-900 dark:group-hover:text-zinc-200'
                   }`}
                 />
                 {isCollapsed && item.badge !== undefined && (
@@ -158,7 +159,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
               {!isCollapsed && (
                 <>
                   <span className={`text-xs font-bold tracking-tight truncate ${
-                    isActive ? 'text-white' : 'text-slate-700 dark:text-zinc-300 group-hover:text-slate-900 dark:group-hover:text-zinc-100'
+                    isActive ? '' : 'text-slate-700 dark:text-zinc-300 group-hover:text-slate-900 dark:group-hover:text-zinc-100'
                   }`}>
                     {item.label}
                   </span>

@@ -33,7 +33,7 @@ export const Logo: React.FC<LogoProps> = ({
   // Resolução dinâmica de cores com suporte a alto contraste no modo monocromático
   const resolvedCircleColor =
     circleColor ||
-    (isNeutral ? (isDark ? '#f4f4f5' : '#18181b') : accentConfig?.primaryHex || 'var(--logo-primary, #2563eb)');
+    (isNeutral ? (isDark ? '#ffffff' : '#18181b') : accentConfig?.primaryHex || 'var(--logo-primary, #2563eb)');
 
   const resolvedLetterColor =
     letterColor ||

@@ -2257,8 +2257,8 @@ export default function Home() {
                   <button
                     type="button"
                     onClick={() => setAuthModal({ isOpen: true, mode: 'register' })}
-                    className="px-3.5 py-1.5 rounded-xl text-xs font-extrabold text-white shadow-sm transition-transform hover:scale-105 cursor-pointer"
-                    style={{ backgroundColor: accentConfig.primaryHex }}
+                    className="px-3.5 py-1.5 rounded-xl text-xs font-extrabold shadow-sm transition-transform hover:scale-105 cursor-pointer"
+                    style={{ backgroundColor: accentConfig.primaryHex, color: accentConfig.primaryContrastHex }}
                   >
                     Criar Conta
                   </button>
@@ -2284,8 +2284,8 @@ export default function Home() {
                       />
                     ) : (
                       <div
-                        className="w-8.5 h-8.5 rounded-xl flex items-center justify-center font-bold text-[11px] text-white shadow-xs shrink-0"
-                        style={{ backgroundColor: accentConfig.primaryHex }}
+                        className="w-8.5 h-8.5 rounded-xl flex items-center justify-center font-bold text-[11px] shadow-xs shrink-0"
+                        style={{ backgroundColor: accentConfig.primaryHex, color: accentConfig.primaryContrastHex }}
                       >
                         {(user.name || 'LR').slice(0, 2).toUpperCase()}
                       </div>

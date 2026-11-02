@@ -63,7 +63,7 @@ export default function RootLayout({
                     purple: '#7c3aed',
                     red: '#dc2626',
                     rose: '#e11d48',
-                    neutral: m === 'light' ? '#18181b' : '#f4f4f5'
+                    neutral: m === 'light' ? '#18181b' : '#ffffff'
                   };
                   var hovers = {
                     blue: '#1d4ed8',
@@ -81,7 +81,7 @@ export default function RootLayout({
                     purple: 'rgba(124, 58, 237, 0.15)',
                     red: 'rgba(220, 38, 38, 0.15)',
                     rose: 'rgba(225, 29, 72, 0.14)',
-                    neutral: 'rgba(255, 255, 255, 0.10)'
+                    neutral: m === 'light' ? 'rgba(24, 24, 27, 0.12)' : 'rgba(255, 255, 255, 0.14)'
                   };
                   var chosen = (a && colors[a]) ? colors[a] : '#2563eb';
                   var chosenHover = (a && hovers[a]) ? hovers[a] : '#1d4ed8';
