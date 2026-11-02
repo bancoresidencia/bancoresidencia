@@ -70,7 +70,7 @@ export function loadGoogleGsiScript(): Promise<void> {
 }
 
 /**
- * OPÇÃO 2: Inicializa o fluxo OAuth Token Client do Google com proteção contra travamentos
+ * OPÇÃO 2: Inicializa o fluxo OAuth Token Client do Google
  */
 export async function requestGoogleCalendarAccessToken(
   clientId: string,
@@ -91,32 +91,15 @@ export async function requestGoogleCalendarAccessToken(
     const cleanup = () => {
       isDone = true;
       if (timeoutTimer) clearTimeout(timeoutTimer);
-      if (typeof window !== 'undefined') {
-        window.removeEventListener('focus', onWindowFocus);
-      }
     };
 
-    // Timer de segurança de 45 segundos para liberar a interface caso a janela do Google seja fechada
+    // Tempo limite generoso de 3 minutos para permitir ao aluno ler e confirmar com calma
     timeoutTimer = setTimeout(() => {
       if (!isDone) {
         cleanup();
-        onError(new Error('A janela de autenticação foi fechada ou expirou. Clique novamente para tentar.'));
+        onError(new Error('Tempo limite esgotado. Clique em "Continuar com o Google" para tentar novamente.'));
       }
-    }, 45000);
-
-    // Quando o usuário volta o foco para a janela principal, aguarda alguns segundos para checar se a janela foi fechada
-    const onWindowFocus = () => {
-      setTimeout(() => {
-        if (!isDone) {
-          cleanup();
-          onError(new Error('A janela do Google foi fechada antes da confirmação. Clique em "Continuar com o Google" para tentar de novo.'));
-        }
-      }, 4000);
-    };
-
-    if (typeof window !== 'undefined') {
-      window.addEventListener('focus', onWindowFocus);
-    }
+    }, 180000);
 
     const tokenClient = google.accounts.oauth2.initTokenClient({
       client_id: clientId,
@@ -131,7 +114,8 @@ export async function requestGoogleCalendarAccessToken(
       }
     });
 
-    tokenClient.requestAccessToken({ prompt: 'consent' });
+    // Se o usuário já tiver autorizado previamente, conecta imediatamente sem reexibir avisos
+    tokenClient.requestAccessToken({ prompt: '' });
   } catch (err) {
     onError(err);
   }
@@ -154,7 +138,7 @@ export async function fetchTodayEventsFromGoogleApi(accessToken: string) {
       Authorization: `Bearer ${accessToken}`,
       Accept: 'application/json'
     },
-    signal: AbortSignal.timeout(8000)
+    signal: AbortSignal.timeout(10000)
   });
 
   if (!response.ok) {
@@ -235,7 +219,7 @@ export async function createEventInGoogleCalendarApi(
       'Content-Type': 'application/json'
     },
     body: JSON.stringify(payload),
-    signal: AbortSignal.timeout(8000)
+    signal: AbortSignal.timeout(10000)
   });
 
   if (!response.ok) {

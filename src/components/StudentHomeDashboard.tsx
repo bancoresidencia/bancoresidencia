@@ -199,6 +199,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     visibleCards,
     hiddenCards,
     updateColSpan,
+    updateCardHeight,
     updateCardSettings,
     moveCard,
     reorderCard,
@@ -2305,7 +2306,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       />
 
       {/* Grid Principal Reorganizável Estilo Figma */}
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-5 auto-rows-min">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-5 auto-rows-min grid-flow-dense">
         {visibleCards.map((cardConfig) => {
           if (cardConfig.id === 'home_hero') {
             return (
@@ -2316,6 +2317,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 isSelected={selectedCardId === cardConfig.id}
                 onSelect={(id) => setSelectedCardId(id)}
                 onUpdateColSpan={updateColSpan}
+                onUpdateHeight={updateCardHeight}
                 onUpdateSettings={updateCardSettings}
                 onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
@@ -2448,13 +2450,14 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 isSelected={selectedCardId === cardConfig.id}
                 onSelect={(id) => setSelectedCardId(id)}
                 onUpdateColSpan={updateColSpan}
+                onUpdateHeight={updateCardHeight}
                 onUpdateSettings={updateCardSettings}
                 onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
                 onReorder={reorderCard}
               >
                 {/* Card 1: Metas Diárias */}
-                <div className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-5 shadow-xs flex flex-col justify-between min-h-[180px] space-y-3.5">
+                <div className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-5 shadow-xs flex flex-col justify-between min-h-0 h-full space-y-3.5">
                   <div>
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
@@ -2575,6 +2578,26 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         </div>
                       </div>
                     )}
+
+                    {/* VISÃO EXPANDIDA ADAPTATIVA: Sessões Programadas do Dia */}
+                    {((cardConfig.customHeight && cardConfig.customHeight >= 220) || cardConfig.colSpan >= 6) && (
+                      <div className="pt-2.5 space-y-1.5 border-t border-zinc-100 dark:border-zinc-800/80 animate-in fade-in duration-200">
+                        <div className="flex items-center justify-between text-[11px]">
+                          <span className="font-bold text-zinc-700 dark:text-zinc-300">Sessões Programadas</span>
+                          <span className="text-[10px] text-zinc-400">Ciclo Diário</span>
+                        </div>
+                        <div className="grid grid-cols-2 gap-2 text-[10px]">
+                          <div className="p-2 rounded-xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200/60 dark:border-zinc-800 flex items-center justify-between">
+                            <span className="text-zinc-500">Bloco Manhã</span>
+                            <span className="font-bold text-emerald-600 dark:text-emerald-400">{Math.min(todayAnswered, Math.round(dailyGoal / 2))}/{Math.round(dailyGoal / 2)} Q</span>
+                          </div>
+                          <div className="p-2 rounded-xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200/60 dark:border-zinc-800 flex items-center justify-between">
+                            <span className="text-zinc-500">Bloco Tarde</span>
+                            <span className="font-bold text-amber-600 dark:text-amber-400">{Math.max(0, todayAnswered - Math.round(dailyGoal / 2))}/{Math.round(dailyGoal / 2)} Q</span>
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </div>
 
                   <div className="pt-2.5 flex items-center justify-between text-xs text-zinc-500 dark:text-zinc-400 border-t border-zinc-100 dark:border-zinc-800/80">
@@ -2596,13 +2619,14 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 isSelected={selectedCardId === cardConfig.id}
                 onSelect={(id) => setSelectedCardId(id)}
                 onUpdateColSpan={updateColSpan}
+                onUpdateHeight={updateCardHeight}
                 onUpdateSettings={updateCardSettings}
                 onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
                 onReorder={reorderCard}
               >
                 {/* Card 2: Aproveitamento com Seletor Interativo e Mini Sparkline com Tooltips */}
-                <div className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-5 shadow-xs flex flex-col justify-between min-h-[180px] space-y-3.5">
+                <div className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-5 shadow-xs flex flex-col justify-between min-h-0 h-full space-y-3.5">
                   <div>
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
@@ -2739,6 +2763,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 isSelected={selectedCardId === cardConfig.id}
                 onSelect={(id) => setSelectedCardId(id)}
                 onUpdateColSpan={updateColSpan}
+                onUpdateHeight={updateCardHeight}
                 onUpdateSettings={updateCardSettings}
                 onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
@@ -2747,7 +2772,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 {/* Card 3: Percentil Oficial */}
                 <div
                   ref={percentileCardRef}
-                  className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-5 shadow-xs flex flex-col justify-between min-h-[180px] space-y-3.5 relative overflow-hidden transition-all duration-300 group"
+                  className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-5 shadow-xs flex flex-col justify-between min-h-0 h-full space-y-3.5 relative overflow-hidden transition-all duration-300 group"
                 >
                   {isMedalAnimating && (
                     <div className="absolute inset-0 bg-white/75 dark:bg-black/75 backdrop-blur-[2px] pointer-events-none rounded-2xl animate-in fade-in duration-300 z-10" />
@@ -2843,6 +2868,88 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         </div>
                       </div>
                     )}
+
+                    {/* VISÃO EXPANDIDA ADAPTATIVA: Curva Normal de Distribuição TRI (Gaussiana) */}
+                    {((cardConfig.customHeight && cardConfig.customHeight >= 220) || cardConfig.colSpan >= 6) && (
+                      <div className="pt-2 pb-1 space-y-2 border-t border-zinc-100 dark:border-zinc-800/80 animate-in fade-in duration-200">
+                        <div className="flex items-center justify-between text-[11px]">
+                          <span className="font-bold text-zinc-700 dark:text-zinc-300 flex items-center gap-1.5">
+                            <span className="w-2 h-2 rounded-full" style={{ backgroundColor: percentileTier.color }} />
+                            Curva de Distribuição TRI (Concorrência Oficial)
+                          </span>
+                          <span className="text-[10px] text-zinc-400">Modelo Normal P1 - P99</span>
+                        </div>
+
+                        {/* Gráfico Vetorial da Gaussiana com Ponto do Aluno */}
+                        <div className="relative w-full h-24 bg-zinc-50/60 dark:bg-zinc-900/40 rounded-xl p-2 border border-zinc-200/50 dark:border-zinc-800/50 overflow-hidden">
+                          <svg viewBox="0 0 320 80" className="w-full h-full overflow-visible">
+                            <defs>
+                              <linearGradient id={`triGradient-${cardConfig.id}`} x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stopColor={percentileTier.color} stopOpacity="0.35" />
+                                <stop offset="100%" stopColor={percentileTier.color} stopOpacity="0.02" />
+                              </linearGradient>
+                            </defs>
+
+                            {/* Área sob a curva */}
+                            <path
+                              d="M 10 75 Q 60 75 100 65 T 160 10 T 220 65 Q 260 75 310 75 Z"
+                              fill={`url(#triGradient-${cardConfig.id})`}
+                            />
+                            {/* Linha da Curva Gaussiana */}
+                            <path
+                              d="M 10 75 Q 60 75 100 65 T 160 10 T 220 65 Q 260 75 310 75"
+                              fill="none"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              className="text-zinc-300 dark:text-zinc-700"
+                            />
+
+                            {/* Marcações de Percentil: P25, P50, P75, P90 */}
+                            <line x1="85" y1="15" x2="85" y2="75" stroke="currentColor" strokeDasharray="2,2" strokeWidth="1" className="text-zinc-300 dark:text-zinc-800" />
+                            <line x1="160" y1="10" x2="160" y2="75" stroke="currentColor" strokeDasharray="2,2" strokeWidth="1" className="text-zinc-300 dark:text-zinc-800" />
+                            <line x1="235" y1="15" x2="235" y2="75" stroke="currentColor" strokeDasharray="2,2" strokeWidth="1" className="text-zinc-300 dark:text-zinc-800" />
+                            <line x1="280" y1="35" x2="280" y2="75" stroke="currentColor" strokeDasharray="2,2" strokeWidth="1" className="text-emerald-500/50" />
+
+                            {/* Posição do Aluno na Curva */}
+                            {(() => {
+                              const pct = Math.max(1, Math.min(99, stats.percentileInfo.percentile || 1));
+                              const markerX = 15 + (pct / 100) * 290;
+                              const normDist = (markerX - 160) / 55;
+                              const markerY = Math.max(12, Math.min(73, 75 - 65 * Math.exp(-0.5 * normDist * normDist)));
+
+                              return (
+                                <g>
+                                  <line x1={markerX} y1={markerY} x2={markerX} y2="75" stroke={percentileTier.color} strokeWidth="2" strokeDasharray="2,1" />
+                                  <circle cx={markerX} cy={markerY} r="5" fill={percentileTier.color} className="animate-pulse" />
+                                  <circle cx={markerX} cy={markerY} r="9" fill={percentileTier.color} fillOpacity="0.25" />
+                                </g>
+                              );
+                            })()}
+                          </svg>
+
+                          {/* Labels do eixo X da curva */}
+                          <div className="absolute bottom-1 left-2 right-2 flex justify-between text-[9px] font-mono text-zinc-400">
+                            <span>P1</span>
+                            <span>P25</span>
+                            <span className="font-bold text-zinc-600 dark:text-zinc-300">P50 (Média)</span>
+                            <span>P75</span>
+                            <span className="font-bold text-emerald-600 dark:text-emerald-400">P90 (Corte)</span>
+                          </div>
+                        </div>
+
+                        {/* Indicadores de Meta e Distância */}
+                        <div className="grid grid-cols-2 gap-2 text-[10px]">
+                          <div className="p-2 rounded-lg bg-zinc-50 dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800 flex flex-col justify-between">
+                            <span className="text-zinc-400 font-medium">Zona de Corte</span>
+                            <span className="font-bold text-zinc-800 dark:text-zinc-200 mt-0.5">Top 10% (P90)</span>
+                          </div>
+                          <div className="p-2 rounded-lg bg-zinc-50 dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800 flex flex-col justify-between">
+                            <span className="text-zinc-400 font-medium">Aceleração TRI</span>
+                            <span className="font-bold text-emerald-600 dark:text-emerald-400 mt-0.5">+14 pts p/ Próx Nível</span>
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </div>
 
                   <div className="pt-2.5 flex items-center justify-between text-xs border-t border-zinc-100 dark:border-zinc-800/80">
@@ -2878,6 +2985,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 isSelected={selectedCardId === cardConfig.id}
                 onSelect={(id) => setSelectedCardId(id)}
                 onUpdateColSpan={updateColSpan}
+                onUpdateHeight={updateCardHeight}
                 onUpdateSettings={updateCardSettings}
                 onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
@@ -2961,13 +3069,14 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 isSelected={selectedCardId === cardConfig.id}
                 onSelect={(id) => setSelectedCardId(id)}
                 onUpdateColSpan={updateColSpan}
+                onUpdateHeight={updateCardHeight}
                 onUpdateSettings={updateCardSettings}
                 onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
                 onReorder={reorderCard}
               >
-                <div className="w-full bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-4 sm:p-5 shadow-xs relative overflow-hidden group space-y-2.5">
-                  <div className="md:col-span-6 border-t md:border-t-0 md:border-l border-slate-100 dark:border-zinc-800/80 pt-4 md:pt-0 md:pl-6 space-y-2.5">
+                <div className="w-full bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-4 sm:p-5 shadow-xs relative overflow-hidden group space-y-2.5 min-h-0 h-full flex flex-col justify-between">
+                  <div className="space-y-2.5">
                     <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 block">
                       Retenção & Repetição Espaçada
                     </span>
@@ -2980,14 +3089,14 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           setDrawerSearch('');
                           setDrawerErrorSpecialty('Todas');
                         }}
-                        className="flex items-center justify-between p-2.5 rounded-xl border border-zinc-200/80 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/50 hover:bg-zinc-100 dark:hover:bg-zinc-800/80 cursor-pointer transition-all group"
+                        className="flex items-center justify-between p-2.5 rounded-xl border border-zinc-200/80 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/50 hover:bg-zinc-100 dark:hover:bg-zinc-800/80 cursor-pointer transition-all group gap-2"
                         title="Abrir central de foco do Caderno de Erros"
                       >
-                        <div className="flex items-center gap-2.5 min-w-0">
+                        <div className="flex items-center gap-2.5 min-w-0 flex-1 overflow-hidden">
                           <div className="w-8 h-8 rounded-lg bg-rose-500/10 text-rose-500 flex items-center justify-center shrink-0">
                             <AlertOctagon className="w-4 h-4" />
                           </div>
-                          <div className="min-w-0">
+                          <div className="min-w-0 flex-1 overflow-hidden">
                             <div className="text-xs font-bold text-zinc-800 dark:text-zinc-200 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors truncate">
                               Caderno de Erros
                             </div>
@@ -2996,11 +3105,9 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                             </div>
                           </div>
                         </div>
-                        <div className="flex items-center gap-1.5 shrink-0">
-                          <span className="text-[10px] font-medium text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-200 hidden sm:inline">
-                            Ver Foco
-                          </span>
-                          <ChevronRight className="w-4 h-4 text-zinc-400 group-hover:translate-x-0.5 group-hover:text-zinc-600 dark:group-hover:text-zinc-200 transition-all" />
+                        <div className="flex items-center gap-1.5 shrink-0 ml-auto">
+                          <span className="text-[10px] font-medium text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-200 card-action-text whitespace-nowrap">Ver Foco</span>
+                          <ChevronRight className="w-4 h-4 text-zinc-400 group-hover:translate-x-0.5 group-hover:text-zinc-600 dark:group-hover:text-zinc-200 transition-all shrink-0" />
                         </div>
                       </div>
 
@@ -3011,17 +3118,17 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           setDrawerSearch('');
                           setDrawerFlashcardSpecialty('Todas');
                         }}
-                        className="flex items-center justify-between p-2.5 rounded-xl border border-zinc-200/80 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/50 hover:bg-zinc-100 dark:hover:bg-zinc-800/80 cursor-pointer transition-all group"
+                        className="flex items-center justify-between p-2.5 rounded-xl border border-zinc-200/80 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/50 hover:bg-zinc-100 dark:hover:bg-zinc-800/80 cursor-pointer transition-all group gap-2"
                         title="Abrir central de foco dos Flashcards"
                       >
-                        <div className="flex items-center gap-2.5 min-w-0">
+                        <div className="flex items-center gap-2.5 min-w-0 flex-1 overflow-hidden">
                           <div
                             className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0"
                             style={{ backgroundColor: accentConfig.bgRgba, color: accentConfig.primaryHex }}
                           >
                             <Brain className="w-4 h-4" />
                           </div>
-                          <div className="min-w-0">
+                          <div className="min-w-0 flex-1 overflow-hidden">
                             <div className="text-xs font-bold text-zinc-800 dark:text-zinc-200 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors truncate">
                               Flashcards Mnemônicos
                             </div>
@@ -3030,14 +3137,45 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                             </div>
                           </div>
                         </div>
-                        <div className="flex items-center gap-1.5 shrink-0">
-                          <span className="text-[10px] font-medium text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-200 hidden sm:inline">
-                            Ver Foco
-                          </span>
-                          <ChevronRight className="w-4 h-4 text-zinc-400 group-hover:translate-x-0.5 group-hover:text-zinc-600 dark:group-hover:text-zinc-200 transition-all" />
+                        <div className="flex items-center gap-1.5 shrink-0 ml-auto">
+                          <span className="text-[10px] font-medium text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-200 card-action-text whitespace-nowrap">Ver Foco</span>
+                          <ChevronRight className="w-4 h-4 text-zinc-400 group-hover:translate-x-0.5 group-hover:text-zinc-600 dark:group-hover:text-zinc-200 transition-all shrink-0" />
                         </div>
                       </div>
                     </div>
+
+                    {/* VISÃO EXPANDIDA ADAPTATIVA: Focos Críticos de Reteste */}
+                    {((cardConfig.customHeight && cardConfig.customHeight >= 220) || cardConfig.colSpan >= 6) && (
+                      <div className="pt-2.5 pb-1 space-y-2 border-t border-zinc-100 dark:border-zinc-800/80 animate-in fade-in duration-200">
+                        <div className="flex items-center justify-between text-[11px]">
+                          <span className="font-bold text-zinc-700 dark:text-zinc-300 flex items-center gap-1.5">
+                            <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
+                            Focos Críticos de Reteste Prioritário
+                          </span>
+                          <span className="text-[10px] text-zinc-400">Algoritmo FSRS</span>
+                        </div>
+
+                        <div className="grid grid-cols-2 sm:grid-cols-3 gap-1.5 text-[10px]">
+                          <div className="p-1.5 rounded-lg bg-rose-500/10 border border-rose-500/20 text-rose-700 dark:text-rose-400 flex flex-col">
+                            <span className="font-bold truncate">Clínica Médica</span>
+                            <span className="text-[9px] opacity-80">32 pendentes</span>
+                          </div>
+                          <div className="p-1.5 rounded-lg bg-amber-500/10 border border-amber-500/20 text-amber-700 dark:text-amber-400 flex flex-col">
+                            <span className="font-bold truncate">Pediatria</span>
+                            <span className="text-[9px] opacity-80">24 pendentes</span>
+                          </div>
+                          <div className="p-1.5 rounded-lg bg-purple-500/10 border border-purple-500/20 text-purple-700 dark:text-purple-400 flex flex-col">
+                            <span className="font-bold truncate">Ginecologia</span>
+                            <span className="text-[9px] opacity-80">18 pendentes</span>
+                          </div>
+                        </div>
+
+                        <div className="flex items-center justify-between text-[10px] text-zinc-500 dark:text-zinc-400 bg-zinc-50 dark:bg-zinc-900 px-2.5 py-1.5 rounded-lg border border-zinc-200/50 dark:border-zinc-800/60">
+                          <span>Estabilidade de Memória (R): <strong>88.5%</strong></span>
+                          <span>Próx. ciclo: <strong>Hoje às 19h</strong></span>
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
               </FigmaCardWrapper>
@@ -3052,6 +3190,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 isSelected={selectedCardId === cardConfig.id}
                 onSelect={(id) => setSelectedCardId(id)}
                 onUpdateColSpan={updateColSpan}
+                onUpdateHeight={updateCardHeight}
                 onUpdateSettings={updateCardSettings}
                 onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
@@ -3060,7 +3199,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 {/* Card 1: Mnemônico Clínico do Dia */}
                 <div
                   onClick={() => setActiveCentralDrawer('mnemonico_detalhado')}
-                  className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-5 shadow-xs cursor-pointer hover:border-zinc-300 dark:hover:border-zinc-700 transition-all group flex flex-col justify-between min-h-[180px] h-full relative overflow-hidden space-y-3"
+                  className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-5 shadow-xs cursor-pointer hover:border-zinc-300 dark:hover:border-zinc-700 transition-all group flex flex-col justify-between min-h-0 h-full relative overflow-hidden space-y-3"
                   title="Abrir raciocínio mnemônico completo e desdobramentos"
                 >
                   {/* Top Bar: Título do mnemônico e apenas a seta */}
@@ -3121,6 +3260,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 isSelected={selectedCardId === cardConfig.id}
                 onSelect={(id) => setSelectedCardId(id)}
                 onUpdateColSpan={updateColSpan}
+                onUpdateHeight={updateCardHeight}
                 onUpdateSettings={updateCardSettings}
                 onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
@@ -3129,7 +3269,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 {/* Card 2: Agenda de Estudos do Dia (Foco Exclusivo no Período Atual + Google Agenda) */}
                 <div
                   onClick={() => setActiveCentralDrawer('agenda_detalhada')}
-                  className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-5 shadow-xs cursor-pointer hover:border-blue-500/40 transition-all group flex flex-col justify-between min-h-[180px] h-full relative overflow-hidden space-y-3.5"
+                  className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-5 shadow-xs cursor-pointer hover:border-blue-500/40 transition-all group flex flex-col justify-between min-h-0 h-full relative overflow-hidden space-y-3.5"
                   title="Abrir cronograma de blocos do dia"
                 >
                   {/* Top Bar */}
@@ -3267,6 +3407,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 isSelected={selectedCardId === cardConfig.id}
                 onSelect={(id) => setSelectedCardId(id)}
                 onUpdateColSpan={updateColSpan}
+                onUpdateHeight={updateCardHeight}
                 onUpdateSettings={updateCardSettings}
                 onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
@@ -3301,9 +3442,9 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       </div>
 
                       {/* Gráfico Donut + Gráfico de Evolução */}
-                      <div className="grid grid-cols-1 md:grid-cols-12 gap-5 sm:gap-8 items-center pt-1">
-                        {/* Donut Chart (Esquerda - 5 cols) */}
-                        <div className="md:col-span-5 flex flex-col items-center justify-center space-y-2">
+                      <div className={`grid grid-cols-1 ${cardConfig.colSpan >= 8 ? 'md:grid-cols-12' : 'grid-cols-1'} gap-5 sm:gap-8 items-center pt-1`}>
+                        {/* Donut Chart (Esquerda - 5 cols quando largo, coluna única quando compacto) */}
+                        <div className={`${cardConfig.colSpan >= 8 ? 'md:col-span-5' : 'col-span-1'} flex flex-col items-center justify-center space-y-2`}>
                           <div className={`h-48 w-full max-w-[220px] relative flex items-center justify-center mx-auto ${!isPieAnimationDone ? 'pointer-events-none' : ''}`}>
                             <ResponsiveContainer width="100%" height="100%">
                               <PieChart>
@@ -3470,7 +3611,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         </div>
 
                         {/* Gráfico de Evolução da Especialidade Selecionada ou Geral */}
-                        <div className="md:col-span-7 flex flex-col justify-between space-y-3">
+                        <div className={`${cardConfig.colSpan >= 8 ? 'md:col-span-7' : 'col-span-1'} flex flex-col justify-between space-y-3`}>
                           {/* Cabeçalho do Gráfico: Filtro de Período (Esquerda) + Legenda Horizontal Inline (Direita - Imagem 3) */}
                           <div className="flex flex-wrap items-center justify-between gap-3 pb-2 border-b border-slate-100 dark:border-zinc-850">
                             <div className="flex items-center gap-2">
@@ -3611,6 +3752,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 isSelected={selectedCardId === cardConfig.id}
                 onSelect={(id) => setSelectedCardId(id)}
                 onUpdateColSpan={updateColSpan}
+                onUpdateHeight={updateCardHeight}
                 onUpdateSettings={updateCardSettings}
                 onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
@@ -4089,6 +4231,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 isSelected={selectedCardId === cardConfig.id}
                 onSelect={(id) => setSelectedCardId(id)}
                 onUpdateColSpan={updateColSpan}
+                onUpdateHeight={updateCardHeight}
                 onUpdateSettings={updateCardSettings}
                 onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
