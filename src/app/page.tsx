@@ -3483,7 +3483,7 @@ export default function Home() {
           if (action === 'plans') {
             setIsUpgradeModalOpen(true);
           } else if (action === 'questions') {
-            setActiveTab('questions');
+            setActiveTab('banco');
           } else {
             setActiveTab('home');
           }
