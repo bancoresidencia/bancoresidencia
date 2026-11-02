@@ -1,6 +1,8 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import {
   LayoutDashboard,
   FileQuestion,
@@ -25,10 +27,10 @@ import { useAuth } from '@/context/AuthContext';
 import { Logo } from '@/components/Logo';
 
 interface SidebarProps {
-  activeTab: ActiveTab;
-  onNavigate: (tab: ActiveTab) => void;
-  modalidade: Modalidade;
-  streakDays: number;
+  activeTab?: ActiveTab;
+  onNavigate?: (tab: ActiveTab) => void;
+  modalidade?: Modalidade;
+  streakDays?: number;
   isCollapsed?: boolean;
   onToggleCollapse?: () => void;
   pendingErrorsCount?: number;
@@ -37,37 +39,39 @@ interface SidebarProps {
 export const Sidebar: React.FC<SidebarProps> = ({
   activeTab,
   onNavigate,
-  modalidade,
-  streakDays,
+  modalidade = 'Residência Médica',
+  streakDays = 1,
   isCollapsed = true,
   onToggleCollapse,
   pendingErrorsCount = 0
 }) => {
+  const pathname = usePathname();
   const { accentConfig } = useTheme();
   const { isAdmin } = useAuth();
 
   const menuItems = [
-    { id: 'home', label: 'Início', icon: LayoutDashboard },
-    { id: 'banco', label: 'Banco de Questões', icon: FileQuestion },
+    { id: 'home', label: 'Início', icon: LayoutDashboard, href: '/dashboard' },
+    { id: 'banco', label: 'Banco de Questões', icon: FileQuestion, href: '/questoes' },
     {
       id: 'caderno_erros',
       label: 'Caderno de Erros',
       icon: AlertOctagon,
+      href: '/caderno-de-erros',
       badge: pendingErrorsCount > 0 ? pendingErrorsCount : undefined
     },
-    { id: 'flashcards', label: 'Flashcards', icon: Brain },
-    { id: 'resumos', label: 'Resumos Clínicos', icon: BookOpen },
-    { id: 'listas', label: 'Listas & Pastas', icon: FolderOpen },
-    { id: 'provas', label: 'Provas na Íntegra', icon: FileText },
-    { id: 'simulados', label: 'Simulados Oficiais', icon: ClipboardCheck },
-    { id: 'stats', label: 'Meu Desempenho', icon: BarChart3 },
-    { id: 'ranking', label: 'Ranking Oficial', icon: Trophy },
-    { id: 'configuracoes', label: 'Perfil & Ajustes', icon: Sliders },
+    { id: 'flashcards', label: 'Flashcards', icon: Brain, href: '/flashcards' },
+    { id: 'resumos', label: 'Resumos Clínicos', icon: BookOpen, href: '/resumos' },
+    { id: 'listas', label: 'Listas & Pastas', icon: FolderOpen, href: '/listas' },
+    { id: 'provas', label: 'Provas na Íntegra', icon: FileText, href: '/provas' },
+    { id: 'simulados', label: 'Simulados Oficiais', icon: ClipboardCheck, href: '/simulados' },
+    { id: 'stats', label: 'Meu Desempenho', icon: BarChart3, href: '/desempenho' },
+    { id: 'ranking', label: 'Ranking Oficial', icon: Trophy, href: '/ranking' },
+    { id: 'configuracoes', label: 'Perfil & Ajustes', icon: Sliders, href: '/configuracoes' },
     ...(isAdmin
       ? [
-          { id: 'curadoria' as ActiveTab, label: 'Curadoria de Gabaritos', icon: ShieldCheck },
-          { id: 'reportes' as ActiveTab, label: 'Questões Reportadas', icon: Flag },
-          { id: 'auditoria_medevo' as ActiveTab, label: 'Higienização MedEvo', icon: ShieldAlert, badge: 410 }
+          { id: 'curadoria' as ActiveTab, label: 'Curadoria de Gabaritos', icon: ShieldCheck, href: '/admin/curadoria' },
+          { id: 'reportes' as ActiveTab, label: 'Questões Reportadas', icon: Flag, href: '/admin/reportes' },
+          { id: 'auditoria_medevo' as ActiveTab, label: 'Higienização MedEvo', icon: ShieldAlert, href: '/admin/medevo', badge: 410 }
         ]
       : [])
   ];
@@ -80,12 +84,14 @@ export const Sidebar: React.FC<SidebarProps> = ({
       aria-label="Navegação Principal"
     >
       {/* 1. Topo: Logo Flat + Botão de Toggle */}
-      <div className={`h-16 w-full border-b border-slate-100 dark:border-zinc-800/80 flex items-center ${
-        isCollapsed ? 'justify-center' : 'justify-between px-3.5'
-      }`}>
-        <button
-          type="button"
-          onClick={() => onNavigate('home')}
+      <div
+        className={`h-16 w-full border-b border-slate-100 dark:border-zinc-800/80 flex items-center ${
+          isCollapsed ? 'justify-center' : 'justify-between px-3.5'
+        }`}
+      >
+        <Link
+          href="/dashboard"
+          onClick={() => onNavigate?.('home')}
           className="flex items-center gap-2.5 p-1 rounded-lg hover:bg-slate-100 dark:hover:bg-zinc-900 transition-colors cursor-pointer group min-w-0"
           title={`Banco Residência • ${modalidade}`}
           aria-label="Ir para a página inicial"
@@ -102,7 +108,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
               </span>
             </div>
           )}
-        </button>
+        </Link>
 
         {!isCollapsed && onToggleCollapse && (
           <button
@@ -118,23 +124,27 @@ export const Sidebar: React.FC<SidebarProps> = ({
       </div>
 
       {/* 2. Navegação Principal Flat */}
-      <div className={`flex-1 py-3 space-y-1 overflow-y-auto w-full flex flex-col ${
-        isCollapsed ? 'items-center px-2' : 'px-2.5'
-      }`}>
+      <div
+        className={`flex-1 py-3 space-y-1 overflow-y-auto w-full flex flex-col ${
+          isCollapsed ? 'items-center px-2' : 'px-2.5'
+        }`}
+      >
         {menuItems.map((item) => {
           const Icon = item.icon;
-          const isActive = activeTab === item.id;
+          const isActive = pathname
+            ? pathname === item.href || (item.href !== '/dashboard' && pathname.startsWith(item.href))
+            : activeTab === item.id;
+
           return (
-            <button
+            <Link
               key={item.id}
-              onClick={() => onNavigate(item.id as ActiveTab)}
+              href={item.href}
+              onClick={() => onNavigate?.(item.id as ActiveTab)}
               aria-current={isActive ? 'page' : undefined}
               title={isCollapsed ? item.label : undefined}
               aria-label={item.label}
               className={`rounded-lg flex items-center transition-colors duration-150 cursor-pointer group relative ${
-                isCollapsed
-                  ? 'w-10 h-10 justify-center'
-                  : 'w-full px-2.5 py-2 gap-2.5 justify-start'
+                isCollapsed ? 'w-10 h-10 justify-center' : 'w-full px-2.5 py-2 gap-2.5 justify-start'
               } ${
                 isActive
                   ? 'shadow-xs'
@@ -148,7 +158,9 @@ export const Sidebar: React.FC<SidebarProps> = ({
               <div className="relative">
                 <Icon
                   className={`w-4.5 h-4.5 shrink-0 stroke-[1.8] ${
-                    isActive ? '' : 'text-slate-500 dark:text-zinc-400 group-hover:text-slate-900 dark:group-hover:text-zinc-200'
+                    isActive
+                      ? ''
+                      : 'text-slate-500 dark:text-zinc-400 group-hover:text-slate-900 dark:group-hover:text-zinc-200'
                   }`}
                 />
                 {isCollapsed && item.badge !== undefined && (
@@ -158,9 +170,13 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
               {!isCollapsed && (
                 <>
-                  <span className={`text-xs font-bold tracking-tight truncate ${
-                    isActive ? '' : 'text-slate-700 dark:text-zinc-300 group-hover:text-slate-900 dark:group-hover:text-zinc-100'
-                  }`}>
+                  <span
+                    className={`text-xs font-bold tracking-tight truncate ${
+                      isActive
+                        ? ''
+                        : 'text-slate-700 dark:text-zinc-300 group-hover:text-slate-900 dark:group-hover:text-zinc-100'
+                    }`}
+                  >
                     {item.label}
                   </span>
 
@@ -177,16 +193,18 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   )}
                 </>
               )}
-            </button>
+            </Link>
           );
         })}
       </div>
 
       {/* 3. Rodapé com Botão Flat de Expandir/Recolher */}
       {onToggleCollapse && (
-        <div className={`p-2.5 border-t border-slate-100 dark:border-zinc-800/80 w-full flex ${
-          isCollapsed ? 'justify-center' : 'justify-between items-center'
-        }`}>
+        <div
+          className={`p-2.5 border-t border-slate-100 dark:border-zinc-800/80 w-full flex ${
+            isCollapsed ? 'justify-center' : 'justify-between items-center'
+          }`}
+        >
           <button
             type="button"
             onClick={onToggleCollapse}

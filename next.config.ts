@@ -18,6 +18,19 @@ const nextConfig: NextConfig = {
       }
     ],
   },
+  async redirects() {
+    return [
+      { source: '/questions', destination: '/questoes', permanent: true },
+      { source: '/banco', destination: '/questoes', permanent: true },
+      { source: '/stats', destination: '/desempenho', permanent: true },
+      { source: '/home', destination: '/dashboard', permanent: true },
+      { source: '/settings', destination: '/configuracoes', permanent: true },
+      { source: '/exams', destination: '/provas', permanent: true },
+      { source: '/curadoria', destination: '/admin/curadoria', permanent: true },
+      { source: '/reportes', destination: '/admin/reportes', permanent: true },
+      { source: '/medevo', destination: '/admin/medevo', permanent: true },
+    ];
+  },
   async headers() {
     return [
       {
