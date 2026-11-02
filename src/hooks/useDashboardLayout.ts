@@ -27,7 +27,7 @@ export function useDashboardLayout(
                 Math.min(12, found.colSpan ?? def.colSpan)
               ) as DashboardColSpan;
               const safeHeight = found.customHeight
-                ? Math.max(def.minHeight || 120, Math.min(def.maxHeight || 800, found.customHeight))
+                ? Math.max(def.minHeight || 65, Math.min(def.maxHeight || 800, found.customHeight))
                 : def.customHeight;
 
               return {
@@ -125,7 +125,7 @@ export function useDashboardLayout(
         order: index,
         colSpan: Math.max(c.minColSpan || 2, Math.min(12, c.colSpan)) as DashboardColSpan,
         customHeight: c.customHeight
-          ? Math.max(c.minHeight || 120, Math.min(c.maxHeight || 600, c.customHeight))
+          ? Math.max(c.minHeight || 65, Math.min(c.maxHeight || 800, c.customHeight))
           : undefined,
       }));
 
@@ -265,6 +265,35 @@ export function useDashboardLayout(
     [saveToStorage]
   );
 
+
+  // Encaixa um card diretamente em um vão livre (slot packing inteligente)
+  const dockIntoSlot = useCallback(
+    (draggedId: string, insertAfterId: string, targetColSpan: DashboardColSpan) => {
+      setCards((prev) => {
+        const list = [...prev];
+        const draggedIndex = list.findIndex((c) => c.id === draggedId);
+        const targetIndex = list.findIndex((c) => c.id === insertAfterId);
+        if (draggedIndex === -1 || targetIndex === -1) return prev;
+
+        const [removed] = list.splice(draggedIndex, 1);
+        const safeColSpan = Math.max(
+          removed.minColSpan || 2,
+          Math.min(removed.maxColSpan || 12, targetColSpan)
+        ) as DashboardColSpan;
+
+        removed.colSpan = safeColSpan;
+
+        const newTargetIndex = list.findIndex((c) => c.id === insertAfterId);
+        list.splice(newTargetIndex + 1, 0, removed);
+
+        const updated = list.map((c, idx) => ({ ...c, order: idx }));
+        saveToStorage(updated);
+        return updated;
+      });
+    },
+    [saveToStorage]
+  );
+
   // Mover um card para cima ou para baixo
   const moveCard = useCallback(
     (cardId: string, direction: 'up' | 'down') => {
@@ -335,6 +364,7 @@ export function useDashboardLayout(
     updateCardSettings,
     moveCard,
     reorderCard,
+    dockIntoSlot,
     toggleVisibility,
     restoreDefaults,
     autoConformLayout,

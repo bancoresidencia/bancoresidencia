@@ -406,19 +406,92 @@ html.light ::-webkit-scrollbar-thumb:hover {
 
 .figma-card-wrapper {
   container-type: inline-size;
-  align-self: start !important;
+  align-self: stretch;
   display: flex;
   flex-direction: column;
+  height: 100%;
+}
+
+.figma-card-wrapper:not(.has-custom-height) {
+  align-self: stretch;
+}
+
+.figma-card-wrapper.has-custom-height {
+  align-self: start;
 }
 
 .figma-card-wrapper > :not(.figma-control):not(.figma-popover) {
   flex: 1 1 auto;
   min-height: 0;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.figma-card-wrapper .card-fluid-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  height: 100%;
 }
 
 .figma-card-wrapper .bento-card {
-  min-height: 0 !important;
+  min-height: 0;
+  height: 100%;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Padronização de altura uniforme por design padrão nos cards principais do dashboard */
+.figma-card-wrapper:not(.has-custom-height)[data-card-id="home_meta_diaria"] .bento-card,
+.figma-card-wrapper:not(.has-custom-height)[data-card-id="home_aproveitamento"] .bento-card,
+.figma-card-wrapper:not(.has-custom-height)[data-card-id="home_percentil"] .bento-card,
+.figma-card-wrapper:not(.has-custom-height)[data-card-id="home_recomendacao"] .bento-card,
+.figma-card-wrapper:not(.has-custom-height)[data-card-id="home_retencao"] .bento-card,
+.figma-card-wrapper:not(.has-custom-height)[data-card-id="home_mnemonico"] .bento-card,
+.figma-card-wrapper:not(.has-custom-height)[data-card-id="home_agenda"] .bento-card {
+  min-height: 195px;
+}
+
+/* =========================================================================
+   ADAPTAÇÃO E RECENTRALIZAÇÃO AUTOMÁTICA EM RECORTES DE ALTURA
+   Elimina sobras em branco e recentraliza verticalmente o conteúdo essencial
+========================================================================= */
+.figma-card-wrapper .bento-card,
+.figma-card-wrapper > section {
+  overflow: hidden !important;
+  height: 100%;
+}
+
+.figma-card-wrapper.figma-compact-height .bento-card,
+.figma-card-wrapper.figma-compact-height > section {
+  padding: 0.7rem 0.95rem !important;
+  justify-content: center !important;
+  gap: 0.35rem !important;
+}
+
+.figma-card-wrapper.figma-ultracompact-height .bento-card,
+.figma-card-wrapper.figma-ultracompact-height > section {
+  padding: 0.45rem 0.7rem !important;
+  justify-content: center !important;
+  gap: 0.2rem !important;
+}
+
+.figma-card-wrapper.figma-compact-height .card-height-compact-hide,
+.figma-card-wrapper.figma-ultracompact-height .card-height-compact-hide {
+  display: none !important;
+}
+
+.figma-card-wrapper.figma-compact-height .bento-card > div:first-child,
+.figma-card-wrapper.figma-ultracompact-height .bento-card > div:first-child,
+.figma-card-wrapper.figma-compact-height > section > div:first-child,
+.figma-card-wrapper.figma-ultracompact-height > section > div:first-child {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100%;
 }
 
 .is-resizing,
@@ -507,4 +580,34 @@ html.light ::-webkit-scrollbar-thumb:hover {
 .hide-all-details .text-\[10px\],
 .hide-all-details .text-\[11px\] {
   display: none !important;
+}
+
+
+/* =========================================================================
+   CANVA / FIGMA CANVAS GRID QUADRICULADO
+   Fundo quadriculado milimétrico ativo exclusivamente durante a personalização
+========================================================================= */
+.canvas-grid-quadriculado {
+  background-color: #f8fafc;
+  background-size: 24px 24px, 24px 24px, 96px 96px, 96px 96px;
+  background-image:
+    linear-gradient(to right, rgba(59, 130, 246, 0.12) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(59, 130, 246, 0.12) 1px, transparent 1px),
+    linear-gradient(to right, rgba(59, 130, 246, 0.22) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(59, 130, 246, 0.22) 1px, transparent 1px);
+  border-radius: 1.5rem;
+  padding: 1.25rem !important;
+  box-shadow: inset 0 0 0 1px rgba(59, 130, 246, 0.25), 0 10px 30px -10px rgba(59, 130, 246, 0.1);
+  transition: background 0.3s ease, padding 0.2s ease;
+}
+
+html.dark .canvas-grid-quadriculado {
+  background-color: #0b0c10;
+  background-size: 24px 24px, 24px 24px, 96px 96px, 96px 96px;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(to right, rgba(59, 130, 246, 0.18) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(59, 130, 246, 0.18) 1px, transparent 1px);
+  box-shadow: inset 0 0 0 1px rgba(59, 130, 246, 0.3), 0 10px 30px -10px rgba(0, 0, 0, 0.6);
 }

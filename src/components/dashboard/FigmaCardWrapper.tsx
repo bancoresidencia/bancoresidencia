@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import { DashboardCardConfig, DashboardColSpan, CardInternalSettings } from '@/types/dashboardLayout';
 import { CardLayoutProvider } from './CardLayoutContext';
+import { calculateSmartGuides, SmartGuidesState } from './smartGuidesEngine';
 
 interface FigmaCardWrapperProps {
   config: DashboardCardConfig;
@@ -22,11 +23,13 @@ interface FigmaCardWrapperProps {
   isSelected: boolean;
   onSelect: (id: string) => void;
   onUpdateColSpan: (id: string, newColSpan: DashboardColSpan) => void;
-  onUpdateHeight?: (id: string, newHeight: number) => void;
+  onUpdateHeight?: (id: string, newHeight?: number) => void;
   onUpdateSettings: (id: string, settings: Partial<CardInternalSettings>) => void;
   onMoveCard: (id: string, direction: 'up' | 'down') => void;
   onToggleVisibility: (id: string) => void;
   onReorder: (draggedId: string, targetId: string) => void;
+  onSmartGuidesChange?: (state: SmartGuidesState) => void;
+  allCardsConfig?: DashboardCardConfig[];
   children: React.ReactNode;
   className?: string;
 }
@@ -42,6 +45,8 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
   onMoveCard,
   onToggleVisibility,
   onReorder,
+  onSmartGuidesChange,
+  allCardsConfig,
   children,
   className = '',
 }) => {
@@ -50,6 +55,7 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
   const [isFreeDragging, setIsFreeDragging] = useState(false);
   const [dragOffset, setDragOffset] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
   const [hoverTargetId, setHoverTargetId] = useState<string | null>(null);
+  const hoverTargetRef = useRef<string | null>(null);
   const [previewColSpan, setPreviewColSpan] = useState<DashboardColSpan | null>(null);
   const [previewHeight, setPreviewHeight] = useState<number | null>(null);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
@@ -57,6 +63,8 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
 
   const activeSpan = previewColSpan || config.colSpan;
   const activeHeight = previewHeight !== null ? previewHeight : config.customHeight;
+  const isCompactHeight = Boolean(activeHeight && activeHeight < 145);
+  const isUltraCompactHeight = Boolean(activeHeight && activeHeight < 105);
   const settings = config.settings || { showIcons: true, showDetails: true, compactMode: false };
 
   // Mapeia colSpan de 1 a 12 de forma fluida
@@ -152,11 +160,11 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
 
           const rawHeight = initialHeight + deltaY;
 
-          // Recorte 100% livre e contínuo: qualquer altura em pixels desejada pelo usuário
-          // Limitado exclusivamente no teto máximo final (quando todas as ferramentas já aparecem), evitando fundo branco vazio
-          const minH = config.minHeight || 120;
-          const maxH = config.maxHeight || 450;
-          const targetHeight = Math.max(minH, Math.min(maxH, Math.round(rawHeight)));
+          // Recorte 100% livre e contínuo: qualquer altura em pixels desejada pelo usuário sem travar
+          // Piso ultra-livre de 70px permitindo encolher sem qualquer resistência
+          const minH = 65;
+          const maxH = config.maxHeight || 520;
+          const targetHeight = Math.max(minH, Math.min(maxH, Math.round(rawHeight / 24) * 24));
 
           if (targetHeight !== lastTargetHeight) {
             lastTargetHeight = targetHeight;
@@ -167,6 +175,12 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
               container.style.maxHeight = `${targetHeight}px`;
             }
           }
+        }
+
+        // Calcula Smart Guides em tempo real durante o redimensionamento
+        if (parentGrid && onSmartGuidesChange) {
+          const guidesState = calculateSmartGuides(config.id, parentGrid, allCardsConfig || []);
+          onSmartGuidesChange(guidesState);
         }
       };
 
@@ -190,6 +204,10 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
           setPreviewColSpan(null);
           setPreviewHeight(null);
         }, 60);
+
+        if (onSmartGuidesChange) {
+          onSmartGuidesChange({ guides: [] });
+        }
 
         window.removeEventListener('pointermove', onPointerMove);
         window.removeEventListener('pointerup', onPointerUp);
@@ -235,20 +253,23 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
       if (hasMoved) {
         setDragOffset({ x: dx, y: dy });
 
-        // Identifica o card sob o ponteiro do mouse para swap em tempo real
+        // Calcula Smart Guides em tempo real
+        const parentGrid = containerRef.current?.parentElement;
+        if (parentGrid && onSmartGuidesChange) {
+          const guidesState = calculateSmartGuides(config.id, parentGrid, allCardsConfig || []);
+          onSmartGuidesChange(guidesState);
+        }
+
+        // Identifica o card sob o ponteiro do mouse como alvo (sem trocar automaticamente durante o movimento)
         const elemUnder = document.elementFromPoint(moveEvent.clientX, moveEvent.clientY);
         const targetCard = elemUnder?.closest('[data-card-id]') as HTMLElement | null;
         const targetId = targetCard?.dataset?.cardId;
 
         if (targetId && targetId !== config.id) {
+          hoverTargetRef.current = targetId;
           setHoverTargetId(targetId);
-
-          const now = Date.now();
-          if (now - lastSwapTimeRef.current > 160) {
-            lastSwapTimeRef.current = now;
-            onReorder(config.id, targetId);
-          }
         } else {
+          hoverTargetRef.current = null;
           setHoverTargetId(null);
         }
       }
@@ -261,7 +282,19 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
       if (hasMoved) {
         setIsFreeDragging(false);
         setDragOffset({ x: 0, y: 0 });
+
+        // SÓ aplica a mudança de posição quando o usuário explicitamente soltar o card naquele espaço
+        const targetToDrop = hoverTargetRef.current;
+        if (targetToDrop && targetToDrop !== config.id) {
+          onReorder(config.id, targetToDrop);
+        }
+
+        hoverTargetRef.current = null;
         setHoverTargetId(null);
+
+        if (onSmartGuidesChange) {
+          onSmartGuidesChange({ guides: [] });
+        }
       }
     };
 
@@ -297,6 +330,7 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
         height: activeHeight ? `${activeHeight}px` : undefined,
         minHeight: activeHeight ? `${activeHeight}px` : undefined,
         maxHeight: activeHeight ? `${activeHeight}px` : undefined,
+        alignSelf: activeHeight ? 'start' : 'stretch',
         gridColumn: `span ${activeSpan} / span ${activeSpan}`,
         transform: isFreeDragging
           ? `translate3d(${dragOffset.x}px, ${dragOffset.y}px, 0)`
@@ -307,7 +341,7 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
           ? 'none'
           : 'transform 0.25s cubic-bezier(0.2, 0, 0, 1), box-shadow 0.2s',
       }}
-      className={`figma-card-wrapper ${isResizing ? 'is-resizing select-none' : ''} ${getColSpanClass(activeSpan)} @container relative ${
+      className={`figma-card-wrapper ${activeHeight ? 'has-custom-height' : ''} h-full flex flex-col ${isResizing ? 'is-resizing select-none' : ''} ${isCompactHeight ? 'figma-compact-height' : ''} ${isUltraCompactHeight ? 'figma-ultracompact-height' : ''} ${getColSpanClass(activeSpan)} @container relative ${
         isCustomizing
           ? isSelected
             ? 'ring-2 ring-blue-500 dark:ring-blue-400 rounded-2xl select-none group/figma shadow-xl'
@@ -320,7 +354,7 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
         <div className="absolute inset-0 z-50 rounded-2xl border-2 border-dashed border-blue-500 bg-blue-500/15 backdrop-blur-2xs flex items-center justify-center pointer-events-none animate-pulse">
           <span className="bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-xl shadow-lg flex items-center gap-1.5">
             <Sparkles className="w-3.5 h-3.5" />
-            Trocando posição...
+            Soltar para posicionar aqui
           </span>
         </div>
       )}
@@ -589,7 +623,7 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
               e.stopPropagation();
             }
           }}
-          className={`h-full w-full transition-all duration-200 card-fluid-container ${
+          className={`h-full w-full flex flex-col flex-1 transition-all duration-200 card-fluid-container ${
             activeSpan <= 3
               ? 'card-xs text-[11px] p-0.5'
               : activeSpan <= 5

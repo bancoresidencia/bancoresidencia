@@ -2,7 +2,6 @@
 
 import React, { useState } from 'react';
 import {
-  SlidersHorizontal,
   RotateCcw,
   Check,
   Plus,
@@ -34,17 +33,7 @@ export const FigmaCustomizerBar: React.FC<FigmaCustomizerBarProps> = ({
   const [showHiddenMenu, setShowHiddenMenu] = useState(false);
 
   if (!isCustomizing) {
-    return (
-      <button
-        type="button"
-        onClick={onToggleCustomizing}
-        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-slate-700 dark:text-zinc-200 hover:text-blue-600 dark:hover:text-blue-400 hover:border-blue-400 dark:hover:border-blue-600 transition-all cursor-pointer shadow-xs hover:shadow-md"
-        title="Personalizar disposição e tamanho dos cards estilo Figma"
-      >
-        <SlidersHorizontal className="w-3.5 h-3.5 text-blue-500" />
-        <span>Personalizar Layout</span>
-      </button>
-    );
+    return null;
   }
 
   return (

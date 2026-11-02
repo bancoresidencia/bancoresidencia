@@ -1,11 +1,11 @@
 'use client';
 
 import React, { useState, useRef, useEffect } from 'react';
-import { Sun, Moon, Palette, Check, ChevronDown } from 'lucide-react';
+import { Sun, Moon, Palette, Check, ChevronDown, SlidersHorizontal } from 'lucide-react';
 import { useTheme, AccentColor, ACCENT_CONFIGS } from '@/context/ThemeContext';
 
 export const ThemeSelector: React.FC<{ compact?: boolean }> = ({ compact = false }) => {
-  const { mode, accent, toggleMode, setAccent } = useTheme();
+  const { mode, accent, toggleMode, setAccent, isDashboardCustomizing, toggleDashboardCustomizing } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -59,7 +59,7 @@ export const ThemeSelector: React.FC<{ compact?: boolean }> = ({ compact = false
           />
         </button>
 
-        {/* Dropdown Expandido com as Opções de Modo e Cores */}
+        {/* Dropdown Expandido com as Opções de Modo, Cores e Personalizar Layout */}
         {isOpen && (
           <div className="absolute right-0 top-full mt-2 w-64 p-3 bg-white dark:bg-[#121215] border border-slate-200 dark:border-zinc-800 rounded-2xl shadow-xl z-50 space-y-3 animate-in fade-in zoom-in-95 duration-150">
             {/* Modo Claro / Escuro */}
@@ -115,6 +115,33 @@ export const ThemeSelector: React.FC<{ compact?: boolean }> = ({ compact = false
                   );
                 })}
               </div>
+            </div>
+
+            {/* Personalizar Layout do Dashboard */}
+            <div className="pt-2.5 border-t border-slate-100 dark:border-zinc-800">
+              <button
+                type="button"
+                onClick={() => {
+                  toggleDashboardCustomizing();
+                  setIsOpen(false);
+                }}
+                className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                  isDashboardCustomizing
+                    ? 'bg-blue-600 text-white shadow-md'
+                    : 'bg-slate-50 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-slate-700 dark:text-zinc-200 hover:text-blue-600 dark:hover:text-blue-400 hover:border-blue-400'
+                }`}
+                title="Personalizar layout e posição dos cards estilo Figma"
+              >
+                <div className="flex items-center gap-2">
+                  <SlidersHorizontal className="w-3.5 h-3.5 text-blue-500" />
+                  <span>Personalizar Layout</span>
+                </div>
+                <span className={`text-[10px] px-2 py-0.5 rounded-md font-mono ${
+                  isDashboardCustomizing ? 'bg-white/20 text-white font-bold' : 'bg-slate-200 dark:bg-zinc-800 text-slate-500 dark:text-zinc-400'
+                }`}>
+                  {isDashboardCustomizing ? 'Ativo' : 'Editar'}
+                </span>
+              </button>
             </div>
           </div>
         )}
@@ -182,6 +209,29 @@ export const ThemeSelector: React.FC<{ compact?: boolean }> = ({ compact = false
             );
           })}
         </div>
+      </div>
+
+      {/* Personalizar Layout do Dashboard (Modo Expandido) */}
+      <div className="pt-2 border-t border-slate-100 dark:border-zinc-800">
+        <button
+          type="button"
+          onClick={toggleDashboardCustomizing}
+          className={`w-full flex items-center justify-between px-3 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+            isDashboardCustomizing
+              ? 'bg-blue-600 text-white shadow-md'
+              : 'bg-slate-50 dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-slate-700 dark:text-zinc-200 hover:text-blue-600 dark:hover:text-blue-400 hover:border-blue-400'
+          }`}
+        >
+          <div className="flex items-center gap-2">
+            <SlidersHorizontal className="w-3.5 h-3.5 text-blue-500" />
+            <span>Personalizar Layout</span>
+          </div>
+          <span className={`text-[10px] px-2 py-0.5 rounded-md font-mono ${
+            isDashboardCustomizing ? 'bg-white/20 text-white font-bold' : 'bg-slate-200 dark:bg-zinc-800 text-slate-500 dark:text-zinc-400'
+          }`}>
+            {isDashboardCustomizing ? 'Ativo' : 'Editar'}
+          </span>
+        </button>
       </div>
     </div>
   );

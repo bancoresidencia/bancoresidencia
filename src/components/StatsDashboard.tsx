@@ -1440,7 +1440,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
           />
 
           {/* Grid Principal Reorganizável Estilo Figma */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-5 auto-rows-min grid-flow-dense">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-5 auto-rows-auto grid-flow-dense items-stretch">
             {visibleOverviewCards.map((cardConfig) => {
               if (cardConfig.id === 'stats_kpi_volume') {
                 return (
