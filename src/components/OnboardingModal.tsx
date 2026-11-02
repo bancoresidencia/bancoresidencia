@@ -6,6 +6,7 @@ import { useTheme } from '@/context/ThemeContext';
 import {
   applyReferralCode,
   validateReferralCode,
+  getUserReferralCode,
   AppliedReferral
 } from '@/config/ambassadorConfig';
 import { getInstitutions } from '@/services/officialExamsService';
@@ -197,7 +198,8 @@ export const OnboardingModal: React.FC<OnboardingModalProps> = ({
       setReferralError('Digite o código de indicação ou clique em "Não tenho código".');
       return;
     }
-    const res = applyReferralCode(referralInput);
+    const currentUserCode = getUserReferralCode(user);
+    const res = applyReferralCode(referralInput, currentUserCode, user?.id, user);
     if (res.success && res.referral) {
       setAppliedReferral(res.referral);
       setSkippedReferral(false);

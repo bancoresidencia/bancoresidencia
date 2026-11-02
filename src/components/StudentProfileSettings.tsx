@@ -28,7 +28,6 @@ import {
   RotateCcw,
   Sparkles,
   X,
-  Gift,
   Award
 } from 'lucide-react';
 import { StudentAmbassadorSettings } from '@/components/StudentAmbassadorSettings';

@@ -132,10 +132,47 @@ export function setUserReferralCode(userId: string, newCode: string): { success:
 /**
  * Valida um código de indicação digitado por um aluno
  */
-export function validateReferralCode(code: string): { valid: boolean; referrerName?: string; discountPercent: number; message: string } {
+export function validateReferralCode(
+  code: string,
+  currentUserCode?: string,
+  currentUserId?: string,
+  user?: UserAccount | null
+): { valid: boolean; referrerName?: string; discountPercent: number; message: string } {
   const clean = normalizeReferralCode(code);
   if (!clean || clean.length < 3) {
     return { valid: false, discountPercent: 0, message: 'Digite um código válido de no mínimo 3 caracteres.' };
+  }
+
+  // Regra Estrita: Autoindicação proibida! O aluno não pode usar o próprio código de indicação na sua própria conta
+  if (currentUserCode && normalizeReferralCode(currentUserCode) === clean) {
+    return {
+      valid: false,
+      discountPercent: 0,
+      message: 'Você não pode utilizar seu próprio código de indicação na sua própria conta.'
+    };
+  }
+
+  if (user) {
+    const calculatedCode = normalizeReferralCode(getUserReferralCode(user));
+    const initialCode = normalizeReferralCode(generateInitialReferralCode(user));
+    if (calculatedCode === clean || initialCode === clean) {
+      return {
+        valid: false,
+        discountPercent: 0,
+        message: 'Você não pode utilizar seu próprio código de indicação na sua própria conta.'
+      };
+    }
+  }
+
+  if (typeof window !== 'undefined' && currentUserId) {
+    const userCode = localStorage.getItem(`${STORAGE_PREFIX}code_${currentUserId}`);
+    if (userCode && normalizeReferralCode(userCode) === clean) {
+      return {
+        valid: false,
+        discountPercent: 0,
+        message: 'Você não pode utilizar seu próprio código de indicação na sua própria conta.'
+      };
+    }
   }
 
   // Verifica nos presets conhecidos
@@ -171,8 +208,13 @@ export function validateReferralCode(code: string): { valid: boolean; referrerNa
 /**
  * Salva o cupom de indicação aplicado pelo aluno atual
  */
-export function applyReferralCode(code: string): { success: boolean; message: string; referral?: AppliedReferral } {
-  const validation = validateReferralCode(code);
+export function applyReferralCode(
+  code: string,
+  currentUserCode?: string,
+  currentUserId?: string,
+  user?: UserAccount | null
+): { success: boolean; message: string; referral?: AppliedReferral } {
+  const validation = validateReferralCode(code, currentUserCode, currentUserId, user);
   if (!validation.valid) {
     return { success: false, message: validation.message };
   }
@@ -195,12 +237,27 @@ export function applyReferralCode(code: string): { success: boolean; message: st
 /**
  * Obtém o cupom de indicação atualmente aplicado na sessão
  */
-export function getAppliedReferralCode(): AppliedReferral | null {
+export function getAppliedReferralCode(currentUserCode?: string, user?: UserAccount | null): AppliedReferral | null {
   if (typeof window === 'undefined') return null;
   const stored = localStorage.getItem(APPLIED_REFERRAL_KEY);
   if (!stored) return null;
   try {
-    return JSON.parse(stored) as AppliedReferral;
+    const parsed = JSON.parse(stored) as AppliedReferral;
+    if (!parsed || !parsed.code) return null;
+    const clean = normalizeReferralCode(parsed.code);
+    if (currentUserCode && normalizeReferralCode(currentUserCode) === clean) {
+      localStorage.removeItem(APPLIED_REFERRAL_KEY);
+      return null;
+    }
+    if (user) {
+      const calculatedCode = normalizeReferralCode(getUserReferralCode(user));
+      const initialCode = normalizeReferralCode(generateInitialReferralCode(user));
+      if (calculatedCode === clean || initialCode === clean) {
+        localStorage.removeItem(APPLIED_REFERRAL_KEY);
+        return null;
+      }
+    }
+    return parsed;
   } catch {
     return null;
   }

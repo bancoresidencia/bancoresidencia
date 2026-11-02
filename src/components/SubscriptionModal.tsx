@@ -12,6 +12,7 @@ import {
   Tag,
   ArrowRight
 } from 'lucide-react';
+import { useAuth as useUserAuth } from '@/context/AuthContext';
 import { useTheme } from '@/context/ThemeContext';
 import { PlanType } from '@/hooks/useSubscription';
 import { PLANS, PlanDefinition } from '@/config/plans';
@@ -20,6 +21,7 @@ import {
   getAppliedReferralCode,
   applyReferralCode,
   removeAppliedReferralCode,
+  getUserReferralCode,
   AppliedReferral
 } from '@/config/ambassadorConfig';
 
@@ -37,11 +39,14 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
   initialPlan = null,
   limitReached = false
 }) => {
+  const { user } = useUserAuth();
   const { accentConfig } = useTheme();
   const [selectedPlanOverride, setSelectedPlanOverride] = useState<PlanDefinition | null | 'NONE'>(null);
 
+  const currentUserCode = getUserReferralCode(user);
+
   // Estado de Cupom de Indicação
-  const [appliedReferral, setAppliedReferral] = useState<AppliedReferral | null>(() => getAppliedReferralCode());
+  const [appliedReferral, setAppliedReferral] = useState<AppliedReferral | null>(() => getAppliedReferralCode(currentUserCode, user));
   const [couponInput, setCouponInput] = useState<string>('');
   const [couponFeedback, setCouponFeedback] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
   const [prevIsOpen, setPrevIsOpen] = useState(isOpen);
@@ -49,7 +54,7 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
   if (isOpen !== prevIsOpen) {
     setPrevIsOpen(isOpen);
     if (isOpen) {
-      setAppliedReferral(getAppliedReferralCode());
+      setAppliedReferral(getAppliedReferralCode(currentUserCode, user));
       setCouponFeedback(null);
     }
   }
@@ -64,7 +69,7 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
       return;
     }
 
-    const res = applyReferralCode(couponInput);
+    const res = applyReferralCode(couponInput, currentUserCode, user?.id, user);
     if (res.success && res.referral) {
       setAppliedReferral(res.referral);
       setCouponFeedback({ type: 'success', text: `Cupom ${res.referral.code} aplicado com sucesso! 10% de desconto ativado.` });
@@ -81,10 +86,11 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
   };
 
   const discountPercent = appliedReferral ? appliedReferral.discountPercent : 0;
+  const hasDiscount = discountPercent > 0;
 
-  // Aplica o desconto proporcional no plano escolhido para o Checkout
+  // Aplica o desconto proporcional no plano escolhido para o Checkout apenas se houver cupom
   const computeDiscountedPlan = (basePlan: PlanDefinition): PlanDefinition => {
-    if (discountPercent <= 0) return basePlan;
+    if (!hasDiscount) return basePlan;
     const discountFactor = 1 - discountPercent / 100;
     const discountedTotal = parseFloat((basePlan.totalPrice * discountFactor).toFixed(2));
     const discountedMonthly = parseFloat((basePlan.monthlyEquivalent * discountFactor).toFixed(2));
@@ -252,8 +258,8 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
               )}
             </div>
 
-            {/* GRADE DOS 4 PLANOS */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            {/* GRADE DOS 4 PLANOS COM ESPAÇAMENTO REFORÇADO (SEM COBRIR NOME DO PLANO) */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
               {planList.map((plan) => {
                 const isBiennial = plan.id === 'biennial';
                 const isAnnual = plan.id === 'annual';
@@ -264,8 +270,7 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
                 const origMonthly = plan.monthlyEquivalent;
                 const origInstallment = plan.installmentValue;
 
-                // Valores com 10% de desconto se cupom aplicado
-                const hasDiscount = discountPercent > 0;
+                // Valores com 10% de desconto APENAS se cupom aplicado
                 const discountFactor = 1 - discountPercent / 100;
                 const discTotal = hasDiscount ? parseFloat((origTotal * discountFactor).toFixed(2)) : origTotal;
                 const discMonthly = hasDiscount ? parseFloat((origMonthly * discountFactor).toFixed(2)) : origMonthly;
@@ -274,16 +279,17 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
                 return (
                   <div
                     key={plan.id}
-                    className={`flex flex-col p-5 rounded-3xl border transition-all relative ${
+                    className={`flex flex-col pt-8 sm:pt-9 pb-5 px-5 rounded-3xl border transition-all relative ${
                       isHighlighted
                         ? 'border-2 shadow-xl bg-slate-900 text-white dark:bg-slate-950 ring-1 ring-white/10'
                         : 'border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-950/40 text-slate-900 dark:text-white'
                     }`}
                     style={isHighlighted ? { borderColor: accentConfig.primaryHex } : {}}
                   >
+                    {/* Badge com whitespace-nowrap e posicionamento elevado que NUNCA quebra em 2 linhas */}
                     {plan.badge && (
                       <div
-                        className="absolute -top-3 left-1/2 -translate-x-1/2 px-3.5 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider text-white shadow-md"
+                        className="absolute -top-3.5 left-1/2 -translate-x-1/2 px-3.5 py-1 rounded-full text-[9.5px] sm:text-[10px] font-black uppercase tracking-wider text-white shadow-md whitespace-nowrap z-20 pointer-events-none select-none"
                         style={{ backgroundColor: accentConfig.primaryHex }}
                       >
                         {plan.badge}
@@ -291,7 +297,7 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
                     )}
 
                     <div className="mb-4">
-                      <div className="flex items-center justify-between gap-2">
+                      <div className="flex items-center justify-between gap-2 min-h-[44px]">
                         <h3 className={`text-base font-black ${isHighlighted ? 'text-white' : 'text-slate-900 dark:text-slate-100'}`}>
                           {plan.name}
                         </h3>
@@ -383,7 +389,7 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
                       ))}
                     </ul>
 
-                    {/* Botão de Ação */}
+                    {/* Botão de Ação: "Assinar" por padrão, ou "Assinar com Desconto" se tiver cupom */}
                     <button
                       type="button"
                       onClick={() => {
@@ -397,7 +403,7 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
                       style={isHighlighted ? { backgroundColor: accentConfig.primaryHex } : {}}
                     >
                       <Zap className="w-3.5 h-3.5 fill-current" />
-                      Assinar com Desconto
+                      Assinar
                     </button>
                   </div>
                 );
