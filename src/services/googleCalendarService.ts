@@ -3,6 +3,8 @@
  * Suporta:
  * 1. Links Template em 1 clique (Action TEMPLATE para adicionar eventos sem OAuth)
  * 2. Google Identity Services (GIS OAuth2 Client) para Leitura e Gravação direta via API
+ *    - Fluxo de REDIRECIONAMENTO (ux_mode: 'redirect') — sem popup, funciona em qualquer ambiente
+ *    - Fluxo de POPUP (initTokenClient) — fallback para localhost e ambientes sem restrição
  */
 
 export interface GoogleCalendarEventInput {
@@ -50,6 +52,7 @@ export function buildGoogleCalendarTemplateUrl(event: GoogleCalendarEventInput):
 export function loadGoogleGsiScript(): Promise<void> {
   return new Promise((resolve, reject) => {
     if (typeof window === 'undefined') return resolve();
+    // Verifica se já está carregada (token client ou code client)
     if ((window as any).google?.accounts?.oauth2) return resolve();
 
     let attempts = 0;
@@ -59,7 +62,7 @@ export function loadGoogleGsiScript(): Promise<void> {
         clearInterval(interval);
         return resolve();
       }
-      if (attempts > 40) { // 4 segundos
+      if (attempts > 80) { // 8 segundos (aumentado para redes lentas)
         clearInterval(interval);
         return reject(
           new Error('Não foi possível carregar a biblioteca do Google. Se você usa AdBlock, uBlock ou Brave Shields, por favor desative-o para este site.')
@@ -84,7 +87,70 @@ export function loadGoogleGsiScript(): Promise<void> {
 }
 
 /**
- * OPÇÃO 2: Inicializa o fluxo OAuth Token Client do Google com abertura garantida do popup
+ * Detecta se o ambiente atual é localhost ou dev
+ */
+function isLocalhost(): boolean {
+  if (typeof window === 'undefined') return false;
+  const host = window.location.hostname;
+  return host === 'localhost' || host === '127.0.0.1' || host.startsWith('192.168.') || host === '';
+}
+
+/**
+ * Constrói o redirect_uri correto para o ambiente atual
+ */
+export function getGoogleOAuthRedirectUri(): string {
+  if (typeof window === 'undefined') return '';
+  return `${window.location.origin}/api/auth/google/callback`;
+}
+
+/**
+ * OPÇÃO 2 — FLUXO PRINCIPAL (Redirect, sem popup):
+ * Inicia o fluxo OAuth Authorization Code com redirecionamento.
+ * Não depende de popup — funciona em produção Vercel, Chrome com pop-up bloqueados etc.
+ *
+ * O Google redireciona de volta para /api/auth/google/callback?code=...
+ * que por sua vez redireciona para /#google_access_token=...
+ *
+ * Para usar este fluxo, adicione no Google Cloud Console:
+ *   Authorized redirect URIs:
+ *     - https://bancoresidencia-kappa.vercel.app/api/auth/google/callback
+ *     - https://bancoresidencia.vercel.app/api/auth/google/callback
+ *     - http://localhost:3000/api/auth/google/callback
+ */
+export async function startGoogleOAuthRedirect(clientId: string): Promise<void> {
+  await loadGoogleGsiScript();
+  const google = (window as any).google;
+
+  if (!google?.accounts?.oauth2) {
+    throw new Error('Google Identity Services não está disponível no navegador.');
+  }
+
+  const redirectUri = getGoogleOAuthRedirectUri();
+
+  return new Promise<void>((resolve, reject) => {
+    try {
+      const codeClient = google.accounts.oauth2.initCodeClient({
+        client_id: clientId,
+        scope: 'https://www.googleapis.com/auth/calendar.events https://www.googleapis.com/auth/calendar.readonly',
+        ux_mode: 'redirect',
+        redirect_uri: redirectUri,
+        // state: preserva a URL atual para retornar após auth
+        state: window.location.pathname + window.location.search,
+      });
+
+      // requestCode() redireciona o navegador para o Google — não retorna
+      codeClient.requestCode();
+      resolve(); // nunca chegará aqui normalmente (página redireciona)
+    } catch (err) {
+      reject(err);
+    }
+  });
+}
+
+/**
+ * OPÇÃO 2 — FLUXO FALLBACK (Popup, para localhost):
+ * Inicializa o fluxo OAuth Token Client com abertura de popup.
+ * Use apenas como fallback quando o redirect não for possível.
  */
 export async function requestGoogleCalendarAccessToken(
   clientId: string,
@@ -133,6 +199,66 @@ export async function requestGoogleCalendarAccessToken(
   } catch (err) {
     onError(err);
   }
+}
+
+/**
+ * OPÇÃO 2: Verifica se há um access_token na URL (hash fragment) após redirect OAuth
+ * Chame esta função na inicialização do componente para capturar o token retornado
+ * pelo fluxo de redirecionamento.
+ *
+ * Retorna o token se encontrado, ou null se não houver token na URL.
+ * Limpa automaticamente o hash da URL após extrair o token.
+ */
+export function extractGoogleTokenFromUrlHash(): string | null {
+  if (typeof window === 'undefined') return null;
+
+  const hash = window.location.hash;
+  if (!hash || !hash.includes('google_access_token=')) return null;
+
+  try {
+    // Remove o '#' inicial e parseia os parâmetros
+    const params = new URLSearchParams(hash.replace(/^#/, ''));
+    const token = params.get('google_access_token');
+
+    if (token) {
+      // Limpa o hash da URL sem recarregar a página
+      const cleanUrl = window.location.pathname + window.location.search;
+      window.history.replaceState(null, '', cleanUrl);
+      return decodeURIComponent(token);
+    }
+  } catch {
+    // ignora erros de parsing
+  }
+
+  return null;
+}
+
+/**
+ * OPÇÃO 2: Verifica se há erro de auth na URL (query param) após redirect OAuth
+ */
+export function extractGoogleAuthErrorFromUrl(): string | null {
+  if (typeof window === 'undefined') return null;
+
+  const params = new URLSearchParams(window.location.search);
+  const error = params.get('google_auth_error');
+
+  if (error) {
+    // Limpa o parâmetro de erro da URL
+    params.delete('google_auth_error');
+    const newSearch = params.toString();
+    const cleanUrl = window.location.pathname + (newSearch ? `?${newSearch}` : '');
+    window.history.replaceState(null, '', cleanUrl);
+
+    const messages: Record<string, string> = {
+      access_denied: 'Acesso negado. Você cancelou a autorização do Google.',
+      no_code: 'Erro na autenticação Google. Tente novamente.',
+      token_exchange_failed: 'Falha ao conectar com o Google. Tente novamente.',
+      server_error: 'Erro interno ao conectar com o Google. Tente novamente.',
+    };
+    return messages[error] || `Erro Google OAuth: ${error}`;
+  }
+
+  return null;
 }
 
 /**

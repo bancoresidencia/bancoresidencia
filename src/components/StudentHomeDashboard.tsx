@@ -100,7 +100,11 @@ import {
   buildGoogleCalendarTemplateUrl,
   requestGoogleCalendarAccessToken,
   fetchTodayEventsFromGoogleApi,
-  createEventInGoogleCalendarApi
+  createEventInGoogleCalendarApi,
+  startGoogleOAuthRedirect,
+  extractGoogleTokenFromUrlHash,
+  extractGoogleAuthErrorFromUrl,
+  getGoogleOAuthRedirectUri,
 } from '@/services/googleCalendarService';
 
 interface StudentHomeDashboardProps {
@@ -1184,6 +1188,53 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   const [calendarSyncError, setCalendarSyncError] = useState<string | null>(null);
   const [calendarSyncSuccessMsg, setCalendarSyncSuccessMsg] = useState<string | null>(null);
 
+  // ── Captura o access_token após redirect OAuth do Google ──────────────────
+  useEffect(() => {
+    // Verifica se retornou de um redirect OAuth do Google com token no hash
+    const tokenFromHash = extractGoogleTokenFromUrlHash();
+    if (tokenFromHash) {
+      // Token capturado! Inicia sincronização automática
+      setGoogleAccessToken(tokenFromHash);
+      setCalendarSyncMode('api');
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('bancoresidencia_google_access_token', tokenFromHash);
+        localStorage.setItem('bancoresidencia_google_calendar_mode', 'api');
+        localStorage.setItem('bancoresidencia_google_calendar_connected', 'true');
+      }
+      setIsSyncingCalendar(true);
+      setCalendarSyncError(null);
+      fetchTodayEventsFromGoogleApi(tokenFromHash)
+        .then((events) => {
+          setRealCalendarEvents(events as any);
+          const nowStr = `Hoje às ${new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}`;
+          setLastCalendarSyncTime(nowStr);
+          setIsGoogleCalendarConnected(true);
+          if (typeof window !== 'undefined') {
+            localStorage.setItem('bancoresidencia_real_calendar_events', JSON.stringify(events));
+            localStorage.setItem('bancoresidencia_google_last_sync', nowStr);
+          }
+          const msg = events.length > 0
+            ? `${events.length} evento(s) sincronizados via Google Calendar!`
+            : 'Conectado via Google Calendar! Nenhum evento para hoje.';
+          setCalendarSyncSuccessMsg(msg);
+        })
+        .catch((err) => {
+          setCalendarSyncError(err?.message || 'Falha ao buscar eventos do Google Calendar.');
+        })
+        .finally(() => {
+          setIsSyncingCalendar(false);
+        });
+      return;
+    }
+
+    // Verifica se há erro de OAuth retornado via query param
+    const authError = extractGoogleAuthErrorFromUrl();
+    if (authError) {
+      setCalendarSyncError(authError);
+    }
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  // ─────────────────────────────────────────────────────────────────────────
+
   const syncIcalEvents = async (urlToSync?: string): Promise<boolean> => {
     const targetUrl = (urlToSync !== undefined ? urlToSync : googleIcalUrl).trim();
     if (!targetUrl) {
@@ -1273,7 +1324,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     setIsGoogleModalOpen(false);
   };
 
-  const handleConnectGoogleViaApi = () => {
+  const handleConnectGoogleViaApi = async () => {
     const cId = (googleClientId || '').trim();
     if (!cId) {
       setCalendarSyncError('Informe um Google Client ID válido para conectar via Google API.');
@@ -1284,47 +1335,57 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     setCalendarSyncError(null);
     setCalendarSyncSuccessMsg(null);
 
-    requestGoogleCalendarAccessToken(
-      cId,
-      async (accessToken) => {
-        try {
-          setGoogleAccessToken(accessToken);
-          if (typeof window !== 'undefined') {
-            localStorage.setItem('bancoresidencia_google_access_token', accessToken);
-            localStorage.setItem('bancoresidencia_google_client_id', cId);
-            localStorage.setItem('bancoresidencia_google_calendar_mode', 'api');
-          }
+    try {
+      // Usa fluxo de REDIRECIONAMENTO (sem popup) — funciona em produção Vercel
+      // O Google redireciona de volta para /api/auth/google/callback?code=...
+      // que por sua vez redireciona para /#google_access_token=...
+      await startGoogleOAuthRedirect(cId);
+      // startGoogleOAuthRedirect redireciona o navegador — código abaixo não executa normalmente
+    } catch (err: any) {
+      // Fallback: se redirect falhar por algum motivo, tenta popup
+      setCalendarSyncError(null);
+      requestGoogleCalendarAccessToken(
+        cId,
+        async (accessToken) => {
+          try {
+            setGoogleAccessToken(accessToken);
+            if (typeof window !== 'undefined') {
+              localStorage.setItem('bancoresidencia_google_access_token', accessToken);
+              localStorage.setItem('bancoresidencia_google_client_id', cId);
+              localStorage.setItem('bancoresidencia_google_calendar_mode', 'api');
+            }
 
-          const events = await fetchTodayEventsFromGoogleApi(accessToken);
-          setRealCalendarEvents(events as any);
-          const nowStr = `Hoje às ${new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}`;
-          setLastCalendarSyncTime(nowStr);
-          setIsGoogleCalendarConnected(true);
-          setCalendarSyncMode('api');
+            const events = await fetchTodayEventsFromGoogleApi(accessToken);
+            setRealCalendarEvents(events as any);
+            const nowStr = `Hoje às ${new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}`;
+            setLastCalendarSyncTime(nowStr);
+            setIsGoogleCalendarConnected(true);
+            setCalendarSyncMode('api');
 
-          if (typeof window !== 'undefined') {
-            localStorage.setItem('bancoresidencia_google_calendar_connected', 'true');
-            localStorage.setItem('bancoresidencia_real_calendar_events', JSON.stringify(events));
-            localStorage.setItem('bancoresidencia_google_last_sync', nowStr);
-          }
+            if (typeof window !== 'undefined') {
+              localStorage.setItem('bancoresidencia_google_calendar_connected', 'true');
+              localStorage.setItem('bancoresidencia_real_calendar_events', JSON.stringify(events));
+              localStorage.setItem('bancoresidencia_google_last_sync', nowStr);
+            }
 
-          if (events.length > 0) {
-            setCalendarSyncSuccessMsg(`${events.length} evento(s) sincronizados via Google Calendar API!`);
-          } else {
-            setCalendarSyncSuccessMsg('Conectado via Google API! Nenhum evento para hoje (rotina livre de estudos).');
+            if (events.length > 0) {
+              setCalendarSyncSuccessMsg(`${events.length} evento(s) sincronizados via Google Calendar API!`);
+            } else {
+              setCalendarSyncSuccessMsg('Conectado via Google API! Nenhum evento para hoje (rotina livre de estudos).');
+            }
+            setIsGoogleModalOpen(false);
+          } catch (fetchErr: any) {
+            setCalendarSyncError(fetchErr?.message || 'Falha ao buscar eventos da Google Calendar API.');
+          } finally {
+            setIsSyncingCalendar(false);
           }
-          setIsGoogleModalOpen(false);
-        } catch (err: any) {
-          setCalendarSyncError(err?.message || 'Falha ao buscar eventos da Google Calendar API.');
-        } finally {
+        },
+        (oauthErr) => {
           setIsSyncingCalendar(false);
+          setCalendarSyncError(oauthErr?.message || oauthErr?.error || 'Autorização Google cancelada ou recusada.');
         }
-      },
-      (err) => {
-        setIsSyncingCalendar(false);
-        setCalendarSyncError(err?.message || err?.error || 'Autorização Google cancelada ou recusada.');
-      }
-    );
+      );
+    }
   };
 
   const handleDisconnectGoogleCalendar = () => {
@@ -2948,6 +3009,33 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                             <span className="font-bold text-emerald-600 dark:text-emerald-400 mt-0.5">+14 pts p/ Próx Nível</span>
                           </div>
                         </div>
+
+                        {/* Gap para Nota de Corte nas Residências Alvo */}
+                        {((cardConfig.customHeight && cardConfig.customHeight >= 270) || (cardConfig.colSpan >= 6 && cardConfig.customHeight && cardConfig.customHeight >= 240)) && (
+                          <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 space-y-1.5 animate-in fade-in duration-200">
+                            <div className="flex items-center justify-between text-[11px]">
+                              <span className="font-bold text-zinc-700 dark:text-zinc-300 flex items-center gap-1">
+                                <Target className="w-3 h-3 text-blue-500" />
+                                Gap de Corte das Residências Alvo
+                              </span>
+                              <span className="text-[10px] text-zinc-400">Projeção TRI</span>
+                            </div>
+                            <div className="grid grid-cols-3 gap-1.5 text-[10px]">
+                              <div className="p-1.5 rounded-lg bg-blue-500/10 border border-blue-500/20 text-blue-700 dark:text-blue-300 flex flex-col">
+                                <span className="font-bold">USP-SP (P86)</span>
+                                <span className="text-[9px] opacity-80">+12 Q corretas</span>
+                              </div>
+                              <div className="p-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-700 dark:text-emerald-300 flex flex-col">
+                                <span className="font-bold">UNICAMP (P82)</span>
+                                <span className="text-[9px] opacity-80">+8 Q corretas</span>
+                              </div>
+                              <div className="p-1.5 rounded-lg bg-purple-500/10 border border-purple-500/20 text-purple-700 dark:text-purple-300 flex flex-col">
+                                <span className="font-bold">ENARE (P78)</span>
+                                <span className="text-[9px] opacity-80">+4 Q corretas</span>
+                              </div>
+                            </div>
+                          </div>
+                        )}
                       </div>
                     )}
                   </div>
@@ -3085,6 +3173,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       {/* Botão Caderno de Erros -> Abre Drawer Central */}
                       <div
                         onClick={() => {
+                          if (isCustomizing) return;
                           setActiveCentralDrawer('caderno_erros');
                           setDrawerSearch('');
                           setDrawerErrorSpecialty('Todas');
@@ -3093,27 +3182,37 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         title="Abrir central de foco do Caderno de Erros"
                       >
                         <div className="flex items-center gap-2.5 min-w-0 flex-1 overflow-hidden">
-                          <div className="w-8 h-8 rounded-lg bg-rose-500/10 text-rose-500 flex items-center justify-center shrink-0">
+                          <div className="w-8 h-8 rounded-lg bg-rose-500/10 text-rose-500 flex items-center justify-center shrink-0 relative">
                             <AlertOctagon className="w-4 h-4" />
+                            {cardConfig.colSpan <= 3 && pendingErrorsCount > 0 && (
+                              <span className="absolute -top-1 -right-1 px-1 py-0.2 bg-rose-500 text-white text-[8px] font-extrabold rounded-full leading-none">
+                                {pendingErrorsCount}
+                              </span>
+                            )}
                           </div>
                           <div className="min-w-0 flex-1 overflow-hidden">
                             <div className="text-xs font-bold text-zinc-800 dark:text-zinc-200 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors truncate">
-                              Caderno de Erros
+                              {cardConfig.colSpan <= 2 ? 'Erros' : 'Caderno de Erros'}
                             </div>
                             <div className="text-[10px] text-zinc-500 dark:text-zinc-400 truncate">
-                              {pendingErrorsCount > 0 ? `${pendingErrorsCount} pendentes de reteste` : 'Tudo em dia'}
+                              {pendingErrorsCount > 0 ? `${pendingErrorsCount} pendentes` : 'Tudo em dia'}
                             </div>
                           </div>
                         </div>
-                        <div className="flex items-center gap-1.5 shrink-0 ml-auto">
-                          <span className="text-[10px] font-medium text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-200 card-action-text whitespace-nowrap">Ver Foco</span>
-                          <ChevronRight className="w-4 h-4 text-zinc-400 group-hover:translate-x-0.5 group-hover:text-zinc-600 dark:group-hover:text-zinc-200 transition-all shrink-0" />
-                        </div>
+                        {cardConfig.colSpan > 3 ? (
+                          <div className="flex items-center gap-1.5 shrink-0 ml-auto">
+                            <span className="text-[10px] font-medium text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-200 card-action-text whitespace-nowrap">Ver Foco</span>
+                            <ChevronRight className="w-4 h-4 text-zinc-400 group-hover:translate-x-0.5 group-hover:text-zinc-600 dark:group-hover:text-zinc-200 transition-all shrink-0" />
+                          </div>
+                        ) : (
+                          <ChevronRight className="w-3.5 h-3.5 text-zinc-400 shrink-0 ml-auto" />
+                        )}
                       </div>
 
                       {/* Botão Flashcards -> Abre Drawer Central */}
                       <div
                         onClick={() => {
+                          if (isCustomizing) return;
                           setActiveCentralDrawer('flashcards');
                           setDrawerSearch('');
                           setDrawerFlashcardSpecialty('Todas');
@@ -3123,24 +3222,33 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       >
                         <div className="flex items-center gap-2.5 min-w-0 flex-1 overflow-hidden">
                           <div
-                            className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0"
+                            className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 relative"
                             style={{ backgroundColor: accentConfig.bgRgba, color: accentConfig.primaryHex }}
                           >
                             <Brain className="w-4 h-4" />
+                            {cardConfig.colSpan <= 3 && flashcardsStats.dueToday > 0 && (
+                              <span className="absolute -top-1 -right-1 px-1 py-0.2 bg-blue-600 text-white text-[8px] font-extrabold rounded-full leading-none">
+                                {flashcardsStats.dueToday}
+                              </span>
+                            )}
                           </div>
                           <div className="min-w-0 flex-1 overflow-hidden">
                             <div className="text-xs font-bold text-zinc-800 dark:text-zinc-200 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors truncate">
-                              Flashcards Mnemônicos
+                              {cardConfig.colSpan <= 2 ? 'Cards' : 'Flashcards'}
                             </div>
                             <div className="text-[10px] text-zinc-500 dark:text-zinc-400 truncate">
-                              {flashcardsStats.dueToday > 0 ? `${flashcardsStats.dueToday} para hoje • FSRS` : 'Revisão do Dia • FSRS'}
+                              {flashcardsStats.dueToday > 0 ? `${flashcardsStats.dueToday} para hoje` : 'Em dia • FSRS'}
                             </div>
                           </div>
                         </div>
-                        <div className="flex items-center gap-1.5 shrink-0 ml-auto">
-                          <span className="text-[10px] font-medium text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-200 card-action-text whitespace-nowrap">Ver Foco</span>
-                          <ChevronRight className="w-4 h-4 text-zinc-400 group-hover:translate-x-0.5 group-hover:text-zinc-600 dark:group-hover:text-zinc-200 transition-all shrink-0" />
-                        </div>
+                        {cardConfig.colSpan > 3 ? (
+                          <div className="flex items-center gap-1.5 shrink-0 ml-auto">
+                            <span className="text-[10px] font-medium text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-200 card-action-text whitespace-nowrap">Ver Foco</span>
+                            <ChevronRight className="w-4 h-4 text-zinc-400 group-hover:translate-x-0.5 group-hover:text-zinc-600 dark:group-hover:text-zinc-200 transition-all shrink-0" />
+                          </div>
+                        ) : (
+                          <ChevronRight className="w-3.5 h-3.5 text-zinc-400 shrink-0 ml-auto" />
+                        )}
                       </div>
                     </div>
 
@@ -3413,11 +3521,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 onToggleVisibility={toggleVisibility}
                 onReorder={reorderCard}
               >
-                {/* 4. RAIO-X DAS 6 GRANDES ÁREAS (SEÇÃO SEGUINTE NA ROLAGEM) */}
-                <section className="space-y-4">
-                  <div className="space-y-4">
-                    {/* Card 2 (Abaixo): Raio-X das 6 Grandes Áreas com Donut e Gráficos de Acertos por Especialidade */}
-                    <div className="w-full bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-4 sm:p-6 shadow-xs space-y-4">
+                {/* 4. RAIO-X DAS 6 GRANDES ÁREAS */}
+                <section className="w-full bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-4 sm:p-6 shadow-xs space-y-4 min-h-0 h-full overflow-hidden flex flex-col justify-between">
                       <div className="flex items-center justify-between gap-2 pb-2 border-b border-slate-100 dark:border-zinc-800/80">
                         <div className="flex items-center gap-2">
                           <div
@@ -3737,8 +3842,51 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
+
+                    {/* VISÃO EXPANDIDA ADAPTATIVA: Benchmark Comparativo das 6 Grandes Áreas */}
+                    {((cardConfig.customHeight && cardConfig.customHeight >= 280) || cardConfig.colSpan >= 8) && (
+                      <div className="pt-3 border-t border-slate-100 dark:border-zinc-800/80 space-y-2 animate-in fade-in duration-200">
+                        <div className="flex items-center justify-between text-xs">
+                          <span className="font-bold text-slate-800 dark:text-zinc-200 flex items-center gap-1.5">
+                            <Sparkles className="w-3.5 h-3.5 text-amber-500" />
+                            Desempenho Detalhado por Grande Área
+                          </span>
+                          <span className="text-[10px] text-slate-400">Taxa de Acertos vs Meta (75%)</span>
+                        </div>
+
+                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-1.5 text-[10px]">
+                          {[
+                            { name: 'Clínica', color: '#3b82f6', acertos: '72%', status: 'Forte' },
+                            { name: 'Cirurgia', color: '#ef4444', acertos: '58%', status: 'Atenção' },
+                            { name: 'Ginecologia', color: '#ec4899', acertos: '65%', status: 'Estável' },
+                            { name: 'Obstetrícia', color: '#a855f7', acertos: '70%', status: 'Forte' },
+                            { name: 'Pediatria', color: '#eab308', acertos: '64%', status: 'Estável' },
+                            { name: 'Preventiva', color: '#10b981', acertos: '79%', status: 'Excelente' },
+                          ].map((item, idx) => (
+                            <div
+                              key={idx}
+                              className="p-2 rounded-xl bg-slate-50 dark:bg-zinc-900 border border-slate-200/60 dark:border-zinc-800 flex flex-col justify-between"
+                            >
+                              <div className="flex items-center justify-between">
+                                <span className="font-bold text-slate-700 dark:text-zinc-300">{item.name}</span>
+                                <span
+                                  className="w-1.5 h-1.5 rounded-full"
+                                  style={{ backgroundColor: item.color }}
+                                />
+                              </div>
+                              <div className="flex items-baseline justify-between mt-1">
+                                <span className="font-extrabold text-slate-900 dark:text-zinc-100 text-xs">
+                                  {item.acertos}
+                                </span>
+                                <span className={`text-[9px] font-medium ${item.status === 'Atenção' ? 'text-rose-500' : 'text-slate-400'}`}>
+                                  {item.status}
+                                </span>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
                 </section>
               </FigmaCardWrapper>
             );
@@ -3759,7 +3907,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 onReorder={reorderCard}
               >
                 {/* 3. RETOMADA DE ESTUDOS INTELIGENTE - SELETOR PRINCIPAL (IMAGEM 3 NO LUGAR DA IMAGEM 2) */}
-                <section className="space-y-3">
+                <section className="w-full min-h-0 h-full flex flex-col justify-between space-y-3">
                   <div className="flex items-center px-1">
                     {/* Seletor em formato retangular em pílula (Estilo Imagem 3) */}
                     <div className="inline-flex p-1 bg-slate-100/90 dark:bg-[#0f1115] border border-slate-200/90 dark:border-zinc-800/90 rounded-xl items-center gap-1 shadow-xs overflow-x-auto max-w-full">
