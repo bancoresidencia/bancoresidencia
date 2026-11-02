@@ -2,6 +2,43 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+.font-bebas {
+  font-family: var(--font-bebas), "Bebas Neue", sans-serif;
+}
+
+@keyframes flash-sweep {
+  0% {
+    transform: translateX(-150%) skewX(-25deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(400%) skewX(-25deg);
+    opacity: 0;
+  }
+}
+
+.hover-flash-beam {
+  position: absolute;
+  top: -30%;
+  bottom: -30%;
+  left: 0;
+  width: 45%;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.5) 50%, transparent 100%);
+  pointer-events: none;
+  opacity: 0;
+  transform: translateX(-150%) skewX(-25deg);
+}
+
+.group\/title:hover .hover-flash-beam {
+  animation: flash-sweep 0.9s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
 :root {
   --background: #fafafa;
   --foreground: #18181b;

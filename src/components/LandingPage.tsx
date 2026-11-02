@@ -7,8 +7,6 @@ import { Logo } from '@/components/Logo';
 import {
   Sparkles,
   ArrowRight,
-  BookOpenCheck,
-  BarChart3,
   HelpCircle,
   ShieldCheck,
   Check,
@@ -21,11 +19,11 @@ import {
   RotateCcw,
   BookOpen,
   Brain,
-  Layers,
-  Gift,
-  Award,
-  Wallet,
-  CheckCircle2
+  BarChart3,
+  CheckCircle2,
+  FileCheck2,
+  Target,
+  FolderKanban
 } from 'lucide-react';
 import { LandingDemoQuestionsSection } from '@/components/LandingDemoQuestionsSection';
 
@@ -66,9 +64,9 @@ const PRICING_PLANS: PricingPlan[] = [
     name: 'Plano Semestral',
     badge: 'RETA FINAL',
     pricePerMonth: '29,90',
-    billingText: 'R$ 179,40 em até 6x de R$ 29,90',
+    billingText: 'R$ 179,40 em pagamento único ou até 6x de R$ 29,90 (sujeito à taxas)',
     periodLabel: 'por mês',
-    savings: 'Economize 40%',
+    savings: 'ECONOMIZE R$ 120,00',
     description: 'Planejado para o semestre de reta final e resolução intensa de provas.',
     features: [
       'Acesso completo a +130.000 questões comentadas',
@@ -84,12 +82,11 @@ const PRICING_PLANS: PricingPlan[] = [
   {
     id: 'annual',
     name: 'Plano Anual',
-    badge: 'MAIS ESCOLHIDO',
-    isPopular: true,
+    badge: 'MAIS ESCOLHIDO • 1 ANO',
     pricePerMonth: '25,90',
-    billingText: 'R$ 310,80 por ano em até 12x de R$ 25,90',
+    billingText: 'R$ 310,80 em pagamento único ou até 12x de R$ 25,90 (sujeito à taxas)',
     periodLabel: 'por mês',
-    savings: 'Economize 48%',
+    savings: 'ECONOMIZE R$ 288,00',
     description: 'A preparação completa de 1 ano para garantir sua vaga na residência dos sonhos.',
     features: [
       'Acesso completo a +130.000 questões comentadas',
@@ -105,11 +102,12 @@ const PRICING_PLANS: PricingPlan[] = [
   {
     id: 'biennial',
     name: 'Plano Bienal',
-    badge: 'MAIOR ECONOMIA',
+    badge: 'MAIS RECOMENDADO • MAIOR ECONOMIA',
+    isPopular: true,
     pricePerMonth: '19,90',
-    billingText: 'R$ 477,60 a cada 2 anos (ou 24x de R$ 19,90)',
+    billingText: 'R$ 477,60 em pagamento único ou até 12x de R$ 39,80 (sujeito à taxas)',
     periodLabel: 'por mês',
-    savings: 'Economize 60%',
+    savings: 'ECONOMIZE R$ 720,00',
     description: 'Perfeito para o internato (5º e 6º ano). Máxima economia até a sua aprovação.',
     features: [
       'Acesso completo a +130.000 questões comentadas',
@@ -154,13 +152,6 @@ const TOP_FEATURED_BANCAS: FeaturedBanca[] = [
   { id: 'amp', name: 'AMP', logo: 'AMP', logoSlug: 'amp' }
 ];
 
-const QUICK_NAV_BUTTONS = [
-  { id: 'questoes', label: 'BANCO DE QUESTÕES' },
-  { id: 'flashcards', label: 'FLASHCARDS' },
-  { id: 'material-estudo', label: 'MATERIAIS COMPLETOS' },
-  { id: 'estatisticas', label: 'ESTATÍSTICAS' },
-];
-
 interface LandingPageProps {
   onOpenAuth: (mode?: 'login' | 'register', planTitle?: string) => void;
   onLoginDemo?: () => void;
@@ -172,7 +163,15 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openFaqId, setOpenFaqId] = useState<string | null>('faq-1');
   const [demoFlashcardFlipped, setDemoFlashcardFlipped] = useState(false);
-  const [hoveredNavBtn, setHoveredNavBtn] = useState<string | null>(null);
+  const [fsrsFeedback, setFsrsFeedback] = useState<string | null>(null);
+
+  const handleFsrsRate = (e: React.MouseEvent, interval: string) => {
+    e.stopPropagation();
+    setFsrsFeedback(`Revisão agendada para ${interval} • Intervalo calibrado pelo FSRS`);
+    setTimeout(() => {
+      setFsrsFeedback(null);
+    }, 3500);
+  };
 
   const handleStartPlanCheckout = (planId: string, mode: 'register' | 'login' = 'register') => {
     if (typeof window !== 'undefined') {
@@ -200,57 +199,61 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 flex flex-col selection:bg-[var(--primary-color)] selection:text-white transition-colors duration-200">
       {/* =========================================================================
-          BANNER PROMOCIONAL SUPERIOR (BLACK DE LANÇAMENTO - TICKER ANDANDO SUAVE)
+          BANNER PROMOCIONAL SUPERIOR (ACESSO ANTECIPADO - CONDIÇÕES ESPECIAIS)
           ========================================================================= */}
       <aside
-        aria-label="Promoção Black de Lançamento"
+        aria-label="Acesso Antecipado"
         onClick={() => scrollToSection('planos')}
-        className="w-full bg-[#08080a] text-white border-b border-amber-500/30 py-2 sm:py-2.5 cursor-pointer relative overflow-hidden group select-none transition-all duration-200 hover:bg-black"
+        className="w-full bg-[#08080a] text-white border-b border-zinc-800 py-2 sm:py-2.5 cursor-pointer relative overflow-hidden group select-none transition-all duration-200 hover:bg-black"
         style={{
-          boxShadow: '0 2px 15px rgba(245, 158, 11, 0.14)'
+          boxShadow: `0 2px 15px ${accentConfig.bgRgba || 'rgba(0,0,0,0.3)'}`
         }}
       >
-        {/* Glow sutil de fundo dourado/amber */}
-        <div className="absolute inset-0 bg-gradient-to-r from-amber-500/10 via-transparent to-amber-500/10 pointer-events-none" />
+        {/* Glow sutil de fundo adaptado ao tema */}
+        <div
+          className="absolute inset-0 pointer-events-none opacity-20 transition-colors"
+          style={{
+            background: `linear-gradient(90deg, ${accentConfig.primaryHex}20, transparent, ${accentConfig.primaryHex}20)`
+          }}
+        />
 
         {/* Fades laterais para efeito infinito nas bordas */}
         <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-12 sm:w-24 bg-gradient-to-r from-[#08080a] via-[#08080a]/80 to-transparent z-10" />
         <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-12 sm:w-24 bg-gradient-to-l from-[#08080a] via-[#08080a]/80 to-transparent z-10" />
 
-        {/* Track Animado Ticker (Andando Infinitamente, pausa no hover) */}
+        {/* Track Animado Ticker (Andando suavemente, pausa no hover) */}
         <div className="animate-marquee-banner flex items-center gap-8 sm:gap-12 select-none relative z-10">
           {[0, 1, 2, 3].map((idx) => (
             <div key={idx} className="flex items-center gap-2.5 sm:gap-4 shrink-0 whitespace-nowrap">
-              {/* Badge Black de Lançamento com Sparkle */}
-              <span className="font-extrabold uppercase tracking-wider text-amber-400 drop-shadow-[0_0_10px_rgba(251,191,36,0.6)] flex items-center gap-1.5 shrink-0 text-xs sm:text-[13px] md:text-sm">
-                <Sparkles className="w-3.5 h-3.5 text-amber-400 shrink-0 animate-pulse" />
-                <span>BLACK DE LANÇAMENTO</span>
+              {/* Badge Acesso Antecipado */}
+              <span
+                className="font-extrabold uppercase tracking-wider flex items-center gap-1.5 shrink-0 text-xs sm:text-[13px]"
+                style={{ color: accentConfig.primaryHex }}
+              >
+                <Sparkles className="w-3.5 h-3.5 shrink-0 animate-pulse" />
+                <span>ACESSO ANTECIPADO</span>
               </span>
 
-              <span className="text-amber-400 text-xs select-none opacity-80 shrink-0">✳</span>
+              <span className="text-zinc-600 text-xs select-none opacity-80 shrink-0">•</span>
 
-              {/* Texto 40% de Desconto */}
-              <span className="font-extrabold text-white tracking-tight shrink-0 drop-shadow-xs text-xs sm:text-[13px] md:text-sm">
-                40% DE DESCONTO EM TODOS OS PLANOS
+              {/* Mensagem de Lançamento */}
+              <span className="font-bold text-white tracking-tight shrink-0 text-xs sm:text-[13px]">
+                CONDIÇÕES EXCLUSIVAS DE LANÇAMENTO LIBERADAS
               </span>
 
-              <span className="text-amber-400 text-xs select-none opacity-80 shrink-0">✳</span>
+              <span className="text-zinc-600 text-xs select-none opacity-80 shrink-0">•</span>
 
-              {/* Data limite */}
-              <span className="font-bold text-amber-300 shrink-0 text-xs sm:text-[13px] md:text-sm">
-                ATÉ O DIA 30/11
+              {/* Tag Destaque */}
+              <span className="bg-white/10 text-zinc-200 border border-white/20 px-2.5 py-0.5 rounded-full font-bold text-[10px] sm:text-[11px] uppercase tracking-wider shrink-0">
+                LOTE PROMOCIONAL
               </span>
 
-              <span className="text-amber-400 text-xs select-none opacity-80 shrink-0">✳</span>
-
-              {/* Tag 50 Primeiros */}
-              <span className="bg-gradient-to-r from-amber-400/20 to-amber-500/15 text-amber-200 border border-amber-400/50 px-2.5 py-0.5 rounded-full font-black text-[10px] sm:text-[11px] uppercase tracking-wider shadow-[0_0_10px_rgba(251,191,36,0.25)] shrink-0">
-                50 PRIMEIROS
-              </span>
-
-              {/* Link Ver Ofertas */}
-              <span className="inline-flex items-center gap-1 font-bold text-amber-400 group-hover:text-amber-200 transition-colors ml-1 shrink-0 text-xs sm:text-[13px] md:text-sm underline decoration-amber-400/50 underline-offset-2">
-                <span>VER OFERTAS</span>
+              {/* Link Ver Planos */}
+              <span
+                className="inline-flex items-center gap-1 font-bold group-hover:underline transition-colors ml-1 shrink-0 text-xs sm:text-[13px]"
+                style={{ color: accentConfig.primaryHex }}
+              >
+                <span>VER PLANOS</span>
                 <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
               </span>
             </div>
@@ -262,23 +265,23 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
           CABEÇALHO OFICIAL (MINIMALISTA, ELEGANTE E TOTALMENTE FUNCIONAL)
           ========================================================================= */}
       <header className="sticky top-0 z-40 w-full backdrop-blur-md bg-white/90 dark:bg-[var(--bg-page)]/90 border-b border-zinc-200/80 dark:border-zinc-800/80 transition-all">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-18 flex items-center justify-between gap-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between gap-4">
           
           {/* Lado Esquerdo: Logo do BancoResidência + Nome em 2 linhas (Inter, bold) */}
           <div
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="flex items-center gap-3 cursor-pointer group select-none"
+            className="flex items-center gap-3.5 cursor-pointer group select-none"
           >
-            <Logo className="w-10 h-10 shrink-0 transition-transform group-hover:scale-105 duration-200" glow />
+            <Logo size={46} className="w-11.5 h-11.5 sm:w-12 sm:h-12 shrink-0 transition-transform group-hover:scale-105 duration-200" glow />
             <div className="flex flex-col justify-center leading-none">
               <span
-                className="text-[18px] sm:text-[20px] font-bold text-zinc-950 dark:text-white leading-[1.05] tracking-tight"
+                className="text-[20px] sm:text-[22px] font-bold text-zinc-950 dark:text-white leading-[1.05] tracking-tight"
                 style={{ fontFamily: 'var(--font-inter), sans-serif' }}
               >
                 Banco
               </span>
               <span
-                className="text-[18px] sm:text-[20px] font-bold text-zinc-950 dark:text-white leading-[1.05] tracking-tight -mt-0.5"
+                className="text-[20px] sm:text-[22px] font-bold text-zinc-950 dark:text-white leading-[1.05] tracking-tight -mt-0.5"
                 style={{ fontFamily: 'var(--font-inter), sans-serif' }}
               >
                 Residência
@@ -311,17 +314,17 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
             </button>
             <button
               type="button"
+              onClick={() => scrollToSection('planos')}
+              className="px-3.5 py-2 rounded-xl text-xs sm:text-[13px] font-semibold text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white hover:bg-zinc-100/90 dark:hover:bg-zinc-800/80 transition-all duration-150 cursor-pointer"
+            >
+              Planos & Preços
+            </button>
+            <button
+              type="button"
               onClick={() => scrollToSection('faq')}
               className="px-3.5 py-2 rounded-xl text-xs sm:text-[13px] font-semibold text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white hover:bg-zinc-100/90 dark:hover:bg-zinc-800/80 transition-all duration-150 cursor-pointer"
             >
               FAQ
-            </button>
-            <button
-              type="button"
-              onClick={() => scrollToSection('embaixadores')}
-              className="px-3.5 py-2 rounded-xl text-xs sm:text-[13px] font-semibold text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white hover:bg-zinc-100/90 dark:hover:bg-zinc-800/80 transition-all duration-150 cursor-pointer"
-            >
-              Embaixadores
             </button>
           </nav>
 
@@ -394,22 +397,22 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
             <button
               type="button"
               onClick={() => {
+                scrollToSection('planos');
+                setMobileMenuOpen(false);
+              }}
+              className="w-full text-left px-3.5 py-2.5 rounded-xl text-sm font-semibold text-zinc-700 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+            >
+              Planos & Preços
+            </button>
+            <button
+              type="button"
+              onClick={() => {
                 scrollToSection('faq');
                 setMobileMenuOpen(false);
               }}
               className="w-full text-left px-3.5 py-2.5 rounded-xl text-sm font-semibold text-zinc-700 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
             >
               FAQ
-            </button>
-            <button
-              type="button"
-              onClick={() => {
-                scrollToSection('embaixadores');
-                setMobileMenuOpen(false);
-              }}
-              className="w-full text-left px-3.5 py-2.5 rounded-xl text-sm font-semibold text-zinc-700 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
-            >
-              Embaixadores
             </button>
 
             <div className="pt-2 border-t border-zinc-200 dark:border-zinc-800 flex flex-col gap-2">
@@ -440,92 +443,197 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
       </header>
 
       {/* =========================================================================
-          HERO SECTION PRINCIPAL (FRASE DE IMPACTO + VISUAL DE ESTUDO)
+          HERO SECTION PRINCIPAL (ASSIMÉTRICO: +130 MIL QUESTÕES + 3 PILARES INTERATIVOS)
           ========================================================================= */}
-      <section className="relative overflow-hidden pt-12 pb-16 sm:pt-20 sm:pb-24 border-b border-zinc-200/80 dark:border-zinc-800/80 bg-gradient-to-b from-white via-zinc-50 to-zinc-100 dark:from-[var(--bg-input)] dark:via-[var(--bg-page)] dark:to-black">
-        {/* Glow de fundo */}
+      <section className="relative overflow-hidden pt-12 pb-16 sm:pt-16 sm:pb-20 border-b border-zinc-200/80 dark:border-zinc-800/80 bg-gradient-to-b from-white via-zinc-50 to-zinc-100 dark:from-[var(--bg-input)] dark:via-[var(--bg-page)] dark:to-black">
+        {/* Glow de fundo na cor do tema */}
         <div
-          className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] sm:w-[950px] h-[350px] rounded-full blur-3xl opacity-20 pointer-events-none transition-colors duration-500"
+          className="absolute top-1/4 left-1/3 -translate-x-1/2 -translate-y-1/2 w-[650px] sm:w-[900px] h-[320px] rounded-full blur-3xl opacity-15 dark:opacity-25 pointer-events-none transition-colors duration-500"
           style={{ backgroundColor: accentConfig.primaryHex }}
         />
 
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10 text-center">
-          {/* =========================================================================
-              HEADLINE HERO CENTRALIZADA (AMPLIADA, COM BRILHO DIFUSO NA COR DO TEMA)
-              ========================================================================= */}
-          <div className="relative flex justify-center items-center w-full max-w-6xl mx-auto px-2 sm:px-4 select-none py-1">
-            {/* Brilho suave diretamente atrás da headline na cor do tema */}
-            <div
-              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-[980px] h-[190px] sm:h-[260px] rounded-full blur-3xl pointer-events-none transition-all duration-500 opacity-20 dark:opacity-30"
-              style={{
-                background: `radial-gradient(ellipse at center, ${accentConfig.primaryHex} 0%, ${accentConfig.primaryHex}33 45%, transparent 75%)`
-              }}
-            />
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+          
+          {/* Grid Assimétrico: 2 Colunas */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 lg:gap-12 items-center">
+            
+            {/* Coluna Esquerda: +130 MIL QUESTÕES (Tipografia Bebas Neue Ampliada + Flash Beam) + Botão VER PLANOS */}
+            <div className="lg:col-span-7 flex flex-col justify-center text-left">
+              <div className="group/title relative cursor-default select-none overflow-hidden inline-block py-1 pr-4">
+                {/* Feixe de Flash de Luz no hover passando de um lado para o outro */}
+                <div
+                  aria-hidden="true"
+                  className="hover-flash-beam z-20 pointer-events-none"
+                />
 
-            {/* Dark Mode: SVG ampliado (1110px) com brilho nativo */}
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/Headline_130_Mil.svg"
-              alt="+130 MIL QUESTÕES — Filtros detalhados, Flashcards e Materiais"
-              className="relative z-10 hidden dark:block w-full max-w-[1080px] lg:max-w-[1140px] h-auto object-contain mx-auto pointer-events-none"
-              loading="eager"
-            />
-            {/* Light Mode: SVG ampliado (1110px) */}
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/Headline_130_Mil_light.svg"
-              alt="+130 MIL QUESTÕES — Filtros detalhados, Flashcards e Materiais"
-              className="relative z-10 block dark:hidden w-full max-w-[1080px] lg:max-w-[1140px] h-auto object-contain mx-auto pointer-events-none"
-              loading="eager"
-            />
-          </div>
+                <h1
+                  className="font-bebas text-7xl sm:text-8xl md:text-9xl lg:text-[112px] xl:text-[124px] tracking-wide text-zinc-950 dark:text-white leading-[0.92] text-left transition-all duration-300 relative z-10"
+                  style={{ fontFamily: 'var(--font-bebas), "Bebas Neue", sans-serif' }}
+                >
+                  <span
+                    className="inline-block transition-transform duration-300 group-hover/title:scale-[1.01] origin-left bg-clip-text text-transparent bg-gradient-to-r"
+                    style={{
+                      backgroundImage: `linear-gradient(135deg, ${accentConfig.primaryHex} 0%, ${accentConfig.hoverHex || accentConfig.primaryHex} 100%)`
+                    }}
+                  >
+                    +130 MIL
+                  </span>
+                  <br />
+                  <span className="text-zinc-950 dark:text-white group-hover/title:text-zinc-700 dark:group-hover/title:text-zinc-300 transition-colors duration-300">
+                    QUESTÕES
+                  </span>
+                </h1>
 
-          {/* =========================================================================
-              4 BOTÕES DE NAVEGAÇÃO RÁPIDA (ADAPTADOS À TEMÁTICA, MAIÚSCULOS E SUAVES)
-              ========================================================================= */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-2.5 sm:gap-3.5 mt-8 sm:mt-10 w-full max-w-4xl mx-auto relative z-10">
-            {QUICK_NAV_BUTTONS.map((btn) => {
-              const isHovered = hoveredNavBtn === btn.id;
-              return (
-                <button
-                  key={btn.id}
-                  type="button"
-                  onClick={() => scrollToSection(btn.id)}
-                  onMouseEnter={() => setHoveredNavBtn(btn.id)}
-                  onMouseLeave={() => setHoveredNavBtn(null)}
-                  className="h-11 sm:h-12 px-3 sm:px-5 rounded-full bg-white/80 dark:bg-zinc-900/60 backdrop-blur-md text-zinc-700 dark:text-zinc-200 border transition-all duration-200 cursor-pointer flex items-center justify-center text-center font-bold text-[11px] sm:text-xs tracking-wider uppercase active:scale-[0.98]"
+                {/* Subtítulo posicionado logo abaixo e bem próximo ao título */}
+                <p className="mt-1 sm:mt-1.5 text-xs sm:text-sm md:text-base font-semibold text-zinc-600 dark:text-zinc-400 max-w-lg leading-snug">
+                  Resoluções comentadas com base em diretrizes
+                </p>
+              </div>
+
+              {/* Botão de Ação Único: VER PLANOS (Maior, Rounded-full, Sombra Projetada Intensa e Animação de Luz) */}
+              <div className="mt-7 sm:mt-8 flex items-center">
+                <div className="relative group">
+                  {/* Halo de luz difusa e sombra projetada intensa com a cor do tema */}
+                  <div
+                    className="absolute -inset-1 rounded-full blur-xl opacity-50 group-hover:opacity-85 transition-opacity duration-300 pointer-events-none -z-10"
+                    style={{
+                      background: `radial-gradient(ellipse at center, ${accentConfig.primaryHex} 0%, transparent 75%)`
+                    }}
+                  />
+
+                  <button
+                    type="button"
+                    onClick={() => scrollToSection('planos')}
+                    className="relative px-9 sm:px-11 py-4 sm:py-4.5 rounded-full text-sm sm:text-base font-black text-white transition-all duration-300 hover:scale-[1.03] hover:-translate-y-0.5 active:scale-[0.98] cursor-pointer flex items-center gap-3 tracking-wider uppercase overflow-hidden"
+                    style={{
+                      backgroundColor: accentConfig.primaryHex,
+                      boxShadow: `0 18px 40px -8px ${accentConfig.bgRgba || 'rgba(0,0,0,0.45)'}, 0 8px 16px -4px rgba(0,0,0,0.3)`
+                    }}
+                  >
+                    {/* Feixe de reflexo brilhante passando pelo botão no hover */}
+                    <div
+                      aria-hidden="true"
+                      className="absolute inset-0 -translate-x-full group-hover:translate-x-[250%] transition-transform duration-700 ease-out bg-gradient-to-r from-transparent via-white/35 to-transparent skew-x-[-20deg] pointer-events-none"
+                    />
+
+                    <span className="relative z-10">VER PLANOS</span>
+                    <ArrowRight className="w-4.5 h-4.5 sm:w-5 sm:h-5 relative z-10 transition-transform duration-300 group-hover:translate-x-1.5" />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            {/* Coluna Direita: O Trio de Destaque Interativo (Cor do Tema, Animação de Luz de Ver Planos e 100% Funcional) */}
+            <div className="lg:col-span-5 flex flex-col justify-center gap-3.5">
+              {/* Item 1: Flashcards */}
+              <div
+                onClick={() => scrollToSection('flashcards')}
+                className="relative p-4 sm:p-4.5 rounded-2xl transition-all duration-300 hover:scale-[1.02] hover:-translate-y-0.5 active:scale-[0.98] cursor-pointer flex items-center gap-3.5 sm:gap-4 text-left group overflow-hidden select-none"
+                style={{
+                  backgroundColor: accentConfig.primaryHex,
+                  boxShadow: `0 14px 32px -6px ${accentConfig.bgRgba || 'rgba(0,0,0,0.4)'}, 0 6px 14px -3px rgba(0,0,0,0.25)`
+                }}
+              >
+                {/* Feixe de reflexo brilhante passando pelo card no hover */}
+                <div
+                  aria-hidden="true"
+                  className="absolute inset-0 -translate-x-full group-hover:translate-x-[250%] transition-transform duration-700 ease-out bg-gradient-to-r from-transparent via-white/35 to-transparent skew-x-[-20deg] pointer-events-none"
+                />
+
+                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center shrink-0 bg-white/20 text-white relative z-10 transition-transform duration-200 group-hover:scale-105">
+                  <Brain className="w-5 h-5 shrink-0" />
+                </div>
+                <p
+                  className="text-xs sm:text-[13px] md:text-sm font-extrabold uppercase tracking-wider text-white leading-snug relative z-10"
                   style={{
-                    borderColor: isHovered ? accentConfig.primaryHex : 'rgba(160, 174, 192, 0.25)',
-                    color: isHovered ? accentConfig.primaryHex : undefined,
-                    backgroundColor: isHovered ? `${accentConfig.primaryHex}15` : undefined,
-                    boxShadow: isHovered
-                      ? `0 0 20px -2px ${accentConfig.primaryHex}45, 0 4px 12px -2px ${accentConfig.bgRgba}`
-                      : '0 1px 3px rgba(0, 0, 0, 0.05)',
+                    fontFamily: 'var(--font-inter), sans-serif',
+                    color: accentConfig.primaryContrastHex || '#ffffff'
                   }}
                 >
-                  {btn.label}
-                </button>
-              );
-            })}
+                  FLASHCARDS QUE ESTARÃO COM CERTEZA NA SUA PROVA.
+                </p>
+              </div>
+
+              {/* Item 2: Materiais */}
+              <div
+                onClick={() => scrollToSection('material-estudo')}
+                className="relative p-4 sm:p-4.5 rounded-2xl transition-all duration-300 hover:scale-[1.02] hover:-translate-y-0.5 active:scale-[0.98] cursor-pointer flex items-center gap-3.5 sm:gap-4 text-left group overflow-hidden select-none"
+                style={{
+                  backgroundColor: accentConfig.primaryHex,
+                  boxShadow: `0 14px 32px -6px ${accentConfig.bgRgba || 'rgba(0,0,0,0.4)'}, 0 6px 14px -3px rgba(0,0,0,0.25)`
+                }}
+              >
+                {/* Feixe de reflexo brilhante passando pelo card no hover */}
+                <div
+                  aria-hidden="true"
+                  className="absolute inset-0 -translate-x-full group-hover:translate-x-[250%] transition-transform duration-700 ease-out bg-gradient-to-r from-transparent via-white/35 to-transparent skew-x-[-20deg] pointer-events-none"
+                />
+
+                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center shrink-0 bg-white/20 text-white relative z-10 transition-transform duration-200 group-hover:scale-105">
+                  <BookOpen className="w-5 h-5 shrink-0" />
+                </div>
+                <p
+                  className="text-xs sm:text-[13px] md:text-sm font-extrabold uppercase tracking-wider text-white leading-snug relative z-10"
+                  style={{
+                    fontFamily: 'var(--font-inter), sans-serif',
+                    color: accentConfig.primaryContrastHex || '#ffffff'
+                  }}
+                >
+                  MATERIAIS COM BASE EM DIRETRIZES E EM QUESTÕES DAS PROVAS DE RESIDÊNCIA.
+                </p>
+              </div>
+
+              {/* Item 3: Desempenho */}
+              <div
+                onClick={() => scrollToSection('questoes')}
+                className="relative p-4 sm:p-4.5 rounded-2xl transition-all duration-300 hover:scale-[1.02] hover:-translate-y-0.5 active:scale-[0.98] cursor-pointer flex items-center gap-3.5 sm:gap-4 text-left group overflow-hidden select-none"
+                style={{
+                  backgroundColor: accentConfig.primaryHex,
+                  boxShadow: `0 14px 32px -6px ${accentConfig.bgRgba || 'rgba(0,0,0,0.4)'}, 0 6px 14px -3px rgba(0,0,0,0.25)`
+                }}
+              >
+                {/* Feixe de reflexo brilhante passando pelo card no hover */}
+                <div
+                  aria-hidden="true"
+                  className="absolute inset-0 -translate-x-full group-hover:translate-x-[250%] transition-transform duration-700 ease-out bg-gradient-to-r from-transparent via-white/35 to-transparent skew-x-[-20deg] pointer-events-none"
+                />
+
+                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl flex items-center justify-center shrink-0 bg-white/20 text-white relative z-10 transition-transform duration-200 group-hover:scale-105">
+                  <BarChart3 className="w-5 h-5 shrink-0" />
+                </div>
+                <p
+                  className="text-xs sm:text-[13px] md:text-sm font-extrabold uppercase tracking-wider text-white leading-snug relative z-10"
+                  style={{
+                    fontFamily: 'var(--font-inter), sans-serif',
+                    color: accentConfig.primaryContrastHex || '#ffffff'
+                  }}
+                >
+                  DESEMPENHO PERSONALIZADO PARA ACOMPANHAR A EVOLUÇÃO.
+                </p>
+              </div>
+            </div>
+
           </div>
 
           {/* =========================================================================
               CARROSSEL INFINITO (MARQUEE) COM AS PRINCIPAIS BANCAS DO ACERVO
               ========================================================================= */}
-          <div className="relative w-full overflow-hidden mt-10 sm:mt-14 py-3">
-            {/* Fade lateral esquerdo para efeito de profundidade infinito */}
-            <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-zinc-50 via-zinc-50/80 to-transparent dark:from-[var(--bg-page)] dark:via-[var(--bg-page)]/80 to-transparent z-10" />
+          <div className="relative w-full overflow-hidden mt-12 sm:mt-16 pt-5 border-t border-zinc-200/60 dark:border-zinc-800/60">
+            <div className="text-[11px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 mb-3 text-center sm:text-left">
+              Provas Oficiais & Bancas Examinadoras no Acervo:
+            </div>
 
-            {/* Fade lateral direito */}
-            <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-zinc-50 via-zinc-50/80 to-transparent dark:from-[var(--bg-page)] dark:via-[var(--bg-page)]/80 to-transparent z-10" />
+            {/* Fades laterais para profundidade */}
+            <div className="pointer-events-none absolute left-0 top-8 bottom-0 w-16 sm:w-28 bg-gradient-to-r from-zinc-50 via-zinc-50/90 to-transparent dark:from-[var(--bg-page)] dark:via-[var(--bg-page)]/90 to-transparent z-10" />
+            <div className="pointer-events-none absolute right-0 top-8 bottom-0 w-16 sm:w-28 bg-gradient-to-l from-zinc-50 via-zinc-50/90 to-transparent dark:from-[var(--bg-page)] dark:via-[var(--bg-page)]/90 to-transparent z-10" />
 
-            {/* Track animado contínuo (Duplicado para loop perfeito) */}
-            <div className="animate-marquee flex items-center gap-3.5 select-none py-1">
+            {/* Track animado contínuo */}
+            <div className="animate-marquee flex items-center gap-3 select-none py-1">
               {[...TOP_FEATURED_BANCAS, ...TOP_FEATURED_BANCAS].map((banca, idx) => (
                 <div
                   key={`${banca.id}-${idx}`}
                   onClick={() => onOpenAuth('register')}
-                  className="h-12 sm:h-14 px-4 sm:px-6 rounded-2xl bg-white dark:bg-white text-slate-900 shadow-md shadow-slate-200/50 dark:shadow-black/60 border border-slate-200/90 dark:border-white/20 hover:border-blue-500 hover:scale-105 transition-all duration-200 cursor-pointer flex items-center justify-center shrink-0 whitespace-nowrap group"
+                  className="h-10 sm:h-11 px-4 rounded-xl bg-white dark:bg-zinc-900 text-zinc-900 dark:text-white shadow-xs border border-zinc-200/80 dark:border-zinc-800 hover:scale-105 transition-all duration-150 cursor-pointer flex items-center justify-center shrink-0 whitespace-nowrap group"
                   title={banca.name}
                 >
                   {banca.logoSlug ? (
@@ -534,7 +642,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
                       src={`https://www.medevo.com.br/assets/pulso/institutions/${banca.logoSlug}-192.webp`}
                       alt={banca.name}
                       loading="lazy"
-                      className="h-7 sm:h-8 w-auto max-w-[110px] object-contain group-hover:scale-105 transition-transform"
+                      className="h-6 sm:h-7 w-auto max-w-[90px] object-contain group-hover:scale-105 transition-transform"
                       onError={(e) => {
                         (e.target as HTMLElement).style.display = 'none';
                         const fallback = (e.target as HTMLElement).nextElementSibling as HTMLElement;
@@ -543,7 +651,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
                     />
                   ) : null}
                   <span
-                    className={`font-heading font-black text-xs sm:text-sm tracking-wider uppercase text-slate-900 group-hover:text-blue-600 transition-colors ${
+                    className={`font-heading font-black text-xs tracking-wider uppercase text-zinc-800 dark:text-zinc-200 group-hover:text-zinc-950 dark:group-hover:text-white transition-colors ${
                       banca.logoSlug ? 'hidden' : 'inline-block'
                     }`}
                   >
@@ -554,69 +662,6 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
             </div>
           </div>
 
-          {/* Botões de Ação Imediata */}
-          <div className="mt-8 sm:mt-10 flex flex-wrap items-center justify-center gap-3.5 sm:gap-4">
-            <button
-              type="button"
-              onClick={() => scrollToSection('planos')}
-              className="px-6 py-3.5 sm:px-8 sm:py-4 rounded-2xl text-xs sm:text-sm font-extrabold text-white shadow-xl transition-all hover:scale-103 cursor-pointer flex items-center gap-2.5"
-              style={{
-                backgroundColor: accentConfig.primaryHex,
-                boxShadow: `0 12px 30px -6px ${accentConfig.bgRgba}`
-              }}
-            >
-              <span>Ver Planos e Assinar</span>
-              <ArrowRight className="w-4 h-4" />
-            </button>
-
-            <button
-              type="button"
-              onClick={() => onOpenAuth('register')}
-              className="px-6 py-3.5 sm:px-8 sm:py-4 rounded-2xl text-xs sm:text-sm font-extrabold text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800/90 border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all hover:scale-102 cursor-pointer flex items-center gap-2.5 shadow-sm"
-            >
-              <Sparkles className="w-4 h-4 text-amber-500" />
-              <span>Começar Gratuitamente</span>
-            </button>
-          </div>
-
-          {/* Faixa de Métricas Essenciais */}
-          <div className="mt-12 sm:mt-16 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 max-w-4xl mx-auto">
-            <div className="p-4 rounded-2xl bg-white/90 dark:bg-[var(--bg-card)]/90 border border-zinc-200/80 dark:border-zinc-800/80 shadow-xs text-center">
-              <div className="text-xl sm:text-2xl font-black text-zinc-900 dark:text-white font-heading">
-                +130.000
-              </div>
-              <div className="text-[11px] font-bold text-zinc-500 dark:text-zinc-400 mt-0.5">
-                Questões no Acervo
-              </div>
-            </div>
-
-            <div className="p-4 rounded-2xl bg-white/90 dark:bg-[var(--bg-card)]/90 border border-zinc-200/80 dark:border-zinc-800/80 shadow-xs text-center">
-              <div className="text-xl sm:text-2xl font-black text-zinc-900 dark:text-white font-heading">
-                100%
-              </div>
-              <div className="text-[11px] font-bold text-zinc-500 dark:text-zinc-400 mt-0.5">
-                Provas Oficiais na Íntegra
-              </div>
-            </div>
-
-            <div className="p-4 rounded-2xl bg-white/90 dark:bg-[var(--bg-card)]/90 border border-zinc-200/80 dark:border-zinc-800/80 shadow-xs text-center">
-              <div className="text-xl sm:text-2xl font-black text-zinc-900 dark:text-white font-heading">
-                5 Áreas
-              </div>
-              <div className="text-[11px] font-bold text-zinc-500 dark:text-zinc-400 mt-0.5">
-                Especialidades & Subfocos
-              </div>
-            </div>
-
-            <div className="p-4 rounded-2xl bg-white/90 dark:bg-[var(--bg-card)]/90 border border-zinc-200/80 dark:border-zinc-800/80 shadow-xs text-center">
-              <div className="text-xl sm:text-2xl font-black text-emerald-600 dark:text-emerald-400 font-heading">
-                0% Ruído
-              </div>
-              <div className="text-[11px] font-bold text-zinc-500 dark:text-zinc-400 mt-0.5">
-                Sem Distrações
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -631,77 +676,217 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
       </div>
 
       {/* =========================================================================
-          SEÇÃO: MATERIAL DE ESTUDO (341 LIVROS, CONDUTAS & ALGORITMOS)
+          SEÇÃO: MATERIAIS BASEADOS EM DIRETRIZES (FUNDO ABSTRACT + CARDS COM COR & DETALHES)
           ========================================================================= */}
-      <section id="material-estudo" className="scroll-mt-24 py-16 sm:py-24 border-t border-zinc-200/80 dark:border-zinc-800/80 bg-zinc-50/50 dark:bg-zinc-900/20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800/80 text-blue-700 dark:text-blue-300 text-xs font-extrabold mb-3">
-              <BookOpen className="w-3.5 h-3.5" />
-              <span>Conhecimento Clínico Estruturado</span>
-            </div>
-            <h2 className="font-heading text-2xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
-              Material de Estudo Focado e Direto ao Ponto
+      <section id="material-estudo" className="scroll-mt-24 py-20 sm:py-28 relative overflow-hidden bg-[#08080a] text-white border-t border-zinc-800/80">
+        {/* Fundo Abstract: Mesh Gradient + Glow Orbs + Geometric Grid Lines */}
+        <div className="absolute inset-0 pointer-events-none -z-10 overflow-hidden select-none">
+          {/* Ambient Glow Orbs com as cores do tema */}
+          <div
+            className="absolute -top-32 left-1/2 -translate-x-1/2 w-[700px] sm:w-[950px] h-[450px] rounded-full blur-[140px] opacity-25 transition-colors duration-500"
+            style={{ backgroundColor: accentConfig.primaryHex }}
+          />
+          <div
+            className="absolute -bottom-32 right-5 w-[500px] h-[400px] rounded-full blur-[130px] opacity-20 transition-colors duration-500"
+            style={{ backgroundColor: accentConfig.hoverHex || accentConfig.primaryHex }}
+          />
+
+          {/* Abstract Geometric Grid Pattern */}
+          <div
+            className="absolute inset-0 opacity-[0.04] [mask-image:radial-gradient(ellipse_70%_60%_at_50%_50%,#000_60%,transparent_100%)]"
+            style={{
+              backgroundImage: `radial-gradient(circle at 1px 1px, #ffffff 1px, transparent 0)`,
+              backgroundSize: '32px 32px'
+            }}
+          />
+
+          {/* Abstract Curved Wave Lines (SVG) */}
+          <svg
+            className="absolute inset-0 w-full h-full opacity-15"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 600"
+            fill="none"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M-50 220 C 350 420, 650 50, 1050 280 C 1250 400, 1400 240, 1550 320"
+              stroke={accentConfig.primaryHex}
+              strokeWidth="1.5"
+              strokeDasharray="6 6"
+            />
+            <path
+              d="M-50 320 C 400 120, 800 480, 1150 180 C 1350 110, 1450 360, 1550 260"
+              stroke={accentConfig.primaryHex}
+              strokeWidth="1"
+              opacity="0.6"
+            />
+          </svg>
+        </div>
+
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
+          <div className="text-center max-w-4xl mx-auto mb-12 sm:mb-16">
+            <h2
+              className="font-bebas text-4xl sm:text-6xl md:text-7xl tracking-wide text-white leading-[0.98] drop-shadow-sm"
+              style={{ fontFamily: 'var(--font-bebas), "Bebas Neue", sans-serif' }}
+            >
+              Materiais baseados em Diretrizes que vão cair na prova
             </h2>
-            <p className="mt-3 text-xs sm:text-sm text-slate-600 dark:text-slate-400">
-              Mais de 341 livros médicos de referência catalogados por especialidade, algoritmos de tratamento e sínteses para fixação rápida dos temas mais cobrados nas provas.
-            </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Card 1 */}
-            <div className="p-6 rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-md hover:shadow-xl transition-all duration-300 group">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-7 max-w-5xl mx-auto">
+            {/* Card 1: Diretrizes Atualizadas */}
+            <div className="relative rounded-2xl p-6 sm:p-7 bg-[#121216]/95 border border-zinc-800/90 shadow-2xl backdrop-blur-xl hover:border-zinc-700 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1 group flex flex-col justify-between overflow-hidden text-left">
+              {/* Glow sutil na borda superior */}
               <div
-                className="w-12 h-12 rounded-2xl flex items-center justify-center text-white mb-5 transition-transform group-hover:scale-105 duration-200"
-                style={{ backgroundColor: accentConfig.primaryHex }}
-              >
-                <BookOpen className="w-6 h-6" />
+                className="absolute top-0 left-0 right-0 h-[2.5px] opacity-80 group-hover:opacity-100 transition-opacity"
+                style={{
+                  background: `linear-gradient(90deg, transparent, ${accentConfig.primaryHex}, transparent)`
+                }}
+              />
+
+              <div>
+                {/* Top Bar: Ícone Colorido + Badge com detalhes */}
+                <div className="flex items-center justify-between gap-3 mb-5">
+                  <div
+                    className="w-12 h-12 rounded-2xl flex items-center justify-center text-white shadow-lg transition-transform group-hover:scale-110 duration-300 shrink-0"
+                    style={{
+                      backgroundColor: accentConfig.primaryHex,
+                      boxShadow: `0 8px 24px -4px ${accentConfig.bgRgba || 'rgba(0,0,0,0.5)'}`
+                    }}
+                  >
+                    <FileCheck2 className="w-6 h-6" />
+                  </div>
+
+                  <span className="text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider px-2.5 py-1 rounded-full border border-zinc-700/60 bg-zinc-800/70 text-zinc-300">
+                    Consensos Oficiais
+                  </span>
+                </div>
+
+                <h3
+                  className="font-bebas text-2xl sm:text-3xl tracking-wide text-white mb-2 leading-tight"
+                  style={{ fontFamily: 'var(--font-bebas), "Bebas Neue", sans-serif' }}
+                >
+                  Diretrizes Atualizadas
+                </h3>
+
+                <p
+                  className="text-xs sm:text-sm text-zinc-400 leading-relaxed font-normal mb-5"
+                  style={{ fontFamily: 'var(--font-inter), sans-serif' }}
+                >
+                  Materiais produzidos com base nas principais diretrizes.
+                </p>
               </div>
-              <h3 className="font-heading text-base font-extrabold text-slate-900 dark:text-white mb-2">
-                341 Livros Médicos
-              </h3>
-              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
-                Base indexada com os clássicos da medicina: Harrison, Sabiston, Nelson, Zugaib e Rouquayrol com busca inteligente por tema clínico.
-              </p>
+
+              {/* Detalhes & Tags Clínicas na base do card */}
+              <div className="pt-4 border-t border-zinc-800/80 flex items-center gap-1.5 flex-wrap text-[11px] font-semibold text-zinc-400">
+                <span className="px-2 py-0.5 rounded-md bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">SBC</span>
+                <span className="px-2 py-0.5 rounded-md bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">SBPT</span>
+                <span className="px-2 py-0.5 rounded-md bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">FEBRASGO</span>
+                <span className="px-2 py-0.5 rounded-md bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">CFM</span>
+              </div>
             </div>
 
-            {/* Card 2 */}
-            <div className="p-6 rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-md hover:shadow-xl transition-all duration-300 group">
-              <div className="w-12 h-12 rounded-2xl flex items-center justify-center text-white bg-indigo-600 mb-5 transition-transform group-hover:scale-105 duration-200">
-                <Layers className="w-6 h-6" />
+            {/* Card 2: Engenharia Reversa */}
+            <div className="relative rounded-2xl p-6 sm:p-7 bg-[#121216]/95 border border-zinc-800/90 shadow-2xl backdrop-blur-xl hover:border-zinc-700 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1 group flex flex-col justify-between overflow-hidden text-left">
+              {/* Glow sutil na borda superior */}
+              <div
+                className="absolute top-0 left-0 right-0 h-[2.5px] opacity-80 group-hover:opacity-100 transition-opacity"
+                style={{
+                  background: `linear-gradient(90deg, transparent, ${accentConfig.primaryHex}, transparent)`
+                }}
+              />
+
+              <div>
+                {/* Top Bar: Ícone Colorido + Badge com detalhes */}
+                <div className="flex items-center justify-between gap-3 mb-5">
+                  <div
+                    className="w-12 h-12 rounded-2xl flex items-center justify-center text-white shadow-lg transition-transform group-hover:scale-110 duration-300 shrink-0"
+                    style={{
+                      backgroundColor: accentConfig.primaryHex,
+                      boxShadow: `0 8px 24px -4px ${accentConfig.bgRgba || 'rgba(0,0,0,0.5)'}`
+                    }}
+                  >
+                    <Target className="w-6 h-6" />
+                  </div>
+
+                  <span className="text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider px-2.5 py-1 rounded-full border border-zinc-700/60 bg-zinc-800/70 text-zinc-300">
+                    Incidência Real
+                  </span>
+                </div>
+
+                <h3
+                  className="font-bebas text-2xl sm:text-3xl tracking-wide text-white mb-2 leading-tight"
+                  style={{ fontFamily: 'var(--font-bebas), "Bebas Neue", sans-serif' }}
+                >
+                  Engenharia Reversa
+                </h3>
+
+                <p
+                  className="text-xs sm:text-sm text-zinc-400 leading-relaxed font-normal mb-5"
+                  style={{ fontFamily: 'var(--font-inter), sans-serif' }}
+                >
+                  Materiais montados com base em TUDO que é cobrado nas questões.
+                </p>
               </div>
-              <h3 className="font-heading text-base font-extrabold text-slate-900 dark:text-white mb-2">
-                Algoritmos de Conduta
-              </h3>
-              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
-                Fluxogramas passo a passo de urgências, emergências e condutas ambulatoriais para acertar questões de conduta imediata.
-              </p>
+
+              {/* Detalhes & Tags Clínicas na base do card */}
+              <div className="pt-4 border-t border-zinc-800/80 flex items-center gap-1.5 flex-wrap text-[11px] font-semibold text-zinc-400">
+                <span className="px-2 py-0.5 rounded-md bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">ENARE</span>
+                <span className="px-2 py-0.5 rounded-md bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">USP-SP</span>
+                <span className="px-2 py-0.5 rounded-md bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">SUS-SP</span>
+                <span className="px-2 py-0.5 rounded-md bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">PSU-MG</span>
+              </div>
             </div>
 
-            {/* Card 3 */}
-            <div className="p-6 rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-md hover:shadow-xl transition-all duration-300 group">
-              <div className="w-12 h-12 rounded-2xl flex items-center justify-center text-white bg-emerald-600 mb-5 transition-transform group-hover:scale-105 duration-200">
-                <ShieldCheck className="w-6 h-6" />
-              </div>
-              <h3 className="font-heading text-base font-extrabold text-slate-900 dark:text-white mb-2">
-                Fatores de Risco & Ddx
-              </h3>
-              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
-                Tabelas comparativas de diagnósticos diferenciais para eliminar as pegadinhas mais capciosas da USP, ENARE e Revalida.
-              </p>
-            </div>
+            {/* Card 3: Organização */}
+            <div className="relative rounded-2xl p-6 sm:p-7 bg-[#121216]/95 border border-zinc-800/90 shadow-2xl backdrop-blur-xl hover:border-zinc-700 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1 group flex flex-col justify-between overflow-hidden text-left">
+              {/* Glow sutil na borda superior */}
+              <div
+                className="absolute top-0 left-0 right-0 h-[2.5px] opacity-80 group-hover:opacity-100 transition-opacity"
+                style={{
+                  background: `linear-gradient(90deg, transparent, ${accentConfig.primaryHex}, transparent)`
+                }}
+              />
 
-            {/* Card 4 */}
-            <div className="p-6 rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-md hover:shadow-xl transition-all duration-300 group">
-              <div className="w-12 h-12 rounded-2xl flex items-center justify-center text-white bg-amber-500 mb-5 transition-transform group-hover:scale-105 duration-200">
-                <Sparkles className="w-6 h-6" />
+              <div>
+                {/* Top Bar: Ícone Colorido + Badge com detalhes */}
+                <div className="flex items-center justify-between gap-3 mb-5">
+                  <div
+                    className="w-12 h-12 rounded-2xl flex items-center justify-center text-white shadow-lg transition-transform group-hover:scale-110 duration-300 shrink-0"
+                    style={{
+                      backgroundColor: accentConfig.primaryHex,
+                      boxShadow: `0 8px 24px -4px ${accentConfig.bgRgba || 'rgba(0,0,0,0.5)'}`
+                    }}
+                  >
+                    <FolderKanban className="w-6 h-6" />
+                  </div>
+
+                  <span className="text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider px-2.5 py-1 rounded-full border border-zinc-700/60 bg-zinc-800/70 text-zinc-300">
+                    Estudo Integrado
+                  </span>
+                </div>
+
+                <h3
+                  className="font-bebas text-2xl sm:text-3xl tracking-wide text-white mb-2 leading-tight"
+                  style={{ fontFamily: 'var(--font-bebas), "Bebas Neue", sans-serif' }}
+                >
+                  Organização
+                </h3>
+
+                <p
+                  className="text-xs sm:text-sm text-zinc-400 leading-relaxed font-normal mb-5"
+                  style={{ fontFamily: 'var(--font-inter), sans-serif' }}
+                >
+                  Material organizado com base no banco de questões, para você treinar enquanto estuda.
+                </p>
               </div>
-              <h3 className="font-heading text-base font-extrabold text-slate-900 dark:text-white mb-2">
-                Take-Home Pearls
-              </h3>
-              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
-                Pontos de virada e mensagens finais de cada tema que resumem o que a banca realmente quer de você na hora da prova.
-              </p>
+
+              {/* Detalhes & Tags Clínicas na base do card */}
+              <div className="pt-4 border-t border-zinc-800/80 flex items-center gap-1.5 flex-wrap text-[11px] font-semibold text-zinc-400">
+                <span className="px-2 py-0.5 rounded-md bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">Cadernos</span>
+                <span className="px-2 py-0.5 rounded-md bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">Simulados</span>
+                <span className="px-2 py-0.5 rounded-md bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">Filtros</span>
+              </div>
             </div>
           </div>
         </div>
@@ -710,229 +895,172 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
       {/* =========================================================================
           SEÇÃO: FLASHCARDS COM REPETIÇÃO ESPAÇADA (FSRS)
           ========================================================================= */}
-      <section id="flashcards" className="scroll-mt-24 py-16 sm:py-24 border-t border-zinc-200/80 dark:border-zinc-800/80">
+      <section id="flashcards" className="scroll-mt-24 py-16 sm:py-20 border-t border-zinc-200/80 dark:border-zinc-800/80">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 sm:gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-center">
             {/* Texto Explicativo */}
-            <div className="lg:col-span-6 space-y-5 text-center lg:text-left">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-50 dark:bg-purple-950/60 border border-purple-200 dark:border-purple-800/80 text-purple-700 dark:text-purple-300 text-xs font-extrabold">
-                <Brain className="w-3.5 h-3.5" />
-                <span>Repetição Espaçada de Alta Retenção</span>
+            <div className="lg:col-span-6 space-y-4 text-center lg:text-left">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 text-xs font-bold">
+                <Brain className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
+                <span>Repetição Espaçada FSRS</span>
               </div>
-              <h2 className="font-heading text-2xl sm:text-4xl font-extrabold text-slate-900 dark:text-white leading-tight">
-                Flashcards Inteligentes: memorização ativa sem esforço
+              <h2
+                className="font-bebas text-4xl sm:text-5xl md:text-6xl tracking-wide text-zinc-950 dark:text-white leading-[1.02]"
+                style={{ fontFamily: 'var(--font-bebas), "Bebas Neue", sans-serif' }}
+              >
+                Flashcards com TUDO que já caiu em provas.
               </h2>
-              <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                Baseados no modelo psicométrico FSRS, os flashcards do Banco Residência se adaptam à sua curva de esquecimento. O que você erra nas questões vira card de revisão imediata no seu caderno.
+              <p className="text-sm sm:text-base text-zinc-600 dark:text-zinc-400 leading-relaxed font-normal">
+                Os flashcards do banco residência são produzidos baseados nas questões passadas de residência e reforçadas nas principais diretrizes atualizadas.
               </p>
 
-              <div className="space-y-3 pt-2 text-xs font-semibold text-slate-700 dark:text-slate-200 text-left">
+              <div className="space-y-2.5 pt-1 text-xs font-medium text-zinc-700 dark:text-zinc-300 text-left">
                 <div className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
-                  <span>Algoritmo de intervalos calibrado para o dia da sua prova</span>
+                  <span>Algoritmo de intervalos calibrado para a data da sua prova</span>
                 </div>
                 <div className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
-                  <span>Modo Cloze (omissão de conceitos e drogas de escolha)</span>
+                  <span>Método Cloze com omissão de drogas de escolha e critérios diagnósticos</span>
                 </div>
                 <div className="flex items-center gap-2.5">
                   <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
-                  <span>Sincronização automática com seu Caderno de Erros</span>
+                  <span>Sincronização imediata com o seu Caderno de Erros</span>
                 </div>
-              </div>
-
-              <div className="pt-2">
-                <button
-                  type="button"
-                  onClick={() => onOpenAuth('register')}
-                  className="px-6 py-3 rounded-xl text-xs font-extrabold text-white shadow-md transition-all hover:scale-102 cursor-pointer inline-flex items-center gap-2"
-                  style={{ backgroundColor: accentConfig.primaryHex }}
-                >
-                  <span>Experimentar Flashcards</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </button>
               </div>
             </div>
 
-            {/* Demonstração Interativa do Flashcard */}
-            <div className="lg:col-span-6 flex justify-center">
-              <div className="w-full max-w-md">
-                <div
-                  onClick={() => setDemoFlashcardFlipped(!demoFlashcardFlipped)}
-                  className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[var(--bg-card)] border-2 border-dashed border-zinc-300 dark:border-zinc-700 hover:border-purple-500 dark:hover:border-purple-400 shadow-xl transition-all duration-300 cursor-pointer min-h-[260px] flex flex-col justify-between group"
-                >
-                  <div>
-                    <div className="flex items-center justify-between text-[11px] font-extrabold uppercase tracking-wider text-purple-600 dark:text-purple-400 mb-4">
-                      <span>Cirurgia Vascular • ENARE / USP</span>
-                      <span className="flex items-center gap-1 text-slate-400 font-semibold text-[10px]">
-                        <RotateCcw className="w-3 h-3 group-hover:rotate-180 transition-transform duration-300" />
-                        Clique para virar
-                      </span>
-                    </div>
+            {/* Demonstração Interativa do Flashcard com Efeito 3D e FSRS */}
+            <div className="lg:col-span-6 flex flex-col items-center justify-center relative">
+              {/* Feedback Pill Flutuante do FSRS */}
+              {fsrsFeedback && (
+                <div className="mb-3 px-4 py-2 rounded-full bg-zinc-950 text-white dark:bg-zinc-100 dark:text-zinc-950 text-xs font-bold shadow-lg border border-zinc-800 dark:border-zinc-200 flex items-center gap-2 animate-in fade-in slide-in-from-top-2 duration-200 z-20">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
+                  <span>{fsrsFeedback}</span>
+                </div>
+              )}
 
-                    {!demoFlashcardFlipped ? (
-                      <div className="space-y-3">
-                        <span className="text-xs font-bold uppercase tracking-wider text-slate-400">
+              <div className="w-full max-w-md [perspective:1000px] min-h-[360px] sm:min-h-[380px] relative select-none">
+                <div
+                  className={`w-full h-full min-h-[360px] sm:min-h-[380px] relative transition-transform duration-500 [transform-style:preserve-3d] ${
+                    demoFlashcardFlipped ? '[transform:rotateY(180deg)]' : ''
+                  }`}
+                >
+                  {/* FRENTE DO CARD (Pergunta) */}
+                  <div
+                    onClick={() => setDemoFlashcardFlipped(true)}
+                    className="absolute inset-0 w-full h-full [backface-visibility:hidden] p-6 sm:p-7 rounded-2xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800 shadow-xl hover:border-zinc-300 dark:hover:border-zinc-700 transition-colors cursor-pointer flex flex-col justify-between group"
+                  >
+                    <div>
+                      <div className="flex items-center justify-between text-[11px] font-extrabold uppercase tracking-wider mb-4" style={{ color: accentConfig.primaryHex }}>
+                        <span>Cirurgia Vascular • ENARE / USP</span>
+                        <span className="flex items-center gap-1.5 text-zinc-400 font-semibold text-[10px] bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 rounded-md group-hover:text-zinc-600 dark:group-hover:text-zinc-200 transition-colors">
+                          <RotateCcw className="w-3 h-3 group-hover:rotate-180 transition-transform duration-300" />
+                          Clique para virar
+                        </span>
+                      </div>
+
+                      <div className="space-y-3 pt-2">
+                        <span className="text-[11px] font-bold uppercase tracking-wider text-zinc-400">
                           Pergunta do Card:
                         </span>
-                        <p className="text-sm sm:text-base font-extrabold text-slate-900 dark:text-white leading-snug">
+                        <p className="text-sm sm:text-base font-extrabold text-zinc-950 dark:text-white leading-snug">
                           Qual é a tríade clínica clássica da Síndrome de Leriche e qual é o nível anatômico da obstrução arterial?
                         </p>
                       </div>
-                    ) : (
-                      <div className="space-y-3 animate-in fade-in zoom-in-95 duration-150">
-                        <span className="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
-                          Resposta Padrão-Ouro:
-                        </span>
-                        <div className="text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-100 leading-relaxed">
-                          <strong>Tríade de Leriche:</strong><br />
-                          1. Claudicação de nádegas e coxas;<br />
-                          2. Diminuição ou ausência de pulsos femorais;<br />
-                          3. Disfunção erétil no homem.<br />
-                          <strong>Nível anatômico:</strong> Oclusão da bifurcação aortoilíaca (aorta distal e artérias ilíacas).
-                        </div>
-                      </div>
-                    )}
+                    </div>
+
+                    <div className="pt-4 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between text-xs text-zinc-500">
+                      <span className="font-medium text-[11px]">Frente do card • Simulado de Prova</span>
+                      <span className="font-bold text-[11px] flex items-center gap-1 group-hover:translate-x-1 transition-transform" style={{ color: accentConfig.primaryHex }}>
+                        Ver Resposta Padrão-Ouro →
+                      </span>
+                    </div>
                   </div>
 
-                  <div className="pt-4 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between text-xs text-slate-500">
-                    <span className="font-semibold">
-                      {demoFlashcardFlipped ? 'Verso do card (Resposta)' : 'Frente do card (Pergunta)'}
-                    </span>
-                    <span className="text-purple-600 dark:text-purple-400 font-bold group-hover:underline">
-                      {demoFlashcardFlipped ? 'Ver Pergunta' : 'Ver Resposta →'}
-                    </span>
+                  {/* VERSO DO CARD (Resposta + Botões FSRS) */}
+                  <div
+                    onClick={() => setDemoFlashcardFlipped(false)}
+                    className="absolute inset-0 w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)] p-6 sm:p-7 rounded-2xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800 shadow-xl flex flex-col justify-between cursor-pointer"
+                  >
+                    <div>
+                      <div className="flex items-center justify-between text-[11px] font-extrabold uppercase tracking-wider mb-3 text-emerald-600 dark:text-emerald-400">
+                        <span className="flex items-center gap-1.5">
+                          <CheckCircle2 className="w-3.5 h-3.5" />
+                          Resposta Padrão-Ouro
+                        </span>
+                        <span
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setDemoFlashcardFlipped(false);
+                          }}
+                          className="flex items-center gap-1 text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 font-semibold text-[10px] bg-zinc-100 dark:bg-zinc-800/80 px-2 py-1 rounded-md transition-colors cursor-pointer"
+                        >
+                          <RotateCcw className="w-3 h-3" />
+                          Voltar à Pergunta
+                        </span>
+                      </div>
+
+                      <div className="text-xs sm:text-sm font-medium text-zinc-800 dark:text-zinc-200 leading-relaxed space-y-1.5">
+                        <p>
+                          <strong className="text-zinc-950 dark:text-white font-bold">Tríade de Leriche:</strong>
+                        </p>
+                        <ol className="list-decimal list-inside space-y-0.5 text-zinc-700 dark:text-zinc-300 text-xs">
+                          <li>Claudicação de nádegas e coxas;</li>
+                          <li>Diminuição ou ausência de pulsos femorais;</li>
+                          <li>Disfunção erétil no homem.</li>
+                        </ol>
+                        <p className="text-xs pt-1">
+                          <strong className="text-zinc-950 dark:text-white font-bold">Nível anatômico:</strong> Oclusão da bifurcação aortoilíaca (aorta distal e artérias ilíacas).
+                        </p>
+                      </div>
+                    </div>
+
+                    {/* Botões de Classificação FSRS */}
+                    <div className="pt-3 border-t border-zinc-100 dark:border-zinc-800/80">
+                      <div className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 mb-2 flex items-center justify-between">
+                        <span>Classifique para agendar (FSRS):</span>
+                        <span className="text-zinc-400 font-normal">Clique para testar</span>
+                      </div>
+                      <div className="grid grid-cols-4 gap-1.5 sm:gap-2">
+                        <button
+                          type="button"
+                          onClick={(e) => handleFsrsRate(e, '1 dia')}
+                          className="flex flex-col items-center justify-center py-2 px-1 rounded-xl border border-rose-200 dark:border-rose-900/60 bg-rose-50 dark:bg-rose-950/30 text-rose-700 dark:text-rose-400 hover:bg-rose-100 dark:hover:bg-rose-900/50 hover:scale-[1.03] active:scale-[0.97] transition-all cursor-pointer"
+                        >
+                          <span className="text-[11px] font-extrabold leading-tight">Errei</span>
+                          <span className="text-[10px] font-medium opacity-80">1 dia</span>
+                        </button>
+                        <button
+                          type="button"
+                          onClick={(e) => handleFsrsRate(e, '3 dias')}
+                          className="flex flex-col items-center justify-center py-2 px-1 rounded-xl border border-amber-200 dark:border-amber-900/60 bg-amber-50 dark:bg-amber-950/30 text-amber-700 dark:text-amber-400 hover:bg-amber-100 dark:hover:bg-amber-900/50 hover:scale-[1.03] active:scale-[0.97] transition-all cursor-pointer"
+                        >
+                          <span className="text-[11px] font-extrabold leading-tight">Difícil</span>
+                          <span className="text-[10px] font-medium opacity-80">3 dias</span>
+                        </button>
+                        <button
+                          type="button"
+                          onClick={(e) => handleFsrsRate(e, '7 dias')}
+                          className="flex flex-col items-center justify-center py-2 px-1 rounded-xl border border-blue-200 dark:border-blue-900/60 bg-blue-50 dark:bg-blue-950/30 text-blue-700 dark:text-blue-400 hover:bg-blue-100 dark:hover:bg-blue-900/50 hover:scale-[1.03] active:scale-[0.97] transition-all cursor-pointer"
+                        >
+                          <span className="text-[11px] font-extrabold leading-tight">Bom</span>
+                          <span className="text-[10px] font-medium opacity-80">7 dias</span>
+                        </button>
+                        <button
+                          type="button"
+                          onClick={(e) => handleFsrsRate(e, '14 dias')}
+                          className="flex flex-col items-center justify-center py-2 px-1 rounded-xl border border-emerald-200 dark:border-emerald-900/60 bg-emerald-50 dark:bg-emerald-950/30 text-emerald-700 dark:text-emerald-400 hover:bg-emerald-100 dark:hover:bg-emerald-900/50 hover:scale-[1.03] active:scale-[0.97] transition-all cursor-pointer"
+                        >
+                          <span className="text-[11px] font-extrabold leading-tight">Fácil</span>
+                          <span className="text-[10px] font-medium opacity-80">14 dias</span>
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* =========================================================================
-          SEÇÃO DOS 3 PILARES ESSENCIAIS (RECURSOS DA PLATAFORMA)
-          ========================================================================= */}
-      <section id="recursos" className="py-16 sm:py-24 max-w-6xl mx-auto px-4 sm:px-6 w-full">
-        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-          <div className="text-xs font-extrabold uppercase tracking-wider text-blue-600 dark:text-blue-400 mb-2">
-            Simplicidade & Poder
-          </div>
-          <h2 className="font-heading text-2xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
-            Tudo o que você precisa. Nada a mais.
-          </h2>
-          <p className="mt-3 text-xs sm:text-sm text-slate-500 dark:text-slate-400">
-            Três pilares projetados para elevar sua nota na residência sem perda de tempo.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-          {/* PILAR 1: FUNÇÃO DAS QUESTÕES */}
-          <div id="recurso-questoes" className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
-            <div className="space-y-4">
-              <div
-                className="w-12 h-12 rounded-2xl flex items-center justify-center text-white shadow-md transition-transform group-hover:scale-105 duration-200"
-                style={{ backgroundColor: accentConfig.primaryHex }}
-              >
-                <HelpCircle className="w-6 h-6" />
-              </div>
-              <div>
-                <span className="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md bg-blue-100 dark:bg-blue-950/70 text-blue-700 dark:text-blue-400">
-                  +130.000 Questões
-                </span>
-                <h3 className="font-heading text-lg sm:text-xl font-extrabold text-slate-900 dark:text-white mt-2">
-                  Banco de Questões Completo
-                </h3>
-              </div>
-              <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                Filtros inteligentes por especialidade, tema, subfoco, banca e ano. Resoluções comentadas alternativa por alternativa por médicos especialistas para fixação definitiva.
-              </p>
-            </div>
-
-            <ul className="mt-6 pt-5 border-t border-slate-100 dark:border-slate-800/80 space-y-2 text-xs font-semibold text-slate-600 dark:text-slate-300">
-              <li className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-emerald-500 shrink-0" />
-                <span>Filtros cirúrgicos por tema e subfoco</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-emerald-500 shrink-0" />
-                <span>Explicações completas em cada alternativa</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-emerald-500 shrink-0" />
-                <span>Modo estudo ou modo prova sem distrações</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* PILAR 2: CADERNO DE TODAS AS PROVAS */}
-          <div id="provas" className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
-            <div className="space-y-4">
-              <div className="w-12 h-12 rounded-2xl flex items-center justify-center text-white bg-indigo-600 shadow-md transition-transform group-hover:scale-105 duration-200">
-                <BookOpenCheck className="w-6 h-6" />
-              </div>
-              <div>
-                <span className="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md bg-indigo-100 dark:bg-indigo-950/70 text-indigo-700 dark:text-indigo-400">
-                  Provas na Íntegra
-                </span>
-                <h3 className="font-heading text-lg sm:text-xl font-extrabold text-slate-900 dark:text-white mt-2">
-                  Caderno de Todas as Provas
-                </h3>
-              </div>
-              <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                Resolva os exames na íntegra das principais bancas do Brasil: ENARE, USP, UNIFESP, SUS-SP, AMP, AMRIGS, SURCE, UERJ e dezenas de outras com contagem regressiva oficial.
-              </p>
-            </div>
-
-            <ul className="mt-6 pt-5 border-t border-slate-100 dark:border-slate-800/80 space-y-2 text-xs font-semibold text-slate-600 dark:text-slate-300">
-              <li className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-emerald-500 shrink-0" />
-                <span>Exames oficiais na íntegra de 2018 a 2026</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-emerald-500 shrink-0" />
-                <span>Simulação idêntica ao dia da prova</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-emerald-500 shrink-0" />
-                <span>Crie cadernos personalizados por instituição</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* PILAR 3: ACOMPANHAMENTO DETALHADO */}
-          <div id="estatisticas" className="scroll-mt-24 p-6 sm:p-8 rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
-            <div className="space-y-4">
-              <div className="w-12 h-12 rounded-2xl flex items-center justify-center text-white bg-emerald-600 shadow-md transition-transform group-hover:scale-105 duration-200">
-                <BarChart3 className="w-6 h-6" />
-              </div>
-              <div>
-                <span className="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md bg-emerald-100 dark:bg-emerald-950/70 text-emerald-700 dark:text-emerald-400">
-                  Métricas Precisas
-                </span>
-                <h3 className="font-heading text-lg sm:text-xl font-extrabold text-slate-900 dark:text-white mt-2">
-                  Acompanhamento Detalhado
-                </h3>
-              </div>
-              <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                Diagnóstico inteligente dos seus pontos fracos por tema, taxa de acerto por especialidade, tempo médio por questão e ranking oficial comparativo para guiar seus estudos.
-              </p>
-            </div>
-
-            <ul className="mt-6 pt-5 border-t border-slate-100 dark:border-slate-800/80 space-y-2 text-xs font-semibold text-slate-600 dark:text-slate-300">
-              <li className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-emerald-500 shrink-0" />
-                <span>Mapeamento exato de temas que você mais erra</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-emerald-500 shrink-0" />
-                <span>Percentil e Ranking Oficial comparativo</span>
-              </li>
-              <li className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-emerald-500 shrink-0" />
-                <span>Metas diárias de questões com streak de constância</span>
-              </li>
-            </ul>
           </div>
         </div>
       </section>
@@ -940,147 +1068,186 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
       {/* =========================================================================
           SEÇÃO DE PLANOS DE PAGAMENTO (MENSAL, SEMESTRAL, ANUAL, BIENAL)
           ========================================================================= */}
-      <section id="planos" className="scroll-mt-24 py-16 sm:py-24 border-t border-zinc-200/80 dark:border-zinc-800/80 bg-white/60 dark:bg-[var(--bg-page)]/60">
+      <section id="planos" className="scroll-mt-24 py-16 sm:py-20 border-t border-zinc-200/80 dark:border-zinc-800/80 bg-white/60 dark:bg-[var(--bg-page)]/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
-          <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-600 dark:text-amber-400 text-xs font-black mb-3 shadow-xs">
-              <span className="text-amber-500">⚡</span>
-              <span>BLACK DE LANÇAMENTO — 40% OFF APLICADO EM TODOS OS PLANOS (50 PRIMEIROS)</span>
+          <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zinc-100 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700/80 text-zinc-700 dark:text-zinc-300 text-xs font-bold mb-3 shadow-xs">
+              <span className="w-2 h-2 rounded-full animate-pulse" style={{ backgroundColor: accentConfig.primaryHex }} />
+              <span>BLACK DE LANÇAMENTO • CONDIÇÕES EXCLUSIVAS</span>
             </div>
-            <h2 className="font-heading text-2xl sm:text-4xl font-extrabold text-zinc-900 dark:text-white">
-              Escolha o plano ideal para a sua jornada
+            <h2
+              className="font-bebas text-4xl sm:text-6xl md:text-7xl tracking-wide text-zinc-950 dark:text-white leading-none"
+              style={{ fontFamily: 'var(--font-bebas), "Bebas Neue", sans-serif' }}
+            >
+              Planos do Banco Residência
             </h2>
-            <p className="mt-3 text-xs sm:text-sm text-zinc-500 dark:text-zinc-400">
-              Sem pegadinhas ou recursos bloqueados: todos os planos incluem 100% das funções da plataforma.
+            <p className="mt-3 text-sm sm:text-base text-zinc-600 dark:text-zinc-400">
+              todos os planos incluem 100% das ferramentas da plataforma.
             </p>
           </div>
 
+          {/* Recursos Inclusos (Inline, fora do card, elegante) */}
+          <div className="mb-10 max-w-5xl mx-auto px-4">
+            <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2.5 text-xs sm:text-[13px]">
+              <span className="font-extrabold text-zinc-950 dark:text-white mr-1 flex items-center gap-1.5">
+                Plano Completo
+              </span>
+              {[
+                '+130 mil questões',
+                'Flashcards',
+                'Materiais teóricos',
+                'Desempenho e Evolução',
+                'TRI',
+                'Caderno de Erros',
+                'Suporte humano',
+              ].map((item) => (
+                <div key={item} className="inline-flex items-center gap-1.5 text-zinc-700 dark:text-zinc-300 font-medium">
+                  <Check className="w-3.5 h-3.5 text-emerald-500 dark:text-emerald-400 shrink-0" />
+                  <span>{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
           {/* Grid com os 4 Planos */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 items-stretch pt-4">
             {PRICING_PLANS.map((plan) => {
               const isAnual = plan.id === 'annual' || plan.id === 'anual';
               const isBienal = plan.id === 'biennial' || plan.id === 'bienal';
 
               return (
-                <div
-                  key={plan.id}
-                  className={`relative rounded-3xl p-6 sm:p-7 flex flex-col justify-between transition-all duration-300 ${
-                    isAnual
-                      ? 'bg-white dark:bg-[var(--bg-card)] border-2 border-blue-500 shadow-xl shadow-blue-500/10 lg:-translate-y-2'
-                      : isBienal
-                      ? 'bg-white dark:bg-[var(--bg-card)] border-2 border-emerald-500/80 shadow-lg shadow-emerald-500/5'
-                      : 'bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-md hover:shadow-lg'
-                  }`}
-                >
-                  {/* Selo de Destaque Superior */}
-                  {plan.badge && (
-                    <div className="absolute -top-3.5 left-1/2 -translate-x-1/2">
-                      <span
-                        className={`text-[10px] font-black uppercase tracking-wider px-3 py-1 rounded-full text-white shadow-sm ${
-                          isAnual
-                            ? 'bg-blue-600'
-                            : isBienal
-                            ? 'bg-emerald-600'
-                            : 'bg-indigo-600'
-                        }`}
-                      >
-                        {plan.badge}
-                      </span>
-                    </div>
+                <div key={plan.id} className="relative flex flex-col group">
+                  {/* Brilho no fundo para o Plano Bienal (Destaque Maior) */}
+                  {isBienal && (
+                    <div
+                      className="absolute -inset-2 rounded-3xl opacity-40 dark:opacity-55 blur-2xl pointer-events-none transition duration-500 group-hover:opacity-70"
+                      style={{ background: `radial-gradient(circle at 50% 30%, ${accentConfig.primaryHex} 0%, transparent 70%)` }}
+                    />
                   )}
 
-                  <div>
-                    {/* Cabeçalho do Card */}
-                    <div className="pt-1">
-                      <h3 className="font-heading text-lg font-extrabold text-slate-900 dark:text-white">
-                        {plan.name}
-                      </h3>
-                      <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 min-h-[36px]">
-                        {plan.description}
-                      </p>
-                    </div>
+                  {/* Brilho no fundo para o Plano Anual (Destaque) */}
+                  {isAnual && (
+                    <div
+                      className="absolute -inset-2 rounded-3xl opacity-30 dark:opacity-40 blur-2xl pointer-events-none transition duration-500 group-hover:opacity-60"
+                      style={{ background: 'radial-gradient(circle at 50% 30%, #6366f1 0%, transparent 70%)' }}
+                    />
+                  )}
 
-                    {/* Preço de Destaque */}
-                    <div className="mt-5 pb-5 border-b border-slate-100 dark:border-slate-800/80">
-                      <div className="flex items-baseline gap-1">
-                        <span className="text-xs font-bold text-slate-500 dark:text-slate-400">R$</span>
-                        <span className="font-heading text-3xl sm:text-4xl font-black text-slate-900 dark:text-white tracking-tight">
-                          {plan.pricePerMonth}
-                        </span>
-                        <span className="text-xs font-bold text-slate-500 dark:text-slate-400">
-                          {plan.periodLabel}
+                  <div
+                    className={`relative rounded-2xl p-6 flex flex-col justify-between flex-1 transition-all duration-300 ${
+                      isBienal
+                        ? 'bg-white dark:bg-zinc-900 border-2 shadow-2xl lg:-translate-y-4 z-10'
+                        : isAnual
+                        ? 'bg-white dark:bg-zinc-900 border-2 border-indigo-500/80 dark:border-indigo-500/80 shadow-xl lg:-translate-y-2 z-10'
+                        : 'bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 shadow-xs hover:border-zinc-300 dark:hover:border-zinc-700'
+                    }`}
+                    style={isBienal ? { borderColor: accentConfig.primaryHex } : undefined}
+                  >
+                    {/* Selo de Destaque Superior */}
+                    {plan.badge && (
+                      <div className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap">
+                        <span
+                          className="text-[10px] font-black uppercase tracking-wider px-3.5 py-1 rounded-full text-white shadow-md"
+                          style={{
+                            backgroundColor: isBienal ? accentConfig.primaryHex : isAnual ? '#6366f1' : '#059669'
+                          }}
+                        >
+                          {plan.badge}
                         </span>
                       </div>
-                      <div className="text-[11px] font-semibold text-slate-500 dark:text-slate-400 mt-1 flex items-center justify-between">
-                        <span>{plan.billingText}</span>
-                        {plan.savings && (
-                          <span className="font-extrabold text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/60 px-1.5 py-0.5 rounded-md">
-                            {plan.savings}
+                    )}
+
+                    <div>
+                      {/* Cabeçalho do Card */}
+                      <div className="pt-1">
+                        <h3
+                          className="font-bebas text-3xl sm:text-4xl tracking-wide text-zinc-950 dark:text-white leading-none"
+                          style={{ fontFamily: 'var(--font-bebas), "Bebas Neue", sans-serif' }}
+                        >
+                          {plan.name}
+                        </h3>
+                      </div>
+
+                      {/* Preço de Destaque */}
+                      <div className="mt-4 pb-4 border-b border-zinc-100 dark:border-zinc-800">
+                        <div className="flex items-baseline gap-1">
+                          <span
+                            className="font-bebas text-2xl sm:text-3xl text-zinc-400 leading-none"
+                            style={{ fontFamily: 'var(--font-bebas), "Bebas Neue", sans-serif' }}
+                          >
+                            R$
                           </span>
-                        )}
+                          <span
+                            className="font-bebas text-5xl sm:text-6xl md:text-7xl font-bold text-zinc-950 dark:text-white tracking-tight tabular-nums leading-none"
+                            style={{ fontFamily: 'var(--font-bebas), "Bebas Neue", sans-serif' }}
+                          >
+                            {plan.pricePerMonth}
+                          </span>
+                          <span className="text-xs sm:text-sm font-semibold text-zinc-500 ml-1">
+                            {plan.periodLabel}
+                          </span>
+                        </div>
+
+                        {/* Selo Black de Lançamento */}
+                        <div className="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-amber-500/10 dark:bg-amber-400/10 border border-amber-500/20 text-amber-700 dark:text-amber-400 text-[10px] font-bold mt-2">
+                          <Sparkles className="w-3 h-3 text-amber-500 shrink-0" />
+                          <span>Preço de Black de Lançamento</span>
+                        </div>
+
+                        {/* Linha de parcelamento e cobrança com aviso de taxas */}
+                        <div className="text-[11px] font-medium text-zinc-500 dark:text-zinc-400 mt-2 leading-relaxed">
+                          {plan.billingText}
+                        </div>
+
+                        {/* Bloco Dedicado de Economia (Bebas Neue) */}
+                        <div className="mt-3.5">
+                          {plan.savings ? (
+                            <div
+                              className="py-2 px-3 rounded-xl bg-emerald-500/10 dark:bg-emerald-500/15 border border-emerald-500/30 text-emerald-600 dark:text-emerald-400 font-bebas text-lg sm:text-xl text-center tracking-wider leading-none shadow-2xs"
+                              style={{ fontFamily: 'var(--font-bebas), "Bebas Neue", sans-serif' }}
+                            >
+                              {plan.savings}
+                            </div>
+                          ) : (
+                            <div
+                              className="py-2 px-3 rounded-xl bg-zinc-100/70 dark:bg-zinc-800/40 border border-zinc-200/60 dark:border-zinc-700/40 text-zinc-500 dark:text-zinc-400 font-bebas text-base sm:text-lg text-center tracking-wider leading-none"
+                              style={{ fontFamily: 'var(--font-bebas), "Bebas Neue", sans-serif' }}
+                            >
+                              SEM FIDELIDADE
+                            </div>
+                          )}
+                        </div>
                       </div>
                     </div>
 
-                    {/* Lista de Recursos Inclusos (Todas as Funções) */}
-                    <div className="mt-5 space-y-2.5">
-                      <span className="text-[11px] font-extrabold uppercase tracking-wider text-slate-400 dark:text-slate-500 block">
-                        Tudo incluso no plano:
-                      </span>
-                      {plan.features.map((feature, idx) => (
-                        <div key={idx} className="flex items-start gap-2 text-xs text-slate-700 dark:text-slate-300">
-                          <Check className="w-3.5 h-3.5 text-emerald-500 shrink-0 mt-0.5" />
-                          <span className="leading-tight">{feature}</span>
-                        </div>
-                      ))}
+                    {/* Botão de Ação do Plano */}
+                    <div className="mt-6 pt-2">
+                      <button
+                        type="button"
+                        onClick={() => handleStartPlanCheckout(plan.id, 'register')}
+                        className={`w-full py-3 px-4 rounded-xl text-xs sm:text-sm font-extrabold transition-all cursor-pointer flex items-center justify-center gap-2 ${
+                          isBienal
+                            ? 'text-white shadow-xl hover:opacity-95'
+                            : isAnual
+                            ? 'bg-indigo-600 hover:bg-indigo-700 text-white shadow-md'
+                            : 'bg-zinc-900 dark:bg-zinc-800 hover:bg-zinc-800 dark:hover:bg-zinc-700 text-white shadow-sm'
+                        }`}
+                        style={isBienal ? { backgroundColor: accentConfig.primaryHex } : undefined}
+                      >
+                        <span>Assinar {plan.name}</span>
+                        <ArrowRight className="w-4 h-4" />
+                      </button>
                     </div>
-                  </div>
-
-                  {/* Botão de Ação do Plano */}
-                  <div className="mt-8 pt-4">
-                    <button
-                      type="button"
-                      onClick={() => handleStartPlanCheckout(plan.id, 'register')}
-                      className={`w-full py-3 px-4 rounded-xl text-xs font-extrabold transition-all cursor-pointer flex items-center justify-center gap-2 ${
-                        isAnual
-                          ? 'bg-blue-600 hover:bg-blue-500 text-white shadow-lg shadow-blue-500/25'
-                          : isBienal
-                          ? 'bg-emerald-600 hover:bg-emerald-500 text-white shadow-md'
-                          : 'bg-slate-900 dark:bg-slate-800 hover:bg-slate-800 dark:hover:bg-slate-700 text-white'
-                      }`}
-                    >
-                      <span>Assinar {plan.name}</span>
-                      <ArrowRight className="w-3.5 h-3.5" />
-                    </button>
                   </div>
                 </div>
               );
             })}
           </div>
 
-          {/* Garantia e Informações de Segurança */}
-          <div className="mt-12 p-6 rounded-3xl bg-slate-100/80 dark:bg-slate-900/60 border border-slate-200/80 dark:border-slate-800/80 max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-600 dark:text-emerald-400 flex items-center justify-center shrink-0">
-                <ShieldCheck className="w-5 h-5" />
-              </div>
-              <div>
-                <h4 className="text-xs sm:text-sm font-extrabold text-slate-900 dark:text-white">
-                  Garantia Incondicional de 7 Dias
-                </h4>
-                <p className="text-[11px] text-slate-500 dark:text-slate-400">
-                  Experimente todas as funções. Se não for o melhor banco para sua preparação, devolvemos 100% do seu dinheiro.
-                </p>
-              </div>
-            </div>
-
-            <button
-              type="button"
-              onClick={() => onOpenAuth('register')}
-              className="shrink-0 px-4 py-2.5 rounded-xl text-xs font-extrabold text-slate-700 dark:text-slate-300 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 hover:bg-slate-50 cursor-pointer flex items-center gap-2"
-            >
-              <Sparkles className="w-3.5 h-3.5 text-amber-500" />
-              <span>Cadastre-se Grátis</span>
-            </button>
+          {/* Garantia Simples com Ícone */}
+          <div className="mt-10 flex items-center justify-center gap-2 text-zinc-600 dark:text-zinc-400 text-xs sm:text-sm font-semibold">
+            <ShieldCheck className="w-4 h-4 text-emerald-500 shrink-0" />
+            <span>Garantia Incondicional de 7 Dias</span>
           </div>
         </div>
       </section>
@@ -1088,27 +1255,27 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
       {/* =========================================================================
           SEÇÃO: PERGUNTAS FREQUENTES (FAQ)
           ========================================================================= */}
-      <section id="faq" className="scroll-mt-24 py-16 sm:py-24 border-t border-zinc-200/80 dark:border-zinc-800/80 bg-zinc-50/50 dark:bg-zinc-900/20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-12 sm:mb-16">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800/80 text-blue-700 dark:text-blue-300 text-xs font-extrabold mb-3">
-              <HelpCircle className="w-3.5 h-3.5" />
+      <section id="faq" className="scroll-mt-24 py-16 sm:py-20 border-t border-zinc-200/80 dark:border-zinc-800/80 bg-zinc-50/50 dark:bg-zinc-900/20">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-10 sm:mb-12">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 text-xs font-bold mb-3">
+              <HelpCircle className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
               <span>Tire Suas Dúvidas</span>
             </div>
-            <h2 className="font-heading text-2xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
+            <h2 className="font-heading text-2xl sm:text-4xl font-extrabold text-zinc-950 dark:text-white">
               Perguntas Frequentes (FAQ)
             </h2>
-            <p className="mt-3 text-xs sm:text-sm text-slate-500 dark:text-slate-400">
-              Tudo o que você precisa saber sobre a Black de Lançamento, recursos e funcionamento do Banco Residência.
+            <p className="mt-3 text-xs sm:text-sm text-zinc-600 dark:text-zinc-400">
+              Tire suas dúvidas sobre o funcionamento, recursos clínicos, metodologia e planos do Banco Residência.
             </p>
           </div>
 
-          <div className="space-y-3.5">
+          <div className="space-y-3">
             {[
               {
                 id: 'faq-1',
-                q: 'Como funciona o desconto de 40% da Black de Lançamento?',
-                a: 'A promoção de lançamento garante 40% de desconto imediato em qualquer plano contratado para os 50 primeiros estudantes até 30/11. O valor com desconto é fixado na contratação e você aproveita acesso irrestrito a todas as mais de 130 mil questões, provas na íntegra, flashcards e materiais.'
+                q: 'Como funcionam as condições de Acesso Antecipado?',
+                a: 'Durante a fase de lançamento, os planos semestral, anual e bienal contam com descontos progressivos de até 60% já aplicados na tabela de preços. O valor promocional contratado é garantido e concede acesso irrestrito a todo o acervo de questões comentadas, simulados na íntegra, flashcards FSRS e base médica.'
               },
               {
                 id: 'faq-2',
@@ -1133,34 +1300,34 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
               {
                 id: 'faq-6',
                 q: 'Como funciona a garantia incondicional de 7 dias?',
-                a: 'Se dentro de 7 dias corridos após a contratação você achar que a plataforma não atende às suas expectativas, basta solicitar o reembolso que devolvemos 100% do seu dinheiro, sem complicações.'
+                a: 'Se dentro de 7 dias corridos após a contratação você achar que a plataforma não atende às suas expectativas, basta solicitar o reembolso pelo suporte para receber 100% do valor de volta, sem burocracia.'
               },
               {
                 id: 'faq-7',
                 q: 'Como funciona o Programa de Embaixadores?',
-                a: 'Qualquer estudante cadastrado pode participar. Você recebe um link exclusivo que concede 10% de desconto para seus colegas de faculdade e ganha 15% de comissão direta via PIX por cada matrícula. Ao atingir 10 indicações, sua própria anuidade é 100% reembolsada.'
+                a: 'Estudantes cadastrados podem se afiliar para recomendar a plataforma a colegas de faculdade e internato. Cada indicação confirmada concede 10% de desconto para o colega e gera 15% de comissão via PIX para você. Ao atingir 10 indicações, o valor da sua anuidade é integralmente reembolsado.'
               }
             ].map((item) => {
               const isOpen = openFaqId === item.id;
               return (
                 <div
                   key={item.id}
-                  className="rounded-2xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 overflow-hidden transition-all duration-200"
+                  className="rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200/90 dark:border-zinc-800 overflow-hidden transition-all duration-200 shadow-xs"
                 >
                   <button
                     type="button"
                     onClick={() => setOpenFaqId(isOpen ? null : item.id)}
-                    className="w-full p-5 text-left flex items-center justify-between gap-4 cursor-pointer hover:bg-zinc-50/50 dark:hover:bg-zinc-800/50 transition-colors"
+                    className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 cursor-pointer hover:bg-zinc-50/50 dark:hover:bg-zinc-800/50 transition-colors"
                   >
-                    <span className="font-heading text-sm sm:text-base font-bold text-slate-900 dark:text-white">
+                    <span className="font-heading text-sm sm:text-base font-bold text-zinc-950 dark:text-white">
                       {item.q}
                     </span>
-                    <span className="p-1 rounded-lg text-slate-400 shrink-0">
-                      {isOpen ? <ChevronUp className="w-5 h-5 text-blue-600 dark:text-blue-400" /> : <ChevronDown className="w-5 h-5" />}
+                    <span className="p-1 rounded-lg text-zinc-400 shrink-0">
+                      {isOpen ? <ChevronUp className="w-4 h-4" style={{ color: accentConfig.primaryHex }} /> : <ChevronDown className="w-4 h-4" />}
                     </span>
                   </button>
                   {isOpen && (
-                    <div className="px-5 pb-5 pt-1 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed border-t border-zinc-100 dark:border-zinc-800/60 animate-in fade-in duration-150">
+                    <div className="px-4 sm:px-5 pb-4 sm:pb-5 pt-1 text-xs sm:text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed border-t border-zinc-100 dark:border-zinc-800/60 animate-in fade-in duration-150">
                       {item.a}
                     </div>
                   )}
@@ -1172,123 +1339,49 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
       </section>
 
       {/* =========================================================================
-          SEÇÃO: PROGRAMA DE EMBAIXADORES (15% PIX + 10% CUPOM + 100% REEMBOLSO)
+          BANNER INFERIOR: CHAMADA FINAL CIRÚRGICA
           ========================================================================= */}
-      <section id="embaixadores" className="scroll-mt-24 py-16 sm:py-24 border-t border-zinc-200/80 dark:border-zinc-800/80">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200 dark:border-emerald-800/80 text-emerald-700 dark:text-emerald-300 text-xs font-extrabold mb-3">
-              <Gift className="w-3.5 h-3.5" />
-              <span>Ganhe Comissões & Estude Grátis</span>
-            </div>
-            <h2 className="font-heading text-2xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
-              Programa de Embaixadores Banco Residência
-            </h2>
-            <p className="mt-3 text-xs sm:text-sm text-slate-600 dark:text-slate-400">
-              Compartilhe a melhor plataforma de questões com seus amigos de turma e internato. Ganhe comissões em dinheiro via PIX e libere seu plano gratuitamente.
-            </p>
-          </div>
+      <section className="py-16 sm:py-20 max-w-5xl mx-auto px-4 sm:px-6 w-full text-center">
+        <div
+          className="rounded-2xl p-8 sm:p-12 bg-zinc-900 border border-zinc-800 text-white shadow-2xl relative overflow-hidden"
+          style={{
+            boxShadow: `0 20px 50px -15px ${accentConfig.bgRgba || 'rgba(0,0,0,0.5)'}`
+          }}
+        >
+          {/* Glow de fundo */}
+          <div
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[250px] rounded-full blur-3xl opacity-20 pointer-events-none"
+            style={{ backgroundColor: accentConfig.primaryHex }}
+          />
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-            {/* Card 1: 15% Comissão */}
-            <div className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-              <div>
-                <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-5">
-                  <Wallet className="w-6 h-6" />
-                </div>
-                <span className="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md bg-emerald-100 dark:bg-emerald-950/70 text-emerald-700 dark:text-emerald-400">
-                  Dinheiro na Conta
-                </span>
-                <h3 className="font-heading text-lg sm:text-xl font-extrabold text-slate-900 dark:text-white mt-2">
-                  15% de Comissão via PIX
-                </h3>
-                <p className="mt-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                  A cada indicação confirmada com seu link, você recebe 15% de comissão em dinheiro depositada diretamente na sua chave PIX.
-                </p>
-              </div>
-            </div>
-
-            {/* Card 2: 10% Desconto */}
-            <div className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-              <div>
-                <div className="w-12 h-12 rounded-2xl bg-blue-500/10 border border-blue-500/20 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-5">
-                  <Gift className="w-6 h-6" />
-                </div>
-                <span className="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md bg-blue-100 dark:bg-blue-950/70 text-blue-700 dark:text-blue-400">
-                  Vantagem Real
-                </span>
-                <h3 className="font-heading text-lg sm:text-xl font-extrabold text-slate-900 dark:text-white mt-2">
-                  10% OFF para Colegas
-                </h3>
-                <p className="mt-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                  Seus amigos de internato ou faculdade ganham 10% de desconto imediato em qualquer plano ao assinar usando seu cupom.
-                </p>
-              </div>
-            </div>
-
-            {/* Card 3: 100% Reembolso */}
-            <div className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-              <div>
-                <div className="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-amber-600 dark:text-amber-400 flex items-center justify-center mb-5">
-                  <Award className="w-6 h-6" />
-                </div>
-                <span className="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md bg-amber-100 dark:bg-amber-950/70 text-amber-700 dark:text-amber-400">
-                  Plano Gratuito
-                </span>
-                <h3 className="font-heading text-lg sm:text-xl font-extrabold text-slate-900 dark:text-white mt-2">
-                  100% de Reembolso do Plano
-                </h3>
-                <p className="mt-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
-                  Ao bater a meta de 10 vendas indicadas, você recebe o Selo de Embaixador Oficial e o reembolso de 100% do valor do seu plano.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* CTA Embaixador */}
-          <div className="mt-12 text-center">
-            <button
-              type="button"
-              onClick={() => onOpenAuth('register')}
-              className="px-6 py-3.5 rounded-xl text-xs sm:text-sm font-extrabold text-white shadow-lg transition-all hover:scale-102 cursor-pointer inline-flex items-center gap-2"
-              style={{ backgroundColor: accentConfig.primaryHex }}
-            >
-              <span>Quero ser um Embaixador</span>
-              <ArrowRight className="w-4 h-4" />
-            </button>
-          </div>
-        </div>
-      </section>
-
-      {/* =========================================================================
-          BANNER INFERIOR: SEM DISTRAÇÕES, APENAS ESTUDO
-          ========================================================================= */}
-      <section className="py-16 sm:py-20 max-w-6xl mx-auto px-4 sm:px-6 w-full text-center">
-        <div className="rounded-3xl p-8 sm:p-12 bg-gradient-to-r from-blue-600 to-indigo-700 text-white shadow-2xl relative overflow-hidden">
           <div className="relative z-10 max-w-2xl mx-auto space-y-4">
-            <span className="text-[11px] font-extrabold uppercase tracking-widest bg-white/20 px-3 py-1 rounded-full">
-              Preparação de Alta Eficiência
+            <span
+              className="text-[11px] font-bold uppercase tracking-widest px-3 py-1 rounded-full border border-white/10 bg-white/5"
+              style={{ color: accentConfig.primaryHex }}
+            >
+              Comece a sua Preparação
             </span>
-            <h2 className="font-heading text-2xl sm:text-4xl font-black">
-              Sua aprovação na residência médica começa aqui.
+            <h2 className="font-heading text-2xl sm:text-4xl font-black tracking-tight text-white">
+              A ferramenta de estudo mais completa e objetiva para a sua prova.
             </h2>
-            <p className="text-xs sm:text-sm text-blue-100 font-medium">
-              Pare de perder tempo com plataformas confusas e cheias de ruído. Tenha acesso a mais de 130 mil questões com as melhores resoluções do mercado.
+            <p className="text-xs sm:text-sm text-zinc-400 font-normal leading-relaxed">
+              Responda questões das principais bancas do Brasil, revise com flashcards FSRS e acompanhe seu percentil calibrado sem distrações.
             </p>
-            <div className="pt-4 flex flex-wrap items-center justify-center gap-3">
+            <div className="pt-3 flex flex-wrap items-center justify-center gap-3">
               <button
                 type="button"
                 onClick={() => scrollToSection('planos')}
-                className="px-6 py-3.5 rounded-xl text-xs font-extrabold text-blue-700 bg-white hover:bg-blue-50 transition-all hover:scale-103 cursor-pointer shadow-lg"
+                className="px-6 py-3.5 rounded-xl text-xs sm:text-sm font-extrabold text-white transition-all hover:scale-[1.02] active:scale-[0.98] cursor-pointer shadow-lg"
+                style={{ backgroundColor: accentConfig.primaryHex }}
               >
                 Garantir Meu Acesso
               </button>
               <button
                 type="button"
                 onClick={() => onOpenAuth('register')}
-                className="px-6 py-3.5 rounded-xl text-xs font-extrabold text-white bg-white/15 hover:bg-white/25 border border-white/20 transition-all cursor-pointer"
+                className="px-6 py-3.5 rounded-xl text-xs sm:text-sm font-bold text-zinc-300 bg-white/5 hover:bg-white/10 border border-white/15 transition-all cursor-pointer"
               >
-                Testar sem compromisso
+                Criar Conta Gratuita
               </button>
             </div>
           </div>
@@ -1303,11 +1396,11 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
           <div className="flex items-center gap-3">
             <Logo className="w-8 h-8 shrink-0" />
             <div className="flex flex-col justify-center leading-none">
-              <span className="font-bold text-sm text-slate-800 dark:text-slate-200" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
+              <span className="font-bold text-sm text-zinc-900 dark:text-zinc-100" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
                 Banco Residência
               </span>
-              <span className="block text-[11px] text-slate-400 mt-0.5">
-                +130.000 Questões • Provas Oficiais • Sem Distrações
+              <span className="block text-[11px] text-zinc-500 dark:text-zinc-400 mt-0.5">
+                Plataforma médica de preparação e questões para Residência e Revalida
               </span>
             </div>
           </div>
@@ -1316,7 +1409,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
             <button
               type="button"
               onClick={() => scrollToSection('questoes')}
-              className="hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer"
+              className="hover:text-zinc-900 dark:hover:text-white cursor-pointer transition-colors"
             >
               Banco de Questões
             </button>
@@ -1324,7 +1417,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
             <button
               type="button"
               onClick={() => scrollToSection('material-estudo')}
-              className="hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer"
+              className="hover:text-zinc-900 dark:hover:text-white cursor-pointer transition-colors"
             >
               Material de Estudo
             </button>
@@ -1332,7 +1425,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
             <button
               type="button"
               onClick={() => scrollToSection('flashcards')}
-              className="hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer"
+              className="hover:text-zinc-900 dark:hover:text-white cursor-pointer transition-colors"
             >
               Flashcards
             </button>
@@ -1340,25 +1433,28 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
             <button
               type="button"
               onClick={() => scrollToSection('faq')}
-              className="hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer"
+              className="hover:text-zinc-900 dark:hover:text-white cursor-pointer transition-colors"
             >
               FAQ
             </button>
             <span>•</span>
             <button
               type="button"
-              onClick={() => scrollToSection('embaixadores')}
-              className="hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer"
+              onClick={() => scrollToSection('planos')}
+              className="hover:text-zinc-900 dark:hover:text-white cursor-pointer transition-colors"
             >
-              Embaixadores
+              Planos & Preços
             </button>
             <span>•</span>
             <button
               type="button"
-              onClick={() => scrollToSection('planos')}
-              className="hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer"
+              onClick={() => {
+                setOpenFaqId('faq-7');
+                scrollToSection('faq');
+              }}
+              className="hover:text-zinc-900 dark:hover:text-white cursor-pointer transition-colors text-zinc-400 hover:underline"
             >
-              Planos & Preços
+              Embaixadores
             </button>
           </div>
         </div>
@@ -1368,48 +1464,48 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
           MODAL DE ASSINATURA / INTENÇÃO DE PLANO (ESTRUTURA PARA MERCADO PAGO)
           ========================================================================= */}
       {selectedPlanModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-xs animate-fadeIn">
-          <div className="w-full max-w-md bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800 rounded-3xl shadow-2xl p-6 sm:p-7 relative space-y-5 animate-in fade-in zoom-in-95 duration-150">
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-xs animate-fadeIn">
+          <div className="w-full max-w-md bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800 rounded-2xl shadow-2xl p-6 relative space-y-4 animate-in fade-in zoom-in-95 duration-150">
             {/* Botão Fechar */}
             <button
               type="button"
               onClick={() => setSelectedPlanModal(null)}
-              className="absolute top-5 right-5 p-1.5 rounded-xl text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 cursor-pointer"
+              className="absolute top-4 right-4 p-1.5 rounded-xl text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 cursor-pointer"
             >
               <X className="w-5 h-5" />
             </button>
 
             {/* Cabeçalho do Modal */}
             <div className="space-y-1">
-              <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-400 text-[11px] font-extrabold">
-                <CreditCard className="w-3.5 h-3.5" />
+              <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 text-[11px] font-bold">
+                <CreditCard className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
                 <span>Assinatura Selecionada</span>
               </div>
-              <h3 className="font-heading text-xl font-black text-slate-900 dark:text-white">
+              <h3 className="font-heading text-lg font-black text-zinc-950 dark:text-white">
                 {selectedPlanModal.name}
               </h3>
-              <p className="text-xs text-slate-500 dark:text-slate-400">
+              <p className="text-xs text-zinc-500 dark:text-zinc-400">
                 {selectedPlanModal.description}
               </p>
             </div>
 
             {/* Resumo do Valor */}
-            <div className="p-4 rounded-2xl bg-slate-50 dark:bg-slate-900/70 border border-slate-200/80 dark:border-slate-800/80">
+            <div className="p-3.5 rounded-xl bg-zinc-50 dark:bg-zinc-900/70 border border-zinc-200/80 dark:border-zinc-800">
               <div className="flex items-baseline justify-between">
-                <span className="text-xs font-bold text-slate-600 dark:text-slate-400">Valor do Plano:</span>
+                <span className="text-xs font-medium text-zinc-600 dark:text-zinc-400">Valor do Plano:</span>
                 <div className="text-right">
-                  <span className="text-xs font-bold text-slate-400">R$ </span>
-                  <span className="font-heading text-2xl font-black text-slate-900 dark:text-white">
+                  <span className="text-xs font-bold text-zinc-400">R$ </span>
+                  <span className="font-heading text-2xl font-black text-zinc-950 dark:text-white tabular-nums">
                     {selectedPlanModal.pricePerMonth}
                   </span>
-                  <span className="text-xs font-bold text-slate-400"> /mês</span>
+                  <span className="text-xs font-medium text-zinc-400"> /mês</span>
                 </div>
               </div>
-              <div className="text-[11px] font-semibold text-slate-500 mt-1 text-right">
+              <div className="text-[11px] font-medium text-zinc-500 mt-1 text-right">
                 {selectedPlanModal.billingText}
               </div>
               {selectedPlanModal.savings && (
-                <div className="mt-2 pt-2 border-t border-slate-200/60 dark:border-slate-800 text-[11px] font-bold text-emerald-600 dark:text-emerald-400 flex items-center justify-between">
+                <div className="mt-2 pt-2 border-t border-zinc-200/60 dark:border-zinc-800 text-[11px] font-bold text-emerald-600 dark:text-emerald-400 flex items-center justify-between">
                   <span>Desconto aplicado:</span>
                   <span>{selectedPlanModal.savings}</span>
                 </div>
@@ -1417,33 +1513,33 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
             </div>
 
             {/* Benefícios inclusos */}
-            <div className="space-y-1.5 text-xs text-slate-600 dark:text-slate-300">
-              <span className="text-[11px] font-extrabold uppercase tracking-wider text-slate-400 block mb-1">
+            <div className="space-y-1.5 text-xs text-zinc-600 dark:text-zinc-300">
+              <span className="text-[11px] font-bold uppercase tracking-wider text-zinc-400 block mb-1">
                 Todas as funções liberadas:
               </span>
               <div className="flex items-center gap-2">
                 <Check className="w-3.5 h-3.5 text-emerald-500" />
-                <span>+130.000 questões com resoluções comentadas</span>
+                <span>+130k questões com resoluções comentadas</span>
               </div>
               <div className="flex items-center gap-2">
                 <Check className="w-3.5 h-3.5 text-emerald-500" />
-                <span>Caderno de todas as provas oficiais na íntegra</span>
+                <span>Provas oficiais na íntegra de 2018 a 2026</span>
               </div>
               <div className="flex items-center gap-2">
                 <Check className="w-3.5 h-3.5 text-emerald-500" />
-                <span>Acompanhamento detalhado e diagnóstico de erros</span>
+                <span>Repetição espaçada com flashcards FSRS</span>
               </div>
             </div>
 
             {/* Ações para Prosseguir */}
-            <div className="pt-2 space-y-2.5">
+            <div className="pt-2 space-y-2">
               <button
                 type="button"
                 onClick={() => {
                   setSelectedPlanModal(null);
                   handleStartPlanCheckout(selectedPlanModal.id, 'register');
                 }}
-                className="w-full py-3 px-4 rounded-xl text-xs font-extrabold text-white shadow-lg transition-all hover:scale-102 cursor-pointer flex items-center justify-center gap-2"
+                className="w-full py-2.5 px-4 rounded-xl text-xs font-bold text-white shadow-md transition-all hover:scale-[1.02] active:scale-[0.98] cursor-pointer flex items-center justify-center gap-2"
                 style={{ backgroundColor: accentConfig.primaryHex }}
               >
                 <UserCheck className="w-4 h-4" />
@@ -1456,7 +1552,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
                   setSelectedPlanModal(null);
                   handleStartPlanCheckout(selectedPlanModal.id, 'login');
                 }}
-                className="w-full py-2.5 px-4 rounded-xl text-xs font-bold text-slate-700 dark:text-slate-300 bg-slate-100 dark:bg-slate-800/80 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all cursor-pointer text-center"
+                className="w-full py-2 px-4 rounded-xl text-xs font-medium text-zinc-700 dark:text-zinc-300 bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-all cursor-pointer text-center"
               >
                 Já tenho conta (Fazer Login)
               </button>
@@ -1468,7 +1564,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
                     setSelectedPlanModal(null);
                     onOpenAuth('register');
                   }}
-                  className="text-[11px] font-bold text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 underline cursor-pointer"
+                  className="text-[11px] font-medium text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 underline cursor-pointer"
                 >
                   Ou criar uma conta gratuita agora
                 </button>

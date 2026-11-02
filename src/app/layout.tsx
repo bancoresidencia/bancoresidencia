@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Inter } from "next/font/google";
+import { Plus_Jakarta_Sans, Inter, Bebas_Neue } from "next/font/google";
 import "./globals.css";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -12,6 +12,13 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
+});
+
+const bebasNeue = Bebas_Neue({
+  variable: "--font-bebas",
+  subsets: ["latin"],
+  weight: "400",
   display: "swap",
 });
 
@@ -44,7 +51,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${plusJakartaSans.variable} ${inter.variable} font-sans h-full antialiased dark`}
+      className={`${plusJakartaSans.variable} ${inter.variable} ${bebasNeue.variable} font-sans h-full antialiased dark`}
       suppressHydrationWarning
     >
       <head>

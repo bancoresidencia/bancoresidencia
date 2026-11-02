@@ -4,14 +4,13 @@ import React, { useState } from 'react';
 import {
   CheckCircle2,
   XCircle,
-  ThumbsUp,
-  ThumbsDown,
   Sparkles,
   ArrowRight,
   ChevronLeft,
   ChevronRight,
   BookOpenCheck
 } from 'lucide-react';
+import { useTheme } from '@/context/ThemeContext';
 import questionsData from '@/data/landingDemoQuestions.json';
 
 type TabKey = 'internato' | 'residencia' | 'revalida' | 'rplus';
@@ -51,20 +50,18 @@ export const LandingDemoQuestionsSection: React.FC<LandingDemoQuestionsSectionPr
   onLoginDemo,
   onOpenAuth
 }) => {
+  const { accentConfig } = useTheme();
   const [activeTab, setActiveTab] = useState<TabKey>('revalida');
   const [questionIndex, setQuestionIndex] = useState<number>(0);
   
   // Respostas selecionadas por chave única (tab-index)
   const [userAnswers, setUserAnswers] = useState<Record<string, string>>({});
-  // Votos de like/dislike por chave
-  const [userVotes, setUserVotes] = useState<Record<string, 'like' | 'dislike'>>({});
 
   const tabQuestions = (questionsData[activeTab] || []) as DemoQuestion[];
   const currentQuestion: DemoQuestion | undefined = tabQuestions[questionIndex] || tabQuestions[0];
 
   const currentKey = `${activeTab}-${questionIndex}`;
   const selectedAnswer = userAnswers[currentKey];
-  const currentVote = userVotes[currentKey];
 
   const handleSelectTab = (tab: TabKey) => {
     setActiveTab(tab);
@@ -76,13 +73,6 @@ export const LandingDemoQuestionsSection: React.FC<LandingDemoQuestionsSectionPr
     setUserAnswers((prev) => ({
       ...prev,
       [currentKey]: letter
-    }));
-  };
-
-  const handleVote = (vote: 'like' | 'dislike') => {
-    setUserVotes((prev) => ({
-      ...prev,
-      [currentKey]: prev[currentKey] === vote ? undefined! : vote
     }));
   };
 
@@ -103,9 +93,6 @@ export const LandingDemoQuestionsSection: React.FC<LandingDemoQuestionsSectionPr
   const isAnswered = Boolean(selectedAnswer);
   const isCorrect = selectedAnswer === currentQuestion.correct_answer;
 
-  const dynamicLikes = currentQuestion.likes + (currentVote === 'like' ? 1 : 0);
-  const dynamicDislikes = currentQuestion.dislikes + (currentVote === 'dislike' ? 1 : 0);
-
   return (
     <section className="py-16 sm:py-24 px-4 sm:px-6 max-w-6xl mx-auto w-full">
       {/* =========================================================================
@@ -113,11 +100,14 @@ export const LandingDemoQuestionsSection: React.FC<LandingDemoQuestionsSectionPr
           ========================================================================= */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 sm:mb-10">
         <div>
-          <h2 className="font-heading font-black text-2xl sm:text-4xl tracking-tight text-slate-900 dark:text-white uppercase leading-tight">
-            Na prática, faz sentido.
+          <h2
+            className="font-bebas text-4xl sm:text-6xl md:text-7xl tracking-wide text-zinc-950 dark:text-white leading-none"
+            style={{ fontFamily: 'var(--font-bebas), "Bebas Neue", sans-serif' }}
+          >
+            Resolução Comentada na Prática
           </h2>
-          <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base font-normal mt-1.5 max-w-xl">
-            Questões reais da plataforma. Responda e descubra o porquê.
+          <p className="text-zinc-600 dark:text-zinc-400 text-sm sm:text-base font-normal mt-2 max-w-xl">
+            Teste uma questão real do acervo com comentários detalhados e justificativa por alternativa.
           </p>
         </div>
 
@@ -132,9 +122,18 @@ export const LandingDemoQuestionsSection: React.FC<LandingDemoQuestionsSectionPr
                 onClick={() => handleSelectTab(tab.id)}
                 className={`px-4 sm:px-5 py-2 rounded-full text-xs sm:text-sm font-extrabold transition-all duration-200 cursor-pointer whitespace-nowrap ${
                   isActive
-                    ? 'bg-blue-600 text-white shadow-md shadow-blue-600/30'
+                    ? 'text-white shadow-md'
                     : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-white/40 dark:hover:bg-slate-800/50'
                 }`}
+                style={
+                  isActive
+                    ? {
+                        backgroundColor: accentConfig.primaryHex,
+                        color: accentConfig.primaryContrastHex || '#ffffff',
+                        boxShadow: `0 4px 14px ${accentConfig.borderRgba || 'rgba(0,0,0,0.2)'}`
+                      }
+                    : undefined
+                }
               >
                 {tab.label}
               </button>
@@ -146,11 +145,14 @@ export const LandingDemoQuestionsSection: React.FC<LandingDemoQuestionsSectionPr
       {/* =========================================================================
           CARD INTERATIVO DA QUESTÃO (ESTILO EXATO DA PLATAFORMA)
           ========================================================================= */}
-      <div className="rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800 shadow-xl shadow-zinc-200/50 dark:shadow-black/70 overflow-hidden transition-all duration-200">
+      <div className="rounded-2xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800 shadow-xl shadow-zinc-200/50 dark:shadow-black/70 overflow-hidden transition-all duration-200">
         {/* Barra Superior do Card */}
         <div className="flex flex-wrap items-center justify-between gap-4 p-5 sm:p-6 border-b border-zinc-100 dark:border-zinc-800/70 bg-zinc-50/60 dark:bg-zinc-900/60">
           <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 font-mono">
-            <span className="text-blue-600 dark:text-blue-400 font-black">
+            <span
+              className="font-black"
+              style={{ color: accentConfig.primaryHex }}
+            >
               {TABS.find((t) => t.id === activeTab)?.label}
             </span>
             <span>•</span>
@@ -159,62 +161,42 @@ export const LandingDemoQuestionsSection: React.FC<LandingDemoQuestionsSectionPr
             </span>
           </div>
 
-          <div className="flex items-center gap-4">
-            {/* Avaliação Útil / Não Útil */}
-            <div className="flex items-center gap-3 text-xs font-bold text-slate-500 dark:text-slate-400">
-              <button
-                type="button"
-                onClick={() => handleVote('like')}
-                className={`flex items-center gap-1.5 transition-colors cursor-pointer hover:text-emerald-500 ${
-                  currentVote === 'like' ? 'text-emerald-500 font-black' : ''
-                }`}
-                title="Questão de alta relevância"
-              >
-                <ThumbsUp className="w-3.5 h-3.5" />
-                <span>{dynamicLikes}</span>
-              </button>
-              <button
-                type="button"
-                onClick={() => handleVote('dislike')}
-                className={`flex items-center gap-1.5 transition-colors cursor-pointer hover:text-rose-500 ${
-                  currentVote === 'dislike' ? 'text-rose-500 font-black' : ''
-                }`}
-                title="Pouco relevante"
-              >
-                <ThumbsDown className="w-3.5 h-3.5" />
-                <span>{dynamicDislikes}</span>
-              </button>
-            </div>
+          {/* Pílulas de Navegação por Número (1, 2, 3, 4, 5) */}
+          <div className="flex items-center gap-1.5">
+            {tabQuestions.map((_, idx) => {
+              const isCurrent = idx === questionIndex;
+              const answeredKey = `${activeTab}-${idx}`;
+              const hasAnswered = Boolean(userAnswers[answeredKey]);
+              const answerIsCorrect =
+                userAnswers[answeredKey] === tabQuestions[idx].correct_answer;
 
-            {/* Pílulas de Navegação por Número (1, 2, 3, 4, 5) */}
-            <div className="flex items-center gap-1.5">
-              {tabQuestions.map((_, idx) => {
-                const isCurrent = idx === questionIndex;
-                const answeredKey = `${activeTab}-${idx}`;
-                const hasAnswered = Boolean(userAnswers[answeredKey]);
-                const answerIsCorrect =
-                  userAnswers[answeredKey] === tabQuestions[idx].correct_answer;
-
-                return (
-                  <button
-                    key={idx}
-                    type="button"
-                    onClick={() => setQuestionIndex(idx)}
-                    className={`w-7 h-7 rounded-full text-xs font-black flex items-center justify-center transition-all cursor-pointer ${
-                      isCurrent
-                        ? 'bg-blue-600 text-white shadow-xs'
-                        : hasAnswered
-                        ? answerIsCorrect
-                          ? 'bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 border border-emerald-500/40'
-                          : 'bg-rose-500/20 text-rose-600 dark:text-rose-400 border border-rose-500/40'
-                        : 'bg-slate-100 dark:bg-slate-800/80 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700'
-                    }`}
-                  >
-                    {idx + 1}
-                  </button>
-                );
-              })}
-            </div>
+              return (
+                <button
+                  key={idx}
+                  type="button"
+                  onClick={() => setQuestionIndex(idx)}
+                  className={`w-7 h-7 rounded-full text-xs font-black flex items-center justify-center transition-all cursor-pointer ${
+                    isCurrent
+                      ? 'text-white shadow-xs'
+                      : hasAnswered
+                      ? answerIsCorrect
+                        ? 'bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 border border-emerald-500/40'
+                        : 'bg-rose-500/20 text-rose-600 dark:text-rose-400 border border-rose-500/40'
+                      : 'bg-slate-100 dark:bg-slate-800/80 text-slate-600 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700'
+                  }`}
+                  style={
+                    isCurrent
+                      ? {
+                          backgroundColor: accentConfig.primaryHex,
+                          color: accentConfig.primaryContrastHex || '#ffffff'
+                        }
+                      : undefined
+                  }
+                >
+                  {idx + 1}
+                </button>
+              );
+            })}
           </div>
         </div>
 
@@ -222,7 +204,14 @@ export const LandingDemoQuestionsSection: React.FC<LandingDemoQuestionsSectionPr
         <div className="p-5 sm:p-8 space-y-6">
           {/* Tags de Identificação Médica */}
           <div className="flex flex-wrap items-center gap-2">
-            <span className="px-2.5 py-1 rounded-md text-[11px] font-extrabold uppercase tracking-wide bg-blue-100 dark:bg-blue-950/80 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800/80">
+            <span
+              className="px-2.5 py-1 rounded-md text-[11px] font-extrabold uppercase tracking-wide border"
+              style={{
+                backgroundColor: accentConfig.bgRgba,
+                color: accentConfig.primaryHex,
+                borderColor: accentConfig.borderRgba
+              }}
+            >
               {currentQuestion.banca}
             </span>
             <span className="px-2.5 py-1 rounded-md text-[11px] font-mono font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
@@ -338,7 +327,12 @@ export const LandingDemoQuestionsSection: React.FC<LandingDemoQuestionsSectionPr
                   <button
                     type="button"
                     onClick={handleNext}
-                    className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-blue-600 text-white text-xs font-extrabold hover:bg-blue-700 transition-all cursor-pointer shadow-md shadow-blue-600/30"
+                    className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-white text-xs font-extrabold transition-all cursor-pointer shadow-md hover:opacity-95"
+                    style={{
+                      backgroundColor: accentConfig.primaryHex,
+                      color: accentConfig.primaryContrastHex || '#ffffff',
+                      boxShadow: `0 4px 14px ${accentConfig.borderRgba || 'rgba(0,0,0,0.2)'}`
+                    }}
                   >
                     <span>Próxima Questão</span>
                     <ArrowRight className="w-3.5 h-3.5" />
@@ -393,7 +387,8 @@ export const LandingDemoQuestionsSection: React.FC<LandingDemoQuestionsSectionPr
           <button
             type="button"
             onClick={() => onOpenAuth('register')}
-            className="font-extrabold text-blue-600 dark:text-blue-400 hover:underline cursor-pointer"
+            className="font-extrabold hover:underline cursor-pointer"
+            style={{ color: accentConfig.primaryHex }}
           >
             Crie sua conta e acesse o banco completo agora →
           </button>

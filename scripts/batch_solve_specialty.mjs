@@ -94,7 +94,7 @@ async function main() {
     return;
   }
 
-  const CONCURRENCY = 6; // 6 streams simultâneos contínuos (distribuídos no pool de chaves)
+  const CONCURRENCY = 4; // 4 streams moderados para esgotar slots remanescentes com estabilidade
   let processedCount = 0;
   let lastFileSaveCount = 0;
   let batchBuffer = [];
