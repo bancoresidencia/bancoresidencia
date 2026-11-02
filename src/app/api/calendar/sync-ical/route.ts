@@ -114,8 +114,26 @@ export async function POST(req: NextRequest) {
 
     const todayBrtStr = getBrtDateString(now);
 
-    const startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 0, 0, 0, 0);
-    const endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999);
+    // Converte qualquer data para a hora/minuto em Brasília (evita bugs de fuso em servidores UTC)
+    const getBrtTime = (d: Date) => {
+      const parts = new Intl.DateTimeFormat('en-US', {
+        timeZone,
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: false
+      }).formatToParts(d);
+      const hourStr = parts.find(p => p.type === 'hour')?.value || '00';
+      const minStr = parts.find(p => p.type === 'minute')?.value || '00';
+      const h = parseInt(hourStr, 10);
+      const m = parseInt(minStr, 10);
+      return {
+        timeStr: `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}`,
+        minutes: h * 60 + m
+      };
+    };
+
+    const windowStart = new Date(now.getTime() - 24 * 3600 * 1000);
+    const windowEnd = new Date(now.getTime() + 24 * 3600 * 1000);
 
     const eventsList: CalendarEventResult[] = [];
     let calendarName = '';
@@ -148,25 +166,26 @@ export async function POST(req: NextRequest) {
       // 1. Evento com recorrência (RRULE)
       if (ev.rrule) {
         try {
-          const occurrences = ev.rrule.between(startOfDay, endOfDay, true);
+          const occurrences = ev.rrule.between(windowStart, windowEnd, true);
           for (const occDate of occurrences) {
+            const occBrtStr = getBrtDateString(occDate);
+            if (occBrtStr !== todayBrtStr) continue;
+
             const duration = ev.end ? (new Date(ev.end).getTime() - new Date(ev.start).getTime()) : 3600000;
             const evStart = new Date(occDate);
             const evEnd = new Date(evStart.getTime() + duration);
 
-            const startMinutes = evStart.getHours() * 60 + evStart.getMinutes();
-            const endMinutes = evEnd.getHours() * 60 + evEnd.getMinutes();
-            const startTime = `${String(evStart.getHours()).padStart(2, '0')}:${String(evStart.getMinutes()).padStart(2, '0')}`;
-            const endTime = `${String(evEnd.getHours()).padStart(2, '0')}:${String(evEnd.getMinutes()).padStart(2, '0')}`;
+            const startBrt = getBrtTime(evStart);
+            const endBrt = getBrtTime(evEnd);
 
             eventsList.push({
               id: `${ev.uid || k}_${evStart.getTime()}`,
               title: summary,
               category,
-              startTime,
-              endTime,
-              startMinutes,
-              endMinutes: Math.max(endMinutes, startMinutes + 15),
+              startTime: startBrt.timeStr,
+              endTime: endBrt.timeStr,
+              startMinutes: startBrt.minutes,
+              endMinutes: Math.max(endBrt.minutes, startBrt.minutes + 15),
               source: 'google',
               description: description || 'Evento sincronizado do Google Agenda',
               location: location || undefined
@@ -183,19 +202,17 @@ export async function POST(req: NextRequest) {
         // Verifica se o evento coincide com hoje no fuso horário do Brasil
         const eventBrtStr = getBrtDateString(evStart);
         if (eventBrtStr === todayBrtStr) {
-          const startMinutes = evStart.getHours() * 60 + evStart.getMinutes();
-          const endMinutes = evEnd.getHours() * 60 + evEnd.getMinutes();
-          const startTime = `${String(evStart.getHours()).padStart(2, '0')}:${String(evStart.getMinutes()).padStart(2, '0')}`;
-          const endTime = `${String(evEnd.getHours()).padStart(2, '0')}:${String(evEnd.getMinutes()).padStart(2, '0')}`;
+          const startBrt = getBrtTime(evStart);
+          const endBrt = getBrtTime(evEnd);
 
           eventsList.push({
             id: ev.uid || k,
             title: summary,
             category,
-            startTime,
-            endTime,
-            startMinutes,
-            endMinutes: Math.max(endMinutes, startMinutes + 15),
+            startTime: startBrt.timeStr,
+            endTime: endBrt.timeStr,
+            startMinutes: startBrt.minutes,
+            endMinutes: Math.max(endBrt.minutes, startBrt.minutes + 15),
             source: 'google',
             description: description || 'Evento sincronizado do Google Agenda',
             location: location || undefined

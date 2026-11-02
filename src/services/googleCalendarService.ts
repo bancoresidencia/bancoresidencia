@@ -274,6 +274,51 @@ export function extractGoogleAuthErrorFromUrl(): string | null {
 }
 
 /**
+ * OPÇÃO 2: Busca o e-mail real da conta do Google Agenda conectada via access_token
+ */
+export async function fetchGoogleCalendarAccountEmail(accessToken: string): Promise<string | null> {
+  if (!accessToken) return null;
+
+  // 1. Tenta obter diretamente do calendário primário (funciona 100% com calendar.events / calendar.readonly)
+  try {
+    const res = await fetch('https://www.googleapis.com/calendar/v3/calendars/primary', {
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+        Accept: 'application/json'
+      },
+      signal: AbortSignal.timeout(6000)
+    });
+    if (res.ok) {
+      const data = await res.json();
+      if (data.id && typeof data.id === 'string' && data.id.includes('@')) {
+        return data.id;
+      }
+      if (data.summary && typeof data.summary === 'string' && data.summary.includes('@')) {
+        return data.summary;
+      }
+    }
+  } catch {
+    // segue para fallback
+  }
+
+  // 2. Fallback: Endpoint de userinfo do Google OAuth2
+  try {
+    const resUser = await fetch('https://www.googleapis.com/oauth2/v3/userinfo', {
+      headers: { Authorization: `Bearer ${accessToken}` },
+      signal: AbortSignal.timeout(5000)
+    });
+    if (resUser.ok) {
+      const userData = await resUser.json();
+      if (userData.email) return userData.email;
+    }
+  } catch {
+    // ignora erros de fallback
+  }
+
+  return null;
+}
+
+/**
  * OPÇÃO 2: Busca eventos de hoje direto da API do Google Calendar via access_token
  */
 export async function fetchTodayEventsFromGoogleApi(accessToken: string) {
@@ -380,4 +425,81 @@ export async function createEventInGoogleCalendarApi(
   }
 
   return response.json();
+}
+
+/**
+ * OPÇÃO 1 & 2: Gera arquivo iCal (.ics) padronizado para um lote de tarefas/eventos
+ */
+export function generateIcsContent(events: GoogleCalendarEventInput[]): string {
+  const now = new Date();
+  const dtStamp = now.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
+
+  const lines = [
+    'BEGIN:VCALENDAR',
+    'VERSION:2.0',
+    'PRODID:-//Banco Residencia//Cronograma Inteligente//PT-BR',
+    'CALSCALE:GREGORIAN',
+    'METHOD:PUBLISH',
+    'X-WR-CALNAME:Estudos - Banco Residência'
+  ];
+
+  events.forEach((ev, idx) => {
+    const startCompact = formatGoogleDateTimeCompact(ev.startTime, now);
+    const endCompact = formatGoogleDateTimeCompact(ev.endTime, now);
+    const uid = `bancoresidencia_${Date.now()}_${idx}@bancoresidencia.com.br`;
+
+    lines.push(
+      'BEGIN:VEVENT',
+      `UID:${uid}`,
+      `DTSTAMP:${dtStamp}`,
+      `DTSTART:${startCompact}`,
+      `DTEND:${endCompact}`,
+      `SUMMARY:${ev.title.replace(/\n/g, ' ')}`,
+      `DESCRIPTION:${(ev.description || '').replace(/\n/g, '\\n')}`,
+      `LOCATION:${(ev.location || 'Plataforma Banco Residência').replace(/\n/g, ' ')}`,
+      'STATUS:CONFIRMED',
+      'END:VEVENT'
+    );
+  });
+
+  lines.push('END:VCALENDAR');
+  return lines.join('\r\n');
+}
+
+/**
+ * Dispara download do arquivo .ics no navegador para importação direta no Google Agenda
+ */
+export function downloadIcsFile(filename: string, content: string): void {
+  if (typeof window === 'undefined') return;
+  const blob = new Blob([content], { type: 'text/calendar;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.setAttribute('download', filename.endsWith('.ics') ? filename : `${filename}.ics`);
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  URL.revokeObjectURL(url);
+}
+
+/**
+ * Cria múltiplos eventos em lote na API do Google Agenda
+ */
+export async function createEventsBatchInGoogleCalendarApi(
+  accessToken: string,
+  events: GoogleCalendarEventInput[]
+): Promise<{ success: number; failed: number }> {
+  let success = 0;
+  let failed = 0;
+
+  for (const ev of events) {
+    try {
+      await createEventInGoogleCalendarApi(accessToken, ev);
+      success++;
+    } catch {
+      failed++;
+    }
+  }
+
+  return { success, failed };
 }
