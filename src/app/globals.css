@@ -367,7 +367,50 @@ html.light ::-webkit-scrollbar-thumb:hover {
   container-type: inline-size;
 }
 
-/* 1. Modo Ultracompacto (< 280px / 1 a 3 colunas) */
+.figma-card-wrapper {
+  container-type: inline-size;
+  align-self: stretch !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.figma-card-wrapper > * {
+  flex: 1 1 auto;
+  min-height: 0;
+  width: 100%;
+}
+
+.figma-card-wrapper .bento-card {
+  min-height: 0 !important;
+}
+
+.is-resizing,
+.is-resizing * {
+  transition: none !important;
+  user-select: none !important;
+}
+
+/* 0. Modo Hiper-Compacto (< 220px / 2 colunas estreitas) */
+@media (max-width: 767px) {
+  .figma-card-wrapper {
+    grid-column: span 1 / span 1 !important;
+  }
+}
+
+@container (max-width: 220px) {
+  .bento-card {
+    padding: 0.5rem !important;
+  }
+  .card-ultra-compact-hide {
+    display: none !important;
+  }
+  .card-actions-wrapper, .flex-wrap {
+    flex-direction: column !important;
+    gap: 0.25rem !important;
+  }
+}
+
+/* 1. Modo Ultracompacto (< 320px / 1 a 3 colunas) */
 @container (max-width: 320px) {
   .card-action-text {
     display: none !important;

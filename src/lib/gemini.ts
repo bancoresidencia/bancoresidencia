@@ -69,6 +69,7 @@ export const CANDIDATE_GEMINI_MODELS = [
 interface CallGeminiOptions {
   temperature?: number;
   responseMimeType?: 'application/json' | 'text/plain';
+  systemInstruction?: string;
 }
 
 /**
@@ -137,6 +138,9 @@ export async function callGeminiAi(prompt: string, options: CallGeminiOptions = 
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             contents: [{ parts: [{ text: prompt }] }],
+            ...(options.systemInstruction
+              ? { systemInstruction: { parts: [{ text: options.systemInstruction }] } }
+              : {}),
             generationConfig: {
               responseMimeType,
               temperature

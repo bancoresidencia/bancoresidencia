@@ -44,6 +44,7 @@ export interface FlashcardItem {
   theme: string;
   focus: string;
   subfocus?: string | null;
+  type?: string;
   sourceQuestionId?: string | null;
   priority?: 'essential' | 'standard';
   tags?: string[];

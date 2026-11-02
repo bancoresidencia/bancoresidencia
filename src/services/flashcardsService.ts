@@ -17,6 +17,7 @@ const LAST_SUMMARY_KEY = 'bancoresidencia_last_read_summary';
 const CUSTOM_DECKS_KEY = 'bancoresidencia_custom_flashcard_decks';
 const USER_FLASHCARDS_KEY = 'bancoresidencia_user_created_flashcards';
 const USER_CARD_EDITS_KEY = 'bancoresidencia_user_card_edits';
+const USER_STUDY_MATERIALS_KEY = 'bancoresidencia_user_created_study_materials';
 
 export const flashcardsService = {
   /**
@@ -345,7 +346,8 @@ export const flashcardsService = {
    * Obtém a lista de Materiais de Apoio / Resumos Clínicos
    */
   getStudyMaterials(filter?: { specialty?: string; search?: string }): StudyMaterialItem[] {
-    let list = [...INITIAL_STUDY_MATERIALS];
+    const userCreated = this.loadUserCreatedStudyMaterials();
+    let list = [...userCreated, ...INITIAL_STUDY_MATERIALS];
 
     if (filter) {
       if (filter.specialty && filter.specialty !== 'Todas') {
@@ -365,7 +367,7 @@ export const flashcardsService = {
     }
 
     // Calcula quantidade de flashcards associados ao tema
-    const allCards = INITIAL_FLASHCARDS;
+    const allCards = this.getFlashcards();
     return list.map((m) => {
       const count = allCards.filter(
         (c) => c.specialty === m.specialty && (c.theme === m.theme || c.focus === m.focus)
@@ -386,7 +388,7 @@ export const flashcardsService = {
    * Busca um material de apoio correspondente a um foco de flashcard
    */
   getStudyMaterialByFocus(focusName: string, specialtyName?: string): StudyMaterialItem | undefined {
-    const materials = INITIAL_STUDY_MATERIALS;
+    const materials = this.getStudyMaterials();
     // Tenta match exato ou parcial
     return materials.find(
       (m) =>
@@ -394,6 +396,60 @@ export const flashcardsService = {
         focusName.toLowerCase().includes(m.focus.toLowerCase()) ||
         (specialtyName && m.specialty === specialtyName)
     );
+  },
+
+  /**
+   * Carrega os resumos clínicos criados/gerados pelo administrador
+   */
+  loadUserCreatedStudyMaterials(): StudyMaterialItem[] {
+    if (typeof window === 'undefined') return [];
+    try {
+      const data = localStorage.getItem(USER_STUDY_MATERIALS_KEY);
+      return data ? JSON.parse(data) : [];
+    } catch {
+      return [];
+    }
+  },
+
+  /**
+   * Salva ou atualiza um material de estudo canônico gerado pelo pipeline
+   */
+  saveStudyMaterial(material: StudyMaterialItem): StudyMaterialItem {
+    if (typeof window === 'undefined') return material;
+    try {
+      const current = this.loadUserCreatedStudyMaterials();
+      const existingIdx = current.findIndex((m) => m.id === material.id || m.focus.toLowerCase() === material.focus.toLowerCase());
+      let updated: StudyMaterialItem[] = [];
+      if (existingIdx >= 0) {
+        updated = [...current];
+        updated[existingIdx] = material;
+      } else {
+        updated = [material, ...current];
+      }
+      localStorage.setItem(USER_STUDY_MATERIALS_KEY, JSON.stringify(updated));
+      return material;
+    } catch (e) {
+      console.warn('Erro ao salvar material de estudo:', e);
+      return material;
+    }
+  },
+
+  /**
+   * Salva um lote de flashcards gerados pelo pipeline na plataforma
+   */
+  saveFlashcardsBatch(cards: FlashcardItem[]): FlashcardItem[] {
+    if (typeof window === 'undefined') return cards;
+    try {
+      const current = this.loadUserCreatedFlashcards();
+      const existingIds = new Set(current.map(c => c.id));
+      const freshCards = cards.filter(c => !existingIds.has(c.id));
+      const updated = [...freshCards, ...current];
+      localStorage.setItem(USER_FLASHCARDS_KEY, JSON.stringify(updated));
+      return cards;
+    } catch (e) {
+      console.warn('Erro ao salvar lote de flashcards:', e);
+      return cards;
+    }
   },
 
   // Helpers de storage

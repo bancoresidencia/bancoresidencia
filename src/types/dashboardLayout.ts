@@ -12,9 +12,12 @@ export interface DashboardCardConfig {
   description?: string;
   colSpan: DashboardColSpan;
   customHeight?: number;
+  minHeight?: number;
+  maxHeight?: number;
   order: number;
   isVisible: boolean;
   minColSpan?: DashboardColSpan;
+  maxColSpan?: DashboardColSpan;
   settings?: CardInternalSettings;
 }
 

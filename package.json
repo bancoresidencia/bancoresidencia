@@ -45,7 +45,8 @@
     "solve:pipeline": "node scripts/solve_pipeline.mjs",
     "solve:specialty": "node scripts/batch_solve_specialty.mjs",
     "solve:status": "node scripts/check_resolution_progress.mjs",
-    "test:ambassador": "npx tsx scripts/test_ambassador_system.mjs && npx tsx scripts/test_ambassador_api_routes.mjs"
+    "test:ambassador": "npx tsx scripts/test_ambassador_system.mjs && npx tsx scripts/test_ambassador_api_routes.mjs",
+    "generate:study": "node scripts/generate_canonical_study.mjs"
   },
   "dependencies": {
     "@mercadopago/sdk-react": "^1.0.7",

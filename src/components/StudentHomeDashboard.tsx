@@ -2498,6 +2498,31 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       </div>
                     </div>
                   </div>
+
+                  {/* VISÃO EXPANDIDA ADAPTATIVA: Calendário Oficial de Provas & Ofensiva Semanal */}
+                  {((cardConfig.customHeight && cardConfig.customHeight >= 150) || cardConfig.colSpan >= 8) && (
+                    <div className="pt-2.5 border-t border-slate-100 dark:border-zinc-800/80 flex flex-wrap items-center justify-between gap-2.5 text-xs animate-in fade-in duration-200">
+                      <div className="flex items-center gap-2">
+                        <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400">Prazos Oficiais:</span>
+                        <div className="flex items-center gap-1.5 flex-wrap">
+                          <span className="px-2 py-0.5 rounded-lg bg-slate-50 dark:bg-zinc-900 border border-slate-200/60 dark:border-zinc-800 text-[11px] font-medium text-slate-700 dark:text-zinc-300">
+                            <strong>UNICAMP:</strong> 18 dias
+                          </span>
+                          <span className="px-2 py-0.5 rounded-lg bg-slate-50 dark:bg-zinc-900 border border-slate-200/60 dark:border-zinc-800 text-[11px] font-medium text-slate-700 dark:text-zinc-300">
+                            <strong>USP-SP:</strong> 32 dias
+                          </span>
+                          <span className="px-2 py-0.5 rounded-lg bg-slate-50 dark:bg-zinc-900 border border-slate-200/60 dark:border-zinc-800 text-[11px] font-medium text-slate-700 dark:text-zinc-300">
+                            <strong>ENARE:</strong> 45 dias
+                          </span>
+                        </div>
+                      </div>
+
+                      <div className="text-[11px] text-slate-500 dark:text-zinc-400 flex items-center gap-1.5">
+                        <Sparkles className="w-3 h-3 text-amber-500" />
+                        <span>Ritmo Semanal: <strong>180 Questões / sem</strong> (88% concluído)</span>
+                      </div>
+                    </div>
+                  )}
                 </section>
               </FigmaCardWrapper>
             );
@@ -2657,6 +2682,19 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                             <span className="font-bold text-amber-600 dark:text-amber-400">{Math.max(0, todayAnswered - Math.round(dailyGoal / 2))}/{Math.round(dailyGoal / 2)} Q</span>
                           </div>
                         </div>
+
+                        {/* VISÃO HIPER-EXPANDIDA (Altura >= 270px): Velocímetro & Meta Semanal */}
+                        {((cardConfig.customHeight && cardConfig.customHeight >= 270) || (cardConfig.colSpan >= 6 && cardConfig.customHeight && cardConfig.customHeight >= 240)) && (
+                          <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between text-[10px] text-zinc-500 dark:text-zinc-400">
+                            <span className="flex items-center gap-1 font-medium">
+                              <Clock className="w-3 h-3 text-blue-500" />
+                              Ritmo: <strong>1m 48s / questão</strong>
+                            </span>
+                            <span className="font-bold text-emerald-600 dark:text-emerald-400">
+                              Semana: 142/210 Q (68%)
+                            </span>
+                          </div>
+                        )}
                       </div>
                     )}
                   </div>
@@ -2798,6 +2836,43 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         }}
                       />
                     </div>
+
+                    {/* VISÃO EXPANDIDA ADAPTATIVA: Taxa por Grau de Dificuldade da Banca */}
+                    {((cardConfig.customHeight && cardConfig.customHeight >= 220) || cardConfig.colSpan >= 6) && (
+                      <div className="pt-2.5 space-y-1.5 border-t border-zinc-100 dark:border-zinc-800/80 animate-in fade-in duration-200">
+                        <div className="flex items-center justify-between text-[11px]">
+                          <span className="font-bold text-zinc-700 dark:text-zinc-300">Desempenho por Dificuldade</span>
+                          <span className="text-[10px] text-zinc-400">Modelo TRI</span>
+                        </div>
+                        <div className="grid grid-cols-3 gap-1.5 text-[10px]">
+                          <div className="p-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-700 dark:text-emerald-400 flex flex-col">
+                            <span className="font-bold">Fáceis</span>
+                            <span className="font-extrabold text-xs mt-0.5">84.2%</span>
+                          </div>
+                          <div className="p-1.5 rounded-lg bg-amber-500/10 border border-amber-500/20 text-amber-700 dark:text-amber-400 flex flex-col">
+                            <span className="font-bold">Médias</span>
+                            <span className="font-extrabold text-xs mt-0.5">67.5%</span>
+                          </div>
+                          <div className="p-1.5 rounded-lg bg-rose-500/10 border border-rose-500/20 text-rose-700 dark:text-rose-400 flex flex-col">
+                            <span className="font-bold">Difíceis</span>
+                            <span className="font-extrabold text-xs mt-0.5">41.8%</span>
+                          </div>
+                        </div>
+
+                        {/* VISÃO HIPER-EXPANDIDA (Altura >= 270px): Nota TRI Estimada */}
+                        {((cardConfig.customHeight && cardConfig.customHeight >= 270) || (cardConfig.colSpan >= 6 && cardConfig.customHeight && cardConfig.customHeight >= 240)) && (
+                          <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between text-[10px] text-zinc-500 dark:text-zinc-400">
+                            <span className="flex items-center gap-1 font-medium">
+                              <Sparkles className="w-3 h-3 text-amber-500" />
+                              Nota TRI Estimada: <strong className="text-zinc-800 dark:text-zinc-200">742 pts</strong>
+                            </span>
+                            <span className="font-bold text-emerald-600 dark:text-emerald-400">
+                              +48 pts vs Concorrentes
+                            </span>
+                          </div>
+                        )}
+                      </div>
+                    )}
                   </div>
 
                   <div className="pt-2.5 flex items-center justify-between text-xs text-zinc-500 dark:text-zinc-400 border-t border-zinc-100 dark:border-zinc-800/80">
@@ -3079,7 +3154,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 onToggleVisibility={toggleVisibility}
                 onReorder={reorderCard}
               >
-                <div className="w-full bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-4 sm:p-5 shadow-xs relative overflow-hidden group space-y-3">
+                <div className="w-full bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-4 sm:p-5 shadow-xs relative overflow-hidden group min-h-0 h-full flex flex-col justify-between space-y-3">
                   <div className="md:col-span-6 space-y-2 relative">
                     <div className="flex items-center gap-2">
                       <span
@@ -3144,6 +3219,44 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       </button>
                     </div>
                   </div>
+
+                  {/* VISÃO EXPANDIDA ADAPTATIVA: Top Subtemas Críticos da Área */}
+                  {((cardConfig.customHeight && cardConfig.customHeight >= 220) || cardConfig.colSpan >= 6) && (
+                    <div className="pt-2.5 space-y-2 border-t border-zinc-100 dark:border-zinc-800/80 animate-in fade-in duration-200">
+                      <div className="flex items-center justify-between text-[11px]">
+                        <span className="font-bold text-zinc-700 dark:text-zinc-300 flex items-center gap-1.5">
+                          <Target className="w-3.5 h-3.5 text-blue-500" />
+                          Subtemas de Maior Incidência na Banca
+                        </span>
+                        <span className="text-[10px] text-zinc-400">Radar de Incidência</span>
+                      </div>
+
+                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-1.5 text-[10px]">
+                        {[
+                          { title: 'Insuficiência Cardíaca', badge: '24% da banca' },
+                          { title: 'Sepse e Choque Séptico', badge: '19% da banca' },
+                          { title: 'Doença Renal Crônica', badge: '15% da banca' },
+                        ].map((sub, idx) => (
+                          <button
+                            key={idx}
+                            type="button"
+                            onClick={() => handlePracticeArea(recommendedArea.filterName)}
+                            className="p-2 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800 text-left hover:border-blue-400 transition-colors flex flex-col justify-between cursor-pointer"
+                          >
+                            <span className="font-bold text-zinc-800 dark:text-zinc-200 truncate">{sub.title}</span>
+                            <span className="text-[9px] text-blue-600 dark:text-blue-400 font-semibold mt-1">{sub.badge}</span>
+                          </button>
+                        ))}
+                      </div>
+
+                      {((cardConfig.customHeight && cardConfig.customHeight >= 280) || (cardConfig.colSpan >= 6 && cardConfig.customHeight && cardConfig.customHeight >= 250)) && (
+                        <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between text-[10px] text-zinc-500 dark:text-zinc-400">
+                          <span>Impacto no Percentil: <strong className="text-emerald-600 dark:text-emerald-400">+6.8 pontos</strong></span>
+                          <span>Tempo Médio Sugerido: <strong>35 minutos</strong></span>
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </div>
               </FigmaCardWrapper>
             );
@@ -3354,6 +3467,42 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       <span className="font-bold text-amber-600 dark:text-amber-400 shrink-0">Regra:</span>
                       <span className="truncate">{activeDetailedMnemonic.rule}</span>
                     </div>
+
+                    {/* VISÃO EXPANDIDA ADAPTATIVA: Pegadinha Fatal da Banca & Treino Direto */}
+                    {((cardConfig.customHeight && cardConfig.customHeight >= 220) || cardConfig.colSpan >= 6) && (
+                      <div className="pt-2 space-y-1.5 border-t border-zinc-100 dark:border-zinc-800/80 animate-in fade-in duration-200">
+                        {activeDetailedMnemonic.bancaTrap && (
+                          <div className="p-2 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-900 dark:text-amber-300 text-xs">
+                            <span className="font-bold flex items-center gap-1 text-[11px] mb-0.5 text-amber-700 dark:text-amber-400">
+                              <AlertTriangle className="w-3.5 h-3.5 shrink-0" />
+                              Pegadinha Fatal da Banca:
+                            </span>
+                            <p className="text-[10px] leading-relaxed line-clamp-2">
+                              {activeDetailedMnemonic.bancaTrap}
+                            </p>
+                          </div>
+                        )}
+
+                        {((cardConfig.customHeight && cardConfig.customHeight >= 280) || (cardConfig.colSpan >= 6 && cardConfig.customHeight && cardConfig.customHeight >= 250)) && (
+                          <div className="flex items-center justify-between p-2 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800 text-[10px]">
+                            <span className="text-zinc-600 dark:text-zinc-400 truncate max-w-[260px]">
+                              {activeDetailedMnemonic.examFrequency || 'Alta frequência nas provas'}
+                            </span>
+                            <button
+                              type="button"
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                const q = activeDetailedMnemonic.practiceQuery;
+                                if (onStartTopicPractice && q) onStartTopicPractice(q.specialty, q.search);
+                              }}
+                              className="px-2.5 py-1 rounded-lg bg-amber-500 text-white font-bold text-[10px] hover:bg-amber-600 transition-colors shrink-0 cursor-pointer shadow-2xs"
+                            >
+                              Treinar Tema
+                            </button>
+                          </div>
+                        )}
+                      </div>
+                    )}
                   </div>
                 </div>
               </FigmaCardWrapper>
@@ -3502,6 +3651,40 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       </span>
                     )}
                   </div>
+
+                  {/* VISÃO EXPANDIDA ADAPTATIVA: Linha do Tempo dos Próximos Blocos do Dia */}
+                  {((cardConfig.customHeight && cardConfig.customHeight >= 220) || cardConfig.colSpan >= 6) && (
+                    <div className="pt-2.5 space-y-1.5 border-t border-zinc-100 dark:border-zinc-800/80 animate-in fade-in duration-200">
+                      <div className="flex items-center justify-between text-[11px]">
+                        <span className="font-bold text-zinc-700 dark:text-zinc-300 flex items-center gap-1.5">
+                          <Clock className="w-3 h-3 text-blue-500" />
+                          Cronograma dos Blocos do Dia
+                        </span>
+                        <span className="text-[10px] text-zinc-400">{daySchedule.length} blocos hoje</span>
+                      </div>
+
+                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-1.5 text-[10px]">
+                        {daySchedule.slice(0, 3).map((slot, idx) => (
+                          <div
+                            key={idx}
+                            className="p-1.5 rounded-lg bg-zinc-50 dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800 flex flex-col justify-between"
+                          >
+                            <span className="font-mono text-[9px] text-blue-600 dark:text-blue-400 font-bold">
+                              {slot.startTime} - {slot.endTime}
+                            </span>
+                            <span className="font-bold text-zinc-800 dark:text-zinc-200 truncate mt-0.5">{slot.title}</span>
+                          </div>
+                        ))}
+                      </div>
+
+                      {((cardConfig.customHeight && cardConfig.customHeight >= 280) || (cardConfig.colSpan >= 6 && cardConfig.customHeight && cardConfig.customHeight >= 250)) && (
+                        <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between text-[10px] text-zinc-500 dark:text-zinc-400">
+                          <span>Tempo Planejado: <strong>4h 30m</strong></span>
+                          <span className="text-emerald-600 dark:text-emerald-400 font-bold">Cronobiologia Otimizada</span>
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </div>
               </FigmaCardWrapper>
             );
@@ -4582,6 +4765,59 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       </div>
                     );
                   })()}
+
+                  {/* VISÃO EXPANDIDA ADAPTATIVA: Grid de Navegação Direta de Todos os Módulos */}
+                  {((cardConfig.customHeight && cardConfig.customHeight >= 220) || cardConfig.colSpan >= 10) && (
+                    <div className="pt-3 border-t border-zinc-100 dark:border-zinc-800/80 space-y-2 animate-in fade-in duration-200">
+                      <div className="flex items-center justify-between text-xs px-1">
+                        <span className="font-bold text-zinc-700 dark:text-zinc-300 flex items-center gap-1.5">
+                          <Layers className="w-3.5 h-3.5 text-blue-500" />
+                          Acesso Rápido a Todos os Módulos
+                        </span>
+                        <span className="text-[10px] text-zinc-400">Navegação Expressa</span>
+                      </div>
+
+                      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
+                        {quickNavCards.map((nav, idx) => {
+                          const NavIcon = nav.icon;
+                          return (
+                            <button
+                              key={idx}
+                              type="button"
+                              onClick={() => onNavigate(nav.tab as ActiveTab)}
+                              className="p-2.5 rounded-xl border border-zinc-200/80 dark:border-zinc-800 bg-zinc-50/60 dark:bg-zinc-900/40 hover:bg-zinc-100 dark:hover:bg-zinc-800 hover:border-blue-400 transition-all text-left flex flex-col justify-between group/nav cursor-pointer"
+                            >
+                              <div className="flex items-center justify-between">
+                                <div
+                                  className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0 border"
+                                  style={{
+                                    backgroundColor: accentConfig.bgRgba,
+                                    borderColor: accentConfig.borderRgba,
+                                    color: accentConfig.primaryHex
+                                  }}
+                                >
+                                  <NavIcon className="w-3.5 h-3.5" />
+                                </div>
+                                {nav.countBadge !== null && nav.countBadge !== undefined && (
+                                  <span className="text-[9px] font-bold px-1.5 py-0.2 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20">
+                                    {nav.countBadge}
+                                  </span>
+                                )}
+                              </div>
+                              <div className="mt-1.5">
+                                <div className="text-[11px] font-bold text-zinc-800 dark:text-zinc-200 group-hover/nav:text-blue-600 dark:group-hover/nav:text-blue-400 transition-colors truncate">
+                                  {nav.title}
+                                </div>
+                                <div className="text-[9px] text-zinc-400 truncate">
+                                  {nav.subtitle}
+                                </div>
+                              </div>
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
                 </section>
               </FigmaCardWrapper>
             );

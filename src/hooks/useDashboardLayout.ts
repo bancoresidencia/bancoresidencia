@@ -22,10 +22,18 @@ export function useDashboardLayout(
           const merged: DashboardCardConfig[] = defaultCards.map((def) => {
             const found = parsed.find((p: DashboardCardConfig) => p.id === def.id);
             if (found) {
+              const safeColSpan = Math.max(
+                def.minColSpan || 2,
+                Math.min(12, found.colSpan ?? def.colSpan)
+              ) as DashboardColSpan;
+              const safeHeight = found.customHeight
+                ? Math.max(def.minHeight || 120, Math.min(def.maxHeight || 800, found.customHeight))
+                : def.customHeight;
+
               return {
                 ...def,
-                colSpan: found.colSpan ?? def.colSpan,
-                customHeight: found.customHeight ?? def.customHeight,
+                colSpan: safeColSpan,
+                customHeight: safeHeight,
                 order: found.order ?? def.order,
                 isVisible: found.isVisible ?? def.isVisible,
                 settings: {
@@ -63,27 +71,130 @@ export function useDashboardLayout(
   );
 
   // Auto-conformação e normalização do layout ao salvar
+  // Elimina gaps residuais agrupando em linhas de 12 colunas e normalizando as ordens
   const autoConformLayout = useCallback(() => {
     setCards((prev) => {
-      // Normaliza order sequencialmente
+      // 1. Separa visíveis de ocultos e ordena por order
       const sorted = [...prev].sort((a, b) => a.order - b.order);
-      const normalized = sorted.map((c, index) => ({
+      const visible = sorted.filter((c) => c.isVisible !== false);
+      const hidden = sorted.filter((c) => c.isVisible === false);
+
+      // 2. Empacotamento inteligente de linhas para fechar em 12 colunas sem gaps residuais
+      let currentRowSpan = 0;
+      let lastCardInRowIndex = -1;
+
+      for (let i = 0; i < visible.length; i++) {
+        const card = visible[i];
+        const span = Math.max(card.minColSpan || 2, Math.min(12, card.colSpan)) as DashboardColSpan;
+        card.colSpan = span;
+
+        if (currentRowSpan + span <= 12) {
+          currentRowSpan += span;
+          lastCardInRowIndex = i;
+        } else {
+          // Se sobrou um gap de 1 ou 2 colunas na linha anterior, expande o último card dessa linha
+          const residualGap = 12 - currentRowSpan;
+          if (residualGap > 0 && residualGap <= 2 && lastCardInRowIndex >= 0) {
+            visible[lastCardInRowIndex].colSpan = Math.min(
+              12,
+              visible[lastCardInRowIndex].colSpan + residualGap
+            ) as DashboardColSpan;
+          }
+          currentRowSpan = span;
+          lastCardInRowIndex = i;
+        }
+      }
+
+      // Se a última linha tiver gap pequeno de 1 a 2 colunas
+      const finalGap = 12 - currentRowSpan;
+      if (finalGap > 0 && finalGap <= 2 && lastCardInRowIndex >= 0) {
+        visible[lastCardInRowIndex].colSpan = Math.min(
+          12,
+          visible[lastCardInRowIndex].colSpan + finalGap
+        ) as DashboardColSpan;
+      }
+
+      // 3. Normaliza ordem sequencial contínua (0, 1, 2...) e bounds de altura
+      const allCards = [...visible, ...hidden];
+      const normalized = allCards.map((c, index) => ({
         ...c,
-        order: index
+        order: index,
+        colSpan: Math.max(c.minColSpan || 2, Math.min(12, c.colSpan)) as DashboardColSpan,
+        customHeight: c.customHeight
+          ? Math.max(120, Math.min(850, c.customHeight))
+          : undefined,
       }));
+
       saveToStorage(normalized);
       return normalized;
     });
     setSelectedCardId(null);
   }, [saveToStorage]);
 
-  // Atualiza tamanho (colSpan) de um card específico
+  // Atualiza tamanho (colSpan) de um card específico com auto-adaptação dos cards adjacentes
   const updateColSpan = useCallback(
     (cardId: string, newColSpan: DashboardColSpan) => {
       setCards((prev) => {
-        const next = prev.map((c) =>
-          c.id === cardId ? { ...c, colSpan: newColSpan } : c
-        );
+        const targetIndex = prev.findIndex((c) => c.id === cardId);
+        if (targetIndex === -1) return prev;
+
+        const next = prev.map((c) => ({ ...c }));
+        next[targetIndex].colSpan = newColSpan;
+
+        // Auto-rebalanceamento de linha inteligente:
+        // Identifica os cards visíveis que compõem a mesma linha do card modificado
+        const visibleIndices = next
+          .map((c, i) => (c.isVisible !== false ? i : -1))
+          .filter((i) => i !== -1);
+
+        let rowSum = 0;
+        let currentRow: number[] = [];
+        let targetRow: number[] = [];
+
+        for (const idx of visibleIndices) {
+          const span = next[idx].colSpan;
+          if (rowSum + span <= 12) {
+            currentRow.push(idx);
+            rowSum += span;
+          } else {
+            if (currentRow.includes(targetIndex)) {
+              targetRow = currentRow;
+              break;
+            }
+            currentRow = [idx];
+            rowSum = span;
+          }
+        }
+        if (currentRow.includes(targetIndex) && targetRow.length === 0) {
+          targetRow = currentRow;
+        }
+
+        // Se há outros cards na mesma linha do card alvo, distribui o espaço restante para manter a linha nivelada (12 colunas)
+        if (targetRow.length > 1) {
+          const otherRowIndices = targetRow.filter((i) => i !== targetIndex);
+          const currentTotal = targetRow.reduce((sum, i) => sum + next[i].colSpan, 0);
+          const diff = 12 - currentTotal;
+
+          if (diff !== 0 && otherRowIndices.length > 0) {
+            const deltaEach = Math.trunc(diff / otherRowIndices.length);
+            let remainder = Math.abs(diff) % otherRowIndices.length;
+
+            for (const idx of otherRowIndices) {
+              const currentSpan = next[idx].colSpan;
+              const minSpan = next[idx].minColSpan || 2;
+              const maxSpan = next[idx].maxColSpan || 12;
+              const extra = deltaEach + (remainder > 0 ? (diff > 0 ? 1 : -1) : 0);
+              if (remainder > 0) remainder--;
+
+              const adjustedSpan = Math.max(
+                minSpan,
+                Math.min(maxSpan, currentSpan + extra)
+              ) as DashboardColSpan;
+              next[idx].colSpan = adjustedSpan;
+            }
+          }
+        }
+
         saveToStorage(next);
         return next;
       });
@@ -91,9 +202,9 @@ export function useDashboardLayout(
     [saveToStorage]
   );
 
-  // Atualiza altura personalizada (pixels) de um card específico
+  // Atualiza altura personalizada (pixels) de um card específico (permite reset para undefined/Auto)
   const updateCardHeight = useCallback(
-    (cardId: string, newHeight: number) => {
+    (cardId: string, newHeight?: number) => {
       setCards((prev) => {
         const next = prev.map((c) =>
           c.id === cardId ? { ...c, customHeight: newHeight } : c

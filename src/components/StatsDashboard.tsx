@@ -315,6 +315,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
     visibleCards: visibleOverviewCards,
     hiddenCards: hiddenOverviewCards,
     updateColSpan: updateOverviewColSpan,
+    updateCardHeight: updateOverviewCardHeight,
     updateCardSettings: updateStatsCardSettings,
     moveCard: moveOverviewCard,
     reorderCard: reorderOverviewCard,
@@ -1439,7 +1440,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
           />
 
           {/* Grid Principal Reorganizável Estilo Figma */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-5 auto-rows-min">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-5 auto-rows-min grid-flow-dense">
             {visibleOverviewCards.map((cardConfig) => {
               if (cardConfig.id === 'stats_kpi_volume') {
                 return (
@@ -1450,6 +1451,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     isSelected={selectedStatsCardId === cardConfig.id}
                     onSelect={(id) => setSelectedStatsCardId(id)}
                     onUpdateColSpan={updateOverviewColSpan}
+                    onUpdateHeight={updateOverviewCardHeight}
                     onUpdateSettings={updateStatsCardSettings}
                     onMoveCard={moveOverviewCard}
                     onToggleVisibility={toggleOverviewVisibility}
@@ -1496,6 +1498,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     isSelected={selectedStatsCardId === cardConfig.id}
                     onSelect={(id) => setSelectedStatsCardId(id)}
                     onUpdateColSpan={updateOverviewColSpan}
+                    onUpdateHeight={updateOverviewCardHeight}
                     onUpdateSettings={updateStatsCardSettings}
                     onMoveCard={moveOverviewCard}
                     onToggleVisibility={toggleOverviewVisibility}
@@ -1539,6 +1542,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     isSelected={selectedStatsCardId === cardConfig.id}
                     onSelect={(id) => setSelectedStatsCardId(id)}
                     onUpdateColSpan={updateOverviewColSpan}
+                    onUpdateHeight={updateOverviewCardHeight}
                     onUpdateSettings={updateStatsCardSettings}
                     onMoveCard={moveOverviewCard}
                     onToggleVisibility={toggleOverviewVisibility}
@@ -1598,6 +1602,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     isSelected={selectedStatsCardId === cardConfig.id}
                     onSelect={(id) => setSelectedStatsCardId(id)}
                     onUpdateColSpan={updateOverviewColSpan}
+                    onUpdateHeight={updateOverviewCardHeight}
                     onUpdateSettings={updateStatsCardSettings}
                     onMoveCard={moveOverviewCard}
                     onToggleVisibility={toggleOverviewVisibility}
@@ -1642,6 +1647,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     isSelected={selectedStatsCardId === cardConfig.id}
                     onSelect={(id) => setSelectedStatsCardId(id)}
                     onUpdateColSpan={updateOverviewColSpan}
+                    onUpdateHeight={updateOverviewCardHeight}
                     onUpdateSettings={updateStatsCardSettings}
                     onMoveCard={moveOverviewCard}
                     onToggleVisibility={toggleOverviewVisibility}
@@ -1864,6 +1870,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     isSelected={selectedStatsCardId === cardConfig.id}
                     onSelect={(id) => setSelectedStatsCardId(id)}
                     onUpdateColSpan={updateOverviewColSpan}
+                    onUpdateHeight={updateOverviewCardHeight}
                     onUpdateSettings={updateStatsCardSettings}
                     onMoveCard={moveOverviewCard}
                     onToggleVisibility={toggleOverviewVisibility}

@@ -56,7 +56,7 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
   const lastSwapTimeRef = useRef<number>(0);
 
   const activeSpan = previewColSpan || config.colSpan;
-  const activeHeight = previewHeight || config.customHeight;
+  const activeHeight = previewHeight !== null ? previewHeight : config.customHeight;
   const settings = config.settings || { showIcons: true, showDetails: true, compactMode: false };
 
   // Mapeia colSpan de 1 a 12 de forma fluida
@@ -122,7 +122,7 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
       let lastTargetHeight = config.customHeight || initialHeight;
 
       const onPointerMove = (moveEvent: PointerEvent) => {
-        // 1. Cálculo da Largura
+        // 1. Cálculo da Largura (Horizontal)
         if (originX !== 'none') {
           const deltaX =
             originX === 'left'
@@ -130,9 +130,12 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
               : moveEvent.clientX - startX;
 
           const colWidth = parentWidth / 12;
-          const deltaCols = Math.round(deltaX / colWidth);
+          // Sensibilidade fluida: snap responsivo a cada 75% da coluna
+          const deltaCols = Math.round(deltaX / (colWidth * 0.75));
           const rawNewSpan = initialSpan + deltaCols;
-          const targetSpan = Math.max(2, Math.min(12, rawNewSpan)) as DashboardColSpan;
+          const minSpan = config.minColSpan || 2;
+          const maxSpan = config.maxColSpan || 12;
+          const targetSpan = Math.max(minSpan, Math.min(maxSpan, rawNewSpan)) as DashboardColSpan;
 
           if (targetSpan !== lastTargetSpan) {
             lastTargetSpan = targetSpan;
@@ -140,7 +143,7 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
           }
         }
 
-        // 2. Cálculo da Altura
+        // 2. Cálculo da Altura (Vertical)
         if (originY !== 'none') {
           const deltaY =
             originY === 'top'
@@ -148,20 +151,26 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
               : moveEvent.clientY - startY;
 
           const rawHeight = initialHeight + deltaY;
-          // Limita entre 120px e 800px para garantir visibilidade e ergonomia
-          const targetHeight = Math.max(120, Math.min(800, Math.round(rawHeight)));
+
+          // Permite encolher livremente até 120px e expandir até 850px
+          const targetHeight = Math.max(120, Math.min(850, Math.round(rawHeight)));
 
           if (targetHeight !== lastTargetHeight) {
             lastTargetHeight = targetHeight;
             setPreviewHeight(targetHeight);
+            if (container) {
+              container.style.height = `${targetHeight}px`;
+              container.style.minHeight = `${targetHeight}px`;
+            }
           }
         }
       };
 
       const onPointerUp = () => {
         setIsResizing(false);
-        setPreviewColSpan(null);
-        setPreviewHeight(null);
+        if (container) {
+          container.style.height = '';
+        }
 
         if (originX !== 'none' && lastTargetSpan !== config.colSpan) {
           onUpdateColSpan(config.id, lastTargetSpan);
@@ -170,14 +179,22 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
           onUpdateHeight(config.id, lastTargetHeight);
         }
 
+        // Transição suave: limpa os previews após commit do estado no componente pai
+        setTimeout(() => {
+          setPreviewColSpan(null);
+          setPreviewHeight(null);
+        }, 60);
+
         window.removeEventListener('pointermove', onPointerMove);
         window.removeEventListener('pointerup', onPointerUp);
+        window.removeEventListener('pointercancel', onPointerUp);
       };
 
       window.addEventListener('pointermove', onPointerMove);
       window.addEventListener('pointerup', onPointerUp);
+      window.addEventListener('pointercancel', onPointerUp);
     },
-    [config.id, config.colSpan, config.customHeight, onUpdateColSpan, onUpdateHeight]
+    [config.id, config.colSpan, config.customHeight, config.minColSpan, config.maxColSpan, onUpdateColSpan, onUpdateHeight]
   );
 
   // ARRASTE LIVRE NO MEIO DO CARD COM TROCA INSTANTÂNEA DE LUGAR (SWAP REAL-TIME)
@@ -246,12 +263,14 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
     window.addEventListener('pointerup', onPointerUp);
   };
 
-  // Alterna tamanho entre 33%, 50%, 66% e 100%
+  // Alterna tamanho entre presets respeitando o minColSpan do card
   const cycleSize = () => {
-    const PRESETS: DashboardColSpan[] = [4, 6, 8, 12];
-    const currentIndex = PRESETS.indexOf(config.colSpan);
-    const nextIndex = (currentIndex + 1) % PRESETS.length;
-    onUpdateColSpan(config.id, PRESETS[nextIndex]);
+    const rawPresets: DashboardColSpan[] = [3, 4, 6, 8, 12];
+    const minSpan = config.minColSpan || 2;
+    const presets = rawPresets.filter((p) => p >= minSpan);
+    const currentIndex = presets.indexOf(config.colSpan);
+    const nextIndex = currentIndex >= 0 ? (currentIndex + 1) % presets.length : 0;
+    onUpdateColSpan(config.id, presets[nextIndex]);
   };
 
   return (
@@ -259,17 +278,29 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
       ref={containerRef}
       data-card-id={config.id}
       onPointerDown={handleCardPointerDown}
+      onClickCapture={(e) => {
+        if (isCustomizing) {
+          const target = e.target as HTMLElement;
+          if (!target.closest(".figma-control") && !target.closest(".figma-popover")) {
+            e.stopPropagation();
+            e.preventDefault();
+          }
+        }
+      }}
       style={{
         minHeight: activeHeight ? `${activeHeight}px` : undefined,
+        height: isResizing && activeHeight ? `${activeHeight}px` : undefined,
+        gridColumn: `span ${activeSpan} / span ${activeSpan}`,
         transform: isFreeDragging
           ? `translate3d(${dragOffset.x}px, ${dragOffset.y}px, 0)`
           : undefined,
+        pointerEvents: isFreeDragging ? 'none' : undefined,
         zIndex: isFreeDragging ? 90 : isSelected ? 40 : 1,
-        transition: isFreeDragging
+        transition: isFreeDragging || isResizing
           ? 'none'
-          : 'transform 0.25s cubic-bezier(0.2, 0, 0, 1), box-shadow 0.2s, min-height 0.15s ease',
+          : 'transform 0.25s cubic-bezier(0.2, 0, 0, 1), box-shadow 0.2s',
       }}
-      className={`${getColSpanClass(activeSpan)} @container relative ${
+      className={`figma-card-wrapper ${isResizing ? 'is-resizing select-none' : ''} ${getColSpanClass(activeSpan)} @container relative ${
         isCustomizing
           ? isSelected
             ? 'ring-2 ring-blue-500 dark:ring-blue-400 rounded-2xl select-none group/figma shadow-xl'
@@ -290,59 +321,67 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
       {/* CONTROLES ESTILO FIGMA (SOMENTE NO CARD SELECIONADO) */}
       {isCustomizing && isSelected && (
         <>
-          {/* NÓ DO CANTO SUPERIOR ESQUERDO (NW) - Largura e Altura */}
+          {/* BOLA DO CANTO SUPERIOR ESQUERDO (NW) - Redimensiona Diagonal */}
           <div
             onPointerDown={(e) => handleResizeStart(e, 'left', 'top')}
-            className="figma-control absolute -top-1.5 -left-1.5 w-3.5 h-3.5 bg-white dark:bg-zinc-900 border-2 border-blue-500 rounded-[2px] cursor-nwse-resize z-50 shadow-md hover:scale-125 transition-transform"
-            title="Redimensionar largura (esquerda) e altura (topo)"
-          />
+            className="figma-control absolute -top-2.5 -left-2.5 w-5 h-5 bg-white dark:bg-zinc-900 border-2 border-blue-600 rounded-full cursor-nwse-resize z-50 shadow-lg hover:scale-125 active:scale-150 transition-transform flex items-center justify-center pointer-events-auto touch-none"
+            title="Arraste a bola diagonal para encolher ou aumentar largura e altura"
+          >
+            <div className="w-1.5 h-1.5 bg-blue-600 rounded-full pointer-events-none" />
+          </div>
 
-          {/* NÓ DO CANTO INFERIOR ESQUERDO (SW) - Largura e Altura */}
+          {/* BOLA DO CANTO INFERIOR ESQUERDO (SW) - Redimensiona Diagonal */}
           <div
             onPointerDown={(e) => handleResizeStart(e, 'left', 'bottom')}
-            className="figma-control absolute -bottom-1.5 -left-1.5 w-3.5 h-3.5 bg-white dark:bg-zinc-900 border-2 border-blue-500 rounded-[2px] cursor-nesw-resize z-50 shadow-md hover:scale-125 transition-transform"
-            title="Redimensionar largura (esquerda) e altura (base)"
-          />
+            className="figma-control absolute -bottom-2.5 -left-2.5 w-5 h-5 bg-white dark:bg-zinc-900 border-2 border-blue-600 rounded-full cursor-nesw-resize z-50 shadow-lg hover:scale-125 active:scale-150 transition-transform flex items-center justify-center pointer-events-auto touch-none"
+            title="Arraste a bola diagonal para encolher ou aumentar largura e altura"
+          >
+            <div className="w-1.5 h-1.5 bg-blue-600 rounded-full pointer-events-none" />
+          </div>
 
           {/* ALÇA LATERAL ESQUERDA - Apenas Largura */}
           <div
             onPointerDown={(e) => handleResizeStart(e, 'left', 'none')}
-            className="figma-control absolute -left-2 top-1/2 -translate-y-1/2 w-4 h-12 bg-white dark:bg-zinc-900 border-2 border-blue-500 rounded-full flex items-center justify-center cursor-ew-resize z-50 shadow-lg hover:scale-110 active:scale-125 transition-transform"
+            className="figma-control absolute -left-2 top-1/2 -translate-y-1/2 w-4 h-12 bg-white dark:bg-zinc-900 border-2 border-blue-500 rounded-full flex items-center justify-center cursor-ew-resize z-50 shadow-lg hover:scale-110 active:scale-125 transition-transform touch-none"
             title="Arraste para redimensionar a largura pela esquerda"
           >
-            <div className="w-0.5 h-4 bg-blue-500 rounded-full" />
+            <div className="w-0.5 h-4 bg-blue-500 rounded-full pointer-events-none" />
           </div>
 
-          {/* NÓ DO CANTO SUPERIOR DIREITO (NE) - Largura e Altura */}
+          {/* BOLA DO CANTO SUPERIOR DIREITO (NE) - Redimensiona Diagonal */}
           <div
             onPointerDown={(e) => handleResizeStart(e, 'right', 'top')}
-            className="figma-control absolute -top-1.5 -right-1.5 w-3.5 h-3.5 bg-white dark:bg-zinc-900 border-2 border-blue-500 rounded-[2px] cursor-nesw-resize z-50 shadow-md hover:scale-125 transition-transform"
-            title="Redimensionar largura (direita) e altura (topo)"
-          />
+            className="figma-control absolute -top-2.5 -right-2.5 w-5 h-5 bg-white dark:bg-zinc-900 border-2 border-blue-600 rounded-full cursor-nesw-resize z-50 shadow-lg hover:scale-125 active:scale-150 transition-transform flex items-center justify-center pointer-events-auto touch-none"
+            title="Arraste a bola diagonal para encolher ou aumentar largura e altura"
+          >
+            <div className="w-1.5 h-1.5 bg-blue-600 rounded-full pointer-events-none" />
+          </div>
 
-          {/* NÓ DO CANTO INFERIOR DIREITO (SE) - Largura e Altura */}
+          {/* BOLA DO CANTO INFERIOR DIREITO (SE) - Redimensiona Diagonal */}
           <div
             onPointerDown={(e) => handleResizeStart(e, 'right', 'bottom')}
-            className="figma-control absolute -bottom-1.5 -right-1.5 w-3.5 h-3.5 bg-white dark:bg-zinc-900 border-2 border-blue-500 rounded-[2px] cursor-nwse-resize z-50 shadow-md hover:scale-125 transition-transform"
-            title="Redimensionar largura (direita) e altura (base)"
-          />
+            className="figma-control absolute -bottom-2.5 -right-2.5 w-5 h-5 bg-white dark:bg-zinc-900 border-2 border-blue-600 rounded-full cursor-nwse-resize z-50 shadow-lg hover:scale-125 active:scale-150 transition-transform flex items-center justify-center pointer-events-auto touch-none"
+            title="Arraste a bola diagonal para encolher ou aumentar largura e altura"
+          >
+            <div className="w-1.5 h-1.5 bg-blue-600 rounded-full pointer-events-none" />
+          </div>
 
           {/* ALÇA LATERAL DIREITA - Apenas Largura */}
           <div
             onPointerDown={(e) => handleResizeStart(e, 'right', 'none')}
-            className="figma-control absolute -right-2 top-1/2 -translate-y-1/2 w-4 h-12 bg-white dark:bg-zinc-900 border-2 border-blue-500 rounded-full flex items-center justify-center cursor-ew-resize z-50 shadow-lg hover:scale-110 active:scale-125 transition-transform"
+            className="figma-control absolute -right-2 top-1/2 -translate-y-1/2 w-4 h-12 bg-white dark:bg-zinc-900 border-2 border-blue-500 rounded-full flex items-center justify-center cursor-ew-resize z-50 shadow-lg hover:scale-110 active:scale-125 transition-transform touch-none"
             title="Arraste para redimensionar a largura pela direita"
           >
-            <div className="w-0.5 h-4 bg-blue-500 rounded-full" />
+            <div className="w-0.5 h-4 bg-blue-500 rounded-full pointer-events-none" />
           </div>
 
           {/* ALÇA INFERIOR CENTRAL - Apenas Altura */}
           <div
             onPointerDown={(e) => handleResizeStart(e, 'none', 'bottom')}
-            className="figma-control absolute -bottom-2 left-1/2 -translate-x-1/2 h-4 w-14 bg-white dark:bg-zinc-900 border-2 border-blue-500 rounded-full flex items-center justify-center cursor-ns-resize z-50 shadow-lg hover:scale-110 active:scale-125 transition-transform"
+            className="figma-control absolute -bottom-2 left-1/2 -translate-x-1/2 h-4 w-14 bg-white dark:bg-zinc-900 border-2 border-blue-500 rounded-full flex items-center justify-center cursor-ns-resize z-50 shadow-lg hover:scale-110 active:scale-125 transition-transform touch-none"
             title="Arraste para redimensionar a altura"
           >
-            <div className="h-0.5 w-5 bg-blue-500 rounded-full" />
+            <div className="h-0.5 w-5 bg-blue-500 rounded-full pointer-events-none" />
           </div>
 
           {/* BARRA SUPERIOR DE AÇÕES NO TOPO DO CARD SELECIONADO */}
@@ -431,6 +470,34 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
                             onClick={() => onUpdateColSpan(config.id, p.span)}
                             className={`py-1 rounded-md font-bold transition-colors cursor-pointer text-center ${
                               config.colSpan === p.span
+                                ? 'bg-blue-600 text-white'
+                                : 'bg-slate-100 dark:bg-zinc-800 text-slate-600 dark:text-zinc-300 hover:bg-slate-200'
+                            }`}
+                          >
+                            {p.label}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Atalhos Rápidos de Altura */}
+                    <div className="pt-2 border-t border-slate-100 dark:border-zinc-800">
+                      <span className="text-[10px] text-slate-500 font-bold block mb-1">
+                        Altura Rápida
+                      </span>
+                      <div className="grid grid-cols-4 gap-1 text-[10px]">
+                        {[
+                          { h: undefined, label: 'Auto' },
+                          { h: 160, label: '160px' },
+                          { h: 250, label: '250px' },
+                          { h: 360, label: '360px' },
+                        ].map((p, idx) => (
+                          <button
+                            key={idx}
+                            type="button"
+                            onClick={() => onUpdateHeight && onUpdateHeight(config.id, p.h as any)}
+                            className={`py-1 rounded-md font-bold transition-colors cursor-pointer text-center ${
+                              (!config.customHeight && p.h === undefined) || config.customHeight === p.h
                                 ? 'bg-blue-600 text-white'
                                 : 'bg-slate-100 dark:bg-zinc-800 text-slate-600 dark:text-zinc-300 hover:bg-slate-200'
                             }`}
