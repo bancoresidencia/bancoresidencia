@@ -1,0 +1,30 @@
+{
+  "totalSimulations": 1000000,
+  "durationSeconds": "15.52",
+  "testsPerSecond": 64454,
+  "stateIntegrityRate": "100.00%",
+  "gridPacking": {
+    "sparseAverageHoles": "23.99",
+    "denseAverageHoles": "13.52",
+    "autoConformedAverageHoles": "10.13",
+    "denseHoleReduction": "43.6%",
+    "autoConformTotalReduction": "57.8%"
+  },
+  "resolvedVulnerabilities": {
+    "criticalNarrowCards120px": {
+      "previousCount": 36732,
+      "newCount": 0,
+      "status": "RESOLVIDO (0 erros)"
+    },
+    "verticalClippingRisks": {
+      "previousCount": 1466464,
+      "newCount": 0,
+      "status": "RESOLVIDO (0 erros)"
+    },
+    "aspectRatioDistortions": {
+      "previousCount": 1568769,
+      "newCount": 1270554,
+      "status": "PENDENTE"
+    }
+  }
+}

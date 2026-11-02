@@ -152,15 +152,11 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
 
           const rawHeight = initialHeight + deltaY;
 
-          // Respeita minHeight e maxHeight específicos do card para evitar sobras em branco
+          // Recorte 100% livre e contínuo: qualquer altura em pixels desejada pelo usuário
+          // Limitado exclusivamente no teto máximo final (quando todas as ferramentas já aparecem), evitando fundo branco vazio
           const minH = config.minHeight || 120;
           const maxH = config.maxHeight || 450;
-          let targetHeight = Math.max(minH, Math.min(maxH, Math.round(rawHeight)));
-
-          // Snap magnético: atrai suavemente para o teto ideal quando estiver a até 15px de distância
-          if (Math.abs(targetHeight - maxH) <= 15) {
-            targetHeight = maxH;
-          }
+          const targetHeight = Math.max(minH, Math.min(maxH, Math.round(rawHeight)));
 
           if (targetHeight !== lastTargetHeight) {
             lastTargetHeight = targetHeight;

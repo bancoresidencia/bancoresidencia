@@ -95,9 +95,11 @@ export function useDashboardLayout(
           // Se sobrou um gap de 1 ou 2 colunas na linha anterior, expande o último card dessa linha
           const residualGap = 12 - currentRowSpan;
           if (residualGap > 0 && residualGap <= 2 && lastCardInRowIndex >= 0) {
-            visible[lastCardInRowIndex].colSpan = Math.min(
-              12,
-              visible[lastCardInRowIndex].colSpan + residualGap
+            const cardToExpand = visible[lastCardInRowIndex];
+            const maxAllowed = cardToExpand.maxColSpan || 12;
+            cardToExpand.colSpan = Math.min(
+              maxAllowed,
+              cardToExpand.colSpan + residualGap
             ) as DashboardColSpan;
           }
           currentRowSpan = span;
@@ -108,9 +110,11 @@ export function useDashboardLayout(
       // Se a última linha tiver gap pequeno de 1 a 2 colunas
       const finalGap = 12 - currentRowSpan;
       if (finalGap > 0 && finalGap <= 2 && lastCardInRowIndex >= 0) {
-        visible[lastCardInRowIndex].colSpan = Math.min(
-          12,
-          visible[lastCardInRowIndex].colSpan + finalGap
+        const cardToExpandFinal = visible[lastCardInRowIndex];
+        const maxAllowedFinal = cardToExpandFinal.maxColSpan || 12;
+        cardToExpandFinal.colSpan = Math.min(
+          maxAllowedFinal,
+          cardToExpandFinal.colSpan + finalGap
         ) as DashboardColSpan;
       }
 
