@@ -49,6 +49,7 @@ export default function RootLayout({
     >
       <head>
         <meta name="google-site-verification" content="WcJXbqVmrkob5mCp0ref0IbF1ANcT76ldFjlicER4cQ" />
+        <script src="https://accounts.google.com/gsi/client" async defer></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `

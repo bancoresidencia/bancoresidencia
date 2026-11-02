@@ -44,33 +44,47 @@ export function buildGoogleCalendarTemplateUrl(event: GoogleCalendarEventInput):
 }
 
 /**
- * OPÇÃO 2: Carrega dinamicamente a biblioteca oficial do Google Identity Services (GIS)
+ * OPÇÃO 2: Garante o carregamento da biblioteca oficial do Google Identity Services (GIS)
+ * Usa checagem ativa com timeout para nunca travar em listeners mortos
  */
 export function loadGoogleGsiScript(): Promise<void> {
   return new Promise((resolve, reject) => {
     if (typeof window === 'undefined') return resolve();
     if ((window as any).google?.accounts?.oauth2) return resolve();
 
-    const existingScript = document.getElementById('google-gsi-client');
-    if (existingScript) {
-      existingScript.addEventListener('load', () => resolve());
-      existingScript.addEventListener('error', (err) => reject(err));
-      return;
-    }
+    let attempts = 0;
+    const interval = setInterval(() => {
+      attempts++;
+      if ((window as any).google?.accounts?.oauth2) {
+        clearInterval(interval);
+        return resolve();
+      }
+      if (attempts > 40) { // 4 segundos
+        clearInterval(interval);
+        return reject(
+          new Error('Não foi possível carregar a biblioteca do Google. Se você usa AdBlock, uBlock ou Brave Shields, por favor desative-o para este site.')
+        );
+      }
+    }, 100);
 
-    const script = document.createElement('script');
-    script.id = 'google-gsi-client';
-    script.src = 'https://accounts.google.com/gsi/client';
-    script.async = true;
-    script.defer = true;
-    script.onload = () => resolve();
-    script.onerror = (err) => reject(err);
-    document.head.appendChild(script);
+    const existingScript = document.getElementById('google-gsi-client');
+    if (!existingScript) {
+      const script = document.createElement('script');
+      script.id = 'google-gsi-client';
+      script.src = 'https://accounts.google.com/gsi/client';
+      script.async = true;
+      script.defer = true;
+      script.onerror = () => {
+        clearInterval(interval);
+        reject(new Error('Bloqueador de anúncios detectado. Desative o AdBlock/Brave Shields para conectar com o Google.'));
+      };
+      document.head.appendChild(script);
+    }
   });
 }
 
 /**
- * OPÇÃO 2: Inicializa o fluxo OAuth Token Client do Google
+ * OPÇÃO 2: Inicializa o fluxo OAuth Token Client do Google com abertura garantida do popup
  */
 export async function requestGoogleCalendarAccessToken(
   clientId: string,
@@ -93,13 +107,13 @@ export async function requestGoogleCalendarAccessToken(
       if (timeoutTimer) clearTimeout(timeoutTimer);
     };
 
-    // Tempo limite generoso de 3 minutos para permitir ao aluno ler e confirmar com calma
+    // Tempo limite de 2 minutos para o usuário concluir o login
     timeoutTimer = setTimeout(() => {
       if (!isDone) {
         cleanup();
         onError(new Error('Tempo limite esgotado. Clique em "Continuar com o Google" para tentar novamente.'));
       }
-    }, 180000);
+    }, 120000);
 
     const tokenClient = google.accounts.oauth2.initTokenClient({
       client_id: clientId,
@@ -114,8 +128,8 @@ export async function requestGoogleCalendarAccessToken(
       }
     });
 
-    // Se o usuário já tiver autorizado previamente, conecta imediatamente sem reexibir avisos
-    tokenClient.requestAccessToken({ prompt: '' });
+    // Abre imediatamente o popup de seleção de conta do Google
+    tokenClient.requestAccessToken({ prompt: 'select_account' });
   } catch (err) {
     onError(err);
   }
