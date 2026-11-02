@@ -21,7 +21,7 @@ import {
 } from 'lucide-react';
 
 interface AuthScreenProps {
-  onSuccess?: (planTitle?: string) => void;
+  onSuccess?: (planTitle?: string, isNewRegister?: boolean) => void;
   initialMode?: 'login' | 'register';
   onClose?: () => void;
   selectedPlanTitle?: string;
@@ -151,7 +151,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
 
       if (res.success) {
         setSuccessMsg('Conta criada com sucesso! Seja bem-vindo ao Banco Residência.');
-        if (onSuccess) setTimeout(() => onSuccess(selectedPlanTitle), 600);
+        if (onSuccess) setTimeout(() => onSuccess(selectedPlanTitle, true), 600);
       } else {
         setErrorMsg(res.message || 'Não foi possível cadastrar.');
       }

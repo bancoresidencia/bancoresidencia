@@ -27,8 +27,12 @@ import {
   Zap,
   RotateCcw,
   Sparkles,
-  X
+  X,
+  Gift,
+  Award
 } from 'lucide-react';
+import { StudentAmbassadorSettings } from '@/components/StudentAmbassadorSettings';
+import { getAmbassadorStats } from '@/config/ambassadorConfig';
 
 interface StudentProfileSettingsProps {
   fontSize: 'xs' | 'sm' | 'base' | 'lg' | 'xl';
@@ -55,9 +59,10 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
   const [isRefunding, setIsRefunding] = useState(false);
   const [refundMessage, setRefundMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
   const { accentConfig } = useTheme();
+  const ambassadorStats = getAmbassadorStats(user?.id || 'guest', user?.name);
 
   // Abas de Configurações
-  const [activeTab, setActiveTab] = useState<'profile' | 'password' | 'study' | 'subscription'>('profile');
+  const [activeTab, setActiveTab] = useState<'profile' | 'password' | 'study' | 'subscription' | 'ambassador'>('profile');
 
   // Estado dos campos de Perfil
   const [name, setName] = useState(user?.name || '');
@@ -311,6 +316,12 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
               <h1 className="font-heading text-lg sm:text-xl font-extrabold text-slate-900 dark:text-white">
                 {name || 'Meu Perfil'}
               </h1>
+              {ambassadorStats.hasAmbassadorBadge && (
+                <span className="inline-flex items-center gap-1 text-[10px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-gradient-to-r from-amber-500/20 to-yellow-500/20 text-amber-600 dark:text-amber-400 border border-amber-500/40 shadow-xs">
+                  <Award className="w-3 h-3 text-amber-500" />
+                  Embaixador Oficial (10+ indicações)
+                </span>
+              )}
               {user?.role === 'admin' ? (
                 <span className="inline-flex items-center gap-1 text-[10px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-amber-500/15 text-amber-600 dark:text-amber-400 border border-amber-500/30">
                   <ShieldCheck className="w-3 h-3 text-amber-500" />
@@ -417,6 +428,10 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
         </button>
 
       </div>
+
+      {activeTab === 'ambassador' && (
+        <StudentAmbassadorSettings />
+      )}
 
       {/* Alerta de Status */}
       {statusMsg && (

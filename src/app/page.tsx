@@ -127,6 +127,8 @@ import { matchesStudyModalidades } from '@/utils/modalidades';
 import { OfficialExamItem } from '@/types/officialExams';
 import { useToast } from '@/components/Toast';
 import { SubscriptionModal } from '@/components/SubscriptionModal';
+import { OnboardingModal } from '@/components/OnboardingModal';
+import { getAppliedReferralCode } from '@/config/ambassadorConfig';
 import { useSubscription } from '@/hooks/useSubscription';
 import { EmbeddedCheckoutScreen } from '@/components/EmbeddedCheckoutScreen';
 import { PLANS, PlanDefinition, PlanId } from '@/config/plans';
@@ -167,23 +169,39 @@ import {
   Pause,
   Timer,
   EyeOff,
+  Crown,
+  Gift,
 } from 'lucide-react';
 import { KeyboardShortcutsModal } from '@/components/KeyboardShortcutsModal';
 
 export default function Home() {
   const { accentConfig } = useTheme();
   const { user, isAuthenticated, isAdmin, isLoading, logout } = useAuth();
+
+
   const { success, warning, info } = useToast();
   const {
     isUpgradeModalOpen,
     setIsUpgradeModalOpen,
     plan,
+    isSubscriptionExpired,
     questionsRemainingToday,
     canSolveQuestion,
     incrementDailyCount,
     openUpgradeModal
   } = useSubscription();
 
+  const [isOnboardingOpen, setIsOnboardingOpen] = useState(false);
+
+  // Checagem de Onboarding para novo usuário
+  useEffect(() => {
+    if (user && typeof window !== 'undefined') {
+      const isCompleted = localStorage.getItem(`onboarding_completed_${user.id}`);
+      if (!isCompleted && !user.college && !user.targetExamName) {
+        setIsOnboardingOpen(true);
+      }
+    }
+  }, [user]);
   const [authModal, setAuthModal] = useState<{
     isOpen: boolean;
     mode: 'login' | 'register';
@@ -2056,7 +2074,8 @@ export default function Home() {
                 initialMode={authModal.mode}
                 selectedPlanTitle={authModal.planTitle}
                 onClose={() => setAuthModal({ isOpen: false, mode: 'login' })}
-                onSuccess={(intendedPlan) => {
+                onSuccess={(intendedPlan, isNewRegister) => {
+                  if (isNewRegister) setIsOnboardingOpen(true);
                   setAuthModal({ isOpen: false, mode: 'login' });
                   const target = (intendedPlan || authModal.planTitle) as PlanId | undefined;
                   if (target && PLANS[target]) {
@@ -2214,6 +2233,20 @@ export default function Home() {
             {/* Controles da Borda Superior: Tema + Perfil do Aluno com Dropdown (Modelo Imagem 3) */}
             <div className="flex items-center gap-2.5 shrink-0">
               <ThemeSelector compact={true} />
+              {/* Botão Destacado: Adquirir Plano */}
+              <button
+                type="button"
+                onClick={() => setIsUpgradeModalOpen(true)}
+                className="relative inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs font-black text-white shadow-lg transition-all hover:scale-105 active:scale-95 cursor-pointer bg-gradient-to-r from-amber-500 via-rose-500 to-indigo-600 hover:opacity-95 shrink-0"
+                style={{
+                  boxShadow: '0 4px 16px -2px rgba(245, 158, 11, 0.45)'
+                }}
+                title="Adquirir Plano Banco Residência"
+              >
+                <Crown className="w-3.5 h-3.5 fill-current text-yellow-200 shrink-0" />
+                <span className="tracking-tight whitespace-nowrap">Adquirir Plano</span>
+              </button>
+
 
               {/* Botões para Visitante Não Logado */}
               {!user && (
@@ -3426,7 +3459,10 @@ export default function Home() {
               initialMode={authModal.mode}
               selectedPlanTitle={authModal.planTitle}
               onClose={() => setAuthModal({ isOpen: false, mode: 'login' })}
-              onSuccess={() => setAuthModal({ isOpen: false, mode: 'login' })}
+              onSuccess={(intendedPlan, isNewRegister) => {
+                setAuthModal({ isOpen: false, mode: 'login' });
+                if (isNewRegister) setIsOnboardingOpen(true);
+              }}
             />
           </div>
         </div>
