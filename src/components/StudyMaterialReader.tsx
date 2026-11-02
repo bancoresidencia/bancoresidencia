@@ -21,6 +21,9 @@ import { DiagnosticPipelineCard } from './study-material/DiagnosticPipelineCard'
 import { DegenerationsCard } from './study-material/DegenerationsCard';
 import { TreatmentAlgorithmCard } from './study-material/TreatmentAlgorithmCard';
 import { LasmarStepwCard } from './study-material/LasmarStepwCard';
+import { HppRecurrenceStatsCard } from './study-material/HppRecurrenceStatsCard';
+import { HppFourTsCard } from './study-material/HppFourTsCard';
+import { HppGoldenHourAlgorithmCard } from './study-material/HppGoldenHourAlgorithmCard';
 
 interface StudyMaterialReaderProps {
   material: StudyMaterialItem;
@@ -165,6 +168,24 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
 
       // Interceptação por componentes nativos ricos integrados ao tema do site
       if (
+        lang === 'hpp-exam-stats' ||
+        fullCode.includes('Recorrência Temática de Hemorragia Pós-Parto') ||
+        fullCode.includes('Recorrência Temática de HPP')
+      ) {
+        elements.push(<HppRecurrenceStatsCard key={`hpp-stats-${key}`} />);
+      } else if (
+        lang === 'hpp-four-ts' ||
+        fullCode.includes('REGRA_DOS_4_TS') ||
+        fullCode.includes('DIAGNOSTICO_4_TS')
+      ) {
+        elements.push(<HppFourTsCard key={`hpp-four-ts-${key}`} />);
+      } else if (
+        lang === 'hpp-golden-hour' ||
+        fullCode.includes('FLUXO_GOLDEN_HOUR') ||
+        fullCode.includes('ALGORITMO_GOLDEN_HOUR')
+      ) {
+        elements.push(<HppGoldenHourAlgorithmCard key={`hpp-golden-${key}`} />);
+      } else if (
         lang === 'exam-stats' ||
         fullCode.includes('Recorrência Estatística em Provas') ||
         fullCode.includes('Frequência Relativa de Cobrança')

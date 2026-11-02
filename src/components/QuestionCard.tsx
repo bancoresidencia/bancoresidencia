@@ -1013,6 +1013,44 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
       ? 'selection:bg-purple-300 dark:selection:bg-purple-400 selection:text-black dark:selection:text-black'
       : 'selection:bg-amber-300 dark:selection:bg-amber-400 selection:text-black dark:selection:text-black';
 
+  // Origem robusta da questão: prioriza a sigla da banca e a instituição real, evitando rótulos genéricos
+  const displayOrigin = useMemo(() => {
+    const rawBanca = (activeQuestion.banca || question.banca || '').trim();
+    const rawInst = (activeQuestion.institution || question.institution || '').trim();
+    if (rawBanca && rawBanca !== 'Oficial' && rawBanca !== 'Banca Oficial') {
+      return rawBanca;
+    }
+    if (rawInst && rawInst !== 'Oficial' && rawInst !== 'Banca Oficial') {
+      return rawInst;
+    }
+    if (activeQuestion.code || question.code) {
+      const code = activeQuestion.code || question.code || '';
+      const parts = code.split('-');
+      if (parts.length >= 3 && parts[0] && parts[0] !== 'BANCA' && parts[0] !== 'OFICIAL') {
+        return parts[0];
+      }
+    }
+    return rawBanca || rawInst || 'Banca Oficial';
+  }, [activeQuestion.banca, activeQuestion.institution, activeQuestion.code, question.banca, question.institution, question.code]);
+
+  // Ano robusto: extrai ano histórico do código caso o ano cadastrado seja nulo ou padrão 2024
+  const displayYear = useMemo(() => {
+    const code = activeQuestion.code || question.code || '';
+    if (code) {
+      const m = code.match(/-(\d{4})-/);
+      if (m) {
+        const codeYear = parseInt(m[1], 10);
+        if (codeYear >= 2000 && codeYear <= 2030) {
+          const currentYear = activeQuestion.year || question.year;
+          if (!currentYear || (currentYear === 2024 && codeYear !== 2024)) {
+            return codeYear;
+          }
+        }
+      }
+    }
+    return activeQuestion.year || question.year || 2024;
+  }, [activeQuestion.year, activeQuestion.code, question.year, question.code]);
+
   return (
     <article className="bento-card bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 rounded-3xl p-6 sm:p-8 shadow-sm space-y-6 relative transition-all">
       {/* Header Reorganizado: Origem da Questão (Esquerda) + Ações e Contador (Direita) */}
@@ -1023,9 +1061,9 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
           <div className="flex flex-wrap items-center gap-2">
             <span className="text-xs font-bold px-3 py-1.5 rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 flex items-center gap-1.5 shadow-xs">
               <Building className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
-              <span>{question.institution}</span>
+              <span>{displayOrigin}</span>
               <span className="text-slate-400">•</span>
-              <span>{question.year}</span>
+              <span>{displayYear}</span>
             </span>
 
             {/* Badge de Cota Diária do Plano Free (10 questões/dia) */}

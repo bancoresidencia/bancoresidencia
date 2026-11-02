@@ -1452,7 +1452,6 @@ export const bancasExaminadorasOficiais: string[] = [
   "Pró-Cardíaco (25 questões)",
   "SMS Olímpia (24 questões)",
   "SES-SC (20 questões)",
-  "Banca Oficial (18 questões)",
   "HVC (17 questões)",
   "FESF (13 questões)",
   "HHJ (12 questões)",

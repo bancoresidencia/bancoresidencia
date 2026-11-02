@@ -223,12 +223,37 @@ function mapRowToQuestion(row: QuestionDbRow): Question {
     ? row.options.map((opt) => ({ letter: opt.letter, text: opt.text }))
     : [];
 
+  const rawInst = (row.institution || '').trim();
+  const rawBanca = (row.banca || '').trim();
+  const code = (row.code || '').trim();
+
+  // Extrai ano do código se year for 2024 padrão ou vazio mas o code indicar ano histórico
+  let resolvedYear = row.year || 2024;
+  if (code) {
+    const m = code.match(/-(\d{4})-/);
+    if (m) {
+      const codeYear = parseInt(m[1], 10);
+      if (codeYear >= 2000 && codeYear <= 2030 && (!row.year || (row.year === 2024 && codeYear !== 2024))) {
+        resolvedYear = codeYear;
+      }
+    }
+  }
+
+  // Resolução inteligente de instituição e banca
+  const institution = (rawInst && rawInst !== 'Oficial' && rawInst !== 'Banca Oficial')
+    ? rawInst
+    : (rawBanca && rawBanca !== 'Oficial' ? rawBanca : (rawInst || 'Banca Oficial'));
+
+  const banca = (rawBanca && rawBanca !== 'Oficial' && rawBanca !== 'Banca Oficial')
+    ? rawBanca
+    : (institution.includes(' - ') ? institution.split(' - ')[0].trim() : institution);
+
   return {
     id: row.id,
     code: row.code || '',
-    institution: row.institution || '',
-    banca: row.banca || '',
-    year: row.year || 2024,
+    institution,
+    banca,
+    year: resolvedYear,
     tipoProva: row.tipo_prova || 'Prova 1',
     modalidade: (row.modalidade as Question['modalidade']) || 'Residência Médica',
     modalidades: row.modalidade ? [(row.modalidade as Question['modalidade'])] : ['Residência Médica'],

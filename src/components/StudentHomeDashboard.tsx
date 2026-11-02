@@ -45,7 +45,8 @@ import {
   ShieldCheck,
   CheckCircle2,
   Calendar,
-  ChevronDown
+    Lightbulb,
+  BookmarkPlus
 } from 'lucide-react';
 import {
   ResponsiveContainer,
@@ -316,7 +317,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
   // Drawer de Provas / Simulados / Caderno de Erros / Flashcards
   // Estado do Drawer / Modal Central Exclusivo por Categoria
-  const [activeCentralDrawer, setActiveCentralDrawer] = useState<'cadernos' | 'provas' | 'simulados' | 'caderno_erros' | 'flashcards' | null>(null);
+  const [activeCentralDrawer, setActiveCentralDrawer] = useState<'cadernos' | 'provas' | 'simulados' | 'caderno_erros' | 'flashcards' | 'treinar_recomendacao' | 'mnemonico_detalhado' | 'agenda_detalhada' | null>(null);
   const [drawerSearch, setDrawerSearch] = useState('');
   const [drawerModality, setDrawerModality] = useState<OfficialExamModalityKey>('todas');
   const [drawerErrorSpecialty, setDrawerErrorSpecialty] = useState<string>('Todas');
@@ -705,18 +706,168 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   }, [areasResumo]);
 
   // Seleção e hover para o gráfico de Donut do Raio-X das 6 Grandes Áreas (com suporte a Geral)
+    // --- ESTRUTURAS AUXILIARES PARA ENQUADRAMENTO DA PRIMEIRA DOBRA ---
+
+  // Mapeamento de subtemas críticos de alta incidência em Residência Médica
+  const CRITICAL_SUBTOPICS_MAP: Record<string, Array<{ name: string; defaultAccuracy: number }>> = {
+    cirurgia: [
+      { name: 'Abdome Agudo', defaultAccuracy: 0 },
+      { name: 'Trauma Abdominal (ATLS)', defaultAccuracy: 25 },
+      { name: 'Hérnias da Parede', defaultAccuracy: 33 }
+    ],
+    clinica: [
+      { name: 'Insuficiência Cardíaca', defaultAccuracy: 20 },
+      { name: 'Sepse e Choque', defaultAccuracy: 30 },
+      { name: 'Diabetes e Complicações', defaultAccuracy: 40 }
+    ],
+    pediatria: [
+      { name: 'Aleitamento Materno', defaultAccuracy: 25 },
+      { name: 'Infecções Respiratórias (IVAS)', defaultAccuracy: 35 },
+      { name: 'Triagens Neonatais', defaultAccuracy: 40 }
+    ],
+    ginecologia: [
+      { name: 'Sangramento Uterino Anormal', defaultAccuracy: 15 },
+      { name: 'Rastreamento CA Colo', defaultAccuracy: 30 },
+      { name: 'Climatério e TH', defaultAccuracy: 35 }
+    ],
+    obstetricia: [
+      { name: 'Hemorragias da Gestação', defaultAccuracy: 20 },
+      { name: 'Pré-Eclâmpsia e Eclâmpsia', defaultAccuracy: 28 },
+      { name: 'Vitalidade Fetal e Parto', defaultAccuracy: 40 }
+    ],
+    preventiva: [
+      { name: 'Estudos Epidemiológicos', defaultAccuracy: 18 },
+      { name: 'Princípios e Diretrizes SUS', defaultAccuracy: 30 },
+      { name: 'Testes Diagnósticos (Sens/Espec)', defaultAccuracy: 38 }
+    ]
+  };
+
+  // Mapeamento de pílulas clínicas e mnemônicos padrão-ouro
+  const MNEMONICS_MAP: Record<string, { title: string; content: string; rule: string }> = {
+    cirurgia: {
+      title: 'Critérios de Ranson (Pancreatite Aguda)',
+      content: 'L-A-G-A-R na admissão: Leucócitos (>16k) • Age/Idade (>55) • Glicose (>200) • AST (>250) • LDH (>350)',
+      rule: '≥3 critérios = pancreatite aguda grave (indicação de UTI)'
+    },
+    clinica: {
+      title: 'Critérios de Light (Derrame Pleural Exsudato)',
+      content: 'Prot Pleural/Sérica > 0,5 OU LDH Pleural/Sérica > 0,6 OU LDH Pleural > 2/3 do LSN sérico',
+      rule: 'Apenas 1 critério positivo já classifica o líquido como Exsudato'
+    },
+    pediatria: {
+      title: 'Escore de Apgar Neonatal (1º e 5º minuto)',
+      content: 'A-P-G-A-R: Aparência (cor) • Pulso (FC) • Gesticulação • Atividade (tônus) • Respiração',
+      rule: 'Nota 0 a 10 • Avalia vitalidade neonatal e resposta à reanimação'
+    },
+    ginecologia: {
+      title: 'Causas de Sangramento Uterino Anormal (SUA)',
+      content: 'PALM-COEIN: Pólipo, Adenomiose, Leiomioma, Malignidade / Coagulopatia, Ovulatória, Endometrial, Iatrogênica, Não especificada',
+      rule: 'PALM = Causas Estruturais • COEIN = Causas Não-Estruturais'
+    },
+    obstetricia: {
+      title: 'Descolamento Prematuro de Placenta (DPP)',
+      content: 'Dor abdominal súbita + Hipertonia uterina + Sangramento escuro + Sofrimento fetal agudo',
+      rule: 'Conduta: Amniotomia imediata e parto pela via mais rápida'
+    },
+    preventiva: {
+      title: 'Princípios Doutrinários do SUS',
+      content: 'U-I-E: Universalidade (todos têm direito) • Integralidade (assistência total) • Equidade (tratar desigual os desiguais)',
+      rule: 'Não confundir com os princípios organizativos (Regionalização e Hierarquização)'
+    }
+  };
+
+  // 1. Subtemas críticos da especialidade recomendada
+  const criticalSubtopics = React.useMemo(() => {
+    const areaKey = recommendedArea?.id || 'cirurgia';
+    const fallbackList = CRITICAL_SUBTOPICS_MAP[areaKey] || CRITICAL_SUBTOPICS_MAP['cirurgia'];
+
+    if (userAnswers && Object.keys(userAnswers).length > 0) {
+      const themeMap: Record<string, { total: number; correct: number }> = {};
+      Object.values(userAnswers).forEach((ans) => {
+        if (isAnswerMatchingArea(areaKey, ans.specialty, ans.tema) && ans.tema) {
+          const t = ans.tema.trim();
+          if (!themeMap[t]) themeMap[t] = { total: 0, correct: 0 };
+          themeMap[t].total += 1;
+          if (ans.isCorrect) themeMap[t].correct += 1;
+        }
+      });
+
+      const testedThemes = Object.entries(themeMap)
+        .map(([name, data]) => ({
+          name,
+          accuracy: data.total > 0 ? Math.round((data.correct / data.total) * 100) : 0,
+          total: data.total
+        }))
+        .sort((a, b) => a.accuracy - b.accuracy);
+
+      if (testedThemes.length >= 2) {
+        return testedThemes.slice(0, 3);
+      }
+    }
+
+    return fallbackList.map((item) => ({
+      name: item.name,
+      accuracy: recommendedArea.hasData ? Math.max(0, Math.min(100, Math.round(recommendedArea.accuracy * (item.defaultAccuracy / 40)))) : item.defaultAccuracy,
+      total: 10
+    }));
+  }, [recommendedArea, userAnswers]);
+
+  // 2. Mnemônico clínico ativo
+  const activeMnemonic = React.useMemo(() => {
+    const areaKey = recommendedArea?.id || 'cirurgia';
+    return MNEMONICS_MAP[areaKey] || MNEMONICS_MAP['cirurgia'];
+  }, [recommendedArea?.id]);
+
+  // 3. Estado de favoritar mnemônico
+  const [savedMnemonic, setSavedMnemonic] = useState(false);
+
+  // 4. Régua semanal dos 7 dias
+  const weeklyDays = React.useMemo(() => {
+    const dayNames = ['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb'];
+    const now = new Date();
+    const result = [];
+    
+    for (let i = 6; i >= 0; i--) {
+      const targetDate = new Date(now);
+      targetDate.setDate(now.getDate() - i);
+      const dayIndex = targetDate.getDay();
+      const label = dayNames[dayIndex];
+      const isToday = i === 0;
+      
+      const dateKey = targetDate.toISOString().slice(0, 10);
+      const matchHistory = (stats.historyByDay || []).find((h) => h.date && h.date.startsWith(dateKey));
+      
+      const answered = isToday
+        ? todayAnswered
+        : (matchHistory ? matchHistory.answered : 0);
+      
+      const targetGoal = dailyGoal || 30;
+      const isComplete = answered >= targetGoal;
+      
+      result.push({
+        label,
+        dateFormatted: `${targetDate.getDate().toString().padStart(2, '0')}/${(targetDate.getMonth() + 1).toString().padStart(2, '0')}`,
+        answered,
+        targetGoal,
+        isToday,
+        isComplete
+      });
+    }
+    return result;
+  }, [stats.historyByDay, todayAnswered, dailyGoal]);
+
   const [selectedAreaId, setSelectedAreaId] = useState<string>('geral');
   const [hoveredPieIndex, setHoveredPieIndex] = useState<number | null>(null);
   const lastPieClickRef = useRef<{ id: string; time: number }>({ id: '', time: 0 });
 
-  const handlePieSectorClick = (areaId: string) => {
+  const handlePieSectorClick = React.useCallback((areaId: string) => {
     const now = Date.now();
     if (lastPieClickRef.current.id === areaId && now - lastPieClickRef.current.time < 350) {
       return;
     }
     lastPieClickRef.current = { id: areaId, time: now };
     setSelectedAreaId((prev) => (prev === areaId ? 'geral' : areaId));
-  };
+  }, []);
 
   const totalCoreVolume = React.useMemo(() => {
     return areasResumo.reduce((sum, a) => sum + (a.total || 0), 0);
@@ -1622,135 +1773,231 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
         </div>
       </section>
 
-      {/* 2. RECOMENDAÇÃO DO DIA E RETENÇÃO ACIMA DO RAIO-X DAS ESPECIALIDADES */}
-      <section className="space-y-4">
-        <div className="space-y-4">
-          {/* Card 1 (Topo): Recomendação do Dia + Retenção & Repetição Espaçada (Imagem 2) */}
-          <div className="w-full bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-4 sm:p-6 shadow-xs relative overflow-hidden group">
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-5 sm:gap-6 items-center">
-              {/* Bloco 1 (Esquerda - 6 cols): Recomendação do Dia */}
-              <div className="md:col-span-6 space-y-2.5 relative">
-                <div className="flex items-center gap-2">
-                  <span
-                    className="px-2 py-0.5 rounded-md font-bold text-[10px] uppercase tracking-wider border inline-block"
-                    style={{
-                      backgroundColor: accentConfig.bgRgba,
-                      borderColor: accentConfig.borderRgba,
-                      color: accentConfig.primaryHex
-                    }}
-                  >
-                    Recomendação do Dia
+      {/* 2. DUO COMPACTO: PÍLULA CLÍNICA DO DIA + AGENDA DO DIA (ULTRA-CLEAN & ZERO REDUNDÂNCIA) */}
+      <section className="space-y-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
+          {/* Card 1: Pílula Clínica do Dia */}
+          <div
+            onClick={() => setActiveCentralDrawer('mnemonico_detalhado')}
+            className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-4 shadow-xs cursor-pointer hover:border-amber-500/40 transition-all group flex flex-col justify-between min-h-[106px] relative overflow-hidden"
+            title="Abrir raciocínio mnemônico completo"
+          >
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <div className="w-6 h-6 rounded-lg bg-amber-500/10 text-amber-500 flex items-center justify-center shrink-0 border border-amber-500/20">
+                  <Lightbulb className="w-3.5 h-3.5" />
+                </div>
+                <span className="text-[10px] font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400">
+                  Pílula do Dia • {recommendedArea.label}
+                </span>
+              </div>
+              <div className="flex items-center gap-1 text-[11px] font-bold text-amber-600 dark:text-amber-400 group-hover:translate-x-0.5 transition-transform">
+                <span>Ver Mnemônico</span>
+                <ChevronRight className="w-3.5 h-3.5" />
+              </div>
+            </div>
+
+            <div className="space-y-1 pt-1">
+              <h4 className="font-heading text-sm font-bold text-slate-900 dark:text-zinc-100 truncate">
+                {activeMnemonic.title}
+              </h4>
+              <div className="flex items-center gap-2 text-xs text-slate-600 dark:text-zinc-400">
+                <span className="px-1.5 py-0.5 rounded font-mono font-bold bg-amber-500/15 text-amber-600 dark:text-amber-400 border border-amber-500/25 text-[11px] shrink-0">
+                  {activeMnemonic.content.split(':')[0] || 'MNEMÔNICO'}
+                </span>
+                <span className="truncate text-[11px] text-zinc-500 dark:text-zinc-400">
+                  {activeMnemonic.rule}
+                </span>
+              </div>
+            </div>
+          </div>
+
+          {/* Card 2: Agenda de Estudos do Dia (Foco em Cronograma • Zero Redundância com Metas Diárias) */}
+          <div
+            onClick={() => setActiveCentralDrawer('agenda_detalhada')}
+            className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-4 shadow-xs cursor-pointer hover:border-blue-500/40 transition-all group flex flex-col justify-between min-h-[106px] relative overflow-hidden"
+            title="Abrir cronograma de blocos do dia"
+          >
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <div className="w-6 h-6 rounded-lg bg-blue-500/10 text-blue-500 flex items-center justify-center shrink-0 border border-blue-500/20">
+                  <CalendarDays className="w-3.5 h-3.5" />
+                </div>
+                <span className="text-[10px] font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">
+                  Agenda de Estudos
+                </span>
+              </div>
+              <div className="flex items-center gap-1 text-[11px] font-bold text-blue-600 dark:text-blue-400 group-hover:translate-x-0.5 transition-transform">
+                <span>Ver Agenda</span>
+                <ChevronRight className="w-3.5 h-3.5" />
+              </div>
+            </div>
+
+            <div className="space-y-1 pt-1">
+              <h4 className="font-heading text-sm font-bold text-slate-900 dark:text-zinc-100 truncate">
+                Cronograma de Hoje • 4 Blocos
+              </h4>
+              <div className="flex items-center gap-2 text-xs text-slate-600 dark:text-zinc-400">
+                <span className="px-1.5 py-0.5 rounded font-bold bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20 text-[11px] shrink-0">
+                  Próximo
+                </span>
+                <span className="truncate text-[11px] text-zinc-500 dark:text-zinc-400">
+                  Treino de {recommendedArea.label} + Caderno de Erros
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 3. CARD PRINCIPAL: RECOMENDAÇÃO DO DIA + RETENÇÃO & REPETIÇÃO ESPAÇADA */}
+        <div className="w-full bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-4 sm:p-5 shadow-xs relative overflow-hidden group">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-5 sm:gap-6 items-center">
+            {/* Bloco 1 (Esquerda - 6 cols): Recomendação do Dia (Super Clean) */}
+            <div className="md:col-span-6 space-y-2.5 relative">
+              <div className="flex items-center gap-2">
+                <span
+                  className="px-2 py-0.5 rounded-md font-bold text-[10px] uppercase tracking-wider border inline-block"
+                  style={{
+                    backgroundColor: accentConfig.bgRgba,
+                    borderColor: accentConfig.borderRgba,
+                    color: accentConfig.primaryHex
+                  }}
+                >
+                  Recomendação do Dia
+                </span>
+                {recommendedArea.hasData && (
+                  <span className="text-[11px] font-semibold text-amber-600 dark:text-amber-400">
+                    Aproveitamento: {recommendedArea.accuracy}%
                   </span>
-                  {recommendedArea.hasData && (
-                    <span className="text-[11px] font-semibold text-amber-600 dark:text-amber-400">
-                      Aproveitamento: {recommendedArea.accuracy}%
-                    </span>
-                  )}
-                </div>
-
-                <div>
-                  <h4 className="font-heading text-base sm:text-lg font-bold text-slate-900 dark:text-zinc-100 flex items-center gap-2">
-                    <span>Praticar {recommendedArea.label}</span>
-                  </h4>
-                  <p className="text-xs text-slate-600 dark:text-zinc-400 leading-relaxed mt-0.5">
-                    {recommendedArea.hasData
-                      ? `Menor rendimento registrado (${recommendedArea.accuracy}%). Foco prioritário de alavancagem.`
-                      : `Área essencial com alta incidência nas provas.`}
-                  </p>
-                </div>
-
-                <div className="pt-1">
-                  <button
-                    type="button"
-                    onClick={() => handlePracticeArea(recommendedArea.filterName)}
-                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-white text-xs sm:text-sm font-bold transition-all cursor-pointer shadow-sm hover:opacity-95 active:scale-98"
-                    style={{
-                      backgroundColor: accentConfig.primaryHex,
-                      boxShadow: `0 3px 10px ${accentConfig.bgRgba}`
-                    }}
-                  >
-                    <Play className="w-3.5 h-3.5 fill-white" />
-                    <span>Treinar {recommendedArea.label}</span>
-                  </button>
-                </div>
+                )}
               </div>
 
-              {/* Bloco 2 (Direita - 6 cols): Retenção & Repetição Espaçada (Caderno de Erros + Flashcards) */}
-              <div className="md:col-span-6 border-t md:border-t-0 md:border-l border-slate-100 dark:border-zinc-800/80 pt-4 md:pt-0 md:pl-6 space-y-2.5">
-                <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 block">
-                  Retenção & Repetição Espaçada
-                </span>
+              <div>
+                <h4 className="font-heading text-base sm:text-lg font-bold text-slate-900 dark:text-zinc-100 flex items-center gap-2">
+                  <span>Praticar {recommendedArea.label}</span>
+                </h4>
+                <p className="text-xs text-slate-600 dark:text-zinc-400 leading-relaxed mt-0.5">
+                  {recommendedArea.hasData
+                    ? `Menor rendimento registrado (${recommendedArea.accuracy}%). Foco prioritário de alavancagem.`
+                    : `Área essencial com alta incidência nas provas.`}
+                </p>
+              </div>
 
-                <div className="space-y-2">
-                  {/* Botão Caderno de Erros -> Abre Drawer Central */}
-                  <div
-                    onClick={() => {
-                      setActiveCentralDrawer('caderno_erros');
-                      setDrawerSearch('');
-                      setDrawerErrorSpecialty('Todas');
-                    }}
-                    className="flex items-center justify-between p-2.5 rounded-xl border border-rose-500/20 bg-rose-500/5 hover:bg-rose-500/10 cursor-pointer transition-all group"
-                    title="Abrir central de foco do Caderno de Erros"
-                  >
-                    <div className="flex items-center gap-2.5 min-w-0">
-                      <div className="w-8 h-8 rounded-lg bg-rose-500/15 text-rose-500 flex items-center justify-center shrink-0">
-                        <AlertOctagon className="w-4 h-4" />
-                      </div>
-                      <div className="min-w-0">
-                        <div className="text-xs font-bold text-zinc-800 dark:text-zinc-200 group-hover:text-rose-500 transition-colors truncate">
-                          Caderno de Erros
-                        </div>
-                        <div className="text-[10px] text-zinc-500 dark:text-zinc-400 truncate">
-                          {pendingErrorsCount > 0 ? `${pendingErrorsCount} pendentes de reteste` : 'Tudo em dia'}
-                        </div>
-                      </div>
+              <div className="pt-1 flex flex-wrap items-center gap-2">
+                {/* Botão Treinar -> Abre Drawer Central com Subtemas e Radar da Banca */}
+                <button
+                  type="button"
+                  onClick={() => setActiveCentralDrawer('treinar_recomendacao')}
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-white text-xs sm:text-sm font-bold transition-all cursor-pointer shadow-sm hover:opacity-95 active:scale-98"
+                  style={{
+                    backgroundColor: accentConfig.primaryHex,
+                    boxShadow: `0 3px 10px ${accentConfig.bgRgba}`
+                  }}
+                  title="Abrir centro de treino com subtemas e radar da banca"
+                >
+                  <Play className="w-3.5 h-3.5 fill-white" />
+                  <span>Treinar {recommendedArea.label}</span>
+                </button>
+
+                {/* Botão Blitz TRI */}
+                <button
+                  type="button"
+                  onClick={() => {
+                    if (onStartSimuladoExpress) {
+                      onStartSimuladoExpress(10);
+                    } else {
+                      handlePracticeArea(recommendedArea.filterName);
+                    }
+                  }}
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-3.5 py-2.5 rounded-xl text-xs font-semibold border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/60 text-zinc-700 dark:text-zinc-300 hover:border-amber-500/40 hover:text-amber-500 transition-all cursor-pointer"
+                  title="Treino expresso de 10 questões calibradas pelo modelo psicométrico TRI (~12 min)"
+                >
+                  <Zap className="w-3.5 h-3.5 text-amber-500" />
+                  <span>Blitz TRI (10Q • 12 min)</span>
+                </button>
+              </div>
+            </div>
+
+            {/* Bloco 2 (Direita - 6 cols): Retenção & Repetição Espaçada */}
+            <div className="md:col-span-6 border-t md:border-t-0 md:border-l border-slate-100 dark:border-zinc-800/80 pt-4 md:pt-0 md:pl-6 space-y-2.5">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 block">
+                Retenção & Repetição Espaçada
+              </span>
+
+              <div className="space-y-2">
+                {/* Botão Caderno de Erros -> Abre Drawer Central */}
+                <div
+                  onClick={() => {
+                    setActiveCentralDrawer('caderno_erros');
+                    setDrawerSearch('');
+                    setDrawerErrorSpecialty('Todas');
+                  }}
+                  className="flex items-center justify-between p-2.5 rounded-xl border border-rose-500/20 bg-rose-500/5 hover:bg-rose-500/10 cursor-pointer transition-all group"
+                  title="Abrir central de foco do Caderno de Erros"
+                >
+                  <div className="flex items-center gap-2.5 min-w-0">
+                    <div className="w-8 h-8 rounded-lg bg-rose-500/15 text-rose-500 flex items-center justify-center shrink-0">
+                      <AlertOctagon className="w-4 h-4" />
                     </div>
-                    <div className="flex items-center gap-1.5 shrink-0">
-                      <span className="text-[10px] font-bold text-rose-500 hidden sm:inline">
-                        Ver Foco
-                      </span>
-                      <ChevronRight className="w-4 h-4 text-zinc-400 group-hover:translate-x-0.5 group-hover:text-rose-500 transition-all" />
+                    <div className="min-w-0">
+                      <div className="text-xs font-bold text-zinc-800 dark:text-zinc-200 group-hover:text-rose-500 transition-colors truncate">
+                        Caderno de Erros
+                      </div>
+                      <div className="text-[10px] text-zinc-500 dark:text-zinc-400 truncate">
+                        {pendingErrorsCount > 0 ? `${pendingErrorsCount} pendentes de reteste` : 'Tudo em dia'}
+                      </div>
                     </div>
                   </div>
+                  <div className="flex items-center gap-1.5 shrink-0">
+                    <span className="text-[10px] font-bold text-rose-500 hidden sm:inline">
+                      Ver Foco
+                    </span>
+                    <ChevronRight className="w-4 h-4 text-zinc-400 group-hover:translate-x-0.5 group-hover:text-rose-500 transition-all" />
+                  </div>
+                </div>
 
-                  {/* Botão Flashcards -> Abre Drawer Central */}
-                  <div
-                    onClick={() => {
-                      setActiveCentralDrawer('flashcards');
-                      setDrawerSearch('');
-                      setDrawerFlashcardSpecialty('Todas');
-                    }}
-                    className="flex items-center justify-between p-2.5 rounded-xl border border-zinc-200/80 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/50 hover:bg-zinc-100 dark:hover:bg-zinc-800/80 cursor-pointer transition-all group"
-                    title="Abrir central de foco dos Flashcards"
-                  >
-                    <div className="flex items-center gap-2.5 min-w-0">
-                      <div
-                        className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0"
-                        style={{ backgroundColor: accentConfig.bgRgba, color: accentConfig.primaryHex }}
-                      >
-                        <Brain className="w-4 h-4" />
+                {/* Botão Flashcards -> Abre Drawer Central */}
+                <div
+                  onClick={() => {
+                    setActiveCentralDrawer('flashcards');
+                    setDrawerSearch('');
+                    setDrawerFlashcardSpecialty('Todas');
+                  }}
+                  className="flex items-center justify-between p-2.5 rounded-xl border border-zinc-200/80 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/50 hover:bg-zinc-100 dark:hover:bg-zinc-800/80 cursor-pointer transition-all group"
+                  title="Abrir central de foco dos Flashcards"
+                >
+                  <div className="flex items-center gap-2.5 min-w-0">
+                    <div
+                      className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0"
+                      style={{ backgroundColor: accentConfig.bgRgba, color: accentConfig.primaryHex }}
+                    >
+                      <Brain className="w-4 h-4" />
+                    </div>
+                    <div className="min-w-0">
+                      <div className="text-xs font-bold text-zinc-800 dark:text-zinc-200 group-hover:text-white transition-colors truncate">
+                        Flashcards Mnemônicos
                       </div>
-                      <div className="min-w-0">
-                        <div className="text-xs font-bold text-zinc-800 dark:text-zinc-200 group-hover:text-white transition-colors truncate">
-                          Flashcards Mnemônicos
-                        </div>
-                        <div className="text-[10px] text-zinc-500 dark:text-zinc-400 truncate">
-                          {flashcardsStats.dueToday > 0 ? `${flashcardsStats.dueToday} para hoje • FSRS` : 'Revisão do Dia • FSRS'}
-                        </div>
+                      <div className="text-[10px] text-zinc-500 dark:text-zinc-400 truncate">
+                        {flashcardsStats.dueToday > 0 ? `${flashcardsStats.dueToday} para hoje • FSRS` : 'Revisão do Dia • FSRS'}
                       </div>
                     </div>
-                    <div className="flex items-center gap-1.5 shrink-0">
-                      <span className="text-[10px] font-bold text-slate-500 dark:text-zinc-400 hidden sm:inline">
-                        Ver Foco
-                      </span>
-                      <ChevronRight className="w-4 h-4 text-zinc-400 group-hover:translate-x-0.5 group-hover:text-white transition-all" />
-                    </div>
+                  </div>
+                  <div className="flex items-center gap-1.5 shrink-0">
+                    <span className="text-[10px] font-bold text-slate-500 dark:text-zinc-400 hidden sm:inline">
+                      Ver Foco
+                    </span>
+                    <ChevronRight className="w-4 h-4 text-zinc-400 group-hover:translate-x-0.5 group-hover:text-white transition-all" />
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
+      {/* 4. RAIO-X DAS 6 GRANDES ÁREAS (SEÇÃO SEGUINTE NA ROLAGEM) */}
+      <section className="space-y-4">
+        <div className="space-y-4">
           {/* Card 2 (Abaixo): Raio-X das 6 Grandes Áreas com Donut e Gráficos de Acertos por Especialidade */}
           <div className="w-full bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-4 sm:p-6 shadow-xs space-y-4">
             <div className="flex items-center justify-between gap-2 pb-2 border-b border-slate-100 dark:border-zinc-800/80">
@@ -1796,7 +2043,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           setHoveredPieIndex(index);
                         }}
                         onMouseLeave={() => setHoveredPieIndex(null)}
-                        onClick={(entry: any, index: number) => {
+                        onClick={(entry: { id?: string; payload?: { id?: string } } | undefined, index: number) => {
                           const targetId = entry?.id || entry?.payload?.id || (typeof index === 'number' && donutData[index]?.id);
                           if (targetId) {
                             handlePieSectorClick(targetId);
@@ -2755,6 +3002,9 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                   {activeCentralDrawer === 'simulados' && <Target className="w-5 h-5" />}
                   {activeCentralDrawer === 'caderno_erros' && <AlertOctagon className="w-5 h-5 text-rose-500" />}
                   {activeCentralDrawer === 'flashcards' && <Brain className="w-5 h-5" />}
+                  {activeCentralDrawer === 'treinar_recomendacao' && <Play className="w-5 h-5" />}
+                  {activeCentralDrawer === 'mnemonico_detalhado' && <Lightbulb className="w-5 h-5 text-amber-500" />}
+                  {activeCentralDrawer === 'agenda_detalhada' && <CalendarDays className="w-5 h-5 text-blue-500" />}
                 </div>
                 <div>
                   <h3 className="font-heading text-base sm:text-lg font-bold text-slate-900 dark:text-white">
@@ -2763,6 +3013,9 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     {activeCentralDrawer === 'simulados' && 'Histórico de Simulados Oficiais'}
                     {activeCentralDrawer === 'caderno_erros' && 'Caderno de Erros • Foco de Reteste'}
                     {activeCentralDrawer === 'flashcards' && 'Flashcards Mnemônicos • Revisão do Dia'}
+                    {activeCentralDrawer === 'treinar_recomendacao' && `Centro de Treino • ${recommendedArea.label}`}
+                    {activeCentralDrawer === 'mnemonico_detalhado' && `Mnemônico Clínico • ${recommendedArea.label}`}
+                    {activeCentralDrawer === 'agenda_detalhada' && 'Agenda e Cronograma de Estudos'}
                   </h3>
                   <p className="text-xs text-slate-500 dark:text-zinc-400">
                     {activeCentralDrawer === 'cadernos' && 'Acesse todos os seus cadernos personalizados e continue seus estudos'}
@@ -2770,6 +3023,9 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     {activeCentralDrawer === 'simulados' && 'Simulados cronometrados com pontuação TRI e percentil'}
                     {activeCentralDrawer === 'caderno_erros' && 'Diagnóstico metacognitivo e questões erradas pendentes de reteste'}
                     {activeCentralDrawer === 'flashcards' && 'Fixação rápida de alto rendimento com algoritmo espaçado FSRS'}
+                    {activeCentralDrawer === 'treinar_recomendacao' && 'Subtemas prioritários, radar da banca e modos de execução'}
+                    {activeCentralDrawer === 'mnemonico_detalhado' && 'Fixação mnemônica, critérios diagnósticos e armadilhas de prova'}
+                    {activeCentralDrawer === 'agenda_detalhada' && 'Planejamento e blocos de estudo sequenciais organizados para hoje'}
                   </p>
                 </div>
               </div>
@@ -3363,6 +3619,332 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     </div>
                   );
                 })()
+              )}
+
+              {/* === CASO 6: DRAWER CENTRAL DE TREINO DA RECOMENDAÇÃO === */}
+              {activeCentralDrawer === 'treinar_recomendacao' && (
+                <div className="p-4 sm:p-6 space-y-5 overflow-y-auto custom-scrollbar flex-1">
+                  {/* Radar da Banca Alvo */}
+                  <div className="p-4 rounded-2xl border border-blue-500/25 bg-blue-500/5 space-y-2">
+                    <div className="flex items-center gap-2 text-blue-600 dark:text-blue-400 font-bold text-xs uppercase tracking-wider">
+                      <Target className="w-4 h-4" />
+                      <span>Radar da Banca • {targetExamName || 'ENARE 2026'}</span>
+                    </div>
+                    <p className="text-xs sm:text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed">
+                      <strong>{recommendedArea.label}</strong> responde por aproximadamente <strong>~20% da prova oficial</strong>.
+                      Recuperar 5 acertos nesta especialidade eleva sua posição estimada em até <strong>+8 percentis</strong>.
+                    </p>
+                    <div className="pt-1 flex flex-wrap items-center gap-2 text-[11px] text-zinc-500 dark:text-zinc-400">
+                      <span className="px-2 py-0.5 rounded-md bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20 font-medium">
+                        Alta Relevância TRI
+                      </span>
+                      <span>• Incidência confirmada nos últimos 4 anos da banca</span>
+                    </div>
+                  </div>
+
+                  {/* Subtemas Críticos de Alavancagem */}
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <h4 className="font-heading text-sm font-bold text-zinc-900 dark:text-zinc-100">
+                          Subtemas Prioritários de Alavancagem
+                        </h4>
+                        <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                          Assuntos com menor rendimento registrado. Treinar diretamente a sua maior dor:
+                        </p>
+                      </div>
+                      <span className="text-[11px] font-bold text-rose-500">
+                        Prioridade Alta
+                      </span>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+                      {criticalSubtopics.map((sub, idx) => (
+                        <div
+                          key={idx}
+                          onClick={() => {
+                            setActiveCentralDrawer(null);
+                            handlePracticeArea(recommendedArea.filterName);
+                          }}
+                          className="p-3 rounded-xl border border-zinc-200/90 dark:border-zinc-800 bg-zinc-50/70 dark:bg-zinc-900/50 hover:border-zinc-400 dark:hover:border-zinc-700 cursor-pointer transition-all flex flex-col justify-between space-y-2 group"
+                        >
+                          <div className="flex items-start justify-between gap-1">
+                            <span className="text-xs font-bold text-zinc-800 dark:text-zinc-200 group-hover:text-amber-500 transition-colors">
+                              {sub.name}
+                            </span>
+                            <span className="px-1.5 py-0.5 rounded-md text-[10px] font-bold font-mono bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-500/20 shrink-0">
+                              {sub.accuracy}%
+                            </span>
+                          </div>
+                          <div className="flex items-center justify-between text-[10px] text-zinc-400">
+                            <span>{sub.total || 10} questões no banco</span>
+                            <span className="text-amber-500 font-semibold group-hover:translate-x-0.5 transition-transform flex items-center">
+                              Treinar <ChevronRight className="w-3 h-3 ml-0.5" />
+                            </span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Ações Diretas de Execução */}
+                  <div className="pt-3 border-t border-zinc-100 dark:border-zinc-850 flex flex-col sm:flex-row items-center justify-between gap-3">
+                    <div className="text-xs text-zinc-500 dark:text-zinc-400">
+                      Selecione o formato de treino que melhor se adequa ao seu tempo:
+                    </div>
+                    <div className="flex items-center gap-2.5 w-full sm:w-auto">
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setActiveCentralDrawer(null);
+                          if (onStartSimuladoExpress) {
+                            onStartSimuladoExpress(10);
+                          } else {
+                            handlePracticeArea(recommendedArea.filterName);
+                          }
+                        }}
+                        className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-semibold border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 hover:border-amber-500/40 hover:text-amber-500 transition-all cursor-pointer"
+                      >
+                        <Zap className="w-3.5 h-3.5 text-amber-500" />
+                        <span>Blitz TRI (10Q)</span>
+                      </button>
+
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setActiveCentralDrawer(null);
+                          handlePracticeArea(recommendedArea.filterName);
+                        }}
+                        className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-white text-xs font-bold transition-all cursor-pointer shadow-sm hover:opacity-95"
+                        style={{ backgroundColor: accentConfig.primaryHex }}
+                      >
+                        <Play className="w-3.5 h-3.5 fill-white" />
+                        <span>Treinar {recommendedArea.label}</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* === CASO 7: DRAWER CENTRAL DE MNEMÔNICO DETALHADO === */}
+              {activeCentralDrawer === 'mnemonico_detalhado' && (
+                <div className="p-4 sm:p-6 space-y-5 overflow-y-auto custom-scrollbar flex-1">
+                  <div className="p-5 rounded-2xl border border-amber-500/30 bg-amber-500/10 space-y-3">
+                    <div className="flex items-center justify-between">
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400 flex items-center gap-1.5">
+                        <Lightbulb className="w-4 h-4" />
+                        Mnemônico Padrão-Ouro • {recommendedArea.label}
+                      </span>
+                      <button
+                        type="button"
+                        onClick={() => setSavedMnemonic(!savedMnemonic)}
+                        className="text-xs font-bold text-amber-700 dark:text-amber-300 hover:underline flex items-center gap-1 cursor-pointer"
+                      >
+                        {savedMnemonic ? (
+                          <>
+                            <Check className="w-3.5 h-3.5 text-emerald-500" />
+                            <span className="text-emerald-500 font-bold">Salvo no FSRS</span>
+                          </>
+                        ) : (
+                          <>
+                            <BookmarkPlus className="w-3.5 h-3.5 text-amber-600 dark:text-amber-400" />
+                            <span>Salvar nos Flashcards</span>
+                          </>
+                        )}
+                      </button>
+                    </div>
+
+                    <h4 className="font-heading text-lg font-bold text-zinc-900 dark:text-zinc-100">
+                      {activeMnemonic.title}
+                    </h4>
+
+                    <p className="text-xs sm:text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed font-mono bg-white/60 dark:bg-zinc-900/60 p-3 rounded-xl border border-amber-500/20">
+                      {activeMnemonic.content}
+                    </p>
+
+                    <div className="text-xs font-bold text-amber-800 dark:text-amber-300 flex items-center gap-1.5">
+                      <span>↳ Regra Clínica:</span>
+                      <span className="font-normal">{activeMnemonic.rule}</span>
+                    </div>
+                  </div>
+
+                  <div className="p-4 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/40 space-y-1.5">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-rose-500 block flex items-center gap-1">
+                      <AlertTriangle className="w-3.5 h-3.5" />
+                      Pegadinha de Prova da Banca ({targetExamName || 'ENARE'})
+                    </span>
+                    <p className="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed">
+                      As bancas frequentemente cobram a distinção entre critérios de admissão vs critérios de 48 horas. Além disso, amilase e lipase <strong>não</strong> entram nos critérios de gravidade de Ranson, servindo apenas para o diagnóstico. Fique atento!
+                    </p>
+                  </div>
+
+                  <div className="pt-2 border-t border-zinc-100 dark:border-zinc-850 flex items-center justify-end gap-2.5">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setActiveCentralDrawer(null);
+                        handlePracticeArea(recommendedArea.filterName);
+                      }}
+                      className="px-5 py-2.5 rounded-xl text-white text-xs font-bold transition-all cursor-pointer shadow-sm hover:opacity-95 flex items-center gap-2"
+                      style={{ backgroundColor: accentConfig.primaryHex }}
+                    >
+                      <Play className="w-3.5 h-3.5 fill-white" />
+                      <span>Praticar Questões deste Tema</span>
+                    </button>
+                  </div>
+                </div>
+              )}
+
+              {/* === CASO 8: DRAWER CENTRAL DE AGENDA DO DIA === */}
+              {activeCentralDrawer === 'agenda_detalhada' && (
+                <div className="p-4 sm:p-6 space-y-5 overflow-y-auto custom-scrollbar flex-1">
+                  <div className="grid grid-cols-3 gap-2.5">
+                    <div className="p-3 rounded-2xl bg-slate-50 dark:bg-zinc-900/60 border border-slate-200/80 dark:border-zinc-800 flex flex-col justify-between">
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-zinc-400 block">
+                        Meta de Questões
+                      </span>
+                      <span className="text-xl font-black font-mono text-slate-900 dark:text-zinc-100 mt-1">
+                        {todayAnswered}/{dailyGoal || 30}
+                      </span>
+                      <span className="text-[10px] text-slate-400 dark:text-zinc-500">
+                        {todayAnswered >= (dailyGoal || 30) ? 'Meta batida!' : 'progresso de hoje'}
+                      </span>
+                    </div>
+
+                    <div className="p-3 rounded-2xl bg-slate-50 dark:bg-zinc-900/60 border border-slate-200/80 dark:border-zinc-800 flex flex-col justify-between">
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-zinc-400 block">
+                        Tempo Dedicado
+                      </span>
+                      <span className="text-xl font-black font-mono text-slate-900 dark:text-zinc-100 mt-1">
+                        {todayStudyMinutes}m
+                      </span>
+                      <span className="text-[10px] text-slate-400 dark:text-zinc-500">
+                        meta diária: {dailyTimeGoal}m
+                      </span>
+                    </div>
+
+                    <div className="p-3 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex flex-col justify-between">
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 block">
+                        Blocos do Dia
+                      </span>
+                      <span className="text-xl font-black font-mono text-blue-600 dark:text-blue-400 mt-1">
+                        4 blocos
+                      </span>
+                      <span className="text-[10px] text-blue-500/80">
+                        planejamento ativo
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="space-y-2.5">
+                    <div className="flex items-center justify-between text-xs text-zinc-500 font-semibold px-1">
+                      <span>Cronograma Sequencial de Hoje</span>
+                      <span>Status</span>
+                    </div>
+
+                    <div className="p-3.5 rounded-2xl border border-zinc-200/90 dark:border-zinc-800 bg-white dark:bg-[#121620] flex items-center justify-between gap-3">
+                      <div className="flex items-center gap-3 min-w-0">
+                        <div className="w-8 h-8 rounded-xl bg-rose-500/10 text-rose-500 flex items-center justify-center shrink-0 font-bold text-xs">
+                          1
+                        </div>
+                        <div className="min-w-0">
+                          <h5 className="text-xs sm:text-sm font-bold text-zinc-900 dark:text-zinc-100 truncate">
+                            Treino de {recommendedArea.label}
+                          </h5>
+                          <p className="text-[11px] text-zinc-500 dark:text-zinc-400 truncate">
+                            Meta: 15 questões • Foco prioritário de alavancagem
+                          </p>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setActiveCentralDrawer(null);
+                          handlePracticeArea(recommendedArea.filterName);
+                        }}
+                        className="shrink-0 px-3 py-1.5 rounded-lg text-white text-xs font-bold cursor-pointer transition-opacity hover:opacity-90"
+                        style={{ backgroundColor: accentConfig.primaryHex }}
+                      >
+                        Iniciar
+                      </button>
+                    </div>
+
+                    <div className="p-3.5 rounded-2xl border border-zinc-200/90 dark:border-zinc-800 bg-white dark:bg-[#121620] flex items-center justify-between gap-3">
+                      <div className="flex items-center gap-3 min-w-0">
+                        <div className="w-8 h-8 rounded-xl bg-amber-500/10 text-amber-500 flex items-center justify-center shrink-0 font-bold text-xs">
+                          2
+                        </div>
+                        <div className="min-w-0">
+                          <h5 className="text-xs sm:text-sm font-bold text-zinc-900 dark:text-zinc-100 truncate">
+                            Caderno de Erros (Reteste Metacognitivo)
+                          </h5>
+                          <p className="text-[11px] text-zinc-500 dark:text-zinc-400 truncate">
+                            {pendingErrorsCount > 0 ? `${pendingErrorsCount} pendências aguardando reteste` : 'Tudo em dia'}
+                          </p>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setActiveCentralDrawer('caderno_erros');
+                        }}
+                        className="shrink-0 px-3 py-1.5 rounded-lg bg-rose-500/15 text-rose-600 dark:text-rose-400 border border-rose-500/20 text-xs font-bold cursor-pointer hover:bg-rose-500/25"
+                      >
+                        Abrir
+                      </button>
+                    </div>
+
+                    <div className="p-3.5 rounded-2xl border border-zinc-200/90 dark:border-zinc-800 bg-white dark:bg-[#121620] flex items-center justify-between gap-3">
+                      <div className="flex items-center gap-3 min-w-0">
+                        <div className="w-8 h-8 rounded-xl bg-blue-500/10 text-blue-500 flex items-center justify-center shrink-0 font-bold text-xs">
+                          3
+                        </div>
+                        <div className="min-w-0">
+                          <h5 className="text-xs sm:text-sm font-bold text-zinc-900 dark:text-zinc-100 truncate">
+                            Revisão de Flashcards FSRS
+                          </h5>
+                          <p className="text-[11px] text-zinc-500 dark:text-zinc-400 truncate">
+                            {flashcardsStats.dueToday > 0 ? `${flashcardsStats.dueToday} cartões para hoje` : 'Em dia com o FSRS'}
+                          </p>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setActiveCentralDrawer('flashcards');
+                        }}
+                        className="shrink-0 px-3 py-1.5 rounded-lg bg-blue-500/15 text-blue-600 dark:text-blue-400 border border-blue-500/20 text-xs font-bold cursor-pointer hover:bg-blue-500/25"
+                      >
+                        Revisar
+                      </button>
+                    </div>
+
+                    <div className="p-3.5 rounded-2xl border border-zinc-200/90 dark:border-zinc-800 bg-white dark:bg-[#121620] flex items-center justify-between gap-3">
+                      <div className="flex items-center gap-3 min-w-0">
+                        <div className="w-8 h-8 rounded-xl bg-emerald-500/10 text-emerald-500 flex items-center justify-center shrink-0 font-bold text-xs">
+                          4
+                        </div>
+                        <div className="min-w-0">
+                          <h5 className="text-xs sm:text-sm font-bold text-zinc-900 dark:text-zinc-100 truncate">
+                            Fixação da Pílula Clínica do Dia
+                          </h5>
+                          <p className="text-[11px] text-zinc-500 dark:text-zinc-400 truncate">
+                            {activeMnemonic.title}
+                          </p>
+                        </div>
+                      </div>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          setActiveCentralDrawer('mnemonico_detalhado');
+                        }}
+                        className="shrink-0 px-3 py-1.5 rounded-lg bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 text-xs font-bold cursor-pointer hover:bg-emerald-500/25"
+                      >
+                        Ver
+                      </button>
+                    </div>
+                  </div>
+                </div>
               )}
 
               {/* === CASO 5: DRAWER CENTRAL DE FLASHCARDS === */}
