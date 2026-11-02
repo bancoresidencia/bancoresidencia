@@ -86,7 +86,7 @@ def validate():
         "## 5. Manejo Escalonado da Atonia Uterina (The Golden Hour)",
         "## 6. Farmacoterapia Detalhada & Pegadinhas Clássicas de Prova",
         "## 7. Manejo das Outras Causas Específicas de HPP",
-        "## 8. Pontos-Chave para Prova 💡"
+        "## 8. Diretrizes Oficiais & Consensos de Referência"
     ]
 
     for sec in required_sections:

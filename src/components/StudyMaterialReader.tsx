@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useState, useMemo, useRef } from 'react';
 import {
   Clock,
   Calendar,
@@ -8,7 +8,9 @@ import {
   ArrowLeft,
   CheckCircle2,
   AlertTriangle,
-  Play
+  Play,
+  ChevronLeft,
+  ChevronRight
 } from 'lucide-react';
 import { StudyMaterialItem } from '@/types/flashcards';
 import { useTheme } from '@/context/ThemeContext';
@@ -39,10 +41,25 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
   const { accentConfig } = useTheme();
 
   // Formatador de expressões matemáticas e clínicas (LaTeX -> Símbolos UTF-8 limpos)
-  const formatMedicalMath = (text: string): string => {
-    if (!text) return '';
-    return text
-      .replace(/\\text\{([^}]*)\}/g, '$1')
+  const formatMedicalMath = (raw: string): string => {
+    if (!raw) return '';
+    let text = raw;
+
+    // Remove marcadores de bloco $$ ou inline $ se presentes
+    text = text.replace(/^\$\$|\$\$$/g, '').replace(/^\$|\$$/g, '');
+
+    // Desempacota recursivamente todas as tags \text{...}
+    while (/\\text\{([^{}]*)\}/.test(text)) {
+      text = text.replace(/\\text\{([^{}]*)\}/g, '$1');
+    }
+
+    // Desempacota recursivamente frações \frac{num}{den} com suporte a chaves aninhadas
+    while (/\\frac\s*\{([^{}]+)\}\s*\{([^{}]+)\}/.test(text)) {
+      text = text.replace(/\\frac\s*\{([^{}]+)\}\s*\{([^{}]+)\}/g, '($1 / $2)');
+    }
+
+    // Limpeza de operadores e símbolos matemáticos
+    text = text
       .replace(/\\le\b|\\leq\b/g, '≤')
       .replace(/\\ge\b|\\geq\b/g, '≥')
       .replace(/\\approx\b/g, '≈')
@@ -71,6 +88,8 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
       .replace(/\$([^$]+)\$/g, '$1')
       .replace(/\$/g, '')
       .replace(/<br\s*\/?>/gi, ' ');
+
+    return text.trim();
   };
 
   const renderInlineFormatting = (rawText: string) => {
@@ -109,6 +128,158 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
     });
   };
 
+  // Estado do carrossel interativo de Pontos-Chave das Provas
+  const [activeKeyPointIndex, setActiveKeyPointIndex] = useState<number>(0);
+  const [slideDirection, setSlideDirection] = useState<'left' | 'right'>('right');
+  const [touchStartX, setTouchStartX] = useState<number | null>(null);
+
+  const totalKeyPoints = material.keyPoints ? material.keyPoints.length : 0;
+
+  const handlePrevKeyPoint = () => {
+    if (totalKeyPoints <= 1) return;
+    setSlideDirection('left');
+    setActiveKeyPointIndex((prev) => (prev - 1 + totalKeyPoints) % totalKeyPoints);
+  };
+
+  const handleNextKeyPoint = () => {
+    if (totalKeyPoints <= 1) return;
+    setSlideDirection('right');
+    setActiveKeyPointIndex((prev) => (prev + 1) % totalKeyPoints);
+  };
+
+  // Navegação por teclado (Seta Esquerda / Seta Direita) em loop infinito
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (totalKeyPoints <= 1) return;
+      if (e.key === 'ArrowLeft') {
+        handlePrevKeyPoint();
+      } else if (e.key === 'ArrowRight') {
+        handleNextKeyPoint();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [totalKeyPoints]);
+
+  // Renderizador do Carrossel de Pontos-Chave das Provas (Card central em foco com animação suave, loop infinito)
+  const renderKeyPointsCarousel = () => {
+    if (!material.keyPoints || material.keyPoints.length === 0) return null;
+
+    const prevIdx = (activeKeyPointIndex - 1 + totalKeyPoints) % totalKeyPoints;
+    const currIdx = activeKeyPointIndex;
+    const nextIdx = (activeKeyPointIndex + 1) % totalKeyPoints;
+
+    return (
+      <div className="my-10 p-5 sm:p-6 rounded-3xl bg-zinc-50/70 dark:bg-zinc-900/40 border border-zinc-200/90 dark:border-zinc-800 space-y-4">
+        {/* Cabeçalho do Carrossel de Pontos-Chave */}
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <h3 className="font-heading font-black text-sm sm:text-base text-zinc-900 dark:text-zinc-100">
+              Pontos-Chave das Provas
+            </h3>
+            <p className="text-[11px] text-zinc-500 dark:text-zinc-400">
+              Regras de ouro e armadilhas cruciais das bancas examinadoras (use as setas ← / → do teclado)
+            </p>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <span className="text-xs font-mono font-bold text-zinc-500 dark:text-zinc-400 mr-1">
+              {activeKeyPointIndex + 1} de {totalKeyPoints}
+            </span>
+            <button
+              type="button"
+              onClick={handlePrevKeyPoint}
+              className="p-1.5 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-700 transition-all cursor-pointer shadow-xs active:scale-95"
+              aria-label="Ponto-chave anterior"
+            >
+              <ChevronLeft className="w-4 h-4" />
+            </button>
+            <button
+              type="button"
+              onClick={handleNextKeyPoint}
+              className="p-1.5 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-700 transition-all cursor-pointer shadow-xs active:scale-95"
+              aria-label="Próximo ponto-chave"
+            >
+              <ChevronRight className="w-4 h-4" />
+            </button>
+          </div>
+        </div>
+
+        {/* Carrossel em Loop Infinito: Card central em foco com transição suave, anterior e próximo nas laterais */}
+        <div
+          onTouchStart={(e) => setTouchStartX(e.touches[0].clientX)}
+          onTouchEnd={(e) => {
+            if (touchStartX === null) return;
+            const delta = e.changedTouches[0].clientX - touchStartX;
+            if (delta > 40) handlePrevKeyPoint();
+            else if (delta < -40) handleNextKeyPoint();
+            setTouchStartX(null);
+          }}
+          className="flex items-stretch justify-center gap-3 sm:gap-4 md:gap-5 py-4 overflow-hidden relative select-none snap-x snap-mandatory"
+        >
+          {/* Card Anterior (ex.: Último Card antes do Card 1 em loop) */}
+          <div
+            key={`prev-${prevIdx}`}
+            onClick={handlePrevKeyPoint}
+            className="hidden sm:flex flex-col justify-start shrink-0 w-[240px] md:w-[280px] lg:w-[320px] p-4 sm:p-5 rounded-2xl bg-white/50 dark:bg-[#121215]/50 border border-zinc-200/60 dark:border-zinc-800/60 scale-95 opacity-35 blur-[0.5px] hover:opacity-70 cursor-pointer transition-all duration-500 ease-out space-y-3 min-h-[170px]"
+            title="Clique para ir ao card anterior"
+          >
+            <div
+              className="w-6 h-6 rounded-full text-white font-black text-xs flex items-center justify-center shadow-xs opacity-80 shrink-0"
+              style={{ backgroundColor: accentConfig.primaryHex }}
+            >
+              {prevIdx + 1}
+            </div>
+            <p className="text-xs text-zinc-700 dark:text-zinc-300 leading-relaxed font-normal line-clamp-4">
+              {renderInlineFormatting(material.keyPoints[prevIdx])}
+            </p>
+          </div>
+
+          {/* Card Central em Foco com Transição Suave e Cor do Tema */}
+          <div
+            key={`curr-${currIdx}`}
+            className={`flex flex-col justify-start shrink-0 w-full max-w-[340px] sm:max-w-[420px] md:max-w-[480px] p-5 sm:p-6 rounded-2xl bg-white dark:bg-[#121215] border-2 shadow-md scale-100 opacity-100 space-y-3 min-h-[180px] transition-all duration-500 ease-out animate-in fade-in ${
+              slideDirection === 'right' ? 'slide-in-from-right-4' : 'slide-in-from-left-4'
+            }`}
+            style={{
+              borderColor: accentConfig.primaryHex,
+              boxShadow: `0 4px 14px -2px ${accentConfig.bgRgba}, 0 0 0 3px ${accentConfig.bgRgba}`
+            }}
+          >
+            <div
+              className="w-7 h-7 rounded-full text-white font-black text-xs flex items-center justify-center shadow-xs shrink-0"
+              style={{ backgroundColor: accentConfig.primaryHex }}
+            >
+              {currIdx + 1}
+            </div>
+
+            <p className="text-xs sm:text-sm text-zinc-800 dark:text-zinc-200 leading-relaxed font-normal">
+              {renderInlineFormatting(material.keyPoints[currIdx])}
+            </p>
+          </div>
+
+          {/* Próximo Card (ex.: Card 2 depois do Card 1 em loop) */}
+          <div
+            key={`next-${nextIdx}`}
+            onClick={handleNextKeyPoint}
+            className="hidden sm:flex flex-col justify-start shrink-0 w-[240px] md:w-[280px] lg:w-[320px] p-4 sm:p-5 rounded-2xl bg-white/50 dark:bg-[#121215]/50 border border-zinc-200/60 dark:border-zinc-800/60 scale-95 opacity-35 blur-[0.5px] hover:opacity-70 cursor-pointer transition-all duration-500 ease-out space-y-3 min-h-[170px]"
+            title="Clique para ir ao próximo card"
+          >
+            <div
+              className="w-6 h-6 rounded-full text-white font-black text-xs flex items-center justify-center shadow-xs opacity-80 shrink-0"
+              style={{ backgroundColor: accentConfig.primaryHex }}
+            >
+              {nextIdx + 1}
+            </div>
+            <p className="text-xs text-zinc-700 dark:text-zinc-300 leading-relaxed font-normal line-clamp-4">
+              {renderInlineFormatting(material.keyPoints[nextIdx])}
+            </p>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
   // Renderizador principal de Markdown com substituição por componentes nativos
   const renderMarkdownContent = (content: string) => {
     const lines = content.split(/\r?\n/);
@@ -121,32 +292,33 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
     let inTable = false;
     let tableRows: string[][] = [];
     let tableHeaders: string[] = [];
+    let hasRenderedKeyPoints = false;
 
     const flushTable = (key: string) => {
       if (inTable && tableHeaders.length > 0) {
         elements.push(
           <div
             key={`table-${key}`}
-            className="my-6 overflow-x-auto rounded-xl border border-zinc-200 dark:border-zinc-800 shadow-xs"
+            className="my-6 overflow-x-auto rounded-2xl border border-zinc-200/90 dark:border-zinc-800 shadow-xs"
           >
-            <table className="w-full text-left text-xs sm:text-sm border-collapse">
+            <table className="w-full text-left text-xs sm:text-sm border-collapse table-auto">
               <thead>
-                <tr className="bg-zinc-100 dark:bg-zinc-900 border-b border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 font-bold">
+                <tr className="bg-zinc-100/90 dark:bg-zinc-900/90 border-b border-zinc-200 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 font-bold">
                   {tableHeaders.map((th, idx) => (
-                    <th key={idx} className="p-3 font-semibold">
+                    <th key={idx} className="p-3.5 font-bold tracking-tight">
                       {renderInlineFormatting(th.trim())}
                     </th>
                   ))}
                 </tr>
               </thead>
-              <tbody className="divide-y divide-zinc-200 dark:divide-zinc-800">
+              <tbody className="divide-y divide-zinc-100 dark:divide-zinc-800/80 bg-white dark:bg-[#121215]">
                 {tableRows.map((tr, rIdx) => (
                   <tr
                     key={rIdx}
-                    className="hover:bg-zinc-50 dark:hover:bg-zinc-900/50 transition-colors"
+                    className="hover:bg-zinc-50/80 dark:hover:bg-zinc-900/40 transition-colors"
                   >
                     {tr.map((td, cIdx) => (
-                      <td key={cIdx} className="p-3 text-zinc-700 dark:text-zinc-300">
+                      <td key={cIdx} className="p-3.5 text-zinc-700 dark:text-zinc-300 align-top leading-relaxed">
                         {renderInlineFormatting(td.trim())}
                       </td>
                     ))}
@@ -272,7 +444,7 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
     };
 
     let inUnorderedList = false;
-    let unorderedListItems: string[] = [];
+    let unorderedListItems: Array<{ text: string; level: number }> = [];
 
     let inOrderedList = false;
     let orderedListItems: string[] = [];
@@ -281,17 +453,49 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
       if (inUnorderedList && unorderedListItems.length > 0) {
         const items = [...unorderedListItems];
         elements.push(
-          <ul key={`ul-${key}`} className="my-3 space-y-2 list-none pl-0">
-            {items.map((item, idx) => (
-              <li
-                key={idx}
-                className="flex items-start gap-2.5 text-xs sm:text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed"
-              >
-                <span className="w-1.5 h-1.5 rounded-full bg-zinc-400 dark:bg-zinc-500 shrink-0 mt-2" />
-                <div className="flex-1">{renderInlineFormatting(item)}</div>
-              </li>
-            ))}
-          </ul>
+          <div key={`ul-${key}`} className="my-3 space-y-2 not-prose">
+            {items.map((item, idx) => {
+              if (item.level === 0) {
+                return (
+                  <div
+                    key={idx}
+                    className="flex items-start gap-2.5 text-xs sm:text-sm text-zinc-900 dark:text-zinc-100 font-medium leading-relaxed pt-1"
+                  >
+                    <span
+                      className="w-2 h-2 rounded-full shrink-0 mt-1.5 shadow-2xs"
+                      style={{ backgroundColor: accentConfig.primaryHex }}
+                    />
+                    <div className="flex-1">{renderInlineFormatting(item.text)}</div>
+                  </div>
+                );
+              }
+
+              if (item.level === 1) {
+                return (
+                  <div
+                    key={idx}
+                    className="ml-5 sm:ml-6 pl-3 sm:pl-4 border-l-2 border-zinc-200 dark:border-zinc-700/60 my-1 flex items-start gap-2 text-xs sm:text-sm text-zinc-600 dark:text-zinc-300 leading-relaxed"
+                  >
+                    <span className="text-zinc-400 dark:text-zinc-500 font-mono text-xs shrink-0 select-none mt-0.5">
+                      ↳
+                    </span>
+                    <div className="flex-1">{renderInlineFormatting(item.text)}</div>
+                  </div>
+                );
+              }
+
+              // level >= 2
+              return (
+                <div
+                  key={idx}
+                  className="ml-9 sm:ml-11 pl-3 border-l-2 border-zinc-200/60 dark:border-zinc-800 my-0.5 flex items-start gap-2 text-[11px] sm:text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed"
+                >
+                  <span className="w-1.5 h-0.5 bg-zinc-400 dark:bg-zinc-500 shrink-0 mt-2" />
+                  <div className="flex-1">{renderInlineFormatting(item.text)}</div>
+                </div>
+              );
+            })}
+          </div>
         );
         inUnorderedList = false;
         unorderedListItems = [];
@@ -387,20 +591,77 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
         flushTable(`flush-${index}`);
       }
 
-      // Títulos Markdown
+      // Detecção de Bloco Matemático de Fórmula: $$...$$ ou fórmulas de fração isoladas
+      if (
+        (trimmed.startsWith('$$') && trimmed.endsWith('$$') && trimmed.length > 4) ||
+        (trimmed.includes('\\frac') && trimmed.includes('='))
+      ) {
+        flushAllLists(`pre-math-${index}`);
+        const mathContent = trimmed.startsWith('$$') && trimmed.endsWith('$$')
+          ? trimmed.slice(2, -2).trim()
+          : trimmed.replace(/^\$+/, '').replace(/\$+$/, '').trim();
+
+        // Extrai lado esquerdo e fração com suporte a chaves aninhadas (\text{...})
+        const eqIdx = mathContent.indexOf('=');
+        if (eqIdx !== -1 && mathContent.includes('\\frac')) {
+          const leftRaw = mathContent.slice(0, eqIdx).trim();
+          const rightRaw = mathContent.slice(eqIdx + 1).trim();
+
+          // Regex que suporta chaves aninhadas no numerador e denominador
+          const fracRegex = /\\frac\s*\{((?:[^{}]|\{[^{}]*\})*)\}\s*\{((?:[^{}]|\{[^{}]*\})*)\}/;
+          const match = rightRaw.match(fracRegex);
+          if (match) {
+            const leftSide = formatMedicalMath(leftRaw);
+            const num = formatMedicalMath(match[1]);
+            const den = formatMedicalMath(match[2]);
+
+            elements.push(
+              <div
+                key={`math-${index}`}
+                className="my-5 p-5 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200/90 dark:border-zinc-800 shadow-xs flex flex-col items-center justify-center text-center space-y-3 not-prose"
+              >
+                <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 font-heading font-black text-xs sm:text-sm text-zinc-900 dark:text-zinc-100">
+                  <span className="text-zinc-800 dark:text-zinc-200">{leftSide}</span>
+                  <span className="text-zinc-400 font-normal text-base">=</span>
+                  <div className="inline-flex flex-col items-center">
+                    <span className="px-4 pb-1.5 border-b-2 border-zinc-500 dark:border-zinc-400 text-zinc-900 dark:text-zinc-100 font-bold text-center">
+                      {num}
+                    </span>
+                    <span className="px-4 pt-1.5 text-zinc-600 dark:text-zinc-400 font-semibold text-center text-xs">
+                      {den}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            );
+            return;
+          }
+        }
+      }
+
+      // Títulos Markdown: Elimina repetição do título principal já presente no cabeçalho do leitor
       if (trimmed.startsWith('# ')) {
-        flushAllLists(`pre-h1-${index}`);
-        elements.push(
-          <h1
-            key={index}
-            className="text-2xl sm:text-3xl font-heading font-black tracking-tight text-zinc-900 dark:text-zinc-100 mt-2 mb-4"
-          >
-            {renderInlineFormatting(trimmed.replace('# ', ''))}
-          </h1>
-        );
+        // Todo H1 no topo do markdown é ignorado pois o cabeçalho do componente já renderiza o H1 oficial
+        return;
       } else if (trimmed.startsWith('## ')) {
-        flushAllLists(`pre-h2-${index}`);
         const rawTitle = trimmed.replace('## ', '').trim();
+        const isReferencesSection =
+          rawTitle.toLowerCase().includes('diretrizes') ||
+          rawTitle.toLowerCase().includes('referencias') ||
+          rawTitle.toLowerCase().includes('referências');
+
+        // Se for a seção de referências e ainda não renderizou os pontos-chave, insere o carrossel ANTES das referências!
+        if (isReferencesSection && !hasRenderedKeyPoints) {
+          flushAllLists(`pre-keypoints-${index}`);
+          elements.push(
+            <React.Fragment key={`keypoints-carousel-inline-${index}`}>
+              {renderKeyPointsCarousel()}
+            </React.Fragment>
+          );
+          hasRenderedKeyPoints = true;
+        }
+
+        flushAllLists(`pre-h2-${index}`);
         const sectionSlug = rawTitle
           .toLowerCase()
           .normalize('NFD')
@@ -412,7 +673,7 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
           <h2
             key={index}
             id={sectionSlug}
-            className="text-lg sm:text-xl font-heading font-bold text-zinc-900 dark:text-zinc-100 mt-8 mb-3 flex items-center gap-2 border-b border-zinc-100 dark:border-zinc-800/80 pb-2 scroll-mt-20"
+            className="text-lg sm:text-xl font-heading font-bold text-zinc-900 dark:text-zinc-100 mt-8 mb-3 flex items-center gap-2 border-b border-zinc-100 dark:border-zinc-800/80 pb-2 scroll-mt-24"
           >
             <span
               className="w-1.5 h-4.5 rounded-full inline-block"
@@ -469,27 +730,33 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
             {renderInlineFormatting(trimmed.replace('> ', ''))}
           </blockquote>
         );
-      } else if (trimmed.startsWith('* ') || trimmed.startsWith('- ')) {
-        flushOrderedList(`pre-ul-${index}`);
-        inUnorderedList = true;
-        unorderedListItems.push(trimmed.slice(2));
-      } else if (/^\d+\.\s/.test(trimmed)) {
-        flushUnorderedList(`pre-ol-${index}`);
-        inOrderedList = true;
-        orderedListItems.push(trimmed.replace(/^\d+\.\s/, ''));
-      } else if (trimmed === '---') {
-        flushAllLists(`pre-hr-${index}`);
-        elements.push(<hr key={index} className="my-6 border-zinc-200 dark:border-zinc-800" />);
-      } else if (trimmed.length > 0) {
-        flushAllLists(`pre-p-${index}`);
-        elements.push(
-          <p
-            key={index}
-            className="text-xs sm:text-sm text-zinc-700 dark:text-zinc-300 my-2.5 leading-relaxed"
-          >
-            {renderInlineFormatting(trimmed)}
-          </p>
-        );
+      } else {
+        // Listas com marcadores hierárquicos (Indentação)
+        const ulMatch = line.match(/^(\s*)([\*\-])\s+(.+)$/);
+        if (ulMatch) {
+          flushOrderedList(`pre-ul-${index}`);
+          inUnorderedList = true;
+          const indentSpaces = ulMatch[1].replace(/\t/g, '  ').length;
+          const level = indentSpaces >= 4 ? 2 : indentSpaces >= 2 ? 1 : 0;
+          unorderedListItems.push({ text: ulMatch[3], level });
+        } else if (/^\d+\.\s/.test(trimmed)) {
+          flushUnorderedList(`pre-ol-${index}`);
+          inOrderedList = true;
+          orderedListItems.push(trimmed.replace(/^\d+\.\s/, ''));
+        } else if (trimmed === '---') {
+          flushAllLists(`pre-hr-${index}`);
+          elements.push(<hr key={index} className="my-6 border-zinc-200 dark:border-zinc-800" />);
+        } else if (trimmed.length > 0) {
+          flushAllLists(`pre-p-${index}`);
+          elements.push(
+            <p
+              key={index}
+              className="text-xs sm:text-sm text-zinc-700 dark:text-zinc-300 my-2.5 leading-relaxed"
+            >
+              {renderInlineFormatting(trimmed)}
+            </p>
+          );
+        }
       }
     });
 
@@ -497,10 +764,19 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
     if (inCodeBlock) flushCodeBlock('final');
     if (inTable) flushTable('final');
 
+    // Se o resumo não possuía seção formal de referências, renderiza os pontos-chave aqui
+    if (!hasRenderedKeyPoints) {
+      elements.push(
+        <React.Fragment key="keypoints-carousel-fallback">
+          {renderKeyPointsCarousel()}
+        </React.Fragment>
+      );
+    }
+
     return elements;
   };
 
-  const sectionPills = React.useMemo(() => {
+  const sectionPills = useMemo(() => {
     if (!material.markdownContent) return [];
     const h2Lines = material.markdownContent
       .split(/\r?\n/)
@@ -519,9 +795,45 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
     });
   }, [material.markdownContent]);
 
+  // Scroll Spy com Observer ajustado para não conflitar com a barra superior
+  const [activeSectionSlug, setActiveSectionSlug] = useState<string>('');
+  const pillRefs = useRef<Record<string, HTMLAnchorElement | null>>({});
+
+  useEffect(() => {
+    if (sectionPills.length === 0) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSectionSlug(entry.target.id);
+          }
+        });
+      },
+      { rootMargin: '-100px 0px -55% 0px' }
+    );
+
+    sectionPills.forEach((p) => {
+      const el = document.getElementById(p.slug);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, [sectionPills]);
+
+  // Animação suave e automática para centralizar o botão ativo na barra de tópicos sem precisar rolar manualmente
+  useEffect(() => {
+    if (activeSectionSlug && pillRefs.current[activeSectionSlug]) {
+      pillRefs.current[activeSectionSlug]?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+        inline: 'center'
+      });
+    }
+  }, [activeSectionSlug]);
+
   return (
-    <div className="space-y-6 max-w-4xl mx-auto">
-      {/* Barra Superior de Navegação */}
+    <div className="space-y-6 w-full max-w-7xl mx-auto">
+      {/* Barra Superior de Ações */}
       <div className="flex items-center justify-between gap-3 border-b border-zinc-200 dark:border-zinc-800 pb-4">
         <button
           type="button"
@@ -547,8 +859,8 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
         </div>
       </div>
 
-      {/* Cabeçalho do Material */}
-      <div className="p-6 rounded-2xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800/80 shadow-xs space-y-4">
+      {/* Cabeçalho do Material Limpo (Largura total harmonizada com o restante do site) */}
+      <div className="p-5 sm:p-6 rounded-3xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800/80 shadow-xs space-y-3">
         <div className="flex flex-wrap items-center gap-2 text-xs">
           <span className="px-2.5 py-0.5 rounded-md font-semibold bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300">
             {material.specialty}
@@ -566,13 +878,9 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
           )}
         </div>
 
-        <h1 className="text-xl sm:text-2xl font-heading font-black tracking-tight text-zinc-900 dark:text-zinc-100">
+        <h1 className="text-xl sm:text-2xl lg:text-3xl font-heading font-black tracking-tight text-zinc-900 dark:text-zinc-100">
           {material.title}
         </h1>
-
-        <p className="text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
-          {material.summarySnippet}
-        </p>
 
         <div className="flex items-center gap-4 text-[11px] text-zinc-500 dark:text-zinc-400 pt-2 border-t border-zinc-100 dark:border-zinc-800/80">
           <span className="flex items-center gap-1.5 font-medium">
@@ -586,54 +894,49 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
         </div>
       </div>
 
-      {/* Destaques Cirúrgicos (Key Points) */}
-      {material.keyPoints && material.keyPoints.length > 0 && (
-        <div className="p-5 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800/80 space-y-3">
-          <div className="flex items-center gap-2 text-xs font-bold text-zinc-900 dark:text-zinc-100 uppercase tracking-wider">
-            <Sparkles className="w-4 h-4 text-amber-500" />
-            <span>Pérolas de Alto Rendimento para Prova</span>
-          </div>
-          <ul className="grid sm:grid-cols-2 gap-2.5">
-            {material.keyPoints.map((pt, idx) => (
-              <li
-                key={idx}
-                className="flex items-start gap-2 text-xs text-zinc-700 dark:text-zinc-300 bg-white dark:bg-[#121215] p-2.5 rounded-xl border border-zinc-200/80 dark:border-zinc-800/60"
-              >
-                <span className="w-1.5 h-1.5 rounded-full bg-amber-500 shrink-0 mt-1.5" />
-                <span className="leading-snug">{formatMedicalMath(pt)}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
-
-      {/* Barra de Navegação Rápida (Sumário do Resumo) */}
+      {/* Barra de Navegação Rápida Sticky com Scroll Spy (Fixa abaixo da barra superior top-[4.5rem] com bordas retangulares) */}
       {sectionPills.length > 0 && (
-        <div className="p-3.5 rounded-2xl bg-zinc-50/70 dark:bg-zinc-900/50 border border-zinc-200/80 dark:border-zinc-800 space-y-2">
-          <div className="text-[11px] font-bold font-mono uppercase tracking-wider text-zinc-500 dark:text-zinc-400 px-1">
-            Navegação Rápida por Tópicos
-          </div>
-          <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-thin">
-            {sectionPills.map((pill) => (
-              <a
-                key={pill.slug}
-                href={`#${pill.slug}`}
-                className="px-2.5 py-1 rounded-lg text-xs font-semibold whitespace-nowrap bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700 hover:border-zinc-400 dark:hover:border-zinc-500 transition-colors"
-              >
-                {pill.shortTitle}
-              </a>
-            ))}
+        <div className="sticky top-[4.5rem] z-20 p-2 sm:p-2.5 rounded-none bg-white/95 dark:bg-[#121215]/95 backdrop-blur-md border border-zinc-200/90 dark:border-zinc-800/80 shadow-xs transition-all">
+          <div className="flex items-center gap-2 overflow-x-auto pb-0.5 scrollbar-none [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+            {sectionPills.map((pill) => {
+              const isActive = activeSectionSlug === pill.slug;
+              return (
+                <a
+                  key={pill.slug}
+                  ref={(el) => {
+                    pillRefs.current[pill.slug] = el;
+                  }}
+                  href={`#${pill.slug}`}
+                  onClick={() => setActiveSectionSlug(pill.slug)}
+                  className={`px-3 py-1.5 rounded-md text-xs font-bold whitespace-nowrap transition-all duration-200 border shrink-0 ${
+                    isActive
+                      ? 'text-white shadow-xs'
+                      : 'bg-zinc-100/80 dark:bg-zinc-900/80 text-zinc-700 dark:text-zinc-300 border-zinc-200/80 dark:border-zinc-800 hover:border-zinc-400 dark:hover:border-zinc-600'
+                  }`}
+                  style={
+                    isActive
+                      ? {
+                          backgroundColor: accentConfig.primaryHex,
+                          borderColor: accentConfig.primaryHex
+                        }
+                      : {}
+                  }
+                >
+                  {pill.shortTitle}
+                </a>
+              );
+            })}
           </div>
         </div>
       )}
 
-      {/* Corpo Formatado do Material */}
-      <article className="p-6 sm:p-8 rounded-2xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800/80 shadow-xs prose prose-zinc dark:prose-invert max-w-none">
+      {/* Corpo Formatado do Material (Largura total expandida) */}
+      <article className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800/80 shadow-xs prose prose-zinc dark:prose-invert max-w-none">
         {renderMarkdownContent(material.markdownContent)}
       </article>
 
       {/* Rodapé de Ação */}
-      <div className="p-6 rounded-2xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800/80 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div className="p-6 rounded-3xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800/80 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div>
           <h4 className="text-sm font-bold text-zinc-900 dark:text-zinc-100">
             Fixar este conteúdo na memória

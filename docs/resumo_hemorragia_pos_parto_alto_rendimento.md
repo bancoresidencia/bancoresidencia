@@ -1,7 +1,5 @@
 # Hemorragia Pós-Parto (HPP): Resumo Padrão-Ouro de Alto Rendimento
 
-> **Diretrizes e Consensos de Referência:** FEBRASGO (Tratado de Obstetrícia / Protocolos de HPP), Ministério da Saúde (Manual de Hemorragia Pós-Parto / Estratégia Zero Morte Materna por Hemorragia - OPAS/OMS), ACOG Practice Bulletin nº 183 (*Postpartum Hemorrhage*), FIGO Guidelines 2022/2024 e Ensaio Clínico *WOMAN Trial* (Ácido Tranexâmico).
-
 ---
 
 ## 1. O Que Mais Cai nas Provas de Residência Médica
@@ -31,8 +29,11 @@ O marcador mais cobrado em provas recentes para ativação precoce do protocolo 
 $$\text{Índice de Choque (SI)} = \frac{\text{Frequência Cardíaca (bpm)}}{\text{Pressão Arterial Sistólica (mmHg)}}$$
 
 * **$\text{SI} < 0,7$ a $0,9$:** Fisiológico no puerpério imediato.
+  * Não indica intervenção adicional além da vigilância rotineira.
 * **$\text{SI} \ge 0,9$ a $1,0$:** Indicador sensível de sangramento oculto grave e instabilidade incipiente.
-* **$\text{SI} \ge 1,4$:** Choque hemorrágico grave (Classe III/IV); prediz necessidade obrigatória de transfusão maciça, suporte em UTI e intervenção invasiva imediata.
+  * Alerta para reposição volêmica imediata e acionamento do banco de sangue.
+* **$\text{SI} \ge 1,4$:** Choque hemorrágico grave (Classe III/IV).
+  * Prediz necessidade obrigatória de protocolo de transfusão maciça (1:1:1), suporte em UTI e intervenção invasiva imediata.
 
 ---
 
@@ -53,18 +54,25 @@ A medida isolada mais eficaz para prevenir a atonia uterina e diminuir em até 6
 REGRA_DOS_4_TS
 ```
 
-| "T" Etiológico | Frequência | Fatores de Risco Clássicos de Prova | Quadro Clínico Típico | Conduta Inicial Dirigida |
+| "T" Etiológico | Frequência | Fatores de Risco de Prova | Quadro Clínico Típico | Conduta Inicial Dirigida |
 | :--- | :---: | :--- | :--- | :--- |
-| **Tônus (Atonia Uterina)** | **70% - 80%** | Sobredistensão (gemelar, polidrâmnio, macrossomia), corioamnionite, TP prolongado, multiparidade, uso excessivo de ocitocina, sulfato de magnésio. | Sangramento vaginal volumoso e contínuo, útero amolecido, hipotônico e palpável acima da cicatriz umbilical. | Massagem uterina bimanual + Drogas uterotônicas escalonadas. |
-| **Trauma (Lesões de Trajeto)** | **15% - 20%** | Parto instrumentado (fórceps/vácuo), parto precipitado, macrossomia, episiotomia ampla. | Sangramento vermelho-vivo contínuo com **útero firme, contraído e no nível da cicatriz umbilical**. | Exame sob valvas vaginais e sutura hemostática imediata. |
-| **Tecido (Restos Placentários)** | **10%** | Placenta sucenturiada, acretismo placentário prévio, histórico de curetagem ou cesárea anterior. | Sangramento persistente com placenta deitada incompleta ou cotilédone ausente. | Curagem manual ou aspiração/curetagem uterina sob anestesia. |
-| **Trombina (Coagulopatias)** | **1%** | Descolamento Prematuro de Placenta (DPP), embolia amniótica, sepse, pré-eclâmpsia grave (HELLP). | Sangramento difuso em locais de punção, sem formação de coágulos, com útero contraído. | Reposição hemostática: Concentrado de Hemácias, PFC, Plaquetas e Crioprecipitado. |
+| **Tônus (Atonia)** | **70% - 80%** | Sobredistensão uterina, trabalho de parto prolongado, corioamnionite. | Útero amolecido, hipotônico e palpável acima da cicatriz umbilical. | Massagem de Hamilton + Ocitocina IV + Tranexâmico IV. |
+| **Trauma (Trajeto)** | **15% - 20%** | Parto instrumentado (fórceps/vácuo), parto precipitado, macrossomia. | Sangramento vermelho-vivo contínuo com **útero firme e contraído**. | Exame sob valvas vaginais e sutura hemostática imediata. |
+| **Tecido (Restos)** | **10%** | Placenta sucenturiada, cesárea anterior + placenta prévia (acretismo). | Sangramento persistente com placenta deitada incompleta ou cotilédone ausente. | Curagem manual ou aspiração/curetagem sob anestesia. |
+| **Trombina (Coagulopatia)** | **1%** | Descolamento prematuro de placenta (DPP), embolia amniótica, sepse, HELLP. | Sangramento difuso em lençol e punções sem formação de coágulos. | Reposição hemostática balanceada (1:1:1) e Crioprecipitado. |
 
 ---
 
 ## 5. Manejo Escalonado da Atonia Uterina (The Golden Hour)
 
 Diante do diagnóstico de Atonia Uterina, o manejo segue uma **linha temporal rigorosa em cascata** que não pode ser desordenada em prova:
+
+### Passo a Passo Sintético da Cascata Decisória:
+* **Passo 1 (0 a 10 min) - Medidas Iniciais:** Acionar Código Vermelho obstétrico, obter 2 acessos venosos periféricos calibrosos (14G/16G), esvaziar a bexiga por sonda vesical de demora (Foley) e manter Massagem Uterina Bimanual contínua (Manobra de Hamilton).
+* **Passo 2 (10 a 20 min) - Farmacoterapia Escalonada:** Infundir Ocitocina IV contínua (20-40 UI em 500 mL) associada ao Ácido Tranexâmico 1g IV nas primeiras 3h (WOMAN Trial) e Metilergometrina 0,2 mg IM (se normotensa) ou Misoprostol 800 mcg (se hipertensa).
+* **Passo 3 (15 a 30 min) - Tamponamento Mecânico:** Inserir Balão de Tamponamento Intrauterino (Bakri) com 300 a 500 mL de SF morno no parto vaginal. Se o teste do balão for positivo (sangramento cessa), manter por 12 a 24h; se negativo (sangramento ativo pelo dreno), indicar laparotomia imediata.
+* **Passo 4 (30 a 60 min) - Cirurgia Conservadora:** Laparotomia com Suturas Compressivas de B-Lynch ("em suspensório") e ligadura bilateral escalonada das artérias uterinas (O'Leary) e ilíacas internas (hipogástricas).
+* **Passo 5 (Tempo Final) - Cirurgia Definitiva:** Histerectomia Puerperal Subtotal de emergência como procedimento salvador de vida e controle de danos em paciente instável com choque refratário ou coagulopatia.
 
 ```hpp-golden-hour
 FLUXO_GOLDEN_HOUR
@@ -105,7 +113,7 @@ FLUXO_GOLDEN_HOUR
 
 ### B. Suturas Compressivas Uterinas (B-Lynch)
 * **Indicação:** Paciente com atonia uterina refratária ao tratamento farmacológico e ao balão intrauterino durante laparotomia cesárea ou pós-parto, com desejo de preservação da fertilidade.
-* **Técnica:** Alças de fio inabsorvível ou absorção lenta (Monocryl / Catgut cromado / PDS) que contornam o fundo uterino como um par de "suspensórios", comprimindo a parede anterior de encontro à posterior.
+* **Técnica:** Alças de fio absorvível ou absorção lenta (Monocryl / Catgut cromado / PDS) que contornam o fundo uterino como um par de "suspensórios", comprimindo a parede anterior de encontro à posterior.
 * **Teste Pré-Sutura:** Realizar compressão bimanual cirúrgica do útero antes de passar a sutura; se o sangramento vaginal diminuir significativamente, a sutura de B-Lynch tem alta chance de sucesso.
 
 ### C. Coagulopatia & Protocolo de Transfusão Maciça
@@ -116,15 +124,10 @@ FLUXO_GOLDEN_HOUR
 
 ---
 
-## 8. Pontos-Chave para Prova 💡
+## 8. Diretrizes Oficiais & Consensos de Referência
 
-* A profilaxia de escolha para 100% dos partos é **Ocitocina 10 UI IM** logo após a saída do concepto.
-* A principal causa de HPP é a **Atonia Uterina (~70% a 80%)**, cujo tratamento clínico de 1ª linha combina massagem de Hamilton + Ocitocina IV + Ácido Tranexâmico IV precoce.
-* **Metilergometrina é terminantemente contraindicada na gestante/puérpera hipertensa ou pré-eclâmptica**.
-* Se a massagem e os uterotônicos falharem no parto vaginal, o próximo passo imediato é o **Balão de Tamponamento Intrauterino (Bakri)**, antes de qualquer cirurgia invasiva.
-* Se o sangramento pelo dreno do balão de Bakri persistir (teste negativo), a conduta imediata é **laparotomia exploradora**.
-* A sutura hemostática conservadora mais cobrada em concurso é a **Sutura de B-Lynch** ("em suspensório").
-* Em ligaduras vasculares cirúrgicas, ligam-se as artérias **uterinas e ilíacas internas (hipogástricas)**; nunca a artéria ilíaca comum.
-* Na Inversão Uterina Aguda, **suspenda a ocitocina imediatamente**, faça a **Manobra de Taxe / Johnson** para reintroduzir o útero e só dequite a placenta após o útero estar na cavidade.
-* Índice de Choque (FC/PAS) $\ge 0,9$ indica sangramento grave oculto; $\ge 1,4$ exige hemotransfusão e UTI.
-* Se a puérpera sangra continuamente mas o **útero está firme e contraído**, a causa obrigatória é **Trauma de Trajeto** (revisar colo e vagina com valvas de peso).
+1. **FEBRASGO (Federação Brasileira das Associações de Ginecologia e Obstetrícia):** Tratado de Obstetrícia & Protocolos de Conduta em Hemorragia Pós-Parto (Comissão Nacional Especializada em Urgências Obstétricas).
+2. **Ministério da Saúde do Brasil / OPAS / OMS:** Manual Técnico de Hemorragia Pós-Parto e Estratégia Zero Morte Materna por Hemorragia.
+3. **American College of Obstetricians and Gynecologists (ACOG):** Practice Bulletin nº 183 (*Postpartum Hemorrhage*), revalidado e alinhado aos consensos internacionais.
+4. **International Federation of Gynecology and Obstetrics (FIGO):** *Updated guidelines for the management of postpartum haemorrhage* (2022/2024).
+5. **Ensaio Clínico WOMAN Trial Collaborators:** *Effect of early tranexamic acid on maternal mortality in women with postpartum haemorrhage* (The Lancet, 2017).

@@ -58,6 +58,11 @@ import { useTheme } from '@/context/ThemeContext';
 import { clinicalHierarchy, mockInstitutionsList, mockBancas } from '@/data/mockQuestions';
 import { AIPerformanceMentorCard } from './AIPerformanceMentorCard';
 import { DailyHabitsAndHourlyExplorer } from './DailyHabitsAndHourlyExplorer';
+import { useDashboardLayout } from '@/hooks/useDashboardLayout';
+import { DEFAULT_STATS_OVERVIEW_CARDS } from './dashboard/dashboardDefaults';
+import { FigmaCardWrapper } from './dashboard/FigmaCardWrapper';
+import { FigmaCustomizerBar } from './dashboard/FigmaCustomizerBar';
+
 
 // Ícone anatômico de Ginecologia: Útero, colo uterino, trompas de Falópio e ovários bilaterais
 export const UterusIcon: React.FC<{ className?: string; strokeWidth?: number; style?: React.CSSProperties }> = ({
@@ -301,6 +306,24 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
 }) => {
   const { mode, accentConfig } = useTheme();
 
+  // Hook de Personalização Estilo Figma (Aba Visão Geral)
+  const {
+    isCustomizing: isCustomizingOverview,
+    setIsCustomizing: setIsCustomizingOverview,
+    selectedCardId: selectedStatsCardId,
+    setSelectedCardId: setSelectedStatsCardId,
+    visibleCards: visibleOverviewCards,
+    hiddenCards: hiddenOverviewCards,
+    updateColSpan: updateOverviewColSpan,
+    updateCardSettings: updateStatsCardSettings,
+    moveCard: moveOverviewCard,
+    reorderCard: reorderOverviewCard,
+    toggleVisibility: toggleOverviewVisibility,
+    restoreDefaults: restoreOverviewDefaults,
+    autoConformLayout: autoConformStatsLayout,
+  } = useDashboardLayout('bancoresidencia_layout_stats', DEFAULT_STATS_OVERVIEW_CARDS);
+
+
   // Sub-abas principais: Visão Geral | Especialidades | Raio-X de Erros
   const [activeSubTab, setActiveSubTab] = useState<StatsSubTab>('overview');
 
@@ -331,6 +354,14 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
 
   // Estados de controle de filtros, busca de instituições e calendário
   const [hoveredPieIndex, setHoveredPieIndex] = useState<number | null>(null);
+  const [isPieAnimationDone, setIsPieAnimationDone] = useState<boolean>(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsPieAnimationDone(true);
+    }, 1500);
+    return () => clearTimeout(timer);
+  }, []);
   const [isFilterDropdownOpen, setIsFilterDropdownOpen] = useState<boolean>(false);
   const [instSearch, setInstSearch] = useState<string>('');
   const [isCalendarOpen, setIsCalendarOpen] = useState<boolean>(false);
@@ -1391,9 +1422,40 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
       ========================================================================== */}
       {activeSubTab === 'overview' && (
         <div className="space-y-6 animate-in fade-in duration-200">
-          {/* Grid de 4 KPIs Estratégicos */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            {/* Card 1: Volume Resolvido */}
+          {/* Barra Flutuante de Personalização Estilo Figma */}
+          <FigmaCustomizerBar
+            isCustomizing={isCustomizingOverview}
+            selectedCardTitle={visibleOverviewCards.find((c) => c.id === selectedStatsCardId)?.title}
+            onToggleCustomizing={() => {
+              if (isCustomizingOverview) {
+                autoConformStatsLayout();
+              }
+              setIsCustomizingOverview((prev) => !prev);
+            }}
+            onRestoreDefaults={restoreOverviewDefaults}
+            hiddenCards={hiddenOverviewCards}
+            onRestoreCard={toggleOverviewVisibility}
+            onDeselect={() => setSelectedStatsCardId(null)}
+          />
+
+          {/* Grid Principal Reorganizável Estilo Figma */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-5 auto-rows-min">
+            {visibleOverviewCards.map((cardConfig) => {
+              if (cardConfig.id === 'stats_kpi_volume') {
+                return (
+                  <FigmaCardWrapper
+                    key={cardConfig.id}
+                    config={cardConfig}
+                    isCustomizing={isCustomizingOverview}
+                    isSelected={selectedStatsCardId === cardConfig.id}
+                    onSelect={(id) => setSelectedStatsCardId(id)}
+                    onUpdateColSpan={updateOverviewColSpan}
+                    onUpdateSettings={updateStatsCardSettings}
+                    onMoveCard={moveOverviewCard}
+                    onToggleVisibility={toggleOverviewVisibility}
+                    onReorder={reorderOverviewCard}
+                  >
+                    {/* Card 1: Volume Resolvido */}
             <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-5 flex flex-col justify-between relative overflow-hidden group hover:border-slate-400 dark:hover:border-zinc-700 transition-colors">
               <div>
                 <div className="flex items-center justify-between mb-3">
@@ -1422,8 +1484,24 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                 />
               </div>
             </div>
-
-            {/* Card 2: Acertos Líquidos */}
+                  </FigmaCardWrapper>
+                );
+              }
+              if (cardConfig.id === 'stats_kpi_taxa') {
+                return (
+                  <FigmaCardWrapper
+                    key={cardConfig.id}
+                    config={cardConfig}
+                    isCustomizing={isCustomizingOverview}
+                    isSelected={selectedStatsCardId === cardConfig.id}
+                    onSelect={(id) => setSelectedStatsCardId(id)}
+                    onUpdateColSpan={updateOverviewColSpan}
+                    onUpdateSettings={updateStatsCardSettings}
+                    onMoveCard={moveOverviewCard}
+                    onToggleVisibility={toggleOverviewVisibility}
+                    onReorder={reorderOverviewCard}
+                  >
+                    {/* Card 2: Acertos Líquidos */}
             <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-5 flex flex-col justify-between relative overflow-hidden group hover:border-slate-400 dark:hover:border-zinc-700 transition-colors">
               <div>
                 <div className="flex items-center justify-between mb-3">
@@ -1449,8 +1527,24 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                 />
               </div>
             </div>
-
-            {/* Card 3: Aproveitamento (com marcador de meta em 80%) */}
+                  </FigmaCardWrapper>
+                );
+              }
+              if (cardConfig.id === 'stats_kpi_media') {
+                return (
+                  <FigmaCardWrapper
+                    key={cardConfig.id}
+                    config={cardConfig}
+                    isCustomizing={isCustomizingOverview}
+                    isSelected={selectedStatsCardId === cardConfig.id}
+                    onSelect={(id) => setSelectedStatsCardId(id)}
+                    onUpdateColSpan={updateOverviewColSpan}
+                    onUpdateSettings={updateStatsCardSettings}
+                    onMoveCard={moveOverviewCard}
+                    onToggleVisibility={toggleOverviewVisibility}
+                    onReorder={reorderOverviewCard}
+                  >
+                    {/* Card 3: Aproveitamento (com marcador de meta em 80%) */}
             <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-5 flex flex-col justify-between relative overflow-hidden group hover:border-slate-400 dark:hover:border-zinc-700 transition-colors">
               <div>
                 <div className="flex items-center justify-between mb-3">
@@ -1492,8 +1586,24 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                 />
               </div>
             </div>
-
-            {/* Card 4: Ritmo Médio */}
+                  </FigmaCardWrapper>
+                );
+              }
+              if (cardConfig.id === 'stats_kpi_ritmo') {
+                return (
+                  <FigmaCardWrapper
+                    key={cardConfig.id}
+                    config={cardConfig}
+                    isCustomizing={isCustomizingOverview}
+                    isSelected={selectedStatsCardId === cardConfig.id}
+                    onSelect={(id) => setSelectedStatsCardId(id)}
+                    onUpdateColSpan={updateOverviewColSpan}
+                    onUpdateSettings={updateStatsCardSettings}
+                    onMoveCard={moveOverviewCard}
+                    onToggleVisibility={toggleOverviewVisibility}
+                    onReorder={reorderOverviewCard}
+                  >
+                    {/* Card 4: Ritmo Médio */}
             <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-5 flex flex-col justify-between relative overflow-hidden group hover:border-slate-400 dark:hover:border-zinc-700 transition-colors">
               <div>
                 <div className="flex items-center justify-between mb-3">
@@ -1520,9 +1630,24 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                 />
               </div>
             </div>
-          </div>
-
-          {/* Gráfico de Evolução Diária (Barras Empilhadas + Tendência Suave) */}
+                  </FigmaCardWrapper>
+                );
+              }
+              if (cardConfig.id === 'stats_evolucao') {
+                return (
+                  <FigmaCardWrapper
+                    key={cardConfig.id}
+                    config={cardConfig}
+                    isCustomizing={isCustomizingOverview}
+                    isSelected={selectedStatsCardId === cardConfig.id}
+                    onSelect={(id) => setSelectedStatsCardId(id)}
+                    onUpdateColSpan={updateOverviewColSpan}
+                    onUpdateSettings={updateStatsCardSettings}
+                    onMoveCard={moveOverviewCard}
+                    onToggleVisibility={toggleOverviewVisibility}
+                    onReorder={reorderOverviewCard}
+                  >
+                    {/* Gráfico de Evolução Diária (Barras Empilhadas + Tendência Suave) */}
           <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-5 sm:p-6 space-y-4">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
               {/* Título limpo 'Evolução' e Pílulas Rápidas de Período */}
@@ -1727,14 +1852,36 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               </ResponsiveContainer>
             </div>
           </div>
-
-          {/* Análise de Hábitos Diários, Cronobiologia e Gráfico de Horas */}
+                  </FigmaCardWrapper>
+                );
+              }
+              if (cardConfig.id === 'stats_habits') {
+                return (
+                  <FigmaCardWrapper
+                    key={cardConfig.id}
+                    config={cardConfig}
+                    isCustomizing={isCustomizingOverview}
+                    isSelected={selectedStatsCardId === cardConfig.id}
+                    onSelect={(id) => setSelectedStatsCardId(id)}
+                    onUpdateColSpan={updateOverviewColSpan}
+                    onUpdateSettings={updateStatsCardSettings}
+                    onMoveCard={moveOverviewCard}
+                    onToggleVisibility={toggleOverviewVisibility}
+                    onReorder={reorderOverviewCard}
+                  >
+                    {/* Análise de Hábitos Diários, Cronobiologia e Gráfico de Horas */}
           <DailyHabitsAndHourlyExplorer
             userAnswers={userAnswers}
             period={filters.period}
             dailyGoal={30}
             totalAnsweredInPeriod={activeMetrics.answered}
           />
+                  </FigmaCardWrapper>
+                );
+              }
+              return null;
+            })}
+          </div>
         </div>
       )}
 
@@ -1749,7 +1896,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               <h2 className="text-base font-bold text-slate-900 dark:text-white">Distribuição por Grande Área</h2>
             </div>
 
-            <div className="h-64 w-full relative my-4 flex items-center justify-center">
+            <div className={`h-64 w-full relative my-4 flex items-center justify-center ${!isPieAnimationDone ? 'pointer-events-none' : ''}`}>
               <ResponsiveContainer width="100%" height="100%">
                 <PieChart>
                   <Pie
@@ -1761,8 +1908,19 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     innerRadius={68}
                     outerRadius={95}
                     paddingAngle={3}
-                    onMouseEnter={(_, index) => setHoveredPieIndex(index)}
-                    onMouseLeave={() => setHoveredPieIndex(null)}
+                    isAnimationActive={!isPieAnimationDone}
+                    animationBegin={0}
+                    animationDuration={1400}
+                    animationEasing="ease-out"
+                    onAnimationEnd={() => setIsPieAnimationDone(true)}
+                    onMouseEnter={(_, index) => {
+                      if (!isPieAnimationDone) return;
+                      setHoveredPieIndex(index);
+                    }}
+                    onMouseLeave={() => {
+                      if (!isPieAnimationDone) return;
+                      setHoveredPieIndex(null);
+                    }}
                     stroke="none"
                   >
                     {donutData.map((entry, index) => (

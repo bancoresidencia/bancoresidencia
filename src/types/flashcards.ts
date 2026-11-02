@@ -13,6 +13,24 @@ export interface FlashcardProgress {
   lastReviewDate?: string;
   nextReviewDate: string;
   lapses: number;
+  lastRating?: FlashcardRating;
+  history?: FlashcardRating[];
+}
+
+export interface CardCommunityStats {
+  totalStudents: number;
+  communityRetentionRate: number; // ex: 78 (%)
+  againPercent: number; // ex: 10 (%)
+  hardPercent: number; // ex: 15 (%)
+  goodPercent: number; // ex: 45 (%)
+  easyPercent: number; // ex: 30 (%)
+  averageSeconds: number; // ex: 12
+  difficultyLabel: 'Baixa' | 'Média' | 'Alta' | 'Muito Alta';
+  comparisonPercentile: number; // ex: 82 (Top 18%)
+  userTotalReviews: number;
+  userRetentionRate: number; // ex: 100
+  userLastRating?: FlashcardRating;
+  userIntervalDays: number;
 }
 
 export interface FlashcardItem {

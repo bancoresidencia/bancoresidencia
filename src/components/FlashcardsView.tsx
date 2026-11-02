@@ -24,7 +24,8 @@ import {
   History,
   Bookmark,
   TrendingUp,
-  Tag
+  Tag,
+  Shuffle
 } from 'lucide-react';
 import {
   FlashcardItem,
@@ -134,6 +135,15 @@ function normalizeText(text: string): string {
     .trim();
 }
 
+function shuffleCards<T>(array: T[]): T[] {
+  const arr = [...array];
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+}
+
 function itemMatchesSpecialty(
   item: { specialty: string; theme: string; focus: string },
   specHierarchyKey: string
@@ -227,6 +237,20 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
   // Termo de Busca Rápida (Flashcards & Resumos)
   const [searchQuery, setSearchQuery] = useState('');
 
+  // Filtro exclusivo para estudar apenas flashcards essenciais (alta incidência em provas)
+  const [filterEssentialOnly, setFilterEssentialOnly] = useState(false);
+
+  // Opção de embaralhar flashcards (com persistência no localStorage)
+  const [isShuffleEnabled, setIsShuffleEnabled] = useState<boolean>(() => {
+    if (typeof window === 'undefined') return true;
+    try {
+      const saved = localStorage.getItem('bancoresidencia_flashcards_shuffle');
+      return saved !== null ? saved === 'true' : true;
+    } catch {
+      return true;
+    }
+  });
+
   const normalizedQuery = useMemo(() => normalizeText(searchQuery), [searchQuery]);
 
   const continuationTitle = useMemo(() => {
@@ -287,29 +311,58 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
     setLastReadSummary(flashcardsService.getLastReadSummary());
   }, []);
 
+  // Quantidade total de flashcards essenciais
+  const essentialCardsCount = useMemo(() => {
+    return allFlashcards.filter((c) => c.priority === 'essential').length;
+  }, [allFlashcards]);
+
   // Iniciar sessão de estudo de flashcards e registrar como última sessão
-  const handleStartStudy = (cardsToStudy: FlashcardItem[], sessionTitle?: string) => {
+  const handleStartStudy = (
+    cardsToStudy: FlashcardItem[],
+    sessionTitle?: string,
+    overridePriorityOnly?: boolean
+  ) => {
     if (!cardsToStudy || cardsToStudy.length === 0) return;
+
+    const shouldFilterEssential = overridePriorityOnly ?? filterEssentialOnly;
+    const filtered = shouldFilterEssential
+      ? cardsToStudy.filter((c) => c.priority === 'essential')
+      : cardsToStudy;
+
+    if (filtered.length === 0) return;
+
+    const listToLaunch = isShuffleEnabled ? shuffleCards(filtered) : [...filtered];
 
     const title =
       sessionTitle ||
-      (cardsToStudy[0]?.specialty
-        ? `${cardsToStudy[0].specialty} (${cardsToStudy.length} cards)`
+      (listToLaunch[0]?.specialty
+        ? `${listToLaunch[0].specialty} (${listToLaunch.length} cards)`
         : 'Sessão de Flashcards');
 
     const sessionInfo: LastFlashcardSessionInfo = {
       deckTitle: title,
-      specialty: cardsToStudy[0]?.specialty,
-      theme: cardsToStudy[0]?.theme,
-      focus: cardsToStudy[0]?.focus,
-      cardIds: cardsToStudy.map((c) => c.id),
-      cardCount: cardsToStudy.length,
+      specialty: listToLaunch[0]?.specialty,
+      theme: listToLaunch[0]?.theme,
+      focus: listToLaunch[0]?.focus,
+      cardIds: listToLaunch.map((c) => c.id),
+      cardCount: listToLaunch.length,
       lastStudiedAt: new Date().toISOString()
     };
 
     flashcardsService.saveLastFlashcardSession(sessionInfo);
     setLastFlashcardSession(sessionInfo);
-    setActiveSessionCards(cardsToStudy);
+    setActiveSessionCards(listToLaunch);
+  };
+
+  // Iniciar sessão exclusiva com os flashcards essenciais (mais cobrados na prova)
+  const handleStartEssentialStudy = () => {
+    const essentials = allFlashcards.filter((c) => c.priority === 'essential');
+    if (essentials.length === 0) return;
+    handleStartStudy(
+      essentials,
+      `Flashcards Essenciais de Prova (${essentials.length} cards)`,
+      true
+    );
   };
 
   // Abrir resumo clínico e registrar como último resumo lido
@@ -349,12 +402,13 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
 
   // Helper para obter flashcards de uma especialidade inteira
   const getCardsForSpecialty = (specName: string) => {
-    return allFlashcards.filter((c) => itemMatchesSpecialty(c, specName));
+    const list = allFlashcards.filter((c) => itemMatchesSpecialty(c, specName));
+    return filterEssentialOnly ? list.filter((c) => c.priority === 'essential') : list;
   };
 
   // Helper para obter flashcards de um tema específico
   const getCardsForTema = (specName: string, temaName: string) => {
-    return allFlashcards
+    const list = allFlashcards
       .filter((c) => itemMatchesSpecialty(c, specName))
       .filter((c) => {
         const normTema = normalizeText(temaName);
@@ -375,11 +429,12 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
 
         return matchesTh || isEndo || isCardio || isGinecoOnco || isMioma || isObstetr || isPrev;
       });
+    return filterEssentialOnly ? list.filter((c) => c.priority === 'essential') : list;
   };
 
   // Helper para obter flashcards de um foco específico
   const getCardsForFoco = (specName: string, temaName: string, focoName: string) => {
-    return getCardsForTema(specName, temaName).filter((c) => {
+    const list = getCardsForTema(specName, temaName).filter((c) => {
       const normFoco = normalizeText(focoName);
       const normItemFo = normalizeText(c.focus);
       const normFront = c.front ? normalizeText(c.front) : '';
@@ -404,6 +459,7 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
 
       return direct || content || wordsMatch;
     });
+    return filterEssentialOnly ? list.filter((c) => c.priority === 'essential') : list;
   };
 
   // Helper para verificar se um foco clínico dá match com o termo de busca
@@ -729,6 +785,7 @@ O foco clínico **${focoName}** integra o tema de **${temaName}** em **${specNam
         cards={activeSessionCards}
         onExit={() => setActiveSessionCards(null)}
         onOpenMaterial={(mat) => handleOpenMaterial(mat)}
+        initialShuffled={isShuffleEnabled}
       />
     );
   }
@@ -794,28 +851,66 @@ O foco clínico **${focoName}** integra o tema de **${temaName}** em **${specNam
             </div>
           </div>
 
-          {/* Botão de Adicionar Flashcard no Topo */}
+          {/* Ações Rápidas de Estudo no Topo */}
           {mode === 'flashcards' && (
-            <button
-              type="button"
-              onClick={() => {
-                setIsAddCardDrawerOpen(true);
-                if (drawerTemas.length > 0 && !newCardTema) {
-                  setNewCardTema(drawerTemas[0].tema);
-                  if (drawerTemas[0].focos.length > 0) {
-                    setNewCardFoco(drawerTemas[0].focos[0].foco);
+            <div className="flex items-center gap-2 flex-wrap w-full sm:w-auto">
+              {/* Botão Resolver Só Essenciais */}
+              <button
+                type="button"
+                onClick={handleStartEssentialStudy}
+                title={`Iniciar sessão apenas com os ${essentialCardsCount} flashcards essenciais mais cobrados em prova`}
+                className="px-3.5 sm:px-4 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer shadow-xs flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500/20 to-orange-500/20 hover:from-amber-500/30 hover:to-orange-500/30 text-amber-700 dark:text-amber-300 border border-amber-500/40 active:scale-98"
+              >
+                <Star className="w-4 h-4 fill-amber-500 text-amber-500 shrink-0" />
+                <span>Resolver Só Essenciais</span>
+                <span className="px-1.5 py-0.5 rounded-md text-[10px] font-mono bg-amber-500/20 text-amber-900 dark:text-amber-200">
+                  {essentialCardsCount}
+                </span>
+              </button>
+
+              {/* Botão Embaralhar Flashcards */}
+              <button
+                type="button"
+                onClick={() => {
+                  const next = !isShuffleEnabled;
+                  setIsShuffleEnabled(next);
+                  try {
+                    localStorage.setItem('bancoresidencia_flashcards_shuffle', String(next));
+                  } catch { }
+                }}
+                title={isShuffleEnabled ? 'Embaralhar flashcards está ativado (Clique para ordem fixa)' : 'Ordem fixa dos flashcards (Clique para embaralhar)'}
+                className={`px-3 sm:px-3.5 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 cursor-pointer border shadow-2xs active:scale-98 ${isShuffleEnabled
+                    ? 'bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900 border-zinc-900 dark:border-zinc-100'
+                    : 'bg-zinc-50 dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-800'
+                  }`}
+              >
+                <Shuffle className="w-3.5 h-3.5 shrink-0" />
+                <span className="hidden sm:inline">{isShuffleEnabled ? 'Embaralhar: ON' : 'Embaralhar: OFF'}</span>
+              </button>
+
+              {/* Botão de Adicionar Flashcard */}
+              <button
+                type="button"
+                onClick={() => {
+                  setIsAddCardDrawerOpen(true);
+                  if (drawerTemas.length > 0 && !newCardTema) {
+                    setNewCardTema(drawerTemas[0].tema);
+                    if (drawerTemas[0].focos.length > 0) {
+                      setNewCardFoco(drawerTemas[0].focos[0].foco);
+                    }
                   }
-                }
-              }}
-              className="w-full sm:w-auto px-4 sm:px-5 py-2.5 rounded-xl text-white text-xs font-bold transition-all cursor-pointer shadow-md flex items-center justify-center gap-2 hover:scale-102 active:scale-98"
-              style={{
-                backgroundColor: accentConfig.primaryHex,
-                boxShadow: `0 6px 16px -4px ${accentConfig.bgRgba}`
-              }}
-            >
-              <Plus className="w-4 h-4 stroke-[2.5]" />
-              <span>Adicionar Flashcard</span>
-            </button>
+                }}
+                className="px-3.5 sm:px-4 py-2.5 rounded-xl text-white text-xs font-bold transition-all cursor-pointer shadow-md flex items-center justify-center gap-2 hover:opacity-95 active:scale-98"
+                style={{
+                  backgroundColor: accentConfig.primaryHex,
+                  boxShadow: `0 6px 16px -4px ${accentConfig.bgRgba}`
+                }}
+              >
+                <Plus className="w-4 h-4 stroke-[2.5]" />
+                <span className="hidden sm:inline">Adicionar Flashcard</span>
+                <span className="sm:hidden">Criar</span>
+              </button>
+            </div>
           )}
         </div>
 
@@ -979,37 +1074,57 @@ O foco clínico **${focoName}** integra o tema de **${temaName}** em **${specNam
         )}
       </div>
 
-      {/* 2. BARRA DE BUSCA LOGO ACIMA DAS ESPECIALIDADES */}
-      <div className="relative">
-        <Search className="w-4 h-4 text-slate-400 dark:text-zinc-500 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
-        <input
-          type="text"
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          placeholder={
-            mode === 'flashcards'
-              ? 'Buscar flashcards por foco clínico, tema ou pergunta...'
-              : 'Buscar resumos clínicos por tema, diretriz ou foco...'
-          }
-          className="w-full pl-10 pr-24 py-3 rounded-2xl bg-white dark:bg-[#121215] border border-slate-200 dark:border-zinc-800/80 text-xs sm:text-sm text-slate-900 dark:text-zinc-100 placeholder:text-slate-400 dark:placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-slate-300 dark:focus:ring-zinc-700 shadow-xs transition-all"
-        />
-        <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-2">
-          {searchQuery && (
-            <>
-              <span className="text-[11px] font-bold text-slate-500 dark:text-zinc-400 hidden sm:inline">
-                {totalMatchingFocosCount ?? 0} {totalMatchingFocosCount === 1 ? 'resultado' : 'resultados'}
-              </span>
-              <button
-                type="button"
-                onClick={() => setSearchQuery('')}
-                className="p-1 text-slate-400 hover:text-slate-600 dark:hover:text-zinc-200 transition-colors cursor-pointer"
-                title="Limpar busca"
-              >
-                <X className="w-3.5 h-3.5" />
-              </button>
-            </>
-          )}
+      {/* 2. BARRA DE BUSCA E FILTRO DE ESSENCIAIS LOGO ACIMA DAS ESPECIALIDADES */}
+      <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5">
+        <div className="relative flex-1">
+          <Search className="w-4 h-4 text-slate-400 dark:text-zinc-500 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+          <input
+            type="text"
+            value={searchQuery}
+            onChange={(e) => setSearchQuery(e.target.value)}
+            placeholder={
+              mode === 'flashcards'
+                ? 'Buscar flashcards por foco clínico, tema ou pergunta...'
+                : 'Buscar resumos clínicos por tema, diretriz ou foco...'
+            }
+            className="w-full pl-10 pr-24 py-3 rounded-2xl bg-white dark:bg-[#121215] border border-slate-200 dark:border-zinc-800/80 text-xs sm:text-sm text-slate-900 dark:text-zinc-100 placeholder:text-slate-400 dark:placeholder:text-zinc-500 focus:outline-none focus:ring-2 focus:ring-slate-300 dark:focus:ring-zinc-700 shadow-xs transition-all"
+          />
+          <div className="absolute right-3 top-1/2 -translate-y-1/2 flex items-center gap-2">
+            {searchQuery && (
+              <>
+                <span className="text-[11px] font-bold text-slate-500 dark:text-zinc-400 hidden sm:inline">
+                  {totalMatchingFocosCount ?? 0} {totalMatchingFocosCount === 1 ? 'resultado' : 'resultados'}
+                </span>
+                <button
+                  type="button"
+                  onClick={() => setSearchQuery('')}
+                  className="p-1 text-slate-400 hover:text-slate-600 dark:hover:text-zinc-200 transition-colors cursor-pointer"
+                  title="Limpar busca"
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              </>
+            )}
+          </div>
         </div>
+
+        {mode === 'flashcards' && (
+          <button
+            type="button"
+            onClick={() => setFilterEssentialOnly((prev) => !prev)}
+            className={`px-4 py-3 rounded-2xl text-xs font-bold transition-all border flex items-center justify-center gap-2 cursor-pointer shadow-xs whitespace-nowrap shrink-0 active:scale-98 ${filterEssentialOnly
+                ? 'bg-amber-500/15 border-amber-500/40 text-amber-700 dark:text-amber-300 ring-2 ring-amber-500/20'
+                : 'bg-white dark:bg-[#121215] border-slate-200 dark:border-zinc-800/80 text-zinc-600 dark:text-zinc-400 hover:border-slate-300 dark:hover:border-zinc-700'
+              }`}
+            title="Alternar entre ver todos os flashcards ou apenas os essenciais de alta incidência"
+          >
+            <Star className={`w-4 h-4 ${filterEssentialOnly ? 'fill-amber-500 text-amber-500' : 'text-zinc-400'}`} />
+            <span>{filterEssentialOnly ? 'Filtro: Só Essenciais Ativo' : 'Filtrar Só Essenciais'}</span>
+            <span className="px-1.5 py-0.5 rounded-md text-[10px] font-mono bg-amber-500/20 text-amber-900 dark:text-amber-200">
+              {essentialCardsCount}
+            </span>
+          </button>
+        )}
       </div>
 
       {/* 3. ESPECIALIDADES MÉDICAS EM CARDS (UM EMBAIXO DO OUTRO) */}
@@ -1078,8 +1193,8 @@ O foco clínico **${focoName}** integra o tema de **${temaName}** em **${specNam
               <div
                 key={spec.id}
                 className={`rounded-2xl border transition-all overflow-hidden ${isExpanded
-                    ? 'bg-white dark:bg-[#121215] border-zinc-300 dark:border-zinc-700 shadow-sm'
-                    : 'bg-white dark:bg-[#121215] border-zinc-200 dark:border-zinc-800/80 hover:border-zinc-300 dark:hover:border-zinc-700'
+                  ? 'bg-white dark:bg-[#121215] border-zinc-300 dark:border-zinc-700 shadow-sm'
+                  : 'bg-white dark:bg-[#121215] border-zinc-200 dark:border-zinc-800/80 hover:border-zinc-300 dark:hover:border-zinc-700'
                   }`}
               >
                 {/* Linha da Especialidade: Apenas Ícone + Nome (Sem texto embaixo, sem badge de contagem) */}
@@ -1097,8 +1212,8 @@ O foco clínico **${focoName}** integra o tema de **${temaName}** em **${specNam
                           toggleSpecialtySelection(spec.name);
                         }}
                         className={`w-5 h-5 rounded-md border flex items-center justify-center transition-all cursor-pointer shrink-0 ${isSpecSelected
-                            ? 'text-white shadow-2xs'
-                            : 'border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 hover:border-zinc-400'
+                          ? 'text-white shadow-2xs'
+                          : 'border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 hover:border-zinc-400'
                           }`}
                         style={{
                           backgroundColor: isSpecSelected ? accentConfig.primaryHex : undefined,
@@ -1151,8 +1266,8 @@ O foco clínico **${focoName}** integra o tema de **${temaName}** em **${specNam
                           <div
                             onClick={() => toggleTemaExpand(spec.name, tem.tema)}
                             className={`p-3 flex items-center justify-between gap-3 transition-colors cursor-pointer select-none ${isTemaSelected
-                                ? 'bg-zinc-100/90 dark:bg-zinc-800/80'
-                                : 'hover:bg-zinc-50 dark:hover:bg-zinc-900/60'
+                              ? 'bg-zinc-100/90 dark:bg-zinc-800/80'
+                              : 'hover:bg-zinc-50 dark:hover:bg-zinc-900/60'
                               }`}
                           >
                             <div className="flex items-center gap-2.5 min-w-0">
@@ -1165,8 +1280,8 @@ O foco clínico **${focoName}** integra o tema de **${temaName}** em **${specNam
                                     toggleTemaSelection(spec.name, tem.tema);
                                   }}
                                   className={`w-4 h-4 rounded-md border flex items-center justify-center transition-all cursor-pointer shrink-0 ${isTemaSelected
-                                      ? 'text-white shadow-2xs'
-                                      : 'border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 hover:border-zinc-400'
+                                    ? 'text-white shadow-2xs'
+                                    : 'border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 hover:border-zinc-400'
                                     }`}
                                   style={{
                                     backgroundColor: isTemaSelected
@@ -1344,8 +1459,8 @@ O foco clínico **${focoName}** integra o tema de **${temaName}** em **${specNam
                                     <div
                                       key={foc.foco}
                                       className={`p-2.5 rounded-lg border border-zinc-200/60 dark:border-zinc-800/60 bg-white dark:bg-[#121215] flex items-center justify-between gap-3 transition-colors ${isFocoSelected
-                                          ? 'bg-zinc-100/90 dark:bg-zinc-800'
-                                          : 'hover:bg-zinc-50 dark:hover:bg-zinc-900/40'
+                                        ? 'bg-zinc-100/90 dark:bg-zinc-800'
+                                        : 'hover:bg-zinc-50 dark:hover:bg-zinc-900/40'
                                         }`}
                                     >
                                       <div className="flex items-center gap-2 flex-1 min-w-0">
@@ -1359,8 +1474,8 @@ O foco clínico **${focoName}** integra o tema de **${temaName}** em **${specNam
                                             )
                                           }
                                           className={`w-4 h-4 rounded-md border flex items-center justify-center transition-all cursor-pointer shrink-0 ${isFocoSelected
-                                              ? 'text-white shadow-2xs'
-                                              : 'border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 hover:border-zinc-400'
+                                            ? 'text-white shadow-2xs'
+                                            : 'border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 hover:border-zinc-400'
                                             }`}
                                           style={{
                                             backgroundColor: isFocoSelected
@@ -1424,6 +1539,25 @@ O foco clínico **${focoName}** integra o tema de **${temaName}** em **${specNam
             >
               Limpar
             </button>
+
+            {selectedCardsList.some((c) => c.priority === 'essential') && (
+              <button
+                type="button"
+                onClick={() =>
+                  handleStartStudy(
+                    selectedCardsList.filter((c) => c.priority === 'essential'),
+                    `Essenciais Selecionados (${selectedCardsList.filter((c) => c.priority === 'essential').length} cards)`,
+                    true
+                  )
+                }
+                className="px-3 py-2 rounded-xl text-xs font-bold bg-amber-500/20 hover:bg-amber-500/30 text-amber-300 border border-amber-500/40 transition-all inline-flex items-center gap-1.5 cursor-pointer shadow-xs active:scale-95"
+                title="Estudar somente os cards essenciais dos itens selecionados"
+              >
+                <Star className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />
+                <span className="hidden sm:inline">Só Essenciais</span>
+                <span>({selectedCardsList.filter((c) => c.priority === 'essential').length})</span>
+              </button>
+            )}
 
             <button
               type="button"
@@ -1621,14 +1755,14 @@ O foco clínico **${focoName}** integra o tema de **${temaName}** em **${specNam
                     )
                   }
                   className={`inline-flex items-center gap-2 px-3 py-2 rounded-xl font-bold border transition-colors cursor-pointer ${newCardPriority === 'essential'
-                      ? 'bg-amber-500/15 text-amber-700 dark:text-amber-400 border-amber-500/30'
-                      : 'bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400'
+                    ? 'bg-amber-500/15 text-amber-700 dark:text-amber-400 border-amber-500/30'
+                    : 'bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400'
                     }`}
                 >
                   <Star
                     className={`w-3.5 h-3.5 ${newCardPriority === 'essential'
-                        ? 'fill-amber-500 text-amber-500'
-                        : 'text-zinc-400'
+                      ? 'fill-amber-500 text-amber-500'
+                      : 'text-zinc-400'
                       }`}
                   />
                   <span>Cartão Prioritário (Alta Relevância)</span>

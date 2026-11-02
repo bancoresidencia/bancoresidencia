@@ -2458,6 +2458,8 @@ export default function Home() {
           className={`w-full mx-auto flex-1 transition-all ${
             activeTab === 'home' && !user
               ? 'p-0 max-w-none overflow-x-hidden'
+              : activeTab === 'home'
+              ? 'px-4 sm:px-6 max-w-6xl pt-3 pb-8 sm:pt-3.5 sm:pb-10 space-y-4 sm:space-y-5'
               : activeTab === 'banco' && bancoMode === 'filtros'
               ? 'px-3 sm:px-6 max-w-6xl lg:h-[calc(100vh-4.75rem)] lg:max-h-[calc(100vh-4.75rem)] flex flex-col justify-between py-2 sm:py-2.5 lg:overflow-hidden'
               : 'px-4 sm:px-6 max-w-6xl py-9 sm:py-10 space-y-9 sm:space-y-11'
@@ -2507,6 +2509,27 @@ export default function Home() {
                   setActiveListId(null);
                   setSessionQuestionLimit(count);
                   setCurrentQuestionIndex(0);
+                  setActiveTab('banco');
+                  setBancoMode('resolucao');
+                }}
+                onStartTopicPractice={(specialty, tema, search, limit = 5) => {
+                  setAdvancedFilters((prev) => ({
+                    ...prev,
+                    especialidades: specialty ? [specialty] : [],
+                    temas: tema ? [tema] : [],
+                    subfocos: [],
+                    search: search || ''
+                  }));
+                  setActiveListId(null);
+                  setSessionQuestionIds(null);
+                  setSessionAnswers({});
+                  setSessionQuestionLimit(limit);
+                  setCurrentQuestionIndex(0);
+                  setQuestionsPage(1);
+                  setPreviousView({
+                    tab: 'home',
+                    label: 'Início'
+                  });
                   setActiveTab('banco');
                   setBancoMode('resolucao');
                 }}
