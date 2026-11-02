@@ -394,6 +394,9 @@ interface ThemeContextType {
   toggleMode: () => void;
   setMode: (mode: ThemeMode) => void;
   setAccent: (accent: AccentColor) => void;
+  isDashboardCustomizing: boolean;
+  setIsDashboardCustomizing: React.Dispatch<React.SetStateAction<boolean>>;
+  toggleDashboardCustomizing: () => void;
 }
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
@@ -448,6 +451,8 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   const [mode, setModeState] = useState<ThemeMode>('dark');
   const [accent, setAccentState] = useState<AccentColor>('blue');
   const [isMounted, setIsMounted] = useState<boolean>(false);
+  const [isDashboardCustomizing, setIsDashboardCustomizing] = useState<boolean>(false);
+  const toggleDashboardCustomizing = () => setIsDashboardCustomizing((prev) => !prev);
 
   const isInitialMount = useRef(true);
 
@@ -583,7 +588,10 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         accentConfig: activeConfig,
         toggleMode,
         setMode,
-        setAccent
+        setAccent,
+        isDashboardCustomizing,
+        setIsDashboardCustomizing,
+        toggleDashboardCustomizing
       }}
     >
       {children}

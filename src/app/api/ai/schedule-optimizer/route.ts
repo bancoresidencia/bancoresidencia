@@ -265,6 +265,7 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
     const events: CalendarSlotInput[] = body.events || [];
     const userContext = body.userContext || {};
+    const userCommand: string = (body.userCommand || body.prompt || '').trim();
 
     const areaName = userContext.recommendedArea || 'Clínica Médica';
     const targetExam = userContext.targetExamName || 'ENARE 2026';
@@ -273,7 +274,7 @@ export async function POST(req: NextRequest) {
     // 1. Calcula os intervalos livres matematicamente
     const freeGaps = calculateFreeGaps(events);
 
-    if (freeGaps.length === 0) {
+    if (freeGaps.length === 0 && !userCommand) {
       return NextResponse.json({
         success: true,
         summary: 'Sua agenda do Google está com horários contínuos ocupados hoje. Não encontramos intervalos livres de pelo menos 30 minutos.',
@@ -289,7 +290,7 @@ export async function POST(req: NextRequest) {
     try {
       const prompt = `
 Você é o Coordenador Pedagógico e Preceptor Médico de Residência Médica da plataforma Banco Residência.
-O estudante conectou o Google Agenda e deseja um planejamento cirúrgico e adaptativo de estudos para os horários LIVRES de hoje.
+O estudante conectou o Google Agenda e deseja um planejamento cirúrgico e adaptativo de estudos para os horários de hoje.
 
 DADOS DA ROTINA DO ESTUDANTE:
 - Eventos atuais sincronizados do Google Agenda:
@@ -298,23 +299,27 @@ ${JSON.stringify(events.map(e => ({ title: e.title, horario: `${e.startTime} às
 - INTERVALOS LIVRES IDENTIFICADOS NO DIA:
 ${JSON.stringify(freeGaps.map(g => ({ horario: `${g.startTime} às ${g.endTime}`, duracaoMin: g.durationMinutes })))}
 
+${userCommand ? `PEDIDO / COMANDO ESPECÍFICO DO ESTUDANTE:
+"${userCommand}"
+IMPORTANTE: Atenda rigorosamente ao pedido do aluno acima! Se ele pediu uma faixa de horário específica (ex: "o que fazer das 14h às 18h", ou "bloco de 30 min"), monte o planejamento especificamente para esse intervalo e objetivo solicitado.` : ''}
+
 - Exame de Residência Alvo: ${targetExam}
 - Área com maior necessidade de foco: ${areaName}
 - Meta diária de questões: ${dailyGoal}
 
 REGRAS PEDAGÓGICAS E PSICOMÉTRICAS:
-1. NÃO colida com os compromissos existentes do Google Agenda. Use APENAS os intervalos livres listados.
+1. NÃO colida com os compromissos existentes do Google Agenda (a menos que o usuário tenha pedido expressamente para alocar um horário).
 2. Cada tarefa deve pertencer a uma das categorias:
    - "estudo" (ação: "treinar"): Treino focado de questões TRI com gabarito comentado
    - "flashcard" (ação: "flashcards"): Baralho ativo espaçado algoritmo FSRS
    - "revisao" (ação: "caderno_erros" ou "mnemonico"): Reteste de erros e fixação de pegadinhas
    - "simulado" (ação: "simulado"): Simulado expresso TRI sob pressão de tempo (Blitz 10Q)
-3. Sugira de 2 a 4 blocos de estudo no total, distribuídos harmoniosamente nos intervalos livres.
+3. Sugira de 1 a 4 blocos de estudo no total, distribuídos harmoniosamente.
 4. Para cada bloco, explique em 1 frase curta e motivadora o porquê pedagógico daquele horário (cronobiologia e descanso).
 
 Responda OBRIGATORIAMENTE em JSON válido com a estrutura:
 {
-  "summary": "Resumo clínico amigável e direto de 1 a 2 frases analisando o dia do aluno",
+  "summary": "Resumo clínico amigável e direto de 1 a 2 frases analisando o pedido ou dia do aluno",
   "suggestions": [
     {
       "id": "ai_sug_1",

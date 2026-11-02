@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import {
   Flame,
   Target,
@@ -97,6 +97,8 @@ import { useDashboardLayout } from '@/hooks/useDashboardLayout';
 import { DEFAULT_HOME_CARDS } from './dashboard/dashboardDefaults';
 import { FigmaCardWrapper } from './dashboard/FigmaCardWrapper';
 import { FigmaCustomizerBar } from './dashboard/FigmaCustomizerBar';
+import { FigmaSmartGuides } from './dashboard/FigmaSmartGuides';
+import { SmartGuidesState } from './dashboard/smartGuidesEngine';
 import {
   buildGoogleCalendarTemplateUrl,
   requestGoogleCalendarAccessToken,
@@ -197,12 +199,10 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   onStartTopicPractice,
   userAnswers
 }) => {
-  const { accentConfig, mode } = useTheme();
+  const { accentConfig, mode, isDashboardCustomizing, setIsDashboardCustomizing } = useTheme();
 
   // Hook de Personalização de Layout Estilo Figma (Tamanho, Ordem e Visibilidade)
   const {
-    isCustomizing,
-    setIsCustomizing,
     selectedCardId,
     setSelectedCardId,
     visibleCards,
@@ -216,6 +216,16 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     restoreDefaults,
     autoConformLayout,
   } = useDashboardLayout('bancoresidencia_layout_home', DEFAULT_HOME_CARDS);
+
+  // Fonte única da verdade para personalização (sincronizada globalmente com o ThemeContext)
+  const isCustomizing = Boolean(isDashboardCustomizing);
+  const setIsCustomizing = setIsDashboardCustomizing;
+
+  // Estado das Guias Pontilhadas (Smart Guides) e Vãos Livres Estilo Canva / Figma
+  const [smartGuidesState, setSmartGuidesState] = useState<SmartGuidesState>({ guides: [] });
+  const gridContainerRef = useRef<HTMLDivElement>(null);
+
+
 
   // Período ativo do card de Aproveitamento (Geral vs Últimos 7 Dias)
   const [accuracyPeriod, setAccuracyPeriod] = useState<'geral' | '7d'>('geral');
@@ -1191,9 +1201,9 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
   const [calendarSyncMode, setCalendarSyncMode] = useState<'ical' | 'api'>(() => {
     if (typeof window !== 'undefined') {
-      return (localStorage.getItem('bancoresidencia_google_calendar_mode') as any) || 'ical';
+      return (localStorage.getItem('bancoresidencia_google_calendar_mode') as any) || 'api';
     }
-    return 'ical';
+    return 'api';
   });
 
   const [googleAccessToken, setGoogleAccessToken] = useState<string>(() => {
@@ -1215,7 +1225,21 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   const [showAdvancedClientId, setShowAdvancedClientId] = useState(false);
 
   const [exportingSlotId, setExportingSlotId] = useState<string | null>(null);
-  const [exportedSlotIds, setExportedSlotIds] = useState<Record<string, boolean>>({});
+  const [exportedSlotIds, setExportedSlotIds] = useState<Record<string, boolean>>(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const saved = localStorage.getItem('bancoresidencia_exported_slots');
+        if (saved) return JSON.parse(saved);
+      } catch { }
+    }
+    return {};
+  });
+  const [isBatchSyncCompleted, setIsBatchSyncCompleted] = useState<boolean>(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('bancoresidencia_batch_sync_completed') === 'true';
+    }
+    return false;
+  });
   const [syncSuccessAnimation, setSyncSuccessAnimation] = useState<boolean>(false);
 
   const cleanEventDescription = (desc?: string) => {
@@ -1236,9 +1260,266 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   const [calendarSyncError, setCalendarSyncError] = useState<string | null>(null);
   const [calendarSyncSuccessMsg, setCalendarSyncSuccessMsg] = useState<string | null>(null);
 
-  // ── Captura o access_token após redirect OAuth do Google ──────────────────
+  // ── ESTADOS E RECURSOS DA CENTRAL DE AGENDA OTIMIZADA (2 COLUNAS & ADAPTAÇÃO MÉDICA) ──
+  const [timelineFilter, setTimelineFilter] = useState<'todos' | 'estudos' | 'google'>('todos');
+  const [showAddManualSlot, setShowAddManualSlot] = useState(false);
+  const [showAddManualModal, setShowAddManualModal] = useState(false);
+  const [showDelayModal, setShowDelayModal] = useState(false);
+  const [customDelayMinutes, setCustomDelayMinutes] = useState(60);
+  const [showAiCommandModal, setShowAiCommandModal] = useState(false);
+  const [aiUserCommand, setAiUserCommand] = useState('');
+  const [manualSlotTitle, setManualSlotTitle] = useState('');
+  const [manualSlotCategory, setManualSlotCategory] = useState<'estudo' | 'flashcard' | 'revisao' | 'simulado'>('estudo');
+  const [manualSlotStart, setManualSlotStart] = useState('14:00');
+  const [manualSlotEnd, setManualSlotEnd] = useState('15:00');
+  const [manualSlotNotes, setManualSlotNotes] = useState('');
+
+  // Detecção Semântica de Plantões, Internato e Compromissos Clínicos no Google Agenda
+  const isHospitalOrDutyEvent = useCallback((slot: DailyScheduleSlot) => {
+    if (slot.source !== 'google') return false;
+    const text = `${slot.title} ${slot.description || ''} ${slot.location || ''}`.toLowerCase();
+    return (
+      text.includes('plant') ||
+      text.includes('internat') ||
+      text.includes('enferm') ||
+      text.includes('uti') ||
+      text.includes('cirurg') ||
+      text.includes('ps') ||
+      text.includes('pronto') ||
+      text.includes('hospital') ||
+      text.includes('ambul') ||
+      text.includes('round') ||
+      text.includes('estágio') ||
+      text.includes('estagio')
+    );
+  }, []);
+
+  // Botão de Emergência: "Atrasei no Plantão / Reorganizar Meu Dia"
+  const handleReorganizeDelayedSchedule = useCallback((delayMinutes: number = 60) => {
+    const minsToUse = Math.max(15, Math.min(360, delayMinutes));
+    const now = new Date();
+    const currentMins = now.getHours() * 60 + now.getMinutes();
+
+    setUserScheduledTasks((prev) => {
+      if (prev.length === 0) return prev;
+
+      const formatMins = (m: number) => {
+        const h = Math.floor(m / 60) % 24;
+        const min = m % 60;
+        return `${String(h).padStart(2, '0')}:${String(min).padStart(2, '0')}`;
+      };
+
+      let runningMins = Math.max(currentMins + 10, 8 * 60); // Inicia a partir de agora + 10 min
+      const updated = prev.map((task) => {
+        // Se a tarefa já foi concluída/passou, mantém como estava
+        if (task.endMinutes <= currentMins) return task;
+
+        const duration = Math.max(20, task.endMinutes - task.startMinutes);
+        const newStart = Math.max(runningMins, task.startMinutes + minsToUse);
+        const newEnd = newStart + duration;
+        runningMins = newEnd + 15; // Intervalo de 15 min de descanso entre blocos
+
+        return {
+          ...task,
+          startMinutes: newStart,
+          endMinutes: newEnd,
+          startTime: formatMins(newStart),
+          endTime: formatMins(newEnd),
+          rationale: `Reorganizado após atraso de ${minsToUse}m no plantão/rotina. Horário protegido sem sobrecarga.`
+        };
+      });
+
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(updated));
+      }
+      return updated;
+    });
+
+    setShowDelayModal(false);
+    setCalendarSyncSuccessMsg(`Cronograma reorganizado com sucesso (+${minsToUse}m)! A IA adaptou seus blocos restantes.`);
+  }, []);
+
+  // Criação de Bloco de Estudo Manual Personalizado
+  const handleCreateManualSlot = useCallback(() => {
+    if (!manualSlotTitle.trim()) return;
+
+    const [sh, sm] = manualSlotStart.split(':').map(Number);
+    const [eh, em] = manualSlotEnd.split(':').map(Number);
+    const startMins = (sh || 0) * 60 + (sm || 0);
+    const endMins = (eh || 0) * 60 + (em || 0);
+
+    const actionMap: Record<string, 'treinar' | 'flashcards' | 'caderno_erros' | 'simulado'> = {
+      estudo: 'treinar',
+      flashcard: 'flashcards',
+      revisao: 'caderno_erros',
+      simulado: 'simulado'
+    };
+
+    const newSlot: DailyScheduleSlot = {
+      id: `manual_slot_${Date.now()}`,
+      title: manualSlotTitle.trim(),
+      category: manualSlotCategory as any,
+      startTime: manualSlotStart,
+      endTime: manualSlotEnd,
+      startMinutes: startMins,
+      endMinutes: endMins > startMins ? endMins : startMins + 60,
+      source: 'plataforma',
+      action: actionMap[manualSlotCategory] || 'treinar',
+      description: manualSlotNotes.trim() || 'Bloco de estudo personalizado criado por você',
+      rationale: 'Planejamento pessoal adicionado à grade.'
+    };
+
+    setUserScheduledTasks(prev => {
+      const updated = [...prev, newSlot];
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(updated));
+      }
+      return updated;
+    });
+
+    setManualSlotTitle('');
+    setManualSlotNotes('');
+    setShowAddManualSlot(false);
+    setShowAddManualModal(false);
+    setCalendarSyncSuccessMsg(`Bloco "${newSlot.title}" adicionado à sua agenda!`);
+  }, [manualSlotTitle, manualSlotStart, manualSlotEnd, manualSlotCategory, manualSlotNotes]);
+
+  // ── Sincronização iCal (.ics) ─────────────────────────────────────────────
+  const syncIcalEvents = async (urlToSync?: string, isSilent = false): Promise<boolean> => {
+    const targetUrl = (urlToSync !== undefined ? urlToSync : googleIcalUrl).trim();
+    if (!targetUrl) {
+      if (!isSilent) setCalendarSyncError('Por favor, cole o Endereço Secreto iCal (.ics) da sua agenda.');
+      return false;
+    }
+
+    setIsSyncingCalendar(true);
+    if (!isSilent) {
+      setCalendarSyncError(null);
+      setCalendarSyncSuccessMsg(null);
+    }
+
+    try {
+      const res = await fetch('/api/calendar/sync-ical', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ url: targetUrl }),
+        signal: AbortSignal.timeout(10000)
+      });
+
+      const data = await res.json();
+      if (!res.ok || !data.success) {
+        throw new Error(data.error || 'Não foi possível sincronizar com o link informado.');
+      }
+
+      const events: DailyScheduleSlot[] = data.events || [];
+      setRealCalendarEvents(events);
+      const nowStr = `Hoje às ${new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}`;
+      setLastCalendarSyncTime(nowStr);
+      setIsGoogleCalendarConnected(true);
+      setCalendarSyncMode('ical');
+
+      if (data.calendarName) {
+        setGoogleCalendarAccount(data.calendarName);
+      }
+
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('bancoresidencia_google_calendar_connected', 'true');
+        localStorage.setItem('bancoresidencia_google_calendar_mode', 'ical');
+        localStorage.setItem('bancoresidencia_google_ical_url', targetUrl);
+        localStorage.setItem('bancoresidencia_real_calendar_events', JSON.stringify(events));
+        localStorage.setItem('bancoresidencia_google_last_sync', nowStr);
+        localStorage.setItem('bancoresidencia_google_last_sync_timestamp', Date.now().toString());
+        if (data.calendarName) {
+          localStorage.setItem('bancoresidencia_google_calendar_account', data.calendarName);
+        }
+      }
+
+      if (events.length > 0) {
+        setCalendarSyncSuccessMsg(`${events.length} compromisso(s) sincronizado(s) para hoje!`);
+      } else {
+        setCalendarSyncSuccessMsg('Agenda conectada com sucesso! Nenhum compromisso agendado para hoje (rotina livre para estudos).');
+      }
+      setSyncSuccessAnimation(true);
+      setTimeout(() => setSyncSuccessAnimation(false), 4500);
+      return true;
+    } catch (err: any) {
+      const msg = err?.name === 'TimeoutError'
+        ? 'Tempo limite esgotado ao acessar o link. Verifique a URL.'
+        : (err?.message || 'Falha ao sincronizar agenda.');
+      if (!isSilent) {
+        setCalendarSyncError(msg);
+      } else {
+        console.warn('[AutoSync iCal]:', msg);
+      }
+      return false;
+    } finally {
+      setIsSyncingCalendar(false);
+    }
+  };
+
+  // ── Sincronização automática da agenda toda vez que abrir a plataforma ──────
+  const autoSyncGoogleCalendar = useCallback(async (isInitialMount = false) => {
+    if (typeof window === 'undefined') return;
+
+    const isConnected = localStorage.getItem('bancoresidencia_google_calendar_connected') === 'true' || isGoogleCalendarConnected;
+    if (!isConnected) return;
+
+    const mode = (localStorage.getItem('bancoresidencia_google_calendar_mode') as 'api' | 'ical') || calendarSyncMode || 'ical';
+    const storedToken = localStorage.getItem('bancoresidencia_google_access_token') || googleAccessToken;
+    const storedIcal = localStorage.getItem('bancoresidencia_google_ical_url') || googleIcalUrl;
+
+    if (mode === 'api' && storedToken) {
+      setIsSyncingCalendar(true);
+      try {
+        const [events, accountEmail] = await Promise.all([
+          fetchTodayEventsFromGoogleApi(storedToken),
+          fetchGoogleCalendarAccountEmail(storedToken)
+        ]);
+
+        setRealCalendarEvents(events as any);
+        const nowStr = `Hoje às ${new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}`;
+        setLastCalendarSyncTime(nowStr);
+
+        if (accountEmail) {
+          setGoogleCalendarAccount(accountEmail);
+          localStorage.setItem('bancoresidencia_google_calendar_account', accountEmail);
+        }
+
+        localStorage.setItem('bancoresidencia_real_calendar_events', JSON.stringify(events));
+        localStorage.setItem('bancoresidencia_google_last_sync', nowStr);
+        localStorage.setItem('bancoresidencia_google_last_sync_timestamp', Date.now().toString());
+
+        setSyncSuccessAnimation(true);
+        setTimeout(() => setSyncSuccessAnimation(false), 4500);
+      } catch (apiErr) {
+        console.warn('[Google Agenda Auto-Sync] Falha na API:', apiErr);
+        if (storedIcal?.trim()) {
+          await syncIcalEvents(storedIcal, true);
+        }
+      } finally {
+        setIsSyncingCalendar(false);
+      }
+    } else if (storedIcal?.trim()) {
+      await syncIcalEvents(storedIcal, isInitialMount);
+    } else {
+      const nowStr = `Hoje às ${new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}`;
+      setLastCalendarSyncTime(nowStr);
+      localStorage.setItem('bancoresidencia_google_last_sync', nowStr);
+      localStorage.setItem('bancoresidencia_google_last_sync_timestamp', Date.now().toString());
+      if (isInitialMount) {
+        setSyncSuccessAnimation(true);
+        setTimeout(() => setSyncSuccessAnimation(false), 3000);
+      }
+    }
+  }, [calendarSyncMode, googleAccessToken, googleIcalUrl, isGoogleCalendarConnected]);
+
+  const handleSyncNow = async () => {
+    await autoSyncGoogleCalendar(false);
+  };
+
+  // ── Sincronização automática e captura de token OAuth ─────────────────────
   useEffect(() => {
-    // Verifica se retornou do /auth/google/callback com flag "just connected"
+    // 1. Verifica se retornou do /auth/google/callback com flag "just connected"
     const justConnected = sessionStorage.getItem('bancoresidencia_google_just_connected');
     if (justConnected === 'true') {
       sessionStorage.removeItem('bancoresidencia_google_just_connected');
@@ -1271,6 +1552,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
             if (typeof window !== 'undefined') {
               localStorage.setItem('bancoresidencia_real_calendar_events', JSON.stringify(events));
               localStorage.setItem('bancoresidencia_google_last_sync', nowStr);
+              localStorage.setItem('bancoresidencia_google_last_sync_timestamp', Date.now().toString());
               if (accountEmail) {
                 localStorage.setItem('bancoresidencia_google_calendar_account', accountEmail);
               }
@@ -1292,7 +1574,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       }
     }
 
-    // Verifica se a callback page salvou um erro no sessionStorage
+    // 2. Verifica se a callback page salvou um erro no sessionStorage
     const sessionError = typeof window !== 'undefined'
       ? sessionStorage.getItem('bancoresidencia_google_auth_error')
       : null;
@@ -1302,7 +1584,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       return;
     }
 
-    // Fallback: verifica token no hash (fluxo legado) 
+    // 3. Fallback: verifica token no hash (fluxo legado) 
     const tokenFromHash = extractGoogleTokenFromUrlHash();
     if (tokenFromHash) {
       setGoogleAccessToken(tokenFromHash);
@@ -1331,6 +1613,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           if (typeof window !== 'undefined') {
             localStorage.setItem('bancoresidencia_real_calendar_events', JSON.stringify(events));
             localStorage.setItem('bancoresidencia_google_last_sync', nowStr);
+            localStorage.setItem('bancoresidencia_google_last_sync_timestamp', Date.now().toString());
             if (accountEmail) {
               localStorage.setItem('bancoresidencia_google_calendar_account', accountEmail);
             }
@@ -1351,91 +1634,32 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       return;
     }
 
-    // Se já estiver conectado via Google API, garante que o e-mail real da conta Google esteja atualizado
-    const currentToken = typeof window !== 'undefined' ? localStorage.getItem('bancoresidencia_google_access_token') : null;
-    if (currentToken && isGoogleCalendarConnected) {
-      fetchGoogleCalendarAccountEmail(currentToken).then((email) => {
-        if (email) {
-          setGoogleCalendarAccount(email);
-          if (typeof window !== 'undefined') {
-            localStorage.setItem('bancoresidencia_google_calendar_account', email);
-          }
-        }
-      });
-    }
+    // 4. SINCRONIZAÇÃO AUTOMÁTICA DA AGENDA TODA VEZ QUE ABRIR A PLATAFORMA
+    // Dispara automaticamente sempre que o componente é montado (quando o usuário abre/acessa a plataforma)
+    autoSyncGoogleCalendar(true);
 
-    // Verifica se há erro de OAuth retornado via query param
+    // 5. Atualização inteligente periódica ao retornar à aba (se passou mais de 3 minutos)
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === 'visible') {
+        const lastSyncTs = typeof window !== 'undefined' ? localStorage.getItem('bancoresidencia_google_last_sync_timestamp') : null;
+        const now = Date.now();
+        if (!lastSyncTs || now - Number(lastSyncTs) > 3 * 60 * 1000) {
+          autoSyncGoogleCalendar(false);
+        }
+      }
+    };
+    document.addEventListener('visibilitychange', handleVisibilityChange);
+
+    // 6. Verifica se há erro de OAuth retornado via query param
     const authError = extractGoogleAuthErrorFromUrl();
     if (authError) {
       setCalendarSyncError(authError);
     }
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
-  // ─────────────────────────────────────────────────────────────────────────
 
-  const syncIcalEvents = async (urlToSync?: string): Promise<boolean> => {
-    const targetUrl = (urlToSync !== undefined ? urlToSync : googleIcalUrl).trim();
-    if (!targetUrl) {
-      setCalendarSyncError('Por favor, cole o Endereço Secreto iCal (.ics) da sua agenda.');
-      return false;
-    }
-
-    setIsSyncingCalendar(true);
-    setCalendarSyncError(null);
-    setCalendarSyncSuccessMsg(null);
-
-    try {
-      const res = await fetch('/api/calendar/sync-ical', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ url: targetUrl }),
-        signal: AbortSignal.timeout(10000)
-      });
-
-      const data = await res.json();
-      if (!res.ok || !data.success) {
-        throw new Error(data.error || 'Não foi possível sincronizar com o link informado.');
-      }
-
-      const events: DailyScheduleSlot[] = data.events || [];
-      setRealCalendarEvents(events);
-      const nowStr = `Hoje às ${new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}`;
-      setLastCalendarSyncTime(nowStr);
-      setIsGoogleCalendarConnected(true);
-      setCalendarSyncMode('ical');
-
-      if (data.calendarName) {
-        setGoogleCalendarAccount(data.calendarName);
-      }
-
-      if (typeof window !== 'undefined') {
-        localStorage.setItem('bancoresidencia_google_calendar_connected', 'true');
-        localStorage.setItem('bancoresidencia_google_calendar_mode', 'ical');
-        localStorage.setItem('bancoresidencia_google_ical_url', targetUrl);
-        localStorage.setItem('bancoresidencia_real_calendar_events', JSON.stringify(events));
-        localStorage.setItem('bancoresidencia_google_last_sync', nowStr);
-        if (data.calendarName) {
-          localStorage.setItem('bancoresidencia_google_calendar_account', data.calendarName);
-        }
-      }
-
-      if (events.length > 0) {
-        setCalendarSyncSuccessMsg(`${events.length} compromisso(s) sincronizado(s) para hoje!`);
-      } else {
-        setCalendarSyncSuccessMsg('Agenda conectada com sucesso! Nenhum compromisso agendado para hoje (rotina livre para estudos).');
-      }
-      setSyncSuccessAnimation(true);
-      setTimeout(() => setSyncSuccessAnimation(false), 4500);
-      return true;
-    } catch (err: any) {
-      const msg = err?.name === 'TimeoutError'
-        ? 'Tempo limite esgotado ao acessar o link. Verifique a URL.'
-        : (err?.message || 'Falha ao sincronizar agenda.');
-      setCalendarSyncError(msg);
-      return false;
-    } finally {
-      setIsSyncingCalendar(false);
-    }
-  };
+    return () => {
+      document.removeEventListener('visibilitychange', handleVisibilityChange);
+    };
+  }, [autoSyncGoogleCalendar]);
 
   const handleConnectGoogleCalendar = async (accountEmail?: string, preset?: 'internato' | 'plantao' | 'estudos') => {
     const acc = accountEmail || googleCalendarAccount || 'aluno.medicina@uf.br';
@@ -1554,57 +1778,16 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     setGoogleAccessToken('');
     setCalendarSyncError(null);
     setCalendarSyncSuccessMsg(null);
+    setExportedSlotIds({});
+    setIsBatchSyncCompleted(false);
     if (typeof window !== 'undefined') {
       localStorage.setItem('bancoresidencia_google_calendar_connected', 'false');
       localStorage.removeItem('bancoresidencia_google_ical_url');
       localStorage.removeItem('bancoresidencia_google_access_token');
       localStorage.removeItem('bancoresidencia_real_calendar_events');
-    }
-  };
-
-  const handleSyncNow = async () => {
-    if (calendarSyncMode === 'api' && googleAccessToken) {
-      setIsSyncingCalendar(true);
-      try {
-        const [events, accountEmail] = await Promise.all([
-          fetchTodayEventsFromGoogleApi(googleAccessToken),
-          fetchGoogleCalendarAccountEmail(googleAccessToken)
-        ]);
-
-        setRealCalendarEvents(events as any);
-        const nowStr = `Hoje às ${new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}`;
-        setLastCalendarSyncTime(nowStr);
-
-        if (accountEmail) {
-          setGoogleCalendarAccount(accountEmail);
-        }
-
-        if (typeof window !== 'undefined') {
-          localStorage.setItem('bancoresidencia_real_calendar_events', JSON.stringify(events));
-          localStorage.setItem('bancoresidencia_google_last_sync', nowStr);
-          if (accountEmail) {
-            localStorage.setItem('bancoresidencia_google_calendar_account', accountEmail);
-          }
-        }
-        setSyncSuccessAnimation(true);
-        setTimeout(() => setSyncSuccessAnimation(false), 4500);
-      } catch {
-        if (googleIcalUrl.trim()) {
-          await syncIcalEvents(googleIcalUrl);
-        }
-      } finally {
-        setIsSyncingCalendar(false);
-      }
-    } else if (googleIcalUrl.trim()) {
-      await syncIcalEvents(googleIcalUrl);
-    } else {
-      const nowStr = `Hoje às ${new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}`;
-      setLastCalendarSyncTime(nowStr);
-      setSyncSuccessAnimation(true);
-      setTimeout(() => setSyncSuccessAnimation(false), 4500);
-      if (typeof window !== 'undefined') {
-        localStorage.setItem('bancoresidencia_google_last_sync', nowStr);
-      }
+      localStorage.removeItem('bancoresidencia_exported_slots');
+      localStorage.removeItem('bancoresidencia_batch_sync_completed');
+      localStorage.removeItem('bancoresidencia_google_last_sync_timestamp');
     }
   };
 
@@ -1619,7 +1802,13 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           description: cleanEventDescription(slot.description),
           location: slot.location
         });
-        setExportedSlotIds(prev => ({ ...prev, [slot.id]: true }));
+        setExportedSlotIds(prev => {
+          const next = { ...prev, [slot.id]: true };
+          if (typeof window !== 'undefined') {
+            localStorage.setItem('bancoresidencia_exported_slots', JSON.stringify(next));
+          }
+          return next;
+        });
         setCalendarSyncSuccessMsg(`✓ Bloco "${slot.title}" gravado com sucesso no seu Google Agenda!`);
       } else {
         const templateUrl = buildGoogleCalendarTemplateUrl({
@@ -1629,7 +1818,13 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           description: cleanEventDescription(slot.description),
           location: slot.location
         });
-        setExportedSlotIds(prev => ({ ...prev, [slot.id]: true }));
+        setExportedSlotIds(prev => {
+          const next = { ...prev, [slot.id]: true };
+          if (typeof window !== 'undefined') {
+            localStorage.setItem('bancoresidencia_exported_slots', JSON.stringify(next));
+          }
+          return next;
+        });
         window.open(templateUrl, '_blank', 'noopener,noreferrer');
       }
     } catch (err: any) {
@@ -1647,10 +1842,13 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   };
 
   // ── FUNÇÕES DE ANÁLISE DE HORÁRIOS LIVRES COM IA & SINCRONIZAÇÃO ────────────
-  const handleAnalyzeScheduleWithAi = async () => {
+  const handleAnalyzeScheduleWithAi = async (customPrompt?: string) => {
     setIsAnalyzingSchedule(true);
     setShowAiSchedulePanel(true);
+    setShowAiCommandModal(false);
     setCalendarSyncError(null);
+
+    const commandToUse = (customPrompt !== undefined ? customPrompt : aiUserCommand).trim();
 
     try {
       const res = await fetch('/api/ai/schedule-optimizer', {
@@ -1658,6 +1856,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           events: realCalendarEvents,
+          userCommand: commandToUse,
           userContext: {
             recommendedArea: recommendedArea?.label || 'Clínica Médica',
             targetExamName: targetExamName || 'ENARE 2026',
@@ -1679,11 +1878,16 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
         freeGaps: data.freeGaps || [],
         suggestions: data.suggestions || []
       });
+      setIsBatchSyncCompleted(false);
+      if (typeof window !== 'undefined') {
+        localStorage.removeItem('bancoresidencia_batch_sync_completed');
+      }
     } catch (err: any) {
       console.warn('Falha na análise de IA:', err);
       // Fallback heurístico imediato para nunca travar
+      const customHint = commandToUse ? ` (orientado por: "${commandToUse}")` : '';
       setScheduleAiAnalysis({
-        summary: 'Detectamos intervalos livres ideais para intercalar treino de questões e fixação espaçada hoje.',
+        summary: `Plano inteligente adaptado${customHint}. Intervalos livres identificados para intercalar treino de questões e fixação espaçada hoje.`,
         freeGaps: [
           { startTime: '09:00', endTime: '12:00', durationMinutes: 180 },
           { startTime: '14:00', endTime: '18:00', durationMinutes: 240 }
@@ -1699,7 +1903,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
             endMinutes: 930,
             source: 'plataforma',
             action: 'treinar',
-            description: 'Treino de alta densidade focado na sua área prioritária com gabarito comentado',
+            description: commandToUse ? `Foco customizado: ${commandToUse}` : 'Treino de alta densidade focado na sua área prioritária com gabarito comentado',
             rationale: 'Janela ampla para resolução intensiva de questões com calibração TRI.'
           },
           {
@@ -1758,20 +1962,52 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       }
       return updated;
     });
+    setExportedSlotIds(prev => {
+      const next = { ...prev };
+      delete next[taskId];
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('bancoresidencia_exported_slots', JSON.stringify(next));
+      }
+      return next;
+    });
   };
 
   const handleClearUserScheduledTasks = () => {
     setUserScheduledTasks([]);
+    setExportedSlotIds({});
+    setIsBatchSyncCompleted(false);
     if (typeof window !== 'undefined') {
       localStorage.removeItem('bancoresidencia_user_scheduled_tasks');
+      localStorage.removeItem('bancoresidencia_exported_slots');
+      localStorage.removeItem('bancoresidencia_batch_sync_completed');
     }
     setCalendarSyncSuccessMsg('Cronograma redefinido para a visualização pura do Google Agenda.');
   };
 
   const handleSyncAllTasksToGoogle = async () => {
-    const tasksToSync = userScheduledTasks.filter(t => t.source === 'plataforma');
+    let tasksToSync = [...userScheduledTasks.filter(t => t.source === 'plataforma')];
+
+    // Se houver sugestões da IA geradas no painel, inclui-as para sincronização
+    if (scheduleAiAnalysis?.suggestions && scheduleAiAnalysis.suggestions.length > 0) {
+      const existingIds = new Set(tasksToSync.map(t => t.id));
+      const suggestionsToAdd = scheduleAiAnalysis.suggestions.filter(s => !existingIds.has(s.id));
+      if (suggestionsToAdd.length > 0) {
+        tasksToSync = [...tasksToSync, ...suggestionsToAdd];
+        // Adiciona automaticamente ao cronograma do usuário
+        setUserScheduledTasks(prev => {
+          const prevIds = new Set(prev.map(p => p.id));
+          const newItems = suggestionsToAdd.filter(s => !prevIds.has(s.id)).map(s => ({ ...s, isAiSuggested: true }));
+          const updated = [...prev, ...newItems];
+          if (typeof window !== 'undefined') {
+            localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(updated));
+          }
+          return updated;
+        });
+      }
+    }
+
     if (tasksToSync.length === 0) {
-      setCalendarSyncError('Nenhuma tarefa de estudo adicionada para sincronizar.');
+      setCalendarSyncError('Nenhuma tarefa ou sugestão de estudo disponível para sincronizar.');
       return;
     }
 
@@ -1785,7 +2021,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           title: t.title,
           startTime: t.startTime,
           endTime: t.endTime,
-          description: t.description,
+          description: cleanEventDescription(t.description),
           location: t.location || 'Plataforma Banco Residência'
         }));
 
@@ -1797,13 +2033,31 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           title: t.title,
           startTime: t.startTime,
           endTime: t.endTime,
-          description: t.description,
+          description: cleanEventDescription(t.description),
           location: t.location || 'Plataforma Banco Residência'
         }));
 
         const icsData = generateIcsContent(batchInputs);
         downloadIcsFile('estudos_hoje_google_agenda.ics', icsData);
         setCalendarSyncSuccessMsg('Arquivo .ics gerado com sucesso! Salve ou importe no Google Agenda para sincronizar todos os blocos.');
+      }
+
+      // Marca todos os blocos sincronizados como Salvos/Concluídos
+      const newlyExported: Record<string, boolean> = {};
+      tasksToSync.forEach(t => {
+        newlyExported[t.id] = true;
+      });
+      setExportedSlotIds(prev => {
+        const next = { ...prev, ...newlyExported };
+        if (typeof window !== 'undefined') {
+          localStorage.setItem('bancoresidencia_exported_slots', JSON.stringify(next));
+        }
+        return next;
+      });
+
+      setIsBatchSyncCompleted(true);
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('bancoresidencia_batch_sync_completed', 'true');
       }
     } catch (err: any) {
       setCalendarSyncError(err?.message || 'Falha ao sincronizar tarefas com Google Agenda.');
@@ -1842,6 +2096,17 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     // Cronograma limpo inicial (sem dados falsos forçados)
     return [];
   }, [isGoogleCalendarConnected, realCalendarEvents, userScheduledTasks]);
+
+  // Lista filtrada para a visualização na Linha do Tempo (Todos / Somente Estudos / Google Agenda)
+  const filteredDaySchedule = React.useMemo(() => {
+    if (timelineFilter === 'estudos') {
+      return daySchedule.filter(s => s.source === 'plataforma' || s.isAiSuggested);
+    }
+    if (timelineFilter === 'google') {
+      return daySchedule.filter(s => s.source === 'google');
+    }
+    return daySchedule;
+  }, [daySchedule, timelineFilter]);
 
   // Cálculo da Atividade Específica para AQUELE Período de Tempo
   const currentPeriodInfo = React.useMemo(() => {
@@ -1939,6 +2204,81 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       label: 'Período Noturno (Descanso)'
     };
   }, [daySchedule, simulatedHour]);
+
+  // Sincronização da Cronobiologia & Energia Cognitiva com o Desempenho Real (userAnswers)
+  const cognitiveEnergyStats = React.useMemo(() => {
+    const defaultShifts = {
+      morning: { label: 'Manhã', range: '06h – 12h', iconLevel: '⚡⚡⚡', resolvidas: 0, acertos: 0, taxa: 0, reco: 'Questões Inéditas / TRI', tag: 'Pico de Foco' },
+      afternoon: { label: 'Tarde', range: '12h – 18h', iconLevel: '⚡⚡', resolvidas: 0, acertos: 0, taxa: 0, reco: 'Caderno de Erros', tag: 'Reteste & Foco' },
+      night: { label: 'Noite', range: '18h – 23h', iconLevel: '⚡', resolvidas: 0, acertos: 0, taxa: 0, reco: 'Flashcards FSRS', tag: 'Fixação Leve' }
+    };
+
+    if (!userAnswers || Object.keys(userAnswers).length === 0) {
+      return {
+        hasData: false,
+        totalExamined: 0,
+        morning: defaultShifts.morning,
+        afternoon: defaultShifts.afternoon,
+        night: defaultShifts.night,
+        bestShift: null,
+        fatigueAlert: false,
+        summaryText: 'Padrão cronobiológico ativo. Resolva questões para calibrar com o seu desempenho real.'
+      };
+    }
+
+    const counts = {
+      morning: { resolvidas: 0, acertos: 0 },
+      afternoon: { resolvidas: 0, acertos: 0 },
+      night: { resolvidas: 0, acertos: 0 }
+    };
+
+    let totalExamined = 0;
+    Object.values(userAnswers).forEach((ans) => {
+      if (!ans || !ans.timestamp) return;
+      totalExamined++;
+      const h = new Date(ans.timestamp).getHours();
+      if (h >= 6 && h < 12) {
+        counts.morning.resolvidas++;
+        if (ans.isCorrect) counts.morning.acertos++;
+      } else if (h >= 12 && h < 18) {
+        counts.afternoon.resolvidas++;
+        if (ans.isCorrect) counts.afternoon.acertos++;
+      } else {
+        counts.night.resolvidas++;
+        if (ans.isCorrect) counts.night.acertos++;
+      }
+    });
+
+    const calcTaxa = (res: number, ac: number) => (res > 0 ? Math.round((ac / res) * 100) : 0);
+    const morningTaxa = calcTaxa(counts.morning.resolvidas, counts.morning.acertos);
+    const afternoonTaxa = calcTaxa(counts.afternoon.resolvidas, counts.afternoon.acertos);
+    const nightTaxa = calcTaxa(counts.night.resolvidas, counts.night.acertos);
+
+    const mShift = { ...defaultShifts.morning, resolvidas: counts.morning.resolvidas, acertos: counts.morning.acertos, taxa: morningTaxa };
+    const aShift = { ...defaultShifts.afternoon, resolvidas: counts.afternoon.resolvidas, acertos: counts.afternoon.acertos, taxa: afternoonTaxa };
+    const nShift = { ...defaultShifts.night, resolvidas: counts.night.resolvidas, acertos: counts.night.acertos, taxa: nightTaxa };
+
+    const activeList = [mShift, aShift, nShift].filter(s => s.resolvidas > 0);
+    const best = activeList.length > 0
+      ? activeList.reduce((max, curr) => (curr.taxa > max.taxa ? curr : max), activeList[0])
+      : null;
+
+    const fatigueAlert = totalExamined >= 8 && nightTaxa > 0 && best !== null && (best.taxa - nightTaxa >= 12);
+
+    return {
+      hasData: totalExamined > 0,
+      totalExamined,
+      morning: mShift,
+      afternoon: aShift,
+      night: nShift,
+      bestShift: best ? best.label : null,
+      bestShiftTaxa: best ? best.taxa : null,
+      fatigueAlert,
+      summaryText: best
+        ? `Seu melhor rendimento real é na ${best.label} (${best.taxa}% de acerto em ${best.resolvidas}Q).`
+        : 'Padrão cronobiológico ativo.'
+    };
+  }, [userAnswers]);
 
   // 4. Régua semanal dos 7 dias
   const weeklyDays = React.useMemo(() => {
@@ -2366,7 +2706,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
   return (
     <div
-      className="space-y-4 sm:space-y-5"
+      className={`space-y-4 sm:space-y-5 transition-all duration-300 ${isCustomizing ? "canvas-grid-quadriculado" : ""}`}
       onClick={(e) => {
         const target = e.target as HTMLElement;
         if (
@@ -2396,7 +2736,17 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       />
 
       {/* Grid Principal Reorganizável Estilo Figma */}
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-5 auto-rows-min grid-flow-dense">
+      <div
+        ref={gridContainerRef}
+        className="grid grid-cols-1 md:grid-cols-12 gap-4 sm:gap-5 auto-rows-auto grid-flow-dense relative items-stretch"
+      >
+        {/* Guias Inteligentes de Alinhamento e Zonas de Encaixe Estilo Canva/Figma */}
+        {isCustomizing && (
+          <FigmaSmartGuides
+            guides={smartGuidesState.guides}
+            containerRect={gridContainerRef.current?.getBoundingClientRect() || null}
+          />
+        )}
         {visibleCards.map((cardConfig) => {
           if (cardConfig.id === 'home_hero') {
             return (
@@ -2412,6 +2762,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
                 onReorder={reorderCard}
+                onSmartGuidesChange={setSmartGuidesState}
+                allCardsConfig={visibleCards}
               >
                 <section className="relative overflow-hidden bg-white dark:bg-[#121215] border border-slate-200/90 dark:border-zinc-800 rounded-2xl p-4 sm:p-5 shadow-xs">
                   <div
@@ -2486,21 +2838,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       </div>
 
 
-                      {/* Botão Personalizar Painel Estilo Figma */}
-                      <button
-                        type="button"
-                        onClick={() => setIsCustomizing((prev) => !prev)}
-                        className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl border transition-all cursor-pointer shadow-xs ${isCustomizing
-                            ? 'bg-blue-600 text-white border-blue-500 shadow-md scale-105'
-                            : 'bg-slate-50 dark:bg-zinc-900/60 border-slate-200/70 dark:border-zinc-800 text-slate-700 dark:text-zinc-300 hover:text-blue-600 dark:hover:text-blue-400 hover:border-blue-400'
-                          }`}
-                        title="Personalizar disposição e tamanho dos cards estilo Figma"
-                      >
-                        <SlidersHorizontal className="w-3.5 h-3.5 text-blue-500" />
-                        <span className="text-xs font-bold hidden md:inline">
-                          {isCustomizing ? 'Editando' : 'Personalizar'}
-                        </span>
-                      </button>
+
 
                       {/* Constância */}
                       <div className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-50 dark:bg-zinc-900/60 border border-slate-200/70 dark:border-zinc-800">
@@ -2529,7 +2867,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                   </div>
 
                   {/* VISÃO EXPANDIDA ADAPTATIVA: Calendário Oficial de Provas & Ofensiva Semanal */}
-                  {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 220) && (
+                  {Boolean(cardConfig.customHeight ? cardConfig.customHeight > 140 : false) && (
                     <div className="pt-2.5 border-t border-slate-100 dark:border-zinc-800/80 flex flex-wrap items-center justify-between gap-2.5 text-xs animate-in fade-in duration-200">
                       <div className="flex items-center gap-2">
                         <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400">Prazos Oficiais:</span>
@@ -2570,6 +2908,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
                 onReorder={reorderCard}
+                onSmartGuidesChange={setSmartGuidesState}
+                allCardsConfig={visibleCards}
               >
                 {/* Card 1: Metas Diárias */}
                 <div className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-5 shadow-xs flex flex-col justify-between min-h-0 h-full space-y-3.5">
@@ -2695,7 +3035,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     )}
 
                     {/* VISÃO EXPANDIDA ADAPTATIVA: Sessões Programadas do Dia */}
-                    {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 250) && (
+                    {Boolean(cardConfig.customHeight ? cardConfig.customHeight > 175 : false) && (
                       <div className="pt-2.5 space-y-1.5 border-t border-zinc-100 dark:border-zinc-800/80 animate-in fade-in duration-200">
                         <div className="flex items-center justify-between text-[11px]">
                           <span className="font-bold text-zinc-700 dark:text-zinc-300">Sessões Programadas</span>
@@ -2713,7 +3053,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         </div>
 
                         {/* VISÃO HIPER-EXPANDIDA (Altura >= 270px): Velocímetro & Meta Semanal */}
-                        {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 300) && (
+                        {Boolean(cardConfig.customHeight ? cardConfig.customHeight > 175 : false) && (
                           <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between text-[10px] text-zinc-500 dark:text-zinc-400">
                             <span className="flex items-center gap-1 font-medium">
                               <Clock className="w-3 h-3 text-blue-500" />
@@ -2728,7 +3068,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     )}
                   </div>
 
-                  <div className="pt-2.5 flex items-center justify-between text-xs text-zinc-500 dark:text-zinc-400 border-t border-zinc-100 dark:border-zinc-800/80">
+                  <div className="card-height-compact-hide pt-2.5 flex items-center justify-between text-xs text-zinc-500 dark:text-zinc-400 border-t border-zinc-100 dark:border-zinc-800/80">
                     <span className="text-[11px] font-medium">Conclusão diária</span>
                     <span className="font-bold text-zinc-800 dark:text-zinc-200 font-sans text-xs">
                       {Math.round((goalPercentage + timeGoalPercentage) / 2)}%
@@ -2752,6 +3092,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
                 onReorder={reorderCard}
+                onSmartGuidesChange={setSmartGuidesState}
+                allCardsConfig={visibleCards}
               >
                 {/* Card 2: Aproveitamento com Seletor Interativo e Mini Sparkline com Tooltips */}
                 <div className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-5 shadow-xs flex flex-col justify-between min-h-0 h-full space-y-3.5">
@@ -2867,7 +3209,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     </div>
 
                     {/* VISÃO EXPANDIDA ADAPTATIVA: Taxa por Grau de Dificuldade da Banca */}
-                    {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 250) && (
+                    {Boolean(cardConfig.customHeight ? cardConfig.customHeight > 175 : false) && (
                       <div className="pt-2.5 space-y-1.5 border-t border-zinc-100 dark:border-zinc-800/80 animate-in fade-in duration-200">
                         <div className="flex items-center justify-between text-[11px]">
                           <span className="font-bold text-zinc-700 dark:text-zinc-300">Desempenho por Dificuldade</span>
@@ -2889,7 +3231,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         </div>
 
                         {/* VISÃO HIPER-EXPANDIDA (Altura >= 270px): Nota TRI Estimada */}
-                        {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 300) && (
+                        {Boolean(cardConfig.customHeight ? cardConfig.customHeight > 175 : false) && (
                           <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between text-[10px] text-zinc-500 dark:text-zinc-400">
                             <span className="flex items-center gap-1 font-medium">
                               <Sparkles className="w-3 h-3 text-amber-500" />
@@ -2933,6 +3275,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
                 onReorder={reorderCard}
+                onSmartGuidesChange={setSmartGuidesState}
+                allCardsConfig={visibleCards}
               >
                 {/* Card 3: Percentil Oficial */}
                 <div
@@ -3035,7 +3379,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     )}
 
                     {/* VISÃO EXPANDIDA ADAPTATIVA: Curva Normal de Distribuição TRI (Gaussiana) */}
-                    {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 250) && (
+                    {Boolean(cardConfig.customHeight ? cardConfig.customHeight > 175 : false) && (
                       <div className="pt-2 pb-1 space-y-2 border-t border-zinc-100 dark:border-zinc-800/80 animate-in fade-in duration-200">
                         <div className="flex items-center justify-between text-[11px]">
                           <span className="font-bold text-zinc-700 dark:text-zinc-300 flex items-center gap-1.5">
@@ -3115,7 +3459,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         </div>
 
                         {/* Gap para Nota de Corte nas Residências Alvo */}
-                        {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 300) && (
+                        {Boolean(cardConfig.customHeight ? cardConfig.customHeight > 175 : false) && (
                           <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 space-y-1.5 animate-in fade-in duration-200">
                             <div className="flex items-center justify-between text-[11px]">
                               <span className="font-bold text-zinc-700 dark:text-zinc-300 flex items-center gap-1">
@@ -3182,6 +3526,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
                 onReorder={reorderCard}
+                onSmartGuidesChange={setSmartGuidesState}
+                allCardsConfig={visibleCards}
               >
                 <div className="w-full bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-4 sm:p-5 shadow-xs relative overflow-hidden group min-h-0 h-full flex flex-col justify-between space-y-3">
                   <div className="md:col-span-6 space-y-2 relative">
@@ -3207,7 +3553,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       <h4 className="font-heading text-base sm:text-lg font-bold text-slate-900 dark:text-zinc-100 flex items-center gap-2">
                         <span>Praticar {recommendedArea.label}</span>
                       </h4>
-                      <p className="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed mt-0.5">
+                      <p className="text-xs text-slate-500 dark:text-zinc-400 leading-relaxed mt-0.5 card-height-compact-hide">
                         {recommendedArea.hasData
                           ? 'Foco prioritário de alavancagem para elevar seu percentil.'
                           : 'Área essencial com alta incidência nas provas.'}
@@ -3218,7 +3564,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       {/* Botão Treinar -> Abre Drawer Central com Subtemas e Radar da Banca */}
                       <button
                         type="button"
-                        onClick={() => setActiveCentralDrawer('treinar_recomendacao')}
+                        onClick={() => { if (isCustomizing) return; setActiveCentralDrawer('treinar_recomendacao'); }}
                         className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-white text-xs sm:text-sm font-bold transition-all cursor-pointer shadow-sm hover:opacity-95 active:scale-98"
                         style={{
                           backgroundColor: accentConfig.primaryHex,
@@ -3250,7 +3596,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                   </div>
 
                   {/* VISÃO EXPANDIDA ADAPTATIVA: Top Subtemas Críticos da Área */}
-                  {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 250) && (
+                  {Boolean(cardConfig.customHeight ? cardConfig.customHeight > 175 : false) && (
                     <div className="pt-2.5 space-y-2 border-t border-zinc-100 dark:border-zinc-800/80 animate-in fade-in duration-200">
                       <div className="flex items-center justify-between text-[11px]">
                         <span className="font-bold text-zinc-700 dark:text-zinc-300 flex items-center gap-1.5">
@@ -3278,7 +3624,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         ))}
                       </div>
 
-                      {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 300) && (
+                      {Boolean(cardConfig.customHeight ? cardConfig.customHeight > 175 : false) && (
                         <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between text-[10px] text-zinc-500 dark:text-zinc-400">
                           <span>Impacto no Percentil: <strong className="text-emerald-600 dark:text-emerald-400">+6.8 pontos</strong></span>
                           <span>Tempo Médio Sugerido: <strong>35 minutos</strong></span>
@@ -3304,6 +3650,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
                 onReorder={reorderCard}
+                onSmartGuidesChange={setSmartGuidesState}
+                allCardsConfig={visibleCards}
               >
                 <div className="w-full bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-4 sm:p-5 shadow-xs relative overflow-hidden group space-y-2.5 min-h-0 h-full flex flex-col justify-between">
                   <div className="space-y-2.5">
@@ -3395,7 +3743,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     </div>
 
                     {/* VISÃO EXPANDIDA ADAPTATIVA: Focos Críticos de Reteste */}
-                    {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 250) && (
+                    {Boolean(cardConfig.customHeight ? cardConfig.customHeight > 175 : false) && (
                       <div className="pt-2.5 pb-1 space-y-2 border-t border-zinc-100 dark:border-zinc-800/80 animate-in fade-in duration-200">
                         <div className="flex items-center justify-between text-[11px]">
                           <span className="font-bold text-zinc-700 dark:text-zinc-300 flex items-center gap-1.5">
@@ -3445,10 +3793,12 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
                 onReorder={reorderCard}
+                onSmartGuidesChange={setSmartGuidesState}
+                allCardsConfig={visibleCards}
               >
                 {/* Card 1: Mnemônico Clínico do Dia */}
                 <div
-                  onClick={() => setActiveCentralDrawer('mnemonico_detalhado')}
+                  onClick={() => { if (isCustomizing) return; setActiveCentralDrawer('mnemonico_detalhado'); }}
                   className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-5 shadow-xs cursor-pointer hover:border-zinc-300 dark:hover:border-zinc-700 transition-all group flex flex-col justify-between min-h-0 h-full relative overflow-hidden space-y-3"
                   title="Abrir raciocínio mnemônico completo e desdobramentos"
                 >
@@ -3498,7 +3848,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     </div>
 
                     {/* VISÃO EXPANDIDA ADAPTATIVA: Pegadinha Fatal da Banca & Treino Direto */}
-                    {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 250) && (
+                    {Boolean(cardConfig.customHeight ? cardConfig.customHeight > 175 : false) && (
                       <div className="pt-2 space-y-1.5 border-t border-zinc-100 dark:border-zinc-800/80 animate-in fade-in duration-200">
                         {activeDetailedMnemonic.bancaTrap && (
                           <div className="p-2 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-900 dark:text-amber-300 text-xs">
@@ -3512,7 +3862,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           </div>
                         )}
 
-                        {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 300) && (
+                        {Boolean(cardConfig.customHeight ? cardConfig.customHeight > 175 : false) && (
                           <div className="flex items-center justify-between p-2 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800 text-[10px]">
                             <span className="text-zinc-600 dark:text-zinc-400 truncate max-w-[260px]">
                               {activeDetailedMnemonic.examFrequency || 'Alta frequência nas provas'}
@@ -3551,10 +3901,12 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
                 onReorder={reorderCard}
+                onSmartGuidesChange={setSmartGuidesState}
+                allCardsConfig={visibleCards}
               >
                 {/* Card 2: Agenda de Estudos do Dia (Foco Exclusivo no Período Atual + Google Agenda) */}
                 <div
-                  onClick={() => setActiveCentralDrawer('agenda_detalhada')}
+                  onClick={() => { if (isCustomizing) return; setActiveCentralDrawer('agenda_detalhada'); }}
                   className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-5 shadow-xs cursor-pointer hover:border-blue-500/40 transition-all group flex flex-col justify-between min-h-0 h-full relative overflow-hidden space-y-3.5"
                   title="Abrir cronograma de blocos do dia"
                 >
@@ -3680,10 +4032,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     {!isGoogleCalendarConnected ? (
                       <button
                         type="button"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          setIsGoogleModalOpen(true);
-                        }}
+                        onClick={(e) => { e.stopPropagation(); if (isCustomizing) return; setIsGoogleModalOpen(true); }}
                         className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-[10px] font-bold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-900/60 hover:bg-blue-100 dark:hover:bg-blue-900/40 transition-colors cursor-pointer"
                         title="Conectar com o Google Agenda"
                       >
@@ -3705,7 +4054,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                   </div>
 
                   {/* VISÃO EXPANDIDA ADAPTATIVA: Linha do Tempo dos Próximos Blocos do Dia */}
-                  {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 220) && (
+                  {Boolean(cardConfig.customHeight ? cardConfig.customHeight > 140 : false) && (
                     <div className="pt-2.5 space-y-1.5 border-t border-zinc-100 dark:border-zinc-800/80 animate-in fade-in duration-200">
                       <div className="flex items-center justify-between text-[11px]">
                         <span className="font-bold text-zinc-700 dark:text-zinc-300 flex items-center gap-1.5">
@@ -3729,7 +4078,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         ))}
                       </div>
 
-                      {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 250) && (
+                      {Boolean(cardConfig.customHeight ? cardConfig.customHeight > 175 : false) && (
                         <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between text-[10px] text-zinc-500 dark:text-zinc-400">
                           <span>Tempo Planejado: <strong>4h 30m</strong></span>
                           <span className="text-emerald-600 dark:text-emerald-400 font-bold">Cronobiologia Otimizada</span>
@@ -3755,6 +4104,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
                 onReorder={reorderCard}
+                onSmartGuidesChange={setSmartGuidesState}
+                allCardsConfig={visibleCards}
               >
                 {/* 4. RAIO-X DAS 6 GRANDES ÁREAS */}
                 <section className="w-full bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-4 sm:p-6 shadow-xs space-y-4 min-h-0 h-full overflow-hidden flex flex-col justify-between">
@@ -4140,6 +4491,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
                 onReorder={reorderCard}
+                onSmartGuidesChange={setSmartGuidesState}
+                allCardsConfig={visibleCards}
               >
                 {/* 3. RETOMADA DE ESTUDOS INTELIGENTE - SELETOR PRINCIPAL (IMAGEM 3 NO LUGAR DA IMAGEM 2) */}
                 <section className="w-full min-h-0 h-full flex flex-col justify-between space-y-3">
@@ -4619,6 +4972,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 onMoveCard={moveCard}
                 onToggleVisibility={toggleVisibility}
                 onReorder={reorderCard}
+                onSmartGuidesChange={setSmartGuidesState}
+                allCardsConfig={visibleCards}
               >
                 {/* 4. Acesso Rápido em Carrossel com Seleção Central */}
                 <section className="space-y-3">
@@ -4890,7 +5245,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           />
 
           {/* Card Modal Centralizado */}
-          <div className="relative w-full max-w-2xl max-h-[85vh] bg-white dark:bg-[#0c1017] border border-slate-200 dark:border-slate-800 rounded-3xl shadow-2xl flex flex-col z-10 animate-in zoom-in-95 duration-200 overflow-hidden">
+          <div className={`relative w-full ${activeCentralDrawer === 'agenda_detalhada' ? 'max-w-5xl xl:max-w-6xl max-h-[92vh]' : 'max-w-2xl max-h-[85vh]'} bg-white dark:bg-[#0c1017] border border-slate-200 dark:border-slate-800 rounded-3xl shadow-2xl flex flex-col z-10 animate-in zoom-in-95 duration-200 overflow-hidden`}>
 
             {/* 1. CABEÇALHO DO DRAWER CENTRAL */}
             <div className="p-4 sm:p-5 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between shrink-0 bg-slate-50/60 dark:bg-zinc-900/40">
@@ -4912,7 +5267,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                   {activeCentralDrawer === 'agenda_detalhada' && <CalendarDays className="w-5 h-5 text-blue-500" />}
                 </div>
                 <div>
-                  <h3 className="font-heading text-base sm:text-lg font-bold text-slate-900 dark:text-white">
+                  <h3 className="font-heading text-base sm:text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
                     {activeCentralDrawer === 'cadernos' && 'Histórico de Cadernos de Questões'}
                     {activeCentralDrawer === 'provas' && 'Histórico e Catálogo de Provas Oficiais'}
                     {activeCentralDrawer === 'simulados' && 'Histórico de Simulados Oficiais'}
@@ -4920,7 +5275,14 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     {activeCentralDrawer === 'flashcards' && 'Flashcards Mnemônicos • Revisão do Dia'}
                     {activeCentralDrawer === 'treinar_recomendacao' && `Centro de Treino • ${recommendedArea.label}`}
                     {activeCentralDrawer === 'mnemonico_detalhado' && (activeDetailedMnemonic.theme || 'Mnemônico Clínico')}
-                    {activeCentralDrawer === 'agenda_detalhada' && 'Agenda e Cronograma de Estudos'}
+                    {activeCentralDrawer === 'agenda_detalhada' && (
+                      <>
+                        <span>Agenda e Cronograma de Estudos</span>
+                        <span className="text-[10px] px-2 py-0.5 rounded-full font-bold bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20 hidden sm:inline-block">
+                          Central Executiva
+                        </span>
+                      </>
+                    )}
                   </h3>
                   <p className="text-xs text-slate-500 dark:text-zinc-400">
                     {activeCentralDrawer === 'cadernos' && 'Acesse todos os seus cadernos personalizados e continue seus estudos'}
@@ -4930,19 +5292,27 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     {activeCentralDrawer === 'flashcards' && 'Fixação rápida de alto rendimento com algoritmo espaçado FSRS'}
                     {activeCentralDrawer === 'treinar_recomendacao' && 'Subtemas prioritários, radar da banca e modos de execução'}
                     {activeCentralDrawer === 'mnemonico_detalhado' && 'Critérios objetivos de decomposição e armadilhas de prova'}
-                    {activeCentralDrawer === 'agenda_detalhada' && 'Planejamento e blocos de estudo sequenciais organizados para hoje'}
+                    {activeCentralDrawer === 'agenda_detalhada' && 'Planejamento dinâmico integrado a plantões hospitalares e blocos de estudo'}
                   </p>
                 </div>
               </div>
 
-              <button
-                type="button"
-                onClick={() => setActiveCentralDrawer(null)}
-                className="p-2 rounded-xl text-slate-400 hover:text-slate-700 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800 border border-slate-200 dark:border-slate-800 cursor-pointer transition-colors"
-                title="Fechar (Esc)"
-              >
-                <X className="w-4 h-4" />
-              </button>
+              <div className="flex items-center gap-2">
+                {activeCentralDrawer === 'agenda_detalhada' && isGoogleCalendarConnected && (
+                  <span className="hidden sm:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-bold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
+                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" />
+                    <span>Google Agenda Ativa</span>
+                  </span>
+                )}
+                <button
+                  type="button"
+                  onClick={() => setActiveCentralDrawer(null)}
+                  className="p-2 rounded-xl text-slate-400 hover:text-slate-700 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-zinc-800 border border-slate-200 dark:border-slate-800 cursor-pointer transition-colors"
+                  title="Fechar (Esc)"
+                >
+                  <X className="w-4 h-4" />
+                </button>
+              </div>
             </div>
 
             {/* 2. BARRA DE BUSCA RÁPIDA DEDICADA (Oculta em Treino, Mnemônico e Agenda) */}
@@ -5743,677 +6113,850 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 </div>
               )}
 
-              {/* === CASO 8: DRAWER CENTRAL DE AGENDA DO DIA (INTEGRADA AO GOOGLE AGENDA) === */}
-              {activeCentralDrawer === 'agenda_detalhada' && (
-                <div className="p-4 sm:p-6 space-y-5 overflow-y-auto custom-scrollbar flex-1">
-                  {/* Banner / Card de Conexão com Google Agenda */}
-                  <div className={`p-4 sm:p-5 rounded-2xl border transition-all ${isGoogleCalendarConnected
-                      ? 'bg-blue-500/10 border-blue-500/30'
-                      : 'bg-zinc-50 dark:bg-zinc-900/60 border-zinc-200 dark:border-zinc-800'
-                    }`}>
-                    <div className="flex items-center justify-between flex-wrap gap-3">
-                      <div className="flex items-center gap-3">
-                        <div className="w-10 h-10 rounded-2xl bg-white dark:bg-[#18181b] border border-blue-500/20 shadow-xs flex items-center justify-center shrink-0">
-                          <GoogleIcon className="w-5 h-5" />
+              {/* === CASO 8: DRAWER CENTRAL DE AGENDA DO DIA (CENTRAL EXECUTIVA EM 2 COLUNAS) === */}
+              {activeCentralDrawer === 'agenda_detalhada' && (() => {
+                const studyCount = daySchedule.filter(s => s.source === 'plataforma' || s.isAiSuggested).length;
+                const googleCount = daySchedule.filter(s => s.source === 'google').length;
+                const isCurrentActive = currentPeriodInfo.status === 'em_andamento';
+                const activeSlot = isCurrentActive ? currentPeriodInfo.slot : null;
+                const upcomingSlot = currentPeriodInfo.status === 'proximo' ? currentPeriodInfo.slot : null;
+
+                return (
+                  <div className="p-4 sm:p-6 overflow-y-auto custom-scrollbar flex-1 space-y-4">
+                    {/* Alertas de Sincronização e Sucesso */}
+                    {calendarSyncSuccessMsg && (
+                      <div className="p-3 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-700 dark:text-emerald-300 text-xs font-semibold flex items-center justify-between gap-2 animate-in fade-in duration-200">
+                        <div className="flex items-center gap-2">
+                          <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
+                          <span>{calendarSyncSuccessMsg}</span>
                         </div>
-                        <div>
-                          <div className="flex items-center gap-2">
-                            <h4 className="text-xs sm:text-sm font-bold text-zinc-900 dark:text-zinc-100">
-                              {isGoogleCalendarConnected
-                                ? 'Google Agenda Sincronizada'
-                                : 'Conectar com Google Agenda'}
-                            </h4>
-                            {isGoogleCalendarConnected && (
-                              <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30">
-                                Ativa
-                              </span>
-                            )}
-                          </div>
-                          <p className="text-[11px] text-zinc-500 dark:text-zinc-400 mt-0.5 flex items-center gap-1.5 flex-wrap">
-                            {isGoogleCalendarConnected ? (
-                              <>
-                                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
-                                <span className="font-semibold text-zinc-800 dark:text-zinc-200">{googleCalendarAccount}</span>
-                                <span className="text-zinc-400">•</span>
-                                <span>Sincronizado {lastCalendarSyncTime}</span>
-                                {googleIcalUrl && realCalendarEvents.length > 0 && (
-                                  <>
-                                    <span className="text-zinc-400">•</span>
-                                    <span>{realCalendarEvents.length} evento(s) hoje</span>
-                                  </>
-                                )}
-                              </>
-                            ) : (
-                              'Sincronize plantões, internato e compromissos para adaptar os blocos de estudo à sua rotina'
-                            )}
-                          </p>
-                        </div>
-                      </div>
-
-                      <div className="flex items-center gap-2">
-                        {isGoogleCalendarConnected ? (
-                          <>
-                            {syncSuccessAnimation ? (
-                              <div className="px-3 py-1.5 rounded-xl border border-emerald-500/40 bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 text-xs font-bold flex items-center gap-1.5 shadow-xs animate-in fade-in duration-200">
-                                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" />
-                                <span>Sincronizado!</span>
-                              </div>
-                            ) : (
-                              <button
-                                type="button"
-                                onClick={handleSyncNow}
-                                disabled={isSyncingCalendar}
-                                className="px-3 py-1.5 rounded-xl border border-blue-500/30 bg-white dark:bg-zinc-900 text-blue-600 dark:text-blue-400 text-xs font-bold hover:bg-blue-50 dark:hover:bg-blue-950/40 cursor-pointer transition-colors flex items-center gap-1.5 disabled:opacity-50"
-                                title="Sincronizar novamente"
-                              >
-                                <RefreshCw className={`w-3.5 h-3.5 ${isSyncingCalendar ? 'animate-spin' : ''}`} />
-                                <span>{isSyncingCalendar ? 'Sincronizando...' : 'Sincronizar'}</span>
-                              </button>
-                            )}
-                            <button
-                              type="button"
-                              onClick={() => setIsGoogleModalOpen(true)}
-                              className="px-3 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold cursor-pointer transition-colors"
-                            >
-                              Configurar
-                            </button>
-                          </>
-                        ) : (
-                          <button
-                            type="button"
-                            onClick={() => setIsGoogleModalOpen(true)}
-                            className="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold cursor-pointer transition-all flex items-center gap-2 shadow-xs"
-                          >
-                            <GoogleIcon className="w-3.5 h-3.5" />
-                            <span>Conectar Agenda</span>
-                          </button>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Seletor de Simulação de Horário para Teste Interativo */}
-                  <div className="p-3 rounded-xl border border-zinc-200/80 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/40 space-y-2">
-                    <div className="flex items-center justify-between text-xs">
-                      <span className="font-bold text-zinc-700 dark:text-zinc-300 flex items-center gap-1.5">
-                        <Clock className="w-3.5 h-3.5 text-blue-500" />
-                        Simular Período do Dia (Teste da Adaptação em Tempo Real):
-                      </span>
-                      <span className="text-[11px] font-mono text-zinc-500">
-                        {simulatedHour !== null ? `Horário Simulado: ${simulatedHour}:15` : 'Horário Atual Real'}
-                      </span>
-                    </div>
-
-                    <div className="flex items-center gap-1.5 overflow-x-auto custom-scrollbar pb-0.5">
-                      {[
-                        { label: 'Agora (Real)', value: null },
-                        { label: 'Manhã (09:00)', value: 9 },
-                        { label: 'Tarde (14:30)', value: 14 },
-                        { label: 'Fim de Tarde (16:30)', value: 16 },
-                        { label: 'Noite (20:30)', value: 20 },
-                        { label: 'Madrugada (23:30)', value: 23 }
-                      ].map((item, idx) => {
-                        const isSelected = simulatedHour === item.value;
-                        return (
-                          <button
-                            key={idx}
-                            type="button"
-                            onClick={() => setSimulatedHour(item.value)}
-                            className={`text-[11px] px-2.5 py-1 rounded-lg font-bold transition-all cursor-pointer shrink-0 ${isSelected
-                                ? 'bg-blue-600 text-white shadow-2xs'
-                                : 'bg-white dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700 hover:text-zinc-900 dark:hover:text-white'
-                              }`}
-                          >
-                            {item.label}
-                          </button>
-                        );
-                      })}
-                    </div>
-                  </div>
-
-                  {/* Resumo de Metas do Dia */}
-                  <div className="grid grid-cols-3 gap-2.5">
-                    <div className="p-3 rounded-2xl bg-slate-50 dark:bg-zinc-900/60 border border-slate-200/80 dark:border-zinc-800 flex flex-col justify-between">
-                      <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-zinc-400 block">
-                        Meta de Questões
-                      </span>
-                      <span className="text-xl font-black font-mono text-slate-900 dark:text-zinc-100 mt-1">
-                        {todayAnswered}/{dailyGoal || 30}
-                      </span>
-                      <span className="text-[10px] text-slate-400 dark:text-zinc-500">
-                        {todayAnswered >= (dailyGoal || 30) ? 'Meta batida!' : 'progresso de hoje'}
-                      </span>
-                    </div>
-
-                    <div className="p-3 rounded-2xl bg-slate-50 dark:bg-zinc-900/60 border border-slate-200/80 dark:border-zinc-800 flex flex-col justify-between">
-                      <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-zinc-400 block">
-                        Tempo Dedicado
-                      </span>
-                      <span className="text-xl font-black font-mono text-slate-900 dark:text-zinc-100 mt-1">
-                        {todayStudyMinutes}m
-                      </span>
-                      <span className="text-[10px] text-slate-400 dark:text-zinc-500">
-                        meta diária: {dailyTimeGoal}m
-                      </span>
-                    </div>
-
-                    <div className="p-3 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex flex-col justify-between">
-                      <span className="text-[10px] font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 block">
-                        Blocos de Hoje
-                      </span>
-                      <span className="text-xl font-black font-mono text-blue-600 dark:text-blue-400 mt-1">
-                        {daySchedule.length} blocos
-                      </span>
-                      <span className="text-[10px] text-blue-500/80">
-                        {isGoogleCalendarConnected ? 'agenda sincronizada' : 'planejamento ativo'}
-                      </span>
-                    </div>
-                  </div>
-
-                  {/* Aviso informativo quando conectado com 0 eventos no dia */}
-                  {isGoogleCalendarConnected && realCalendarEvents.length === 0 && (
-                    <div className="p-3.5 rounded-2xl bg-blue-50/70 dark:bg-blue-950/25 border border-blue-200/80 dark:border-blue-900/50 text-xs text-blue-950 dark:text-blue-200 flex items-center justify-between gap-3">
-                      <div className="flex items-center gap-2.5">
-                        <CheckCircle2 className="w-4 h-4 text-blue-500 shrink-0" />
-                        <span>
-                          <strong>Google Agenda conectada!</strong> Você não tem compromissos marcados no calendário para hoje. Seus horários estão 100% livres para dedicação aos estudos.
-                        </span>
-                      </div>
-                      <button
-                        type="button"
-                        onClick={handleAnalyzeScheduleWithAi}
-                        disabled={isAnalyzingSchedule}
-                        className="px-3 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold shrink-0 cursor-pointer transition-colors shadow-2xs flex items-center gap-1.5"
-                      >
-                        <Sparkles className={`w-3.5 h-3.5 ${isAnalyzingSchedule ? 'animate-spin' : ''}`} />
-                        <span>Sugerir Tarefas com IA</span>
-                      </button>
-                    </div>
-                  )}
-
-                  {/* PAINEL DE OTIMIZAÇÃO DE HORÁRIOS LIVRES COM IA */}
-                  {showAiSchedulePanel && (
-                    <div className="p-4 sm:p-5 rounded-2xl border border-blue-500/30 bg-gradient-to-br from-blue-500/10 via-indigo-500/5 to-transparent dark:bg-[#111624] space-y-4 animate-in fade-in zoom-in-98 duration-200">
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-2.5">
-                          <div className="w-8 h-8 rounded-xl bg-blue-500/15 text-blue-600 dark:text-blue-400 flex items-center justify-center shrink-0">
-                            <Sparkles className="w-4 h-4" />
-                          </div>
-                          <div>
-                            <h4 className="text-xs sm:text-sm font-bold text-zinc-900 dark:text-zinc-100 flex items-center gap-2">
-                              <span>Otimização Inteligente de Horários Livres (Mentor IA)</span>
-                              <span className="text-[10px] px-2 py-0.5 rounded-full font-bold bg-blue-500/15 text-blue-600 dark:text-blue-400 border border-blue-500/20">
-                                TRI & FSRS
-                              </span>
-                            </h4>
-                            <p className="text-[11px] text-zinc-500 dark:text-zinc-400">
-                              Análise dos intervalos ociosos no Google Agenda adaptada para {targetExamName || 'sua Residência'}
-                            </p>
-                          </div>
-                        </div>
-
                         <button
                           type="button"
-                          onClick={() => setShowAiSchedulePanel(false)}
-                          className="p-1.5 rounded-lg text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 transition-colors cursor-pointer"
-                          title="Fechar painel de sugestões"
+                          onClick={() => setCalendarSyncSuccessMsg(null)}
+                          className="text-emerald-600 dark:text-emerald-400 hover:opacity-70 p-1"
                         >
-                          <X className="w-4 h-4" />
+                          <X className="w-3.5 h-3.5" />
                         </button>
                       </div>
+                    )}
 
-                      {isAnalyzingSchedule ? (
-                        <div className="p-8 flex flex-col items-center justify-center space-y-3 text-center">
-                          <div className="w-10 h-10 rounded-2xl bg-blue-500/20 text-blue-500 flex items-center justify-center animate-spin">
-                            <Sparkles className="w-5 h-5" />
-                          </div>
-                          <div className="space-y-1">
-                            <p className="text-xs font-bold text-zinc-800 dark:text-zinc-200">
-                              Calculando janelas livres e alocando blocos de estudo...
-                            </p>
-                            <p className="text-[11px] text-zinc-500 dark:text-zinc-400">
-                              Cruzando compromissos reais do Google Agenda com seus pontos de foco.
-                            </p>
+                    {calendarSyncError && (
+                      <div className="p-3 rounded-2xl bg-rose-500/10 border border-rose-500/30 text-rose-700 dark:text-rose-300 text-xs font-semibold flex items-center justify-between gap-2 animate-in fade-in duration-200">
+                        <div className="flex items-center gap-2">
+                          <AlertOctagon className="w-4 h-4 text-rose-500 shrink-0" />
+                          <span>{calendarSyncError}</span>
+                        </div>
+                        <button
+                          type="button"
+                          onClick={() => setCalendarSyncError(null)}
+                          className="text-rose-600 dark:text-rose-400 hover:opacity-70 p-1"
+                        >
+                          <X className="w-3.5 h-3.5" />
+                        </button>
+                      </div>
+                    )}
+
+                    {/* GRID PRINCIPAL EM 2 COLUNAS (5 COLS ESQUERDA / 7 COLS DIREITA) */}
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
+                      
+                      {/* ── COLUNA ESQUERDA: CONTROLE, MÉTRICAS, IA & ENERGIA COGNITIVA (lg:col-span-5) ── */}
+                      <div className="lg:col-span-5 space-y-4">
+                        
+                        {/* 1. Status Compacto do Google Agenda */}
+                        <div className={`p-4 rounded-2xl border transition-all ${isGoogleCalendarConnected
+                            ? 'bg-blue-500/10 border-blue-500/30'
+                            : 'bg-zinc-50 dark:bg-zinc-900/60 border-zinc-200 dark:border-zinc-800'
+                          }`}>
+                          <div className="flex items-center justify-between gap-3">
+                            <div className="flex items-center gap-2.5 min-w-0">
+                              <div className="w-9 h-9 rounded-xl bg-white dark:bg-[#18181b] border border-blue-500/20 shadow-xs flex items-center justify-center shrink-0">
+                                <GoogleIcon className="w-4 h-4" />
+                              </div>
+                              <div className="min-w-0">
+                                <div className="flex items-center gap-1.5">
+                                  <h4 className="text-xs font-bold text-zinc-900 dark:text-zinc-100 truncate">
+                                    {isGoogleCalendarConnected ? 'Google Agenda' : 'Google Agenda'}
+                                  </h4>
+                                  <span className={`px-1.5 py-0.2 rounded-full text-[9px] font-bold ${isGoogleCalendarConnected
+                                      ? 'bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30'
+                                      : 'bg-zinc-200 dark:bg-zinc-800 text-zinc-500'
+                                    }`}>
+                                    {isGoogleCalendarConnected ? 'Ativa' : 'Desconectada'}
+                                  </span>
+                                </div>
+                                <p className="text-[11px] text-zinc-500 dark:text-zinc-400 truncate">
+                                  {isGoogleCalendarConnected ? googleCalendarAccount : 'Sincronize plantões e internato'}
+                                </p>
+                              </div>
+                            </div>
+
+                            <div className="flex items-center gap-1.5 shrink-0">
+                              {isGoogleCalendarConnected ? (
+                                <>
+                                  <button
+                                    type="button"
+                                    onClick={handleSyncNow}
+                                    disabled={isSyncingCalendar}
+                                    className="p-1.5 rounded-lg border border-blue-500/30 bg-white dark:bg-zinc-900 text-blue-600 dark:text-blue-400 hover:bg-blue-50 text-xs font-bold cursor-pointer transition-colors disabled:opacity-50"
+                                    title="Sincronizar agora"
+                                  >
+                                    <RefreshCw className={`w-3.5 h-3.5 ${isSyncingCalendar ? 'animate-spin' : ''}`} />
+                                  </button>
+                                  <button
+                                    type="button"
+                                    onClick={() => setIsGoogleModalOpen(true)}
+                                    className="px-2.5 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-[11px] font-bold cursor-pointer transition-colors"
+                                  >
+                                    Configurar
+                                  </button>
+                                </>
+                              ) : (
+                                <button
+                                  type="button"
+                                  onClick={() => setIsGoogleModalOpen(true)}
+                                  className="px-3 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold cursor-pointer transition-colors flex items-center gap-1.5 shadow-2xs"
+                                >
+                                  <GoogleIcon className="w-3 h-3" />
+                                  <span>Conectar</span>
+                                </button>
+                              )}
+                            </div>
                           </div>
                         </div>
-                      ) : (
-                        <>
-                          {/* Resumo da IA & Janelas Livres Encontradas */}
-                          {scheduleAiAnalysis && (
-                            <div className="p-3 rounded-xl bg-white/70 dark:bg-zinc-900/60 border border-zinc-200/80 dark:border-zinc-800 space-y-2">
-                              <p className="text-xs text-zinc-700 dark:text-zinc-300 font-medium leading-relaxed">
-                                {scheduleAiAnalysis.summary}
-                              </p>
 
-                              {scheduleAiAnalysis.freeGaps && scheduleAiAnalysis.freeGaps.length > 0 && (
-                                <div className="flex items-center gap-2 flex-wrap pt-1 border-t border-zinc-100 dark:border-zinc-800/80 text-[11px]">
-                                  <span className="font-bold text-zinc-500 dark:text-zinc-400">Intervalos Livres:</span>
-                                  {scheduleAiAnalysis.freeGaps.map((gap, gIdx) => (
-                                    <span
-                                      key={gIdx}
-                                      className="px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20 font-mono text-[10px] font-bold"
-                                    >
-                                      {gap.startTime} às {gap.endTime} ({Math.floor(gap.durationMinutes / 60) > 0 ? `${Math.floor(gap.durationMinutes / 60)}h ` : ''}{gap.durationMinutes % 60}m)
-                                    </span>
-                                  ))}
-                                </div>
+                        {/* 2. Hero Card: "O Que Fazer Agora" */}
+                        <div className="p-4 rounded-2xl border border-blue-500/40 bg-gradient-to-br from-blue-500/10 via-indigo-500/5 to-transparent dark:bg-[#121622] space-y-3 shadow-xs">
+                          <div className="flex items-center justify-between">
+                            <span className="text-[10px] font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 flex items-center gap-1.5">
+                              {isCurrentActive ? (
+                                <>
+                                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                                  Bloco em Andamento Agora
+                                </>
+                              ) : upcomingSlot ? (
+                                <>
+                                  <Clock className="w-3.5 h-3.5 text-blue-500" />
+                                  Próxima Ação Programada
+                                </>
+                              ) : (
+                                <>
+                                  <Sparkles className="w-3.5 h-3.5 text-amber-500" />
+                                  Janela de Estudo Livre
+                                </>
                               )}
+                            </span>
+                            {isCurrentActive && (
+                              <span className="font-mono text-[11px] font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-md border border-emerald-500/20">
+                                {currentPeriodInfo.minutesRemaining}m restantes
+                              </span>
+                            )}
+                            {!isCurrentActive && upcomingSlot && (
+                              <span className="font-mono text-[11px] font-bold text-blue-600 dark:text-blue-400 bg-blue-500/10 px-2 py-0.5 rounded-md border border-blue-500/20">
+                                Inicia às {upcomingSlot.startTime}
+                              </span>
+                            )}
+                          </div>
+
+                          <div>
+                            <h4 className="text-sm font-black text-zinc-900 dark:text-zinc-100">
+                              {isCurrentActive && activeSlot
+                                ? activeSlot.title
+                                : upcomingSlot
+                                  ? upcomingSlot.title
+                                  : 'Nenhum compromisso imediato no momento'}
+                            </h4>
+                            <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5 leading-relaxed">
+                              {isCurrentActive && activeSlot
+                                ? (cleanEventDescription(activeSlot.description) || activeSlot.rationale || 'Mantenha o foco até o término deste bloco.')
+                                : upcomingSlot
+                                  ? (cleanEventDescription(upcomingSlot.description) || upcomingSlot.rationale || `Começa em ${currentPeriodInfo.minutesUntil || 15} minutos.`)
+                                  : 'Seu dia está livre de plantões e blocos obrigatórios. Que tal antecipar 20 questões da sua área prioritária?'}
+                            </p>
+                          </div>
+
+                          {/* Barra de Progresso do Bloco Atual */}
+                          {isCurrentActive && (
+                            <div className="space-y-1">
+                              <div className="flex items-center justify-between text-[10px] text-zinc-400">
+                                <span>Progresso do Bloco</span>
+                                <span className="font-mono font-bold text-blue-600 dark:text-blue-400">{currentPeriodInfo.progressPercent}%</span>
+                              </div>
+                              <div className="w-full h-1.5 rounded-full bg-blue-500/20 overflow-hidden">
+                                <div
+                                  className="h-full bg-blue-600 transition-all duration-300 rounded-full"
+                                  style={{ width: `${currentPeriodInfo.progressPercent}%` }}
+                                />
+                              </div>
                             </div>
                           )}
 
-                          {/* Lista de Sugestões de Tarefas */}
-                          <div className="space-y-2">
-                            {scheduleAiAnalysis?.suggestions && scheduleAiAnalysis.suggestions.length > 0 ? (
-                              scheduleAiAnalysis.suggestions.map((sug) => {
-                                const isAlreadyAdded = userScheduledTasks.some(t => t.id === sug.id || (t.startTime === sug.startTime && t.title === sug.title));
+                          {/* CTA Direto de Ação */}
+                          <div className="pt-1">
+                            {isCurrentActive && activeSlot?.action === 'treinar' && (
+                              <button
+                                type="button"
+                                onClick={() => {
+                                  setActiveCentralDrawer(null);
+                                  handlePracticeArea(recommendedArea.filterName);
+                                }}
+                                className="w-full py-2.5 rounded-xl text-white text-xs font-bold cursor-pointer transition-all hover:opacity-95 shadow-xs flex items-center justify-center gap-2"
+                                style={{ backgroundColor: accentConfig.primaryHex }}
+                              >
+                                <Play className="w-3.5 h-3.5 fill-current" />
+                                <span>Continuar Treino de Questões</span>
+                              </button>
+                            )}
 
+                            {isCurrentActive && activeSlot?.action === 'flashcards' && (
+                              <button
+                                type="button"
+                                onClick={() => setActiveCentralDrawer('flashcards')}
+                                className="w-full py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold cursor-pointer transition-all shadow-xs flex items-center justify-center gap-2"
+                              >
+                                <Brain className="w-3.5 h-3.5" />
+                                <span>Revisar Flashcards FSRS</span>
+                              </button>
+                            )}
+
+                            {isCurrentActive && activeSlot?.action === 'caderno_erros' && (
+                              <button
+                                type="button"
+                                onClick={() => setActiveCentralDrawer('caderno_erros')}
+                                className="w-full py-2.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white text-xs font-bold cursor-pointer transition-all shadow-xs flex items-center justify-center gap-2"
+                              >
+                                <AlertOctagon className="w-3.5 h-3.5" />
+                                <span>Abrir Caderno de Erros</span>
+                              </button>
+                            )}
+
+                            {isCurrentActive && activeSlot?.action === 'simulado' && (
+                              <button
+                                type="button"
+                                onClick={() => {
+                                  setActiveCentralDrawer(null);
+                                  if (onStartSimuladoExpress) onStartSimuladoExpress(10);
+                                }}
+                                className="w-full py-2.5 rounded-xl bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold cursor-pointer transition-all shadow-xs flex items-center justify-center gap-2"
+                              >
+                                <Trophy className="w-3.5 h-3.5" />
+                                <span>Iniciar Simulado Blitz</span>
+                              </button>
+                            )}
+
+                            {(!isCurrentActive || !activeSlot?.action) && (
+                              <button
+                                type="button"
+                                onClick={() => {
+                                  setActiveCentralDrawer(null);
+                                  handlePracticeArea(recommendedArea.filterName);
+                                }}
+                                className="w-full py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold cursor-pointer transition-all shadow-xs flex items-center justify-center gap-2"
+                              >
+                                <Play className="w-3.5 h-3.5 fill-current" />
+                                <span>Praticar {recommendedArea.label}</span>
+                              </button>
+                            )}
+                          </div>
+                        </div>
+
+                        {/* 3. Painel de Metas & Pacing Diário */}
+                        <div className="p-3.5 rounded-2xl bg-slate-50 dark:bg-zinc-900/60 border border-slate-200/80 dark:border-zinc-800 space-y-2.5">
+                          <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-zinc-400 block">
+                            Pacing e Metas de Hoje
+                          </span>
+
+                          <div className="grid grid-cols-3 gap-2">
+                            <div className="p-2.5 rounded-xl bg-white dark:bg-zinc-900 border border-slate-200/70 dark:border-zinc-800 text-center">
+                              <span className="text-[9px] font-bold text-slate-400 dark:text-zinc-500 uppercase block">Questões</span>
+                              <span className="text-base font-black font-mono text-slate-900 dark:text-zinc-100">
+                                {todayAnswered}/{dailyGoal || 30}
+                              </span>
+                            </div>
+
+                            <div className="p-2.5 rounded-xl bg-white dark:bg-zinc-900 border border-slate-200/70 dark:border-zinc-800 text-center">
+                              <span className="text-[9px] font-bold text-slate-400 dark:text-zinc-500 uppercase block">Tempo</span>
+                              <span className="text-base font-black font-mono text-slate-900 dark:text-zinc-100">
+                                {todayStudyMinutes}m
+                              </span>
+                            </div>
+
+                            <div className="p-2.5 rounded-xl bg-blue-500/10 border border-blue-500/20 text-center">
+                              <span className="text-[9px] font-bold text-blue-600 dark:text-blue-400 uppercase block">Blocos</span>
+                              <span className="text-base font-black font-mono text-blue-600 dark:text-blue-400">
+                                {daySchedule.length}
+                              </span>
+                            </div>
+                          </div>
+
+                          <div className="pt-1 flex items-center justify-between text-[11px] text-zinc-500 dark:text-zinc-400">
+                            <span>Status da Meta:</span>
+                            <span className="font-bold text-slate-800 dark:text-zinc-200">
+                              {todayAnswered >= (dailyGoal || 30) ? '🎉 Meta batida hoje!' : `Faltam ${(dailyGoal || 30) - todayAnswered} questões`}
+                            </span>
+                          </div>
+                        </div>
+
+                        {/* 4. IA Adaptativa & Botão de Emergência (Atrasei no Plantão) */}
+                        <div className="p-3.5 rounded-2xl bg-zinc-50/80 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-800 space-y-2.5">
+                          <div className="flex items-center justify-between text-xs font-bold text-zinc-800 dark:text-zinc-200">
+                            <span className="flex items-center gap-1.5">
+                              <Sparkles className="w-3.5 h-3.5 text-blue-500" />
+                              Ajustes Inteligentes da Rotina
+                            </span>
+                          </div>
+
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                            <button
+                              type="button"
+                              onClick={() => setShowAiCommandModal(true)}
+                              disabled={isAnalyzingSchedule}
+                              className="px-3 py-2 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white text-xs font-bold shadow-xs flex items-center justify-center gap-1.5 cursor-pointer disabled:opacity-50 transition-all"
+                            >
+                              <Sparkles className={`w-3.5 h-3.5 ${isAnalyzingSchedule ? 'animate-spin' : ''}`} />
+                              <span>{isAnalyzingSchedule ? 'Analisando...' : 'Analisar Horários (IA)'}</span>
+                            </button>
+
+                            <button
+                              type="button"
+                              onClick={() => setShowDelayModal(true)}
+                              className="px-3 py-2 rounded-xl border border-rose-500/30 bg-rose-500/10 hover:bg-rose-500/20 text-rose-700 dark:text-rose-300 text-xs font-bold flex items-center justify-center gap-1.5 cursor-pointer transition-colors shadow-2xs"
+                              title="Personalizar tempo de atraso e reorganizar tarefas de hoje"
+                            >
+                              <RotateCcw className="w-3.5 h-3.5 text-rose-500" />
+                              <span>Atrasei</span>
+                            </button>
+                          </div>
+
+                          <p className="text-[10px] text-zinc-400 dark:text-zinc-500 leading-tight">
+                            💡 O botão <strong>Atrasei</strong> permite definir o tempo exato (+30m, +60m ou personalizado) e empurra automaticamente os blocos restantes sem sobrecarga.
+                          </p>
+                        </div>
+
+                        {/* 5. Curva de Cronobiologia & Energia Mental Médica (Sincronizada com Desempenho Real) */}
+                        <div className="p-3.5 rounded-2xl bg-zinc-50/50 dark:bg-zinc-900/40 border border-zinc-200/80 dark:border-zinc-800/80 space-y-2">
+                          <div className="flex items-center justify-between">
+                            <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 flex items-center gap-1">
+                              <Zap className="w-3 h-3 text-amber-500" />
+                              Guia de Energia Cognitiva
+                            </span>
+                            {cognitiveEnergyStats.hasData && cognitiveEnergyStats.bestShift && (
+                              <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-md bg-purple-500/10 text-purple-600 dark:text-purple-400 border border-purple-500/20">
+                                Melhor: {cognitiveEnergyStats.bestShift} ({cognitiveEnergyStats.bestShiftTaxa}%)
+                              </span>
+                            )}
+                          </div>
+
+                          <div className="space-y-1.5 text-[11px]">
+                            {/* Manhã */}
+                            <div className="flex items-center justify-between text-zinc-600 dark:text-zinc-300">
+                              <span className="flex items-center gap-1.5">
+                                <span className="font-mono text-amber-500 font-bold">⚡⚡⚡ Manhã:</span>
+                                <span>Questões Inéditas (TRI)</span>
+                              </span>
+                              <span className="text-[10px] text-zinc-400 font-mono">
+                                {cognitiveEnergyStats.morning.resolvidas > 0
+                                  ? `${cognitiveEnergyStats.morning.taxa}% • ${cognitiveEnergyStats.morning.resolvidas}Q`
+                                  : 'Pico de Foco'}
+                              </span>
+                            </div>
+
+                            {/* Tarde */}
+                            <div className="flex items-center justify-between text-zinc-600 dark:text-zinc-300">
+                              <span className="flex items-center gap-1.5">
+                                <span className="font-mono text-blue-500 font-bold">⚡⚡ Tarde:</span>
+                                <span>Caderno de Erros</span>
+                              </span>
+                              <span className="text-[10px] text-zinc-400 font-mono">
+                                {cognitiveEnergyStats.afternoon.resolvidas > 0
+                                  ? `${cognitiveEnergyStats.afternoon.taxa}% • ${cognitiveEnergyStats.afternoon.resolvidas}Q`
+                                  : 'Reteste & Foco'}
+                              </span>
+                            </div>
+
+                            {/* Noite */}
+                            <div className="flex items-center justify-between text-zinc-600 dark:text-zinc-300">
+                              <span className="flex items-center gap-1.5">
+                                <span className="font-mono text-emerald-500 font-bold">⚡ Noite:</span>
+                                <span>Flashcards FSRS</span>
+                              </span>
+                              <span className="text-[10px] text-zinc-400 font-mono">
+                                {cognitiveEnergyStats.night.resolvidas > 0
+                                  ? `${cognitiveEnergyStats.night.taxa}% • ${cognitiveEnergyStats.night.resolvidas}Q`
+                                  : 'Fixação Leve'}
+                              </span>
+                            </div>
+                          </div>
+
+                          {cognitiveEnergyStats.fatigueAlert && (
+                            <div className="pt-1 border-t border-amber-500/20 flex items-center gap-1.5 text-[10px] font-medium text-amber-600 dark:text-amber-400">
+                              <AlertTriangle className="w-3 h-3 shrink-0" />
+                              <span>Alerta de fadiga noturna: seu acerto cai à noite. Priorize revisões curtas.</span>
+                            </div>
+                          )}
+
+                          {!cognitiveEnergyStats.hasData && (
+                            <p className="text-[10px] text-zinc-400 dark:text-zinc-500 italic pt-1 border-t border-zinc-200/50 dark:border-zinc-800/50">
+                              * Calibrado automaticamente com o histórico real das suas resoluções de questões.
+                            </p>
+                          )}
+                        </div>
+                      </div>
+
+                      {/* ── COLUNA DIREITA: CRONOGRAMA VISUAL, FILTROS & TIMELINE (lg:col-span-7) ── */}
+                      <div className="lg:col-span-7 space-y-4">
+                        
+                        {/* Header da Timeline com Filtros Rápidos & Ações em Lote */}
+                        <div className="p-3.5 rounded-2xl bg-zinc-50/70 dark:bg-zinc-900/60 border border-zinc-200/80 dark:border-zinc-800 space-y-2.5">
+                          <div className="flex items-center justify-between flex-wrap gap-2">
+                            <div>
+                              <span className="text-xs font-bold text-zinc-900 dark:text-zinc-100 flex items-center gap-1.5">
+                                <Calendar className="w-3.5 h-3.5 text-blue-500" />
+                                Cronograma Sequencial de Hoje
+                              </span>
+                              <span className="text-[11px] text-zinc-400 block">
+                                {isGoogleCalendarConnected
+                                  ? `${googleCount} compromisso(s) Google • ${studyCount} tarefa(s) de estudo`
+                                  : 'Conecte sua agenda para sincronização contínua'}
+                              </span>
+                            </div>
+
+                            <div className="flex items-center gap-1.5">
+                              {userScheduledTasks.length > 0 && (
+                                <>
+                                  <button
+                                    type="button"
+                                    onClick={handleSyncAllTasksToGoogle}
+                                    disabled={isBatchSyncing}
+                                    className="px-2.5 py-1 rounded-lg border border-blue-500/30 text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-950/40 text-[11px] font-bold flex items-center gap-1 transition-colors cursor-pointer"
+                                    title="Sincronizar blocos adicionados ao Google Agenda"
+                                  >
+                                    <GoogleIcon className="w-3 h-3" />
+                                    <span>{isBatchSyncing ? 'Sincronizando...' : 'Sincronizar c/ Google'}</span>
+                                  </button>
+                                  <button
+                                    type="button"
+                                    onClick={handleClearUserScheduledTasks}
+                                    className="px-2.5 py-1 rounded-lg border border-zinc-200 dark:border-zinc-800 text-zinc-500 hover:text-rose-500 hover:border-rose-500/30 text-[11px] font-medium transition-colors cursor-pointer"
+                                    title="Limpar tarefas adicionadas e voltar ao Google Agenda limpo"
+                                  >
+                                    Limpar
+                                  </button>
+                                </>
+                              )}
+                            </div>
+                          </div>
+
+                          {/* Pílulas de Filtro (Todos / Somente Estudos / Google Agenda) */}
+                          <div className="flex items-center gap-1.5 pt-1 border-t border-zinc-200/60 dark:border-zinc-800/80 flex-wrap">
+                            <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 mr-1">Filtrar:</span>
+                            {[
+                              { id: 'todos', label: `Todos (${daySchedule.length})` },
+                              { id: 'estudos', label: `Estudos (${studyCount})` },
+                              { id: 'google', label: `Google / Plantões (${googleCount})` }
+                            ].map((f) => {
+                              const isActive = timelineFilter === f.id;
+                              return (
+                                <button
+                                  key={f.id}
+                                  type="button"
+                                  onClick={() => setTimelineFilter(f.id as any)}
+                                  className={`px-2.5 py-1 rounded-lg text-[11px] font-bold transition-all cursor-pointer ${isActive
+                                      ? 'bg-blue-600 text-white shadow-2xs'
+                                      : 'bg-white dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700 hover:text-zinc-900 dark:hover:text-white'
+                                    }`}
+                                >
+                                  {f.label}
+                                </button>
+                              );
+                            })}
+
+                            {/* Botão + no canto direito da imagem para abrir o Drawer de Bloco Manual */}
+                            <button
+                              type="button"
+                              onClick={() => setShowAddManualModal(true)}
+                              className="ml-auto px-2.5 py-1 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-[11px] font-bold flex items-center gap-1 transition-all cursor-pointer shadow-xs shrink-0"
+                              title="Adicionar Bloco de Estudo Personalizado"
+                            >
+                              <Plus className="w-3.5 h-3.5" />
+                              <span>+ Novo Bloco</span>
+                            </button>
+                          </div>
+                        </div>
+
+                        {/* Painel Expansível de Sugestões de IA (se ativo) */}
+                        {showAiSchedulePanel && (
+                          <div className="p-4 rounded-2xl border border-blue-500/30 bg-blue-500/5 dark:bg-[#111624] space-y-3 animate-in fade-in duration-200">
+                            <div className="flex items-center justify-between">
+                              <div className="flex items-center gap-2">
+                                <div className="w-7 h-7 rounded-lg bg-blue-500/15 text-blue-600 dark:text-blue-400 flex items-center justify-center shrink-0">
+                                  <Sparkles className="w-3.5 h-3.5" />
+                                </div>
+                                <div>
+                                  <h4 className="text-xs font-bold text-zinc-900 dark:text-zinc-100">
+                                    Otimização de Horários Livres (Mentor IA)
+                                  </h4>
+                                  <p className="text-[10px] text-zinc-400">
+                                    Janelas ociosas cruzadas com foco de alto rendimento TRI & FSRS
+                                  </p>
+                                </div>
+                              </div>
+                              <button
+                                type="button"
+                                onClick={() => setShowAiSchedulePanel(false)}
+                                className="text-zinc-400 hover:text-zinc-600 p-1"
+                              >
+                                <X className="w-3.5 h-3.5" />
+                              </button>
+                            </div>
+
+                            {scheduleAiAnalysis && (
+                              <div className="p-2.5 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 space-y-1.5 text-xs">
+                                <p className="text-zinc-700 dark:text-zinc-300 font-medium">
+                                  {scheduleAiAnalysis.summary}
+                                </p>
+                                {scheduleAiAnalysis.freeGaps && scheduleAiAnalysis.freeGaps.length > 0 && (
+                                  <div className="flex items-center gap-1.5 flex-wrap pt-1 border-t border-zinc-100 dark:border-zinc-800 text-[10px]">
+                                    <span className="font-bold text-zinc-400">Gaps Livres:</span>
+                                    {scheduleAiAnalysis.freeGaps.map((g, gi) => (
+                                      <span key={gi} className="px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-mono font-bold">
+                                        {g.startTime} às {g.endTime} ({g.durationMinutes}m)
+                                      </span>
+                                    ))}
+                                  </div>
+                                )}
+                              </div>
+                            )}
+
+                            {/* Sugestões da IA */}
+                            <div className="space-y-2">
+                              {scheduleAiAnalysis?.suggestions?.map((sug) => {
+                                const isAdded = userScheduledTasks.some(t => t.id === sug.id || (t.startTime === sug.startTime && t.title === sug.title));
                                 return (
                                   <div
                                     key={sug.id}
                                     className="p-3 rounded-xl bg-white dark:bg-[#141822] border border-zinc-200 dark:border-zinc-800 hover:border-blue-500/40 transition-all flex items-center justify-between gap-3"
                                   >
-                                    <div className="space-y-1 min-w-0">
-                                      <div className="flex items-center gap-2 flex-wrap">
-                                        <span className="font-mono text-xs font-bold text-blue-600 dark:text-blue-400">
-                                          {sug.startTime} - {sug.endTime}
-                                        </span>
-                                        <span className="px-1.5 py-0.5 rounded text-[10px] font-bold bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20">
+                                    <div className="space-y-0.5 min-w-0">
+                                      <div className="flex items-center gap-1.5 flex-wrap">
+                                        <span className="font-mono text-xs font-bold text-blue-600 dark:text-blue-400">{sug.startTime} - {sug.endTime}</span>
+                                        <span className="px-1.5 py-0.2 rounded text-[9px] font-bold bg-blue-500/10 text-blue-600 dark:text-blue-400">
                                           {sug.category === 'estudo' ? 'Treino TRI' : sug.category === 'flashcard' ? 'Flashcards FSRS' : sug.category === 'simulado' ? 'Simulado Blitz' : 'Caderno de Erros'}
                                         </span>
                                       </div>
-
-                                      <h5 className="text-xs sm:text-sm font-bold text-zinc-900 dark:text-zinc-100 truncate">
-                                        {sug.title}
-                                      </h5>
-
-                                      {cleanEventDescription(sug.description) ? (
-                                        <p className="text-[11px] text-zinc-500 dark:text-zinc-400">
-                                          {cleanEventDescription(sug.description)}
-                                        </p>
-                                      ) : null}
-
+                                      <h5 className="text-xs font-bold text-zinc-900 dark:text-zinc-100 truncate">{sug.title}</h5>
                                       {sug.rationale && (
-                                        <p className="text-[10px] text-blue-600 dark:text-blue-300 italic">
-                                          💡 {sug.rationale}
-                                        </p>
+                                        <p className="text-[10px] text-blue-600 dark:text-blue-300 italic truncate">💡 {sug.rationale}</p>
                                       )}
                                     </div>
 
                                     <div className="shrink-0 flex items-center gap-1.5">
-                                      {isAlreadyAdded ? (
-                                        <span className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 text-[11px] font-bold">
-                                          <Check className="w-3.5 h-3.5" />
+                                      {isAdded ? (
+                                        <span className="inline-flex items-center gap-1 px-2 py-1 rounded-lg text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 text-[10px] font-bold">
+                                          <Check className="w-3 h-3" />
                                           <span>No Cronograma</span>
                                         </span>
                                       ) : (
                                         <button
                                           type="button"
                                           onClick={() => handleAddSuggestedTask(sug)}
-                                          className="px-3 py-1.5 rounded-lg text-white text-xs font-bold cursor-pointer transition-opacity hover:opacity-90 shadow-2xs flex items-center gap-1"
-                                          style={{ backgroundColor: accentConfig.primaryHex }}
+                                          className="px-2.5 py-1 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-[11px] font-bold cursor-pointer transition-colors flex items-center gap-1 shadow-2xs"
                                         >
-                                          <Plus className="w-3.5 h-3.5" />
+                                          <Plus className="w-3 h-3" />
                                           <span>Adicionar</span>
                                         </button>
                                       )}
 
-                                      {exportedSlotIds[sug.id] ? (
-                                        <span className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg border border-emerald-500/30 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 text-[10px] font-bold">
-                                          <CheckCircle2 className="w-3 h-3 text-emerald-500" />
-                                          <span>Salvo na Agenda</span>
-                                        </span>
-                                      ) : (
-                                        <button
-                                          type="button"
-                                          onClick={() => handleExportSlotToGoogle(sug)}
-                                          disabled={exportingSlotId === sug.id}
-                                          className="px-2 py-1.5 rounded-lg border border-blue-500/25 bg-blue-50/50 dark:bg-blue-950/30 text-blue-600 dark:text-blue-400 hover:bg-blue-100/70 dark:hover:bg-blue-900/40 text-[10px] font-bold flex items-center gap-1 transition-all cursor-pointer disabled:opacity-50"
-                                          title="Sincronizar este bloco diretamente com o Google Agenda"
-                                        >
-                                          {exportingSlotId === sug.id ? (
-                                            <>
-                                              <RefreshCw className="w-2.5 h-2.5 animate-spin" />
-                                              <span>Gravando...</span>
-                                            </>
-                                          ) : (
-                                            <>
-                                              <GoogleIcon className="w-2.5 h-2.5" />
-                                              <span>+ Google</span>
-                                            </>
-                                          )}
-                                        </button>
-                                      )}
+                                      <button
+                                        type="button"
+                                        onClick={() => handleExportSlotToGoogle(sug)}
+                                        disabled={exportingSlotId === sug.id || Boolean(exportedSlotIds[sug.id])}
+                                        className="px-2 py-1 rounded-lg border border-blue-500/25 bg-blue-50/50 dark:bg-blue-950/30 text-blue-600 dark:text-blue-400 text-[10px] font-bold flex items-center gap-1 transition-all cursor-pointer disabled:opacity-50"
+                                      >
+                                        <GoogleIcon className="w-2.5 h-2.5" />
+                                        <span>{exportedSlotIds[sug.id] ? 'Salvo' : '+ Google'}</span>
+                                      </button>
                                     </div>
                                   </div>
                                 );
-                              })
-                            ) : (
-                              <p className="text-xs text-zinc-500 text-center py-3">
-                                Clique no botão acima para iniciar a análise de horários livres.
-                              </p>
-                            )}
+                              })}
+                            </div>
+
+                            <div className="flex items-center justify-end gap-2 pt-1 border-t border-zinc-200/60 dark:border-zinc-800">
+                              <button
+                                type="button"
+                                onClick={handleAddAllSuggestedTasks}
+                                className="px-3 py-1.5 rounded-xl border border-blue-500/30 bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400 hover:bg-blue-100 text-xs font-bold cursor-pointer transition-colors"
+                              >
+                                Adicionar Todas ao Cronograma
+                              </button>
+                            </div>
                           </div>
+                        )}
 
-                          {/* Botões de Ação do Painel de IA */}
-                          <div className="pt-2 flex items-center justify-between flex-wrap gap-2 border-t border-zinc-200/60 dark:border-zinc-800">
-                            <span className="text-[11px] text-zinc-500 dark:text-zinc-400">
-                              As tarefas adicionadas passam a compor seu cronograma e podem ser sincronizadas ao Google Agenda.
-                            </span>
-
-                            <div className="flex items-center gap-2">
-                              {scheduleAiAnalysis?.suggestions && scheduleAiAnalysis.suggestions.length > 0 && (
+                        {/* Linha do Tempo Sequencial & Contínua */}
+                        {filteredDaySchedule.length === 0 ? (
+                          <div className="p-8 rounded-2xl border border-dashed border-zinc-300 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/30 text-center space-y-3">
+                            <div className="w-12 h-12 rounded-2xl bg-blue-500/10 text-blue-500 flex items-center justify-center mx-auto shadow-2xs">
+                              <Calendar className="w-6 h-6" />
+                            </div>
+                            <div className="max-w-md mx-auto space-y-1">
+                              <h5 className="text-sm font-bold text-zinc-900 dark:text-zinc-100">
+                                {isGoogleCalendarConnected
+                                  ? 'Nenhum compromisso encontrado para o filtro selecionado'
+                                  : 'Sua agenda está livre hoje'}
+                              </h5>
+                              <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                                {isGoogleCalendarConnected
+                                  ? 'Seu cronograma está livre! Use o Mentor IA ou adicione um novo bloco para estruturar seu estudo de hoje.'
+                                  : 'Sua agenda inicia limpa. Conecte seu Google Agenda para sincronizar seus compromissos médicos ou clique em "+ Novo Bloco" para adicionar horários personalizados.'}
+                              </p>
+                            </div>
+                            <div className="pt-1 flex items-center justify-center gap-2 flex-wrap">
+                              {isGoogleCalendarConnected ? (
                                 <>
                                   <button
                                     type="button"
-                                    onClick={handleAddAllSuggestedTasks}
-                                    className="px-3 py-1.5 rounded-xl border border-blue-500/30 bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400 hover:bg-blue-100 text-xs font-bold cursor-pointer transition-colors"
+                                    onClick={() => setShowAiCommandModal(true)}
+                                    className="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold cursor-pointer transition-all flex items-center gap-1.5 shadow-2xs"
                                   >
-                                    Adicionar Todas ao Cronograma
+                                    <Sparkles className="w-3.5 h-3.5" />
+                                    <span>Sugerir Tarefas com IA</span>
                                   </button>
                                   <button
                                     type="button"
-                                    disabled={isBatchSyncing}
-                                    onClick={handleSyncAllTasksToGoogle}
-                                    className="px-3 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-500 disabled:opacity-50 text-white text-xs font-bold cursor-pointer transition-all flex items-center gap-1.5 shadow-2xs"
+                                    onClick={() => setShowAddManualModal(true)}
+                                    className="px-4 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-200 text-xs font-bold cursor-pointer transition-all flex items-center gap-1.5 shadow-2xs"
                                   >
-                                    <GoogleIcon className="w-3 h-3" />
-                                    <span>{isBatchSyncing ? 'Sincronizando...' : 'Sincronizar Todas com o Google'}</span>
+                                    <Plus className="w-3.5 h-3.5" />
+                                    <span>+ Novo Bloco</span>
+                                  </button>
+                                </>
+                              ) : (
+                                <>
+                                  <button
+                                    type="button"
+                                    onClick={() => setIsGoogleModalOpen(true)}
+                                    className="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold cursor-pointer transition-all flex items-center gap-1.5 shadow-2xs"
+                                  >
+                                    <GoogleIcon className="w-3.5 h-3.5" />
+                                    <span>Conectar Google Agenda</span>
+                                  </button>
+                                  <button
+                                    type="button"
+                                    onClick={() => setShowAddManualModal(true)}
+                                    className="px-4 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-200 text-xs font-bold cursor-pointer transition-all flex items-center gap-1.5 shadow-2xs"
+                                  >
+                                    <Plus className="w-3.5 h-3.5" />
+                                    <span>Adicionar Bloco Manual</span>
                                   </button>
                                 </>
                               )}
                             </div>
                           </div>
-                        </>
-                      )}
-                    </div>
-                  )}
+                        ) : (
+                          <div className="space-y-2.5">
+                            {filteredDaySchedule.map((slot, idx) => {
+                              const isCurrentSlot = isCurrentActive && activeSlot?.id === slot.id;
+                              const isPast = slot.endMinutes <= currentPeriodInfo.currentMinutes;
+                              const isUserAdded = userScheduledTasks.some(t => t.id === slot.id);
+                              const isHospital = isHospitalOrDutyEvent(slot);
 
-                  {/* Linha do Tempo Sequencial de Hoje */}
-                  <div className="space-y-2.5">
-                    <div className="flex items-center justify-between text-xs text-zinc-500 font-semibold px-1 flex-wrap gap-2">
-                      <div>
-                        <span className="font-bold text-zinc-800 dark:text-zinc-200">
-                          {isGoogleCalendarConnected ? 'Cronograma do Google Agenda' : 'Cronograma Sequencial de Hoje'}
-                        </span>
-                        <span className="text-[11px] text-zinc-400 dark:text-zinc-500 block">
-                          {isGoogleCalendarConnected
-                            ? `${realCalendarEvents.length} compromisso(s) do Google Agenda${userScheduledTasks.length > 0 ? ` • ${userScheduledTasks.length} tarefa(s) de estudo adicionada(s)` : ' • Visualização limpa'}`
-                            : 'Conecte sua agenda para sincronizar seus horários'}
-                        </span>
-                      </div>
+                              // Cálculo de intervalo livre antes deste bloco (se houver gap >= 30 min)
+                              const prevSlot = idx > 0 ? filteredDaySchedule[idx - 1] : null;
+                              const gapMinutes = prevSlot ? (slot.startMinutes - prevSlot.endMinutes) : 0;
+                              const showFreeGap = gapMinutes >= 30;
 
-                      <div className="flex items-center gap-2">
-                        {userScheduledTasks.length > 0 && (
-                          <>
-                            <button
-                              type="button"
-                              onClick={handleSyncAllTasksToGoogle}
-                              disabled={isBatchSyncing}
-                              className="px-2.5 py-1 rounded-lg border border-blue-500/30 text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-950/40 text-[11px] font-bold flex items-center gap-1 transition-colors cursor-pointer"
-                              title="Sincronizar blocos de estudo adicionados ao Google Agenda"
-                            >
-                              <GoogleIcon className="w-3 h-3" />
-                              <span>{isBatchSyncing ? 'Sincronizando...' : 'Sincronizar c/ Google'}</span>
-                            </button>
-                            <button
-                              type="button"
-                              onClick={handleClearUserScheduledTasks}
-                              className="px-2.5 py-1 rounded-lg border border-zinc-200 dark:border-zinc-800 text-zinc-500 hover:text-rose-500 hover:border-rose-500/30 text-[11px] font-semibold transition-colors cursor-pointer"
-                              title="Limpar tarefas adicionadas e voltar ao Google Agenda limpo"
-                            >
-                              Limpar tarefas adicionadas
-                            </button>
-                          </>
-                        )}
-
-                        <button
-                          type="button"
-                          onClick={() => {
-                            if (showAiSchedulePanel) {
-                              handleAnalyzeScheduleWithAi();
-                            } else {
-                              handleAnalyzeScheduleWithAi();
-                            }
-                          }}
-                          disabled={isAnalyzingSchedule}
-                          className="px-3 py-1.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white text-xs font-bold shadow-xs flex items-center gap-1.5 cursor-pointer disabled:opacity-50 transition-all"
-                        >
-                          <Sparkles className={`w-3.5 h-3.5 ${isAnalyzingSchedule ? 'animate-spin' : ''}`} />
-                          <span>{isAnalyzingSchedule ? 'Analisando Horários...' : 'Analisar Horários Livres (IA)'}</span>
-                        </button>
-                      </div>
-                    </div>
-
-                    {/* Estado Vazio: Quando não há nenhum evento no dia */}
-                    {daySchedule.length === 0 ? (
-                      <div className="p-8 rounded-2xl border border-dashed border-zinc-300 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/30 text-center space-y-3">
-                        <div className="w-12 h-12 rounded-2xl bg-blue-500/10 text-blue-500 flex items-center justify-center mx-auto shadow-2xs">
-                          {isGoogleCalendarConnected ? <Calendar className="w-6 h-6" /> : <GoogleIcon className="w-6 h-6" />}
-                        </div>
-                        <div className="max-w-md mx-auto space-y-1">
-                          <h5 className="text-sm font-bold text-zinc-900 dark:text-zinc-100">
-                            {isGoogleCalendarConnected
-                              ? 'Nenhum compromisso marcado no Google Agenda para hoje'
-                              : 'Conecte sua Google Agenda'}
-                          </h5>
-                          <p className="text-xs text-zinc-500 dark:text-zinc-400">
-                            {isGoogleCalendarConnected
-                              ? 'Seu dia está 100% livre! Use a opção de Análise com IA para planejar blocos de estudo de alto rendimento adaptados ao seu tempo.'
-                              : 'Conecte sua agenda pelo link iCal (.ics) secreto para carregar seus horários e compromissos reais de forma limpa.'}
-                          </p>
-                        </div>
-                        <div className="pt-1 flex items-center justify-center gap-2">
-                          {isGoogleCalendarConnected ? (
-                            <button
-                              type="button"
-                              onClick={handleAnalyzeScheduleWithAi}
-                              className="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold cursor-pointer transition-all flex items-center gap-1.5 shadow-2xs"
-                            >
-                              <Sparkles className="w-3.5 h-3.5" />
-                              <span>Sugerir Tarefas com IA</span>
-                            </button>
-                          ) : (
-                            <button
-                              type="button"
-                              onClick={() => setIsGoogleModalOpen(true)}
-                              className="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold cursor-pointer transition-all flex items-center gap-1.5 shadow-2xs"
-                            >
-                              <GoogleIcon className="w-3.5 h-3.5" />
-                              <span>Conectar Google Agenda</span>
-                            </button>
-                          )}
-                        </div>
-                      </div>
-                    ) : (
-                      <div className="space-y-2">
-                        {daySchedule.map((slot, idx) => {
-                          const isCurrentSlot = currentPeriodInfo.status === 'em_andamento' && currentPeriodInfo.slot.id === slot.id;
-                          const isPast = slot.endMinutes <= currentPeriodInfo.currentMinutes;
-                          const isUserAdded = userScheduledTasks.some(t => t.id === slot.id);
-
-                          return (
-                            <div
-                              key={slot.id || idx}
-                              className={`p-3.5 rounded-2xl border transition-all flex items-center justify-between gap-3 ${isCurrentSlot
-                                  ? 'bg-blue-500/10 border-blue-500/50 shadow-md ring-1 ring-blue-500/30'
-                                  : isPast
-                                    ? 'bg-zinc-50/60 dark:bg-zinc-900/30 border-zinc-200/60 dark:border-zinc-800/60 opacity-70'
-                                    : 'bg-white dark:bg-[#121620] border-zinc-200/90 dark:border-zinc-800'
-                                }`}
-                            >
-                              <div className="flex items-center gap-3 min-w-0">
-                                <div className={`w-8 h-8 rounded-xl flex items-center justify-center shrink-0 font-bold text-xs ${isCurrentSlot
-                                    ? 'bg-blue-500 text-white shadow-xs'
-                                    : isPast
-                                      ? 'bg-emerald-500/15 text-emerald-600 dark:text-emerald-400'
-                                      : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400'
-                                  }`}>
-                                  {isPast ? <Check className="w-4 h-4" /> : idx + 1}
-                                </div>
-
-                                <div className="min-w-0 space-y-0.5">
-                                  <div className="flex items-center gap-2 flex-wrap">
-                                    <span className="font-mono text-xs font-bold text-zinc-700 dark:text-zinc-300">
-                                      {slot.startTime} - {slot.endTime}
-                                    </span>
-
-                                    {isCurrentSlot && (
-                                      <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30">
-                                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
-                                        Agora ({currentPeriodInfo.minutesRemaining}m restantes)
-                                      </span>
-                                    )}
-
-                                    {slot.source === 'google' ? (
-                                      <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-bold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
-                                        <Check className="w-2.5 h-2.5 text-emerald-500" />
-                                        Google Agenda
-                                      </span>
-                                    ) : slot.isAiSuggested ? (
-                                      <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-bold bg-purple-500/10 text-purple-600 dark:text-purple-400 border border-purple-500/20">
-                                        <Sparkles className="w-2.5 h-2.5" />
-                                        Sugerido por IA
-                                      </span>
-                                    ) : (
-                                      <span className="px-1.5 py-0.5 rounded text-[10px] font-medium bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400">
-                                        Plataforma
-                                      </span>
-                                    )}
-                                  </div>
-
-                                  <h5 className="text-xs sm:text-sm font-bold text-zinc-900 dark:text-zinc-100 truncate">
-                                    {slot.title}
-                                  </h5>
-
-                                  {(slot.location || cleanEventDescription(slot.description)) && (
-                                    <p className="text-[11px] text-zinc-500 dark:text-zinc-400 truncate">
-                                      {slot.location ? `${slot.location}${cleanEventDescription(slot.description) ? ' • ' : ''}` : ''}
-                                      {cleanEventDescription(slot.description)}
-                                    </p>
+                              return (
+                                <React.Fragment key={slot.id || idx}>
+                                  {/* Indicador visual de Intervalo Livre / Almoço / Descanso */}
+                                  {showFreeGap && (
+                                    <div className="px-3 py-1.5 rounded-xl border border-dashed border-emerald-500/30 bg-emerald-500/5 text-emerald-700 dark:text-emerald-400 text-[11px] font-semibold flex items-center justify-between gap-2">
+                                      <div className="flex items-center gap-2">
+                                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+                                        <span>Janela Livre de <strong>{gapMinutes}m</strong> ({prevSlot?.endTime} às {slot.startTime})</span>
+                                      </div>
+                                      <span className="text-[10px] text-emerald-600 dark:text-emerald-400 italic">Oportunidade para Flashcards ou Descanso</span>
+                                    </div>
                                   )}
 
-                                  {slot.rationale && (
-                                    <p className="text-[10px] text-blue-600 dark:text-blue-400 italic">
-                                      💡 {slot.rationale}
-                                    </p>
-                                  )}
-                                </div>
-                              </div>
-
-                              <div className="shrink-0 flex items-center gap-2">
-                                {slot.action === 'treinar' && (
-                                  <button
-                                    type="button"
-                                    onClick={() => {
-                                      setActiveCentralDrawer(null);
-                                      handlePracticeArea(recommendedArea.filterName);
-                                    }}
-                                    className="px-3 py-1.5 rounded-lg text-white text-xs font-bold cursor-pointer transition-opacity hover:opacity-90 shadow-2xs"
-                                    style={{ backgroundColor: accentConfig.primaryHex }}
+                                  {/* Card do Bloco na Linha do Tempo */}
+                                  <div
+                                    className={`p-3.5 rounded-2xl border transition-all flex items-center justify-between gap-3 ${isCurrentSlot
+                                        ? 'bg-blue-500/10 border-blue-500/50 shadow-md ring-1 ring-blue-500/30'
+                                        : isHospital
+                                          ? 'bg-slate-500/5 dark:bg-slate-900/40 border-slate-300 dark:border-slate-800'
+                                          : isPast
+                                            ? 'bg-zinc-50/60 dark:bg-zinc-900/30 border-zinc-200/60 dark:border-zinc-800/60 opacity-70'
+                                            : 'bg-white dark:bg-[#121620] border-zinc-200/90 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700'
+                                      }`}
                                   >
-                                    Treinar
-                                  </button>
-                                )}
+                                    <div className="flex items-center gap-3 min-w-0">
+                                      <div className={`w-8 h-8 rounded-xl flex items-center justify-center shrink-0 font-bold text-xs ${isCurrentSlot
+                                          ? 'bg-blue-500 text-white shadow-xs'
+                                          : isHospital
+                                            ? 'bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300'
+                                            : isPast
+                                              ? 'bg-emerald-500/15 text-emerald-600 dark:text-emerald-400'
+                                              : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400'
+                                        }`}>
+                                        {isPast ? <Check className="w-4 h-4" /> : isHospital ? <Activity className="w-4 h-4 text-slate-500" /> : idx + 1}
+                                      </div>
 
-                                {slot.action === 'caderno_erros' && (
-                                  <button
-                                    type="button"
-                                    onClick={() => setActiveCentralDrawer('caderno_erros')}
-                                    className="px-3 py-1.5 rounded-lg bg-rose-500/15 text-rose-600 dark:text-rose-400 border border-rose-500/20 text-xs font-bold cursor-pointer hover:bg-rose-500/25"
-                                  >
-                                    Abrir Erros
-                                  </button>
-                                )}
+                                      <div className="min-w-0 space-y-0.5">
+                                        <div className="flex items-center gap-1.5 flex-wrap">
+                                          <span className="font-mono text-xs font-bold text-zinc-700 dark:text-zinc-300">
+                                            {slot.startTime} - {slot.endTime}
+                                          </span>
 
-                                {slot.action === 'flashcards' && (
-                                  <button
-                                    type="button"
-                                    onClick={() => setActiveCentralDrawer('flashcards')}
-                                    className="px-3 py-1.5 rounded-lg bg-blue-500/15 text-blue-600 dark:text-blue-400 border border-blue-500/20 text-xs font-bold cursor-pointer hover:bg-blue-500/25"
-                                  >
-                                    Revisar FSRS
-                                  </button>
-                                )}
+                                          {isCurrentSlot && (
+                                            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30">
+                                              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                                              Agora ({currentPeriodInfo.minutesRemaining}m)
+                                            </span>
+                                          )}
 
-                                {slot.action === 'mnemonico' && (
-                                  <button
-                                    type="button"
-                                    onClick={() => setActiveCentralDrawer('mnemonico_detalhado')}
-                                    className="px-3 py-1.5 rounded-lg bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 text-xs font-bold cursor-pointer hover:bg-emerald-500/25"
-                                  >
-                                    Ver Pílula
-                                  </button>
-                                )}
+                                          {isHospital ? (
+                                            <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-bold bg-slate-500/15 text-slate-700 dark:text-slate-300 border border-slate-500/25">
+                                              <Activity className="w-2.5 h-2.5 text-slate-500" />
+                                              Plantão / Internato
+                                            </span>
+                                          ) : slot.source === 'google' ? (
+                                            <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-bold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
+                                              <Check className="w-2.5 h-2.5 text-emerald-500" />
+                                              Google Agenda
+                                            </span>
+                                          ) : slot.isAiSuggested ? (
+                                            <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-bold bg-purple-500/10 text-purple-600 dark:text-purple-400 border border-purple-500/20">
+                                              <Sparkles className="w-2.5 h-2.5" />
+                                              Sugerido por IA
+                                            </span>
+                                          ) : (
+                                            <span className="px-1.5 py-0.5 rounded text-[10px] font-medium bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400">
+                                              Plataforma
+                                            </span>
+                                          )}
+                                        </div>
 
-                                {slot.action === 'simulado' && (
-                                  <button
-                                    type="button"
-                                    onClick={() => {
-                                      setActiveCentralDrawer(null);
-                                      if (onStartSimuladoExpress) onStartSimuladoExpress(10);
-                                    }}
-                                    className="px-3 py-1.5 rounded-lg bg-amber-500/15 text-amber-700 dark:text-amber-300 border border-amber-500/20 text-xs font-bold cursor-pointer hover:bg-amber-500/25"
-                                  >
-                                    Iniciar Blitz
-                                  </button>
-                                )}
+                                        <h5 className="text-xs sm:text-sm font-bold text-zinc-900 dark:text-zinc-100 truncate">
+                                          {slot.title}
+                                        </h5>
 
-                                {!slot.action && slot.source === 'google' && (
-                                  <span className="text-[10px] font-bold text-emerald-700 dark:text-emerald-400 px-2 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center gap-1">
-                                    <Check className="w-2.5 h-2.5" />
-                                    Google
-                                  </span>
-                                )}
+                                        {(slot.location || cleanEventDescription(slot.description)) && (
+                                          <p className="text-[11px] text-zinc-500 dark:text-zinc-400 truncate">
+                                            {slot.location ? `${slot.location}${cleanEventDescription(slot.description) ? ' • ' : ''}` : ''}
+                                            {cleanEventDescription(slot.description)}
+                                          </p>
+                                        )}
 
-                                {slot.source === 'plataforma' && (
-                                  exportedSlotIds[slot.id] ? (
-                                    <span className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg border border-emerald-500/30 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 text-[10px] font-bold animate-in fade-in duration-200">
-                                      <CheckCircle2 className="w-3 h-3 text-emerald-500" />
-                                      <span>Salvo na Agenda</span>
-                                    </span>
-                                  ) : (
-                                    <button
-                                      type="button"
-                                      onClick={() => handleExportSlotToGoogle(slot)}
-                                      disabled={exportingSlotId === slot.id}
-                                      className="px-2 py-1.5 rounded-lg border border-blue-500/25 bg-blue-50/50 dark:bg-blue-950/30 text-blue-600 dark:text-blue-400 hover:bg-blue-100/70 dark:hover:bg-blue-900/40 text-[10px] font-bold flex items-center gap-1 transition-all cursor-pointer disabled:opacity-50"
-                                      title={calendarSyncMode === 'api' && googleAccessToken ? 'Gravar direto no Google Calendar via API' : 'Salvar no Google Agenda (1 clique)'}
-                                    >
-                                      {exportingSlotId === slot.id ? (
-                                        <>
-                                          <RefreshCw className="w-2.5 h-2.5 animate-spin" />
-                                          <span>Gravando...</span>
-                                        </>
-                                      ) : (
-                                        <>
-                                          <GoogleIcon className="w-2.5 h-2.5" />
-                                          <span>+ Google</span>
-                                        </>
+                                        {slot.rationale && (
+                                          <p className="text-[10px] text-blue-600 dark:text-blue-400 italic">
+                                            💡 {slot.rationale}
+                                          </p>
+                                        )}
+                                      </div>
+                                    </div>
+
+                                    {/* Ações do Bloco */}
+                                    <div className="shrink-0 flex items-center gap-1.5">
+                                      {slot.action === 'treinar' && (
+                                        <button
+                                          type="button"
+                                          onClick={() => {
+                                            setActiveCentralDrawer(null);
+                                            handlePracticeArea(recommendedArea.filterName);
+                                          }}
+                                          className="px-2.5 py-1.5 rounded-lg text-white text-xs font-bold cursor-pointer transition-opacity hover:opacity-90 shadow-2xs"
+                                          style={{ backgroundColor: accentConfig.primaryHex }}
+                                        >
+                                          Treinar
+                                        </button>
                                       )}
-                                    </button>
-                                  )
-                                )}
 
-                                {/* Opção de remover tarefas personalizadas / sugeridas */}
-                                {isUserAdded && (
-                                  <button
-                                    type="button"
-                                    onClick={() => handleRemoveScheduledTask(slot.id)}
-                                    className="p-1.5 rounded-lg text-zinc-400 hover:text-rose-500 hover:bg-rose-500/10 transition-colors cursor-pointer"
-                                    title="Remover esta tarefa do cronograma"
-                                  >
-                                    <X className="w-3.5 h-3.5" />
-                                  </button>
-                                )}
-                              </div>
-                            </div>
-                          );
-                        })}
+                                      {slot.action === 'caderno_erros' && (
+                                        <button
+                                          type="button"
+                                          onClick={() => setActiveCentralDrawer('caderno_erros')}
+                                          className="px-2.5 py-1.5 rounded-lg bg-rose-500/15 text-rose-600 dark:text-rose-400 border border-rose-500/20 text-xs font-bold cursor-pointer hover:bg-rose-500/25"
+                                        >
+                                          Abrir Erros
+                                        </button>
+                                      )}
+
+                                      {slot.action === 'flashcards' && (
+                                        <button
+                                          type="button"
+                                          onClick={() => setActiveCentralDrawer('flashcards')}
+                                          className="px-2.5 py-1.5 rounded-lg bg-blue-500/15 text-blue-600 dark:text-blue-400 border border-blue-500/20 text-xs font-bold cursor-pointer hover:bg-blue-500/25"
+                                        >
+                                          Revisar FSRS
+                                        </button>
+                                      )}
+
+                                      {slot.action === 'mnemonico' && (
+                                        <button
+                                          type="button"
+                                          onClick={() => { if (isCustomizing) return; setActiveCentralDrawer('mnemonico_detalhado'); }}
+                                          className="px-2.5 py-1.5 rounded-lg bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 text-xs font-bold cursor-pointer hover:bg-emerald-500/25"
+                                        >
+                                          Ver Pílula
+                                        </button>
+                                      )}
+
+                                      {slot.action === 'simulado' && (
+                                        <button
+                                          type="button"
+                                          onClick={() => {
+                                            setActiveCentralDrawer(null);
+                                            if (onStartSimuladoExpress) onStartSimuladoExpress(10);
+                                          }}
+                                          className="px-2.5 py-1.5 rounded-lg bg-amber-500/15 text-amber-700 dark:text-amber-300 border border-amber-500/20 text-xs font-bold cursor-pointer hover:bg-amber-500/25"
+                                        >
+                                          Simulado Blitz
+                                        </button>
+                                      )}
+
+                                      {slot.source === 'plataforma' && (
+                                        exportedSlotIds[slot.id] ? (
+                                          <span className="inline-flex items-center gap-1 px-2 py-1 rounded-lg border border-emerald-500/30 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 text-[10px] font-bold">
+                                            <CheckCircle2 className="w-3 h-3 text-emerald-500" />
+                                            <span>Salvo</span>
+                                          </span>
+                                        ) : (
+                                          <button
+                                            type="button"
+                                            onClick={() => handleExportSlotToGoogle(slot)}
+                                            disabled={exportingSlotId === slot.id}
+                                            className="px-2 py-1 rounded-lg border border-blue-500/25 bg-blue-50/50 dark:bg-blue-950/30 text-blue-600 dark:text-blue-400 hover:bg-blue-100/70 text-[10px] font-bold flex items-center gap-1 transition-all cursor-pointer disabled:opacity-50"
+                                            title="Salvar este bloco diretamente no Google Agenda"
+                                          >
+                                            <GoogleIcon className="w-2.5 h-2.5" />
+                                            <span>+ Google</span>
+                                          </button>
+                                        )
+                                      )}
+
+                                      {isUserAdded && (
+                                        <button
+                                          type="button"
+                                          onClick={() => handleRemoveScheduledTask(slot.id)}
+                                          className="p-1 rounded-lg text-zinc-400 hover:text-rose-500 hover:bg-rose-500/10 transition-colors cursor-pointer"
+                                          title="Remover esta tarefa do cronograma"
+                                        >
+                                          <X className="w-3.5 h-3.5" />
+                                        </button>
+                                      )}
+                                    </div>
+                                  </div>
+                                </React.Fragment>
+                              );
+                            })}
+                          </div>
+                        )}
                       </div>
-                    )}
+                    </div>
                   </div>
-                </div>
-              )}
+                );
+              })()}
 
               {/* === CASO 5: DRAWER CENTRAL DE FLASHCARDS === */}
               {activeCentralDrawer === 'flashcards' && (
@@ -6599,6 +7142,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
         </div>
       )}
 
+
+
       {/* MODAL CENTRAL DE FILTRO POR PERÍODO (IMAGEM 5) */}
       {isPeriodDrawerOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6">
@@ -6710,7 +7255,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
         </div>
       )}
 
-      {/* 5. MODAL DE CONEXÃO COM GOOGLE AGENDA */}
+{/* 5. MODAL DE CONEXÃO COM GOOGLE AGENDA */}
       {isGoogleModalOpen && (
         <div
           className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 animate-in fade-in duration-200"
@@ -6743,22 +7288,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
               </button>
             </div>
 
-            {/* Seletor de Modo de Sincronização: iCal vs Google API */}
+            {/* Seletor de Modo de Sincronização: Google vs Link iCal */}
             <div className="flex p-1 bg-zinc-100 dark:bg-zinc-800/80 rounded-2xl gap-1">
-              <button
-                type="button"
-                onClick={() => setCalendarSyncMode('ical')}
-                className={`flex-1 py-2 text-xs font-bold rounded-xl transition-all cursor-pointer flex items-center justify-center gap-1.5 ${calendarSyncMode === 'ical'
-                    ? 'bg-white dark:bg-zinc-900 text-blue-600 dark:text-blue-400 shadow-xs'
-                    : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
-                  }`}
-              >
-                <span>1. Link iCal (.ics)</span>
-                <span className="text-[9px] px-1.5 py-0.5 rounded-md bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20 font-semibold">
-                  Sem Login
-                </span>
-              </button>
-
               <button
                 type="button"
                 onClick={() => setCalendarSyncMode('api')}
@@ -6768,10 +7299,19 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                   }`}
               >
                 <GoogleIcon className="w-3.5 h-3.5" />
-                <span>2. Google API</span>
-                <span className="text-[9px] px-1.5 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 font-semibold">
-                  Direto (OAuth)
-                </span>
+                <span>Google</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => setCalendarSyncMode('ical')}
+                className={`flex-1 py-2 text-xs font-bold rounded-xl transition-all cursor-pointer flex items-center justify-center gap-1.5 ${calendarSyncMode === 'ical'
+                    ? 'bg-white dark:bg-zinc-900 text-blue-600 dark:text-blue-400 shadow-xs'
+                    : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
+                  }`}
+              >
+                <Calendar className="w-3.5 h-3.5 text-zinc-500" />
+                <span>Link iCal (.ics)</span>
               </button>
             </div>
 
@@ -6789,110 +7329,18 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
               </div>
             )}
 
-            {/* CONTEÚDO DA ABA 1: LINK ICAL (.ICS) */}
-            {calendarSyncMode === 'ical' && (
-              <div className="space-y-3.5">
-                <p className="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed bg-zinc-50 dark:bg-zinc-900/60 p-3 rounded-xl border border-zinc-200/80 dark:border-zinc-800">
-                  Sincronização rápida em 30 segundos: cole o link privado da sua agenda. Leitura automática de plantões e rounds sem precisar conceder permissões de conta.
-                </p>
-
-                <div>
-                  <div className="flex items-center justify-between mb-1.5">
-                    <label className="text-xs font-bold text-zinc-700 dark:text-zinc-300">
-                      Link Secreto iCal (.ics) do Google Agenda
-                    </label>
-                    <span className="text-[10px] text-blue-600 dark:text-blue-400 font-semibold">
-                      Mais Rápido
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2 px-3 py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#18181b] focus-within:border-blue-500 transition-colors">
-                    <GoogleIcon className="w-4 h-4 shrink-0" />
-                    <input
-                      type="url"
-                      value={googleIcalUrl}
-                      onChange={(e) => {
-                        setGoogleIcalUrl(e.target.value);
-                        setCalendarSyncError(null);
-                      }}
-                      placeholder="https://calendar.google.com/calendar/ical/.../basic.ics"
-                      className="w-full text-xs bg-transparent text-zinc-900 dark:text-white focus:outline-none"
-                    />
-                  </div>
-
-                  {/* Passo a passo rápido de como obter o link */}
-                  <div className="mt-2 p-2.5 rounded-xl bg-blue-50/60 dark:bg-blue-950/20 border border-blue-200/60 dark:border-blue-900/40 text-[11px] text-zinc-600 dark:text-zinc-400 space-y-1">
-                    <span className="font-bold text-blue-900 dark:text-blue-300 flex items-center gap-1">
-                      <Lightbulb className="w-3.5 h-3.5 text-blue-500" />
-                      Onde pegar o link no Google Agenda:
-                    </span>
-                    <ol className="list-decimal pl-4 space-y-0.5 text-zinc-600 dark:text-zinc-400">
-                      <li>Abra o <strong>Google Agenda</strong> no navegador.</li>
-                      <li>Clique nos <strong>3 pontinhos</strong> da sua agenda ➔ <strong>Configurações e compartilhamento</strong>.</li>
-                      <li>Role até <strong>Integrar agenda</strong> e copie o <strong>"Endereço secreto no formato iCal"</strong>.</li>
-                    </ol>
-                  </div>
-                </div>
-
-                <div>
-                  <label className="text-xs font-bold text-zinc-700 dark:text-zinc-300 block mb-1.5">
-                    Perfil de Rotina Base
-                  </label>
-                  <div className="grid grid-cols-1 gap-2">
-                    {[
-                      {
-                        id: 'internato',
-                        label: '🏥 Internato Hospitalar',
-                        desc: 'Manhã no hospital (07:30 - 12:30) + Estudos à tarde'
-                      },
-                      {
-                        id: 'plantao',
-                        label: '🚑 Plantão 12h (Diurno)',
-                        desc: 'Plantão hospitalar até 19:00 + Blitz de estudo noturno'
-                      },
-                      {
-                        id: 'estudos',
-                        label: '📚 Dedicação Exclusiva',
-                        desc: 'Dia livre para foco integral em simulados e questões'
-                      }
-                    ].map((preset) => {
-                      const isSelected = googleRoutinePreset === preset.id;
-                      return (
-                        <div
-                          key={preset.id}
-                          onClick={() => setGoogleRoutinePreset(preset.id as any)}
-                          className={`p-3 rounded-xl border cursor-pointer transition-all flex items-start gap-3 ${isSelected
-                              ? 'bg-blue-500/10 border-blue-500 text-blue-900 dark:text-blue-100'
-                              : 'bg-zinc-50 dark:bg-zinc-900/50 border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300 hover:border-zinc-300 dark:hover:border-zinc-700'
-                            }`}
-                        >
-                          <div className={`w-4 h-4 rounded-full border mt-0.5 flex items-center justify-center shrink-0 ${isSelected ? 'border-blue-500 bg-blue-500' : 'border-zinc-400'
-                            }`}>
-                            {isSelected && <div className="w-1.5 h-1.5 rounded-full bg-white" />}
-                          </div>
-                          <div className="min-w-0">
-                            <div className="text-xs font-bold">{preset.label}</div>
-                            <div className="text-[11px] text-zinc-500 dark:text-zinc-400">{preset.desc}</div>
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </div>
-                </div>
-              </div>
-            )}
-
-            {/* CONTEÚDO DA ABA 2: GOOGLE API (OAUTH DIRETO) */}
+            {/* CONTEÚDO DA ABA 1: GOOGLE (OPÇÃO 1) */}
             {calendarSyncMode === 'api' && (
               <div className="space-y-3.5">
                 <p className="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed bg-zinc-50 dark:bg-zinc-900/60 p-3 rounded-xl border border-zinc-200/80 dark:border-zinc-800">
-                  Integração oficial via <strong>Google Calendar REST API</strong> com suporte a leitura e gravação direta de blocos no seu calendário.
+                  Integração oficial via <strong>Google Agenda</strong> com leitura e gravação direta dos seus blocos.
                 </p>
 
                 {googleAccessToken ? (
                   <div className="p-3.5 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-700 dark:text-emerald-400 text-xs space-y-1.5">
                     <div className="flex items-center gap-2 font-bold">
                       <CheckCircle2 className="w-4 h-4 text-emerald-500" />
-                      <span>Conectado via Google OAuth API</span>
+                      <span>Conectado com o Google Agenda</span>
                     </div>
                     <p className="text-[11px] text-zinc-600 dark:text-zinc-400">
                       Sua conta Google está autorizada para ler seus compromissos e gravar blocos de estudo diretamente.
@@ -6931,43 +7379,76 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       </p>
                     </div>
 
-                    <div className="pt-0.5 space-y-2">
-                      <div className="flex items-center justify-between text-[10px]">
-                        <button
-                          type="button"
-                          onClick={handleConnectGoogleViaRedirect}
-                          className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400 underline cursor-pointer"
-                          title="Usar redirecionamento de tela inteira em vez de janela popup"
-                        >
-                          Abrir por redirecionamento de página
-                        </button>
-
-                        <button
-                          type="button"
-                          onClick={() => setShowAdvancedClientId(!showAdvancedClientId)}
-                          className="text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-300 underline cursor-pointer"
-                        >
-                          {showAdvancedClientId ? 'Ocultar Client ID' : 'Client ID'}
-                        </button>
-                      </div>
-
-                      {showAdvancedClientId && (
-                        <div className="p-2.5 rounded-xl bg-zinc-50 dark:bg-zinc-900/50 border border-zinc-200 dark:border-zinc-800 space-y-1">
-                          <label className="text-[10px] font-bold text-zinc-700 dark:text-zinc-300 block">
-                            Google Client ID (OAuth 2.0)
-                          </label>
-                          <input
-                            type="text"
-                            value={googleClientId}
-                            onChange={(e) => setGoogleClientId(e.target.value)}
-                            placeholder="Ex: 123456789-abc.apps.googleusercontent.com"
-                            className="w-full text-[10px] px-2.5 py-1.5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#18181b] text-zinc-900 dark:text-white focus:outline-none focus:border-blue-500 transition-colors font-mono"
-                          />
-                        </div>
-                      )}
+                    <div className="pt-0.5 text-center">
+                      <button
+                        type="button"
+                        onClick={handleConnectGoogleViaRedirect}
+                        className="text-[11px] text-blue-500 hover:text-blue-600 dark:hover:text-blue-400 underline cursor-pointer"
+                        title="Usar redirecionamento de tela inteira em vez de janela popup"
+                      >
+                        Problemas com popup? Abrir por redirecionamento
+                      </button>
                     </div>
                   </div>
                 )}
+              </div>
+            )}
+
+            {/* CONTEÚDO DA ABA 2: LINK ICAL (.ICS) */}
+            {calendarSyncMode === 'ical' && (
+              <div className="space-y-3.5">
+                <p className="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed bg-zinc-50 dark:bg-zinc-900/60 p-3 rounded-xl border border-zinc-200/80 dark:border-zinc-800 font-medium">
+                  Sincronize-a com o app usando um link para o iCal.
+                </p>
+
+                {/* Passo a passo oficial */}
+                <div className="p-3.5 rounded-2xl bg-blue-50/60 dark:bg-blue-950/20 border border-blue-200/60 dark:border-blue-900/40 text-xs text-zinc-700 dark:text-zinc-300 space-y-2">
+                  <span className="font-bold text-blue-900 dark:text-blue-300 flex items-center gap-1.5">
+                    <Lightbulb className="w-4 h-4 text-blue-500" />
+                    Como obter o link iCal no Google Agenda:
+                  </span>
+                  <ol className="list-decimal pl-4 space-y-1.5 text-[11px] leading-relaxed text-zinc-600 dark:text-zinc-300">
+                    <li>
+                      Abra o <a href="https://calendar.google.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 underline font-semibold hover:opacity-80">Google Agenda</a> no computador.
+                    </li>
+                    <li>
+                      No canto superior direito, clique em <strong>Configurações</strong> ⚙️.
+                    </li>
+                    <li>
+                      No painel à esquerda, em <em>"Configurações das minhas agendas"</em>, clique no nome da agenda que você quer usar.
+                    </li>
+                    <li>
+                      Clique em <strong>Integrar agenda</strong>.
+                    </li>
+                    <li>
+                      Na seção <em>"Endereço secreto no formato iCal"</em>, <strong>copie o link</strong>.
+                    </li>
+                    <li>
+                      Cole o link conforme indicado pelo outro app de agenda (no campo abaixo).
+                    </li>
+                  </ol>
+                </div>
+
+                <div>
+                  <div className="flex items-center justify-between mb-1.5">
+                    <label className="text-xs font-bold text-zinc-700 dark:text-zinc-300">
+                      Endereço secreto no formato iCal (.ics)
+                    </label>
+                  </div>
+                  <div className="flex items-center gap-2 px-3 py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#18181b] focus-within:border-blue-500 transition-colors">
+                    <GoogleIcon className="w-4 h-4 shrink-0" />
+                    <input
+                      type="url"
+                      value={googleIcalUrl}
+                      onChange={(e) => {
+                        setGoogleIcalUrl(e.target.value);
+                        setCalendarSyncError(null);
+                      }}
+                      placeholder="https://calendar.google.com/calendar/ical/.../basic.ics"
+                      className="w-full text-xs bg-transparent text-zinc-900 dark:text-white focus:outline-none font-mono"
+                    />
+                  </div>
+                </div>
               </div>
             )}
 
@@ -7031,6 +7512,358 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                   </button>
                 </>
               )}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* 6. MODAL PERSONALIZADO: REAJUSTE DE ATRASO NO PLANTÃO */}
+      {showDelayModal && (
+        <div
+          className="fixed inset-0 z-[70] bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 animate-in fade-in duration-200"
+          onClick={() => setShowDelayModal(false)}
+        >
+          <div
+            className="w-full max-w-md bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl p-6 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2.5">
+                <div className="w-10 h-10 rounded-2xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center text-rose-500 shadow-xs">
+                  <RotateCcw className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="font-heading text-base font-bold text-zinc-900 dark:text-zinc-100">
+                    Atrasei
+                  </h3>
+                  <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                    Reajuste os blocos pendentes de hoje sem sobrecarga
+                  </p>
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => setShowDelayModal(false)}
+                className="p-2 text-zinc-400 hover:text-zinc-600 dark:hover:text-white rounded-xl transition-colors cursor-pointer"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+
+            <div className="space-y-3">
+              <label className="text-xs font-bold text-zinc-700 dark:text-zinc-300 block">
+                Quanto tempo você gostaria de adiar suas tarefas restantes?
+              </label>
+
+              {/* Pílulas de tempo pré-definido */}
+              <div className="grid grid-cols-5 gap-1.5">
+                {[30, 45, 60, 90, 120].map((mins) => (
+                  <button
+                    key={mins}
+                    type="button"
+                    onClick={() => setCustomDelayMinutes(mins)}
+                    className={`py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                      customDelayMinutes === mins
+                        ? 'bg-rose-600 text-white shadow-xs'
+                        : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700'
+                    }`}
+                  >
+                    +{mins}m
+                  </button>
+                ))}
+              </div>
+
+              {/* Campo para minutos customizados */}
+              <div className="p-3 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800 space-y-1.5">
+                <span className="text-[11px] font-semibold text-zinc-600 dark:text-zinc-400 block">
+                  Ou digite os minutos exatos de atraso:
+                </span>
+                <div className="flex items-center gap-2">
+                  <input
+                    type="number"
+                    min="15"
+                    max="360"
+                    step="15"
+                    value={customDelayMinutes}
+                    onChange={(e) => setCustomDelayMinutes(Math.max(15, Number(e.target.value) || 15))}
+                    className="w-24 px-3 py-1.5 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white font-mono font-bold text-sm focus:outline-none focus:ring-1 focus:ring-rose-500"
+                  />
+                  <span className="text-xs text-zinc-500 font-medium">minutos de tolerância/descanso</span>
+                </div>
+              </div>
+
+              <div className="p-3 rounded-2xl bg-rose-500/10 border border-rose-500/20 text-xs text-rose-800 dark:text-rose-300 space-y-1">
+                <p className="font-semibold flex items-center gap-1.5">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-rose-500" />
+                  Como funciona a adaptação:
+                </p>
+                <p className="text-[11px] leading-relaxed text-zinc-600 dark:text-zinc-300">
+                  Os blocos de estudo que ainda não foram concluídos serão empurrados em <strong>+{customDelayMinutes} minutos</strong>, preservando intervalos de 15 minutos para descanso e protegendo seu período noturno de sono reparador.
+                </p>
+              </div>
+            </div>
+
+            <div className="pt-2 flex items-center gap-2.5">
+              <button
+                type="button"
+                onClick={() => setShowDelayModal(false)}
+                className="flex-1 py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 text-xs font-semibold hover:bg-zinc-100 dark:hover:bg-zinc-800 cursor-pointer transition-colors"
+              >
+                Cancelar
+              </button>
+              <button
+                type="button"
+                onClick={() => handleReorganizeDelayedSchedule(customDelayMinutes)}
+                className="flex-1 py-2.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white text-xs font-bold cursor-pointer transition-all flex items-center justify-center gap-2 shadow-sm"
+              >
+                <RotateCcw className="w-3.5 h-3.5" />
+                <span>Reorganizar (+{customDelayMinutes}m)</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* 7. MODAL CENTRAL DEDICADO: ADICIONAR BLOCO DE ESTUDO MANUAL */}
+      {showAddManualModal && (
+        <div
+          className="fixed inset-0 z-[70] bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 animate-in fade-in duration-200"
+          onClick={() => setShowAddManualModal(false)}
+        >
+          <div
+            className="w-full max-w-lg bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl p-6 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2.5">
+                <div className="w-10 h-10 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-600 dark:text-blue-400 shadow-xs">
+                  <Plus className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="font-heading text-base font-bold text-zinc-900 dark:text-zinc-100">
+                    Adicionar Bloco de Estudo
+                  </h3>
+                  <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                    Crie um horário dedicado na sua grade de hoje
+                  </p>
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => setShowAddManualModal(false)}
+                className="p-2 text-zinc-400 hover:text-zinc-600 dark:hover:text-white rounded-xl transition-colors cursor-pointer"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+
+            <div className="space-y-3.5">
+              <div>
+                <label className="text-xs font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
+                  Nome do Bloco
+                </label>
+                <input
+                  type="text"
+                  value={manualSlotTitle}
+                  onChange={(e) => setManualSlotTitle(e.target.value)}
+                  placeholder="Ex: Treino de Pediatria ou Revisão de Trauma"
+                  className="w-full px-3.5 py-2.5 rounded-xl text-xs bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500 font-medium"
+                />
+              </div>
+
+              <div>
+                <label className="text-xs font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
+                  Tipo de Atividade
+                </label>
+                <div className="grid grid-cols-4 gap-1.5">
+                  {[
+                    { id: 'estudo', label: 'Questões', icon: Play },
+                    { id: 'flashcard', label: 'Flashcards', icon: Brain },
+                    { id: 'revisao', label: 'Cad. Erros', icon: AlertOctagon },
+                    { id: 'simulado', label: 'Simulado', icon: Trophy }
+                  ].map((cat) => {
+                    const isSelected = manualSlotCategory === cat.id;
+                    const CatIcon = cat.icon;
+                    return (
+                      <button
+                        key={cat.id}
+                        type="button"
+                        onClick={() => setManualSlotCategory(cat.id as any)}
+                        className={`p-2 rounded-xl text-xs font-bold transition-all cursor-pointer flex flex-col items-center gap-1 border ${
+                          isSelected
+                            ? 'bg-blue-600 text-white border-blue-600 shadow-xs'
+                            : 'bg-zinc-50 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 border-zinc-200 dark:border-zinc-700 hover:text-zinc-900 dark:hover:text-white'
+                        }`}
+                      >
+                        <CatIcon className="w-4 h-4" />
+                        <span className="text-[10px]">{cat.label}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <div className="grid grid-cols-2 gap-3">
+                <div>
+                  <label className="text-xs font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
+                    Horário de Início
+                  </label>
+                  <input
+                    type="time"
+                    value={manualSlotStart}
+                    onChange={(e) => setManualSlotStart(e.target.value)}
+                    className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-xs font-mono font-bold text-zinc-900 dark:text-white"
+                  />
+                </div>
+                <div>
+                  <label className="text-xs font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
+                    Horário de Término
+                  </label>
+                  <input
+                    type="time"
+                    value={manualSlotEnd}
+                    onChange={(e) => setManualSlotEnd(e.target.value)}
+                    className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-xs font-mono font-bold text-zinc-900 dark:text-white"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="text-xs font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
+                  Observações / Rationale (Opcional)
+                </label>
+                <input
+                  type="text"
+                  value={manualSlotNotes}
+                  onChange={(e) => setManualSlotNotes(e.target.value)}
+                  placeholder="Ex: Resolver 25 questões comentadas da banca"
+                  className="w-full px-3.5 py-2.5 rounded-xl text-xs bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500"
+                />
+              </div>
+            </div>
+
+            <div className="pt-2 flex items-center gap-2.5">
+              <button
+                type="button"
+                onClick={() => setShowAddManualModal(false)}
+                className="flex-1 py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 text-xs font-semibold hover:bg-zinc-100 dark:hover:bg-zinc-800 cursor-pointer transition-colors"
+              >
+                Cancelar
+              </button>
+              <button
+                type="button"
+                onClick={handleCreateManualSlot}
+                disabled={!manualSlotTitle.trim()}
+                className="flex-1 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 disabled:opacity-50 text-white text-xs font-bold cursor-pointer transition-all flex items-center justify-center gap-2 shadow-sm"
+              >
+                <Plus className="w-3.5 h-3.5" />
+                <span>Salvar Bloco</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* 8. MODAL CENTRAL DEDICADO: PROMPT CUSTOMIZADO DE IA (O QUE FAZER DO HORÁRIO TAL AO TAL) */}
+      {showAiCommandModal && (
+        <div
+          className="fixed inset-0 z-[70] bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 animate-in fade-in duration-200"
+          onClick={() => setShowAiCommandModal(false)}
+        >
+          <div
+            className="w-full max-w-lg bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl p-6 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2.5">
+                <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-600 text-white flex items-center justify-center shadow-xs">
+                  <Sparkles className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="font-heading text-base font-bold text-zinc-900 dark:text-zinc-100">
+                    Otimizador de Rotina (Mentor IA)
+                  </h3>
+                  <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                    Comande a IA para planejar exatamente o que você precisa
+                  </p>
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => setShowAiCommandModal(false)}
+                className="p-2 text-zinc-400 hover:text-zinc-600 dark:hover:text-white rounded-xl transition-colors cursor-pointer"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+
+            <div className="space-y-3.5">
+              <div>
+                <label className="text-xs font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
+                  Qual é o seu comando ou período livre?
+                </label>
+                <textarea
+                  rows={3}
+                  value={aiUserCommand}
+                  onChange={(e) => setAiUserCommand(e.target.value)}
+                  placeholder='Ex: "O que fazer das 14h às 18h?", "Tive plantão pesado, monte uma rotina mais leve com 20 questões e flashcards", "Encaixe 30 questões de GO e revisão de erros hoje"'
+                  className="w-full px-3.5 py-2.5 rounded-xl text-xs bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500 resize-none font-medium leading-relaxed"
+                />
+              </div>
+
+              {/* Sugestões Rápidas de Prompt (Chips) */}
+              <div className="space-y-1.5">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 block">
+                  Sugestões rápidas de comando:
+                </span>
+                <div className="flex flex-wrap gap-1.5">
+                  {[
+                    'O que fazer das 14h às 18h?',
+                    'Organizar rotina pós-plantão cansativo',
+                    'Encaixar 30 questões da minha área fraca',
+                    'Tenho apenas 1h livre hoje à noite'
+                  ].map((presetPrompt, pIdx) => (
+                    <button
+                      key={pIdx}
+                      type="button"
+                      onClick={() => setAiUserCommand(presetPrompt)}
+                      className="px-2.5 py-1 rounded-lg text-[11px] font-medium bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-blue-50 dark:hover:bg-blue-950/40 hover:text-blue-600 dark:hover:text-blue-400 border border-zinc-200/80 dark:border-zinc-700 transition-colors cursor-pointer text-left"
+                    >
+                      💡 {presetPrompt}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
+              {/* Informações de contexto */}
+              <div className="p-3 rounded-2xl bg-blue-500/10 border border-blue-500/20 text-xs text-blue-900 dark:text-blue-200 space-y-1">
+                <p className="font-semibold flex items-center gap-1.5">
+                  <Sparkles className="w-3.5 h-3.5 text-blue-500" />
+                  Como a IA planeja seu horário:
+                </p>
+                <p className="text-[11px] leading-relaxed text-zinc-600 dark:text-zinc-300">
+                  A IA analisa sua grade do Google Agenda, detecta intervalos livres e cruza com seu rendimento real por turno para distribuir blocos de questões, flashcards e revisão sem gerar cansaço mental.
+                </p>
+              </div>
+            </div>
+
+            <div className="pt-2 flex items-center gap-2.5">
+              <button
+                type="button"
+                onClick={() => setShowAiCommandModal(false)}
+                className="flex-1 py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 text-xs font-semibold hover:bg-zinc-100 dark:hover:bg-zinc-800 cursor-pointer transition-colors"
+              >
+                Cancelar
+              </button>
+              <button
+                type="button"
+                onClick={() => handleAnalyzeScheduleWithAi(aiUserCommand)}
+                disabled={isAnalyzingSchedule}
+                className="flex-1 py-2.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 disabled:opacity-50 text-white text-xs font-bold cursor-pointer transition-all flex items-center justify-center gap-2 shadow-sm"
+              >
+                <Sparkles className={`w-3.5 h-3.5 ${isAnalyzingSchedule ? 'animate-spin' : ''}`} />
+                <span>{isAnalyzingSchedule ? 'Gerando...' : 'Gerar Cronograma IA'}</span>
+              </button>
             </div>
           </div>
         </div>
