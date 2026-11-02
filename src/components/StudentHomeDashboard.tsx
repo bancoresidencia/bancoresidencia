@@ -2744,7 +2744,6 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
         {isCustomizing && (
           <FigmaSmartGuides
             guides={smartGuidesState.guides}
-            containerRect={gridContainerRef.current?.getBoundingClientRect() || null}
           />
         )}
         {visibleCards.map((cardConfig) => {
