@@ -20,7 +20,7 @@ import {
 import { LandingDemoQuestionsSection } from '@/components/LandingDemoQuestionsSection';
 
 export interface PricingPlan {
-  id: 'mensal' | 'semestral' | 'anual' | 'bienal';
+  id: 'monthly' | 'semiannual' | 'annual' | 'biennial' | 'mensal' | 'semestral' | 'anual' | 'bienal';
   name: string;
   badge?: string;
   isPopular?: boolean;
@@ -34,7 +34,7 @@ export interface PricingPlan {
 
 const PRICING_PLANS: PricingPlan[] = [
   {
-    id: 'mensal',
+    id: 'monthly',
     name: 'Plano Mensal',
     pricePerMonth: '49,90',
     billingText: 'Cobrado mensalmente',
@@ -52,13 +52,13 @@ const PRICING_PLANS: PricingPlan[] = [
     ]
   },
   {
-    id: 'semestral',
+    id: 'semiannual',
     name: 'Plano Semestral',
     badge: 'RETA FINAL',
-    pricePerMonth: '39,90',
-    billingText: 'R$ 239,40 a cada 6 meses',
+    pricePerMonth: '29,90',
+    billingText: 'R$ 179,40 em até 6x de R$ 29,90',
     periodLabel: 'por mês',
-    savings: 'Economize 20%',
+    savings: 'Economize 40%',
     description: 'Planejado para o semestre de reta final e resolução intensa de provas.',
     features: [
       'Acesso completo a +130.000 questões comentadas',
@@ -72,14 +72,14 @@ const PRICING_PLANS: PricingPlan[] = [
     ]
   },
   {
-    id: 'anual',
+    id: 'annual',
     name: 'Plano Anual',
     badge: 'MAIS ESCOLHIDO',
     isPopular: true,
-    pricePerMonth: '29,90',
-    billingText: 'R$ 358,80 por ano (ou 12x de R$ 29,90)',
+    pricePerMonth: '25,90',
+    billingText: 'R$ 310,80 por ano em até 12x de R$ 25,90',
     periodLabel: 'por mês',
-    savings: 'Economize 40%',
+    savings: 'Economize 48%',
     description: 'A preparação completa de 1 ano para garantir sua vaga na residência dos sonhos.',
     features: [
       'Acesso completo a +130.000 questões comentadas',
@@ -93,7 +93,7 @@ const PRICING_PLANS: PricingPlan[] = [
     ]
   },
   {
-    id: 'bienal',
+    id: 'biennial',
     name: 'Plano Bienal',
     badge: 'MAIOR ECONOMIA',
     pricePerMonth: '19,90',
@@ -146,7 +146,7 @@ const TOP_FEATURED_BANCAS: FeaturedBanca[] = [
 
 interface LandingPageProps {
   onOpenAuth: (mode?: 'login' | 'register', planTitle?: string) => void;
-  onLoginDemo: () => void;
+  onLoginDemo?: () => void;
 }
 
 export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDemo }) => {
@@ -155,6 +155,22 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
 
   const handleSelectPlan = (plan: PricingPlan) => {
     setSelectedPlanModal(plan);
+  };
+
+  const handleStartPlanCheckout = (planId: string, mode: 'register' | 'login' = 'register') => {
+    if (typeof window !== 'undefined') {
+      try {
+        sessionStorage.setItem('pending_checkout_plan', planId);
+        localStorage.setItem('pending_checkout_plan', planId);
+        const url = new URL(window.location.href);
+        url.searchParams.set('plan', planId);
+        url.searchParams.set('checkout', '1');
+        window.history.replaceState({}, '', url.toString());
+      } catch {
+        // ignore
+      }
+    }
+    onOpenAuth(mode, planId);
   };
 
   const scrollToSection = (id: string) => {
@@ -235,12 +251,12 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
 
             <button
               type="button"
-              onClick={onLoginDemo}
+              onClick={() => onOpenAuth('register')}
               className="hidden lg:flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold text-slate-700 dark:text-slate-300 bg-slate-100 dark:bg-slate-800/80 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all cursor-pointer"
               title="Acessar com perfil de teste do aluno"
             >
               <Sparkles className="w-3.5 h-3.5 text-amber-500" />
-              <span>Modo Demo</span>
+              <span>Criar Conta</span>
             </button>
 
             <button
@@ -301,7 +317,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
               {[...TOP_FEATURED_BANCAS, ...TOP_FEATURED_BANCAS].map((banca, idx) => (
                 <div
                   key={`${banca.id}-${idx}`}
-                  onClick={onLoginDemo}
+                  onClick={() => onOpenAuth('register')}
                   className="h-12 sm:h-14 px-4 sm:px-6 rounded-2xl bg-white dark:bg-white text-slate-900 shadow-md shadow-slate-200/50 dark:shadow-black/60 border border-slate-200/90 dark:border-white/20 hover:border-blue-500 hover:scale-105 transition-all duration-200 cursor-pointer flex items-center justify-center shrink-0 whitespace-nowrap group"
                   title={banca.name}
                 >
@@ -348,11 +364,11 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
 
             <button
               type="button"
-              onClick={onLoginDemo}
+              onClick={() => onOpenAuth('register')}
               className="px-6 py-3.5 sm:px-8 sm:py-4 rounded-2xl text-xs sm:text-sm font-extrabold text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-800/90 border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all hover:scale-102 cursor-pointer flex items-center gap-2.5 shadow-sm"
             >
               <Sparkles className="w-4 h-4 text-amber-500" />
-              <span>Experimentar Demonstração</span>
+              <span>Começar Gratuitamente</span>
             </button>
           </div>
 
@@ -553,8 +569,8 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
           {/* Grid com os 4 Planos */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
             {PRICING_PLANS.map((plan) => {
-              const isAnual = plan.id === 'anual';
-              const isBienal = plan.id === 'bienal';
+              const isAnual = plan.id === 'annual' || plan.id === 'anual';
+              const isBienal = plan.id === 'biennial' || plan.id === 'bienal';
 
               return (
                 <div
@@ -634,7 +650,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
                   <div className="mt-8 pt-4">
                     <button
                       type="button"
-                      onClick={() => handleSelectPlan(plan)}
+                      onClick={() => handleStartPlanCheckout(plan.id, 'register')}
                       className={`w-full py-3 px-4 rounded-xl text-xs font-extrabold transition-all cursor-pointer flex items-center justify-center gap-2 ${
                         isAnual
                           ? 'bg-blue-600 hover:bg-blue-500 text-white shadow-lg shadow-blue-500/25'
@@ -670,11 +686,11 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
 
             <button
               type="button"
-              onClick={onLoginDemo}
+              onClick={() => onOpenAuth('register')}
               className="shrink-0 px-4 py-2.5 rounded-xl text-xs font-extrabold text-slate-700 dark:text-slate-300 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 hover:bg-slate-50 cursor-pointer flex items-center gap-2"
             >
               <Sparkles className="w-3.5 h-3.5 text-amber-500" />
-              <span>Testar na Demonstração</span>
+              <span>Cadastre-se Grátis</span>
             </button>
           </div>
         </div>
@@ -705,7 +721,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
               </button>
               <button
                 type="button"
-                onClick={onLoginDemo}
+                onClick={() => onOpenAuth('register')}
                 className="px-6 py-3.5 rounded-xl text-xs font-extrabold text-white bg-white/15 hover:bg-white/25 border border-white/20 transition-all cursor-pointer"
               >
                 Testar sem compromisso
@@ -754,10 +770,10 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
             <span>•</span>
             <button
               type="button"
-              onClick={onLoginDemo}
+              onClick={() => onOpenAuth('register')}
               className="hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer"
             >
-              Acesso Demo
+              Cadastre-se
             </button>
           </div>
         </div>
@@ -840,7 +856,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
                 type="button"
                 onClick={() => {
                   setSelectedPlanModal(null);
-                  onOpenAuth('register', selectedPlanModal.name);
+                  handleStartPlanCheckout(selectedPlanModal.id, 'register');
                 }}
                 className="w-full py-3 px-4 rounded-xl text-xs font-extrabold text-white shadow-lg transition-all hover:scale-102 cursor-pointer flex items-center justify-center gap-2"
                 style={{ backgroundColor: accentConfig.primaryHex }}
@@ -853,7 +869,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
                 type="button"
                 onClick={() => {
                   setSelectedPlanModal(null);
-                  onOpenAuth('login', selectedPlanModal.name);
+                  handleStartPlanCheckout(selectedPlanModal.id, 'login');
                 }}
                 className="w-full py-2.5 px-4 rounded-xl text-xs font-bold text-slate-700 dark:text-slate-300 bg-slate-100 dark:bg-slate-800/80 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all cursor-pointer text-center"
               >
@@ -865,11 +881,11 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
                   type="button"
                   onClick={() => {
                     setSelectedPlanModal(null);
-                    onLoginDemo();
+                    onOpenAuth('register');
                   }}
                   className="text-[11px] font-bold text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 underline cursor-pointer"
                 >
-                  Ou experimentar agora no Modo Demo gratuito
+                  Ou criar uma conta gratuita agora
                 </button>
               </div>
             </div>

@@ -65,6 +65,7 @@ export const ReportIssueDrawer: React.FC<ReportIssueDrawerProps> = ({
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (isSubmitting || isSubmitted) return;
     if (!details.trim() || details.trim().length < 5) {
       setErrorMsg('Por favor, adicione uma breve explicação detalhando o erro encontrado.');
       return;

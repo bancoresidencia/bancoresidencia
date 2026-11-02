@@ -12,8 +12,22 @@ if (fs.existsSync('.env.local')) {
 
 // .env.local tem precedência absoluta sobre o ambiente anterior
 // Carrega todas as chaves disponíveis no pool para rotação paralela
+// Conjunto de chaves pagas ou on-demand que NUNCA devem ser usadas na produção gratuita
+const paidValues = new Set([
+  env.GEMINI_API_KEY_PAID,
+  env.GEMINI_API_KEY_ON_DEMAND
+].filter(Boolean));
+
+// Carrega ESTRITAMENTE as chaves gratuitas para rotação paralela
 const API_KEYS = Object.keys(env)
-  .filter(k => k.startsWith('GEMINI_API_KEY'))
+  .filter(k => {
+    if (!k.startsWith('GEMINI_API_KEY')) return false;
+    if (k.includes('PAID') || k.includes('DEMAND') || k.includes('BILLING')) return false;
+    const val = env[k];
+    if (!val) return false;
+    if (paidValues.has(val)) return false; // Impede uso de chaves pagas duplicadas com outros nomes
+    return true;
+  })
   .sort((a, b) => {
     const numA = parseInt(a.replace(/\D/g, '') || '0', 10);
     const numB = parseInt(b.replace(/\D/g, '') || '0', 10);
@@ -22,7 +36,7 @@ const API_KEYS = Object.keys(env)
   .map(k => env[k])
   .filter((k, idx, self) => k && self.indexOf(k) === idx);
 
-console.log(`🔑 Pool de API Keys carregado: ${API_KEYS.length} chaves disponíveis.`);
+console.log(`🔑 Pool de API Keys GRATUITAS carregado: ${API_KEYS.length} chaves disponíveis.`);
 
 let keyIndex = 0;
 function getNextApiKey() {
@@ -90,11 +104,9 @@ function getRelevantBookThemes(specialty, tema) {
 // Modelos prioritários ordenados por maior cota diária e velocidade
 const AVAILABLE_MODELS = [
   'gemini-3.1-flash-lite',
-  'gemini-3.5-flash-lite',
+  'gemini-3.1-flash-lite-preview',
   'gemini-flash-lite-latest',
-  'gemini-3-flash-preview',
-  'gemini-3.6-flash',
-  'gemini-3.5-flash'
+  'gemini-3-flash-preview'
 ];
 
 const exhaustedPairs = new Set(); // Armazena `${keyIndex}_${model}`
@@ -179,7 +191,7 @@ DIRETRIZES FUNDAMENTAIS DE ELABORAÇÃO:
    - SEM METARRETÓRICA: Vá DIRETO ao raciocínio clínico. NUNCA inicie com "A alternativa está correta/incorreta" ou "Incorreta porque". Comece imediatamente justificando os critérios clínicos, doses e diretrizes.
 2. VERIFICAÇÃO DE COERÊNCIA HISTÓRICA DO GABARITO DA BANCA:
    - Avalie se a resposta oficial faz sentido segundo a literatura na época da prova (${question.year || 2024}).
-   - Se o gabarito oficial for flagrantemente absurdo ou erro manifesto da banca: marque "isAbsurdKey": true e descreva em "divergenceReason" a fundamentação para curadoria/recurso. Caso contrário, mantenha "isAbsurdKey": false.
+   - Se o gabarito oficial for flagrantemente absurdo ou erro manifesto da banca: marque "isAbsurdKey": true, descreva em "divergenceReason" a fundamentação para curadoria/recurso e em "suggestedCorrectAnswer" indique a letra clinicamente correta (${(question.options || []).map(o => o.letter).join('/')}) ou "ANULADA" se a questão for insanável. Caso contrário, mantenha "isAbsurdKey": false e "suggestedCorrectAnswer": "${goldAnswer}".
 3. COMENTÁRIO FINAL / SÍNTESE CLÍNICA:
    - Comece DIRETO no raciocínio clínico, fisiopatologia e conduta, destacando em **negrito** os termos essenciais. NUNCA escreva títulos como "Gabarito Oficial: Alternativa X" nem "Resumo Clínico e Diagnóstico:".
 4. PRINCIPAL MOTIVO DE ERRO:
@@ -199,6 +211,7 @@ ${optionsSchemaExample}
   },
   "isAbsurdKey": false,
   "divergenceReason": "",
+  "suggestedCorrectAnswer": "${goldAnswer}",
   "finalCommentary": "Síntese clínica unificada do professor...",
   "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é...",
   "takeHomeMessage": "Pérola clínica prática para memorização...",
@@ -237,12 +250,21 @@ ${optionsSchemaExample}
 
       if (!res.ok) {
         const errText = await res.text();
+        if (res.status === 401) {
+          console.warn(`⚠️ Chave [${keyIdx + 1}/${API_KEYS.length}] não autorizada (401). Descartando chave.`);
+          for (const m of AVAILABLE_MODELS) {
+            markPairExhausted(keyIdx, m, 'não autorizada 401');
+          }
+          continue;
+        }
         if (res.status === 429) {
           const isDailyLimit =
             errText.includes('requests per day limit exceeded') ||
             errText.includes('GenerateRequestsPerDay') ||
             errText.includes('PerDayPerProject') ||
-            errText.includes('per day');
+            errText.includes('per day') ||
+            errText.includes('exceeded your current quota') ||
+            errText.includes('quota');
 
           if (isDailyLimit) {
             markPairExhausted(keyIdx, activeModel, 'cota diária esgotada');
@@ -296,8 +318,19 @@ ${optionsSchemaExample}
         }
       }
 
-      // Trava Irrevogável: o gabarito É SEMPRE a âncora de ouro da banca
-      const correctAnswer = goldAnswer;
+      // Curadoria Ativa de Gabarito: adota a letra cientificamente correta quando há erro da banca
+      let correctAnswer = goldAnswer;
+      let isAnulada = Boolean(question.is_anulada || question.isAnulada);
+
+      if (parsed.isAbsurdKey && parsed.suggestedCorrectAnswer) {
+        const suggested = String(parsed.suggestedCorrectAnswer).trim().toUpperCase();
+        if (suggested === 'ANULADA') {
+          isAnulada = true;
+          correctAnswer = 'ANULADA';
+        } else if (['A', 'B', 'C', 'D', 'E'].includes(suggested)) {
+          correctAnswer = suggested;
+        }
+      }
       const optionExplanations = {};
       if (parsed.optionExplanations) {
         for (const [letter, exp] of Object.entries(parsed.optionExplanations)) {
@@ -316,7 +349,7 @@ ${optionsSchemaExample}
       // Monta o commentary formatado completo e elegante
       const formattedCommentary = [
         parsed.isAbsurdKey && parsed.divergenceReason
-          ? `[POSSÍVEL ERRO DE GABARITO / QUESTÃO PASSÍVEL DE ANULAÇÃO]\n${sanitizeText(parsed.divergenceReason)}\n`
+          ? `[GABARITO HOMOLOGADO - CURADORIA BANCO RESIDÊNCIA]\nO gabarito oficial da banca examinadora indicava a alternativa [${goldAnswer}], porém foi retificado para [${correctAnswer}] após auditoria médica:\n${sanitizeText(parsed.divergenceReason)}\n`
           : '',
         finalCommentary ? `${finalCommentary}\n` : '',
         mainErrorReason ? `Principal Motivo de Erro:\n${mainErrorReason}\n` : '',
@@ -360,6 +393,8 @@ ${optionsSchemaExample}
       return {
         ...question,
         id: question.id,
+        isAnulada,
+        is_anulada: isAnulada,
         correctAnswer,
         correct_answer: correctAnswer,
         commentary: formattedCommentary,
@@ -398,7 +433,8 @@ export async function updateQuestionsInSupabase(updatedQuestions) {
     id: q.id,
     statement: q.statement || 'Enunciado da questão',
     options: q.options || [],
-    correct_answer: q.correctAnswer || q.correct_answer,
+    correct_answer: (q.correctAnswer === 'ANULADA' || q.correct_answer === 'ANULADA') ? null : (q.correctAnswer || q.correct_answer),
+    is_anulada: Boolean(q.isAnulada || q.is_anulada || q.correctAnswer === 'ANULADA'),
     commentary: q.commentary,
     institution: q.institution || q.banca || 'Oficial',
     year: q.year || 2024,

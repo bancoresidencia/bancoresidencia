@@ -36,7 +36,7 @@ interface DemoQuestion {
 }
 
 interface LandingDemoQuestionsSectionProps {
-  onLoginDemo: () => void;
+  onLoginDemo?: () => void;
   onOpenAuth: (mode?: 'login' | 'register') => void;
 }
 
@@ -346,7 +346,7 @@ export const LandingDemoQuestionsSection: React.FC<LandingDemoQuestionsSectionPr
                 ) : (
                   <button
                     type="button"
-                    onClick={onLoginDemo}
+                    onClick={() => onOpenAuth('register')}
                     className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-600 text-white text-xs font-extrabold hover:bg-emerald-700 transition-all cursor-pointer shadow-md shadow-emerald-600/30"
                   >
                     <Sparkles className="w-3.5 h-3.5" />

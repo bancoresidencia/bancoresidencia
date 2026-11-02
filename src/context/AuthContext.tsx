@@ -3,25 +3,9 @@
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import { UserAccount, UpdateProfileData } from '@/types/auth';
 import { createClient } from '@/lib/supabase/client';
+import { validatePasswordRequirements } from '@/utils/security';
 
 const STORAGE_CURRENT_USER_KEY = 'bancoresidencia_current_user';
-
-export const DEFAULT_DEMO_USER: UserAccount = {
-  id: 'user-demo-1',
-  name: 'Dr. Lucas Rocha',
-  email: 'lucas.rocha@med.br',
-  role: 'student',
-  avatarUrl: '',
-  specialtyTarget: 'Clínica Médica',
-  college: 'Faculdade de Medicina (USP)',
-  graduationYear: 2025,
-  dailyGoal: 30,
-  phone: '(11) 98765-4321',
-  state: 'SP',
-  targetExamName: 'ENARE 2026',
-  targetExamDate: '2026-11-01',
-  createdAt: '2026-01-15T10:00:00.000Z'
-};
 
 interface AuthContextType {
   user: UserAccount | null;
@@ -29,6 +13,7 @@ interface AuthContextType {
   isAdmin: boolean;
   isLoading: boolean;
   login: (email: string, password: string) => Promise<{ success: boolean; message?: string }>;
+  loginWithGoogle: () => Promise<{ success: boolean; message?: string }>;
   register: (data: {
     name: string;
     email: string;
@@ -41,7 +26,7 @@ interface AuthContextType {
   updateProfile: (data: UpdateProfileData) => Promise<{ success: boolean; message?: string }>;
   updatePassword: (currentPassword: string, newPassword: string) => Promise<{ success: boolean; message?: string }>;
   updateAvatar: (avatarUrl: string) => Promise<{ success: boolean; message?: string }>;
-  loginAsDemo: () => void;
+  refreshUser: () => Promise<void>;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -76,12 +61,51 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         (typeof window !== 'undefined' ? localStorage.getItem(`user_target_exam_date_${supabaseUser.id}`) : null) ||
         undefined;
 
+      const name =
+        profile?.name ||
+        (supabaseUser.user_metadata?.name as string) ||
+        (supabaseUser.user_metadata?.full_name as string) ||
+        (supabaseUser.email ? supabaseUser.email.split('@')[0] : 'Médico Residente');
+
+      const avatarUrl =
+        profile?.avatar_url ||
+        (supabaseUser.user_metadata?.avatar_url as string) ||
+        (supabaseUser.user_metadata?.picture as string) ||
+        '';
+
+      const subscriptionPlan =
+        (profile as Record<string, unknown>)?.subscription_plan as 'free' | 'pro' | 'premium' ||
+        (supabaseUser.app_metadata?.subscription_plan as 'free' | 'pro' | 'premium') ||
+        (supabaseUser.user_metadata?.subscription_plan as 'free' | 'pro' | 'premium') ||
+        'free';
+
+      const subscriptionStatus =
+        (profile as Record<string, unknown>)?.subscription_status as 'active' | 'trialing' | 'canceled' | 'past_due' | 'inactive' | 'refunded' ||
+        (supabaseUser.app_metadata?.subscription_status as 'active' | 'trialing' | 'canceled' | 'past_due' | 'inactive' | 'refunded') ||
+        (supabaseUser.user_metadata?.subscription_status as 'active' | 'trialing' | 'canceled' | 'past_due' | 'inactive' | 'refunded') ||
+        'inactive';
+
+      const subscriptionDuration =
+        (profile as Record<string, unknown>)?.subscription_duration as 'monthly' | 'semiannual' | 'annual' | 'biennial' ||
+        (supabaseUser.user_metadata?.subscription_duration as 'monthly' | 'semiannual' | 'annual' | 'biennial') ||
+        undefined;
+
+      const subscriptionExpiresAt =
+        ((profile as Record<string, unknown>)?.subscription_expires_at as string) ||
+        (supabaseUser.user_metadata?.subscription_expires_at as string) ||
+        undefined;
+
+      const guaranteeExpiresAt =
+        ((profile as Record<string, unknown>)?.guarantee_expires_at as string) ||
+        (supabaseUser.user_metadata?.guarantee_expires_at as string) ||
+        undefined;
+
       return {
         id: supabaseUser.id,
-        name: profile?.name || (supabaseUser.user_metadata?.name as string) || (supabaseUser.email ? supabaseUser.email.split('@')[0] : 'Médico Residente'),
+        name,
         email: supabaseUser.email || '',
         role,
-        avatarUrl: profile?.avatar_url || '',
+        avatarUrl,
         specialtyTarget: profile?.specialty_target || (supabaseUser.user_metadata?.specialty_target as string) || 'Clínica Médica',
         college: profile?.college || (supabaseUser.user_metadata?.college as string) || '',
         graduationYear: profile?.graduation_year || (supabaseUser.user_metadata?.graduation_year as number) || 2026,
@@ -90,15 +114,30 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         state: profile?.state || '',
         targetExamName,
         targetExamDate,
+        subscriptionPlan,
+        subscriptionStatus,
+        subscriptionDuration,
+        subscriptionExpiresAt,
+        guaranteeExpiresAt,
         createdAt: profile?.created_at || supabaseUser.created_at || new Date().toISOString()
       };
     } catch {
+      const name =
+        (supabaseUser.user_metadata?.name as string) ||
+        (supabaseUser.user_metadata?.full_name as string) ||
+        'Médico Residente';
+
+      const avatarUrl =
+        (supabaseUser.user_metadata?.avatar_url as string) ||
+        (supabaseUser.user_metadata?.picture as string) ||
+        '';
+
       return {
         id: supabaseUser.id,
-        name: (supabaseUser.user_metadata?.name as string) || 'Médico Residente',
+        name,
         email: supabaseUser.email || '',
         role: 'student',
-        avatarUrl: '',
+        avatarUrl,
         specialtyTarget: 'Clínica Médica',
         college: '',
         graduationYear: 2026,
@@ -116,24 +155,43 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
     async function initSession() {
       try {
+        // 1. Processa código de autenticação OAuth se presente na URL (?code=...)
+        if (typeof window !== 'undefined') {
+          const urlParams = new URLSearchParams(window.location.search);
+          const authCode = urlParams.get('code');
+          if (authCode) {
+            try {
+              const { data: exchangeData, error: exchangeError } = await supabase.auth.exchangeCodeForSession(authCode);
+              if (!exchangeError && exchangeData?.session?.user) {
+                // Limpa o ?code da barra de endereços mantendo a URL limpa
+                const cleanUrl = window.location.pathname + (window.location.hash || '');
+                window.history.replaceState({}, document.title, cleanUrl);
+
+                const account = await mapSupabaseUserToAccount(exchangeData.session.user);
+                if (isMounted) {
+                  setUser(account);
+                  setIsLoading(false);
+                  return;
+                }
+              } else if (exchangeError) {
+                console.warn('[AuthContext] Erro ao trocar código OAuth:', exchangeError.message);
+              }
+            } catch (exchangeErr) {
+              console.warn('[AuthContext] Falha na troca do código OAuth:', exchangeErr);
+            }
+          }
+        }
+
+        // 2. Busca a sessão existente
         const { data: { session } } = await supabase.auth.getSession();
 
         if (session?.user && isMounted) {
           const account = await mapSupabaseUserToAccount(session.user);
           if (isMounted) setUser(account);
         } else if (isMounted) {
-          // Checa se há usuário demo local ativo
-          const savedUserRaw = localStorage.getItem(STORAGE_CURRENT_USER_KEY);
-          if (savedUserRaw) {
-            const parsed = JSON.parse(savedUserRaw);
-            if (parsed?.id === DEFAULT_DEMO_USER.id) {
-              setUser(DEFAULT_DEMO_USER);
-            } else {
-              setUser(null);
-            }
-          } else {
-            setUser(null);
-          }
+          // Remove resquícios de credenciais de demonstração ou sessões antigas
+          localStorage.removeItem(STORAGE_CURRENT_USER_KEY);
+          setUser(null);
         }
       } catch {
         if (isMounted) setUser(null);
@@ -163,13 +221,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const login = async (email: string, password: string): Promise<{ success: boolean; message?: string }> => {
     const normalizedEmail = email.trim().toLowerCase();
 
-    // Suporte ao usuário de demonstração local
-    if (normalizedEmail === DEFAULT_DEMO_USER.email.toLowerCase() && password === 'med123') {
-      setUser(DEFAULT_DEMO_USER);
-      localStorage.setItem(STORAGE_CURRENT_USER_KEY, JSON.stringify(DEFAULT_DEMO_USER));
-      return { success: true };
-    }
-
     try {
       const { data, error } = await supabase.auth.signInWithPassword({
         email: normalizedEmail,
@@ -192,6 +243,46 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
   };
 
+  const loginWithGoogle = async (): Promise<{ success: boolean; message?: string }> => {
+    try {
+      // Define URL de retorno com prioridade para o domínio de produção oficial
+      let redirectUrl = 'https://bancoresidencia-kappa.vercel.app';
+      if (typeof window !== 'undefined') {
+        if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+          redirectUrl = window.location.origin;
+        } else {
+          redirectUrl = window.location.origin || 'https://bancoresidencia-kappa.vercel.app';
+        }
+      }
+
+      // Preserva intenção de plano pendente se houver no storage
+      let callbackNext = '/';
+      if (typeof window !== 'undefined') {
+        const pendingPlan = localStorage.getItem('pending_checkout_plan') || sessionStorage.getItem('pending_checkout_plan');
+        if (pendingPlan) {
+          callbackNext = `/?plan=${encodeURIComponent(pendingPlan)}&checkout=1`;
+        }
+      }
+
+      const finalRedirectTo = `${redirectUrl}/auth/callback?next=${encodeURIComponent(callbackNext)}`;
+
+      const { error } = await supabase.auth.signInWithOAuth({
+        provider: 'google',
+        options: {
+          redirectTo: finalRedirectTo
+        }
+      });
+
+      if (error) {
+        return { success: false, message: error.message };
+      }
+
+      return { success: true };
+    } catch {
+      return { success: false, message: 'Falha ao conectar com o serviço de autenticação Google.' };
+    }
+  };
+
   const register = async (data: {
     name: string;
     email: string;
@@ -201,6 +292,11 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     graduationYear?: number;
   }): Promise<{ success: boolean; message?: string }> => {
     const normalizedEmail = data.email.trim().toLowerCase();
+
+    const validation = validatePasswordRequirements(data.password);
+    if (!validation.isValid) {
+      return { success: false, message: validation.errorMessage || 'A senha não atende aos requisitos de segurança.' };
+    }
 
     try {
       const { data: res, error } = await supabase.auth.signUp({
@@ -241,26 +337,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
   };
 
-  const loginAsDemo = () => {
-    setUser(DEFAULT_DEMO_USER);
-    localStorage.setItem(STORAGE_CURRENT_USER_KEY, JSON.stringify(DEFAULT_DEMO_USER));
-  };
-
   const updateProfile = async (data: UpdateProfileData): Promise<{ success: boolean; message?: string }> => {
     if (!user) return { success: false, message: 'Usuário não autenticado.' };
-
-    // Se estiver em modo demo local
-    if (user.id === DEFAULT_DEMO_USER.id) {
-      const updated = { ...user, ...data };
-      setUser(updated);
-      localStorage.setItem(STORAGE_CURRENT_USER_KEY, JSON.stringify(updated));
-      if (data.targetExamName) localStorage.setItem(`user_target_exam_name_${user.id}`, data.targetExamName);
-      if (data.targetExamDate) localStorage.setItem(`user_target_exam_date_${user.id}`, data.targetExamDate);
-      if (typeof window !== 'undefined') {
-        window.dispatchEvent(new Event('bancoresidencia_target_exam_changed'));
-      }
-      return { success: true, message: 'Perfil demo atualizado!' };
-    }
 
     try {
       const updatePayload: Record<string, unknown> = {};
@@ -306,8 +384,9 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const updatePassword = async (currentPassword: string, newPassword: string): Promise<{ success: boolean; message?: string }> => {
     if (!user) return { success: false, message: 'Usuário não autenticado.' };
 
-    if (user.id === DEFAULT_DEMO_USER.id) {
-      return { success: true, message: 'Senha atualizada na conta de demonstração.' };
+    const validation = validatePasswordRequirements(newPassword);
+    if (!validation.isValid) {
+      return { success: false, message: validation.errorMessage || 'A nova senha não atende aos requisitos de segurança.' };
     }
 
     try {
@@ -325,6 +404,18 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     return updateProfile({ avatarUrl });
   };
 
+  const refreshUser = useCallback(async () => {
+    try {
+      const { data: { user: currentUser } } = await supabase.auth.getUser();
+      if (currentUser) {
+        const updated = await mapSupabaseUserToAccount(currentUser);
+        setUser(updated);
+      }
+    } catch (err) {
+      console.error('Erro ao recarregar usuário:', err);
+    }
+  }, [supabase, mapSupabaseUserToAccount]);
+
   const isAdmin = Boolean(
     user &&
       (user.role === 'admin' ||
@@ -341,12 +432,13 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         isAdmin,
         isLoading,
         login,
+        loginWithGoogle,
         register,
         logout,
         updateProfile,
         updatePassword,
         updateAvatar,
-        loginAsDemo
+        refreshUser
       }}
     >
       {children}

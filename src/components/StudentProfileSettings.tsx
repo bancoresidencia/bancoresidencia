@@ -2,7 +2,9 @@
 
 import React, { useState } from 'react';
 import { useAuth } from '@/context/AuthContext';
+import { useSubscription } from '@/context/SubscriptionContext';
 import { useTheme } from '@/context/ThemeContext';
+import { validatePasswordRequirements } from '@/utils/security';
 import {
   User,
   Lock,
@@ -22,8 +24,14 @@ import {
   Crown,
   ShieldCheck,
   Check,
-  Zap
+  Zap,
+  RotateCcw,
+  Sparkles,
+  X,
+  Award
 } from 'lucide-react';
+import { StudentAmbassadorSettings } from '@/components/StudentAmbassadorSettings';
+import { getAmbassadorStats } from '@/config/ambassadorConfig';
 
 interface StudentProfileSettingsProps {
   fontSize: 'xs' | 'sm' | 'base' | 'lg' | 'xl';
@@ -45,11 +53,15 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
   onChangeFontSize,
   onLogout,
 }) => {
-  const { user, updateProfile, updatePassword, updateAvatar } = useAuth();
+  const { user, updateProfile, updatePassword, updateAvatar, refreshUser } = useAuth();
+  const { plan, isAdmin, openUpgradeModal } = useSubscription();
+  const [isRefunding, setIsRefunding] = useState(false);
+  const [refundMessage, setRefundMessage] = useState<{ type: 'success' | 'error'; text: string } | null>(null);
   const { accentConfig } = useTheme();
+  const ambassadorStats = getAmbassadorStats(user?.id || 'guest', user?.name);
 
   // Abas de Configurações
-  const [activeTab, setActiveTab] = useState<'profile' | 'password' | 'study' | 'subscription'>('profile');
+  const [activeTab, setActiveTab] = useState<'profile' | 'password' | 'study' | 'subscription' | 'ambassador'>('profile');
 
   // Estado dos campos de Perfil
   const [name, setName] = useState(user?.name || '');
@@ -186,8 +198,9 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
       return;
     }
 
-    if (newPassword.length < 6) {
-      setStatusMsg({ type: 'error', text: 'A nova senha deve ter no mínimo 6 caracteres.' });
+    const validation = validatePasswordRequirements(newPassword);
+    if (!validation.isValid) {
+      setStatusMsg({ type: 'error', text: validation.errorMessage || 'A nova senha deve conter no mínimo 6 caracteres, uma letra maiúscula, um número e um símbolo.' });
       return;
     }
 
@@ -214,7 +227,41 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
     }
   };
 
-  const userInitials = (name || 'Lucas Rocha')
+
+  const handleRequestRefund = async () => {
+    if (!window.confirm('Tem certeza de que deseja solicitar o estorno integral da sua assinatura? Seu acesso PRO será revogado imediatamente e o estorno será processado pelo Mercado Pago de forma incontestável.')) {
+      return;
+    }
+
+    setIsRefunding(true);
+    setRefundMessage(null);
+
+    try {
+      const res = await fetch('/api/checkout/refund', { method: 'POST' });
+      const data = await res.json();
+
+      if (!res.ok || !data.success) {
+        throw new Error(data.error || 'Erro ao processar estorno.');
+      }
+
+      setRefundMessage({
+        type: 'success',
+        text: 'Reembolso aprovado com sucesso! O valor foi estornado e sua conta retornou ao plano gratuito.'
+      });
+      if (refreshUser) {
+        await refreshUser();
+      }
+    } catch (err) {
+      setRefundMessage({
+        type: 'error',
+        text: err instanceof Error ? err.message : 'Falha ao solicitar reembolso.'
+      });
+    } finally {
+      setIsRefunding(false);
+    }
+  };
+
+  const userInitials = (name || user?.name || 'Médico Residente')
     .split(' ')
     .filter(Boolean)
     .slice(0, 2)
@@ -268,6 +315,12 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
               <h1 className="font-heading text-lg sm:text-xl font-extrabold text-slate-900 dark:text-white">
                 {name || 'Meu Perfil'}
               </h1>
+              {ambassadorStats.hasAmbassadorBadge && (
+                <span className="inline-flex items-center gap-1 text-[10px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-gradient-to-r from-amber-500/20 to-yellow-500/20 text-amber-600 dark:text-amber-400 border border-amber-500/40 shadow-xs">
+                  <Award className="w-3 h-3 text-amber-500" />
+                  Embaixador Oficial (10+ indicações)
+                </span>
+              )}
               {user?.role === 'admin' ? (
                 <span className="inline-flex items-center gap-1 text-[10px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-amber-500/15 text-amber-600 dark:text-amber-400 border border-amber-500/30">
                   <ShieldCheck className="w-3 h-3 text-amber-500" />
@@ -374,6 +427,10 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
         </button>
 
       </div>
+
+      {activeTab === 'ambassador' && (
+        <StudentAmbassadorSettings />
+      )}
 
       {/* Alerta de Status */}
       {statusMsg && (
@@ -695,6 +752,28 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
               </div>
             </div>
 
+            {/* Indicação sutil de requisitos para troca de senha */}
+            {(() => {
+              const val = validatePasswordRequirements(newPassword);
+              return (
+                <p
+                  className={`text-[11px] leading-relaxed transition-colors ${
+                    newPassword && !val.isValid
+                      ? 'text-amber-600 dark:text-amber-400 font-medium'
+                      : 'text-slate-500 dark:text-slate-400'
+                  }`}
+                >
+                  {newPassword && !val.isValid ? (
+                    <span>A senha deve conter letras maiúsculas e minúsculas, um número e um símbolo.</span>
+                  ) : newPassword && val.isValid ? (
+                    <span className="text-emerald-600 dark:text-emerald-400 font-medium">✓ Senha atende a todos os requisitos</span>
+                  ) : (
+                    <span>A senha deve conter letras maiúsculas e minúsculas, um número e um símbolo.</span>
+                  )}
+                </p>
+              );
+            })()}
+
             <div className="pt-2 flex justify-start">
               <button
                 type="submit"
@@ -912,103 +991,292 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
                 <div
                   className="w-12 h-12 rounded-2xl flex items-center justify-center shrink-0 shadow-sm"
                   style={{
-                    backgroundColor: user?.role === 'admin' ? 'rgba(245, 158, 11, 0.15)' : accentConfig.bgRgba,
-                    color: user?.role === 'admin' ? '#f59e0b' : accentConfig.primaryHex
+                    backgroundColor: isAdmin
+                      ? 'rgba(245, 158, 11, 0.15)'
+                      : plan === 'free'
+                      ? 'rgba(100, 116, 139, 0.15)'
+                      : accentConfig.bgRgba,
+                    color: isAdmin
+                      ? '#f59e0b'
+                      : plan === 'free'
+                      ? '#64748b'
+                      : accentConfig.primaryHex
                   }}
                 >
-                  {user?.role === 'admin' ? <ShieldCheck className="w-6 h-6" /> : <Crown className="w-6 h-6" />}
+                  {isAdmin ? (
+                    <ShieldCheck className="w-6 h-6" />
+                  ) : plan === 'free' ? (
+                    <Zap className="w-6 h-6" />
+                  ) : (
+                    <Crown className="w-6 h-6" />
+                  )}
                 </div>
                 <div>
                   <div className="flex items-center gap-2">
                     <h2 className="text-base sm:text-lg font-extrabold text-slate-900 dark:text-white">
-                      {user?.role === 'admin' ? 'Perfil de Administrador' : 'Perfil do Assinante'}
+                      {isAdmin
+                        ? 'Perfil de Administrador'
+                        : plan === 'free'
+                        ? 'Plano Gratuito'
+                        : 'Perfil do Assinante Pro'}
                     </h2>
-                    <span className="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30">
-                      Ativo
-                    </span>
+                    {isAdmin ? (
+                      <span className="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-500/15 text-amber-600 dark:text-amber-400 border border-amber-500/30">
+                        Admin
+                      </span>
+                    ) : plan === 'free' ? (
+                      <span className="text-[10px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-slate-100 dark:bg-zinc-800 text-slate-700 dark:text-zinc-300 border border-slate-300 dark:border-zinc-700 font-bold">
+                        Plano FREE
+                      </span>
+                    ) : (
+                      <span className="text-[10px] font-black uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30">
+                        Ativo
+                      </span>
+                    )}
                   </div>
                   <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-                    {user?.role === 'admin'
+                    {isAdmin
                       ? 'Credenciais com privilégios de gestão técnica, curadoria de gabaritos e controle do banco.'
+                      : plan === 'free'
+                      ? 'Plano FREE • Limite de 10 resoluções diárias de questões e recursos básicos.'
                       : `Plano ${user?.subscriptionPlan?.toUpperCase() || 'PRO'} • Acesso completo ao banco de questões classificadas e gabaritos.`}
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-2">
-                <span className="text-xs font-bold text-slate-500 dark:text-slate-400">Tipo de Conta:</span>
-                <span className="text-xs font-extrabold px-3 py-1 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-200/80 dark:border-slate-700">
-                  {user?.role === 'admin' ? 'Administrador da Plataforma' : 'Assinante Oficial'}
-                </span>
+              <div className="flex flex-wrap items-center gap-3">
+                <div className="flex items-center gap-2">
+                  <span className="text-xs font-bold text-slate-500 dark:text-slate-400">Tipo de Conta:</span>
+                  <span className="text-xs font-extrabold px-3 py-1 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-white border border-slate-200/80 dark:border-slate-700">
+                    {isAdmin
+                      ? 'Administrador da Plataforma'
+                      : plan === 'free'
+                      ? 'Estudante (Gratuito)'
+                      : 'Assinante Oficial'}
+                  </span>
+                </div>
+
+                {/* BOTÃO LIBERAR ILIMITADO NO CABEÇALHO (QUANDO NO PLANO FREE) */}
+                {plan === 'free' && !isAdmin && (
+                  <button
+                    type="button"
+                    onClick={() => openUpgradeModal()}
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-black text-white shadow-md hover:scale-[1.02] active:scale-95 transition-all cursor-pointer"
+                    style={{
+                      backgroundColor: accentConfig.primaryHex,
+                      boxShadow: `0 4px 14px ${accentConfig.bgRgba}`
+                    }}
+                  >
+                    <Zap className="w-3.5 h-3.5 fill-current" />
+                    <span>Liberar Ilimitado</span>
+                  </button>
+                )}
               </div>
             </div>
 
-            {/* Comparativo de Privilégios e Recursos */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {/* Card Perfil do Assinante */}
-              <div className={`p-5 rounded-2xl border transition-all ${
-                user?.role !== 'admin'
-                  ? 'bg-emerald-500/5 dark:bg-emerald-950/20 border-emerald-500/30 shadow-xs'
-                  : 'bg-slate-50 dark:bg-slate-900/40 border-slate-200 dark:border-slate-800'
-              }`}>
+            {/* Mensagem de Feedback de Reembolso */}
+            {refundMessage && (
+              <div
+                className={`p-4 rounded-2xl text-xs font-semibold flex items-center gap-2.5 ${
+                  refundMessage.type === 'success'
+                    ? 'bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 text-emerald-800 dark:text-emerald-300'
+                    : 'bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-800 text-rose-800 dark:text-rose-300'
+                }`}
+              >
+                {refundMessage.type === 'success' ? <CheckCircle2 className="w-4 h-4 shrink-0" /> : <AlertCircle className="w-4 h-4 shrink-0" />}
+                <span>{refundMessage.text}</span>
+              </div>
+            )}
+
+            {/* Card de Garantia de 7 Dias e Cancelamento (Apenas para assinantes Pro com até 7 dias) */}
+            {user?.subscriptionPlan === 'pro' && !isAdmin && (
+              <div className="p-5 rounded-2xl border border-emerald-500/30 bg-emerald-500/5 dark:bg-emerald-950/20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                <div className="space-y-1">
+                  <div className="flex items-center gap-2 text-xs font-bold text-emerald-600 dark:text-emerald-400">
+                    <ShieldCheck className="w-4 h-4" />
+                    Garantia Incondicional de 7 Dias do Mercado Pago
+                  </div>
+                  <p className="text-xs text-slate-600 dark:text-slate-300">
+                    {user?.subscriptionExpiresAt
+                      ? `Assinatura ativa até ${new Date(user.subscriptionExpiresAt).toLocaleDateString('pt-BR')}. `
+                      : 'Assinatura ativa. '}
+                    Caso queira cancelar dentro do período de 7 dias, seu estorno é processado automaticamente sem burocracia.
+                  </p>
+                </div>
+
+                <button
+                  type="button"
+                  onClick={handleRequestRefund}
+                  disabled={isRefunding}
+                  className="px-4 py-2.5 rounded-xl border border-rose-300 dark:border-rose-800 text-rose-600 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/40 text-xs font-bold shrink-0 flex items-center gap-1.5 transition-all disabled:opacity-50 cursor-pointer"
+                >
+                  <RotateCcw className="w-3.5 h-3.5" />
+                  {isRefunding ? 'Processando Estorno...' : 'Solicitar Reembolso (7 Dias)'}
+                </button>
+              </div>
+            )}
+
+            {/* CONTEÚDO PARA USUÁRIOS DO PLANO GRATUITO */}
+            {plan === 'free' && !isAdmin && (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {/* Card Plano Atual Gratuito */}
+                <div className="p-5 rounded-2xl border border-slate-200 dark:border-zinc-800 bg-slate-50 dark:bg-zinc-900/40">
+                  <div className="flex items-center justify-between mb-3">
+                    <div className="flex items-center gap-2">
+                      <Zap className="w-4 h-4 text-slate-400" />
+                      <h3 className="text-sm font-extrabold text-slate-900 dark:text-white">
+                        Plano Gratuito
+                      </h3>
+                    </div>
+                    <span className="text-[10px] font-bold text-slate-600 dark:text-zinc-400 bg-slate-200 dark:bg-zinc-800 px-2 py-0.5 rounded-md">
+                      Seu Plano Atual
+                    </span>
+                  </div>
+                  <p className="text-xs text-slate-500 dark:text-zinc-400 mb-4">
+                    Plano de avaliação básico com acesso diário limitado.
+                  </p>
+                  <ul className="space-y-2.5 text-xs text-slate-600 dark:text-zinc-400">
+                    <li className="flex items-start gap-2">
+                      <Check className="w-3.5 h-3.5 text-slate-400 mt-0.5 shrink-0" />
+                      <span><strong>10 questões diárias</strong> para resolução</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <Check className="w-3.5 h-3.5 text-slate-400 mt-0.5 shrink-0" />
+                      <span>Gabarito oficial de bancas médicas</span>
+                    </li>
+                    <li className="flex items-start gap-2 opacity-60">
+                      <X className="w-3.5 h-3.5 text-rose-500 mt-0.5 shrink-0" />
+                      <span>Sem métricas TRI calibradas ou percentil</span>
+                    </li>
+                    <li className="flex items-start gap-2 opacity-60">
+                      <X className="w-3.5 h-3.5 text-rose-500 mt-0.5 shrink-0" />
+                      <span>Sem visualização completa de provas oficiais</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Card Plano Ilimitado Pro Recomendado */}
+                <div
+                  className="p-5 rounded-2xl border transition-all relative flex flex-col justify-between"
+                  style={{
+                    borderColor: accentConfig.primaryHex,
+                    backgroundColor: accentConfig.bgRgba
+                  }}
+                >
+                  <div>
+                    <div className="flex items-center justify-between mb-3">
+                      <div className="flex items-center gap-2">
+                        <Sparkles className="w-4 h-4" style={{ color: accentConfig.primaryHex }} />
+                        <h3 className="text-sm font-extrabold text-slate-900 dark:text-white">
+                          Plano Pro Ilimitado
+                        </h3>
+                      </div>
+                      <span
+                        className="text-[10px] font-black uppercase tracking-wider px-2 py-0.5 rounded-md text-white"
+                        style={{ backgroundColor: accentConfig.primaryHex }}
+                      >
+                        Recomendado
+                      </span>
+                    </div>
+                    <p className="text-xs text-slate-600 dark:text-zinc-300 mb-4">
+                      Acesso completo e irrestrito para garantir sua aprovação na Residência Médica.
+                    </p>
+                    <ul className="space-y-2.5 text-xs text-slate-700 dark:text-zinc-200">
+                      <li className="flex items-start gap-2">
+                        <Check className="w-3.5 h-3.5 text-emerald-500 mt-0.5 shrink-0" />
+                        <span><strong>Resoluções 100% ILIMITADAS</strong> (+133.000 questões)</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <Check className="w-3.5 h-3.5 text-emerald-500 mt-0.5 shrink-0" />
+                        <span>Comentários completos padrão-ouro em todas as alternativas</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <Check className="w-3.5 h-3.5 text-emerald-500 mt-0.5 shrink-0" />
+                        <span>Estatísticas psicométricas TRI, percentil e histórico</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <Check className="w-3.5 h-3.5 text-emerald-500 mt-0.5 shrink-0" />
+                        <span>Todas as provas oficiais na íntegra com cronômetro real</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <Check className="w-3.5 h-3.5 text-emerald-500 mt-0.5 shrink-0" />
+                        <span>Garantia de 7 dias com estorno imediato no Mercado Pago</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <button
+                    type="button"
+                    onClick={() => openUpgradeModal()}
+                    className="w-full mt-5 py-3 px-4 rounded-xl text-xs font-black text-white shadow-lg flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95 transition-all cursor-pointer"
+                    style={{
+                      backgroundColor: accentConfig.primaryHex,
+                      boxShadow: `0 4px 14px ${accentConfig.bgRgba}`
+                    }}
+                  >
+                    <Zap className="w-4 h-4 fill-current" />
+                    <span>Conhecer Planos e Assinar (a partir de R$ 19,90/mês)</span>
+                  </button>
+                </div>
+              </div>
+            )}
+
+            {/* CONTEÚDO PARA ASSINANTES PRO */}
+            {plan === 'pro' && !isAdmin && (
+              <div className="p-5 rounded-2xl border border-emerald-500/30 bg-emerald-500/5 dark:bg-emerald-950/20">
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center gap-2">
-                    <Zap className="w-4 h-4 text-emerald-500" />
+                    <Crown className="w-4 h-4 text-emerald-500" />
                     <h3 className="text-sm font-extrabold text-slate-900 dark:text-white">
-                      Perfil do Assinante
+                      Recursos Inclusos no seu Plano Pro
                     </h3>
                   </div>
-                  {user?.role !== 'admin' && (
-                    <span className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-100 dark:bg-emerald-950/80 px-2 py-0.5 rounded-md">
-                      Seu Perfil Atual
-                    </span>
-                  )}
+                  <span className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-100 dark:bg-emerald-950/80 px-2 py-0.5 rounded-md">
+                    Seu Plano Atual
+                  </span>
                 </div>
-                <p className="text-xs text-slate-600 dark:text-slate-400 mb-4">
-                  Desenvolvido para médicos e estudantes em preparação intensiva para Residência Médica, Revalida e Especialidades.
-                </p>
-                <ul className="space-y-2 text-xs text-slate-700 dark:text-slate-300">
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs text-slate-700 dark:text-slate-300">
                   <li className="flex items-start gap-2">
                     <Check className="w-3.5 h-3.5 text-emerald-500 mt-0.5 shrink-0" />
-                    <span><strong>86.311+ questões classificadas</strong> com gabarito oficial homologado</span>
+                    <span><strong>Resolução ILIMITADA</strong> de questões</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-3.5 h-3.5 text-emerald-500 mt-0.5 shrink-0" />
-                    <span>Filtros avançados multicritério (Banca, Especialidade, Tema, Foco, Ano)</span>
+                    <span>Filtros avançados multicritério</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-3.5 h-3.5 text-emerald-500 mt-0.5 shrink-0" />
-                    <span>Comentários completos padrão-ouro (fisiopatologia e conduta clínica)</span>
+                    <span>Comentários completos padrão-ouro</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-3.5 h-3.5 text-emerald-500 mt-0.5 shrink-0" />
-                    <span>Estatísticas psicométricas TRI, percentil comparativo e histórico de simulados</span>
+                    <span>Estatísticas psicométricas TRI e percentil</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <Check className="w-3.5 h-3.5 text-emerald-500 mt-0.5 shrink-0" />
-                    <span>Cadernos de estudo personalizados e provas oficiais na íntegra</span>
+                    <span>Provas oficiais na íntegra</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Check className="w-3.5 h-3.5 text-emerald-500 mt-0.5 shrink-0" />
+                    <span>Pastas de 3 níveis e cadernos</span>
                   </li>
                 </ul>
               </div>
+            )}
 
-              {/* Card Perfil do Administrador */}
-              <div className={`p-5 rounded-2xl border transition-all ${
-                user?.role === 'admin'
-                  ? 'bg-amber-500/5 dark:bg-amber-950/20 border-amber-500/30 shadow-xs'
-                  : 'bg-slate-50 dark:bg-slate-900/40 border-slate-200 dark:border-slate-800'
-              }`}>
+            {/* CONTEÚDO EXCLUSIVO PARA ADMINISTRADORES (APENAS SE isAdmin FOR VERDADEIRO) */}
+            {isAdmin && (
+              <div className="p-5 rounded-2xl border border-amber-500/30 bg-amber-500/5 dark:bg-amber-950/20">
                 <div className="flex items-center justify-between mb-3">
                   <div className="flex items-center gap-2">
                     <ShieldCheck className="w-4 h-4 text-amber-500" />
                     <h3 className="text-sm font-extrabold text-slate-900 dark:text-white">
-                      Perfil do Administrador
+                      Privilégios da Administração da Plataforma
                     </h3>
                   </div>
-                  {user?.role === 'admin' && (
-                    <span className="text-[10px] font-bold text-amber-600 dark:text-amber-400 bg-amber-100 dark:bg-amber-950/80 px-2 py-0.5 rounded-md">
-                      Seu Perfil Atual
-                    </span>
-                  )}
+                  <span className="text-[10px] font-bold text-amber-600 dark:text-amber-400 bg-amber-100 dark:bg-amber-950/80 px-2 py-0.5 rounded-md">
+                    Acesso Total
+                  </span>
                 </div>
                 <p className="text-xs text-slate-600 dark:text-slate-400 mb-4">
                   Reservado para a equipe médica e de gestão da plataforma para homologação e curadoria contínua.
@@ -1030,13 +1298,9 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
                     <Check className="w-3.5 h-3.5 text-amber-500 mt-0.5 shrink-0" />
                     <span>Auditoria de segurança, RLS do Supabase e integridade de dados</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <Check className="w-3.5 h-3.5 text-amber-500 mt-0.5 shrink-0" />
-                    <span>Supervisão de métricas globais e relatórios técnicos do sistema</span>
-                  </li>
                 </ul>
               </div>
-            </div>
+            )}
           </div>
         </div>
       )}

@@ -16,7 +16,7 @@ import { AuthScreen } from '@/components/AuthScreen';
 import { LandingPage } from '@/components/LandingPage';
 import { StudentProfileSettings } from '@/components/StudentProfileSettings';
 import { useTheme } from '@/context/ThemeContext';
-import { useAuth, DEFAULT_DEMO_USER } from '@/context/AuthContext';
+import { useAuth } from '@/context/AuthContext';
 import { createClient } from '@/lib/supabase/client';
 
 const OfficialExams = dynamic(
@@ -127,7 +127,11 @@ import { matchesStudyModalidades } from '@/utils/modalidades';
 import { OfficialExamItem } from '@/types/officialExams';
 import { useToast } from '@/components/Toast';
 import { SubscriptionModal } from '@/components/SubscriptionModal';
+import { OnboardingModal } from '@/components/OnboardingModal';
+import { getAppliedReferralCode } from '@/config/ambassadorConfig';
 import { useSubscription } from '@/hooks/useSubscription';
+import { EmbeddedCheckoutScreen } from '@/components/EmbeddedCheckoutScreen';
+import { PLANS, PlanDefinition, PlanId } from '@/config/plans';
 import {
   Stethoscope,
   Menu,
@@ -165,22 +169,39 @@ import {
   Pause,
   Timer,
   EyeOff,
+  Crown,
+  Gift,
 } from 'lucide-react';
 import { KeyboardShortcutsModal } from '@/components/KeyboardShortcutsModal';
 
 export default function Home() {
   const { accentConfig } = useTheme();
-  const { user, isAuthenticated, isAdmin, isLoading, loginAsDemo, logout } = useAuth();
+  const { user, isAuthenticated, isAdmin, isLoading, logout } = useAuth();
+
+
   const { success, warning, info } = useToast();
   const {
     isUpgradeModalOpen,
     setIsUpgradeModalOpen,
     plan,
+    isSubscriptionExpired,
     questionsRemainingToday,
     canSolveQuestion,
-    incrementDailyCount
+    incrementDailyCount,
+    openUpgradeModal
   } = useSubscription();
 
+  const [isOnboardingOpen, setIsOnboardingOpen] = useState(false);
+
+  // Checagem de Onboarding para novo usuário
+  useEffect(() => {
+    if (user && typeof window !== 'undefined') {
+      const isCompleted = localStorage.getItem(`onboarding_completed_${user.id}`);
+      if (!isCompleted && !user.college && !user.targetExamName) {
+        setIsOnboardingOpen(true);
+      }
+    }
+  }, [user]);
   const [authModal, setAuthModal] = useState<{
     isOpen: boolean;
     mode: 'login' | 'register';
@@ -190,6 +211,60 @@ export default function Home() {
     mode: 'login'
   });
   const [activeTab, setActiveTab] = useState<ActiveTab>('home');
+
+  const [pendingCheckoutPlan, setPendingCheckoutPlan] = useState<PlanDefinition | null>(null);
+  const [selectedCheckoutPlan, setSelectedCheckoutPlan] = useState<PlanDefinition | null>(null);
+  const [isLimitReachedModalOpen, setIsLimitReachedModalOpen] = useState(false);
+
+  // Detecta intenção de compra pendente (URL params ou localStorage)
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    try {
+      const searchParams = new URLSearchParams(window.location.search);
+      const planParam = searchParams.get('plan') as PlanId | null;
+      const isCheckoutParam = searchParams.get('checkout') === '1';
+
+      const storedPlan = (sessionStorage.getItem('pending_checkout_plan') || localStorage.getItem('pending_checkout_plan')) as PlanId | null;
+
+      const targetPlanId = (planParam && PLANS[planParam]) ? planParam : (storedPlan && PLANS[storedPlan]) ? storedPlan : null;
+
+      if (targetPlanId && PLANS[targetPlanId]) {
+        const planDef = PLANS[targetPlanId];
+        setPendingCheckoutPlan(planDef);
+
+        if (!isAuthenticated || !user) {
+          if (isCheckoutParam || planParam) {
+            setAuthModal({ isOpen: true, mode: 'register', planTitle: targetPlanId });
+          }
+        }
+      }
+    } catch {
+      // ignore
+    }
+  }, [isAuthenticated, user]);
+
+  const handleOpenAuth = useCallback((mode: 'login' | 'register' = 'login', planIdentifier?: string) => {
+    if (planIdentifier) {
+      const found = Object.values(PLANS).find(
+        (p) => p.id === planIdentifier || p.name.toLowerCase() === planIdentifier.toLowerCase()
+      );
+      if (found) {
+        setPendingCheckoutPlan(found);
+      }
+    }
+    setAuthModal({ isOpen: true, mode, planTitle: planIdentifier });
+  }, []);
+
+  const handleAuthSuccess = useCallback(() => {
+    setAuthModal({ isOpen: false, mode: 'login' });
+    if (pendingCheckoutPlan) {
+      openUpgradeModal(pendingCheckoutPlan);
+      setPendingCheckoutPlan(null);
+    } else {
+      openUpgradeModal();
+    }
+  }, [pendingCheckoutPlan, openUpgradeModal]);
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [sidebarCollapsed, setSidebarCollapsed] = useState<boolean>(true);
@@ -224,7 +299,7 @@ export default function Home() {
   }, [user]);
 
   // Perfil do Aluno e Metas dinâmicas
-  const studentName = user?.name || 'Dr. Lucas Rocha';
+  const studentName = user?.name || 'Médico Residente';
   const [customDailyGoal, setCustomDailyGoal] = useState<number | null>(null);
   const dailyGoal = customDailyGoal ?? user?.dailyGoal ?? 30;
 
@@ -598,7 +673,7 @@ export default function Home() {
     if (typeof window === 'undefined') return;
 
     const storageKey = getUserAnswersStorageKey(user?.id);
-    const isRealUser = Boolean(user?.id && user.id !== DEFAULT_DEMO_USER.id);
+    const isRealUser = Boolean(user?.id);
 
     let loaded: Record<string, UserAnswerItem> = {};
     try {
@@ -1203,6 +1278,14 @@ export default function Home() {
   ]);
 
   const handleAnswer = (questionId: string, selectedLetter: 'A' | 'B' | 'C' | 'D' | 'E', isCorrect: boolean) => {
+    if (!canSolveQuestion()) {
+      setIsLimitReachedModalOpen(true);
+      setSelectedCheckoutPlan(null);
+      setIsUpgradeModalOpen(true);
+      return;
+    }
+    incrementDailyCount();
+
     const q = supabaseQuestions.find((item) => item.id === questionId);
     const answerTimestamp = Date.now();
     const isAnuladaQuestion = Boolean(q?.isAnulada || q?.correctAnswer === 'ANULADA');
@@ -1288,7 +1371,7 @@ export default function Home() {
     }));
 
     // Sincroniza em segundo plano com a tabela user_answers do Supabase para a conta do aluno
-    if (user?.id && user.id !== DEFAULT_DEMO_USER.id) {
+    if (user?.id) {
       const supabase = createClient();
       supabase
         .from('user_answers')
@@ -1977,10 +2060,10 @@ export default function Home() {
       <div className="min-h-screen bg-[var(--bg-page)] text-[var(--foreground)] flex flex-col">
         <LandingPage
           onOpenAuth={(mode = 'login', planTitle) => {
-            setAuthModal({ isOpen: true, mode, planTitle });
+            handleOpenAuth(mode, planTitle);
           }}
           onLoginDemo={() => {
-            loginAsDemo();
+            handleOpenAuth('login');
           }}
         />
 
@@ -1991,12 +2074,66 @@ export default function Home() {
                 initialMode={authModal.mode}
                 selectedPlanTitle={authModal.planTitle}
                 onClose={() => setAuthModal({ isOpen: false, mode: 'login' })}
-                onSuccess={() => setAuthModal({ isOpen: false, mode: 'login' })}
+                onSuccess={(intendedPlan, isNewRegister) => {
+                  if (isNewRegister) setIsOnboardingOpen(true);
+                  setAuthModal({ isOpen: false, mode: 'login' });
+                  const target = (intendedPlan || authModal.planTitle) as PlanId | undefined;
+                  if (target && PLANS[target]) {
+                    setPendingCheckoutPlan(PLANS[target]);
+                  } else {
+                    const stored = (sessionStorage.getItem('pending_checkout_plan') || localStorage.getItem('pending_checkout_plan')) as PlanId | null;
+                    if (stored && PLANS[stored]) {
+                      setPendingCheckoutPlan(PLANS[stored]);
+                    }
+                  }
+                }}
               />
             </div>
           </div>
         )}
       </div>
+    );
+  }
+
+  // ---------------------------------------------------------------------------
+  // GATEKEEPER DE CHECKOUT ONBOARDING (ANTES DO ACESSO À PLATAFORMA)
+  // ---------------------------------------------------------------------------
+  const isUserFree = !user?.subscriptionPlan || user?.subscriptionPlan === 'free' || isSubscriptionExpired;
+  if (pendingCheckoutPlan && isUserFree && !isAdmin) {
+    return (
+      <EmbeddedCheckoutScreen
+        initialPlan={pendingCheckoutPlan}
+        onSuccess={() => {
+          setPendingCheckoutPlan(null);
+          if (typeof window !== 'undefined') {
+            try {
+              sessionStorage.removeItem('pending_checkout_plan');
+              localStorage.removeItem('pending_checkout_plan');
+              const url = new URL(window.location.href);
+              url.searchParams.delete('plan');
+              url.searchParams.delete('checkout');
+              window.history.replaceState({}, '', url.pathname);
+            } catch {
+              // ignore
+            }
+          }
+        }}
+        onTestFree={() => {
+          setPendingCheckoutPlan(null);
+          if (typeof window !== 'undefined') {
+            try {
+              sessionStorage.removeItem('pending_checkout_plan');
+              localStorage.removeItem('pending_checkout_plan');
+              const url = new URL(window.location.href);
+              url.searchParams.delete('plan');
+              url.searchParams.delete('checkout');
+              window.history.replaceState({}, '', url.pathname);
+            } catch {
+              // ignore
+            }
+          }
+        }}
+      />
     );
   }
 
@@ -2096,6 +2233,20 @@ export default function Home() {
             {/* Controles da Borda Superior: Tema + Perfil do Aluno com Dropdown (Modelo Imagem 3) */}
             <div className="flex items-center gap-2.5 shrink-0">
               <ThemeSelector compact={true} />
+              {/* Botão Destacado: Adquirir Plano */}
+              <button
+                type="button"
+                onClick={() => setIsUpgradeModalOpen(true)}
+                className="relative inline-flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl text-xs font-black text-white shadow-lg transition-all hover:scale-105 active:scale-95 cursor-pointer bg-gradient-to-r from-amber-500 via-rose-500 to-indigo-600 hover:opacity-95 shrink-0"
+                style={{
+                  boxShadow: '0 4px 16px -2px rgba(245, 158, 11, 0.45)'
+                }}
+                title="Adquirir Plano Banco Residência"
+              >
+                <Crown className="w-3.5 h-3.5 fill-current text-yellow-200 shrink-0" />
+                <span className="tracking-tight whitespace-nowrap">Adquirir Plano</span>
+              </button>
+
 
               {/* Botões para Visitante Não Logado */}
               {!user && (
@@ -2317,7 +2468,7 @@ export default function Home() {
             !user ? (
               <LandingPage
                 onOpenAuth={(mode = 'login', planTitle) => setAuthModal({ isOpen: true, mode, planTitle })}
-                onLoginDemo={loginAsDemo}
+                onLoginDemo={() => setAuthModal({ isOpen: true, mode: 'login' })}
               />
             ) : (
               <StudentHomeDashboard
@@ -3291,7 +3442,10 @@ export default function Home() {
               initialMode={authModal.mode}
               selectedPlanTitle={authModal.planTitle}
               onClose={() => setAuthModal({ isOpen: false, mode: 'login' })}
-              onSuccess={() => setAuthModal({ isOpen: false, mode: 'login' })}
+              onSuccess={(intendedPlan, isNewRegister) => {
+                setAuthModal({ isOpen: false, mode: 'login' });
+                if (isNewRegister) setIsOnboardingOpen(true);
+              }}
             />
           </div>
         </div>
@@ -3301,6 +3455,22 @@ export default function Home() {
       <KeyboardShortcutsModal
         isOpen={isShortcutsModalOpen}
         onClose={() => setIsShortcutsModalOpen(false)}
+      />
+
+      {/* Onboarding Interativo Guiado (Pós-Cadastro / Primeiro Acesso Estilo MedEvo Otimizado) */}
+      <OnboardingModal
+        isOpen={isOnboardingOpen}
+        onClose={() => setIsOnboardingOpen(false)}
+        onComplete={(action) => {
+          setIsOnboardingOpen(false);
+          if (action === 'plans') {
+            setIsUpgradeModalOpen(true);
+          } else if (action === 'questions') {
+            setActiveTab('questions');
+          } else {
+            setActiveTab('home');
+          }
+        }}
       />
 
       {/* Drawer Lateral de Apontamento e Reporte de Erro em Questão */}

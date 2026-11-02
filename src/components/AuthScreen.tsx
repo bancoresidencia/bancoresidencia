@@ -3,12 +3,12 @@
 import React, { useState } from 'react';
 import { useAuth } from '@/context/AuthContext';
 import { useTheme } from '@/context/ThemeContext';
+import { validatePasswordRequirements } from '@/utils/security';
 import {
   Stethoscope,
   Mail,
   Lock,
   User,
-  GraduationCap,
   Eye,
   EyeOff,
   CheckCircle2,
@@ -16,12 +16,11 @@ import {
   Sparkles,
   ArrowRight,
   ShieldCheck,
-  Award,
   X
 } from 'lucide-react';
 
 interface AuthScreenProps {
-  onSuccess?: () => void;
+  onSuccess?: (planTitle?: string, isNewRegister?: boolean) => void;
   initialMode?: 'login' | 'register';
   onClose?: () => void;
   selectedPlanTitle?: string;
@@ -33,8 +32,14 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
   onClose,
   selectedPlanTitle
 }) => {
-  const { login, register, loginAsDemo } = useAuth();
+  const { login, loginWithGoogle, register } = useAuth();
   const { accentConfig } = useTheme();
+
+  const planDisplayName = selectedPlanTitle === 'monthly' ? 'Plano Mensal'
+    : selectedPlanTitle === 'semiannual' ? 'Plano Semestral'
+    : selectedPlanTitle === 'annual' ? 'Plano Anual'
+    : selectedPlanTitle === 'biennial' ? 'Plano Bienal'
+    : selectedPlanTitle;
 
   // 'login' | 'register'
   const [mode, setMode] = useState<'login' | 'register'>(initialMode);
@@ -44,15 +49,14 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
 
-  // Register Fields
+  // Register Fields (simplificados estilo MedEvo)
   const [name, setName] = useState('');
-  const [confirmPassword, setConfirmPassword] = useState('');
-  const [specialtyTarget, setSpecialtyTarget] = useState('Clínica Médica');
-  const [college, setCollege] = useState('');
-  const [graduationYear, setGraduationYear] = useState<number>(2025);
+  const [isOver18, setIsOver18] = useState(true);
+  const [acceptedTerms, setAcceptedTerms] = useState(true);
 
   // UI States
   const [loading, setLoading] = useState(false);
+  const [googleLoading, setGoogleLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [successMsg, setSuccessMsg] = useState<string | null>(null);
 
@@ -82,6 +86,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
   };
 
   const passwordStrength = getPasswordStrength(password);
+  const passwordValidation = validatePasswordRequirements(password);
 
   const handleLoginSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -97,7 +102,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
       const res = await login(email, password);
       if (res.success) {
         setSuccessMsg('Login realizado com sucesso! Redirecionando...');
-        if (onSuccess) setTimeout(onSuccess, 500);
+        if (onSuccess) setTimeout(() => onSuccess(selectedPlanTitle), 500);
       } else {
         setErrorMsg(res.message || 'Falha ao realizar login.');
       }
@@ -120,29 +125,31 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
       setErrorMsg('Por favor, insira um endereço de e-mail válido.');
       return;
     }
-    if (password.length < 6) {
-      setErrorMsg('A senha deve conter no mínimo 6 caracteres.');
+    const validation = validatePasswordRequirements(password);
+    if (!validation.isValid) {
+      setErrorMsg(validation.errorMessage || 'A senha deve conter no mínimo 6 caracteres, uma letra maiúscula, um número e um símbolo.');
       return;
     }
-    if (password !== confirmPassword) {
-      setErrorMsg('A confirmação de senha não coincide com a senha digitada.');
+    if (!isOver18) {
+      setErrorMsg('Você precisa confirmar ter 18 anos ou mais para criar sua conta.');
+      return;
+    }
+    if (!acceptedTerms) {
+      setErrorMsg('Você precisa aceitar os Termos de Uso e Política de Privacidade.');
       return;
     }
 
     setLoading(true);
     try {
       const res = await register({
-        name,
+        name: name.trim(),
         email,
-        password,
-        specialtyTarget,
-        college,
-        graduationYear
+        password
       });
 
       if (res.success) {
-        setSuccessMsg('Conta criada com sucesso! Seja bem-vindo ao Banco Residência.');
-        if (onSuccess) setTimeout(onSuccess, 600);
+        setSuccessMsg('Conta criada com sucesso! Redirecionando para a configuração do seu perfil...');
+        if (onSuccess) setTimeout(() => onSuccess(selectedPlanTitle, true), 600);
       } else {
         setErrorMsg(res.message || 'Não foi possível cadastrar.');
       }
@@ -153,10 +160,19 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
     }
   };
 
-  const handleQuickDemo = () => {
-    loginAsDemo();
-    setSuccessMsg('Acessando com a conta de demonstração (Dr. Lucas Rocha)...');
-    if (onSuccess) setTimeout(onSuccess, 400);
+  const handleGoogleSubmit = async () => {
+    resetMessages();
+    setGoogleLoading(true);
+    try {
+      const res = await loginWithGoogle();
+      if (!res.success) {
+        setErrorMsg(res.message || 'Falha ao autenticar com o Google.');
+        setGoogleLoading(false);
+      }
+    } catch {
+      setErrorMsg('Ocorreu um erro inesperado ao conectar com a conta Google.');
+      setGoogleLoading(false);
+    }
   };
 
 
@@ -210,14 +226,20 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
 
           {/* Destaque do Plano Selecionado (se houver) */}
           {selectedPlanTitle && (
-            <div className="mt-4 px-3.5 py-2.5 rounded-2xl bg-blue-500/10 border border-blue-500/25 text-blue-700 dark:text-blue-300 text-xs font-semibold flex items-center justify-between gap-2 animate-fadeIn">
-              <div className="flex items-center gap-2">
-                <Sparkles className="w-4 h-4 text-blue-600 dark:text-blue-400 shrink-0" />
-                <span>Plano selecionado: <strong className="font-extrabold">{selectedPlanTitle}</strong></span>
+            <div className="mt-4 p-3.5 rounded-2xl bg-gradient-to-r from-blue-500/10 via-emerald-500/10 to-transparent border border-blue-500/25 text-xs animate-fadeIn space-y-1.5">
+              <div className="flex items-center justify-between gap-2">
+                <div className="flex items-center gap-2 text-blue-700 dark:text-blue-300 font-bold">
+                  <Sparkles className="w-4 h-4 text-blue-600 dark:text-blue-400 shrink-0" />
+                  <span>Plano selecionado: <strong className="font-extrabold text-slate-900 dark:text-white">{planDisplayName}</strong></span>
+                </div>
+                <span className="text-[10px] font-black uppercase tracking-wider bg-blue-600 text-white px-2 py-0.5 rounded-md">
+                  100% Liberado
+                </span>
               </div>
-              <span className="text-[10px] font-bold uppercase tracking-wider bg-blue-600 text-white px-2 py-0.5 rounded-md">
-                Todas as funções
-              </span>
+              <div className="flex items-center gap-1.5 text-[11px] font-semibold text-emerald-700 dark:text-emerald-400">
+                <ShieldCheck className="w-3.5 h-3.5 shrink-0" />
+                <span>Garantia de 7 dias com <strong>Reembolso Instantâneo em 1 clique</strong>.</span>
+              </div>
             </div>
           )}
 
@@ -267,6 +289,47 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
             </div>
           )}
 
+          {/* Botão de Autenticação Social Google */}
+          <div className="space-y-3">
+            <button
+              type="button"
+              onClick={handleGoogleSubmit}
+              disabled={loading || googleLoading}
+              className="w-full py-2.5 px-4 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900/90 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-800 dark:text-slate-100 text-xs font-bold transition-all flex items-center justify-center gap-2.5 cursor-pointer shadow-xs hover:border-slate-400 dark:hover:border-slate-600 disabled:opacity-50"
+            >
+              <svg className="w-4 h-4 shrink-0" viewBox="0 0 24 24">
+                <path
+                  fill="#4285F4"
+                  d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"
+                />
+                <path
+                  fill="#34A853"
+                  d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.34 24 12 24z"
+                />
+                <path
+                  fill="#FBBC05"
+                  d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"
+                />
+                <path
+                  fill="#EA4335"
+                  d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.34 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"
+                />
+              </svg>
+              <span>{googleLoading ? 'Redirecionando para o Google...' : 'Continuar com o Google'}</span>
+            </button>
+
+            <div className="relative">
+              <div className="absolute inset-0 flex items-center">
+                <div className="w-full border-t border-slate-200 dark:border-slate-800" />
+              </div>
+              <div className="relative flex justify-center text-[10px] uppercase tracking-wider font-bold">
+                <span className="bg-white dark:bg-[var(--bg-card)] px-3 text-slate-400 dark:text-slate-500">
+                  {mode === 'login' ? 'ou entre com e-mail' : 'ou cadastre com e-mail'}
+                </span>
+              </div>
+            </div>
+          </div>
+
           {/* ================= FORMULÁRIO DE LOGIN ================= */}
           {mode === 'login' ? (
             <form onSubmit={handleLoginSubmit} className="space-y-4">
@@ -283,7 +346,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="ex: lucas.rocha@med.br"
+                    placeholder="seu.email@medicina.com.br"
                     className="w-full pl-10 pr-4 py-2.5 text-xs bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400 transition-all"
                   />
                 </div>
@@ -294,16 +357,6 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
                   <label className="block text-xs font-bold text-slate-700 dark:text-slate-300">
                     Senha de Acesso
                   </label>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setEmail('lucas.rocha@med.br');
-                      setPassword('med123');
-                    }}
-                    className="text-[11px] font-bold text-blue-600 dark:text-blue-400 hover:underline cursor-pointer"
-                  >
-                    Preencher conta Demo
-                  </button>
                 </div>
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
@@ -348,10 +401,10 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
               </button>
             </form>
           ) : (
-            /* ================= FORMULÁRIO DE REGISTRO ================= */
-            <form onSubmit={handleRegisterSubmit} className="space-y-3.5">
+            /* ================= FORMULÁRIO DE REGISTRO (SIMPLIFICADO) ================= */
+            <form onSubmit={handleRegisterSubmit} className="space-y-4">
               <div>
-                <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">
+                <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
                   Nome Completo
                 </label>
                 <div className="relative">
@@ -363,14 +416,14 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
                     required
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    placeholder="Ex: Dra. Mariana Costa"
+                    placeholder="Seu nome completo (ex: Dra. Mariana Costa)"
                     className="w-full pl-10 pr-4 py-2.5 text-xs bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400 transition-all"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">
+                <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
                   Endereço de E-mail
                 </label>
                 <div className="relative">
@@ -388,113 +441,95 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <div>
-                  <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">
-                    Especialidade Alvo
-                  </label>
-                  <select
-                    value={specialtyTarget}
-                    onChange={(e) => setSpecialtyTarget(e.target.value)}
-                    className="w-full px-3 py-2.5 text-xs bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white"
-                  >
-                    <option value="Clínica Médica">Clínica Médica</option>
-                    <option value="Cirurgia Geral">Cirurgia Geral</option>
-                    <option value="Pediatria">Pediatria</option>
-                    <option value="Ginecologia e Obstetrícia">Ginecologia e Obstetrícia</option>
-                    <option value="Medicina Preventiva & Saúde Coletiva">Medicina Preventiva</option>
-                    <option value="Anestesiologia">Anestesiologia</option>
-                    <option value="Ortopedia">Ortopedia</option>
-                    <option value="Dermatologia">Dermatologia</option>
-                    <option value="Oftalmologia">Oftalmologia</option>
-                    <option value="Radiologia">Radiologia</option>
-                    <option value="Psiquiatria">Psiquiatria</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">
-                    Ano Formatura / Residência
-                  </label>
-                  <input
-                    type="number"
-                    min={2015}
-                    max={2032}
-                    value={graduationYear}
-                    onChange={(e) => setGraduationYear(Number(e.target.value))}
-                    className="w-full px-3 py-2.5 text-xs bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white"
-                  />
-                </div>
-              </div>
-
               <div>
-                <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">
-                  Faculdade de Medicina (Opcional)
+                <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+                  Senha de Acesso
                 </label>
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
-                    <GraduationCap className="w-4 h-4" />
+                    <Lock className="w-4 h-4" />
                   </div>
-                  <input
-                    type="text"
-                    value={college}
-                    onChange={(e) => setCollege(e.target.value)}
-                    placeholder="Ex: USP, UNIFESP, UFRJ, UFMG, Santa Casa..."
-                    className="w-full pl-10 pr-4 py-2.5 text-xs bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400 transition-all"
-                  />
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <div>
-                  <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">
-                    Criar Senha
-                  </label>
-                  <div className="relative">
-                    <input
-                      type={showPassword ? 'text' : 'password'}
-                      required
-                      value={password}
-                      onChange={(e) => setPassword(e.target.value)}
-                      placeholder="Mínimo 6 dígitos"
-                      className="w-full px-3 py-2.5 text-xs bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400"
-                    />
-                  </div>
-                  {password && (
-                    <div className="mt-1 flex items-center gap-1.5">
-                      <div className="flex-1 h-1 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden">
-                        <div
-                          className={`h-full ${passwordStrength.color} transition-all duration-300`}
-                          style={{ width: `${(passwordStrength.score / 3) * 100}%` }}
-                        />
-                      </div>
-                      <span className="text-[10px] font-bold text-slate-500">
-                        {passwordStrength.label}
-                      </span>
-                    </div>
-                  )}
-                </div>
-
-                <div>
-                  <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">
-                    Confirmar Senha
-                  </label>
                   <input
                     type={showPassword ? 'text' : 'password'}
                     required
-                    value={confirmPassword}
-                    onChange={(e) => setConfirmPassword(e.target.value)}
-                    placeholder="Repita a senha"
-                    className="w-full px-3 py-2.5 text-xs bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    placeholder="Mínimo 6 caracteres com maiúscula, número e símbolo"
+                    className="w-full pl-10 pr-10 py-2.5 text-xs bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400 transition-all"
                   />
+                  <button
+                    type="button"
+                    onClick={() => setShowPassword(!showPassword)}
+                    className="absolute inset-y-0 right-0 pr-3.5 flex items-center text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 cursor-pointer"
+                    title={showPassword ? "Ocultar senha" : "Exibir senha"}
+                  >
+                    {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                  </button>
                 </div>
+
+                {password && (
+                  <div className="mt-1.5 flex items-center gap-2">
+                    <div className="flex-1 h-1.5 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden">
+                      <div
+                        className={`h-full ${passwordStrength.color} transition-all duration-300`}
+                        style={{ width: `${(passwordStrength.score / 3) * 100}%` }}
+                      />
+                    </div>
+                    <span className="text-[10px] font-bold text-slate-500">
+                      {passwordStrength.label}
+                    </span>
+                  </div>
+                )}
+                <p
+                  className={`text-[10px] leading-relaxed mt-1 transition-colors ${
+                    password && !passwordValidation.isValid
+                      ? 'text-amber-600 dark:text-amber-400 font-medium'
+                      : password && passwordValidation.isValid
+                      ? 'text-emerald-600 dark:text-emerald-400 font-medium'
+                      : 'text-slate-400 dark:text-slate-500'
+                  }`}
+                >
+                  {password && passwordValidation.isValid ? (
+                    <span>✓ Senha forte e segura</span>
+                  ) : (
+                    <span>Mínimo 6 caracteres, contendo maiúscula, número e símbolo especial.</span>
+                  )}
+                </p>
+              </div>
+
+              {/* Checkboxes de Maioridade e Termos de Uso (Padrão MedEvo) */}
+              <div className="space-y-2 pt-1 border-t border-slate-100 dark:border-slate-800/80">
+                <label className="flex items-center gap-2.5 cursor-pointer text-xs text-slate-600 dark:text-slate-300">
+                  <input
+                    type="checkbox"
+                    checked={isOver18}
+                    onChange={(e) => setIsOver18(e.target.checked)}
+                    className="w-4 h-4 rounded text-blue-600 focus:ring-blue-500 border-slate-300 dark:border-slate-700 dark:bg-slate-900 cursor-pointer"
+                  />
+                  <span>Tenho 18 anos ou mais</span>
+                </label>
+
+                <label className="flex items-start gap-2.5 cursor-pointer text-xs text-slate-600 dark:text-slate-300">
+                  <input
+                    type="checkbox"
+                    checked={acceptedTerms}
+                    onChange={(e) => setAcceptedTerms(e.target.checked)}
+                    className="w-4 h-4 rounded text-blue-600 focus:ring-blue-500 border-slate-300 dark:border-slate-700 dark:bg-slate-900 cursor-pointer mt-0.5"
+                  />
+                  <span>
+                    Concordo com os{' '}
+                    <span className="font-bold underline text-blue-600 dark:text-blue-400">Termos de Uso</span>{' '}
+                    e declaro ciência da{' '}
+                    <span className="font-bold underline text-blue-600 dark:text-blue-400">Política de Privacidade</span>
+                  </span>
+                </label>
               </div>
 
               {/* Botão Cadastrar */}
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full py-3 px-4 rounded-xl text-xs font-extrabold text-white shadow-md flex items-center justify-center gap-2 transition-all hover:scale-101 cursor-pointer disabled:opacity-50 mt-3"
+                className="w-full py-3 px-4 rounded-xl text-xs font-extrabold text-white shadow-md flex items-center justify-center gap-2 transition-all hover:scale-101 cursor-pointer disabled:opacity-50 mt-2"
                 style={{
                   backgroundColor: accentConfig.primaryHex,
                   boxShadow: `0 6px 20px -3px ${accentConfig.bgRgba}`
@@ -504,35 +539,24 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
                   <span>Criando Conta...</span>
                 ) : (
                   <>
-                    <span>Concluir Cadastro & Começar</span>
+                    <span>Criar Conta & Configurar Estudos</span>
                     <Sparkles className="w-4 h-4" />
                   </>
                 )}
               </button>
+
+              {/* Alternador rápido para Login */}
+              <div className="text-center pt-1">
+                <button
+                  type="button"
+                  onClick={() => handleToggleMode('login')}
+                  className="text-xs text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 transition-colors cursor-pointer"
+                >
+                  Já tem uma conta? <strong className="font-bold text-blue-600 dark:text-blue-400">Entrar na Conta</strong>
+                </button>
+              </div>
             </form>
           )}
-
-          {/* Divisor */}
-          <div className="relative my-4">
-            <div className="absolute inset-0 flex items-center">
-              <div className="w-full border-t border-slate-200 dark:border-slate-800" />
-            </div>
-            <div className="relative flex justify-center text-[11px] uppercase tracking-wider font-bold">
-              <span className="bg-white dark:bg-[var(--bg-card)] px-3 text-zinc-400">
-                Ou acesso rápido
-              </span>
-            </div>
-          </div>
-
-          {/* Botão de Demonstração Instantânea */}
-          <button
-            type="button"
-            onClick={handleQuickDemo}
-            className="w-full py-2.5 px-4 rounded-xl border border-slate-200 dark:border-slate-700/80 bg-slate-50 dark:bg-slate-900/60 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-bold transition-all flex items-center justify-center gap-2 cursor-pointer group"
-          >
-            <Award className="w-4 h-4 text-amber-500 group-hover:scale-110 transition-transform" />
-            <span>Acessar com Conta Demo (Dr. Lucas Rocha - P78)</span>
-          </button>
 
         </div>
       </div>
