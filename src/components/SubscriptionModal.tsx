@@ -153,7 +153,9 @@ export const SubscriptionModal: React.FC<SubscriptionModalProps> = ({
           /* TELA DO CHECKOUT TRANSPARENTE MERCADO PAGO */
           <div className="max-w-2xl mx-auto py-2">
             <MercadoPagoCheckout
-              plan={selectedPlanForCheckout}
+              plan={rawSelectedPlan || selectedPlanForCheckout}
+              appliedReferral={appliedReferral}
+              onCouponChange={setAppliedReferral}
               onBack={() => setSelectedPlanOverride('NONE')}
               onSuccess={() => {
                 setSelectedPlanOverride(null);

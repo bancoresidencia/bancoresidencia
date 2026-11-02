@@ -3,8 +3,8 @@
 import React, { useState } from 'react';
 import { useTheme } from '@/context/ThemeContext';
 import { ThemeSelector } from '@/components/ThemeSelector';
+import { Logo } from '@/components/Logo';
 import {
-  Stethoscope,
   Sparkles,
   ArrowRight,
   BookOpenCheck,
@@ -189,15 +189,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-18 flex items-center justify-between gap-4">
           {/* Logo e Nome */}
           <div className="flex items-center gap-3">
-            <div
-              className="w-10 h-10 rounded-2xl flex items-center justify-center text-white shadow-md transition-transform hover:scale-105 duration-200"
-              style={{
-                backgroundColor: accentConfig.primaryHex,
-                boxShadow: `0 8px 20px -4px ${accentConfig.bgRgba}`
-              }}
-            >
-              <Stethoscope className="w-5 h-5" />
-            </div>
+            <Logo className="w-10 h-10 shrink-0 transition-transform hover:scale-105 duration-200" glow />
             <div>
               <div className="flex items-center gap-2">
                 <span className="font-heading text-lg sm:text-xl font-extrabold tracking-tight text-slate-900 dark:text-white">
@@ -737,12 +729,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
       <footer className="border-t border-zinc-200 dark:border-zinc-800/80 bg-white dark:bg-[var(--bg-card)] py-8 text-xs text-zinc-500 dark:text-zinc-400 mt-auto transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <div
-              className="w-8 h-8 rounded-xl flex items-center justify-center text-white text-xs font-bold"
-              style={{ backgroundColor: accentConfig.primaryHex }}
-            >
-              <Stethoscope className="w-4 h-4" />
-            </div>
+            <Logo className="w-8 h-8 shrink-0" />
             <div>
               <span className="font-bold text-slate-800 dark:text-slate-200">Banco Residência Médica 2026</span>
               <span className="block text-[11px] text-slate-400">

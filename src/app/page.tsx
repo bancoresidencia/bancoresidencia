@@ -131,6 +131,7 @@ import { OnboardingModal } from '@/components/OnboardingModal';
 import { getAppliedReferralCode } from '@/config/ambassadorConfig';
 import { useSubscription } from '@/hooks/useSubscription';
 import { EmbeddedCheckoutScreen } from '@/components/EmbeddedCheckoutScreen';
+import { Logo } from '@/components/Logo';
 import { PLANS, PlanDefinition, PlanId } from '@/config/plans';
 import {
   Stethoscope,
@@ -2043,12 +2044,7 @@ export default function Home() {
     return (
       <div className="min-h-screen flex items-center justify-center bg-[var(--bg-page)] text-[var(--foreground)]">
         <div className="flex flex-col items-center gap-3">
-          <div
-            className="w-12 h-12 rounded-2xl flex items-center justify-center text-white shadow-lg animate-pulse"
-            style={{ backgroundColor: accentConfig.primaryHex }}
-          >
-            <Stethoscope className="w-6 h-6" />
-          </div>
+          <Logo className="w-12 h-12 shrink-0 animate-pulse" glow />
           <span className="text-xs font-bold text-slate-500 dark:text-slate-400">Carregando Banco Residência...</span>
         </div>
       </div>

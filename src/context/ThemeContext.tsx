@@ -1,6 +1,7 @@
 'use client';
 
 import React, { createContext, useContext, useState, useEffect, useRef } from 'react';
+import { updateFavicon } from '@/utils/favicon';
 
 export type ThemeMode = 'dark' | 'light';
 export type AccentColor = 'blue' | 'green' | 'orange' | 'purple' | 'red' | 'rose' | 'neutral';
@@ -470,6 +471,13 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       root.style.setProperty('--energy-accent-color', config.energyAccent.hex);
       root.style.setProperty('--energy-accent-bg', config.energyAccent.bgRgba);
       root.style.setProperty('--energy-accent-border', config.energyAccent.borderRgba);
+
+      // Logo e Favicon Adaptativo
+      const logoPrimary = primaryHex;
+      const logoContrast = themeAccent === 'neutral' && isDark ? '#09090b' : '#ffffff';
+      root.style.setProperty('--logo-primary', logoPrimary);
+      root.style.setProperty('--logo-contrast', logoContrast);
+      updateFavicon(logoPrimary, logoContrast);
     } catch {
       // ignore
     }

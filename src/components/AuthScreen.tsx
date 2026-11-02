@@ -3,9 +3,9 @@
 import React, { useState } from 'react';
 import { useAuth } from '@/context/AuthContext';
 import { useTheme } from '@/context/ThemeContext';
+import { Logo } from '@/components/Logo';
 import { validatePasswordRequirements } from '@/utils/security';
 import {
-  Stethoscope,
   Mail,
   Lock,
   User,
@@ -183,15 +183,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
         <div className="relative p-6 sm:p-8 border-b border-slate-100 dark:border-slate-800/80 bg-gradient-to-b from-slate-50/80 to-transparent dark:from-slate-900/40">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div
-                className="w-12 h-12 rounded-2xl flex items-center justify-center text-white shadow-lg transition-transform hover:scale-105 duration-200"
-                style={{
-                  backgroundColor: accentConfig.primaryHex,
-                  boxShadow: `0 8px 24px -4px ${accentConfig.bgRgba}`
-                }}
-              >
-                <Stethoscope className="w-6 h-6" />
-              </div>
+              <Logo className="w-12 h-12 shrink-0 transition-transform hover:scale-105 duration-200" glow />
               <div>
                 <h2 className="font-heading text-xl font-extrabold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
                   <span>Banco Residência</span>

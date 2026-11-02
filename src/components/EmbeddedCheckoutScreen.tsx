@@ -3,20 +3,23 @@
 import React, { useState } from 'react';
 import { useAuth } from '@/context/AuthContext';
 import { useTheme } from '@/context/ThemeContext';
+import { Logo } from '@/components/Logo';
 import { ThemeSelector } from '@/components/ThemeSelector';
-import { PLANS, PlanDefinition, PlanId } from '@/config/plans';
+import { PLANS, PlanDefinition } from '@/config/plans';
 import { MercadoPagoCheckout } from '@/components/MercadoPagoCheckout';
 import {
-  Stethoscope,
+  getAppliedReferralCode,
+  getUserReferralCode,
+  computeDiscountedPlan,
+  AppliedReferral
+} from '@/config/ambassadorConfig';
+import {
   ShieldCheck,
   CheckCircle2,
   Sparkles,
   Zap,
   ArrowRight,
-  HelpCircle,
-  Lock,
-  Clock,
-  ArrowLeft
+  Lock
 } from 'lucide-react';
 
 interface EmbeddedCheckoutScreenProps {
@@ -35,8 +38,17 @@ export const EmbeddedCheckoutScreen: React.FC<EmbeddedCheckoutScreenProps> = ({
   const { user } = useAuth();
   const { accentConfig } = useTheme();
 
+  const currentUserCode = getUserReferralCode(user);
+  const [appliedReferral, setAppliedReferral] = useState<AppliedReferral | null>(() => getAppliedReferralCode(currentUserCode, user));
+
+  const discountPercent = appliedReferral?.discountPercent || 0;
+  const hasDiscount = discountPercent > 0;
+
   // Permite trocar de plano na própria tela de checkout
   const [selectedPlan, setSelectedPlan] = useState<PlanDefinition>(initialPlan);
+  const effectiveSelectedPlan = hasDiscount
+    ? computeDiscountedPlan(selectedPlan, discountPercent)
+    : selectedPlan;
 
   const planList: PlanDefinition[] = [
     PLANS.annual,
@@ -56,15 +68,7 @@ export const EmbeddedCheckoutScreen: React.FC<EmbeddedCheckoutScreenProps> = ({
         <div className="max-w-6xl mx-auto px-4 sm:px-6 h-18 flex items-center justify-between gap-4">
           {/* Logo e Nome */}
           <div className="flex items-center gap-3">
-            <div
-              className="w-10 h-10 rounded-2xl flex items-center justify-center text-white shadow-md transition-transform hover:scale-105 duration-200"
-              style={{
-                backgroundColor: accentConfig.primaryHex,
-                boxShadow: `0 8px 20px -4px ${accentConfig.bgRgba}`
-              }}
-            >
-              <Stethoscope className="w-5 h-5" />
-            </div>
+            <Logo className="w-10 h-10 shrink-0 transition-transform hover:scale-105 duration-200" glow />
             <div>
               <div className="flex items-center gap-2">
                 <span className="font-heading text-lg sm:text-xl font-extrabold tracking-tight text-slate-900 dark:text-white">
@@ -152,6 +156,7 @@ export const EmbeddedCheckoutScreen: React.FC<EmbeddedCheckoutScreenProps> = ({
               <div className="grid grid-cols-2 gap-2">
                 {planList.map((p) => {
                   const isCurrent = p.id === selectedPlan.id;
+                  const effectiveP = hasDiscount ? computeDiscountedPlan(p, discountPercent) : p;
                   return (
                     <button
                       key={p.id}
@@ -176,14 +181,18 @@ export const EmbeddedCheckoutScreen: React.FC<EmbeddedCheckoutScreenProps> = ({
                         {p.name.replace('Plano ', '')}
                       </div>
                       <div className="text-sm font-black text-slate-900 dark:text-white mt-1">
-                        R$ {p.monthlyEquivalent.toFixed(2).replace('.', ',')}
+                        R$ {effectiveP.monthlyEquivalent.toFixed(2).replace('.', ',')}
                         <span className="text-[10px] font-medium text-slate-500 dark:text-slate-400">/mês</span>
                       </div>
-                      {p.savingsPercentage > 0 && (
+                      {hasDiscount ? (
+                        <div className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400 mt-0.5">
+                          {discountPercent}% OFF Cupom
+                        </div>
+                      ) : p.savingsPercentage > 0 ? (
                         <div className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400 mt-0.5">
                           Economia {p.savingsPercentage}%
                         </div>
-                      )}
+                      ) : null}
                     </button>
                   );
                 })}
@@ -203,11 +212,16 @@ export const EmbeddedCheckoutScreen: React.FC<EmbeddedCheckoutScreenProps> = ({
                 </div>
                 <div className="text-right">
                   <div className="text-lg font-black text-slate-900 dark:text-white">
-                    R$ {selectedPlan.totalPrice.toFixed(2).replace('.', ',')}
+                    R$ {effectiveSelectedPlan.totalPrice.toFixed(2).replace('.', ',')}
                   </div>
-                  {selectedPlan.maxInstallments > 1 && (
+                  {hasDiscount && (
+                    <div className="text-[10px] font-semibold text-slate-400 line-through">
+                      R$ {selectedPlan.totalPrice.toFixed(2).replace('.', ',')}
+                    </div>
+                  )}
+                  {effectiveSelectedPlan.maxInstallments > 1 && (
                     <div className="text-[11px] font-bold text-emerald-600 dark:text-emerald-400">
-                      em até {selectedPlan.maxInstallments}x de R$ {selectedPlan.installmentValue.toFixed(2).replace('.', ',')}
+                      em até {effectiveSelectedPlan.maxInstallments}x de R$ {effectiveSelectedPlan.installmentValue.toFixed(2).replace('.', ',')}
                     </div>
                   )}
                 </div>
@@ -281,6 +295,8 @@ export const EmbeddedCheckoutScreen: React.FC<EmbeddedCheckoutScreenProps> = ({
             <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 rounded-3xl p-6 sm:p-8 shadow-xl">
               <MercadoPagoCheckout
                 plan={selectedPlan}
+                appliedReferral={appliedReferral}
+                onCouponChange={setAppliedReferral}
                 onBack={() => {
                   if (onBackToLanding) {
                     onBackToLanding();

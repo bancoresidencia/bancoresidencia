@@ -3,6 +3,7 @@ import { createClient } from '@/lib/supabase/server';
 import { getPaymentService } from '@/lib/mercadopago';
 import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
 import { PLANS, PlanId } from '@/config/plans';
+import { validateReferralCode, normalizeReferralCode } from '@/config/ambassadorConfig';
 
 export async function POST(req: NextRequest) {
   try {
@@ -18,7 +19,7 @@ export async function POST(req: NextRequest) {
     }
 
     const body = await req.json();
-    const { planId, paymentData } = body;
+    const { planId, paymentData, couponCode } = body;
 
     if (!planId || !PLANS[planId as PlanId]) {
       return NextResponse.json(
@@ -32,7 +33,31 @@ export async function POST(req: NextRequest) {
     const supabaseAdmin = getSupabaseAdmin();
 
     const isPix = paymentData.payment_method_id === 'pix';
-    const amount = selectedPlan.totalPrice;
+
+    // Validação de Cupom de Desconto / Código de Indicação
+    let discountPercent = 0;
+    let validatedCoupon: string | null = null;
+    let referrerName: string | null = null;
+
+    if (couponCode && typeof couponCode === 'string' && couponCode.trim()) {
+      const cleanCoupon = normalizeReferralCode(couponCode);
+      const validation = validateReferralCode(cleanCoupon, undefined, user.id, {
+        id: user.id,
+        email: user.email || '',
+        name: (user.user_metadata?.name as string) || '',
+        dailyGoal: 20,
+        createdAt: new Date().toISOString()
+      });
+
+      if (validation.valid) {
+        discountPercent = validation.discountPercent || 10;
+        validatedCoupon = cleanCoupon;
+        referrerName = validation.referrerName || null;
+      }
+    }
+
+    const discountFactor = discountPercent > 0 ? (1 - discountPercent / 100) : 1;
+    const amount = parseFloat((selectedPlan.totalPrice * discountFactor).toFixed(2));
 
     // 2. Montar objeto para o Mercado Pago
     const idempotencyKey = `BR-${user.id}-${planId}-${Date.now()}`;
@@ -41,7 +66,9 @@ export async function POST(req: NextRequest) {
     const paymentPayload: Parameters<typeof paymentService.create>[0] = {
       body: {
         transaction_amount: amount,
-        description: `Banco Residência Médica — ${selectedPlan.name}`,
+        description: validatedCoupon
+          ? `Banco Residência Médica — ${selectedPlan.name} (Cupom: ${validatedCoupon})`
+          : `Banco Residência Médica — ${selectedPlan.name}`,
         payment_method_id: paymentData.payment_method_id,
         token: paymentData.token,
         installments: Number(paymentData.installments) || 1,
@@ -60,7 +87,11 @@ export async function POST(req: NextRequest) {
           user_email: user.email,
           plan_id: selectedPlan.id,
           plan_name: selectedPlan.name,
-          duration_days: selectedPlan.durationDays
+          duration_days: selectedPlan.durationDays,
+          coupon_code: validatedCoupon,
+          discount_percent: discountPercent,
+          original_amount: selectedPlan.totalPrice,
+          referrer_name: referrerName
         }
       },
       requestOptions: {
@@ -120,7 +151,7 @@ export async function POST(req: NextRequest) {
           mp_payment_id: paymentId,
           plan_id: selectedPlan.id,
           plan_name: selectedPlan.name,
-          amount: selectedPlan.totalPrice,
+          amount: amount,
           installments: Number(paymentData.installments) || 1,
           payment_method: paymentData.payment_method_id,
           status: status === 'approved' ? 'approved' : 'pending',
@@ -128,7 +159,16 @@ export async function POST(req: NextRequest) {
           qr_code_base64: pixData?.qr_code_base64 || null,
           ticket_url: pixData?.ticket_url || null,
           guarantee_expires_at: guaranteeUntil.toISOString(),
-          raw_data: mpResponse
+          raw_data: {
+            ...mpResponse,
+            coupon_applied: validatedCoupon ? {
+              code: validatedCoupon,
+              discount_percent: discountPercent,
+              referrer_name: referrerName,
+              original_amount: selectedPlan.totalPrice,
+              final_amount: amount
+            } : null
+          }
         })
         .select()
         .maybeSingle();
@@ -148,6 +188,9 @@ export async function POST(req: NextRequest) {
       status,
       statusDetail: mpResponse.status_detail,
       isPix,
+      amount,
+      discountPercent,
+      couponCode: validatedCoupon,
       plan: selectedPlan,
       pix: isPix ? {
         qrCode: pixData?.qr_code,

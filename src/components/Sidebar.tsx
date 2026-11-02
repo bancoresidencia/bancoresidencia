@@ -8,7 +8,6 @@ import {
   ClipboardCheck,
   BarChart3,
   Trophy,
-  Stethoscope,
   Sliders,
   BookOpen,
   PanelLeftClose,
@@ -23,6 +22,7 @@ import {
 import { ActiveTab, Modalidade } from '@/types';
 import { useTheme } from '@/context/ThemeContext';
 import { useAuth } from '@/context/AuthContext';
+import { Logo } from '@/components/Logo';
 
 interface SidebarProps {
   activeTab: ActiveTab;
@@ -90,14 +90,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
           title={`Banco Residência • ${modalidade}`}
           aria-label="Ir para a página inicial"
         >
-          <div
-            className="w-8.5 h-8.5 rounded-lg flex items-center justify-center text-white shrink-0 shadow-xs"
-            style={{
-              backgroundColor: accentConfig.primaryHex
-            }}
-          >
-            <Stethoscope className="w-4.5 h-4.5 stroke-[1.8]" />
-          </div>
+          <Logo className="w-8.5 h-8.5 shrink-0 transition-transform duration-200 group-hover:scale-105" />
 
           {!isCollapsed && (
             <div className="text-left overflow-hidden">

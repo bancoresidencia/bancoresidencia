@@ -4,6 +4,7 @@
  */
 
 import { UserAccount } from '@/types/auth';
+import { PlanDefinition } from '@/config/plans';
 
 export interface AmbassadorConfig {
   discountPercent: number; // Desconto dado ao aluno indicado (ex: 10%)
@@ -72,8 +73,31 @@ const DEFAULT_PRESET_REFERRALS: Record<string, string> = {
   'MED-BEATRIZ': 'Dra. Beatriz Fernandes (G.O.)',
   'BANCO-VIP': 'Embaixador Oficial Banco Residência',
   'REVALIDA10': 'Comunidade Revalida BR',
-  'RPLUS10': 'Mentoria R+ Cirúrgico'
+  'RPLUS10': 'Mentoria R+ Cirúrgico',
+  'CUPOM10': 'Desconto Especial Banco Residência',
+  'DESCONTO10': 'Desconto Especial Banco Residência',
+  'PROMO10': 'Promoção Oficial Banco Residência',
+  'MED10': 'Comunidade Médica Banco Residência',
+  'RESIDENCIA2026': 'Ciclo Residência 2026'
 };
+
+/**
+ * Calcula os valores de um plano com o desconto do cupom/indicação aplicado proporcionalmente
+ */
+export function computeDiscountedPlan(basePlan: PlanDefinition, discountPercent: number): PlanDefinition {
+  if (!discountPercent || discountPercent <= 0) return basePlan;
+  const discountFactor = 1 - discountPercent / 100;
+  const discountedTotal = parseFloat((basePlan.totalPrice * discountFactor).toFixed(2));
+  const discountedMonthly = parseFloat((basePlan.monthlyEquivalent * discountFactor).toFixed(2));
+  const discountedInstallment = parseFloat((discountedTotal / basePlan.maxInstallments).toFixed(2));
+
+  return {
+    ...basePlan,
+    totalPrice: discountedTotal,
+    monthlyEquivalent: discountedMonthly,
+    installmentValue: discountedInstallment
+  };
+}
 
 /**
  * Normaliza um código de indicação (sem espaços, maiúsculas)
