@@ -7,6 +7,7 @@ import { useTheme } from '@/context/ThemeContext';
 import { validatePasswordRequirements } from '@/utils/security';
 import {
   User,
+  Gift,
   Lock,
   Camera,
   GraduationCap,
@@ -426,6 +427,25 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
           <span>Plano & Privilégios</span>
         </button>
 
+      
+        <button
+          type="button"
+          onClick={() => {
+            setActiveTab('ambassador');
+            clearStatus();
+          }}
+          className={`flex-1 min-w-[130px] py-2.5 px-3 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-2 cursor-pointer ${
+            activeTab === 'ambassador'
+              ? 'bg-white dark:bg-slate-800 text-slate-900 dark:text-white shadow-xs font-extrabold'
+              : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+          }`}
+        >
+          <Gift className="w-3.5 h-3.5 text-emerald-500" />
+          <span>Embaixador</span>
+          <span className="px-1.5 py-0.5 rounded-full bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 text-[10px] font-black">
+            15% PIX
+          </span>
+        </button>
       </div>
 
       {activeTab === 'ambassador' && (

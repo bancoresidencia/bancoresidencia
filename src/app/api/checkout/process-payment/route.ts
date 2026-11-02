@@ -4,6 +4,7 @@ import { getPaymentService } from '@/lib/mercadopago';
 import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
 import { PLANS, PlanId } from '@/config/plans';
 import { validateReferralCode, normalizeReferralCode } from '@/config/ambassadorConfig';
+import { recordReferralSale } from '@/services/ambassadorService';
 
 export async function POST(req: NextRequest) {
   try {
@@ -141,7 +142,7 @@ export async function POST(req: NextRequest) {
     }
 
     // 5. Salvar na tabela de orders (com fallback tolerante a falhas)
-    let orderRecord = null;
+    let orderRecord: { id?: string } | null = null;
     try {
       const pixData = mpResponse.point_of_interaction?.transaction_data;
       const { data: insertedOrder } = await supabaseAdmin
@@ -178,6 +179,25 @@ export async function POST(req: NextRequest) {
       console.warn('Aviso: Tabela public.orders pode estar aguardando execução da migration 012.', orderErr);
     }
 
+    // Registrar indicação de embaixador se pagamento aprovado com cupom válido
+    if (status === 'approved' && validatedCoupon) {
+      try {
+        await recordReferralSale({
+          couponCode: validatedCoupon,
+          orderId: orderRecord?.id,
+          studentName: (user.user_metadata?.name as string) || (user.email ? user.email.split('@')[0] : 'Estudante'),
+          studentEmail: user.email || '',
+          planId: selectedPlan.id as 'monthly' | 'semiannual' | 'annual' | 'biennial',
+          planName: selectedPlan.name,
+          planAmount: selectedPlan.totalPrice,
+          discountApplied: parseFloat((selectedPlan.totalPrice - amount).toFixed(2)),
+          netAmount: amount
+        });
+      } catch (refErr) {
+        console.warn('Aviso ao registrar indicação de embaixador:', refErr);
+      }
+    }
+
     // 6. Extrair dados para resposta ao Frontend
     const pointOfInteraction = mpResponse.point_of_interaction;
     const pixData = pointOfInteraction?.transaction_data;
@@ -209,4 +229,3 @@ export async function POST(req: NextRequest) {
     );
   }
 }
-

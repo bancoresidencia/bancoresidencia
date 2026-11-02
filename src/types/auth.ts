@@ -19,6 +19,7 @@ export interface UserAccount {
   createdAt: string;
   targetExamName?: string;
   targetExamDate?: string;
+  referralCode?: string;
 }
 
 export interface AuthState {
@@ -39,4 +40,5 @@ export interface UpdateProfileData {
   state?: string;
   targetExamName?: string;
   targetExamDate?: string;
+  referralCode?: string;
 }
