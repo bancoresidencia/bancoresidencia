@@ -3,8 +3,8 @@
 import React, { useState } from 'react';
 import { useTheme } from '@/context/ThemeContext';
 import { ThemeSelector } from '@/components/ThemeSelector';
+import { Logo } from '@/components/Logo';
 import {
-  Stethoscope,
   Sparkles,
   ArrowRight,
   BookOpenCheck,
@@ -12,10 +12,20 @@ import {
   HelpCircle,
   ShieldCheck,
   Check,
-  Zap,
   X,
   CreditCard,
-  UserCheck
+  UserCheck,
+  Menu,
+  ChevronDown,
+  ChevronUp,
+  RotateCcw,
+  BookOpen,
+  Brain,
+  Layers,
+  Gift,
+  Award,
+  Wallet,
+  CheckCircle2
 } from 'lucide-react';
 import { LandingDemoQuestionsSection } from '@/components/LandingDemoQuestionsSection';
 
@@ -152,10 +162,9 @@ interface LandingPageProps {
 export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDemo }) => {
   const { accentConfig } = useTheme();
   const [selectedPlanModal, setSelectedPlanModal] = useState<PricingPlan | null>(null);
-
-  const handleSelectPlan = (plan: PricingPlan) => {
-    setSelectedPlanModal(plan);
-  };
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [openFaqId, setOpenFaqId] = useState<string | null>('faq-1');
+  const [demoFlashcardFlipped, setDemoFlashcardFlipped] = useState(false);
 
   const handleStartPlanCheckout = (planId: string, mode: 'register' | 'login' = 'register') => {
     if (typeof window !== 'undefined') {
@@ -183,93 +192,249 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
   return (
     <div className="min-h-screen bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 flex flex-col selection:bg-[var(--primary-color)] selection:text-white transition-colors duration-200">
       {/* =========================================================================
-          BARRA DE NAVEGAÇÃO SUPERIOR
+          BANNER PROMOCIONAL SUPERIOR (BLACK DE LANÇAMENTO - MEDEVO INSPIRATION)
           ========================================================================= */}
-      <header className="sticky top-0 z-40 w-full backdrop-blur-md bg-white/85 dark:bg-[var(--bg-page)]/85 border-b border-zinc-200/80 dark:border-zinc-800/80 transition-all">
+      <aside
+        aria-label="Promoção Black de Lançamento"
+        onClick={() => scrollToSection('planos')}
+        className="w-full bg-[#0a0a0c] text-white border-b border-amber-500/25 py-2.5 px-3 sm:px-4 cursor-pointer relative overflow-hidden group select-none transition-all duration-200 hover:bg-black"
+        style={{
+          boxShadow: '0 2px 20px rgba(245, 158, 11, 0.12)'
+        }}
+      >
+        {/* Glow sutil de fundo dourado/amber */}
+        <div className="absolute inset-0 bg-gradient-to-r from-amber-500/15 via-transparent to-amber-500/15 pointer-events-none" />
+        <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-96 h-12 bg-amber-500/20 blur-xl pointer-events-none" />
+
+        {/* Visualização Desktop */}
+        <div className="hidden lg:flex max-w-7xl mx-auto items-center justify-center gap-3 text-center text-xs sm:text-[13px] relative z-10">
+          <span className="font-black uppercase tracking-wider text-amber-400 drop-shadow-[0_0_10px_rgba(251,191,36,0.6)] flex items-center gap-1.5 shrink-0">
+            <span>BLACK DE LANÇAMENTO</span>
+          </span>
+
+          <span className="text-amber-400 text-xs shrink-0 select-none">✳</span>
+
+          <span className="font-extrabold text-white tracking-tight shrink-0 drop-shadow-xs">
+            40% DE DESCONTO EM TODOS OS PLANOS
+          </span>
+
+          <span className="text-amber-400 text-xs shrink-0 select-none">✳</span>
+
+          <span className="font-bold text-amber-300 shrink-0">
+            ATÉ O DIA 30/11
+          </span>
+
+          <span className="text-amber-400 text-xs shrink-0 select-none">✳</span>
+
+          <span className="bg-amber-400/20 text-amber-300 border border-amber-400/50 px-2.5 py-0.5 rounded-full font-black text-[11px] uppercase tracking-wider shadow-[0_0_10px_rgba(251,191,36,0.2)] shrink-0">
+            50 PRIMEIROS
+          </span>
+
+          <span className="inline-flex items-center gap-1 font-bold text-amber-400 group-hover:text-amber-200 transition-all group-hover:translate-x-0.5 ml-1 shrink-0">
+            <span>· VER OFERTAS</span>
+            <ArrowRight className="w-3.5 h-3.5" />
+          </span>
+        </div>
+
+        {/* Visualização Mobile & Telas Menores */}
+        <div className="lg:hidden flex items-center justify-center gap-2 text-[11px] relative z-10 whitespace-nowrap overflow-x-auto no-scrollbar py-0.5">
+          <span className="font-black uppercase text-amber-400 shrink-0">
+            BLACK DE LANÇAMENTO
+          </span>
+          <span className="text-amber-400 text-[10px] shrink-0">✳</span>
+          <span className="font-extrabold text-white shrink-0">
+            40% OFF EM TODOS OS PLANOS
+          </span>
+          <span className="text-amber-400 text-[10px] shrink-0">✳</span>
+          <span className="font-bold text-amber-300 shrink-0">
+            ATÉ 30/11
+          </span>
+          <span className="bg-amber-400/20 text-amber-300 border border-amber-400/40 px-2 py-0.2 rounded-full font-black text-[10px] shrink-0">
+            50 PRIMEIROS
+          </span>
+          <ArrowRight className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+        </div>
+      </aside>
+
+      {/* =========================================================================
+          CABEÇALHO OFICIAL (MINIMALISTA, ELEGANTE E TOTALMENTE FUNCIONAL)
+          ========================================================================= */}
+      <header className="sticky top-0 z-40 w-full backdrop-blur-md bg-white/90 dark:bg-[var(--bg-page)]/90 border-b border-zinc-200/80 dark:border-zinc-800/80 transition-all">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 h-18 flex items-center justify-between gap-4">
-          {/* Logo e Nome */}
-          <div className="flex items-center gap-3">
-            <div
-              className="w-10 h-10 rounded-2xl flex items-center justify-center text-white shadow-md transition-transform hover:scale-105 duration-200"
-              style={{
-                backgroundColor: accentConfig.primaryHex,
-                boxShadow: `0 8px 20px -4px ${accentConfig.bgRgba}`
-              }}
-            >
-              <Stethoscope className="w-5 h-5" />
-            </div>
-            <div>
-              <div className="flex items-center gap-2">
-                <span className="font-heading text-lg sm:text-xl font-extrabold tracking-tight text-slate-900 dark:text-white">
-                  Banco Residência
-                </span>
-                <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-950/70 text-blue-700 dark:text-blue-400 border border-blue-200 dark:border-blue-800">
-                  2026
-                </span>
-              </div>
-              <p className="hidden sm:block text-[11px] text-slate-500 dark:text-slate-400 font-medium -mt-0.5">
-                Alta Performance & Raciocínio Clínico
-              </p>
+          
+          {/* Lado Esquerdo: Logo do BancoResidência + Nome em 2 linhas (Inter, bold) */}
+          <div
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="flex items-center gap-3 cursor-pointer group select-none"
+          >
+            <Logo className="w-10 h-10 shrink-0 transition-transform group-hover:scale-105 duration-200" glow />
+            <div className="flex flex-col justify-center leading-none">
+              <span
+                className="text-[18px] sm:text-[20px] font-bold text-zinc-950 dark:text-white leading-[1.05] tracking-tight"
+                style={{ fontFamily: 'var(--font-inter), sans-serif' }}
+              >
+                Banco
+              </span>
+              <span
+                className="text-[18px] sm:text-[20px] font-bold text-zinc-950 dark:text-white leading-[1.05] tracking-tight -mt-0.5"
+                style={{ fontFamily: 'var(--font-inter), sans-serif' }}
+              >
+                Residência
+              </span>
             </div>
           </div>
 
-          {/* Links Centrais de Navegação */}
-          <nav className="hidden md:flex items-center gap-7 text-xs font-bold text-slate-600 dark:text-slate-300">
-            <button
-              type="button"
-              onClick={() => scrollToSection('recursos')}
-              className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer"
-            >
-              Recursos
-            </button>
+          {/* Cards Centrais de Navegação: Banco de Questões; Material de Estudo; Flashcards; FAQ; Embaixadores */}
+          <nav className="hidden lg:flex items-center gap-1.5 xl:gap-2">
             <button
               type="button"
               onClick={() => scrollToSection('questoes')}
-              className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer"
+              className="px-3.5 py-2 rounded-xl text-xs sm:text-[13px] font-semibold text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white hover:bg-zinc-100/90 dark:hover:bg-zinc-800/80 transition-all duration-150 cursor-pointer"
             >
-              +130k Questões
+              Banco de Questões
             </button>
             <button
               type="button"
-              onClick={() => scrollToSection('provas')}
-              className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer"
+              onClick={() => scrollToSection('material-estudo')}
+              className="px-3.5 py-2 rounded-xl text-xs sm:text-[13px] font-semibold text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white hover:bg-zinc-100/90 dark:hover:bg-zinc-800/80 transition-all duration-150 cursor-pointer"
             >
-              Provas Oficiais
+              Material de Estudo
             </button>
             <button
               type="button"
-              onClick={() => scrollToSection('planos')}
-              className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors cursor-pointer"
+              onClick={() => scrollToSection('flashcards')}
+              className="px-3.5 py-2 rounded-xl text-xs sm:text-[13px] font-semibold text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white hover:bg-zinc-100/90 dark:hover:bg-zinc-800/80 transition-all duration-150 cursor-pointer"
             >
-              Planos
+              Flashcards
+            </button>
+            <button
+              type="button"
+              onClick={() => scrollToSection('faq')}
+              className="px-3.5 py-2 rounded-xl text-xs sm:text-[13px] font-semibold text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white hover:bg-zinc-100/90 dark:hover:bg-zinc-800/80 transition-all duration-150 cursor-pointer"
+            >
+              FAQ
+            </button>
+            <button
+              type="button"
+              onClick={() => scrollToSection('embaixadores')}
+              className="px-3.5 py-2 rounded-xl text-xs sm:text-[13px] font-semibold text-zinc-600 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white hover:bg-zinc-100/90 dark:hover:bg-zinc-800/80 transition-all duration-150 cursor-pointer"
+            >
+              Embaixadores
             </button>
           </nav>
 
-          {/* Ações da Direita */}
+          {/* Lado Direito: ThemeSelector + Criar Conta (simples, sem estrela) + Entrar (simples) + Menu Mobile */}
           <div className="flex items-center gap-2.5 sm:gap-3">
             <ThemeSelector compact={true} />
 
             <button
               type="button"
               onClick={() => onOpenAuth('register')}
-              className="hidden lg:flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-bold text-slate-700 dark:text-slate-300 bg-slate-100 dark:bg-slate-800/80 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all cursor-pointer"
-              title="Acessar com perfil de teste do aluno"
+              className="hidden sm:inline-flex px-3.5 sm:px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-zinc-700 dark:text-zinc-200 bg-zinc-100 dark:bg-zinc-800/80 hover:bg-zinc-200/90 dark:hover:bg-zinc-700/80 transition-all cursor-pointer"
             >
-              <Sparkles className="w-3.5 h-3.5 text-amber-500" />
-              <span>Criar Conta</span>
+              Criar Conta
             </button>
 
             <button
               type="button"
               onClick={() => onOpenAuth('login')}
-              className="px-4 py-2 sm:px-5 sm:py-2.5 rounded-xl text-xs font-extrabold text-white shadow-md transition-all hover:scale-102 cursor-pointer flex items-center gap-2"
+              className="px-4 sm:px-5 py-2 rounded-xl text-xs sm:text-sm font-bold text-white transition-all shadow-xs hover:opacity-95 hover:scale-[1.02] cursor-pointer"
               style={{ backgroundColor: accentConfig.primaryHex }}
             >
-              <span>Entrar</span>
-              <ArrowRight className="w-3.5 h-3.5" />
+              Entrar
+            </button>
+
+            {/* Botão Hambúrguer Mobile */}
+            <button
+              type="button"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="lg:hidden p-2 rounded-xl text-zinc-600 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
+              aria-label="Abrir menu"
+            >
+              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
         </div>
+
+        {/* Menu Mobile Drawer / Dropdown */}
+        {mobileMenuOpen && (
+          <div className="lg:hidden border-t border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[var(--bg-card)] px-4 py-4 space-y-2 animate-in fade-in slide-in-from-top-2 duration-150 shadow-xl">
+            <button
+              type="button"
+              onClick={() => {
+                scrollToSection('questoes');
+                setMobileMenuOpen(false);
+              }}
+              className="w-full text-left px-3.5 py-2.5 rounded-xl text-sm font-semibold text-zinc-700 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+            >
+              Banco de Questões
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                scrollToSection('material-estudo');
+                setMobileMenuOpen(false);
+              }}
+              className="w-full text-left px-3.5 py-2.5 rounded-xl text-sm font-semibold text-zinc-700 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+            >
+              Material de Estudo
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                scrollToSection('flashcards');
+                setMobileMenuOpen(false);
+              }}
+              className="w-full text-left px-3.5 py-2.5 rounded-xl text-sm font-semibold text-zinc-700 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+            >
+              Flashcards
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                scrollToSection('faq');
+                setMobileMenuOpen(false);
+              }}
+              className="w-full text-left px-3.5 py-2.5 rounded-xl text-sm font-semibold text-zinc-700 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+            >
+              FAQ
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                scrollToSection('embaixadores');
+                setMobileMenuOpen(false);
+              }}
+              className="w-full text-left px-3.5 py-2.5 rounded-xl text-sm font-semibold text-zinc-700 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors"
+            >
+              Embaixadores
+            </button>
+
+            <div className="pt-2 border-t border-zinc-200 dark:border-zinc-800 flex flex-col gap-2">
+              <button
+                type="button"
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  onOpenAuth('register');
+                }}
+                className="w-full py-2.5 rounded-xl text-sm font-semibold text-zinc-700 dark:text-zinc-200 bg-zinc-100 dark:bg-zinc-800 text-center"
+              >
+                Criar Conta
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  onOpenAuth('login');
+                }}
+                className="w-full py-2.5 rounded-xl text-sm font-bold text-white text-center shadow-xs"
+                style={{ backgroundColor: accentConfig.primaryHex }}
+              >
+                Entrar
+              </button>
+            </div>
+          </div>
+        )}
       </header>
 
       {/* =========================================================================
@@ -414,12 +579,194 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
       </section>
 
       {/* =========================================================================
-          SEÇÃO DE QUESTÕES REAIS DA PLATAFORMA (NA PRÁTICA, FAZ SENTIDO)
+          SEÇÃO DE QUESTÕES REAIS DA PLATAFORMA (BANCO DE QUESTÕES)
           ========================================================================= */}
-      <LandingDemoQuestionsSection
-        onLoginDemo={onLoginDemo}
-        onOpenAuth={onOpenAuth}
-      />
+      <div id="questoes" className="scroll-mt-24">
+        <LandingDemoQuestionsSection
+          onLoginDemo={onLoginDemo}
+          onOpenAuth={onOpenAuth}
+        />
+      </div>
+
+      {/* =========================================================================
+          SEÇÃO: MATERIAL DE ESTUDO (341 LIVROS, CONDUTAS & ALGORITMOS)
+          ========================================================================= */}
+      <section id="material-estudo" className="scroll-mt-24 py-16 sm:py-24 border-t border-zinc-200/80 dark:border-zinc-800/80 bg-zinc-50/50 dark:bg-zinc-900/20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800/80 text-blue-700 dark:text-blue-300 text-xs font-extrabold mb-3">
+              <BookOpen className="w-3.5 h-3.5" />
+              <span>Conhecimento Clínico Estruturado</span>
+            </div>
+            <h2 className="font-heading text-2xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
+              Material de Estudo Focado e Direto ao Ponto
+            </h2>
+            <p className="mt-3 text-xs sm:text-sm text-slate-600 dark:text-slate-400">
+              Mais de 341 livros médicos de referência catalogados por especialidade, algoritmos de tratamento e sínteses para fixação rápida dos temas mais cobrados nas provas.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* Card 1 */}
+            <div className="p-6 rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-md hover:shadow-xl transition-all duration-300 group">
+              <div
+                className="w-12 h-12 rounded-2xl flex items-center justify-center text-white mb-5 transition-transform group-hover:scale-105 duration-200"
+                style={{ backgroundColor: accentConfig.primaryHex }}
+              >
+                <BookOpen className="w-6 h-6" />
+              </div>
+              <h3 className="font-heading text-base font-extrabold text-slate-900 dark:text-white mb-2">
+                341 Livros Médicos
+              </h3>
+              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                Base indexada com os clássicos da medicina: Harrison, Sabiston, Nelson, Zugaib e Rouquayrol com busca inteligente por tema clínico.
+              </p>
+            </div>
+
+            {/* Card 2 */}
+            <div className="p-6 rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-md hover:shadow-xl transition-all duration-300 group">
+              <div className="w-12 h-12 rounded-2xl flex items-center justify-center text-white bg-indigo-600 mb-5 transition-transform group-hover:scale-105 duration-200">
+                <Layers className="w-6 h-6" />
+              </div>
+              <h3 className="font-heading text-base font-extrabold text-slate-900 dark:text-white mb-2">
+                Algoritmos de Conduta
+              </h3>
+              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                Fluxogramas passo a passo de urgências, emergências e condutas ambulatoriais para acertar questões de conduta imediata.
+              </p>
+            </div>
+
+            {/* Card 3 */}
+            <div className="p-6 rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-md hover:shadow-xl transition-all duration-300 group">
+              <div className="w-12 h-12 rounded-2xl flex items-center justify-center text-white bg-emerald-600 mb-5 transition-transform group-hover:scale-105 duration-200">
+                <ShieldCheck className="w-6 h-6" />
+              </div>
+              <h3 className="font-heading text-base font-extrabold text-slate-900 dark:text-white mb-2">
+                Fatores de Risco & Ddx
+              </h3>
+              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                Tabelas comparativas de diagnósticos diferenciais para eliminar as pegadinhas mais capciosas da USP, ENARE e Revalida.
+              </p>
+            </div>
+
+            {/* Card 4 */}
+            <div className="p-6 rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-md hover:shadow-xl transition-all duration-300 group">
+              <div className="w-12 h-12 rounded-2xl flex items-center justify-center text-white bg-amber-500 mb-5 transition-transform group-hover:scale-105 duration-200">
+                <Sparkles className="w-6 h-6" />
+              </div>
+              <h3 className="font-heading text-base font-extrabold text-slate-900 dark:text-white mb-2">
+                Take-Home Pearls
+              </h3>
+              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                Pontos de virada e mensagens finais de cada tema que resumem o que a banca realmente quer de você na hora da prova.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* =========================================================================
+          SEÇÃO: FLASHCARDS COM REPETIÇÃO ESPAÇADA (FSRS)
+          ========================================================================= */}
+      <section id="flashcards" className="scroll-mt-24 py-16 sm:py-24 border-t border-zinc-200/80 dark:border-zinc-800/80">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 sm:gap-12 items-center">
+            {/* Texto Explicativo */}
+            <div className="lg:col-span-6 space-y-5 text-center lg:text-left">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-50 dark:bg-purple-950/60 border border-purple-200 dark:border-purple-800/80 text-purple-700 dark:text-purple-300 text-xs font-extrabold">
+                <Brain className="w-3.5 h-3.5" />
+                <span>Repetição Espaçada de Alta Retenção</span>
+              </div>
+              <h2 className="font-heading text-2xl sm:text-4xl font-extrabold text-slate-900 dark:text-white leading-tight">
+                Flashcards Inteligentes: memorização ativa sem esforço
+              </h2>
+              <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                Baseados no modelo psicométrico FSRS, os flashcards do Banco Residência se adaptam à sua curva de esquecimento. O que você erra nas questões vira card de revisão imediata no seu caderno.
+              </p>
+
+              <div className="space-y-3 pt-2 text-xs font-semibold text-slate-700 dark:text-slate-200 text-left">
+                <div className="flex items-center gap-2.5">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
+                  <span>Algoritmo de intervalos calibrado para o dia da sua prova</span>
+                </div>
+                <div className="flex items-center gap-2.5">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
+                  <span>Modo Cloze (omissão de conceitos e drogas de escolha)</span>
+                </div>
+                <div className="flex items-center gap-2.5">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
+                  <span>Sincronização automática com seu Caderno de Erros</span>
+                </div>
+              </div>
+
+              <div className="pt-2">
+                <button
+                  type="button"
+                  onClick={() => onOpenAuth('register')}
+                  className="px-6 py-3 rounded-xl text-xs font-extrabold text-white shadow-md transition-all hover:scale-102 cursor-pointer inline-flex items-center gap-2"
+                  style={{ backgroundColor: accentConfig.primaryHex }}
+                >
+                  <span>Experimentar Flashcards</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </button>
+              </div>
+            </div>
+
+            {/* Demonstração Interativa do Flashcard */}
+            <div className="lg:col-span-6 flex justify-center">
+              <div className="w-full max-w-md">
+                <div
+                  onClick={() => setDemoFlashcardFlipped(!demoFlashcardFlipped)}
+                  className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[var(--bg-card)] border-2 border-dashed border-zinc-300 dark:border-zinc-700 hover:border-purple-500 dark:hover:border-purple-400 shadow-xl transition-all duration-300 cursor-pointer min-h-[260px] flex flex-col justify-between group"
+                >
+                  <div>
+                    <div className="flex items-center justify-between text-[11px] font-extrabold uppercase tracking-wider text-purple-600 dark:text-purple-400 mb-4">
+                      <span>Cirurgia Vascular • ENARE / USP</span>
+                      <span className="flex items-center gap-1 text-slate-400 font-semibold text-[10px]">
+                        <RotateCcw className="w-3 h-3 group-hover:rotate-180 transition-transform duration-300" />
+                        Clique para virar
+                      </span>
+                    </div>
+
+                    {!demoFlashcardFlipped ? (
+                      <div className="space-y-3">
+                        <span className="text-xs font-bold uppercase tracking-wider text-slate-400">
+                          Pergunta do Card:
+                        </span>
+                        <p className="text-sm sm:text-base font-extrabold text-slate-900 dark:text-white leading-snug">
+                          Qual é a tríade clínica clássica da Síndrome de Leriche e qual é o nível anatômico da obstrução arterial?
+                        </p>
+                      </div>
+                    ) : (
+                      <div className="space-y-3 animate-in fade-in zoom-in-95 duration-150">
+                        <span className="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
+                          Resposta Padrão-Ouro:
+                        </span>
+                        <div className="text-xs sm:text-sm font-semibold text-slate-800 dark:text-slate-100 leading-relaxed">
+                          <strong>Tríade de Leriche:</strong><br />
+                          1. Claudicação de nádegas e coxas;<br />
+                          2. Diminuição ou ausência de pulsos femorais;<br />
+                          3. Disfunção erétil no homem.<br />
+                          <strong>Nível anatômico:</strong> Oclusão da bifurcação aortoilíaca (aorta distal e artérias ilíacas).
+                        </div>
+                      </div>
+                    )}
+                  </div>
+
+                  <div className="pt-4 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between text-xs text-slate-500">
+                    <span className="font-semibold">
+                      {demoFlashcardFlipped ? 'Verso do card (Resposta)' : 'Frente do card (Pergunta)'}
+                    </span>
+                    <span className="text-purple-600 dark:text-purple-400 font-bold group-hover:underline">
+                      {demoFlashcardFlipped ? 'Ver Pergunta' : 'Ver Resposta →'}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* =========================================================================
           SEÇÃO DOS 3 PILARES ESSENCIAIS (RECURSOS DA PLATAFORMA)
@@ -551,12 +898,12 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
       {/* =========================================================================
           SEÇÃO DE PLANOS DE PAGAMENTO (MENSAL, SEMESTRAL, ANUAL, BIENAL)
           ========================================================================= */}
-      <section id="planos" className="py-16 sm:py-24 border-t border-zinc-200/80 dark:border-zinc-800/80 bg-white/60 dark:bg-[var(--bg-page)]/60">
+      <section id="planos" className="scroll-mt-24 py-16 sm:py-24 border-t border-zinc-200/80 dark:border-zinc-800/80 bg-white/60 dark:bg-[var(--bg-page)]/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800/80 text-blue-700 dark:text-blue-300 text-xs font-extrabold mb-3">
-              <Zap className="w-3.5 h-3.5" />
-              <span>Acesso Imediato a Todas as Funções</span>
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-600 dark:text-amber-400 text-xs font-black mb-3 shadow-xs">
+              <span className="text-amber-500">⚡</span>
+              <span>BLACK DE LANÇAMENTO — 40% OFF APLICADO EM TODOS OS PLANOS (50 PRIMEIROS)</span>
             </div>
             <h2 className="font-heading text-2xl sm:text-4xl font-extrabold text-zinc-900 dark:text-white">
               Escolha o plano ideal para a sua jornada
@@ -697,6 +1044,181 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
       </section>
 
       {/* =========================================================================
+          SEÇÃO: PERGUNTAS FREQUENTES (FAQ)
+          ========================================================================= */}
+      <section id="faq" className="scroll-mt-24 py-16 sm:py-24 border-t border-zinc-200/80 dark:border-zinc-800/80 bg-zinc-50/50 dark:bg-zinc-900/20">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12 sm:mb-16">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800/80 text-blue-700 dark:text-blue-300 text-xs font-extrabold mb-3">
+              <HelpCircle className="w-3.5 h-3.5" />
+              <span>Tire Suas Dúvidas</span>
+            </div>
+            <h2 className="font-heading text-2xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
+              Perguntas Frequentes (FAQ)
+            </h2>
+            <p className="mt-3 text-xs sm:text-sm text-slate-500 dark:text-slate-400">
+              Tudo o que você precisa saber sobre a Black de Lançamento, recursos e funcionamento do Banco Residência.
+            </p>
+          </div>
+
+          <div className="space-y-3.5">
+            {[
+              {
+                id: 'faq-1',
+                q: 'Como funciona o desconto de 40% da Black de Lançamento?',
+                a: 'A promoção de lançamento garante 40% de desconto imediato em qualquer plano contratado para os 50 primeiros estudantes até 30/11. O valor com desconto é fixado na contratação e você aproveita acesso irrestrito a todas as mais de 130 mil questões, provas na íntegra, flashcards e materiais.'
+              },
+              {
+                id: 'faq-2',
+                q: 'O Banco de Questões tem resoluções comentadas para todas as alternativas?',
+                a: 'Sim, 100% das resoluções são detalhadas alternativa por alternativa (A, B, C, D e E). Não entregamos apenas qual é a certa: explicamos o erro de cada distrator, a fisiopatologia clínica, condutas atualizadas e as referências oficiais exigidas pelas bancas.'
+              },
+              {
+                id: 'faq-3',
+                q: 'Quais bancas e provas oficiais estão disponíveis na íntegra?',
+                a: 'Disponibilizamos todos os cadernos oficiais das maiores bancas do Brasil: ENARE, USP-SP, UNIFESP, SUS-SP, AMP, AMRIGS, SURCE, UERJ, SES-PE, PSU-MG, IAMSPE, Revalida INEP e muitas outras, com cronômetro real de prova e gabaritos auditados.'
+              },
+              {
+                id: 'faq-4',
+                q: 'Como funcionam os Flashcards e o Material de Estudo?',
+                a: 'O sistema de flashcards utiliza o algoritmo moderno FSRS (Repetição Espaçada Otimizada) com cards atômicos e método Cloze. Além disso, as questões que você erra nas provas são sincronizadas automaticamente no seu caderno de revisão. Na aba de Material de Estudo, você tem acesso a 341 livros médicos indexados, algoritmos de conduta e tabelas de diagnósticos diferenciais.'
+              },
+              {
+                id: 'faq-5',
+                q: 'Posso acessar a plataforma no celular, tablet e computador?',
+                a: 'Sim! O Banco Residência é totalmente responsivo e otimizado para navegadores mobile e desktop. Seu histórico de resoluções, cadernos e streak de estudo são sincronizados em tempo real na nuvem.'
+              },
+              {
+                id: 'faq-6',
+                q: 'Como funciona a garantia incondicional de 7 dias?',
+                a: 'Se dentro de 7 dias corridos após a contratação você achar que a plataforma não atende às suas expectativas, basta solicitar o reembolso que devolvemos 100% do seu dinheiro, sem complicações.'
+              },
+              {
+                id: 'faq-7',
+                q: 'Como funciona o Programa de Embaixadores?',
+                a: 'Qualquer estudante cadastrado pode participar. Você recebe um link exclusivo que concede 10% de desconto para seus colegas de faculdade e ganha 15% de comissão direta via PIX por cada matrícula. Ao atingir 10 indicações, sua própria anuidade é 100% reembolsada.'
+              }
+            ].map((item) => {
+              const isOpen = openFaqId === item.id;
+              return (
+                <div
+                  key={item.id}
+                  className="rounded-2xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 overflow-hidden transition-all duration-200"
+                >
+                  <button
+                    type="button"
+                    onClick={() => setOpenFaqId(isOpen ? null : item.id)}
+                    className="w-full p-5 text-left flex items-center justify-between gap-4 cursor-pointer hover:bg-zinc-50/50 dark:hover:bg-zinc-800/50 transition-colors"
+                  >
+                    <span className="font-heading text-sm sm:text-base font-bold text-slate-900 dark:text-white">
+                      {item.q}
+                    </span>
+                    <span className="p-1 rounded-lg text-slate-400 shrink-0">
+                      {isOpen ? <ChevronUp className="w-5 h-5 text-blue-600 dark:text-blue-400" /> : <ChevronDown className="w-5 h-5" />}
+                    </span>
+                  </button>
+                  {isOpen && (
+                    <div className="px-5 pb-5 pt-1 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed border-t border-zinc-100 dark:border-zinc-800/60 animate-in fade-in duration-150">
+                      {item.a}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* =========================================================================
+          SEÇÃO: PROGRAMA DE EMBAIXADORES (15% PIX + 10% CUPOM + 100% REEMBOLSO)
+          ========================================================================= */}
+      <section id="embaixadores" className="scroll-mt-24 py-16 sm:py-24 border-t border-zinc-200/80 dark:border-zinc-800/80">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200 dark:border-emerald-800/80 text-emerald-700 dark:text-emerald-300 text-xs font-extrabold mb-3">
+              <Gift className="w-3.5 h-3.5" />
+              <span>Ganhe Comissões & Estude Grátis</span>
+            </div>
+            <h2 className="font-heading text-2xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
+              Programa de Embaixadores Banco Residência
+            </h2>
+            <p className="mt-3 text-xs sm:text-sm text-slate-600 dark:text-slate-400">
+              Compartilhe a melhor plataforma de questões com seus amigos de turma e internato. Ganhe comissões em dinheiro via PIX e libere seu plano gratuitamente.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+            {/* Card 1: 15% Comissão */}
+            <div className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-5">
+                  <Wallet className="w-6 h-6" />
+                </div>
+                <span className="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md bg-emerald-100 dark:bg-emerald-950/70 text-emerald-700 dark:text-emerald-400">
+                  Dinheiro na Conta
+                </span>
+                <h3 className="font-heading text-lg sm:text-xl font-extrabold text-slate-900 dark:text-white mt-2">
+                  15% de Comissão via PIX
+                </h3>
+                <p className="mt-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                  A cada indicação confirmada com seu link, você recebe 15% de comissão em dinheiro depositada diretamente na sua chave PIX.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 2: 10% Desconto */}
+            <div className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div className="w-12 h-12 rounded-2xl bg-blue-500/10 border border-blue-500/20 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-5">
+                  <Gift className="w-6 h-6" />
+                </div>
+                <span className="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md bg-blue-100 dark:bg-blue-950/70 text-blue-700 dark:text-blue-400">
+                  Vantagem Real
+                </span>
+                <h3 className="font-heading text-lg sm:text-xl font-extrabold text-slate-900 dark:text-white mt-2">
+                  10% OFF para Colegas
+                </h3>
+                <p className="mt-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                  Seus amigos de internato ou faculdade ganham 10% de desconto imediato em qualquer plano ao assinar usando seu cupom.
+                </p>
+              </div>
+            </div>
+
+            {/* Card 3: 100% Reembolso */}
+            <div className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div className="w-12 h-12 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-amber-600 dark:text-amber-400 flex items-center justify-center mb-5">
+                  <Award className="w-6 h-6" />
+                </div>
+                <span className="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded-md bg-amber-100 dark:bg-amber-950/70 text-amber-700 dark:text-amber-400">
+                  Plano Gratuito
+                </span>
+                <h3 className="font-heading text-lg sm:text-xl font-extrabold text-slate-900 dark:text-white mt-2">
+                  100% de Reembolso do Plano
+                </h3>
+                <p className="mt-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                  Ao bater a meta de 10 vendas indicadas, você recebe o Selo de Embaixador Oficial e o reembolso de 100% do valor do seu plano.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA Embaixador */}
+          <div className="mt-12 text-center">
+            <button
+              type="button"
+              onClick={() => onOpenAuth('register')}
+              className="px-6 py-3.5 rounded-xl text-xs sm:text-sm font-extrabold text-white shadow-lg transition-all hover:scale-102 cursor-pointer inline-flex items-center gap-2"
+              style={{ backgroundColor: accentConfig.primaryHex }}
+            >
+              <span>Quero ser um Embaixador</span>
+              <ArrowRight className="w-4 h-4" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* =========================================================================
           BANNER INFERIOR: SEM DISTRAÇÕES, APENAS ESTUDO
           ========================================================================= */}
       <section className="py-16 sm:py-20 max-w-6xl mx-auto px-4 sm:px-6 w-full text-center">
@@ -737,27 +1259,56 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
       <footer className="border-t border-zinc-200 dark:border-zinc-800/80 bg-white dark:bg-[var(--bg-card)] py-8 text-xs text-zinc-500 dark:text-zinc-400 mt-auto transition-colors">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <div
-              className="w-8 h-8 rounded-xl flex items-center justify-center text-white text-xs font-bold"
-              style={{ backgroundColor: accentConfig.primaryHex }}
-            >
-              <Stethoscope className="w-4 h-4" />
-            </div>
-            <div>
-              <span className="font-bold text-slate-800 dark:text-slate-200">Banco Residência Médica 2026</span>
-              <span className="block text-[11px] text-slate-400">
+            <Logo className="w-8 h-8 shrink-0" />
+            <div className="flex flex-col justify-center leading-none">
+              <span className="font-bold text-sm text-slate-800 dark:text-slate-200" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
+                Banco Residência
+              </span>
+              <span className="block text-[11px] text-slate-400 mt-0.5">
                 +130.000 Questões • Provas Oficiais • Sem Distrações
               </span>
             </div>
           </div>
 
-          <div className="flex items-center gap-4 text-xs font-semibold">
+          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-xs font-semibold">
             <button
               type="button"
-              onClick={() => onOpenAuth('login')}
+              onClick={() => scrollToSection('questoes')}
               className="hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer"
             >
-              Área do Aluno
+              Banco de Questões
+            </button>
+            <span>•</span>
+            <button
+              type="button"
+              onClick={() => scrollToSection('material-estudo')}
+              className="hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer"
+            >
+              Material de Estudo
+            </button>
+            <span>•</span>
+            <button
+              type="button"
+              onClick={() => scrollToSection('flashcards')}
+              className="hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer"
+            >
+              Flashcards
+            </button>
+            <span>•</span>
+            <button
+              type="button"
+              onClick={() => scrollToSection('faq')}
+              className="hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer"
+            >
+              FAQ
+            </button>
+            <span>•</span>
+            <button
+              type="button"
+              onClick={() => scrollToSection('embaixadores')}
+              className="hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer"
+            >
+              Embaixadores
             </button>
             <span>•</span>
             <button
@@ -766,14 +1317,6 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
               className="hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer"
             >
               Planos & Preços
-            </button>
-            <span>•</span>
-            <button
-              type="button"
-              onClick={() => onOpenAuth('register')}
-              className="hover:text-blue-600 dark:hover:text-blue-400 cursor-pointer"
-            >
-              Cadastre-se
             </button>
           </div>
         </div>

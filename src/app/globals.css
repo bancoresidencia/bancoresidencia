@@ -54,21 +54,71 @@ html.dark {
 
 /* Modo Monocromático Estrito (Preto e Branco Puro) */
 html.theme-monochrome.dark {
-  --primary-color: #f4f4f5;
-  --primary-hover: #ffffff;
-  --ring: #f4f4f5;
-  --ring-focus: #f4f4f5;
-  --glow-color: rgba(255, 255, 255, 0.08);
-  --accent-muted: rgba(255, 255, 255, 0.06);
+  --primary-color: #ffffff;
+  --primary-hover: #f4f4f5;
+  --primary-contrast: #09090b;
+  --ring: #ffffff;
+  --ring-focus: #ffffff;
+  --glow-color: rgba(255, 255, 255, 0.14);
+  --accent-muted: rgba(255, 255, 255, 0.12);
+  --accent-subtle: rgba(255, 255, 255, 0.10);
+  --accent-border: rgba(255, 255, 255, 0.35);
+  --accent-primary: #ffffff;
+  --accent-hover: #f4f4f5;
 }
 
 html.theme-monochrome:not(.dark) {
   --primary-color: #18181b;
   --primary-hover: #09090b;
+  --primary-contrast: #ffffff;
   --ring: #18181b;
   --ring-focus: #18181b;
   --glow-color: rgba(0, 0, 0, 0.08);
   --accent-muted: rgba(0, 0, 0, 0.04);
+  --accent-subtle: rgba(0, 0, 0, 0.04);
+  --accent-border: rgba(24, 24, 27, 0.25);
+  --accent-primary: #18181b;
+  --accent-hover: #09090b;
+}
+
+/* No modo monocromático escuro, botões primários com fundo branco garantem alto contraste nos textos e ícones */
+html.theme-monochrome.dark button[style*="background-color: rgb(255, 255, 255)"],
+html.theme-monochrome.dark button[style*="background-color: #ffffff"],
+html.theme-monochrome.dark button[style*="background-color:#ffffff"],
+html.theme-monochrome.dark button[style*="background: rgb(255, 255, 255)"],
+html.theme-monochrome.dark button[style*="background: #ffffff"],
+html.theme-monochrome.dark button[style*="background:#ffffff"],
+html.theme-monochrome.dark a[style*="background-color: rgb(255, 255, 255)"],
+html.theme-monochrome.dark a[style*="background-color: #ffffff"],
+html.theme-monochrome.dark a[style*="background-color:#ffffff"],
+html.theme-monochrome.dark a[style*="background: rgb(255, 255, 255)"],
+html.theme-monochrome.dark a[style*="background: #ffffff"],
+html.theme-monochrome.dark a[style*="background:#ffffff"] {
+  color: #09090b !important;
+}
+
+html.theme-monochrome.dark button[style*="background-color: rgb(255, 255, 255)"] *,
+html.theme-monochrome.dark button[style*="background-color: #ffffff"] *,
+html.theme-monochrome.dark button[style*="background-color:#ffffff"] *,
+html.theme-monochrome.dark button[style*="background: rgb(255, 255, 255)"] *,
+html.theme-monochrome.dark button[style*="background: #ffffff"] *,
+html.theme-monochrome.dark button[style*="background:#ffffff"] *,
+html.theme-monochrome.dark a[style*="background-color: rgb(255, 255, 255)"] *,
+html.theme-monochrome.dark a[style*="background-color: #ffffff"] *,
+html.theme-monochrome.dark a[style*="background-color:#ffffff"] *,
+html.theme-monochrome.dark a[style*="background: rgb(255, 255, 255)"] *,
+html.theme-monochrome.dark a[style*="background: #ffffff"] *,
+html.theme-monochrome.dark a[style*="background:#ffffff"] * {
+  color: #09090b !important;
+}
+
+html.theme-monochrome.dark button[style*="background-color: rgb(255, 255, 255)"] svg[class*="fill-"],
+html.theme-monochrome.dark button[style*="background-color: #ffffff"] svg[class*="fill-"],
+html.theme-monochrome.dark button[style*="background-color:#ffffff"] svg[class*="fill-"],
+html.theme-monochrome.dark a[style*="background-color: rgb(255, 255, 255)"] svg[class*="fill-"],
+html.theme-monochrome.dark a[style*="background-color: #ffffff"] svg[class*="fill-"],
+html.theme-monochrome.dark a[style*="background-color:#ffffff"] svg[class*="fill-"] {
+  fill: #09090b !important;
 }
 
 .input-adaptive {

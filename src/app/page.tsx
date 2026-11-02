@@ -131,6 +131,7 @@ import { OnboardingModal } from '@/components/OnboardingModal';
 import { getAppliedReferralCode } from '@/config/ambassadorConfig';
 import { useSubscription } from '@/hooks/useSubscription';
 import { EmbeddedCheckoutScreen } from '@/components/EmbeddedCheckoutScreen';
+import { Logo } from '@/components/Logo';
 import { PLANS, PlanDefinition, PlanId } from '@/config/plans';
 import {
   Stethoscope,
@@ -2043,12 +2044,7 @@ export default function Home() {
     return (
       <div className="min-h-screen flex items-center justify-center bg-[var(--bg-page)] text-[var(--foreground)]">
         <div className="flex flex-col items-center gap-3">
-          <div
-            className="w-12 h-12 rounded-2xl flex items-center justify-center text-white shadow-lg animate-pulse"
-            style={{ backgroundColor: accentConfig.primaryHex }}
-          >
-            <Stethoscope className="w-6 h-6" />
-          </div>
+          <Logo className="w-12 h-12 shrink-0 animate-pulse" glow />
           <span className="text-xs font-bold text-slate-500 dark:text-slate-400">Carregando Banco Residência...</span>
         </div>
       </div>
@@ -2261,8 +2257,8 @@ export default function Home() {
                   <button
                     type="button"
                     onClick={() => setAuthModal({ isOpen: true, mode: 'register' })}
-                    className="px-3.5 py-1.5 rounded-xl text-xs font-extrabold text-white shadow-sm transition-transform hover:scale-105 cursor-pointer"
-                    style={{ backgroundColor: accentConfig.primaryHex }}
+                    className="px-3.5 py-1.5 rounded-xl text-xs font-extrabold shadow-sm transition-transform hover:scale-105 cursor-pointer"
+                    style={{ backgroundColor: accentConfig.primaryHex, color: accentConfig.primaryContrastHex }}
                   >
                     Criar Conta
                   </button>
@@ -2288,8 +2284,8 @@ export default function Home() {
                       />
                     ) : (
                       <div
-                        className="w-8.5 h-8.5 rounded-xl flex items-center justify-center font-bold text-[11px] text-white shadow-xs shrink-0"
-                        style={{ backgroundColor: accentConfig.primaryHex }}
+                        className="w-8.5 h-8.5 rounded-xl flex items-center justify-center font-bold text-[11px] shadow-xs shrink-0"
+                        style={{ backgroundColor: accentConfig.primaryHex, color: accentConfig.primaryContrastHex }}
                       >
                         {(user.name || 'LR').slice(0, 2).toUpperCase()}
                       </div>

@@ -188,6 +188,11 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   const [isSubmittingAnswer, setIsSubmittingAnswer] = useState<boolean>(false);
   const [solveError, setSolveError] = useState<string | null>(null);
 
+  // Rastreia se a resolução de uma questão previamente respondida ainda está sendo carregada via API
+  const [isLoadingResolution, setIsLoadingResolution] = useState<boolean>(
+    Boolean(userAnswer && !(question.correctAnswer || (question as { correct_answer?: string }).correct_answer))
+  );
+
   const activeQuestion = useMemo<Question>(() => {
     return {
       ...question,
@@ -227,12 +232,18 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     });
   };
 
-  // Detecção de gabarito sob suspeita/possível erro da banca
+  // Detecção abrangente de gabarito sob suspeita/possível erro ou divergência médica da banca
   const isSuspectKey = useMemo(() => {
-    const comm = activeQuestion.commentary || '';
+    const comm = (activeQuestion.commentary || '').toUpperCase();
     return (
       comm.includes('[POSSÍVEL ERRO DE GABARITO') ||
-      comm.includes('POSSIVEL ERRO DE GABARITO')
+      comm.includes('POSSIVEL ERRO DE GABARITO') ||
+      comm.includes('GABARITO DA BANCA DIVERGENTE') ||
+      comm.includes('QUESTÃO PASSÍVEL DE ANULAÇÃO') ||
+      comm.includes('QUESTAO PASSIVEL DE ANULACAO') ||
+      comm.includes('GABARITO OFICIAL DIVERGE') ||
+      comm.includes('GABARITO EQUIVOCADO') ||
+      comm.includes('ERRO DA BANCA')
     );
   }, [activeQuestion.commentary]);
 
@@ -277,17 +288,20 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     setPendingSelected(userAnswer || null);
     setIsAnswered(!!userAnswer);
     setShowCommentary(!!userAnswer);
+    setIsLoadingResolution(Boolean(userAnswer && !(question.correctAnswer || (question as { correct_answer?: string }).correct_answer)));
     setEliminatedOptions({});
     setExpandedOptions({});
     setOpenTopics({});
     setHighlights([]);
     setHoveredOptionLetter(null);
-  }, [question.id, userAnswer]);
+  }, [question.id, question.correctAnswer, userAnswer]);
 
   // Carrega sob demanda gabarito e comentários caso a questão tenha sido respondida previamente
   useEffect(() => {
-    if (userAnswer && !activeQuestion.correctAnswer) {
+    const hasCorrectAnswer = Boolean(activeQuestion.correctAnswer || question.correctAnswer);
+    if (userAnswer && !hasCorrectAnswer) {
       let isMounted = true;
+      setIsLoadingResolution(true);
       fetch('/api/questions/solve', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -298,24 +312,32 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
       })
         .then((res) => res.json())
         .then((data) => {
-          if (isMounted && data.success) {
-            setResolvedOverrides({
-              correctAnswer: data.correctAnswer,
-              commentary: data.commentary,
-              options: data.options && data.options.length > 0 ? data.options : question.options,
-              isAnulada: data.isAnulada
-            });
+          if (isMounted) {
+            setIsLoadingResolution(false);
+            if (data.success) {
+              setResolvedOverrides({
+                correctAnswer: data.correctAnswer,
+                commentary: data.commentary,
+                options: data.options && data.options.length > 0 ? data.options : question.options,
+                isAnulada: data.isAnulada
+              });
+            }
           }
         })
         .catch((err) => {
+          if (isMounted) {
+            setIsLoadingResolution(false);
+          }
           console.warn('[QuestionCard] Falha ao carregar detalhes da questão resolvida:', err);
         });
 
       return () => {
         isMounted = false;
       };
+    } else {
+      setIsLoadingResolution(false);
     }
-  }, [userAnswer, question.id, activeQuestion.correctAnswer, question.options]);
+  }, [userAnswer, question.id, activeQuestion.correctAnswer, question.correctAnswer, question.options]);
 
   // Alterna expansão da justificativa de uma alternativa específica
   const toggleOptionExplanation = (letter: string) => {
@@ -325,26 +347,14 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     }));
   };
 
-  // Resolução robusta do gabarito oficial com fallback inteligente para comentário ou justificativas
+  // Resolução estrita do gabarito oficial: obtido diretamente da coluna homologada do banco de dados
   const resolvedCorrectAnswer = useMemo(() => {
     const rawAnswer = activeQuestion.correctAnswer || question.correctAnswer;
     if (rawAnswer && rawAnswer.trim()) {
       return rawAnswer.trim().toUpperCase() as 'A' | 'B' | 'C' | 'D' | 'E' | 'ANULADA';
     }
-    const comm = activeQuestion.commentary || question.commentary || '';
-    const match = comm.match(/(?:Gabarito(?:\s*Oficial)?|Resposta(?:\s*Correta)?):\s*(?:Alternativa\s*)?([A-E]|ANULADA)\b/i);
-    if (match) {
-      return match[1].toUpperCase() as 'A' | 'B' | 'C' | 'D' | 'E' | 'ANULADA';
-    }
-    const opts = activeQuestion.options || question.options;
-    if (opts) {
-      const found = opts.find((o) =>
-        o.explanation && /^(?:Alternativa|Opção)?\s*correta\b/i.test(o.explanation.trim())
-      );
-      if (found) return found.letter as 'A' | 'B' | 'C' | 'D' | 'E';
-    }
     return '';
-  }, [activeQuestion.correctAnswer, activeQuestion.commentary, activeQuestion.options, question.correctAnswer, question.commentary, question.options]);
+  }, [activeQuestion.correctAnswer, question.correctAnswer]);
 
   // Separação inteligente das justificativas das alternativas, comentário final, motivo de erro e take-home message
   const { optionExplanations, finalCommentary, mainErrorReason, takeHomeMessage, guidelineEvolution, references } = useMemo(() => {
@@ -990,12 +1000,15 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   };
 
   const isAnuladaQuestion = Boolean(activeQuestion.isAnulada || resolvedCorrectAnswer === 'ANULADA');
-  const hasHistoricalAnswer = Boolean(historicalAnswer && historicalAnswer.letter);
+  const isResolutionLoading = Boolean(isAnswered && isLoadingResolution && !resolvedCorrectAnswer);
+  const hasHistoricalAnswer = Boolean(historicalAnswer && (historicalAnswer.letter || (historicalAnswer as { selectedOption?: string }).selectedOption));
   const hasPreviousAnswer = Boolean(userAnswer || hasHistoricalAnswer);
   const previousIsCorrect = Boolean(
-    userAnswer
-      ? (isAnuladaQuestion || userAnswer === resolvedCorrectAnswer)
-      : (historicalAnswer ? (isAnuladaQuestion || historicalAnswer.isCorrect) : false)
+    historicalAnswer && typeof historicalAnswer.isCorrect === 'boolean'
+      ? (isAnuladaQuestion || historicalAnswer.isCorrect)
+      : userAnswer
+      ? (isAnuladaQuestion || (resolvedCorrectAnswer ? userAnswer === resolvedCorrectAnswer : false))
+      : false
   );
   const isUserCorrect = isAnswered && (isAnuladaQuestion || pendingSelected === resolvedCorrectAnswer);
 
@@ -1228,6 +1241,13 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                   {question.tipoProva}
                 </span>
               )}
+
+              {isAnswered && isSuspectKey && (
+                <span className="text-xs px-2.5 py-1 rounded-xl bg-amber-500/10 text-amber-700 dark:text-amber-400 font-bold border border-amber-500/30 flex items-center gap-1.5 shadow-2xs animate-in fade-in duration-200">
+                  <AlertTriangle className="w-3.5 h-3.5 shrink-0" />
+                  <span>Gabarito Sob Curadoria Médica</span>
+                </span>
+              )}
             </div>
 
             {/* Tema, Foco e Subfoco Clínico */}
@@ -1316,12 +1336,35 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
               }
             } else {
               // Já respondeu
-              if (isCorrect) {
+              if (isResolutionLoading) {
+                if (isPending) {
+                  if (historicalAnswer && typeof historicalAnswer.isCorrect === 'boolean') {
+                    if (historicalAnswer.isCorrect) {
+                      optionContainerStyle =
+                        'border-emerald-500/80 bg-emerald-50/80 dark:bg-emerald-950/50 text-emerald-950 dark:text-emerald-200 ring-2 ring-emerald-500/30 shadow-sm font-semibold';
+                    } else {
+                      optionContainerStyle =
+                        'border-rose-500/80 bg-rose-50/80 dark:bg-rose-950/50 text-rose-950 dark:text-rose-200 ring-2 ring-rose-500/30 shadow-sm';
+                    }
+                  } else {
+                    // Estado neutro e elegante de carregamento da validação (elimina flash vermelho)
+                    optionContainerStyle =
+                      'border-blue-400/80 dark:border-blue-500/70 bg-blue-50/50 dark:bg-blue-950/40 text-blue-950 dark:text-blue-100 ring-2 ring-blue-400/20 shadow-sm font-semibold animate-pulse';
+                  }
+                } else {
+                  optionContainerStyle =
+                    'opacity-60 border-zinc-200 dark:border-zinc-800 bg-zinc-50/60 dark:bg-zinc-900/30 text-zinc-600 dark:text-zinc-400';
+                }
+              } else if (isCorrect) {
                 optionContainerStyle =
                   'border-emerald-500/80 bg-emerald-50/80 dark:bg-emerald-950/50 text-emerald-950 dark:text-emerald-200 ring-2 ring-emerald-500/30 shadow-sm font-semibold';
               } else if (isPending && isAnuladaQuestion) {
                 optionContainerStyle =
                   'border-amber-500/80 bg-amber-50/80 dark:bg-amber-950/50 text-amber-950 dark:text-amber-200 ring-2 ring-amber-500/30 shadow-sm font-semibold';
+              } else if (isPending && !resolvedCorrectAnswer) {
+                // Questão com gabarito em homologação: estilo neutro e informativo sem acusar erro
+                optionContainerStyle =
+                  'border-blue-500/80 bg-blue-50/70 dark:bg-blue-950/40 text-blue-950 dark:text-blue-100 ring-2 ring-blue-500/30 shadow-sm font-semibold';
               } else if (isPending && !isCorrect) {
                 optionContainerStyle =
                   'border-rose-500/80 bg-rose-50/80 dark:bg-rose-950/50 text-rose-950 dark:text-rose-200 ring-2 ring-rose-500/30 shadow-sm';
@@ -1353,20 +1396,29 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                     <span
                       title={`Alternativa ${option.letter} (tecla ${['A', 'B', 'C', 'D', 'E'].indexOf(option.letter) + 1})`}
                       className={`${badgeSizeClass} rounded-xl flex items-center justify-center font-extrabold shrink-0 mt-0.5 shadow-xs transition-colors ${
-                        isAnswered && isCorrect
+                        isAnswered && isResolutionLoading
+                          ? (isPending
+                              ? (historicalAnswer && typeof historicalAnswer.isCorrect === 'boolean'
+                                  ? (historicalAnswer.isCorrect ? 'bg-emerald-600 text-white' : 'bg-rose-600 text-white')
+                                  : 'bg-blue-600 text-white animate-pulse')
+                              : 'bg-slate-100 dark:bg-slate-800 text-slate-400 border border-slate-200 dark:border-slate-700')
+                          : isAnswered && isCorrect
                           ? 'bg-emerald-600 text-white'
                           : isAnswered && isPending && isAnuladaQuestion
                           ? 'bg-amber-600 text-white'
+                          : isAnswered && isPending && !resolvedCorrectAnswer
+                          ? 'bg-blue-600 text-white shadow-sm'
                           : isAnswered && isPending && !isCorrect
                           ? 'bg-rose-600 text-white'
                           : isEliminated
                           ? 'bg-slate-100 dark:bg-slate-900 text-slate-400 line-through'
                           : isPending
-                          ? 'text-white shadow-sm'
+                          ? 'shadow-sm'
                           : 'bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700'
                       }`}
                       style={!isAnswered && isPending ? {
                         backgroundColor: accentConfig.primaryHex,
+                        color: accentConfig.primaryContrastHex,
                         boxShadow: `0 0 0 2px ${accentConfig.borderRgba}`
                       } : undefined}
                     >
@@ -1426,23 +1478,38 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                     {/* Feedback Visual pós-resposta + Botão de Justificativa */}
                     {isAnswered && (
                       <div className="flex items-center gap-2">
-                        {isCorrect && (
-                          <div className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 text-xs font-bold">
-                            <CheckCircle2 className="w-4 h-4 shrink-0" />
-                            <span className="hidden sm:inline">Correta</span>
+                        {isResolutionLoading && isPending ? (
+                          <div className="flex items-center gap-1.5 text-blue-600 dark:text-blue-400 text-xs font-bold animate-pulse">
+                            <Loader2 className="w-3.5 h-3.5 animate-spin shrink-0" />
+                            <span className="hidden sm:inline">Validando...</span>
                           </div>
-                        )}
-                        {isPending && isAnuladaQuestion && !isCorrect && (
-                          <div className="flex items-center gap-1 text-amber-600 dark:text-amber-400 text-xs font-bold">
-                            <AlertCircle className="w-4 h-4 shrink-0" />
-                            <span className="hidden sm:inline">Sua Opção (Anulada)</span>
-                          </div>
-                        )}
-                        {isPending && !isCorrect && !isAnuladaQuestion && (
-                          <div className="flex items-center gap-1 text-rose-600 dark:text-rose-400 text-xs font-bold">
-                            <XCircle className="w-4 h-4 shrink-0" />
-                            <span className="hidden sm:inline">Incorreta</span>
-                          </div>
+                        ) : (
+                          <>
+                            {isCorrect && (
+                              <div className="flex items-center gap-1 text-emerald-600 dark:text-emerald-400 text-xs font-bold">
+                                <CheckCircle2 className="w-4 h-4 shrink-0" />
+                                <span className="hidden sm:inline">Correta</span>
+                              </div>
+                            )}
+                            {isPending && isAnuladaQuestion && !isCorrect && (
+                              <div className="flex items-center gap-1 text-amber-600 dark:text-amber-400 text-xs font-bold">
+                                <AlertCircle className="w-4 h-4 shrink-0" />
+                                <span className="hidden sm:inline">Sua Opção (Anulada)</span>
+                              </div>
+                            )}
+                            {isPending && !resolvedCorrectAnswer && !isAnuladaQuestion && (
+                              <div className="flex items-center gap-1 text-blue-600 dark:text-blue-400 text-xs font-bold">
+                                <HelpCircle className="w-4 h-4 shrink-0" />
+                                <span className="hidden sm:inline">Sua Opção (Em Homologação)</span>
+                              </div>
+                            )}
+                            {isPending && resolvedCorrectAnswer && !isCorrect && !isAnuladaQuestion && (
+                              <div className="flex items-center gap-1 text-rose-600 dark:text-rose-400 text-xs font-bold">
+                                <XCircle className="w-4 h-4 shrink-0" />
+                                <span className="hidden sm:inline">Incorreta</span>
+                              </div>
+                            )}
+                          </>
                         )}
 
                         <button
@@ -1512,13 +1579,14 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                   title={pendingSelected ? 'Resolver questão' : 'Selecione uma alternativa'}
                   className={`flex items-center justify-center gap-2 px-6 py-2.5 rounded-xl text-xs font-extrabold shadow-sm transition-all cursor-pointer ${
                     pendingSelected && !isSubmittingAnswer
-                      ? 'text-white hover:scale-102 active:scale-98 shadow-md'
+                      ? 'hover:scale-102 active:scale-98 shadow-md'
                       : 'bg-slate-200 dark:bg-slate-800 text-slate-400 cursor-not-allowed'
                   }`}
                   style={
                     pendingSelected && !isSubmittingAnswer
                       ? {
                           backgroundColor: accentConfig.primaryHex,
+                          color: accentConfig.primaryContrastHex,
                           boxShadow: `0 4px 14px 0 ${accentConfig.bgRgba}`
                         }
                       : undefined
@@ -1632,14 +1700,25 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
               <div className="p-4 sm:p-5 rounded-2xl bg-emerald-50/80 dark:bg-slate-950 border border-emerald-200 dark:border-slate-800 text-slate-900 dark:text-slate-200 space-y-2.5 shadow-inner">
                 <div className="flex items-center justify-between text-emerald-800 dark:text-emerald-400 font-bold text-xs sm:text-sm">
                   <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4.5 h-4.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
-                    <span>
-                      {activeQuestion.options && activeQuestion.options.length > 0
-                        ? (resolvedCorrectAnswer
-                            ? `Gabarito Oficial: Alternativa ${resolvedCorrectAnswer}`
-                            : 'Gabarito Oficial: Em processo de homologação por provas públicas')
-                        : 'Padrão de Resposta Oficial:'}
-                    </span>
+                    {isResolutionLoading ? (
+                      <>
+                        <Loader2 className="w-4 h-4 animate-spin text-emerald-600 dark:text-emerald-400 shrink-0" />
+                        <span>Carregando gabarito oficial...</span>
+                      </>
+                    ) : (
+                      <>
+                        <CheckCircle2 className="w-4.5 h-4.5 text-emerald-600 dark:text-emerald-400 shrink-0" />
+                        <span>
+                          {activeQuestion.options && activeQuestion.options.length > 0
+                            ? (resolvedCorrectAnswer
+                                ? (isSuspectKey
+                                    ? `Gabarito Oficial da Banca: Alternativa ${resolvedCorrectAnswer} (Divergência Médica Identificada)`
+                                    : `Gabarito Oficial: Alternativa ${resolvedCorrectAnswer}`)
+                                : 'Gabarito Oficial: Em processo de homologação por provas públicas')
+                            : 'Padrão de Resposta Oficial:'}
+                        </span>
+                      </>
+                    )}
                   </div>
                 </div>
                 <div

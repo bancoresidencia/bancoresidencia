@@ -2922,7 +2922,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         }}
                         title="Abrir centro de treino com subtemas e radar da banca"
                       >
-                        <Play className="w-3.5 h-3.5 fill-white" />
+                        <Play className="w-3.5 h-3.5 fill-current" />
                         <span>Treinar {recommendedArea.label}</span>
                       </button>
 
@@ -3586,7 +3586,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                                 boxShadow: `0 2px 8px ${selectedArea.colorHex}33`
                               }}
                             >
-                              <Play className="w-3.5 h-3.5 fill-white" />
+                              <Play className="w-3.5 h-3.5 fill-current" />
                               <span>{selectedAreaId === 'geral' ? 'Treinar Questões Gerais' : `Treinar ${selectedArea.label}`}</span>
                             </button>
                           </div>
@@ -3765,7 +3765,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                                       boxShadow: `0 4px 12px ${accentConfig.bgRgba}`
                                     }}
                                   >
-                                    <Play className="w-3.5 h-3.5 fill-white" />
+                                    <Play className="w-3.5 h-3.5 fill-current" />
                                     <span>
                                       {item.lastQuestionIndex !== undefined && item.lastQuestionIndex > 0
                                         ? `Continuar (Q${item.lastQuestionIndex + 1})`
@@ -3898,7 +3898,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                                   boxShadow: `0 4px 12px ${accentConfig.bgRgba}`
                                 }}
                               >
-                                <Play className="w-3.5 h-3.5 fill-white" />
+                                <Play className="w-3.5 h-3.5 fill-current" />
                                 <span>
                                   {currentOfficialExam?.status === 'em_andamento'
                                     ? 'Continuar Prova'
@@ -3934,7 +3934,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-white text-xs font-bold transition-all cursor-pointer shadow-sm hover:opacity-95 active:scale-98"
                               style={{ backgroundColor: accentConfig.primaryHex }}
                             >
-                              <Play className="w-3.5 h-3.5 fill-white" />
+                              <Play className="w-3.5 h-3.5 fill-current" />
                               <span>Iniciar ENARE 2025 na Íntegra</span>
                             </button>
                           </div>
@@ -4028,7 +4028,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                                   boxShadow: `0 4px 12px ${accentConfig.bgRgba}`
                                 }}
                               >
-                                <Play className="w-3.5 h-3.5 fill-white" />
+                                <Play className="w-3.5 h-3.5 fill-current" />
                                 <span>
                                   {currentMockExam?.status === 'em_andamento'
                                     ? 'Continuar Simulado'
@@ -4064,7 +4064,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                               className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-white text-xs font-bold transition-all cursor-pointer shadow-sm hover:opacity-95 active:scale-98"
                               style={{ backgroundColor: accentConfig.primaryHex }}
                             >
-                              <Play className="w-3.5 h-3.5 fill-white" />
+                              <Play className="w-3.5 h-3.5 fill-current" />
                               <span>Acessar Simulados Oficiais</span>
                             </button>
                           </div>
@@ -4556,7 +4556,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                                 className="shrink-0 flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl text-white text-xs font-bold transition-all cursor-pointer shadow-xs hover:opacity-95 active:scale-98 self-end sm:self-auto"
                                 style={{ backgroundColor: accentConfig.primaryHex }}
                               >
-                                <Play className="w-3.5 h-3.5 fill-white" />
+                                <Play className="w-3.5 h-3.5 fill-current" />
                                 <span>{item.progressPercentage >= 100 ? 'Revisar' : 'Continuar'}</span>
                               </button>
                             </div>
@@ -4693,7 +4693,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                               className="shrink-0 flex items-center gap-1 px-3.5 py-1.5 rounded-xl text-white text-xs font-bold transition-all cursor-pointer shadow-xs hover:opacity-95"
                               style={{ backgroundColor: accentConfig.primaryHex }}
                             >
-                              <Play className="w-3 h-3 fill-white" />
+                              <Play className="w-3 h-3 fill-current" />
                               <span>Iniciar</span>
                             </button>
                           </div>
@@ -4757,7 +4757,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           className="shrink-0 flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl text-white text-xs font-bold transition-all cursor-pointer shadow-xs hover:opacity-95 active:scale-98 self-end sm:self-auto"
                           style={{ backgroundColor: accentConfig.primaryHex }}
                         >
-                          <Play className="w-3.5 h-3.5 fill-white" />
+                          <Play className="w-3.5 h-3.5 fill-current" />
                           <span>{mock.status === 'em_andamento' ? 'Continuar' : 'Iniciar'}</span>
                         </button>
                       </div>
@@ -5044,7 +5044,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         className="flex-1 sm:flex-initial inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-white text-xs font-bold transition-all cursor-pointer shadow-sm hover:opacity-95"
                         style={{ backgroundColor: accentConfig.primaryHex }}
                       >
-                        <Play className="w-3.5 h-3.5 fill-white" />
+                        <Play className="w-3.5 h-3.5 fill-current" />
                         <span>Treinar {recommendedArea.label}</span>
                       </button>
                     </div>
@@ -5153,7 +5153,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       className="px-5 py-2.5 rounded-xl text-white text-xs font-bold transition-all cursor-pointer shadow-sm hover:opacity-95 flex items-center gap-2"
                       style={{ backgroundColor: accentConfig.primaryHex }}
                     >
-                      <Play className="w-3.5 h-3.5 fill-white" />
+                      <Play className="w-3.5 h-3.5 fill-current" />
                       <span>Praticar Questões deste Tema (5Q)</span>
                     </button>
                   </div>
@@ -5608,7 +5608,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                                 className="shrink-0 flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl text-white text-xs font-bold transition-all cursor-pointer shadow-xs hover:opacity-95 active:scale-98 self-end sm:self-auto"
                                 style={{ backgroundColor: accentConfig.primaryHex }}
                               >
-                                <Play className="w-3.5 h-3.5 fill-white" />
+                                <Play className="w-3.5 h-3.5 fill-current" />
                                 <span>Revisar</span>
                               </button>
                             </div>
@@ -5640,7 +5640,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           className="w-full sm:w-auto px-5 py-2.5 rounded-xl text-white text-xs font-bold transition-all cursor-pointer shadow-sm hover:opacity-95 flex items-center justify-center gap-2"
                           style={{ backgroundColor: accentConfig.primaryHex }}
                         >
-                          <Play className="w-4 h-4 fill-white" />
+                          <Play className="w-4 h-4 fill-current" />
                           <span>Iniciar Revisão de Hoje</span>
                         </button>
                       </div>

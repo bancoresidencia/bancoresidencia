@@ -1,6 +1,7 @@
 'use client';
 
 import React, { createContext, useContext, useState, useEffect, useRef } from 'react';
+import { updateFavicon } from '@/utils/favicon';
 
 export type ThemeMode = 'dark' | 'light';
 export type AccentColor = 'blue' | 'green' | 'orange' | 'purple' | 'red' | 'rose' | 'neutral';
@@ -17,6 +18,7 @@ export interface AccentConfig {
   label: string;
   primaryHex: string;
   hoverHex: string;
+  primaryContrastHex: string;
   bgRgba: string;
   borderRgba: string;
   textClass: string;
@@ -52,6 +54,7 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
     label: 'Azul Clássico',
     primaryHex: '#2563eb',
     hoverHex: '#1d4ed8',
+    primaryContrastHex: '#ffffff',
     bgRgba: 'rgba(37, 99, 235, 0.15)',
     borderRgba: 'rgba(37, 99, 235, 0.45)',
     textClass: 'text-blue-500 dark:text-blue-400',
@@ -99,6 +102,7 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
     label: 'Verde Esmeralda',
     primaryHex: '#059669',
     hoverHex: '#047857',
+    primaryContrastHex: '#ffffff',
     bgRgba: 'rgba(5, 150, 105, 0.15)',
     borderRgba: 'rgba(5, 150, 105, 0.45)',
     textClass: 'text-emerald-600 dark:text-emerald-400',
@@ -146,6 +150,7 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
     label: 'Laranja Radiante',
     primaryHex: '#ea580c',
     hoverHex: '#c2410c',
+    primaryContrastHex: '#ffffff',
     bgRgba: 'rgba(234, 88, 12, 0.15)',
     borderRgba: 'rgba(234, 88, 12, 0.45)',
     textClass: 'text-orange-600 dark:text-orange-400',
@@ -193,6 +198,7 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
     label: 'Roxo Nobre',
     primaryHex: '#7c3aed',
     hoverHex: '#6d28d9',
+    primaryContrastHex: '#ffffff',
     bgRgba: 'rgba(124, 58, 237, 0.15)',
     borderRgba: 'rgba(124, 58, 237, 0.45)',
     textClass: 'text-purple-600 dark:text-purple-400',
@@ -240,6 +246,7 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
     label: 'Vermelho Carmesim',
     primaryHex: '#dc2626',
     hoverHex: '#b91c1c',
+    primaryContrastHex: '#ffffff',
     bgRgba: 'rgba(220, 38, 38, 0.15)',
     borderRgba: 'rgba(220, 38, 38, 0.45)',
     textClass: 'text-red-600 dark:text-red-400',
@@ -287,6 +294,7 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
     label: 'Rosa',
     primaryHex: '#e11d48',
     hoverHex: '#be123c',
+    primaryContrastHex: '#ffffff',
     bgRgba: 'rgba(225, 29, 72, 0.14)',
     borderRgba: 'rgba(225, 29, 72, 0.35)',
     textClass: 'text-rose-500 dark:text-rose-400',
@@ -334,6 +342,7 @@ export const ACCENT_CONFIGS: Record<AccentColor, AccentConfig> = {
     label: 'Monocromático',
     primaryHex: '#18181b',
     hoverHex: '#27272a',
+    primaryContrastHex: '#ffffff',
     bgRgba: 'rgba(24, 24, 27, 0.12)',
     borderRgba: 'rgba(24, 24, 27, 0.35)',
     textClass: 'text-zinc-800 dark:text-zinc-200',
@@ -389,6 +398,52 @@ interface ThemeContextType {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
+export function getEffectiveAccentConfig(accent: AccentColor, mode: ThemeMode): AccentConfig {
+  const base = ACCENT_CONFIGS[accent] || ACCENT_CONFIGS.blue;
+  if (accent === 'neutral' && mode === 'dark') {
+    return {
+      ...base,
+      primaryHex: '#ffffff',
+      hoverHex: '#f4f4f5',
+      primaryContrastHex: '#09090b',
+      bgRgba: 'rgba(255, 255, 255, 0.14)',
+      borderRgba: 'rgba(255, 255, 255, 0.35)',
+      textClass: 'text-white',
+      bgClass: 'bg-white hover:bg-zinc-100 text-zinc-950',
+      ringClass: 'ring-white/40 border-white/50',
+      badgeBg: 'bg-white/10',
+      badgeText: 'text-white',
+      badgeBorder: 'border-white/20',
+      cssVarValue: '#ffffff',
+      timeAccent: {
+        hex: '#e4e4e7',
+        bgRgba: 'rgba(255, 255, 255, 0.14)',
+        borderRgba: 'rgba(255, 255, 255, 0.35)',
+        textClass: 'text-white'
+      },
+      accuracyAccent: {
+        hex: '#ffffff',
+        bgRgba: 'rgba(255, 255, 255, 0.14)',
+        borderRgba: 'rgba(255, 255, 255, 0.35)',
+        textClass: 'text-white'
+      },
+      energyAccent: {
+        hex: '#fef08a',
+        bgRgba: 'rgba(255, 255, 255, 0.14)',
+        borderRgba: 'rgba(255, 255, 255, 0.35)',
+        textClass: 'text-white'
+      },
+      selectionAccent: {
+        hex: '#ffffff',
+        borderHex: '#ffffff',
+        bgRgba: 'rgba(255, 255, 255, 0.15)'
+      },
+      chartPalette: ['#ffffff', '#f4f4f5', '#e4e4e7', '#d4d4d8', '#a1a1aa', '#71717a']
+    };
+  }
+  return base;
+}
+
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [mode, setModeState] = useState<ThemeMode>('dark');
   const [accent, setAccentState] = useState<AccentColor>('blue');
@@ -430,23 +485,18 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         root.classList.remove('theme-monochrome');
       }
 
-      const config = ACCENT_CONFIGS[themeAccent] || ACCENT_CONFIGS.blue;
+      const config = getEffectiveAccentConfig(themeAccent, themeMode);
       const pageBg = isDark ? config.surfaceDark : config.surfaceLight;
       const cardBg = isDark ? config.cardDark : config.cardLight;
       const inputBg = isDark ? config.inputDark : config.inputLight;
       const cardBorder = isDark ? config.borderDark : config.borderLight;
-      const primaryHex = themeAccent === 'neutral'
-        ? (isDark ? '#f4f4f5' : '#18181b')
-        : config.primaryHex;
-      const primaryHover = themeAccent === 'neutral'
-        ? (isDark ? '#ffffff' : '#27272a')
-        : config.hoverHex;
-      const glowRgba = themeAccent === 'neutral'
-        ? (isDark ? 'rgba(255, 255, 255, 0.10)' : 'rgba(24, 24, 27, 0.10)')
-        : config.bgRgba;
+      const primaryHex = config.primaryHex;
+      const primaryHover = config.hoverHex;
+      const glowRgba = config.bgRgba;
 
       root.style.setProperty('--primary-color', primaryHex);
       root.style.setProperty('--primary-hover', primaryHover);
+      root.style.setProperty('--primary-contrast', config.primaryContrastHex);
       root.style.setProperty('--accent-primary', primaryHex);
       root.style.setProperty('--accent-hover', primaryHover);
       root.style.setProperty('--glow-color', glowRgba);
@@ -470,6 +520,13 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       root.style.setProperty('--energy-accent-color', config.energyAccent.hex);
       root.style.setProperty('--energy-accent-bg', config.energyAccent.bgRgba);
       root.style.setProperty('--energy-accent-border', config.energyAccent.borderRgba);
+
+      // Logo e Favicon Adaptativo
+      const logoPrimary = primaryHex;
+      const logoContrast = config.primaryContrastHex;
+      root.style.setProperty('--logo-primary', logoPrimary);
+      root.style.setProperty('--logo-contrast', logoContrast);
+      updateFavicon(logoPrimary, logoContrast);
     } catch {
       // ignore
     }
@@ -516,7 +573,7 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     applyThemeToDOM(mode, newAccent);
   };
 
-  const activeConfig = ACCENT_CONFIGS[accent] || ACCENT_CONFIGS.blue;
+  const activeConfig = getEffectiveAccentConfig(accent, mode);
 
   return (
     <ThemeContext.Provider

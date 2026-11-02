@@ -8,7 +8,6 @@ import {
   ClipboardCheck,
   BarChart3,
   Trophy,
-  Stethoscope,
   Sliders,
   BookOpen,
   PanelLeftClose,
@@ -23,6 +22,7 @@ import {
 import { ActiveTab, Modalidade } from '@/types';
 import { useTheme } from '@/context/ThemeContext';
 import { useAuth } from '@/context/AuthContext';
+import { Logo } from '@/components/Logo';
 
 interface SidebarProps {
   activeTab: ActiveTab;
@@ -90,14 +90,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
           title={`Banco Residência • ${modalidade}`}
           aria-label="Ir para a página inicial"
         >
-          <div
-            className="w-8.5 h-8.5 rounded-lg flex items-center justify-center text-white shrink-0 shadow-xs"
-            style={{
-              backgroundColor: accentConfig.primaryHex
-            }}
-          >
-            <Stethoscope className="w-4.5 h-4.5 stroke-[1.8]" />
-          </div>
+          <Logo className="w-8.5 h-8.5 shrink-0 transition-transform duration-200 group-hover:scale-105" />
 
           {!isCollapsed && (
             <div className="text-left overflow-hidden">
@@ -144,17 +137,18 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   : 'w-full px-2.5 py-2 gap-2.5 justify-start'
               } ${
                 isActive
-                  ? 'text-white shadow-xs'
+                  ? 'shadow-xs'
                   : 'text-slate-500 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-100 hover:bg-slate-100/80 dark:hover:bg-zinc-900'
               }`}
               style={{
-                backgroundColor: isActive ? accentConfig.primaryHex : undefined
+                backgroundColor: isActive ? accentConfig.primaryHex : undefined,
+                color: isActive ? accentConfig.primaryContrastHex : undefined
               }}
             >
               <div className="relative">
                 <Icon
                   className={`w-4.5 h-4.5 shrink-0 stroke-[1.8] ${
-                    isActive ? 'text-white' : 'text-slate-500 dark:text-zinc-400 group-hover:text-slate-900 dark:group-hover:text-zinc-200'
+                    isActive ? '' : 'text-slate-500 dark:text-zinc-400 group-hover:text-slate-900 dark:group-hover:text-zinc-200'
                   }`}
                 />
                 {isCollapsed && item.badge !== undefined && (
@@ -165,7 +159,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
               {!isCollapsed && (
                 <>
                   <span className={`text-xs font-bold tracking-tight truncate ${
-                    isActive ? 'text-white' : 'text-slate-700 dark:text-zinc-300 group-hover:text-slate-900 dark:group-hover:text-zinc-100'
+                    isActive ? '' : 'text-slate-700 dark:text-zinc-300 group-hover:text-slate-900 dark:group-hover:text-zinc-100'
                   }`}>
                     {item.label}
                   </span>

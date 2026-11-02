@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getPaymentService } from '@/lib/mercadopago';
 import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
 import { PLANS, PlanId } from '@/config/plans';
+import { recordReferralSale } from '@/services/ambassadorService';
 
 export async function POST(req: NextRequest) {
   try {
@@ -78,6 +79,27 @@ export async function POST(req: NextRequest) {
                 updated_at: now.toISOString()
               })
               .eq('mp_payment_id', String(payment.id));
+
+            // Registrar indicação de embaixador se cupom esteve associado
+            if (metadata.coupon_code) {
+              try {
+                const finalAmount = Number(payment.transaction_amount) || planConfig.totalPrice;
+                const payer = payment.payer as { first_name?: string; last_name?: string; email?: string } | undefined;
+                const studentName = payer?.first_name ? `${payer.first_name} ${payer.last_name || ''}`.trim() : 'Estudante';
+                await recordReferralSale({
+                  couponCode: String(metadata.coupon_code),
+                  studentName,
+                  studentEmail: payer?.email || (metadata.user_email as string) || '',
+                  planId: planId,
+                  planName: planConfig.name,
+                  planAmount: planConfig.totalPrice,
+                  discountApplied: parseFloat(Math.max(0, planConfig.totalPrice - finalAmount).toFixed(2)),
+                  netAmount: finalAmount
+                });
+              } catch (refErr) {
+                console.warn('Aviso ao registrar indicação no webhook:', refErr);
+              }
+            }
           } else if (status === 'refunded' || status === 'charged_back') {
             if (userId) {
               await supabaseAdmin
@@ -119,4 +141,3 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ received: true, error: 'internal_logged' }, { status: 200 });
   }
 }
-

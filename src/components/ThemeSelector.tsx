@@ -16,7 +16,7 @@ export const ThemeSelector: React.FC<{ compact?: boolean }> = ({ compact = false
     { id: 'purple', label: 'Roxo', hex: ACCENT_CONFIGS.purple.primaryHex },
     { id: 'red', label: 'Vermelho', hex: ACCENT_CONFIGS.red.primaryHex },
     { id: 'rose', label: 'Rosa', hex: ACCENT_CONFIGS.rose.primaryHex },
-    { id: 'neutral', label: 'Monocromático', hex: ACCENT_CONFIGS.neutral.primaryHex },
+    { id: 'neutral', label: 'Monocromático', hex: mode === 'dark' ? '#ffffff' : ACCENT_CONFIGS.neutral.primaryHex },
   ];
 
   // Fechar dropdown ao clicar fora
@@ -110,7 +110,7 @@ export const ThemeSelector: React.FC<{ compact?: boolean }> = ({ compact = false
                       }`}
                       style={{ backgroundColor: item.hex }}
                     >
-                      {isSelected && <Check className="w-3 h-3 text-white stroke-[3]" />}
+                      {isSelected && <Check className={`w-3 h-3 stroke-[3] ${item.id === 'neutral' && mode === 'dark' ? 'text-zinc-950' : 'text-white'}`} />}
                     </button>
                   );
                 })}
@@ -173,7 +173,7 @@ export const ThemeSelector: React.FC<{ compact?: boolean }> = ({ compact = false
                   className="w-3.5 h-3.5 rounded-full shadow-sm flex items-center justify-center"
                   style={{ backgroundColor: item.hex }}
                 >
-                  {isSelected && <Check className="w-2.5 h-2.5 text-white stroke-[3]" />}
+                  {isSelected && <Check className={`w-2.5 h-2.5 stroke-[3] ${item.id === 'neutral' && mode === 'dark' ? 'text-zinc-950' : 'text-white'}`} />}
                 </span>
                 <span className="text-[9px] font-bold text-slate-700 dark:text-zinc-300 truncate w-full text-center">
                   {item.label}
