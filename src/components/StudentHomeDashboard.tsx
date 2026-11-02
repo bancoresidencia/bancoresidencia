@@ -1215,6 +1215,22 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   const [showAdvancedClientId, setShowAdvancedClientId] = useState(false);
 
   const [exportingSlotId, setExportingSlotId] = useState<string | null>(null);
+  const [exportedSlotIds, setExportedSlotIds] = useState<Record<string, boolean>>({});
+  const [syncSuccessAnimation, setSyncSuccessAnimation] = useState<boolean>(false);
+
+  const cleanEventDescription = (desc?: string) => {
+    if (!desc) return '';
+    const lower = desc.toLowerCase().trim();
+    if (
+      lower.includes('evento importado') ||
+      lower.includes('evento sincronizado') ||
+      lower.includes('google calendar api') ||
+      lower.includes('via google')
+    ) {
+      return '';
+    }
+    return desc;
+  };
 
   const [isSyncingCalendar, setIsSyncingCalendar] = useState(false);
   const [calendarSyncError, setCalendarSyncError] = useState<string | null>(null);
@@ -1263,6 +1279,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
               ? `${events.length} evento(s) sincronizados via Google Calendar!`
               : 'Conectado via Google Calendar! Nenhum evento para hoje.';
             setCalendarSyncSuccessMsg(msg);
+            setSyncSuccessAnimation(true);
+            setTimeout(() => setSyncSuccessAnimation(false), 4500);
           })
           .catch((err) => {
             setCalendarSyncError(err?.message || 'Falha ao buscar eventos do Google Calendar.');
@@ -1321,6 +1339,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
             ? `${events.length} evento(s) sincronizados via Google Calendar!`
             : 'Conectado via Google Calendar! Nenhum evento para hoje.';
           setCalendarSyncSuccessMsg(msg);
+          setSyncSuccessAnimation(true);
+          setTimeout(() => setSyncSuccessAnimation(false), 4500);
         })
         .catch((err) => {
           setCalendarSyncError(err?.message || 'Falha ao buscar eventos do Google Calendar.');
@@ -1403,6 +1423,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       } else {
         setCalendarSyncSuccessMsg('Agenda conectada com sucesso! Nenhum compromisso agendado para hoje (rotina livre para estudos).');
       }
+      setSyncSuccessAnimation(true);
+      setTimeout(() => setSyncSuccessAnimation(false), 4500);
       return true;
     } catch (err: any) {
       const msg = err?.name === 'TimeoutError'
@@ -1494,6 +1516,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           } else {
             setCalendarSyncSuccessMsg('Conectado via Google API! Nenhum evento para hoje (rotina livre de estudos).');
           }
+          setSyncSuccessAnimation(true);
+          setTimeout(() => setSyncSuccessAnimation(false), 4500);
           setIsGoogleModalOpen(false);
         } catch (fetchErr: any) {
           setCalendarSyncError(fetchErr?.message || 'Falha ao buscar eventos da Google Calendar API.');
@@ -1562,6 +1586,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
             localStorage.setItem('bancoresidencia_google_calendar_account', accountEmail);
           }
         }
+        setSyncSuccessAnimation(true);
+        setTimeout(() => setSyncSuccessAnimation(false), 4500);
       } catch {
         if (googleIcalUrl.trim()) {
           await syncIcalEvents(googleIcalUrl);
@@ -1574,6 +1600,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     } else {
       const nowStr = `Hoje às ${new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}`;
       setLastCalendarSyncTime(nowStr);
+      setSyncSuccessAnimation(true);
+      setTimeout(() => setSyncSuccessAnimation(false), 4500);
       if (typeof window !== 'undefined') {
         localStorage.setItem('bancoresidencia_google_last_sync', nowStr);
       }
@@ -1588,18 +1616,20 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           title: slot.title,
           startTime: slot.startTime,
           endTime: slot.endTime,
-          description: slot.description,
+          description: cleanEventDescription(slot.description),
           location: slot.location
         });
-        setCalendarSyncSuccessMsg(`Bloco "${slot.title}" adicionado ao seu Google Agenda!`);
+        setExportedSlotIds(prev => ({ ...prev, [slot.id]: true }));
+        setCalendarSyncSuccessMsg(`✓ Bloco "${slot.title}" gravado com sucesso no seu Google Agenda!`);
       } else {
         const templateUrl = buildGoogleCalendarTemplateUrl({
           title: slot.title,
           startTime: slot.startTime,
           endTime: slot.endTime,
-          description: slot.description,
+          description: cleanEventDescription(slot.description),
           location: slot.location
         });
+        setExportedSlotIds(prev => ({ ...prev, [slot.id]: true }));
         window.open(templateUrl, '_blank', 'noopener,noreferrer');
       }
     } catch (err: any) {
@@ -1607,12 +1637,12 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
         title: slot.title,
         startTime: slot.startTime,
         endTime: slot.endTime,
-        description: slot.description,
+        description: cleanEventDescription(slot.description),
         location: slot.location
       });
       window.open(templateUrl, '_blank', 'noopener,noreferrer');
     } finally {
-      setTimeout(() => setExportingSlotId(null), 1000);
+      setTimeout(() => setExportingSlotId(null), 800);
     }
   };
 
@@ -3573,7 +3603,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         <div className="flex items-center justify-between gap-2 text-xs text-slate-600 dark:text-zinc-400">
                           <span className="truncate text-[11px]">
                             {currentPeriodInfo.slot.location ? `${currentPeriodInfo.slot.location} • ` : ''}
-                            {currentPeriodInfo.slot.description}
+                            {cleanEventDescription(currentPeriodInfo.slot.description)}
                           </span>
                           <span className="text-[10px] font-mono font-bold text-emerald-600 dark:text-emerald-400 shrink-0">
                             restam {currentPeriodInfo.minutesRemaining}m
@@ -3599,9 +3629,11 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         <h4 className="font-heading text-sm sm:text-base font-bold text-slate-900 dark:text-zinc-100 truncate">
                           {currentPeriodInfo.slot.title}
                         </h4>
-                        <p className="text-xs text-slate-500 dark:text-zinc-400 truncate">
-                          {currentPeriodInfo.slot.description}
-                        </p>
+                        {cleanEventDescription(currentPeriodInfo.slot.description) && (
+                          <p className="text-xs text-slate-500 dark:text-zinc-400 truncate">
+                            {cleanEventDescription(currentPeriodInfo.slot.description)}
+                          </p>
+                        )}
                       </>
                     )}
 
@@ -3615,9 +3647,11 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         <h4 className="font-heading text-sm sm:text-base font-bold text-slate-900 dark:text-zinc-100 truncate">
                           {currentPeriodInfo.slot.title}
                         </h4>
-                        <p className="text-xs text-slate-600 dark:text-zinc-400 line-clamp-1">
-                          {currentPeriodInfo.slot.description}
-                        </p>
+                        {cleanEventDescription(currentPeriodInfo.slot.description) && (
+                          <p className="text-xs text-slate-600 dark:text-zinc-400 line-clamp-1">
+                            {cleanEventDescription(currentPeriodInfo.slot.description)}
+                          </p>
+                        )}
                       </>
                     )}
 
@@ -3632,9 +3666,11 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         <h4 className="font-heading text-sm sm:text-base font-bold text-slate-900 dark:text-zinc-100 truncate">
                           {currentPeriodInfo.slot.title}
                         </h4>
-                        <p className="text-xs text-slate-500 dark:text-zinc-400 truncate">
-                          {currentPeriodInfo.slot.description}
-                        </p>
+                        {cleanEventDescription(currentPeriodInfo.slot.description) && (
+                          <p className="text-xs text-slate-500 dark:text-zinc-400 truncate">
+                            {cleanEventDescription(currentPeriodInfo.slot.description)}
+                          </p>
+                        )}
                       </>
                     )}
                   </div>
@@ -3655,8 +3691,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         <span>Conectar Google Agenda</span>
                       </button>
                     ) : (
-                      <span className="text-[10px] text-zinc-500 dark:text-zinc-400 flex items-center gap-1.5">
-                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                      <span className="text-[10px] text-zinc-600 dark:text-zinc-300 flex items-center gap-1.5 font-medium">
+                        <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
                         <span>{daySchedule.length} atividades adaptadas hoje</span>
                       </span>
                     )}
@@ -3669,7 +3705,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                   </div>
 
                   {/* VISÃO EXPANDIDA ADAPTATIVA: Linha do Tempo dos Próximos Blocos do Dia */}
-                  {((cardConfig.customHeight && cardConfig.customHeight >= 220) || cardConfig.colSpan >= 6) && (
+                  {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 220) && (
                     <div className="pt-2.5 space-y-1.5 border-t border-zinc-100 dark:border-zinc-800/80 animate-in fade-in duration-200">
                       <div className="flex items-center justify-between text-[11px]">
                         <span className="font-bold text-zinc-700 dark:text-zinc-300 flex items-center gap-1.5">
@@ -5733,10 +5769,23 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                               </span>
                             )}
                           </div>
-                          <p className="text-[11px] text-zinc-500 dark:text-zinc-400 mt-0.5">
-                            {isGoogleCalendarConnected
-                              ? `${googleCalendarAccount} • Sincronizado ${lastCalendarSyncTime}${googleIcalUrl ? ` • ${realCalendarEvents.length > 0 ? `${realCalendarEvents.length} evento(s) hoje` : '0 eventos hoje (estudos)'}` : ''}`
-                              : 'Sincronize plantões, internato e compromissos para adaptar os blocos de estudo à sua rotina'}
+                          <p className="text-[11px] text-zinc-500 dark:text-zinc-400 mt-0.5 flex items-center gap-1.5 flex-wrap">
+                            {isGoogleCalendarConnected ? (
+                              <>
+                                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
+                                <span className="font-semibold text-zinc-800 dark:text-zinc-200">{googleCalendarAccount}</span>
+                                <span className="text-zinc-400">•</span>
+                                <span>Sincronizado {lastCalendarSyncTime}</span>
+                                {googleIcalUrl && realCalendarEvents.length > 0 && (
+                                  <>
+                                    <span className="text-zinc-400">•</span>
+                                    <span>{realCalendarEvents.length} evento(s) hoje</span>
+                                  </>
+                                )}
+                              </>
+                            ) : (
+                              'Sincronize plantões, internato e compromissos para adaptar os blocos de estudo à sua rotina'
+                            )}
                           </p>
                         </div>
                       </div>
@@ -5744,16 +5793,23 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       <div className="flex items-center gap-2">
                         {isGoogleCalendarConnected ? (
                           <>
-                            <button
-                              type="button"
-                              onClick={handleSyncNow}
-                              disabled={isSyncingCalendar}
-                              className="px-3 py-1.5 rounded-xl border border-blue-500/30 bg-white dark:bg-zinc-900 text-blue-600 dark:text-blue-400 text-xs font-bold hover:bg-blue-50 dark:hover:bg-blue-950/40 cursor-pointer transition-colors flex items-center gap-1.5 disabled:opacity-50"
-                              title="Sincronizar novamente"
-                            >
-                              <RefreshCw className={`w-3.5 h-3.5 ${isSyncingCalendar ? 'animate-spin' : ''}`} />
-                              <span>{isSyncingCalendar ? 'Sincronizando...' : 'Sincronizar'}</span>
-                            </button>
+                            {syncSuccessAnimation ? (
+                              <div className="px-3 py-1.5 rounded-xl border border-emerald-500/40 bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 text-xs font-bold flex items-center gap-1.5 shadow-xs animate-in fade-in duration-200">
+                                <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500" />
+                                <span>Sincronizado!</span>
+                              </div>
+                            ) : (
+                              <button
+                                type="button"
+                                onClick={handleSyncNow}
+                                disabled={isSyncingCalendar}
+                                className="px-3 py-1.5 rounded-xl border border-blue-500/30 bg-white dark:bg-zinc-900 text-blue-600 dark:text-blue-400 text-xs font-bold hover:bg-blue-50 dark:hover:bg-blue-950/40 cursor-pointer transition-colors flex items-center gap-1.5 disabled:opacity-50"
+                                title="Sincronizar novamente"
+                              >
+                                <RefreshCw className={`w-3.5 h-3.5 ${isSyncingCalendar ? 'animate-spin' : ''}`} />
+                                <span>{isSyncingCalendar ? 'Sincronizando...' : 'Sincronizar'}</span>
+                              </button>
+                            )}
                             <button
                               type="button"
                               onClick={() => setIsGoogleModalOpen(true)}
@@ -5970,9 +6026,11 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                                         {sug.title}
                                       </h5>
 
-                                      <p className="text-[11px] text-zinc-500 dark:text-zinc-400">
-                                        {sug.description}
-                                      </p>
+                                      {cleanEventDescription(sug.description) ? (
+                                        <p className="text-[11px] text-zinc-500 dark:text-zinc-400">
+                                          {cleanEventDescription(sug.description)}
+                                        </p>
+                                      ) : null}
 
                                       {sug.rationale && (
                                         <p className="text-[10px] text-blue-600 dark:text-blue-300 italic">
@@ -5999,16 +6057,32 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                                         </button>
                                       )}
 
-                                      <button
-                                        type="button"
-                                        onClick={() => handleExportSlotToGoogle(sug)}
-                                        disabled={exportingSlotId === sug.id}
-                                        className="px-2 py-1.5 rounded-lg border border-blue-500/25 bg-blue-50/50 dark:bg-blue-950/30 text-blue-600 dark:text-blue-400 hover:bg-blue-100/70 dark:hover:bg-blue-900/40 text-[10px] font-bold flex items-center gap-1 transition-all cursor-pointer disabled:opacity-50"
-                                        title="Sincronizar este bloco diretamente com o Google Agenda"
-                                      >
-                                        <GoogleIcon className="w-2.5 h-2.5" />
-                                        <span>+ Google</span>
-                                      </button>
+                                      {exportedSlotIds[sug.id] ? (
+                                        <span className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg border border-emerald-500/30 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 text-[10px] font-bold">
+                                          <CheckCircle2 className="w-3 h-3 text-emerald-500" />
+                                          <span>Salvo na Agenda</span>
+                                        </span>
+                                      ) : (
+                                        <button
+                                          type="button"
+                                          onClick={() => handleExportSlotToGoogle(sug)}
+                                          disabled={exportingSlotId === sug.id}
+                                          className="px-2 py-1.5 rounded-lg border border-blue-500/25 bg-blue-50/50 dark:bg-blue-950/30 text-blue-600 dark:text-blue-400 hover:bg-blue-100/70 dark:hover:bg-blue-900/40 text-[10px] font-bold flex items-center gap-1 transition-all cursor-pointer disabled:opacity-50"
+                                          title="Sincronizar este bloco diretamente com o Google Agenda"
+                                        >
+                                          {exportingSlotId === sug.id ? (
+                                            <>
+                                              <RefreshCw className="w-2.5 h-2.5 animate-spin" />
+                                              <span>Gravando...</span>
+                                            </>
+                                          ) : (
+                                            <>
+                                              <GoogleIcon className="w-2.5 h-2.5" />
+                                              <span>+ Google</span>
+                                            </>
+                                          )}
+                                        </button>
+                                      )}
                                     </div>
                                   </div>
                                 );
@@ -6191,8 +6265,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                                     )}
 
                                     {slot.source === 'google' ? (
-                                      <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-bold bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20">
-                                        <GoogleIcon className="w-2.5 h-2.5" />
+                                      <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-bold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
+                                        <Check className="w-2.5 h-2.5 text-emerald-500" />
                                         Google Agenda
                                       </span>
                                     ) : slot.isAiSuggested ? (
@@ -6211,10 +6285,12 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                                     {slot.title}
                                   </h5>
 
-                                  <p className="text-[11px] text-zinc-500 dark:text-zinc-400 truncate">
-                                    {slot.location ? `${slot.location} • ` : ''}
-                                    {slot.description}
-                                  </p>
+                                  {(slot.location || cleanEventDescription(slot.description)) && (
+                                    <p className="text-[11px] text-zinc-500 dark:text-zinc-400 truncate">
+                                      {slot.location ? `${slot.location}${cleanEventDescription(slot.description) ? ' • ' : ''}` : ''}
+                                      {cleanEventDescription(slot.description)}
+                                    </p>
+                                  )}
 
                                   {slot.rationale && (
                                     <p className="text-[10px] text-blue-600 dark:text-blue-400 italic">
@@ -6283,22 +6359,39 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                                 )}
 
                                 {!slot.action && slot.source === 'google' && (
-                                  <span className="text-[10px] font-bold text-zinc-400 dark:text-zinc-500 px-2 py-1 rounded bg-zinc-100 dark:bg-zinc-800">
-                                    Agenda
+                                  <span className="text-[10px] font-bold text-emerald-700 dark:text-emerald-400 px-2 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center gap-1">
+                                    <Check className="w-2.5 h-2.5" />
+                                    Google
                                   </span>
                                 )}
 
                                 {slot.source === 'plataforma' && (
-                                  <button
-                                    type="button"
-                                    onClick={() => handleExportSlotToGoogle(slot)}
-                                    disabled={exportingSlotId === slot.id}
-                                    className="px-2 py-1.5 rounded-lg border border-blue-500/25 bg-blue-50/50 dark:bg-blue-950/30 text-blue-600 dark:text-blue-400 hover:bg-blue-100/70 dark:hover:bg-blue-900/40 text-[10px] font-bold flex items-center gap-1 transition-all cursor-pointer disabled:opacity-50"
-                                    title={calendarSyncMode === 'api' && googleAccessToken ? 'Gravar direto no Google Calendar via API' : 'Salvar no Google Agenda (1 clique)'}
-                                  >
-                                    <GoogleIcon className="w-2.5 h-2.5" />
-                                    <span>{exportingSlotId === slot.id ? 'Gravando...' : '+ Google'}</span>
-                                  </button>
+                                  exportedSlotIds[slot.id] ? (
+                                    <span className="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg border border-emerald-500/30 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 text-[10px] font-bold animate-in fade-in duration-200">
+                                      <CheckCircle2 className="w-3 h-3 text-emerald-500" />
+                                      <span>Salvo na Agenda</span>
+                                    </span>
+                                  ) : (
+                                    <button
+                                      type="button"
+                                      onClick={() => handleExportSlotToGoogle(slot)}
+                                      disabled={exportingSlotId === slot.id}
+                                      className="px-2 py-1.5 rounded-lg border border-blue-500/25 bg-blue-50/50 dark:bg-blue-950/30 text-blue-600 dark:text-blue-400 hover:bg-blue-100/70 dark:hover:bg-blue-900/40 text-[10px] font-bold flex items-center gap-1 transition-all cursor-pointer disabled:opacity-50"
+                                      title={calendarSyncMode === 'api' && googleAccessToken ? 'Gravar direto no Google Calendar via API' : 'Salvar no Google Agenda (1 clique)'}
+                                    >
+                                      {exportingSlotId === slot.id ? (
+                                        <>
+                                          <RefreshCw className="w-2.5 h-2.5 animate-spin" />
+                                          <span>Gravando...</span>
+                                        </>
+                                      ) : (
+                                        <>
+                                          <GoogleIcon className="w-2.5 h-2.5" />
+                                          <span>+ Google</span>
+                                        </>
+                                      )}
+                                    </button>
+                                  )
                                 )}
 
                                 {/* Opção de remover tarefas personalizadas / sugeridas */}

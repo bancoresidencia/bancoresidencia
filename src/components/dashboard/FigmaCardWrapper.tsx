@@ -143,7 +143,7 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
           }
         }
 
-        // 2. Cálculo da Altura (Vertical)
+        // 2. Cálculo da Altura (Vertical) com Limite Inteligente e Encaixe Magnético
         if (originY !== 'none') {
           const deltaY =
             originY === 'top'
@@ -152,8 +152,15 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
 
           const rawHeight = initialHeight + deltaY;
 
-          // Permite encolher livremente até 120px e expandir até 850px
-          const targetHeight = Math.max(120, Math.min(850, Math.round(rawHeight)));
+          // Respeita minHeight e maxHeight específicos do card para evitar sobras em branco
+          const minH = config.minHeight || 120;
+          const maxH = config.maxHeight || 450;
+          let targetHeight = Math.max(minH, Math.min(maxH, Math.round(rawHeight)));
+
+          // Snap magnético: atrai suavemente para o teto ideal quando estiver a até 15px de distância
+          if (Math.abs(targetHeight - maxH) <= 15) {
+            targetHeight = maxH;
+          }
 
           if (targetHeight !== lastTargetHeight) {
             lastTargetHeight = targetHeight;
@@ -161,6 +168,7 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
             if (container) {
               container.style.height = `${targetHeight}px`;
               container.style.minHeight = `${targetHeight}px`;
+              container.style.maxHeight = `${targetHeight}px`;
             }
           }
         }
@@ -170,6 +178,8 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
         setIsResizing(false);
         if (container) {
           container.style.height = '';
+          container.style.minHeight = '';
+          container.style.maxHeight = '';
         }
 
         if (originX !== 'none' && lastTargetSpan !== config.colSpan) {
@@ -194,7 +204,7 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
       window.addEventListener('pointerup', onPointerUp);
       window.addEventListener('pointercancel', onPointerUp);
     },
-    [config.id, config.colSpan, config.customHeight, config.minColSpan, config.maxColSpan, onUpdateColSpan, onUpdateHeight]
+    [config.id, config.colSpan, config.customHeight, config.minColSpan, config.maxColSpan, config.minHeight, config.maxHeight, onUpdateColSpan, onUpdateHeight]
   );
 
   // ARRASTE LIVRE NO MEIO DO CARD COM TROCA INSTANTÂNEA DE LUGAR (SWAP REAL-TIME)
@@ -288,8 +298,9 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
         }
       }}
       style={{
+        height: activeHeight ? `${activeHeight}px` : undefined,
         minHeight: activeHeight ? `${activeHeight}px` : undefined,
-        height: isResizing && activeHeight ? `${activeHeight}px` : undefined,
+        maxHeight: activeHeight ? `${activeHeight}px` : undefined,
         gridColumn: `span ${activeSpan} / span ${activeSpan}`,
         transform: isFreeDragging
           ? `translate3d(${dragOffset.x}px, ${dragOffset.y}px, 0)`
@@ -363,11 +374,21 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
             title="Redimensionar largura"
           />
 
-          {/* ALÇA INFERIOR CENTRAL - Indicador Fino */}
+          {/* ALÇA INFERIOR CENTRAL - Indicador Fino com Auto-Conformação */}
           <div
             onPointerDown={(e) => handleResizeStart(e, 'none', 'bottom')}
+            onDoubleClick={(e) => {
+              e.stopPropagation();
+              if (onUpdateHeight) {
+                if (config.customHeight) {
+                  onUpdateHeight(config.id, undefined as any);
+                } else if (config.maxHeight) {
+                  onUpdateHeight(config.id, config.maxHeight);
+                }
+              }
+            }}
             className="figma-control absolute -bottom-1 left-1/2 -translate-x-1/2 h-1.5 w-10 bg-blue-500 hover:bg-blue-600 rounded-full cursor-ns-resize z-50 shadow-xs hover:h-2 transition-all touch-none"
-            title="Redimensionar altura"
+            title="Arraste para ajustar altura (duplo clique para auto-conformar à ferramenta)"
           />
 
           {/* BARRA SUPERIOR DE AÇÕES NO TOPO DO CARD SELECIONADO */}

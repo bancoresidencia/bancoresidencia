@@ -18,7 +18,7 @@ export const DEFAULT_HOME_CARDS: DashboardCardConfig[] = [
     colSpan: 4,
     minColSpan: 3,
     minHeight: 150,
-    maxHeight: 450,
+    maxHeight: 360,
     order: 1,
     isVisible: true,
     settings: { showIcons: true, showDetails: true, compactMode: false }
@@ -29,7 +29,7 @@ export const DEFAULT_HOME_CARDS: DashboardCardConfig[] = [
     colSpan: 4,
     minColSpan: 3,
     minHeight: 150,
-    maxHeight: 450,
+    maxHeight: 360,
     order: 2,
     isVisible: true,
     settings: { showIcons: true, showDetails: true, compactMode: false }
@@ -40,7 +40,7 @@ export const DEFAULT_HOME_CARDS: DashboardCardConfig[] = [
     colSpan: 4,
     minColSpan: 3,
     minHeight: 150,
-    maxHeight: 450,
+    maxHeight: 360,
     order: 3,
     isVisible: true,
     settings: { showIcons: true, showDetails: true, compactMode: false }
@@ -51,7 +51,7 @@ export const DEFAULT_HOME_CARDS: DashboardCardConfig[] = [
     colSpan: 6,
     minColSpan: 3,
     minHeight: 160,
-    maxHeight: 500,
+    maxHeight: 360,
     order: 4,
     isVisible: true,
     settings: { showIcons: true, showDetails: true, compactMode: false }
@@ -62,7 +62,7 @@ export const DEFAULT_HOME_CARDS: DashboardCardConfig[] = [
     colSpan: 6,
     minColSpan: 3,
     minHeight: 160,
-    maxHeight: 500,
+    maxHeight: 340,
     order: 5,
     isVisible: true,
     settings: { showIcons: true, showDetails: true, compactMode: false }
@@ -73,7 +73,7 @@ export const DEFAULT_HOME_CARDS: DashboardCardConfig[] = [
     colSpan: 6,
     minColSpan: 3,
     minHeight: 160,
-    maxHeight: 500,
+    maxHeight: 350,
     order: 6,
     isVisible: true,
     settings: { showIcons: true, showDetails: true, compactMode: false }
@@ -84,7 +84,7 @@ export const DEFAULT_HOME_CARDS: DashboardCardConfig[] = [
     colSpan: 6,
     minColSpan: 3,
     minHeight: 160,
-    maxHeight: 500,
+    maxHeight: 310,
     order: 7,
     isVisible: true,
     settings: { showIcons: true, showDetails: true, compactMode: false }

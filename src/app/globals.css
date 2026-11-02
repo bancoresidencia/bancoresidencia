@@ -369,7 +369,7 @@ html.light ::-webkit-scrollbar-thumb:hover {
 
 .figma-card-wrapper {
   container-type: inline-size;
-  align-self: stretch !important;
+  align-self: start !important;
   display: flex;
   flex-direction: column;
 }

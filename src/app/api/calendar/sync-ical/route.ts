@@ -187,7 +187,7 @@ export async function POST(req: NextRequest) {
               startMinutes: startBrt.minutes,
               endMinutes: Math.max(endBrt.minutes, startBrt.minutes + 15),
               source: 'google',
-              description: description || 'Evento sincronizado do Google Agenda',
+              description: description || '',
               location: location || undefined
             });
           }
@@ -214,7 +214,7 @@ export async function POST(req: NextRequest) {
             startMinutes: startBrt.minutes,
             endMinutes: Math.max(endBrt.minutes, startBrt.minutes + 15),
             source: 'google',
-            description: description || 'Evento sincronizado do Google Agenda',
+            description: description || '',
             location: location || undefined
           });
         }

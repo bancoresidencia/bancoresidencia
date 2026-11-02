@@ -121,7 +121,7 @@ export function useDashboardLayout(
         order: index,
         colSpan: Math.max(c.minColSpan || 2, Math.min(12, c.colSpan)) as DashboardColSpan,
         customHeight: c.customHeight
-          ? Math.max(120, Math.min(850, c.customHeight))
+          ? Math.max(c.minHeight || 120, Math.min(c.maxHeight || 600, c.customHeight))
           : undefined,
       }));
 

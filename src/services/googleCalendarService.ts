@@ -377,7 +377,7 @@ export async function fetchTodayEventsFromGoogleApi(accessToken: string) {
       startMinutes,
       endMinutes: Math.max(endMinutes, startMinutes + 15),
       source: 'google' as const,
-      description: item.description || 'Evento importado via Google Calendar API',
+      description: item.description || '',
       location: item.location || undefined
     };
   });
