@@ -1,21 +1,24 @@
 'use client';
 
-import React, { useState, useRef, useCallback, useEffect } from 'react';
+import React, { useState, useRef, useCallback } from 'react';
 import {
-  GripVertical,
   ChevronLeft,
   ChevronRight,
   EyeOff,
   Maximize2,
   Minimize2,
   Sliders,
-  Check,
   Sparkles,
   Move
 } from 'lucide-react';
 import { DashboardCardConfig, DashboardColSpan, CardInternalSettings } from '@/types/dashboardLayout';
 import { CardLayoutProvider } from './CardLayoutContext';
-import { calculateSmartGuides, SmartGuidesState } from './smartGuidesEngine';
+import {
+  calculateSmartGuides,
+  createGuidesSnapshot,
+  SmartGuidesState,
+  StaticGuidesSnapshot
+} from './smartGuidesEngine';
 
 interface FigmaCardWrapperProps {
   config: DashboardCardConfig;
@@ -51,6 +54,7 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
   className = '',
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
+  const guidesSnapshotRef = useRef<StaticGuidesSnapshot | null>(null);
   const [isResizing, setIsResizing] = useState(false);
   const [isFreeDragging, setIsFreeDragging] = useState(false);
   const [dragOffset, setDragOffset] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
@@ -59,7 +63,6 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
   const [previewColSpan, setPreviewColSpan] = useState<DashboardColSpan | null>(null);
   const [previewHeight, setPreviewHeight] = useState<number | null>(null);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
-  const lastSwapTimeRef = useRef<number>(0);
 
   const activeSpan = previewColSpan || config.colSpan;
   const activeHeight = previewHeight !== null ? previewHeight : config.customHeight;
@@ -100,11 +103,11 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
 
   const getDimensionsLabel = (span: DashboardColSpan, height?: number) => {
     const pct = Math.round((span / 12) * 100);
-    const heightStr = height ? ` • ${Math.round(height)}px alt` : '';
+    const heightStr = height ? ` • ${Math.round(height)}px` : '';
     return `${span} col (${pct}%)${heightStr}`;
   };
 
-  // REDIMENSIONAMENTO MULTI-DIRECIONAL: Largura (Esquerda/Direita) E Altura (Cima/Baixo)
+  // REDIMENSIONAMENTO MULTI-DIRECIONAL (8 ALÇAS COM SNAP INTELIGENTE)
   const handleResizeStart = useCallback(
     (
       e: React.PointerEvent,
@@ -121,6 +124,8 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
       if (!parentGrid) return;
 
       setIsResizing(true);
+      guidesSnapshotRef.current = createGuidesSnapshot(parentGrid, config.id);
+
       const parentWidth = parentGrid.getBoundingClientRect().width;
       const initialHeight = container.getBoundingClientRect().height;
       const startX = e.clientX;
@@ -138,7 +143,6 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
               : moveEvent.clientX - startX;
 
           const colWidth = parentWidth / 12;
-          // Sensibilidade fluida: snap responsivo a cada 75% da coluna
           const deltaCols = Math.round(deltaX / (colWidth * 0.75));
           const rawNewSpan = initialSpan + deltaCols;
           const minSpan = config.minColSpan || 2;
@@ -151,7 +155,7 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
           }
         }
 
-        // 2. Cálculo da Altura (Vertical) com Limite Inteligente e Encaixe Magnético
+        // 2. Cálculo da Altura (Vertical) com Snap de 24px
         if (originY !== 'none') {
           const deltaY =
             originY === 'top'
@@ -159,9 +163,6 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
               : moveEvent.clientY - startY;
 
           const rawHeight = initialHeight + deltaY;
-
-          // Recorte 100% livre e contínuo: qualquer altura em pixels desejada pelo usuário sem travar
-          // Piso ultra-livre de 70px permitindo encolher sem qualquer resistência
           const minH = 65;
           const maxH = config.maxHeight || 520;
           const targetHeight = Math.max(minH, Math.min(maxH, Math.round(rawHeight / 24) * 24));
@@ -177,15 +178,22 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
           }
         }
 
-        // Calcula Smart Guides em tempo real durante o redimensionamento
+        // Smart Guides a 120fps via Snapshot Geométrico
         if (parentGrid && onSmartGuidesChange) {
-          const guidesState = calculateSmartGuides(config.id, parentGrid, allCardsConfig || []);
+          const guidesState = calculateSmartGuides(
+            config.id,
+            parentGrid,
+            allCardsConfig || [],
+            guidesSnapshotRef.current
+          );
           onSmartGuidesChange(guidesState);
         }
       };
 
       const onPointerUp = () => {
         setIsResizing(false);
+        guidesSnapshotRef.current = null;
+
         if (container) {
           container.style.height = '';
           container.style.minHeight = '';
@@ -199,7 +207,6 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
           onUpdateHeight(config.id, lastTargetHeight);
         }
 
-        // Transição suave: limpa os previews após commit do estado no componente pai
         setTimeout(() => {
           setPreviewColSpan(null);
           setPreviewHeight(null);
@@ -218,15 +225,14 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
       window.addEventListener('pointerup', onPointerUp);
       window.addEventListener('pointercancel', onPointerUp);
     },
-    [config.id, config.colSpan, config.customHeight, config.minColSpan, config.maxColSpan, config.minHeight, config.maxHeight, onUpdateColSpan, onUpdateHeight]
+    [config.id, config.colSpan, config.customHeight, config.minColSpan, config.maxColSpan, config.maxHeight, onUpdateColSpan, onUpdateHeight, onSmartGuidesChange, allCardsConfig]
   );
 
-  // ARRASTE LIVRE NO MEIO DO CARD COM TROCA INSTANTÂNEA DE LUGAR (SWAP REAL-TIME)
+  // ARRASTE LIVRE RESPONSIVO (DESKTOP IMEDIATO + TOUCH AWARE PREVENINDO BLOQUEIO DE SCROLL)
   const handleCardPointerDown = (e: React.PointerEvent) => {
     if (!isCustomizing) return;
 
     const target = e.target as HTMLElement;
-    // Permite interagir exclusivamente com os nós de redimensionamento e barra de ações
     if (
       target.closest('.figma-control') ||
       target.closest('.figma-popover')
@@ -234,33 +240,61 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
       return;
     }
 
-    // Seleciona o card no clique e permite arrastar segurando em qualquer ponto do card
     onSelect(config.id);
+
+    const isTouch = e.pointerType === 'touch';
+    const isDirectHandle = Boolean(target.closest('.figma-drag-handle'));
 
     const startX = e.clientX;
     const startY = e.clientY;
     let hasMoved = false;
+    let touchHoldTimeout: NodeJS.Timeout | null = null;
+    let touchDragReady = !isTouch || isDirectHandle;
+
+    const parentGrid = containerRef.current?.parentElement;
+
+    if (isTouch && !isDirectHandle) {
+      // No touch sobre o corpo do card: exige segurar 200ms antes de liberar o drag, permitindo scroll suave
+      touchHoldTimeout = setTimeout(() => {
+        touchDragReady = true;
+      }, 200);
+    }
 
     const onPointerMove = (moveEvent: PointerEvent) => {
       const dx = moveEvent.clientX - startX;
       const dy = moveEvent.clientY - startY;
+      const dist = Math.hypot(dx, dy);
 
-      if (!hasMoved && Math.hypot(dx, dy) > 6) {
+      if (isTouch && !touchDragReady && Math.abs(dy) > 10) {
+        // Usuário está rolando a página no mobile: cancela intenção de drag
+        if (touchHoldTimeout) {
+          clearTimeout(touchHoldTimeout);
+          touchHoldTimeout = null;
+        }
+        return;
+      }
+
+      if (!hasMoved && touchDragReady && dist > 6) {
         hasMoved = true;
         setIsFreeDragging(true);
+        if (parentGrid) {
+          guidesSnapshotRef.current = createGuidesSnapshot(parentGrid, config.id);
+        }
       }
 
       if (hasMoved) {
         setDragOffset({ x: dx, y: dy });
 
-        // Calcula Smart Guides em tempo real
-        const parentGrid = containerRef.current?.parentElement;
         if (parentGrid && onSmartGuidesChange) {
-          const guidesState = calculateSmartGuides(config.id, parentGrid, allCardsConfig || []);
+          const guidesState = calculateSmartGuides(
+            config.id,
+            parentGrid,
+            allCardsConfig || [],
+            guidesSnapshotRef.current
+          );
           onSmartGuidesChange(guidesState);
         }
 
-        // Identifica o card sob o ponteiro do mouse como alvo (sem trocar automaticamente durante o movimento)
         const elemUnder = document.elementFromPoint(moveEvent.clientX, moveEvent.clientY);
         const targetCard = elemUnder?.closest('[data-card-id]') as HTMLElement | null;
         const targetId = targetCard?.dataset?.cardId;
@@ -276,6 +310,12 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
     };
 
     const onPointerUp = () => {
+      if (touchHoldTimeout) {
+        clearTimeout(touchHoldTimeout);
+        touchHoldTimeout = null;
+      }
+      guidesSnapshotRef.current = null;
+
       window.removeEventListener('pointermove', onPointerMove);
       window.removeEventListener('pointerup', onPointerUp);
 
@@ -283,7 +323,6 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
         setIsFreeDragging(false);
         setDragOffset({ x: 0, y: 0 });
 
-        // SÓ aplica a mudança de posição quando o usuário explicitamente soltar o card naquele espaço
         const targetToDrop = hoverTargetRef.current;
         if (targetToDrop && targetToDrop !== config.id) {
           onReorder(config.id, targetToDrop);
@@ -302,8 +341,23 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
     window.addEventListener('pointerup', onPointerUp);
   };
 
-  // Alterna tamanho entre presets respeitando o minColSpan do card
+  // CICLO DE TAMANHO ADAPTATIVO: ALTURA NO MOBILE (< 768px) E COLUNAS NO DESKTOP (>= 768px)
   const cycleSize = () => {
+    const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
+
+    if (isMobile && onUpdateHeight) {
+      // Ciclo de altura no mobile: Compacto (140px) -> Médio (260px) -> Auto (undefined)
+      if (!config.customHeight) {
+        onUpdateHeight(config.id, 140);
+      } else if (config.customHeight <= 160) {
+        onUpdateHeight(config.id, 260);
+      } else {
+        onUpdateHeight(config.id, undefined);
+      }
+      return;
+    }
+
+    // Ciclo de largura no desktop
     const rawPresets: DashboardColSpan[] = [3, 4, 6, 8, 12];
     const minSpan = config.minColSpan || 2;
     const presets = rawPresets.filter((p) => p >= minSpan);
@@ -320,7 +374,7 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
       onClickCapture={(e) => {
         if (isCustomizing) {
           const target = e.target as HTMLElement;
-          if (!target.closest(".figma-control") && !target.closest(".figma-popover")) {
+          if (!target.closest('.figma-control') && !target.closest('.figma-popover')) {
             e.stopPropagation();
             e.preventDefault();
           }
@@ -359,52 +413,52 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
         </div>
       )}
 
-      {/* CONTROLES ESTILO FIGMA (SOMENTE NO CARD SELECIONADO) */}
+      {/* CONTROLES ESTILO FIGMA (SOMENTE NO CARD SELECIONADO COM ALÇAS TOUCH-FIRST 44PX) */}
       {isCustomizing && isSelected && (
         <>
           {/* NÓ DO CANTO SUPERIOR ESQUERDO (NW) */}
           <div
             onPointerDown={(e) => handleResizeStart(e, 'left', 'top')}
-            className="figma-control absolute -top-1.5 -left-1.5 w-3 h-3 bg-white dark:bg-zinc-900 border-2 border-blue-600 rounded-full cursor-nwse-resize z-50 shadow-xs hover:scale-150 transition-transform pointer-events-auto touch-none"
+            className="figma-control absolute -top-1.5 -left-1.5 w-3 h-3 bg-white dark:bg-zinc-900 border-2 border-blue-600 rounded-full cursor-nwse-resize z-50 shadow-xs hover:scale-150 transition-transform pointer-events-auto touch-none before:absolute before:-inset-3.5 before:content-['']"
             title="Redimensionar (diagonal)"
           />
 
           {/* NÓ DO CANTO INFERIOR ESQUERDO (SW) */}
           <div
             onPointerDown={(e) => handleResizeStart(e, 'left', 'bottom')}
-            className="figma-control absolute -bottom-1.5 -left-1.5 w-3 h-3 bg-white dark:bg-zinc-900 border-2 border-blue-600 rounded-full cursor-nesw-resize z-50 shadow-xs hover:scale-150 transition-transform pointer-events-auto touch-none"
+            className="figma-control absolute -bottom-1.5 -left-1.5 w-3 h-3 bg-white dark:bg-zinc-900 border-2 border-blue-600 rounded-full cursor-nesw-resize z-50 shadow-xs hover:scale-150 transition-transform pointer-events-auto touch-none before:absolute before:-inset-3.5 before:content-['']"
             title="Redimensionar (diagonal)"
           />
 
-          {/* ALÇA LATERAL ESQUERDA - Indicador Fino */}
+          {/* ALÇA LATERAL ESQUERDA */}
           <div
             onPointerDown={(e) => handleResizeStart(e, 'left', 'none')}
-            className="figma-control absolute -left-1 top-1/2 -translate-y-1/2 w-1.5 h-8 bg-blue-500 hover:bg-blue-600 rounded-full cursor-ew-resize z-50 shadow-xs hover:w-2 transition-all touch-none"
+            className="figma-control absolute -left-1 top-1/2 -translate-y-1/2 w-1.5 h-8 bg-blue-500 hover:bg-blue-600 rounded-full cursor-ew-resize z-50 shadow-xs hover:w-2 transition-all touch-none before:absolute before:-inset-3 before:content-['']"
             title="Redimensionar largura"
           />
 
           {/* NÓ DO CANTO SUPERIOR DIREITO (NE) */}
           <div
             onPointerDown={(e) => handleResizeStart(e, 'right', 'top')}
-            className="figma-control absolute -top-1.5 -right-1.5 w-3 h-3 bg-white dark:bg-zinc-900 border-2 border-blue-600 rounded-full cursor-nesw-resize z-50 shadow-xs hover:scale-150 transition-transform pointer-events-auto touch-none"
+            className="figma-control absolute -top-1.5 -right-1.5 w-3 h-3 bg-white dark:bg-zinc-900 border-2 border-blue-600 rounded-full cursor-nesw-resize z-50 shadow-xs hover:scale-150 transition-transform pointer-events-auto touch-none before:absolute before:-inset-3.5 before:content-['']"
             title="Redimensionar (diagonal)"
           />
 
           {/* NÓ DO CANTO INFERIOR DIREITO (SE) */}
           <div
             onPointerDown={(e) => handleResizeStart(e, 'right', 'bottom')}
-            className="figma-control absolute -bottom-1.5 -right-1.5 w-3 h-3 bg-white dark:bg-zinc-900 border-2 border-blue-600 rounded-full cursor-nwse-resize z-50 shadow-xs hover:scale-150 transition-transform pointer-events-auto touch-none"
+            className="figma-control absolute -bottom-1.5 -right-1.5 w-3 h-3 bg-white dark:bg-zinc-900 border-2 border-blue-600 rounded-full cursor-nwse-resize z-50 shadow-xs hover:scale-150 transition-transform pointer-events-auto touch-none before:absolute before:-inset-3.5 before:content-['']"
             title="Redimensionar (diagonal)"
           />
 
-          {/* ALÇA LATERAL DIREITA - Indicador Fino */}
+          {/* ALÇA LATERAL DIREITA */}
           <div
             onPointerDown={(e) => handleResizeStart(e, 'right', 'none')}
-            className="figma-control absolute -right-1 top-1/2 -translate-y-1/2 w-1.5 h-8 bg-blue-500 hover:bg-blue-600 rounded-full cursor-ew-resize z-50 shadow-xs hover:w-2 transition-all touch-none"
+            className="figma-control absolute -right-1 top-1/2 -translate-y-1/2 w-1.5 h-8 bg-blue-500 hover:bg-blue-600 rounded-full cursor-ew-resize z-50 shadow-xs hover:w-2 transition-all touch-none before:absolute before:-inset-3 before:content-['']"
             title="Redimensionar largura"
           />
 
-          {/* ALÇA INFERIOR CENTRAL - Indicador Fino com Auto-Conformação */}
+          {/* ALÇA INFERIOR CENTRAL */}
           <div
             onPointerDown={(e) => handleResizeStart(e, 'none', 'bottom')}
             onDoubleClick={(e) => {
@@ -417,24 +471,31 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
                 }
               }
             }}
-            className="figma-control absolute -bottom-1 left-1/2 -translate-x-1/2 h-1.5 w-10 bg-blue-500 hover:bg-blue-600 rounded-full cursor-ns-resize z-50 shadow-xs hover:h-2 transition-all touch-none"
+            className="figma-control absolute -bottom-1 left-1/2 -translate-x-1/2 h-1.5 w-10 bg-blue-500 hover:bg-blue-600 rounded-full cursor-ns-resize z-50 shadow-xs hover:h-2 transition-all touch-none before:absolute before:-inset-3 before:content-['']"
             title="Arraste para ajustar altura (duplo clique para auto-conformar à ferramenta)"
           />
 
-          {/* BARRA SUPERIOR DE AÇÕES NO TOPO DO CARD SELECIONADO */}
-          <div className="figma-control absolute -top-8 left-0 right-0 z-50 flex items-center justify-between px-2 text-xs pointer-events-auto">
-            {/* Tag de Título e Mover */}
-            <div className="flex items-center gap-1.5 bg-blue-600 text-white px-2.5 py-1 rounded-t-lg font-bold shadow-md">
-              <Move className="w-3 h-3 opacity-90" />
-              <span className="truncate max-w-[150px]">{config.title}</span>
-              <span className="bg-black/25 px-1.5 py-0.2 rounded text-[10px] font-mono">
+          {/* ALÇA SUPERIOR CENTRAL */}
+          <div
+            onPointerDown={(e) => handleResizeStart(e, 'none', 'top')}
+            className="figma-control absolute -top-1 left-1/2 -translate-x-1/2 h-1.5 w-10 bg-blue-500 hover:bg-blue-600 rounded-full cursor-ns-resize z-50 shadow-xs hover:h-2 transition-all touch-none before:absolute before:-inset-3 before:content-['']"
+            title="Arraste para ajustar altura superior"
+          />
+
+          {/* BARRA SUPERIOR DE AÇÕES RESPONSIVA NO TOPO DO CARD SELECIONADO */}
+          <div className="figma-control absolute -top-8 left-0 right-0 z-50 flex items-center justify-between px-1 sm:px-2 text-xs pointer-events-auto max-w-full overflow-visible">
+            {/* Tag de Título e Alça de Drag Dedicada */}
+            <div className="figma-drag-handle flex items-center gap-1 sm:gap-1.5 bg-blue-600 text-white px-2 sm:px-2.5 py-1 rounded-t-lg font-bold shadow-md min-w-0 shrink cursor-grab active:cursor-grabbing">
+              <Move className="w-3 h-3 opacity-90 shrink-0" />
+              <span className="truncate max-w-[90px] sm:max-w-[150px]">{config.title}</span>
+              <span className="bg-black/25 px-1.5 py-0.2 rounded text-[10px] font-mono hidden xs:inline-block shrink-0">
                 {getDimensionsLabel(activeSpan, activeHeight)}
               </span>
             </div>
 
             {/* Ações: Configurar, Mover, Tamanho, Ocultar */}
-            <div className="flex items-center gap-1 bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-slate-700 dark:text-zinc-200 px-2 py-0.5 rounded-t-lg shadow-md">
-              {/* Botão Configurações Internas (Ícones, Detalhes, etc.) */}
+            <div className="flex items-center gap-0.5 sm:gap-1 bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 text-slate-700 dark:text-zinc-200 px-1.5 sm:px-2 py-0.5 rounded-t-lg shadow-md shrink-0">
+              {/* Botão Configurações Internas */}
               <div className="relative">
                 <button
                   type="button"
@@ -449,102 +510,117 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
                   <Sliders className="w-3.5 h-3.5" />
                 </button>
 
-                {/* Popover de Configuração Interna do Card */}
+                {/* Popover / Bottom Sheet Responsivo */}
                 {isSettingsOpen && (
-                  <div className="figma-popover absolute top-full right-0 mt-1 w-64 bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-2xl shadow-2xl p-3 z-50 space-y-2.5 text-xs">
-                    <div className="font-bold text-slate-900 dark:text-zinc-100 flex items-center justify-between pb-1.5 border-b border-slate-100 dark:border-zinc-800 text-[11px] uppercase tracking-wider">
-                      <span>Personalizar Card</span>
-                    </div>
+                  <>
+                    {/* Backdrop para fechar ao tocar fora no mobile */}
+                    <div
+                      className="fixed inset-0 z-40 bg-black/40 backdrop-blur-2xs sm:hidden"
+                      onClick={() => setIsSettingsOpen(false)}
+                    />
 
-                    {/* Alternador de Ícones */}
-                    <label className="flex items-center justify-between cursor-pointer py-1">
-                      <span className="text-slate-700 dark:text-zinc-300">Exibir Ícones</span>
-                      <input
-                        type="checkbox"
-                        checked={settings.showIcons !== false}
-                        onChange={(e) => onUpdateSettings(config.id, { showIcons: e.target.checked })}
-                        className="rounded border-slate-300 dark:border-zinc-700 text-blue-600 focus:ring-0 cursor-pointer"
-                      />
-                    </label>
+                    <div className="figma-popover fixed inset-x-3 bottom-22 z-50 sm:absolute sm:top-full sm:right-0 sm:bottom-auto sm:inset-x-auto sm:mt-1 w-auto sm:w-64 max-w-[calc(100vw-24px)] bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-2xl shadow-2xl p-3 space-y-2.5 text-xs animate-in zoom-in-95 duration-150">
+                      <div className="font-bold text-slate-900 dark:text-zinc-100 flex items-center justify-between pb-1.5 border-b border-slate-100 dark:border-zinc-800 text-[11px] uppercase tracking-wider">
+                        <span>Personalizar Card</span>
+                        <button
+                          type="button"
+                          onClick={() => setIsSettingsOpen(false)}
+                          className="sm:hidden text-slate-400 hover:text-slate-600 dark:hover:text-zinc-200 text-xs font-bold px-1"
+                        >
+                          ✕
+                        </button>
+                      </div>
 
-                    {/* Alternador de Detalhes Secundários */}
-                    <label className="flex items-center justify-between cursor-pointer py-1">
-                      <span className="text-slate-700 dark:text-zinc-300">Detalhes & Legendas</span>
-                      <input
-                        type="checkbox"
-                        checked={settings.showDetails !== false}
-                        onChange={(e) => onUpdateSettings(config.id, { showDetails: e.target.checked })}
-                        className="rounded border-slate-300 dark:border-zinc-700 text-blue-600 focus:ring-0 cursor-pointer"
-                      />
-                    </label>
+                      {/* Alternador de Ícones */}
+                      <label className="flex items-center justify-between cursor-pointer py-1">
+                        <span className="text-slate-700 dark:text-zinc-300">Exibir Ícones</span>
+                        <input
+                          type="checkbox"
+                          checked={settings.showIcons !== false}
+                          onChange={(e) => onUpdateSettings(config.id, { showIcons: e.target.checked })}
+                          className="rounded border-slate-300 dark:border-zinc-700 text-blue-600 focus:ring-0 cursor-pointer"
+                        />
+                      </label>
 
-                    {/* Modo Compacto */}
-                    <label className="flex items-center justify-between cursor-pointer py-1">
-                      <span className="text-slate-700 dark:text-zinc-300">Tipografia Compacta</span>
-                      <input
-                        type="checkbox"
-                        checked={!!settings.compactMode}
-                        onChange={(e) => onUpdateSettings(config.id, { compactMode: e.target.checked })}
-                        className="rounded border-slate-300 dark:border-zinc-700 text-blue-600 focus:ring-0 cursor-pointer"
-                      />
-                    </label>
+                      {/* Alternador de Detalhes Secundários */}
+                      <label className="flex items-center justify-between cursor-pointer py-1">
+                        <span className="text-slate-700 dark:text-zinc-300">Detalhes & Legendas</span>
+                        <input
+                          type="checkbox"
+                          checked={settings.showDetails !== false}
+                          onChange={(e) => onUpdateSettings(config.id, { showDetails: e.target.checked })}
+                          className="rounded border-slate-300 dark:border-zinc-700 text-blue-600 focus:ring-0 cursor-pointer"
+                        />
+                      </label>
 
-                    {/* Atalhos Rápidos de Largura */}
-                    <div className="pt-2 border-t border-slate-100 dark:border-zinc-800">
-                      <span className="text-[10px] text-slate-500 font-bold block mb-1">
-                        Largura Rápida
-                      </span>
-                      <div className="grid grid-cols-4 gap-1 text-[10px]">
-                        {[
-                          { span: 3 as DashboardColSpan, label: '25%' },
-                          { span: 4 as DashboardColSpan, label: '33%' },
-                          { span: 6 as DashboardColSpan, label: '50%' },
-                          { span: 12 as DashboardColSpan, label: '100%' },
-                        ].map((p) => (
-                          <button
-                            key={p.span}
-                            type="button"
-                            onClick={() => onUpdateColSpan(config.id, p.span)}
-                            className={`py-1 rounded-md font-bold transition-colors cursor-pointer text-center ${
-                              config.colSpan === p.span
-                                ? 'bg-blue-600 text-white'
-                                : 'bg-slate-100 dark:bg-zinc-800 text-slate-600 dark:text-zinc-300 hover:bg-slate-200'
-                            }`}
-                          >
-                            {p.label}
-                          </button>
-                        ))}
+                      {/* Modo Compacto */}
+                      <label className="flex items-center justify-between cursor-pointer py-1">
+                        <span className="text-slate-700 dark:text-zinc-300">Tipografia Compacta</span>
+                        <input
+                          type="checkbox"
+                          checked={!!settings.compactMode}
+                          onChange={(e) => onUpdateSettings(config.id, { compactMode: e.target.checked })}
+                          className="rounded border-slate-300 dark:border-zinc-700 text-blue-600 focus:ring-0 cursor-pointer"
+                        />
+                      </label>
+
+                      {/* Atalhos Rápidos de Largura */}
+                      <div className="pt-2 border-t border-slate-100 dark:border-zinc-800">
+                        <span className="text-[10px] text-slate-500 font-bold block mb-1">
+                          Largura (Desktop)
+                        </span>
+                        <div className="grid grid-cols-4 gap-1 text-[10px]">
+                          {[
+                            { span: 3 as DashboardColSpan, label: '25%' },
+                            { span: 4 as DashboardColSpan, label: '33%' },
+                            { span: 6 as DashboardColSpan, label: '50%' },
+                            { span: 12 as DashboardColSpan, label: '100%' },
+                          ].map((p) => (
+                            <button
+                              key={p.span}
+                              type="button"
+                              onClick={() => onUpdateColSpan(config.id, p.span)}
+                              className={`py-1 rounded-md font-bold transition-colors cursor-pointer text-center ${
+                                config.colSpan === p.span
+                                  ? 'bg-blue-600 text-white'
+                                  : 'bg-slate-100 dark:bg-zinc-800 text-slate-600 dark:text-zinc-300 hover:bg-slate-200'
+                              }`}
+                            >
+                              {p.label}
+                            </button>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Atalhos Rápidos de Altura */}
+                      <div className="pt-2 border-t border-slate-100 dark:border-zinc-800">
+                        <span className="text-[10px] text-slate-500 font-bold block mb-1">
+                          Altura Rápida
+                        </span>
+                        <div className="grid grid-cols-4 gap-1 text-[10px]">
+                          {[
+                            { h: undefined, label: 'Auto' },
+                            { h: 160, label: '160px' },
+                            { h: 250, label: '250px' },
+                            { h: 360, label: '360px' },
+                          ].map((p, idx) => (
+                            <button
+                              key={idx}
+                              type="button"
+                              onClick={() => onUpdateHeight && onUpdateHeight(config.id, p.h as any)}
+                              className={`py-1 rounded-md font-bold transition-colors cursor-pointer text-center ${
+                                (!config.customHeight && p.h === undefined) || config.customHeight === p.h
+                                  ? 'bg-blue-600 text-white'
+                                  : 'bg-slate-100 dark:bg-zinc-800 text-slate-600 dark:text-zinc-300 hover:bg-slate-200'
+                              }`}
+                            >
+                              {p.label}
+                            </button>
+                          ))}
+                        </div>
                       </div>
                     </div>
-
-                    {/* Atalhos Rápidos de Altura */}
-                    <div className="pt-2 border-t border-slate-100 dark:border-zinc-800">
-                      <span className="text-[10px] text-slate-500 font-bold block mb-1">
-                        Altura Rápida
-                      </span>
-                      <div className="grid grid-cols-4 gap-1 text-[10px]">
-                        {[
-                          { h: undefined, label: 'Auto' },
-                          { h: 160, label: '160px' },
-                          { h: 250, label: '250px' },
-                          { h: 360, label: '360px' },
-                        ].map((p, idx) => (
-                          <button
-                            key={idx}
-                            type="button"
-                            onClick={() => onUpdateHeight && onUpdateHeight(config.id, p.h as any)}
-                            className={`py-1 rounded-md font-bold transition-colors cursor-pointer text-center ${
-                              (!config.customHeight && p.h === undefined) || config.customHeight === p.h
-                                ? 'bg-blue-600 text-white'
-                                : 'bg-slate-100 dark:bg-zinc-800 text-slate-600 dark:text-zinc-300 hover:bg-slate-200'
-                            }`}
-                          >
-                            {p.label}
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
+                  </>
                 )}
               </div>
 
@@ -617,13 +693,12 @@ export const FigmaCardWrapper: React.FC<FigmaCardWrapperProps> = ({
       >
         <div
           onClickCapture={(e) => {
-            // BLOQUEIA CLIQUES INTERNOS DURANTE PERSONALIZAÇÃO PARA NUNCA ABRIR DRAWERS OU MODAIS
             if (isCustomizing) {
               e.preventDefault();
               e.stopPropagation();
             }
           }}
-          className={`h-full w-full flex flex-col flex-1 transition-all duration-200 card-fluid-container ${
+          className={`h-full w-full flex flex-col flex-1 transition-all duration-200 card-fluid-container overflow-hidden min-w-0 max-w-full ${
             activeSpan <= 3
               ? 'card-xs text-[11px] p-0.5'
               : activeSpan <= 5

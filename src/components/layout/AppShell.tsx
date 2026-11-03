@@ -126,10 +126,10 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
       />
 
       {/* 2. Container Principal à Direita da Sidebar */}
-      <div className="flex-1 flex flex-col min-w-0">
+      <div className="flex-1 flex flex-col min-w-0 overflow-x-clip">
         {/* Cabeçalho Fixo Superior com Glassmorphism */}
         <header className="sticky top-0 z-30 bg-[var(--bg-card)]/85 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800/80 transition-colors duration-200">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 h-18 flex items-center justify-between gap-3">
+          <div className="max-w-6xl mx-auto px-3 sm:px-6 h-18 flex items-center justify-between gap-2 sm:gap-3">
             {/* Botão Mobile para abrir navegação */}
             <div className="md:hidden flex items-center shrink-0">
               <button

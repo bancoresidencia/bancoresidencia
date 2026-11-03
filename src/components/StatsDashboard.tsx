@@ -62,6 +62,8 @@ import { useDashboardLayout } from '@/hooks/useDashboardLayout';
 import { DEFAULT_STATS_OVERVIEW_CARDS } from './dashboard/dashboardDefaults';
 import { FigmaCardWrapper } from './dashboard/FigmaCardWrapper';
 import { FigmaCustomizerBar } from './dashboard/FigmaCustomizerBar';
+import { FigmaSmartGuides } from './dashboard/FigmaSmartGuides';
+import { SmartGuidesState } from './dashboard/smartGuidesEngine';
 
 
 // Ícone anatômico de Ginecologia: Útero, colo uterino, trompas de Falópio e ovários bilaterais
@@ -304,12 +306,22 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
   onNavigateToCadernoErros,
   user
 }) => {
-  const { mode, accentConfig } = useTheme();
+  const { mode, accentConfig, isDashboardCustomizing, setIsDashboardCustomizing, setCanCustomizeLayout } = useTheme();
+
+  // Sub-abas principais: Visão Geral | Especialidades | Raio-X de Erros
+  const [activeSubTab, setActiveSubTab] = useState<StatsSubTab>('overview');
+
+  // Registrar se a personalização de layout está disponível (apenas na aba Visão Geral)
+  useEffect(() => {
+    const isOverview = activeSubTab === 'overview';
+    setCanCustomizeLayout(isOverview);
+    return () => {
+      setCanCustomizeLayout(false);
+    };
+  }, [activeSubTab, setCanCustomizeLayout]);
 
   // Hook de Personalização Estilo Figma (Aba Visão Geral)
   const {
-    isCustomizing: isCustomizingOverview,
-    setIsCustomizing: setIsCustomizingOverview,
     selectedCardId: selectedStatsCardId,
     setSelectedCardId: setSelectedStatsCardId,
     visibleCards: visibleOverviewCards,
@@ -324,9 +336,13 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
     autoConformLayout: autoConformStatsLayout,
   } = useDashboardLayout('bancoresidencia_layout_stats', DEFAULT_STATS_OVERVIEW_CARDS);
 
+  // Sincronizar o estado de customização da aba Visão Geral com o ThemeContext
+  const isCustomizingOverview = Boolean(isDashboardCustomizing && activeSubTab === 'overview');
+  const setIsCustomizingOverview = setIsDashboardCustomizing;
 
-  // Sub-abas principais: Visão Geral | Especialidades | Raio-X de Erros
-  const [activeSubTab, setActiveSubTab] = useState<StatsSubTab>('overview');
+  // Estado das Guias Pontilhadas (Smart Guides) e Vãos Livres Estilo Figma
+  const [smartGuidesState, setSmartGuidesState] = useState<SmartGuidesState>({ guides: [] });
+  const gridContainerRef = useRef<HTMLDivElement>(null);
 
   // Controle de expansão da tabela sanfona de especialidades e legenda (Imagem 3)
   const [expandedAreas, setExpandedAreas] = useState<string[]>([]);
@@ -1422,7 +1438,20 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
           ABA 1: VISÃO GERAL (4 KPIS + GRÁFICO DE LINHAS DIÁRIO + ÁREAS/TEMAS)
       ========================================================================== */}
       {activeSubTab === 'overview' && (
-        <div className="space-y-6 animate-in fade-in duration-200">
+        <div
+          className={`space-y-6 animate-in fade-in duration-200 transition-all duration-300 ${isCustomizingOverview ? "canvas-grid-quadriculado" : ""}`}
+          onClick={(e) => {
+            const target = e.target as HTMLElement;
+            if (
+              isCustomizingOverview &&
+              !target.closest('[data-card-id]') &&
+              !target.closest('.figma-control') &&
+              !target.closest('.figma-popover')
+            ) {
+              setSelectedStatsCardId(null);
+            }
+          }}
+        >
           {/* Barra Flutuante de Personalização Estilo Figma */}
           <FigmaCustomizerBar
             isCustomizing={isCustomizingOverview}
@@ -1431,7 +1460,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
               if (isCustomizingOverview) {
                 autoConformStatsLayout();
               }
-              setIsCustomizingOverview((prev) => !prev);
+              setIsDashboardCustomizing(false);
             }}
             onRestoreDefaults={restoreOverviewDefaults}
             hiddenCards={hiddenOverviewCards}
@@ -1439,8 +1468,37 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
             onDeselect={() => setSelectedStatsCardId(null)}
           />
 
+          {/* Banner de Orientação do Modo Figma (Visão Geral) */}
+          {isCustomizingOverview && (
+            <div className="flex items-center justify-between px-4 py-2.5 bg-blue-500/10 border border-blue-500/30 rounded-2xl text-xs text-blue-600 dark:text-blue-400 animate-in fade-in duration-200">
+              <div className="flex items-center gap-2">
+                <Sparkles className="w-4 h-4 text-blue-500 animate-pulse shrink-0" />
+                <span>
+                  <strong>Personalização da Visão Geral Ativa:</strong> Clique em um card para selecionar, arraste no centro para mover e use as alças laterais ou botões de predefinição para redimensionar colunas e altura.
+                </span>
+              </div>
+              <button
+                type="button"
+                onClick={() => {
+                  autoConformStatsLayout();
+                  setIsDashboardCustomizing(false);
+                }}
+                className="px-3 py-1 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-bold text-[11px] shadow-xs cursor-pointer shrink-0 transition-colors"
+              >
+                Concluir
+              </button>
+            </div>
+          )}
+
           {/* Grid Principal Reorganizável Estilo Figma */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-5 auto-rows-auto grid-flow-dense items-stretch">
+          <div
+            ref={gridContainerRef}
+            className="grid grid-cols-1 md:grid-cols-12 gap-5 auto-rows-auto grid-flow-dense relative items-stretch"
+          >
+            {/* Guias Inteligentes de Alinhamento e Zonas de Encaixe Estilo Canva/Figma */}
+            {isCustomizingOverview && (
+              <FigmaSmartGuides guides={smartGuidesState.guides} />
+            )}
             {visibleOverviewCards.map((cardConfig) => {
               if (cardConfig.id === 'stats_kpi_volume') {
                 return (
@@ -1456,6 +1514,8 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     onMoveCard={moveOverviewCard}
                     onToggleVisibility={toggleOverviewVisibility}
                     onReorder={reorderOverviewCard}
+                    onSmartGuidesChange={setSmartGuidesState}
+                    allCardsConfig={visibleOverviewCards}
                   >
                     {/* Card 1: Volume Resolvido */}
             <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-5 flex flex-col justify-between relative overflow-hidden group hover:border-slate-400 dark:hover:border-zinc-700 transition-colors">
@@ -1503,6 +1563,8 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     onMoveCard={moveOverviewCard}
                     onToggleVisibility={toggleOverviewVisibility}
                     onReorder={reorderOverviewCard}
+                    onSmartGuidesChange={setSmartGuidesState}
+                    allCardsConfig={visibleOverviewCards}
                   >
                     {/* Card 2: Acertos Líquidos */}
             <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-5 flex flex-col justify-between relative overflow-hidden group hover:border-slate-400 dark:hover:border-zinc-700 transition-colors">
@@ -1547,6 +1609,8 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     onMoveCard={moveOverviewCard}
                     onToggleVisibility={toggleOverviewVisibility}
                     onReorder={reorderOverviewCard}
+                    onSmartGuidesChange={setSmartGuidesState}
+                    allCardsConfig={visibleOverviewCards}
                   >
                     {/* Card 3: Aproveitamento (com marcador de meta em 80%) */}
             <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-5 flex flex-col justify-between relative overflow-hidden group hover:border-slate-400 dark:hover:border-zinc-700 transition-colors">
@@ -1607,6 +1671,8 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     onMoveCard={moveOverviewCard}
                     onToggleVisibility={toggleOverviewVisibility}
                     onReorder={reorderOverviewCard}
+                    onSmartGuidesChange={setSmartGuidesState}
+                    allCardsConfig={visibleOverviewCards}
                   >
                     {/* Card 4: Ritmo Médio */}
             <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-5 flex flex-col justify-between relative overflow-hidden group hover:border-slate-400 dark:hover:border-zinc-700 transition-colors">
@@ -1652,6 +1718,8 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     onMoveCard={moveOverviewCard}
                     onToggleVisibility={toggleOverviewVisibility}
                     onReorder={reorderOverviewCard}
+                    onSmartGuidesChange={setSmartGuidesState}
+                    allCardsConfig={visibleOverviewCards}
                   >
                     {/* Gráfico de Evolução Diária (Barras Empilhadas + Tendência Suave) */}
           <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-5 sm:p-6 space-y-4">
@@ -1875,6 +1943,8 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     onMoveCard={moveOverviewCard}
                     onToggleVisibility={toggleOverviewVisibility}
                     onReorder={reorderOverviewCard}
+                    onSmartGuidesChange={setSmartGuidesState}
+                    allCardsConfig={visibleOverviewCards}
                   >
                     {/* Análise de Hábitos Diários, Cronobiologia e Gráfico de Horas */}
           <DailyHabitsAndHourlyExplorer

@@ -1,6 +1,6 @@
 'use client';
 
-import React, { createContext, useContext, useState, useEffect, useRef } from 'react';
+import React, { createContext, useContext, useState, useEffect, useRef, useCallback } from 'react';
 import { updateFavicon } from '@/utils/favicon';
 
 export type ThemeMode = 'dark' | 'light';
@@ -397,6 +397,8 @@ interface ThemeContextType {
   isDashboardCustomizing: boolean;
   setIsDashboardCustomizing: React.Dispatch<React.SetStateAction<boolean>>;
   toggleDashboardCustomizing: () => void;
+  canCustomizeLayout: boolean;
+  setCanCustomizeLayout: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
@@ -452,7 +454,22 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   const [accent, setAccentState] = useState<AccentColor>('blue');
   const [isMounted, setIsMounted] = useState<boolean>(false);
   const [isDashboardCustomizing, setIsDashboardCustomizing] = useState<boolean>(false);
-  const toggleDashboardCustomizing = () => setIsDashboardCustomizing((prev) => !prev);
+  const [canCustomizeLayout, setCanCustomizeLayoutState] = useState<boolean>(false);
+
+  const setCanCustomizeLayout = useCallback((value: React.SetStateAction<boolean>) => {
+    setCanCustomizeLayoutState((prev) => {
+      const next = typeof value === 'function' ? (value as (p: boolean) => boolean)(prev) : value;
+      if (!next) {
+        setIsDashboardCustomizing(false);
+      }
+      return next;
+    });
+  }, []);
+
+  const toggleDashboardCustomizing = () => {
+    if (!canCustomizeLayout) return;
+    setIsDashboardCustomizing((prev) => !prev);
+  };
 
   const isInitialMount = useRef(true);
 
@@ -591,7 +608,9 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         setAccent,
         isDashboardCustomizing,
         setIsDashboardCustomizing,
-        toggleDashboardCustomizing
+        toggleDashboardCustomizing,
+        canCustomizeLayout,
+        setCanCustomizeLayout
       }}
     >
       {children}

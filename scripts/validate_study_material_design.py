@@ -93,12 +93,11 @@ def test_design_system():
     else:
         print("  ✅ Barra de navegação de tópicos sticky com scroll spy presente")
 
-    # Check 9: Carrossel de pérolas / pontos-chave presente no leitor
-    has_carousel_title = 'Pontos-Chave das Provas' in reader_code or 'Pérolas de Alto Rendimento em Prova' in reader_code
-    if 'snap-x snap-mandatory' not in reader_code or not has_carousel_title:
-        errors.append("[CHECK-DESIGN-10] StudyMaterialReader não possui carrossel horizontal de pérolas/pontos-chave.")
+    # Check 9: Carrossel de pérolas presente no leitor
+    if 'snap-x snap-mandatory' not in reader_code or 'Pérolas de Alto Rendimento em Prova' not in reader_code:
+        errors.append("[CHECK-DESIGN-10] StudyMaterialReader não possui carrossel horizontal de pérolas.")
     else:
-        print("  ✅ Carrossel horizontal de Pontos-Chave das Provas implementado")
+        print("  ✅ Carrossel horizontal de Pérolas de Alto Rendimento implementado")
 
     # Check 10: Parser hierárquico de listas presente
     if 'item.level' not in reader_code:

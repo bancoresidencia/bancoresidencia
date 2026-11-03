@@ -299,15 +299,22 @@ export function useDashboardLayout(
     (cardId: string, direction: 'up' | 'down') => {
       setCards((prev) => {
         const sorted = [...prev].sort((a, b) => a.order - b.order);
-        const index = sorted.findIndex((c) => c.id === cardId);
-        if (index === -1) return prev;
+        const visible = sorted.filter((c) => c.isVisible !== false);
+        const visIndex = visible.findIndex((c) => c.id === cardId);
+        if (visIndex === -1) return prev;
 
-        const targetIndex = direction === 'up' ? index - 1 : index + 1;
-        if (targetIndex < 0 || targetIndex >= sorted.length) return prev;
+        const targetVisIndex = direction === 'up' ? visIndex - 1 : visIndex + 1;
+        if (targetVisIndex < 0 || targetVisIndex >= visible.length) return prev;
 
-        const temp = sorted[index];
-        sorted[index] = sorted[targetIndex];
-        sorted[targetIndex] = temp;
+        const targetCard = visible[targetVisIndex];
+        const cardIndex = sorted.findIndex((c) => c.id === cardId);
+        const targetSortedIndex = sorted.findIndex((c) => c.id === targetCard.id);
+        if (cardIndex === -1 || targetSortedIndex === -1) return prev;
+
+        const tempOrder = sorted[cardIndex].order;
+        sorted[cardIndex].order = sorted[targetSortedIndex].order;
+        sorted[targetSortedIndex].order = tempOrder;
+        sorted.sort((a, b) => a.order - b.order);
 
         const updated = sorted.map((c, idx) => ({ ...c, order: idx }));
         saveToStorage(updated);

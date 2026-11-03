@@ -199,7 +199,15 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   onStartTopicPractice,
   userAnswers
 }) => {
-  const { accentConfig, mode, isDashboardCustomizing, setIsDashboardCustomizing } = useTheme();
+  const { accentConfig, mode, isDashboardCustomizing, setIsDashboardCustomizing, setCanCustomizeLayout } = useTheme();
+
+  // Registrar disponibilidade de personalização de layout na tela de início
+  useEffect(() => {
+    setCanCustomizeLayout(true);
+    return () => {
+      setCanCustomizeLayout(false);
+    };
+  }, [setCanCustomizeLayout]);
 
   // Hook de Personalização de Layout Estilo Figma (Tamanho, Ordem e Visibilidade)
   const {
@@ -222,6 +230,10 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   const setIsCustomizing = setIsDashboardCustomizing;
 
   // Estado das Guias Pontilhadas (Smart Guides) e Vãos Livres Estilo Canva / Figma
+  const [isMounted, setIsMounted] = useState(false);
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
   const [smartGuidesState, setSmartGuidesState] = useState<SmartGuidesState>({ guides: [] });
   const gridContainerRef = useRef<HTMLDivElement>(null);
 
@@ -448,12 +460,15 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
   // Estatísticas e lista do acervo de Flashcards (FSRS)
   const flashcardsStats = React.useMemo(() => {
+    if (!isMounted) {
+      return { dueToday: 0, newCards: 0, review: 0, total: 0, desiredRetention: 90 };
+    }
     try {
       return flashcardsService.getStats();
     } catch {
       return { dueToday: 30, newCards: 20, review: 1, total: 31, desiredRetention: 90 };
     }
-  }, [activeCentralDrawer]);
+  }, [activeCentralDrawer, isMounted]);
 
   const flashcardsTodayList = React.useMemo(() => {
     try {
@@ -2862,6 +2877,26 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           </div>
                         </div>
                       </div>
+
+                      {/* Botão Personalizar Layout (Tela de Início) */}
+                      <button
+                        type="button"
+                        onClick={() => {
+                          if (isCustomizing) {
+                            autoConformLayout();
+                          }
+                          setIsCustomizing((prev) => !prev);
+                        }}
+                        title={isCustomizing ? "Concluir personalização do layout" : "Personalizar layout dos cards"}
+                        className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl border text-xs font-semibold transition-all cursor-pointer ${
+                          isCustomizing
+                            ? 'bg-blue-600 text-white border-blue-600 shadow-md ring-2 ring-blue-500/20'
+                            : 'bg-slate-50 dark:bg-zinc-900/60 border-slate-200/70 dark:border-zinc-800 text-slate-700 dark:text-zinc-200 hover:text-blue-600 dark:hover:text-blue-400 hover:border-blue-400'
+                        }`}
+                      >
+                        <SlidersHorizontal className="w-3.5 h-3.5 text-blue-500" />
+                        <span className="hidden sm:inline">{isCustomizing ? 'Concluir' : 'Layout'}</span>
+                      </button>
                     </div>
                   </div>
 
@@ -3725,8 +3760,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                             <div className="text-xs font-bold text-zinc-800 dark:text-zinc-200 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors truncate">
                               {cardConfig.colSpan <= 2 ? 'Cards' : 'Flashcards'}
                             </div>
-                            <div className="text-[10px] text-zinc-500 dark:text-zinc-400 truncate">
-                              {flashcardsStats.dueToday > 0 ? `${flashcardsStats.dueToday} para hoje` : 'Em dia • FSRS'}
+                            <div className="text-[10px] text-zinc-500 dark:text-zinc-400 truncate" suppressHydrationWarning>
+                              {isMounted ? (flashcardsStats.dueToday > 0 ? `${flashcardsStats.dueToday} para hoje` : 'Em dia • FSRS') : 'Flashcards • FSRS'}
                             </div>
                           </div>
                         </div>
@@ -4495,7 +4530,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
               >
                 {/* 3. RETOMADA DE ESTUDOS INTELIGENTE - SELETOR PRINCIPAL (IMAGEM 3 NO LUGAR DA IMAGEM 2) */}
                 <section className="w-full min-h-0 h-full flex flex-col justify-between space-y-3">
-                  <div className="flex items-center px-1">
+                  <div className="flex items-center px-1 min-w-0 max-w-full overflow-x-auto">
                     {/* Seletor em formato retangular em pílula (Estilo Imagem 3) */}
                     <div className="inline-flex p-1 bg-slate-100/90 dark:bg-[#0f1115] border border-slate-200/90 dark:border-zinc-800/90 rounded-xl items-center gap-1 shadow-xs overflow-x-auto max-w-full">
                       <button

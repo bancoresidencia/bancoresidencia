@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint src/",
     "test": "node --experimental-strip-types scripts/test-irt.ts && node --experimental-strip-types tests/questionService.test.ts",
+    "test:dashboard": "npx tsx tests/dashboard/run_all_dashboard_tests.ts",
     "test:irt": "node --experimental-strip-types scripts/test-irt.ts",
     "test:security": "node --experimental-strip-types tests/questionService.test.ts",
     "pull": "node scripts/safe-pull.mjs",

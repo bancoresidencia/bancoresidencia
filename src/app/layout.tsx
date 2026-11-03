@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Plus_Jakarta_Sans, Inter, Bebas_Neue } from "next/font/google";
 import "./globals.css";
 
@@ -56,8 +57,10 @@ export default function RootLayout({
     >
       <head>
         <meta name="google-site-verification" content="WcJXbqVmrkob5mCp0ref0IbF1ANcT76ldFjlicER4cQ" />
-        <script src="https://accounts.google.com/gsi/client" async defer></script>
-        <script
+        <Script id="google-gsi-client" src="https://accounts.google.com/gsi/client" strategy="afterInteractive" />
+        <Script
+          id="banco-theme-init"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               (function() {

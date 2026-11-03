@@ -89,12 +89,15 @@ O resumo não ensina o que o livro quer, mas o que as bancas cobram:
 
 A estrutura gerada deve respeitar rigorosamente as seguintes diretrizes:
 
-### 1. Largura Harmonizada
-* Container principal expandido (`w-full max-w-7xl mx-auto`), alinhado aos dashboards e leitores da plataforma.
+### 1. Dinamismo de Seções & Liberdade Orgânica de Extensão (Linhas Livres)
+* **Extensão Orgânica Ditada pela Complexidade Clínica:** Não existe um teto artificial ou quantidade fixa de linhas. Temas com fisiopatologia ampla, múltiplas condutas, estadiamentos e esquemas farmacológicos (ex.: STFF, HPP, Miomatose) expandem livremente (variando tipicamente entre 120 e 300+ linhas). Temas conceituais ou com foco cirúrgico delimitado mantêm síntese objetiva sem preenchimento artificial.
+* **Quantidade Dinâmica de Seções (5 a 9 seções clínicas):** O resumo não se prende a um formulário rígido de 4 caixas. A quantidade de seções `## ` é calibrada dinamicamente conforme as necessidades didáticas do tema (ex.: fisiopatologia, diagnóstico diferencial, estadiamento, farmacoterapia, conduta no parto e complicações).
 
-### 2. Topo Limpo e Sem Duplicidade
+### 2. Topo Limpo & Regra de Titulação Médica Semântica Obrigatória
 * O cabeçalho do componente já renderiza o título oficial (`material.title`). O corpo do markdown **não deve conter título H1**.
-* **Barra de Tópicos Sticky Flutuante:** Fixa logo abaixo do header principal (`top-[4.5rem] z-20`) com auto-scroll suave centralizando o tópico ativo via Scroll Spy. Sem scrollbars nativas visíveis.
+* **Proibição Expressa de Meta-Títulos Abstratos:** É terminantemente proibido utilizar títulos como `"## 2. Definições Modernas"`, `"## 3. Matriz 2x2 & Classificações"` ou `"## 4. Algoritmo Decisório"`.
+* **Titulação Clínica Obrigatória:** Cada cabeçalho `## ` deve conter o termo médico real da patologia, sinal, estadiamento ou conduta (ex.: `"## 2. Ultrassonografia do 1º Trimestre: Sinal do Lambda vs. Sinal do T"`, `"## 3. Classificação de Quintero (Estádios I a V) & Parâmetros de Doppler"`), pois **esses títulos geram automaticamente as pílulas de navegação rápida da barra flutuante (`sectionPills`)**.
+* **Barra de Tópicos Sticky Flutuante:** Fixa logo abaixo do header principal (`top-[4.5rem] z-20`) com auto-scroll suave centralizando o tópico ativo via Scroll Spy com a cor de acento do usuário (`accentConfig.primaryHex`). Sem scrollbars nativas visíveis.
 
 ### 3. Raio-X com Donut Recharts Blindado
 * Recharts Donut (5 colunas) + Barras de progresso e prioridade (7 colunas).
@@ -104,34 +107,57 @@ A estrutura gerada deve respeitar rigorosamente as seguintes diretrizes:
   * `isAnimationActive=false` e `pointer-events-auto` restaurados em `onAnimationEnd`.
 * Zero tooltips escuros flutuantes sobre o gráfico.
 * **Lock de Seleção:** Clique no setor ou linha fixa o setor ativo (100% de opacidade) e clareia os inativos (28% de opacidade), exibindo card inferior horizontal de largura total com a explicação direta de prova.
+* **Sanitização de Formatação:** O texto explicativo do setor ativo deve obrigatoriamente processar marcações ricas (ex.: conversão de `**termo**` em negrito real `<strong>`), nunca exibindo asteriscos brutos ao estudante.
 * Rolagem vertical ergonômica ativada para listas com mais de 5 tópicos (`max-h-[310px] overflow-y-auto`).
 
-### 4. Esquema Multicolunas em Matriz 2x2
-* Para esquemas com 4 elementos (ex.: 4 Ts da HPP, classificações topográficas), utilizar obrigatoriamente **Matriz 2x2 (2 colunas e 2 linhas)** (`grid-cols-1 md:grid-cols-2`).
-* Proibido espremer em 4 colunas verticais (`grid-cols-4`).
-* Altura unificada de cabeçalho (`min-h-[46px]`) com microcopy objetivo (máximo 2 a 3 tópicos por quadrante).
+### 4. Criação de Esquemas Visuais Nativos em Cards & Tabelas Clínicas
+* **Esquemas Visuais Nativos em Cards (Polaridades e Matrizes):**
+  * Para entidades com polaridades clínicas opostas (ex.: *Fatores de Risco vs. Fatores de Proteção*) ou entidades quaternárias (ex.: *Regra dos 4 Ts da HPP* ou *Cronologia da Clivagem Monozigótica*), utilizar a disposição em **Matriz 2x2 (2 colunas e 2 linhas)** (`grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5`).
+  * Proibido espremer em 4 colunas verticais estreitas (`grid-cols-4`).
+  * Cada card esquemático possui cabeçalho com ícone temático, microcopy telegráfica de 2 a 3 itens e caixa inferior de pegadinha (`🚫 Prova:`, `⚠️ Prova:` ou `✓ Prova:`).
+* **Tabelas Clínicas e Anatômicas Estruturadas (Markdown Nativo):**
+  * Para estadiamentos extensos (ex.: *Classificação FIGO 0 a 8 e Híbridos*, *Escore STEPW de Lasmar*, *Estadiamento de Quintero* ou *Tabelas de Fármacos e Doses*), utilizar tabelas nativas de markdown com alinhamento explícito (`| :--- | :---: | :--- |`).
+  * O leitor estiliza automaticamente a tabela com cantos arredondados, tipografia de alta legibilidade, bordas sutis e fundo contrastante compatível com temas claro e escuro.
 
 ### 5. Algoritmo Decisório e Passo a Passo Sintético
-* **Passo a Passo Obrigatório:** Precedendo qualquer diagrama ou fluxograma, apresentar 3 a 5 passos numerados objetivos.
+* **Passo a Passo Obrigatório:** Precedendo qualquer diagrama ou fluxograma, apresentar de 3 a 5 passos numerados objetivos.
 * **Ponto Principal Imediato:** Cada passo abre com a regra de ouro em negrito:  
   `**[Ponto Principal]:** Conduta mandatória...`
-* **Proibição Estrita:** Zero blocos escuros de Mermaid (` ```mermaid `) e zero SVGs artificiais (`data:image/svg+xml`).
+* **Proibição Estrita:** Zero blocos escuros de Mermaid (` ```mermaid `) e zero SVGs artificiais (`data:image/svg+xml`). Toda lógica de fluxo deve ser texto estruturado ou componente nativo React.
 
 ### 6. Caixas de Aviso e Armadilhas de Prova
 * Destaque para pegadinhas clássicas de bancas examinadoras (ENARE, USP, UNICAMP):
   > [!WARNING] Armadilha Clássica de Prova: [Descrição da pegadinha de prova]
 
-### 7. Fórmulas Médicas
-* Renderização em KaTeX centralizado elegante:
+### 7. Fórmulas Médicas & Operadores de Implicação Clínica
+* Renderização em KaTeX centralizado elegante para fórmulas fracionárias:
   $$\text{Índice de Choque (SI)} = \frac{\text{FC (bpm)}}{\text{PAS (mmHg)}}$$
+* Suporte nativo a operadores de implicação e equivalência clínica em cards centrais destacados:
+  * `\implies` ($\implies$), `\iff` ($\iff$), `\to` ($\rightarrow$), `\ge` ($\ge$), `\le` ($\le$).
+  * Notações clínicas de corte (ex.: $\text{MBV} < 2\text{ cm} \implies \text{Oligoâmnio}$) renderizam em caixas matemáticas centralizadas com tipografia em destaque, nunca vazando código cru.
 
 ### 8. Carrossel de Pontos-Chave
 * Localizado imediatamente antes das referências oficiais.
 * Loop circular infinito com harmonização cromática dinâmica (`accentConfig.primaryHex`).
+* Navegação acessível por botões `<` `>`, setas do teclado ($\leftarrow$ / $\rightarrow$) e touch swipe em dispositivos móveis.
 * Zero ruído de rodapé ou numeração redundante dentro dos cards.
 
-### 9. Posicionamento de Referências Oficiais
+### 9. Catálogo de Arquiteturas Interativas Especializadas (On-Demand)
+Quando a complexidade intrínseca do tema médico exigir interação ativa além do Donut básico, o resumo aciona componentes paramétricos especializados:
+1. `<ClinicalScoreCalculator />`: Calculadora de escores prognósticos e conduta imediata (Bishop, Quintero, Wells, CURB-65, Alvarado).
+2. `<DifferentialDiagnosisTabs />`: Abas comparativas dinâmicas para patologias com apresentações semelhantes (STFF vs. TAPS vs. TRAP vs. CIUR; DPP vs. Placenta Prévia).
+3. `<InteractiveDecisionBranch />`: Árvore de decisão clínica bifurcada por condição de gravidade ou estabilidade (ex.: via de parto conforme apresentações combinadas).
+4. `<PharmacotherapyProtocolCard />`: Interruptores de perfil clínico para cálculo de doses, infusões contínuas e antídotos.
+5. `<ClinicalReportAnalyzer />`: Simulador interativo de laudos de exames (gasometria, Doppler fetal, cardiotocografia).
+6. `<ResidencySpotlightChallenge />`: Micro-desafio interativo com 1 questão clássica real e revelação imediata de gabarito comentado.
+
+### 10. Isolamento Estrito de Focos Clínicos no Leitor
+* A associação entre foco e material de estudo em [`FlashcardsView.tsx`](file:///c:/bancoresidencia/bancoresidencia/src/components/FlashcardsView.tsx) deve ocorrer estritamente pelo campo `m.focus` (`normalizeText(m.focus) === normalizeText(focoSelecionado)`).
+* É expressamente vedado usar o tema como critério amplo de busca inicial, garantindo que temas com múltiplos focos (ex.: 4 focos de Gestação Múltipla) abram 4 resumos clínicos independentes (`mat-gem-01` a `mat-gem-04`).
+
+### 11. Posicionamento de Referências Oficiais
 * Exclusivamente no final do resumo sob a seção `## Diretrizes Oficiais & Consensos de Referência`.
+* Proibido posicionar referências no topo do resumo.
 
 ---
 

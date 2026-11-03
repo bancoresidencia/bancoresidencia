@@ -485,12 +485,16 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
     }
 
     if (mode === 'resumos') {
-      const existingMat = allStudyMaterials.find(
-        (m) =>
-          normalizeText(m.focus).includes(normFoco) ||
-          normFoco.includes(normalizeText(m.focus)) ||
-          (m.theme && normalizeText(m.theme).includes(normTema))
-      );
+      const existingMat =
+        allStudyMaterials.find(
+          (m) =>
+            normalizeText(m.focus) === normFoco ||
+            normalizeText(m.focus).includes(normFoco) ||
+            normFoco.includes(normalizeText(m.focus))
+        ) ||
+        allStudyMaterials.find(
+          (m) => m.theme && normalizeText(m.theme) === normTema && !m.focus
+        );
       if (existingMat) {
         if (normalizeText(existingMat.title).includes(normalizedQuery)) return true;
         if (normalizeText(existingMat.summarySnippet).includes(normalizedQuery)) return true;
@@ -725,12 +729,16 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
 
   // Abrir ou Gerar Resumo de um Foco
   const handleOpenFocoSummary = (specName: string, temaName: string, focoName: string) => {
-    const existingMat = allStudyMaterials.find(
-      (m) =>
-        normalizeText(m.focus).includes(normalizeText(focoName)) ||
-        normalizeText(focoName).includes(normalizeText(m.focus)) ||
-        (m.theme && normalizeText(m.theme).includes(normalizeText(temaName)))
-    );
+    const existingMat =
+      allStudyMaterials.find(
+        (m) =>
+          normalizeText(m.focus) === normalizeText(focoName) ||
+          normalizeText(m.focus).includes(normalizeText(focoName)) ||
+          normalizeText(focoName).includes(normalizeText(m.focus))
+      ) ||
+      allStudyMaterials.find(
+        (m) => m.theme && normalizeText(m.theme) === normalizeText(temaName) && !m.focus
+      );
 
     if (existingMat) {
       handleOpenMaterial(existingMat);
@@ -1331,12 +1339,16 @@ O foco clínico **${focoName}** integra o tema de **${temaName}** em **${specNam
                               <div className="p-3 sm:p-5 border-t border-zinc-100 dark:border-zinc-800/80 bg-zinc-50/50 dark:bg-zinc-900/25">
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3.5 sm:gap-4">
                                   {tem.matchingFocos.map((foc) => {
-                                    const existingMat = allStudyMaterials.find(
-                                      (m) =>
-                                        normalizeText(m.focus).includes(normalizeText(foc.foco)) ||
-                                        normalizeText(foc.foco).includes(normalizeText(m.focus)) ||
-                                        (m.theme && normalizeText(m.theme).includes(normalizeText(tem.tema)))
-                                    );
+                                    const existingMat =
+                                      allStudyMaterials.find(
+                                        (m) =>
+                                          normalizeText(m.focus) === normalizeText(foc.foco) ||
+                                          normalizeText(m.focus).includes(normalizeText(foc.foco)) ||
+                                          normalizeText(foc.foco).includes(normalizeText(m.focus))
+                                      ) ||
+                                      allStudyMaterials.find(
+                                        (m) => m.theme && normalizeText(m.theme) === normalizeText(tem.tema) && !m.focus
+                                      );
 
                                     const focoCards = getCardsForFoco(
                                       spec.name,

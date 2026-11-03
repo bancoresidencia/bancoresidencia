@@ -5,57 +5,128 @@ export interface SmartGuidesState {
   guides: AlignmentGuide[];
 }
 
-/**
- * Motor de Cálculo em Tempo Real de Guias Pontilhadas (Smart Guides)
- * Estilo Figma / Canva com detecção de alinhamento em 60fps
- */
-export function calculateSmartGuides(
-  activeCardId: string,
-  containerElem: HTMLElement | null,
-  cardsConfig: DashboardCardConfig[]
-): SmartGuidesState {
-  if (!containerElem) return { guides: [] };
+export interface StaticCardRectSnapshot {
+  id: string;
+  left: number;
+  right: number;
+  top: number;
+  bottom: number;
+  centerX: number;
+  centerY: number;
+  width: number;
+  height: number;
+}
 
-  const containerRect = containerElem.getBoundingClientRect();
-  const activeCardElem = containerElem.querySelector(`[data-card-id="${activeCardId}"]`) as HTMLElement | null;
-  if (!activeCardElem) return { guides: [] };
-
-  const activeRect = activeCardElem.getBoundingClientRect();
-
-  // Coordenadas relativas do card ativo
-  const a = {
-    left: activeRect.left - containerRect.left,
-    right: activeRect.right - containerRect.left,
-    top: activeRect.top - containerRect.top,
-    bottom: activeRect.bottom - containerRect.top,
-    centerX: (activeRect.left + activeRect.right) / 2 - containerRect.left,
-    centerY: (activeRect.top + activeRect.bottom) / 2 - containerRect.top,
-    width: activeRect.width,
-    height: activeRect.height
+export interface StaticGuidesSnapshot {
+  containerRect: {
+    left: number;
+    top: number;
+    right: number;
+    bottom: number;
+    width: number;
+    height: number;
   };
+  staticCards: StaticCardRectSnapshot[];
+}
 
+/**
+ * Cria snapshot geométrico dos cards estacionários no pointerdown
+ * Evita forçar reflow (layout thrashing) em 120fps durante o pointermove
+ */
+export function createGuidesSnapshot(
+  containerElem: HTMLElement | null,
+  activeCardId: string
+): StaticGuidesSnapshot | null {
+  if (!containerElem) return null;
+  const containerRect = containerElem.getBoundingClientRect();
   const otherCardElems = Array.from(
     containerElem.querySelectorAll(`[data-card-id]:not([data-card-id="${activeCardId}"])`)
   ) as HTMLElement[];
 
+  const staticCards: StaticCardRectSnapshot[] = [];
+  for (const otherElem of otherCardElems) {
+    const id = otherElem.dataset.cardId;
+    if (!id) continue;
+    const r = otherElem.getBoundingClientRect();
+    staticCards.push({
+      id,
+      left: r.left - containerRect.left,
+      right: r.right - containerRect.left,
+      top: r.top - containerRect.top,
+      bottom: r.bottom - containerRect.top,
+      centerX: (r.left + r.right) / 2 - containerRect.left,
+      centerY: (r.top + r.bottom) / 2 - containerRect.top,
+      width: r.width,
+      height: r.height
+    });
+  }
+
+  return {
+    containerRect: {
+      left: containerRect.left,
+      top: containerRect.top,
+      right: containerRect.right,
+      bottom: containerRect.bottom,
+      width: containerRect.width,
+      height: containerRect.height
+    },
+    staticCards
+  };
+}
+
+/**
+ * Motor de Cálculo em Tempo Real de Guias Pontilhadas (Smart Guides)
+ * Estilo Figma / Canva com detecção de alinhamento em 120fps
+ */
+export function calculateSmartGuides(
+  activeCardId: string,
+  containerElem: HTMLElement | null,
+  cardsConfig: DashboardCardConfig[],
+  snapshot?: StaticGuidesSnapshot | null
+): SmartGuidesState {
+  if (!containerElem) return { guides: [] };
+
+  const activeCardElem = containerElem.querySelector(`[data-card-id="${activeCardId}"]`) as HTMLElement | null;
+  if (!activeCardElem) return { guides: [] };
+
+  const activeRect = activeCardElem.getBoundingClientRect();
+  const cRect = snapshot ? snapshot.containerRect : containerElem.getBoundingClientRect();
+
+  // Coordenadas relativas do card ativo
+  const a = {
+    left: activeRect.left - cRect.left,
+    right: activeRect.right - cRect.left,
+    top: activeRect.top - cRect.top,
+    bottom: activeRect.bottom - cRect.top,
+    centerX: (activeRect.left + activeRect.right) / 2 - cRect.left,
+    centerY: (activeRect.top + activeRect.bottom) / 2 - cRect.top,
+    width: activeRect.width,
+    height: activeRect.height
+  };
+
+  const otherCards = snapshot
+    ? snapshot.staticCards
+    : Array.from(containerElem.querySelectorAll(`[data-card-id]:not([data-card-id="${activeCardId}"])`)).map((el) => {
+        const otherElem = el as HTMLElement;
+        const r = otherElem.getBoundingClientRect();
+        return {
+          id: otherElem.dataset.cardId || '',
+          left: r.left - cRect.left,
+          right: r.right - cRect.left,
+          top: r.top - cRect.top,
+          bottom: r.bottom - cRect.top,
+          centerX: (r.left + r.right) / 2 - cRect.left,
+          centerY: (r.top + r.bottom) / 2 - cRect.top,
+          width: r.width,
+          height: r.height
+        };
+      });
+
   const guides: AlignmentGuide[] = [];
   const TOLERANCE = 7; // Tolerância de snap em pixels
 
-  for (const otherElem of otherCardElems) {
-    const otherId = otherElem.dataset.cardId;
-    if (!otherId) continue;
-
-    const otherRect = otherElem.getBoundingClientRect();
-    const o = {
-      left: otherRect.left - containerRect.left,
-      right: otherRect.right - containerRect.left,
-      top: otherRect.top - containerRect.top,
-      bottom: otherRect.bottom - containerRect.top,
-      centerX: (otherRect.left + otherRect.right) / 2 - containerRect.left,
-      centerY: (otherRect.top + otherRect.bottom) / 2 - containerRect.top,
-      width: otherRect.width,
-      height: otherRect.height
-    };
+  for (const o of otherCards) {
+    if (!o.id) continue;
 
     // 1. ALINHAMENTOS HORIZONTAIS (Y)
     // Topo com Topo

@@ -26,6 +26,7 @@ import { LasmarStepwCard } from './study-material/LasmarStepwCard';
 import { HppRecurrenceStatsCard } from './study-material/HppRecurrenceStatsCard';
 import { HppFourTsCard } from './study-material/HppFourTsCard';
 import { HppGoldenHourAlgorithmCard } from './study-material/HppGoldenHourAlgorithmCard';
+import { GemelaridadeRecurrenceStatsCard } from './study-material/GemelaridadeRecurrenceStatsCard';
 
 interface StudyMaterialReaderProps {
   material: StudyMaterialItem;
@@ -64,6 +65,18 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
       .replace(/\\ge\b|\\geq\b/g, '≥')
       .replace(/\\approx\b/g, '≈')
       .replace(/\\to\b|\\rightarrow\b/g, '→')
+      .replace(/\\implies\b|\\Longrightarrow\b|\\Rightarrow\b/g, '⟹')
+      .replace(/\\iff\b|\\Longleftrightarrow\b|\\Leftrightarrow\b/g, '⟺')
+      .replace(/\\quad\b|\\qquad\b/g, '   ')
+      .replace(/\\lor\b/g, ' ou ')
+      .replace(/\\land\b/g, ' e ')
+      .replace(/\{,\}/g, ',')
+      .replace(/\\cdot\b/g, '·')
+      .replace(/\\neq\b/g, '≠')
+      .replace(/\\infty\b/g, '∞')
+      .replace(/\\Delta\b/g, 'Δ')
+      .replace(/\\left[([{|.]/g, '')
+      .replace(/\\right[)\]}|.]/g, '')
       .replace(/\\downarrow\b/g, '↓')
       .replace(/\\uparrow\b/g, '↑')
       .replace(/\\pm\b/g, '±')
@@ -175,7 +188,7 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div>
             <h3 className="font-heading font-black text-sm sm:text-base text-zinc-900 dark:text-zinc-100">
-              Pontos-Chave das Provas
+              Pérolas de Alto Rendimento em Prova
             </h3>
             <p className="text-[11px] text-zinc-500 dark:text-zinc-400">
               Regras de ouro e armadilhas cruciais das bancas examinadoras (use as setas ← / → do teclado)
@@ -357,6 +370,26 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
         fullCode.includes('ALGORITMO_GOLDEN_HOUR')
       ) {
         elements.push(<HppGoldenHourAlgorithmCard key={`hpp-golden-${key}`} />);
+      } else if (
+        lang === 'gem-stats-corionicidade' ||
+        fullCode.includes('Recorrência Temática de Classificação e Diagnóstico de Gemelares')
+      ) {
+        elements.push(<GemelaridadeRecurrenceStatsCard key={`gem-cor-${key}`} topic="corionicidade" />);
+      } else if (
+        lang === 'gem-stats-complicacoes' ||
+        fullCode.includes('Recorrência Temática de Complicações da Gemelaridade')
+      ) {
+        elements.push(<GemelaridadeRecurrenceStatsCard key={`gem-comp-${key}`} topic="complicacoes" />);
+      } else if (
+        lang === 'gem-stats-stff' ||
+        fullCode.includes('Recorrência Temática de Síndrome da Transfusão Feto-Fetal')
+      ) {
+        elements.push(<GemelaridadeRecurrenceStatsCard key={`gem-stff-${key}`} topic="stff" />);
+      } else if (
+        lang === 'gem-stats-parto' ||
+        fullCode.includes('Recorrência Temática de Parto em Gestação Múltipla')
+      ) {
+        elements.push(<GemelaridadeRecurrenceStatsCard key={`gem-parto-${key}`} topic="parto" />);
       } else if (
         lang === 'exam-stats' ||
         fullCode.includes('Recorrência Estatística em Provas') ||
@@ -636,6 +669,19 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
             );
             return;
           }
+        } else if (trimmed.startsWith("$") && trimmed.endsWith("$")) {
+          const formatted = formatMedicalMath(mathContent);
+          elements.push(
+            <div
+              key={`math-block-${index}`}
+              className="my-4 p-4 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200/90 dark:border-zinc-800 shadow-xs flex items-center justify-center text-center not-prose"
+            >
+              <span className="font-heading font-black text-xs sm:text-sm text-zinc-900 dark:text-zinc-100">
+                {formatted}
+              </span>
+            </div>
+          );
+          return;
         }
       }
 
