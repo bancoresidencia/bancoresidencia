@@ -33,6 +33,7 @@ import {
 } from 'lucide-react';
 import { StudentAmbassadorSettings } from '@/components/StudentAmbassadorSettings';
 import { getAmbassadorStats } from '@/config/ambassadorConfig';
+import { getAccountTargetExam, saveAccountTargetExam } from '@/utils/userTargetExam';
 
 interface StudentProfileSettingsProps {
   fontSize: 'xs' | 'sm' | 'base' | 'lg' | 'xl';
@@ -77,17 +78,17 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
 
   // Configuração da Prova Alvo e Reta Final (Countdown)
   const [targetExam, setTargetExam] = useState<string>(() => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem('user_target_exam_name') || 'ENARE 2026';
-    }
-    return 'ENARE 2026';
+    return getAccountTargetExam(user).examName;
   });
   const [targetExamDate, setTargetExamDate] = useState<string>(() => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem('user_target_exam_date') || '2026-11-01';
-    }
-    return '2026-11-01';
+    return getAccountTargetExam(user).examDate;
   });
+
+  // Re-sincroniza caso o perfil do usuário seja atualizado
+  React.useEffect(() => {
+    if (user?.targetExamName) setTargetExam(user.targetExamName);
+    if (user?.targetExamDate) setTargetExamDate(user.targetExamDate);
+  }, [user?.targetExamName, user?.targetExamDate]);
 
   const examCountdown = React.useMemo(() => {
     try {
@@ -109,6 +110,10 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
     if (typeof window !== 'undefined') {
       localStorage.setItem('user_target_exam_name', nameVal);
       localStorage.setItem('user_target_exam_date', dateVal);
+    }
+    saveAccountTargetExam(user?.id, nameVal, dateVal);
+    if (user?.id) {
+      updateProfile({ targetExamName: nameVal, targetExamDate: dateVal });
     }
     setStatusMsg({ type: 'success', text: `Prova alvo configurada para ${nameVal}!` });
   };
@@ -175,7 +180,9 @@ export const StudentProfileSettings: React.FC<StudentProfileSettingsProps> = ({
         graduationYear,
         dailyGoal,
         phone,
-        state
+        state,
+        targetExamName: targetExam,
+        targetExamDate: targetExamDate
       });
 
       if (res.success) {

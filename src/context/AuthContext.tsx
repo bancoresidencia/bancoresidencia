@@ -78,10 +78,33 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         undefined;
 
       const targetExamDate =
-        (supabaseUser.user_metadata?.target_exam_date as string) ||
         ((profile as Record<string, unknown>)?.target_exam_date as string) ||
+        (supabaseUser.user_metadata?.target_exam_date as string) ||
         (typeof window !== 'undefined' ? localStorage.getItem(`user_target_exam_date_${supabaseUser.id}`) : null) ||
         undefined;
+
+      const preferences = ((profile as Record<string, unknown>)?.preferences as Record<string, unknown>) || undefined;
+
+      if (typeof window !== 'undefined') {
+        if (targetExamName && targetExamDate) {
+          localStorage.setItem(`user_target_exam_name_${supabaseUser.id}`, targetExamName);
+          localStorage.setItem(`user_target_exam_date_${supabaseUser.id}`, targetExamDate);
+          localStorage.setItem('user_target_exam_name', targetExamName);
+          localStorage.setItem('user_target_exam_date', targetExamDate);
+        }
+        if (preferences) {
+          if (preferences.themeMode === 'dark' || preferences.themeMode === 'light') {
+            localStorage.setItem('banco_theme_mode', preferences.themeMode as string);
+          }
+          if (typeof preferences.accentColor === 'string') {
+            localStorage.setItem('banco_accent_color', preferences.accentColor as string);
+          }
+          if (typeof preferences.fontSize === 'string') {
+            localStorage.setItem('bancoresidencia_question_font_size', preferences.fontSize as string);
+          }
+          window.dispatchEvent(new CustomEvent('bancoresidencia_preferences_synced', { detail: preferences }));
+        }
+      };
 
       const name =
         profile?.name ||
@@ -136,6 +159,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         state: profile?.state || '',
         targetExamName,
         targetExamDate,
+        preferences,
         subscriptionPlan,
         subscriptionStatus,
         subscriptionDuration,
@@ -386,6 +410,9 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       if (data.phone !== undefined) updatePayload.phone = data.phone;
       if (data.state !== undefined) updatePayload.state = data.state;
       if (data.avatarUrl !== undefined) updatePayload.avatar_url = data.avatarUrl;
+      if (data.targetExamName !== undefined) updatePayload.target_exam_name = data.targetExamName;
+      if (data.targetExamDate !== undefined) updatePayload.target_exam_date = data.targetExamDate;
+      if (data.preferences !== undefined) updatePayload.preferences = data.preferences;
 
       if (Object.keys(updatePayload).length > 0) {
         const { error } = await supabase
@@ -404,8 +431,14 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         if (data.targetExamDate) metadataUpdate.target_exam_date = data.targetExamDate;
         await supabase.auth.updateUser({ data: metadataUpdate }).catch(() => {});
         if (typeof window !== 'undefined') {
-          if (data.targetExamName) localStorage.setItem(`user_target_exam_name_${user.id}`, data.targetExamName);
-          if (data.targetExamDate) localStorage.setItem(`user_target_exam_date_${user.id}`, data.targetExamDate);
+          if (data.targetExamName) {
+            localStorage.setItem(`user_target_exam_name_${user.id}`, data.targetExamName);
+            localStorage.setItem('user_target_exam_name', data.targetExamName);
+          }
+          if (data.targetExamDate) {
+            localStorage.setItem(`user_target_exam_date_${user.id}`, data.targetExamDate);
+            localStorage.setItem('user_target_exam_date', data.targetExamDate);
+          }
           window.dispatchEvent(new Event('bancoresidencia_target_exam_changed'));
         }
       }

@@ -1,3 +1,10 @@
+export interface UserPreferences {
+  themeMode?: 'dark' | 'light';
+  accentColor?: 'blue' | 'green' | 'orange' | 'purple' | 'red' | 'rose' | 'neutral';
+  fontSize?: 'xs' | 'sm' | 'base' | 'lg' | 'xl';
+  [key: string]: unknown;
+}
+
 export interface UserAccount {
   id: string;
   name: string;
@@ -19,6 +26,7 @@ export interface UserAccount {
   createdAt: string;
   targetExamName?: string;
   targetExamDate?: string;
+  preferences?: UserPreferences;
   referralCode?: string;
 }
 
@@ -40,5 +48,6 @@ export interface UpdateProfileData {
   state?: string;
   targetExamName?: string;
   targetExamDate?: string;
+  preferences?: UserPreferences;
   referralCode?: string;
 }

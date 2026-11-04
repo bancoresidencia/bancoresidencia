@@ -2,6 +2,7 @@
 
 import React, { createContext, useContext, useState, useEffect, useRef, useCallback } from 'react';
 import { updateFavicon } from '@/utils/favicon';
+import { createClient } from '@/lib/supabase/client';
 
 export type ThemeMode = 'dark' | 'light';
 export type AccentColor = 'blue' | 'green' | 'orange' | 'purple' | 'red' | 'rose' | 'neutral';
@@ -575,6 +576,57 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     }
   }, [mode, accent]);
 
+// Sincronização em background com as preferências no perfil do Supabase
+  const syncPreferencesToCloud = useCallback(async (newMode: ThemeMode, newAccent: AccentColor) => {
+    try {
+      const supabase = createClient();
+      const { data: { session } } = await supabase.auth.getSession();
+      if (session?.user?.id) {
+        const { data: profile } = await supabase
+          .from('profiles')
+          .select('preferences')
+          .eq('id', session.user.id)
+          .maybeSingle();
+
+        const currentPrefs = (profile?.preferences as Record<string, unknown>) || {};
+        const updatedPrefs = {
+          ...currentPrefs,
+          themeMode: newMode,
+          accentColor: newAccent,
+          updatedAt: new Date().toISOString()
+        };
+
+        await supabase
+          .from('profiles')
+          .update({ preferences: updatedPrefs })
+          .eq('id', session.user.id);
+      }
+    } catch {
+      // Ignora falhas de conexão de rede
+    }
+  }, []);
+
+  // Ouve evento disparado pelo AuthContext ao carregar perfil remoto do Supabase
+  useEffect(() => {
+    const handlePreferencesSynced = (e: Event) => {
+      const customEvent = e as CustomEvent;
+      if (customEvent.detail) {
+        const detail = customEvent.detail;
+        if (detail.themeMode && (detail.themeMode === 'dark' || detail.themeMode === 'light') && detail.themeMode !== mode) {
+          setModeState(detail.themeMode);
+          applyThemeToDOM(detail.themeMode, accent);
+        }
+        if (detail.accentColor && ACCENT_CONFIGS[detail.accentColor as AccentColor] && detail.accentColor !== accent) {
+          setAccentState(detail.accentColor as AccentColor);
+          applyThemeToDOM(mode, detail.accentColor as AccentColor);
+        }
+      }
+    };
+
+    window.addEventListener('bancoresidencia_preferences_synced', handlePreferencesSynced);
+    return () => window.removeEventListener('bancoresidencia_preferences_synced', handlePreferencesSynced);
+  }, [mode, accent]);
+
   const toggleMode = () => {
     setModeState((prev) => {
       const next = prev === 'dark' ? 'light' : 'dark';
@@ -582,6 +634,7 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         localStorage.setItem('banco_theme_mode', next);
       } catch {}
       applyThemeToDOM(next, accent);
+      syncPreferencesToCloud(next, accent);
       return next;
     });
   };
@@ -592,6 +645,7 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       localStorage.setItem('banco_theme_mode', newMode);
     } catch {}
     applyThemeToDOM(newMode, accent);
+    syncPreferencesToCloud(newMode, accent);
   };
 
   const setAccent = (newAccent: AccentColor) => {
@@ -600,6 +654,7 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
       localStorage.setItem('banco_accent_color', newAccent);
     } catch {}
     applyThemeToDOM(mode, newAccent);
+    syncPreferencesToCloud(mode, newAccent);
   };
 
   const activeConfig = getEffectiveAccentConfig(accent, mode);

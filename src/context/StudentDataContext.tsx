@@ -295,7 +295,7 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
     } catch {}
   }, []);
 
-  // Tamanho de Fonte
+    // Tamanho de Fonte
   const [fontSize, setFontSizeState] = useState<'xs' | 'sm' | 'base' | 'lg' | 'xl'>('sm');
   useEffect(() => {
     try {
@@ -308,12 +308,49 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
         | null;
       if (savedFontSize) setFontSizeState(savedFontSize);
     } catch {}
+
+    const handleSync = (e: Event) => {
+      const detail = (e as CustomEvent).detail;
+      if (detail && detail.fontSize) {
+        setFontSizeState(detail.fontSize);
+      }
+    };
+    window.addEventListener('bancoresidencia_preferences_synced', handleSync);
+    return () => window.removeEventListener('bancoresidencia_preferences_synced', handleSync);
   }, []);
 
   const setFontSize = useCallback((size: 'xs' | 'sm' | 'base' | 'lg' | 'xl') => {
     setFontSizeState(size);
     try {
       localStorage.setItem('bancoresidencia_question_font_size', size);
+    } catch {}
+
+    // Sincroniza em background com preferences no Supabase
+    try {
+      const supabase = createClient();
+      supabase.auth.getSession().then(({ data: { session } }) => {
+        if (session?.user?.id) {
+          supabase
+            .from('profiles')
+            .select('preferences')
+            .eq('id', session.user.id)
+            .maybeSingle()
+            .then(({ data: profile }) => {
+              const currentPrefs = (profile?.preferences as Record<string, unknown>) || {};
+              supabase
+                .from('profiles')
+                .update({
+                  preferences: {
+                    ...currentPrefs,
+                    fontSize: size,
+                    updatedAt: new Date().toISOString()
+                  }
+                })
+                .eq('id', session.user.id)
+                .then(() => {});
+            });
+        }
+      });
     } catch {}
   }, []);
 
