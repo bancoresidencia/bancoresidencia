@@ -395,9 +395,9 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
             </form>
           ) : (
             /* ================= FORMULÁRIO DE REGISTRO (SIMPLIFICADO) ================= */
-            <form onSubmit={handleRegisterSubmit} className="space-y-4">
+            <form onSubmit={handleRegisterSubmit} className="space-y-3 sm:space-y-3.5">
               <div>
-                <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+                <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">
                   Nome completo
                 </label>
                 <div className="relative">
@@ -410,13 +410,13 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     placeholder="Nome completo"
-                    className="w-full pl-11 pr-4 py-3.5 text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400 transition-all"
+                    className="w-full pl-10 pr-4 py-2.5 sm:py-3 text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400 transition-all"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+                <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">
                   E-mail
                 </label>
                 <div className="relative">
@@ -429,39 +429,72 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="E-mail"
-                    className="w-full pl-11 pr-4 py-3.5 text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400 transition-all"
+                    className="w-full pl-10 pr-4 py-2.5 sm:py-3 text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400 transition-all"
                   />
                 </div>
               </div>
 
-              <div>
-                <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
-                  Senha
-                </label>
-                <div className="relative">
-                  <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
-                    <Lock className="w-4 h-4" />
+              {/* Senha e Repita a senha lado a lado no desktop */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-3.5">
+                <div>
+                  <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">
+                    Senha
+                  </label>
+                  <div className="relative">
+                    <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                      <Lock className="w-4 h-4" />
+                    </div>
+                    <input
+                      type={showPassword ? 'text' : 'password'}
+                      required
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
+                      placeholder="Senha"
+                      className="w-full pl-10 pr-10 py-2.5 sm:py-3 text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400 transition-all"
+                    />
+                    <button
+                      type="button"
+                      onClick={() => setShowPassword(!showPassword)}
+                      className="absolute inset-y-0 right-0 pr-3 flex items-center text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 cursor-pointer"
+                      title={showPassword ? "Ocultar senha" : "Exibir senha"}
+                    >
+                      {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                    </button>
                   </div>
-                  <input
-                    type={showPassword ? 'text' : 'password'}
-                    required
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
-                    placeholder="Senha"
-                    className="w-full pl-11 pr-11 py-3.5 text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400 transition-all"
-                  />
-                  <button
-                    type="button"
-                    onClick={() => setShowPassword(!showPassword)}
-                    className="absolute inset-y-0 right-0 pr-3.5 flex items-center text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 cursor-pointer"
-                    title={showPassword ? "Ocultar senha" : "Exibir senha"}
-                  >
-                    {showPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
-                  </button>
                 </div>
 
-                {password && (
-                  <div className="mt-1.5 flex items-center gap-2">
+                {/* Repita a Senha */}
+                <div>
+                  <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">
+                    Repita a senha
+                  </label>
+                  <div className="relative">
+                    <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                      <Lock className="w-4 h-4" />
+                    </div>
+                    <input
+                      type={showConfirmPassword ? 'text' : 'password'}
+                      required
+                      value={confirmPassword}
+                      onChange={(e) => setConfirmPassword(e.target.value)}
+                      placeholder="Repita a senha"
+                      className="w-full pl-10 pr-10 py-2.5 sm:py-3 text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden focus:ring-2 text-slate-900 dark:text-white placeholder-slate-400 transition-all"
+                    />
+                    <button
+                      type="button"
+                      onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+                      className="absolute inset-y-0 right-0 pr-3 flex items-center text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 cursor-pointer"
+                      title={showConfirmPassword ? "Ocultar senha" : "Exibir senha"}
+                    >
+                      {showConfirmPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              {password && (
+                <div className="space-y-1">
+                  <div className="flex items-center gap-2">
                     <div className="flex-1 h-1.5 rounded-full bg-slate-200 dark:bg-slate-700 overflow-hidden">
                       <div
                         className={`h-full ${passwordStrength.color} transition-all duration-300`}
@@ -472,76 +505,45 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
                       {passwordStrength.label}
                     </span>
                   </div>
-                )}
-                <p
-                  className={`text-[10px] leading-relaxed mt-1 transition-colors ${
-                    password && !passwordValidation.isValid
-                      ? 'text-amber-600 dark:text-amber-400 font-medium'
-                      : password && passwordValidation.isValid
-                      ? 'text-emerald-600 dark:text-emerald-400 font-medium'
-                      : 'text-slate-400 dark:text-slate-500'
-                  }`}
-                >
-                  {password && passwordValidation.isValid ? (
-                    <span>✓ Senha forte e segura</span>
-                  ) : (
-                    <span>Mínimo 6 caracteres, contendo maiúscula, número e símbolo especial.</span>
-                  )}
-                </p>
-              </div>
-
-              {/* Repita a Senha */}
-              <div>
-                <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
-                  Repita a senha
-                </label>
-                <div className="relative">
-                  <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
-                    <Lock className="w-4 h-4" />
-                  </div>
-                  <input
-                    type={showConfirmPassword ? 'text' : 'password'}
-                    required
-                    value={confirmPassword}
-                    onChange={(e) => setConfirmPassword(e.target.value)}
-                    placeholder="Repita a senha"
-                    className="w-full pl-11 pr-11 py-3.5 text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden focus:ring-2 text-slate-900 dark:text-white placeholder-slate-400 transition-all"
-                  />
-                  <button
-                    type="button"
-                    onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-                    className="absolute inset-y-0 right-0 pr-3.5 flex items-center text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 cursor-pointer"
-                    title={showConfirmPassword ? "Ocultar senha" : "Exibir senha"}
+                  <p
+                    className={`text-[10px] transition-colors ${
+                      password && !passwordValidation.isValid
+                        ? 'text-amber-600 dark:text-amber-400 font-medium'
+                        : 'text-emerald-600 dark:text-emerald-400 font-medium'
+                    }`}
                   >
-                    {showConfirmPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
-                  </button>
+                    {password && passwordValidation.isValid ? (
+                      <span>✓ Senha forte e segura</span>
+                    ) : (
+                      <span>Mínimo 6 caracteres, contendo maiúscula, número e símbolo especial.</span>
+                    )}
+                  </p>
                 </div>
-              </div>
+              )}
 
-              {/* Checkboxes de Maioridade e Termos de Uso (Padrão MedEvo) */}
-              <div className="space-y-2 pt-1 border-t border-slate-100 dark:border-slate-800/80">
-                <label className="flex items-center gap-2.5 cursor-pointer text-xs text-slate-600 dark:text-slate-300">
+              {/* Checkboxes de Maioridade e Termos de Uso */}
+              <div className="space-y-1.5 pt-1 border-t border-slate-100 dark:border-slate-800/80">
+                <label className="flex items-center gap-2 cursor-pointer text-[11px] sm:text-xs text-slate-600 dark:text-slate-300">
                   <input
                     type="checkbox"
                     checked={isOver18}
                     onChange={(e) => setIsOver18(e.target.checked)}
-                    className="w-4 h-4 rounded text-blue-600 focus:ring-blue-500 border-slate-300 dark:border-slate-700 dark:bg-slate-900 cursor-pointer"
+                    className="w-3.5 h-3.5 rounded text-blue-600 focus:ring-blue-500 border-slate-300 dark:border-slate-700 dark:bg-slate-900 cursor-pointer"
                   />
                   <span>Tenho 18 anos ou mais</span>
                 </label>
 
-                <label className="flex items-start gap-2.5 cursor-pointer text-xs text-slate-600 dark:text-slate-300">
+                <label className="flex items-start gap-2 cursor-pointer text-[11px] sm:text-xs text-slate-600 dark:text-slate-300">
                   <input
                     type="checkbox"
                     checked={acceptedTerms}
                     onChange={(e) => setAcceptedTerms(e.target.checked)}
-                    className="w-4 h-4 rounded text-blue-600 focus:ring-blue-500 border-slate-300 dark:border-slate-700 dark:bg-slate-900 cursor-pointer mt-0.5"
+                    className="w-3.5 h-3.5 rounded text-blue-600 focus:ring-blue-500 border-slate-300 dark:border-slate-700 dark:bg-slate-900 cursor-pointer mt-0.5"
                   />
                   <span>
                     Concordo com os{' '}
                     <span className="font-bold underline text-blue-600 dark:text-blue-400">Termos de Uso</span>{' '}
-                    e declaro ciência da{' '}
-                    <span className="font-bold underline text-blue-600 dark:text-blue-400">Política de Privacidade</span>
+                    e <span className="font-bold underline text-blue-600 dark:text-blue-400">Política de Privacidade</span>
                   </span>
                 </label>
               </div>
@@ -550,7 +552,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full py-3.5 sm:py-4 px-4 rounded-xl text-sm font-bold text-white shadow-md flex items-center justify-center gap-2 transition-all hover:scale-[1.01] cursor-pointer disabled:opacity-50 mt-2"
+                className="w-full py-3 sm:py-3.5 px-4 rounded-xl text-sm font-bold text-white shadow-md flex items-center justify-center gap-2 transition-all hover:scale-[1.01] cursor-pointer disabled:opacity-50 mt-1"
                 style={{
                   backgroundColor: accentConfig.primaryHex,
                   boxShadow: `0 6px 20px -3px ${accentConfig.bgRgba}`
@@ -567,7 +569,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
               </button>
 
               {/* Alternador rápido para Login */}
-              <div className="text-center pt-1">
+              <div className="text-center pt-0.5">
                 <button
                   type="button"
                   onClick={() => handleToggleMode('login')}
