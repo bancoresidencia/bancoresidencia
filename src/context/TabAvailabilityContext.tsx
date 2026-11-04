@@ -151,6 +151,9 @@ export const TabAvailabilityProvider: React.FC<{ children: React.ReactNode }> = 
     if (cleanPath === '/' || cleanPath === '/dashboard') {
       return PLATFORM_TABS.find((t) => t.key === 'home');
     }
+    if (cleanPath.startsWith('/agenda')) {
+      return PLATFORM_TABS.find((t) => t.key === 'agenda');
+    }
     if (cleanPath.startsWith('/questoes')) {
       return PLATFORM_TABS.find((t) => t.key === 'banco');
     }

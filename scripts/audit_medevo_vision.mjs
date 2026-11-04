@@ -24,7 +24,7 @@ if (API_KEYS.length === 0) {
 
 console.log(`🔑 Pool de API Keys carregado: ${API_KEYS.length} chaves disponíveis.`);
 
-// Modelos suportados com fallback
+// Modelos suportados com cota Flash-Lite estável
 const MODELS = [
   'gemini-3.1-flash-lite',
   'gemini-3.5-flash-lite',
@@ -62,7 +62,7 @@ const refFullBase64 = refFullBuffer.toString('base64');
 
 // 4. Argumentos CLI
 const args = process.argv.slice(2);
-const targetArg = args.find(a => a.startsWith('--target='))?.split('=')[1] || 'medevo';
+const targetArg = args.find(a => a.startsWith('--target='))?.split('=')[1] || 'all';
 const limitArg = parseInt(args.find(a => a.startsWith('--limit='))?.split('=')[1] || '0', 10);
 const concurrencyArg = parseInt(args.find(a => a.startsWith('--concurrency='))?.split('=')[1] || '2', 10);
 const delayArg = parseInt(args.find(a => a.startsWith('--delay='))?.split('=')[1] || '2500', 10);
@@ -188,11 +188,19 @@ Responda ESTRITAMENTE em formato JSON com o seguinte schema:
 
 async function analyzeTargetImage(imageUrl) {
   // Download da imagem alvo
-  const res = await fetch(imageUrl, { signal: AbortSignal.timeout(15000) });
-  if (!res.ok) {
-    throw new Error(`HTTP ${res.status} ao baixar imagem`);
+  let rawBuf;
+  if (!imageUrl.startsWith('http')) {
+    const localPath = path.join('public', imageUrl.replace(/^\//, ''));
+    if (fs.existsSync(localPath)) {
+      rawBuf = fs.readFileSync(localPath);
+    } else {
+      throw new Error('Arquivo local não encontrado: ' + localPath);
+    }
+  } else {
+    const res = await fetch(imageUrl, { signal: AbortSignal.timeout(15000) });
+    if (!res.ok) throw new Error('HTTP ' + res.status + ' ao baixar imagem');
+    rawBuf = Buffer.from(await res.arrayBuffer());
   }
-  const rawBuf = Buffer.from(await res.arrayBuffer());
   if (rawBuf.length === 0) {
     throw new Error('Buffer vazio recebido');
   }
@@ -277,86 +285,7 @@ async function analyzeTargetImage(imageUrl) {
   throw lastError || new Error('Falha após múltiplas tentativas com o pool');
 }
 
-// 8. Fila de execução concorrente
-async function main() {
-  console.log('\n====================================================');
-  console.log('🚀 INICIANDO AUDITORIA GEMINI VISION - LOGO MEDEVO');
-  console.log('====================================================');
-  console.log(`Itens totais a processar nesta execução: ${targetImages.length}`);
-  console.log(`Concorrência: ${concurrencyArg} | Delay entre chamadas: ${delayArg}ms\n`);
-
-  // Filtrar o que já foi auditado
-  const pending = targetImages.filter(item => !auditStore.results[item.url]);
-  console.log(`Itens restantes a auditar: ${pending.length} (já auditados: ${targetImages.length - pending.length})\n`);
-
-  if (pending.length === 0) {
-    console.log('✅ Todas as imagens deste alvo já foram auditadas anteriormente!');
-    saveCheckpoint();
-    printFinalSummary();
-    return;
-  }
-
-  let processedCount = 0;
-  let activeIndex = 0;
-
-  async function worker(workerId) {
-    while (activeIndex < pending.length) {
-      const currentIdx = activeIndex++;
-      const item = pending[currentIdx];
-      const url = item.url;
-      const refCount = item.references?.length || 0;
-      const firstRef = item.references?.[0] || {};
-      const label = `[${currentIdx + 1}/${pending.length}] [W${workerId}] Q: ${firstRef.code || firstRef.questionId || 'N/A'}`;
-
-      try {
-        console.log(`${label} -> Auditando: ${url.slice(0, 70)}...`);
-        const result = await analyzeTargetImage(url);
-
-        auditStore.results[url] = {
-          url,
-          references: item.references,
-          ...result,
-          auditedAt: new Date().toISOString()
-        };
-
-        if (result.has_medevo) {
-          console.log(`\n🚨🚨 [HIT CONFIRMADO] ${label}`);
-          console.log(`   Tipo: ${result.presence_type} | Confiança: ${(result.confidence * 100).toFixed(0)}% | Local: ${result.location}`);
-          console.log(`   Detalhes: ${result.details}`);
-          console.log(`   URL: ${url}\n`);
-        } else {
-          console.log(`   ✅ Limpa (${result.details.slice(0, 60)}...)`);
-        }
-      } catch (err) {
-        console.warn(`   ❌ Erro em ${label}: ${err.message}`);
-        // Se for erro permanente de download da imagem (ex: 404), salva erro. Se for rate limit/pool, NÃO salva para re-tentar depois.
-        if (err.message && err.message.includes('HTTP 404')) {
-          auditStore.results[url] = {
-            url,
-            references: item.references,
-            error: err.message,
-            auditedAt: new Date().toISOString()
-          };
-        }
-      }
-
-      processedCount++;
-      if (processedCount % 5 === 0) {
-        saveCheckpoint();
-      }
-
-      await new Promise(r => setTimeout(r, delayArg));
-    }
-  }
-
-  // Lança workers concorrentes
-  const workers = Array.from({ length: concurrencyArg }, (_, i) => worker(i + 1));
-  await Promise.all(workers);
-
-  saveCheckpoint();
-  printFinalSummary();
-}
-
+// 8. Sincronização automática com medevoAuditManifest.json
 function syncManifest() {
   const MANIFEST_PATH = 'src/data/medevoAuditManifest.json';
   if (!fs.existsSync(MANIFEST_PATH)) return;
@@ -366,6 +295,9 @@ function syncManifest() {
     Object.values(auditStore.results || {}).forEach(r => {
       if (r.url) urlToVision.set(r.url, r);
     });
+
+    const existingQMap = new Map();
+    manifest.questions.forEach(q => existingQMap.set(q.id, q));
 
     let totalVisionHitsInManifest = 0;
     manifest.questions = manifest.questions.map(q => {
@@ -406,6 +338,49 @@ function syncManifest() {
       return q;
     });
 
+    // Adiciona novas questões que não estavam no manifesto inicial caso tenham hit de visão
+    Object.values(auditStore.results || {}).forEach(r => {
+      if (r.has_medevo && r.references) {
+        r.references.forEach(ref => {
+          if (ref.questionId && !existingQMap.has(ref.questionId)) {
+            const newQ = {
+              id: ref.questionId,
+              code: ref.code || 'N/A',
+              banca: ref.banca || 'Outra',
+              year: ref.year || 0,
+              hasTextHit: false,
+              textHits: [],
+              hasImageHit: true,
+              hasVisionHit: true,
+              visionHits: [{
+                url: r.url,
+                presence_type: r.presence_type,
+                location: r.location,
+                confidence: r.confidence,
+                details: r.details
+              }],
+              images: [{
+                url: r.url,
+                field: ref.field || 'statement.images',
+                visionAudit: {
+                  audited: true,
+                  has_medevo: true,
+                  confidence: r.confidence,
+                  presence_type: r.presence_type,
+                  location: r.location,
+                  details: r.details
+                }
+              }]
+            };
+            manifest.questions.push(newQ);
+            existingQMap.set(ref.questionId, newQ);
+            totalVisionHitsInManifest++;
+          }
+        });
+      }
+    });
+
+    manifest.summary.totalAffected = manifest.questions.length;
     manifest.summary.visionAuditedCount = auditStore.summary.totalAudited;
     manifest.summary.visionHitsCount = totalVisionHitsInManifest;
     fs.writeFileSync(MANIFEST_PATH, JSON.stringify(manifest, null, 2));
@@ -413,6 +388,88 @@ function syncManifest() {
   } catch (err) {
     console.warn('Aviso: falha ao sincronizar manifesto:', err.message);
   }
+}
+
+// 9. Fila de execução concorrente
+async function main() {
+  console.log('\n====================================================');
+  console.log('🚀 INICIANDO AUDITORIA GEMINI VISION - GERAL DA PLATAFORMA');
+  console.log('====================================================');
+  console.log(`Itens totais no escopo: ${targetImages.length}`);
+  console.log(`Concorrência: ${concurrencyArg} | Delay entre chamadas: ${delayArg}ms\n`);
+
+  // Filtrar o que já foi auditado
+  const pending = targetImages.filter(item => !auditStore.results[item.url]);
+  console.log(`Itens restantes a auditar: ${pending.length} (já auditados anteriormente: ${targetImages.length - pending.length})\n`);
+
+  if (pending.length === 0) {
+    console.log('✅ Todas as imagens deste alvo já foram auditadas anteriormente!');
+    saveCheckpoint();
+    syncManifest();
+    printFinalSummary();
+    return;
+  }
+
+  let processedCount = 0;
+  let activeIndex = 0;
+
+  async function worker(workerId) {
+    while (activeIndex < pending.length) {
+      const currentIdx = activeIndex++;
+      const item = pending[currentIdx];
+      const url = item.url;
+      const firstRef = item.references?.[0] || {};
+      const label = `[${currentIdx + 1}/${pending.length}] [W${workerId}] Q: ${firstRef.code || firstRef.questionId || 'N/A'}`;
+
+      try {
+        console.log(`${label} -> Auditando: ${url.slice(0, 75)}...`);
+        const result = await analyzeTargetImage(url);
+
+        auditStore.results[url] = {
+          url,
+          references: item.references,
+          ...result,
+          auditedAt: new Date().toISOString()
+        };
+
+        if (result.has_medevo) {
+          console.log(`\n🚨🚨 [HIT CONFIRMADO] ${label}`);
+          console.log(`   Tipo: ${result.presence_type} | Confiança: ${(result.confidence * 100).toFixed(0)}% | Local: ${result.location}`);
+          console.log(`   Detalhes: ${result.details}`);
+          console.log(`   URL: ${url}\n`);
+        } else {
+          console.log(`   ✅ Limpa (${result.details.slice(0, 60)}...)`);
+        }
+      } catch (err) {
+        console.warn(`   ❌ Erro em ${label}: ${err.message}`);
+        // Se for erro permanente de download da imagem (ex: 404), salva erro. Se for rate limit/pool, NÃO salva para re-tentar depois.
+        if (err.message && err.message.includes('HTTP 404')) {
+          auditStore.results[url] = {
+            url,
+            references: item.references,
+            error: err.message,
+            auditedAt: new Date().toISOString()
+          };
+        }
+      }
+
+      processedCount++;
+      if (processedCount % 10 === 0) {
+        saveCheckpoint();
+        syncManifest();
+      }
+
+      await new Promise(r => setTimeout(r, delayArg));
+    }
+  }
+
+  // Lança workers concorrentes
+  const workers = Array.from({ length: concurrencyArg }, (_, i) => worker(i + 1));
+  await Promise.all(workers);
+
+  saveCheckpoint();
+  syncManifest();
+  printFinalSummary();
 }
 
 function printFinalSummary() {
@@ -426,11 +483,9 @@ function printFinalSummary() {
   console.log('\nDistribuição por tipo de presença:');
   console.log(JSON.stringify(auditStore.summary.byType, null, 2));
   console.log(`\nArquivo de resultados salvo em: ${RESULTS_FILE}`);
-  syncManifest();
 }
 
 main().catch(err => {
   console.error('Erro fatal:', err);
   saveCheckpoint();
 });
-

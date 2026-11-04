@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
   LayoutDashboard,
+  CalendarDays,
   FileQuestion,
   FolderOpen,
   ClipboardCheck,
@@ -54,6 +55,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
   const menuItems = [
     { id: 'home', label: 'Início', icon: LayoutDashboard, href: '/dashboard' },
+    { id: 'agenda', label: 'Agenda', icon: CalendarDays, href: '/agenda' },
     { id: 'banco', label: 'Banco de Questões', icon: FileQuestion, href: '/questoes' },
     {
       id: 'caderno_erros',

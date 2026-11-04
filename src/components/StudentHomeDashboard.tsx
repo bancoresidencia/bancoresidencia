@@ -4069,7 +4069,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
               >
                 {/* Card 2: Agenda de Estudos do Dia (Foco Exclusivo no Período Atual + Google Agenda) */}
                 <div
-                  onClick={() => { if (isCustomizing) return; setActiveCentralDrawer('agenda_detalhada'); }}
+                  onClick={() => { if (isCustomizing) return; onNavigate('agenda'); }}
                   className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-5 shadow-xs cursor-pointer hover:border-blue-500/40 transition-all group flex flex-col justify-between min-h-0 h-full relative overflow-hidden space-y-3.5"
                   title="Abrir cronograma de blocos do dia"
                 >

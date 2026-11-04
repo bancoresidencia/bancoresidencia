@@ -1,0 +1,2009 @@
+'use client';
+
+import React, { useState, useEffect, useCallback, useMemo } from 'react';
+import { useRouter } from 'next/navigation';
+import {
+  CalendarDays,
+  Calendar,
+  Clock,
+  Sparkles,
+  RotateCcw,
+  Plus,
+  Play,
+  Brain,
+  AlertOctagon,
+  Trophy,
+  CheckCircle2,
+  AlertTriangle,
+  AlertCircle,
+  RefreshCw,
+  X,
+  Zap,
+  Lightbulb,
+  ExternalLink,
+  ChevronRight
+} from 'lucide-react';
+import { useAuth } from '@/context/AuthContext';
+import { useTheme } from '@/context/ThemeContext';
+import { useStudentData } from '@/context/StudentDataContext';
+import { GoogleCalendarScheduleView } from './dashboard/GoogleCalendarScheduleView';
+import { AiScheduleDrawer } from './dashboard/AiScheduleDrawer';
+import {
+  DailyScheduleSlot,
+  AiScheduleAnalysis,
+  TimelineFilter
+} from './dashboard/scheduleTypes';
+import {
+  buildGoogleCalendarTemplateUrl,
+  fetchTodayEventsFromGoogleApi,
+  createEventInGoogleCalendarApi,
+  createEventsBatchInGoogleCalendarApi,
+  fetchGoogleCalendarAccountEmail,
+  startGoogleOAuthPopup,
+  startGoogleOAuthRedirect,
+  generateIcsContent,
+  downloadIcsFile
+} from '@/services/googleCalendarService';
+
+const GoogleIcon = ({ className = 'w-4 h-4' }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 24 24" aria-hidden="true">
+    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" />
+    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" />
+  </svg>
+);
+
+const DEFAULT_GOOGLE_CLIENT_ID = '323022146503-csbd1pq8s2g22l3mghaaea4kocl2acfn.apps.googleusercontent.com';
+
+const CRITICAL_SUBTOPICS_MAP: Record<string, Array<{ name: string; defaultAccuracy: number }>> = {
+  cirurgia: [
+    { name: 'Abdome Agudo', defaultAccuracy: 0 },
+    { name: 'Trauma Abdominal (ATLS)', defaultAccuracy: 25 },
+    { name: 'Hérnias da Parede', defaultAccuracy: 33 }
+  ],
+  clinica: [
+    { name: 'Insuficiência Cardíaca', defaultAccuracy: 20 },
+    { name: 'Sepse e Choque', defaultAccuracy: 30 },
+    { name: 'Diabetes e Complicações', defaultAccuracy: 40 }
+  ],
+  pediatria: [
+    { name: 'Aleitamento Materno', defaultAccuracy: 25 },
+    { name: 'Infecções Respiratórias (IVAS)', defaultAccuracy: 35 },
+    { name: 'Triagens Neonatais', defaultAccuracy: 40 }
+  ],
+  ginecologia: [
+    { name: 'Sangramento Uterino Anormal', defaultAccuracy: 15 },
+    { name: 'Rastreamento CA Colo', defaultAccuracy: 30 },
+    { name: 'Climatério e TH', defaultAccuracy: 35 }
+  ],
+  obstetricia: [
+    { name: 'Hemorragias da Gestação', defaultAccuracy: 20 },
+    { name: 'Pré-Eclâmpsia e Eclâmpsia', defaultAccuracy: 28 },
+    { name: 'Vitalidade Fetal e Parto', defaultAccuracy: 40 }
+  ],
+  preventiva: [
+    { name: 'Estudos Epidemiológicos', defaultAccuracy: 18 },
+    { name: 'Princípios e Diretrizes SUS', defaultAccuracy: 30 },
+    { name: 'Testes Diagnósticos (Sens/Espec)', defaultAccuracy: 38 }
+  ]
+};
+
+interface AgendaViewProps {
+  onNavigateToBanco?: (specialty?: string, tema?: string) => void;
+  onNavigateToFlashcards?: () => void;
+  onNavigateToCadernoErros?: () => void;
+  onNavigateToSimulados?: () => void;
+}
+
+export const AgendaView: React.FC<AgendaViewProps> = ({
+  onNavigateToBanco,
+  onNavigateToFlashcards,
+  onNavigateToCadernoErros,
+  onNavigateToSimulados
+}) => {
+  const router = useRouter();
+  const { user } = useAuth();
+  const { accentConfig } = useTheme();
+  const { stats, dailyGoal, userAnswers, pendingErrorsCount } = useStudentData();
+
+  // ── ESTADOS DE CONEXÃO COM GOOGLE AGENDA ──
+  const [isGoogleCalendarConnected, setIsGoogleCalendarConnected] = useState<boolean>(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('bancoresidencia_google_calendar_connected') === 'true';
+    }
+    return false;
+  });
+
+  const [calendarSyncMode, setCalendarSyncMode] = useState<'ical' | 'api'>(() => {
+    if (typeof window !== 'undefined') {
+      return (localStorage.getItem('bancoresidencia_google_calendar_mode') as 'ical' | 'api') || 'api';
+    }
+    return 'api';
+  });
+
+  const [googleCalendarAccount, setGoogleCalendarAccount] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('bancoresidencia_google_calendar_account') || 'Minha Agenda';
+    }
+    return 'Minha Agenda';
+  });
+
+  const [googleIcalUrl, setGoogleIcalUrl] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('bancoresidencia_google_ical_url') || '';
+    }
+    return '';
+  });
+
+  const [googleAccessToken, setGoogleAccessToken] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('bancoresidencia_google_access_token') || '';
+    }
+    return '';
+  });
+
+  const [googleClientId] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('bancoresidencia_google_client_id') || process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID || DEFAULT_GOOGLE_CLIENT_ID;
+    }
+    return process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID || DEFAULT_GOOGLE_CLIENT_ID;
+  });
+
+  const [lastCalendarSyncTime, setLastCalendarSyncTime] = useState<string>(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('bancoresidencia_google_last_sync') || '';
+    }
+    return '';
+  });
+
+  const [realCalendarEvents, setRealCalendarEvents] = useState<DailyScheduleSlot[]>(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('bancoresidencia_real_calendar_events');
+      if (saved) {
+        try {
+          return JSON.parse(saved);
+        } catch {
+          return [];
+        }
+      }
+    }
+    return [];
+  });
+
+  const [userScheduledTasks, setUserScheduledTasks] = useState<DailyScheduleSlot[]>(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('bancoresidencia_user_scheduled_tasks');
+      if (saved) {
+        try {
+          return JSON.parse(saved);
+        } catch {
+          return [];
+        }
+      }
+    }
+    return [];
+  });
+
+  const [exportingSlotId, setExportingSlotId] = useState<string | null>(null);
+  const [exportedSlotIds, setExportedSlotIds] = useState<Record<string, boolean>>(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const saved = localStorage.getItem('bancoresidencia_exported_slots');
+        if (saved) return JSON.parse(saved);
+      } catch {}
+    }
+    return {};
+  });
+
+  const [isSyncingCalendar, setIsSyncingCalendar] = useState(false);
+  const [calendarSyncError, setCalendarSyncError] = useState<string | null>(null);
+  const [calendarSyncSuccessMsg, setCalendarSyncSuccessMsg] = useState<string | null>(null);
+  const [timelineFilter, setTimelineFilter] = useState<TimelineFilter>('todos');
+
+  // Modais
+  const [isGoogleModalOpen, setIsGoogleModalOpen] = useState(false);
+  const [showAddManualModal, setShowAddManualModal] = useState(false);
+  const [showDelayModal, setShowDelayModal] = useState(false);
+  const [customDelayMinutes, setCustomDelayMinutes] = useState(60);
+  const [showAiCommandModal, setShowAiCommandModal] = useState(false);
+  const [aiUserCommand, setAiUserCommand] = useState('');
+  const [showAiScheduleDrawer, setShowAiScheduleDrawer] = useState(false);
+  const [isAnalyzingSchedule, setIsAnalyzingSchedule] = useState(false);
+  const [scheduleAiAnalysis, setScheduleAiAnalysis] = useState<AiScheduleAnalysis | null>(null);
+  const [isBatchSyncing, setIsBatchSyncing] = useState(false);
+
+  // Campos Bloco Manual
+  const [manualSlotTitle, setManualSlotTitle] = useState('');
+  const [manualSlotCategory, setManualSlotCategory] = useState<'estudo' | 'flashcard' | 'revisao' | 'simulado'>('estudo');
+  const [manualSlotStart, setManualSlotStart] = useState('14:00');
+  const [manualSlotEnd, setManualSlotEnd] = useState('15:00');
+  const [manualSlotNotes, setManualSlotNotes] = useState('');
+
+  // Sincronização entre abas do navegador via Storage Event
+  useEffect(() => {
+    const handleStorageChange = (e: StorageEvent) => {
+      if (e.key === 'bancoresidencia_user_scheduled_tasks' && e.newValue) {
+        try { setUserScheduledTasks(JSON.parse(e.newValue)); } catch {}
+      }
+      if (e.key === 'bancoresidencia_real_calendar_events' && e.newValue) {
+        try { setRealCalendarEvents(JSON.parse(e.newValue)); } catch {}
+      }
+      if (e.key === 'bancoresidencia_google_calendar_connected') {
+        setIsGoogleCalendarConnected(e.newValue === 'true');
+      }
+    };
+    window.addEventListener('storage', handleStorageChange);
+    return () => window.removeEventListener('storage', handleStorageChange);
+  }, []);
+
+  // Limpeza de descrições brutas do Google
+  const cleanEventDescription = useCallback((desc?: string) => {
+    if (!desc) return '';
+    const lower = desc.toLowerCase().trim();
+    if (
+      lower.includes('evento importado') ||
+      lower.includes('evento sincronizado') ||
+      lower.includes('google calendar api') ||
+      lower.includes('via google')
+    ) {
+      return '';
+    }
+    return desc;
+  }, []);
+
+  // Detecção de plantões e compromissos hospitalares
+  const isHospitalOrDutyEvent = useCallback((slot: DailyScheduleSlot) => {
+    if (slot.source !== 'google') return false;
+    const text = `${slot.title} ${slot.description || ''} ${slot.location || ''}`.toLowerCase();
+    return (
+      text.includes('plant') ||
+      text.includes('internat') ||
+      text.includes('enferm') ||
+      text.includes('uti') ||
+      text.includes('cirurg') ||
+      text.includes('ps') ||
+      text.includes('pronto') ||
+      text.includes('hospital') ||
+      text.includes('ambul') ||
+      text.includes('round') ||
+      text.includes('estágio') ||
+      text.includes('estagio')
+    );
+  }, []);
+
+  // União ordenada dos eventos
+  const daySchedule = useMemo<DailyScheduleSlot[]>(() => {
+    if (isGoogleCalendarConnected) {
+      const slots: DailyScheduleSlot[] = [...realCalendarEvents];
+      if (userScheduledTasks.length > 0) {
+        const existingIds = new Set(slots.map(s => s.id));
+        for (const task of userScheduledTasks) {
+          if (!existingIds.has(task.id)) {
+            slots.push(task);
+            existingIds.add(task.id);
+          }
+        }
+      }
+      slots.sort((a, b) => a.startMinutes - b.startMinutes);
+      return slots;
+    }
+
+    if (userScheduledTasks.length > 0) {
+      return [...userScheduledTasks].sort((a, b) => a.startMinutes - b.startMinutes);
+    }
+
+    return [];
+  }, [isGoogleCalendarConnected, realCalendarEvents, userScheduledTasks]);
+
+  // Cálculo da Atividade Atual / Período
+  const currentPeriodInfo = useMemo(() => {
+    const now = new Date();
+    const currentMinutes = now.getHours() * 60 + now.getMinutes();
+
+    if (daySchedule.length === 0) {
+      return {
+        status: 'livre' as const,
+        currentMinutes,
+        slot: {
+          id: 'agenda_livre_dia',
+          title: isGoogleCalendarConnected
+            ? 'Agenda Livre Hoje'
+            : 'Conecte sua Agenda',
+          category: 'pausa' as const,
+          startTime: '08:00',
+          endTime: '22:00',
+          startMinutes: 480,
+          endMinutes: 1320,
+          source: 'google' as const,
+          description: isGoogleCalendarConnected
+            ? 'Nenhum compromisso marcado no Google Agenda hoje. Seus horários estão 100% livres para estudo.'
+            : 'Conecte seu Google Agenda para sincronizar sua rotina médica com a plataforma.',
+          location: 'Agenda'
+        },
+        progressPercent: 0,
+        minutesRemaining: 0,
+        nextSlot: null,
+        label: 'Horário Livre'
+      };
+    }
+
+    const activeSlot = daySchedule.find(
+      (slot) => currentMinutes >= slot.startMinutes && currentMinutes < slot.endMinutes
+    );
+
+    if (activeSlot) {
+      const elapsed = currentMinutes - activeSlot.startMinutes;
+      const total = activeSlot.endMinutes - activeSlot.startMinutes;
+      const progressPercent = Math.min(100, Math.max(0, Math.round((elapsed / total) * 100)));
+      const minutesRemaining = activeSlot.endMinutes - currentMinutes;
+      const nextUpcoming = daySchedule.find((s) => s.startMinutes >= activeSlot.endMinutes);
+
+      return {
+        status: 'em_andamento' as const,
+        currentMinutes,
+        slot: activeSlot,
+        progressPercent,
+        minutesRemaining,
+        nextSlot: nextUpcoming || null,
+        label: `Agora (${activeSlot.startTime} - ${activeSlot.endTime})`
+      };
+    }
+
+    const upcomingSlot = daySchedule.find((s) => s.startMinutes > currentMinutes);
+    if (upcomingSlot) {
+      const minutesUntil = upcomingSlot.startMinutes - currentMinutes;
+      return {
+        status: 'proximo' as const,
+        currentMinutes,
+        slot: upcomingSlot,
+        progressPercent: 0,
+        minutesUntil,
+        nextSlot: null,
+        label: `Próximo Bloco (${upcomingSlot.startTime} - ${upcomingSlot.endTime})`
+      };
+    }
+
+    return {
+      status: 'noturno' as const,
+      currentMinutes,
+      slot: {
+        id: 'descanso_noturno',
+        title: 'Descanso & Consolidação de Memória',
+        category: 'pausa' as const,
+        startTime: '22:30',
+        endTime: '07:30',
+        startMinutes: 1350,
+        endMinutes: 450,
+        source: 'plataforma' as const,
+        description: 'Rotina de hoje concluída. O cérebro consolida sinapses de estudo durante o sono reparador.',
+        location: 'Repouso'
+      },
+      progressPercent: 100,
+      nextSlot: daySchedule[0] || null,
+      label: 'Período Noturno (Descanso)'
+    };
+  }, [daySchedule, isGoogleCalendarConnected]);
+
+  // Estatísticas de Cronobiologia & Energia Mental
+  const cognitiveEnergyStats = useMemo(() => {
+    const shifts = {
+      morning: { label: 'Manhã', range: '06h – 12h', resolvidas: 0, acertos: 0, taxa: 0 },
+      afternoon: { label: 'Tarde', range: '12h – 18h', resolvidas: 0, acertos: 0, taxa: 0 },
+      night: { label: 'Noite', range: '18h – 24h', resolvidas: 0, acertos: 0, taxa: 0 }
+    };
+
+    if (userAnswers && Object.keys(userAnswers).length > 0) {
+      Object.values(userAnswers).forEach((ans) => {
+        if (!ans || !ans.timestamp) return;
+        const h = new Date(ans.timestamp).getHours();
+        if (h >= 6 && h < 12) {
+          shifts.morning.resolvidas++;
+          if (ans.isCorrect) shifts.morning.acertos++;
+        } else if (h >= 12 && h < 18) {
+          shifts.afternoon.resolvidas++;
+          if (ans.isCorrect) shifts.afternoon.acertos++;
+        } else {
+          shifts.night.resolvidas++;
+          if (ans.isCorrect) shifts.night.acertos++;
+        }
+      });
+
+      shifts.morning.taxa = shifts.morning.resolvidas > 0 ? Math.round((shifts.morning.acertos / shifts.morning.resolvidas) * 100) : 0;
+      shifts.afternoon.taxa = shifts.afternoon.resolvidas > 0 ? Math.round((shifts.afternoon.acertos / shifts.afternoon.resolvidas) * 100) : 0;
+      shifts.night.taxa = shifts.night.resolvidas > 0 ? Math.round((shifts.night.acertos / shifts.night.resolvidas) * 100) : 0;
+    }
+
+    const totalResolvidas = shifts.morning.resolvidas + shifts.afternoon.resolvidas + shifts.night.resolvidas;
+    const hasData = totalResolvidas >= 5;
+
+    let bestShift: string | null = null;
+    let bestShiftTaxa = 0;
+    if (hasData) {
+      const candidates = [
+        { name: 'Manhã', taxa: shifts.morning.taxa, count: shifts.morning.resolvidas },
+        { name: 'Tarde', taxa: shifts.afternoon.taxa, count: shifts.afternoon.resolvidas },
+        { name: 'Noite', taxa: shifts.night.taxa, count: shifts.night.resolvidas }
+      ].filter(c => c.count >= 2);
+
+      if (candidates.length > 0) {
+        candidates.sort((a, b) => b.taxa - a.taxa);
+        bestShift = candidates[0].name;
+        bestShiftTaxa = candidates[0].taxa;
+      }
+    }
+
+    const fatigueAlert = Boolean(
+      hasData &&
+      shifts.night.resolvidas >= 3 &&
+      shifts.morning.taxa > 0 &&
+      shifts.night.taxa < shifts.morning.taxa - 15
+    );
+
+    return {
+      hasData,
+      bestShift,
+      bestShiftTaxa,
+      fatigueAlert,
+      morning: shifts.morning,
+      afternoon: shifts.afternoon,
+      night: shifts.night
+    };
+  }, [userAnswers]);
+
+  // Pacing diário
+  const todayAnswered = useMemo(() => {
+    if (!userAnswers) return 0;
+    const today = new Date().toISOString().split('T')[0];
+    return Object.values(userAnswers).filter((ans) => {
+      if (!ans || !ans.timestamp) return false;
+      const d = new Date(ans.timestamp).toISOString().split('T')[0];
+      return d === today;
+    }).length;
+  }, [userAnswers]);
+
+  const todayStudyMinutes = useMemo(() => {
+    return Math.round(todayAnswered * 2.2);
+  }, [todayAnswered]);
+
+  // ── Sincronização iCal ──
+  const syncIcalEvents = async (urlToSync?: string, isSilent = false): Promise<boolean> => {
+    const targetUrl = (urlToSync !== undefined ? urlToSync : googleIcalUrl).trim();
+    if (!targetUrl) {
+      if (!isSilent) setCalendarSyncError('Por favor, cole o Endereço Secreto iCal (.ics) da sua agenda.');
+      return false;
+    }
+
+    setIsSyncingCalendar(true);
+    if (!isSilent) {
+      setCalendarSyncError(null);
+      setCalendarSyncSuccessMsg(null);
+    }
+
+    try {
+      const res = await fetch('/api/calendar/sync-ical', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ url: targetUrl }),
+        signal: AbortSignal.timeout(10000)
+      });
+
+      const data = await res.json();
+      if (!res.ok || !data.success) {
+        throw new Error(data.error || 'Não foi possível sincronizar com o link informado.');
+      }
+
+      const events: DailyScheduleSlot[] = data.events || [];
+      setRealCalendarEvents(events);
+      const nowStr = `Hoje às ${new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}`;
+      setLastCalendarSyncTime(nowStr);
+      setIsGoogleCalendarConnected(true);
+      setCalendarSyncMode('ical');
+
+      if (data.calendarName) {
+        setGoogleCalendarAccount(data.calendarName);
+      }
+
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('bancoresidencia_google_calendar_connected', 'true');
+        localStorage.setItem('bancoresidencia_google_calendar_mode', 'ical');
+        localStorage.setItem('bancoresidencia_google_ical_url', targetUrl);
+        localStorage.setItem('bancoresidencia_real_calendar_events', JSON.stringify(events));
+        localStorage.setItem('bancoresidencia_google_last_sync', nowStr);
+        if (data.calendarName) {
+          localStorage.setItem('bancoresidencia_google_calendar_account', data.calendarName);
+        }
+      }
+
+      if (events.length > 0) {
+        setCalendarSyncSuccessMsg(`${events.length} compromisso(s) sincronizados via link iCal!`);
+      } else {
+        setCalendarSyncSuccessMsg('Agenda conectada com sucesso! Nenhum compromisso agendado para hoje (rotina livre de estudos).');
+      }
+      return true;
+    } catch (err: any) {
+      const msg = err?.name === 'TimeoutError'
+        ? 'Tempo limite esgotado ao tentar sincronizar a agenda.'
+        : (err?.message || 'Falha ao sincronizar agenda.');
+      if (!isSilent) setCalendarSyncError(msg);
+      return false;
+    } finally {
+      setIsSyncingCalendar(false);
+    }
+  };
+
+  // ── Sincronização Google API ──
+  const handleConnectGoogleViaApi = () => {
+    const cId = (googleClientId || '').trim();
+    if (!cId) {
+      setCalendarSyncError('Informe um Google Client ID válido para conectar via Google API.');
+      return;
+    }
+
+    setIsSyncingCalendar(true);
+    setCalendarSyncError(null);
+    setCalendarSyncSuccessMsg(null);
+
+    startGoogleOAuthPopup(
+      cId,
+      async (accessToken) => {
+        try {
+          setGoogleAccessToken(accessToken);
+          setIsGoogleCalendarConnected(true);
+          setCalendarSyncMode('api');
+
+          if (typeof window !== 'undefined') {
+            localStorage.setItem('bancoresidencia_google_access_token', accessToken);
+            localStorage.setItem('bancoresidencia_google_client_id', cId);
+            localStorage.setItem('bancoresidencia_google_calendar_mode', 'api');
+            localStorage.setItem('bancoresidencia_google_calendar_connected', 'true');
+          }
+
+          const [events, accountEmail] = await Promise.all([
+            fetchTodayEventsFromGoogleApi(accessToken).catch(() => []),
+            fetchGoogleCalendarAccountEmail(accessToken).catch(() => null)
+          ]);
+
+          setRealCalendarEvents(events as any);
+          const nowStr = `Hoje às ${new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}`;
+          setLastCalendarSyncTime(nowStr);
+
+          if (accountEmail) {
+            setGoogleCalendarAccount(accountEmail);
+          }
+
+          if (typeof window !== 'undefined') {
+            localStorage.setItem('bancoresidencia_real_calendar_events', JSON.stringify(events));
+            localStorage.setItem('bancoresidencia_google_last_sync', nowStr);
+            if (accountEmail) {
+              localStorage.setItem('bancoresidencia_google_calendar_account', accountEmail);
+            }
+          }
+
+          if (events.length > 0) {
+            setCalendarSyncSuccessMsg(`${events.length} evento(s) sincronizados via Google Calendar API!`);
+          } else {
+            setCalendarSyncSuccessMsg('Conectado via Google API! Nenhum evento para hoje (rotina livre de estudos).');
+          }
+          setIsGoogleModalOpen(false);
+        } catch (fetchErr: any) {
+          setCalendarSyncError(fetchErr?.message || 'Falha ao buscar eventos da Google Calendar API.');
+        } finally {
+          setIsSyncingCalendar(false);
+        }
+      },
+      (oauthErr) => {
+        setIsSyncingCalendar(false);
+        const rawMsg = oauthErr?.message || oauthErr?.error || '';
+        if (rawMsg.includes('popup_closed')) {
+          setCalendarSyncError('Janela do Google fechada antes de autorizar. Tente novamente.');
+        } else {
+          setCalendarSyncError('Não foi possível conectar via Google. Verifique popups ou use o link iCal.');
+        }
+      }
+    );
+  };
+
+  const handleSyncNow = async () => {
+    if (calendarSyncMode === 'api' && googleAccessToken) {
+      setIsSyncingCalendar(true);
+      setCalendarSyncError(null);
+      try {
+        const events = await fetchTodayEventsFromGoogleApi(googleAccessToken);
+        setRealCalendarEvents(events as any);
+        const nowStr = `Hoje às ${new Date().toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}`;
+        setLastCalendarSyncTime(nowStr);
+        if (typeof window !== 'undefined') {
+          localStorage.setItem('bancoresidencia_real_calendar_events', JSON.stringify(events));
+          localStorage.setItem('bancoresidencia_google_last_sync', nowStr);
+        }
+        setCalendarSyncSuccessMsg(`Sincronizado! ${events.length} eventos atualizados.`);
+      } catch (err: any) {
+        setCalendarSyncError(err?.message || 'Falha ao atualizar via Google API.');
+      } finally {
+        setIsSyncingCalendar(false);
+      }
+    } else if (googleIcalUrl) {
+      await syncIcalEvents(googleIcalUrl);
+    } else {
+      setIsGoogleModalOpen(true);
+    }
+  };
+
+  const handleDisconnectGoogleCalendar = () => {
+    setIsGoogleCalendarConnected(false);
+    setRealCalendarEvents([]);
+    setGoogleAccessToken('');
+    setGoogleIcalUrl('');
+    setGoogleCalendarAccount('Minha Agenda');
+    setLastCalendarSyncTime('');
+    if (typeof window !== 'undefined') {
+      localStorage.removeItem('bancoresidencia_google_calendar_connected');
+      localStorage.removeItem('bancoresidencia_google_calendar_mode');
+      localStorage.removeItem('bancoresidencia_google_access_token');
+      localStorage.removeItem('bancoresidencia_google_ical_url');
+      localStorage.removeItem('bancoresidencia_real_calendar_events');
+      localStorage.removeItem('bancoresidencia_google_last_sync');
+      localStorage.removeItem('bancoresidencia_google_calendar_account');
+    }
+    setIsGoogleModalOpen(false);
+    setCalendarSyncSuccessMsg('Google Agenda desconectado.');
+  };
+
+  // Botão de Emergência: "Atrasei no Plantão"
+  const handleReorganizeDelayedSchedule = (delayMinutes: number = 60) => {
+    const minsToUse = Math.max(15, Math.min(360, delayMinutes));
+    const now = new Date();
+    const currentMins = now.getHours() * 60 + now.getMinutes();
+
+    setUserScheduledTasks((prev) => {
+      if (prev.length === 0) return prev;
+
+      const formatMins = (m: number) => {
+        const h = Math.floor(m / 60) % 24;
+        const min = m % 60;
+        return `${String(h).padStart(2, '0')}:${String(min).padStart(2, '0')}`;
+      };
+
+      let runningMins = Math.max(currentMins + 10, 8 * 60);
+      const updated = prev.map((task) => {
+        if (task.endMinutes <= currentMins) return task;
+        const duration = Math.max(20, task.endMinutes - task.startMinutes);
+        const newStart = Math.max(runningMins, task.startMinutes + minsToUse);
+        const newEnd = newStart + duration;
+        runningMins = newEnd + 15;
+
+        return {
+          ...task,
+          startMinutes: newStart,
+          endMinutes: newEnd,
+          startTime: formatMins(newStart),
+          endTime: formatMins(newEnd),
+          rationale: `Reorganizado após atraso de ${minsToUse}m no plantão/rotina. Horário protegido sem sobrecarga.`
+        };
+      });
+
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(updated));
+      }
+      return updated;
+    });
+
+    setShowDelayModal(false);
+    setCalendarSyncSuccessMsg(`Cronograma reorganizado com sucesso (+${minsToUse}m)! A IA adaptou seus blocos restantes.`);
+  };
+
+  // Adicionar Bloco Manual
+  const handleCreateManualSlot = () => {
+    if (!manualSlotTitle.trim()) return;
+
+    const [sh, sm] = manualSlotStart.split(':').map(Number);
+    const [eh, em] = manualSlotEnd.split(':').map(Number);
+    const startMins = (sh || 0) * 60 + (sm || 0);
+    const endMins = (eh || 0) * 60 + (em || 0);
+
+    const actionMap: Record<string, 'treinar' | 'flashcards' | 'caderno_erros' | 'simulado'> = {
+      estudo: 'treinar',
+      flashcard: 'flashcards',
+      revisao: 'caderno_erros',
+      simulado: 'simulado'
+    };
+
+    const newSlot: DailyScheduleSlot = {
+      id: `manual_slot_${Date.now()}`,
+      title: manualSlotTitle.trim(),
+      category: manualSlotCategory as any,
+      startTime: manualSlotStart,
+      endTime: manualSlotEnd,
+      startMinutes: startMins,
+      endMinutes: endMins > startMins ? endMins : startMins + 60,
+      source: 'plataforma',
+      action: actionMap[manualSlotCategory] || 'treinar',
+      description: manualSlotNotes.trim() || 'Bloco de estudo personalizado criado por você',
+      rationale: 'Planejamento pessoal adicionado à grade.'
+    };
+
+    setUserScheduledTasks((prev) => {
+      const updated = [...prev, newSlot];
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(updated));
+      }
+      return updated;
+    });
+
+    setManualSlotTitle('');
+    setManualSlotNotes('');
+    setShowAddManualModal(false);
+    setCalendarSyncSuccessMsg(`Bloco "${newSlot.title}" adicionado à sua agenda!`);
+  };
+
+  // Exportar 1 Bloco para Google Agenda
+  const handleExportSlotToGoogle = async (slot: DailyScheduleSlot) => {
+    setExportingSlotId(slot.id);
+    try {
+      if (calendarSyncMode === 'api' && googleAccessToken) {
+        await createEventInGoogleCalendarApi(googleAccessToken, {
+          title: slot.title,
+          startTime: slot.startTime,
+          endTime: slot.endTime,
+          description: cleanEventDescription(slot.description),
+          location: slot.location
+        });
+        setExportedSlotIds(prev => {
+          const next = { ...prev, [slot.id]: true };
+          if (typeof window !== 'undefined') {
+            localStorage.setItem('bancoresidencia_exported_slots', JSON.stringify(next));
+          }
+          return next;
+        });
+        setCalendarSyncSuccessMsg(`✓ Bloco "${slot.title}" gravado com sucesso no seu Google Agenda!`);
+      } else {
+        const templateUrl = buildGoogleCalendarTemplateUrl({
+          title: slot.title,
+          startTime: slot.startTime,
+          endTime: slot.endTime,
+          description: cleanEventDescription(slot.description),
+          location: slot.location
+        });
+        setExportedSlotIds(prev => {
+          const next = { ...prev, [slot.id]: true };
+          if (typeof window !== 'undefined') {
+            localStorage.setItem('bancoresidencia_exported_slots', JSON.stringify(next));
+          }
+          return next;
+        });
+        window.open(templateUrl, '_blank', 'noopener,noreferrer');
+      }
+    } catch {
+      const templateUrl = buildGoogleCalendarTemplateUrl({
+        title: slot.title,
+        startTime: slot.startTime,
+        endTime: slot.endTime,
+        description: cleanEventDescription(slot.description),
+        location: slot.location
+      });
+      window.open(templateUrl, '_blank', 'noopener,noreferrer');
+    } finally {
+      setTimeout(() => setExportingSlotId(null), 800);
+    }
+  };
+
+  // Sincronizar todos os blocos com o Google Agenda
+  const handleSyncAllTasksToGoogle = async () => {
+    let tasksToSync = [...userScheduledTasks.filter(t => t.source === 'plataforma')];
+
+    if (scheduleAiAnalysis?.suggestions && scheduleAiAnalysis.suggestions.length > 0) {
+      const existingIds = new Set(tasksToSync.map(t => t.id));
+      const suggestionsToAdd = scheduleAiAnalysis.suggestions.filter(s => !existingIds.has(s.id));
+      if (suggestionsToAdd.length > 0) {
+        tasksToSync = [...tasksToSync, ...suggestionsToAdd];
+        setUserScheduledTasks(prev => {
+          const prevIds = new Set(prev.map(p => p.id));
+          const newItems = suggestionsToAdd.filter(s => !prevIds.has(s.id)).map(s => ({ ...s, isAiSuggested: true }));
+          const updated = [...prev, ...newItems];
+          if (typeof window !== 'undefined') {
+            localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(updated));
+          }
+          return updated;
+        });
+      }
+    }
+
+    if (tasksToSync.length === 0) {
+      setCalendarSyncError('Nenhuma tarefa ou sugestão de estudo disponível para sincronizar.');
+      return;
+    }
+
+    setIsBatchSyncing(true);
+    setCalendarSyncError(null);
+
+    try {
+      if (calendarSyncMode === 'api' && googleAccessToken) {
+        const batchInputs = tasksToSync.map(t => ({
+          title: t.title,
+          startTime: t.startTime,
+          endTime: t.endTime,
+          description: cleanEventDescription(t.description),
+          location: t.location || 'Plataforma Banco Residência'
+        }));
+        const res = await createEventsBatchInGoogleCalendarApi(googleAccessToken, batchInputs);
+        setCalendarSyncSuccessMsg(`${res.success} bloco(s) gravado(s) diretamente no seu Google Agenda!`);
+      } else {
+        const batchInputs = tasksToSync.map(t => ({
+          title: t.title,
+          startTime: t.startTime,
+          endTime: t.endTime,
+          description: cleanEventDescription(t.description),
+          location: t.location || 'Plataforma Banco Residência'
+        }));
+        const icsData = generateIcsContent(batchInputs);
+        downloadIcsFile('estudos_hoje_google_agenda.ics', icsData);
+        setCalendarSyncSuccessMsg('Arquivo .ics gerado com sucesso! Salve ou importe no Google Agenda.');
+      }
+
+      const newlyExported: Record<string, boolean> = {};
+      tasksToSync.forEach(t => { newlyExported[t.id] = true; });
+      setExportedSlotIds(prev => {
+        const next = { ...prev, ...newlyExported };
+        if (typeof window !== 'undefined') {
+          localStorage.setItem('bancoresidencia_exported_slots', JSON.stringify(next));
+        }
+        return next;
+      });
+    } catch (err: any) {
+      setCalendarSyncError(err?.message || 'Falha ao sincronizar tarefas com Google Agenda.');
+    } finally {
+      setIsBatchSyncing(false);
+    }
+  };
+
+  const handleRemoveScheduledTask = (taskId: string) => {
+    setUserScheduledTasks((prev) => {
+      const updated = prev.filter(t => t.id !== taskId);
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(updated));
+      }
+      return updated;
+    });
+    setExportedSlotIds(prev => {
+      const next = { ...prev };
+      delete next[taskId];
+      if (typeof window !== 'undefined') {
+        localStorage.setItem('bancoresidencia_exported_slots', JSON.stringify(next));
+      }
+      return next;
+    });
+  };
+
+  const handleClearUserScheduledTasks = () => {
+    setUserScheduledTasks([]);
+    setExportedSlotIds({});
+    if (typeof window !== 'undefined') {
+      localStorage.removeItem('bancoresidencia_user_scheduled_tasks');
+      localStorage.removeItem('bancoresidencia_exported_slots');
+      localStorage.removeItem('bancoresidencia_batch_sync_completed');
+    }
+    setCalendarSyncSuccessMsg('Cronograma redefinido para os eventos oficiais do Google Agenda.');
+  };
+
+  // Análise com IA
+  const handleAnalyzeScheduleWithAi = async (customPrompt?: string) => {
+    setIsAnalyzingSchedule(true);
+    setShowAiScheduleDrawer(true);
+    setShowAiCommandModal(false);
+    setCalendarSyncError(null);
+
+    const commandToUse = (customPrompt !== undefined ? customPrompt : aiUserCommand).trim();
+    const nowObj = new Date();
+    const currentH = nowObj.getHours();
+    const currentM = nowObj.getMinutes();
+    const currentMinutes = currentH * 60 + currentM;
+    const currentTimeStr = `${String(currentH).padStart(2, '0')}:${String(currentM).padStart(2, '0')}`;
+
+    const weaknessesList: Array<{ subtopic: string; specialty: string; accuracy: number }> = [];
+    if (userAnswers && Object.keys(userAnswers).length > 0) {
+      const themeMap: Record<string, { total: number; correct: number; specialty: string }> = {};
+      Object.values(userAnswers).forEach((ans) => {
+        if (ans.tema) {
+          const t = ans.tema.trim();
+          if (!themeMap[t]) themeMap[t] = { total: 0, correct: 0, specialty: ans.specialty || 'Geral' };
+          themeMap[t].total += 1;
+          if (ans.isCorrect) themeMap[t].correct += 1;
+        }
+      });
+      Object.entries(themeMap)
+        .filter(([, data]) => data.total >= 2)
+        .map(([subtopic, data]) => ({
+          subtopic,
+          specialty: data.specialty,
+          accuracy: Math.round((data.correct / data.total) * 100)
+        }))
+        .filter(item => item.accuracy < 50)
+        .sort((a, b) => a.accuracy - b.accuracy)
+        .slice(0, 5)
+        .forEach(w => weaknessesList.push(w));
+    }
+
+    if (weaknessesList.length === 0) {
+      const defaults = CRITICAL_SUBTOPICS_MAP['clinica'] || [];
+      defaults.forEach(d => {
+        weaknessesList.push({
+          subtopic: d.name,
+          specialty: 'Clínica Médica',
+          accuracy: d.defaultAccuracy
+        });
+      });
+    }
+
+    try {
+      const res = await fetch('/api/ai/schedule-optimizer', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          events: realCalendarEvents,
+          userCommand: commandToUse,
+          currentMinutes,
+          userContext: {
+            currentTime: currentTimeStr,
+            currentMinutes,
+            recommendedArea: 'Clínica Médica',
+            targetExamName: user?.targetExamName || 'ENARE 2026',
+            dailyGoal: dailyGoal || 30,
+            todayAnswered,
+            todayStudyMinutes,
+            performance: {
+              overallAccuracy: stats.totalAnswered > 0 ? (stats.accuracyRate || 0) : 0,
+              totalAnswered: stats.totalAnswered || 0,
+              areas: []
+            },
+            criticalWeaknesses: weaknessesList,
+            errorNotebook: {
+              pendingCount: pendingErrorsCount,
+              mostCriticalSpecialty: 'Clínica Médica'
+            },
+            spacedRepetition: {
+              dueToday: 15,
+              overdueCount: 0,
+              total: 100,
+              desiredRetention: 90
+            },
+            cognitiveEnergy: {
+              hasData: cognitiveEnergyStats.hasData,
+              bestShift: cognitiveEnergyStats.bestShift,
+              morning: { taxa: cognitiveEnergyStats.morning.taxa, resolvidas: cognitiveEnergyStats.morning.resolvidas },
+              afternoon: { taxa: cognitiveEnergyStats.afternoon.taxa, resolvidas: cognitiveEnergyStats.afternoon.resolvidas },
+              night: { taxa: cognitiveEnergyStats.night.taxa, resolvidas: cognitiveEnergyStats.night.resolvidas },
+              fatigueAlert: cognitiveEnergyStats.fatigueAlert
+            }
+          }
+        }),
+        signal: AbortSignal.timeout(15000)
+      });
+
+      const data = await res.json();
+      if (!res.ok || !data.success) {
+        throw new Error(data.error || 'Não foi possível analisar os horários com IA.');
+      }
+
+      setScheduleAiAnalysis({
+        summary: data.summary || '',
+        freeGaps: data.freeGaps || [],
+        suggestions: data.suggestions || []
+      });
+    } catch {
+      const customHint = commandToUse ? ` (orientado por: "${commandToUse}")` : '';
+      const topWeakness = weaknessesList[0];
+
+      setScheduleAiAnalysis({
+        summary: `Plano adaptativo gerado pelo Preceptor${customHint}. Intervalos livres cruzados com suas vulnerabilidades clínicas e revisão espaçada.`,
+        freeGaps: [
+          { startTime: '14:00', endTime: '16:00', durationMinutes: 120 },
+          { startTime: '19:30', endTime: '21:00', durationMinutes: 90 }
+        ],
+        suggestions: [
+          {
+            id: 'ai_sug_fallback_1',
+            title: `Treino TRI: ${topWeakness ? `${topWeakness.specialty} (${topWeakness.subtopic})` : 'Clínica Médica'}`,
+            category: 'estudo',
+            startTime: '14:00',
+            endTime: '15:15',
+            startMinutes: 840,
+            endMinutes: 915,
+            source: 'plataforma',
+            action: 'treinar',
+            isAiSuggested: true,
+            description: `Bloco de questões inéditas de ${topWeakness ? topWeakness.subtopic : 'Clínica'} com foco em calibragem TRI`,
+            rationale: 'Janela da tarde ideal para ganho de proficiência em tópicos com taxa de acerto inferior a 50%.'
+          },
+          {
+            id: 'ai_sug_fallback_2',
+            title: 'Revisão Metacognitiva & Flashcards FSRS',
+            category: 'flashcard',
+            startTime: '19:30',
+            endTime: '20:30',
+            startMinutes: 1170,
+            endMinutes: 1230,
+            source: 'plataforma',
+            action: 'flashcards',
+            isAiSuggested: true,
+            description: 'Repetição espaçada com FSRS para consolidação duradoura na memória de longo prazo.',
+            rationale: 'Estudo ativo leve antes do período de descanso, prevenindo a fadiga mental.'
+          }
+        ]
+      });
+    } finally {
+      setIsAnalyzingSchedule(false);
+    }
+  };
+
+  const isCurrentActive = currentPeriodInfo.status === 'em_andamento';
+  const activeSlot = isCurrentActive ? currentPeriodInfo.slot : null;
+  const upcomingSlot = currentPeriodInfo.status === 'proximo' ? currentPeriodInfo.slot : null;
+
+  return (
+    <div className="space-y-6">
+      {/* ── 1. CABEÇALHO ELEGANTE DA ABA AGENDA ── */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-zinc-200 dark:border-zinc-800">
+        <div>
+          <div className="flex items-center gap-2.5">
+            <div
+              className="w-10 h-10 rounded-2xl flex items-center justify-center shadow-xs"
+              style={{ backgroundColor: `${accentConfig.primaryHex}20`, color: accentConfig.primaryHex }}
+            >
+              <CalendarDays className="w-5 h-5 stroke-[2.2]" />
+            </div>
+            <div>
+              <div className="flex items-center gap-2">
+                <h1 className="font-heading font-black text-xl sm:text-2xl text-slate-900 dark:text-zinc-100 tracking-tight">
+                  Agenda de Estudos
+                </h1>
+                <span className="px-2 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-blue-500/15 text-blue-600 dark:text-blue-400 border border-blue-500/30">
+                  Adaptativa
+                </span>
+              </div>
+              <p className="text-xs text-slate-500 dark:text-zinc-400 mt-0.5">
+                Cronograma inteligente integrado ao Google Agenda, plantões e ciclo de revisões
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Botões Rápidos de Topo */}
+        <div className="flex items-center gap-2 flex-wrap">
+          <button
+            type="button"
+            onClick={() => setShowAddManualModal(true)}
+            className="px-3 py-2 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-xs font-bold text-slate-700 dark:text-zinc-200 flex items-center gap-1.5 transition-all shadow-2xs cursor-pointer"
+          >
+            <Plus className="w-4 h-4 text-blue-500" />
+            <span>Adicionar Bloco</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => setShowAiCommandModal(true)}
+            className="px-3.5 py-2 rounded-xl text-white text-xs font-bold flex items-center gap-1.5 transition-all shadow-xs cursor-pointer hover:opacity-95"
+            style={{ backgroundColor: accentConfig.primaryHex }}
+          >
+            <Sparkles className="w-3.5 h-3.5" />
+            <span>Mentor IA</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => setShowDelayModal(true)}
+            className="px-3 py-2 rounded-xl border border-rose-500/30 bg-rose-500/10 hover:bg-rose-500/20 text-rose-700 dark:text-rose-300 text-xs font-bold flex items-center gap-1.5 transition-colors cursor-pointer shadow-2xs"
+            title="Atrasei no plantão: reajustar blocos restantes"
+          >
+            <RotateCcw className="w-3.5 h-3.5 text-rose-500" />
+            <span>Atrasei</span>
+          </button>
+        </div>
+      </div>
+
+      {/* Alertas de Feedback */}
+      {calendarSyncSuccessMsg && (
+        <div className="p-3.5 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-700 dark:text-emerald-300 text-xs font-semibold flex items-center justify-between gap-2 animate-in fade-in duration-200">
+          <div className="flex items-center gap-2">
+            <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0" />
+            <span>{calendarSyncSuccessMsg}</span>
+          </div>
+          <button
+            type="button"
+            onClick={() => setCalendarSyncSuccessMsg(null)}
+            className="text-emerald-600 dark:text-emerald-400 hover:opacity-70 p-1 cursor-pointer"
+          >
+            <X className="w-3.5 h-3.5" />
+          </button>
+        </div>
+      )}
+
+      {calendarSyncError && (
+        <div className="p-3.5 rounded-2xl bg-rose-500/10 border border-rose-500/30 text-rose-700 dark:text-rose-300 text-xs font-semibold flex items-center justify-between gap-2 animate-in fade-in duration-200">
+          <div className="flex items-center gap-2">
+            <AlertOctagon className="w-4 h-4 text-rose-500 shrink-0" />
+            <span>{calendarSyncError}</span>
+          </div>
+          <button
+            type="button"
+            onClick={() => setCalendarSyncError(null)}
+            className="text-rose-600 dark:text-rose-400 hover:opacity-70 p-1 cursor-pointer"
+          >
+            <X className="w-3.5 h-3.5" />
+          </button>
+        </div>
+      )}
+
+      {/* ── 2. GRID PRINCIPAL (5 COLS ESQUERDA / 7 COLS DIREITA) ── */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+        
+        {/* ── COLUNA ESQUERDA: CONTROLE, IA, PACING & CRONOBIOLOGIA (lg:col-span-5) ── */}
+        <div className="lg:col-span-5 space-y-4">
+          
+          {/* Card 1: Google Agenda Status & Conexão */}
+          <div className={`p-4 rounded-2xl border transition-all ${
+            isGoogleCalendarConnected
+              ? 'bg-blue-500/5 dark:bg-blue-950/20 border-blue-500/30'
+              : 'bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800'
+          }`}>
+            <div className="flex items-center justify-between gap-3">
+              <div className="flex items-center gap-2.5 min-w-0">
+                <div className="w-10 h-10 rounded-xl bg-white dark:bg-[#18181b] border border-blue-500/20 shadow-xs flex items-center justify-center shrink-0">
+                  <GoogleIcon className="w-4.5 h-4.5" />
+                </div>
+                <div className="min-w-0">
+                  <div className="flex items-center gap-1.5">
+                    <h3 className="text-xs font-bold text-zinc-900 dark:text-zinc-100 truncate">
+                      Google Agenda
+                    </h3>
+                    <span className={`px-1.5 py-0.2 rounded-full text-[9px] font-bold ${
+                      isGoogleCalendarConnected
+                        ? 'bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30'
+                        : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-500'
+                    }`}>
+                      {isGoogleCalendarConnected ? 'Ativa' : 'Desconectada'}
+                    </span>
+                  </div>
+                  <p className="text-[11px] text-zinc-500 dark:text-zinc-400 truncate">
+                    {isGoogleCalendarConnected ? googleCalendarAccount : 'Sincronize plantões e rotina médica'}
+                  </p>
+                  {lastCalendarSyncTime && (
+                    <span className="text-[10px] text-zinc-400 dark:text-zinc-500 block truncate">
+                      Última sync: {lastCalendarSyncTime}
+                    </span>
+                  )}
+                </div>
+              </div>
+
+              <div className="flex items-center gap-1.5 shrink-0">
+                {isGoogleCalendarConnected ? (
+                  <>
+                    <button
+                      type="button"
+                      onClick={handleSyncNow}
+                      disabled={isSyncingCalendar}
+                      className="p-2 rounded-lg border border-blue-500/30 bg-white dark:bg-zinc-900 text-blue-600 dark:text-blue-400 hover:bg-blue-50 text-xs font-bold cursor-pointer transition-colors disabled:opacity-50"
+                      title="Sincronizar agora com Google"
+                    >
+                      <RefreshCw className={`w-3.5 h-3.5 ${isSyncingCalendar ? 'animate-spin' : ''}`} />
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setIsGoogleModalOpen(true)}
+                      className="px-2.5 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-[11px] font-bold cursor-pointer transition-colors"
+                    >
+                      Configurar
+                    </button>
+                  </>
+                ) : (
+                  <button
+                    type="button"
+                    onClick={() => setIsGoogleModalOpen(true)}
+                    className="px-3 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold cursor-pointer transition-colors flex items-center gap-1.5 shadow-2xs"
+                  >
+                    <GoogleIcon className="w-3.5 h-3.5" />
+                    <span>Conectar</span>
+                  </button>
+                )}
+              </div>
+            </div>
+          </div>
+
+          {/* Card 2: "O Que Fazer Agora" (Live Hero) */}
+          <div className="p-5 rounded-2xl border border-blue-500/40 bg-gradient-to-br from-blue-500/10 via-indigo-500/5 to-transparent dark:bg-[#121622] space-y-3.5 shadow-xs">
+            <div className="flex items-center justify-between">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 flex items-center gap-1.5">
+                {isCurrentActive ? (
+                  <>
+                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                    Bloco em Andamento Agora
+                  </>
+                ) : upcomingSlot ? (
+                  <>
+                    <Clock className="w-3.5 h-3.5 text-blue-500" />
+                    Próxima Ação Programada
+                  </>
+                ) : (
+                  <>
+                    <Sparkles className="w-3.5 h-3.5 text-amber-500" />
+                    Janela de Estudo Livre
+                  </>
+                )}
+              </span>
+              {isCurrentActive && (
+                <span className="font-mono text-[11px] font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-md border border-emerald-500/20">
+                  {currentPeriodInfo.minutesRemaining}m restantes
+                </span>
+              )}
+              {!isCurrentActive && upcomingSlot && (
+                <span className="font-mono text-[11px] font-bold text-blue-600 dark:text-blue-400 bg-blue-500/10 px-2 py-0.5 rounded-md border border-blue-500/20">
+                  Inicia às {upcomingSlot.startTime}
+                </span>
+              )}
+            </div>
+
+            <div>
+              <h3 className="text-base font-black text-zinc-900 dark:text-zinc-100">
+                {isCurrentActive && activeSlot
+                  ? activeSlot.title
+                  : upcomingSlot
+                    ? upcomingSlot.title
+                    : 'Nenhum compromisso imediato no momento'}
+              </h3>
+              <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1 leading-relaxed">
+                {isCurrentActive && activeSlot
+                  ? (cleanEventDescription(activeSlot.description) || activeSlot.rationale || 'Mantenha o foco até o término deste bloco.')
+                  : upcomingSlot
+                    ? (cleanEventDescription(upcomingSlot.description) || upcomingSlot.rationale || `Começa em ${currentPeriodInfo.minutesUntil || 15} minutos.`)
+                    : 'Seu cronograma está livre de plantões e blocos obrigatórios. Que tal antecipar questões da sua área prioritária?'}
+              </p>
+            </div>
+
+            {/* Barra de Progresso do Bloco Atual */}
+            {isCurrentActive && (
+              <div className="space-y-1">
+                <div className="flex items-center justify-between text-[10px] text-zinc-400">
+                  <span>Progresso do Bloco</span>
+                  <span className="font-mono font-bold text-blue-600 dark:text-blue-400">{currentPeriodInfo.progressPercent}%</span>
+                </div>
+                <div className="w-full h-1.5 rounded-full bg-blue-500/20 overflow-hidden">
+                  <div
+                    className="h-full bg-blue-600 transition-all duration-300 rounded-full"
+                    style={{ width: `${currentPeriodInfo.progressPercent}%` }}
+                  />
+                </div>
+              </div>
+            )}
+
+            {/* CTAs Diretos de Ação */}
+            <div className="pt-1">
+              {isCurrentActive && activeSlot?.action === 'treinar' && (
+                <button
+                  type="button"
+                  onClick={() => onNavigateToBanco ? onNavigateToBanco('Clínica Médica') : router.push('/questoes')}
+                  className="w-full py-2.5 rounded-xl text-white text-xs font-bold cursor-pointer transition-all hover:opacity-95 shadow-xs flex items-center justify-center gap-2"
+                  style={{ backgroundColor: accentConfig.primaryHex }}
+                >
+                  <Play className="w-3.5 h-3.5 fill-current" />
+                  <span>Continuar Treino de Questões</span>
+                </button>
+              )}
+
+              {isCurrentActive && activeSlot?.action === 'flashcards' && (
+                <button
+                  type="button"
+                  onClick={() => onNavigateToFlashcards ? onNavigateToFlashcards() : router.push('/flashcards')}
+                  className="w-full py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold cursor-pointer transition-all shadow-xs flex items-center justify-center gap-2"
+                >
+                  <Brain className="w-3.5 h-3.5" />
+                  <span>Revisar Flashcards FSRS</span>
+                </button>
+              )}
+
+              {isCurrentActive && activeSlot?.action === 'caderno_erros' && (
+                <button
+                  type="button"
+                  onClick={() => onNavigateToCadernoErros ? onNavigateToCadernoErros() : router.push('/caderno-de-erros')}
+                  className="w-full py-2.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white text-xs font-bold cursor-pointer transition-all shadow-xs flex items-center justify-center gap-2"
+                >
+                  <AlertOctagon className="w-3.5 h-3.5" />
+                  <span>Abrir Caderno de Erros</span>
+                </button>
+              )}
+
+              {isCurrentActive && activeSlot?.action === 'simulado' && (
+                <button
+                  type="button"
+                  onClick={() => onNavigateToSimulados ? onNavigateToSimulados() : router.push('/simulados')}
+                  className="w-full py-2.5 rounded-xl bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold cursor-pointer transition-all shadow-xs flex items-center justify-center gap-2"
+                >
+                  <Trophy className="w-3.5 h-3.5" />
+                  <span>Iniciar Simulado Blitz</span>
+                </button>
+              )}
+
+              {(!isCurrentActive || !activeSlot?.action) && (
+                <button
+                  type="button"
+                  onClick={() => onNavigateToBanco ? onNavigateToBanco('Clínica Médica') : router.push('/questoes')}
+                  className="w-full py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold cursor-pointer transition-all shadow-xs flex items-center justify-center gap-2"
+                >
+                  <Play className="w-3.5 h-3.5 fill-current" />
+                  <span>Praticar Questões Agora</span>
+                </button>
+              )}
+            </div>
+          </div>
+
+          {/* Card 3: Pacing e Metas de Hoje */}
+          <div className="p-4 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 space-y-3">
+            <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-zinc-400 block">
+              Pacing e Metas de Hoje
+            </span>
+
+            <div className="grid grid-cols-3 gap-2">
+              <div className="p-3 rounded-xl bg-zinc-50 dark:bg-zinc-800/60 border border-zinc-200/80 dark:border-zinc-800 text-center">
+                <span className="text-[9px] font-bold text-slate-400 dark:text-zinc-500 uppercase block">Questões</span>
+                <span className="text-base font-black font-mono text-slate-900 dark:text-zinc-100">
+                  {todayAnswered}/{dailyGoal || 30}
+                </span>
+              </div>
+
+              <div className="p-3 rounded-xl bg-zinc-50 dark:bg-zinc-800/60 border border-zinc-200/80 dark:border-zinc-800 text-center">
+                <span className="text-[9px] font-bold text-slate-400 dark:text-zinc-500 uppercase block">Tempo</span>
+                <span className="text-base font-black font-mono text-slate-900 dark:text-zinc-100">
+                  {todayStudyMinutes}m
+                </span>
+              </div>
+
+              <div className="p-3 rounded-xl bg-blue-500/10 border border-blue-500/20 text-center">
+                <span className="text-[9px] font-bold text-blue-600 dark:text-blue-400 uppercase block">Blocos</span>
+                <span className="text-base font-black font-mono text-blue-600 dark:text-blue-400">
+                  {daySchedule.length}
+                </span>
+              </div>
+            </div>
+
+            <div className="pt-1 flex items-center justify-between text-[11px] text-zinc-500 dark:text-zinc-400">
+              <span>Status da Meta:</span>
+              <span className="font-bold text-slate-800 dark:text-zinc-200">
+                {todayAnswered >= (dailyGoal || 30) ? '🎉 Meta batida hoje!' : `Faltam ${(dailyGoal || 30) - todayAnswered} questões`}
+              </span>
+            </div>
+          </div>
+
+          {/* Card 4: Curva de Cronobiologia & Energia Mental */}
+          <div className="p-4 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 space-y-2.5">
+            <div className="flex items-center justify-between">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 flex items-center gap-1">
+                <Zap className="w-3.5 h-3.5 text-amber-500" />
+                Guia de Energia Cognitiva
+              </span>
+              {cognitiveEnergyStats.hasData && cognitiveEnergyStats.bestShift && (
+                <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-md bg-purple-500/10 text-purple-600 dark:text-purple-400 border border-purple-500/20">
+                  Melhor: {cognitiveEnergyStats.bestShift} ({cognitiveEnergyStats.bestShiftTaxa}%)
+                </span>
+              )}
+            </div>
+
+            <div className="space-y-2 text-[11px]">
+              {/* Manhã */}
+              <div className="flex items-center justify-between text-zinc-600 dark:text-zinc-300">
+                <span className="flex items-center gap-1.5">
+                  <span className="font-mono text-amber-500 font-bold">⚡⚡⚡ Manhã:</span>
+                  <span>Questões Inéditas (TRI)</span>
+                </span>
+                <span className="text-[10px] text-zinc-400 font-mono">
+                  {cognitiveEnergyStats.morning.resolvidas > 0
+                    ? `${cognitiveEnergyStats.morning.taxa}% • ${cognitiveEnergyStats.morning.resolvidas}Q`
+                    : 'Pico de Foco'}
+                </span>
+              </div>
+
+              {/* Tarde */}
+              <div className="flex items-center justify-between text-zinc-600 dark:text-zinc-300">
+                <span className="flex items-center gap-1.5">
+                  <span className="font-mono text-blue-500 font-bold">⚡⚡ Tarde:</span>
+                  <span>Caderno de Erros</span>
+                </span>
+                <span className="text-[10px] text-zinc-400 font-mono">
+                  {cognitiveEnergyStats.afternoon.resolvidas > 0
+                    ? `${cognitiveEnergyStats.afternoon.taxa}% • ${cognitiveEnergyStats.afternoon.resolvidas}Q`
+                    : 'Reteste & Foco'}
+                </span>
+              </div>
+
+              {/* Noite */}
+              <div className="flex items-center justify-between text-zinc-600 dark:text-zinc-300">
+                <span className="flex items-center gap-1.5">
+                  <span className="font-mono text-emerald-500 font-bold">⚡ Noite:</span>
+                  <span>Flashcards FSRS</span>
+                </span>
+                <span className="text-[10px] text-zinc-400 font-mono">
+                  {cognitiveEnergyStats.night.resolvidas > 0
+                    ? `${cognitiveEnergyStats.night.taxa}% • ${cognitiveEnergyStats.night.resolvidas}Q`
+                    : 'Fixação Leve'}
+                </span>
+              </div>
+            </div>
+
+            {cognitiveEnergyStats.fatigueAlert && (
+              <div className="pt-2 border-t border-amber-500/20 flex items-center gap-1.5 text-[10px] font-medium text-amber-600 dark:text-amber-400">
+                <AlertTriangle className="w-3.5 h-3.5 shrink-0" />
+                <span>Alerta de fadiga noturna detectado. Priorize revisões curtas à noite.</span>
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* ── COLUNA DIREITA: CRONOGRAMA VISUAL GOOGLE AGENDA (lg:col-span-7) ── */}
+        <div className="lg:col-span-7 space-y-4">
+          <GoogleCalendarScheduleView
+            events={daySchedule}
+            timelineFilter={timelineFilter}
+            setTimelineFilter={setTimelineFilter}
+            isGoogleCalendarConnected={isGoogleCalendarConnected}
+            onOpenAddManual={() => setShowAddManualModal(true)}
+            onOpenAiCommand={() => setShowAiCommandModal(true)}
+            onOpenAiDrawer={() => setShowAiScheduleDrawer(true)}
+            hasAiSuggestions={Boolean(scheduleAiAnalysis?.suggestions && scheduleAiAnalysis.suggestions.length > 0)}
+            onSyncGoogle={handleSyncNow}
+            isSyncingGoogle={isSyncingCalendar}
+            onExportSlotToGoogle={handleExportSlotToGoogle}
+            exportingSlotId={exportingSlotId}
+            exportedSlotIds={exportedSlotIds}
+            onRemoveTask={handleRemoveScheduledTask}
+            onAction={(action) => {
+              if (action === 'treinar') {
+                if (onNavigateToBanco) onNavigateToBanco('Clínica Médica');
+                else router.push('/questoes');
+              } else if (action === 'caderno_erros') {
+                if (onNavigateToCadernoErros) onNavigateToCadernoErros();
+                else router.push('/caderno-de-erros');
+              } else if (action === 'flashcards') {
+                if (onNavigateToFlashcards) onNavigateToFlashcards();
+                else router.push('/flashcards');
+              } else if (action === 'simulado') {
+                if (onNavigateToSimulados) onNavigateToSimulados();
+                else router.push('/simulados');
+              }
+            }}
+            cleanEventDescription={cleanEventDescription}
+            isHospitalOrDutyEvent={isHospitalOrDutyEvent}
+            primaryAccentHex={accentConfig.primaryHex}
+            userScheduledTasks={userScheduledTasks}
+            onSyncAllTasksToGoogle={handleSyncAllTasksToGoogle}
+            onClearUserScheduledTasks={handleClearUserScheduledTasks}
+            isBatchSyncing={isBatchSyncing}
+          />
+        </div>
+      </div>
+
+      {/* ── 3. MODAIS DE SUPORTE ── */}
+
+      {/* Modal 1: Conexão Google Agenda */}
+      {isGoogleModalOpen && (
+        <div
+          className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 animate-in fade-in duration-200"
+          onClick={() => setIsGoogleModalOpen(false)}
+        >
+          <div
+            className="w-full max-w-md bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl p-6 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2.5">
+                <div className="w-10 h-10 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center shadow-xs">
+                  <GoogleIcon className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="font-heading text-base font-bold text-zinc-900 dark:text-zinc-100">
+                    Conectar Google Agenda
+                  </h3>
+                  <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                    Sincronize sua rotina médica e internato
+                  </p>
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => setIsGoogleModalOpen(false)}
+                className="p-2 text-zinc-400 hover:text-zinc-600 dark:hover:text-white rounded-xl transition-colors cursor-pointer"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+
+            {/* Seletor de Modo: Google vs Link iCal */}
+            <div className="flex p-1 bg-zinc-100 dark:bg-zinc-800/80 rounded-2xl gap-1">
+              <button
+                type="button"
+                onClick={() => setCalendarSyncMode('api')}
+                className={`flex-1 py-2 text-xs font-bold rounded-xl transition-all cursor-pointer flex items-center justify-center gap-1.5 ${
+                  calendarSyncMode === 'api'
+                    ? 'bg-white dark:bg-zinc-900 text-blue-600 dark:text-blue-400 shadow-xs'
+                    : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
+                }`}
+              >
+                <GoogleIcon className="w-3.5 h-3.5" />
+                <span>Google</span>
+              </button>
+
+              <button
+                type="button"
+                onClick={() => setCalendarSyncMode('ical')}
+                className={`flex-1 py-2 text-xs font-bold rounded-xl transition-all cursor-pointer flex items-center justify-center gap-1.5 ${
+                  calendarSyncMode === 'ical'
+                    ? 'bg-white dark:bg-zinc-900 text-blue-600 dark:text-blue-400 shadow-xs'
+                    : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
+                }`}
+              >
+                <Calendar className="w-3.5 h-3.5 text-zinc-500" />
+                <span>Link iCal (.ics)</span>
+              </button>
+            </div>
+
+            {calendarSyncMode === 'api' ? (
+              <div className="space-y-4">
+                <p className="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed bg-zinc-50 dark:bg-zinc-900/60 p-3 rounded-xl border border-zinc-200/80 dark:border-zinc-800">
+                  Conecte sua conta do Google com 1 clique para sincronizar plantões e exportar blocos de estudo diretamente.
+                </p>
+
+                <button
+                  type="button"
+                  disabled={isSyncingCalendar}
+                  onClick={handleConnectGoogleViaApi}
+                  className="w-full py-3.5 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-zinc-900 dark:text-white text-xs font-bold flex items-center justify-center gap-2.5 transition-all shadow-sm cursor-pointer disabled:opacity-50"
+                >
+                  <GoogleIcon className="w-4 h-4" />
+                  <span>{isSyncingCalendar ? 'Abrindo autenticação Google...' : 'Continuar com o Google'}</span>
+                </button>
+
+                <div className="text-center">
+                  <button
+                    type="button"
+                    onClick={() => startGoogleOAuthRedirect(googleClientId)}
+                    className="text-[11px] text-blue-500 hover:underline cursor-pointer"
+                  >
+                    Problemas com popup? Abrir via redirecionamento
+                  </button>
+                </div>
+              </div>
+            ) : (
+              <div className="space-y-3.5">
+                <div className="p-3.5 rounded-2xl bg-blue-50/60 dark:bg-blue-950/20 border border-blue-200/60 dark:border-blue-900/40 text-xs text-zinc-700 dark:text-zinc-300 space-y-2">
+                  <span className="font-bold text-blue-900 dark:text-blue-300 flex items-center gap-1.5">
+                    <Lightbulb className="w-4 h-4 text-blue-500" />
+                    Como obter o link iCal no Google Agenda:
+                  </span>
+                  <ol className="list-decimal pl-4 space-y-1 text-[11px] leading-relaxed text-zinc-600 dark:text-zinc-400">
+                    <li>Abra o Google Agenda no navegador</li>
+                    <li>Clique em Configurações ⚙️ &gt; Configurações das minhas agendas</li>
+                    <li>Clique em <strong>Integrar agenda</strong></li>
+                    <li>Copie o link em <strong>"Endereço secreto no formato iCal"</strong> (.ics)</li>
+                  </ol>
+                </div>
+
+                <div>
+                  <label className="text-xs font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
+                    Endereço secreto no formato iCal (.ics)
+                  </label>
+                  <input
+                    type="url"
+                    value={googleIcalUrl}
+                    onChange={(e) => setGoogleIcalUrl(e.target.value)}
+                    placeholder="https://calendar.google.com/calendar/ical/.../basic.ics"
+                    className="w-full px-3 py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#18181b] text-xs font-mono text-zinc-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500"
+                  />
+                </div>
+              </div>
+            )}
+
+            <div className="pt-2 flex items-center gap-2.5">
+              {isGoogleCalendarConnected ? (
+                <>
+                  <button
+                    type="button"
+                    onClick={handleDisconnectGoogleCalendar}
+                    className="flex-1 py-2.5 rounded-xl border border-rose-500/30 text-rose-600 dark:text-rose-400 text-xs font-bold hover:bg-rose-500/10 cursor-pointer transition-colors"
+                  >
+                    Desconectar
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      if (calendarSyncMode === 'api') handleSyncNow();
+                      else syncIcalEvents(googleIcalUrl);
+                      setIsGoogleModalOpen(false);
+                    }}
+                    className="flex-1 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold cursor-pointer transition-all flex items-center justify-center gap-2 shadow-sm"
+                  >
+                    <RefreshCw className={`w-3.5 h-3.5 ${isSyncingCalendar ? 'animate-spin' : ''}`} />
+                    <span>Sincronizar</span>
+                  </button>
+                </>
+              ) : (
+                <>
+                  <button
+                    type="button"
+                    onClick={() => setIsGoogleModalOpen(false)}
+                    className="flex-1 py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 text-xs font-semibold hover:bg-zinc-100 dark:hover:bg-zinc-800 cursor-pointer transition-colors"
+                  >
+                    Cancelar
+                  </button>
+                  <button
+                    type="button"
+                    disabled={isSyncingCalendar}
+                    onClick={() => {
+                      if (calendarSyncMode === 'api') handleConnectGoogleViaApi();
+                      else syncIcalEvents(googleIcalUrl);
+                    }}
+                    className="flex-1 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 disabled:opacity-50 text-white text-xs font-bold cursor-pointer transition-all flex items-center justify-center gap-2 shadow-sm"
+                  >
+                    <RefreshCw className={`w-3.5 h-3.5 ${isSyncingCalendar ? 'animate-spin' : ''}`} />
+                    <span>Conectar</span>
+                  </button>
+                </>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Modal 2: Reajuste "Atrasei no Plantão" */}
+      {showDelayModal && (
+        <div
+          className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 animate-in fade-in duration-200"
+          onClick={() => setShowDelayModal(false)}
+        >
+          <div
+            className="w-full max-w-md bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl p-6 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2.5">
+                <div className="w-10 h-10 rounded-2xl bg-rose-500/10 border border-rose-500/20 flex items-center justify-center text-rose-500 shadow-xs">
+                  <RotateCcw className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="font-heading text-base font-bold text-zinc-900 dark:text-zinc-100">
+                    Atrasei no Plantão
+                  </h3>
+                  <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                    Reajuste os blocos pendentes de hoje sem sobrecarga
+                  </p>
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => setShowDelayModal(false)}
+                className="p-2 text-zinc-400 hover:text-zinc-600 dark:hover:text-white rounded-xl transition-colors cursor-pointer"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+
+            <div className="space-y-3">
+              <label className="text-xs font-bold text-zinc-700 dark:text-zinc-300 block">
+                Quanto tempo você gostaria de adiar suas tarefas restantes?
+              </label>
+
+              <div className="grid grid-cols-5 gap-1.5">
+                {[30, 45, 60, 90, 120].map((mins) => (
+                  <button
+                    key={mins}
+                    type="button"
+                    onClick={() => setCustomDelayMinutes(mins)}
+                    className={`py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                      customDelayMinutes === mins
+                        ? 'bg-rose-600 text-white shadow-xs'
+                        : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700'
+                    }`}
+                  >
+                    +{mins}m
+                  </button>
+                ))}
+              </div>
+
+              <div className="p-3 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800 space-y-1.5">
+                <span className="text-[11px] font-semibold text-zinc-600 dark:text-zinc-400 block">
+                  Ou digite os minutos exatos de atraso:
+                </span>
+                <div className="flex items-center gap-2">
+                  <input
+                    type="number"
+                    min="15"
+                    max="360"
+                    step="15"
+                    value={customDelayMinutes}
+                    onChange={(e) => setCustomDelayMinutes(Math.max(15, Number(e.target.value) || 15))}
+                    className="w-24 px-3 py-1.5 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-900 dark:text-white font-mono font-bold text-sm focus:outline-none focus:ring-1 focus:ring-rose-500"
+                  />
+                  <span className="text-xs text-zinc-500 font-medium">minutos de tolerância/descanso</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="pt-2 flex items-center gap-2.5">
+              <button
+                type="button"
+                onClick={() => setShowDelayModal(false)}
+                className="flex-1 py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 text-xs font-semibold hover:bg-zinc-100 dark:hover:bg-zinc-800 cursor-pointer transition-colors"
+              >
+                Cancelar
+              </button>
+              <button
+                type="button"
+                onClick={() => handleReorganizeDelayedSchedule(customDelayMinutes)}
+                className="flex-1 py-2.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white text-xs font-bold cursor-pointer transition-all flex items-center justify-center gap-2 shadow-sm"
+              >
+                <RotateCcw className="w-3.5 h-3.5" />
+                <span>Reorganizar (+{customDelayMinutes}m)</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Modal 3: Adicionar Bloco Manual */}
+      {showAddManualModal && (
+        <div
+          className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 animate-in fade-in duration-200"
+          onClick={() => setShowAddManualModal(false)}
+        >
+          <div
+            className="w-full max-w-lg bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl p-6 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2.5">
+                <div className="w-10 h-10 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-600 dark:text-blue-400 shadow-xs">
+                  <Plus className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="font-heading text-base font-bold text-zinc-900 dark:text-zinc-100">
+                    Adicionar Bloco de Estudo
+                  </h3>
+                  <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                    Crie um horário dedicado na sua grade de hoje
+                  </p>
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => setShowAddManualModal(false)}
+                className="p-2 text-zinc-400 hover:text-zinc-600 dark:hover:text-white rounded-xl transition-colors cursor-pointer"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+
+            <div className="space-y-3.5">
+              <div>
+                <label className="text-xs font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
+                  Nome do Bloco
+                </label>
+                <input
+                  type="text"
+                  value={manualSlotTitle}
+                  onChange={(e) => setManualSlotTitle(e.target.value)}
+                  placeholder="Ex: Treino de Pediatria ou Revisão de Trauma"
+                  className="w-full px-3.5 py-2.5 rounded-xl text-xs bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500 font-medium"
+                />
+              </div>
+
+              <div>
+                <label className="text-xs font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
+                  Tipo de Atividade
+                </label>
+                <div className="grid grid-cols-4 gap-1.5">
+                  {[
+                    { id: 'estudo', label: 'Questões', icon: Play },
+                    { id: 'flashcard', label: 'Flashcards', icon: Brain },
+                    { id: 'revisao', label: 'Cad. Erros', icon: AlertOctagon },
+                    { id: 'simulado', label: 'Simulado', icon: Trophy }
+                  ].map((cat) => {
+                    const isSelected = manualSlotCategory === cat.id;
+                    const CatIcon = cat.icon;
+                    return (
+                      <button
+                        key={cat.id}
+                        type="button"
+                        onClick={() => setManualSlotCategory(cat.id as any)}
+                        className={`p-2 rounded-xl text-xs font-bold transition-all cursor-pointer flex flex-col items-center gap-1 border ${
+                          isSelected
+                            ? 'bg-blue-600 text-white border-blue-600 shadow-xs'
+                            : 'bg-zinc-50 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 border-zinc-200 dark:border-zinc-700 hover:text-zinc-900 dark:hover:text-white'
+                        }`}
+                      >
+                        <CatIcon className="w-4 h-4" />
+                        <span className="text-[10px]">{cat.label}</span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+
+              <div className="grid grid-cols-2 gap-3">
+                <div>
+                  <label className="text-xs font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
+                    Horário de Início
+                  </label>
+                  <input
+                    type="time"
+                    value={manualSlotStart}
+                    onChange={(e) => setManualSlotStart(e.target.value)}
+                    className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-xs font-mono font-bold text-zinc-900 dark:text-white"
+                  />
+                </div>
+                <div>
+                  <label className="text-xs font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
+                    Horário de Término
+                  </label>
+                  <input
+                    type="time"
+                    value={manualSlotEnd}
+                    onChange={(e) => setManualSlotEnd(e.target.value)}
+                    className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-xs font-mono font-bold text-zinc-900 dark:text-white"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="text-xs font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
+                  Observações (Opcional)
+                </label>
+                <input
+                  type="text"
+                  value={manualSlotNotes}
+                  onChange={(e) => setManualSlotNotes(e.target.value)}
+                  placeholder="Ex: Resolver 25 questões comentadas da banca"
+                  className="w-full px-3.5 py-2.5 rounded-xl text-xs bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500"
+                />
+              </div>
+            </div>
+
+            <div className="pt-2 flex items-center gap-2.5">
+              <button
+                type="button"
+                onClick={() => setShowAddManualModal(false)}
+                className="flex-1 py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 text-xs font-semibold hover:bg-zinc-100 dark:hover:bg-zinc-800 cursor-pointer transition-colors"
+              >
+                Cancelar
+              </button>
+              <button
+                type="button"
+                onClick={handleCreateManualSlot}
+                disabled={!manualSlotTitle.trim()}
+                className="flex-1 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 disabled:opacity-50 text-white text-xs font-bold cursor-pointer transition-all flex items-center justify-center gap-2 shadow-sm"
+              >
+                <Plus className="w-3.5 h-3.5" />
+                <span>Salvar Bloco</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Modal 4: Prompt Customizado de IA */}
+      {showAiCommandModal && (
+        <div
+          className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 animate-in fade-in duration-200"
+          onClick={() => setShowAiCommandModal(false)}
+        >
+          <div
+            className="w-full max-w-lg bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl p-6 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2.5">
+                <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-600 text-white flex items-center justify-center shadow-xs">
+                  <Sparkles className="w-5 h-5" />
+                </div>
+                <div>
+                  <h3 className="font-heading text-base font-bold text-zinc-900 dark:text-zinc-100">
+                    Otimizador de Rotina (Mentor IA)
+                  </h3>
+                  <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                    Comande a IA para planejar exatamente o que você precisa
+                  </p>
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => setShowAiCommandModal(false)}
+                className="p-2 text-zinc-400 hover:text-zinc-600 dark:hover:text-white rounded-xl transition-colors cursor-pointer"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+
+            <div className="space-y-3.5">
+              <div>
+                <label className="text-xs font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
+                  Qual é o seu comando ou período livre?
+                </label>
+                <textarea
+                  rows={3}
+                  value={aiUserCommand}
+                  onChange={(e) => setAiUserCommand(e.target.value)}
+                  placeholder='Ex: "O que fazer das 14h às 18h?", "Tive plantão pesado, monte uma rotina mais leve com 20 questões e flashcards"'
+                  className="w-full px-3.5 py-2.5 rounded-xl text-xs bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500 resize-none font-medium leading-relaxed"
+                />
+              </div>
+
+              {/* Chips Rápidos */}
+              <div className="space-y-1.5">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 block">
+                  Sugestões rápidas de comando:
+                </span>
+                <div className="flex flex-wrap gap-1.5">
+                  {[
+                    'O que fazer das 14h às 18h?',
+                    'Organizar rotina pós-plantão cansativo',
+                    'Encaixar 30 questões da minha área fraca',
+                    'Tenho apenas 1h livre hoje à noite'
+                  ].map((presetPrompt, pIdx) => (
+                    <button
+                      key={pIdx}
+                      type="button"
+                      onClick={() => setAiUserCommand(presetPrompt)}
+                      className="px-2.5 py-1 rounded-lg text-[11px] font-medium bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-blue-50 dark:hover:bg-blue-950/40 hover:text-blue-600 dark:hover:text-blue-400 border border-zinc-200/80 dark:border-zinc-700 transition-colors cursor-pointer text-left"
+                    >
+                      💡 {presetPrompt}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            <div className="pt-2 flex items-center gap-2.5">
+              <button
+                type="button"
+                onClick={() => setShowAiCommandModal(false)}
+                className="flex-1 py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 text-xs font-semibold hover:bg-zinc-100 dark:hover:bg-zinc-800 cursor-pointer transition-colors"
+              >
+                Cancelar
+              </button>
+              <button
+                type="button"
+                onClick={() => handleAnalyzeScheduleWithAi(aiUserCommand)}
+                disabled={isAnalyzingSchedule}
+                className="flex-1 py-2.5 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 disabled:opacity-50 text-white text-xs font-bold cursor-pointer transition-all flex items-center justify-center gap-2 shadow-sm"
+              >
+                <Sparkles className={`w-3.5 h-3.5 ${isAnalyzingSchedule ? 'animate-spin' : ''}`} />
+                <span>{isAnalyzingSchedule ? 'Gerando...' : 'Gerar Cronograma IA'}</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Drawer Secundário: Sugestões de IA */}
+      <AiScheduleDrawer
+        isOpen={showAiScheduleDrawer}
+        onClose={() => setShowAiScheduleDrawer(false)}
+        analysis={scheduleAiAnalysis}
+        userScheduledTasks={userScheduledTasks}
+        onAddTasks={(tasks) => {
+          setUserScheduledTasks(prev => {
+            const prevIds = new Set(prev.map(p => p.id));
+            const newItems = tasks
+              .filter(s => !prevIds.has(s.id))
+              .map(s => ({ ...s, isAiSuggested: true }));
+            const updated = [...prev, ...newItems];
+            if (typeof window !== 'undefined') {
+              localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(updated));
+            }
+            return updated;
+          });
+          setCalendarSyncSuccessMsg(`${tasks.length} atividade(s) adicionada(s) ao cronograma!`);
+        }}
+        onRemoveTask={handleRemoveScheduledTask}
+        onExportToGoogle={handleExportSlotToGoogle}
+        exportingSlotId={exportingSlotId}
+        exportedSlotIds={exportedSlotIds}
+      />
+    </div>
+  );
+};

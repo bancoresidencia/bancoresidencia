@@ -22,6 +22,7 @@ export default function DashboardPage() {
   const handleNavigate = (tab: ActiveTab) => {
     const routeMap: Record<string, string> = {
       home: '/dashboard',
+      agenda: '/agenda',
       banco: '/questoes',
       caderno_erros: '/caderno-de-erros',
       flashcards: '/flashcards',

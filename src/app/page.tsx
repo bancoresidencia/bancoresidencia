@@ -35,6 +35,7 @@ function HomeContent() {
 
     const routeMap: Record<string, string> = {
       home: '/dashboard',
+      agenda: '/agenda',
       banco: '/questoes',
       caderno_erros: '/caderno-de-erros',
       cadernos: '/caderno-de-erros',

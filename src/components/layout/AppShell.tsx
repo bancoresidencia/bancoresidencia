@@ -149,6 +149,7 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
               onNavigate={(tab: ActiveTab) => {
                 const targetRoutes: Record<string, string> = {
                   home: '/dashboard',
+                  agenda: '/agenda',
                   banco: '/questoes',
                   provas: '/provas',
                   simulados: '/simulados',
