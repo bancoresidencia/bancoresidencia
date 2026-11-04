@@ -7,7 +7,7 @@ import { useStudentData } from '@/context/StudentDataContext';
 
 export default function CadernoDeErrosPage() {
   const router = useRouter();
-  const { userAnswers, updateAnswerMeta, recordAnswer } = useStudentData();
+  const { userAnswers, updateAnswerMeta, recordAnswer, bookmarkedQuestionIds } = useStudentData();
 
   const handleStartTreinoErros = (questionIds: string[]) => {
     if (!questionIds || questionIds.length === 0) return;
@@ -27,6 +27,7 @@ export default function CadernoDeErrosPage() {
     <div className="p-4 sm:p-6 lg:p-8 max-w-7xl mx-auto space-y-6 animate-in fade-in duration-200">
       <CadernoDeErros
         userAnswers={userAnswers}
+        bookmarkedQuestionIds={bookmarkedQuestionIds}
         onUpdateAnswerMeta={updateAnswerMeta}
         onAnswerQuestion={recordAnswer}
         onStartTreinoErros={handleStartTreinoErros}
@@ -35,4 +36,3 @@ export default function CadernoDeErrosPage() {
     </div>
   );
 }
-

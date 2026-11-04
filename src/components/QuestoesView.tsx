@@ -76,7 +76,9 @@ export const QuestoesView: React.FC = () => {
     createListWithFilters,
     addQuestionToFolder,
     fontSize,
-    setFontSize
+    setFontSize,
+    bookmarkedQuestionIds,
+    toggleBookmark
   } = useStudentData();
 
   // Modo do Banco: 'filtros' | 'resolucao' | 'resultado'
@@ -219,28 +221,7 @@ export const QuestoesView: React.FC = () => {
     }
   }, [bancoMode, currentQuestionIndex]);
 
-  // Favoritos locais persistentes
-  const [bookmarkedQuestionIds, setBookmarkedQuestionIds] = useState<Record<string, boolean>>(() => {
-    if (typeof window !== 'undefined') {
-      try {
-        const saved = localStorage.getItem('br_bookmarked_questions');
-        if (saved) return JSON.parse(saved);
-      } catch {
-        // ignore
-      }
-    }
-    return {};
-  });
 
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      try {
-        localStorage.setItem('br_bookmarked_questions', JSON.stringify(bookmarkedQuestionIds));
-      } catch {
-        // ignore
-      }
-    }
-  }, [bookmarkedQuestionIds]);
 
   // Reporte de questões e modal de atalhos
   const [reportedQuestionIds, setReportedQuestionIds] = useState<Record<string, boolean>>({});
@@ -473,10 +454,7 @@ export const QuestoesView: React.FC = () => {
         const currQ = visibleQuestions[Math.min(currentQuestionIndex, visibleQuestions.length - 1)];
         if (currQ) {
           e.preventDefault();
-          setBookmarkedQuestionIds((prev) => ({
-            ...prev,
-            [currQ.id]: !prev[currQ.id]
-          }));
+          toggleBookmark(currQ.id);
         }
         return;
       }
@@ -951,10 +929,7 @@ export const QuestoesView: React.FC = () => {
                         <button
                           type="button"
                           onClick={() => {
-                            setBookmarkedQuestionIds((prev) => ({
-                              ...prev,
-                              [currentQuestion.id]: !prev[currentQuestion.id]
-                            }));
+                            toggleBookmark(currentQuestion.id);
                           }}
                           className={`p-1.5 rounded-xl border border-transparent hover:border-slate-200 dark:hover:border-slate-800 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer ${
                             bookmarkedQuestionIds[currentQuestion.id]
@@ -1165,6 +1140,8 @@ export const QuestoesView: React.FC = () => {
                         }
                       : undefined
                   }
+                  isBookmarked={Boolean(bookmarkedQuestionIds[currentQuestion.id])}
+                  onToggleBookmark={() => toggleBookmark(currentQuestion.id)}
                   fontSize={fontSize}
                   onChangeFontSize={setFontSize}
                   folders={folders}

@@ -809,6 +809,8 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
         editList,
         deleteList,
         addQuestionToFolder,
+        bookmarkedQuestionIds,
+        toggleBookmark,
         fontSize,
         setFontSize,
         performanceFilters,
