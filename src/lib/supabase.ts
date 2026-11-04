@@ -1,10 +1,10 @@
-import { createClient } from '@supabase/supabase-js';
+import { createClient } from './supabase/client';
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+/**
+ * Instância unificada do cliente Supabase baseada em @supabase/ssr.
+ * Mantém sincronia de cookies de autenticação e sessão entre serviços,
+ * páginas, componentes e rotas da Vercel.
+ */
+export const supabase = createClient();
+export default supabase;
 
-if (!supabaseUrl || !supabaseAnonKey) {
-  throw new Error('Supabase environment variables (NEXT_PUBLIC_SUPABASE_URL, NEXT_PUBLIC_SUPABASE_ANON_KEY) are missing.');
-}
-
-export const supabase = createClient(supabaseUrl, supabaseAnonKey);

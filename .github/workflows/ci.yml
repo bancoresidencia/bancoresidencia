@@ -1,0 +1,43 @@
+name: CI Quality Gate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate-and-test:
+    name: Lint, Testes IRT/Segurança e Build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: 📥 Checkout do Repositório
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Configurar Node.js (v20)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: 📦 Instalar Dependências
+        run: npm ci
+
+      - name: 🔍 Verificação de Código (ESLint)
+        run: npm run lint
+
+      - name: 🧬 Testes Unitários do Modelo Psicométrico (TRI/IRT)
+        run: npm run test:irt
+
+      - name: 🛡️ Testes de Segurança e Proteção Anti-Scraping
+        run: npm run test:security
+
+      - name: 🏗️ Validação de Compilação do Next.js (Build Check)
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL || 'https://ezluharxlmlqhdkqrjbz.supabase.co' }}
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.dummy_anon_key_for_ci_build' }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY || 'dummy_service_role_key_for_ci' }}
+        run: npm run build
+
