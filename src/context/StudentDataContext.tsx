@@ -21,6 +21,7 @@ import {
   deleteUserFolderFromDb
 } from '@/services/userListsService';
 import { calculatePercentile } from '@/utils/percentile';
+import { loadUserBookmarks, toggleUserBookmark } from '@/services/userBookmarksService';
 import { createClient } from '@/lib/supabase/client';
 
 interface StudentDataContextType {
@@ -48,6 +49,8 @@ interface StudentDataContextType {
   editList: (listId: string, newTitle: string, newFolderId?: string | null) => Promise<void>;
   deleteList: (listId: string) => Promise<void>;
   addQuestionToFolder: (questionId: string, folderId: string, folderName: string) => Promise<void>;
+  bookmarkedQuestionIds: Record<string, boolean>;
+  toggleBookmark: (questionId: string) => Promise<void>;
   fontSize: 'xs' | 'sm' | 'base' | 'lg' | 'xl';
   setFontSize: (size: 'xs' | 'sm' | 'base' | 'lg' | 'xl') => void;
   performanceFilters: PerformanceFilterState;
@@ -246,20 +249,23 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
     }
   }, [user?.id, getUserAnswersStorageKey, syncUserAnswersFromSupabase]);
 
-  // Pastas e Listas
+  // Pastas, Listas e Favoritos
   const [folders, setFolders] = useState<Folder[]>([]);
   const [lists, setLists] = useState<QuestionList[]>([]);
   const [activeListId, setActiveListId] = useState<string | null>(null);
+  const [bookmarkedQuestionIds, setBookmarkedQuestionIds] = useState<Record<string, boolean>>({});
 
   const refreshUserData = useCallback(async () => {
     try {
-      const [userFolds, userLst] = await Promise.all([
+      const [userFolds, userLst, userBms] = await Promise.all([
         loadUserFolders(user?.id),
         loadUserLists(user?.id),
+        loadUserBookmarks(user?.id),
         user?.id ? syncUserAnswersFromSupabase(user.id) : Promise.resolve()
       ]);
       setFolders(userFolds);
       setLists(userLst);
+      if (userBms) setBookmarkedQuestionIds(userBms);
     } catch (err) {
       console.error('Erro ao sincronizar listas e pastas do aluno:', err);
     }
@@ -657,7 +663,7 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
       setFolders(nextFolders);
       await saveUserFolders(nextFolders, user?.id);
       for (const id of toDelete) {
-        await deleteUserFolderFromDb(id);
+        await deleteUserFolderFromDb(id, user?.id);
       }
       const nextLists = lists.map((l) =>
         l.folderId && toDelete.has(l.folderId) ? { ...l, folderId: undefined } : l
@@ -721,12 +727,27 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
       const next = lists.filter((l) => l.id !== listId);
       setLists(next);
       await saveUserLists(next, user?.id);
-      await deleteUserListFromDb(listId);
+      await deleteUserListFromDb(listId, user?.id);
       if (activeListId === listId) {
         setActiveListId(null);
       }
     },
     [lists, activeListId, user]
+  );
+
+  const toggleBookmark = useCallback(
+    async (questionId: string) => {
+      const isCurrent = Boolean(bookmarkedQuestionIds[questionId]);
+      const nextVal = !isCurrent;
+      setBookmarkedQuestionIds((prev) => {
+        const copy = { ...prev };
+        if (nextVal) copy[questionId] = true;
+        else delete copy[questionId];
+        return copy;
+      });
+      await toggleUserBookmark(questionId, nextVal, user?.id);
+    },
+    [bookmarkedQuestionIds, user?.id]
   );
 
   const addQuestionToFolder = useCallback(

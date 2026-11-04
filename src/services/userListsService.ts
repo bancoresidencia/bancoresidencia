@@ -105,7 +105,7 @@ export async function loadUserFolders(userId?: string | null): Promise<Folder[]>
         .eq('user_id', userId)
         .order('created_at', { ascending: true });
 
-      if (!error && data && data.length > 0) {
+      if (!error && data) {
         const rows = data as unknown as DbFolderRow[];
         const remoteFolders: Folder[] = rows
           .filter((row) => !MOCK_FOLDER_IDS.has(row.id))
@@ -119,10 +119,27 @@ export async function loadUserFolders(userId?: string | null): Promise<Folder[]>
             updatedAt: row.updated_at
           }));
 
+        const remoteIds = new Set(remoteFolders.map((f) => f.id));
+        const missingOnRemote = localFolders.filter((f) => !remoteIds.has(f.id));
+        const merged = [...remoteFolders, ...missingOnRemote];
+
         if (typeof window !== 'undefined') {
-          localStorage.setItem(key, JSON.stringify(remoteFolders));
+          localStorage.setItem(key, JSON.stringify(merged));
         }
-        return remoteFolders;
+
+        if (missingOnRemote.length > 0) {
+          const payload = missingOnRemote.map((f) => ({
+            id: f.id,
+            user_id: userId,
+            name: f.name,
+            parent_id: f.parentId || null,
+            color: f.color || '#3b82f6',
+            updated_at: new Date().toISOString()
+          }));
+          supabase.from('user_folders').upsert(payload, { onConflict: 'id' }).then(() => {});
+        }
+
+        return merged;
       }
     } catch {
       // Ignora erro de rede / 404 e preserva o cache local
@@ -210,7 +227,7 @@ export async function loadUserLists(userId?: string | null): Promise<QuestionLis
         .eq('user_id', userId)
         .order('created_at', { ascending: false });
 
-      if (!error && data && data.length > 0) {
+      if (!error && data) {
         const rows = data as unknown as DbListRow[];
         const remoteLists: QuestionList[] = rows
           .filter((row) => !MOCK_LIST_IDS.has(row.id))
@@ -229,10 +246,32 @@ export async function loadUserLists(userId?: string | null): Promise<QuestionLis
             updatedAt: row.updated_at
           }));
 
+        const remoteIds = new Set(remoteLists.map((l) => l.id));
+        const missingOnRemote = localLists.filter((l) => !remoteIds.has(l.id));
+        const merged = [...remoteLists, ...missingOnRemote];
+
         if (typeof window !== 'undefined') {
-          localStorage.setItem(key, JSON.stringify(remoteLists));
+          localStorage.setItem(key, JSON.stringify(merged));
         }
-        return remoteLists;
+
+        if (missingOnRemote.length > 0) {
+          const payload = missingOnRemote.map((l) => ({
+            id: l.id,
+            user_id: userId,
+            folder_id: l.folderId || null,
+            title: l.title,
+            question_ids: l.questionIds,
+            total_questions: l.totalQuestions,
+            completed_questions: l.completedQuestions,
+            last_studied_at: l.lastStudiedAt,
+            in_progress: l.inProgress,
+            progress_percentage: l.progressPercentage,
+            updated_at: new Date().toISOString()
+          }));
+          supabase.from('user_lists').upsert(payload, { onConflict: 'id' }).then(() => {});
+        }
+
+        return merged;
       }
     } catch {
       // Ignora erro de rede / 404 e preserva o cache local
