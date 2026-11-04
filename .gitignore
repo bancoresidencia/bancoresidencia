@@ -61,6 +61,7 @@ __pycache__/
 *.pyc
 
 # raw datasets & extraction scratch
+data/hardwork/
 data/backups*/
 /data/*.json
 !data/gabarito_das_questoes_manifest.json
@@ -84,6 +85,7 @@ data/backups*/
 /data/enare_raw/
 /data/enare_test/
 /data/images/
+public/images/hardwork/
 /scratch/
 scripts/medevo_config.json
 scripts/test_token.mjs
@@ -133,3 +135,12 @@ scripts/nexmed_config.json
 scripts/nexmed_progress.json
 scripts/nexmed_questoes_gabaritos.jsonl
 scripts/*.jsonl
+
+data/audit_triagem_geral/
+data/backups/
+
+# Medeor & audit scratch data
+scripts/medeor_config.json
+scripts/sample_10_resolved.json
+data/scraped_medeor/
+data/audit_hardwork/

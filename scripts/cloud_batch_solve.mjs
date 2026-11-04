@@ -19,17 +19,31 @@ if (!SUPABASE_URL || !SERVICE_KEY) {
   process.exit(1);
 }
 
+// Lista canônica de todas as especialidades do banco
+const ALL_SPECIALTIES = [
+  'cirurgia',
+  'clinica',
+  'preventiva',
+  'pediatria',
+  'ginecologia',
+  'obstetricia'
+];
+
 // Configurações de execução
 const args = process.argv.slice(2);
-const targetSpec = (args[0] || env.TARGET_SPECIALTY || 'cirurgia').toLowerCase();
+const requestedSpec = (args[0] || env.TARGET_SPECIALTY || 'todas').toLowerCase();
 const concurrency = parseInt(env.CONCURRENCY || '6', 10);
 const limit = parseInt(env.BATCH_LIMIT || '0', 10) || Infinity;
 
+const specialtiesQueue = (requestedSpec === 'todas' || requestedSpec === 'all')
+  ? ALL_SPECIALTIES
+  : [requestedSpec];
+
 console.log('\n======================================================');
-console.log('☁️  CLOUD RUN JOB — RESOLUÇÃO DE QUESTÕES EM NUVEM');
-console.log(`🎯 Especialidade Alvo: [ ${targetSpec.toUpperCase()} ]`);
+console.log('☁️  CLOUD RUN JOB — RESOLUÇÃO SEQUENCIAL DO BANCO');
+console.log(`🎯 Fila de Especialidades: [ ${specialtiesQueue.join(' ➔ ').toUpperCase()} ]`);
 console.log(`⚡ Fluxos Paralelos (Concurrency): ${concurrency}`);
-console.log(`🔢 Limite desta Rodada: ${limit === Infinity ? 'Sem limite (até teto de cota)' : limit}`);
+console.log(`🔢 Limite desta Rodada: ${limit === Infinity ? 'Sem limite (até zerar o banco ou teto de cota)' : limit}`);
 console.log('======================================================\n');
 
 /**
@@ -58,7 +72,7 @@ async function fetchPendingFromSupabase(spec, pageSize = 100) {
       return ['A', 'B', 'C', 'D', 'E'].includes(ans) && Array.isArray(q.options) && q.options.length >= 2;
     });
   } catch (err) {
-    console.error('Falha na busca remota do Supabase:', err.message);
+    console.error(`Falha na busca remota do Supabase para [${spec}]:`, err.message);
     return [];
   }
 }
@@ -68,87 +82,95 @@ async function main() {
   let totalProcessed = 0;
   const startTime = Date.now();
 
-  // Tratamento de desligamento suave (Cloud Run SIGTERM)
   process.on('SIGTERM', () => {
-    console.log('⚠️ Sinal SIGTERM recebido do Cloud Run. Finalizando lote atual...');
+    console.log('⚠️ Sinal SIGTERM recebido do Cloud Run. Finalizando com segurança...');
     shouldAbort = true;
   });
 
   process.on('SIGINT', () => {
-    console.log('⚠️ Interrupção manual recebida. Finalizando lote atual...');
+    console.log('⚠️ Interrupção manual recebida. Finalizando com segurança...');
     shouldAbort = true;
   });
 
   let batchBuffer = [];
 
-  while (!shouldAbort && totalProcessed < limit) {
-    console.log(`📡 Consultando Supabase por questões pendentes de [${targetSpec}]...`);
-    const pendingQuestions = await fetchPendingFromSupabase(targetSpec, 100);
+  // Itera sequencialmente por todas as especialidades da fila
+  for (const currentSpec of specialtiesQueue) {
+    if (shouldAbort || totalProcessed >= limit) break;
 
-    if (pendingQuestions.length === 0) {
-      console.log(`✨ Nenhuma questão pendente encontrada no Supabase para [${targetSpec}].`);
-      break;
-    }
+    console.log(`\n======================================================`);
+    console.log(`📂 INICIANDO / RETOMANDO ESPECIALIDADE: [ ${currentSpec.toUpperCase()} ]`);
+    console.log(`======================================================`);
 
-    console.log(`📋 Lote de ${pendingQuestions.length} questões pendentes carregado da nuvem.`);
+    while (!shouldAbort && totalProcessed < limit) {
+      console.log(`📡 Consultando Supabase por questões pendentes de [${currentSpec}]...`);
+      const pendingQuestions = await fetchPendingFromSupabase(currentSpec, 100);
 
-    let queueIdx = 0;
-    const workers = Array.from({ length: concurrency }, async (_, workerId) => {
-      await new Promise(r => setTimeout(r, workerId * 400));
+      if (pendingQuestions.length === 0) {
+        console.log(`✨ ESPECIALIDADE [${currentSpec.toUpperCase()}] 100% CONCLUÍDA! Avançando para a próxima...`);
+        break;
+      }
 
-      while (queueIdx < pendingQuestions.length && !shouldAbort && totalProcessed < limit) {
-        const currentIdx = queueIdx++;
-        const q = pendingQuestions[currentIdx];
-        if (!q) break;
+      console.log(`📋 Lote de ${pendingQuestions.length} questões pendentes carregado de [${currentSpec}].`);
 
-        try {
-          const solved = await solveQuestionDeep({
-            ...q,
-            correctAnswer: q.correct_answer
-          });
+      let queueIdx = 0;
+      const workers = Array.from({ length: concurrency }, async (_, workerId) => {
+        await new Promise(r => setTimeout(r, workerId * 400));
 
-          if (solved && solved.id) {
-            batchBuffer.push(solved);
-            totalProcessed++;
+        while (queueIdx < pendingQuestions.length && !shouldAbort && totalProcessed < limit) {
+          const currentIdx = queueIdx++;
+          const q = pendingQuestions[currentIdx];
+          if (!q) break;
 
-            const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
-            const rate = ((totalProcessed / (Date.now() - startTime)) * 1000).toFixed(2);
-            console.log(`⚡ Progresso Cloud: ${totalProcessed} resolvidas | ${rate} q/s | [${solved.id.slice(0, 8)}]`);
+          try {
+            const solved = await solveQuestionDeep({
+              ...q,
+              correctAnswer: q.correct_answer
+            });
 
-            if (batchBuffer.length >= 15) {
-              const toSync = [...batchBuffer];
-              batchBuffer = [];
-              const ok = await updateQuestionsInSupabase(toSync);
-              if (ok) {
-                console.log(`💾 Lote de 15 questões sincronizado com sucesso no Supabase.`);
+            if (solved && solved.id) {
+              batchBuffer.push(solved);
+              totalProcessed++;
+
+              const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+              const rate = ((totalProcessed / (Date.now() - startTime)) * 1000).toFixed(2);
+              console.log(`⚡ Progresso Cloud [${currentSpec.toUpperCase()}]: ${totalProcessed} total | ${rate} q/s | [${solved.id.slice(0, 8)}]`);
+
+              if (batchBuffer.length >= 15) {
+                const toSync = [...batchBuffer];
+                batchBuffer = [];
+                const ok = await updateQuestionsInSupabase(toSync);
+                if (ok) {
+                  console.log(`💾 Lote de 15 questões sincronizado com sucesso no Supabase.`);
+                }
               }
             }
-          }
-        } catch (err) {
-          console.error(`Erro na questão ${q.id}:`, err.message);
-          if (err.message && err.message.includes('esgotaram suas cotas diárias')) {
-            console.error('🛑 TODAS AS CHAVES ESGOTARAM COTA. Finalizando execução do Job.');
-            shouldAbort = true;
-            break;
+          } catch (err) {
+            console.error(`Erro na questão ${q.id}:`, err.message);
+            if (err.message && err.message.includes('esgotaram suas cotas diárias')) {
+              console.error('🛑 TODAS AS CHAVES ESGOTARAM COTA DIÁRIA. Encerrando execução do Job.');
+              shouldAbort = true;
+              break;
+            }
           }
         }
+      });
+
+      await Promise.all(workers);
+
+      // Flush residual do buffer para a especialidade atual
+      if (batchBuffer.length > 0) {
+        const toSync = [...batchBuffer];
+        batchBuffer = [];
+        await updateQuestionsInSupabase(toSync);
+        console.log(`💾 Buffer final de ${toSync.length} questões sincronizado no Supabase.`);
       }
-    });
-
-    await Promise.all(workers);
-
-    // Flush residual do buffer
-    if (batchBuffer.length > 0) {
-      const toSync = [...batchBuffer];
-      batchBuffer = [];
-      await updateQuestionsInSupabase(toSync);
-      console.log(`💾 Buffer final de ${toSync.length} questões sincronizado no Supabase.`);
     }
   }
 
   const totalTime = ((Date.now() - startTime) / 1000).toFixed(1);
   console.log('\n======================================================');
-  console.log('🎉 EXECUÇÃO DO CLOUD RUN JOB CONCLUÍDA!');
+  console.log('🎉 SESSÃO DE RESOLUÇÃO FINALIZADA!');
   console.log(`✅ Total de questões resolvidas nesta sessão: ${totalProcessed}`);
   console.log(`⏱️ Tempo total de execução: ${totalTime}s`);
   console.log('======================================================\n');
