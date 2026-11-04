@@ -80,7 +80,7 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
     return userId ? `bancoresidencia_user_answers_${userId}` : 'bancoresidencia_user_answers_guest';
   }, []);
 
-  // Respostas do usuário
+  // Respostas do usuário (hidratação determinística; carregadas no useEffect)
   const [userAnswers, setUserAnswers] = useState<Record<string, UserAnswerItem>>({});
   const userAnswersRef = useRef(userAnswers);
   useEffect(() => {

@@ -10,6 +10,7 @@ import {
 } from '@/types/flashcards';
 import { INITIAL_FLASHCARDS } from '@/data/flashcardsData';
 import { INITIAL_STUDY_MATERIALS } from '@/data/studyMaterialsData';
+import { supabase } from '@/lib/supabase';
 
 const STORAGE_KEY = 'bancoresidencia_flashcards_progress_v1';
 const LAST_SESSION_KEY = 'bancoresidencia_last_flashcard_session';
@@ -346,7 +347,11 @@ export const flashcardsService = {
    * Obtém a lista de Materiais de Apoio / Resumos Clínicos
    */
   getStudyMaterials(filter?: { specialty?: string; search?: string }): StudyMaterialItem[] {
-    const userCreated = this.loadUserCreatedStudyMaterials();
+    const canonicalIds = new Set(INITIAL_STUDY_MATERIALS.map((m) => m.id));
+    const canonicalFoci = new Set(INITIAL_STUDY_MATERIALS.map((m) => m.focus.toLowerCase().trim()));
+    const userCreated = this.loadUserCreatedStudyMaterials().filter(
+      (uc) => !canonicalIds.has(uc.id) && !canonicalFoci.has(uc.focus.toLowerCase().trim())
+    );
     let list = [...userCreated, ...INITIAL_STUDY_MATERIALS];
 
     if (filter) {
@@ -427,6 +432,28 @@ export const flashcardsService = {
         updated = [material, ...current];
       }
       localStorage.setItem(USER_STUDY_MATERIALS_KEY, JSON.stringify(updated));
+
+      // Sincronização em background com a tabela study_materials no Supabase
+      if (typeof window !== 'undefined') {
+        supabase.from('study_materials').upsert({
+          id: material.id,
+          focus_id: material.focusId,
+          title: material.title,
+          specialty: material.specialty,
+          theme: material.theme,
+          focus: material.focus,
+          read_time_minutes: material.readTimeMinutes,
+          last_updated_year: material.lastUpdatedYear,
+          guideline_badge: material.guidelineBadge,
+          summary_snippet: material.summarySnippet,
+          markdown_content: material.markdownContent,
+          key_points: material.keyPoints,
+          status: 'published'
+        }).then(({ error }) => {
+          if (error) console.warn('[flashcardsService] Aviso ao sincronizar study_materials com Supabase:', error.message);
+        }, () => {});
+      }
+
       return material;
     } catch (e) {
       console.warn('Erro ao salvar material de estudo:', e);

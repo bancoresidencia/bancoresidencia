@@ -55,8 +55,7 @@ export default function RootLayout({
       className={`${plusJakartaSans.variable} ${inter.variable} ${bebasNeue.variable} font-sans h-full antialiased dark`}
       suppressHydrationWarning
     >
-      <head>
-        <meta name="google-site-verification" content="WcJXbqVmrkob5mCp0ref0IbF1ANcT76ldFjlicER4cQ" />
+      <body className="min-h-full flex flex-col font-sans transition-colors duration-200">
         <Script id="google-gsi-client" src="https://accounts.google.com/gsi/client" strategy="afterInteractive" />
         <Script
           id="banco-theme-init"
@@ -102,7 +101,17 @@ export default function RootLayout({
                   var chosenHover = (a && hovers[a]) ? hovers[a] : '#1d4ed8';
                   var chosenGlow = (a && glows[a]) ? glows[a] : 'rgba(37, 99, 235, 0.15)';
                   var contrast = (a === 'neutral' && m !== 'light') ? '#09090b' : '#ffffff';
+                  var isDark = m !== 'light';
+                  var surfaceDarks = { blue: '#090b10', green: '#070f0c', orange: '#0c0a08', purple: '#0b0910', red: '#0f0808', rose: '#0f080a', neutral: '#09090b' };
+                  var surfaceLights = { blue: '#f8faff', green: '#f5faf7', orange: '#fffaf7', purple: '#fbf9ff', red: '#fff8f8', rose: '#fff8f9', neutral: '#fafafa' };
+                  var cardDarks = { blue: '#11141c', green: '#0d1814', orange: '#151210', purple: '#131119', red: '#181010', rose: '#181013', neutral: '#121215' };
+                  var pageBg = isDark ? (surfaceDarks[a] || '#090b10') : (surfaceLights[a] || '#f8faff');
+                  var cardBg = isDark ? (cardDarks[a] || '#11141c') : '#ffffff';
 
+                  document.documentElement.style.setProperty('--bg-page', pageBg);
+                  document.documentElement.style.setProperty('--bg-card', cardBg);
+                  document.documentElement.style.setProperty('--accent-primary', chosen);
+                  document.documentElement.style.setProperty('--accent-hover', chosenHover);
                   document.documentElement.style.setProperty('--primary-color', chosen);
                   document.documentElement.style.setProperty('--primary-hover', chosenHover);
                   document.documentElement.style.setProperty('--glow-color', chosenGlow);
@@ -125,8 +134,6 @@ export default function RootLayout({
             `
           }}
         />
-      </head>
-      <body className="min-h-full flex flex-col font-sans transition-colors duration-200">
         <ThemeProvider>
           <AuthProvider>
             <SubscriptionProvider>

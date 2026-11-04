@@ -7,6 +7,8 @@ import { validatePasswordRequirements } from '@/utils/security';
 
 const STORAGE_CURRENT_USER_KEY = 'bancoresidencia_current_user';
 
+const STORAGE_CACHED_USER_KEY = 'bancoresidencia_cached_user_session';
+
 interface AuthContextType {
   user: UserAccount | null;
   isAuthenticated: boolean;
@@ -34,7 +36,27 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [user, setUser] = useState<UserAccount | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
+
   const supabase = createClient();
+
+  const setPersistedUser = useCallback(
+    (account: UserAccount | null | ((prev: UserAccount | null) => UserAccount | null)) => {
+      setUser((prev) => {
+        const next = typeof account === 'function' ? account(prev) : account;
+        if (typeof window !== 'undefined') {
+          try {
+            if (next) {
+              localStorage.setItem(STORAGE_CACHED_USER_KEY, JSON.stringify(next));
+            } else {
+              localStorage.removeItem(STORAGE_CACHED_USER_KEY);
+            }
+          } catch {}
+        }
+        return next;
+      });
+    },
+    []
+  );
 
   const mapSupabaseUserToAccount = useCallback(async (supabaseUser: { id: string; email?: string; created_at?: string; user_metadata?: Record<string, unknown>; app_metadata?: Record<string, unknown> }): Promise<UserAccount> => {
     try {
@@ -153,6 +175,18 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   useEffect(() => {
     let isMounted = true;
 
+    // Leitura síncrona do cache do localStorage no cliente pós-hidratação para evitar qualquer flash
+    try {
+      const cached = localStorage.getItem(STORAGE_CACHED_USER_KEY);
+      if (cached) {
+        const parsed = JSON.parse(cached);
+        if (parsed && typeof parsed === 'object' && parsed.id) {
+          setUser(parsed as UserAccount);
+          setIsLoading(false);
+        }
+      }
+    } catch {}
+
     async function initSession() {
       try {
         // 1. Processa código de autenticação OAuth se presente na URL (?code=...)
@@ -169,7 +203,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
                 const account = await mapSupabaseUserToAccount(exchangeData.session.user);
                 if (isMounted) {
-                  setUser(account);
+                  setPersistedUser(account);
                   setIsLoading(false);
                   return;
                 }
@@ -187,14 +221,14 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
         if (session?.user && isMounted) {
           const account = await mapSupabaseUserToAccount(session.user);
-          if (isMounted) setUser(account);
+          if (isMounted) setPersistedUser(account);
         } else if (isMounted) {
           // Remove resquícios de credenciais de demonstração ou sessões antigas
           localStorage.removeItem(STORAGE_CURRENT_USER_KEY);
-          setUser(null);
+          setPersistedUser(null);
         }
       } catch {
-        if (isMounted) setUser(null);
+        if (isMounted) setPersistedUser(null);
       } finally {
         if (isMounted) setIsLoading(false);
       }
@@ -205,10 +239,11 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
       if (session?.user) {
         const account = await mapSupabaseUserToAccount(session.user);
-        if (isMounted) setUser(account);
+        if (isMounted) setPersistedUser(account);
       } else if (event === 'SIGNED_OUT') {
-        if (isMounted) setUser(null);
+        if (isMounted) setPersistedUser(null);
         localStorage.removeItem(STORAGE_CURRENT_USER_KEY);
+        localStorage.removeItem(STORAGE_CACHED_USER_KEY);
       }
     });
 
@@ -233,7 +268,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
       if (data.user) {
         const account = await mapSupabaseUserToAccount(data.user);
-        setUser(account);
+        setPersistedUser(account);
         localStorage.removeItem(STORAGE_CURRENT_USER_KEY);
       }
 
@@ -318,7 +353,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
       if (res.user) {
         const account = await mapSupabaseUserToAccount(res.user);
-        setUser(account);
+        setPersistedUser(account);
       }
 
       return { success: true };
@@ -329,7 +364,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const logout = async () => {
     localStorage.removeItem(STORAGE_CURRENT_USER_KEY);
-    setUser(null);
+    localStorage.removeItem(STORAGE_CACHED_USER_KEY);
+    setPersistedUser(null);
     try {
       await supabase.auth.signOut();
     } catch {
@@ -374,7 +410,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         }
       }
 
-      setUser((prev) => (prev ? { ...prev, ...data } : null));
+      setPersistedUser((prev) => (prev ? { ...prev, ...data } : null));
       return { success: true, message: 'Perfil atualizado com sucesso!' };
     } catch {
       return { success: false, message: 'Erro ao atualizar dados do perfil.' };
@@ -409,7 +445,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       const { data: { user: currentUser } } = await supabase.auth.getUser();
       if (currentUser) {
         const updated = await mapSupabaseUserToAccount(currentUser);
-        setUser(updated);
+        setPersistedUser(updated);
       }
     } catch (err) {
       console.error('Erro ao recarregar usuário:', err);

@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { callGeminiAi, parseCleanJson } from '@/lib/gemini';
+import { AiDecisionBadge, AiDecisionDetails } from '@/components/dashboard/scheduleTypes';
 
 export const dynamic = 'force-dynamic';
 
@@ -36,6 +37,7 @@ interface StudySuggestion {
   action: 'treinar' | 'flashcards' | 'caderno_erros' | 'simulado' | 'mnemonico';
   description: string;
   rationale: string;
+  aiDecision?: AiDecisionDetails;
 }
 
 function formatMinutesToTime(min: number): string {
@@ -46,17 +48,27 @@ function formatMinutesToTime(min: number): string {
 
 /**
  * Calcula os intervalos livres do dia mesclando intervalos ocupados (busy ranges)
+ * e restringindo estritamente ao momento atual do aluno (ignora períodos que já passaram).
  */
-function calculateFreeGaps(events: CalendarSlotInput[]): FreeGap[] {
+function calculateFreeGaps(events: CalendarSlotInput[], currentMinutes?: number): FreeGap[] {
+  const nowMin = typeof currentMinutes === 'number' && !isNaN(currentMinutes) ? currentMinutes : 0;
+  // Margem de segurança de 5 minutos a partir de agora
+  const effectiveDayStart = Math.max(nowMin + 5, 360); // Pelo menos 06:00
+  const dayEnd = 1380; // 23:00
+
+  if (effectiveDayStart >= dayEnd - 25) {
+    // Já é final de noite (após 22:35), sem gaps significativos hoje
+    return [];
+  }
+
   if (!events || events.length === 0) {
-    // Dia totalmente livre (das 08:00 às 22:00 = 14 horas)
     return [
       {
-        startMinutes: 480,
-        endMinutes: 1320,
-        startTime: '08:00',
-        endTime: '22:00',
-        durationMinutes: 840
+        startMinutes: effectiveDayStart,
+        endMinutes: dayEnd,
+        startTime: formatMinutesToTime(effectiveDayStart),
+        endTime: formatMinutesToTime(dayEnd),
+        durationMinutes: dayEnd - effectiveDayStart
       }
     ];
   }
@@ -84,177 +96,182 @@ function calculateFreeGaps(events: CalendarSlotInput[]): FreeGap[] {
     }
   }
 
-  // 2. Determina o escopo do dia útil
-  // Se o primeiro evento começar antes das 07:00 (420m), o início acompanha ou começa após ele.
+  const rawGaps: { start: number; end: number }[] = [];
+
+  // Intervalo antes do primeiro evento
   const firstEventStart = mergedBusy[0].start;
-  const dayStart = firstEventStart < 420 ? Math.max(360, firstEventStart) : 420; // min 06:00 ou 07:00
-  const dayEnd = 1350; // 22:30
-
-  const gaps: FreeGap[] = [];
-
-  // Intervalo antes do primeiro evento (se houver pelo menos 45 min)
-  if (firstEventStart > dayStart && (firstEventStart - dayStart) >= 45) {
-    gaps.push({
-      startMinutes: dayStart,
-      endMinutes: firstEventStart,
-      startTime: formatMinutesToTime(dayStart),
-      endTime: formatMinutesToTime(firstEventStart),
-      durationMinutes: firstEventStart - dayStart
-    });
+  if (firstEventStart > 360) {
+    rawGaps.push({ start: 360, end: firstEventStart });
   }
 
   // Intervalos entre eventos consecutivos
   for (let i = 0; i < mergedBusy.length - 1; i++) {
     const currentEnd = mergedBusy[i].end;
     const nextStart = mergedBusy[i + 1].start;
-    if (nextStart - currentEnd >= 30) { // pelo menos 30 minutos livres
-      gaps.push({
-        startMinutes: currentEnd,
-        endMinutes: nextStart,
-        startTime: formatMinutesToTime(currentEnd),
-        endTime: formatMinutesToTime(nextStart),
-        durationMinutes: nextStart - currentEnd
+    if (nextStart > currentEnd) {
+      rawGaps.push({ start: currentEnd, end: nextStart });
+    }
+  }
+
+  // Intervalo após o último evento até as 23:00
+  const lastEventEnd = mergedBusy[mergedBusy.length - 1].end;
+  if (lastEventEnd < dayEnd) {
+    rawGaps.push({ start: lastEventEnd, end: dayEnd });
+  }
+
+  // 2. Filtra e ajusta gaps estritamente para o tempo futuro a partir de effectiveDayStart
+  const validGaps: FreeGap[] = [];
+  for (const gap of rawGaps) {
+    if (gap.end <= effectiveDayStart) continue; // Gap já passou hoje
+
+    const adjustedStart = Math.max(gap.start, effectiveDayStart);
+    const adjustedEnd = Math.min(gap.end, dayEnd);
+    const duration = adjustedEnd - adjustedStart;
+
+    if (duration >= 25) { // Janela mínima produtiva de 25 minutos
+      validGaps.push({
+        startMinutes: adjustedStart,
+        endMinutes: adjustedEnd,
+        startTime: formatMinutesToTime(adjustedStart),
+        endTime: formatMinutesToTime(adjustedEnd),
+        durationMinutes: duration
       });
     }
   }
 
-  // Intervalo após o último evento até o fim da noite
-  const lastEventEnd = mergedBusy[mergedBusy.length - 1].end;
-  if (lastEventEnd < dayEnd && (dayEnd - lastEventEnd) >= 45) {
-    gaps.push({
-      startMinutes: lastEventEnd,
-      endMinutes: dayEnd,
-      startTime: formatMinutesToTime(lastEventEnd),
-      endTime: formatMinutesToTime(dayEnd),
-      durationMinutes: dayEnd - lastEventEnd
-    });
-  }
-
-  return gaps;
+  return validGaps;
 }
 
 /**
- * Gerador de sugestões determinístico / heurístico de alto rendimento médico
- * Garante resultado instantâneo e serve de fallback caso a IA esteja offline
+ * Gerador de sugestões determinístico de alto rendimento médico (Fallback Seguro)
+ * Cruza deficiências reais, flashcards FSRS e caderno de erros mesmo sem conexão com IA
  */
 function generateHeuristicSuggestions(
   gaps: FreeGap[],
-  areaName: string,
-  targetExam: string,
-  dailyGoal: number
+  userContext: any
 ): StudySuggestion[] {
   const suggestions: StudySuggestion[] = [];
   let taskCounter = 1;
 
+  const areaName = userContext.recommendedArea || 'Clínica Médica';
+  const targetExam = userContext.targetExamName || 'ENARE 2026';
+  const dailyGoal = userContext.dailyGoal || 30;
+  const remainingGoal = Math.max(5, (dailyGoal - (userContext.todayAnswered || 0)));
+
+  const dueTodayFsrs = userContext.spacedRepetition?.dueToday || 0;
+  const pendingErrorsCount = userContext.errorNotebook?.pendingCount || 0;
+  const mostCriticalSpecialty = userContext.errorNotebook?.mostCriticalSpecialty || areaName;
+  const criticalSubtopic = userContext.criticalWeaknesses?.[0]?.subtopic || null;
+  const criticalSubtopicAcc = userContext.criticalWeaknesses?.[0]?.accuracy ?? 30;
+  const bestShift = userContext.cognitiveEnergy?.bestShift || null;
+  const fatigueAlert = Boolean(userContext.cognitiveEnergy?.fatigueAlert);
+
+  let hasAllocatedFsrs = false;
+  let hasAllocatedErrors = false;
+
   for (const gap of gaps) {
+    if (suggestions.length >= 4) break; // Máximo 4 blocos para não sobrecarregar
     const duration = gap.durationMinutes;
+    const isNight = gap.startMinutes >= 1140; // Após 19h
 
-    // Janela Curta (30 a 55 min)
-    if (duration >= 30 && duration < 60) {
-      if (gap.startMinutes >= 1140) { // Noite
-        suggestions.push({
-          id: `ai_sug_${Date.now()}_${taskCounter++}`,
-          title: 'Caderno de Erros (Reteste Metacognitivo)',
-          category: 'revisao',
-          startTime: gap.startTime,
-          endTime: gap.endTime,
-          startMinutes: gap.startMinutes,
-          endMinutes: gap.endMinutes,
-          source: 'plataforma',
-          action: 'caderno_erros',
-          description: 'Reteste ativo dos pontos cegos e pegadinhas erradas recentemente',
-          rationale: 'Intervalo noturno curto perfeito para fixação metacognitiva sem sobrecarga.'
-        });
-      } else {
-        suggestions.push({
-          id: `ai_sug_${Date.now()}_${taskCounter++}`,
-          title: 'Simulado Expresso TRI (Blitz 10Q)',
-          category: 'simulado',
-          startTime: gap.startTime,
-          endTime: gap.endTime,
-          startMinutes: gap.startMinutes,
-          endMinutes: gap.endMinutes,
-          source: 'plataforma',
-          action: 'simulado',
-          description: `10 questões calibradas no padrão ${targetExam} (~12 a 15 min de prova)`,
-          rationale: 'Janela rápida ideal para manter velocidade de prova e calibração de tempo.'
-        });
-      }
-    }
-    // Janela Média (60 a 110 min)
-    else if (duration >= 60 && duration < 120) {
-      const isMorning = gap.startMinutes < 720;
-      const isAfternoon = gap.startMinutes >= 720 && gap.startMinutes < 1140;
+    // Prioridade 1 em janelas curtas (25 a 50 min) ou noite: FSRS se houver cards vencendo
+    if (dueTodayFsrs > 0 && !hasAllocatedFsrs && (duration <= 50 || isNight || fatigueAlert)) {
+      hasAllocatedFsrs = true;
+      const bDuration = Math.min(duration, 35);
+      const bEnd = gap.startMinutes + bDuration;
 
-      if (isMorning || isAfternoon) {
-        suggestions.push({
-          id: `ai_sug_${Date.now()}_${taskCounter++}`,
-          title: `Treino de Questões TRI: ${areaName}`,
-          category: 'estudo',
-          startTime: gap.startTime,
-          endTime: gap.endTime,
-          startMinutes: gap.startMinutes,
-          endMinutes: gap.endMinutes,
-          source: 'plataforma',
-          action: 'treinar',
-          description: `Treino direcionado de alta densidade (${Math.min(dailyGoal, 20)} questões comentadas)`,
-          rationale: 'Janela livre contínua para concentração profunda na sua área prioritária.'
-        });
-      } else {
-        suggestions.push({
-          id: `ai_sug_${Date.now()}_${taskCounter++}`,
-          title: 'Revisão de Flashcards FSRS & Erros',
-          category: 'flashcard',
-          startTime: gap.startTime,
-          endTime: gap.endTime,
-          startMinutes: gap.startMinutes,
-          endMinutes: gap.endMinutes,
-          source: 'plataforma',
-          action: 'flashcards',
-          description: 'Fixação mnemônica espaçada com algoritmo FSRS',
-          rationale: 'Excelente janela noturna para consolidar memórias de longo prazo.'
-        });
-      }
-    }
-    // Janela Ampla (>= 120 min)
-    else if (duration >= 120) {
-      // Bloco 1: Treino de Questões (90 min)
-      const b1Start = gap.startMinutes + 15; // 15 min de respiro inicial
-      const b1End = b1Start + 90;
       suggestions.push({
-        id: `ai_sug_${Date.now()}_${taskCounter++}`,
-        title: `Treino Principal de Questões: ${areaName}`,
-        category: 'estudo',
-        startTime: formatMinutesToTime(b1Start),
-        endTime: formatMinutesToTime(b1End),
-        startMinutes: b1Start,
-        endMinutes: b1End,
+        id: `ai_sug_fsrs_${Date.now()}_${taskCounter++}`,
+        title: 'Revisão Espaçada FSRS (Flashcards Críticos)',
+        category: 'flashcard',
+        startTime: gap.startTime,
+        endTime: formatMinutesToTime(bEnd),
+        startMinutes: gap.startMinutes,
+        endMinutes: bEnd,
         source: 'plataforma',
-        action: 'treinar',
-        description: `Meta prioritária: 25 a 30 questões comentadas com padrão psicométrico ${targetExam}`,
-        rationale: 'Horário nobre de energia mental para resolução intensiva de questões.'
+        action: 'flashcards',
+        description: `Baralho inteligente: ${dueTodayFsrs} card(s) com retenção prevista para vencer hoje`,
+        rationale: `Encaixado nesta janela de ${bDuration} min para consolidar conceitos antes da curva de esquecimento (algoritmo FSRS).`,
+        aiDecision: {
+          whyThisTopic: `Você tem ${dueTodayFsrs} flashcard(s) aguardando revisão hoje. Evita regressão mnemônica na curva de Ebbinghaus.`,
+          whyThisTime: isNight
+            ? 'Janela noturna com menor demanda extrínseca, protegendo sua cognição contra fadiga.'
+            : 'Intervalo curto perfeito para sessões ágeis de repetição ativa sem dispersão.',
+          pedagogicalObjective: 'Manter a taxa de retenção da residência médica acima de 90%.',
+          decisionBadges: [
+            { type: 'fsrs_due', label: `${dueTodayFsrs} Flashcards FSRS Vencendo` },
+            ...(isNight ? [{ type: 'fatigue_relief' as const, label: 'Baixa Carga Extrínseca' }] : [])
+          ]
+        }
       });
-
-      // Se restar espaço substancial (> 75 min após pausa de 15 min)
-      const b2Start = b1End + 15;
-      const remaining = gap.endMinutes - b2Start;
-      if (remaining >= 45) {
-        const b2End = Math.min(gap.endMinutes, b2Start + 60);
-        suggestions.push({
-          id: `ai_sug_${Date.now()}_${taskCounter++}`,
-          title: 'Revisão de Flashcards FSRS & Pílula Clínica',
-          category: 'flashcard',
-          startTime: formatMinutesToTime(b2Start),
-          endTime: formatMinutesToTime(b2End),
-          startMinutes: b2Start,
-          endMinutes: b2End,
-          source: 'plataforma',
-          action: 'flashcards',
-          description: 'Baralho inteligente de repetição espaçada sem fadiga cognitiva',
-          rationale: 'Alternância de estímulo cognitivo (questões ➔ repetição ativa).'
-        });
-      }
+      continue;
     }
+
+    // Prioridade 2: Caderno de Erros se houver erros acumulados
+    if (pendingErrorsCount > 0 && !hasAllocatedErrors && duration >= 30) {
+      hasAllocatedErrors = true;
+      const bDuration = Math.min(duration, 45);
+      const bEnd = gap.startMinutes + bDuration;
+
+      suggestions.push({
+        id: `ai_sug_err_${Date.now()}_${taskCounter++}`,
+        title: `Caderno de Erros: ${mostCriticalSpecialty}`,
+        category: 'revisao',
+        startTime: gap.startTime,
+        endTime: formatMinutesToTime(bEnd),
+        startMinutes: gap.startMinutes,
+        endMinutes: bEnd,
+        source: 'plataforma',
+        action: 'caderno_erros',
+        description: `Reteste de ${Math.min(pendingErrorsCount, 10)} questões erradas recentemente para sanar vieses`,
+        rationale: `Reteste focado nos seus ${pendingErrorsCount} erros pendentes para converter falhas em acertos garantidos no ${targetExam}.`,
+        aiDecision: {
+          whyThisTopic: `Seu caderno de erros acumula ${pendingErrorsCount} questão(ões) não recuperadas, concentradas principalmente em ${mostCriticalSpecialty}.`,
+          whyThisTime: 'Janela intermediária propícia para metacognição e análise detalhada dos distratores da banca.',
+          pedagogicalObjective: 'Eliminar pontos cegos recorrentes e reverter padrões de erro.',
+          decisionBadges: [
+            { type: 'error_retest', label: `${pendingErrorsCount} Erros p/ Reteste` },
+            { type: 'weakness', label: `Foco: ${mostCriticalSpecialty}` }
+          ]
+        }
+      });
+      continue;
+    }
+
+    // Prioridade 3: Treino Intensivo de Questões TRI (Janelas amplas ou pico de foco)
+    const topicTitle = criticalSubtopic ? `${areaName}: ${criticalSubtopic}` : areaName;
+    const bMinutes = Math.min(duration, 75);
+    const bEnd = gap.startMinutes + bMinutes;
+    const numQuestions = Math.min(remainingGoal, Math.round(bMinutes / 3));
+
+    const badges: AiDecisionBadge[] = [
+      { type: 'weakness', label: `Ponto Cego: ~${criticalSubtopicAcc}% de acerto` },
+      { type: 'exam_weight', label: `Alvo: ${targetExam}` }
+    ];
+
+    if (bestShift && gap.startTime.startsWith('0') && bestShift === 'Manhã') {
+      badges.push({ type: 'energy_peak', label: 'Pico Cognitivo (Manhã)' });
+    }
+
+    suggestions.push({
+      id: `ai_sug_tri_${Date.now()}_${taskCounter++}`,
+      title: `Treino de Questões TRI: ${topicTitle}`,
+      category: 'estudo',
+      startTime: gap.startTime,
+      endTime: formatMinutesToTime(bEnd),
+      startMinutes: gap.startMinutes,
+      endMinutes: bEnd,
+      source: 'plataforma',
+      action: 'treinar',
+      description: `Resolução ativa de ${numQuestions} questões com gabarito comentado focado em ${topicTitle}`,
+      rationale: `Janela contínua de ${bMinutes} min aproveitada para resolver ${numQuestions} questões na área de maior vulnerabilidade.`,
+      aiDecision: {
+        whyThisTopic: `Seu Raio-X indica maior taxa de erro em ${topicTitle} (~${criticalSubtopicAcc}% de acerto). Foco de alto impacto no ${targetExam}.`,
+        whyThisTime: 'Espaço de tempo contínuo que permite concentração profunda sem interrupções da rotina.',
+        pedagogicalObjective: `Atingir a meta de questões do dia (${dailyGoal}Q) elevando a proficiência TRI.`,
+        decisionBadges: badges
+      }
+    });
   }
 
   return suggestions;
@@ -266,77 +283,99 @@ export async function POST(req: NextRequest) {
     const events: CalendarSlotInput[] = body.events || [];
     const userContext = body.userContext || {};
     const userCommand: string = (body.userCommand || body.prompt || '').trim();
+    const currentMinutes: number = typeof body.currentMinutes === 'number'
+      ? body.currentMinutes
+      : (typeof userContext.currentMinutes === 'number' ? userContext.currentMinutes : -1);
 
     const areaName = userContext.recommendedArea || 'Clínica Médica';
     const targetExam = userContext.targetExamName || 'ENARE 2026';
     const dailyGoal = userContext.dailyGoal || 30;
+    const dueTodayFsrs = userContext.spacedRepetition?.dueToday || 0;
+    const pendingErrors = userContext.errorNotebook?.pendingCount || 0;
 
-    // 1. Calcula os intervalos livres matematicamente
-    const freeGaps = calculateFreeGaps(events);
+    // 1. Calcula os intervalos livres matematicamente a partir de AGORA
+    const freeGaps = calculateFreeGaps(events, currentMinutes >= 0 ? currentMinutes : undefined);
 
     if (freeGaps.length === 0 && !userCommand) {
       return NextResponse.json({
         success: true,
-        summary: 'Sua agenda do Google está com horários contínuos ocupados hoje. Não encontramos intervalos livres de pelo menos 30 minutos.',
+        summary: 'Sua agenda está com horários contínuos ocupados hoje para o restante do dia. Não encontramos intervalos livres de pelo menos 25 minutos.',
         freeGaps: [],
         suggestions: []
       });
     }
 
-    // 2. Prepara fallback determinístico
-    const heuristicSuggestions = generateHeuristicSuggestions(freeGaps, areaName, targetExam, dailyGoal);
+    // 2. Prepara fallback determinístico inteligente com base nas métricas reais
+    const heuristicSuggestions = generateHeuristicSuggestions(freeGaps, userContext);
 
     // 3. Tenta enriquecer com Gemini AI para raciocínio preceptor personalizado
     try {
       const prompt = `
 Você é o Coordenador Pedagógico e Preceptor Médico de Residência Médica da plataforma Banco Residência.
-O estudante conectou o Google Agenda e deseja um planejamento cirúrgico e adaptativo de estudos para os horários de hoje.
+O estudante conectou o calendário e solicitou uma alocação cirúrgica de horários para HOJE, baseada no seu desempenho real.
 
-DADOS DA ROTINA DO ESTUDANTE:
-- Eventos atuais sincronizados do Google Agenda:
+PERFIL COGNITIVO & DESEMPENHO REAL DO ESTUDANTE:
+- Exame de Residência Alvo: ${targetExam}
+- Meta Diária de Questões: ${dailyGoal} (Já respondeu: ${userContext.todayAnswered || 0}Q)
+- Área Prioritária de Foco: ${areaName}
+- Subtemas Críticos com Menor Acurácia: ${JSON.stringify(userContext.criticalWeaknesses || [])}
+- Caderno de Erros (Pendentes de Reteste): ${pendingErrors} questões erradas
+- Revisão Espaçada FSRS: ${dueTodayFsrs} flashcards vencendo HOJE na curva de esquecimento
+- Cronobiologia & Energia Cognitiva Real: ${JSON.stringify(userContext.cognitiveEnergy || {})}
+
+TEMPO & HORÁRIOS:
+- Hora Atual do Aluno: ${userContext.currentTime || 'Agora'} (${currentMinutes} minutos do dia)
+- Compromissos Atuais Ocupados (Hospital/Aulas/Plantões):
 ${JSON.stringify(events.map(e => ({ title: e.title, horario: `${e.startTime} às ${e.endTime}` })))}
 
-- INTERVALOS LIVRES IDENTIFICADOS NO DIA:
+- INTERVALOS LIVRES DISPONÍVEIS A PARTIR DE AGORA:
 ${JSON.stringify(freeGaps.map(g => ({ horario: `${g.startTime} às ${g.endTime}`, duracaoMin: g.durationMinutes })))}
 
-${userCommand ? `PEDIDO / COMANDO ESPECÍFICO DO ESTUDANTE:
+${userCommand ? `PEDIDO ESPECÍFICO DO ALUNO:
 "${userCommand}"
-IMPORTANTE: Atenda rigorosamente ao pedido do aluno acima! Se ele pediu uma faixa de horário específica (ex: "o que fazer das 14h às 18h", ou "bloco de 30 min"), monte o planejamento especificamente para esse intervalo e objetivo solicitado.` : ''}
+IMPORTANTE: Atenda rigorosamente ao pedido do aluno acima se compatível!` : ''}
 
-- Exame de Residência Alvo: ${targetExam}
-- Área com maior necessidade de foco: ${areaName}
-- Meta diária de questões: ${dailyGoal}
+DIRETRIZES DE DECISÃO PEDAGÓGICA (MANDATÓRIAS):
+1. NUNCA sugira horários no passado (antes de ${userContext.currentTime || 'agora'}).
+2. Se houver flashcards FSRS vencendo hoje (${dueTodayFsrs} cards), OBRIGATORIAMENTE aloque uma sessão de 20 a 35 min de flashcards FSRS.
+3. Se houver erros pendentes (${pendingErrors} erros), aloque uma sessão de Caderno de Erros.
+4. Para temas densos (Treino TRI de questões no subtema fraco), priorize horários com maior energia mental do aluno ou janelas amplas.
+5. Se for tarde/noite ou o aluno tiver fadiga noturna, evite sobrecarga cognitiva.
+6. TRANSPARÊNCIA TOTAL: Para CADA atividade, forneça "aiDecision" detalhando:
+   - "whyThisTopic": Por que este tema/atividade foi selecionado baseado nos números reais do aluno.
+   - "whyThisTime": Por que este horário específico é o ideal (cronobiologia, compromissos pré/pós, fadiga).
+   - "pedagogicalObjective": O ganho imediato para a prova.
+   - "decisionBadges": Lista de 1 a 3 badges curtos com rótulos objetivos (Ex: "Ponto Cego: 25% acerto", "18 FSRS Vencendo", "Pico Cognitivo (Manhã)", "Reteste de Erros").
 
-REGRAS PEDAGÓGICAS E PSICOMÉTRICAS:
-1. NÃO colida com os compromissos existentes do Google Agenda (a menos que o usuário tenha pedido expressamente para alocar um horário).
-2. Cada tarefa deve pertencer a uma das categorias:
-   - "estudo" (ação: "treinar"): Treino focado de questões TRI com gabarito comentado
-   - "flashcard" (ação: "flashcards"): Baralho ativo espaçado algoritmo FSRS
-   - "revisao" (ação: "caderno_erros" ou "mnemonico"): Reteste de erros e fixação de pegadinhas
-   - "simulado" (ação: "simulado"): Simulado expresso TRI sob pressão de tempo (Blitz 10Q)
-3. Sugira de 1 a 4 blocos de estudo no total, distribuídos harmoniosamente.
-4. Para cada bloco, explique em 1 frase curta e motivadora o porquê pedagógico daquele horário (cronobiologia e descanso).
-
-Responda OBRIGATORIAMENTE em JSON válido com a estrutura:
+Responda OBRIGATORIAMENTE em JSON válido com a seguinte estrutura:
 {
-  "summary": "Resumo clínico amigável e direto de 1 a 2 frases analisando o pedido ou dia do aluno",
+  "summary": "Resumo clínico amigável e direto de 1 a 2 frases conectando os horários livres aos pontos fracos e flashcards do dia",
   "suggestions": [
     {
       "id": "ai_sug_1",
-      "title": "Treino de Questões TRI: ${areaName}",
+      "title": "Treino TRI: ...",
       "category": "estudo",
       "startTime": "HH:MM",
       "endTime": "HH:MM",
       "action": "treinar",
       "description": "...",
-      "rationale": "..."
+      "rationale": "Frase sintética motivadora",
+      "aiDecision": {
+        "whyThisTopic": "...",
+        "whyThisTime": "...",
+        "pedagogicalObjective": "...",
+        "decisionBadges": [
+          { "type": "weakness", "label": "Ponto Cego: 25% acerto" },
+          { "type": "energy_peak", "label": "Pico Cognitivo" }
+        ]
+      }
     }
   ]
 }
 `;
 
       const aiResponse = await callGeminiAi(prompt, {
-        temperature: 0.3,
+        temperature: 0.25,
         responseMimeType: 'application/json'
       });
 
@@ -351,6 +390,15 @@ Responda OBRIGATORIAMENTE em JSON válido com a estrutura:
           action: 'treinar' | 'flashcards' | 'caderno_erros' | 'simulado' | 'mnemonico';
           description: string;
           rationale?: string;
+          aiDecision?: {
+            whyThisTopic?: string;
+            whyThisTime?: string;
+            pedagogicalObjective?: string;
+            decisionBadges?: Array<{
+              type: 'weakness' | 'energy_peak' | 'fsrs_due' | 'error_retest' | 'exam_weight' | 'fatigue_relief' | 'quick_win';
+              label: string;
+            }>;
+          };
         }>;
       }>(aiResponse);
 
@@ -371,34 +419,49 @@ Responda OBRIGATORIAMENTE em JSON válido com a estrutura:
             endMinutes: Math.max(endMinutes, startMinutes + 15),
             source: 'plataforma',
             action: s.action || 'treinar',
-            description: s.description || 'Bloco de estudo personalizado gerado por IA',
-            rationale: s.rationale || 'Otimização baseada nos intervalos livres da sua agenda.'
+            description: s.description || 'Bloco de estudo adaptativo calibrado pelo Preceptor IA',
+            rationale: s.rationale || 'Otimização pedagógica baseada no seu desempenho e horários livres.',
+            aiDecision: s.aiDecision || {
+              whyThisTopic: `Foco direcionado para alavancar seu rendimento em ${areaName}.`,
+              whyThisTime: 'Encaixado estrategicamente nos horários livres da sua rotina.',
+              pedagogicalObjective: `Avanço na preparação para o ${targetExam}.`,
+              decisionBadges: [{ type: 'exam_weight', label: targetExam }]
+            }
           };
         });
 
-        // Ordena por horário de início
+        // Ordena cronologicamente por horário de início
         validatedSuggestions.sort((a, b) => a.startMinutes - b.startMinutes);
 
         return NextResponse.json({
           success: true,
-          summary: parsed.summary || `Identificamos ${freeGaps.length} intervalo(s) livre(s) hoje. Alocamos blocos otimizados para ${targetExam}.`,
+          summary: parsed.summary || `Encontramos ${freeGaps.length} intervalo(s) livre(s) a partir de agora. Estruturamos seus blocos priorizando deficiências e repetição espaçada.`,
           freeGaps,
           suggestions: validatedSuggestions,
           aiModel: 'gemini'
         });
       }
     } catch (aiErr) {
-      console.warn('[ScheduleOptimizer] Fallback para heurística pedagógica:', aiErr);
+      console.warn('[ScheduleOptimizer] Fallback para heurística pedagógica avançada:', aiErr);
     }
 
-    // Retorno com heurística padrão ouro caso o Gemini não responda
+    // Retorno com heurística pedagógica robusta caso o Gemini falhe ou atinja timeout
     const totalFreeMinutes = freeGaps.reduce((acc, g) => acc + g.durationMinutes, 0);
     const freeHours = Math.floor(totalFreeMinutes / 60);
     const freeMins = totalFreeMinutes % 60;
 
+    let summaryText = `Detectamos ${freeHours > 0 ? `${freeHours}h ` : ''}${freeMins}m de horários livres disponíveis a partir de agora.`;
+    if (dueTodayFsrs > 0 && pendingErrors > 0) {
+      summaryText += ` Alocamos blocos prioritários para liquidar seus ${dueTodayFsrs} flashcards FSRS vencendo hoje e retestar seus ${pendingErrors} erros pendentes.`;
+    } else if (dueTodayFsrs > 0) {
+      summaryText += ` Priorizamos seus ${dueTodayFsrs} flashcards FSRS para proteger sua curva de esquecimento.`;
+    } else {
+      summaryText += ` Alocamos treinos focados na sua área de maior atenção (${areaName}).`;
+    }
+
     return NextResponse.json({
       success: true,
-      summary: `Detectamos ${freeHours > 0 ? `${freeHours}h ` : ''}${freeMins}m de horários livres no seu Google Agenda hoje. Sugerimos ${heuristicSuggestions.length} blocos adaptados para alavancar seu desempenho em ${areaName}.`,
+      summary: summaryText,
       freeGaps,
       suggestions: heuristicSuggestions,
       aiModel: 'heuristic-pedagogical'

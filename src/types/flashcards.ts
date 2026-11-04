@@ -1,3 +1,5 @@
+import { FocusExamAnalytics } from './analytics';
+
 export type FSRSState = 'new' | 'learning' | 'review' | 'relearning';
 
 export type FlashcardRating = 'again' | 'hard' | 'good' | 'easy';
@@ -70,6 +72,7 @@ export interface StudyMaterialItem {
   markdownContent: string;
   keyPoints: string[];
   flashcardCount?: number;
+  recurrenceStats?: FocusExamAnalytics;
 }
 
 export interface FlashcardFilterState {

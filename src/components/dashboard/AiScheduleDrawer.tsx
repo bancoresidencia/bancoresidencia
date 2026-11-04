@@ -1,8 +1,23 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import { Sparkles, X, Check, Plus, Clock, Brain, AlertOctagon, Trophy, CheckCircle2, ChevronRight } from 'lucide-react';
-import { DailyScheduleSlot, AiScheduleAnalysis } from './scheduleTypes';
+import {
+  Sparkles,
+  X,
+  Check,
+  Plus,
+  Clock,
+  Brain,
+  AlertOctagon,
+  Trophy,
+  CheckCircle2,
+  Target,
+  Zap,
+  RotateCcw,
+  ShieldCheck,
+  Info
+} from 'lucide-react';
+import { DailyScheduleSlot, AiScheduleAnalysis, AiDecisionBadge } from './scheduleTypes';
 
 // Ícone Oficial do Google
 const GoogleIcon = ({ className = "w-3.5 h-3.5" }: { className?: string }) => (
@@ -46,8 +61,7 @@ export const AiScheduleDrawer: React.FC<AiScheduleDrawerProps> = ({
   // Inicializa a seleção com todos os itens não adicionados por padrão
   useEffect(() => {
     if (isOpen && suggestions.length > 0) {
-      const initialSelected = suggestions
-        .map(s => s.id);
+      const initialSelected = suggestions.map(s => s.id);
       setSelectedIds(initialSelected);
       setSuccessToast(null);
     }
@@ -107,32 +121,74 @@ export const AiScheduleDrawer: React.FC<AiScheduleDrawerProps> = ({
     }
   };
 
+  const renderDecisionBadge = (badge: AiDecisionBadge, idx: number) => {
+    let icon = <Info className="w-2.5 h-2.5" />;
+    let style = 'bg-blue-500/10 text-blue-700 dark:text-blue-300 border-blue-500/20';
+
+    switch (badge.type) {
+      case 'weakness':
+        icon = <Target className="w-2.5 h-2.5 text-rose-500" />;
+        style = 'bg-rose-500/10 text-rose-700 dark:text-rose-300 border-rose-500/25';
+        break;
+      case 'energy_peak':
+        icon = <Zap className="w-2.5 h-2.5 text-amber-500" />;
+        style = 'bg-amber-500/10 text-amber-700 dark:text-amber-300 border-amber-500/25';
+        break;
+      case 'fsrs_due':
+        icon = <Clock className="w-2.5 h-2.5 text-purple-500" />;
+        style = 'bg-purple-500/10 text-purple-700 dark:text-purple-300 border-purple-500/25';
+        break;
+      case 'error_retest':
+        icon = <RotateCcw className="w-2.5 h-2.5 text-orange-500" />;
+        style = 'bg-orange-500/10 text-orange-700 dark:text-orange-300 border-orange-500/25';
+        break;
+      case 'exam_weight':
+        icon = <Trophy className="w-2.5 h-2.5 text-blue-500" />;
+        style = 'bg-blue-500/10 text-blue-700 dark:text-blue-300 border-blue-500/25';
+        break;
+      case 'fatigue_relief':
+        icon = <ShieldCheck className="w-2.5 h-2.5 text-emerald-500" />;
+        style = 'bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border-emerald-500/25';
+        break;
+    }
+
+    return (
+      <span
+        key={idx}
+        className={`inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-semibold border ${style}`}
+      >
+        {icon}
+        <span>{badge.label}</span>
+      </span>
+    );
+  };
+
   return (
     <div
       className="fixed inset-0 z-[65] flex items-center justify-center p-3 sm:p-6 bg-black/60 backdrop-blur-xs animate-in fade-in duration-200"
       onClick={onClose}
     >
       <div
-        className="relative w-full max-w-2xl max-h-[88vh] bg-white dark:bg-[#0e121a] border border-blue-500/30 rounded-3xl shadow-2xl flex flex-col z-10 animate-in zoom-in-95 duration-200 overflow-hidden"
+        className="relative w-full max-w-2xl max-h-[90vh] bg-white dark:bg-[#0e121a] border border-blue-500/30 rounded-3xl shadow-2xl flex flex-col z-10 animate-in zoom-in-95 duration-200 overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
         {/* CABEÇALHO DO DRAWER CENTRAL SECUNDÁRIO */}
-        <div className="p-4 sm:p-5 border-b border-zinc-200 dark:border-zinc-800 flex items-center justify-between shrink-0 bg-blue-50/50 dark:bg-zinc-900/50">
+        <div className="p-4 sm:p-5 border-b border-zinc-200 dark:border-zinc-800 flex items-center justify-between shrink-0 bg-blue-50/60 dark:bg-zinc-900/60">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-2xl bg-blue-500/15 text-blue-600 dark:text-blue-400 flex items-center justify-center shadow-xs shrink-0">
+            <div className="w-10 h-10 rounded-2xl bg-gradient-to-tr from-blue-600 to-indigo-600 text-white flex items-center justify-center shadow-xs shrink-0">
               <Sparkles className="w-5 h-5" />
             </div>
             <div>
               <div className="flex items-center gap-2">
                 <h3 className="font-heading text-base sm:text-lg font-bold text-zinc-900 dark:text-zinc-100">
-                  Otimização de Horários Livres (Mentor IA)
+                  Otimização de Horários Livres (Preceptor IA)
                 </h3>
                 <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-blue-500/15 text-blue-600 dark:text-blue-400 border border-blue-500/25 hidden sm:inline-block">
-                  Pré-visualização IA
+                  Decisão Metacognitiva
                 </span>
               </div>
               <p className="text-xs text-zinc-500 dark:text-zinc-400">
-                Janelas ociosas cruzadas com foco de alto rendimento TRI & FSRS
+                Cruzamento real de pontos cegos, FSRS, caderno de erros e cronobiologia médica
               </p>
             </div>
           </div>
@@ -158,8 +214,14 @@ export const AiScheduleDrawer: React.FC<AiScheduleDrawerProps> = ({
         <div className="p-4 sm:p-6 overflow-y-auto space-y-4 flex-1 custom-scrollbar">
           {/* Card de Resumo da Análise e Gaps Livres */}
           {analysis && (
-            <div className="p-4 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200 dark:border-zinc-800 space-y-2.5">
-              <p className="text-xs sm:text-sm text-zinc-700 dark:text-zinc-300 font-medium leading-relaxed">
+            <div className="p-4 rounded-2xl bg-gradient-to-br from-blue-50/60 via-indigo-50/30 to-purple-50/40 dark:from-blue-950/20 dark:via-zinc-900/40 dark:to-purple-950/20 border border-blue-500/20 space-y-2.5">
+              <div className="flex items-center gap-2">
+                <Brain className="w-4 h-4 text-blue-600 dark:text-blue-400 shrink-0" />
+                <span className="text-xs font-bold uppercase tracking-wider text-blue-700 dark:text-blue-300">
+                  Diagnóstico Estratégico do Preceptor Virtual
+                </span>
+              </div>
+              <p className="text-xs sm:text-sm text-zinc-700 dark:text-zinc-200 font-medium leading-relaxed">
                 {analysis.summary}
               </p>
               {analysis.freeGaps && analysis.freeGaps.length > 0 && (
@@ -203,104 +265,152 @@ export const AiScheduleDrawer: React.FC<AiScheduleDrawerProps> = ({
             </span>
           </div>
 
-          {/* LISTA DE ATIVIDADES SUGERIDAS PELA IA */}
-          <div className="space-y-3">
+          {/* LISTA DE ATIVIDADES SUGERIDAS PELA IA COM EXPLICAÇÃO COMPLETA DA DECISÃO */}
+          <div className="space-y-3.5">
             {suggestions.map((sug) => {
               const isSelected = selectedIds.includes(sug.id);
               const isAlreadyAdded = userScheduledTasks.some(
                 t => t.id === sug.id || (t.startTime === sug.startTime && t.title === sug.title)
               );
               const catBadge = getCategoryBadge(sug.category);
+              const decision = sug.aiDecision;
 
               return (
                 <div
                   key={sug.id}
-                  className={`p-3.5 sm:p-4 rounded-2xl border transition-all flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 ${isSelected
+                  className={`p-4 rounded-2xl border transition-all space-y-3 ${
+                    isSelected
                       ? 'bg-blue-50/20 dark:bg-[#131926] border-blue-500/50 shadow-xs ring-1 ring-blue-500/20'
-                      : 'bg-white dark:bg-[#141822] border-zinc-200 dark:border-zinc-800 opacity-80'
-                    }`}
+                      : 'bg-white dark:bg-[#141822] border-zinc-200 dark:border-zinc-800 opacity-85'
+                  }`}
                 >
-                  <div className="flex items-start gap-3 min-w-0 flex-1">
-                    {/* Checkbox de Inclusão no Cronograma Oficial */}
-                    <div className="pt-0.5">
-                      <input
-                        type="checkbox"
-                        checked={isSelected}
-                        onChange={() => handleToggleSingle(sug.id)}
-                        className="w-4 h-4 rounded text-blue-600 focus:ring-blue-500 border-zinc-300 dark:border-zinc-700 cursor-pointer"
-                        title={isSelected ? 'Desmarcar do cronograma oficial' : 'Marcar para o cronograma oficial'}
-                      />
-                    </div>
-
-                    <div className="space-y-1 min-w-0 flex-1">
-                      <div className="flex items-center gap-2 flex-wrap">
-                        <span className="font-mono text-xs font-bold text-blue-600 dark:text-blue-400 bg-blue-500/10 px-2 py-0.5 rounded-md border border-blue-500/20">
-                          {sug.startTime} - {sug.endTime}
-                        </span>
-                        <span className={`px-2 py-0.5 rounded-md text-[10px] font-bold border ${catBadge.bg}`}>
-                          {catBadge.label}
-                        </span>
-                        {isAlreadyAdded && (
-                          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-bold bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/25">
-                            <Check className="w-2.5 h-2.5" />
-                            Já no Cronograma
-                          </span>
-                        )}
+                  {/* CABEÇALHO DO CARD: CHECKBOX, HORÁRIO, BADGES E BOTÕES DE AÇÃO */}
+                  <div className="flex items-start justify-between gap-3 flex-wrap sm:flex-nowrap">
+                    <div className="flex items-start gap-3 min-w-0 flex-1">
+                      <div className="pt-0.5">
+                        <input
+                          type="checkbox"
+                          checked={isSelected}
+                          onChange={() => handleToggleSingle(sug.id)}
+                          className="w-4 h-4 rounded text-blue-600 focus:ring-blue-500 border-zinc-300 dark:border-zinc-700 cursor-pointer"
+                          title={isSelected ? 'Desmarcar do cronograma oficial' : 'Marcar para o cronograma oficial'}
+                        />
                       </div>
 
-                      <h5 className="text-sm font-bold text-zinc-900 dark:text-zinc-100">
-                        {sug.title}
-                      </h5>
+                      <div className="space-y-1 min-w-0 flex-1">
+                        <div className="flex items-center gap-2 flex-wrap">
+                          <span className="font-mono text-xs font-bold text-blue-600 dark:text-blue-400 bg-blue-500/10 px-2 py-0.5 rounded-md border border-blue-500/20">
+                            {sug.startTime} - {sug.endTime}
+                          </span>
+                          <span className={`px-2 py-0.5 rounded-md text-[10px] font-bold border ${catBadge.bg}`}>
+                            {catBadge.label}
+                          </span>
+                          {isAlreadyAdded && (
+                            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-bold bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/25">
+                              <Check className="w-2.5 h-2.5" />
+                              Já no Cronograma
+                            </span>
+                          )}
+                        </div>
 
-                      {sug.description && (
-                        <p className="text-xs text-zinc-500 dark:text-zinc-400 line-clamp-2">
-                          {sug.description}
-                        </p>
+                        <h5 className="text-sm font-bold text-zinc-900 dark:text-zinc-100">
+                          {sug.title}
+                        </h5>
+
+                        {sug.description && (
+                          <p className="text-xs text-zinc-500 dark:text-zinc-400 leading-relaxed">
+                            {sug.description}
+                          </p>
+                        )}
+                      </div>
+                    </div>
+
+                    {/* BOTÕES DE AÇÃO */}
+                    <div className="shrink-0 flex items-center gap-2 w-full sm:w-auto justify-end pt-2 sm:pt-0 border-t sm:border-t-0 border-zinc-100 dark:border-zinc-800">
+                      {isAlreadyAdded ? (
+                        <button
+                          type="button"
+                          onClick={() => onRemoveTask(sug.id)}
+                          className="px-2.5 py-1.5 rounded-xl border border-rose-500/30 text-rose-600 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/30 text-xs font-bold transition-colors cursor-pointer"
+                          title="Remover esta tarefa do cronograma oficial"
+                        >
+                          Remover
+                        </button>
+                      ) : (
+                        <button
+                          type="button"
+                          onClick={() => onAddTasks([sug])}
+                          className="px-3 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold cursor-pointer transition-colors flex items-center gap-1 shadow-2xs"
+                        >
+                          <Plus className="w-3.5 h-3.5" />
+                          <span>Adicionar</span>
+                        </button>
                       )}
 
-                      {sug.rationale && (
-                        <p className="text-[11px] text-blue-600 dark:text-blue-300 italic pt-0.5">
-                          💡 {sug.rationale}
-                        </p>
+                      {onExportToGoogle && (
+                        <button
+                          type="button"
+                          onClick={() => onExportToGoogle(sug)}
+                          disabled={exportingSlotId === sug.id || Boolean(exportedSlotIds[sug.id])}
+                          className="px-2.5 py-1.5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 hover:border-blue-500/40 text-xs font-bold flex items-center gap-1.5 transition-all cursor-pointer disabled:opacity-50"
+                          title="Salvar direto no seu Google Agenda"
+                        >
+                          <GoogleIcon className="w-3.5 h-3.5" />
+                          <span>{exportedSlotIds[sug.id] ? 'Salvo' : '+ Google'}</span>
+                        </button>
                       )}
                     </div>
                   </div>
 
-                  {/* AÇÕES INDIVIDUAIS POR ATIVIDADE */}
-                  <div className="shrink-0 flex items-center gap-2 w-full sm:w-auto justify-end pt-2 sm:pt-0 border-t sm:border-t-0 border-zinc-100 dark:border-zinc-800">
-                    {/* Botão de Adicionar/Remover Individual */}
-                    {isAlreadyAdded ? (
-                      <button
-                        type="button"
-                        onClick={() => onRemoveTask(sug.id)}
-                        className="px-2.5 py-1.5 rounded-xl border border-rose-500/30 text-rose-600 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/30 text-xs font-bold transition-colors cursor-pointer"
-                        title="Remover esta tarefa do cronograma oficial"
-                      >
-                        Remover
-                      </button>
-                    ) : (
-                      <button
-                        type="button"
-                        onClick={() => onAddTasks([sug])}
-                        className="px-3 py-1.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold cursor-pointer transition-colors flex items-center gap-1 shadow-2xs"
-                      >
-                        <Plus className="w-3.5 h-3.5" />
-                        <span>Adicionar</span>
-                      </button>
+                  {/* BADGES DOS GATILHOS DA DECISÃO */}
+                  {decision?.decisionBadges && decision.decisionBadges.length > 0 && (
+                    <div className="flex items-center gap-1.5 flex-wrap pt-0.5">
+                      {decision.decisionBadges.map((badge, bIdx) => renderDecisionBadge(badge, bIdx))}
+                    </div>
+                  )}
+
+                  {/* PAINEL EXPLICATIVO: POR QUE A IA TOMOU ESSA DECISÃO */}
+                  <div className="p-3 rounded-xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200/80 dark:border-zinc-800 space-y-2">
+                    <div className="flex items-center gap-1.5 text-[11px] font-bold text-zinc-800 dark:text-zinc-200">
+                      <Brain className="w-3.5 h-3.5 text-blue-500" />
+                      <span>Por que a IA tomou essa decisão?</span>
+                    </div>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-[11px] text-zinc-600 dark:text-zinc-300">
+                      {decision?.whyThisTopic && (
+                        <div className="space-y-0.5">
+                          <span className="font-bold text-zinc-500 dark:text-zinc-400 text-[10px] uppercase tracking-wider block">
+                            🎯 Por que este tema:
+                          </span>
+                          <p className="leading-relaxed">
+                            {decision.whyThisTopic}
+                          </p>
+                        </div>
+                      )}
+
+                      {decision?.whyThisTime && (
+                        <div className="space-y-0.5">
+                          <span className="font-bold text-zinc-500 dark:text-zinc-400 text-[10px] uppercase tracking-wider block">
+                            ⚡ Por que este horário:
+                          </span>
+                          <p className="leading-relaxed">
+                            {decision.whyThisTime}
+                          </p>
+                        </div>
+                      )}
+                    </div>
+
+                    {decision?.pedagogicalObjective && (
+                      <div className="pt-1.5 border-t border-zinc-200/60 dark:border-zinc-800/80 text-[10px] text-blue-700 dark:text-blue-300 flex items-center gap-1.5">
+                        <Sparkles className="w-3 h-3 text-blue-500 shrink-0" />
+                        <span><strong>Objetivo Imediato:</strong> {decision.pedagogicalObjective}</span>
+                      </div>
                     )}
 
-                    {/* Botão de Enviar ao Google Agenda */}
-                    {onExportToGoogle && (
-                      <button
-                        type="button"
-                        onClick={() => onExportToGoogle(sug)}
-                        disabled={exportingSlotId === sug.id || Boolean(exportedSlotIds[sug.id])}
-                        className="px-2.5 py-1.5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 hover:border-blue-500/40 text-xs font-bold flex items-center gap-1.5 transition-all cursor-pointer disabled:opacity-50"
-                        title="Salvar direto no seu Google Agenda"
-                      >
-                        <GoogleIcon className="w-3.5 h-3.5" />
-                        <span>{exportedSlotIds[sug.id] ? 'Salvo' : '+ Google'}</span>
-                      </button>
+                    {!decision && sug.rationale && (
+                      <p className="text-[11px] text-blue-600 dark:text-blue-300 italic pt-0.5">
+                        💡 {sug.rationale}
+                      </p>
                     )}
                   </div>
                 </div>

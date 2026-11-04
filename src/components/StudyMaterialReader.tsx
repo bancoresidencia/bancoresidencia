@@ -10,12 +10,15 @@ import {
   AlertTriangle,
   Play,
   ChevronLeft,
-  ChevronRight
+  ChevronRight,
+  Stethoscope,
+  HeartPulse
 } from 'lucide-react';
 import { StudyMaterialItem } from '@/types/flashcards';
 import { useTheme } from '@/context/ThemeContext';
 import { MermaidDiagram } from './study-material/MermaidDiagram';
 import { FigoAnatomicalDiagram } from './study-material/FigoAnatomicalDiagram';
+import { UniversalRecurrenceStatsCard } from './study-material/UniversalRecurrenceStatsCard';
 import { ExamRecurrenceStatsCard } from './study-material/ExamRecurrenceStatsCard';
 import { RiskFactorsComparisonCard } from './study-material/RiskFactorsComparisonCard';
 import { TopographicSymptomsCard } from './study-material/TopographicSymptomsCard';
@@ -27,6 +30,7 @@ import { HppRecurrenceStatsCard } from './study-material/HppRecurrenceStatsCard'
 import { HppFourTsCard } from './study-material/HppFourTsCard';
 import { HppGoldenHourAlgorithmCard } from './study-material/HppGoldenHourAlgorithmCard';
 import { GemelaridadeRecurrenceStatsCard } from './study-material/GemelaridadeRecurrenceStatsCard';
+import { UniversalClinicalVisualScheme } from './study-material/UniversalClinicalVisualScheme';
 
 interface StudyMaterialReaderProps {
   material: StudyMaterialItem;
@@ -83,6 +87,11 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
       .replace(/\\times\b/g, '×')
       .replace(/\\mu\b/g, 'µ')
       .replace(/\\%/g, '%')
+      .replace(/\^?\\circ\s*C?\b/g, '°C')
+      .replace(/\\circ\b/g, '°')
+      .replace(/\\begin\{cases\}/g, '')
+      .replace(/\\end\{cases\}/g, '')
+      .replace(/\\\\/g, '   •   ')
       .replace(/\\,/g, ' ')
       .replace(/_\{?(\d+)\}?/g, (_, d) => {
         const subs: Record<string, string> = {
@@ -353,6 +362,25 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
 
       // Interceptação por componentes nativos ricos integrados ao tema do site
       if (
+        lang === 'clinical-scheme' ||
+        lang === 'visual-scheme'
+      ) {
+        try {
+          const schemeData = JSON.parse(fullCode);
+          elements.push(
+            <UniversalClinicalVisualScheme
+              key={`clinical-scheme-${key}`}
+              type={schemeData.type || 'bipolar'}
+              title={schemeData.title || ''}
+              subtitle={schemeData.subtitle}
+              badge={schemeData.badge}
+              data={schemeData}
+            />
+          );
+        } catch (err) {
+          console.error('[StudyMaterialReader] Erro ao decodificar clinical-scheme:', err);
+        }
+      } else if (
         lang === 'hpp-exam-stats' ||
         fullCode.includes('Recorrência Temática de Hemorragia Pós-Parto') ||
         fullCode.includes('Recorrência Temática de HPP')
@@ -395,7 +423,51 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
         fullCode.includes('Recorrência Estatística em Provas') ||
         fullCode.includes('Frequência Relativa de Cobrança')
       ) {
-        elements.push(<ExamRecurrenceStatsCard key={`exam-stats-${key}`} />);
+        let parsedData: { totalQuestions?: number; items?: any[]; title?: string } | null = null;
+        try {
+          const trimmed = fullCode.trim();
+          if (trimmed.startsWith('{')) {
+            parsedData = JSON.parse(trimmed);
+          }
+        } catch (e) {
+          console.warn('[StudyMaterialReader] Erro ao decodificar JSON de exam-stats:', e);
+        }
+
+        const rawSlices = (parsedData as any)?.donutSlices || (parsedData as any)?.items;
+
+        if (material?.recurrenceStats) {
+          elements.push(
+            <UniversalRecurrenceStatsCard
+              key={`universal-stats-${key}`}
+              analytics={material.recurrenceStats}
+              focusTitle={material.focus}
+            />
+          );
+        } else if (parsedData && Array.isArray(rawSlices) && rawSlices.length > 0) {
+          elements.push(
+            <UniversalRecurrenceStatsCard
+              key={`universal-stats-${key}`}
+              analytics={parsedData as any}
+              slices={rawSlices}
+              totalQuestions={parsedData.totalQuestions}
+              focusTitle={material?.focus || (parsedData as any)?.focus || parsedData.title}
+            />
+          );
+        } else if (parsedData && Array.isArray(parsedData.items) && parsedData.items.length > 0) {
+          elements.push(
+            <ExamRecurrenceStatsCard
+              key={`exam-stats-${key}`}
+              data={parsedData.items}
+              totalQuestions={parsedData.totalQuestions}
+              title={parsedData.title}
+            />
+          );
+        } else {
+          // Se não há dados válidos do censo, aponta como erro no resumo (tolerância zero no plano canônico)
+          elements.push(
+            <ExamRecurrenceStatsCard key={`exam-stats-${key}`} data={[]} />
+          );
+        }
       } else if (
         lang === 'risk-factors' ||
         fullCode.includes('FATORES_RISCO') ||
@@ -453,6 +525,190 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
             title={diagramTitle || 'Esquema Visual de Decisão Clínica'}
           />
         );
+      } else if (lang === 'diff-diagnosis') {
+        let diffData: any = null;
+        try {
+          diffData = JSON.parse(fullCode.trim());
+        } catch (e) {
+          console.warn('[StudyMaterialReader] Erro ao decodificar JSON de diff-diagnosis:', e);
+        }
+
+        if (diffData && Array.isArray(diffData.entities)) {
+          elements.push(
+            <div
+              key={`diff-${key}`}
+              className="my-8 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 bg-white dark:bg-[#121215] overflow-hidden shadow-xs"
+            >
+              <div className="px-5 py-4 border-b border-zinc-100 dark:border-zinc-800 flex items-center justify-between gap-3 bg-zinc-50/60 dark:bg-zinc-900/50">
+                <div className="flex items-center gap-2.5">
+                  <div
+                    className="w-8 h-8 rounded-xl flex items-center justify-center text-white shadow-xs shrink-0"
+                    style={{ backgroundColor: accentConfig.primaryHex }}
+                  >
+                    <Stethoscope className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <h3 className="font-heading font-black text-sm sm:text-base text-zinc-900 dark:text-zinc-100">
+                      {diffData.title || 'Diagnóstico Diferencial Comparativo'}
+                    </h3>
+                    <p className="text-[11px] text-zinc-500 dark:text-zinc-400">
+                      Critérios discriminativos de prova e condutas homologadas
+                    </p>
+                  </div>
+                </div>
+                <span className="px-2.5 py-0.5 rounded-md text-[10px] font-bold bg-blue-500/15 text-blue-700 dark:text-blue-400 border border-blue-500/30">
+                  Diferencial Canônico
+                </span>
+              </div>
+
+              <div className="p-5 sm:p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+                {diffData.entities.map((ent: any, idx: number) => (
+                  <div
+                    key={idx}
+                    className="p-4 sm:p-5 rounded-2xl border border-zinc-200/80 dark:border-zinc-800/80 bg-zinc-50/50 dark:bg-zinc-900/40 flex flex-col justify-between space-y-3"
+                  >
+                    <div>
+                      <div className="flex items-center justify-between gap-2 border-b border-zinc-200/60 dark:border-zinc-800/80 pb-2">
+                        <span className="font-heading font-black text-sm text-zinc-900 dark:text-zinc-100">
+                          {ent.name}
+                        </span>
+                        {ent.period && (
+                          <span className="text-[10px] font-bold px-2 py-0.5 rounded-md bg-zinc-200/60 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300">
+                            {ent.period}
+                          </span>
+                        )}
+                      </div>
+
+                      <div className="mt-3 space-y-1.5 text-xs text-zinc-600 dark:text-zinc-300 leading-relaxed">
+                        {ent.feverDuration && (
+                          <div>
+                            <strong className="text-zinc-800 dark:text-zinc-200">Curva Térmica:</strong> {ent.feverDuration}
+                          </div>
+                        )}
+                        {ent.uterineSigns && (
+                          <div>
+                            <strong className="text-zinc-800 dark:text-zinc-200">Sinais Uterinos:</strong> {ent.uterineSigns}
+                          </div>
+                        )}
+                        {ent.lochia && (
+                          <div>
+                            <strong className="text-zinc-800 dark:text-zinc-200">Lóquios:</strong> {ent.lochia}
+                          </div>
+                        )}
+                        {ent.hallmark && (
+                          <div className="pt-1 text-zinc-800 dark:text-zinc-200 font-medium">
+                            <span className="text-amber-600 dark:text-amber-400 font-bold">Achado Cardinal: </span>
+                            {ent.hallmark}
+                          </div>
+                        )}
+                      </div>
+                    </div>
+
+                    {ent.keyConduct && (
+                      <div className="pt-2 border-t border-zinc-200/60 dark:border-zinc-800/80 text-xs">
+                        <span className="text-[10px] font-black uppercase tracking-wider text-emerald-600 dark:text-emerald-400 block mb-0.5">
+                          Conduta Padrão-Ouro
+                        </span>
+                        <span className="font-semibold text-zinc-800 dark:text-zinc-200 leading-snug">
+                          {ent.keyConduct}
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          );
+        }
+      } else if (lang === 'clinical-score') {
+        let scoreData: any = null;
+        try {
+          scoreData = JSON.parse(fullCode.trim());
+        } catch (e) {
+          console.warn('[StudyMaterialReader] Erro ao decodificar JSON de clinical-score:', e);
+        }
+
+        if (scoreData && Array.isArray(scoreData.parameters)) {
+          elements.push(
+            <div
+              key={`score-${key}`}
+              className="my-8 rounded-3xl border border-zinc-200/90 dark:border-zinc-800 bg-white dark:bg-[#121215] overflow-hidden shadow-xs"
+            >
+              <div className="px-5 py-4 border-b border-zinc-100 dark:border-zinc-800 flex items-center justify-between gap-3 bg-zinc-50/60 dark:bg-zinc-900/50">
+                <div className="flex items-center gap-2.5">
+                  <div
+                    className="w-8 h-8 rounded-xl flex items-center justify-center text-white shadow-xs shrink-0"
+                    style={{ backgroundColor: accentConfig.primaryHex }}
+                  >
+                    <HeartPulse className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <h3 className="font-heading font-black text-sm sm:text-base text-zinc-900 dark:text-zinc-100">
+                      {scoreData.title || 'Escore Clínico & Protocolo'}
+                    </h3>
+                    <p className="text-[11px] text-zinc-500 dark:text-zinc-400">
+                      Critérios de estratificação e conduta imediata
+                    </p>
+                  </div>
+                </div>
+                <span className="px-2.5 py-0.5 rounded-md text-[10px] font-bold bg-rose-500/15 text-rose-700 dark:text-rose-400 border border-rose-500/30">
+                  Gatilho de Sepse
+                </span>
+              </div>
+
+              <div className="p-5 sm:p-6 space-y-5">
+                <div className="overflow-x-auto rounded-2xl border border-zinc-200/80 dark:border-zinc-800/80">
+                  <table className="w-full text-left text-xs border-collapse">
+                    <thead>
+                      <tr className="bg-zinc-100/80 dark:bg-zinc-900/80 border-b border-zinc-200/80 dark:border-zinc-800 text-zinc-900 dark:text-zinc-100 font-bold">
+                        <th className="p-3">Parâmetro</th>
+                        <th className="p-3">Normalidade</th>
+                        <th className="p-3">Gatilho de Alerta</th>
+                        <th className="p-3">Significado Clínico</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-zinc-100 dark:divide-zinc-800 bg-white dark:bg-[#121215]">
+                      {scoreData.parameters.map((param: any, pIdx: number) => (
+                        <tr key={pIdx} className="hover:bg-zinc-50/50 dark:hover:bg-zinc-900/30 transition-colors">
+                          <td className="p-3 font-bold text-zinc-900 dark:text-zinc-100">{param.parameter}</td>
+                          <td className="p-3 text-zinc-600 dark:text-zinc-300">{param.normalRange}</td>
+                          <td className="p-3 font-semibold text-rose-600 dark:text-rose-400">{param.alertTrigger}</td>
+                          <td className="p-3 text-zinc-600 dark:text-zinc-400">{param.clinicalMeaning}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+
+                {scoreData.actionThreshold && (
+                  <div className="p-4 sm:p-5 rounded-2xl border border-rose-500/30 bg-rose-500/5 space-y-3">
+                    <div className="flex items-center gap-2">
+                      <AlertTriangle className="w-4 h-4 text-rose-600 shrink-0" />
+                      <span className="font-heading font-black text-xs sm:text-sm text-rose-700 dark:text-rose-400">
+                        {scoreData.actionThreshold.bundleProtocol || 'PROTOCOLO DE CONDUTA IMEDIATA'}
+                      </span>
+                    </div>
+                    {scoreData.actionThreshold.triggerCondition && (
+                      <p className="text-xs font-semibold text-zinc-700 dark:text-zinc-300">
+                        {scoreData.actionThreshold.triggerCondition}
+                      </p>
+                    )}
+                    {Array.isArray(scoreData.actionThreshold.mandatorySteps) && (
+                      <ul className="text-xs space-y-1.5 text-zinc-700 dark:text-zinc-300 font-medium">
+                        {scoreData.actionThreshold.mandatorySteps.map((step: string, sIdx: number) => (
+                          <li key={sIdx} className="flex items-start gap-2">
+                            <span className="w-1.5 h-1.5 rounded-full bg-rose-500 mt-1.5 shrink-0" />
+                            <span>{step}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                )}
+              </div>
+            </div>
+          );
+        }
       } else {
         elements.push(
           <div
@@ -669,20 +925,82 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
             );
             return;
           }
-        } else if (trimmed.startsWith("$") && trimmed.endsWith("$")) {
-          const formatted = formatMedicalMath(mathContent);
+        }
+
+        // Suporte avançado e flexível a ambiente cases: \begin{cases} ... \end{cases}
+        const casesMatch = mathContent.match(/^(.*?)(?:\\{1,2}implies|⟹)\s*\\{1,2}begin\{cases\}([\s\S]*?)\\{1,2}end\{cases\}\s*$/);
+        if (casesMatch) {
+          const entity = formatMedicalMath(casesMatch[1]);
+          const rawItems = casesMatch[2].split(/\\{2,4}/);
+          const items = rawItems
+            .map(it => formatMedicalMath(it).trim())
+            .filter(it => it.length > 0);
+
           elements.push(
             <div
-              key={`math-block-${index}`}
-              className="my-4 p-4 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200/90 dark:border-zinc-800 shadow-xs flex items-center justify-center text-center not-prose"
+              key={`math-cases-${index}`}
+              className="my-6 p-5 sm:p-6 rounded-3xl bg-zinc-50/80 dark:bg-zinc-900/60 border border-zinc-200/90 dark:border-zinc-800 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-5 not-prose"
             >
-              <span className="font-heading font-black text-xs sm:text-sm text-zinc-900 dark:text-zinc-100">
-                {formatted}
-              </span>
+              <div className="flex items-center gap-3 shrink-0">
+                <div
+                  className="w-10 h-10 rounded-2xl flex items-center justify-center text-white shadow-xs font-heading font-black text-sm shrink-0"
+                  style={{ backgroundColor: accentConfig.primaryHex }}
+                >
+                  Tx
+                </div>
+                <div>
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 block">
+                    Definição / Tríade Canônica
+                  </span>
+                  <span className="font-heading font-black text-sm sm:text-base text-zinc-900 dark:text-zinc-100">
+                    {entity}
+                  </span>
+                </div>
+              </div>
+
+              <div className="hidden md:flex items-center justify-center text-zinc-400 dark:text-zinc-500 text-xl font-bold px-2">
+                ⟹
+              </div>
+
+              <div className="flex-1 space-y-2.5 w-full">
+                {items.map((itemText, i) => {
+                  const cleanText = itemText.replace(/^\d+[\.\)]\s*/, '');
+                  return (
+                    <div
+                      key={i}
+                      className="flex items-start gap-3 p-3.5 rounded-2xl bg-white dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 shadow-2xs"
+                    >
+                      <div
+                        className="w-6 h-6 rounded-full flex items-center justify-center text-white font-black text-xs shrink-0 mt-0.5"
+                        style={{ backgroundColor: accentConfig.primaryHex }}
+                      >
+                        {i + 1}
+                      </div>
+                      <span className="font-heading font-bold text-xs sm:text-sm text-zinc-800 dark:text-zinc-200 leading-snug">
+                        {cleanText}
+                      </span>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           );
           return;
         }
+
+        // Bloco padrão de fórmula caso não seja fração nem cases
+        const formatted = formatMedicalMath(mathContent);
+        elements.push(
+          <div
+            key={`math-block-${index}`}
+            className="my-4 p-4 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200/90 dark:border-zinc-800 shadow-xs flex items-center justify-center text-center not-prose"
+          >
+            <span className="font-heading font-black text-xs sm:text-sm text-zinc-900 dark:text-zinc-100">
+              {formatted}
+            </span>
+          </div>
+        );
+        return;
       }
 
       // Títulos Markdown: Elimina repetição do título principal já presente no cabeçalho do leitor

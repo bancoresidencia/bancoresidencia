@@ -22,6 +22,8 @@ import {
   ShieldAlert
 } from 'lucide-react';
 import { ActiveTab, Modalidade } from '@/types';
+import { useTabAvailability } from '@/context/TabAvailabilityContext';
+import { PlatformTabKey } from '@/types/tabAvailability';
 import { useTheme } from '@/context/ThemeContext';
 import { useAuth } from '@/context/AuthContext';
 import { Logo } from '@/components/Logo';
@@ -48,6 +50,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
   const pathname = usePathname();
   const { accentConfig } = useTheme();
   const { isAdmin } = useAuth();
+  const { isTabActive } = useTabAvailability();
 
   const menuItems = [
     { id: 'home', label: 'Início', icon: LayoutDashboard, href: '/dashboard' },
@@ -180,7 +183,19 @@ export const Sidebar: React.FC<SidebarProps> = ({
                     {item.label}
                   </span>
 
-                  {item.badge !== undefined && (
+                  {!isTabActive(item.id as PlatformTabKey) && (
+                    <span
+                      className={`ml-auto text-[9px] font-bold px-1.5 py-0.2 rounded-md ${
+                        isActive
+                          ? 'bg-black/20 text-white'
+                          : 'bg-amber-500/15 text-amber-700 dark:text-amber-400 border border-amber-500/20'
+                      }`}
+                    >
+                      Em breve
+                    </span>
+                  )}
+
+                  {item.badge !== undefined && isTabActive(item.id as PlatformTabKey) && (
                     <span
                       className={`ml-auto text-[10px] font-extrabold px-1.5 py-0.2 rounded-md font-mono ${
                         isActive

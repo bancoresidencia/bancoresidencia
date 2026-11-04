@@ -506,5 +506,860 @@ A história natural das doenças divide-se no período pré-patogênico e patog�
           "A principal complicação puerperal é a hemorragia por atonia uterina pela sobredistensão, exigindo profilaxia universal com ocitocina."
     ],
     markdownContent: "---\n\n## 1. O Que Mais Cai: Idade Gestacional de Interrupção por Corionicidade\n\nA definição do momento do parto na gestação múltipla é um dos temas mais recorrentes em provas de R1 e R3, fundamentando-se no equilíbrio crítico entre o risco de **mortalidade perinatal in utero** (que aumenta exponencialmente após certas idades gestacionais) e os riscos da **prematuridade tardia**. O divisor de águas é a **corionicidade**, e não a zigosidade. Em provas como USP e ENARE, a cobrança foca na redução do risco de óbito fetal súbito em gestações monocoriônicas devido às anastomoses vasculares placentárias.\n\n```gem-stats-parto\nRecorrência Temática de Parto em Gestação Múltipla\n- Momento do Parto/Corionicidade: 45%\n- Via de Parto/Apresentação Fetal: 35%\n- Manejo do 2º Gemelar e HPP: 20%\n```\n\n### Tabela Canônica do Momento Programado do Parto\n\n| Tipo de Placentação | Idade Gestacional Recomendada | Via de Parto Padrão | Justificativa Fisiopatológica / Evidência |\n| :--- | :--- | :--- | :--- |\n| **Dicoriônica Diamniótica (DCDA)** | 37s 0d a 38s 6d | Depende da apresentação | Após 38s, o risco de óbito fetal supera o benefício da manutenção intrauterina. |\n| **Monocoriônica Diamniótica (MCDA)** | 36s 0d a 37s 0d | Depende da apresentação | Risco de complicações vasculares (STFF, TAPS) e óbito súbito de um dos fetos. |\n| **Monocoriônica Monoamniótica (MCMA)** | 32s 0d a 34s 0d | **Cesariana Eletiva** | Risco crítico de entrelaçamento de cordões e acidentes funiculares fatais. |\n| **Gêmeos Unidos (Siameses)** | 34s 0d a 36s 0d | **Cesariana Eletiva** | Necessidade de planejamento cirúrgico e incisão uterina ampla (clássica/corporal). |\n\n---\n\n## 2. Seleção da Via de Parto Conforme Apresentação Combinada dos Fetos\n\nA decisão sobre a via de parto é pautada no **Twin Birth Study**, que demonstrou que, preenchidos os critérios de segurança, a via vaginal não aumenta a morbimortalidade neonatal em comparação à cesariana programada quando o primeiro feto é cefálico.\n\n$$\\text{G1 Cefálico} + \\text{G2 Cefálico / Não-Cefálico} \\implies \\text{Parto Vaginal (Via Preferencial / Permitida)}$$\n$$\\text{G1 Não-Cefálico (Pélvico / Córmico)} \\implies \\text{Cesariana Eletiva (Indicação Absoluta)}$$\n$$\\text{Gestação Monoamniótica (MCMA)} \\implies \\text{Cesariana Eletiva Obrigatória (32 a 34 semanas)}$$\n\n### Matriz de Apresentações Fetais e Conduta\n\n| Apresentação Fetal Combinada | Frequência | Via de Parto Recomendada | Condições e Cuidados de Sala de Parto |\n| :--- | :--- | :--- | :--- |\n| **1º Cefálico / 2º Cefálico** | ~40% | **Parto Vaginal** | Conduta idêntica ao parto único; monitorização contínua de ambos os BCFs. |\n| **1º Cefálico / 2º Não-Cefálico** | ~35-40% | **Parto Vaginal (Permitido)** | Requer equipe experiente. Opções para o 2º feto: versão cefálica externa, versão podálica interna ou extração pélvica. |\n| **1º Não-Cefálico / Qualquer 2º** | ~20-25% | **Cesariana Eletiva** | Risco de \"engastamento de cabeças\" (colisão de mentos) se o 2º for cefálico e distócia de cabeça derradeira. |\n| **Gestação Monoamniótica** | < 1% | **Cesariana Eletiva** | Risco de prolapso e nó de cordão durante a descida do primeiro feto. |\n\n---\n\n## 3. Condições Clínicas e Critérios Mandatórios para o Parto Vaginal\n\nPara que o preceptor autorize a prova de trabalho de parto em gestação gemelar, os seguintes critérios da **FEBRASGO/ACOG** devem ser rigorosamente preenchidos:\n\n1.  **Apresentação do Primeiro Feto:** Obrigatoriamente **cefálica**.\n2.  **Idade Gestacional e Peso:** Idealmente $\\ge 32$ semanas e peso estimado entre $1.500\\text{ g}$ e $4.000\\text{ g}$.\n3.  **Discordância de Peso:** Diferença de peso entre os fetos $< 20-25\\%$. Se o segundo feto for muito maior que o primeiro, há risco de distócia após o nascimento do menor.\n4.  **Infraestrutura:** Disponibilidade de anestesia imediata, centro cirúrgico vago e equipe de neonatologia para dois conceptos simultâneos.\n5.  **Monitorização:** Cardiotocografia contínua com duplo transdutor (um para cada feto).\n\n> [!WARNING] Armadilha Clássica de Prova: Gemelaridade NÃO é Sinônimo de Cesariana\n> As bancas costumam afirmar que \"toda gravidez gemelar tem indicação de cesárea\". Isso é **FALSO**. Com o 1º feto cefálico e conceito a termo em DCDA ou MCDA, a via vaginal é segura, recomendada e tem desfechos neonatais equivalentes à cesariana programada (Twin Birth Study). A cesariana de urgência para o segundo gemelar após o parto vaginal do primeiro ocorre em apenas < 5% dos casos bem conduzidos.\n\n---\n\n## 4. Assistência Ativa ao Nascimento do Segundo Gemelar & Intervalo Seguro\n\nO período entre o nascimento do primeiro e do segundo feto é o momento de maior estresse para o obstetra. O descolamento prematuro de placenta (DPP) pode ocorrer devido à descompressão súbita do útero.\n\n### Protocolo de Manejo do Segundo Feto\n1.  **Clampeamento Imediato do Cordão do 1º:** Essencial em monocoriônicas para evitar que o 2º feto sofra hipovolemia/exsanguinação através das anastomoses placentárias.\n2.  **Avaliação Estática Imediata:** Realizar palpação abdominal e, preferencialmente, **ultrassonografia de cabeceira** para confirmar a nova apresentação do 2º feto (ele pode rodar após a saída do 1º).\n3.  **Estímulo à Dinâmica Uterina:** Se as contrações diminuírem, iniciar **ocitocina IV** para garantir a descida do segundo feto.\n4.  **Amniotomia Guiada:** Realizar a rotura das membranas do 2º feto apenas quando a apresentação estiver bem encaixada, visando prevenir o prolapso de cordão umbilical.\n5.  **Intervalo entre Nascimentos:** Historicamente fixado em 30 minutos, hoje a evidência mostra que **não há tempo limite rígido**, desde que a monitorização fetal (BCF) esteja normal e o útero apresente dinâmica.\n6.  **Versão Podálica Interna:** Se o 2º feto estiver em situação transversa, o obstetra introduz a mão no útero, busca os pés do feto e realiza a extração pélvica (procedimento de alta complexidade, comum em provas de R3).\n\n---\n\n## 5. Puerpério Imediato: Profilaxia Agressiva da Hemorragia Pós-Parto por Atonia\n\nA gestação múltipla é um fator de risco independente e maior para **Hemorragia Pós-Parto (HPP)**. O mecanismo é a **atonia uterina** por sobredistensão das fibras miometrias (Lei de Laplace aplicada ao útero).\n\n*   **Manejo Ativo do 3º Período:** Administração de **10 UI de Ocitocina IM** (ou IV lenta) imediatamente após o nascimento do **último** feto.\n*   **Revisão de Canal:** Inspeção rigorosa de colo e vagina, dado o maior risco de lacerações por manipulações intrauterinas.\n*   **Acesso Venoso:** Manter dois acessos calibrosos (14G ou 16G) e reserva de sangue disponível.\n*   **Vigilância (4º Período de Greenberg):** Monitorização do \"Globo de Segurança de Pinard\" a cada 15 minutos na primeira hora pós-parto.\n\n---\n\n## 6. Algoritmo Decisório no Parto da Gestação Múltipla\n\n### Passo a Passo Sintético da Cascata Decisória\n\n1.  **[Corionicidade]:** Definir a idade gestacional de interrupção (32-34s para MCMA; 36-37s para MCDA; 37-38s para DCDA).\n2.  **[Apresentação do 1º Feto]:** Se não-cefálico, agendar **Cesariana**. Se cefálico, avaliar critérios para parto vaginal.\n3.  **[Peso e Viabilidade]:** Confirmar peso $> 1.500\\text{ g}$ e ausência de contraindicações obstétricas (ex: placenta prévia).\n4.  **[Condução do 2º Feto]:** Após o 1º nascimento, estabilizar a apresentação do 2º feto (manobras de Leopold/USG) e manter ocitocina.\n5.  **[Prevenção de HPP]:** Aplicar protocolo de ocitocina profilática e vigilância rigorosa do tônus uterino no pós-parto imediato.\n\n---\n\n## Diretrizes Oficiais & Consensos de Referência\n*   **FEBRASGO:** Manual de Obstetrícia - Gestação Múltipla (2021/2023).\n*   **ACOG Practice Bulletin No. 231:** Multifetal Gestations.\n*   **NICE Guideline [NG137]:** Twin and triplet pregnancy.\n*   **Twin Birth Study (Barrett et al., NEJM):** Referência mundial para via de parto.\n*   **Ministério da Saúde (Brasil):** Cadernos de Atenção Básica e Pré-natal de Alto Risco."
+  },
+  {
+    "id": "mat-inf-puerp-01",
+    "focusId": "obs-inf-puerperal",
+    "title": "Infecção Puerperal & Endometrite",
+    "specialty": "Ginecologia e Obstetrícia",
+    "theme": "Puerpério & Complicações Puerperais",
+    "focus": "Infecção Puerperal",
+    "readTimeMinutes": 8,
+    "lastUpdatedYear": 2026,
+    "guidelineBadge": "FEBRASGO / ACOG / CDC / Ministério da Saúde",
+    "summarySnippet": "Tríade de Bumm, diagnóstico de morbidade febril puerperal, profilaxia cirúrgica na cesárea com cefazolina na indução, esquema de primeira linha com clindamicina + gentamicina e manejo da febre persistente.",
+    "keyPoints": [
+      "Morbidade febril puerperal: temperatura oral ≥ 38,0°C em 2 dias distintos entre o 2º e 10º dia (excluídas primeiras 24h).",
+      "A cesariana é o principal fator de risco isolado, elevando em 10 a 30 vezes a incidência de endometrite em relação ao parto vaginal.",
+      "Profilaxia cirúrgica mandatória: Cefazolina 2g IV (ou 3g se IMC ≥ 35 ou peso ≥ 120kg) administrada 30-60 min ANTES da incisão na indução anestésica.",
+      "Endometrite puerperal: Tríade de Bumm clássica (febre persistente + útero doloroso/amolecido subinvoluído + lóquios fétidos achocolatados).",
+      "Tratamento padrão-ouro hospitalar: Clindamicina (900mg IV 8/8h) + Gentamicina (5mg/kg IV dose única diária) até 48 horas afebril e assintomática.",
+      "Não prescrever antibioticoterapia oral ambulatorial após alcance da cura clínica hospitalar (prática revogada).",
+      "Febre persistente após 48-72h: investigar abscesso de parede, restos ovulares/hematoma ao USG, adicionar ampicilina e suspeitar de tromboflebite pélvica séptica (teste da heparina)."
+    ],
+    "recurrenceStats": {
+      "focusSlug": "infeccao-puerperal",
+      "specialty": "Obstetrícia",
+      "theme": "Puerpério",
+      "focus": "Infecção Puerperal",
+      "totalQuestions": 249,
+      "timeframeRange": "2017-2026",
+      "version": 1,
+      "donutSlices": [
+        {
+          "id": 1,
+          "name": "Antibioticoterapia na Infecção Puerperal",
+          "shortName": "Antibioticoterapia",
+          "percentage": 26.5,
+          "questionCount": 66,
+          "priority": "Alta",
+          "color": "#3B82F6",
+          "trend": "alta",
+          "trendLabel": "🔥 Em Alta (2024-2026)",
+          "takeaway": "Clindamicina + Gentamicina IV de primeira linha até 48h afebril; sem antibiótico oral pós-alta.",
+          "focusExplanation": "O esquema de **primeira linha padrão-ouro** para endometrite pós-parto é a combinação intravenosa de **Clindamicina 900 mg IV a cada 8h** (cobertura de anaeróbios, incluindo *Bacteroides fragilis*) associada a **Gentamicina 5 mg/kg IV uma vez ao dia** ou 1,5 mg/kg a cada 8h (cobertura de Gram-negativos entéricos). O tratamento deve ser mantido em regime hospitalar até a paciente permanecer **48 horas afebril e assintomática**. Ao atingir esse critério de cura clínica, **a alta hospitalar é concedida SEM antibioticoterapia oral pós-alta** (não há benefício comprovado e eleva resistência bacteriana).",
+          "bancaPatterns": {
+            "Todas": {
+              "howItCharges": "Cobrança unânime nas principais bancas: indicação imediata de Clindamicina + Gentamicina IV, tempo de manutenção hospitalar até 48h afebril e suspensão completa do antibiótico na alta hospitalar (sem transição oral).",
+              "trapAlert": "Prescrever Cefalexina ou Amoxicilina-Clavulanato oral pós-alta é o distrator mais assinalado e punido em provas."
+            },
+            "ENARE": {
+              "howItCharges": "O **ENARE** formula casos clínicos objetivos no ambiente de enfermaria obstétrica do SUS, cobrando a prescrição da associação parenteral (Clindamicina 900mg + Gentamicina IV) e o critério de alta.",
+              "trapAlert": "A banca sempre insere uma alternativa com 'alta hospitalar com antibiótico oral por 7 a 10 dias'. A regra de ouro é: alta SEM antibiótico oral após 48h afebril."
+            },
+            "USP": {
+              "howItCharges": "A **USP** exige o raciocínio clínico da falha terapêutica: se após 48 a 72h de Clinda + Genta a paciente mantiver febre e piora clínica, deve-se associar **Ampicilina IV** (cobertura de *Enterococcus faecalis*) e pesquisar abscesso pélvico ou tromboflebite pélvica séptica.",
+              "trapAlert": "Trocar empiricamente para carbapenêmico sem investigar focos complicados ou não associar Ampicilina para cobrir Enterococo."
+            },
+            "UNICAMP": {
+              "howItCharges": "A **UNICAMP** explora o perfil farmacológico dos aminoglicosídeos: Gentamicina em dose única diária (5 mg/kg) possui a mesma eficácia clínica da dose fracionada de 8/8h, com menor potencial de nefrotoxicidade e ototoxicidade.",
+              "trapAlert": "Alternativas sugerindo monoterapia com fluoroquinolonas orais em pacientes com endometrite puerperal."
+            },
+            "PSU-MG": {
+              "howItCharges": "O **PSU-MG** foca no critério de cura clínica: a contagem do tempo de segurança exige 48 horas ininterruptas afebril, com involução uterina normal e lóquios sem odor fétido.",
+              "trapAlert": "Alternativas que fixam tempos arbitrários de 14 dias de internação independentemente da melhora clínica."
+            },
+            "AMRIGS": {
+              "howItCharges": "A **AMRIGS** tem estilo direto, cobrando o espectro microbiano dos fármacos: Clindamicina para cobertura de anaeróbios estritos e Gentamicina para bacilos Gram-negativos facultativos.",
+              "trapAlert": "Substituir Clindamicina por Metronidazol em monoterapia sem a cobertura sinérgica de Gram-negativos da Gentamicina."
+            },
+            "SUS-SP": {
+              "howItCharges": "O **SUS-SP** aborda o fluxo de porta de emergência: puérpera febril no 4º DPO deve ter internação imediata e início do esquema venoso na primeira hora de admissão.",
+              "trapAlert": "Liberar a paciente para tratamento domiciliar com repouso e antitérmicos."
+            }
+          },
+          "auditQuestionIds": [
+            "98ed7e3c-6914-4502-879a-f358a91d74cc",
+            "d64e57df-9d2d-47a0-9a52-47885d255e7e",
+            "90803e36-7494-4fda-bd5f-30f5108f4e7e",
+            "a15fbc46-e404-4bbf-a996-1da15dd9b5e4",
+            "ac18546f-73e4-4c99-b151-0e60d2e1826e",
+            "4ccde0ff-6679-40c3-9d6c-31e8aaa85ea7",
+            "c34965f3-99ea-4491-868b-4ebcfe29ccbe",
+            "51dde2fb-8423-462a-b97d-c3eede2cfbb0",
+            "598434b8-567e-4499-bfd2-582cffb3e14e",
+            "b4609740-8e29-4971-ae49-53c7cc5eec64",
+            "c6e458c5-6220-4471-a9d2-89e1baed9d1a",
+            "37ad81b7-e977-4a68-aca8-3e70fe86cd90",
+            "6dcd3fe9-6e34-4fa9-83fb-b7d1eb7bcf66",
+            "cbaade9f-b2cb-4ef1-b340-56e23b5a31ce",
+            "acedeee3-7e30-4b8c-92ad-22208898e96d",
+            "87c80df3-5f0e-4f6e-b571-a8e03782835e",
+            "55dc6353-028c-42bb-bbc8-7a1d87600763",
+            "487011c3-15c0-4ab6-bb6f-579b7df35992",
+            "a7e4c8f3-dfc6-46fb-a38c-cc4f1c40ac14",
+            "3ebe32b5-f81d-4ca3-86a8-465abdf83d88",
+            "df54239d-7597-4845-9244-e70337133d4e",
+            "fb0e8099-8eac-4e8b-8f7a-78f984d24a03",
+            "9a996415-45ef-45aa-90a2-9cf523e21f86",
+            "142f225b-9f82-49c8-99e7-c555d0c266c6",
+            "db717ccd-98c9-4a3d-a68f-c8cd82be3452",
+            "a2bd6528-e648-40f3-81f0-3125b2149233",
+            "1ced9004-b3b1-4c6d-8d45-d0141a7eb577",
+            "b9bc87d8-cf59-4d95-9702-1b9b419b4c3b",
+            "ea8b19e4-06b1-47cf-b639-d7df90d09e62",
+            "d46d7655-6a6f-4911-a63a-51608cae37f1",
+            "0c48d028-5e21-4ec4-a4a4-3a9cdb1120fc",
+            "85d20624-c656-4308-a8c4-c4da8913dc22",
+            "d3b8fc04-f7cf-4dbb-a1ae-cf85e34c8861",
+            "4365b4f7-98c4-457c-b632-58f0676dbc62",
+            "ea514395-73cf-473d-904c-5c953e4a6259",
+            "9605ebf6-e5fa-4c26-81ef-027ba117c99d",
+            "be735ac9-0adc-4b85-b5aa-cc134e5b6a7b",
+            "2269fae7-cb4e-43fb-ac89-257132ea1657",
+            "00c15816-0c64-4e53-a64a-5dc2731c2dc4",
+            "0332cc6f-2320-4a1d-88e1-aab00f18610f",
+            "2f1af5db-58fc-4ba1-b2ba-2d40be6a72cd",
+            "3d230ae1-f5c3-41ab-8f1f-34b126854a4b",
+            "34d501de-fbb3-4d03-90d3-cba7d4e09f59",
+            "c17936dd-94dc-443a-88f9-872e7c491161",
+            "1540208d-ac1e-429c-91ba-7bf8a30a78da",
+            "9326f9db-e146-495c-985e-77cca245f225",
+            "9c4dfdc7-3035-4008-85e3-369da61c3095",
+            "176fb02f-035f-4fac-9bf1-fe4666927222",
+            "3e7691f6-d0b4-4f08-aa79-60effb4a839a",
+            "3f599e26-98a6-4166-b26d-21498f212f16",
+            "4232e1e4-b8d9-4436-8373-348dcce661f9",
+            "dbc19906-87ef-440a-81d1-37d1c18e7dbe",
+            "ed029edc-4a92-43f2-aba1-241ad48e850f",
+            "91bb6c50-e963-4aa7-ba99-dba1b4e97113",
+            "bb026874-e053-4a11-b1d3-a0f4da02aff8",
+            "f27797cd-518d-4d77-997e-029c470e67fa",
+            "3e6774e7-5c7d-4e9d-b436-09f95da95bdf",
+            "4eb8a294-b4b9-4210-9478-ca44586ffc02",
+            "8d7f1661-96ae-4c86-9869-38a5a4e6fc10",
+            "bec4dfe0-0f36-4d34-b979-1e3e5ece03ab",
+            "d64e57df-9d2d-47a0-9a52-47885d255e7e",
+            "37ad81b7-e977-4a68-aca8-3e70fe86cd90",
+            "acedeee3-7e30-4b8c-92ad-22208898e96d",
+            "3ebe32b5-f81d-4ca3-86a8-465abdf83d88",
+            "b9bc87d8-cf59-4d95-9702-1b9b419b4c3b",
+            "bec4dfe0-0f36-4d34-b979-1e3e5ece03ab"
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Endometrite Puerperal: Diagnóstico & Clínica",
+          "shortName": "Endometrite & Clínica",
+          "percentage": 26.1,
+          "questionCount": 65,
+          "priority": "Alta",
+          "color": "#10B981",
+          "trend": "alta",
+          "trendLabel": "🔥 Em Alta (2024-2026)",
+          "takeaway": "Tríade de Bumm: febre, útero amolecido/doloroso e lóquios fétidos achocolatados.",
+          "focusExplanation": "A endometrite puerperal é a causa mais comum de febre pós-parto. O diagnóstico é **eminentemente clínico**, caracterizado pela clássica **Tríade de Bumm**: **febre** (geralmente entre o 3º e 5º DPO), **útero subinvoluído, doloroso e amolecido** à palpação abdominal/bimanual, e **lóquios fétidos purulentos ou com aspecto achocolatado** (loquiometra). O colo uterino costuma encontrar-se entreaberto e doloroso à mobilização. Exames de imagem (USG pélvica) são indicados exclusivamente para afastar **restos ovulares retidos ou coleções/abscessos**, sendo **formalmente contraindicada a coleta de swab vaginal para cultura** devido à contaminação com a flora bacteriana habitual do trato reprodutivo inferior.",
+          "bancaPatterns": {
+            "Todas": {
+              "howItCharges": "Apresentação da Tríade de Bumm (febre + útero doloroso e amolecido + lóquios fétidos) no 3º a 5º dia pós-parto, com diagnóstico 100% clínico.",
+              "trapAlert": "Indicar cultura de swab vaginal ou biópsia endometrial para confirmar diagnóstico de endometrite (contraindicado e desnecessário)."
+            },
+            "ENARE": {
+              "howItCharges": "O **ENARE** apresenta puérpera jovem que evoluiu no 4º DPO de cesárea com picos febris de 38,8°C, taquicardia e dor no baixo ventre com lóquios escuros e fétidos, exigindo o diagnóstico sindrômico imediato.",
+              "trapAlert": "Confundir febre transitória de apojadura mamária (fisiológica, até 38°C nas primeiras 24h) com endometrite bacteriana estabelecida."
+            },
+            "USP": {
+              "howItCharges": "A **USP** explora a semiologia detalhada: palpação do fundo uterino acima da cicatriz umbilical no 4º DPO (útero subinvoluído), dor aos anexos e diagnóstico diferencial com hematoma de cúpula ou infecção de sítio cirúrgico.",
+              "trapAlert": "Solicitar histeroscopia diagnóstica ou curetagem de urgência na ausência de achados ultrassonográficos de restos placentários retidos."
+            },
+            "UNICAMP": {
+              "howItCharges": "A **UNICAMP** cobra o diagnóstico diferencial entre endometrite e infecção de ferida operatória na parede abdominal, destacando que a ferida pode estar limpa enquanto a infecção primária reside na decídua endometrial.",
+              "trapAlert": "Achar que a ausência de hiperemia ou secreção na incisão cirúrgica da cesárea descarta infecção puerperal."
+            },
+            "PSU-MG": {
+              "howItCharges": "O **PSU-MG** destaca a interpretação laboratorial: leucocitose de até 25.000/mm³ é fisiológica no puerpério imediato devido ao estresse do parto, devendo o diagnóstico se basear na presença de desvio à esquerda e na Tríade de Bumm.",
+              "trapAlert": "Fechar diagnóstico de infecção bacteriana apenas pela contagem isolada de leucócitos no 1º ou 2º DPO sem outros sinais flogísticos."
+            },
+            "AMRIGS": {
+              "howItCharges": "A **AMRIGS** cobra nominalmente quais são os três sinais semiológicos constitutivos da clássica Tríade de Bumm.",
+              "trapAlert": "Alternativas que trazem 'útero duro e retraído' como sinal de endometrite (o útero da endometrite é amolecido e atônico)."
+            },
+            "SUS-SP": {
+              "howItCharges": "Cenário de puérpera admitida em UPA/PS com queixa de cólicas intensas e sangramento fétido após cesárea de urgência realizada há 5 dias.",
+              "trapAlert": "Atrasar o início da antibioticoterapia parenteral para aguardar resultados de hemoculturas ou laudo tomográfico."
+            }
+          },
+          "auditQuestionIds": [
+            "e66aa165-aeda-4430-a548-07a80718b614",
+            "e67d6a7e-61b1-4f01-9b6c-9da801d917b9",
+            "849c0106-8bd4-4d61-9bc5-45446ff8dedc",
+            "3f8da803-fa1e-4f2c-9790-43eb3cd25bc9",
+            "9fc2cddd-0ef9-45b7-a8e9-1679414afde9",
+            "6b83e994-60e0-412d-be79-91ed6a3dfc9e",
+            "fb96a97b-4a61-493d-af4f-8667a235440a",
+            "40f2be38-64a2-4245-8f6d-13370f987fbf",
+            "00ddaf46-9276-400d-89b0-7348baa5c460",
+            "ef89a21d-3bf7-4442-8331-64422fdce4de",
+            "d74bbd8c-fc0f-4207-bfd9-9ab90610dbe5",
+            "90d62f69-544e-49f9-b4ca-5844d9889272",
+            "e7435549-c9f2-4557-ae3f-6eb44919fcfe",
+            "8df214f8-2d8a-40c0-9fd1-13b1eb80473a",
+            "2140d168-97af-4763-8d16-fb5aa385267f",
+            "b189e359-a4e8-4971-8f96-2c820725b3af",
+            "0b00b016-907d-404e-8bf7-d0d8b0797986",
+            "6b526966-1182-4351-8ab1-858efe01859b",
+            "fa8d8f7c-be25-491a-b18e-a1af4a1c13dc",
+            "de9250b3-052a-4214-863f-d5e84a1b8016",
+            "e217de79-edf3-4689-96aa-57b0bd1e1a06",
+            "24ff39ba-a7cc-4d7e-a169-f2a13450cfd1",
+            "b9e31a8c-3fd9-430b-a737-944854b0e570",
+            "de83ef6d-1256-4540-a44a-48a47552d329",
+            "56937a7e-4080-474f-8e5e-6e4cd5b2c730",
+            "d7876a66-f0e2-43d3-a201-18b0fdcda999",
+            "e198d87c-5ae8-4e51-9b89-be7c7caa80b7",
+            "bfc72fcc-ecf9-43f6-bb2d-696103e569c3",
+            "5fa8d788-8214-491a-a0dd-90369812afab",
+            "f45e5250-885d-4032-b67f-8c045391399f",
+            "2388258d-fde3-4de2-a5f9-61837a4cbc31",
+            "619ee44f-3009-4864-abb4-4955b6f014ad",
+            "fa5ddf6f-6152-43ee-a22d-117fde589490",
+            "4b6b30c7-6128-4445-80b4-767b399e648b",
+            "481a0508-d101-48d7-b3a3-aebb5198ecb2",
+            "c983f1f2-98f6-4636-bac8-49c4e440dfe7",
+            "f6f30ec6-4cb7-4939-8dad-cc8693106f47",
+            "c68afc83-9b7b-42e8-9406-fb6a6f21c44e",
+            "5b931a05-69e5-4a19-9213-abe78cadef01",
+            "3e05f8d2-7969-460c-8caa-4004162365fa",
+            "eb32d0d3-5ff9-443d-b9e4-8304f487c4d5",
+            "5820632c-7c45-428d-a512-301ce7a099b3",
+            "b71efbdb-898f-4a75-a987-f60f10a721f9",
+            "92fe3ecd-995d-4d02-950e-d82f0ae7bbd0",
+            "bc0fb375-86aa-4194-9737-0b3fc9afc201",
+            "4201b9b9-4e75-42a4-8072-378c0bc31819",
+            "0c78b0b0-b959-4dc2-b932-d0956fedf679",
+            "0d179439-a6c5-45cb-8490-707eae3875fc",
+            "8cdc942a-30f7-49bd-a888-9a4109443c7c",
+            "ddf4fe44-5026-4ae1-ba58-c70f311af710",
+            "e519464c-af26-4df4-be67-d6a61e43fa06",
+            "f10bad8e-a71c-49d4-a8fd-ff432f044c48",
+            "d7d85fb3-33f4-4354-9087-b86f05cb9557",
+            "92aec5ce-f63e-4264-ac4e-90c69f71c022",
+            "b4da7ef7-1e3e-425f-a16b-e378ef851bf2",
+            "e66aa165-aeda-4430-a548-07a80718b614",
+            "849c0106-8bd4-4d61-9bc5-45446ff8dedc",
+            "b189e359-a4e8-4971-8f96-2c820725b3af",
+            "de83ef6d-1256-4540-a44a-48a47552d329",
+            "56937a7e-4080-474f-8e5e-6e4cd5b2c730",
+            "5fa8d788-8214-491a-a0dd-90369812afab",
+            "f45e5250-885d-4032-b67f-8c045391399f",
+            "2388258d-fde3-4de2-a5f9-61837a4cbc31",
+            "481a0508-d101-48d7-b3a3-aebb5198ecb2",
+            "92fe3ecd-995d-4d02-950e-d82f0ae7bbd0"
+          ]
+        },
+        {
+          "id": 3,
+          "name": "Fatores de Risco & Profilaxia na Cesárea",
+          "shortName": "Risco & Profilaxia",
+          "percentage": 15.3,
+          "questionCount": 38,
+          "priority": "Alta",
+          "color": "#EC4899",
+          "trend": "alta",
+          "trendLabel": "🔥 Em Alta (2024-2026)",
+          "takeaway": "Cesárea é o maior fator isolado (risco 10-30x maior); Cefazolina na indução anestésica.",
+          "focusExplanation": "A **operação cesariana é o principal fator de risco isolado** para endometrite puerperal, aumentando a incidência em **10 a 30 vezes** quando comparada ao parto vaginal espontâneo. Outros fatores de risco determinantes são: **trabalho de parto prolongado**, **bolsa rota prolongada (> 6 a 18 horas)**, múltiplos toques vaginais (> 5 exames), corioamnionite intraparto, anemia materna e desnutrição. A profilaxia padrão-ouro universal para todas as cesáreas consiste na administração de **Cefazolina 2g IV em dose única realizada 30 a 60 minutos antes da incisão cirúrgica** (ou na indução anestésica). Em pacientes obesas com peso ≥ 120 kg ou IMC ≥ 35 kg/m², a dose deve ser ajustada para **3g IV**.",
+          "bancaPatterns": {
+            "Todas": {
+              "howItCharges": "Cesariana como maior fator isolado de risco (10-30x) e uso de Cefazolina 2g IV (3g se obesa) na indução anestésica para 100% das cesáreas.",
+              "trapAlert": "Fazer o antibiótico profilático somente após o clampeamento do cordão umbilical (conduta antiga e revogada; hoje é antes da incisão cutânea)."
+            },
+            "ENARE": {
+              "howItCharges": "O **ENARE** cobra a conduta profilática farmacológica padrão: qual antibiótico, via e momento exato de administração na cesárea eletiva ou de urgência.",
+              "trapAlert": "Alternativas que propõem ampicilina oral preventiva pós-alta para todas as cesarianas."
+            },
+            "USP": {
+              "howItCharges": "A **USP** exige a correlação entre rotura prematura de membranas ovulares prolongada (> 18h) e colonização bacteriana ascendente mista, além do ajuste de dose de Cefazolina para 3g em obesas.",
+              "trapAlert": "Omitir a profilaxia em cesarianas com membranas íntegras fora de trabalho de parto (é mandatória em todas as cesáreas)."
+            },
+            "UNICAMP": {
+              "howItCharges": "A **UNICAMP** avalia o risco cumulativo de múltiplos toques vaginais no período de dilatação e a importância da assepsia rigorosa e técnica operatória adequada.",
+              "trapAlert": "Indicar Cefazolina profilática de rotina em partos vaginais eutócicos sem laceração grave de trajeto (não recomendada)."
+            },
+            "PSU-MG": {
+              "howItCharges": "O **PSU-MG** formula questões comparativas de epidemiologia obstétrica: o risco relativo de infecção puerperal pós-cesárea vs. pós-parto normal.",
+              "trapAlert": "Prescrever antibioticoterapia profilática prolongada por 48 horas de rotina pós-cesárea sem evidência de corioamnionite."
+            },
+            "AMRIGS": {
+              "howItCharges": "A **AMRIGS** questiona qual a cefalosporina de escolha para profilaxia cirúrgica obstétrica (Cefazolina 1ª geração).",
+              "trapAlert": "Optar por Cefepima ou Ceftriaxona para profilaxia cirúrgica primária em pacientes sem histórico de colonização resistente."
+            },
+            "SUS-SP": {
+              "howItCharges": "O **SUS-SP** enfatiza as metas de segurança do paciente do Ministério da Saúde: checklist de cirurgia segura com checagem da infusão da Cefazolina antes do corte.",
+              "trapAlert": "Não realizar repique intraoperatório de Cefazolina quando o procedimento ultrapassa 4 horas ou há sangramento superior a 1500 mL."
+            }
+          },
+          "auditQuestionIds": [
+            "00ec3c74-7b13-4c7e-afd2-d449e28a7627",
+            "ad672ad8-dbfb-4e9c-a4a1-98d1cbba8e38",
+            "250eb144-a55f-4594-b804-db3088eacb50",
+            "2d205e7b-985f-48fa-ab29-dd794b4c8ddd",
+            "c4faf355-1d4f-4280-bb61-dc4503bc23a2",
+            "0988c256-a4b3-4e6f-94e0-b6fd38a5af84",
+            "746b4f8b-0f40-4502-8c3d-86320d8b2034",
+            "909191f8-737d-4921-b6c8-d1122e22f805",
+            "d815924c-7cc5-40d6-b37e-32017e59d4ec",
+            "5f10d512-d66b-4900-8c2f-8ccece196be1",
+            "4ca180da-e956-455c-9bcb-a297a9b753e3",
+            "0ea4ee23-b10b-42f7-9993-6c311791572c",
+            "0e3629de-ccd7-4415-90c6-e55e5e203460",
+            "77006606-1e3a-4475-8901-e58a07282fc9",
+            "dcef8fae-7883-459a-b78d-84c2123247a3",
+            "73ea95bb-7661-468e-b0a1-e79198a6a18f",
+            "850573fe-98ff-4dd5-a9e2-89293f0ca455",
+            "dd382631-eda9-4ebd-883f-8034be1417a9",
+            "eb958bba-96e1-4b53-941f-c1faea46eebe",
+            "f15e13df-29a7-4b09-920f-63ceb2479198",
+            "b3cd5c75-7018-4b8c-9400-c6eef6fef46c",
+            "3c518465-7411-4bdd-9ac5-1d448294fbcf",
+            "3be430a1-1efa-44e7-ad3a-3baecbd0d671",
+            "7d3f6daf-d613-4c15-aba6-008e0ed0a4bb",
+            "1f29594d-1d61-4b21-83ee-ad38ad5ba8c1",
+            "bd692eac-39bb-4711-8bb8-42fea555fa7a",
+            "cac15437-908a-4ebd-b771-25f7ce131ee2",
+            "7c88ac67-44c0-48e3-9fc9-6c8dd2b0bef7",
+            "1dc9aac3-d2af-4b8a-ac5b-88bfdf8248e1",
+            "0809424e-715d-4595-b908-0434e39b4706",
+            "28e38cff-0ed3-4118-b87d-65fb666688df",
+            "c841e1bf-433f-4037-a7af-0518860d1da6",
+            "3cf5505d-9d5d-42bb-87da-670b849ab4e7",
+            "2d205e7b-985f-48fa-ab29-dd794b4c8ddd",
+            "d815924c-7cc5-40d6-b37e-32017e59d4ec",
+            "77006606-1e3a-4475-8901-e58a07282fc9",
+            "dd382631-eda9-4ebd-883f-8034be1417a9",
+            "3cf5505d-9d5d-42bb-87da-670b849ab4e7"
+          ]
+        },
+        {
+          "id": 4,
+          "name": "Morbidade Febril Puerperal & Critérios",
+          "shortName": "Morbidade Febril",
+          "percentage": 10.4,
+          "questionCount": 26,
+          "priority": "Média",
+          "color": "#8B5CF6",
+          "trend": "estavel",
+          "trendLabel": "🏛️ Clássico Estável",
+          "takeaway": "Febre ≥ 38°C em 2 dias distintos entre o 2º e 10º dia pós-parto; aferição oral obrigatória.",
+          "focusExplanation": "Pelo critério canônico internacional da US Joint Commission on Maternal Welfare e FIGO, define-se **Morbidade Febril Puerperal** como a presença de **temperatura corporal axilar ou oral ≥ 38,0°C**, registrada em **pelo menos 2 dias distintos**, entre o **2º e o 10º dia do pós-parto**, **excluindo-se obrigatoriamente as primeiras 24 horas**. Essa exclusão das primeiras 24h pós-parto é fundamental porque a elevação térmica precoce decorre frequentemente de **desidratação transitória, liberação de citocinas pelo estresse muscular do trabalho de parto e apojadura mamária fisiológica**. Quando a febre surge ou persiste a partir do 2º DPO, a etiologia bacteriana infecciosa (endometrite em > 70% dos casos) torna-se a principal hipótese diagnóstica.",
+          "bancaPatterns": {
+            "Todas": {
+              "howItCharges": "Definição formal dos critérios: ≥ 38°C em 2 dias distintos entre o 2º e o 10º dia pós-parto, excluindo as primeiras 24 horas.",
+              "trapAlert": "Considerar febre isolada nas primeiras 24 horas após o parto como infecção puerperal estabelecida (é habitualmente fisiológica)."
+            },
+            "ENARE": {
+              "howItCharges": "O **ENARE** cobra a regra numérica de temperatura e dias para enquadramento formal de morbidade febril puerperal.",
+              "trapAlert": "Considerar duas aferições térmicas feitas com poucas horas de intervalo no mesmo dia como critérios suficientes (exige dias distintos)."
+            },
+            "USP": {
+              "howItCharges": "A **USP** coloca casos clínicos de curvas térmicas puerperais para o aluno identificar o momento exato em que a febre deixa de ser fisiológica e passa a configurar infecção puerperal.",
+              "trapAlert": "Rotular apojadura mamária (febre baixa autolimitada em até 24h associada a mamas túrgidas bilaterais) como infecção que necessita de antibioticoterapia."
+            },
+            "UNICAMP": {
+              "howItCharges": "A **UNICAMP** exige a busca ativa e sistemática dos 4 principais focos de febre no puerpério: Endométrio (endometrite), Parede abdominal (ferida cirúrgica), Mamas (mastite) e Trato urinário (ITU).",
+              "trapAlert": "Iniciar antibioticoterapia empírica sem antes examinar as mamas, a ferida operatória e a urina da paciente."
+            },
+            "PSU-MG": {
+              "howItCharges": "O **PSU-MG** diferencia a cronologia das causas infecciosas: primeiras 24h (apojadura/atelectasia); 3º ao 5º dia (endometrite/ferida); 2ª à 4ª semana (mastite puerperal).",
+              "trapAlert": "Atribuir febre no 4º dia pós-parto à apojadura mamária (a apojadura ocorre no 2º ao 3º dia e não dura mais de 24 horas)."
+            },
+            "AMRIGS": {
+              "howItCharges": "A **AMRIGS** questiona qual o valor de corte de temperatura corporal padronizado para morbidade puerperal (≥ 38,0°C).",
+              "trapAlert": "Assinalar 37,8°C ou 38,5°C como pontos de corte oficiais do consenso de morbidade puerperal."
+            },
+            "SUS-SP": {
+              "howItCharges": "O **SUS-SP** foca na vigilância epidemiológica hospitalar de infecções pós-parto e registro fidedigno em prontuário.",
+              "trapAlert": "Dar alta à puérpera febril no 2º DPO acreditando ser apenas estresse puerperal."
+            }
+          },
+          "auditQuestionIds": [
+            "cf786ab3-f47c-4c71-9bb9-24e1fdcc8c54",
+            "79f1d7f0-fde6-4666-b035-3dc8b48ecbc1",
+            "4d6814c0-cf0d-4cb3-a149-bfbd7656ae08",
+            "db7b359a-e70d-4bfc-8d01-309fb9953699",
+            "5616496d-dd59-4632-8751-401c93beeaa6",
+            "9e831c72-f41a-4c99-b69c-cdfdfc43fb2d",
+            "70d25b82-86e4-4903-9683-acd009e6f5f9",
+            "9d08d416-6af5-4adf-9f5b-09a86b5b68c5",
+            "06af5897-0bc9-420c-8f81-9140dec3a2b3",
+            "32efd271-2261-4700-ae75-407bbe264f9e",
+            "7e4340d7-84bb-40e2-8ad1-ba5159f8802f",
+            "b74bc628-d718-48b7-a9dc-792fd6ecfab1",
+            "05614f89-3830-49fe-b055-3aff05ce461d",
+            "c4384664-a702-48b6-afbf-6394d4141073",
+            "2e7892fa-9946-46d9-93f1-454ee119aa71",
+            "92938ecf-e259-4417-abd6-87d11da129cf",
+            "af7bdcc2-9553-4c79-8fb1-b0d4ccfa59df",
+            "de2977eb-24af-4bd8-80ea-83c66a937353",
+            "7949f38a-ded7-4c70-96b6-672eeb5c8480",
+            "6544a6c4-327a-473d-9077-baf53407ba9a",
+            "867c563b-ed2b-449b-942d-cae3d733bee5",
+            "0bba5cef-24cb-4eb8-8599-a1b0becf23e1",
+            "14bab642-b7db-4e4e-8ca3-451b4cf0de5b",
+            "620349e1-ee89-4695-9c67-862fbbcaf560",
+            "9d08d416-6af5-4adf-9f5b-09a86b5b68c5",
+            "06af5897-0bc9-420c-8f81-9140dec3a2b3"
+          ]
+        },
+        {
+          "id": 5,
+          "name": "Mastite Puerperal: Diagnóstico & Conduta",
+          "shortName": "Mastite Puerperal",
+          "percentage": 8.0,
+          "questionCount": 20,
+          "priority": "Média",
+          "color": "#F59E0B",
+          "trend": "alta",
+          "trendLabel": "🔥 Em Alta (2024-2026)",
+          "takeaway": "S. aureus; Cefalexina ou Clavulin; contraindicação formal a suspender amamentação.",
+          "focusExplanation": "A mastite puerperal é a infecção bacteriana do parênquima mamário que acomete preferencialmente entre a **2ª e a 4ª semanas pós-parto**. O agente etiológico clássico em mais de **85% a 90% dos casos é o *Staphylococcus aureus*** (sensível à oxacilina na comunidade), inoculado a partir da nasofaringe do recém-nascido através de fissuras ou microtraumas mamilares. Manifesta-se clinicamente por **eritema localizado em cunha (geralmente unilateral), calor, dor intensa e ingurgitamento**, acompanhados de febre alta (> 38,5°C) e calafrios. A droga de primeira linha é a **Cefalexina 500 mg VO de 6/6h** ou Amoxicilina + Clavulanato por 10 a 14 dias. **CONDUTA DE OURO DAS BANCAS:** É **PROIBIDO suspender a amamentação**; a manutenção do esvaziamento mamário frequente da mama afetada é pilar obrigatório do tratamento para prevenir formação de abscesso.",
+          "bancaPatterns": {
+            "Todas": {
+              "howItCharges": "Agente principal (S. aureus), tratamento com Cefalexina oral e proibição formal de interromper o aleitamento materno (manter amamentação na mama doente).",
+              "trapAlert": "Prescrever desmame, suspender a amamentação na mama afetada ou dar inibidores de prolactina (Cabergolina) é o erro mais punido em provas!"
+            },
+            "ENARE": {
+              "howItCharges": "O **ENARE** apresenta lactante com 3 semanas de puerpério apresentando dor e placa hiperemiada na mama direita com febre de 39°C, questionando o antimicrobiano e a orientação sobre amamentação.",
+              "trapAlert": "A banca sempre insere alternativa orientando a suspender o aleitamento e oferecer fórmula infantil temporariamente."
+            },
+            "USP": {
+              "howItCharges": "A **USP** cobra o reconhecimento clínico do abscesso mamário (área de flutuação palpável ou coleção purulenta ecográfica), exigindo drenagem cirúrgica ou punção ecoguiada.",
+              "trapAlert": "Realizar massagem compressiva vigorosa sobre coleção com ponto de flutuação evidente (risco de ruptura tecidual e disseminação)."
+            },
+            "UNICAMP": {
+              "howItCharges": "A **UNICAMP** exige a distinção clínica precisa entre ingurgitamento mamário fisiológico (bilateral, difuso, afebril ou febrícula transitória) e mastite puerperal infecciosa (unilateral, em cunha, febre alta).",
+              "trapAlert": "Prescrever antibiótico desnecessário para ingurgitamento mamário simples sem sinais de infecção bacteriana."
+            },
+            "PSU-MG": {
+              "howItCharges": "O **PSU-MG** questiona qual o principal agente microbiano isolado nas mastites puerperais agudas (*Staphylococcus aureus*).",
+              "trapAlert": "Confundir com *Streptococcus agalactiae* (GBS) ou *Escherichia coli* como agentes primários de mastite."
+            },
+            "AMRIGS": {
+              "howItCharges": "A **AMRIGS** explora as orientações de pega correta da aréola pelo recém-nascido como medida profilática primária de fissuras mamilares e mastite.",
+              "trapAlert": "Recomendar pomadas de antibiótico tópico nos mamilos durante o período de amamentação."
+            },
+            "SUS-SP": {
+              "howItCharges": "O **SUS-SP** aborda o acolhimento na Unidade Básica de Saúde: incentivo à amamentação, prescrição de Cefalexina e analgesia com Ibuprofeno/Paracetamol.",
+              "trapAlert": "Encaminhar para internação hospitalar terciária mastite inicial não complicada com bom estado geral."
+            }
+          },
+          "auditQuestionIds": [
+            "d7821054-2898-48de-8d9d-ed05024d96ee",
+            "62da803e-dee8-4054-8c38-7e434c8ce696",
+            "eba89c37-75d3-4575-8d8f-49e35cb40ba5",
+            "187393d3-50f1-4a92-b067-20b1d94cfab3",
+            "0596b254-724e-4f83-b35d-f21a441a2522",
+            "4ef0bb7b-fca1-4227-a963-af3ab858fd1e",
+            "74c25fd7-5376-4f7e-b34a-b1d7afe34fee",
+            "800b75b3-1b62-4691-806c-8f546d0555e9",
+            "7c878141-3aaf-4ba1-a1ce-9dfc10ec7dc7",
+            "ee3fc55e-9071-439a-8eb4-a5e13f6f4615",
+            "8044b6a6-c50a-4b15-80bf-d34657963faf",
+            "56b6a3c5-6621-4a2f-adbf-db4c7b56f34b",
+            "408b0012-d2a2-4430-8722-932c07590bda",
+            "0dcd8aa0-aa61-4c01-8f88-f5ff398cc1c4",
+            "9a6f158d-8f0f-47c2-b6e2-33fab00cf7ac",
+            "ebfc7da6-e188-4a6d-9df6-61900f4c8953",
+            "6da6b2ff-6161-403b-bdf4-daaeed7781a8",
+            "0e84e307-c4d3-465e-955d-292afbea9a99",
+            "7c878141-3aaf-4ba1-a1ce-9dfc10ec7dc7",
+            "9a6f158d-8f0f-47c2-b6e2-33fab00cf7ac"
+          ]
+        },
+        {
+          "id": 6,
+          "name": "Demais Critérios & Diagnósticos Menores",
+          "shortName": "Demais Aspectos",
+          "percentage": 13.7,
+          "questionCount": 34,
+          "priority": "Média",
+          "color": "#64748B",
+          "trend": "estavel",
+          "trendLabel": "🏛️ Tópicos Secundários",
+          "takeaway": "Tromboflebite pélvica séptica, teste da heparina, sepse e indicações de curetagem.",
+          "focusExplanation": "Reúne complicações puerperais graves e diagnósticos de exclusão na puérpera séptica refratária. O principal destaque em provas é a **Tromboflebite Pélvica Séptica (TPS)**: trombose séptica das veias ovarianas e plexos uterinos caracterizada por **febre em picos contínua e persistente após 48 a 72 horas de antibioticoterapia venosa adequada**, sem coleções purulentas detectáveis ao exame físico. O diagnóstico padrão de confirmação é o **Teste Terapêutico da Heparina**: defervescência térmica completa em 48 a 72 horas após início de Heparina venosa contínua ou HBPM plena associada à manutenção dos antibióticos. A TC ou RM pélvica contrastada evidencia falha de enchimento na veia ovariana (mais frequente à direita). Na suspeita de abscesso pélvico ou retenção maciça de restos, indica-se drenagem percutânea ou curetagem uterina criteriosa.",
+          "bancaPatterns": {
+            "Todas": {
+              "howItCharges": "Febre puerperal persistente após 48-72h de antibióticos venosos sem foco evidente: suspeitar de Tromboflebite Pélvica Séptica e realizar Teste da Heparina.",
+              "trapAlert": "Trocar empiricamente a classe do antibiótico sem considerar tromboflebite séptica ou sem solicitar TC de pelve."
+            },
+            "ENARE": {
+              "howItCharges": "O **ENARE** relata paciente em uso de Clindamicina + Gentamicina há 4 dias sem melhora da febre diária e com exame ginecológico inocente, questionando a conduta diagnóstica-terapêutica.",
+              "trapAlert": "Indicar laparotomia de urgência imediata sem evidência clínica ou tomográfica de peritonite ou perfuração uterina."
+            },
+            "USP": {
+              "howItCharges": "A **USP** explora a fisiopatologia vascular da TPS: maior acometimento da veia ovariana direita pelo comprimento vascular aumentado, fluxo retrógrado e compressão mecânica pelo útero dextrorrotado.",
+              "trapAlert": "Realizar curetagem uterina de rotina em útero séptico friável sem comprovação ecográfica de restos, pelo risco grave de perfuração e choque séptico."
+            },
+            "UNICAMP": {
+              "howItCharges": "A **UNICAMP** cobra o reconhecimento da Síndrome do Choque Tóxico Estreptocócico pós-parto (*Streptococcus pyogenes* / GAS): progressão fulminante para choque distributivo e fasceíte necrotizante.",
+              "trapAlert": "Retardar intervenção cirúrgica de controle de danos (histerectomia puerperal) quando há miometrite necrotizante e sepse refratária."
+            },
+            "PSU-MG": {
+              "howItCharges": "O **PSU-MG** cobra o mecanismo de confirmação da TPS pelo Teste da Heparina (defervescência térmica rápida nas primeiras 48-72h de anticoagulação).",
+              "trapAlert": "Acreditar que ultrassonografia transvaginal de rotina possui alta sensibilidade para trombose de veias ovarianas altas (TC contrastada é o padrão)."
+            },
+            "AMRIGS": {
+              "howItCharges": "A **AMRIGS** foca no diagnóstico diferencial de infecções do sítio cirúrgico da cesárea: seroma, hematoma e abscesso de parede abdominal.",
+              "trapAlert": "Não abrir a fáscia e não drenar ferida operatória com flutuação purulenta profunda."
+            },
+            "SUS-SP": {
+              "howItCharges": "O **SUS-SP** cobra os critérios de sepse materna puerperal e protocolo de ressuscitação volêmica imediata com cristaloides (30 mL/kg nas primeiras 3h).",
+              "trapAlert": "Atrasar o início de noradrenalina em puérpera em choque séptico mantendo PAM < 65 mmHg após prova de volume."
+            }
+          },
+          "auditQuestionIds": [
+            "49962850-59f7-414b-9606-66b06c83f36e",
+            "72dce893-67eb-4ea4-ac73-1978417c1823",
+            "fe23813a-7fe2-40d4-85cf-ffa212287d0c",
+            "e7ddc897-378c-4241-a5cf-653f992c8e6d",
+            "50bf994c-3c32-4382-a18f-9b362fcfbaaa",
+            "8ecb8aff-3c4b-4823-acd1-ba6a99236a9f",
+            "cebf0ece-6bb8-4377-8e95-5f55e0fdd1f3",
+            "1e6d5713-de09-4cba-b2e2-49151f97a89b",
+            "7f3fc004-9e04-4903-becc-4d336f64d17f",
+            "f40f60dc-3b9d-4a6c-97dc-8315b826cd03",
+            "1b97e147-0ff2-4928-9ee8-d5b76f6e1d02",
+            "1ecea84f-9493-4266-88b7-d41282378c68",
+            "3270c295-13f4-495c-bfac-b1dc1cd18dde",
+            "9074fb9e-01df-4f42-9be4-e017bac62a3e",
+            "0fcf246d-ff26-4f8f-aa84-e6be5135a9ce",
+            "e9d4031a-70dc-426c-8d53-cf8db29ebcdd",
+            "ee0197f1-3616-4e70-a6a0-155b4af900d1",
+            "49962850-59f7-414b-9606-66b06c83f36e",
+            "de1f19d3-0396-4cf4-8324-645a1109e357",
+            "1e2a7b14-e909-494e-8446-9cbc4eeb5977",
+            "42480130-516d-49fe-ada6-ebdf1b7f5ac4",
+            "81bf1697-cc3c-4d56-8436-4ccff0ab8c67",
+            "114c9fa3-1462-44c1-98c3-0276dd7fdbe2",
+            "114c9fa3-1462-44c1-98c3-0276dd7fdbe2",
+            "861fbc58-18e9-4f1e-a02b-3a1f0758aa45",
+            "ea5051c7-7320-41c3-918f-10f6bece865b",
+            "02765e58-cb9e-4d68-b256-787e03b1347a",
+            "3ee90131-a413-40c6-98bd-a9e950c31198",
+            "8aec4fa8-224f-409f-859a-28afe25d1466",
+            "c01c7038-972c-47b6-b1b6-12aafca8f94e",
+            "209b9052-7fe0-4223-bdc7-063a84a35319",
+            "6e326ff1-21fd-47f0-8493-3bbc3a2af327",
+            "d2217422-3ee8-4a03-8770-41391035c1f0",
+            "94812bed-4a27-4215-ae57-650074c8d621"
+          ]
+        }
+      ],
+      "bancaBreakdown": {
+        "AMRIGS": {
+          "banca": "AMRIGS",
+          "totalQuestions": 5,
+          "topSubfocos": [
+            {
+              "subfoco": "Endometrite Puerperal: Diagnóstico & Clínica",
+              "questionCount": 3,
+              "percentageInBanca": 60.0
+            },
+            {
+              "subfoco": "Antibioticoterapia na Infecção Puerperal",
+              "questionCount": 1,
+              "percentageInBanca": 20.0
+            },
+            {
+              "subfoco": "Complicações de Prótese: Infecção, Migração e Dor",
+              "questionCount": 1,
+              "percentageInBanca": 20.0
+            }
+          ],
+          "predominantDifficulty": "Médio"
+        },
+        "SUS-SP": {
+          "banca": "SUS-SP",
+          "totalQuestions": 5,
+          "topSubfocos": [
+            {
+              "subfoco": "Endometrite Puerperal: Diagnóstico & Clínica",
+              "questionCount": 3,
+              "percentageInBanca": 60.0
+            },
+            {
+              "subfoco": "Antibioticoterapia na Infecção Puerperal",
+              "questionCount": 2,
+              "percentageInBanca": 40.0
+            }
+          ],
+          "predominantDifficulty": "Médio"
+        },
+        "UNESP/HCFMB": {
+          "banca": "UNESP/HCFMB",
+          "totalQuestions": 8,
+          "topSubfocos": [
+            {
+              "subfoco": "Antibioticoterapia na Infecção Puerperal",
+              "questionCount": 4,
+              "percentageInBanca": 50.0
+            },
+            {
+              "subfoco": "Endometrite Puerperal: Diagnóstico & Clínica",
+              "questionCount": 2,
+              "percentageInBanca": 25.0
+            },
+            {
+              "subfoco": "Tromboflebite Pélvica Séptica & Complicações",
+              "questionCount": 2,
+              "percentageInBanca": 25.0
+            }
+          ],
+          "predominantDifficulty": "Médio"
+        },
+        "UNICAMP/HC": {
+          "banca": "UNICAMP/HC",
+          "totalQuestions": 9,
+          "topSubfocos": [
+            {
+              "subfoco": "Endometrite Puerperal: Diagnóstico & Clínica",
+              "questionCount": 6,
+              "percentageInBanca": 66.7
+            },
+            {
+              "subfoco": "Antibioticoterapia na Infecção Puerperal",
+              "questionCount": 2,
+              "percentageInBanca": 22.2
+            },
+            {
+              "subfoco": "Tromboflebite Pélvica Séptica & Complicações",
+              "questionCount": 1,
+              "percentageInBanca": 11.1
+            }
+          ],
+          "predominantDifficulty": "Médio"
+        },
+        "CERMAM": {
+          "banca": "CERMAM",
+          "totalQuestions": 5,
+          "topSubfocos": [
+            {
+              "subfoco": "Endometrite Puerperal: Diagnóstico & Clínica",
+              "questionCount": 2,
+              "percentageInBanca": 40.0
+            },
+            {
+              "subfoco": "Morbidade Febril Puerperal & Critérios",
+              "questionCount": 2,
+              "percentageInBanca": 40.0
+            },
+            {
+              "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+              "questionCount": 1,
+              "percentageInBanca": 20.0
+            }
+          ],
+          "predominantDifficulty": "Médio"
+        },
+        "Pontifícia Universidade Católica do Paraná": {
+          "banca": "Pontifícia Universidade Católica do Paraná",
+          "totalQuestions": 6,
+          "topSubfocos": [
+            {
+              "subfoco": "Antibioticoterapia na Infecção Puerperal",
+              "questionCount": 3,
+              "percentageInBanca": 50.0
+            },
+            {
+              "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+              "questionCount": 2,
+              "percentageInBanca": 33.3
+            },
+            {
+              "subfoco": "Complicações de Prótese: Infecção, Migração e Dor",
+              "questionCount": 1,
+              "percentageInBanca": 16.7
+            }
+          ],
+          "predominantDifficulty": "Médio"
+        },
+        "USP/HCRP": {
+          "banca": "USP/HCRP",
+          "totalQuestions": 5,
+          "topSubfocos": [
+            {
+              "subfoco": "Antibioticoterapia na Infecção Puerperal",
+              "questionCount": 2,
+              "percentageInBanca": 40.0
+            },
+            {
+              "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+              "questionCount": 2,
+              "percentageInBanca": 40.0
+            },
+            {
+              "subfoco": "Mastite Puerperal: Diagnóstico & Conduta",
+              "questionCount": 1,
+              "percentageInBanca": 20.0
+            }
+          ],
+          "predominantDifficulty": "Médio"
+        },
+        "INEP Revalida": {
+          "banca": "INEP Revalida",
+          "totalQuestions": 6,
+          "topSubfocos": [
+            {
+              "subfoco": "Infecção Puerperal",
+              "questionCount": 6,
+              "percentageInBanca": 100.0
+            }
+          ],
+          "predominantDifficulty": "Médio"
+        },
+        "ENARE": {
+          "banca": "ENARE",
+          "totalQuestions": 42,
+          "topSubfocos": [
+            {
+              "subfoco": "Antibioticoterapia na Infecção Puerperal",
+              "questionCount": 16,
+              "percentageInBanca": 38.1
+            },
+            {
+              "subfoco": "Endometrite Puerperal: Diagnóstico & Clínica",
+              "questionCount": 14,
+              "percentageInBanca": 33.3
+            },
+            {
+              "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+              "questionCount": 6,
+              "percentageInBanca": 14.3
+            },
+            {
+              "subfoco": "Mastite Puerperal: Diagnóstico & Conduta",
+              "questionCount": 4,
+              "percentageInBanca": 9.5
+            },
+            {
+              "subfoco": "Morbidade Febril Puerperal & Critérios",
+              "questionCount": 2,
+              "percentageInBanca": 4.8
+            }
+          ],
+          "predominantDifficulty": "Médio"
+        },
+        "PSU-MG": {
+          "banca": "PSU-MG",
+          "totalQuestions": 24,
+          "topSubfocos": [
+            {
+              "subfoco": "Endometrite Puerperal: Diagnóstico & Clínica",
+              "questionCount": 9,
+              "percentageInBanca": 37.5
+            },
+            {
+              "subfoco": "Antibioticoterapia na Infecção Puerperal",
+              "questionCount": 7,
+              "percentageInBanca": 29.2
+            },
+            {
+              "subfoco": "Morbidade Febril Puerperal & Critérios",
+              "questionCount": 4,
+              "percentageInBanca": 16.7
+            },
+            {
+              "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+              "questionCount": 3,
+              "percentageInBanca": 12.5
+            },
+            {
+              "subfoco": "Demais Critérios & Diagnósticos Menores",
+              "questionCount": 1,
+              "percentageInBanca": 4.1
+            }
+          ],
+          "predominantDifficulty": "Médio"
+        },
+        "USP": {
+          "banca": "USP",
+          "totalQuestions": 35,
+          "topSubfocos": [
+            {
+              "subfoco": "Antibioticoterapia na Infecção Puerperal",
+              "questionCount": 12,
+              "percentageInBanca": 34.3
+            },
+            {
+              "subfoco": "Endometrite Puerperal: Diagnóstico & Clínica",
+              "questionCount": 11,
+              "percentageInBanca": 31.4
+            },
+            {
+              "subfoco": "Demais Critérios & Diagnósticos Menores",
+              "questionCount": 5,
+              "percentageInBanca": 14.3
+            },
+            {
+              "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+              "questionCount": 4,
+              "percentageInBanca": 11.4
+            },
+            {
+              "subfoco": "Mastite Puerperal: Diagnóstico & Conduta",
+              "questionCount": 3,
+              "percentageInBanca": 8.6
+            }
+          ],
+          "predominantDifficulty": "Difícil"
+        },
+        "UNICAMP": {
+          "banca": "UNICAMP",
+          "totalQuestions": 28,
+          "topSubfocos": [
+            {
+              "subfoco": "Endometrite Puerperal: Diagnóstico & Clínica",
+              "questionCount": 11,
+              "percentageInBanca": 39.3
+            },
+            {
+              "subfoco": "Antibioticoterapia na Infecção Puerperal",
+              "questionCount": 8,
+              "percentageInBanca": 28.6
+            },
+            {
+              "subfoco": "Fatores de Risco & Profilaxia na Cesárea",
+              "questionCount": 4,
+              "percentageInBanca": 14.3
+            },
+            {
+              "subfoco": "Mastite Puerperal: Diagnóstico & Conduta",
+              "questionCount": 3,
+              "percentageInBanca": 10.7
+            },
+            {
+              "subfoco": "Morbidade Febril Puerperal & Critérios",
+              "questionCount": 2,
+              "percentageInBanca": 7.1
+            }
+          ],
+          "predominantDifficulty": "Médio"
+        }
+      },
+      "topTraps": [
+        {
+          "subfoco": "Antibioticoterapia na Infecção Puerperal",
+          "trapTitle": "Distrator de Conduta Invertida",
+          "trapDescription": "Alternativas com condutas corretas na patologia porém indicadas em momento cronológico trocado."
+        }
+      ],
+      "needsRecalc": false,
+      "status": "certified",
+      "auditHash": "de27718521e6c0e8095ecea7a99b47388112c4cbf326e766594b700995eb679e",
+      "certifiedAt": "2026-11-03T15:17:13.826396+00:00",
+      "lastRecalculatedAt": "2026-11-03T15:17:13.826396+00:00"
+    },
+    "markdownContent": "## 1. O Que Mais Cai nas Provas de Residência Médica\n\nA Infecção Puerperal figura historicamente entre as **quatro principais causas de mortalidade materna no Brasil e no mundo** (ao lado de pré-eclâmpsia, hemorragia pós-parto e abortamento séptico). A auditoria estatística do censo de questões oficiais de residência médica (ENARE, USP-SP, UNICAMP, UNIFESP, SUS-SP, PSU-MG, UERJ, AMRIGS) revela a seguinte distribuição temática mandatória de cobrança:\n\n```exam-stats\n{\n  \"focusSlug\": \"infeccao-puerperal\",\n  \"specialty\": \"Obstetrícia\",\n  \"theme\": \"Puerpério\",\n  \"focus\": \"Infecção Puerperal\",\n  \"totalQuestions\": 249,\n  \"timeframeRange\": \"2017-2026\",\n  \"donutSlices\": [\n    {\n      \"id\": 1,\n      \"name\": \"Antibioticoterapia na Infecção Puerperal\",\n      \"shortName\": \"Antibioticoterapia\",\n      \"percentage\": 26.5,\n      \"questionCount\": 66,\n      \"priority\": \"Alta\",\n      \"color\": \"#3B82F6\",\n      \"trend\": \"alta\",\n      \"trendLabel\": \"🔥 Em Alta (2024-2026)\",\n      \"takeaway\": \"Clindamicina + Gentamicina IV de primeira linha até 48h afebril; sem antibiótico oral pós-alta.\",\n      \"focusExplanation\": \"O esquema de **primeira linha padrão-ouro** para endometrite pós-parto é a combinação intravenosa de **Clindamicina 900 mg IV a cada 8h** (cobertura de anaeróbios, incluindo *Bacteroides fragilis*) associada a **Gentamicina 5 mg/kg IV uma vez ao dia** ou 1,5 mg/kg a cada 8h (cobertura de Gram-negativos entéricos). O tratamento deve ser mantido em regime hospitalar até a paciente permanecer **48 horas afebril e assintomática**. Ao atingir esse critério de cura clínica, **a alta hospitalar é concedida SEM antibioticoterapia oral pós-alta** (não há benefício comprovado e eleva resistência bacteriana).\",\n      \"bancaPatterns\": {\n        \"Todas\": {\n          \"howItCharges\": \"Cobrança unânime nas principais bancas: indicação imediata de Clindamicina + Gentamicina IV, tempo de manutenção hospitalar até 48h afebril e suspensão completa do antibiótico na alta hospitalar (sem transição oral).\",\n          \"trapAlert\": \"Prescrever Cefalexina ou Amoxicilina-Clavulanato oral pós-alta é o distrator mais assinalado e punido em provas.\"\n        },\n        \"ENARE\": {\n          \"howItCharges\": \"O **ENARE** formula casos clínicos objetivos no ambiente de enfermaria obstétrica do SUS, cobrando a prescrição da associação parenteral (Clindamicina 900mg + Gentamicina IV) e o critério de alta.\",\n          \"trapAlert\": \"A banca sempre insere uma alternativa com 'alta hospitalar com antibiótico oral por 7 a 10 dias'. A regra de ouro é: alta SEM antibiótico oral após 48h afebril.\"\n        },\n        \"USP\": {\n          \"howItCharges\": \"A **USP** exige o raciocínio clínico da falha terapêutica: se após 48 a 72h de Clinda + Genta a paciente mantiver febre e piora clínica, deve-se associar **Ampicilina IV** (cobertura de *Enterococcus faecalis*) e pesquisar abscesso pélvico ou tromboflebite pélvica séptica.\",\n          \"trapAlert\": \"Trocar empiricamente para carbapenêmico sem investigar focos complicados ou não associar Ampicilina para cobrir Enterococo.\"\n        },\n        \"UNICAMP\": {\n          \"howItCharges\": \"A **UNICAMP** explora o perfil farmacológico dos aminoglicosídeos: Gentamicina em dose única diária (5 mg/kg) possui a mesma eficácia clínica da dose fracionada de 8/8h, com menor potencial de nefrotoxicidade e ototoxicidade.\",\n          \"trapAlert\": \"Alternativas sugerindo monoterapia com fluoroquinolonas orais em pacientes com endometrite puerperal.\"\n        },\n        \"PSU-MG\": {\n          \"howItCharges\": \"O **PSU-MG** foca no critério de cura clínica: a contagem do tempo de segurança exige 48 horas ininterruptas afebril, com involução uterina normal e lóquios sem odor fétido.\",\n          \"trapAlert\": \"Alternativas que fixam tempos arbitrários de 14 dias de internação independentemente da melhora clínica.\"\n        },\n        \"AMRIGS\": {\n          \"howItCharges\": \"A **AMRIGS** tem estilo direto, cobrando o espectro microbiano dos fármacos: Clindamicina para cobertura de anaeróbios estritos e Gentamicina para bacilos Gram-negativos facultativos.\",\n          \"trapAlert\": \"Substituir Clindamicina por Metronidazol em monoterapia sem a cobertura sinérgica de Gram-negativos da Gentamicina.\"\n        },\n        \"SUS-SP\": {\n          \"howItCharges\": \"O **SUS-SP** aborda o fluxo de porta de emergência: puérpera febril no 4º DPO deve ter internação imediata e início do esquema venoso na primeira hora de admissão.\",\n          \"trapAlert\": \"Liberar a paciente para tratamento domiciliar com repouso e antitérmicos.\"\n        }\n      }\n    },\n    {\n      \"id\": 2,\n      \"name\": \"Endometrite Puerperal: Diagnóstico & Clínica\",\n      \"shortName\": \"Endometrite & Clínica\",\n      \"percentage\": 26.1,\n      \"questionCount\": 65,\n      \"priority\": \"Alta\",\n      \"color\": \"#10B981\",\n      \"trend\": \"alta\",\n      \"trendLabel\": \"🔥 Em Alta (2024-2026)\",\n      \"takeaway\": \"Tríade de Bumm: febre, útero amolecido/doloroso e lóquios fétidos achocolatados.\",\n      \"focusExplanation\": \"A endometrite puerperal é a causa mais comum de febre pós-parto. O diagnóstico é **eminentemente clínico**, caracterizado pela clássica **Tríade de Bumm**: **febre** (geralmente entre o 3º e 5º DPO), **útero subinvoluído, doloroso e amolecido** à palpação abdominal/bimanual, e **lóquios fétidos purulentos ou com aspecto achocolatado** (loquiometra). O colo uterino costuma encontrar-se entreaberto e doloroso à mobilização. Exames de imagem (USG pélvica) são indicados exclusivamente para afastar **restos ovulares retidos ou coleções/abscessos**, sendo **formalmente contraindicada a coleta de swab vaginal para cultura** devido à contaminação com a flora bacteriana habitual do trato reprodutivo inferior.\",\n      \"bancaPatterns\": {\n        \"Todas\": {\n          \"howItCharges\": \"Apresentação da Tríade de Bumm (febre + útero doloroso e amolecido + lóquios fétidos) no 3º a 5º dia pós-parto, com diagnóstico 100% clínico.\",\n          \"trapAlert\": \"Indicar cultura de swab vaginal ou biópsia endometrial para confirmar diagnóstico de endometrite (contraindicado e desnecessário).\"\n        },\n        \"ENARE\": {\n          \"howItCharges\": \"O **ENARE** apresenta puérpera jovem que evoluiu no 4º DPO de cesárea com picos febris de 38,8°C, taquicardia e dor no baixo ventre com lóquios escuros e fétidos, exigindo o diagnóstico sindrômico imediato.\",\n          \"trapAlert\": \"Confundir febre transitória de apojadura mamária (fisiológica, até 38°C nas primeiras 24h) com endometrite bacteriana estabelecida.\"\n        },\n        \"USP\": {\n          \"howItCharges\": \"A **USP** explora a semiologia detalhada: palpação do fundo uterino acima da cicatriz umbilical no 4º DPO (útero subinvoluído), dor aos anexos e diagnóstico diferencial com hematoma de cúpula ou infecção de sítio cirúrgico.\",\n          \"trapAlert\": \"Solicitar histeroscopia diagnóstica ou curetagem de urgência na ausência de achados ultrassonográficos de restos placentários retidos.\"\n        },\n        \"UNICAMP\": {\n          \"howItCharges\": \"A **UNICAMP** cobra o diagnóstico diferencial entre endometrite e infecção de ferida operatória na parede abdominal, destacando que a ferida pode estar limpa enquanto a infecção primária reside na decídua endometrial.\",\n          \"trapAlert\": \"Achar que a ausência de hiperemia ou secreção na incisão cirúrgica da cesárea descarta infecção puerperal.\"\n        },\n        \"PSU-MG\": {\n          \"howItCharges\": \"O **PSU-MG** destaca a interpretação laboratorial: leucocitose de até 25.000/mm³ é fisiológica no puerpério imediato devido ao estresse do parto, devendo o diagnóstico se basear na presença de desvio à esquerda e na Tríade de Bumm.\",\n          \"trapAlert\": \"Fechar diagnóstico de infecção bacteriana apenas pela contagem isolada de leucócitos no 1º ou 2º DPO sem outros sinais flogísticos.\"\n        },\n        \"AMRIGS\": {\n          \"howItCharges\": \"A **AMRIGS** cobra nominalmente quais são os três sinais semiológicos constitutivos da clássica Tríade de Bumm.\",\n          \"trapAlert\": \"Alternativas que trazem 'útero duro e retraído' como sinal de endometrite (o útero da endometrite é amolecido e atônico).\"\n        },\n        \"SUS-SP\": {\n          \"howItCharges\": \"Cenário de puérpera admitida em UPA/PS com queixa de cólicas intensas e sangramento fétido após cesárea de urgência realizada há 5 dias.\",\n          \"trapAlert\": \"Atrasar o início da antibioticoterapia parenteral para aguardar resultados de hemoculturas ou laudo tomográfico.\"\n        }\n      }\n    },\n    {\n      \"id\": 3,\n      \"name\": \"Fatores de Risco & Profilaxia na Cesárea\",\n      \"shortName\": \"Risco & Profilaxia\",\n      \"percentage\": 15.3,\n      \"questionCount\": 38,\n      \"priority\": \"Alta\",\n      \"color\": \"#EC4899\",\n      \"trend\": \"alta\",\n      \"trendLabel\": \"🔥 Em Alta (2024-2026)\",\n      \"takeaway\": \"Cesárea é o maior fator isolado (risco 10-30x maior); Cefazolina na indução anestésica.\",\n      \"focusExplanation\": \"A **operação cesariana é o principal fator de risco isolado** para endometrite puerperal, aumentando a incidência em **10 a 30 vezes** quando comparada ao parto vaginal espontâneo. Outros fatores de risco determinantes são: **trabalho de parto prolongado**, **bolsa rota prolongada (> 6 a 18 horas)**, múltiplos toques vaginais (> 5 exames), corioamnionite intraparto, anemia materna e desnutrição. A profilaxia padrão-ouro universal para todas as cesáreas consiste na administração de **Cefazolina 2g IV em dose única realizada 30 a 60 minutos antes da incisão cirúrgica** (ou na indução anestésica). Em pacientes obesas com peso ≥ 120 kg ou IMC ≥ 35 kg/m², a dose deve ser ajustada para **3g IV**.\",\n      \"bancaPatterns\": {\n        \"Todas\": {\n          \"howItCharges\": \"Cesariana como maior fator isolado de risco (10-30x) e uso de Cefazolina 2g IV (3g se obesa) na indução anestésica para 100% das cesáreas.\",\n          \"trapAlert\": \"Fazer o antibiótico profilático somente após o clampeamento do cordão umbilical (conduta antiga e revogada; hoje é antes da incisão cutânea).\"\n        },\n        \"ENARE\": {\n          \"howItCharges\": \"O **ENARE** cobra a conduta profilática farmacológica padrão: qual antibiótico, via e momento exato de administração na cesárea eletiva ou de urgência.\",\n          \"trapAlert\": \"Alternativas que propõem ampicilina oral preventiva pós-alta para todas as cesarianas.\"\n        },\n        \"USP\": {\n          \"howItCharges\": \"A **USP** exige a correlação entre rotura prematura de membranas ovulares prolongada (> 18h) e colonização bacteriana ascendente mista, além do ajuste de dose de Cefazolina para 3g em obesas.\",\n          \"trapAlert\": \"Omitir a profilaxia em cesarianas com membranas íntegras fora de trabalho de parto (é mandatória em todas as cesáreas).\"\n        },\n        \"UNICAMP\": {\n          \"howItCharges\": \"A **UNICAMP** avalia o risco cumulativo de múltiplos toques vaginais no período de dilatação e a importância da assepsia rigorosa e técnica operatória adequada.\",\n          \"trapAlert\": \"Indicar Cefazolina profilática de rotina em partos vaginais eutócicos sem laceração grave de trajeto (não recomendada).\"\n        },\n        \"PSU-MG\": {\n          \"howItCharges\": \"O **PSU-MG** formula questões comparativas de epidemiologia obstétrica: o risco relativo de infecção puerperal pós-cesárea vs. pós-parto normal.\",\n          \"trapAlert\": \"Prescrever antibioticoterapia profilática prolongada por 48 horas de rotina pós-cesárea sem evidência de corioamnionite.\"\n        },\n        \"AMRIGS\": {\n          \"howItCharges\": \"A **AMRIGS** questiona qual a cefalosporina de escolha para profilaxia cirúrgica obstétrica (Cefazolina 1ª geração).\",\n          \"trapAlert\": \"Optar por Cefepima ou Ceftriaxona para profilaxia cirúrgica primária em pacientes sem histórico de colonização resistente.\"\n        },\n        \"SUS-SP\": {\n          \"howItCharges\": \"O **SUS-SP** enfatiza as metas de segurança do paciente do Ministério da Saúde: checklist de cirurgia segura com checagem da infusão da Cefazolina antes do corte.\",\n          \"trapAlert\": \"Não realizar repique intraoperatório de Cefazolina quando o procedimento ultrapassa 4 horas ou há sangramento superior a 1500 mL.\"\n        }\n      }\n    },\n    {\n      \"id\": 4,\n      \"name\": \"Morbidade Febril Puerperal & Critérios\",\n      \"shortName\": \"Morbidade Febril\",\n      \"percentage\": 10.4,\n      \"questionCount\": 26,\n      \"priority\": \"Média\",\n      \"color\": \"#8B5CF6\",\n      \"trend\": \"estavel\",\n      \"trendLabel\": \"🏛️ Clássico Estável\",\n      \"takeaway\": \"Febre ≥ 38°C em 2 dias distintos entre o 2º e 10º dia pós-parto; aferição oral obrigatória.\",\n      \"focusExplanation\": \"Pelo critério canônico internacional da US Joint Commission on Maternal Welfare e FIGO, define-se **Morbidade Febril Puerperal** como a presença de **temperatura corporal axilar ou oral ≥ 38,0°C**, registrada em **pelo menos 2 dias distintos**, entre o **2º e o 10º dia do pós-parto**, **excluindo-se obrigatoriamente as primeiras 24 horas**. Essa exclusão das primeiras 24h pós-parto é fundamental porque a elevação térmica precoce decorre frequentemente de **desidratação transitória, liberação de citocinas pelo estresse muscular do trabalho de parto e apojadura mamária fisiológica**. Quando a febre surge ou persiste a partir do 2º DPO, a etiologia bacteriana infecciosa (endometrite em > 70% dos casos) torna-se a principal hipótese diagnóstica.\",\n      \"bancaPatterns\": {\n        \"Todas\": {\n          \"howItCharges\": \"Definição formal dos critérios: ≥ 38°C em 2 dias distintos entre o 2º e o 10º dia pós-parto, excluindo as primeiras 24 horas.\",\n          \"trapAlert\": \"Considerar febre isolada nas primeiras 24 horas após o parto como infecção puerperal estabelecida (é habitualmente fisiológica).\"\n        },\n        \"ENARE\": {\n          \"howItCharges\": \"O **ENARE** cobra a regra numérica de temperatura e dias para enquadramento formal de morbidade febril puerperal.\",\n          \"trapAlert\": \"Considerar duas aferições térmicas feitas com poucas horas de intervalo no mesmo dia como critérios suficientes (exige dias distintos).\"\n        },\n        \"USP\": {\n          \"howItCharges\": \"A **USP** coloca casos clínicos de curvas térmicas puerperais para o aluno identificar o momento exato em que a febre deixa de ser fisiológica e passa a configurar infecção puerperal.\",\n          \"trapAlert\": \"Rotular apojadura mamária (febre baixa autolimitada em até 24h associada a mamas túrgidas bilaterais) como infecção que necessita de antibioticoterapia.\"\n        },\n        \"UNICAMP\": {\n          \"howItCharges\": \"A **UNICAMP** exige a busca ativa e sistemática dos 4 principais focos de febre no puerpério: Endométrio (endometrite), Parede abdominal (ferida cirúrgica), Mamas (mastite) e Trato urinário (ITU).\",\n          \"trapAlert\": \"Iniciar antibioticoterapia empírica sem antes examinar as mamas, a ferida operatória e a urina da paciente.\"\n        },\n        \"PSU-MG\": {\n          \"howItCharges\": \"O **PSU-MG** diferencia a cronologia das causas infecciosas: primeiras 24h (apojadura/atelectasia); 3º ao 5º dia (endometrite/ferida); 2ª à 4ª semana (mastite puerperal).\",\n          \"trapAlert\": \"Atribuir febre no 4º dia pós-parto à apojadura mamária (a apojadura ocorre no 2º ao 3º dia e não dura mais de 24 horas).\"\n        },\n        \"AMRIGS\": {\n          \"howItCharges\": \"A **AMRIGS** questiona qual o valor de corte de temperatura corporal padronizado para morbidade puerperal (≥ 38,0°C).\",\n          \"trapAlert\": \"Assinalar 37,8°C ou 38,5°C como pontos de corte oficiais do consenso de morbidade puerperal.\"\n        },\n        \"SUS-SP\": {\n          \"howItCharges\": \"O **SUS-SP** foca na vigilância epidemiológica hospitalar de infecções pós-parto e registro fidedigno em prontuário.\",\n          \"trapAlert\": \"Dar alta à puérpera febril no 2º DPO acreditando ser apenas estresse puerperal.\"\n        }\n      }\n    },\n    {\n      \"id\": 5,\n      \"name\": \"Mastite Puerperal: Diagnóstico & Conduta\",\n      \"shortName\": \"Mastite Puerperal\",\n      \"percentage\": 8.0,\n      \"questionCount\": 20,\n      \"priority\": \"Média\",\n      \"color\": \"#F59E0B\",\n      \"trend\": \"alta\",\n      \"trendLabel\": \"🔥 Em Alta (2024-2026)\",\n      \"takeaway\": \"S. aureus; Cefalexina ou Clavulin; contraindicação formal a suspender amamentação.\",\n      \"focusExplanation\": \"A mastite puerperal é a infecção bacteriana do parênquima mamário que acomete preferencialmente entre a **2ª e a 4ª semanas pós-parto**. O agente etiológico clássico em mais de **85% a 90% dos casos é o *Staphylococcus aureus*** (sensível à oxacilina na comunidade), inoculado a partir da nasofaringe do recém-nascido através de fissuras ou microtraumas mamilares. Manifesta-se clinicamente por **eritema localizado em cunha (geralmente unilateral), calor, dor intensa e ingurgitamento**, acompanhados de febre alta (> 38,5°C) e calafrios. A droga de primeira linha é a **Cefalexina 500 mg VO de 6/6h** ou Amoxicilina + Clavulanato por 10 a 14 dias. **CONDUTA DE OURO DAS BANCAS:** É **PROIBIDO suspender a amamentação**; a manutenção do esvaziamento mamário frequente da mama afetada é pilar obrigatório do tratamento para prevenir formação de abscesso.\",\n      \"bancaPatterns\": {\n        \"Todas\": {\n          \"howItCharges\": \"Agente principal (S. aureus), tratamento com Cefalexina oral e proibição formal de interromper o aleitamento materno (manter amamentação na mama doente).\",\n          \"trapAlert\": \"Prescrever desmame, suspender a amamentação na mama afetada ou dar inibidores de prolactina (Cabergolina) é o erro mais punido em provas!\"\n        },\n        \"ENARE\": {\n          \"howItCharges\": \"O **ENARE** apresenta lactante com 3 semanas de puerpério apresentando dor e placa hiperemiada na mama direita com febre de 39°C, questionando o antimicrobiano e a orientação sobre amamentação.\",\n          \"trapAlert\": \"A banca sempre insere alternativa orientando a suspender o aleitamento e oferecer fórmula infantil temporariamente.\"\n        },\n        \"USP\": {\n          \"howItCharges\": \"A **USP** cobra o reconhecimento clínico do abscesso mamário (área de flutuação palpável ou coleção purulenta ecográfica), exigindo drenagem cirúrgica ou punção ecoguiada.\",\n          \"trapAlert\": \"Realizar massagem compressiva vigorosa sobre coleção com ponto de flutuação evidente (risco de ruptura tecidual e disseminação).\"\n        },\n        \"UNICAMP\": {\n          \"howItCharges\": \"A **UNICAMP** exige a distinção clínica precisa entre ingurgitamento mamário fisiológico (bilateral, difuso, afebril ou febrícula transitória) e mastite puerperal infecciosa (unilateral, em cunha, febre alta).\",\n          \"trapAlert\": \"Prescrever antibiótico desnecessário para ingurgitamento mamário simples sem sinais de infecção bacteriana.\"\n        },\n        \"PSU-MG\": {\n          \"howItCharges\": \"O **PSU-MG** questiona qual o principal agente microbiano isolado nas mastites puerperais agudas (*Staphylococcus aureus*).\",\n          \"trapAlert\": \"Confundir com *Streptococcus agalactiae* (GBS) ou *Escherichia coli* como agentes primários de mastite.\"\n        },\n        \"AMRIGS\": {\n          \"howItCharges\": \"A **AMRIGS** explora as orientações de pega correta da aréola pelo recém-nascido como medida profilática primária de fissuras mamilares e mastite.\",\n          \"trapAlert\": \"Recomendar pomadas de antibiótico tópico nos mamilos durante o período de amamentação.\"\n        },\n        \"SUS-SP\": {\n          \"howItCharges\": \"O **SUS-SP** aborda o acolhimento na Unidade Básica de Saúde: incentivo à amamentação, prescrição de Cefalexina e analgesia com Ibuprofeno/Paracetamol.\",\n          \"trapAlert\": \"Encaminhar para internação hospitalar terciária mastite inicial não complicada com bom estado geral.\"\n        }\n      }\n    },\n    {\n      \"id\": 6,\n      \"name\": \"Demais Critérios & Diagnósticos Menores\",\n      \"shortName\": \"Demais Aspectos\",\n      \"percentage\": 13.7,\n      \"questionCount\": 34,\n      \"priority\": \"Média\",\n      \"color\": \"#64748B\",\n      \"trend\": \"estavel\",\n      \"trendLabel\": \"🏛️ Tópicos Secundários\",\n      \"takeaway\": \"Tromboflebite pélvica séptica, teste da heparina, sepse e indicações de curetagem.\",\n      \"focusExplanation\": \"Reúne complicações puerperais graves e diagnósticos de exclusão na puérpera séptica refratária. O principal destaque em provas é a **Tromboflebite Pélvica Séptica (TPS)**: trombose séptica das veias ovarianas e plexos uterinos caracterizada por **febre em picos contínua e persistente após 48 a 72 horas de antibioticoterapia venosa adequada**, sem coleções purulentas detectáveis ao exame físico. O diagnóstico padrão de confirmação é o **Teste Terapêutico da Heparina**: defervescência térmica completa em 48 a 72 horas após início de Heparina venosa contínua ou HBPM plena associada à manutenção dos antibióticos. A TC ou RM pélvica contrastada evidencia falha de enchimento na veia ovariana (mais frequente à direita). Na suspeita de abscesso pélvico ou retenção maciça de restos, indica-se drenagem percutânea ou curetagem uterina criteriosa.\",\n      \"bancaPatterns\": {\n        \"Todas\": {\n          \"howItCharges\": \"Febre puerperal persistente após 48-72h de antibióticos venosos sem foco evidente: suspeitar de Tromboflebite Pélvica Séptica e realizar Teste da Heparina.\",\n          \"trapAlert\": \"Trocar empiricamente a classe do antibiótico sem considerar tromboflebite séptica ou sem solicitar TC de pelve.\"\n        },\n        \"ENARE\": {\n          \"howItCharges\": \"O **ENARE** relata paciente em uso de Clindamicina + Gentamicina há 4 dias sem melhora da febre diária e com exame ginecológico inocente, questionando a conduta diagnóstica-terapêutica.\",\n          \"trapAlert\": \"Indicar laparotomia de urgência imediata sem evidência clínica ou tomográfica de peritonite ou perfuração uterina.\"\n        },\n        \"USP\": {\n          \"howItCharges\": \"A **USP** explora a fisiopatologia vascular da TPS: maior acometimento da veia ovariana direita pelo comprimento vascular aumentado, fluxo retrógrado e compressão mecânica pelo útero dextrorrotado.\",\n          \"trapAlert\": \"Realizar curetagem uterina de rotina em útero séptico friável sem comprovação ecográfica de restos, pelo risco grave de perfuração e choque séptico.\"\n        },\n        \"UNICAMP\": {\n          \"howItCharges\": \"A **UNICAMP** cobra o reconhecimento da Síndrome do Choque Tóxico Estreptocócico pós-parto (*Streptococcus pyogenes* / GAS): progressão fulminante para choque distributivo e fasceíte necrotizante.\",\n          \"trapAlert\": \"Retardar intervenção cirúrgica de controle de danos (histerectomia puerperal) quando há miometrite necrotizante e sepse refratária.\"\n        },\n        \"PSU-MG\": {\n          \"howItCharges\": \"O **PSU-MG** cobra o mecanismo de confirmação da TPS pelo Teste da Heparina (defervescência térmica rápida nas primeiras 48-72h de anticoagulação).\",\n          \"trapAlert\": \"Acreditar que ultrassonografia transvaginal de rotina possui alta sensibilidade para trombose de veias ovarianas altas (TC contrastada é o padrão).\"\n        },\n        \"AMRIGS\": {\n          \"howItCharges\": \"A **AMRIGS** foca no diagnóstico diferencial de infecções do sítio cirúrgico da cesárea: seroma, hematoma e abscesso de parede abdominal.\",\n          \"trapAlert\": \"Não abrir a fáscia e não drenar ferida operatória com flutuação purulenta profunda.\"\n        },\n        \"SUS-SP\": {\n          \"howItCharges\": \"O **SUS-SP** cobra os critérios de sepse materna puerperal e protocolo de ressuscitação volêmica imediata com cristaloides (30 mL/kg nas primeiras 3h).\",\n          \"trapAlert\": \"Atrasar o início de noradrenalina em puérpera em choque séptico mantendo PAM < 65 mmHg após prova de volume.\"\n        }\n      }\n    }\n  ],\n  \"bancaBreakdown\": {\n    \"AMRIGS\": {\n      \"banca\": \"AMRIGS\",\n      \"totalQuestions\": 5,\n      \"topSubfocos\": [\n        {\n          \"subfoco\": \"Endometrite Puerperal: Diagnóstico & Clínica\",\n          \"questionCount\": 3,\n          \"percentageInBanca\": 60.0\n        },\n        {\n          \"subfoco\": \"Antibioticoterapia na Infecção Puerperal\",\n          \"questionCount\": 1,\n          \"percentageInBanca\": 20.0\n        },\n        {\n          \"subfoco\": \"Complicações de Prótese: Infecção, Migração e Dor\",\n          \"questionCount\": 1,\n          \"percentageInBanca\": 20.0\n        }\n      ],\n      \"predominantDifficulty\": \"Médio\"\n    },\n    \"SUS-SP\": {\n      \"banca\": \"SUS-SP\",\n      \"totalQuestions\": 5,\n      \"topSubfocos\": [\n        {\n          \"subfoco\": \"Endometrite Puerperal: Diagnóstico & Clínica\",\n          \"questionCount\": 3,\n          \"percentageInBanca\": 60.0\n        },\n        {\n          \"subfoco\": \"Antibioticoterapia na Infecção Puerperal\",\n          \"questionCount\": 2,\n          \"percentageInBanca\": 40.0\n        }\n      ],\n      \"predominantDifficulty\": \"Médio\"\n    },\n    \"UNESP/HCFMB\": {\n      \"banca\": \"UNESP/HCFMB\",\n      \"totalQuestions\": 8,\n      \"topSubfocos\": [\n        {\n          \"subfoco\": \"Antibioticoterapia na Infecção Puerperal\",\n          \"questionCount\": 4,\n          \"percentageInBanca\": 50.0\n        },\n        {\n          \"subfoco\": \"Endometrite Puerperal: Diagnóstico & Clínica\",\n          \"questionCount\": 2,\n          \"percentageInBanca\": 25.0\n        },\n        {\n          \"subfoco\": \"Tromboflebite Pélvica Séptica & Complicações\",\n          \"questionCount\": 2,\n          \"percentageInBanca\": 25.0\n        }\n      ],\n      \"predominantDifficulty\": \"Médio\"\n    },\n    \"UNICAMP/HC\": {\n      \"banca\": \"UNICAMP/HC\",\n      \"totalQuestions\": 9,\n      \"topSubfocos\": [\n        {\n          \"subfoco\": \"Endometrite Puerperal: Diagnóstico & Clínica\",\n          \"questionCount\": 6,\n          \"percentageInBanca\": 66.7\n        },\n        {\n          \"subfoco\": \"Antibioticoterapia na Infecção Puerperal\",\n          \"questionCount\": 2,\n          \"percentageInBanca\": 22.2\n        },\n        {\n          \"subfoco\": \"Tromboflebite Pélvica Séptica & Complicações\",\n          \"questionCount\": 1,\n          \"percentageInBanca\": 11.1\n        }\n      ],\n      \"predominantDifficulty\": \"Médio\"\n    },\n    \"CERMAM\": {\n      \"banca\": \"CERMAM\",\n      \"totalQuestions\": 5,\n      \"topSubfocos\": [\n        {\n          \"subfoco\": \"Endometrite Puerperal: Diagnóstico & Clínica\",\n          \"questionCount\": 2,\n          \"percentageInBanca\": 40.0\n        },\n        {\n          \"subfoco\": \"Morbidade Febril Puerperal & Critérios\",\n          \"questionCount\": 2,\n          \"percentageInBanca\": 40.0\n        },\n        {\n          \"subfoco\": \"Fatores de Risco & Profilaxia na Cesárea\",\n          \"questionCount\": 1,\n          \"percentageInBanca\": 20.0\n        }\n      ],\n      \"predominantDifficulty\": \"Médio\"\n    },\n    \"Pontifícia Universidade Católica do Paraná\": {\n      \"banca\": \"Pontifícia Universidade Católica do Paraná\",\n      \"totalQuestions\": 6,\n      \"topSubfocos\": [\n        {\n          \"subfoco\": \"Antibioticoterapia na Infecção Puerperal\",\n          \"questionCount\": 3,\n          \"percentageInBanca\": 50.0\n        },\n        {\n          \"subfoco\": \"Fatores de Risco & Profilaxia na Cesárea\",\n          \"questionCount\": 2,\n          \"percentageInBanca\": 33.3\n        },\n        {\n          \"subfoco\": \"Complicações de Prótese: Infecção, Migração e Dor\",\n          \"questionCount\": 1,\n          \"percentageInBanca\": 16.7\n        }\n      ],\n      \"predominantDifficulty\": \"Médio\"\n    },\n    \"USP/HCRP\": {\n      \"banca\": \"USP/HCRP\",\n      \"totalQuestions\": 5,\n      \"topSubfocos\": [\n        {\n          \"subfoco\": \"Antibioticoterapia na Infecção Puerperal\",\n          \"questionCount\": 2,\n          \"percentageInBanca\": 40.0\n        },\n        {\n          \"subfoco\": \"Fatores de Risco & Profilaxia na Cesárea\",\n          \"questionCount\": 2,\n          \"percentageInBanca\": 40.0\n        },\n        {\n          \"subfoco\": \"Mastite Puerperal: Diagnóstico & Conduta\",\n          \"questionCount\": 1,\n          \"percentageInBanca\": 20.0\n        }\n      ],\n      \"predominantDifficulty\": \"Médio\"\n    },\n    \"INEP Revalida\": {\n      \"banca\": \"INEP Revalida\",\n      \"totalQuestions\": 6,\n      \"topSubfocos\": [\n        {\n          \"subfoco\": \"Infecção Puerperal\",\n          \"questionCount\": 6,\n          \"percentageInBanca\": 100.0\n        }\n      ],\n      \"predominantDifficulty\": \"Médio\"\n    },\n    \"ENARE\": {\n      \"banca\": \"ENARE\",\n      \"totalQuestions\": 42,\n      \"topSubfocos\": [\n        {\n          \"subfoco\": \"Antibioticoterapia na Infecção Puerperal\",\n          \"questionCount\": 16,\n          \"percentageInBanca\": 38.1\n        },\n        {\n          \"subfoco\": \"Endometrite Puerperal: Diagnóstico & Clínica\",\n          \"questionCount\": 14,\n          \"percentageInBanca\": 33.3\n        },\n        {\n          \"subfoco\": \"Fatores de Risco & Profilaxia na Cesárea\",\n          \"questionCount\": 6,\n          \"percentageInBanca\": 14.3\n        },\n        {\n          \"subfoco\": \"Mastite Puerperal: Diagnóstico & Conduta\",\n          \"questionCount\": 4,\n          \"percentageInBanca\": 9.5\n        },\n        {\n          \"subfoco\": \"Morbidade Febril Puerperal & Critérios\",\n          \"questionCount\": 2,\n          \"percentageInBanca\": 4.8\n        }\n      ],\n      \"predominantDifficulty\": \"Médio\"\n    },\n    \"PSU-MG\": {\n      \"banca\": \"PSU-MG\",\n      \"totalQuestions\": 24,\n      \"topSubfocos\": [\n        {\n          \"subfoco\": \"Endometrite Puerperal: Diagnóstico & Clínica\",\n          \"questionCount\": 9,\n          \"percentageInBanca\": 37.5\n        },\n        {\n          \"subfoco\": \"Antibioticoterapia na Infecção Puerperal\",\n          \"questionCount\": 7,\n          \"percentageInBanca\": 29.2\n        },\n        {\n          \"subfoco\": \"Morbidade Febril Puerperal & Critérios\",\n          \"questionCount\": 4,\n          \"percentageInBanca\": 16.7\n        },\n        {\n          \"subfoco\": \"Fatores de Risco & Profilaxia na Cesárea\",\n          \"questionCount\": 3,\n          \"percentageInBanca\": 12.5\n        },\n        {\n          \"subfoco\": \"Demais Critérios & Diagnósticos Menores\",\n          \"questionCount\": 1,\n          \"percentageInBanca\": 4.1\n        }\n      ],\n      \"predominantDifficulty\": \"Médio\"\n    },\n    \"USP\": {\n      \"banca\": \"USP\",\n      \"totalQuestions\": 35,\n      \"topSubfocos\": [\n        {\n          \"subfoco\": \"Antibioticoterapia na Infecção Puerperal\",\n          \"questionCount\": 12,\n          \"percentageInBanca\": 34.3\n        },\n        {\n          \"subfoco\": \"Endometrite Puerperal: Diagnóstico & Clínica\",\n          \"questionCount\": 11,\n          \"percentageInBanca\": 31.4\n        },\n        {\n          \"subfoco\": \"Demais Critérios & Diagnósticos Menores\",\n          \"questionCount\": 5,\n          \"percentageInBanca\": 14.3\n        },\n        {\n          \"subfoco\": \"Fatores de Risco & Profilaxia na Cesárea\",\n          \"questionCount\": 4,\n          \"percentageInBanca\": 11.4\n        },\n        {\n          \"subfoco\": \"Mastite Puerperal: Diagnóstico & Conduta\",\n          \"questionCount\": 3,\n          \"percentageInBanca\": 8.6\n        }\n      ],\n      \"predominantDifficulty\": \"Difícil\"\n    },\n    \"UNICAMP\": {\n      \"banca\": \"UNICAMP\",\n      \"totalQuestions\": 28,\n      \"topSubfocos\": [\n        {\n          \"subfoco\": \"Endometrite Puerperal: Diagnóstico & Clínica\",\n          \"questionCount\": 11,\n          \"percentageInBanca\": 39.3\n        },\n        {\n          \"subfoco\": \"Antibioticoterapia na Infecção Puerperal\",\n          \"questionCount\": 8,\n          \"percentageInBanca\": 28.6\n        },\n        {\n          \"subfoco\": \"Fatores de Risco & Profilaxia na Cesárea\",\n          \"questionCount\": 4,\n          \"percentageInBanca\": 14.3\n        },\n        {\n          \"subfoco\": \"Mastite Puerperal: Diagnóstico & Conduta\",\n          \"questionCount\": 3,\n          \"percentageInBanca\": 10.7\n        },\n        {\n          \"subfoco\": \"Morbidade Febril Puerperal & Critérios\",\n          \"questionCount\": 2,\n          \"percentageInBanca\": 7.1\n        }\n      ],\n      \"predominantDifficulty\": \"Médio\"\n    }\n  }\n}\n```\n\n---\n\n## 2. Morbidade Febril Puerperal: Critérios Diagnósticos & Diagnóstico Diferencial Imediato\n\n### Definição Canônica Oficial (FEBRASGO / OMS)\nA **Morbidade Febril Puerperal** é formalmente definida pela presença de:\n* **Temperatura oral $\\ge 38,0^\\circ\\text{C}$**\n* Registrada em **pelo menos 2 dias diferentes**\n* Durante os **primeiros 10 dias após o parto**\n* **EXCLUÍDAS AS PRIMEIRAS 24 HORAS** pós-parto\n\n> [!WARNING] Armadilha Clássica de Prova: Aferição Oral vs. Febre nas Primeiras 24 Horas\n> 1. **Por que excluir as primeiras 24 horas?** Elevações térmicas discretas no primeiro dia decorrem frequentemente de desidratação, esforço muscular no trabalho de parto ou reação inflamatória reabsortiva fisiológica.\n> 2. **Por que a aferição deve ser oral?** A temperatura axilar na puérpera é falseada pelo ingurgitamento vascular mamário e pela **apojadura** (\"febre do leite\"), registrando calor local sem febre sistêmica.\n\n### Apojadura Mamária Fisiológica vs. Endometrite vs. Tromboflebite\nO contraste imediato entre as afecções febris puerperais mais cobradas em provas é sintetizado na arquitetura comparativa abaixo:\n\n```diff-diagnosis\n{\n  \"diffId\": \"febre-puerperal-diagnosticos\",\n  \"title\": \"Diagnóstico Diferencial da Febre no Puerpério\",\n  \"entities\": [\n    {\n      \"name\": \"Apojadura Fisiológica\",\n      \"period\": \"2º ao 4º dia pós-parto\",\n      \"feverDuration\": \"Duração autolimitada < 24 horas\",\n      \"uterineSigns\": \"Útero indolor em involução normal\",\n      \"lochia\": \"Lóquios fisiológicos (rubros a serosos)\",\n      \"hallmark\": \"Mamas difusamente túrgidas; puérpera em bom estado geral sem taquicardia\",\n      \"keyConduct\": \"Conduta expectante: amamentação em livre demanda, sutiã de sustentação e compressas frias (crioterapia)\"\n    },\n    {\n      \"name\": \"Endometrite Puerperal\",\n      \"period\": \"2º ao 5º dia pós-parto\",\n      \"feverDuration\": \"Persistente em picos elevados (≥ 38,0°C)\",\n      \"uterineSigns\": \"Tríade de Bumm (subinvoluído, pastoso, doloroso à palpação)\",\n      \"lochia\": \"Lóquios abundantes, achocolatados e fétidos\",\n      \"hallmark\": \"Taquicardia precoce desproporcional à curva térmica; bacteremia polimicrobiana\",\n      \"keyConduct\": \"Internação hospitalar obrigatória + Clindamicina 900mg IV 8/8h + Gentamicina 5mg/kg IV 24/24h\"\n    },\n    {\n      \"name\": \"Mastite Puerperal\",\n      \"period\": \"2ª a 3ª semana pós-parto\",\n      \"feverDuration\": \"Picos febris elevados com calafrios\",\n      \"uterineSigns\": \"Involução uterina fisiológica normal\",\n      \"lochia\": \"Fisiológicos (lochia alba)\",\n      \"hallmark\": \"Sinais flogísticos focais em cunha (dor, rubor, calor) em quadrante de uma mama\",\n      \"keyConduct\": \"Cefalexina 500mg VO 6/6h por 10 a 14 dias + MANTER amamentação mandatória sob livre demanda\"\n    },\n    {\n      \"name\": \"Tromboflebite Pélvica Séptica\",\n      \"period\": \"5º ao 10º dia pós-parto\",\n      \"feverDuration\": \"Febre em agulha refratária a 72h de antibioticoterapia\",\n      \"uterineSigns\": \"Exame pélvico e ultrassonografia normais\",\n      \"lochia\": \"Fisiológicos\",\n      \"hallmark\": \"Curva térmica em picos diários contrastando com paciente afebril e bem-disposta entre os episódios\",\n      \"keyConduct\": \"Teste terapêutico da Heparina (HNF ou Enoxaparina 1mg/kg 12/12h); apirexia em 48-72h sela o diagnóstico\"\n    }\n  ]\n}\n```\n\n---\n\n## 3. Fatores de Risco & Prevenção: O Papel Determinante da Cesariana\n\nA via de parto é o determinante isolado mais expressivo na patogênese infecciosa: o **parto cesáreo eleva em 10 a 30 vezes o risco de endometrite** em comparação com o parto vaginal eutócico.\n\n```clinical-scheme\n{\n  \"type\": \"bipolar\",\n  \"badge\": \"Diretriz FEBRASGO / CDC\",\n  \"leftColumn\": {\n    \"title\": \"FATORES DE RISCO (Aumentam Incidência)\",\n    \"items\": [\n      \"Parto Cesáreo de Emergência: Risco 10 a 30 vezes superior ao parto vaginal eutócico.\",\n      \"Bolsa Rota Prolongada (> 6 a 18 horas) e Trabalho de Parto arrastado.\",\n      \"Toques Vaginais Repetidos (≥ 5 toques intraparto elevam inoculação bacteriana).\",\n      \"Anemia Materna (Hb < 10 g/dL), Obesidade mórbida e líquido amniótico meconial.\"\n    ],\n    \"alert\": \"A cesariana intraparto é o principal fator de risco independente cobrado em provas!\"\n  },\n  \"rightColumn\": {\n    \"title\": \"PROFILAXIA EFETIVA & BOAS PRÁTICAS\",\n    \"items\": [\n      \"Antibioticoprofilaxia Universal: Cefazolina 2g IV (ou 3g se peso ≥ 120 kg) 30 a 60 min ANTES da incisão na pele.\",\n      \"Azitromicina 500mg IV Adjuvante: Recomendada em cesáreas não eletivas intraparto (ACOG).\",\n      \"Antissepsia Dupla: Clorexidina alcoólica a 2% no abdome e preparo vaginal prévio.\",\n      \"Dequitação Espontânea: Tração controlada de cordão (abolição formal da curagem manual de rotina).\"\n    ],\n    \"alert\": \"A profilaxia com Cefazolina deve ser feita na indução anestésica; NUNCA aguardar o clampeamento!\"\n  }\n}\n```\n\n\n---\n\n## 4. Endometrite Puerperal: Tríade de Bumm & Triagem de Sepse Materna\n\nA **Endometrite** é a causa mais comum de infecção puerperal (~85% dos casos). Inicia-se no leito de inserção placentária e ascende para a decídua e miométrio (endomiometrite).\n\n### O Quadro Clínico Clássico: A Tríade de Bumm\nA identificação clínica em provas fundamenta-se nos achados da semiologia obstétrica:\n\n$$\\text{Endometrite Puerperal} \\implies \\begin{cases} \\text{1. Febre persistente com taquicardia} \\\\ \\text{2. Útero subinvoluído, doloroso e amolecido} \\\\ \\text{3. Lóquios achocolatados com odor fétido} \\end{cases}$$\n\n1. **Febre em Picos ($\\ge 38,0^\\circ\\text{C}$):** Tipicamente instalada entre o 2º e o 5º dia pós-parto, acompanhada de taquicardia materna precoce desproporcional.\n2. **Subinvolução Uterina Dolorosa:** O útero não regride na velocidade fisiológica esperada (o normal é regredir cerca de $1\\text{ cm por dia}$ após o parto). À palpação bimanual, o fundo uterino é doloroso e pastoso.\n3. **Loquiação Anormal:** Lóquios abundantes, de coloração escura/achocolatada e odor intensamente fétido.\n   * *Atenção:* Em infecções causadas por *Streptococcus pyogenes* (Strepto do Grupo A), os lóquios podem ser escassos e sem odor (\"endometrite inodora\"), porém o quadro sistêmico é fulminante com bacteremia precoce.\n\n![**[Achado Visual Cardinal]**: Endométrio espessado e heterogêneo com múltiplos focos hiperecogênicos puntiformes e sombra acústica suja compatível com gás intrauterino. • **[Diagnóstico Associado]**: Endometrite puerperal bacteriana com colonização mista anaeróbia. • **[Ponto Crítico de Prova]**: A presença isolada de gás antes do 5º dia pós-cesárea pode ser iatrogênica transitória; só firma diagnóstico quando correlacionada com febre persistente e Tríade de Bumm!](/images/clinical/endometrite_usg.jpg)\n\n\n### Microbiologia Polimicrobiana Ascendente\nA infecção puerperal intrauterina é de caráter **polimicrobiano misto**, envolvendo microrganismos aeróbios e anaeróbios provenientes do trato genital inferior:\n* **Anaeróbios Obrigatórios (50% a 80%):** *Bacteroides fragilis*, *Peptostreptococcus*, *Prevotella bivia*.\n* **Gram-Negativos Entéricos Facultativos (30% a 50%):** *Escherichia coli*, *Klebsiella pneumoniae*, *Proteus mirabilis*.\n* **Gram-Positivos (30% a 40%):** *Streptococcus agalactiae* (EGB), *Enterococcus faecalis*, *Staphylococcus epidermidis*.\n\n> [!WARNING] Armadilha Clássica de Prova: Não Aguardar Culturas Vaginais\n> A coleta de swab de secreção vaginal ou endocervical **NÃO tem utilidade diagnóstica** na endometrite pós-parto, pois as amostras são inevitavelmente contaminadas pela flora comensal. O diagnóstico é puramente clínico e o início da antibioticoterapia é imediato e empírico. Hemoculturas são solicitadas apenas em caso de choque séptico ou ausência de melhora após 48 horas.\n\n### Triagem de Sepse Obstétrica: Escore MEOWS & Pacote da 1ª Hora\nAs alterações hemodinâmicas fisiológicas do puerpério (leucocitose de até 25.000/$\\text{mm}^3$, taquicardia leve) invalidam o qSOFA clássico. As diretrizes FEBRASGO e da OMS preconizam a utilização de escores de alerta precoce obstétrico:\n\n```clinical-score\n{\n  \"scoreId\": \"meows-puerperal-sepsis\",\n  \"title\": \"MEOWS: Escore de Alerta Precoce Obstétrico / Sepse Puerperal\",\n  \"parameters\": [\n    {\n      \"parameter\": \"Frequência Cardíaca\",\n      \"normalRange\": \"60 a 99 bpm\",\n      \"alertTrigger\": \"≥ 110 bpm ou < 50 bpm\",\n      \"clinicalMeaning\": \"Taquicardia persistente é o marcador precoce mais sensível de bacteremia puerperal\"\n    },\n    {\n      \"parameter\": \"Frequência Respiratória\",\n      \"normalRange\": \"12 a 20 irpm\",\n      \"alertTrigger\": \"≥ 25 irpm ou < 10 irpm\",\n      \"clinicalMeaning\": \"Taquipneia reflete acidose metabólica compensatória por hiperlactatemia\"\n    },\n    {\n      \"parameter\": \"Pressão Arterial Sistólica\",\n      \"normalRange\": \"100 a 139 mmHg\",\n      \"alertTrigger\": \"< 90 mmHg ou ≥ 160 mmHg\",\n      \"clinicalMeaning\": \"Hipotensão define choque distributivo séptico e hipoperfusão tecidual\"\n    },\n    {\n      \"parameter\": \"Temperatura Oral\",\n      \"normalRange\": \"36,0°C a 37,4°C\",\n      \"alertTrigger\": \"≥ 38,5°C ou < 35,5°C\",\n      \"clinicalMeaning\": \"Hipotermia materna está associada a sepse grave refratária de pior prognóstico\"\n    },\n    {\n      \"parameter\": \"Estado Neurológico\",\n      \"normalRange\": \"Alerta e orientada\",\n      \"alertTrigger\": \"Sonolência, confusão ou agitação\",\n      \"clinicalMeaning\": \"Disfunção neurológica aguda decorrente de hipoperfusão cerebral\"\n    }\n  ],\n  \"actionThreshold\": {\n    \"triggerCondition\": \"Presença de 1 parâmetro com alerta vermelho ou 2 com alerta amarelo\",\n    \"bundleProtocol\": \"PACOTE DA 1ª HORA (Hour-1 Bundle)\",\n    \"mandatorySteps\": [\n      \"1. Dosagem imediata de Lactato Sérico (repetir em 2 a 4h se ≥ 2 mmol/L)\",\n      \"2. Coleta de 2 pares de Hemoculturas antes da antibioticoterapia venosa\",\n      \"3. Início de Antibioticoterapia Venosa de Amplo Espectro na PRIMEIRA HORA\",\n      \"4. Ressuscitação volêmica com Cristaloide (30 mL/kg em 3h) se PAS < 90 mmHg ou Lactato ≥ 4 mmol/L\",\n      \"5. Iniciar Vasopressor precoce (Noradrenalina de escolha) para manter PAM ≥ 65 mmHg se hipotensão refratária\"\n    ]\n  }\n}\n```\n\n---\n\n## 5. Esquema Antibiótico Padrão-Ouro & Tempo de Tratamento\n\n### Esquema de Primeira Escolha Hospitalar\nO tratamento da endometrite puerperal exige internação hospitalar e antibioticoterapia intravenosa de amplo espectro:\n\n| Fármaco | Posologia Recomendada | Espectro Antimicrobiano Coberto |\n| :--- | :--- | :--- |\n| **Clindamicina** | **900 mg IV a cada 8 horas** | Anaeróbios estritos (inclusive *Bacteroides*) + Cocos Gram-positivos |\n| **Gentamicina** | **5 mg/kg IV em dose única diária** (ou $1,5\\text{ mg/kg}$ IV 8/8h) | Bacilos Gram-negativos entéricos facultativos (*E. coli*, *Klebsiella*) |\n\n### Esquemas Alternativos e Adições\n* **Adição de Ampicilina (2g IV 6/6h):** Deve ser associada ao esquema de Clindamicina + Gentamicina quando houver **suspeita de infecção por *Enterococcus faecalis*** (puérperas graves, instrumentadas, com toques múltiplos) ou se a paciente mantiver febre após 48 a 72 horas de tratamento inicial.\n* **Monoterapia de Amplo Espectro:** Amoxicilina + Clavulanato IV, Ampicilina + Sulbactam IV ou Cefoxitina IV são opções aceitas em protocolos institucionais.\n* **Alergia Severa à Penicilina / Clindamicina:** Gentamicina + Metronidazol 500mg IV 8/8h.\n\n### Duração do Tratamento & Critério de Alta Hospitalar\n* **Quando suspender a antibioticoterapia venosa?**\n  * A antibioticoterapia intravenosa deve ser mantida até que a puérpera permaneça **afebril e assintomática por 48 horas consecutivas**, com normalização do trânsito intestinal e redução da dor uterina.\n* **É necessário passar para antibiótico oral após a alta?**\n  * **NÃO!** As diretrizes internacionais (ACOG, CDC) e a FEBRASGO são unânimes: **não há benefício clínico em prescrever antibióticos orais ambulatoriais** para casa após o alcance da cura clínica hospitalar venosa.\n\n---\n\n## 6. O Que Mudou na Diretriz Recente? (Ruptura de Paradigma)\n\n| Ponto de Conduta | Prática Antiga (Pegadinha das Bancas) | Nova Conduta Oficial Homologada | Diretriz Vigente / Ano |\n| :--- | :--- | :--- | :--- |\n| **Momento da Cefazolina Profilática na Cesárea** | Administrada apenas *após o clampeamento do cordão umbilical*, temendo depressão neonatal ou alteração de culturas no recém-nascido. | **Administrada 30 a 60 minutos ANTES da incisão cirúrgica (na indução anestésica).** Ensaios clínicos demonstraram redução de 50% na endometrite sem impacto adverso no neonato. | **FEBRASGO (2024) / ACOG Practice Bulletin** |\n| **Dose de Cefazolina na Puérpera Obesa** | Dose padrão fixa de 2g IV para todas as pacientes, independentemente da massa corporal. | **Cefazolina 3g IV** para gestantes com peso $\\ge 120\\text{ kg}$ ou $\\text{IMC} \\ge 35\\text{ kg/m}^2$, garantindo concentração tecidual bactericida no tecido adiposo. | **CDC / FEBRASGO (2023-2025)** |\n| **Posologia da Gentamicina na Endometrite** | Fracionamento em 3 tomadas diárias ($1,5\\text{ mg/kg}$ IV a cada 8 horas). | **Dose única diária ($5\\text{ mg/kg}$ IV a cada 24 horas).** Mesma eficácia bactericida por efeito pico-dependente e menor taxa de nefro/ototoxicidade materna. | **Williams Obstetrícia 26ª ed. / FEBRASGO** |\n| **Antibioticoterapia Pós-Alta** | Prescrição de 7 a 10 dias de cefalexina ou amoxicilina oral após a alta hospitalar. | **Suspensão completa após 48 horas afebril e assintomática.** Prescrição oral ambulatorial foi formalmente abandonada por selecionar resistência bacteriana. | **ACOG / FEBRASGO Consensos Recentes** |\n\n> [!IMPORTANT] Alerta de Atualização para Provas de 2024-2026:\n> Se a questão do concurso afirmar que a Cefazolina profilática na cesárea deve ser infundida \"logo após o obstetra clampear o cordão umbilical\", considere a assertiva **INCORRETA**. As bancas contemporâneas cobram a administração de 30 a 60 minutos antes da incisão na pele (indução anestésica).\n\n---\n\n## 7. Febre Persistente após 48 a 72 Horas: Algoritmo Decisório Sequencial\n\nQuando a puérpera tratada com Clindamicina + Gentamicina mantém picos febris após 48 a 72 horas de medicação, a investigação etiológica deve seguir uma ordem lógica rigorosa:\n\n### Passo a Passo da Cascata Decisória\n\n```clinical-scheme\n{\n  \"type\": \"pipeline\",\n  \"title\": \"Pipeline de Investigação da Febre Puerperal Persistente (> 48-72h de ATB)\",\n  \"subtitle\": \"Sequência lógica armada obrigatória diante de falha do esquema Clindamicina + Gentamicina\",\n  \"badge\": \"Diretriz ACOG / FEBRASGO\",\n  \"steps\": [\n    {\n      \"badge\": \"Etapa 1 • Exame Inicial de Escolha\",\n      \"title\": \"Ultrassonografia Pélvica & Hemoculturas\",\n      \"items\": [\n        \"Coleta imediata de 2 pares de hemoculturas e urinocultura.\",\n        \"USG Pélvica / Transvaginal: Avaliar espessamento endometrial, restos ovulares e coleções.\",\n        \"Hematoma de parede ou abscesso incisional superficial / subaponeurótico.\"\n      ],\n      \"alert\": \"A presença de gás na cavidade antes do 5º dia pode ser fisiológica pós-cesárea; correlacionar com clínica!\"\n    },\n    {\n      \"badge\": \"Etapa 2 • Resolução Anatômica / Coleções\",\n      \"title\": \"Tomografia Computadorizada de Pelve com Contraste\",\n      \"items\": [\n        \"Padrão-ouro para mapear abscessos profundos e flegmões parametrais.\",\n        \"Mapeamento de trombos nas veias ovarianas e veia cava inferior.\",\n        \"Indicação de drenagem percutânea guiada por TC/USG se coleção > 5 cm.\"\n      ],\n      \"alert\": \"Coleção pélvica volumosa não responde apenas a antibiótico sistêmico; requer drenagem dirigida!\"\n    },\n    {\n      \"badge\": \"Etapa 3 • Diagnóstico de Exclusão\",\n      \"title\": \"Teste Terapêutico com Heparina (TPS)\",\n      \"items\": [\n        \"Suspeita de Tromboflebite Pélvica Séptica: Febre em picos com paciente em bom estado geral.\",\n        \"Exclusão de abscessos e coleções à tomografia.\",\n        \"Heparina Plena (HNF ou HBPM) associada a antibióticos de amplo espectro.\"\n      ],\n      \"alert\": \"Afebril em 48-72h após heparina confirma o diagnóstico clínico de TPS sem necessidade de outro exame!\"\n    }\n  ]\n}\n```\n\n\n* **Passo 1 (Exame Físico Focado):** **[Ponto Principal]:** Inspecionar a incisão cirúrgica da cesárea ou episiorrafia, procurando abaulamento, eritema, hipertermia local, crepitação ou secreção purulenta (pesquisa de celulite, abscesso de parede abdominal ou fasciíte necrotizante).\n* **Passo 2 (Exame de Imagem Dirigido):** **[Ponto Principal]:** Realizar Ultrassonografia Pélvica Transvaginal ou Tomografia Computadorizada de Abdome e Pelve para descartar restos placentários retidos, hematomas infectados, abscesso de fundo de saco de Douglas ou flegmão de ligamento largo.\n* **Passo 3 (Regra de Segurança para Restos Placentários):** **[Ponto Principal]:** Diante de restos ovulares infectados, **é contraindicado curetar de imediato sem cobertura antibiótica prévia**. Deve-se aguardar pelo menos **4 a 6 horas de impregnação antimicrobiana venosa** e estabilização para realizar o esvaziamento uterino (usar cureta romba grande de Romani ou AMIU com máxima suavidade, pelo altíssimo risco de perfuração do miométrio miomalácico).\n* **Passo 4 (Ampliação Antimicrobiana):** **[Ponto Principal]:** Adicionar **Ampicilina 2g IV a cada 6 horas** ao esquema de Clindamicina + Gentamicina para cobrir *Enterococcus faecalis* resistente aos fármacos originais.\n* **Passo 5 (Hipótese de Tromboflebite Pélvica Séptica):** **[Ponto Principal]:** Diante de puérpera com febre persistente em picos (\"em agulha\"), taquicardia acentuada e exame físico pélvico e ultrassonografia normais, suspeitar de **Tromboflebite Pélvica Séptica (TPS)** e iniciar o **Teste Terapêutico da Heparina** (apirexia nas próximas 48 a 72 horas confirma a hipótese).\n\n### Conduta nas Complicações Pélvicas Cirúrgicas Específicas\n* **Flegmão do Ligamento Largo (Parametrite / Celulite Pélvica):** Induração dolorosa unilateral que se estende do colo uterino até a parede lateral da pelve. O tratamento é **estritamente clínico/conservador** com antibioticoterapia venosa prolongada (não se opera a menos que haja formação de abscesso evidente).\n* **Abscesso de Fundo de Saco de Douglas:** Diagnóstico ao toque bimanual e imagem; conduta preferencial é a **drenagem por colpotomia posterior**.\n* **Indicações Formais de Histerectomia Puerperal de Urgência:**\n  1. Microabscessos miometriais múltiplos refratários;\n  2. Necrose miometrial extensa / gangrena gasosa (*Clostridium* / Síndrome de Mondor);\n  3. Sepse grave com falência multiorgânica refratária ao tratamento clínico e debridamento.\n\n---\n\n## 8. Diagnósticos Diferenciais Extragenitais no Puerpério\n\n![**[Achado Visual Cardinal]**: Eritema inflamatório cutâneo bem delimitado em disposição em cunha em quadrante mamário, sem ponto de flutuação palpável. • **[Diagnóstico Associado]**: Mastite puerperal aguda estafilocócica em fase flegmonosa. • **[Ponto Crítico de Prova]**: A presença de mastite febril NÃO contraindica o aleitamento materno; a amamentação deve ser obrigatoriamente mantida sob livre demanda!](/images/clinical/mastite_puerperal.jpg)\n\n\nA febre no puerpério nem sempre se origina na cavidade uterina. O exame clínico minucioso deve distinguir os seguintes sítios infecciosos:\n\n| Patologia | Agente Etiológico Típico | Quadro Clínico de Prova | Conduta Homologada |\n| :--- | :--- | :--- | :--- |\n| **Mastite Puerperal** | *Staphylococcus aureus* (adquirido da nasofaringe do recém-nascido) | Sinais flogísticos localizados em quadrante mamário (dor, calor, rubor, edema em cunha) + febre alta e calafrios (2ª a 3ª semana pós-parto). | **Cefalexina 500mg VO 6/6h** ou Amoxicilina-Clavulanato por 10-14 dias.<br>🚫 **Regra de Ouro (Protocolo ABM #36):** **MANTER AMAMENTAÇÃO MANDATÓRIA** em livre demanda. Contraindicadas massagens vigorosas e hiperordenha mecânica (pioram edema ductal). Crioterapia e AINEs para desinflamar. |\n| **Abscesso Mamário** | *Staphylococcus aureus* | Mastite complicada com massa flutuante dolorosa à palpação mamária. | **Drenagem cirúrgica ou aspiração por agulha guiada por USG** + Antibioticoterapia venosa. Manter amamentação na mama contralateral sã. |\n| **Infecção de Ferida Cirúrgica (Cesárea)** | *Staphylococcus aureus*, *Enterobacteriaceae* | Febre após o 4º-7º DPO com dor incisional, hiperemia de bordas e drenagem de exsudato purulento pela cicatriz cirúrgica. | Abertura dos pontos cirúrgicos, drenagem da secreção, desbridamento de tecidos desvitalizados e curativos úmidos. Antibiótico se celulite adjacente. |\n| **Deiscência / Infecção de Episiorrafia** | Polimicrobiana (flora vaginal e perineal) | Dor perineal intensa, edema, saída de secreção purulenta e afastamento dos bordos da sutura no períneo. | Abertura de suturas infectadas, desbridamento, limpeza mecânica e antibioticoterapia. Estando o leito limpo e com tecido de granulação são, indica-se **ressutura secundária precoce** (não aguardar cicatrização por 2ª intenção). |\n| **Fasciíte Necrosante** | Polimicrobiana (Gram-negativos + Anaeróbios + *S. pyogenes*) | Eritema com flictenas hemorrágicas, anestesia cutânea focal, crepitação subcutânea e choque séptico fulminante. | **Emergência Cirúrgica Extrema:** Desbridamento cirúrgico radical e agressivo em centro cirúrgico + Meropenem + Vancomicina + Clindamicina IV. |\n| **Infecção do Trato Urinário (Pielonefrite)** | *Escherichia coli* (> 80%) | Febre, calafrios, disúria, polaciúria e **Sinal de Giordano positivo** (dor à punho-percussão lombar). | Urocultura + Ceftriaxona 1g IV ao dia ou Ciprofloxacino (se não lactante). Rastreio obrigatório após cateterismo vesical. |\n| **Atelectasia Pulmonar** | Mecânica / Hipoventilação pós-anestésica | Febre baixa nas primeiras 24 a 48 horas pós-cesárea com diminuição de murmúrio vesicular nas bases. | Fisioterapia respiratória, tosse assistida e deambulação precoce; dispensados antibióticos. |\n\n---\n\n## 9. Diretrizes Oficiais & Consensos de Referência\n\n1. **FEBRASGO (Federação Brasileira das Associações de Ginecologia e Obstetrícia):** *Protocolos de Conduta em Infecções Puerperais e Choque Séptico em Obstetrícia* (Comissão Nacional Especializada em Urgências Obstétricas, 2022–2025).\n2. **Ministério da Saúde do Brasil:** *Cadernos de Atenção Básica nº 32 - Atenção ao Pré-Natal e Puerpério* e *Manual de Gestação de Alto Risco* (Secretaria de Atenção Primária à Saúde).\n3. **American College of Obstetricians and Gynecologists (ACOG):** Practice Bulletin nº 195 (*Prevention of Infection After Gynecologic and Obstetric Surgery*) e Practice Bulletin nº 211 (*Critical Care in Obstetrics*).\n4. **Academy of Breastfeeding Medicine (ABM):** Clinical Protocol #36 (*The Mastitis Spectrum*, Revised 2022/2023).\n5. **Surviving Sepsis Campaign / FEBRASGO:** *International Guidelines for Management of Sepsis and Septic Shock in Obstetric Patients*.\n6. **Centers for Disease Control and Prevention (CDC):** *Guideline for the Prevention of Surgical Site Infection* (Atualizações pós-operatórias em obstetrícia).\n7. **Williams Obstetrics:** Cunningham FG, Leveno KJ, Bloom SL, et al. *Williams Obstetrics*, 26th Edition. McGraw-Hill Education (Capítulo 37: Puerperal Infections).\n8. **World Health Organization (WHO):** *WHO recommendations for prevention and treatment of maternal peripartum infections* (Genebra, Suíça).\n"
   }
 ];

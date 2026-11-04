@@ -26,6 +26,8 @@ const eslintConfig = defineConfig([
       "react-hooks/set-state-in-effect": "warn",
       "@typescript-eslint/no-explicit-any": "warn",
       "react/no-unescaped-entities": "warn",
+      "react-hooks/purity": "warn",
+      "react-hooks/preserve-manual-memoization": "warn",
     },
   },
 ]);

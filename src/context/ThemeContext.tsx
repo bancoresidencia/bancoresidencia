@@ -450,8 +450,27 @@ export function getEffectiveAccentConfig(accent: AccentColor, mode: ThemeMode): 
 }
 
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [mode, setModeState] = useState<ThemeMode>('dark');
-  const [accent, setAccentState] = useState<AccentColor>('blue');
+  // Inicialização síncrona do tema a partir do localStorage para evitar flash de modo escuro/claro
+  const [mode, setModeState] = useState<ThemeMode>(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const savedMode = localStorage.getItem('banco_theme_mode') as ThemeMode | null;
+        if (savedMode === 'dark' || savedMode === 'light') return savedMode;
+      } catch {}
+    }
+    return 'dark';
+  });
+
+  const [accent, setAccentState] = useState<AccentColor>(() => {
+    if (typeof window !== 'undefined') {
+      try {
+        const savedAccent = localStorage.getItem('banco_accent_color') as AccentColor | null;
+        if (savedAccent && ACCENT_CONFIGS[savedAccent]) return savedAccent;
+      } catch {}
+    }
+    return 'blue';
+  });
+
   const [isMounted, setIsMounted] = useState<boolean>(false);
   const [isDashboardCustomizing, setIsDashboardCustomizing] = useState<boolean>(false);
   const [canCustomizeLayout, setCanCustomizeLayoutState] = useState<boolean>(false);
@@ -474,18 +493,6 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   const isInitialMount = useRef(true);
 
   useEffect(() => {
-    try {
-      const savedMode = localStorage.getItem('banco_theme_mode') as ThemeMode | null;
-      if (savedMode === 'dark' || savedMode === 'light') {
-        setModeState(savedMode);
-      }
-      const savedAccent = localStorage.getItem('banco_accent_color') as AccentColor | null;
-      if (savedAccent && ACCENT_CONFIGS[savedAccent]) {
-        setAccentState(savedAccent);
-      }
-    } catch {
-      // ignore
-    }
     setIsMounted(true);
   }, []);
 
@@ -566,7 +573,7 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     } catch {
       // ignore
     }
-  }, [mode, accent, isMounted]);
+  }, [mode, accent]);
 
   const toggleMode = () => {
     setModeState((prev) => {

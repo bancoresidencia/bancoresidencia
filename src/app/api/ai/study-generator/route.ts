@@ -1,17 +1,17 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { supabase } from '@/lib/supabase';
 import { callVertexAi } from '@/lib/vertexAi';
-import { callGeminiAi, parseCleanJson } from '@/lib/gemini';
+import { callGeminiAi } from '@/lib/gemini';
 import { medicalKnowledgeService, KnowledgeChunk } from '@/services/medicalKnowledgeService';
+import { guidelinesKnowledgeService } from '@/services/guidelinesKnowledgeService';
 
 export const dynamic = 'force-dynamic';
-export const maxDuration = 60; // Permite execuções de até 60 segundos em geração de IA
+export const maxDuration = 60; // Janela exclusiva de 60s dedicada 100% à qualidade do resumo
 
 export interface StudyGeneratorRequest {
   especialidade: string;
   tema: string;
   foco: string;
-  type?: 'summary' | 'flashcards' | 'both';
   mode?: 'hybrid' | 'vertex_only' | 'aistudio_only';
   customGuidelineText?: string;
 }
@@ -35,7 +35,6 @@ export async function POST(req: NextRequest) {
       especialidade,
       tema,
       foco,
-      type = 'both',
       mode = 'hybrid',
       customGuidelineText
     } = body;
@@ -49,9 +48,11 @@ export async function POST(req: NextRequest) {
 
     // =========================================================================
     // ETAPA 1: CENSO ESTATÍSTICO DAS QUESTÕES (SUPABASE)
+    // Tolerância zero a dados falsos: se não houver dados, o resumo registra erro
     // =========================================================================
     let totalQuestions = 0;
     const subfocoMap = new Map<string, number>();
+    let hasCensusError = false;
 
     try {
       const { data: questions, count } = await supabase
@@ -67,13 +68,16 @@ export async function POST(req: NextRequest) {
           const sub = (q.subfoco || 'Manejo Geral & Diagnóstico').trim();
           subfocoMap.set(sub, (subfocoMap.get(sub) || 0) + 1);
         });
+      } else {
+        hasCensusError = true;
       }
     } catch (dbErr) {
-      console.warn('[StudyGenerator] Falha ao consultar questões no Supabase, usando estimativa proporcional:', dbErr);
+      console.warn('[StudyGenerator] Falha ao consultar questões no Supabase:', dbErr);
+      hasCensusError = true;
     }
 
     const examStats: ExamStatItem[] = [];
-    if (subfocoMap.size > 0 && totalQuestions > 0) {
+    if (!hasCensusError && subfocoMap.size > 0 && totalQuestions > 0) {
       const sorted = Array.from(subfocoMap.entries()).sort((a, b) => b[1] - a[1]).slice(0, 7);
       sorted.forEach(([name, count], idx) => {
         const pct = Math.round((count / totalQuestions) * 100);
@@ -87,26 +91,38 @@ export async function POST(req: NextRequest) {
           themeClue: `Foco de cobrança frequente em bancas nacionais (ENARE, USP, etc.)`
         });
       });
-    } else {
-      totalQuestions = 480;
-      examStats.push(
-        { name: 'Manejo Clínico & Diagnóstico Inicial', shortName: 'Manejo Inicial', percentage: 46, questionCount: 220, priority: 'Crítica', color: '#3B82F6', themeClue: 'Critérios diagnósticos e condutas imediatas de emergência' },
-        { name: 'Classificação de Gravidade & Critérios', shortName: 'Classificação', percentage: 32, questionCount: 154, priority: 'Alta', color: '#10B981', themeClue: 'Escores e estadiamentos mais cobrados nas provas' },
-        { name: 'Complicações & Refratariedade', shortName: 'Complicações', percentage: 22, questionCount: 106, priority: 'Média', color: '#EC4899', themeClue: 'Indicações de controle de danos e cirurgia' }
-      );
     }
 
     // =========================================================================
-    // ETAPA 2: RECUPERAÇÃO SEMÂNTICA (341 LIVROS DA BASE DE CONHECIMENTO)
+    // ETAPA 2: RECUPERAÇÃO SEMÂNTICA TEMPORAL (1.337 DIRETRIZES + 350 LIVROS)
+    // Priorização compulsória de consensos recentes (2024–2026 sobre antigos)
     // =========================================================================
     let retrievedChunksText = '';
+
+    // 1. Busca no acervo de 1.337 Diretrizes Oficiais locais com time-decay
+    try {
+      const localGuidelines = await guidelinesKnowledgeService.retrieveTopGuidelines({
+        especialidade,
+        tema,
+        foco,
+        maxChunks: 4
+      });
+
+      if (localGuidelines.formattedText) {
+        retrievedChunksText += localGuidelines.formattedText;
+      }
+    } catch (locErr) {
+      console.warn('[StudyGenerator] Erro ao recuperar diretrizes locais:', locErr);
+    }
+
+    // 2. Busca complementar na base de 350 Livros Oficiais
     try {
       const specBooks = medicalKnowledgeService.getBooksBySpecialty(especialidade);
       if (specBooks && specBooks.length > 0) {
         const matchingBook = specBooks.find(b => 
           b.theme.toLowerCase().includes(foco.toLowerCase()) || 
           b.theme.toLowerCase().includes(tema.toLowerCase())
-        ) || specBooks[0];
+        );
 
         if (matchingBook) {
           const bookContent = await medicalKnowledgeService.fetchBookContent(matchingBook.storagePath);
@@ -116,10 +132,12 @@ export async function POST(req: NextRequest) {
                 c.content.toLowerCase().includes(foco.toLowerCase()) || 
                 c.content.toLowerCase().includes(tema.toLowerCase())
               )
-              .slice(0, 5);
+              .slice(0, 4);
 
-            const chunksToUse = relevant.length > 0 ? relevant : bookContent.chunks.slice(0, 4);
-            retrievedChunksText = chunksToUse.map((c: KnowledgeChunk) => `[FONTE OFICIAL: ${matchingBook.theme}]\n${c.content}`).join('\n\n');
+            if (relevant.length > 0) {
+              const bookChunks = relevant.map((c: KnowledgeChunk) => `[TRATADO DE REFERÊNCIA: ${matchingBook.theme}]\n${c.content}`).join('\n\n');
+              retrievedChunksText += (retrievedChunksText ? '\n\n---\n\n' : '') + bookChunks;
+            }
           }
         }
       }
@@ -131,132 +149,92 @@ export async function POST(req: NextRequest) {
       retrievedChunksText += `\n\n[DIRETRIZ ADICIONAL ENVIADA PELO PRECEPTOR]:\n${customGuidelineText}`;
     }
 
-    const cardTargetCount = totalQuestions > 400 ? 50 : totalQuestions > 150 ? 40 : 30;
-
     let summaryMarkdown = '';
-    let flashcardsData: Array<Record<string, unknown>> = [];
     const providersUsed: Record<string, string> = {};
 
+    // Serialização dos dados censitários para injeção no markdown
+    const examStatsJsonString = examStats.length > 0
+      ? JSON.stringify({ totalQuestions, items: examStats }, null, 2)
+      : '{}';
+
     // =========================================================================
-    // ETAPA 3: GERAÇÃO DO RESUMO CLÍNICO CANÔNICO (VERTEX AI / CLAUDE / PRO)
+    // ETAPA 3: GERAÇÃO EXCLUSIVA DO RESUMO CLÍNICO CANÔNICO (VERTEX AI / GEMINI PRO)
     // =========================================================================
-    if (type === 'summary' || type === 'both') {
-      const summaryPrompt = `
+    const summaryPrompt = `
 Você é o Preceptor Sênior da Plataforma Banco Residência (Especialidade: ${especialidade}).
 Sua missão é redigir o RESUMO CLÍNICO PADRÃO-OURO de Alto Rendimento para o foco "${foco}" (Tema: "${tema}").
 
-OBEDEÇA ESTRITAMENTE AO DESIGN SYSTEM CANÔNICO (med-study-design-system v2.7.0):
+OBEDEÇA ESTRITAMENTE AO DESIGN SYSTEM CANÔNICO (med-study-design-system v2.8.0):
 
-1. NÃO crie título H1 no corpo do texto (o leitor já renderiza o título oficial).
+1. NÃO crie título H1 no corpo do texto (o leitor da plataforma já renderiza o título oficial).
 2. Seção 1 obrigatória: "## 1. O Que Mais Cai nas Provas de Residência Médica"
    - Apresente um parágrafo analítico curto mencionando a cobrança nas bancas líderes (ENARE, USP, UNICAMP, PSU-MG).
-   - Insira o token do componente de estatísticas exatamente assim:
+   - Insira o token do componente Donut Recharts serializando os dados reais em JSON exatamente assim:
    \`\`\`exam-stats
-   Recorrência Temática de ${foco}
+${examStatsJsonString}
    \`\`\`
-3. Seção 2 obrigatória: "## 2. Definições Modernas & Parâmetros de Gravidade"
-   - Diferencie o conceito clássico vs. atualizado pelas diretrizes oficiais.
-   - Use caixas de pegadinha obrigatórias:
-     > [!WARNING] Armadilha Clássica de Prova: [Explicar o distrator que a banca usa para derrubar o candidato]
-   - Fórmulas clínicas matemáticas devem usar LaTeX centralizado: $$\\text{Nome} = \\frac{A}{B}$$
-4. Seção 3 obrigatória: Esquema em Matriz 2x2:
-   - Divida em 4 quadrantes objetivos com badges e microcopy arejado.
-5. Seção 4 obrigatória: "## Algoritmo Decisório & Conduta Imediata"
-   - PRECEDIDO OBRIGATORIAMENTE por um "Passo a Passo Sintético da Cascata Decisória" numerado (Passos 1 a 4).
+3. PROIBIÇÃO ABSOLUTA DE META-TÍTULOS ABSTRATOS:
+   - É terminantemente proibido utilizar títulos como "## 2. Definições Modernas", "## 3. Matriz 2x2" ou "## 4. Algoritmo Decisório".
+   - CADA CABEÇALHO ## DEVE CONTER O NOME CLÍNICO REAL DA PATOLOGIA, CRITÉRIO, ESTADIAMENTO OU CONDUTA.
+   (Exemplo: "## 2. Critérios Diagnósticos, Quadro Clínico & Parâmetros de Gravidade de ${foco}", "## 4. Cascata Farmacológica Escalonada & Condutas de Emergência").
+   Esses títulos alimentam diretamente a barra flutuante de navegação rápida (sectionPills) do estudante.
+4. SEÇÃO MANDATÓRIA DE RUPTURA DE PARADIGMA:
+   Insira a subseção comparativa destacando as mudanças recentes de conduta:
+   ### 🔄 O Que Mudou na Diretriz Recente? (Ruptura de Paradigma)
+   Apresente uma tabela comparativa com:
+   | Ponto de Conduta | Prática Antiga (Pegadinha Frequente das Bancas) | Nova Conduta Oficial Homologada | Diretriz Vigente / Ano |
+   Destaque a pegadinha clássica em que as bancas usam a conduta antiga revogada como distrator.
+5. ESQUEMAS VISUAIS NATIVOS EM MATRIZ 2x2 (GRADE) & TABELAS:
+   - Para classificações de 4 elementos ou polaridades (Risco vs Proteção), estruture em Matriz 2x2 (2 colunas x 2 linhas) com badges e microcopy arejado.
+   - Para estadiamentos extensos e tabelas de doses/drogas, use tabelas nativas de markdown com alinhamento explícito (| :--- | :---: | :--- |).
+6. ALGORITMO DECISÓRIO & PASSO A PASSO SINTÉTICO:
+   - Precedendo qualquer fluxograma, apresente de 3 a 5 passos numerados objetivos.
    - Cada passo deve abrir com: "**[Ponto Principal]:** [Regra de ouro em negrito]".
    - PROIBIDO USAR MERMAID ESCURO (\`\`\`mermaid). PROIBIDO GERAR SVGs ARTIFICIAIS.
-6. Seção Final obrigatória no rodapé:
+7. FÓRMULAS MÉDICAS EM KATEX:
+   - Fórmulas clínicas matemáticas devem usar LaTeX centralizado elegante: $$\\text{Nome} = \\frac{A}{B}$$
+8. CAIXAS DE AVISO E ARMADILHAS DE PROVA:
+   > [!WARNING] Armadilha Clássica de Prova: [Explicar o distrator que a banca usa para derrubar o candidato]
+9. SEÇÃO FINAL NO RODAPÉ:
    "## Diretrizes Oficiais & Consensos de Referência"
-   - Liste os consensos oficiais aplicáveis (ex: Ministério da Saúde, FEBRASGO, SBC, ATLS, UpToDate).
+   - Liste os consensos oficiais aplicáveis indicando claramente o órgão emissor e o ano (ex: Ministério da Saúde 2024, FEBRASGO 2024, SBC, ATLS 11ª ed).
    - NUNCA coloque referências no topo do resumo.
 
 DADOS ESTATÍSTICOS DO BANCO DE QUESTÕES:
 ${JSON.stringify(examStats, null, 2)}
 
-TRECHOS DA BASE DE LIVROS E DIRETRIZES:
-${retrievedChunksText || 'Utilize as diretrizes médicas oficiais vigentes das sociedades brasileiras e internacionais.'}
+TRECHOS DA BASE DE DIRETRIZES OFICIAIS E LIVROS:
+${retrievedChunksText || 'Utilize as diretrizes médicas oficiais vigentes mais recentes (2024-2026) das sociedades brasileiras e internacionais.'}
 `;
 
-      const systemInstruction = 'Você é um médico preceptor especialista em provas de residência médica. Responda apenas com o markdown canônico cirúrgico, sem introduções ou saudações.';
+    const systemInstruction = 'Você é um médico preceptor especialista em provas de residência médica. Redija o resumo clínico canônico cirúrgico, fundamentado nas diretrizes vigentes mais recentes. Responda apenas com o markdown canônico, sem saudações ou comentários introdutórios.';
 
-      if (mode === 'vertex_only' || mode === 'hybrid') {
-        const vertexRes = await callVertexAi({
-          prompt: summaryPrompt,
-          systemInstruction,
-          model: 'gemini-1.5-pro-002',
-          temperature: 0.1,
-          maxOutputTokens: 8192
-        });
+    if (mode === 'vertex_only' || mode === 'hybrid') {
+      const vertexRes = await callVertexAi({
+        prompt: summaryPrompt,
+        systemInstruction,
+        model: 'gemini-1.5-pro-002',
+        temperature: 0.1,
+        maxOutputTokens: 8192
+      });
 
-        summaryMarkdown = vertexRes.content;
-        providersUsed.summary = `${vertexRes.provider} (${vertexRes.modelUsed})`;
-      } else {
-        const fullPrompt = `${systemInstruction}\n\n${summaryPrompt}`;
-        summaryMarkdown = await callGeminiAi(fullPrompt, {
-          temperature: 0.1
-        });
-        providersUsed.summary = 'google_ai_studio (gemini-flash)';
-      }
+      summaryMarkdown = vertexRes.content;
+      providersUsed.summary = `${vertexRes.provider} (${vertexRes.modelUsed})`;
+    } else {
+      const fullPrompt = `${systemInstruction}\n\n${summaryPrompt}`;
+      summaryMarkdown = await callGeminiAi(fullPrompt, {
+        temperature: 0.1
+      });
+      providersUsed.summary = 'google_ai_studio (gemini-flash)';
     }
 
     // =========================================================================
-    // ETAPA 4: GERAÇÃO DOS FLASHCARDS FSRS (AI STUDIO / VERTEX FLASH)
-    // =========================================================================
-    if (type === 'flashcards' || type === 'both') {
-      const flashcardsPrompt = `
-Gere exatamente ${cardTargetCount} flashcards médicos de alto rendimento no padrão FSRS para o tema "${foco}" (${especialidade}).
-
-REGRAS ESTRITAS DE ENGENHARIA DE FLASHCARDS:
-1. Verso curto e cirúrgico: MÁXIMO DE 120 CARACTERES.
-2. Comentário explicativo opcional: MÁXIMO DE 350 CARACTERES.
-3. Tipologia balanceada:
-   - 40% Perguntas Diretas de conduta e primeira escolha.
-   - 40% Cloze Deletion (apenas oculte a palavra de ruptura clínica usando {{c1::termo}}).
-   - 20% Mini-Casos de Pronto-Socorro com conduta imediata.
-4. Baseie-se nos pontos de maior recorrência estatística:
-${JSON.stringify(examStats.map(s => ({ subfoco: s.name, prioridade: s.priority })), null, 2)}
-
-Retorne ESTRITAMENTE um array JSON no formato:
-[
-  {
-    "type": "direct | cloze | clinical_case",
-    "front": "Pergunta objetiva ou mini-caso",
-    "back": "Resposta concisa (<= 120 caracteres)",
-    "explanation": "Comentário de apoio com diretriz oficial (<= 350 caracteres)",
-    "difficulty": "facil | medio | dificil",
-    "subtopic": "Nome do subfoco correspondente"
-  }
-]
-`;
-
-      let rawCardsJson = '';
-      if (mode === 'vertex_only') {
-        const vertexCards = await callVertexAi({
-          prompt: flashcardsPrompt,
-          model: 'gemini-1.5-flash-002',
-          responseMimeType: 'application/json',
-          temperature: 0.1
-        });
-        rawCardsJson = vertexCards.content;
-        providersUsed.flashcards = `${vertexCards.provider} (${vertexCards.modelUsed})`;
-      } else {
-        const fullPrompt = `Você é um gerador estruturado de flashcards médicos FSRS. Retorne exclusivamente JSON.\n\n${flashcardsPrompt}`;
-        rawCardsJson = await callGeminiAi(fullPrompt, {
-          temperature: 0.1,
-          responseMimeType: 'application/json'
-        });
-        providersUsed.flashcards = 'google_ai_studio_free_tier (gemini-flash)';
-      }
-
-      flashcardsData = parseCleanJson(rawCardsJson) || [];
-    }
-
-    // =========================================================================
-    // ETAPA 5: AUDITORIA DO QUALITY GATE (VALIDAÇÃO AUTOMATIZADA)
+    // ETAPA 4: QUALITY GATE & VALIDAÇÃO AUTOMATIZADA
     // =========================================================================
     const validationChecks: Array<{ check: string; status: 'passed' | 'warning' | 'failed'; detail: string }> = [];
 
     if (summaryMarkdown) {
+      // 1. Proibição de Mermaid escuro
       const hasMermaid = summaryMarkdown.includes('```mermaid');
       validationChecks.push({
         check: 'CHECK-DESIGN-MERMAID: Zero diagramas Mermaid escuros',
@@ -264,6 +242,7 @@ Retorne ESTRITAMENTE um array JSON no formato:
         detail: hasMermaid ? 'Mermaid escuro detectado no resumo. Deve ser substituído por componentes nativos.' : 'Resumo limpo sem blocos Mermaid.'
       });
 
+      // 2. Referências no rodapé
       const hasRefBottom = summaryMarkdown.toLowerCase().includes('diretrizes oficiais') || summaryMarkdown.toLowerCase().includes('referências');
       validationChecks.push({
         check: 'CHECK-DESIGN-REFS: Referências no rodapé',
@@ -271,24 +250,46 @@ Retorne ESTRITAMENTE um array JSON no formato:
         detail: hasRefBottom ? 'Seção de diretrizes posicionada no rodapé.' : 'Seção de referências ausente.'
       });
 
+      // 3. Proibição de SVGs sintéticos
       const hasSvg = summaryMarkdown.includes('data:image/svg+xml');
       validationChecks.push({
         check: 'CHECK-DESIGN-SVG: Zero SVGs sintéticos',
         status: hasSvg ? 'failed' : 'passed',
         detail: hasSvg ? 'SVGs sintéticos detectados.' : 'Zero SVGs artificiais.'
       });
-    }
 
-    if (flashcardsData && flashcardsData.length > 0) {
-      const longBacks = flashcardsData.filter(c => typeof c.back === 'string' && c.back.length > 120);
+      // 4. Verificação de Titulação Semântica Clínica (sem meta-títulos)
+      const hasMetaTitles = /##\s*(\d+\.)?\s*(Definições|Algoritmo Decisório|Matriz 2x2)/i.test(summaryMarkdown);
       validationChecks.push({
-        check: 'CHECK-CARDS-LENGTH: Verso <= 120 caracteres',
-        status: longBacks.length > 0 ? 'warning' : 'passed',
-        detail: longBacks.length > 0 ? `${longBacks.length} cartões excederam o limite de 120 caracteres.` : 'Todos os versos respeitam o limite canônico.'
+        check: 'CHECK-DESIGN-TITLES: Titulação clínica médica semântica',
+        status: hasMetaTitles ? 'failed' : 'passed',
+        detail: hasMetaTitles
+          ? 'Meta-títulos genéricos encontrados ("Definições" ou "Algoritmo Decisório"). Devem ser substituídos por títulos clínicos reais.'
+          : 'Títulos semânticos clínicos corretos para a barra de navegação rápida.'
+      });
+
+      // 5. Verificação da Seção "O Que Mudou na Diretriz Recente"
+      const hasGuidelineChanges = summaryMarkdown.includes('O Que Mudou na Diretriz') || summaryMarkdown.includes('Ruptura de Paradigma');
+      validationChecks.push({
+        check: 'CHECK-DESIGN-CHANGES: Tabela de Mudanças de Diretriz (Antes vs Agora)',
+        status: hasGuidelineChanges ? 'passed' : 'warning',
+        detail: hasGuidelineChanges
+          ? 'Seção comparativa de transição de diretriz e distratores de prova presente.'
+          : 'Recomenda-se incluir a seção "O Que Mudou na Diretriz Recente" para patologias com atualizações.'
+      });
+
+      // 6. Verificação do Bloco Donut e Censo Estatístico
+      const hasValidExamStats = summaryMarkdown.includes('```exam-stats') && !summaryMarkdown.includes('```exam-stats\n{}\n') && examStats.length > 0;
+      validationChecks.push({
+        check: 'CHECK-DESIGN-CENSUS: Dados do Censo Real no Donut Recharts',
+        status: hasValidExamStats ? 'passed' : 'failed',
+        detail: hasValidExamStats
+          ? `Donut parametrizado com ${examStats.length} fatias do censo real de questões.`
+          : 'ERRO: Dados do censo ausentes ou vazios no bloco exam-stats. A plataforma proíbe dados falsos.'
       });
     }
 
-    // Formata o StudyMaterialItem pronto para salvar na plataforma
+    // Formata o StudyMaterialItem pronto para a plataforma
     const slugFoco = foco.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
     const specPrefix = especialidade.toLowerCase().slice(0, 3);
     const studyMaterialItem = {
@@ -303,32 +304,12 @@ Retorne ESTRITAMENTE um array JSON no formato:
       guidelineBadge: 'Consenso Oficial & Evidência Padrão-Ouro',
       summarySnippet: `Síntese clínica e condutas de alto rendimento para ${foco} baseadas em ${totalQuestions} questões analisadas nas principais bancas examinadoras.`,
       keyPoints: [
-        `Censo estatístico real com ${totalQuestions} questões mapeadas.`,
+        `Censo estatístico real com ${totalQuestions} questões mapeadas no Donut Recharts.`,
         `Passo a passo da cascata decisória e condutas imediatas de emergência.`,
-        `Alertas de pegadinhas frequentes nas bancas ENARE, USP e estaduais.`
+        `Alertas de pegadinhas e distratores de diretrizes anteriores nas bancas ENARE, USP e estaduais.`
       ],
-      markdownContent: summaryMarkdown,
-      flashcardCount: flashcardsData.length
+      markdownContent: summaryMarkdown
     };
-
-    // Formata os FlashcardItem[] prontos para o algoritmo FSRS da plataforma
-    const flashcardItems = flashcardsData.map((c, i) => ({
-      id: `card-${specPrefix}-${slugFoco}-${i + 1}`,
-      specialty: especialidade,
-      theme: tema,
-      focus: foco,
-      subtopic: (c.subtopic as string) || foco,
-      type: (c.type as 'direct' | 'cloze' | 'clinical_case') || 'direct',
-      front: (c.front as string) || '',
-      back: (c.back as string) || '',
-      comment: (c.explanation as string) || '',
-      priority: (c.difficulty === 'facil' ? 'standard' : 'essential') as 'essential' | 'standard',
-      sourceYear: 2026,
-      tags: [especialidade, tema, foco, 'Canônico-FSRS'],
-      timesReviewed: 0,
-      averageSuccessRate: 0.90,
-      totalReviewsInCommunity: 0
-    }));
 
     return NextResponse.json({
       success: true,
@@ -338,17 +319,15 @@ Retorne ESTRITAMENTE um array JSON no formato:
         foco,
         generatedAt: new Date().toISOString(),
         totalExamQuestionsAudited: totalQuestions,
-        cardCount: flashcardsData.length,
         providersUsed
       },
       statistics: {
         totalQuestions,
-        donutData: examStats
+        donutData: examStats,
+        hasCensusError: examStats.length === 0
       },
       summaryMarkdown,
-      flashcards: flashcardsData,
       studyMaterialItem,
-      flashcardItems,
       qualityGate: {
         passed: !validationChecks.some(c => c.status === 'failed'),
         checks: validationChecks

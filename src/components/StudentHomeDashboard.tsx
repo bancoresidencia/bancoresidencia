@@ -1878,6 +1878,85 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
     const commandToUse = (customPrompt !== undefined ? customPrompt : aiUserCommand).trim();
 
+    // 1. Horário atual (minutos do dia) para evitar alocação no passado
+    const nowObj = new Date();
+    const currentH = simulatedHour !== null ? simulatedHour : nowObj.getHours();
+    const currentM = nowObj.getMinutes();
+    const currentMinutes = currentH * 60 + currentM;
+    const currentTimeStr = `${String(currentH).padStart(2, '0')}:${String(currentM).padStart(2, '0')}`;
+
+    // 2. Extrai subtemas críticos com pior acurácia
+    const weaknessesList: Array<{ subtopic: string; specialty: string; accuracy: number }> = [];
+    if (userAnswers && Object.keys(userAnswers).length > 0) {
+      const themeMap: Record<string, { total: number; correct: number; specialty: string }> = {};
+      Object.values(userAnswers).forEach((ans) => {
+        if (ans.tema) {
+          const t = ans.tema.trim();
+          if (!themeMap[t]) themeMap[t] = { total: 0, correct: 0, specialty: ans.specialty || 'Geral' };
+          themeMap[t].total += 1;
+          if (ans.isCorrect) themeMap[t].correct += 1;
+        }
+      });
+      Object.entries(themeMap)
+        .filter(([, data]) => data.total >= 2)
+        .map(([subtopic, data]) => ({
+          subtopic,
+          specialty: data.specialty,
+          accuracy: Math.round((data.correct / data.total) * 100)
+        }))
+        .filter(item => item.accuracy < 50)
+        .sort((a, b) => a.accuracy - b.accuracy)
+        .slice(0, 5)
+        .forEach(w => weaknessesList.push(w));
+    }
+
+    if (weaknessesList.length === 0) {
+      const recId = recommendedArea?.id || 'clinica';
+      const defaults = CRITICAL_SUBTOPICS_MAP[recId] || CRITICAL_SUBTOPICS_MAP['clinica'] || [];
+      defaults.forEach(d => {
+        weaknessesList.push({
+          subtopic: d.name,
+          specialty: recommendedArea?.label || 'Clínica Médica',
+          accuracy: d.defaultAccuracy
+        });
+      });
+    }
+
+    // 3. Desempenho geral e por áreas
+    const performanceSummary = {
+      overallAccuracy: stats.totalAnswered > 0 ? (stats.accuracyRate || 0) : 0,
+      totalAnswered: stats.totalAnswered || 0,
+      areas: (areasResumo || []).map(a => ({
+        name: a.label,
+        accuracy: a.accuracy,
+        totalTested: a.total
+      }))
+    };
+
+    // 4. Caderno de erros pendentes
+    const errorNotebookData = {
+      pendingCount: pendingErrorsCount,
+      mostCriticalSpecialty: mostCriticalArea?.name || recommendedArea?.label || 'Clínica Médica'
+    };
+
+    // 5. Revisão espaçada FSRS
+    const fsrsData = {
+      dueToday: flashcardsStats?.dueToday || 0,
+      overdueCount: flashcardsStats?.dueToday || 0,
+      total: flashcardsStats?.total || 0,
+      desiredRetention: flashcardsStats?.desiredRetention || 90
+    };
+
+    // 6. Cronobiologia e energia cognitiva real
+    const cognitiveData = {
+      hasData: cognitiveEnergyStats.hasData,
+      bestShift: cognitiveEnergyStats.bestShift,
+      morning: { taxa: cognitiveEnergyStats.morning.taxa, resolvidas: cognitiveEnergyStats.morning.resolvidas },
+      afternoon: { taxa: cognitiveEnergyStats.afternoon.taxa, resolvidas: cognitiveEnergyStats.afternoon.resolvidas },
+      night: { taxa: cognitiveEnergyStats.night.taxa, resolvidas: cognitiveEnergyStats.night.resolvidas },
+      fatigueAlert: cognitiveEnergyStats.fatigueAlert
+    };
+
     try {
       const res = await fetch('/api/ai/schedule-optimizer', {
         method: 'POST',
@@ -1885,12 +1964,20 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
         body: JSON.stringify({
           events: realCalendarEvents,
           userCommand: commandToUse,
+          currentMinutes,
           userContext: {
+            currentTime: currentTimeStr,
+            currentMinutes,
             recommendedArea: recommendedArea?.label || 'Clínica Médica',
             targetExamName: targetExamName || 'ENARE 2026',
             dailyGoal: dailyGoal || 30,
             todayAnswered: todayAnswered || 0,
-            todayStudyMinutes: todayStudyMinutes || 0
+            todayStudyMinutes: todayStudyMinutes || 0,
+            performance: performanceSummary,
+            criticalWeaknesses: weaknessesList,
+            errorNotebook: errorNotebookData,
+            spacedRepetition: fsrsData,
+            cognitiveEnergy: cognitiveData
           }
         }),
         signal: AbortSignal.timeout(15000)
@@ -1912,40 +1999,69 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       }
     } catch (err: any) {
       console.warn('Falha na análise de IA:', err);
-      // Fallback heurístico imediato para nunca travar
+      // Fallback heurístico inteligente enriquecido
       const customHint = commandToUse ? ` (orientado por: "${commandToUse}")` : '';
+      const topWeakness = weaknessesList[0];
+      const dueFsrs = fsrsData.dueToday;
+
       setScheduleAiAnalysis({
-        summary: `Plano inteligente adaptado${customHint}. Intervalos livres identificados para intercalar treino de questões e fixação espaçada hoje.`,
+        summary: `Plano adaptativo gerado pelo Preceptor${customHint}. Intervalos livres cruzados com suas vulnerabilidades clínicas e revisão espaçada.`,
         freeGaps: [
-          { startTime: '09:00', endTime: '12:00', durationMinutes: 180 },
-          { startTime: '14:00', endTime: '18:00', durationMinutes: 240 }
+          { startTime: '14:00', endTime: '16:00', durationMinutes: 120 },
+          { startTime: '19:30', endTime: '21:00', durationMinutes: 90 }
         ],
         suggestions: [
           {
-            id: `ai_sug_${Date.now()}_1`,
-            title: `Treino de Questões TRI: ${recommendedArea?.label || 'Clínica Médica'}`,
+            id: 'ai_sug_fallback_1',
+            title: `Treino TRI: ${topWeakness ? `${topWeakness.specialty} (${topWeakness.subtopic})` : (recommendedArea?.label || 'Clínica Médica')}`,
             category: 'estudo',
             startTime: '14:00',
-            endTime: '15:30',
+            endTime: '15:15',
             startMinutes: 840,
-            endMinutes: 930,
+            endMinutes: 915,
             source: 'plataforma',
             action: 'treinar',
-            description: commandToUse ? `Foco customizado: ${commandToUse}` : 'Treino de alta densidade focado na sua área prioritária com gabarito comentado',
-            rationale: 'Janela ampla para resolução intensiva de questões com calibração TRI.'
+            description: commandToUse ? `Foco customizado: ${commandToUse}` : `Treino direcionado de alta densidade no subtema mais vulnerável do seu Raio-X`,
+            rationale: 'Janela de boa energia mental para resolução de questões com padrão da banca.',
+            aiDecision: {
+              whyThisTopic: topWeakness
+                ? `Seu Raio-X indica apenas ${topWeakness.accuracy}% de acerto em ${topWeakness.subtopic}.`
+                : `Área de maior peso com necessidade de reforço para o ${targetExamName}.`,
+              whyThisTime: 'Horário contínuo que favorece imersão e raciocínio clínico sem interrupções.',
+              pedagogicalObjective: 'Sanar pontos cegos de alta incidência na prova.',
+              decisionBadges: [
+                { type: 'weakness', label: `Ponto Cego: ~${topWeakness?.accuracy ?? 30}% acerto` },
+                { type: 'exam_weight', label: targetExamName || 'ENARE 2026' }
+              ]
+            }
           },
           {
-            id: `ai_sug_${Date.now()}_2`,
-            title: 'Revisão de Flashcards FSRS',
-            category: 'flashcard',
-            startTime: '15:45',
-            endTime: '16:45',
-            startMinutes: 945,
-            endMinutes: 1005,
+            id: 'ai_sug_fallback_2',
+            title: dueFsrs > 0 ? 'Revisão Espaçada FSRS (Flashcards Críticos)' : 'Caderno de Erros (Reteste Metacognitivo)',
+            category: dueFsrs > 0 ? 'flashcard' : 'revisao',
+            startTime: '19:30',
+            endTime: '20:15',
+            startMinutes: 1170,
+            endMinutes: 1215,
             source: 'plataforma',
-            action: 'flashcards',
-            description: 'Baralho espaçado ativo FSRS para retenção de longo prazo',
-            rationale: 'Fixação rápida sem fadiga cognitiva após bloco de questões.'
+            action: dueFsrs > 0 ? 'flashcards' : 'caderno_erros',
+            description: dueFsrs > 0
+              ? `Baralho inteligente: ${dueFsrs} card(s) aguardando revisão para blindar sua memória de longo prazo`
+              : `Reteste de ${pendingErrorsCount} questões erradas recentemente para converter falhas em acertos`,
+            rationale: 'Estudo ativo de menor carga extrínseca para consolidar retenção antes do descanso.',
+            aiDecision: {
+              whyThisTopic: dueFsrs > 0
+                ? `Você possui ${dueFsrs} flashcard(s) vencendo hoje pelo algoritmo FSRS.`
+                : `Existem ${pendingErrorsCount} erro(s) não recuperados aguardando revisão.`,
+              whyThisTime: 'Período noturno ideal para repetição mnemônica sem fadiga excessiva.',
+              pedagogicalObjective: 'Garantir retenção duradoura na curva de esquecimento.',
+              decisionBadges: [
+                dueFsrs > 0
+                  ? { type: 'fsrs_due', label: `${dueFsrs} FSRS Vencendo` }
+                  : { type: 'error_retest', label: `${pendingErrorsCount} Erros p/ Reteste` },
+                { type: 'fatigue_relief', label: 'Carga Leve Anti-Fadiga' }
+              ]
+            }
           }
         ]
       });

@@ -26,6 +26,8 @@ import { useTheme } from '@/context/ThemeContext';
 import { useSubscription } from '@/context/SubscriptionContext';
 import { useStudentData } from '@/context/StudentDataContext';
 import { ActiveTab } from '@/types';
+import { AdminTabToggle } from '@/components/layout/AdminTabToggle';
+import { TabFeatureGuard } from '@/components/layout/TabFeatureGuard';
 
 interface AppShellProps {
   children: React.ReactNode;
@@ -212,6 +214,9 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
                 </div>
               ) : null}
 
+              {/* Controle de Ativação de Aba no Canto Superior para Administrador */}
+              <AdminTabToggle />
+
               {/* Perfil do Aluno com Dropdown */}
               {user && (
                 <div ref={profileRef} className="relative">
@@ -344,7 +349,7 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
         </header>
 
         {/* 3. Conteúdo da Página da Rota Ativa */}
-        <main className="flex-1 min-w-0">{children}</main>
+        <main className="flex-1 min-w-0"><TabFeatureGuard>{children}</TabFeatureGuard></main>
       </div>
 
       {/* 4. Menu Lateral Retrátil para Telas Mobile */}

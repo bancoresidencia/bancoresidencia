@@ -1,5 +1,17 @@
 export type ScheduleCategory = 'estudo' | 'hospital' | 'revisao' | 'pausa' | 'flashcard' | 'simulado';
 
+export interface AiDecisionBadge {
+  type: 'weakness' | 'energy_peak' | 'fsrs_due' | 'error_retest' | 'exam_weight' | 'fatigue_relief' | 'quick_win';
+  label: string;
+}
+
+export interface AiDecisionDetails {
+  whyThisTopic?: string;
+  whyThisTime?: string;
+  pedagogicalObjective?: string;
+  decisionBadges?: AiDecisionBadge[];
+}
+
 export interface DailyScheduleSlot {
   id: string;
   title: string;
@@ -14,6 +26,7 @@ export interface DailyScheduleSlot {
   action?: 'treinar' | 'caderno_erros' | 'flashcards' | 'mnemonico' | 'simulado';
   isAiSuggested?: boolean;
   rationale?: string;
+  aiDecision?: AiDecisionDetails;
   date?: string; // Formato 'YYYY-MM-DD'
 }
 

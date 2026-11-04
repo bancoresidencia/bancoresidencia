@@ -25,7 +25,7 @@ Os flashcards da plataforma Banco Residência constituem um **acervo canônico d
 ```mermaid
 flowchart TD
     subgraph DADOS_ENTRADA ["1. Camada de Dados & RAG Semântico"]
-        DBQuestoes[("Supabase: 130k+ Questões\n(Censo de Erros & Frequência)")] --> CensoSubfoco["Analisador de Recorrência:\nMatriz de Subfocos Críticos"]
+        AnalyticsFase1[("Supabase: focus_exam_analytics\n(Matriz Estatística Certificada da Fase 1)")] --> CensoSubfoco["Consumo Passivo da Matriz:\nSubfocos Críticos & Dimensionamento Dinâmico"]
         DBLivros[("Supabase Storage: 341 Livros\n(medicalKnowledgeService)")] --> RAGGrounding["Extrator de Fragmentos Canônicos\n(Trechos de Livros & PCDTs)"]
     end
 
