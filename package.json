@@ -48,7 +48,10 @@
     "solve:specialty": "node scripts/batch_solve_specialty.mjs",
     "solve:status": "node scripts/check_resolution_progress.mjs",
     "test:ambassador": "npx tsx scripts/test_ambassador_system.mjs && npx tsx scripts/test_ambassador_api_routes.mjs",
-    "generate:study": "node scripts/generate_canonical_study.mjs"
+    "generate:study": "node scripts/generate_canonical_study.mjs",
+    "audit:medevo:vision": "node scripts/audit_medevo_vision.mjs",
+    "audit:medevo:all": "node scripts/audit_medevo_vision.mjs --target=all",
+    "audit:medevo:sync": "node scripts/sync_vision_hits_to_manifest.mjs"
   },
   "dependencies": {
     "@mercadopago/sdk-react": "^1.0.7",

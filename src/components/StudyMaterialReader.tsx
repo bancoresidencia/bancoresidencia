@@ -53,9 +53,9 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
     // Remove marcadores de bloco $$ ou inline $ se presentes
     text = text.replace(/^\$\$|\$\$$/g, '').replace(/^\$|\$$/g, '');
 
-    // Desempacota recursivamente todas as tags \text{...}
-    while (/\\text\{([^{}]*)\}/.test(text)) {
-      text = text.replace(/\\text\{([^{}]*)\}/g, '$1');
+    // Desempacota recursivamente todas as tags \mathbf{...}, \textbf{...}, \mathrm{...}, \mathit{...}, \text{...}
+    while (/\\(?:mathbf|textbf|mathrm|mathit|text)\{([^{}]*)\}/.test(text)) {
+      text = text.replace(/\\(?:mathbf|textbf|mathrm|mathit|text)\{([^{}]*)\}/g, '$1');
     }
 
     // Desempacota recursivamente frações \frac{num}{den} com suporte a chaves aninhadas
@@ -63,36 +63,36 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
       text = text.replace(/\\frac\s*\{([^{}]+)\}\s*\{([^{}]+)\}/g, '($1 / $2)');
     }
 
-    // Limpeza de operadores e símbolos matemáticos
+    // Limpeza de operadores e símbolos matemáticos (suporta barras simples ou duplas)
     text = text
-      .replace(/\\le\b|\\leq\b/g, '≤')
-      .replace(/\\ge\b|\\geq\b/g, '≥')
-      .replace(/\\approx\b/g, '≈')
-      .replace(/\\to\b|\\rightarrow\b/g, '→')
-      .replace(/\\implies\b|\\Longrightarrow\b|\\Rightarrow\b/g, '⟹')
-      .replace(/\\iff\b|\\Longleftrightarrow\b|\\Leftrightarrow\b/g, '⟺')
-      .replace(/\\quad\b|\\qquad\b/g, '   ')
-      .replace(/\\lor\b/g, ' ou ')
-      .replace(/\\land\b/g, ' e ')
+      .replace(/\\{1,2}(?:le|leq)\b/g, '≤')
+      .replace(/\\{1,2}(?:ge|geq)\b/g, '≥')
+      .replace(/\\{1,2}approx\b/g, '≈')
+      .replace(/\\{1,2}(?:to|rightarrow)\b/g, '→')
+      .replace(/\\{1,2}(?:implies|Longrightarrow|Rightarrow)\b/g, ' ⟹ ')
+      .replace(/\\{1,2}(?:iff|Longleftrightarrow|Leftrightarrow)\b/g, ' ⟺ ')
+      .replace(/\\{1,2}(?:quad|qquad)\b/g, '   ')
+      .replace(/\\{1,2}lor\b/g, ' ou ')
+      .replace(/\\{1,2}land\b/g, ' e ')
       .replace(/\{,\}/g, ',')
-      .replace(/\\cdot\b/g, '·')
-      .replace(/\\neq\b/g, '≠')
-      .replace(/\\infty\b/g, '∞')
-      .replace(/\\Delta\b/g, 'Δ')
-      .replace(/\\left[([{|.]/g, '')
-      .replace(/\\right[)\]}|.]/g, '')
-      .replace(/\\downarrow\b/g, '↓')
-      .replace(/\\uparrow\b/g, '↑')
-      .replace(/\\pm\b/g, '±')
-      .replace(/\\times\b/g, '×')
-      .replace(/\\mu\b/g, 'µ')
-      .replace(/\\%/g, '%')
-      .replace(/\^?\\circ\s*C?\b/g, '°C')
-      .replace(/\\circ\b/g, '°')
-      .replace(/\\begin\{cases\}/g, '')
-      .replace(/\\end\{cases\}/g, '')
+      .replace(/\\{1,2}cdot\b/g, '·')
+      .replace(/\\{1,2}neq\b/g, '≠')
+      .replace(/\\{1,2}infty\b/g, '∞')
+      .replace(/\\{1,2}Delta\b/g, 'Δ')
+      .replace(/\\{1,2}left[([{|.]/g, '')
+      .replace(/\\{1,2}right[)\]}|.]/g, '')
+      .replace(/\\{1,2}downarrow\b/g, '↓')
+      .replace(/\\{1,2}uparrow\b/g, '↑')
+      .replace(/\\{1,2}pm\b/g, '±')
+      .replace(/\\{1,2}times\b/g, '×')
+      .replace(/\\{1,2}mu\b/g, 'µ')
+      .replace(/\\{1,2}%/g, '%')
+      .replace(/\^?\\{1,2}circ\s*C?\b/g, '°C')
+      .replace(/\\{1,2}circ\b/g, '°')
+      .replace(/\\{1,2}begin\{cases\}/g, '')
+      .replace(/\\{1,2}end\{cases\}/g, '')
       .replace(/\\\\/g, '   •   ')
-      .replace(/\\,/g, ' ')
+      .replace(/\\{1,2},/g, ' ')
       .replace(/_\{?(\d+)\}?/g, (_, d) => {
         const subs: Record<string, string> = {
           '0': '₀', '1': '₁', '2': '₂', '3': '₃', '4': '₄',
@@ -316,6 +316,9 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
     let tableHeaders: string[] = [];
     let hasRenderedKeyPoints = false;
 
+    let inMathBlock = false;
+    let mathBlockLines: string[] = [];
+
     const flushTable = (key: string) => {
       if (inTable && tableHeaders.length > 0) {
         elements.push(
@@ -402,22 +405,134 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
         lang === 'gem-stats-corionicidade' ||
         fullCode.includes('Recorrência Temática de Classificação e Diagnóstico de Gemelares')
       ) {
-        elements.push(<GemelaridadeRecurrenceStatsCard key={`gem-cor-${key}`} topic="corionicidade" />);
+        let parsedData: any = null;
+        try {
+          const trimmed = fullCode.trim();
+          if (trimmed.startsWith('{')) parsedData = JSON.parse(trimmed);
+        } catch (e) {
+          console.warn('[StudyMaterialReader] Erro ao decodificar JSON de gem-stats-corionicidade:', e);
+        }
+
+        if (material?.recurrenceStats) {
+          elements.push(
+            <UniversalRecurrenceStatsCard
+              key={`universal-stats-${key}`}
+              analytics={material.recurrenceStats}
+              focusTitle={material.focus}
+            />
+          );
+        } else if (parsedData && Array.isArray(parsedData.donutSlices || parsedData.items)) {
+          elements.push(
+            <UniversalRecurrenceStatsCard
+              key={`universal-stats-${key}`}
+              analytics={parsedData}
+              slices={parsedData.donutSlices || parsedData.items}
+              totalQuestions={parsedData.totalQuestions}
+              focusTitle={material?.focus || parsedData.focus || parsedData.title}
+            />
+          );
+        } else {
+          elements.push(<GemelaridadeRecurrenceStatsCard key={`gem-cor-${key}`} topic="corionicidade" />);
+        }
       } else if (
         lang === 'gem-stats-complicacoes' ||
         fullCode.includes('Recorrência Temática de Complicações da Gemelaridade')
       ) {
-        elements.push(<GemelaridadeRecurrenceStatsCard key={`gem-comp-${key}`} topic="complicacoes" />);
+        let parsedData: any = null;
+        try {
+          const trimmed = fullCode.trim();
+          if (trimmed.startsWith('{')) parsedData = JSON.parse(trimmed);
+        } catch (e) {
+          console.warn('[StudyMaterialReader] Erro ao decodificar JSON de gem-stats-complicacoes:', e);
+        }
+
+        if (material?.recurrenceStats) {
+          elements.push(
+            <UniversalRecurrenceStatsCard
+              key={`universal-stats-${key}`}
+              analytics={material.recurrenceStats}
+              focusTitle={material.focus}
+            />
+          );
+        } else if (parsedData && Array.isArray(parsedData.donutSlices || parsedData.items)) {
+          elements.push(
+            <UniversalRecurrenceStatsCard
+              key={`universal-stats-${key}`}
+              analytics={parsedData}
+              slices={parsedData.donutSlices || parsedData.items}
+              totalQuestions={parsedData.totalQuestions}
+              focusTitle={material?.focus || parsedData.focus || parsedData.title}
+            />
+          );
+        } else {
+          elements.push(<GemelaridadeRecurrenceStatsCard key={`gem-comp-${key}`} topic="complicacoes" />);
+        }
       } else if (
         lang === 'gem-stats-stff' ||
         fullCode.includes('Recorrência Temática de Síndrome da Transfusão Feto-Fetal')
       ) {
-        elements.push(<GemelaridadeRecurrenceStatsCard key={`gem-stff-${key}`} topic="stff" />);
+        let parsedData: any = null;
+        try {
+          const trimmed = fullCode.trim();
+          if (trimmed.startsWith('{')) parsedData = JSON.parse(trimmed);
+        } catch (e) {
+          console.warn('[StudyMaterialReader] Erro ao decodificar JSON de gem-stats-stff:', e);
+        }
+
+        if (material?.recurrenceStats) {
+          elements.push(
+            <UniversalRecurrenceStatsCard
+              key={`universal-stats-${key}`}
+              analytics={material.recurrenceStats}
+              focusTitle={material.focus}
+            />
+          );
+        } else if (parsedData && Array.isArray(parsedData.donutSlices || parsedData.items)) {
+          elements.push(
+            <UniversalRecurrenceStatsCard
+              key={`universal-stats-${key}`}
+              analytics={parsedData}
+              slices={parsedData.donutSlices || parsedData.items}
+              totalQuestions={parsedData.totalQuestions}
+              focusTitle={material?.focus || parsedData.focus || parsedData.title}
+            />
+          );
+        } else {
+          elements.push(<GemelaridadeRecurrenceStatsCard key={`gem-stff-${key}`} topic="stff" />);
+        }
       } else if (
         lang === 'gem-stats-parto' ||
         fullCode.includes('Recorrência Temática de Parto em Gestação Múltipla')
       ) {
-        elements.push(<GemelaridadeRecurrenceStatsCard key={`gem-parto-${key}`} topic="parto" />);
+        let parsedData: any = null;
+        try {
+          const trimmed = fullCode.trim();
+          if (trimmed.startsWith('{')) parsedData = JSON.parse(trimmed);
+        } catch (e) {
+          console.warn('[StudyMaterialReader] Erro ao decodificar JSON de gem-stats-parto:', e);
+        }
+
+        if (material?.recurrenceStats) {
+          elements.push(
+            <UniversalRecurrenceStatsCard
+              key={`universal-stats-${key}`}
+              analytics={material.recurrenceStats}
+              focusTitle={material.focus}
+            />
+          );
+        } else if (parsedData && Array.isArray(parsedData.donutSlices || parsedData.items)) {
+          elements.push(
+            <UniversalRecurrenceStatsCard
+              key={`universal-stats-${key}`}
+              analytics={parsedData}
+              slices={parsedData.donutSlices || parsedData.items}
+              totalQuestions={parsedData.totalQuestions}
+              focusTitle={material?.focus || parsedData.focus || parsedData.title}
+            />
+          );
+        } else {
+          elements.push(<GemelaridadeRecurrenceStatsCard key={`gem-parto-${key}`} topic="parto" />);
+        }
       } else if (
         lang === 'exam-stats' ||
         fullCode.includes('Recorrência Estatística em Provas') ||
@@ -732,6 +847,126 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
       codeBlockLines = [];
     };
 
+    const renderMathFormula = (rawMath: string, key: string) => {
+      if (!rawMath) return;
+      const mathContent = rawMath.startsWith('$$') && rawMath.endsWith('$$')
+        ? rawMath.slice(2, -2).trim()
+        : rawMath.replace(/^\$+/, '').replace(/\$+$/, '').trim();
+
+      // Extrai lado esquerdo e fração com suporte a chaves aninhadas (\text{...})
+      const eqIdx = mathContent.indexOf('=');
+      if (eqIdx !== -1 && mathContent.includes('\\frac')) {
+        const leftRaw = mathContent.slice(0, eqIdx).trim();
+        const rightRaw = mathContent.slice(eqIdx + 1).trim();
+
+        // Regex que suporta chaves aninhadas no numerador e denominador
+        const fracRegex = /\\frac\s*\{((?:[^{}]|\{[^{}]*\})*)\}\s*\{((?:[^{}]|\{[^{}]*\})*)\}/;
+        const match = rightRaw.match(fracRegex);
+        if (match) {
+          const leftSide = formatMedicalMath(leftRaw);
+          const num = formatMedicalMath(match[1]);
+          const den = formatMedicalMath(match[2]);
+
+          elements.push(
+            <div
+              key={`math-${key}`}
+              className="my-5 p-5 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200/90 dark:border-zinc-800 shadow-xs flex flex-col items-center justify-center text-center space-y-3 not-prose"
+            >
+              <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 font-heading font-black text-xs sm:text-sm text-zinc-900 dark:text-zinc-100">
+                <span className="text-zinc-800 dark:text-zinc-200">{leftSide}</span>
+                <span className="text-zinc-400 font-normal text-base">=</span>
+                <div className="inline-flex flex-col items-center">
+                  <span className="px-4 pb-1.5 border-b-2 border-zinc-500 dark:border-zinc-400 text-zinc-900 dark:text-zinc-100 font-bold text-center">
+                    {num}
+                  </span>
+                  <span className="px-4 pt-1.5 text-zinc-600 dark:text-zinc-400 font-semibold text-center text-xs">
+                    {den}
+                  </span>
+                </div>
+              </div>
+            </div>
+          );
+          return;
+        }
+      }
+
+      // Suporte avançado e flexível a ambiente cases: \begin{cases} ... \end{cases}
+      // Suporta \implies, \iff, \Longleftrightarrow, etc. com barras simples ou duplas
+      const casesMatch = mathContent.match(/^(.*?)(?:\\{1,2}(?:implies|iff|Longrightarrow|Longleftrightarrow|Rightarrow|Leftrightarrow)|⟹|⟺)\s*\\{1,2}begin\{cases\}([\s\S]*?)\\{1,2}end\{cases\}\s*$/);
+      if (casesMatch) {
+        const entity = formatMedicalMath(casesMatch[1]);
+        const operatorSymbol = mathContent.includes('iff') || mathContent.includes('⟺') ? '⟺' : '⟹';
+        const rawItems = casesMatch[2].split(/\\{2,4}/);
+        const items = rawItems
+          .map(it => formatMedicalMath(it).trim())
+          .filter(it => it.length > 0);
+
+        elements.push(
+          <div
+            key={`math-cases-${key}`}
+            className="my-6 p-5 sm:p-6 rounded-3xl bg-zinc-50/80 dark:bg-zinc-900/60 border border-zinc-200/90 dark:border-zinc-800 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-5 not-prose"
+          >
+            <div className="flex items-center gap-3 shrink-0">
+              <div
+                className="w-10 h-10 rounded-2xl flex items-center justify-center text-white shadow-xs font-heading font-black text-sm shrink-0"
+                style={{ backgroundColor: accentConfig.primaryHex }}
+              >
+                Tx
+              </div>
+              <div>
+                <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 block">
+                  Definição / Algoritmo Canônico
+                </span>
+                <span className="font-heading font-black text-sm sm:text-base text-zinc-900 dark:text-zinc-100">
+                  {entity}
+                </span>
+              </div>
+            </div>
+
+            <div className="hidden md:flex items-center justify-center text-zinc-400 dark:text-zinc-500 text-xl font-bold px-2">
+              {operatorSymbol}
+            </div>
+
+            <div className="flex-1 space-y-2.5 w-full">
+              {items.map((itemText, i) => {
+                const cleanText = itemText.replace(/^\d+[\.\)]\s*/, '');
+                return (
+                  <div
+                    key={i}
+                    className="flex items-start gap-3 p-3.5 rounded-2xl bg-white dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 shadow-2xs"
+                  >
+                    <div
+                      className="w-6 h-6 rounded-full flex items-center justify-center text-white font-black text-xs shrink-0 mt-0.5"
+                      style={{ backgroundColor: accentConfig.primaryHex }}
+                    >
+                      {i + 1}
+                    </div>
+                    <span className="font-heading font-bold text-xs sm:text-sm text-zinc-800 dark:text-zinc-200 leading-snug">
+                      {cleanText}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        );
+        return;
+      }
+
+      // Bloco padrão de fórmula caso não seja fração nem cases
+      const formatted = formatMedicalMath(mathContent);
+      elements.push(
+        <div
+          key={`math-block-${key}`}
+          className="my-4 p-4 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200/90 dark:border-zinc-800 shadow-xs flex items-center justify-center text-center not-prose"
+        >
+          <span className="font-heading font-black text-xs sm:text-sm text-zinc-900 dark:text-zinc-100">
+            {formatted}
+          </span>
+        </div>
+      );
+    };
+
     let inUnorderedList = false;
     let unorderedListItems: Array<{ text: string; level: number }> = [];
 
@@ -838,6 +1073,27 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
         return;
       }
 
+      // Detecção de blocos matemáticos multilinha ($$)
+      if (trimmed === '$$') {
+        flushAllLists(`pre-mb-${index}`);
+        if (inMathBlock) {
+          const fullMath = mathBlockLines.join(' ').trim();
+          renderMathFormula(fullMath, `mb-${index}`);
+          inMathBlock = false;
+          mathBlockLines = [];
+        } else {
+          if (inTable) flushTable(`pre-mb-${index}`);
+          inMathBlock = true;
+          mathBlockLines = [];
+        }
+        return;
+      }
+
+      if (inMathBlock) {
+        mathBlockLines.push(line);
+        return;
+      }
+
       // Detecção de Imagens em Markdown: ![Alt](url)
       const imgMatch = trimmed.match(/^!\[(.*?)\]\((.*?)\)$/);
       if (imgMatch) {
@@ -880,126 +1136,14 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
         flushTable(`flush-${index}`);
       }
 
-      // Detecção de Bloco Matemático de Fórmula: $$...$$ ou fórmulas de fração isoladas
+      // Detecção de Bloco Matemático de Fórmula em linha única: $$...$$ ou fórmulas de fração isoladas
       if (
         (trimmed.startsWith('$$') && trimmed.endsWith('$$') && trimmed.length > 4) ||
         (trimmed.includes('\\frac') && trimmed.includes('='))
       ) {
         flushAllLists(`pre-math-${index}`);
-        const mathContent = trimmed.startsWith('$$') && trimmed.endsWith('$$')
-          ? trimmed.slice(2, -2).trim()
-          : trimmed.replace(/^\$+/, '').replace(/\$+$/, '').trim();
-
-        // Extrai lado esquerdo e fração com suporte a chaves aninhadas (\text{...})
-        const eqIdx = mathContent.indexOf('=');
-        if (eqIdx !== -1 && mathContent.includes('\\frac')) {
-          const leftRaw = mathContent.slice(0, eqIdx).trim();
-          const rightRaw = mathContent.slice(eqIdx + 1).trim();
-
-          // Regex que suporta chaves aninhadas no numerador e denominador
-          const fracRegex = /\\frac\s*\{((?:[^{}]|\{[^{}]*\})*)\}\s*\{((?:[^{}]|\{[^{}]*\})*)\}/;
-          const match = rightRaw.match(fracRegex);
-          if (match) {
-            const leftSide = formatMedicalMath(leftRaw);
-            const num = formatMedicalMath(match[1]);
-            const den = formatMedicalMath(match[2]);
-
-            elements.push(
-              <div
-                key={`math-${index}`}
-                className="my-5 p-5 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200/90 dark:border-zinc-800 shadow-xs flex flex-col items-center justify-center text-center space-y-3 not-prose"
-              >
-                <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 font-heading font-black text-xs sm:text-sm text-zinc-900 dark:text-zinc-100">
-                  <span className="text-zinc-800 dark:text-zinc-200">{leftSide}</span>
-                  <span className="text-zinc-400 font-normal text-base">=</span>
-                  <div className="inline-flex flex-col items-center">
-                    <span className="px-4 pb-1.5 border-b-2 border-zinc-500 dark:border-zinc-400 text-zinc-900 dark:text-zinc-100 font-bold text-center">
-                      {num}
-                    </span>
-                    <span className="px-4 pt-1.5 text-zinc-600 dark:text-zinc-400 font-semibold text-center text-xs">
-                      {den}
-                    </span>
-                  </div>
-                </div>
-              </div>
-            );
-            return;
-          }
-        }
-
-        // Suporte avançado e flexível a ambiente cases: \begin{cases} ... \end{cases}
-        const casesMatch = mathContent.match(/^(.*?)(?:\\{1,2}implies|⟹)\s*\\{1,2}begin\{cases\}([\s\S]*?)\\{1,2}end\{cases\}\s*$/);
-        if (casesMatch) {
-          const entity = formatMedicalMath(casesMatch[1]);
-          const rawItems = casesMatch[2].split(/\\{2,4}/);
-          const items = rawItems
-            .map(it => formatMedicalMath(it).trim())
-            .filter(it => it.length > 0);
-
-          elements.push(
-            <div
-              key={`math-cases-${index}`}
-              className="my-6 p-5 sm:p-6 rounded-3xl bg-zinc-50/80 dark:bg-zinc-900/60 border border-zinc-200/90 dark:border-zinc-800 shadow-xs flex flex-col md:flex-row md:items-center justify-between gap-5 not-prose"
-            >
-              <div className="flex items-center gap-3 shrink-0">
-                <div
-                  className="w-10 h-10 rounded-2xl flex items-center justify-center text-white shadow-xs font-heading font-black text-sm shrink-0"
-                  style={{ backgroundColor: accentConfig.primaryHex }}
-                >
-                  Tx
-                </div>
-                <div>
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 block">
-                    Definição / Tríade Canônica
-                  </span>
-                  <span className="font-heading font-black text-sm sm:text-base text-zinc-900 dark:text-zinc-100">
-                    {entity}
-                  </span>
-                </div>
-              </div>
-
-              <div className="hidden md:flex items-center justify-center text-zinc-400 dark:text-zinc-500 text-xl font-bold px-2">
-                ⟹
-              </div>
-
-              <div className="flex-1 space-y-2.5 w-full">
-                {items.map((itemText, i) => {
-                  const cleanText = itemText.replace(/^\d+[\.\)]\s*/, '');
-                  return (
-                    <div
-                      key={i}
-                      className="flex items-start gap-3 p-3.5 rounded-2xl bg-white dark:bg-[#121215] border border-zinc-200/80 dark:border-zinc-800/80 shadow-2xs"
-                    >
-                      <div
-                        className="w-6 h-6 rounded-full flex items-center justify-center text-white font-black text-xs shrink-0 mt-0.5"
-                        style={{ backgroundColor: accentConfig.primaryHex }}
-                      >
-                        {i + 1}
-                      </div>
-                      <span className="font-heading font-bold text-xs sm:text-sm text-zinc-800 dark:text-zinc-200 leading-snug">
-                        {cleanText}
-                      </span>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          );
-          return;
-        }
-
-        // Bloco padrão de fórmula caso não seja fração nem cases
-        const formatted = formatMedicalMath(mathContent);
-        elements.push(
-          <div
-            key={`math-block-${index}`}
-            className="my-4 p-4 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200/90 dark:border-zinc-800 shadow-xs flex items-center justify-center text-center not-prose"
-          >
-            <span className="font-heading font-black text-xs sm:text-sm text-zinc-900 dark:text-zinc-100">
-              {formatted}
-            </span>
-          </div>
-        );
+        if (inTable) flushTable(`pre-math-${index}`);
+        renderMathFormula(trimmed, `math-${index}`);
         return;
       }
 
@@ -1126,6 +1270,11 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
 
     flushAllLists('final');
     if (inCodeBlock) flushCodeBlock('final');
+    if (inMathBlock && mathBlockLines.length > 0) {
+      renderMathFormula(mathBlockLines.join(' ').trim(), 'math-final');
+      inMathBlock = false;
+      mathBlockLines = [];
+    }
     if (inTable) flushTable('final');
 
     // Se o resumo não possuía seção formal de referências, renderiza os pontos-chave aqui
