@@ -143,6 +143,165 @@ export function startGoogleOAuthRedirect(clientId: string): void {
 }
 
 /**
+ * OPÇÃO 2B — POPUP CONTROLADO COM FLUXO IMPLICIT (sem depender do GIS postMessage):
+ * Abre um popup com o mesmo URL do fluxo redirect (OAuth Implicit Grant).
+ * O Google redireciona dentro do popup para /auth/google/callback#access_token=xxx.
+ * A callback page salva no localStorage e o evento 'storage' dispara na janela-pai.
+ *
+ * Vantagens sobre GIS initTokenClient:
+ * - Não depende de postMessage (imune à tela "App não verificado" quebrando o canal)
+ * - Funciona com telas de aviso intermediárias (unverified app, consent, etc.)
+ * - Usa a mesma callback page já testada no fluxo de redirect
+ *
+ * Retorna uma função de cleanup para cancelar a espera se necessário.
+ */
+export function startGoogleOAuthPopup(
+  clientId: string,
+  onSuccess: (accessToken: string) => void,
+  onError: (error: any) => void
+): () => void {
+  if (typeof window === 'undefined') {
+    onError(new Error('Ambiente sem janela.'));
+    return () => {};
+  }
+
+  const redirectUri = getGoogleOAuthRedirectUri();
+  const scope = [
+    'https://www.googleapis.com/auth/calendar.events',
+    'https://www.googleapis.com/auth/calendar.readonly',
+  ].join(' ');
+
+  const params = new URLSearchParams({
+    client_id: clientId,
+    redirect_uri: redirectUri,
+    response_type: 'token',
+    scope,
+    include_granted_scopes: 'true',
+    prompt: 'select_account',
+    state: 'popup',
+  });
+
+  const authUrl = `https://accounts.google.com/o/oauth2/v2/auth?${params.toString()}`;
+
+  // Limpa timestamp anterior para garantir que apenas novas autenticações sejam consideradas
+  try {
+    localStorage.removeItem('bancoresidencia_google_popup_auth_timestamp');
+  } catch {
+    // ignora
+  }
+
+  // Abre popup centralizado na tela
+  const width = 500;
+  const height = 640;
+  const left = Math.round(window.screenX + (window.outerWidth - width) / 2);
+  const top = Math.round(window.screenY + (window.outerHeight - height) / 2);
+
+  const popup = window.open(
+    authUrl,
+    'bancoresidencia_google_oauth',
+    `width=${width},height=${height},left=${left},top=${top},scrollbars=yes,resizable=yes`
+  );
+
+  if (!popup) {
+    onError(new Error('Popup bloqueado pelo navegador. Use o link "Abrir por redirecionamento".'));
+    return () => {};
+  }
+
+  let resolved = false;
+
+  const cleanup = () => {
+    if (resolved) return;
+    resolved = true;
+    window.removeEventListener('storage', onStorageChange);
+    window.removeEventListener('message', onMessage);
+    clearInterval(pollTimer);
+  };
+
+  // 1. Escuta via postMessage da janela-filha (graças a same-origin-allow-popups)
+  const onMessage = (e: MessageEvent) => {
+    if (resolved) return;
+    if (e.origin !== window.location.origin) return;
+    if (e.data?.type === 'GOOGLE_AUTH_SUCCESS' && e.data?.accessToken) {
+      cleanup();
+      try { popup.close(); } catch { /* ignore */ }
+      onSuccess(e.data.accessToken);
+    } else if (e.data?.type === 'GOOGLE_AUTH_ERROR') {
+      cleanup();
+      try { popup.close(); } catch { /* ignore */ }
+      onError(new Error(e.data?.error || 'Erro na autenticação'));
+    }
+  };
+  window.addEventListener('message', onMessage);
+
+  // 2. Escuta o evento 'storage' — disparado quando a página de callback salva o token
+  const onStorageChange = (e: StorageEvent) => {
+    if (resolved) return;
+
+    if (e.key === 'bancoresidencia_google_access_token' && e.newValue) {
+      cleanup();
+      try { popup.close(); } catch { /* popup pode já estar fechado */ }
+      onSuccess(e.newValue);
+    }
+  };
+  window.addEventListener('storage', onStorageChange);
+
+  // 3. Polling contínuo resiliente: detecta token ou encerramento do popup
+  const pollTimer = setInterval(() => {
+    if (resolved) {
+      clearInterval(pollTimer);
+      return;
+    }
+
+    // Checagem ativa se o popup gravou o token (imune a atrasos de eventos)
+    try {
+      const savedToken = localStorage.getItem('bancoresidencia_google_access_token');
+      const authTs = localStorage.getItem('bancoresidencia_google_popup_auth_timestamp');
+      if (savedToken && authTs && (Date.now() - Number(authTs)) < 60000) {
+        cleanup();
+        try { popup.close(); } catch { /* ignore */ }
+        onSuccess(savedToken);
+        return;
+      }
+    } catch {
+      // Ignora restrições de localStorage
+    }
+
+    try {
+      if (popup.closed) {
+        clearInterval(pollTimer);
+
+        // Dá 1500ms de tolerância para a callback page concluir a gravação antes de decidir
+        setTimeout(() => {
+          if (resolved) return;
+
+          const token = localStorage.getItem('bancoresidencia_google_access_token');
+          const isConnected = localStorage.getItem('bancoresidencia_google_calendar_connected') === 'true';
+          const authTs = localStorage.getItem('bancoresidencia_google_popup_auth_timestamp');
+          const isRecentlyAuthenticated = Boolean(
+            token && (
+              isConnected ||
+              (authTs && (Date.now() - Number(authTs)) < 60000)
+            )
+          );
+
+          if (token && isRecentlyAuthenticated) {
+            cleanup();
+            onSuccess(token);
+          } else {
+            cleanup();
+            onError(new Error('popup_closed'));
+          }
+        }, 1500);
+      }
+    } catch {
+      // Erro ao verificar popup.closed (cross-origin) — ignora
+    }
+  }, 300);
+
+  return cleanup;
+}
+
+/**
  * OPÇÃO 2 — DISPARO DE AUTENTICAÇÃO DIRETA VIA POPUP (GIS Token Client):
  * Executa de forma síncrona se a biblioteca já estiver no window para
  * PREVENIR bloqueio de popups pelos navegadores (Chrome/Edge/Safari).

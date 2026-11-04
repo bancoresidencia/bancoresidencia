@@ -3,7 +3,7 @@
 /**
  * Página de callback do Google OAuth — /auth/google/callback
  * Captura o access_token do hash (#access_token=...) ou da query (?access_token=...)
- * Salva no localStorage e redireciona de volta para a Home.
+ * Salva no localStorage e notifica a janela principal (popup) ou redireciona (tela inteira).
  */
 
 import { useEffect, useState } from 'react';
@@ -13,15 +13,16 @@ export default function GoogleCalendarCallbackPage() {
   const router = useRouter();
   const [status, setStatus] = useState<'loading' | 'success' | 'error'>('loading');
   const [message, setMessage] = useState('Conectando com o Google Agenda...');
+  const [isPopup, setIsPopup] = useState(false);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
 
-    // 1. Tenta extrair do hash (#access_token=...)
+    // 1. Tenta extrair do hash (#access_token=...&state=popup)
     const hash = window.location.hash.replace(/^#/, '');
     const hashParams = new URLSearchParams(hash);
 
-    // 2. Tenta extrair da query string (?access_token=...)
+    // 2. Tenta extrair da query string (?access_token=...&state=popup)
     const searchParams = new URLSearchParams(window.location.search);
 
     const accessToken =
@@ -30,6 +31,10 @@ export default function GoogleCalendarCallbackPage() {
       searchParams.get('access_token') ||
       searchParams.get('google_access_token');
 
+    const stateParam = hashParams.get('state') || searchParams.get('state');
+    const popupDetected = stateParam === 'popup' || Boolean(window.opener && !window.opener.closed);
+    setIsPopup(popupDetected);
+
     const error = hashParams.get('error') || searchParams.get('error');
 
     if (accessToken) {
@@ -37,11 +42,36 @@ export default function GoogleCalendarCallbackPage() {
         localStorage.setItem('bancoresidencia_google_access_token', accessToken);
         localStorage.setItem('bancoresidencia_google_calendar_connected', 'true');
         localStorage.setItem('bancoresidencia_google_calendar_mode', 'api');
+        localStorage.setItem('bancoresidencia_google_popup_auth_timestamp', Date.now().toString());
         sessionStorage.setItem('bancoresidencia_google_just_connected', 'true');
       } catch {
         // Ignora erros de localStorage restrito
       }
 
+      // Se aberto em popup: notifica janela-pai e fecha a janela popup
+      if (popupDetected) {
+        try {
+          if (window.opener && !window.opener.closed) {
+            window.opener.postMessage({ type: 'GOOGLE_AUTH_SUCCESS', accessToken }, window.location.origin);
+          }
+        } catch {
+          // ignora falha de cross-origin postMessage
+        }
+
+        setStatus('success');
+        setMessage('Google Agenda conectado com sucesso! Esta janela fechará em instantes...');
+
+        setTimeout(() => {
+          try {
+            window.close();
+          } catch {
+            // Se o navegador impedir fechar via script, mantém mensagem na tela
+          }
+        }, 500);
+        return;
+      }
+
+      // Modo redirecionamento de tela inteira:
       setStatus('success');
       setMessage('Google Agenda conectado com sucesso! Redirecionando...');
 
@@ -56,6 +86,14 @@ export default function GoogleCalendarCallbackPage() {
       };
       const errMsg = messages[error] || `Aviso do Google: ${error}`;
 
+      if (popupDetected) {
+        try {
+          if (window.opener && !window.opener.closed) {
+            window.opener.postMessage({ type: 'GOOGLE_AUTH_ERROR', error: errMsg }, window.location.origin);
+          }
+        } catch {}
+      }
+
       try {
         sessionStorage.setItem('bancoresidencia_google_auth_error', errMsg);
       } catch { /* ignora */ }
@@ -63,11 +101,21 @@ export default function GoogleCalendarCallbackPage() {
       setStatus('error');
       setMessage(errMsg);
 
-      setTimeout(() => {
-        router.replace('/');
-      }, 2000);
+      if (popupDetected) {
+        setTimeout(() => {
+          try { window.close(); } catch {}
+        }, 2000);
+      } else {
+        setTimeout(() => {
+          router.replace('/');
+        }, 2000);
+      }
     } else {
-      router.replace('/');
+      if (popupDetected) {
+        try { window.close(); } catch {}
+      } else {
+        router.replace('/');
+      }
     }
   }, [router]);
 
@@ -97,6 +145,20 @@ export default function GoogleCalendarCallbackPage() {
         <p className={`text-xs font-medium ${status === 'error' ? 'text-red-400' : status === 'success' ? 'text-emerald-400' : 'text-zinc-300'}`}>
           {message}
         </p>
+
+        {isPopup && status === 'success' && (
+          <div className="pt-2">
+            <button
+              type="button"
+              onClick={() => {
+                try { window.close(); } catch {}
+              }}
+              className="px-4 py-2 rounded-xl bg-zinc-800 hover:bg-zinc-700 text-xs text-white border border-zinc-700 transition-colors cursor-pointer"
+            >
+              Fechar esta janela
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

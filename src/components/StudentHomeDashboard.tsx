@@ -99,9 +99,13 @@ import { FigmaCardWrapper } from './dashboard/FigmaCardWrapper';
 import { FigmaCustomizerBar } from './dashboard/FigmaCustomizerBar';
 import { FigmaSmartGuides } from './dashboard/FigmaSmartGuides';
 import { SmartGuidesState } from './dashboard/smartGuidesEngine';
+import { GoogleCalendarScheduleView } from './dashboard/GoogleCalendarScheduleView';
+import { AiScheduleDrawer } from './dashboard/AiScheduleDrawer';
+import { DailyScheduleSlot, AiScheduleAnalysis } from './dashboard/scheduleTypes';
 import {
   buildGoogleCalendarTemplateUrl,
   requestGoogleCalendarAccessToken,
+  startGoogleOAuthPopup,
   fetchTodayEventsFromGoogleApi,
   createEventInGoogleCalendarApi,
   startGoogleOAuthRedirect,
@@ -179,6 +183,7 @@ const AreaEvolutionTooltip: React.FC<AreaEvolutionTooltipProps> = ({
         <span>Total no dia:</span>
         <span className="font-mono font-bold text-slate-800 dark:text-zinc-200">{data.resolvidas}</span>
       </div>
+
     </div>
   );
 };
@@ -263,11 +268,28 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   }, [accuracyPeriod, stats]);
 
   // Animação suave e flat do aproveitamento ao carregar ou alternar período
-  const [animatedAccuracy, setAnimatedAccuracy] = useState<number>(0);
+  const [animatedAccuracy, setAnimatedAccuracy] = useState<number>(() => {
+    return periodStats.answered > 0 ? periodStats.rate : 0;
+  });
+  const prevRateRef = useRef<number>(periodStats.rate);
+  const isInitialMount = useRef(true);
+
   useEffect(() => {
     const target = periodStats.answered > 0 ? periodStats.rate : 0;
+
+    // Se é a primeira montagem, inicializa diretamente com o target (sem animar de 0 até o valor)
+    if (isInitialMount.current) {
+      isInitialMount.current = false;
+      prevRateRef.current = target;
+      setAnimatedAccuracy(target);
+      return;
+    }
+
+    if (prevRateRef.current === target) return;
+    prevRateRef.current = target;
+
     let startTime: number | null = null;
-    const duration = 500; // ms
+    const duration = 400; // ms
     let animId: number;
 
     const animate = (currentTime: number) => {
@@ -1158,22 +1180,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   const [isGoogleModalOpen, setIsGoogleModalOpen] = useState(false);
   const [simulatedHour, setSimulatedHour] = useState<number | null>(null);
 
-  // Interface para Itens da Linha do Tempo da Agenda
-  interface DailyScheduleSlot {
-    id: string;
-    title: string;
-    category: 'estudo' | 'hospital' | 'revisao' | 'pausa' | 'flashcard' | 'simulado';
-    startTime: string;
-    endTime: string;
-    startMinutes: number;
-    endMinutes: number;
-    source: 'google' | 'plataforma';
-    description: string;
-    location?: string;
-    action?: 'treinar' | 'caderno_erros' | 'flashcards' | 'mnemonico' | 'simulado';
-    isAiSuggested?: boolean;
-    rationale?: string;
-  }
+  // DailyScheduleSlot importada de ./dashboard/scheduleTypes
 
   const [realCalendarEvents, setRealCalendarEvents] = useState<DailyScheduleSlot[]>(() => {
     if (typeof window !== 'undefined') {
@@ -1212,6 +1219,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     suggestions: DailyScheduleSlot[];
   } | null>(null);
   const [showAiSchedulePanel, setShowAiSchedulePanel] = useState(false);
+  const [showAiScheduleDrawer, setShowAiScheduleDrawer] = useState(false);
   const [isBatchSyncing, setIsBatchSyncing] = useState(false);
 
   const [calendarSyncMode, setCalendarSyncMode] = useState<'ical' | 'api'>(() => {
@@ -1713,8 +1721,10 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     setCalendarSyncError(null);
     setCalendarSyncSuccessMsg(null);
 
-    // Disparo direto síncrono via GIS Token Client (sem delay = popup sempre liberado)
-    requestGoogleCalendarAccessToken(
+    // Popup controlado com OAuth Implicit — imune à tela "App não verificado" do Google
+    // Abre popup próprio → Google redireciona dentro do popup → callback page salva no localStorage
+    // → evento 'storage' dispara aqui na janela-pai → captura o token sem depender de postMessage/GIS
+    startGoogleOAuthPopup(
       cId,
       async (accessToken) => {
         try {
@@ -1730,8 +1740,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           }
 
           const [events, accountEmail] = await Promise.all([
-            fetchTodayEventsFromGoogleApi(accessToken),
-            fetchGoogleCalendarAccountEmail(accessToken)
+            fetchTodayEventsFromGoogleApi(accessToken).catch(() => []),
+            fetchGoogleCalendarAccountEmail(accessToken).catch(() => null)
           ]);
 
           setRealCalendarEvents(events as any);
@@ -1767,8 +1777,10 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       (oauthErr) => {
         setIsSyncingCalendar(false);
         const rawMsg = oauthErr?.message || oauthErr?.error || '';
-        if (rawMsg.includes('popup_closed') || rawMsg.includes('fechada antes da confirmação')) {
-          setCalendarSyncError('A janela de autenticação foi fechada antes da confirmação. Ao reabrir, se ver a tela vermelha de aviso, clique em "Avançado" ➔ "Acessar Banco Residência" para autorizar.');
+        if (rawMsg.includes('popup_closed')) {
+          setCalendarSyncError('A janela de autenticação foi fechada antes da confirmação. Ao reabrir, se ver a tela vermelha de aviso, clique em "Avançado" → "Acessar Banco Residência" para autorizar.');
+        } else if (rawMsg.includes('Popup bloqueado')) {
+          setCalendarSyncError(rawMsg + ' Clique em "Abrir por redirecionamento" abaixo.');
         } else {
           setCalendarSyncError(rawMsg || 'Autorização Google cancelada ou recusada.');
         }
@@ -1859,6 +1871,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   // ── FUNÇÕES DE ANÁLISE DE HORÁRIOS LIVRES COM IA & SINCRONIZAÇÃO ────────────
   const handleAnalyzeScheduleWithAi = async (customPrompt?: string) => {
     setIsAnalyzingSchedule(true);
+    setShowAiScheduleDrawer(true);
     setShowAiSchedulePanel(true);
     setShowAiCommandModal(false);
     setCalendarSyncError(null);
@@ -6536,456 +6549,47 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         </div>
                       </div>
 
-                      {/* ── COLUNA DIREITA: CRONOGRAMA VISUAL, FILTROS & TIMELINE (lg:col-span-7) ── */}
+                      {/* ── COLUNA DIREITA: CRONOGRAMA VISUAL GOOGLE AGENDA (lg:col-span-7) ── */}
                       <div className="lg:col-span-7 space-y-4">
-                        
-                        {/* Header da Timeline com Filtros Rápidos & Ações em Lote */}
-                        <div className="p-3.5 rounded-2xl bg-zinc-50/70 dark:bg-zinc-900/60 border border-zinc-200/80 dark:border-zinc-800 space-y-2.5">
-                          <div className="flex items-center justify-between flex-wrap gap-2">
-                            <div>
-                              <span className="text-xs font-bold text-zinc-900 dark:text-zinc-100 flex items-center gap-1.5">
-                                <Calendar className="w-3.5 h-3.5 text-blue-500" />
-                                Cronograma Sequencial de Hoje
-                              </span>
-                              <span className="text-[11px] text-zinc-400 block">
-                                {isGoogleCalendarConnected
-                                  ? `${googleCount} compromisso(s) Google • ${studyCount} tarefa(s) de estudo`
-                                  : 'Conecte sua agenda para sincronização contínua'}
-                              </span>
-                            </div>
-
-                            <div className="flex items-center gap-1.5">
-                              {userScheduledTasks.length > 0 && (
-                                <>
-                                  <button
-                                    type="button"
-                                    onClick={handleSyncAllTasksToGoogle}
-                                    disabled={isBatchSyncing}
-                                    className="px-2.5 py-1 rounded-lg border border-blue-500/30 text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-950/40 text-[11px] font-bold flex items-center gap-1 transition-colors cursor-pointer"
-                                    title="Sincronizar blocos adicionados ao Google Agenda"
-                                  >
-                                    <GoogleIcon className="w-3 h-3" />
-                                    <span>{isBatchSyncing ? 'Sincronizando...' : 'Sincronizar c/ Google'}</span>
-                                  </button>
-                                  <button
-                                    type="button"
-                                    onClick={handleClearUserScheduledTasks}
-                                    className="px-2.5 py-1 rounded-lg border border-zinc-200 dark:border-zinc-800 text-zinc-500 hover:text-rose-500 hover:border-rose-500/30 text-[11px] font-medium transition-colors cursor-pointer"
-                                    title="Limpar tarefas adicionadas e voltar ao Google Agenda limpo"
-                                  >
-                                    Limpar
-                                  </button>
-                                </>
-                              )}
-                            </div>
-                          </div>
-
-                          {/* Pílulas de Filtro (Todos / Somente Estudos / Google Agenda) */}
-                          <div className="flex items-center gap-1.5 pt-1 border-t border-zinc-200/60 dark:border-zinc-800/80 flex-wrap">
-                            <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 mr-1">Filtrar:</span>
-                            {[
-                              { id: 'todos', label: `Todos (${daySchedule.length})` },
-                              { id: 'estudos', label: `Estudos (${studyCount})` },
-                              { id: 'google', label: `Google / Plantões (${googleCount})` }
-                            ].map((f) => {
-                              const isActive = timelineFilter === f.id;
-                              return (
-                                <button
-                                  key={f.id}
-                                  type="button"
-                                  onClick={() => setTimelineFilter(f.id as any)}
-                                  className={`px-2.5 py-1 rounded-lg text-[11px] font-bold transition-all cursor-pointer ${isActive
-                                      ? 'bg-blue-600 text-white shadow-2xs'
-                                      : 'bg-white dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700 hover:text-zinc-900 dark:hover:text-white'
-                                    }`}
-                                >
-                                  {f.label}
-                                </button>
-                              );
-                            })}
-
-                            {/* Botão + no canto direito da imagem para abrir o Drawer de Bloco Manual */}
-                            <button
-                              type="button"
-                              onClick={() => setShowAddManualModal(true)}
-                              className="ml-auto px-2.5 py-1 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-[11px] font-bold flex items-center gap-1 transition-all cursor-pointer shadow-xs shrink-0"
-                              title="Adicionar Bloco de Estudo Personalizado"
-                            >
-                              <Plus className="w-3.5 h-3.5" />
-                              <span>+ Novo Bloco</span>
-                            </button>
-                          </div>
-                        </div>
-
-                        {/* Painel Expansível de Sugestões de IA (se ativo) */}
-                        {showAiSchedulePanel && (
-                          <div className="p-4 rounded-2xl border border-blue-500/30 bg-blue-500/5 dark:bg-[#111624] space-y-3 animate-in fade-in duration-200">
-                            <div className="flex items-center justify-between">
-                              <div className="flex items-center gap-2">
-                                <div className="w-7 h-7 rounded-lg bg-blue-500/15 text-blue-600 dark:text-blue-400 flex items-center justify-center shrink-0">
-                                  <Sparkles className="w-3.5 h-3.5" />
-                                </div>
-                                <div>
-                                  <h4 className="text-xs font-bold text-zinc-900 dark:text-zinc-100">
-                                    Otimização de Horários Livres (Mentor IA)
-                                  </h4>
-                                  <p className="text-[10px] text-zinc-400">
-                                    Janelas ociosas cruzadas com foco de alto rendimento TRI & FSRS
-                                  </p>
-                                </div>
-                              </div>
-                              <button
-                                type="button"
-                                onClick={() => setShowAiSchedulePanel(false)}
-                                className="text-zinc-400 hover:text-zinc-600 p-1"
-                              >
-                                <X className="w-3.5 h-3.5" />
-                              </button>
-                            </div>
-
-                            {scheduleAiAnalysis && (
-                              <div className="p-2.5 rounded-xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 space-y-1.5 text-xs">
-                                <p className="text-zinc-700 dark:text-zinc-300 font-medium">
-                                  {scheduleAiAnalysis.summary}
-                                </p>
-                                {scheduleAiAnalysis.freeGaps && scheduleAiAnalysis.freeGaps.length > 0 && (
-                                  <div className="flex items-center gap-1.5 flex-wrap pt-1 border-t border-zinc-100 dark:border-zinc-800 text-[10px]">
-                                    <span className="font-bold text-zinc-400">Gaps Livres:</span>
-                                    {scheduleAiAnalysis.freeGaps.map((g, gi) => (
-                                      <span key={gi} className="px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-mono font-bold">
-                                        {g.startTime} às {g.endTime} ({g.durationMinutes}m)
-                                      </span>
-                                    ))}
-                                  </div>
-                                )}
-                              </div>
-                            )}
-
-                            {/* Sugestões da IA */}
-                            <div className="space-y-2">
-                              {scheduleAiAnalysis?.suggestions?.map((sug) => {
-                                const isAdded = userScheduledTasks.some(t => t.id === sug.id || (t.startTime === sug.startTime && t.title === sug.title));
-                                return (
-                                  <div
-                                    key={sug.id}
-                                    className="p-3 rounded-xl bg-white dark:bg-[#141822] border border-zinc-200 dark:border-zinc-800 hover:border-blue-500/40 transition-all flex items-center justify-between gap-3"
-                                  >
-                                    <div className="space-y-0.5 min-w-0">
-                                      <div className="flex items-center gap-1.5 flex-wrap">
-                                        <span className="font-mono text-xs font-bold text-blue-600 dark:text-blue-400">{sug.startTime} - {sug.endTime}</span>
-                                        <span className="px-1.5 py-0.2 rounded text-[9px] font-bold bg-blue-500/10 text-blue-600 dark:text-blue-400">
-                                          {sug.category === 'estudo' ? 'Treino TRI' : sug.category === 'flashcard' ? 'Flashcards FSRS' : sug.category === 'simulado' ? 'Simulado Blitz' : 'Caderno de Erros'}
-                                        </span>
-                                      </div>
-                                      <h5 className="text-xs font-bold text-zinc-900 dark:text-zinc-100 truncate">{sug.title}</h5>
-                                      {sug.rationale && (
-                                        <p className="text-[10px] text-blue-600 dark:text-blue-300 italic truncate">💡 {sug.rationale}</p>
-                                      )}
-                                    </div>
-
-                                    <div className="shrink-0 flex items-center gap-1.5">
-                                      {isAdded ? (
-                                        <span className="inline-flex items-center gap-1 px-2 py-1 rounded-lg text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 text-[10px] font-bold">
-                                          <Check className="w-3 h-3" />
-                                          <span>No Cronograma</span>
-                                        </span>
-                                      ) : (
-                                        <button
-                                          type="button"
-                                          onClick={() => handleAddSuggestedTask(sug)}
-                                          className="px-2.5 py-1 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-[11px] font-bold cursor-pointer transition-colors flex items-center gap-1 shadow-2xs"
-                                        >
-                                          <Plus className="w-3 h-3" />
-                                          <span>Adicionar</span>
-                                        </button>
-                                      )}
-
-                                      <button
-                                        type="button"
-                                        onClick={() => handleExportSlotToGoogle(sug)}
-                                        disabled={exportingSlotId === sug.id || Boolean(exportedSlotIds[sug.id])}
-                                        className="px-2 py-1 rounded-lg border border-blue-500/25 bg-blue-50/50 dark:bg-blue-950/30 text-blue-600 dark:text-blue-400 text-[10px] font-bold flex items-center gap-1 transition-all cursor-pointer disabled:opacity-50"
-                                      >
-                                        <GoogleIcon className="w-2.5 h-2.5" />
-                                        <span>{exportedSlotIds[sug.id] ? 'Salvo' : '+ Google'}</span>
-                                      </button>
-                                    </div>
-                                  </div>
-                                );
-                              })}
-                            </div>
-
-                            <div className="flex items-center justify-end gap-2 pt-1 border-t border-zinc-200/60 dark:border-zinc-800">
-                              <button
-                                type="button"
-                                onClick={handleAddAllSuggestedTasks}
-                                className="px-3 py-1.5 rounded-xl border border-blue-500/30 bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400 hover:bg-blue-100 text-xs font-bold cursor-pointer transition-colors"
-                              >
-                                Adicionar Todas ao Cronograma
-                              </button>
-                            </div>
-                          </div>
-                        )}
-
-                        {/* Linha do Tempo Sequencial & Contínua */}
-                        {filteredDaySchedule.length === 0 ? (
-                          <div className="p-8 rounded-2xl border border-dashed border-zinc-300 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/30 text-center space-y-3">
-                            <div className="w-12 h-12 rounded-2xl bg-blue-500/10 text-blue-500 flex items-center justify-center mx-auto shadow-2xs">
-                              <Calendar className="w-6 h-6" />
-                            </div>
-                            <div className="max-w-md mx-auto space-y-1">
-                              <h5 className="text-sm font-bold text-zinc-900 dark:text-zinc-100">
-                                {isGoogleCalendarConnected
-                                  ? 'Nenhum compromisso encontrado para o filtro selecionado'
-                                  : 'Sua agenda está livre hoje'}
-                              </h5>
-                              <p className="text-xs text-zinc-500 dark:text-zinc-400">
-                                {isGoogleCalendarConnected
-                                  ? 'Seu cronograma está livre! Use o Mentor IA ou adicione um novo bloco para estruturar seu estudo de hoje.'
-                                  : 'Sua agenda inicia limpa. Conecte seu Google Agenda para sincronizar seus compromissos médicos ou clique em "+ Novo Bloco" para adicionar horários personalizados.'}
-                              </p>
-                            </div>
-                            <div className="pt-1 flex items-center justify-center gap-2 flex-wrap">
-                              {isGoogleCalendarConnected ? (
-                                <>
-                                  <button
-                                    type="button"
-                                    onClick={() => setShowAiCommandModal(true)}
-                                    className="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold cursor-pointer transition-all flex items-center gap-1.5 shadow-2xs"
-                                  >
-                                    <Sparkles className="w-3.5 h-3.5" />
-                                    <span>Sugerir Tarefas com IA</span>
-                                  </button>
-                                  <button
-                                    type="button"
-                                    onClick={() => setShowAddManualModal(true)}
-                                    className="px-4 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-200 text-xs font-bold cursor-pointer transition-all flex items-center gap-1.5 shadow-2xs"
-                                  >
-                                    <Plus className="w-3.5 h-3.5" />
-                                    <span>+ Novo Bloco</span>
-                                  </button>
-                                </>
-                              ) : (
-                                <>
-                                  <button
-                                    type="button"
-                                    onClick={() => setIsGoogleModalOpen(true)}
-                                    className="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold cursor-pointer transition-all flex items-center gap-1.5 shadow-2xs"
-                                  >
-                                    <GoogleIcon className="w-3.5 h-3.5" />
-                                    <span>Conectar Google Agenda</span>
-                                  </button>
-                                  <button
-                                    type="button"
-                                    onClick={() => setShowAddManualModal(true)}
-                                    className="px-4 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-200 text-xs font-bold cursor-pointer transition-all flex items-center gap-1.5 shadow-2xs"
-                                  >
-                                    <Plus className="w-3.5 h-3.5" />
-                                    <span>Adicionar Bloco Manual</span>
-                                  </button>
-                                </>
-                              )}
-                            </div>
-                          </div>
-                        ) : (
-                          <div className="space-y-2.5">
-                            {filteredDaySchedule.map((slot, idx) => {
-                              const isCurrentSlot = isCurrentActive && activeSlot?.id === slot.id;
-                              const isPast = slot.endMinutes <= currentPeriodInfo.currentMinutes;
-                              const isUserAdded = userScheduledTasks.some(t => t.id === slot.id);
-                              const isHospital = isHospitalOrDutyEvent(slot);
-
-                              // Cálculo de intervalo livre antes deste bloco (se houver gap >= 30 min)
-                              const prevSlot = idx > 0 ? filteredDaySchedule[idx - 1] : null;
-                              const gapMinutes = prevSlot ? (slot.startMinutes - prevSlot.endMinutes) : 0;
-                              const showFreeGap = gapMinutes >= 30;
-
-                              return (
-                                <React.Fragment key={slot.id || idx}>
-                                  {/* Indicador visual de Intervalo Livre / Almoço / Descanso */}
-                                  {showFreeGap && (
-                                    <div className="px-3 py-1.5 rounded-xl border border-dashed border-emerald-500/30 bg-emerald-500/5 text-emerald-700 dark:text-emerald-400 text-[11px] font-semibold flex items-center justify-between gap-2">
-                                      <div className="flex items-center gap-2">
-                                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-                                        <span>Janela Livre de <strong>{gapMinutes}m</strong> ({prevSlot?.endTime} às {slot.startTime})</span>
-                                      </div>
-                                      <span className="text-[10px] text-emerald-600 dark:text-emerald-400 italic">Oportunidade para Flashcards ou Descanso</span>
-                                    </div>
-                                  )}
-
-                                  {/* Card do Bloco na Linha do Tempo */}
-                                  <div
-                                    className={`p-3.5 rounded-2xl border transition-all flex items-center justify-between gap-3 ${isCurrentSlot
-                                        ? 'bg-blue-500/10 border-blue-500/50 shadow-md ring-1 ring-blue-500/30'
-                                        : isHospital
-                                          ? 'bg-slate-500/5 dark:bg-slate-900/40 border-slate-300 dark:border-slate-800'
-                                          : isPast
-                                            ? 'bg-zinc-50/60 dark:bg-zinc-900/30 border-zinc-200/60 dark:border-zinc-800/60 opacity-70'
-                                            : 'bg-white dark:bg-[#121620] border-zinc-200/90 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700'
-                                      }`}
-                                  >
-                                    <div className="flex items-center gap-3 min-w-0">
-                                      <div className={`w-8 h-8 rounded-xl flex items-center justify-center shrink-0 font-bold text-xs ${isCurrentSlot
-                                          ? 'bg-blue-500 text-white shadow-xs'
-                                          : isHospital
-                                            ? 'bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300'
-                                            : isPast
-                                              ? 'bg-emerald-500/15 text-emerald-600 dark:text-emerald-400'
-                                              : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400'
-                                        }`}>
-                                        {isPast ? <Check className="w-4 h-4" /> : isHospital ? <Activity className="w-4 h-4 text-slate-500" /> : idx + 1}
-                                      </div>
-
-                                      <div className="min-w-0 space-y-0.5">
-                                        <div className="flex items-center gap-1.5 flex-wrap">
-                                          <span className="font-mono text-xs font-bold text-zinc-700 dark:text-zinc-300">
-                                            {slot.startTime} - {slot.endTime}
-                                          </span>
-
-                                          {isCurrentSlot && (
-                                            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30">
-                                              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                                              Agora ({currentPeriodInfo.minutesRemaining}m)
-                                            </span>
-                                          )}
-
-                                          {isHospital ? (
-                                            <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-bold bg-slate-500/15 text-slate-700 dark:text-slate-300 border border-slate-500/25">
-                                              <Activity className="w-2.5 h-2.5 text-slate-500" />
-                                              Plantão / Internato
-                                            </span>
-                                          ) : slot.source === 'google' ? (
-                                            <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-bold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
-                                              <Check className="w-2.5 h-2.5 text-emerald-500" />
-                                              Google Agenda
-                                            </span>
-                                          ) : slot.isAiSuggested ? (
-                                            <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-bold bg-purple-500/10 text-purple-600 dark:text-purple-400 border border-purple-500/20">
-                                              <Sparkles className="w-2.5 h-2.5" />
-                                              Sugerido por IA
-                                            </span>
-                                          ) : (
-                                            <span className="px-1.5 py-0.5 rounded text-[10px] font-medium bg-zinc-100 dark:bg-zinc-800 text-zinc-500 dark:text-zinc-400">
-                                              Plataforma
-                                            </span>
-                                          )}
-                                        </div>
-
-                                        <h5 className="text-xs sm:text-sm font-bold text-zinc-900 dark:text-zinc-100 truncate">
-                                          {slot.title}
-                                        </h5>
-
-                                        {(slot.location || cleanEventDescription(slot.description)) && (
-                                          <p className="text-[11px] text-zinc-500 dark:text-zinc-400 truncate">
-                                            {slot.location ? `${slot.location}${cleanEventDescription(slot.description) ? ' • ' : ''}` : ''}
-                                            {cleanEventDescription(slot.description)}
-                                          </p>
-                                        )}
-
-                                        {slot.rationale && (
-                                          <p className="text-[10px] text-blue-600 dark:text-blue-400 italic">
-                                            💡 {slot.rationale}
-                                          </p>
-                                        )}
-                                      </div>
-                                    </div>
-
-                                    {/* Ações do Bloco */}
-                                    <div className="shrink-0 flex items-center gap-1.5">
-                                      {slot.action === 'treinar' && (
-                                        <button
-                                          type="button"
-                                          onClick={() => {
-                                            setActiveCentralDrawer(null);
-                                            handlePracticeArea(recommendedArea.filterName);
-                                          }}
-                                          className="px-2.5 py-1.5 rounded-lg text-white text-xs font-bold cursor-pointer transition-opacity hover:opacity-90 shadow-2xs"
-                                          style={{ backgroundColor: accentConfig.primaryHex }}
-                                        >
-                                          Treinar
-                                        </button>
-                                      )}
-
-                                      {slot.action === 'caderno_erros' && (
-                                        <button
-                                          type="button"
-                                          onClick={() => setActiveCentralDrawer('caderno_erros')}
-                                          className="px-2.5 py-1.5 rounded-lg bg-rose-500/15 text-rose-600 dark:text-rose-400 border border-rose-500/20 text-xs font-bold cursor-pointer hover:bg-rose-500/25"
-                                        >
-                                          Abrir Erros
-                                        </button>
-                                      )}
-
-                                      {slot.action === 'flashcards' && (
-                                        <button
-                                          type="button"
-                                          onClick={() => setActiveCentralDrawer('flashcards')}
-                                          className="px-2.5 py-1.5 rounded-lg bg-blue-500/15 text-blue-600 dark:text-blue-400 border border-blue-500/20 text-xs font-bold cursor-pointer hover:bg-blue-500/25"
-                                        >
-                                          Revisar FSRS
-                                        </button>
-                                      )}
-
-                                      {slot.action === 'mnemonico' && (
-                                        <button
-                                          type="button"
-                                          onClick={() => { if (isCustomizing) return; setActiveCentralDrawer('mnemonico_detalhado'); }}
-                                          className="px-2.5 py-1.5 rounded-lg bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 text-xs font-bold cursor-pointer hover:bg-emerald-500/25"
-                                        >
-                                          Ver Pílula
-                                        </button>
-                                      )}
-
-                                      {slot.action === 'simulado' && (
-                                        <button
-                                          type="button"
-                                          onClick={() => {
-                                            setActiveCentralDrawer(null);
-                                            if (onStartSimuladoExpress) onStartSimuladoExpress(10);
-                                          }}
-                                          className="px-2.5 py-1.5 rounded-lg bg-amber-500/15 text-amber-700 dark:text-amber-300 border border-amber-500/20 text-xs font-bold cursor-pointer hover:bg-amber-500/25"
-                                        >
-                                          Simulado Blitz
-                                        </button>
-                                      )}
-
-                                      {slot.source === 'plataforma' && (
-                                        exportedSlotIds[slot.id] ? (
-                                          <span className="inline-flex items-center gap-1 px-2 py-1 rounded-lg border border-emerald-500/30 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 text-[10px] font-bold">
-                                            <CheckCircle2 className="w-3 h-3 text-emerald-500" />
-                                            <span>Salvo</span>
-                                          </span>
-                                        ) : (
-                                          <button
-                                            type="button"
-                                            onClick={() => handleExportSlotToGoogle(slot)}
-                                            disabled={exportingSlotId === slot.id}
-                                            className="px-2 py-1 rounded-lg border border-blue-500/25 bg-blue-50/50 dark:bg-blue-950/30 text-blue-600 dark:text-blue-400 hover:bg-blue-100/70 text-[10px] font-bold flex items-center gap-1 transition-all cursor-pointer disabled:opacity-50"
-                                            title="Salvar este bloco diretamente no Google Agenda"
-                                          >
-                                            <GoogleIcon className="w-2.5 h-2.5" />
-                                            <span>+ Google</span>
-                                          </button>
-                                        )
-                                      )}
-
-                                      {isUserAdded && (
-                                        <button
-                                          type="button"
-                                          onClick={() => handleRemoveScheduledTask(slot.id)}
-                                          className="p-1 rounded-lg text-zinc-400 hover:text-rose-500 hover:bg-rose-500/10 transition-colors cursor-pointer"
-                                          title="Remover esta tarefa do cronograma"
-                                        >
-                                          <X className="w-3.5 h-3.5" />
-                                        </button>
-                                      )}
-                                    </div>
-                                  </div>
-                                </React.Fragment>
-                              );
-                            })}
-                          </div>
-                        )}
+                        <GoogleCalendarScheduleView
+                          events={daySchedule}
+                          timelineFilter={timelineFilter}
+                          setTimelineFilter={setTimelineFilter}
+                          isGoogleCalendarConnected={isGoogleCalendarConnected}
+                          onOpenAddManual={() => setShowAddManualModal(true)}
+                          onOpenAiCommand={() => setShowAiCommandModal(true)}
+                          onOpenAiDrawer={() => setShowAiScheduleDrawer(true)}
+                          hasAiSuggestions={Boolean(scheduleAiAnalysis?.suggestions && scheduleAiAnalysis.suggestions.length > 0)}
+                          onSyncGoogle={handleSyncNow}
+                          isSyncingGoogle={isSyncingCalendar}
+                          onExportSlotToGoogle={handleExportSlotToGoogle}
+                          exportingSlotId={exportingSlotId}
+                          exportedSlotIds={exportedSlotIds}
+                          onRemoveTask={handleRemoveScheduledTask}
+                          onAction={(action, slot) => {
+                            if (action === 'treinar') {
+                              setActiveCentralDrawer(null);
+                              handlePracticeArea(recommendedArea.filterName);
+                            } else if (action === 'caderno_erros') {
+                              setActiveCentralDrawer('caderno_erros');
+                            } else if (action === 'flashcards') {
+                              setActiveCentralDrawer('flashcards');
+                            } else if (action === 'mnemonico') {
+                              if (isCustomizing) return;
+                              setActiveCentralDrawer('mnemonico_detalhado');
+                            } else if (action === 'simulado') {
+                              setActiveCentralDrawer(null);
+                              if (onStartSimuladoExpress) onStartSimuladoExpress(10);
+                            }
+                          }}
+                          cleanEventDescription={cleanEventDescription}
+                          isHospitalOrDutyEvent={isHospitalOrDutyEvent}
+                          primaryAccentHex={accentConfig.primaryHex}
+                          userScheduledTasks={userScheduledTasks}
+                          onSyncAllTasksToGoogle={handleSyncAllTasksToGoogle}
+                          onClearUserScheduledTasks={handleClearUserScheduledTasks}
+                          isBatchSyncing={isBatchSyncing}
+                        />
                       </div>
                     </div>
                   </div>
@@ -7902,6 +7506,31 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
           </div>
         </div>
       )}
+      {/* 9. DRAWER CENTRAL SECUNDÁRIO: PRÉ-VISUALIZAÇÃO DE SUGESTÕES DE IA COM ADIÇÃO AO CRONOGRAMA */}
+      <AiScheduleDrawer
+        isOpen={showAiScheduleDrawer}
+        onClose={() => setShowAiScheduleDrawer(false)}
+        analysis={scheduleAiAnalysis}
+        userScheduledTasks={userScheduledTasks}
+        onAddTasks={(tasks) => {
+          setUserScheduledTasks(prev => {
+            const prevIds = new Set(prev.map(p => p.id));
+            const newItems = tasks
+              .filter(s => !prevIds.has(s.id))
+              .map(s => ({ ...s, isAiSuggested: true }));
+            const updated = [...prev, ...newItems];
+            if (typeof window !== 'undefined') {
+              localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(updated));
+            }
+            return updated;
+          });
+          setCalendarSyncSuccessMsg(`${tasks.length} atividade(s) adicionada(s) ao cronograma oficial!`);
+        }}
+        onRemoveTask={handleRemoveScheduledTask}
+        onExportToGoogle={handleExportSlotToGoogle}
+        exportingSlotId={exportingSlotId}
+        exportedSlotIds={exportedSlotIds}
+      />
     </div>
   );
 };
