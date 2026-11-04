@@ -1,0 +1,15 @@
+node_modules
+.next
+.git
+.github
+data/*.json
+data/checkpoints/
+data/official_exams/
+data/enare_pdfs/
+data/inep_pdfs/
+*.log
+*.bak
+*.tmp
+.playwright-mcp/
+docs/
+public/

@@ -1,8 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 
-// Carrega variáveis do .env.local prioritariamente
-const env = {};
+// Carrega variáveis de ambiente (Cloud Run / Docker) e .env.local (desenvolvimento local)
+const env = { ...process.env };
 if (fs.existsSync('.env.local')) {
   fs.readFileSync('.env.local', 'utf8').split('\n').forEach(line => {
     const [k, ...v] = line.split('=');

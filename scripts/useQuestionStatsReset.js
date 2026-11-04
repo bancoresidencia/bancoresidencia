@@ -1,0 +1,1 @@
+import{r}from"./vendor-B1q1HSUp.js";import{d as e}from"./ChangePasswordDialog-ZFywmrXK.js";function E(t){r.useEffect(()=>(window.addEventListener(e,t),()=>window.removeEventListener(e,t)),[t])}export{E as u};

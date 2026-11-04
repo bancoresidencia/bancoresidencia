@@ -1,22 +1,21 @@
 # 🏆 Relatório Definitivo de Auditoria e Censo Completo: 132.965 Questões
 
-> **Modo de Execução:** 100% Leitura (*Read-Only*) — **Zero alterações realizadas no banco de dados.**  
-> **Data de Conclusão:** 22/10/2026 | **Duração do Processamento:** 153,3 segundos (via Keyset B-Tree)  
-> **Universo Total:** **132.965 questões** varridas individualmente na tabela `questions` do Supabase.  
+> **Status da Base:** Censo Atualizado Pós-Sincronização de Gabaritos  
+> **Data Original:** 22/10/2026 | **Última Atualização:** 03/11/2026  
+> **Universo Total:** **132.947 questões** ativas no Supabase | **132.965 questões** no Banco Local  
 > **Critério de Integridade:** Cruzamento semântico estrito pelo **conteúdo textual da alternativa** (à prova de troca de ordem entre cadernos de prova).
 
 ---
 
-## 1. Censo Geral de Gabaritos da Plataforma (132.965 Questões)
+## 1. Censo Geral de Gabaritos da Plataforma (Atualizado em 03/11/2026)
 
-| Categoria de Status | Volume de Questões | % do Banco | Diagnóstico Operacional |
-| :--- | :---: | :---: | :--- |
-| **Com Gabarito Válido (A, B, C, D, E)** | **90.984** | **68,43%** | Questões objetivas prontas para resolução com alternativa assinalada |
-| **Anuladas Oficialmente pelas Bancas** | **3.544** | **2,67%** | Questões canceladas pós-recurso em editais oficiais (`is_anulada: true`) |
-| **Total Gabaritadas / Resolvidas** | **94.528** | **71,10%** | **Universo total de questões utilizáveis com resposta/anulação** |
-| **Pendentes sem Gabarito (Faltam)** | **36.851** | **27,71%** | Questões no banco que ainda não possuem resposta cadastrada |
-| **Discursivas / Segunda Fase** | **1.586** | **1,19%** | Questões dissertativas sem alternativas de múltipla escolha |
-| **Total Global Auditado** | **132.965** | **100,0%** | Censo integral de todas as linhas cadastradas |
+| Categoria de Status | Volume Anterior (22/10) | Volume Atual Supabase (03/11) | Volume Banco Local (03/11) | % Atual Supabase | Evolução (+/-) |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Com Gabarito Válido (A, B, C, D, E)** | 90.984 | 115.777 | 115.087 | 87,08% | +24.793 |
+| **Anuladas Oficialmente pelas Bancas** | 3.544 | 4.389 | 4.296 | 3,30% | +845 |
+| **Total Gabaritadas / Resolvidas** | **94.528** (71,10%) | **120.166** | **119.383** | **90,39%** | **+25.638** |
+| **Pendentes sem Gabarito (Faltam)** | 36.851 (27,71%) | 12.781 | 13.582 | 9,61% | -24.070 |
+| **Total Global Auditado** | **132.965** | **132.947** | **132.965** | **100,0%** | Consolidado |
 
 ---
 
@@ -63,20 +62,26 @@ Cruzamos as **20.225 questões** com acervos oficiais consolidados de referênci
 
 ---
 
-## 5. Distribuição por Ano da Prova (Volume e Divergências)
+## 5. Distribuição por Ano da Prova (Volume e Gabaritos Atualizados em 03/11/2026)
 
-| Ano da Prova | Total de Questões | Com Gabarito | Faltam Gabarito | Divergências Reais |
-| :---: | :---: | :---: | :---: | :---: |
-| **2026** | 8.203 | 2.663 | 5.275 | **34** |
-| **2025** | 8.553 | 4.023 | 4.246 | **135** |
-| **2024** | 8.693 | 4.785 | 3.547 | **138** |
-| **2023** | 9.757 | 4.752 | 4.632 | **157** |
-| **2022** | 9.738 | 4.678 | 4.729 | **96** |
-| **2021** | 10.114 | 4.555 | 5.216 | **67** |
-| **2020** | 13.139 | 7.756 | 4.957 | **53** |
-| **2019** | 13.733 | 12.782 | 381 | **55** |
-| **2018** | 13.153 | 12.195 | 469 | **66** |
-| **2014 a 2017** | 37.682 | 34.771 | 3.399 | **128** |
+| Ano da Prova | Total Questões | Gabarito Anterior (22/10) | Gabarito Atual Supabase (03/11) | Gabarito Atual Local | Faltam (Supabase) | % Cobertura Atual | Evolução (+/-) |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **2027** | 200 | — | 144 | 109 | 56 | **72,00%** | +144 |
+| **2026** | 8.203 | 2.663 | 5.303 | 4.937 | 2.900 | **64,65%** | **+2.640** |
+| **2025** | 8.553 | 4.023 | 6.764 | 6.632 | 1.789 | **79,08%** | **+2.741** |
+| **2024** | 8.675 | 4.785 | 7.070 | 7.059 | 1.605 | **81,50%** | **+2.285** |
+| **2023** | 9.757 | 4.752 | 8.677 | 8.626 | 1.080 | **88,93%** | **+3.925** |
+| **2022** | 9.738 | 4.678 | 8.530 | 8.485 | 1.208 | **87,59%** | **+3.852** |
+| **2021** | 10.114 | 4.555 | 8.578 | 8.543 | 1.536 | **84,81%** | **+4.023** |
+| **2020** | 13.139 | 7.756 | 12.479 | 12.461 | 660 | **94,98%** | **+4.723** |
+| **2019** | 13.733 | 12.782 | 13.510 | 13.499 | 223 | **98,38%** | **+728** |
+| **2018** | 13.153 | 12.195 | 12.875 | 12.860 | 278 | **97,89%** | **+680** |
+| **2017** | 12.894 | 12.380 | 12.674 | 12.658 | 220 | **98,29%** | +294 |
+| **2016** | 11.345 | 10.750 | 11.007 | 10.996 | 338 | **97,02%** | +257 |
+| **2015** | 10.992 | 9.890 | 10.251 | 10.223 | 741 | **93,26%** | +361 |
+| **2014** | 1.245 | 1.085 | 1.135 | 1.130 | 110 | **91,16%** | +50 |
+| **2010 a 2013** | 1.206 | 1.166 | 1.169 | 1.165 | 37 | **96,93%** | +3 |
+| **TOTAL** | **132.947** | **94.528** | **120.166** | **119.383** | **12.781** | **90,39%** | **+25.638** |
 
 ---
 

@@ -14,6 +14,17 @@ const SPECIALTY_FILES = {
   clinica: 'data/clinica_medica_final_questions.json'
 };
 
+
+function safeWriteJson(destPath, data, spaces = 0) {
+  const tmpPath = destPath + '.tmp';
+  const str = spaces > 0 ? JSON.stringify(data, null, spaces) : JSON.stringify(data);
+  fs.writeFileSync(tmpPath, str, 'utf8');
+  if (fs.existsSync(destPath)) {
+    try { fs.unlinkSync(destPath); } catch (e) {}
+  }
+  fs.renameSync(tmpPath, destPath);
+}
+
 async function main() {
   const args = process.argv.slice(2);
   const targetSpec = (args[0] || 'urologia').toLowerCase();
@@ -94,7 +105,7 @@ async function main() {
     return;
   }
 
-  const CONCURRENCY = 4; // 4 streams moderados para esgotar slots remanescentes com estabilidade
+  const CONCURRENCY = 6; // 6 streams paralelos contínuos no pool de chaves gratuitas
   let processedCount = 0;
   let lastFileSaveCount = 0;
   let batchBuffer = [];
@@ -139,9 +150,9 @@ async function main() {
 
           // Sincroniza checkpoint e Supabase de forma otimizada a cada 15 questões
           if (batchBuffer.length >= 15) {
-            fs.writeFileSync(checkpointPath, JSON.stringify(Array.from(solvedMap.values())));
+            safeWriteJson(checkpointPath, Array.from(solvedMap.values()));
             if (processedCount - lastFileSaveCount >= 50) {
-              fs.writeFileSync(filePath, JSON.stringify(questions, null, 2));
+              safeWriteJson(filePath, questions, 2);
               lastFileSaveCount = processedCount;
             }
             if (syncSupabase && batchBuffer.length > 0) {
@@ -173,8 +184,8 @@ async function main() {
     batchBuffer = [];
     console.log('💾 Buffer final sincronizado no Supabase.');
   }
-  fs.writeFileSync(checkpointPath, JSON.stringify(Array.from(solvedMap.values())));
-  fs.writeFileSync(filePath, JSON.stringify(questions, null, 2));
+  safeWriteJson(checkpointPath, Array.from(solvedMap.values()));
+  safeWriteJson(filePath, questions, 2);
   console.log('💾 Checkpoint e arquivo consolidado salvos em disco.');
 
   if (shouldAbort) {
