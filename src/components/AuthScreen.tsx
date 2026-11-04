@@ -49,8 +49,10 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
 
-  // Register Fields (simplificados estilo MedEvo)
+  // Register Fields
   const [name, setName] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
+  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [isOver18, setIsOver18] = useState(true);
   const [acceptedTerms, setAcceptedTerms] = useState(true);
 
@@ -67,6 +69,8 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
 
   const handleToggleMode = (newMode: 'login' | 'register') => {
     setMode(newMode);
+    setConfirmPassword('');
+    setShowConfirmPassword(false);
     resetMessages();
   };
 
@@ -130,6 +134,10 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
       setErrorMsg(validation.errorMessage || 'A senha deve conter no mínimo 6 caracteres, uma letra maiúscula, um número e um símbolo.');
       return;
     }
+    if (password !== confirmPassword) {
+      setErrorMsg('As senhas digitadas não coincidem. Por favor, repita a mesma senha.');
+      return;
+    }
     if (!isOver18) {
       setErrorMsg('Você precisa confirmar ter 18 anos ou mais para criar sua conta.');
       return;
@@ -177,32 +185,25 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
 
 
   return (
-    <div className="min-h-[85vh] flex items-center justify-center p-4 sm:p-6">
-      <div className="w-full max-w-xl bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 rounded-3xl shadow-xl overflow-hidden transition-all duration-300">
+    <div className="w-full flex items-center justify-center">
+      <div className="w-full bg-white dark:bg-[var(--bg-card)] border border-zinc-200/90 dark:border-zinc-800/80 rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden transition-all duration-300">
         {/* Cabeçalho Visual da Marca */}
-        <div className="relative p-6 sm:p-8 border-b border-slate-100 dark:border-slate-800/80 bg-gradient-to-b from-slate-50/80 to-transparent dark:from-slate-900/40">
+        <div className="relative px-5 py-4 sm:px-7 sm:py-5 border-b border-slate-100 dark:border-slate-800/80 bg-gradient-to-b from-slate-50/80 to-transparent dark:from-slate-900/40">
           <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <Logo className="w-12 h-12 shrink-0 transition-transform hover:scale-105 duration-200" glow />
+            <div className="flex items-center gap-2.5 sm:gap-3">
+              <Logo className="w-9 h-9 sm:w-10 sm:h-10 shrink-0 transition-transform hover:scale-105 duration-200" glow />
               <div>
-                <h2 className="font-heading text-xl font-extrabold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
+                <h2 className="font-heading text-lg sm:text-xl font-extrabold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
                   <span>Banco Residência</span>
                   <span className="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-full bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-400 border border-blue-200 dark:border-blue-800">
                     2026
                   </span>
                 </h2>
-                <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-                  Plataforma de Alta Performance & Raciocínio Clínico
-                </p>
               </div>
             </div>
 
-            {/* Ações da Direita: Selo de Proteção e Fechar */}
+            {/* Ações da Direita: Fechar */}
             <div className="flex items-center gap-2">
-              <div className="hidden sm:flex items-center gap-1.5 text-[11px] font-bold text-slate-600 dark:text-slate-400 bg-slate-100 dark:bg-slate-800/80 px-2.5 py-1 rounded-xl">
-                <ShieldCheck className="w-4 h-4 text-emerald-500" />
-                <span>Acesso Seguro</span>
-              </div>
               {onClose && (
                 <button
                   type="button"
@@ -218,7 +219,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
 
           {/* Destaque do Plano Selecionado (se houver) */}
           {selectedPlanTitle && (
-            <div className="mt-4 p-3.5 rounded-2xl bg-gradient-to-r from-blue-500/10 via-emerald-500/10 to-transparent border border-blue-500/25 text-xs animate-fadeIn space-y-1.5">
+            <div className="mt-3.5 p-3 rounded-2xl bg-gradient-to-r from-blue-500/10 via-emerald-500/10 to-transparent border border-blue-500/25 text-xs animate-fadeIn space-y-1">
               <div className="flex items-center justify-between gap-2">
                 <div className="flex items-center gap-2 text-blue-700 dark:text-blue-300 font-bold">
                   <Sparkles className="w-4 h-4 text-blue-600 dark:text-blue-400 shrink-0" />
@@ -236,58 +237,58 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
           )}
 
           {/* Abas Alternadoras: Entrar vs Criar Conta */}
-          <div className="mt-6 flex bg-slate-100 dark:bg-slate-900/90 p-1.5 rounded-2xl border border-slate-200/80 dark:border-slate-800">
+          <div className="mt-3.5 sm:mt-4 flex bg-slate-100 dark:bg-slate-900/90 p-1 rounded-xl border border-slate-200/80 dark:border-slate-800">
             <button
               type="button"
               onClick={() => handleToggleMode('login')}
-              className={`flex-1 py-2.5 rounded-xl text-xs font-extrabold transition-all cursor-pointer flex items-center justify-center gap-2 ${
+              className={`flex-1 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center justify-center gap-2 ${
                 mode === 'login'
-                  ? 'bg-white dark:bg-slate-800 text-slate-900 dark:text-white shadow-sm'
+                  ? 'bg-white dark:bg-slate-800 text-slate-900 dark:text-white shadow-xs'
                   : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
               }`}
             >
-              <Lock className="w-3.5 h-3.5" />
+              <Lock className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
               <span>Entrar na Conta</span>
             </button>
             <button
               type="button"
               onClick={() => handleToggleMode('register')}
-              className={`flex-1 py-2.5 rounded-xl text-xs font-extrabold transition-all cursor-pointer flex items-center justify-center gap-2 ${
+              className={`flex-1 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-bold transition-all cursor-pointer flex items-center justify-center gap-2 ${
                 mode === 'register'
-                  ? 'bg-white dark:bg-slate-800 text-slate-900 dark:text-white shadow-sm'
+                  ? 'bg-white dark:bg-slate-800 text-slate-900 dark:text-white shadow-xs'
                   : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
               }`}
             >
-              <User className="w-3.5 h-3.5" />
+              <User className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
               <span>Criar Nova Conta</span>
             </button>
           </div>
         </div>
 
         {/* Corpo do Formulário */}
-        <div className="p-6 sm:p-8 space-y-5">
+        <div className="p-5 sm:p-6 space-y-3.5">
           {/* Mensagens de Feedback */}
           {errorMsg && (
-            <div className="p-3.5 rounded-2xl bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-800 text-rose-800 dark:text-rose-300 text-xs font-semibold flex items-center gap-2.5 animate-fadeIn">
+            <div className="p-3 rounded-xl bg-rose-50 dark:bg-rose-950/40 border border-rose-200 dark:border-rose-800 text-rose-800 dark:text-rose-300 text-xs font-semibold flex items-center gap-2 animate-fadeIn">
               <AlertCircle className="w-4 h-4 shrink-0 text-rose-600 dark:text-rose-400" />
               <span>{errorMsg}</span>
             </div>
           )}
 
           {successMsg && (
-            <div className="p-3.5 rounded-2xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 text-emerald-800 dark:text-emerald-300 text-xs font-semibold flex items-center gap-2.5 animate-fadeIn">
+            <div className="p-3 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 text-emerald-800 dark:text-emerald-300 text-xs font-semibold flex items-center gap-2 animate-fadeIn">
               <CheckCircle2 className="w-4 h-4 shrink-0 text-emerald-600 dark:text-emerald-400" />
               <span>{successMsg}</span>
             </div>
           )}
 
           {/* Botão de Autenticação Social Google */}
-          <div className="space-y-3">
+          <div className="space-y-2.5">
             <button
               type="button"
               onClick={handleGoogleSubmit}
               disabled={loading || googleLoading}
-              className="w-full py-2.5 px-4 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900/90 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-800 dark:text-slate-100 text-xs font-bold transition-all flex items-center justify-center gap-2.5 cursor-pointer shadow-xs hover:border-slate-400 dark:hover:border-slate-600 disabled:opacity-50"
+              className="w-full py-2.5 sm:py-3 px-4 rounded-xl border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900/90 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-800 dark:text-slate-100 text-xs sm:text-sm font-semibold transition-all flex items-center justify-center gap-2.5 cursor-pointer shadow-xs hover:border-slate-400 dark:hover:border-slate-600 disabled:opacity-50"
             >
               <svg className="w-4 h-4 shrink-0" viewBox="0 0 24 24">
                 <path
@@ -324,10 +325,10 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
 
           {/* ================= FORMULÁRIO DE LOGIN ================= */}
           {mode === 'login' ? (
-            <form onSubmit={handleLoginSubmit} className="space-y-4">
+            <form onSubmit={handleLoginSubmit} className="space-y-3 sm:space-y-3.5">
               <div>
-                <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
-                  Endereço de E-mail
+                <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1">
+                  E-mail
                 </label>
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
@@ -338,16 +339,16 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="seu.email@medicina.com.br"
-                    className="w-full pl-10 pr-4 py-2.5 text-xs bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400 transition-all"
+                    placeholder="E-mail"
+                    className="w-full pl-10 pr-4 py-2.5 sm:py-3 text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400 transition-all"
                   />
                 </div>
               </div>
 
               <div>
-                <div className="flex items-center justify-between mb-1.5">
+                <div className="flex items-center justify-between mb-1">
                   <label className="block text-xs font-bold text-slate-700 dark:text-slate-300">
-                    Senha de Acesso
+                    Senha
                   </label>
                 </div>
                 <div className="relative">
@@ -359,8 +360,8 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
                     required
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    placeholder="Sua senha secreta"
-                    className="w-full pl-10 pr-10 py-2.5 text-xs bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden focus:ring-2 text-slate-900 dark:text-white placeholder-slate-400 transition-all"
+                    placeholder="Senha"
+                    className="w-full pl-10 pr-10 py-2.5 sm:py-3 text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden focus:ring-2 text-slate-900 dark:text-white placeholder-slate-400 transition-all"
                   />
                   <button
                     type="button"
@@ -376,7 +377,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full py-3 px-4 rounded-xl text-xs font-extrabold text-white shadow-md flex items-center justify-center gap-2 transition-all hover:scale-101 cursor-pointer disabled:opacity-50 mt-2"
+                className="w-full py-3 sm:py-3.5 px-4 rounded-xl text-sm font-bold text-white shadow-md flex items-center justify-center gap-2 transition-all hover:scale-[1.01] cursor-pointer disabled:opacity-50 mt-1"
                 style={{
                   backgroundColor: accentConfig.primaryHex,
                   boxShadow: `0 6px 20px -3px ${accentConfig.bgRgba}`
@@ -397,7 +398,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
             <form onSubmit={handleRegisterSubmit} className="space-y-4">
               <div>
                 <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
-                  Nome Completo
+                  Nome completo
                 </label>
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
@@ -408,15 +409,15 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
                     required
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    placeholder="Seu nome completo (ex: Dra. Mariana Costa)"
-                    className="w-full pl-10 pr-4 py-2.5 text-xs bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400 transition-all"
+                    placeholder="Nome completo"
+                    className="w-full pl-11 pr-4 py-3.5 text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400 transition-all"
                   />
                 </div>
               </div>
 
               <div>
                 <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
-                  Endereço de E-mail
+                  E-mail
                 </label>
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
@@ -427,15 +428,15 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
                     required
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="seu.email@medicina.com.br"
-                    className="w-full pl-10 pr-4 py-2.5 text-xs bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400 transition-all"
+                    placeholder="E-mail"
+                    className="w-full pl-11 pr-4 py-3.5 text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400 transition-all"
                   />
                 </div>
               </div>
 
               <div>
                 <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
-                  Senha de Acesso
+                  Senha
                 </label>
                 <div className="relative">
                   <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
@@ -446,8 +447,8 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
                     required
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    placeholder="Mínimo 6 caracteres com maiúscula, número e símbolo"
-                    className="w-full pl-10 pr-10 py-2.5 text-xs bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400 transition-all"
+                    placeholder="Senha"
+                    className="w-full pl-11 pr-11 py-3.5 text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden text-slate-900 dark:text-white placeholder-slate-400 transition-all"
                   />
                   <button
                     type="button"
@@ -489,6 +490,34 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
                 </p>
               </div>
 
+              {/* Repita a Senha */}
+              <div>
+                <label className="block text-xs font-bold text-slate-700 dark:text-slate-300 mb-1.5">
+                  Repita a senha
+                </label>
+                <div className="relative">
+                  <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
+                    <Lock className="w-4 h-4" />
+                  </div>
+                  <input
+                    type={showConfirmPassword ? 'text' : 'password'}
+                    required
+                    value={confirmPassword}
+                    onChange={(e) => setConfirmPassword(e.target.value)}
+                    placeholder="Repita a senha"
+                    className="w-full pl-11 pr-11 py-3.5 text-sm bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl focus:outline-hidden focus:ring-2 text-slate-900 dark:text-white placeholder-slate-400 transition-all"
+                  />
+                  <button
+                    type="button"
+                    onClick={() => setShowConfirmPassword(!showConfirmPassword)}
+                    className="absolute inset-y-0 right-0 pr-3.5 flex items-center text-slate-400 hover:text-slate-600 dark:hover:text-slate-300 cursor-pointer"
+                    title={showConfirmPassword ? "Ocultar senha" : "Exibir senha"}
+                  >
+                    {showConfirmPassword ? <EyeOff className="w-4 h-4" /> : <Eye className="w-4 h-4" />}
+                  </button>
+                </div>
+              </div>
+
               {/* Checkboxes de Maioridade e Termos de Uso (Padrão MedEvo) */}
               <div className="space-y-2 pt-1 border-t border-slate-100 dark:border-slate-800/80">
                 <label className="flex items-center gap-2.5 cursor-pointer text-xs text-slate-600 dark:text-slate-300">
@@ -521,7 +550,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full py-3 px-4 rounded-xl text-xs font-extrabold text-white shadow-md flex items-center justify-center gap-2 transition-all hover:scale-101 cursor-pointer disabled:opacity-50 mt-2"
+                className="w-full py-3.5 sm:py-4 px-4 rounded-xl text-sm font-bold text-white shadow-md flex items-center justify-center gap-2 transition-all hover:scale-[1.01] cursor-pointer disabled:opacity-50 mt-2"
                 style={{
                   backgroundColor: accentConfig.primaryHex,
                   boxShadow: `0 6px 20px -3px ${accentConfig.bgRgba}`
@@ -531,7 +560,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
                   <span>Criando Conta...</span>
                 ) : (
                   <>
-                    <span>Criar Conta & Configurar Estudos</span>
+                    <span>Criar Conta</span>
                     <Sparkles className="w-4 h-4" />
                   </>
                 )}

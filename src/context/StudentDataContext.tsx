@@ -91,7 +91,132 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
     Record<string, { letter: 'A' | 'B' | 'C' | 'D' | 'E'; isCorrect: boolean }>
   >({});
 
-  // Carrega respostas persistidas no localStorage
+  // Sincronização e Reconciliação SWR com o Supabase
+  const syncUserAnswersFromSupabase = useCallback(async (userId?: string | null) => {
+    if (!userId || userId === 'demo-student' || typeof window === 'undefined') return;
+
+    try {
+      const supabase = createClient();
+      const { data: remoteRows, error } = await supabase
+        .from('user_answers')
+        .select('*')
+        .eq('user_id', userId);
+
+      if (error || !remoteRows) return;
+
+      setUserAnswers((currentLocal) => {
+        const merged: Record<string, UserAnswerItem> = { ...currentLocal };
+        let hasChanges = false;
+        const missingOnRemote: Array<UserAnswerItem & { questionId: string }> = [];
+
+        for (const row of remoteRows as any[]) {
+          const qid = row.question_id;
+          if (!qid) continue;
+
+          const local = merged[qid];
+          const remoteTime = row.answered_at ? new Date(row.answered_at).getTime() : Date.now();
+          const remoteAttempts = Array.isArray(row.attempts) && row.attempts.length > 0
+            ? row.attempts
+            : [{ letter: row.selected_option, isCorrect: Boolean(row.is_correct), timestamp: remoteTime }];
+
+          if (!local) {
+            merged[qid] = {
+              letter: (row.selected_option as 'A' | 'B' | 'C' | 'D' | 'E') || 'A',
+              isCorrect: Boolean(row.is_correct),
+              timestamp: remoteTime,
+              difficulty: (row.difficulty as any) || 'Médio',
+              isAnulada: false,
+              specialty: row.specialty || undefined,
+              tema: row.tema || undefined,
+              foco: row.foco || undefined,
+              subfoco: row.subfoco || undefined,
+              banca: row.banca || undefined,
+              year: row.year || undefined,
+              errorReason: (row.error_reason as any) || undefined,
+              studentNotes: row.student_notes || undefined,
+              statusRetrial: row.status_retrial || (row.is_correct ? 'recuperado' : 'pendente'),
+              attempts: remoteAttempts
+            };
+            hasChanges = true;
+          } else {
+            const localTime = local.timestamp || 0;
+            if (remoteTime >= localTime) {
+              merged[qid] = {
+                ...local,
+                letter: (row.selected_option as 'A' | 'B' | 'C' | 'D' | 'E') || local.letter,
+                isCorrect: row.is_correct !== undefined ? Boolean(row.is_correct) : local.isCorrect,
+                timestamp: Math.max(remoteTime, localTime),
+                difficulty: (row.difficulty as any) || local.difficulty || 'Médio',
+                specialty: row.specialty || local.specialty,
+                tema: row.tema || local.tema,
+                foco: row.foco || local.foco,
+                subfoco: row.subfoco || local.subfoco,
+                banca: row.banca || local.banca,
+                year: row.year || local.year,
+                errorReason: (row.error_reason as any) || local.errorReason,
+                studentNotes: row.student_notes || local.studentNotes,
+                statusRetrial: row.status_retrial || local.statusRetrial,
+                attempts: remoteAttempts.length >= (local.attempts?.length || 0) ? remoteAttempts : local.attempts
+              };
+              hasChanges = true;
+            } else {
+              missingOnRemote.push({ ...local, questionId: qid });
+            }
+          }
+        }
+
+        // Detecta respostas locais que faltam no banco remoto (ex: resolvidas offline)
+        const remoteIds = new Set(remoteRows.map((r: any) => r.question_id));
+        for (const [qid, ans] of Object.entries(merged)) {
+          if (!remoteIds.has(qid)) {
+            missingOnRemote.push({ ...ans, questionId: qid });
+          }
+        }
+
+        if (hasChanges) {
+          try {
+            const key = getUserAnswersStorageKey(userId);
+            localStorage.setItem(key, JSON.stringify(merged));
+          } catch {}
+        }
+
+        // Upload das respostas locais pendentes para o Supabase
+        if (missingOnRemote.length > 0) {
+          const payload = missingOnRemote.map((a) => ({
+            user_id: userId,
+            question_id: a.questionId,
+            selected_option: a.letter,
+            is_correct: a.isCorrect,
+            answered_at: new Date(a.timestamp || Date.now()).toISOString(),
+            specialty: a.specialty || null,
+            tema: a.tema || null,
+            foco: a.foco || null,
+            subfoco: a.subfoco || null,
+            difficulty: a.difficulty || null,
+            banca: a.banca || null,
+            year: a.year ? Number(a.year) : null,
+            error_reason: a.errorReason || null,
+            student_notes: a.studentNotes || null,
+            status_retrial: a.statusRetrial || (a.isCorrect ? 'recuperado' : 'pendente'),
+            attempts: a.attempts || []
+          }));
+
+          supabase
+            .from('user_answers')
+            .upsert(payload, { onConflict: 'user_id,question_id' })
+            .then(({ error: upErr }) => {
+              if (upErr) console.warn('[StudentDataContext] Aviso ao sincronizar respostas pendentes no Supabase:', upErr);
+            }, () => {});
+        }
+
+        return hasChanges ? merged : currentLocal;
+      });
+    } catch (e) {
+      console.warn('[StudentDataContext] Falha na sincronização SWR de respostas:', e);
+    }
+  }, [getUserAnswersStorageKey]);
+
+  // Carrega respostas do cache local (0ms) e reconcilia com o Supabase em background
   useEffect(() => {
     if (typeof window === 'undefined') return;
     try {
@@ -114,7 +239,12 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
     } catch (e) {
       console.warn('Erro ao carregar respostas locais:', e);
     }
-  }, [user?.id, getUserAnswersStorageKey]);
+
+    // Reconciliação SWR em background com o Supabase
+    if (user?.id) {
+      syncUserAnswersFromSupabase(user.id);
+    }
+  }, [user?.id, getUserAnswersStorageKey, syncUserAnswersFromSupabase]);
 
   // Pastas e Listas
   const [folders, setFolders] = useState<Folder[]>([]);
@@ -125,14 +255,15 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
     try {
       const [userFolds, userLst] = await Promise.all([
         loadUserFolders(user?.id),
-        loadUserLists(user?.id)
+        loadUserLists(user?.id),
+        user?.id ? syncUserAnswersFromSupabase(user.id) : Promise.resolve()
       ]);
       setFolders(userFolds);
       setLists(userLst);
     } catch (err) {
       console.error('Erro ao sincronizar listas e pastas do aluno:', err);
     }
-  }, [user]);
+  }, [user, syncUserAnswersFromSupabase]);
 
   useEffect(() => {
     refreshUserData();
@@ -384,7 +515,7 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
         [questionId]: { letter: selectedLetter, isCorrect }
       }));
 
-      // Sincroniza em segundo plano com o Supabase se logado
+      // Sincroniza em segundo plano com o Supabase com todos os metadados clínicos
       if (user?.id) {
         const supabase = createClient();
         supabase
@@ -395,12 +526,23 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
               question_id: questionId,
               selected_option: selectedLetter,
               is_correct: isCorrect,
-              answered_at: new Date(answerTimestamp).toISOString()
+              answered_at: new Date(answerTimestamp).toISOString(),
+              specialty: answerObj.specialty || null,
+              tema: answerObj.tema || null,
+              foco: answerObj.foco || null,
+              subfoco: answerObj.subfoco || null,
+              difficulty: answerObj.difficulty || null,
+              banca: answerObj.banca || null,
+              year: answerObj.year ? Number(answerObj.year) : null,
+              error_reason: answerObj.errorReason || null,
+              student_notes: answerObj.studentNotes || null,
+              status_retrial: answerObj.statusRetrial || (isCorrect ? 'recuperado' : 'pendente'),
+              attempts: answerObj.attempts || [newAttempt]
             },
             { onConflict: 'user_id,question_id' }
           )
           .then(({ error }) => {
-            if (error) console.warn('Erro ao sincronizar resposta no Supabase:', error);
+            if (error) console.warn('[StudentDataContext] Erro ao sincronizar resposta completa no Supabase:', error);
           });
       }
 
@@ -447,6 +589,26 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
         } catch {}
         return next;
       });
+
+      // Sincroniza metadados atualizados diretamente com o Supabase
+      if (user?.id) {
+        const supabase = createClient();
+        const updatePayload: Record<string, unknown> = {};
+        if (meta.errorReason !== undefined) updatePayload.error_reason = meta.errorReason;
+        if (meta.studentNotes !== undefined) updatePayload.student_notes = meta.studentNotes;
+        if (meta.statusRetrial !== undefined) updatePayload.status_retrial = meta.statusRetrial;
+
+        if (Object.keys(updatePayload).length > 0) {
+          supabase
+            .from('user_answers')
+            .update(updatePayload)
+            .eq('user_id', user.id)
+            .eq('question_id', questionId)
+            .then(({ error }) => {
+              if (error) console.warn('[StudentDataContext] Erro ao sincronizar metadados no Supabase:', error);
+            });
+        }
+      }
     },
     [user, getUserAnswersStorageKey]
   );

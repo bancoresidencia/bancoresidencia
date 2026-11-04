@@ -157,8 +157,8 @@ function HomeContent() {
 
       {/* Modal de Autenticação (Login / Cadastro) */}
       {authModal.isOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-xs overflow-y-auto animate-fadeIn">
-          <div className="w-full max-w-xl my-8">
+        <div className="fixed inset-0 z-50 flex justify-center items-start sm:items-center p-3 sm:p-5 bg-slate-950/70 backdrop-blur-xs overflow-y-auto animate-fadeIn">
+          <div className="w-full max-w-xl sm:max-w-[620px] my-auto py-3 sm:py-6">
             <AuthScreen
               initialMode={authModal.mode}
               selectedPlanTitle={authModal.planTitle}

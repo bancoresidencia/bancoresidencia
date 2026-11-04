@@ -1,9 +1,10 @@
 'use client';
 
-import React, { createContext, useContext, useState, useCallback, useMemo } from 'react';
+import React, { createContext, useContext, useState, useCallback, useMemo, useEffect } from 'react';
 import { useAuth } from '@/context/AuthContext';
 import { PlanDefinition } from '@/config/plans';
 import { SubscriptionModal } from '@/components/SubscriptionModal';
+import { createClient } from '@/lib/supabase/client';
 
 export type PlanType = 'free' | 'pro' | 'premium';
 
@@ -63,6 +64,7 @@ export interface SubscriptionContextType {
   setIsUpgradeModalOpen: (open: boolean) => void;
   canSolveQuestion: () => boolean;
   incrementDailyCount: () => void;
+  syncDailyCountFromRemote?: () => Promise<void>;
 }
 
 const SubscriptionContext = createContext<SubscriptionContextType | undefined>(undefined);
@@ -113,6 +115,40 @@ export function SubscriptionProvider({ children }: { children: React.ReactNode }
   }
 
   const planConfig = PLAN_CONFIGS[plan] || PLAN_CONFIGS.free;
+
+  // Sincronização em segundo plano da contagem diária real no Supabase
+  const syncDailyCountFromRemote = useCallback(async () => {
+    if (!user?.id || user.id === 'demo-student' || typeof window === 'undefined') return;
+
+    try {
+      const supabase = createClient();
+      const startOfDay = new Date();
+      startOfDay.setUTCHours(0, 0, 0, 0);
+
+      const { count, error } = await supabase
+        .from('user_answers')
+        .select('question_id', { count: 'exact', head: true })
+        .eq('user_id', user.id)
+        .gte('answered_at', startOfDay.toISOString());
+
+      if (!error && typeof count === 'number') {
+        setDailyResolvedCount((prevLocal) => {
+          const synced = Math.max(prevLocal, count);
+          try {
+            const todayKey = `bancoresidencia_daily_q_${new Date().toISOString().slice(0, 10)}`;
+            localStorage.setItem(todayKey, String(synced));
+          } catch {}
+          return synced;
+        });
+      }
+    } catch (err) {
+      console.warn('[SubscriptionContext] Erro ao sincronizar contagem diária:', err);
+    }
+  }, [user?.id]);
+
+  useEffect(() => {
+    syncDailyCountFromRemote();
+  }, [syncDailyCountFromRemote]);
 
   const incrementDailyCount = useCallback(() => {
     if (typeof window === 'undefined') return;
@@ -179,7 +215,8 @@ export function SubscriptionProvider({ children }: { children: React.ReactNode }
     closeUpgradeModal,
     setIsUpgradeModalOpen,
     canSolveQuestion,
-    incrementDailyCount
+    incrementDailyCount,
+    syncDailyCountFromRemote
   }), [
     plan,
     planConfig,
@@ -195,7 +232,8 @@ export function SubscriptionProvider({ children }: { children: React.ReactNode }
     closeUpgradeModal,
     setIsUpgradeModalOpen,
     canSolveQuestion,
-    incrementDailyCount
+    incrementDailyCount,
+    syncDailyCountFromRemote
   ]);
 
   return (

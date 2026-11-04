@@ -659,6 +659,8 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     isAnulada: boolean;
     isCorrect: boolean;
     error?: string;
+    limitReached?: boolean;
+    dailyResolvedCount?: number;
   }> | undefined>>({});
 
   const prefetchSolve = useCallback((letter: 'A' | 'B' | 'C' | 'D' | 'E') => {
@@ -748,6 +750,10 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
 
       const data = await dataPromise;
       if (!data || !data.success) {
+        if (data?.limitReached) {
+          openUpgradeModal(null, true);
+          return;
+        }
         throw new Error(data?.error || 'Erro ao validar resolução da questão.');
       }
 

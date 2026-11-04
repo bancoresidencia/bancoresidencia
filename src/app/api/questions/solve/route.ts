@@ -51,6 +51,51 @@ function isRateLimited(ip: string): boolean {
   return false;
 }
 
+// Rastreamento de cota diária de visitantes por IP contra evasão de login em aba anônima
+interface GuestDailyQuota {
+  date: string;
+  questionIds: Set<string>;
+}
+const guestDailyQuotaMap = new Map<string, GuestDailyQuota>();
+
+function checkGuestQuota(clientIp: string, questionId: string): { limitReached: boolean; count: number } {
+  const todayStr = new Date().toISOString().slice(0, 10);
+  let entry = guestDailyQuotaMap.get(clientIp);
+
+  if (!entry || entry.date !== todayStr) {
+    entry = { date: todayStr, questionIds: new Set<string>() };
+    guestDailyQuotaMap.set(clientIp, entry);
+  }
+
+  // Limpeza preventiva de IPs antigos se mapa crescer
+  if (guestDailyQuotaMap.size > 10000) {
+    for (const [k, v] of guestDailyQuotaMap.entries()) {
+      if (v.date !== todayStr) guestDailyQuotaMap.delete(k);
+    }
+  }
+
+  // Se já respondeu esta questão hoje, permite rever/re-tentar
+  if (entry.questionIds.has(questionId)) {
+    return { limitReached: false, count: entry.questionIds.size };
+  }
+
+  if (entry.questionIds.size >= 10) {
+    return { limitReached: true, count: entry.questionIds.size };
+  }
+
+  return { limitReached: false, count: entry.questionIds.size };
+}
+
+function recordGuestSolve(clientIp: string, questionId: string) {
+  const todayStr = new Date().toISOString().slice(0, 10);
+  let entry = guestDailyQuotaMap.get(clientIp);
+  if (!entry || entry.date !== todayStr) {
+    entry = { date: todayStr, questionIds: new Set<string>() };
+    guestDailyQuotaMap.set(clientIp, entry);
+  }
+  entry.questionIds.add(questionId);
+}
+
 // Cache em memória no Serverless Edge com TTL de 30 minutos para gabaritos
 interface CachedQuestionData {
   id: string;
@@ -59,6 +104,13 @@ interface CachedQuestionData {
   is_anulada: boolean;
   commentary: string;
   options: unknown[];
+  especialidade?: string | null;
+  tema?: string | null;
+  foco?: string | null;
+  subfoco?: string | null;
+  difficulty?: string | null;
+  banca?: string | null;
+  year?: number | null;
   cachedAt: number;
 }
 const questionCache = new Map<string, CachedQuestionData>();
@@ -66,7 +118,7 @@ const CACHE_TTL_MS = 30 * 60 * 1000;
 
 export async function POST(req: NextRequest) {
   try {
-    // 1. Verificação de Rate Limit por IP
+    // 1. Verificação de Rate Limit por IP contra raspagem
     const clientIp =
       req.headers.get('x-forwarded-for')?.split(',')[0].trim() ||
       req.headers.get('x-real-ip') ||
@@ -107,13 +159,20 @@ export async function POST(req: NextRequest) {
     }
 
     const now = Date.now();
-    let row: {
+    let row: CachedQuestionData | {
       id: string;
       code?: string;
       correct_answer?: string;
       is_anulada?: boolean;
       commentary?: string;
       options?: unknown[];
+      especialidade?: string | null;
+      tema?: string | null;
+      foco?: string | null;
+      subfoco?: string | null;
+      difficulty?: string | null;
+      banca?: string | null;
+      year?: number | null;
     } | null = null;
 
     // 4. Cache em memória ultra-rápido (0ms)
@@ -124,14 +183,14 @@ export async function POST(req: NextRequest) {
       const supabaseAdmin = getSupabaseAdmin();
       const { data, error } = await supabaseAdmin
         .from('questions')
-        .select('id, code, correct_answer, is_anulada, commentary, options')
+        .select('id, code, correct_answer, is_anulada, commentary, options, especialidade, tema, foco, subfoco, difficulty, banca, year')
         .eq('id', questionId)
         .maybeSingle();
 
       if (!data && !error) {
         const byCodeRes = await supabaseAdmin
           .from('questions')
-          .select('id, code, correct_answer, is_anulada, commentary, options')
+          .select('id, code, correct_answer, is_anulada, commentary, options, especialidade, tema, foco, subfoco, difficulty, banca, year')
           .eq('code', questionId)
           .maybeSingle();
         if (byCodeRes.error) {
@@ -155,6 +214,13 @@ export async function POST(req: NextRequest) {
           is_anulada: Boolean(row.is_anulada),
           commentary: row.commentary || '',
           options: Array.isArray(row.options) ? row.options : [],
+          especialidade: row.especialidade || null,
+          tema: row.tema || null,
+          foco: row.foco || null,
+          subfoco: row.subfoco || null,
+          difficulty: row.difficulty || null,
+          banca: row.banca || null,
+          year: row.year ? Number(row.year) : null,
           cachedAt: now
         };
         questionCache.set(row.id, cacheEntry);
@@ -171,7 +237,111 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    // 5. Avaliação instantânea da resposta
+    // 5. Verificação de Autenticação e Cota Diária (Plano Gratuito / Visitantes)
+    let authenticatedUser: { id: string } | null = null;
+    const supabaseAdmin = getSupabaseAdmin();
+
+    // 5.1 Identificar usuário autenticado via Bearer Token (Header)
+    const authHeader = req.headers.get('authorization');
+    if (authHeader && authHeader.startsWith('Bearer ')) {
+      const token = authHeader.substring(7);
+      const { data: { user: authUser } } = await supabaseAdmin.auth.getUser(token);
+      if (authUser) {
+        authenticatedUser = { id: authUser.id };
+      }
+    }
+
+    // 5.2 Se não encontrou no header, verifica cookies de sessão
+    if (!authenticatedUser) {
+      try {
+        const supabaseServer = await createSupabaseServerClient();
+        const { data: { user: cookieUser } } = await supabaseServer.auth.getUser();
+        if (cookieUser) {
+          authenticatedUser = { id: cookieUser.id };
+        }
+      } catch {
+        // Sem cookies de sessão
+      }
+    }
+
+    // 5.3 Validação de plano e contagem diária no Supabase
+    if (authenticatedUser) {
+      const { data: profile } = await supabaseAdmin
+        .from('profiles')
+        .select('role, subscription_plan, subscription_status, subscription_expires_at')
+        .eq('id', authenticatedUser.id)
+        .maybeSingle();
+
+      const userRole = (profile?.role || '').toLowerCase();
+      const isAdminOrCurator = Boolean(
+        userRole === 'admin' ||
+        userRole === 'curator' ||
+        userRole === 'curador' ||
+        userRole === 'superadmin'
+      );
+
+      const plan = (profile?.subscription_plan || 'free').toLowerCase();
+      const status = profile?.subscription_status || 'inactive';
+      const expiresAt = profile?.subscription_expires_at ? new Date(profile.subscription_expires_at).getTime() : null;
+      const isNotExpired = expiresAt === null || expiresAt > now;
+      const isProOrPremium = Boolean((plan === 'pro' || plan === 'premium') && status === 'active' && isNotExpired);
+
+      const isUnlimitedPlan = isAdminOrCurator || isProOrPremium;
+
+      // Se for plano gratuito, verifica o limite estrito de 10 questões/dia
+      if (!isUnlimitedPlan) {
+        const startOfDay = new Date();
+        startOfDay.setUTCHours(0, 0, 0, 0);
+        const startIso = startOfDay.toISOString();
+
+        const { count, error: countErr } = await supabaseAdmin
+          .from('user_answers')
+          .select('question_id', { count: 'exact', head: true })
+          .eq('user_id', authenticatedUser.id)
+          .gte('answered_at', startIso);
+
+        const dailyCount = count || 0;
+
+        if (dailyCount >= 10) {
+          // Checa se esta questão específica já foi respondida hoje pelo usuário (permite rever/re-tentar)
+          const { data: alreadySolvedToday } = await supabaseAdmin
+            .from('user_answers')
+            .select('question_id')
+            .eq('user_id', authenticatedUser.id)
+            .eq('question_id', row.id)
+            .gte('answered_at', startIso)
+            .maybeSingle();
+
+          if (!alreadySolvedToday) {
+            return NextResponse.json(
+              {
+                success: false,
+                limitReached: true,
+                error: 'Limite diário de 10 questões atingido no plano Gratuito. Faça upgrade para o Pro para continuar resolvendo sem limites.',
+                dailyResolvedCount: dailyCount
+              },
+              { status: 403 }
+            );
+          }
+        }
+      }
+    } else {
+      // 5.4 Visitante não autenticado (verificação de cota por IP para evitar burla em aba anônima)
+      const guestCheck = checkGuestQuota(clientIp, row.id);
+      if (guestCheck.limitReached) {
+        return NextResponse.json(
+          {
+            success: false,
+            limitReached: true,
+            error: 'Limite diário de 10 questões para visitantes atingido. Crie sua conta ou faça login para continuar resolvendo.',
+            dailyResolvedCount: guestCheck.count
+          },
+          { status: 403 }
+        );
+      }
+    }
+
+    // 6. Avaliação instantânea da resposta
     const isAnulada = Boolean(row.is_anulada || row.correct_answer === 'ANULADA');
     const goldAnswer = (row.correct_answer || (isAnulada ? 'ANULADA' : '')).trim().toUpperCase();
     const studentChoice = typeof selectedOption === 'string' ? selectedOption.trim().toUpperCase() : '';
@@ -180,40 +350,46 @@ export async function POST(req: NextRequest) {
       ? true
       : studentChoice.length > 0 && studentChoice === goldAnswer;
 
-    // 6. Sincronização desacoplada em background (NÃO bloqueia o retorno do gabarito ao aluno)
+    // 7. Sincronização em background com metadados clínicos completos
     if (studentChoice && row.id) {
-      const targetQuestionId = row.id;
-      const targetChoice = studentChoice;
-      const targetIsCorrect = isCorrect;
-      
-      // Executa de forma assíncrona desacoplada
-      (async () => {
-        try {
-          const supabaseServer = await createSupabaseServerClient();
-          const { data: { user } } = await supabaseServer.auth.getUser();
-
-          if (user) {
-            const supabaseAdmin = getSupabaseAdmin();
+      if (authenticatedUser) {
+        const targetUserId = authenticatedUser.id;
+        const targetQuestionId = row.id;
+        const targetChoice = studentChoice;
+        const targetIsCorrect = isCorrect;
+        
+        (async () => {
+          try {
             await supabaseAdmin.from('user_answers').upsert(
               {
-                user_id: user.id,
+                user_id: targetUserId,
                 question_id: targetQuestionId,
                 selected_option: targetChoice,
                 is_correct: targetIsCorrect,
-                answered_at: new Date().toISOString()
+                answered_at: new Date().toISOString(),
+                specialty: row.especialidade || null,
+                tema: row.tema || null,
+                foco: row.foco || null,
+                subfoco: row.subfoco || null,
+                difficulty: row.difficulty || null,
+                banca: row.banca || null,
+                year: row.year ? Number(row.year) : null
               },
               { onConflict: 'user_id,question_id' }
             );
+          } catch (authSyncErr) {
+            console.warn('[API Solve] Aviso ao registrar histórico em background:', authSyncErr);
           }
-        } catch (authSyncErr) {
-          console.warn('[API Solve] Aviso ao registrar histórico em background:', authSyncErr);
-        }
-      })().catch(() => {});
+        })().catch(() => {});
+      } else {
+        recordGuestSolve(clientIp, row.id);
+      }
     }
 
     // Resposta imediata em poucos milissegundos
     return NextResponse.json({
       success: true,
+      limitReached: false,
       questionId: row.id,
       correctAnswer: goldAnswer,
       isAnulada,
