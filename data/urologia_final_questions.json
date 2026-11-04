@@ -7770,36 +7770,25 @@
     "options": [
       {
         "letter": "A",
-        "text": "A sondagem vesical de demora pode ser realizada de imediato, pois não háuretrorragia",
-        "explanation": "A ausência de sinais clássicos de lesão uretral, como **uretrorragia**, sangue no meato uretrental, hematoma perineal ou escrotal expansivo associado a fratura pélvica instável (a pelve é descrita como estável no enunciado), permite a realização da sondagem vesical de demora **de forma segura e imediata** para monitorização rigorosa do débito urinário no paciente politraumatizado em choque."
+        "text": "A sondagem vesical de demora pode ser realizada de imediato, pois não háuretrorragia"
       },
       {
         "letter": "B",
-        "text": "A sondagem vesical está contra-indicada em qualquer hipótese devido suspeita detrauma uretral",
-        "explanation": "A sondagem vesical **não está contraindicada em qualquer hipótese**, sendo um procedimento mandatório no paciente grave com instabilidade hemodinâmica (choque hemorrágico/obstrutivo) para mensuração estrita da diurese, desde que **excluídos os sinais clínicos de lesão uretral**."
+        "text": "A sondagem vesical está contra-indicada em qualquer hipótese devido suspeita detrauma uretral"
       },
       {
         "letter": "C",
-        "text": "Devido suspeita de trauma uretral, deve ser realizada cistostomia de urgência",
-        "explanation": "A realização de cistostomia de urgência é procedimento reservado para pacientes com **lesão uretral confirmada** ou alta suspeição clínica (uretrorragia, próstata alta ao toque retal, fratura grave de pelve), não sendo indicada na ausência de evidências de trauma na uretra."
+        "text": "Devido suspeita de trauma uretral, deve ser realizada cistostomia de urgência"
       },
       {
         "letter": "D",
-        "text": "Deve-se proceder à uretrografia com sonda alocada na fossa navicular para pesquisade trauma uretral antes da sondagem vesical",
-        "explanation": "A realização mandatória de uretrografia retrógrada antes de qualquer tentativa de sondagem só é indicada quando há **suspeita clínica de lesão uretral**, procedimento desnecessário e que atrasa a ressuscitação volêmica em pacientes estáveis do ponto de vista uretromecânico."
+        "text": "Deve-se proceder à uretrografia com sonda alocada na fossa navicular para pesquisade trauma uretral antes da sondagem vesical"
       }
     ],
     "correctAnswer": "D",
-    "commentary": "O atendimento inicial ao politraumatizado segundo o Advanced Trauma Life Support (ATLS) prioriza a identificação e o tratamento imediato de lesões com risco iminente de vida (via aérea, respiração e circulação). No caso clínico em questão, o paciente apresenta sinais de choque hipovolêmico/obstrutivo (hipotensão, taquicardia e dispneia por provável pneumotórax hipertensivo à direita). Para a adequada condução da reposição volêmica e avaliação da perfusão tecidual, a **monitorização do débito urinário** através da sondagem vesical é imperativa. Como o exame físico da genitália evidenciou **ausência de uretrorragia** e a pelve encontra-se estável, **não há contraindicação** ao cateterismo vesical transuretral, tornando o procedimento seguro e imediato.\n\nPrincipal Motivo de Erro:\nO principal motivo que leva o aluno ao erro nesta questão é a **generalização indevida**, assumindo erroneamente que todo paciente politraumatizado grave ou com trauma na região pélvico-abdominal possui contraindicação absoluta à sondagem vesical transuretral, confundindo hematoma escrotal isolado sem sinais uretrais com lesão uretral completa.\n\nTake-Home Message:\nA presença de **uretrorragia, sangue no meato ou fratura pélvica instável** contraindica a sondagem vesical transuretral e exige uretrografia retrógrada; na **ausência desses sinais**, a sondagem é segura e fundamental para guiar a ressuscitação volêmica.\n\nEvolução de Diretrizes:\nAs diretrizes do ATLS e do Colégio Americano de Cirurgiões mantêm o mesmo princípio histórico: a avaliação clínica da uretra (inspeção do meato e toque retal) precede a sondagem vesical, e a ausência de sinais de alerta descarta a necessidade de exames uretromecânicos adicionais antes do cateterismo.\n\nReferências:\n• Advanced Trauma Life Support (ATLS): Student Course Manual - American College of Surgeons\n• Campbell-Walsh Urologia",
+    "commentary": "",
     "images": [],
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a **generalização indevida**, assumindo erroneamente que todo paciente politraumatizado grave ou com trauma na região pélvico-abdominal possui contraindicação absoluta à sondagem vesical transuretral, confundindo hematoma escrotal isolado sem sinais uretrais com lesão uretral completa.",
-    "takeHomeMessage": "A presença de **uretrorragia, sangue no meato ou fratura pélvica instável** contraindica a sondagem vesical transuretral e exige uretrografia retrógrada; na **ausência desses sinais**, a sondagem é segura e fundamental para guiar a ressuscitação volêmica.",
-    "references": [
-      "Advanced Trauma Life Support (ATLS): Student Course Manual - American College of Surgeons",
-      "Campbell-Walsh Urologia"
-    ],
-    "correct_answer": "D",
-    "guidelineEvolution": "As diretrizes do ATLS e do Colégio Americano de Cirurgiões mantêm o mesmo princípio histórico: a avaliação clínica da uretra (inspeção do meato e toque retal) precede a sondagem vesical, e a ausência de sinais de alerta descarta a necessidade de exames uretromecânicos adicionais antes do cateterismo."
+    "correct_answer": "D"
   },
   {
     "id": "f5bf823d-7fa4-4253-8b66-9a175fa7f0d5",
@@ -10217,39 +10206,28 @@
     "options": [
       {
         "letter": "A",
-        "text": "I apenas.",
-        "explanation": "A inserção de cateter vesical **antes da realização do FAST prejudica a acurácia do exame ao esvaziar a bexiga**, que serve como janela acústica fundamental para a identificação de líquido livre no fundo de saco de Douglas na pelve. Portanto, a afirmativa I está incorreta."
+        "text": "I apenas."
       },
       {
         "letter": "B",
-        "text": "II e IV apenas.",
-        "explanation": "A hematúria macroscópica no contexto de trauma **indica lesão em qualquer ponto do trato geniturinário (rim, ureteres ou bexiga)**, exigindo investigação complementar mandatória com imagem. Além disso, a presença de equimose perineal ou hematoma escrotal **sugere fortemente lesão da uretra posterior ou bulbar**, tornando a **uretrografia retrógrada mandatória** antes da tentativa de passagem de sonda vesical de demora. Portanto, as afirmativas II e IV estão corretas."
+        "text": "II e IV apenas."
       },
       {
         "letter": "C",
-        "text": "III e IV apenas.",
-        "explanation": "A afirmativa III está incorreta porque **a ausência de hematúria não exclui lesão grave do trato geniturinário**, visto que lesões importantes de ureter, avulsão do pedículo renal ou lesões graves de uretra podem cursar com hematúria microscópica ou até mesmo sem hematúria significativa."
+        "text": "III e IV apenas."
       },
       {
         "letter": "D",
-        "text": "I e III apenas.",
-        "explanation": "A afirmativa I está incorreta pois **o cateter vesical não deve preceder o FAST**, e a afirmativa III também está incorreta porque **a ausência de hematúria não exclui lesões geniturinárias graves**."
+        "text": "I e III apenas."
       }
     ],
     "correctAnswer": "A",
     "commentary": "",
     "images": [],
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é **confundir a cronologia e a utilidade da sondagem vesical em relação ao FAST**, além de subestimar a gravidade de lesões uretrais e ureterais que podem cursar com **ausência de hematúria macroscópica**.",
-    "takeHomeMessage": "**Nunca passe sonda vesical antes do FAST** se precisar da janela pélvica, e **jamais confie apenas na ausência de hematúria** para descartar lesões urogenitais graves em politraumatizados.",
-    "references": [
-      "Advanced Trauma Life Support (ATLS): Student Course Manual. 10th ed. American College of Surgeons",
-      "Campbell-Walsh Urology. 12th ed. Elsevier"
-    ],
     "correct_answer": "A",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
     "official_book": "Trauma Abdominal e Pélvico.pdf.json",
-    "guidelineEvolution": "As diretrizes do Advanced Trauma Life Support (ATLS) e da Associação Americana de Urologia (AUA) mantêm inalterados os conceitos de que a uretrografia retrógrada é o padrão-ouro para o diagnóstico de lesão uretral na vigência de sinais perineais, e que o FAST deve preceder manobras invasivas que esvaziem a bexiga.",
     "is_anulada": false
   },
   {
@@ -11913,34 +11891,24 @@
     "options": [
       {
         "letter": "A",
-        "text": "Tomografia computadorizada do abdome com contraste.",
-        "explanation": "A tomografia computadorizada com contraste é excelente para avaliar o trato urinário superior e lesões parenquimatosas renais ou vesicais intraperitoniais, **mas possui baixa acurácia e não é o exame padrão-ouro para o diagnóstico de lesões da uretra posterior ou anterior**, além de não substituir o exame contrastado específico do trato urinário baixo diante de sinais clínicos evidentes."
+        "text": "Tomografia computadorizada do abdome com contraste."
       },
       {
         "letter": "B",
-        "text": "Uretrocistografia retrógrada.",
-        "explanation": "A **uretrocistografia retrógrada** é o **exame padrão-ouro mandatório** para a avaliação de trauma de uretra, indicado imediatamente diante de sinais clínicos de lesão uretral como sangue no meato externo, equimose perineal e fraturas pélvicas instáveis, permitindo identificar o extravasamento de contraste e o grau da lesão antes de qualquer tentativa de passagem de sonda vesical de demora."
+        "text": "Uretrocistografia retrógrada."
       },
       {
         "letter": "C",
-        "text": "Cistoscopia endoscópica.",
-        "explanation": "A cistoscopia endoscópica na fase aguda do trauma **apresenta limitações técnicas graves decorrentes do campo operatório exangue, presença de coágulos e distorção anatômica pélvica**, além do risco iatrogênico de transformar uma lesão parcial em completa, não sendo o exame inicial de escolha para o trato urinário baixo."
+        "text": "Cistoscopia endoscópica."
       },
       {
         "letter": "D",
-        "text": "Videolaparoscopia diagnóstica.",
-        "explanation": "A videolaparoscopia diagnóstica é reservada para a avaliação de lesões intraperitoniais, cavidade abdominal ou estadiamento de traumas abdomino-pélvicos complexos com instabilidade, **sendo totalmente inadequada e ineficaz para o diagnóstico e visualização de lesões do aparelho urinário baixo**, especificamente da uretra."
+        "text": "Videolaparoscopia diagnóstica."
       }
     ],
     "correctAnswer": "C",
     "commentary": "",
     "images": [],
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a confusão entre os exames de imagem do trato urinário superior e inferior, optando equivocadamente pela tomografia computadorizada ou cistoscopia devido à familiaridade com o protocolo ATLS para o abdome, negligenciando a indicação específica da uretrocistografia retrógrada diante de sinais de trauma uretral.",
-    "takeHomeMessage": "Diante de **sangue no meato uretral, equimose perineal e fratura de pelve**, a conduta mandatória é **contraindicar a passagem de sonda vesical** e realizar imediatamente a **uretrocistografia retrógrada** para confirmar a lesão da uretra.",
-    "references": [
-      "Advanced Trauma Life Support (ATLS): Student Course Manual",
-      "Campbell-Walsh Urology"
-    ],
     "correct_answer": "C",
     "official_audit": {
       "verified": true,
@@ -11952,8 +11920,7 @@
     "is_official": true,
     "provenance": "oficial_drive_tematico",
     "official_book": "Trauma Abdominal e Pélvico.pdf.json",
-    "is_anulada": false,
-    "guidelineEvolution": "As diretrizes do Advanced Trauma Life Support (ATLS) e da Associação Americana de Urologia (AUA) mantêm inalterada a conduta de que a uretrocistografia retrógrada é o exame padrão-ouro para o diagnóstico de trauma uretral, enfatizando firmemente a proibição do cateterismo uretral cego na vigência de sinais de alerta."
+    "is_anulada": false
   },
   {
     "id": "99c478f0-7e00-4e5d-a8a7-0246b9bb8cf7",
@@ -13999,41 +13966,29 @@
     "options": [
       {
         "letter": "A",
-        "text": "Conduta expectante.",
-        "explanation": "A **conduta expectante ou vigilância ativa** é indicada apenas para pacientes com sintomas urinários baixos leves a moderados que não causam impacto significativo na qualidade de vida e na ausência de complicações. O caso em tela apresenta uma urgência urológica clássica — **retenção urinária aguda associada à insuficiência renal obstrutiva pós-renal e hidronefrose bilateral** —, exigindo desobstrução imediata e não observação."
+        "text": "Conduta expectante."
       },
       {
         "letter": "B",
-        "text": "Passagem de cateter duplo J.",
-        "explanation": "A passagem de **cateter duplo J** é um procedimento retrógrado que requer cistoscopia ou fluoroscopia, sendo indicado para desobstrução ureteral intrínseca ou extrínseca alta (por exemplo, cálculos ou neoplasias). No cenário de **retenção urinária aguda com bexiga plena e hidronefrose secundária à obstrução prostática baixa**, o problema primário reside no colo vesical e na uretra, tornando o duplo J ineficaz para esvaziar a bexiga e corrigir a retenção urinária."
+        "text": "Passagem de cateter duplo J."
       },
       {
         "letter": "C",
-        "text": "Nefrostomia bilateral.",
-        "explanation": "A **nefrostomia percutânea bilateral** é um método invasivo de desobstrução urinária alta reservada para casos de falha da sondagem uretral, uretra intransponível, estenoses uretrais graves ou infecção urinária grave associada à obstrução alta. No presente caso, a hidronefrose e a insuficiência renal decorrem de **retenção urinária aguda e pressão retrógrada decorrente de HPB**, sendo a via urinária inferior perfeitamente acessível pela uretra."
+        "text": "Nefrostomia bilateral."
       },
       {
         "letter": "D",
-        "text": "Sondagem com Foley.",
-        "explanation": "A **sondagem vesical de demora com sonda de Foley** constitui o tratamento **padrão-ouro imediato** para a retenção urinária aguda obstrutiva, permitindo o esvaziamento vesical completo, alívio da dor em hipogástrio, reversão da insuficiência renal aguda obstrutiva e descompressão do trato urinário superior."
+        "text": "Sondagem com Foley."
       },
       {
         "letter": "E",
-        "text": "Finasterida e seguimento ambulatorial.",
-        "explanation": "A introdução de **terapêutica farmacológica com inibidores da 5-alfa-redutase** como a finasterida isolada ou combinada não tem papel no cenário de **emergência urológica aguda**. A medicação demora meses para reduzir o volume prostático e não resolve o quadro obstrutivo agudo instalados, sendo obrigatória a descompressão mecânica prévia."
+        "text": "Finasterida e seguimento ambulatorial."
       }
     ],
     "correctAnswer": "D",
-    "commentary": "O paciente apresenta um quadro clássico de **retenção urinária aguda (RUA)** complicada por **insuficiência renal aguda obstrutiva (nefropatia obstrutiva pós-renal)** e **ureterohidronefrose bilateral**, secundária à **hiperplasia prostática benigna (HPB)**. Diante de uma retenção urinária aguda associada a pico de creatinina e repercussão alta nas vias urinárias, a prioridade absoluta é a **descompressão imediata do trato urinário inferior** por meio de **sondagem vesical de demora**. A desobstrução uretral alivia a pressão retrógrada exercida sobre os ureteres e rins, permitindo a recuperação da função renal e o alívio sintomático imediato.\n\nPrincipal Motivo de Erro:\nO principal motivo que leva o aluno ao erro nesta questão é a **confusão entre o tratamento de manutenção a longo prazo da HPB e o manejo de uma emergência urológica aguda**, optando erroneamente por iniciar medicações ou focar na hidronefrose alta com procedimentos invasivos como duplo J ou nefrostomia, ignorando que a causa primária é a obstrução do colo vesical solucionável por cateterismo uretral simples.\n\nTake-Home Message:\nDiante de **retenção urinária aguda e insuficiência renal obstrutiva por HPB**, a conduta inicial mandatória é sempre a **sondagem vesical de demora**, independentemente da gravidade da hidronefrose associada.\n\nEvolução de Diretrizes:\nA indicação de sondagem vesical de demora para alívio imediato da retenção urinária aguda obstrutiva por HPB permanece inalterada nas diretrizes urológicas contemporâneas da Sociedade Brasileira de Urologia (SBU) e da American Urological Association (AUA).\n\nReferências:\n• Diretrizes da Sociedade Brasileira de Urologia - Hiperplasia Prostática Benigna\n• Campbell-Walsh Urology",
+    "commentary": "",
     "images": [],
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a **confusão entre o tratamento de manutenção a longo prazo da HPB e o manejo de uma emergência urológica aguda**, optando erroneamente por iniciar medicações ou focar na hidronefrose alta com procedimentos invasivos como duplo J ou nefrostomia, ignorando que a causa primária é a obstrução do colo vesical solucionável por cateterismo uretral simples.",
-    "takeHomeMessage": "Diante de **retenção urinária aguda e insuficiência renal obstrutiva por HPB**, a conduta inicial mandatória é sempre a **sondagem vesical de demora**, independentemente da gravidade da hidronefrose associada.",
-    "references": [
-      "Diretrizes da Sociedade Brasileira de Urologia - Hiperplasia Prostática Benigna",
-      "Campbell-Walsh Urology"
-    ],
-    "correct_answer": "D",
-    "guidelineEvolution": "A indicação de sondagem vesical de demora para alívio imediato da retenção urinária aguda obstrutiva por HPB permanece inalterada nas diretrizes urológicas contemporâneas da Sociedade Brasileira de Urologia (SBU) e da American Urological Association (AUA)."
+    "correct_answer": "D"
   },
   {
     "id": "c6296e17-9d32-466f-aaef-08b5a9281ac6",
@@ -15640,44 +15595,32 @@
     "options": [
       {
         "letter": "A",
-        "text": "O método diagnóstico de escolha nas lesões renais é a urografia excretora.",
-        "explanation": "O método diagnóstico de escolha nas lesões renais em pacientes hemodinamicamente estáveis é a **tomografia computadorizada com contraste endovenoso**, e não a urografia excretora, que perdeu espaço por fornecer menor detalhamento anatômico e vascular."
+        "text": "O método diagnóstico de escolha nas lesões renais é a urografia excretora."
       },
       {
         "letter": "B",
-        "text": "As lesões ureterais por violência externa são mais frequentemente causadas por contusão.",
-        "explanation": "As lesões ureterais por violência externa são, na sua grande maioria, **causadas por ferimentos penetrantes (arma de fogo ou arma branca)**, sendo o trauma contuso uma causa extremamente rara de lesão ureteral isolada."
+        "text": "As lesões ureterais por violência externa são mais frequentemente causadas por contusão."
       },
       {
         "letter": "C",
-        "text": "A maioria das lesões renais resulta de trauma fechado (80%).",
-        "explanation": "Cerca de 80% a 90% de todas as lesões renais decorrem de **trauma fechado (contuso)**, geralmente associado a acidentes automobilísticos, quedas de altura ou traumas esportivos de contato."
+        "text": "A maioria das lesões renais resulta de trauma fechado (80%)."
       },
       {
         "letter": "D",
-        "text": "A principal causa de lesão da bexiga é a lesão iatrogênica, causada por sondagem vesical.",
-        "explanation": "A principal causa de lesão da bexiga é a **iatrogenia cirúrgica** (principalmente em cirurgias pélvicas ginecológicas, urológicas e gerais), e não a sondagem vesical, que raramente causa perfuração vesical traumática quando realizada com técnica adequada."
+        "text": "A principal causa de lesão da bexiga é a lesão iatrogênica, causada por sondagem vesical."
       },
       {
         "letter": "E",
-        "text": "As lesões no ureter são mais bem abordadas por meio de stents ureterais endoscópicos.",
-        "explanation": "As lesões ureterais extensas ou complexas exigem **reparo cirúrgico aberto ou minimamente invasivo (como reimplante ureteral ou anastomose término-terminal)**, sendo os stents reservados para lesões parciais selecionadas ou como suporte pós-operatório, e não como abordagem primária isolada para a maioria das lesões graves."
+        "text": "As lesões no ureter são mais bem abordadas por meio de stents ureterais endoscópicos."
       }
     ],
     "correctAnswer": "A",
-    "commentary": "O trauma renal é o mais frequente do trato geniturinário, sendo a grande maioria decorrente de **trauma fechado (contuso)**. Pacientes estáveis com suspeita de lesão renal devem ser investigados obrigatoriamente com **tomografia computadorizada helicoidal com contraste endovenoso em fases múltiplas**, permitindo avaliar o parênquima, o sistema coletor e a extensão do extravasamento urinário ou lesão vascular. O tratamento conservador é o padrão-ouro para a maioria dos graus baixos e moderados (I a III), reservando-se a intervenção cirúrgica ou angioembolização para instabilidade hemodinâmica ou lesões grau IV/V selecionadas.\n\nPrincipal Motivo de Erro:\nO principal motivo que leva o aluno ao erro nesta questão é a confusão entre os mecanismos etiológicos dos diferentes órgãos do trato geniturinário, acreditando erroneamente que o ureter sofre mais com trauma contuso ou que exames obsoletos como a urografia excretora ainda mantêm o papel de padrão-ouro diagnóstico.\n\nTake-Home Message:\nA grande maioria dos traumas renais é **contusa (80%)** e o método de imagem diagnóstico de escolha é a **tomografia computadorizada com contraste**.\n\nEvolução de Diretrizes:\nAs diretrizes do Colégio Americano de Cirurgiões (ATLS) e da Associação Americana de Urologia (AUA) mantêm inalterados os conceitos de que o trauma renal fechado é o mais prevalente e que a tomografia computadorizada é o método diagnóstico padrão-ouro para pacientes estáveis.\n\nReferências:\n• ATLS - Advanced Trauma Life Support: Student Course Manual\n• Campbell-Walsh Urology",
+    "commentary": "",
     "images": [],
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a confusão entre os mecanismos etiológicos dos diferentes órgãos do trato geniturinário, acreditando erroneamente que o ureter sofre mais com trauma contuso ou que exames obsoletos como a urografia excretora ainda mantêm o papel de padrão-ouro diagnóstico.",
-    "takeHomeMessage": "A grande maioria dos traumas renais é **contusa (80%)** e o método de imagem diagnóstico de escolha é a **tomografia computadorizada com contraste**.",
-    "references": [
-      "ATLS - Advanced Trauma Life Support: Student Course Manual",
-      "Campbell-Walsh Urology"
-    ],
     "correct_answer": "A",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
-    "official_book": "Trauma Abdominal e Pélvico.pdf.json",
-    "guidelineEvolution": "As diretrizes do Colégio Americano de Cirurgiões (ATLS) e da Associação Americana de Urologia (AUA) mantêm inalterados os conceitos de que o trauma renal fechado é o mais prevalente e que a tomografia computadorizada é o método diagnóstico padrão-ouro para pacientes estáveis."
+    "official_book": "Trauma Abdominal e Pélvico.pdf.json"
   },
   {
     "id": "7ea38404-887a-48c0-bfca-ece2814ae7bf",
@@ -17153,36 +17096,25 @@
     "options": [
       {
         "letter": "A",
-        "text": "Somente 1 afirmativa é correta.",
-        "explanation": "Afirmação incorreta pois existem **três afirmativas corretas** (I, II e IV), tornando o quantitativo de apenas uma opção verdadeira inadequado para a questão."
+        "text": "Somente 1 afirmativa é correta."
       },
       {
         "letter": "B",
-        "text": "Somente 2 afirmativas são corretas.",
-        "explanation": "Afirmação incorreta pois há **três afirmativas corretas** (I, II e IV) e não apenas duas, invalidando o cômputo numérico desta alternativa."
+        "text": "Somente 2 afirmativas são corretas."
       },
       {
         "letter": "C",
-        "text": "Somente 3 afirmativas são corretas.",
-        "explanation": "**As afirmativas I, II e IV são verdadeiras**. A afirmativa I descreve perfeitamente o testículo em badalo de sino, a II define a torção extravaginal típica de recém-nascidos, e a IV relaciona corretamente o badalo de sino com a torção intravaginal. Apenas a afirmativa III está incorreta, pois a torção extravaginal **não é o tipo mais comum**, sendo a intravaginal a predominante."
+        "text": "Somente 3 afirmativas são corretas."
       },
       {
         "letter": "D",
-        "text": "Todas as afirmativas estão corretas.",
-        "explanation": "Afirmação incorreta pois **a afirmativa III é falsa**, já que a torção testicular extravaginal ocorre predominantemente no período neonatal, sendo a forma intravaginal a mais comum em adolescentes e adultos jovens."
+        "text": "Todas as afirmativas estão corretas."
       }
     ],
     "correctAnswer": "B",
     "commentary": "",
     "images": [],
     "correct_answer": "B",
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a **confusão conceitual entre os tipos de torção testicular (intravaginal versus extravaginal)** e suas respectivas faixas etárias de incidência, achando que a extravaginal seria a mais frequente globalmente quando, na verdade, esta restringe-se ao período neonatal.",
-    "takeHomeMessage": "O **testículo em badalo de sino** predispõe à **torção intravaginal**, que é a forma mais comum da patologia e acomete preferencialmente adolescentes, enquanto a **torção extravaginal** ocorre no período **neonatal** envolvendo todo o complexo túnico-testicular.",
-    "references": [
-      "Campbell-Walsh Urology",
-      "Urologia Fundamental - SBU (Sociedade Brasileira de Urologia)"
-    ],
-    "guidelineEvolution": "Os conceitos fisiopatológicos e anatômicos acerca da torção testicular permanecem inalterados ao longo das décadas, mantendo-se a classificação clássica em intravaginal e extravaginal e a urgência cirúrgica como conduta padrão-ouro.",
     "is_anulada": false
   },
   {
@@ -17369,40 +17301,28 @@
     "options": [
       {
         "letter": "A",
-        "text": "De substituição do antibiótico utilizado por Vancomicina;",
-        "explanation": "A cefotaxima é uma cefalosporina de terceira geração com excelente espectro para bacilos entéricos Gram-negativos, agentes etiológicos mais comuns nas infecções do trato urinário complicadas. A **substituição empírica por vancomicina** é totalmente desnecessária, pois o fármaco não cobre adequadamente os uropatógenos gram-negativos predominantes, sendo restrito a infecções confirmadas por cocos gram-positivos como Staphylococcus aureus."
+        "text": "De substituição do antibiótico utilizado por Vancomicina;"
       },
       {
         "letter": "B",
-        "text": "Da passagem de cateter ureteral tipo duplo J;",
-        "explanation": "A paciente apresenta um quadro clássico de pielonefrite obstrutiva aguda, caracterizada por obstrução do trato urinário superior por cálculo associada a infecção grave, configurando uma verdadeira **urgência urológica absoluta que requer descompressão imediata** do sistema coletor por meio da passagem de cateter ureteral tipo duplo J ou nefrostomia percutânea, associada à antibioticoterapia parenteral."
+        "text": "Da passagem de cateter ureteral tipo duplo J;"
       },
       {
         "letter": "C",
-        "text": "Litotripsia Extracorpórea por Ondas de Choque;",
-        "explanation": "A litotripsia extracorpórea por ondas de choque é um procedimento eletivo indicado para cálculos renais ou ureterais de pequeno e médio porte em pacientes clinicamente estáveis e sem infecção ativa. A sua realização em vigência de **infecção urinária alta grave e sepse com obstrução** é formalmente contraindicada, pois a fragmentação do cálculo na presença de bactérias agrava o quadro séptico e pode levar ao choque séptico refratário."
+        "text": "Litotripsia Extracorpórea por Ondas de Choque;"
       },
       {
         "letter": "D",
-        "text": "Do início de noradrenalina em BIC (bomba de infusão contínua);",
-        "explanation": "Embora a paciente tenha apresentado hipotensão inicial, esta foi revertida apenas com a **expansão volêmica inicial**, normalizando a pressão arterial para 108/80 mmHg. O uso de noradrenalina em bomba de infusão contínua fica reservado para casos de **choque séptico refratário à reposição volêmica adequada**, o que não se aplica a este momento após a estabilização hemodinâmica."
+        "text": "Do início de noradrenalina em BIC (bomba de infusão contínua);"
       },
       {
         "letter": "E",
-        "text": "Indicar cirurgia de urgência;",
-        "explanation": "A descompressão do trato urinário obstrutivo infectado é classicamente realizada por métodos minimamente invasivos, como a **passagem de cateter duplo J ou drenagem por nefrostomia percutânea sob guida de imagem**, não havendo indicação primária para abordagem cirúrgica aberta ou laparoscópica de urgência para retirada do cálculo."
+        "text": "Indicar cirurgia de urgência;"
       }
     ],
     "correctAnswer": "B",
-    "commentary": "O quadro clínico de febre alta, dor lombar, sinais de resposta inflamatória sistêmica e instabilidade hemodinâmica inicial associados à hidronefrose e cálculo obstrutivo na junção ureteropiélica define a **pielonefrite obstrutiva aguda**, uma **urgência médica** que exige a associação indissociável de **antibioticoterapia venosa de largo espectro** e **descompressão urinária imediata**. A desobstrução pode ser obtida por meio da **passagem de cateter ureteral tipo duplo J** ou **nefrostomia percutânea**, sendo mandatória para o controle do foco infeccioso, uma vez que antibióticos isoladamente falham em erradicar a infecção enquanto houver obstrução urinária com material purulento represado.\n\nPrincipal Motivo de Erro:\nO principal motivo que leva o aluno ao erro nesta questão é focar apenas na ressuscitação volêmica e no suporte clínico medicamentoso, **negligenciando a necessidade imperativa da descompressão mecânica do sistema coletor urinário** obstruído e infectado.\n\nTake-Home Message:\nDiante de uma **pielonefrite associada à obstrução urinária por cálculo**, o pilares do tratamento são **antibioticoterapia parenteral imediata** e **descompressão urgente do trato urinário** com cateter duplo J ou nefrostomia, nunca realizando procedimentos eletivos como litotripsia na vigência de infecção.\n\nEvolução de Diretrizes:\nAs diretrizes das sociedades de urologia e urossepse mantêm inalterado o conceito de que a pielonefrite obstrutiva é uma emergência médica que exige descompressão imediata, sendo os critérios de ressuscitação volêmica guiados por metas e o suporte vasoativo reservados para a sepse refratária conforme os protocolos internacionais atualizados do Surviving Sepsis Campaign.\n\nReferências:\n• European Association of Urology (EAU) Guidelines on Urological Infections\n• Campbell-Walsh Urology",
+    "commentary": "",
     "images": [],
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é focar apenas na ressuscitação volêmica e no suporte clínico medicamentoso, **negligenciando a necessidade imperativa da descompressão mecânica do sistema coletor urinário** obstruído e infectado.",
-    "takeHomeMessage": "Diante de uma **pielonefrite associada à obstrução urinária por cálculo**, o pilares do tratamento são **antibioticoterapia parenteral imediata** e **descompressão urgente do trato urinário** com cateter duplo J ou nefrostomia, nunca realizando procedimentos eletivos como litotripsia na vigência de infecção.",
-    "guidelineEvolution": "As diretrizes das sociedades de urologia e urossepse mantêm inalterado o conceito de que a pielonefrite obstrutiva é uma emergência médica que exige descompressão imediata, sendo os critérios de ressuscitação volêmica guiados por metas e o suporte vasoativo reservados para a sepse refratária conforme os protocolos internacionais atualizados do Surviving Sepsis Campaign.",
-    "references": [
-      "European Association of Urology (EAU) Guidelines on Urological Infections",
-      "Campbell-Walsh Urology"
-    ],
     "correct_answer": "B"
   },
   {
@@ -18050,36 +17970,24 @@
     "options": [
       {
         "letter": "A",
-        "text": "Lesão de uretra posterior - exploração cirúrgica;",
-        "explanation": "A fratura de bacia associada a hematúria e dor em hipogástrio pode mbrar lesão uretral, porém o quadro clínico de líquido livre pélvico associado à fratura estável sem outros sinais clássicos de lesão uretral (como sangue no meato uretra, próstata alta ou retenção urinária pura) aponta para a bexiga. Além disso, a **exploração cirúrgica** aberta de rotina não é indicada para lesões extraperitoneais, sendo reservada para falha de tratamento conservador ou lesões intraperitoneais."
+        "text": "Lesão de uretra posterior - exploração cirúrgica;"
       },
       {
         "letter": "B",
-        "text": "Trauma renal - fazer a fase excretora da tomografia, para planejamento cirúrgico;",
-        "explanation": "A tomografia com apenas fase arterial e portal é insuficiente para avaliar o trato urinário inferior de forma adequada quando há suspeita de lesão vesical, sendo mandatório o cistograma ou tomografia com fase tardia (cistografia tomográfica). O trauma renal manifestar-se-ía com dor em flanco e hematúria maciça, mas a tomografia evidenciou apenas líquido livre pélvico, tornando o **planejamento cirúrgico renal** desnecessário e incorreto para o foco da lesão."
+        "text": "Trauma renal - fazer a fase excretora da tomografia, para planejamento cirúrgico;"
       },
       {
         "letter": "C",
-        "text": "Lesão de bexiga extraperitoneal - sondagem vesical;",
-        "explanation": "A rotura vesical extraperitoneal ocorre tipicamente em associação com fraturas de bacia (fratura estável ou instável do anel pélvico) por mecanismo de cisalhamento ou punção óssea direta. O tratamento padrão-ouro para a **lesão de bexiga extraperitoneal é a sondagem vesical** exclusiva por 1 a 3 semanas, permitindo a cicatrização espontânea da parede vesical sem necessidade de intervenção cirúrgica aberta na maioria dos casos."
+        "text": "Lesão de bexiga extraperitoneal - sondagem vesical;"
       },
       {
         "letter": "D",
-        "text": "Lesão de bexiga intraperitoneal - exploração cirúrgica;",
-        "explanation": "A lesão intraperitoneal da bexiga caracteriza-se pelo extravasamento de contraste para as alças intestinais e cavidade peritoneal livre, exigindo **exploração cirúrgica imediata e rafia** da cúpula vesical. No entanto, o achado de líquido livre isolado na pelve, associado a uma fratura estável de bacia e ausência de sinais peritoneais difusos, direciona para o acometimento extraperitoneal confinado ao espaço perivesical."
+        "text": "Lesão de bexiga intraperitoneal - exploração cirúrgica;"
       }
     ],
     "correctAnswer": "D",
     "commentary": "",
     "images": [],
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é confundir o manejo entre lesão vesical extraperitoneal e intraperitoneal, indicando erroneamente a **exploração cirúrgica** para um caso que possui indicação estrita de tratamento conservador com **sondagem vesical**.",
-    "takeHomeMessage": "Toda **lesão de bexiga extraperitoneal** isolada decorrente de fratura de bacia deve ser tratada inicialmente com **drenagem vesical exclusiva**, enquanto as **lesões intraperitoneais** requerem **laparotomia exploradora** mandatória.",
-    "guidelineEvolution": "As diretrizes de urologia e trauma da época da prova mantêm-se integralmente na atualidade: o manejo conservador com sondagem vesical prolongada permanece como padrão-ouro para a rotura vesical extraperitoneal não complicada.",
-    "references": [
-      "American Urological Association (AUA) Guidelines: Urotrauma",
-      "Advanced Trauma Life Support (ATLS): Student Course Manual",
-      "Campbell-Walsh Urology"
-    ],
     "correct_answer": "D",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
@@ -19652,35 +19560,24 @@
     "options": [
       {
         "letter": "A",
-        "text": "Espícula óssea dentro da bexiga contraindica tratamento conservador.",
-        "explanation": "A presença de espícula óssea no interior da bexiga associada a fratura de pelve frequentemente **indica a necessidade de intervenção cirúrgica imediata**, pois o tratamento conservador com drenagem vesical prolongada não é suficiente para resolver o corpo estranho ósseo e o risco de infecção e fístula."
+        "text": "Espícula óssea dentro da bexiga contraindica tratamento conservador."
       },
       {
         "letter": "B",
-        "text": "Ruptura de bexiga intraperitonial responde a tratamento conservador.",
-        "explanation": "A ruptura de bexiga intraperitoneal **requer tratamento cirúrgico obrigatório** através de rafia da parede vesical por laparotomia, visto que o extravasamento de urina para a cavidade abdominal provoca peritonite química e não cicatriza espontaneamente com sondagem vesical."
+        "text": "Ruptura de bexiga intraperitonial responde a tratamento conservador."
       },
       {
         "letter": "C",
-        "text": "Investiga-se uretrorragia através de cistografia retrógrada.",
-        "explanation": "A investigação de uretrorragia e suspeita de lesão uretral deve ser realizada primariamente por meio de **uretrografia retrógrada**, e não por cistografia retrógrada, que é o exame padrão para avaliação da integridade vesical."
+        "text": "Investiga-se uretrorragia através de cistografia retrógrada."
       },
       {
         "letter": "D",
-        "text": "Queda a cavaleiro produz lesão de uretra acima do diafragma urogenital.",
-        "explanation": "A queda a cavaleiro produz tipicamente **lesão da uretra anterior (bulbar)**, que se localiza abaixo do diafragma urogenital, e não acima dele."
+        "text": "Queda a cavaleiro produz lesão de uretra acima do diafragma urogenital."
       }
     ],
     "correctAnswer": "A",
     "commentary": "",
     "images": [],
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é confundir o manejo cirúrgico obrigatório da ruptura intraperitoneal da bexiga com o manejo conservador exclusivo das rupturas extraperitoneais.",
-    "takeHomeMessage": "Toda **ruptura intraperitoneal de bexiga** exige **tratamento cirúrgico imediato**, enquanto a maioria das **rupturas extraperitoneais** pode ser manejada de forma **conservadora** com drenagem vesical isolada.",
-    "guidelineEvolution": "Os princípios do manejo do trauma vesical e uretral permanecem inalterados ao longo das décadas. A indicação cirúrgica para a ruptura intraperitoneal e o uso da uretrografia retrógrada para avaliação uretral antes da cateterização são dogmas consolidados no ATLS e nos consensos da Associação Americana de Urologia (AUA).",
-    "references": [
-      "Advanced Trauma Life Support (ATLS): Student Course Manual",
-      "Campbell-Walsh Urology"
-    ],
     "correct_answer": "A",
     "is_official": true,
     "provenance": "oficial_drive_tematico",
@@ -23708,26 +23605,17 @@
     "options": [
       {
         "letter": "A",
-        "text": "Certo.",
-        "explanation": "Embora o enunciado acerte ao afirmar que o trauma geniturinário está comumente associado a fraturas pélvicas e que a bexiga lesionada frequentemente exige drenagem prolongada, a afirmação torna-se **falsa por afirmar que as lesões de bexiga ocorrem com maior frequência em sua porção extraperitoneal** (na verdade, as roturas intraperitoneais são mais comuns em pacientes politraumatizados com bexiga cheia) e por **generalizar que todas as lesões devem ser tratadas por sutura primária** (visto que as roturas intraperitoneais exijam reparo cirúrgico obrigatório por laparotomia, enquanto muitas lesões extraperitoneais selecionadas podem ser manejadas de forma conservadora exclusiva com cateterismo vesical prolongado)."
+        "text": "Certo."
       },
       {
         "letter": "B",
-        "text": "Errado.",
-        "explanation": "As lesões vesicais associadas a fraturas pélvicas dividem-se em extraperitoneais e intraperitoneais, sendo que as roturas intraperitoneais decorrem tipicamente do aumento da pressão intravesical com cúpula cheia e **exigem laparotomia exploradora obrigatória com rafia em dois planos**, enquanto as lesões extraperitoneais frequentemente respondem bem apenas à **drenagem vesical contínua por cateter por um período mínimo de 1 a 3 semanas**, tornando a premissa da questão imprecisa quanto à frequência e à conduta única."
+        "text": "Errado."
       }
     ],
     "correctAnswer": "A",
-    "commentary": "O trauma vesical fechado está fortemente associado às fraturas do anel pélvico. A **rotura intraperitoneal** ocorre pelo cisalhamento ou aumento súbito da pressão intravesical com o orgão repleto, rompendo a cúpula vesical, que é a porção peritoneal livre, exigindo **intervenção cirúrgica imediata por laparotomia** para evitar peritonite urinária. Por outro lado, a **rotura extraperitoneal** decorre do impacto direto de espículas ósseas da pelve ou da desinserção ligamentar pélvica, sendo classicamente tratada de forma **conservadora com sondagem vesical exclusiva** por 10 a 14 dias na maioria dos casos não complicados. A generalização de que a maioria é extraperitoneal associada à necessidade de sutura primária universal invalida o item.\n\nPrincipal Motivo de Erro:\nO principal motivo que leva o aluno ao erro nesta questão é a **confusão entre os tipos de rotura vesical (intraperitoneal vs. extraperitoneal)** e suas respectivas condutas mandatórias, assumindo incorretamente que toda lesão associada à fratura pélvica é extraperitoneal e necessita de rafia cirúrgica aberta.\n\nTake-Home Message:\nToda **rotura vesical intraperitoneal** exige **laparotomia e rafia cirúrgica obrigatória**, enquanto a maioria das **lesões extraperitoneais** não complicadas pode ser manejada de forma **conservadora apenas com drenagem por sonda vesical de demora**.\n\nEvolução de Diretrizes:\nTanto na época da prova (2016) quanto nos consensos atuais do ATLS e da Associação Americana de Urologia (AUA), o manejo das lesões vesicais permanece inalterado: rotura intraperitoneal requer cirurgia aberta ou laparoscópica, e a extraperitoneal selecionada é tratada conservadoramente com drenagem prolongada.\n\nReferências:\n• Advanced Trauma Life Support (ATLS): Student Course Manual\n• Campbell-Walsh Urology",
+    "commentary": "",
     "images": [],
-    "correct_answer": "A",
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a **confusão entre os tipos de rotura vesical (intraperitoneal vs. extraperitoneal)** e suas respectivas condutas mandatórias, assumindo incorretamente que toda lesão associada à fratura pélvica é extraperitoneal e necessita de rafia cirúrgica aberta.",
-    "takeHomeMessage": "Toda **rotura vesical intraperitoneal** exige **laparotomia e rafia cirúrgica obrigatória**, enquanto a maioria das **lesões extraperitoneais** não complicadas pode ser manejada de forma **conservadora apenas com drenagem por sonda vesical de demora**.",
-    "references": [
-      "Advanced Trauma Life Support (ATLS): Student Course Manual",
-      "Campbell-Walsh Urology"
-    ],
-    "guidelineEvolution": "Tanto na época da prova (2016) quanto nos consensos atuais do ATLS e da Associação Americana de Urologia (AUA), o manejo das lesões vesicais permanece inalterado: rotura intraperitoneal requer cirurgia aberta ou laparoscópica, e a extraperitoneal selecionada é tratada conservadoramente com drenagem prolongada."
+    "correct_answer": "A"
   },
   {
     "id": "1196e3fa-09e3-4315-91cb-09217c353f0c",
@@ -25534,35 +25422,24 @@
     "options": [
       {
         "letter": "A",
-        "text": "azitromicina dose única.",
-        "explanation": "A utilização de macrolídeos como a **azitromicina em dose única** é indicada no tratamento de uretrites por clamídia, sendo completamente ineficaz para o tratamento de infecções do parênquima prostático e do trato urinário profundo devido à **incapacidade de atingir concentrações terapêuticas adequadas no tecido prostático**."
+        "text": "azitromicina dose única."
       },
       {
         "letter": "B",
-        "text": "azitromicina por 14 dias.",
-        "explanation": "O uso de **azitromicina por 14 dias** não possui respaldo nas diretrizes urológicas para o manejo de prostatite bacteriana ou infecções urinárias masculinas complicadas, apresentando **espectro de ação inadequado contra os principais patógenos gram-negativos** como a *Escherichia coli*."
+        "text": "azitromicina por 14 dias."
       },
       {
         "letter": "C",
-        "text": "ciprofloxacina por 7 dias.",
-        "explanation": "Embora as fluoroquinolonas sejam agentes de escolha, a duração de **ciprofloxacina por 7 dias** é insuficiente para erradicar o patógeno do tecido prostático, sendo recomendada apenas para cistite aguda não complicada em mulheres, configurando um **tempo de tratamento subóptimo que resulta em altas taxas de recidiva e falha terapêutica** na prostatite."
+        "text": "ciprofloxacina por 7 dias."
       },
       {
         "letter": "D",
-        "text": "ciprofloxacina por 28 dias.",
-        "explanation": "O quadro clínico caracteriza-se por prostatite bacteriana aguda, uma infecção urinária complicada no homem que requer antibioticoterapia de excelente penetração tecidual e **duração prolongada de ciprofloxacina por 28 dias** para **garantir a erradicação bacteriana completa no interior dos ácinos prostáticos e prevenir a cronificação para prostatite crônica**."
+        "text": "ciprofloxacina por 28 dias."
       }
     ],
     "correctAnswer": "C",
     "commentary": "",
     "images": [],
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é **confundir a duração do tratamento da cistite aguda não complicada em mulheres (7 dias) com o tempo prolongado mandatório exigido para o tratamento da prostatite bacteriana aguda em homens (28 dias)**.",
-    "takeHomeMessage": "Toda infecção urinária febril ou com envolvimento prostático no homem é **complicada e exige antibioticoterapia prolongada por 4 semanas** com agentes de alta penetração tecidual, como as **fluoroquinolonas**.",
-    "guidelineEvolution": "As diretrizes da Associação Americana de Urologia (AUA) e da Associação Europeia de Urologia (EAU) mantêm inalterada a recomendação de 4 semanas de fluoroquinolonas ou trimetoprima-sulfametoxazol para prostatite bacteriana aguda. No entanto, devido ao aumento global da resistência bacteriana e aos alertas de segurança da FDA sobre os efeitos adversos graves das fluoroquinolonas, a avaliação prévia de urocultura e sensibilidade tornou-se ainda mais imperativa na prática clínica atual.",
-    "references": [
-      "Campbell-Walsh Urology",
-      "European Association of Urology (EAU) Guidelines on Urological Infections"
-    ],
     "correct_answer": "C",
     "is_anulada": false
   },
@@ -25585,42 +25462,29 @@
     "options": [
       {
         "letter": "A",
-        "text": "O PSA e o toque são boas opções para início da investigação.",
-        "explanation": "**O rastreamento e a investigação inicial do adenocarcinoma de próstata baseiam-se fundamentalmente na dosagem do Antígeno Prostático Específico (PSA) sérico associada ao toque retal, exame físico essencial para a detecção de nódulos ou assimetrias suspeitas mesmo em pacientes com níveis normais de PSA.**"
+        "text": "O PSA e o toque são boas opções para início da investigação."
       },
       {
         "letter": "B",
-        "text": "A cirurgia robótica tem sido utilizada como primeira opção terapêutica em países desenvolvidos.",
-        "explanation": "**A prostatectomia radical assistida por robô consolidou-se como a abordagem cirúrgica padrão em centros de referência de países desenvolvidos para o tratamento do câncer de próstata localizado, oferecendo vantagens ergonômicas, visuais e funcionais em comparação à via aberta tradicional.**"
+        "text": "A cirurgia robótica tem sido utilizada como primeira opção terapêutica em países desenvolvidos."
       },
       {
         "letter": "C",
-        "text": "Radioterapia está proscrita em idosos com doença localizada.",
-        "explanation": "A idade cronológica isolada não constitui contraindicação para a radioterapia. A indicação do tratamento baseia-se na expectativa de vida e nas comorbidades do paciente, sendo a radioterapia (externa ou braquiterapia) uma modalidade curativa perfeitamente indicada e utilizada em **idosos com doença localizada** quando estes apresentam expectativa de vida superior a 10 anos."
+        "text": "Radioterapia está proscrita em idosos com doença localizada."
       },
       {
         "letter": "D",
-        "text": "A falha bioquímica é demonstrada por elevação do psa em 3 meses pós-operatória.",
-        "explanation": "A falha ou recorrência bioquímica após a prostatectomia radical é definida de forma clássica por valores de PSA persistente ou por duas dosagens crescentes consecutivas superiores a **0,2 ng/mL**, sendo monitorada rotineiramente nos primeiros anos de seguimento pós-operatório."
+        "text": "A falha bioquímica é demonstrada por elevação do psa em 3 meses pós-operatória."
       },
       {
         "letter": "E",
-        "text": "A abiraterona e a ezalutamida são as novas opções terapêuticas no tumor após falha da castração.",
-        "explanation": "A abiraterona (inibidor da síntese de andrógenos) e a enzalutamida (antagonista do receptor androgênico) representam pilares terapêuticos fundamentais no manejo do câncer de próstata resistente à castração, tendo revolucionado o prognóstico após a **falha da terapia de privação androgênica convencional**."
+        "text": "A abiraterona e a ezalutamida são as novas opções terapêuticas no tumor após falha da castração."
       }
     ],
     "correctAnswer": "B",
-    "commentary": "O manejo do câncer de próstata localizado envolve múltiplas opções terapêuticas curativas, incluindo a prostatectomia radical e a radioterapia, ambas com eficácia oncológica comparável em grupos de risco semelhantes. A seleção do tratamento fundamenta-se primordialmente na **expectativa de vida do paciente** e nas comorbidades associadas, e não de forma isolada na idade cronológica. Portanto, afirmar que a radioterapia está **proscrita em idosos** incorre em erro conceitual grave, visto que pacientes idosos hígidos beneficiam-se amplamente de terapias de intenção curativa.\n\nPrincipal Motivo de Erro:\nO principal motivo que leva o aluno ao erro nesta questão é confundir a **idade cronológica avançada** com a **expectativa de vida limitada**, negligenciando que idosos hígidos e ativos mantêm indicação formal para tratamentos curativos como a radioterapia e a cirurgia.\n\nTake-Home Message:\nA **expectativa de vida superior a 10 anos**, e não a idade cronológica, é o principal balizador para a escolha de terapias com intenção curativa no câncer de próstata localizado.\n\nEvolução de Diretrizes:\nNa época da prova (2017), a abiraterona e a enzalutamida já estavam estabelecidas no cenário pré-quimioterapia para o câncer de próstata resistente à castração metastático. Atualmente, o uso dessas terapias hormonais de nova geração foi antecipado também para o cenário sensível à castração metastático e de alto risco, ampliando ainda mais a sobrevida global.\n\nReferências:\n• Campbell-Walsh Urology\n• Diretrizes da Sociedade Brasileira de Urologia (SBU)\n• NCCN Guidelines: Prostate Cancer",
+    "commentary": "",
     "images": [],
-    "correct_answer": "B",
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é confundir a **idade cronológica avançada** com a **expectativa de vida limitada**, negligenciando que idosos hígidos e ativos mantêm indicação formal para tratamentos curativos como a radioterapia e a cirurgia.",
-    "takeHomeMessage": "A **expectativa de vida superior a 10 anos**, e não a idade cronológica, é o principal balizador para a escolha de terapias com intenção curativa no câncer de próstata localizado.",
-    "guidelineEvolution": "Na época da prova (2017), a abiraterona e a enzalutamida já estavam estabelecidas no cenário pré-quimioterapia para o câncer de próstata resistente à castração metastático. Atualmente, o uso dessas terapias hormonais de nova geração foi antecipado também para o cenário sensível à castração metastático e de alto risco, ampliando ainda mais a sobrevida global.",
-    "references": [
-      "Campbell-Walsh Urology",
-      "Diretrizes da Sociedade Brasileira de Urologia (SBU)",
-      "NCCN Guidelines: Prostate Cancer"
-    ]
+    "correct_answer": "B"
   },
   {
     "id": "cddd7d50-dbdd-4aa7-9dc2-1933ad32f7d9",
@@ -26148,42 +26012,29 @@
     "options": [
       {
         "letter": "A",
-        "text": "I, apenas.",
-        "explanation": "Os tumores de alto grau e variantes histológicas agressivas, como o adenocarcinoma ductal, frequentemente cursam com níveis séricos muito elevados de PSA, mas **as afirmativas II e III também são verdadeiras**, invalidando a restrição desta opção."
+        "text": "I, apenas."
       },
       {
         "letter": "B",
-        "text": "II, apenas.",
-        "explanation": "O volume prostático maior e o envelhecimento natural produzem aumento fisiológico do PSA, porém **a afirmativa I sobre os tumores de alto grau e a afirmativa III sobre fatores de confusão iatrogênicos e infecciosos também estão corretas**, tornando este distrator incompleto."
+        "text": "II, apenas."
       },
       {
         "letter": "C",
-        "text": "III, apenas.",
-        "explanation": "Procedimentos instrumentais urológicos e processos infecciosos causam extravasamento de PSA para a circulação, mas **a afirmativa I (relação entre grau de Gleason elevado e níveis de PSA) e a afirmativa II (influência da idade e volume) também são corretas**, invalidando esta alternativa."
+        "text": "III, apenas."
       },
       {
         "letter": "D",
-        "text": "II e III, apenas.",
-        "explanation": "As afirmativas II e III estão corretas no que tange à fisiologia e aos fatores de confusão do marcador, contudo **a afirmativa I também está correta**, pois tumores agressivos e de alto grau de Gleason cursam com produção tumoral acentuada de PSA."
+        "text": "II e III, apenas."
       },
       {
         "letter": "E",
-        "text": "I, II e III.",
-        "explanation": "Neoplasias prostáticas com escore de Gleason elevado (8-10) e a variante ductal apresentam alta carga tumoral e desdiferenciação, resultando tipicamente em **níveis séricos muito elevados de PSA**. Além disso, a molécula sofre influência direta da **idade avançada e do aumento do volume glandular benigno**, assim como pode sofrer **falsas elevações transitórias decorrentes de manipulação instrumental do trato urinário inferior (cistoscopia, cateterismo) e de infecções ativas (prostatite/ITU)**."
+        "text": "I, II e III."
       }
     ],
     "correctAnswer": "C",
-    "commentary": "O Antígeno Prostático Específico (PSA) é uma glicoproteína produzida pelas células epiteliais acinares e ductais da próstata, cuja utilidade clínica engloba o rastreamento, estadiamento e monitoramento do adenocarcinoma de próstata. Variantes histológicas agressivas, como o carcinoma ductal, e tumores com **escore de Gleason elevado (8-10)** secretam grandes quantidades de PSA, correlacionando-se com doença avançada. Fisiologicamente, o PSA eleva-se progressivamente com a **idade e com o volume prostático**, exigindo o uso de faixas de normalidade ajustadas para a faixa etária. Ademais, qualquer fator que cause **ruptura da barreira epitélio-vascular da próstata** — seja inflamação aguda (**infecção urinária/prostatite**) ou trauma iatrogênico (**cistoscopia e cateterização uretral**) — resulta em liberação maciça de PSA para a corrente sanguínea, gerando elevações falso-positivas que contraindicam a dosagem imediata nesses cenários.\n\nPrincipal Motivo de Erro:\nO principal motivo que leva o aluno ao erro nesta questão é **desconhecer que múltiplos fatores além do adenocarcinoma — como a instrumentação urológica, infecções, a idade e a hiperplasia prostática benigna — alteram os níveis séricos do PSA**, levando à exclusão incorreta de uma ou mais afirmativas verdadeiras.\n\nTake-Home Message:\nO PSA não é 100% específico para câncer: **infecções, instrumentação urológica (cistoscopia/cateteres), envelhecimento e aumento do volume prostático elevam falsamente o marcador**, enquanto **tumores de alto grau (Gleason 8-10) e variantes ductais cursam com valores massivamente elevados**.\n\nEvolução de Diretrizes:\nOs conceitos fundamentais sobre a fisiologia do PSA, os impactos do volume prostático, da idade, das infecções e da manipulação instrumental sobre os níveis séricos permanecem inalterados nas diretrizes urológicas contemporâneas.\n\nReferências:\n• Campbell-Walsh Urology\n• Diretrizes da Sociedade Brasileira de Urologia (SBU) sobre Câncer de Próstata\n• European Association of Urology (EAU) Guidelines on Prostate Cancer",
+    "commentary": "",
     "images": [],
-    "correct_answer": "C",
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é **desconhecer que múltiplos fatores além do adenocarcinoma — como a instrumentação urológica, infecções, a idade e a hiperplasia prostática benigna — alteram os níveis séricos do PSA**, levando à exclusão incorreta de uma ou mais afirmativas verdadeiras.",
-    "takeHomeMessage": "O PSA não é 100% específico para câncer: **infecções, instrumentação urológica (cistoscopia/cateteres), envelhecimento e aumento do volume prostático elevam falsamente o marcador**, enquanto **tumores de alto grau (Gleason 8-10) e variantes ductais cursam com valores massivamente elevados**.",
-    "guidelineEvolution": "Os conceitos fundamentais sobre a fisiologia do PSA, os impactos do volume prostático, da idade, das infecções e da manipulação instrumental sobre os níveis séricos permanecem inalterados nas diretrizes urológicas contemporâneas.",
-    "references": [
-      "Campbell-Walsh Urology",
-      "Diretrizes da Sociedade Brasileira de Urologia (SBU) sobre Câncer de Próstata",
-      "European Association of Urology (EAU) Guidelines on Prostate Cancer"
-    ]
+    "correct_answer": "C"
   },
   {
     "id": "3ca20802-edb6-462b-8187-87c135af790c",
@@ -28438,41 +28289,29 @@
     "options": [
       {
         "letter": "A",
-        "text": "Somente as afirmativas 1 e 2 são verdadeiras.",
-        "explanation": "Afirmativas 1 e 2 são verdadeiras, mas a 3 e a 5 **também o são**, tornando esta opção incompleta por omitir os cálculos ureterais e vesicais."
+        "text": "Somente as afirmativas 1 e 2 são verdadeiras."
       },
       {
         "letter": "B",
-        "text": "Somente as afirmativas 3 e 5 são verdadeiras.",
-        "explanation": "Afirmativas 3 e 5 são verdadeiras, mas a 1 e a 2 **também são corretas**, invalidando esta alternativa por exclusão parcial."
+        "text": "Somente as afirmativas 3 e 5 são verdadeiras."
       },
       {
         "letter": "C",
-        "text": "Somente as afirmativas 1, 2, 3 e 5 são verdadeiras.",
-        "explanation": "Os cálculos coraliformes são compostos predominantemente por **estruvita (fosfato amoníaco-magnesiano)** associados a infecções por bactérias produtoras de urease (*Proteus*, *Klebsiella*). A nefrolitotripsia percutânea é o tratamento **padrão-ouro para cálculos renais maiores que 3 cm**. A ureterolitotripsia endoscópica apresenta **altas taxas de sucesso para cálculos de ureter inferior falhos ao tratamento clínico**. Os cálculos vesicais são, na imensa maioria das vezes, **secundários a obstrução do colo vesical (como HPB) ou infecção/bexiga neurogênica**, sendo raramente primários."
+        "text": "Somente as afirmativas 1, 2, 3 e 5 são verdadeiras."
       },
       {
         "letter": "D",
-        "text": "Somente as afirmativas 2, 3 e 4 são verdadeiras.",
-        "explanation": "A inclusão da afirmativa 4 invalida a opção, pois **a litotripsia extracorpórea (LEOC) é contraindicada na vigência de infecção urinária ativa**, além de não ser a primeira escolha para todos os tipos de cálculos renais."
+        "text": "Somente as afirmativas 2, 3 e 4 são verdadeiras."
       },
       {
         "letter": "E",
-        "text": "N.D.A.",
-        "explanation": "A alternativa C está correta, logo **N.D.A. (nenhuma das anteriores) é incorreta**."
+        "text": "N.D.A."
       }
     ],
     "correctAnswer": "A",
     "commentary": "",
     "images": [],
     "correct_answer": "A",
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é **subestimar a afirmativa 4, acreditando erroneamente que a litotripsia extracorpórea (LEOC) pode ser utilizada livremente na vigência de infecção urinária ativa**.",
-    "takeHomeMessage": "Nunca realize **litotripsia extracorpórea (LEOC)** ou procedimentos cirúrgicos urológicos eletivos para litíase na **vigência de infecção urinária ativa**, devido ao risco iminente de urossepse grave.",
-    "guidelineEvolution": "As indicações para o tratamento da litíase renal e ureteral mantêm-se alinhadas com as diretrizes urológicas da época: nefrolitotripsia percutânea para cálculos > 2-3 cm, LEOC contraindicada na infecção ativa e estruvita associada a germes produtores de urease.",
-    "references": [
-      "Campbell-Walsh Urology",
-      "Diretrizes da Associação Brasileira de Urologia (SBU)"
-    ],
     "is_anulada": false
   },
   {
@@ -29018,41 +28857,29 @@
     "options": [
       {
         "letter": "A",
-        "text": "Grau I/Arteriografia + Embolização da lesão.",
-        "explanation": "A arteriografia com embolização está indicada para lesões renais maiores (Graus IV ou V) com sangramento arterial ativo persistente ou **extravasamento ativo de contraste (pseudoaneurisma ou fístula arteriovenosa)** refratárias ao repouso, não sendo necessária para lesões corticais menores e estáveis hemodinamicamente."
+        "text": "Grau I/Arteriografia + Embolização da lesão."
       },
       {
         "letter": "B",
-        "text": "Grau I/Tratamento conservador.",
-        "explanation": "A conduta de **tratamento conservador** é perfeitamente adequada para lesões de baixo grau, mas a classificação estipulada pela AAST para laceração cortical de até 1 centímetro com hematoma perirrenal confinado corresponde ao **Grau II**, tornando a opção incorreta devido ao estadiamento incompleto."
+        "text": "Grau I/Tratamento conservador."
       },
       {
         "letter": "C",
-        "text": "Grau II/Laparotomia exploradora.",
-        "explanation": "A laparotomia exploradora de urgência é reservada para pacientes instáveis hemodinamicamente ou com lesões associadas graves, sendo que **pacientes estáveis com trauma renal fechado de baixo grau** devem ser manejados de forma não operatória."
+        "text": "Grau II/Laparotomia exploradora."
       },
       {
         "letter": "D",
-        "text": "Grau II/Tratamento conservador.",
-        "explanation": "A escala da *American Association for the Surgery of Trauma* (AAST) define laceração cortical renal menor que 1 cm sem extravasamento urinário como **Grau II**, cuja conduta padrão-ouro em pacientes hemodinamicamente estáveis consiste em **tratamento conservador estrito** com repouso no leito, monitorização rigorosa e exames de imagem seriados."
+        "text": "Grau II/Tratamento conservador."
       },
       {
         "letter": "E",
-        "text": "Grau III/Tratamento conservador.",
-        "explanation": "O Grau III da AAST abrange lacerações corticais maiores que 1 cm que não alcançam o sistema coletor ou trombose de artéria segmentar, exigindo estadiamento superior ao apresentado no enunciado, onde a lesão cortical descrita é de **apenas 0,8 cm (classificada como Grau II)**."
+        "text": "Grau III/Tratamento conservador."
       }
     ],
     "correctAnswer": "B",
-    "commentary": "O trauma renal fechado em pacientes **hemodinamicamente estáveis** tem indicação absoluta de **tratamento conservador**, independentemente do grau da lesão, em mais de 80% a 90% dos casos. A classificação da *American Association for the Surgery of Trauma* (AAST) baseia-se em achados tomográficos: o **Grau I** engloba contusão ou hematoma subcapsular não expansivo sem laceração, e hematoma perirrenal não expansivo confinado; o **Grau II** abrange hematoma perirrenal confinado e laceração cortical menor que 1 cm de profundidade sem extravasamento de urina. Como o paciente apresenta laceração de 0,8 cm associada a hematoma perirrenal, o estadiamento correto é **Grau II**, e a conduta conservadora evita intervenções cirúrgicas desnecessárias e preserva o parênquima renal.\n\nPrincipal Motivo de Erro:\nO principal motivo que leva o aluno ao erro nesta questão é a **confusão na profundidade da laceração cortical na classificação da AAST**, confundindo o limite de 1 cm que separa o Grau II (até 1 cm) do Grau III (maior que 1 cm).\n\nTake-Home Message:\nEm **trauma renal fechado com estabilidade hemodinâmica**, a regra de ouro é o **tratamento conservador**, sendo a classificação da AAST baseada na profundidade da laceração cortical e no envolvimento do sistema coletor ou vascular.\n\nEvolução de Diretrizes:\nAs diretrizes da *European Association of Urology* (EAU) e da *American Urological Association* (AUA) mantêm inalterados os princípios do manejo conservador para traumas renais fechados de baixo grau (Graus I a III) em pacientes estáveis hemodinamicamente.\n\nReferências:\n• Campbell-Walsh Urology\n• European Association of Urology (EAU) Guidelines on Urological Trauma",
+    "commentary": "",
     "images": [],
-    "correct_answer": "B",
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a **confusão na profundidade da laceração cortical na classificação da AAST**, confundindo o limite de 1 cm que separa o Grau II (até 1 cm) do Grau III (maior que 1 cm).",
-    "takeHomeMessage": "Em **trauma renal fechado com estabilidade hemodinâmica**, a regra de ouro é o **tratamento conservador**, sendo a classificação da AAST baseada na profundidade da laceração cortical e no envolvimento do sistema coletor ou vascular.",
-    "guidelineEvolution": "As diretrizes da *European Association of Urology* (EAU) e da *American Urological Association* (AUA) mantêm inalterados os princípios do manejo conservador para traumas renais fechados de baixo grau (Graus I a III) em pacientes estáveis hemodinamicamente.",
-    "references": [
-      "Campbell-Walsh Urology",
-      "European Association of Urology (EAU) Guidelines on Urological Trauma"
-    ]
+    "correct_answer": "B"
   },
   {
     "id": "800db51f-d5e9-4e7a-8d9e-e729bdfdfbfd",
@@ -29644,36 +29471,25 @@
     "options": [
       {
         "letter": "A",
-        "text": "Sinal de Angel (+, reflexo cremastérico (–, manobra de Phren (+.",
-        "explanation": "O quadro clínico de uretrite prévia seguida de dor e aumento do volume escrotal aponta para epididimite aguda, quadro inflamatório em que o **sinal de Angel é positivo (retirada do testículo piora a dor)** e a **manobra de Phren é negativa (alívio com a elevação escrotal)**, além de **apresentar reflexo cremastérico ausente**, o que torna esta alternativa incorreta."
+        "text": "Sinal de Angel (+, reflexo cremastérico (–, manobra de Phren (+."
       },
       {
         "letter": "B",
-        "text": "Sinal de Angel (+, reflexo cremastérico (+, manobra de Phren (–.",
-        "explanation": "Na epididimite aguda, o **reflexo cremastérico encontra-se preservado (positivo)** devido à ausência de isquemia testicular aguda grave, diferentemente da torção testicular. Além disso, o **sinal de Angel positivo** e a **manobra de Phren negativa** invalidam esta alternativa."
+        "text": "Sinal de Angel (+, reflexo cremastérico (+, manobra de Phren (–."
       },
       {
         "letter": "C",
-        "text": "Sinal de Angel (–, reflexo cremastérico (+, manobra de Phren (+.",
-        "explanation": "O paciente apresenta quadro clínico clássico de **epididimite aguda secundária a infecção sexualmente transmissível**, caracterizada por disúria e secreção uretral prévias. Ao exame físico, o **sinal de Angel é negativo (o testículo não ascende na bolsa)**, o **reflexo cremastérico está presente (+)** por não haver comprometimento do cordão espermático e a **manobra de Phren é positiva (+)**, pois a elevação do testículo alivia a dor inflamatória."
+        "text": "Sinal de Angel (–, reflexo cremastérico (+, manobra de Phren (+."
       },
       {
         "letter": "D",
-        "text": "Sinal de Angel (–, reflexo cremastérico (–, manobra de Phren (–.",
-        "explanation": "A ausência do **reflexo cremastérico** e o achado de **manobra de Phren negativa** são características típicas da torção do cordão espermático, patologia cirúrgica de urgência distinta do quadro inflamatório infeccioso apresentado pelo paciente, tornando este distrator incorreto."
+        "text": "Sinal de Angel (–, reflexo cremastérico (–, manobra de Phren (–."
       }
     ],
     "correctAnswer": "A",
     "commentary": "",
     "images": [],
     "correct_answer": "A",
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a **confusão entre os achados semiológicos da torção testicular e da epididimite aguda**, invertendo principalmente a resposta da manobra de Phren e do reflexo cremastérico.",
-    "takeHomeMessage": "Na **epididimite aguda**, a **manobra de Phren é positiva (alívio com elevação)** e o **reflexo cremastérico está presente**, diferenciando-se da torção testicular onde o reflexo está ausente e Phren é tipicamente negativo.",
-    "guidelineEvolution": "Os conceitos semiológicos da diferenciação entre o escroto agudo inflamatório e obstrutivo vascular permanecem inalterados na literatura urológica moderna, mantendo a anamnese e o exame físico como pilares antes da confirmação ultrassonográfica com Doppler.",
-    "references": [
-      "Campbell-Walsh Urology",
-      "European Association of Urology Guidelines on Urological Infections"
-    ],
     "is_anulada": false
   },
   {
@@ -32791,28 +32607,23 @@
     "options": [
       {
         "letter": "A",
-        "text": "A tansulosina atua diminuindo o volume prostático, e a finasterida contribui para o relaxamento da musculatura na saída da bexiga; ambas facilitam a saída do jato urinário.",
-        "explanation": "A tansulosina **atua diminuindo o volume prostático**, o que **inverte a função real dos alfablocadores**, que promovem apenas o relaxamento da musculatura lisa sem alterar o tamanho da próstata."
+        "text": "A tansulosina atua diminuindo o volume prostático, e a finasterida contribui para o relaxamento da musculatura na saída da bexiga; ambas facilitam a saída do jato urinário."
       },
       {
         "letter": "B",
-        "text": "A tansulosina contribui para o relaxamento da musculatura na saída da bexiga, e a finasterida atua diminuindo o volume prostático; ambas facilitam a saída do jato urinário.",
-        "explanation": "A tansulosina **contribui para o relaxamento da musculatura na saída da bexiga**, e a finasterida **atua diminuindo o volume prostático**; ambas facilitam a saída do jato urinário por mecanismos complementares, atuando nos componentes dinâmico e estático da obstrução."
+        "text": "A tansulosina contribui para o relaxamento da musculatura na saída da bexiga, e a finasterida atua diminuindo o volume prostático; ambas facilitam a saída do jato urinário."
       },
       {
         "letter": "C",
-        "text": "A tansulosina contribui para a contração do corpo da bexiga, e a finasterida age relaxando a musculatura na saída da bexiga; ambas facilitam a saída do jato urinário.",
-        "explanation": "A tansulosina **contribui para a contração do corpo da bexiga**, o que **agravaria os sintomas obstrutivos ao invés de aliviá-los**, enquanto a finasterida **age relaxando a musculatura na saída da bexiga**, confundindo os sítios de ação farmacológica."
+        "text": "A tansulosina contribui para a contração do corpo da bexiga, e a finasterida age relaxando a musculatura na saída da bexiga; ambas facilitam a saída do jato urinário."
       },
       {
         "letter": "D",
-        "text": "A tansulosina atua na contração da musculatura da próstata, e a finasterina contribui no aumento da contração da musculatura detrusora da bexiga; ambas facilitam a saída do jato urinário.",
-        "explanation": "A tansulosina **atua na contração da musculatura da próstata**, o que **provocaria fechamento do colo vesical e piora da retenção**, e a finasterina **contribui no aumento da contração da musculatura detrusora da bexiga**, ignorando o efeito antiandrogênico redutor de volume."
+        "text": "A tansulosina atua na contração da musculatura da próstata, e a finasterina contribui no aumento da contração da musculatura detrusora da bexiga; ambas facilitam a saída do jato urinário."
       },
       {
         "letter": "E",
-        "text": "A tansulosina contribui para o relaxamento da musculatura na saída da bexiga, e a finasterida atua relaxando a musculatura prostática; ambas facilitam a saída do jato urinário.",
-        "explanation": "A tansulosina contribui para o relaxamento da musculatura na saída da bexiga, mas a finasterida **atua relaxando a musculatura prostática**, o que **incorre em erro ao atribuir efeito miorrelaxante imediato ao inibidor da 5-alfa-redutase**."
+        "text": "A tansulosina contribui para o relaxamento da musculatura na saída da bexiga, e a finasterida atua relaxando a musculatura prostática; ambas facilitam a saída do jato urinário."
       }
     ],
     "correctAnswer": "A",
@@ -32826,13 +32637,6 @@
       "hits": 15,
       "answer": "B"
     },
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a **confusão entre os mecanismos de ação farmacológicos dos alfablocadores e dos inibidores da 5-alfa-redutase**, trocando os papéis do relaxamento muscular dinâmico e da redução volumétrica estática.",
-    "takeHomeMessage": "Os **bloqueadores alfa-1 (tansulosina)** relaxam o componente dinâmico (músculo liso), enquanto os **inibidores da 5-alfa-redutase (finasterida)** reduzem o componente estático (volume prostático).",
-    "guidelineEvolution": "As diretrizes urológicas da época da prova mantêm-se inalteradas na atualidade, consolidando a terapia combinada (alfa-bloqueador + inibidor da 5-alfa-redutase) como padrão-ouro para pacientes com próstatas aumentadas e sintomas moderados a graves.",
-    "references": [
-      "Campbell-Walsh Urology",
-      "Diretrizes da Sociedade Brasileira de Urologia - Hiperplasia Prostática Benigna"
-    ],
     "is_anulada": false
   },
   {
@@ -33532,36 +33336,25 @@
     "options": [
       {
         "letter": "A",
-        "text": "urina tipo |, PSA e ureia/creatinina",
-        "explanation": "A solicitação de urina tipo I e ureia/creatinina está correta, mas **a inclusão obrigatória do PSA nesta fase inicial de investigação ambulatorial de rotina para sintomas urinários baixos não é mandatória de acordo com as diretrizes da época**, pois o valor do PSA não altera a conduta inicial para sintomas leves a moderados antes da exclusão de comorbidades e avaliação de infecção ou insuficiência renal."
+        "text": "urina tipo |, PSA e ureia/creatinina"
       },
       {
         "letter": "B",
-        "text": "urina tipo |, glicemia e PSA",
-        "explanation": "O exame de urina tipo I e a glicemia são fundamentais para descartar diagnósticos diferenciais como infecção urinária e diabetes descompensado causador de poliúria, porém **a ausência de avaliação da função renal com ureia e creatinina torna a investigação incompleta**, visto que a retenção urinária crônica por HPB pode cursar com nefropatia obstrutiva."
+        "text": "urina tipo |, glicemia e PSA"
       },
       {
         "letter": "C",
-        "text": "urina tipo |, glicemia e ureia/creatinina",
-        "explanation": "A avaliação inicial do paciente com sintomas do trato urinário baixo (STUB) sugestivos de hiperplasia prostática benigna (HPB) requer obrigatoriamente a **Urina tipo I para excluir infecção ou hematúria, a glicemia para investigar diabetes mellitus como causa de poliúria e sintomas obstrutivos secundários, e a ureia/creatinina para avaliar a função renal**, considerando o risco de insuficiência renal obstrutiva crônica decorrente da obstrução infravesical."
+        "text": "urina tipo |, glicemia e ureia/creatinina"
       },
       {
         "letter": "D",
-        "text": "PSA, ureia/creatinina e glicemia",
-        "explanation": "A dosagem de ureia, creatinina e glicemia são pertinentes para a investigação metabólica e renal, no entanto **a omissão da urina tipo I impede a avaliação de hematúria microscópica e infecção do trato urinário**, que são diagnósticos diferenciais mandatórios na primeira consulta de um paciente com sintomas prostáticos."
+        "text": "PSA, ureia/creatinina e glicemia"
       }
     ],
     "correctAnswer": "C",
-    "commentary": "A investigação inicial dos **sintomas do trato urinário baixo (STUB)** em pacientes com suspeita de **hiperplasia prostática benigna (HPB)** na Atenção Básica visa excluir diagnósticos diferenciais, avaliar complicações obstrutivas e comorbidades sistêmicas. O **EAS (urina tipo I)** é mandatório para afastar infecção e hematúria; a **glicemia** é essencial pois o diabetes mellitus frequentemente se manifesta com sintomas urinários obstrutivos/irritativos secundários à poliúria; e a **ureia e creatinina** avaliam a função renal, sendo fundamentais para detectar **nefropatia obstrutiva** crônica silenciosa decorrente de grandes volumes residuais pós-miccionais ou prostatomegalias volumosas (como os 60g do caso). O **PSA** não é obrigatório na triagem inicial obrigatória de toda e qualquer queixa prostática leve na atenção primária antes da avaliação sintomática e exclusão de outras causas, embora seja amplamente debatido na estratificação de risco para progressão.\n\nPrincipal Motivo de Erro:\nO principal motivo que leva o aluno ao erro nesta questão é **a confusão entre os exames de triagem inicial obrigatória recomendados pelas diretrizes de atenção primária (EAS, glicemia e função renal) e os exames de rastreio urológico especializado (como o PSA), esquecendo que o diabetes e a infecção urinária são diagnósticos diferenciais primários mandatórios de poliúria e disúria**.\n\nTake-Home Message:\nDiante de um paciente idoso com **sintomas urinários baixos**, a investigação inicial na atenção básica prioriza **urina tipo I, glicemia e função renal**, reservando o PSA para o contexto de avaliação especializada ou quando há expectativa de mudança terapêutica.\n\nEvolução de Diretrizes:\nAs diretrizes da Sociedade Brasileira de Urologia e do Ministério da Saúde mantêm inalterados os pilares da investigação inicial dos sintomas urinários baixos na atenção primária, enfatizando a importância de excluir infecções, diabetes e insuficiência renal antes de atribuir os sintomas exclusivamente à hiperplasia prostática benigna.\n\nReferências:\n• Sociedade Brasileira de Urologia - Diretrizes de Hiperplasia Prostática Benigna\n• Campbell-Walsh Urology",
+    "commentary": "",
     "images": [],
-    "correct_answer": "C",
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é **a confusão entre os exames de triagem inicial obrigatória recomendados pelas diretrizes de atenção primária (EAS, glicemia e função renal) e os exames de rastreio urológico especializado (como o PSA), esquecendo que o diabetes e a infecção urinária são diagnósticos diferenciais primários mandatórios de poliúria e disúria**.",
-    "takeHomeMessage": "Diante de um paciente idoso com **sintomas urinários baixos**, a investigação inicial na atenção básica prioriza **urina tipo I, glicemia e função renal**, reservando o PSA para o contexto de avaliação especializada ou quando há expectativa de mudança terapêutica.",
-    "guidelineEvolution": "As diretrizes da Sociedade Brasileira de Urologia e do Ministério da Saúde mantêm inalterados os pilares da investigação inicial dos sintomas urinários baixos na atenção primária, enfatizando a importância de excluir infecções, diabetes e insuficiência renal antes de atribuir os sintomas exclusivamente à hiperplasia prostática benigna.",
-    "references": [
-      "Sociedade Brasileira de Urologia - Diretrizes de Hiperplasia Prostática Benigna",
-      "Campbell-Walsh Urology"
-    ]
+    "correct_answer": "C"
   },
   {
     "id": "3a85a440-6676-4603-b03f-e3705a04b61e",
@@ -33720,42 +33513,29 @@
     "options": [
       {
         "letter": "A",
-        "text": "Apenas I.",
-        "explanation": "A tomografia computadorizada de crânio **não possui indicação rotineira ou direcionada no estadiamento do adenocarcinoma de próstata**, pois metástases no sistema nervoso central são eventos extremamente raros e tipicamente ocorrem apenas em fases terminais de doença metastática refratária a castração amplamente disseminada."
+        "text": "Apenas I."
       },
       {
         "letter": "B",
-        "text": "Apenas II.",
-        "explanation": "A cintilografia óssea é fundamental e está indicada devido ao alto risco de metástases (PSA > 10 ng/mL e escore de Gleason de alto risco 9), porém **está incompleta ao desconsiderar a avaliação locorregional pélvica obrigatória** pela ressonância magnética."
+        "text": "Apenas II."
       },
       {
         "letter": "C",
-        "text": "Apenas III.",
-        "explanation": "A ressonância magnética multiparamétrica da pelve é essencial para o estadiamento local e avaliação de linfonodos locorregionais em doença de alto risco, contudo **omite a pesquisa de metástases à distância no esqueleto**, que é mandatória dado o alto risco da neoplasia."
+        "text": "Apenas III."
       },
       {
         "letter": "D",
-        "text": "Apenas II e III.",
-        "explanation": "A **cintilografia óssea é obrigatória** para o rastreio de metástases esqueléticas em pacientes com adenocarcinoma de próstata de alto risco (PSA > 10 ng/mL e Gleason 8-10), e a **ressonância magnética da pelve é o exame padrão-ouro** para o estadiamento locorregional e linfonodal pélvico nessa mesma população."
+        "text": "Apenas II e III."
       },
       {
         "letter": "E",
-        "text": "I, II e III.",
-        "explanation": "A inclusão da tomografia computadorizada de crânio torna a alternativa incorreta, visto que **exames de imagem neurocranianos são desnecessários na ausência de sintomas neurológicos** no estadiamento inicial do câncer de próstata."
+        "text": "I, II e III."
       }
     ],
     "correctAnswer": "C",
     "commentary": "",
     "images": [],
     "correct_answer": "C",
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é **a confusão entre os critérios de estadiamento para tumores de baixo risco versus alto risco, ou a inclusão incorreta de exames de imagem de rotina para sítios metastáticos raros como o crânio**.",
-    "takeHomeMessage": "Diante de um adenocarcinoma de próstata de **alto risco (Gleason elevado ou PSA > 10 ng/mL)**, o estadiamento sistêmico e locorregional requer obrigatoriamente **cintilografia óssea e ressonância magnética da pelve**.",
-    "guidelineEvolution": "Na época da prova (2017), as diretrizes da AUA, EAU e SBU já recomendavam cintilografia óssea e imagem pélvica para tumores de alto risco. Atualmente, embora a cintilografia e a tomografia/ressonância convencional ainda componganm o arsenal padrão, a incorporação do **PET-CT com PSMA** tem ganhado forte espaço no estadiamento de alto risco devido à sua superioridade acurada na detecção precoce de metástases linfonodais e à distância.",
-    "references": [
-      "Campbell-Walsh Urology",
-      "Diretrizes da Sociedade Brasileira de Urologia (SBU) - Câncer de Próstata",
-      "European Association of Urology (EAU) Guidelines - Prostate Cancer"
-    ],
     "is_anulada": false
   },
   {
@@ -34252,37 +34032,25 @@
     "options": [
       {
         "letter": "A",
-        "text": "Grau I",
-        "explanation": "O **Grau I** na escala da *American Association for the Surgery of Trauma* (AAST) para trauma renal refere-se a contusões ou hematomas subcapsulares não expansivos, sem laceração do parênquima, ou hematúria microscópica/macroscópica com estudos urológicos normais, tornando **incorreta** esta classificação para o caso descrito."
+        "text": "Grau I"
       },
       {
         "letter": "B",
-        "text": "Grau II",
-        "explanation": "O **Grau II** engloba hematomas perirenais confinados ao retroperitônio e lacerações corticais do parênquima renal com **profundidade menor que 1 cm, sem extravasamento urinário**, correspondendo exatamente à descrição tomográfica fornecida no enunciado."
+        "text": "Grau II"
       },
       {
         "letter": "C",
-        "text": "Grau III",
-        "explanation": "O **Grau III** caracteriza-se por lacerações profundas do parênquima renal que **ultrapassam 1 cm de profundidade na córtex renal, mas sem atingir o sistema coletor**, o que invalida esta opção para uma lesão menor que 1 cm."
+        "text": "Grau III"
       },
       {
         "letter": "D",
-        "text": "Grau IV",
-        "explanation": "O **Grau IV** abrange lesões parenquimatosas que se estendem através da junção corticomedular até o sistema coletor (fratura renal) ou lesões vasculares envolvendo a artéria ou veia renal principal com **hemorragia contida**, diferenciando-se da laceração superficial descrita."
+        "text": "Grau IV"
       }
     ],
     "correctAnswer": "A",
-    "commentary": "A classificação do trauma renal baseia-se na escala anatômica da *American Association for the Surgery of Trauma* (AAST), amplamente validada por tomografia computadorizada com contraste. O **Grau II** é definido especificamente pela presença de hematoma perirenal confinado ao retroperitônio ou **laceração cortical menor que 1 cm de profundidade** sem extravasamento de urina. A grande maioria dos traumas renais fechados de graus I a III é manejada de forma **conservadora e não cirúrgica**, com repouso no leito, controle hemodinâmico rigoroso e serialização de exames de imagem quando indicado, uma vez que a hemostasia espontânea costuma ocorrer na vigência de cápsula renal íntegra.\n\nPrincipal Motivo de Erro:\nO principal motivo que leva o aluno ao erro nesta questão é a **confusão entre os limites de profundidade dos graus II e III** da escala AAST, confundindo o corte de 1 cm estabelecido para as lacerações corticais superficiais.\n\nTake-Home Message:\nLacerações renais com **profundidade menor que 1 cm sem envolvimento do sistema coletor** são classificadas como **Grau II** e possuem indicação de **manejo conservador** na vigência de estabilidade hemodinâmica.\n\nEvolução de Diretrizes:\nA classificação da AAST para trauma renal permanece inalterada em seus conceitos fundamentais, sendo a tomografia computadorizada multidetectores com fase tardia o exame padrão-ouro para o estadiamento preciso e definição da conduta terapêutica.\n\nReferências:\n• American Association for the Surgery of Trauma (AAST) Organ Injury Scale\n• European Association of Urology (EAU) Guidelines on Urological Trauma\n• Campbell-Walsh Urology",
+    "commentary": "",
     "images": [],
-    "correct_answer": "A",
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a **confusão entre os limites de profundidade dos graus II e III** da escala AAST, confundindo o corte de 1 cm estabelecido para as lacerações corticais superficiais.",
-    "takeHomeMessage": "Lacerações renais com **profundidade menor que 1 cm sem envolvimento do sistema coletor** são classificadas como **Grau II** e possuem indicação de **manejo conservador** na vigência de estabilidade hemodinâmica.",
-    "guidelineEvolution": "A classificação da AAST para trauma renal permanece inalterada em seus conceitos fundamentais, sendo a tomografia computadorizada multidetectores com fase tardia o exame padrão-ouro para o estadiamento preciso e definição da conduta terapêutica.",
-    "references": [
-      "American Association for the Surgery of Trauma (AAST) Organ Injury Scale",
-      "European Association of Urology (EAU) Guidelines on Urological Trauma",
-      "Campbell-Walsh Urology"
-    ]
+    "correct_answer": "A"
   },
   {
     "id": "7988a634-96a8-4477-acc6-0e75ae7b25a2",
@@ -34696,37 +34464,25 @@
     "options": [
       {
         "letter": "A",
-        "text": "Grau I.",
-        "explanation": "O **trauma renal grau I** engloba apenas a contusão renal (hematúria microscópica ou macroscópica com estudos urológicos normais) ou o hematoma subcapsular não expansivo, sem laceração do parênquima."
+        "text": "Grau I."
       },
       {
         "letter": "B",
-        "text": "Grau II.",
-        "explanation": "A classificação da *American Association for the Surgery of Trauma* (AAST) define o **trauma renal grau II** como o hematoma perirrenal confinado ao retroperitônio ou uma **laceração cortical do parênquima renal com profundidade menor que 1 cm**, sem extravasamento de urina para o sistema coletor."
+        "text": "Grau II."
       },
       {
         "letter": "C",
-        "text": "Grau III.",
-        "explanation": "O **trauma renal grau III** caracteriza-se por uma **laceração do parênquima renal que atinge profundidade maior ou igual a 1 cm**, mas sem envolvimento do sistema coletor ou extravasamento urinário ativo."
+        "text": "Grau III."
       },
       {
         "letter": "D",
-        "text": "Grau IV.",
-        "explanation": "O **trauma renal grau IV** envolve **lacerações que se estendem através do córtex e medula até o sistema coletor**, ou lesões vasculares que incluem trombose da artéria ou veia renal segmentar, ou sangramento contido."
+        "text": "Grau IV."
       }
     ],
     "correctAnswer": "A",
     "commentary": "",
     "images": [],
     "correct_answer": "A",
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a **confusão entre os limites de profundidade da laceração parenquimatosa entre o grau II e o grau III**, confundindo o corte de 1 cm estabelecido pela classificação da AAST.",
-    "takeHomeMessage": "No **trauma renal fechado**, lacerações corticais **menores que 1 cm sem extravasamento urinário são classificadas como Grau II**, mantendo indicação prioritária de **manejo conservador** em pacientes hemodinamicamente estáveis.",
-    "guidelineEvolution": "A classificação da AAST para trauma renal permanece estruturalmente inalterada desde sua criação, mantendo os critérios anatômicos baseados na tomografia computadorizada com contraste como padrão-ouro para estadiamento.",
-    "references": [
-      "Campbell-Walsh Urology",
-      "European Association of Urology Guidelines on Urological Trauma",
-      "American Association for the Surgery of Trauma (AAST) Organ Injury Scale"
-    ],
     "is_anulada": false
   },
   {
@@ -35211,37 +34967,26 @@
     "options": [
       {
         "letter": "A",
-        "text": "Prescrever ceftriaxona 500 mg intramuscular, dose única, azitromicina 1g, dose única, tratar a parceira e reavaliar em 14 dias.",
-        "explanation": "A associação de ceftriaxona e azitromicina cobre empiricamente os principais agentes etiológicos da uretrite gonocócica e não gonocócica, e o tratamento das parcerias sexuais é obrigatório; contudo, o prazo de reavaliação recomendado para casos não complicados com boa evolução clínica é de **7 dias e não de 14 dias**."
+        "text": "Prescrever ceftriaxona 500 mg intramuscular, dose única, azitromicina 1g, dose única, tratar a parceira e reavaliar em 14 dias."
       },
       {
         "letter": "B",
-        "text": "Prescrever ceftriaxona 500 mg intramuscular, dose única, tratar parceira e reavaliar em 7 dias.",
-        "explanation": "O seguimento com reavaliação em 7 dias está correto, assim como a abordagem da parceira; no entanto, a monoterapia com ceftriaxona falha em cobrir agentes etiológicos comuns e frequentes de coinfecção na uretrite, como a *Chlamydia trachomatis*, sendo obrigatória a **associação com azitromicina ou doxiciclina**."
+        "text": "Prescrever ceftriaxona 500 mg intramuscular, dose única, tratar parceira e reavaliar em 7 dias."
       },
       {
         "letter": "C",
-        "text": "Prescrever ceftriaxona 500 mg intramuscular, dose única, azitromicina 1g, dose única, tratar a parceira e reavaliar em 7 dias.",
-        "explanation": "A apresentação clínica de corrimento uretral purulenta em homem jovem com comportamento de risco caracteriza uretrite infecciosa. O manejo empírico de primeira linha consiste na administração de **ceftriaxona 500 mg intramuscular em dose única associada à azitromicina 1 g VO em dose única**, visando cobertura dupla para *Neisseria gonorrhoeae* e *Chlamydia trachomatis*. Além disso, é mandatória a **convocação e o tratamento concomitante da parceria sexual dos últimos 60 dias**, programando-se o **retorno clínico para reavaliação em 7 dias**."
+        "text": "Prescrever ceftriaxona 500 mg intramuscular, dose única, azitromicina 1g, dose única, tratar a parceira e reavaliar em 7 dias."
       },
       {
         "letter": "D",
-        "text": "Prescrever ceftriaxona 500 mg intramuscular, dose única, tratar parceira e reavaliar em 14 dias.",
-        "explanation": "A conduta falha ao omitir o tratamento antimicrobiano voltado para patógenos não gonocócicos, realizando apenas a cobertura para gonorreia, além de estipular incorretamente o **prazo de reavaliação de 14 dias** em vez de 7 dias."
+        "text": "Prescrever ceftriaxona 500 mg intramuscular, dose única, tratar parceira e reavaliar em 14 dias."
       }
     ],
     "correctAnswer": "A",
     "commentary": "",
     "images": [],
     "correct_answer": "A",
-    "is_anulada": false,
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a confusão entre o esquema de tratamento das uretrites em dose única combinada (gonocócica e não gonocócica) e o prazo correto de reavaliação clínica, muitas vezes confundido com o intervalo de 14 dias utilizado em outras infecções sexualmente transmissíveis ou infecções do trato urinário complicadas.",
-    "takeHomeMessage": "Diante de um quadro de uretrite com corrimento purulento, realize sempre o **tratamento sindrômico empírico dual para gonoco e clamídia**, trate a **parceria sexual** e agende o **retorno clínico em 7 dias**.",
-    "guidelineEvolution": "As diretrizes do Ministério da Saúde para o manejo das infecções sexualmente transmissíveis mantêm a recomendação do tratamento sindrômico dual para uretrite com ceftriaxona 500 mg IM em dose única associada à azitromicina 1 g VO em dose única, mantendo-se inalterada a conduta em relação à época da prova.",
-    "references": [
-      "Protocolo Clínico e Diretrizes Terapêuticas para Atenção Integral às Pessoas com Infecções Sexualmente Transmissíveis (PCDT-IST) - Ministério da Saúde",
-      "Campbell-Walsh Urology"
-    ]
+    "is_anulada": false
   },
   {
     "id": "7bddfb64-8ffd-49cd-a124-452923b17b89",
@@ -37630,41 +37375,29 @@
     "options": [
       {
         "letter": "A",
-        "text": "Grau I.",
-        "explanation": "O **Grau I** refere-se a contusões renais menores ou a hematomas subcapsulares não expansivos, **sem laceração do parênquima ou extravasamento urinário**, o que não corresponde ao quadro de lesão cortical descrito."
+        "text": "Grau I."
       },
       {
         "letter": "B",
-        "text": "Grau II.",
-        "explanation": "A escala da *American Association for the Surgery of Trauma* (AAST) define o **Grau II** como um hematoma perirrenal **não expansivo confinado ao retroperitônio** associado a uma **laceração cortical renal com profundidade inferior a 1 cm**, **sem extravasamento de urina**, correspondendo exatamente ao enunciado da questão."
+        "text": "Grau II."
       },
       {
         "letter": "C",
-        "text": "Grau III.",
-        "explanation": "O **Grau III** engloba lesões parenquimatosas mais profundas, caracterizando-se por **lacerações corticais que ultrapassam 1 cm de profundidade naprofundidade do córtex renal**, porém sem atingir o sistema Coletor."
+        "text": "Grau III."
       },
       {
         "letter": "D",
-        "text": "Grau IV.",
-        "explanation": "O **Grau IV** envolve lesões mais graves, como lacerações que **estendem-se através da junção corticomedular até o sistema coletor**, ou trombose da artéria ou veia principal do rim decorrente de trauma."
+        "text": "Grau IV."
       },
       {
         "letter": "E",
-        "text": "Grau V.",
-        "explanation": "O **Grau V** representa a lesão renal catastrófica, definida pela **fragmentação completa do rim (rim estilhaçado)** ou pela **avulsão do pedículo vascular renal**, que interrompe totalmente o suprimento sanguíneo do órgão."
+        "text": "Grau V."
       }
     ],
     "correctAnswer": "A",
     "commentary": "",
     "images": [],
     "correct_answer": "A",
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a **confusão entre os limites de profundidade da laceração cortical** entre os graus I, II e III da classificação da AAST, além de negligenciar a **ausência de extravasamento urinário** como critério restritivo.",
-    "takeHomeMessage": "No trauma renal, lembre-se: **laceração cortical menor que 1 cm sem extravasamento** e com hematoma perirrenal confinado é estritamente **Grau II**.",
-    "guidelineEvolution": "A classificação anatômica da AAST para trauma renal permanece inalterada desde a sua concepção original e continua sendo validada internacionalmente para o estadiamento e definição prognóstica e terapêutica.",
-    "references": [
-      "Campbell-Walsh Urology",
-      "American Association for the Surgery of Trauma (AAST) Organ Injury Scale"
-    ],
     "is_anulada": false
   },
   {
@@ -38189,23 +37922,19 @@
     "options": [
       {
         "letter": "A",
-        "text": "proximais > 5 mm.",
-        "explanation": "Os cálculos ureterais **proximais** (terço superior), mesmo quando apresentam dimensões maiores (> 5 mm), apresentam menor taxa de eliminação espontânea e respondem de forma insatisfatória à terapia expulsiva medicamentosa com bloqueadores alfa, sendo frequentemente indicados para litotripsia extracorpórea ou ureterorretrenoscopia."
+        "text": "proximais > 5 mm."
       },
       {
         "letter": "B",
-        "text": "distais < 5 mm.",
-        "explanation": "Embora cálculos ureterais **distais < 5 mm** possuam altíssima taxa de eliminação espontânea apenas com hidratação e analgesia, o uso de bloqueadores alfa não é estritamente mandatório para esta faixa de tamanho reduzido, visto que o próprio calibre do ureter distal geralmente permite a passagem do cálculo sem intervenção farmacológica adicional."
+        "text": "distais < 5 mm."
       },
       {
         "letter": "C",
-        "text": "proximais < 5 mm.",
-        "explanation": "Cálculos ureterais **proximais < 5 mm** possuem boa taxa de eliminação espontânea por meio de tratamento conservador isolado, não justificando o uso sistemático de terapia expulsiva medicamentosa baseada no efeito de classe dos bloqueadores alfa."
+        "text": "proximais < 5 mm."
       },
       {
         "letter": "D",
-        "text": "distais > 5 mm.",
-        "explanation": "Os bloqueadores alfa (como a tansulosina) possuem forte evidência e efeito de classe comprovado para a terapia expulsiva medicamentosa em cálculos ureterais **distais > 5 mm**, relaxando a musculatura lisa do ureter distal e facilitando a passagem do cálculo."
+        "text": "distais > 5 mm."
       }
     ],
     "correctAnswer": "B",
@@ -38215,13 +37944,6 @@
     "is_official": true,
     "provenance": "oficial_drive_tematico",
     "official_book": "Nefrolitíase.pdf.json",
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a **confusão entre o tamanho e a localização anatômica** do cálculo, acreditando erroneamente que a terapia expulsiva com alfa-bloqueadores beneficia cálculos pequenos (< 5 mm) que já eliminariam espontaneamente ou ignorando que o grande benefício ocorre exclusivamente no ureter distal.",
-    "takeHomeMessage": "A terapia expulsiva medicamentosa com alfa-bloqueadores é padrão-ouro para **cálculos ureterais distais maiores que 5 mm**, maximizando as taxas de eliminação espontânea.",
-    "guidelineEvolution": "As diretrizes das sociedades de urologia mantêm a recomendação do uso de alfa-bloqueadores para cálculos ureterais distais maiores que 5 mm, com respaldo em revisões sistemáticas e ensaios clínicos randomizados robustos.",
-    "references": [
-      "European Association of Urology (EAU) Guidelines on Urolithiasis",
-      "American Urological Association (AUA) / Endourological Society Guidelines: Medical Expulsive Therapy for Ureteral Lithiasis"
-    ],
     "is_anulada": false
   },
   {
@@ -38826,42 +38548,29 @@
     "options": [
       {
         "letter": "A",
-        "text": "Composição de cistina.",
-        "explanation": "Os cálculos de **cistina apresentam alta resistência** à fragmentação por ondas de choque devido à sua estrutura cristalina compacta e dureza intrínseca, sendo considerados de **muito baixa taxa de sucesso** para a litotripsia extracorpórea (LECO)."
+        "text": "Composição de cistina."
       },
       {
         "letter": "B",
-        "text": "Densidade 1000 – 1300 unidades Hounsfield.",
-        "explanation": "A densidade do cálculo medida por tomografia computadorizada é um fator preditivo crítico de sucesso para a LECO, sendo que valores **acima de 1000 a 1000 HU (unidades Hounsfield)** indicam cálculos altamente densos e resistentes, enquanto o intervalo ideal e mais favorável situa-se geralmente **abaixo de 900-1000 HU**."
+        "text": "Densidade 1000 – 1300 unidades Hounsfield."
       },
       {
         "letter": "C",
-        "text": "Localização em cálice inferior.",
-        "explanation": "A localização no **cálice inferior é desfavorável** para a LECO devido à desvantagem gravitacional que dificulta a eliminação dos fragmentos gerados, além do ângulo infundibulopélvico desfavorável frequentemente associado, resultando em altas taxas de **ficar com fragmentos residuais** (\"stone free rate\" inferior)."
+        "text": "Localização em cálice inferior."
       },
       {
         "letter": "D",
-        "text": "Localização em ureter médio.",
-        "explanation": "O ureter médio apresenta **pior taxa de sucesso para LECO** quando comparado ao ureter proximal, principalmente devido à **dificuldade de focalização precisa** da onda de choque pelas estruturas ósseas da pelve (asa ilíaca e sacro) e interposição de alças intestinais."
+        "text": "Localização em ureter médio."
       },
       {
         "letter": "E",
-        "text": "5-10 mm de diâmetro.",
-        "explanation": "Cálculos renais ou ureterais com **5 a 10 mm de diâmetro** representam o tamanho **ótimo e mais favorável** para a fragmentação eficaz e subsequente eliminação espontânea dos fragmentos na litotripsia extracorpórea."
+        "text": "5-10 mm de diâmetro."
       }
     ],
     "correctAnswer": "C",
     "commentary": "",
     "images": [],
     "correct_answer": "C",
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a **confusão entre os critérios anatômicos e radiológicos de sucesso da LECO**, selecionando opções como cálice inferior ou alta densidade tomográfica por acreditar que qualquer cálculo obstrutivo pode ser abordado da mesma forma.",
-    "takeHomeMessage": "O perfil ideal para o sucesso da litotripsia extracorpórea é um **cálculo radiopaco, menor que 1 cm, com densidade inferior a 1000 HU**, localizado fora do cálice inferior.",
-    "guidelineEvolution": "As diretrizes das Associações Americana e Europeia de Urologia mantêm inalterados os critérios fundamentais de seleção para LECO baseados em tamanho, densidade (unidades Hounsfield) e composição mineral, com clara preferência atual pela ureterolitotripsia endoscópica flexível ou semirrígida para cálculos que não preenchem o perfil ideal de LECO.",
-    "references": [
-      "Campbell-Walsh Urology",
-      "Diretrizes da Sociedade Brasileira de Urologia - Litíase Urinária",
-      "European Association of Urology Guidelines on Urolithiasis"
-    ],
     "is_anulada": false
   },
   {
@@ -39297,42 +39006,29 @@
     "options": [
       {
         "letter": "A",
-        "text": "Densidade 1000 – 1300 unidades.",
-        "explanation": "Cálculos com **densidade superior a 1000 unidades Hounsfield (UH)** na tomografia computadorizada apresentam alta resistência às ondas de choque da litotripsia extracorpórea (LECO), tornando-se menos favoráveis ao tratamento."
+        "text": "Densidade 1000 – 1300 unidades."
       },
       {
         "letter": "B",
-        "text": "Composição de cistina.",
-        "explanation": "A **composição de cistina** confere extrema dureza e resistência estrutural ao cálculo urinário, sendo considerada uma das litíases mais refratárias e desfavoráveis à fragmentação por LECO."
+        "text": "Composição de cistina."
       },
       {
         "letter": "C",
-        "text": "Localização em cálice inferior.",
-        "explanation": "A **localização em cálice inferior** apresenta taxas de sucesso inferiores na LECO devido à desfavorável gravidade para a eliminação espontânea dos fragmentos gerados, acumulando resíduos na porção declive."
+        "text": "Localização em cálice inferior."
       },
       {
         "letter": "D",
-        "text": "Localização em ureter médio.",
-        "explanation": "O **ureter médio** é uma localização desfavorável e de difícil focalização para a LECO devido à sobreposição de estruturas ósseas (ossos da pelve) e intestinais gasosas, além de ser o local menos efetivo para a fragmentação extracorpórea."
+        "text": "Localização em ureter médio."
       },
       {
         "letter": "E",
-        "text": "5 a 10 mm de diâmetro.",
-        "explanation": "O tamanho entre **5 a 10 mm de diâmetro** (ou até 2 cm dependendo da localização) representa o **limite volumétrico ideal** e mais favorável para a fragmentação eficaz e taxa de livramento de fragmentos pela litotripsia extracorpórea."
+        "text": "5 a 10 mm de diâmetro."
       }
     ],
     "correctAnswer": "C",
     "commentary": "",
     "images": [],
     "correct_answer": "C",
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é confundir a eficácia da LECO com outras modalidades terapêuticas como a ureterolitotripsia endoscópica, selecionando erroneamente localizações anatômicas desfavoráveis como o cálice inferior ou o ureter médio.",
-    "takeHomeMessage": "Para o sucesso da **litotripsia extracorpórea**, prefira cálculos com **menos de 10 a 20 mm**, **baixa densidade (< 1000 UH)** e localização fora do **cálice inferior**.",
-    "guidelineEvolution": "As diretrizes internacionais de urologia (AUA e EAU) mantêm os critérios de seleção para LECO baseados no tamanho do cálculo, densidade tomográfica e composição química, priorizando cada vez mais a ureteroscopia para cálculos ureterais e renais menores de 2 cm devido aos avanços tecnológicos endoscópicos.",
-    "references": [
-      "Campbell-Walsh Urology",
-      "Diretrizes da Associação Americana de Urologia (AUA) sobre Litíase Urinária",
-      "Diretrizes da Associação Européia de Urologia (EAU) sobre Urolitíase"
-    ],
     "is_anulada": false
   },
   {
@@ -42780,36 +42476,25 @@
     "options": [
       {
         "letter": "A",
-        "text": "Grau I",
-        "explanation": "O **Grau I refere-se à varicocele subclínica ou palpável apenas durante a manobra de Valsalva**, não sendo detectável à simples inspeção ou palpação em repouso."
+        "text": "Grau I"
       },
       {
         "letter": "B",
-        "text": "Grau II",
-        "explanation": "O **Grau II caracteriza-se pela presença de cordões varicosos palpáveis em repouso, porém sem visibilidade direta** na inspeção estática da bolsa escrotal, correspondendo exatamente ao caso clínico apresentado."
+        "text": "Grau II"
       },
       {
         "letter": "C",
-        "text": "Grau III",
-        "explanation": "O **Grau III refere-se a varicocele volumosa, caracterizada por cordões varicosos facilmente visíveis e palpáveis em repouso**, dispensando manobras de aumento da pressão abdominal para sua identificação."
+        "text": "Grau III"
       },
       {
         "letter": "D",
-        "text": "Grau IV",
-        "explanation": "A **classificação clássica de Dubin e Amelar utiliza apenas três graus (I, II e III)**, tornando a alternativa que propõe um grau IV conceitualmente inexistente no sistema de estadiamento clínico padrão."
+        "text": "Grau IV"
       }
     ],
     "correctAnswer": "A",
     "commentary": "",
     "images": [],
     "correct_answer": "A",
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a **confusão entre os limites semiológicos do Grau II e do Grau III**, especialmente na diferenciação entre o que é apenas palpável em repouso versus o que também se torna visível sem manobras provocativas.",
-    "takeHomeMessage": "A varicocele **Grau II é palpável em repouso mas não visível**, enquanto o **Grau III é visível e palpável**, sendo essa a distinção fundamental cobrada em provas de residência médica.",
-    "guidelineEvolution": "A classificação clínica de Dubin e Amelar permanece como o **padrão-ouro semiológico** adotado pelas diretrizes de urologia da Sociedade Brasileira de Urologia e da Associação Americana de Urologia, sem alterações significativas nos critérios diagnósticos ao longo das últimas décadas.",
-    "references": [
-      "Campbell-Walsh Urology",
-      "Manual de Urologia da Sociedade Brasileira de Urologia (SBU)"
-    ],
     "is_anulada": false
   },
   {
@@ -43536,23 +43221,19 @@
     "options": [
       {
         "letter": "A",
-        "text": "Clomipramina.",
-        "explanation": "A **Clomipramina** é um antidepressivo tricíclico com potente ação serotoninérgica, classicamente utilizada para o tratamento de transtorno obsessivo-compulsivo e ejaculação precoce devido aos seus efeitos colaterais de retardo ejaculatório. No entanto, o paciente em questão apresenta queixa primária de **disfunção erétil**, sem queixas de ejaculação precoce, e os antidepressivos tricíclicos estão, na verdade, associados à **piora da libido e da função erétil**."
+        "text": "Clomipramina."
       },
       {
         "letter": "B",
-        "text": "Finasterida.",
-        "explanation": "A **Finasterida** é um inibidor da 5-alfa-redutase indicado para o tratamento da hiperplasia prostática benigna e da alopecia androgenética. O paciente **nega completamente queixas urinárias obstrutivas ou irritativas**, além de apresentar próstata sem indicação clínica de tratamento para HPB. O uso desta medicação neste cenário seria inteiramente injustificado e poderia inclusive **agravar o quadro de disfunção sexual** do paciente."
+        "text": "Finasterida."
       },
       {
         "letter": "C",
-        "text": "Alprostadil.",
-        "explanation": "O **Alprostadil** (prostaglandina E1) é um agente vasoativo utilizado na forma de injeção intracavernosa ou supositório intrauretral para o tratamento de segunda linha da disfunção erétil. Trata-se de uma terapia invasiva, indicada para pacientes com falha ou contraindicação aos inibidores da fosfodiesterase tipo 5, o que **não corresponde à primeira linha de tratamento** para este paciente que apresenta disfunção erétil de início recente e sem tentativas prévias com terapia oral."
+        "text": "Alprostadil."
       },
       {
         "letter": "D",
-        "text": "Sildenafila.",
-        "explanation": "Os inibidores da fosfodiesterase tipo 5, como a **Sildenafila**, representam o **tratamento farmacológico de primeira linha** para a disfunção erétil de etiologia orgânica (associada a fatores de risco cardiovasculares, obesidade e dislipidemia presentes no caso) ou psicogênica. O paciente apresenta desejo preservado, ereções reflexas mantidas e perfil adequado para o uso seguro da medicação após avaliação cardiovascular."
+        "text": "Sildenafila."
       }
     ],
     "correctAnswer": "B",
@@ -43568,15 +43249,7 @@
       "question_number": 8,
       "overlap_score": 78,
       "source": "FUVEST Oficial Retificado 2023"
-    },
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a confusão entre os tratamentos urológicos disponíveis, optando equivocadamente pela Finasterida por associar o envelhecimento masculino e sintomas sexuais a patologias prostáticas, ou indicar terapias invasivas como o Alprostadil sem antes esgotar a primeira linha oral.",
-    "takeHomeMessage": "Diante de um paciente com **disfunção erétil de primeira linha**, a conduta padrão-ouro envolve a **investigação de fatores de risco cardiovasculares**, orientação sobre estilo de vida e a prescrição de **inibidores da fosfodiesterase tipo 5**, desde que afastado o uso de nitratos.",
-    "guidelineEvolution": "As diretrizes da Sociedade Brasileira de Urologia e da Associação Americana de Urologia mantêm inalterado o uso dos inibidores da fosfodiesterase tipo 5 como terapia farmacológica inicial de escolha para a disfunção erétil, enfatizando a importância do rastreamento de comorbidades metabólicas e cardiovasculares.",
-    "references": [
-      "Diretrizes de Urologia da Sociedade Brasileira de Urologia (SBU)",
-      "Campbell-Walsh Urology",
-      "European Association of Urology (EAU) Guidelines on Sexual and Reproductive Health"
-    ]
+    }
   },
   {
     "id": "3ad29310-ba21-4061-bacf-2783a660d5a5",
@@ -44177,41 +43850,29 @@
     "options": [
       {
         "letter": "A",
-        "text": "Somente os itens I, II e IV estão certos.",
-        "explanation": "O toque retal permite palpar a hiperplasia prostática e fecalomas na ampola retal, porém **um tumor localizado na transição retosigmoide encontra-se fora do alcance do dedo do examinador**, situando-se proximalmente ao reto médio e superior, o que invalida esta opção."
+        "text": "Somente os itens I, II e IV estão certos."
       },
       {
         "letter": "B",
-        "text": "Somente os itens I, III e V estão certos.",
-        "explanation": "A hiperplasia prostática e a retocele são palpáveis ao exame físico proctológico, no entanto **a doença hemorroidária interna grau I não é palpável ao toque retal**, pois não apresenta prolapso e seus mamilos são internos e macios, sendo visualizados apenas à anuscopia."
+        "text": "Somente os itens I, III e V estão certos."
       },
       {
         "letter": "C",
-        "text": "Somente os itens I, II, IV e V estão certos.",
-        "explanation": "A inclusão da doença hemorroidária interna grau I torna esta alternativa errada, visto que **as hemorroidas internas de primeiro grau não são detectáveis à palpação digital**, além do tumor em transição retosigmoide também estar inacessível."
+        "text": "Somente os itens I, II, IV e V estão certos."
       },
       {
         "letter": "D",
-        "text": "Somente os itens III e IV estão certos.",
-        "explanation": "A retocele pode ser percebida pela parede anterior do reto, mas **o tumor localizado na transição retosigmoide não pode ser diagnosticado por toque retal devido à sua localização alta**, além de ignorar patologias prostáticas e fecais perfeitamente acessíveis."
+        "text": "Somente os itens III e IV estão certos."
       },
       {
         "letter": "E",
-        "text": "Somente os itens I, II e III estão certos",
-        "explanation": "O toque retal alcança até cerca de 7 a 10 cm da margem anal, permitindo avaliar perfeitamente a **glândula prostática (hiperplasia)**, a presença de **massas fecais endurecidas na ampola retal (fecaloma)** e a **fraqueza do septo retovaginal com abaulamento anterior (retocele)**."
+        "text": "Somente os itens I, II e III estão certos"
       }
     ],
     "correctAnswer": "B",
-    "commentary": "O toque retal é uma manobra semiológica fundamental e de baixo custo, cujo alcance anatômico abrange a próstata, as vesículas seminais baixas, o canal anal e o reto inferior (até aproximadamente 10 cm). A **hiperplasia prostática benigna** manifesta-se pelo aumento fibroepitelial com perda do sulco medial. O **fecaloma** apresenta-se como massa fecal endurecida que preenche a ampola retal. A **retocele** caracteriza-se por um abaulamento da parede anterior do reto durante o esforço evacuatório em mulheres. Em contrapartida, lesões neoplásicas na **transição retosigmoide** e **hemorroidas internas grau I** situam-se, respectivamente, acima do limite anatômico do toque e desprovidas de volume palpável ao repouso, exigindo exames complementares como retossigmoidoscopia, colonoscopia e anuscopia.\n\nPrincipal Motivo de Erro:\nO principal motivo que leva o aluno ao erro nesta questão é a **confusão sobre os limites anatômicos do alcance do dedo examinador** no toque retal, subestimando a altura de tumores na transição retosigmoide e superestimando a palpabilidade de hemorroidas internas grau I.\n\nTake-Home Message:\nO toque retal avalia estruturas até 10 cm da margem anal, permitindo identificar **hiperplasia prostática, fecalomas e retoceles**, mas é ineficaz para hemorroidas internas grau I e tumores do sigmoide.\n\nEvolução de Diretrizes:\nAs indicações e os limites anatômicos do toque retal na semiologia proctológica e urológica permanecem inalterados ao longo das décadas, mantendo-se como método físico padrão-ouro inicial.\n\nReferências:\n• Porto, CC. Semiologia Médica. 8ª ed.\n• Campbell-Walsh Urology. 12th ed.",
+    "commentary": "",
     "images": [],
-    "correct_answer": "B",
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a **confusão sobre os limites anatômicos do alcance do dedo examinador** no toque retal, subestimando a altura de tumores na transição retosigmoide e superestimando a palpabilidade de hemorroidas internas grau I.",
-    "takeHomeMessage": "O toque retal avalia estruturas até 10 cm da margem anal, permitindo identificar **hiperplasia prostática, fecalomas e retoceles**, mas é ineficaz para hemorroidas internas grau I e tumores do sigmoide.",
-    "guidelineEvolution": "As indicações e os limites anatômicos do toque retal na semiologia proctológica e urológica permanecem inalterados ao longo das décadas, mantendo-se como método físico padrão-ouro inicial.",
-    "references": [
-      "Porto, CC. Semiologia Médica. 8ª ed.",
-      "Campbell-Walsh Urology. 12th ed."
-    ]
+    "correct_answer": "B"
   },
   {
     "id": "40379a13-dbe9-4a14-b020-8fcf9e6f5300",
@@ -44553,36 +44214,25 @@
     "options": [
       {
         "letter": "A",
-        "text": "Artéria renal, veia renal e pelve renal.",
-        "explanation": "A disposição listando **artéria renal por primeiro** inverte a relação anteroposterior clássica das estruturas hilares do rim."
+        "text": "Artéria renal, veia renal e pelve renal."
       },
       {
         "letter": "B",
-        "text": "Pelve renal, veia renal e artéria renal.",
-        "explanation": "A ordem apresentando **veia renal no meio** entre a pelve e a artéria está anatomicamente incorreta, pois a veia ocupa o plano mais anterior."
+        "text": "Pelve renal, veia renal e artéria renal."
       },
       {
         "letter": "C",
-        "text": "Veia renal, artéria renal e pelve renal.",
-        "explanation": "A disposição colocando a **veia renal em primeiro lugar** (anterior) e a **pelve renal por último** (posterior) inverte a orientação anteroposterior descrita na literatura anatômica padrão."
+        "text": "Veia renal, artéria renal e pelve renal."
       },
       {
         "letter": "D",
-        "text": "Pelve renal, artéria renal e veia renal.",
-        "explanation": "A relação anteroposterior das estruturas que compõem o hilo renal, dispostas de **posterior para anterior**, é **pelve renal, artéria renal e veia renal**."
+        "text": "Pelve renal, artéria renal e veia renal."
       }
     ],
     "correctAnswer": "A",
     "commentary": "",
     "images": [],
     "correct_answer": "A",
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a **confusão na direção da leitura solicitada no enunciado (de posterior para anterior vs. de anterior para posterior)**, somada ao esquecimento da relação anteroposterior clássica das estruturas do hilo renal.",
-    "takeHomeMessage": "No **hilo renal**, a relação de anterior para posterior é **veia, artéria e pelve**; portanto, lendo **de posterior para anterior**, a sequência obrigatória é **pelve, artéria e veia**.",
-    "guidelineEvolution": "O conhecimento anatômico clássico da disposição das estruturas do hilo renal permanece **absolutamente inalterado** ao longo das décadas, sendo um marco na formação cirúrgica.",
-    "references": [
-      "Moore, KL; Dalley, AF; Agur, AMR. Anatomia Orientada para a Prática Clínica",
-      "Gray, H. Anatomia da Grade Curricular Médica"
-    ],
     "is_anulada": false
   },
   {
@@ -45704,36 +45354,25 @@
     "options": [
       {
         "letter": "A",
-        "text": "No hilo renal, a pelve renal é a estrutura mais anterior, e situa-se anteriormente à artéria renal, que é anterior à veia renal.",
-        "explanation": "A pelve renal localiza-se na porção mais posterior do hilo, e **não na porção mais anterior**, tornando esta alternativa incorreta devido à inversão total dos componentes anatômicos."
+        "text": "No hilo renal, a pelve renal é a estrutura mais anterior, e situa-se anteriormente à artéria renal, que é anterior à veia renal."
       },
       {
         "letter": "B",
-        "text": "No hilo renal, a veia renal situa-se anteriormente à artéria renal, que é anterior à pelve renal.",
-        "explanation": "No sentido anteroposterior, as estruturas que atravessam o hilo renal dispõem-se na seguinte ordem clássica: **a veia renal situa-se anteriormente à artéria renal, que é anterior à pelve renal**."
+        "text": "No hilo renal, a veia renal situa-se anteriormente à artéria renal, que é anterior à pelve renal."
       },
       {
         "letter": "C",
-        "text": "No hilo renal, a artéria renal situa-se anteriormente à veia renal, que é anterior à pelve renal.",
-        "explanation": "A artéria renal ocupa o plano intermediário entre a veia e a pelve, sendo **incorreto afirmar que ela se situa anteriormente à veia renal**."
+        "text": "No hilo renal, a artéria renal situa-se anteriormente à veia renal, que é anterior à pelve renal."
       },
       {
         "letter": "D",
-        "text": "No hilo renal, a artéria renal situa-se anteriormente à pelve renal, que é anterior à veia renal.",
-        "explanation": "A pelve renal constitui o elemento mais posterior do pedículo renal, tornando **falsa a afirmação de que ela se situa anteriormente à veia renal**."
+        "text": "No hilo renal, a artéria renal situa-se anteriormente à pelve renal, que é anterior à veia renal."
       }
     ],
     "correctAnswer": "B",
     "commentary": "",
     "images": [],
     "correct_answer": "B",
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a **confusão na ordem anteroposterior das estruturas do pedículo renal**, frequentemente esquecendo que o sistema coletor (pelve) ocupa sempre a posição mais posterior.",
-    "takeHomeMessage": "Lembre-se sempre da regra **V-A-P** para o hilo renal no sentido anteroposterior: **Veia na frente, Artéria no meio e Pelve atrás**.",
-    "guidelineEvolution": "A anatomia macroscópica humana permanece inalterada; portanto, os conceitos clássicos descritos nos tratados de anatomia e urologia continuam exatamente os mesmos da época da prova.",
-    "references": [
-      "Gray Anatomia para Estudantes",
-      "Campbell-Walsh Urology"
-    ],
     "is_anulada": false
   },
   {
@@ -47336,41 +46975,29 @@
     "options": [
       {
         "letter": "A",
-        "text": "Somente as afirmativas I e II são corretas.",
-        "explanation": "A alfafetoproteína e a desidrogenase láctica são marcadores tumorais clássicos e fundamentais para o estadiamento e o prognóstico dos tumores testiculares de células germinativas, mas **esta alternativa omite o principal marcador glicoproteico específico (HCG), tornando a opção incompleta**."
+        "text": "Somente as afirmativas I e II são corretas."
       },
       {
         "letter": "B",
-        "text": "Somente as afirmativas I e IV são corretas.",
-        "explanation": "A alfafetoproteína é um marcador sérico relevante para tumores não seminomatosos, contudo, **a somatomamotrofina coriônica não possui qualquer utilidade clínica na propedêutica ou no seguimento de neoplasias testiculares**, sendo um hormônio placentário sem correlação com essa patologia."
+        "text": "Somente as afirmativas I e IV são corretas."
       },
       {
         "letter": "C",
-        "text": "Somente as afirmativas III e IV são corretas.",
-        "explanation": "A gonadotrofina coriônica humana é amplamente utilizada na prática urológica como marcador tumoral germinativo, no entanto, **a somatomamotrofina coriônica é um distrator farmacológico sem qualquer aplicabilidade na oncologia urológica**, invalidando completamente esta opção."
+        "text": "Somente as afirmativas III e IV são corretas."
       },
       {
         "letter": "D",
-        "text": "Somente as afirmativas I, II e III são corretas.",
-        "explanation": "A alfafetoproteína (AFP), a desidrogenase láctica (DHL) e a gonadotrofina coriônica humana (HCG) formam a **tríade clássica de marcadores séricos fundamentais para o diagnóstico, estadiamento, monitoramento de resposta terapêutica e detecção precoce de recidiva** nos tumores de células germinativas do testículo."
+        "text": "Somente as afirmativas I, II e III são corretas."
       },
       {
         "letter": "E",
-        "text": "Somente as afirmativas II, III e IV são corretas.",
-        "explanation": "A desidrogenase láctica e a gonadotrofina coriônica humana são marcadores válidos para neoplasias testiculares, mas **a inclusão da somatomamotrofina coriônica como marcador tumoral válido invalida a alternativa**, visto que esta substância não participa do painel diagnóstico urológico."
+        "text": "Somente as afirmativas II, III e IV são corretas."
       }
     ],
     "correctAnswer": "C",
     "commentary": "",
     "images": [],
     "correct_answer": "C",
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a **confusão entre hormônios placentários legítimos utilizados como marcadores tumorais (como a gonadotrofina coriônica humana) e distratores com nomes bioquímicos semelhantes ou placentários irrelevantes para a urologia (como a somatomamotrofina coriônica)**.",
-    "takeHomeMessage": "Os três marcadores tumorais séricos obrigatórios na investigação de tumores germinativos testiculares são a **alfafetoproteína, o HCG e a DHL**.",
-    "guidelineEvolution": "As diretrizes internacionais de urologia (como a EAU e a AUA) mantêm inalterada a recomendação da tríade clássica de marcadores tumorais (AFP, HCG e DHL) para o estadiamento e seguimento dos tumores testiculares de células germinativas desde a época da prova até os dias atuais.",
-    "references": [
-      "Campbell-Walsh Urology",
-      "European Association of Urology (EAU) Guidelines on Testicular Cancer"
-    ],
     "is_anulada": false
   },
   {
@@ -47392,26 +47019,17 @@
     "options": [
       {
         "letter": "A",
-        "text": "CERTO",
-        "explanation": "A classificação da lesão renal traumática segundo a American Association for the Surgery of Trauma (AAST) define que as lesões de **grau III correspondem a lacerações renais que atingem mais de 1 cm de profundidade no córtex renal, mas SEM extravasamento de urina**. Quando há envolvimento do sistema coletor com extravasamento de contraste ou urina, a lesão é classificada obrigatoriamente como **grau IV**, tornando a afirmação incorreta."
+        "text": "CERTO"
       },
       {
         "letter": "B",
-        "text": "ERRADO",
-        "explanation": "A escala de lesão renal da AAST classifica as lesões grau III apenas quando há laceração cortical **maior que 1 cm sem atingir o sistema coletor**. O acometimento do sistema coletor eleva a classificação para o **grau IV**, o que torna a assertiva falsa e valida esta opção como o gabarito oficial."
+        "text": "ERRADO"
       }
     ],
     "correctAnswer": "B",
-    "commentary": "O trauma renal contuso associado a hematoma extenso em flanco e hematúria macroscópica exige investigação rigorosa por meio de tomografia computadorizada com contraste (protocolo para trauma) em pacientes hemodinamicamente estáveis. A classificação da American Association for the Surgery of Trauma (AAST) gradua as lesões renais de I a V. O **grau I** engloba contusão ou hematoma subcapsular não expansivo sem laceração. O **grau II** abrange hematoma perirrenal confinado ao retroperitônio e laceração cortical menor que 1 cm sem extravasamento urinário. O **grau III** refere-se a lacerações corticais maiores que 1 cm que **não alcançam o sistema coletor**. O **grau IV** caracteriza-se por lacerações que se estendem através da junção corticomedular até o **sistema coletor (com extravasamento urinário)** ou lesão de artéria/veia renal segmental com hematoma contido. O **grau V** envolve rim estilhaçado ou avulsão do pedículo renal. Portanto, o erro da assertiva reside em atribuir o envolvimento do sistema coletor ao grau III.\n\nPrincipal Motivo de Erro:\nO principal motivo que leva o aluno ao erro nesta questão é a **confusão na escala de AAST para trauma renal**, especificamente ao não recordar que o envolvimento do sistema coletor com extravasamento urinário é o marco definidor das **lesões grau IV**, e não do grau III.\n\nTake-Home Message:\nNo trauma renal, lacerações corticais maiores que 1 cm **sem envolvimento do sistema coletor são grau III**, enquanto qualquer extensão para o **sistema coletor com extravasamento eleva a lesão para o grau IV**.\n\nEvolução de Diretrizes:\nA classificação da AAST para lesões renais permanece inalterada nos conceitos fundamentais de profundidade de laceração e envolvimento do sistema coletor, mantendo-se o padrão estabelecido nas diretrizes de urologia e trauma da época.\n\nReferências:\n• Campbell-Walsh Urology\n• ATLS: Advanced Trauma Life Support - American College of Surgeons",
+    "commentary": "",
     "images": [],
-    "correct_answer": "B",
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a **confusão na escala de AAST para trauma renal**, especificamente ao não recordar que o envolvimento do sistema coletor com extravasamento urinário é o marco definidor das **lesões grau IV**, e não do grau III.",
-    "takeHomeMessage": "No trauma renal, lacerações corticais maiores que 1 cm **sem envolvimento do sistema coletor são grau III**, enquanto qualquer extensão para o **sistema coletor com extravasamento eleva a lesão para o grau IV**.",
-    "guidelineEvolution": "A classificação da AAST para lesões renais permanece inalterada nos conceitos fundamentais de profundidade de laceração e envolvimento do sistema coletor, mantendo-se o padrão estabelecido nas diretrizes de urologia e trauma da época.",
-    "references": [
-      "Campbell-Walsh Urology",
-      "ATLS: Advanced Trauma Life Support - American College of Surgeons"
-    ]
+    "correct_answer": "B"
   },
   {
     "id": "f5e6bbf9-fcb6-4d69-80a0-986e2d333f99",
@@ -48249,36 +47867,25 @@
     "options": [
       {
         "letter": "A",
-        "text": "RTU de próstata, porque o paciente está muito insatisfeito e com LUTS severo.",
-        "explanation": "A realização cirúrgica de urgência ou eletiva precoce como a **RTU de próstata está reservada para pacientes que apresentam complicações** da hiperplasia prostática benigna, tais como retenção urinária refratária, infecções urinárias de repetição, hematúria macroscópica de origem prostática, insuficiência renal obstrutiva ou cálculos vesicais, o que não é o caso do paciente em questão."
+        "text": "RTU de próstata, porque o paciente está muito insatisfeito e com LUTS severo."
       },
       {
         "letter": "B",
-        "text": "Inibidor de 5-alfa redutase, porque é a medicação mais efetiva.",
-        "explanation": "Os inibidores da 5-alfa redutase (como finasterida e dutasterida) reduzem o volume prostático e o risco de retenção urinária a longo prazo, mas **apresentam início de ação tardio (meses)** e não são a primeira escolha para o alívio rápido dos sintomas urinários obstrutivos e irritativos (LUTS) não complicados."
+        "text": "Inibidor de 5-alfa redutase, porque é a medicação mais efetiva."
       },
       {
         "letter": "C",
-        "text": "Alfa-bloqueador, porque o paciente apresenta próstata maior que 50 g.",
-        "explanation": "Embora a próstata apresente volume de 70g, o uso de alfa-bloqueadores é indicado para o tratamento inicial dos sintomas moderados a severos **independentemente do volume prostático**, sendo a associação com inibidores de 5-alfa redutase reservada para glândulas maiores que 40g associadas a risco de progressão, mas a monoterapia inicial com alfa-bloqueador permanece padrão em pacientes sem complicações."
+        "text": "Alfa-bloqueador, porque o paciente apresenta próstata maior que 50 g."
       },
       {
         "letter": "D",
-        "text": "Alfa-bloqueador, porque o paciente apresenta sintomas sem complicações.",
-        "explanation": "Os **alfa-bloqueadores (como tansulosina, doxazosina) são a primeira linha de tratamento farmacológico** para pacientes com LUTS moderados a severos secundários à HPB, pois promovem relaxamento rápido do M. detrusor e do colo vesical, proporcionando alívio sintomático imediato em pacientes sem complicações absolutas para cirurgia."
+        "text": "Alfa-bloqueador, porque o paciente apresenta sintomas sem complicações."
       }
     ],
     "correctAnswer": "D",
-    "commentary": "O quadro clínico de noctúria, esforço miccional e jato fraco há 2 anos em homem de 60 anos traduz sintomas do trato urinário inferior (LUTS) secundários à hiperplasia prostática benigna (HPB). Como o paciente não apresenta complicações (como insuficiência renal, infecções de repetição ou retenção urinária refratária), a conduta inicial de escolha é o tratamento farmacológico com **alfa-bloqueadores**, que atuam bloqueando os receptores alfa-1 adrenérgicos no colo vesical e na musculatura lisa da próstata, reduzindo a resistência ao fluxo urinário de forma rápida e eficaz.\n\nPrincipal Motivo de Erro:\nO principal motivo que leva o aluno ao erro nesta questão é **confundir o volume prostático aumentado isoladamente (70g) como indicação absoluta de cirurgia (RTU) ou de monoterapia exclusiva com inibidores da 5-alfa redutase**, esquecendo que o tratamento clínico inicial para LUTS sintomáticos não complicados se baseia em alfa-bloqueadores.\n\nTake-Home Message:\nO **alfa-bloqueador é a medicação de primeira linha** para o alívio rápido dos sintomas da HPB, independentemente do volume da próstata, desde que o paciente **não apresente complicações** absolutas.\n\nEvolução de Diretrizes:\nAs diretrizes urológicas da época da prova mantêm-se alinhadas às atuais: o tratamento inicial para LUTS moderados/severos sem complicações baseia-se em alfa-bloqueadores. Para próstatas maiores que 40g com sintomas persistentes, a associação com inibidores da 5-alfa redutase ou inibidores da fosfodiesterase-5 permanece como Literatura Médica Oficial de manutenção.\n\nReferências:\n• European Association of Urology (EAU) Guidelines on the Management of Non-Neurogenic Male Lower Urinary Tract Symptoms (LUTS)\n• Sociedade Brasileira de Urologia (SBU) - Diretrizes em Hiperplasia Prostática Benigna",
+    "commentary": "",
     "images": [],
-    "correct_answer": "D",
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é **confundir o volume prostático aumentado isoladamente (70g) como indicação absoluta de cirurgia (RTU) ou de monoterapia exclusiva com inibidores da 5-alfa redutase**, esquecendo que o tratamento clínico inicial para LUTS sintomáticos não complicados se baseia em alfa-bloqueadores.",
-    "takeHomeMessage": "O **alfa-bloqueador é a medicação de primeira linha** para o alívio rápido dos sintomas da HPB, independentemente do volume da próstata, desde que o paciente **não apresente complicações** absolutas.",
-    "guidelineEvolution": "As diretrizes urológicas da época da prova mantêm-se alinhadas às atuais: o tratamento inicial para LUTS moderados/severos sem complicações baseia-se em alfa-bloqueadores. Para próstatas maiores que 40g com sintomas persistentes, a associação com inibidores da 5-alfa redutase ou inibidores da fosfodiesterase-5 permanece como Literatura Médica Oficial de manutenção.",
-    "references": [
-      "European Association of Urology (EAU) Guidelines on the Management of Non-Neurogenic Male Lower Urinary Tract Symptoms (LUTS)",
-      "Sociedade Brasileira de Urologia (SBU) - Diretrizes em Hiperplasia Prostática Benigna"
-    ]
+    "correct_answer": "D"
   },
   {
     "id": "1195a1b9-5ec3-45dc-bf87-a8032489aefd",
@@ -48961,36 +48568,25 @@
     "options": [
       {
         "letter": "A",
-        "text": "II-III-IV.",
-        "explanation": "O item II é falso porque a identificação **obrigatória do ureter** não é rotina mandatório-protocollar na abordagem direta do tumor renal em nefrectomia parcial eletiva, embora seja fundamental em cirurgias de pelve ou ureter, e a identificação do hilo renal é seletiva para o controle vascular quando necessário. O item IV é falso pois o controle vascular proximal na nefrectomia parcial é prioritariamente realizado por **clopagem da artéria renal principal** (ou clamp vascular dedicado, e não pelo clipe 'Hem-o-lok' que possui risco de falha estrutural em vasos calibrosos principais sob pressão sistêmica)."
+        "text": "II-III-IV."
       },
       {
         "letter": "B",
-        "text": "II, IV-V.",
-        "explanation": "O item II é falso devido à **exigência desnecessária da ureterólise de rotina** para tumores parenquimatosos renais restritos. O item IV erra pelo uso incorreto do **clipe 'Hem-o-lok' na artéria renal principal**, conduta inadequada e de alto risco de deiscência para o tronco arterial principal. O item V descreve corretamente a **sutura para fechamento do parênquima renal** e hemostasia."
+        "text": "II, IV-V."
       },
       {
         "letter": "C",
-        "text": "I-III-V.",
-        "explanation": "O item I está correto pois o **rebatimento obrigatório do cólon na linha de Toldt** é o passo inicial mandatório para a medialização do cólon e exposição do retroperitônio e do rim. O item III está correto pois a **abertura da fáscia de Gerota** permite a exposição da gordura perirrenal e delimitação exata do tumor. O item V está correto pois a **sutura renorrafica em chuleio ou com chumbo/bolster** garante o controle hemostático e o fechamento do parênquima renal após a ressecção tumoral."
+        "text": "I-III-V."
       },
       {
         "letter": "D",
-        "text": "I-II-V.",
-        "explanation": "O item II contém o erro conceitual da **identificação obrigatória do ureter** como passo cirúrgico mandatório inicial na nefrectomia parcial para carcinoma de células renais, tornando esta alternativa incorreta."
+        "text": "I-II-V."
       }
     ],
     "correctAnswer": "A",
-    "commentary": "A nefrectomia parcial aberta ou minimamente invasiva para neoplasias renais localizadas exige passos técnicos padronizados para garantir a margem cirúrgica oncológica negativa e a preservação funcional renal máxima. O acesso retroperitoneal ou transperitoneal demanda o **rebatimento visceral adequado** (como a manobra de Toldt para o cólon esquerdo ou direito), seguido da **abertura da fáscia de Gerota** para isolamento e ressecção tumoral com margem de parênquima sadio. O controle vascular arterial deve ser realizado com **clamps vasculares apropriados (Bulldog)** para vasos principais, sendo o uso de clipes poliméricos restrito a ramos secundários e segmentares. Por fim, a **reconstrução do parênquima renal** com suturas hemostáticas em camadas previne sangramentos e fístulas urinárias.\n\nPrincipal Motivo de Erro:\nO principal motivo que leva o aluno ao erro nesta questão é a confusão entre o instrumental adequado para o controle do hilo principal — confundindo **clamps vasculares definitivos para grandes vasos com clipes poliméricos (Hem-o-lok) utilizados em ramos menores** —, além de superestimar a necessidade de ureterólise sistemática em cirurgias voltadas ao parênquima renal.\n\nTake-Home Message:\nNa nefrectomia parcial, a **exposição anatômica adequada via fáscia de Gerota e linha de Toldt** combinada com a **sutura hemostática precisa do parênquima** são pilares fundamentais da técnica cirúrgica.\n\nEvolução de Diretrizes:\nAs diretrizes de urologia oncológica mantêm inalterados os princípios fundamentais da nefrectomia parcial, enfatizando a preferência pela cirurgia conservadora de néfrons sempre que tecnicamente viável, independentemente da via de acesso (aberta, laparoscópica ou robótica).\n\nReferências:\n• Campbell-Walsh Urology\n• European Association of Urology (EAU) Guidelines on Renal Cell Carcinoma",
+    "commentary": "",
     "images": [],
-    "correct_answer": "A",
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a confusão entre o instrumental adequado para o controle do hilo principal — confundindo **clamps vasculares definitivos para grandes vasos com clipes poliméricos (Hem-o-lok) utilizados em ramos menores** —, além de superestimar a necessidade de ureterólise sistemática em cirurgias voltadas ao parênquima renal.",
-    "takeHomeMessage": "Na nefrectomia parcial, a **exposição anatômica adequada via fáscia de Gerota e linha de Toldt** combinada com a **sutura hemostática precisa do parênquima** são pilares fundamentais da técnica cirúrgica.",
-    "guidelineEvolution": "As diretrizes de urologia oncológica mantêm inalterados os princípios fundamentais da nefrectomia parcial, enfatizando a preferência pela cirurgia conservadora de néfrons sempre que tecnicamente viável, independentemente da via de acesso (aberta, laparoscópica ou robótica).",
-    "references": [
-      "Campbell-Walsh Urology",
-      "European Association of Urology (EAU) Guidelines on Renal Cell Carcinoma"
-    ]
+    "correct_answer": "A"
   },
   {
     "id": "866d8420-fc7b-42b0-ae03-ed1daaf4eceb",
@@ -50111,36 +49707,25 @@
     "options": [
       {
         "letter": "A",
-        "text": "Solicitar biópsia prostática.",
-        "explanation": "A realização de **biópsia prostática está indicada apenas na vigência de alteração suspeita ao toque retal (nódulo endurecido) ou elevação persistente do PSA** acima da faixa de normalidade ajustada para a idade, o que não se aplica ao caso (PSA de 3,1 ng/mL e toque sem nódulos)."
+        "text": "Solicitar biópsia prostática."
       },
       {
         "letter": "B",
-        "text": "Iniciar tratamento empírico com antibióticos.",
-        "explanation": "A presença de sintomas obstrutivos e irritativos urinários sem disúria ou febre afasta o quadro infeccioso, tornando o **tratamento empírico com antibióticos completamente desnecessário** e ineficaz para a melhora do quadro obstrutivo prostático."
+        "text": "Iniciar tratamento empírico com antibióticos."
       },
       {
         "letter": "C",
-        "text": "Repetir o exame de ultrassonografia da próstata.",
-        "explanation": "O exame de ultrassonografia já foi realizado recentemente e forneceu as informações anatômicas necessárias, como o volume prostático de 40 gramas, tornando a **repetição do exame de imagem redundante e sem impacto na conduta terapêutica** imediata."
+        "text": "Repetir o exame de ultrassonografia da próstata."
       },
       {
         "letter": "D",
-        "text": "Encaminhar para ressecção transuretral da próstata.",
-        "explanation": "O paciente apresenta sintomas do trato urinário inferior (LUTS) refratários ao tratamento clínico combinado otimizado (alfa-bloqueador associado a inibidor da 5-alfa-redutase), com impacto negativo na qualidade de vida, sendo mandativo o **encaminhamento para tratamento cirúrgico desobstrutivo, sendo a ressecção transuretral da próstata (RTUP) o padrão-ouro** para volumes prostáticos nesta faixa."
+        "text": "Encaminhar para ressecção transuretral da próstata."
       }
     ],
     "correctAnswer": "D",
     "commentary": "",
     "images": [],
     "correct_answer": "D",
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a confusão entre o manejo inicial da HPB — baseado em modificação de estilo de vida e terapia medicamentosa — e o **manejo da falha terapêutica medicamentosa, momento em que a indicação cirúrgica torna-se imperativa**.",
-    "takeHomeMessage": "Diante da **falha do tratamento clínico combinado para HPB**, o paciente deve ser encaminhado para **tratamento cirúrgico (RTUP para próstatas abaixo de 80g)**, independentemente da idade, desde que apresente boas condições clínicas.",
-    "guidelineEvolution": "As diretrizes urológicas mantêm inalteradas as indicações de tratamento cirúrgico para a HPB refratária ao tratamento medicamentoso. A RTUP continua sendo o procedimento padrão-ouro para próstatas de tamanho pequeno a moderado, embora técnicas a laser venham ganhando espaço no cenário atual.",
-    "references": [
-      "European Association of Urology (EAU) Guidelines on the Management of Non-Neurogenic Male Lower Urinary Tract Symptoms (LUTS)",
-      "Sociedade Brasileira de Urologia (SBU) - Diretrizes em Hiperplasia Prostática Benigna"
-    ],
     "is_anulada": false
   },
   {
@@ -50162,37 +49747,25 @@
     "options": [
       {
         "letter": "A",
-        "text": "Passagem de sonda vesical de demora.",
-        "explanation": "A **passagem de sonda vesical de demora é formalmente contraindicada** na suspeita de lesão uretral, pois a tentativa de cateterismo pode converter uma laceração parcial em uma lesão completa ou agravar o dano tecidual, além de introduzir infecção no hematoma perineal."
+        "text": "Passagem de sonda vesical de demora."
       },
       {
         "letter": "B",
-        "text": "Realização de cistostomia por punção.",
-        "explanation": "A **realização de cistostomia (suprapúbica) por punção ou cirúrgica aberta** é o **padrão-ouro obrigatório** para o desvio urinário imediato em pacientes com suspeita ou confirmação de lesão traumática da uretra posterior ou anterior, evitando o extravasamento adicional de urina para o períneo."
+        "text": "Realização de cistostomia por punção."
       },
       {
         "letter": "C",
-        "text": "Estímulo com diurético endovenoso.",
-        "explanation": "O **estímulo com diurético endovenoso agrava agudamente o globo vesical** ao aumentar rapidamente a produção de urina contra uma uretra obstruída ou lesada, elevando o risco de ruptura da bexiga ou extravasamento urinário descontrolado."
+        "text": "Estímulo com diurético endovenoso."
       },
       {
         "letter": "D",
-        "text": "Incremento da hidratação venosa.",
-        "explanation": "O **incremento da hidratação venosa acelera o enchimento vesical** na vigência de retenção urinária aguda por trauma uretral, **agravando a distensão da bexiga** e aumentando a pressão retrógrada sem resolver a incapacidade de micção."
+        "text": "Incremento da hidratação venosa."
       }
     ],
     "correctAnswer": "B",
     "commentary": "",
     "images": [],
     "correct_answer": "B",
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a **confusão entre a retenção urinária simples (onde a sondagem vesical de demora é a conduta padrão) e a retenção secundária a trauma com uretrorragia e sinais de lesão uretral**, cenário em que o cateterismo uretral é uma manobra iatrogênica grave.",
-    "takeHomeMessage": "Diante de **uretrorragia e equimose perineal em asa de borboleta**, a uretra está lesionada: **nunca passe sonda uretral** e indique prontamente a **cistostomia suprapúbica**.",
-    "guidelineEvolution": "A conduta de evitar o cateterismo uretral na vigência de uretrorragia e realizar cistostomia como método de escolha para desvio urinário em trauma uretral **permanece inalterada e consolidada** nas diretrizes de urologia e trauma ao longo das últimas décadas.",
-    "references": [
-      "American Urological Association (AUA) Guidelines on Urological Trauma",
-      "European Association of Urology (EAU) Guidelines on Urological Trauma",
-      "ATLS: Advanced Trauma Life Support - American College of Surgeons"
-    ],
     "is_anulada": false
   },
   {
@@ -50314,37 +49887,25 @@
     "options": [
       {
         "letter": "A",
-        "text": "Tomografia  computadorizada",
-        "explanation": "A **tomografia computadorizada não tem indicação** na avaliação inicial de urgência da bolsa escrotal, sendo um exame de alto custo, **demorado e desnecessário** para patologias testiculares agudas, além de submeter o paciente a **radiação ionizante deletéria** na região gonadal."
+        "text": "Tomografia  computadorizada"
       },
       {
         "letter": "B",
-        "text": "Ultrossonografia  com doppler",
-        "explanation": "A **ultrassonografia com doppler colorido** é o exame de imagem de escolha por ser **rápido, amplamente disponível, não invasivo e altamente acurado**, permitindo avaliar o **fluxo sanguíneo testicular**, que se encontra reduzido ou ausente na torção, diferenciando-a de processos inflamatórios como a orquite e a epididimite."
+        "text": "Ultrossonografia  com doppler"
       },
       {
         "letter": "C",
-        "text": "Ressonância nuclear magnética",
-        "explanation": "A **ressonância nuclear magnética é um método de altíssimo custo e impraticável** em cenários de emergência urológica, onde o **tempo porta-cirurgia é fator determinante** para a viabilidade do órgão, tornando sua realização inviável e contraproducente pelo atraso no tratamento."
+        "text": "Ressonância nuclear magnética"
       },
       {
         "letter": "D",
-        "text": "Arteriografia do cordão espermático",
-        "explanation": "A **arteriografia do cordão espermático é um procedimento cirúrgico invasivo obsoleto** para o diagnóstico de urgência escrotal, sendo **totalmente substituída por métodos não invasivos** como o ultrassom com doppler, que fornecem informações vasculares sem os riscos inerentes à punção arterial."
+        "text": "Arteriografia do cordão espermático"
       }
     ],
     "correctAnswer": "B",
-    "commentary": "A torção testicular é uma **emergência urológica absoluta** caracterizada pela interrupção do suprimento sanguíneo ao testículo devido à rotação do cordão espermático, frequentemente associada à anomalia anatômica em sino de badalo. O quadro clínico clássico envolve **dor escrotal de início súbito, intensa, náuseas, vômitos e reflexo cremastérico ausente**. Embora o diagnóstico seja eminentemente clínico e a exploração cirúrgica imediata não deva ser retardada por exames complementares na vigência de alta suspeição, a **ultrassonografia com doppler colorido** é o exame de imagem padrão-ouro para confirmar a **ausência de fluxo sanguíneo intratesticular** quando há dúvida diagnóstica, com janela ideal de salvamento em até 6 horas do início dos sintomas.\n\nPrincipal Motivo de Erro:\nO principal motivo que leva o aluno ao erro nesta questão é a confusão com exames de alta complexidade (como tomografia ou ressonância) ou a dúvida sobre a necessidade de exames de imagem frente a uma emergência cirúrgica em que o diagnóstico clínico deveria prevalecer, negligenciando o papel do ultrassom doppler na confirmação diagnóstica.\n\nTake-Home Message:\nDiante de um quadro de **dor escrotal aguda**, a **torção testicular** é prioridade cirúrgica máxima; quando necessário suporte de imagem para confirmação, a **ultrassonografia com doppler colorido** é o exame de escolha para avaliar a **perfusão testicular**.\n\nEvolução de Diretrizes:\nA recomendação da ultrassonografia com doppler como exame de escolha na torção testicular permanece inalterada ao longo das décadas. Atualmente, enfatiza-se ainda mais que o exame de imagem **nunca deve retardar a exploração cirúrgica** em casos de alta suspeição clínica, visando reduzir o tempo total de isquemia.\n\nReferências:\n• Campbell-Walsh Urology\n• Urologia Fundamental - SBU (Sociedade Brasileira de Urologia)\n• European Association of Urology (EAU) Guidelines on Urological Emergencies",
+    "commentary": "",
     "images": [],
-    "correct_answer": "B",
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a confusão com exames de alta complexidade (como tomografia ou ressonância) ou a dúvida sobre a necessidade de exames de imagem frente a uma emergência cirúrgica em que o diagnóstico clínico deveria prevalecer, negligenciando o papel do ultrassom doppler na confirmação diagnóstica.",
-    "takeHomeMessage": "Diante de um quadro de **dor escrotal aguda**, a **torção testicular** é prioridade cirúrgica máxima; quando necessário suporte de imagem para confirmação, a **ultrassonografia com doppler colorido** é o exame de escolha para avaliar a **perfusão testicular**.",
-    "guidelineEvolution": "A recomendação da ultrassonografia com doppler como exame de escolha na torção testicular permanece inalterada ao longo das décadas. Atualmente, enfatiza-se ainda mais que o exame de imagem **nunca deve retardar a exploração cirúrgica** em casos de alta suspeição clínica, visando reduzir o tempo total de isquemia.",
-    "references": [
-      "Campbell-Walsh Urology",
-      "Urologia Fundamental - SBU (Sociedade Brasileira de Urologia)",
-      "European Association of Urology (EAU) Guidelines on Urological Emergencies"
-    ]
+    "correct_answer": "B"
   },
   {
     "id": "9306c524-e710-48b8-bb71-57840b2bcabb",
@@ -50754,37 +50315,25 @@
     "options": [
       {
         "letter": "A",
-        "text": "Torção do cordão espermático.",
-        "explanation": "A **torção do cordão espermático** caracteriza-se por quadro clínico de início **agudo, súbito e acompanhado de dor intensa**, náuseas e vômitos, o que contrasta diametralmente com o caso de evolução insidiosa e indolor de seis meses."
+        "text": "Torção do cordão espermático."
       },
       {
         "letter": "B",
-        "text": "Hérnia inguinal escrotal.",
-        "explanation": "A **hérnia inguinal escrotal** manifesta-se tipicamente como abaulamento na região inguinoescrestal que **aumenta com manobras de Valsalva, ortostatismo ou esforço físico**, apresentando redutibilidade e timpanismo à percussão quando há alça intestinal, sem as características ultrassonográficas de lesão testicular intratesticular sólida e heterogênea."
+        "text": "Hérnia inguinal escrotal."
       },
       {
         "letter": "C",
-        "text": "Tumor de testículo.",
-        "explanation": "O **tumor de testículo** é a principal hipótese diante de aumento volumétrico escrotal **indolor de consistência endurecida com lesão focal heterogênea e calcificações ao ultrassom** em paciente jovem, configurando neoplasia germinativa até prova em contrário."
+        "text": "Tumor de testículo."
       },
       {
         "letter": "D",
-        "text": "Orquiepididimite.",
-        "explanation": "A **orquiepididimite** cursa classicamente com **dor testicular aguda, flogose local, febre e sintomas urinários associados**, apresentação clínica incompatível com um aumento volumétrico de caráter crônico, indolor e progressivo."
+        "text": "Orquiepididimite."
       }
     ],
     "correctAnswer": "C",
     "commentary": "",
     "images": [],
     "correct_answer": "C",
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a **confusão entre patologias testiculares agudas e crônicas**, confundindo o quadro neoplásico indolor com processos inflamatórios ou vasculares como orquiepididimite ou torção, negligenciando a importância do ultrassom escrotal na diferenciação de massas intratesticulares.",
-    "takeHomeMessage": "Todo **aumento volumétrico testicular indolor e endurecido** em homens jovens deve ser considerado **tumor de testículo** até prova em contrário, sendo mandatório a realização de **ultrassom escrotal** e proibida a biópsia ou via de acesso escrotal.",
-    "guidelineEvolution": "As diretrizes da European Association of Urology (EAU) e da American Urological Association (AUA) mantêm os mesmos pilares diagnósticos e terapêuticos fundamentais: **orquiectomia radical por via inguinal obrigatória** como primeiro passo do manejo cirúrgico, associada à avaliação rigorosa de marcadores tumorais e estadiamento tomográfico.",
-    "references": [
-      "European Association of Urology (EAU) Guidelines on Testicular Cancer",
-      "American Urological Association (AUA) Guidelines on Testicular Cancer",
-      "Campbell-Walsh Urology"
-    ],
     "is_anulada": false
   },
   {
@@ -50806,36 +50355,25 @@
     "options": [
       {
         "letter": "A",
-        "text": "uretrocistoscopia; carcinoma invasor de bexiga.",
-        "explanation": "A **uretrocistoscopia** é o exame padrão-ouro para a visualização direta da mucosa vesical, permitindo a identificação de lesões exofíticas, planas ou ulceradas, além de possibilitar a biópsia para confirmação histológica. O quadro clínico de hematúria macroscópica indolor (ou associada a sintomas irritativos) em paciente idoso e tabagista pesado é altamente sugestivo de **carcinoma invasor de bexiga**, neoplasia urotelial agressiva fortemente relacionada ao tabagismo."
+        "text": "uretrocistoscopia; carcinoma invasor de bexiga."
       },
       {
         "letter": "B",
-        "text": "urografia excretora; carcinoma de células renais.",
-        "explanation": "A **urografia excretora apresenta baixa sensibilidade para lesões vesicais planas e pequenas**, sendo método obsoleto para o rastreio ou diagnóstico primário de neoplasias uroteliais em comparação à cistoscopia e à tomografia computadorizada. Além disso, o **carcinoma de células renais cursa classicamente com hematúria, dor lombar e massa palpável**, achados não predominantes neste caso."
+        "text": "urografia excretora; carcinoma de células renais."
       },
       {
         "letter": "C",
-        "text": "ressonância magnética de abdome; cálculo coraliforme.",
-        "explanation": "A **ressonância magnética de abdome não substitui a avaliação endoscópica direta** no estadiamento e diagnóstico inicial de massas vesicais. O **cálculo coraliforme ocupa o sistema pielocalicinal renal**, manifestando-se por dor lombar crônica e infecções de repetição, sendo incapaz de justificar o quadro primário de hematúria macroscópica maciça de origem vesical."
+        "text": "ressonância magnética de abdome; cálculo coraliforme."
       },
       {
         "letter": "D",
-        "text": "ultrassom transretal com biópsia de próstata; adenocarcinoma de próstata.",
-        "explanation": "O **ultrassom transretal com biópsia de próstata é indicado para a investigação de alterações prostáticas ao toque retal ou níveis elevados de PSA**, o que não corresponde ao quadro. A próstata do paciente apresenta consistência e tamanho esperados para hiperplasia prostática benigna, e o **adenocarcinoma de próstata não é a principal fonte de hematúria maciça** com padrão urotelial isolado."
+        "text": "ultrassom transretal com biópsia de próstata; adenocarcinoma de próstata."
       }
     ],
     "correctAnswer": "A",
     "commentary": "",
     "images": [],
     "correct_answer": "A",
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a confusão entre as etiologias da hematúria no idoso, associando erroneamente o histórico de hiperplasia prostática benigna a um carcinoma prostático ou priorizando exames de imagem indiretos em detrimento da **avaliação endoscópica direta da mucosa vesical**.",
-    "takeHomeMessage": "Diante de um paciente tabagista com **hematúria macroscópica**, a principal hipótese diagnóstica é o **carcinoma de bexiga**, cujo exame padrão-ouro para diagnóstico e biópsia é a **uretrocistoscopia**.",
-    "guidelineEvolution": "As diretrizes urológicas da época da prova mantêm plena vigência na atualidade, ratificando a **uretrocistoscopia combinada com a tomografia computadorizada de vias urinárias** como o fluxograma padrão para investigação de hematúria macroscópica em pacientes de alto risco.",
-    "references": [
-      "Campbell-Walsh Urology",
-      "European Association of Urology (EAU) Guidelines on Muscle-Invasive and Metastatic Bladder Cancer"
-    ],
     "is_anulada": false
   },
   {
@@ -51083,36 +50621,25 @@
     "options": [
       {
         "letter": "A",
-        "text": "Orquiepididimite; sumário de urina com cultura.",
-        "explanation": "O quadro clínico de aumento volumétrico indolor e progressivo do saco escrotal em homem jovem não condiz com processos inflamatórios agudos, além do fato de que o **sumário de urina com cultura é inespecífico e inadequado** para a investigação de massas testiculares sólidas ou hidroceles secundárias a neoplasias."
+        "text": "Orquiepididimite; sumário de urina com cultura."
       },
       {
         "letter": "B",
-        "text": "Câncer de testículo; ultrassonografia de bolsa escrotal.",
-        "explanation": "A apresentação de aumento indolor do volume escrotal associado a hidrocele reacional em paciente jovem (19 anos) é altamente suspeita para **câncer de testículo, sendo a ultrassonografia de bolsa escrotal o exame de imagem padrão-ouro inicial** para confirmar a presença de massa intratesticular e diferenciar lesões intra e extratesticulares."
+        "text": "Câncer de testículo; ultrassonografia de bolsa escrotal."
       },
       {
         "letter": "C",
-        "text": "Torção testicular; Dopplermetria das artérias testiculares.",
-        "explanation": "A torção testicular caracteriza-se por quadro de **dor aguda, súbita e intensa** acompanhada de náuseas e reflexo cremastérico ausente, o que diverge completamente do histórico de 2 meses de evolução indolor relatado no caso, tornando a **dopplermetria desnecessária e incorreta** para esta apresentação."
+        "text": "Torção testicular; Dopplermetria das artérias testiculares."
       },
       {
         "letter": "D",
-        "text": "Trauma testicular; tomografia computadorizada da bolsa escrotal.",
-        "explanation": "O trauma testicular manifesta-se com **histórico recente de impacto físico direto acompanhado de dor aguda e hematoma**, contextos ausentes no caso clínico em questão, além do fato de que a **tomografia computadorizada não é o exame de escolha** para a avaliação inicial da bolsa escrotal."
+        "text": "Trauma testicular; tomografia computadorizada da bolsa escrotal."
       }
     ],
     "correctAnswer": "A",
     "commentary": "",
     "images": [],
     "correct_answer": "A",
-    "mainErrorReason": "O principal motivo que leva o aluno ao erro nesta questão é a **confusão entre a queixa de hidrocele e a etiologia subjacente**, atribuindo o aumento escrotal a fatores mecânicos benignos, como o ciclismo ou traumas leves, e negligenciando a **investigação de neoplasia oculta** em pacientes jovens.",
-    "takeHomeMessage": "Todo **aumento escrotal indolor e progressivo** em homem jovem deve ser considerado **câncer de testículo até prova em contrário**, tendo a **ultrassonografia de bolsa escrotal** como o exame mandatório inicial.",
-    "guidelineEvolution": "As diretrizes da European Association of Urology (EAU) e da American Urological Association (AUA) mantêm-se inalteradas quanto à obrigatoriedade da ultrassonografia scrotal imediata e à contraindicação absoluta da via escrotal para abordagem cirúrgica de massas testiculares suspeitas.",
-    "references": [
-      "European Association of Urology (EAU) Guidelines on Testicular Cancer",
-      "Campbell-Walsh Urology"
-    ],
     "is_anulada": false
   },
   {
