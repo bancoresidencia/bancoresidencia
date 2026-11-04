@@ -10,7 +10,7 @@ import {
 } from '@/types/flashcards';
 import { INITIAL_FLASHCARDS } from '@/data/flashcardsData';
 import { INITIAL_STUDY_MATERIALS } from '@/data/studyMaterialsData';
-import { supabase } from '@/lib/supabase';
+import { createClient } from '@/lib/supabase/client';
 
 const STORAGE_KEY = 'bancoresidencia_flashcards_progress_v1';
 const LAST_SESSION_KEY = 'bancoresidencia_last_flashcard_session';
@@ -20,21 +20,34 @@ const USER_FLASHCARDS_KEY = 'bancoresidencia_user_created_flashcards';
 const USER_CARD_EDITS_KEY = 'bancoresidencia_user_card_edits';
 const USER_STUDY_MATERIALS_KEY = 'bancoresidencia_user_created_study_materials';
 
+function getProgressStorageKey(userId?: string | null): string {
+  return userId ? `bancoresidencia_flashcards_progress_${userId}` : STORAGE_KEY;
+}
+
+function getDecksStorageKey(userId?: string | null): string {
+  return userId ? `bancoresidencia_custom_decks_${userId}` : CUSTOM_DECKS_KEY;
+}
+
+function getUserCardsStorageKey(userId?: string | null): string {
+  return userId ? `bancoresidencia_user_cards_${userId}` : USER_FLASHCARDS_KEY;
+}
+
 export const flashcardsService = {
   /**
    * Carrega todos os flashcards mesclando o acervo inicial com o progresso salvo no localStorage
    */
   getFlashcards(filter?: {
+    userId?: string | null;
     specialty?: string;
     theme?: string;
     search?: string;
     priorityOnly?: boolean;
     state?: 'all' | 'due' | 'new' | 'learning' | 'review';
   }): FlashcardItem[] {
-    const savedProgress = this.loadSavedProgress();
+    const savedProgress = this.loadSavedProgress(filter?.userId);
     const userEdits = this.loadUserCardEdits();
     const now = new Date().toISOString();
-    const userCreated = this.loadUserCreatedFlashcards();
+    const userCreated = this.loadUserCreatedFlashcards(filter?.userId);
     const combined = [...userCreated, ...INITIAL_FLASHCARDS];
 
     let list = combined.map((card) => {
@@ -114,8 +127,8 @@ export const flashcardsService = {
    * Suporta tempos encurtados para cards 'essential' (alta incidência em provas)
    * e tempos padrão para cards 'standard'
    */
-  recordReview(cardId: string, rating: FlashcardRating): FlashcardProgress {
-    const saved = this.loadSavedProgress();
+  recordReview(cardId: string, rating: FlashcardRating, userId?: string | null): FlashcardProgress {
+    const saved = this.loadSavedProgress(userId);
     const current = saved[cardId] || {
       state: 'new',
       repetitions: 0,
@@ -220,7 +233,38 @@ export const flashcardsService = {
     };
 
     saved[cardId] = updatedProgress;
-    this.saveProgressToStorage(saved);
+    this.saveProgressToStorage(saved, userId);
+
+    if (userId && userId !== 'demo-student') {
+      try {
+        const client = createClient();
+        client
+          .from('user_flashcard_progress')
+          .upsert(
+            {
+              user_id: userId,
+              card_id: cardId,
+              state: updatedProgress.state,
+              repetitions: updatedProgress.repetitions,
+              interval_days: updatedProgress.intervalDays,
+              ease_factor: updatedProgress.easeFactor,
+              stability: updatedProgress.stability,
+              difficulty: updatedProgress.difficulty,
+              retrievability: updatedProgress.retrievability,
+              lapses: updatedProgress.lapses,
+              last_reviewed_at: updatedProgress.lastReviewDate,
+              next_review_date: updatedProgress.nextReviewDate
+            },
+            { onConflict: 'user_id,card_id' }
+          )
+          .then((res: any) => {
+          const error = res?.error;
+            if (error) console.warn('[flashcardsService] Erro ao sincronizar progresso no Supabase:', error);
+          }, () => {});
+      } catch (err) {
+        console.warn('[flashcardsService] Falha ao despachar progresso no Supabase:', err);
+      }
+    }
 
     return updatedProgress;
   },
@@ -310,8 +354,8 @@ export const flashcardsService = {
   /**
    * Resumo de métricas psicométricas dos flashcards
    */
-  getStats() {
-    const cards = this.getFlashcards();
+  getStats(userId?: string | null) {
+    const cards = this.getFlashcards({ userId });
     const now = new Date();
 
     let newCount = 0;
@@ -435,7 +479,8 @@ export const flashcardsService = {
 
       // Sincronização em background com a tabela study_materials no Supabase
       if (typeof window !== 'undefined') {
-        supabase.from('study_materials').upsert({
+        const client = createClient();
+        client.from('study_materials').upsert({
           id: material.id,
           focus_id: material.focusId,
           title: material.title,
@@ -480,23 +525,118 @@ export const flashcardsService = {
   },
 
   // Helpers de storage
-  loadSavedProgress(): Record<string, FlashcardProgress> {
+  loadSavedProgress(userId?: string | null): Record<string, FlashcardProgress> {
     if (typeof window === 'undefined') return {};
     try {
-      const data = localStorage.getItem(STORAGE_KEY);
-      return data ? JSON.parse(data) : {};
+      const key = getProgressStorageKey(userId);
+      const data = localStorage.getItem(key);
+      if (data) return JSON.parse(data);
+      const fallback = localStorage.getItem(STORAGE_KEY);
+      return fallback ? JSON.parse(fallback) : {};
     } catch {
       return {};
     }
   },
 
-  saveProgressToStorage(saved: Record<string, FlashcardProgress>) {
+  saveProgressToStorage(saved: Record<string, FlashcardProgress>, userId?: string | null) {
     if (typeof window === 'undefined') return;
     try {
+      const key = getProgressStorageKey(userId);
+      localStorage.setItem(key, JSON.stringify(saved));
       localStorage.setItem(STORAGE_KEY, JSON.stringify(saved));
     } catch (e) {
       console.warn('Erro ao salvar progresso de flashcards no storage:', e);
     }
+  },
+
+  /**
+   * Sincronização SWR do progresso FSRS de flashcards com o Supabase
+   */
+  async syncRemoteProgress(userId?: string | null): Promise<Record<string, FlashcardProgress>> {
+    const local = this.loadSavedProgress(userId);
+    if (!userId || userId === 'demo-student') return local;
+
+    try {
+      const client = createClient();
+      const { data, error } = await client
+        .from('user_flashcard_progress')
+        .select('*')
+        .eq('user_id', userId);
+
+      if (!error && data) {
+        const merged: Record<string, FlashcardProgress> = { ...local };
+        const missingOnRemote: Array<{ cardId: string; progress: FlashcardProgress }> = [];
+
+        for (const row of data as any[]) {
+          const cid = row.card_id;
+          if (!cid) continue;
+
+          const remoteProgress: FlashcardProgress = {
+            state: row.state || 'new',
+            repetitions: row.repetitions || 0,
+            intervalDays: Number(row.interval_days) || 0,
+            easeFactor: Number(row.ease_factor) || 2.5,
+            stability: Number(row.stability) || 1.0,
+            difficulty: Number(row.difficulty) || 5.0,
+            retrievability: Number(row.retrievability) || 1.0,
+            lastReviewDate: row.last_reviewed_at || undefined,
+            nextReviewDate: row.next_review_date || new Date().toISOString(),
+            lapses: row.lapses || 0,
+            history: []
+          };
+
+          const localCard = merged[cid];
+          if (!localCard) {
+            merged[cid] = remoteProgress;
+          } else {
+            const remoteTime = remoteProgress.lastReviewDate ? new Date(remoteProgress.lastReviewDate).getTime() : 0;
+            const localTime = localCard.lastReviewDate ? new Date(localCard.lastReviewDate).getTime() : 0;
+            if (remoteTime >= localTime) {
+              merged[cid] = remoteProgress;
+            } else {
+              missingOnRemote.push({ cardId: cid, progress: localCard });
+            }
+          }
+        }
+
+        const remoteIds = new Set((data as any[]).map((r) => r.card_id));
+        for (const [cid, p] of Object.entries(local)) {
+          if (!remoteIds.has(cid)) {
+            missingOnRemote.push({ cardId: cid, progress: p });
+          }
+        }
+
+        this.saveProgressToStorage(merged, userId);
+
+        if (missingOnRemote.length > 0) {
+          const payload = missingOnRemote.map(({ cardId, progress }) => ({
+            user_id: userId,
+            card_id: cardId,
+            state: progress.state,
+            repetitions: progress.repetitions,
+            interval_days: progress.intervalDays,
+            ease_factor: progress.easeFactor,
+            stability: progress.stability,
+            difficulty: progress.difficulty,
+            retrievability: progress.retrievability,
+            lapses: progress.lapses,
+            last_reviewed_at: progress.lastReviewDate || null,
+            next_review_date: progress.nextReviewDate
+          }));
+
+          client
+            .from('user_flashcard_progress')
+            .upsert(payload, { onConflict: 'user_id,card_id' })
+            .then(() => {}, () => {});
+        }
+
+        return merged;
+      }
+    } catch (e) {
+      console.warn('[flashcardsService] Erro ao sincronizar progresso remoto:', e);
+    }
+
+    return local;
   },
 
   /**
@@ -540,10 +680,27 @@ export const flashcardsService = {
   /**
    * Salva o último resumo clínico lido
    */
-  saveLastReadSummary(info: LastReadSummaryInfo): void {
+  saveLastReadSummary(info: LastReadSummaryInfo, userId?: string | null): void {
     if (typeof window === 'undefined') return;
     try {
       localStorage.setItem(LAST_SUMMARY_KEY, JSON.stringify(info));
+
+      if (userId && userId !== 'demo-student') {
+        const client = createClient();
+        client
+          .from('user_study_progress')
+          .upsert(
+            {
+              user_id: userId,
+              material_id: info.materialId,
+              read_time_minutes: info.readTimeMinutes || 5,
+              is_completed: true,
+              last_read_at: info.lastReadAt || new Date().toISOString()
+            },
+            { onConflict: 'user_id,material_id' }
+          )
+          .then(() => {}, () => {});
+      }
     } catch (e) {
       console.warn('Erro ao salvar último resumo lido:', e);
     }
@@ -552,11 +709,57 @@ export const flashcardsService = {
   /**
    * Carrega os baralhos personalizados criados pelo usuário
    */
-  getCustomDecks(): CustomFlashcardDeck[] {
+  /**
+   * Sincroniza progresso de estudo de materiais clínicos com o Supabase
+   */
+  async syncRemoteStudyProgress(userId?: string | null): Promise<LastReadSummaryInfo | null> {
+    if (!userId || userId === 'demo-student') return this.getLastReadSummary();
+    try {
+      const client = createClient();
+      const { data, error } = await client
+        .from('user_study_progress')
+        .select('*')
+        .eq('user_id', userId)
+        .order('last_read_at', { ascending: false })
+        .limit(1);
+
+      if (!error && data && data.length > 0) {
+        const row = data[0] as any;
+        const current = this.getLastReadSummary();
+        const remoteTime = row.last_read_at ? new Date(row.last_read_at).getTime() : 0;
+        const localTime = current?.lastReadAt ? new Date(current.lastReadAt).getTime() : 0;
+        if (remoteTime > localTime) {
+          const mat = this.getStudyMaterialById(row.material_id);
+          const info: LastReadSummaryInfo = {
+            materialId: row.material_id,
+            title: mat?.title || 'Resumo Clínico',
+            specialty: mat?.specialty || 'Geral',
+            theme: mat?.theme || 'Geral',
+            focus: mat?.focus || 'Geral',
+            readTimeMinutes: row.read_time_minutes || mat?.readTimeMinutes || 5,
+            guidelineBadge: mat?.guidelineBadge,
+            lastReadAt: row.last_read_at || new Date().toISOString()
+          };
+          if (typeof window !== 'undefined') {
+            localStorage.setItem(LAST_SUMMARY_KEY, JSON.stringify(info));
+          }
+          return info;
+        }
+      }
+    } catch (e) {
+      console.warn('[flashcardsService] Erro ao sincronizar resumo remoto:', e);
+    }
+    return this.getLastReadSummary();
+  },
+
+  getCustomDecks(userId?: string | null): CustomFlashcardDeck[] {
     if (typeof window === 'undefined') return [];
     try {
-      const data = localStorage.getItem(CUSTOM_DECKS_KEY);
-      return data ? JSON.parse(data) : [];
+      const key = getDecksStorageKey(userId);
+      const data = localStorage.getItem(key);
+      if (data) return JSON.parse(data);
+      const fallback = localStorage.getItem(CUSTOM_DECKS_KEY);
+      return fallback ? JSON.parse(fallback) : [];
     } catch {
       return [];
     }
@@ -565,10 +768,10 @@ export const flashcardsService = {
   /**
    * Salva ou atualiza um baralho personalizado
    */
-  saveCustomDeck(deck: CustomFlashcardDeck): CustomFlashcardDeck[] {
+  saveCustomDeck(deck: CustomFlashcardDeck, userId?: string | null): CustomFlashcardDeck[] {
     if (typeof window === 'undefined') return [];
     try {
-      const current = this.getCustomDecks();
+      const current = this.getCustomDecks(userId);
       const existingIdx = current.findIndex((d) => d.id === deck.id);
       let updated: CustomFlashcardDeck[];
       if (existingIdx >= 0) {
@@ -577,7 +780,27 @@ export const flashcardsService = {
       } else {
         updated = [deck, ...current];
       }
+      const key = getDecksStorageKey(userId);
+      localStorage.setItem(key, JSON.stringify(updated));
       localStorage.setItem(CUSTOM_DECKS_KEY, JSON.stringify(updated));
+
+      if (userId && userId !== 'demo-student') {
+        const client = createClient();
+        client
+          .from('user_flashcard_decks')
+          .upsert(
+            {
+              id: deck.id,
+              user_id: userId,
+              title: deck.name,
+              description: deck.description || null,
+              card_ids: deck.cardIds || []
+            },
+            { onConflict: 'id' }
+          )
+          .then(() => {}, () => {});
+      }
+
       return updated;
     } catch (e) {
       console.warn('Erro ao salvar baralho personalizado:', e);
@@ -588,12 +811,25 @@ export const flashcardsService = {
   /**
    * Remove um baralho personalizado
    */
-  deleteCustomDeck(id: string): CustomFlashcardDeck[] {
+  deleteCustomDeck(id: string, userId?: string | null): CustomFlashcardDeck[] {
     if (typeof window === 'undefined') return [];
     try {
-      const current = this.getCustomDecks();
+      const current = this.getCustomDecks(userId);
       const updated = current.filter((d) => d.id !== id);
+      const key = getDecksStorageKey(userId);
+      localStorage.setItem(key, JSON.stringify(updated));
       localStorage.setItem(CUSTOM_DECKS_KEY, JSON.stringify(updated));
+
+      if (userId && userId !== 'demo-student') {
+        const client = createClient();
+        client
+          .from('user_flashcard_decks')
+          .delete()
+          .eq('id', id)
+          .eq('user_id', userId)
+          .then(() => {}, () => {});
+      }
+
       return updated;
     } catch (e) {
       console.warn('Erro ao excluir baralho personalizado:', e);
@@ -602,13 +838,68 @@ export const flashcardsService = {
   },
 
   /**
+   * Sincroniza baralhos do aluno salvos no Supabase
+   */
+  async syncRemoteDecks(userId?: string | null): Promise<CustomFlashcardDeck[]> {
+    const local = this.getCustomDecks(userId);
+    if (!userId || userId === 'demo-student') return local;
+
+    try {
+      const client = createClient();
+      const { data, error } = await client
+        .from('user_flashcard_decks')
+        .select('*')
+        .eq('user_id', userId);
+
+      if (!error && data) {
+        const remoteDecks: CustomFlashcardDeck[] = data.map((d: any) => ({
+          id: d.id,
+          name: d.title || 'Baralho',
+          description: d.description || '',
+          specialties: [],
+          cardIds: d.card_ids || [],
+          createdAt: d.created_at || new Date().toISOString()
+        }));
+
+        const remoteIds = new Set(remoteDecks.map((d) => d.id));
+        const missingOnRemote = local.filter((d) => !remoteIds.has(d.id));
+        const merged = [...remoteDecks, ...missingOnRemote];
+
+        const key = getDecksStorageKey(userId);
+        if (typeof window !== 'undefined') {
+          localStorage.setItem(key, JSON.stringify(merged));
+        }
+
+        if (missingOnRemote.length > 0) {
+          const payload = missingOnRemote.map((d) => ({
+            id: d.id,
+            user_id: userId,
+            title: d.name,
+            description: d.description || null,
+            card_ids: d.cardIds || []
+          }));
+          client.from('user_flashcard_decks').upsert(payload, { onConflict: 'id' }).then(() => {});
+        }
+
+        return merged;
+      }
+    } catch (e) {
+      console.warn('[flashcardsService] Erro ao sincronizar baralhos:', e);
+    }
+    return local;
+  },
+
+  /**
    * Carrega os flashcards criados pelo usuário
    */
-  loadUserCreatedFlashcards(): FlashcardItem[] {
+  loadUserCreatedFlashcards(userId?: string | null): FlashcardItem[] {
     if (typeof window === 'undefined') return [];
     try {
-      const data = localStorage.getItem(USER_FLASHCARDS_KEY);
-      return data ? JSON.parse(data) : [];
+      const key = getUserCardsStorageKey(userId);
+      const data = localStorage.getItem(key);
+      if (data) return JSON.parse(data);
+      const fallback = localStorage.getItem(USER_FLASHCARDS_KEY);
+      return fallback ? JSON.parse(fallback) : [];
     } catch {
       return [];
     }
@@ -617,17 +908,99 @@ export const flashcardsService = {
   /**
    * Salva um novo flashcard criado pelo usuário
    */
-  saveNewFlashcard(card: FlashcardItem): FlashcardItem {
+  saveNewFlashcard(card: FlashcardItem, userId?: string | null): FlashcardItem {
     if (typeof window === 'undefined') return card;
     try {
-      const current = this.loadUserCreatedFlashcards();
+      const current = this.loadUserCreatedFlashcards(userId);
       const updated = [card, ...current];
+      const key = getUserCardsStorageKey(userId);
+      localStorage.setItem(key, JSON.stringify(updated));
       localStorage.setItem(USER_FLASHCARDS_KEY, JSON.stringify(updated));
+
+      if (userId && userId !== 'demo-student') {
+        const client = createClient();
+        client
+          .from('user_created_flashcards')
+          .upsert(
+            {
+              id: card.id,
+              user_id: userId,
+              front: card.front,
+              back: card.back,
+              specialty: card.specialty,
+              theme: card.theme,
+              focus: card.focus,
+              comment: card.comment || null,
+              priority: card.priority || 'standard'
+            },
+            { onConflict: 'id' }
+          )
+          .then(() => {}, () => {});
+      }
+
       return card;
     } catch (e) {
       console.warn('Erro ao salvar novo flashcard:', e);
       return card;
     }
+  },
+
+  /**
+   * Sincroniza cartões criados pelo aluno no Supabase
+   */
+  async syncRemoteUserCreatedCards(userId?: string | null): Promise<FlashcardItem[]> {
+    const local = this.loadUserCreatedFlashcards(userId);
+    if (!userId || userId === 'demo-student') return local;
+
+    try {
+      const client = createClient();
+      const { data, error } = await client
+        .from('user_created_flashcards')
+        .select('*')
+        .eq('user_id', userId);
+
+      if (!error && data) {
+        const remoteCards: FlashcardItem[] = data.map((c: any) => ({
+          id: c.id,
+          front: c.front,
+          back: c.back,
+          specialty: c.specialty,
+          theme: c.theme,
+          focus: c.focus,
+          comment: c.comment || '',
+          priority: c.priority || 'standard'
+        }));
+
+        const remoteIds = new Set(remoteCards.map((c) => c.id));
+        const missingOnRemote = local.filter((c) => !remoteIds.has(c.id));
+        const merged = [...remoteCards, ...missingOnRemote];
+
+        const key = getUserCardsStorageKey(userId);
+        if (typeof window !== 'undefined') {
+          localStorage.setItem(key, JSON.stringify(merged));
+        }
+
+        if (missingOnRemote.length > 0) {
+          const payload = missingOnRemote.map((c) => ({
+            id: c.id,
+            user_id: userId,
+            front: c.front,
+            back: c.back,
+            specialty: c.specialty,
+            theme: c.theme,
+            focus: c.focus,
+            comment: c.comment || null,
+            priority: c.priority || 'standard'
+          }));
+          client.from('user_created_flashcards').upsert(payload, { onConflict: 'id' }).then(() => {});
+        }
+
+        return merged;
+      }
+    } catch (e) {
+      console.warn('[flashcardsService] Erro ao sincronizar cartões do usuário:', e);
+    }
+    return local;
   },
 
   /**

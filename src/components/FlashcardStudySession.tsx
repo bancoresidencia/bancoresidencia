@@ -21,6 +21,7 @@ import {
 } from 'lucide-react';
 import { FlashcardItem, FlashcardRating, StudyMaterialItem, CardCommunityStats } from '@/types/flashcards';
 import { useTheme } from '@/context/ThemeContext';
+import { useAuth } from '@/context/AuthContext';
 import { flashcardsService } from '@/services/flashcardsService';
 
 function shuffleArray<T>(array: T[]): T[] {
@@ -46,6 +47,7 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
   initialShuffled = false
 }) => {
   const { accentConfig } = useTheme();
+  const { user } = useAuth();
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
@@ -172,7 +174,7 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
       priority: newPriority
     };
 
-    flashcardsService.saveNewFlashcard(newCard);
+    flashcardsService.saveNewFlashcard(newCard, user?.id);
 
     // Adiciona o novo card logo após o card atual na sessão ativa
     setSessionCards((prev) => {
@@ -241,7 +243,7 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
     (rating: FlashcardRating) => {
       if (!currentCard) return;
 
-      flashcardsService.recordReview(currentCard.id, rating);
+      flashcardsService.recordReview(currentCard.id, rating, user?.id);
 
       setSessionStats((prev) => ({
         ...prev,

@@ -34,6 +34,7 @@ import {
   LastReadSummaryInfo
 } from '@/types/flashcards';
 import { useTheme } from '@/context/ThemeContext';
+import { useAuth } from '@/context/AuthContext';
 import { flashcardsService } from '@/services/flashcardsService';
 import { clinicalHierarchy } from '@/data/mockQuestions';
 import { FlashcardStudySession } from './FlashcardStudySession';
@@ -210,6 +211,7 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
   onNavigateToBanco
 }) => {
   const { accentConfig } = useTheme();
+  const { user } = useAuth();
 
   // Estados de Expansão dos Cards de Especialidade (todos colapsados por padrão)
   const [expandedSpecialties, setExpandedSpecialties] = useState<Record<string, boolean>>({});
@@ -282,8 +284,24 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
   const [allFlashcards, setAllFlashcards] = useState<FlashcardItem[]>([]);
 
   useEffect(() => {
-    setAllFlashcards(flashcardsService.getFlashcards());
+    setAllFlashcards(flashcardsService.getFlashcards({ userId: user?.id }));
   }, [activeSessionCards]);
+
+// SWR: Sincroniza progresso remoto, baralhos e cards criados pelo usuário
+  useEffect(() => {
+    if (user?.id) {
+      flashcardsService.syncRemoteProgress(user.id).then(() => {
+        setAllFlashcards(flashcardsService.getFlashcards({ userId: user.id }));
+      });
+      flashcardsService.syncRemoteDecks(user.id);
+      flashcardsService.syncRemoteUserCreatedCards(user.id).then(() => {
+        setAllFlashcards(flashcardsService.getFlashcards({ userId: user.id }));
+      });
+      flashcardsService.syncRemoteStudyProgress(user.id).then((lastSumm) => {
+        if (lastSumm) setLastReadSummary(lastSumm);
+      });
+    }
+  }, [user?.id]);
 
   const allStudyMaterials = useMemo(() => {
     return flashcardsService.getStudyMaterials();
@@ -291,8 +309,8 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
 
   // Estatísticas FSRS
   const stats = useMemo(() => {
-    return flashcardsService.getStats();
-  }, [activeSessionCards, allFlashcards]);
+    return flashcardsService.getStats(user?.id);
+  }, [activeSessionCards, allFlashcards, user?.id]);
 
   // Contagem dinâmica para KPIs de Resumos
   const totalTemasCount = useMemo(() => {
@@ -378,7 +396,7 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
       lastReadAt: new Date().toISOString()
     };
 
-    flashcardsService.saveLastReadSummary(summaryInfo);
+    flashcardsService.saveLastReadSummary(summaryInfo, user?.id);
     setLastReadSummary(summaryInfo);
     setActiveMaterial(material);
   };
@@ -689,8 +707,8 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
       tags: tagsArray.length > 0 ? tagsArray : undefined
     };
 
-    flashcardsService.saveNewFlashcard(newCard);
-    setAllFlashcards(flashcardsService.getFlashcards());
+    flashcardsService.saveNewFlashcard(newCard, user?.id);
+    setAllFlashcards(flashcardsService.getFlashcards({ userId: user?.id }));
 
     setAddCardSuccessToast(true);
     setTimeout(() => setAddCardSuccessToast(false), 3000);

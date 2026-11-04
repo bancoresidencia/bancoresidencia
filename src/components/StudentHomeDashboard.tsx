@@ -486,7 +486,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       return { dueToday: 0, newCards: 0, review: 0, total: 0, desiredRetention: 90 };
     }
     try {
-      return flashcardsService.getStats();
+      return flashcardsService.getStats(user?.id);
     } catch {
       return { dueToday: 30, newCards: 20, review: 1, total: 31, desiredRetention: 90 };
     }
@@ -494,7 +494,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
   const flashcardsTodayList = React.useMemo(() => {
     try {
-      return flashcardsService.getFlashcards();
+      return flashcardsService.getFlashcards({ userId: user?.id });
     } catch {
       return [];
     }
