@@ -19,19 +19,19 @@ import {
 import { StudyMaterialItem } from '@/types/flashcards';
 import { useTheme } from '@/context/ThemeContext';
 import {
-  HighlightColor,
+  HighlighterColor,
   HighlightStyle,
-  HIGHLIGHT_COLORS,
+  HIGHLIGHTER_COLORS,
   StudyHighlight
 } from '@/types/studyMaterialAnnotations';
 import { studyAnnotationsService } from '@/services/studyAnnotationsService';
 import { MEDICAL_GLOSSARY } from '@/data/medicalGlossary';
 import { flashcardsService } from '@/services/flashcardsService';
-import { TextHighlightToolbar } from './study-material/TextHighlightToolbar';
+import { StudyHighlighterBar } from './study-material/StudyHighlighterBar';
+import { HighlightDetailPopover } from './study-material/HighlightDetailPopover';
 import { MedicalGlossaryTooltip } from './study-material/MedicalGlossaryTooltip';
 import { ExamTrapBadge } from './study-material/ExamTrapBadge';
 import { ClozeStudyToggle } from './study-material/ClozeStudyToggle';
-import { StudyHighlightsDrawer } from './study-material/StudyHighlightsDrawer';
 import { useAuth } from '@/context/AuthContext';
 import dynamic from 'next/dynamic';
 
@@ -76,14 +76,15 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
   const { user } = useAuth();
   const articleRef = useRef<HTMLElement | null>(null);
 
-  // Estados de Grifos & Destaques de Texto
+  // Estados de Grifos & Destaques de Texto (Modo Instantâneo Fluido)
   const [highlights, setHighlights] = useState<StudyHighlight[]>([]);
-  const [selectedToolbarState, setSelectedToolbarState] = useState<{
-    position: { top: number; left: number };
-    selectedText: string;
-    existingHighlight?: StudyHighlight | null;
+  const [isHighlighterActive, setIsHighlighterActive] = useState<boolean>(true);
+  const [activeHighlighterColor, setActiveHighlighterColor] = useState<HighlighterColor>('yellow');
+  const [activeMarkStyle, setActiveMarkStyle] = useState<HighlightStyle>('highlight');
+  const [activeEditingHighlight, setActiveEditingHighlight] = useState<{
+    highlight: StudyHighlight;
+    anchorRect: DOMRect;
   } | null>(null);
-  const [isHighlightsDrawerOpen, setIsHighlightsDrawerOpen] = useState<boolean>(false);
   const [toastMessage, setToastMessage] = useState<string | null>(null);
 
   // Estados do Modo Oclusão Ativa (Cloze / Blur Mode)
@@ -104,141 +105,126 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
     setTimeout(() => setToastMessage(null), 3000);
   };
 
-  // Captura seleção de texto dentro do artigo
-  const handleTextSelection = () => {
-    setTimeout(() => {
-      const selection = window.getSelection();
-      if (!selection || selection.isCollapsed) return;
-      const text = selection.toString().trim();
-      if (text.length < 2) return;
+  // Helper para verificar se o caractere faz parte de uma palavra (com suporte a acentuação)
+  const isWordCharacter = (char: string) => /[\p{L}\p{N}_]/u.test(char);
 
-      if (articleRef.current && articleRef.current.contains(selection.anchorNode)) {
-        try {
-          const range = selection.getRangeAt(0);
-          const rect = range.getBoundingClientRect();
-          const existing = highlights.find(
-            (h) => h.textQuote.toLowerCase() === text.toLowerCase()
-          );
-
-          setSelectedToolbarState({
-            position: {
-              top: rect.top,
-              left: rect.left + rect.width / 2
-            },
-            selectedText: text,
-            existingHighlight: existing || null
-          });
-        } catch {
-          // fallback silencioso
+  // Expande a seleção para as bordas das palavras para nunca quebrar palavras ao meio
+  const expandRangeToWordBoundaries = (range: Range): string => {
+    try {
+      if (range.startContainer.nodeType === Node.TEXT_NODE) {
+        const text = range.startContainer.textContent || '';
+        let startOffset = range.startOffset;
+        if (startOffset > 0 && isWordCharacter(text[startOffset - 1])) {
+          while (startOffset > 0 && isWordCharacter(text[startOffset - 1])) {
+            startOffset--;
+          }
+          range.setStart(range.startContainer, startOffset);
         }
       }
-    }, 50);
+
+      if (range.endContainer.nodeType === Node.TEXT_NODE) {
+        const text = range.endContainer.textContent || '';
+        let endOffset = range.endOffset;
+        if (endOffset < text.length && isWordCharacter(text[endOffset])) {
+          while (endOffset < text.length && isWordCharacter(text[endOffset])) {
+            endOffset++;
+          }
+          range.setEnd(range.endContainer, endOffset);
+        }
+      }
+    } catch {
+      // fallback silencioso
+    }
+    return range.toString().trim();
   };
 
-  const handleOpenHighlightToolbar = (hl: StudyHighlight, e: React.MouseEvent) => {
+  // Marcação instantânea e fluida ao soltar o mouse ou toque (0ms)
+  const handleArticleMouseUp = () => {
+    if (!isHighlighterActive) return;
+
+    const selection = window.getSelection();
+    if (!selection || selection.isCollapsed) return;
+
+    try {
+      const range = selection.getRangeAt(0);
+      const text = expandRangeToWordBoundaries(range);
+
+      if (text.length >= 2) {
+        const newHighlight: StudyHighlight = {
+          id: `hl_${Date.now()}_${Math.random().toString(36).substring(2, 7)}`,
+          materialId: material.id,
+          userId: user?.id,
+          textQuote: text,
+          color: activeHighlighterColor,
+          style: activeMarkStyle,
+          createdAt: new Date().toISOString()
+        };
+
+        const updated = studyAnnotationsService.addHighlight(
+          material.id,
+          newHighlight,
+          user?.id
+        );
+        setHighlights(updated);
+      }
+    } catch {
+      const text = selection.toString().trim();
+      if (text.length >= 2) {
+        const newHighlight: StudyHighlight = {
+          id: `hl_${Date.now()}_${Math.random().toString(36).substring(2, 7)}`,
+          materialId: material.id,
+          userId: user?.id,
+          textQuote: text,
+          color: activeHighlighterColor,
+          style: activeMarkStyle,
+          createdAt: new Date().toISOString()
+        };
+        const updated = studyAnnotationsService.addHighlight(
+          material.id,
+          newHighlight,
+          user?.id
+        );
+        setHighlights(updated);
+      }
+    } finally {
+      // Remove imediatamente a seleção azul do navegador (zero manchas na tela)
+      window.getSelection()?.removeAllRanges();
+    }
+  };
+
+  // Abre o popover de detalhes ao clicar em qualquer destaque existente
+  const handleOpenHighlightDetail = (hl: StudyHighlight, e: React.MouseEvent) => {
     e.stopPropagation();
     const rect = (e.currentTarget as HTMLElement).getBoundingClientRect();
-    setSelectedToolbarState({
-      position: {
-        top: rect.top,
-        left: rect.left + rect.width / 2
-      },
-      selectedText: hl.textQuote,
-      existingHighlight: hl
-    });
+    setActiveEditingHighlight({ highlight: hl, anchorRect: rect });
   };
 
-  const handleApplyHighlight = (color: HighlightColor, style: HighlightStyle, note?: string) => {
-    if (!selectedToolbarState) return;
-    const text = selectedToolbarState.selectedText;
-    const existing = selectedToolbarState.existingHighlight;
-
-    if (existing) {
-      const updated = studyAnnotationsService.updateHighlight(
-        material.id,
-        existing.id,
-        { color, style, note },
-        user?.id
+  const handleUpdateHighlight = (id: string, updates: Partial<StudyHighlight>) => {
+    const updated = studyAnnotationsService.updateHighlight(
+      material.id,
+      id,
+      updates,
+      user?.id
+    );
+    setHighlights(updated);
+    if (activeEditingHighlight && activeEditingHighlight.highlight.id === id) {
+      setActiveEditingHighlight((prev) =>
+        prev ? { ...prev, highlight: { ...prev.highlight, ...updates } } : null
       );
-      setHighlights(updated);
-    } else {
-      const newHighlight: StudyHighlight = {
-        id: `hl_${Date.now()}_${Math.random().toString(36).substring(2, 7)}`,
-        materialId: material.id,
-        userId: user?.id,
-        textQuote: text,
-        color,
-        style,
-        note,
-        createdAt: new Date().toISOString()
-      };
-      const updated = studyAnnotationsService.addHighlight(
-        material.id,
-        newHighlight,
-        user?.id
-      );
-      setHighlights(updated);
     }
-
-    window.getSelection()?.removeAllRanges();
-    setSelectedToolbarState(null);
-    showToast('Destaque salvo no resumo!');
   };
 
   const handleRemoveHighlight = (id: string) => {
     const updated = studyAnnotationsService.removeHighlight(material.id, id, user?.id);
     setHighlights(updated);
-    setSelectedToolbarState(null);
-    showToast('Marcação removida');
+    setActiveEditingHighlight(null);
   };
 
-  const handleUpdateHighlightNote = (id: string, note?: string) => {
-    const updated = studyAnnotationsService.updateHighlight(
-      material.id,
-      id,
-      { note },
-      user?.id
-    );
-    setHighlights(updated);
-    showToast(note ? 'Anotação atualizada!' : 'Anotação removida');
-  };
-
-  const handleCreateFlashcard = (textQuote: string) => {
-    const newCard = {
-      id: `card_cloze_${Date.now()}_${Math.random().toString(36).substring(2, 6)}`,
-      front: `No contexto de ${material.title}: {{c1::${textQuote}}}`,
-      back: textQuote,
-      specialty: material.specialty,
-      theme: material.theme,
-      focus: material.focus,
-      comment: `Extraído do resumo clínico oficial "${material.title}".`,
-      priority: 'essential' as const
-    };
-
-    flashcardsService.saveNewFlashcard(newCard, user?.id);
-    showToast('Flashcard Cloze criado e adicionado à sua fila de estudos!');
-    setSelectedToolbarState(null);
-  };
-
-  const handleNavigateToHighlight = (textQuote: string) => {
-    setIsHighlightsDrawerOpen(false);
-    setTimeout(() => {
-      if (!articleRef.current) return;
-      const marks = articleRef.current.querySelectorAll('mark');
-      for (const mark of Array.from(marks)) {
-        if (
-          mark.textContent?.toLowerCase().includes(textQuote.toLowerCase()) ||
-          textQuote.toLowerCase().includes(mark.textContent?.toLowerCase() || '')
-        ) {
-          mark.scrollIntoView({ behavior: 'smooth', block: 'center' });
-          mark.classList.add('ring-4', 'ring-amber-400', 'ring-offset-2');
-          setTimeout(() => {
-            mark.classList.remove('ring-4', 'ring-amber-400', 'ring-offset-2');
-          }, 2000);
-          break;
-        }
-      }
-    }, 150);
+  const handleClearAllHighlights = () => {
+    highlights.forEach((h) => studyAnnotationsService.removeHighlight(material.id, h.id, user?.id));
+    setHighlights([]);
+    setActiveEditingHighlight(null);
+    showToast('Todos os destaques foram limpos');
   };
 
   const toggleRevealCloze = (clozeId: string) => {
@@ -344,22 +330,73 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
         const before = textSegment.slice(0, idx);
         const matched = textSegment.slice(idx, idx + quote.length);
         const after = textSegment.slice(idx + quote.length);
-        const config = HIGHLIGHT_COLORS[hl.color] || HIGHLIGHT_COLORS.yellow;
+        const config = HIGHLIGHTER_COLORS[hl.color] || HIGHLIGHTER_COLORS.yellow;
 
+        // Estilo 1: Tachado / Risco de alternativa incorreta
+        if (hl.style === 'strikethrough' || (hl.style as string) === 'strike') {
+          return (
+            <React.Fragment key={`${contextKey}-hl-${hl.id}`}>
+              {applyHighlightsAndGlossary(before, `${contextKey}-b`)}
+              <span
+                data-highlight-id={hl.id}
+                onClick={(e) => handleOpenHighlightDetail(hl, e)}
+                title={hl.note ? `Nota: ${hl.note}` : 'Tachado (Clique para remover/editar)'}
+                className="cursor-pointer line-through decoration-rose-500/80 dark:decoration-rose-400 decoration-[2.5px] text-zinc-500 dark:text-zinc-400 hover:text-zinc-700 dark:hover:text-zinc-200 font-medium px-0.5 rounded transition-all hover:bg-rose-500/10"
+              >
+                {matched}
+                {hl.note && (
+                  <span className="ml-1 inline-flex items-center text-[10px] text-amber-500 font-bold select-none" title={`Nota: ${hl.note}`}>
+                    📝
+                  </span>
+                )}
+              </span>
+              {applyHighlightsAndGlossary(after, `${contextKey}-a`)}
+            </React.Fragment>
+          );
+        }
+
+        // Estilo 2: Sublinhado nítido na cor ativa (fundo transparente)
+        if (hl.style === 'underline') {
+          return (
+            <React.Fragment key={`${contextKey}-hl-${hl.id}`}>
+              {applyHighlightsAndGlossary(before, `${contextKey}-b`)}
+              <span
+                data-highlight-id={hl.id}
+                onClick={(e) => handleOpenHighlightDetail(hl, e)}
+                style={{ textDecorationColor: config.borderHex || config.hex }}
+                title={hl.note ? `Nota: ${hl.note}` : `${config.name} - Sublinhado (Clique para remover/editar)`}
+                className="cursor-pointer underline decoration-[2.5px] font-medium px-0.5 rounded transition-all hover:bg-zinc-100 dark:hover:bg-zinc-800 text-zinc-900 dark:text-zinc-100"
+              >
+                {matched}
+                {hl.note && (
+                  <span className="ml-1 inline-flex items-center text-[10px] text-amber-500 font-bold select-none" title={`Nota: ${hl.note}`}>
+                    📝
+                  </span>
+                )}
+              </span>
+              {applyHighlightsAndGlossary(after, `${contextKey}-a`)}
+            </React.Fragment>
+          );
+        }
+
+        // Estilo 3: Marca-texto padrão (mesmo visual e cores da resolução QuestionCard)
         return (
           <React.Fragment key={`${contextKey}-hl-${hl.id}`}>
             {applyHighlightsAndGlossary(before, `${contextKey}-b`)}
             <mark
               data-highlight-id={hl.id}
-              onClick={(e) => handleOpenHighlightToolbar(hl, e)}
-              className={`rounded px-1 py-0.5 mx-0.5 cursor-pointer transition-all duration-150 ${config.bgClass} ${hl.style === 'underline' ? 'underline decoration-2' : ''
-                } ${hl.style === 'strikethrough' ? 'line-through' : ''}`}
-              title={hl.note ? `Nota: ${hl.note}` : `${config.label} (Clique para editar/remover)`}
+              onClick={(e) => handleOpenHighlightDetail(hl, e)}
+              style={{
+                backgroundColor: config.hex,
+                borderBottomColor: config.borderHex
+              }}
+              className="cursor-pointer px-1 py-0.5 rounded-md transition-all hover:opacity-85 text-black font-semibold border-b-2"
+              title={hl.note ? `Nota: ${hl.note}` : `${config.name} (Clique para remover/editar)`}
             >
               {matched}
               {hl.note && (
                 <span
-                  className="ml-1 inline-flex items-center text-[10px] text-amber-500 font-bold select-none"
+                  className="ml-1 inline-flex items-center text-[10px] text-black font-bold select-none"
                   title={`Nota: ${hl.note}`}
                 >
                   📝
@@ -1667,6 +1704,24 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
     }
   }, [activeSectionSlug]);
 
+  const selectionColorClass = !isHighlighterActive
+    ? 'selection:bg-zinc-200 dark:selection:bg-zinc-800'
+    : activeMarkStyle === 'strikethrough'
+    ? 'selection:bg-rose-200 dark:selection:bg-rose-950 selection:text-rose-950 dark:selection:text-rose-100'
+    : activeMarkStyle === 'underline'
+    ? 'selection:bg-sky-200 dark:selection:bg-sky-950 selection:text-sky-950 dark:selection:text-sky-100'
+    : activeHighlighterColor === 'green'
+    ? 'selection:bg-emerald-300 dark:selection:bg-emerald-400 selection:text-black dark:selection:text-black'
+    : activeHighlighterColor === 'pink'
+    ? 'selection:bg-pink-300 dark:selection:bg-pink-400 selection:text-black dark:selection:text-black'
+    : activeHighlighterColor === 'blue'
+    ? 'selection:bg-sky-300 dark:selection:bg-sky-400 selection:text-black dark:selection:text-black'
+    : activeHighlighterColor === 'orange'
+    ? 'selection:bg-orange-300 dark:selection:bg-orange-400 selection:text-black dark:selection:text-black'
+    : activeHighlighterColor === 'purple'
+    ? 'selection:bg-purple-300 dark:selection:bg-purple-400 selection:text-black dark:selection:text-black'
+    : 'selection:bg-amber-300 dark:selection:bg-amber-400 selection:text-black dark:selection:text-black';
+
   return (
     <div className="space-y-6 w-full max-w-7xl mx-auto">
       {/* Barra Superior de Ações */}
@@ -1681,6 +1736,18 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
         </button>
 
         <div className="flex flex-wrap items-center gap-2">
+          {/* Barra de Controle de Marca-Texto Instantâneo (Fluidez Máxima) */}
+          <StudyHighlighterBar
+            isHighlighterActive={isHighlighterActive}
+            onToggleHighlighter={() => setIsHighlighterActive((prev) => !prev)}
+            activeColor={activeHighlighterColor}
+            onSelectColor={setActiveHighlighterColor}
+            activeStyle={activeMarkStyle}
+            onSelectStyle={setActiveMarkStyle}
+            highlightsCount={highlights.length}
+            onClearAllHighlights={handleClearAllHighlights}
+          />
+
           {/* Modo Treino / Oclusão Ativa */}
           <ClozeStudyToggle
             isClozeMode={isClozeMode}
@@ -1689,24 +1756,7 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
             onToggleRevealAll={() => setRevealAllCloze((prev) => !prev)}
           />
 
-          {/* Botão Caderno de Destaques & Anotações */}
-          <button
-            type="button"
-            onClick={() => setIsHighlightsDrawerOpen(true)}
-            className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer border ${highlights.length > 0
-                ? 'bg-amber-500/10 text-amber-600 dark:text-amber-400 border-amber-500/30 hover:bg-amber-500/20'
-                : 'bg-zinc-100 dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 border-zinc-200/80 dark:border-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-800'
-              }`}
-            title="Abrir Caderno de Destaques e Anotações"
-          >
-            <Highlighter className="w-3.5 h-3.5" />
-            <span>Destaques</span>
-            {highlights.length > 0 && (
-              <span className="w-5 h-5 rounded-full bg-amber-500 text-zinc-950 font-black text-[10px] flex items-center justify-center ml-0.5">
-                {highlights.length}
-              </span>
-            )}
-          </button>
+          
 
           {material.flashcardCount && material.flashcardCount > 0 ? (
             <button
@@ -1795,9 +1845,9 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
       {/* Corpo Formatado do Material (Largura total expandida) */}
       <article
         ref={articleRef}
-        onMouseUp={handleTextSelection}
-        onTouchEnd={handleTextSelection}
-        className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800/80 shadow-xs prose prose-zinc dark:prose-invert max-w-none relative"
+        onMouseUp={handleArticleMouseUp}
+        onTouchEnd={handleArticleMouseUp}
+        className={`p-6 sm:p-8 rounded-3xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800/80 shadow-xs prose prose-zinc dark:prose-invert max-w-none relative ${selectionColorClass}`}
       >
         {renderMarkdownContent(material.markdownContent)}
       </article>
@@ -1827,29 +1877,18 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
       </div>
 
       {/* Barra Flutuante de Marcação de Texto */}
-      {selectedToolbarState && (
-        <TextHighlightToolbar
-          position={selectedToolbarState.position}
-          selectedText={selectedToolbarState.selectedText}
-          existingHighlight={selectedToolbarState.existingHighlight}
-          onApplyHighlight={handleApplyHighlight}
-          onRemoveHighlight={handleRemoveHighlight}
-          onCreateFlashcard={handleCreateFlashcard}
-          onClose={() => setSelectedToolbarState(null)}
+      {activeEditingHighlight && (
+        <HighlightDetailPopover
+          highlight={activeEditingHighlight.highlight}
+          anchorRect={activeEditingHighlight.anchorRect}
+          onUpdate={handleUpdateHighlight}
+          onRemove={handleRemoveHighlight}
+          onClose={() => setActiveEditingHighlight(null)}
         />
       )}
 
       {/* Caderno Lateral de Destaques & Anotações */}
-      <StudyHighlightsDrawer
-        isOpen={isHighlightsDrawerOpen}
-        onClose={() => setIsHighlightsDrawerOpen(false)}
-        highlights={highlights}
-        materialTitle={material.title}
-        onRemoveHighlight={handleRemoveHighlight}
-        onUpdateNote={handleUpdateHighlightNote}
-        onNavigateToHighlight={handleNavigateToHighlight}
-        onCreateFlashcardFromHighlight={handleCreateFlashcard}
-      />
+      
 
       {/* Toast Flutuante */}
       {toastMessage && (

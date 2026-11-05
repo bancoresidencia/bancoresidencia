@@ -1,4 +1,4 @@
-export type HighlightColor = 'yellow' | 'green' | 'red' | 'blue' | 'purple';
+export type HighlighterColor = 'yellow' | 'green' | 'pink' | 'blue' | 'orange' | 'purple';
 
 export type HighlightStyle = 'highlight' | 'underline' | 'strikethrough';
 
@@ -7,7 +7,7 @@ export interface StudyHighlight {
   materialId: string;
   userId?: string | null;
   textQuote: string;
-  color: HighlightColor;
+  color: HighlighterColor;
   style: HighlightStyle;
   note?: string;
   createdAt: string;
@@ -15,74 +15,76 @@ export interface StudyHighlight {
 }
 
 export interface HighlightColorConfig {
-  id: HighlightColor;
-  label: string;
-  medicalMeaning: string;
+  name: string;
   hex: string;
-  dotClass: string;
-  bgClass: string;
-  borderClass: string;
-  textClass: string;
-  activeRingClass: string;
+  borderHex: string;
+  bg: string;
+  border: string;
+  ring: string;
+  markClass: string;
 }
 
-export const HIGHLIGHT_COLORS: Record<HighlightColor, HighlightColorConfig> = {
+// Mesmas cores e hexadecimais canônicos do QuestionCard.tsx (Resolução de Provas)
+export const HIGHLIGHTER_COLORS: Record<HighlighterColor, HighlightColorConfig> = {
   yellow: {
-    id: 'yellow',
-    label: 'Alto Rendimento',
-    medicalMeaning: 'Conceito essencial e definições-chave',
-    hex: '#eab308',
-    dotClass: 'bg-amber-400',
-    bgClass: 'bg-amber-300/35 dark:bg-amber-400/25 text-amber-950 dark:text-amber-100',
-    borderClass: 'border-b-2 border-amber-400 dark:border-amber-500',
-    textClass: 'text-amber-700 dark:text-amber-300',
-    activeRingClass: 'ring-2 ring-amber-400 ring-offset-2'
+    name: 'Amarelo',
+    hex: '#fcd34d',
+    borderHex: '#f59e0b',
+    bg: 'bg-amber-300',
+    border: 'border-amber-500',
+    ring: 'ring-amber-400/50',
+    markClass: 'bg-amber-300 dark:bg-amber-400 text-black dark:text-black font-semibold border-b-2 border-amber-500'
   },
   green: {
-    id: 'green',
-    label: 'Conduta & Tratamento',
-    medicalMeaning: 'Conduta padrão-ouro, doses e terapias de 1ª linha',
-    hex: '#10b981',
-    dotClass: 'bg-emerald-500',
-    bgClass: 'bg-emerald-300/35 dark:bg-emerald-500/25 text-emerald-950 dark:text-emerald-100',
-    borderClass: 'border-b-2 border-emerald-400 dark:border-emerald-500',
-    textClass: 'text-emerald-700 dark:text-emerald-300',
-    activeRingClass: 'ring-2 ring-emerald-500 ring-offset-2'
+    name: 'Verde',
+    hex: '#6ee7b7',
+    borderHex: '#10b981',
+    bg: 'bg-emerald-300',
+    border: 'border-emerald-500',
+    ring: 'ring-emerald-400/50',
+    markClass: 'bg-emerald-300 dark:bg-emerald-400 text-black dark:text-black font-semibold border-b-2 border-emerald-500'
   },
-  red: {
-    id: 'red',
-    label: 'Contraindicação & Alerta',
-    medicalMeaning: 'Efeitos adversos graves, sinais de alarme e pegadinhas',
-    hex: '#f43f5e',
-    dotClass: 'bg-rose-500',
-    bgClass: 'bg-rose-300/35 dark:bg-rose-500/25 text-rose-950 dark:text-rose-100',
-    borderClass: 'border-b-2 border-rose-400 dark:border-rose-500',
-    textClass: 'text-rose-700 dark:text-rose-300',
-    activeRingClass: 'ring-2 ring-rose-500 ring-offset-2'
+  pink: {
+    name: 'Rosa',
+    hex: '#f9a8d4',
+    borderHex: '#ec4899',
+    bg: 'bg-pink-300',
+    border: 'border-pink-500',
+    ring: 'ring-pink-400/50',
+    markClass: 'bg-pink-300 dark:bg-pink-400 text-black dark:text-black font-semibold border-b-2 border-pink-500'
   },
   blue: {
-    id: 'blue',
-    label: 'Diagnóstico & Propedêutica',
-    medicalMeaning: 'Exame padrão-ouro, achados clínicos e critérios',
-    hex: '#0ea5e9',
-    dotClass: 'bg-sky-500',
-    bgClass: 'bg-sky-300/35 dark:bg-sky-500/25 text-sky-950 dark:text-sky-100',
-    borderClass: 'border-b-2 border-sky-400 dark:border-sky-500',
-    textClass: 'text-sky-700 dark:text-sky-300',
-    activeRingClass: 'ring-2 ring-sky-500 ring-offset-2'
+    name: 'Azul',
+    hex: '#7dd3fc',
+    borderHex: '#0ea5e9',
+    bg: 'bg-sky-300',
+    border: 'border-sky-500',
+    ring: 'ring-sky-400/50',
+    markClass: 'bg-sky-300 dark:bg-sky-400 text-black dark:text-black font-semibold border-b-2 border-sky-500'
+  },
+  orange: {
+    name: 'Laranja',
+    hex: '#fdba74',
+    borderHex: '#f97316',
+    bg: 'bg-orange-300',
+    border: 'border-orange-500',
+    ring: 'ring-orange-400/50',
+    markClass: 'bg-orange-300 dark:bg-orange-400 text-black dark:text-black font-semibold border-b-2 border-orange-500'
   },
   purple: {
-    id: 'purple',
-    label: 'Epidemiologia & Provas',
-    medicalMeaning: 'Prevalências, estatísticas e recorrência de bancas',
-    hex: '#a855f7',
-    dotClass: 'bg-purple-500',
-    bgClass: 'bg-purple-300/35 dark:bg-purple-500/25 text-purple-950 dark:text-purple-100',
-    borderClass: 'border-b-2 border-purple-400 dark:border-purple-500',
-    textClass: 'text-purple-700 dark:text-purple-300',
-    activeRingClass: 'ring-2 ring-purple-500 ring-offset-2'
+    name: 'Roxo',
+    hex: '#d8b4fe',
+    borderHex: '#a855f7',
+    bg: 'bg-purple-300',
+    border: 'border-purple-500',
+    ring: 'ring-purple-400/50',
+    markClass: 'bg-purple-300 dark:bg-purple-400 text-black dark:text-black font-semibold border-b-2 border-purple-500'
   }
 };
+
+// Aliases retrocompatíveis
+export type HighlightColor = HighlighterColor;
+export const HIGHLIGHT_COLORS = HIGHLIGHTER_COLORS;
 
 export interface MedicalGlossaryEntry {
   term: string;
@@ -91,4 +93,3 @@ export interface MedicalGlossaryEntry {
   examTip: string;
   category: 'obstetricia' | 'ginecologia' | 'cardiologia' | 'cirurgia' | 'pediatria' | 'clinica' | 'geral';
 }
-
