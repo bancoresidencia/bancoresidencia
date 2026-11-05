@@ -120,6 +120,13 @@ export const QuestoesView: React.FC = () => {
   const [totalSupabaseCount, setTotalSupabaseCount] = useState<number>(0);
   const [totalGlobalQuestions, setTotalGlobalQuestions] = useState<number>(133280);
   const [isLoadingSupabase, setIsLoadingSupabase] = useState<boolean>(true);
+  // Referência estável para userAnswers: evita que responder uma questão acione refetch fantasma de 50 questões
+  const userAnswersRef = useRef(userAnswers);
+  const isFirstLoadRef = useRef(true);
+  useEffect(() => {
+    userAnswersRef.current = userAnswers;
+  }, [userAnswers]);
+
 
   // Lê lista ativa dos parâmetros se houver
   useEffect(() => {
@@ -319,7 +326,17 @@ export const QuestoesView: React.FC = () => {
       }
     };
 
-    const timer = setTimeout(load, 350);
+    // Carga inicial instantânea (0ms de atraso); debounce apenas na digitação de busca textual
+    if (isFirstLoadRef.current) {
+      isFirstLoadRef.current = false;
+      load();
+      return () => {
+        isCancelled = true;
+      };
+    }
+
+    const delayMs = advancedFilters.search ? 350 : 50;
+    const timer = setTimeout(load, delayMs);
     return () => {
       isCancelled = true;
       clearTimeout(timer);

@@ -740,22 +740,48 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
       return;
     }
 
-    // Confirmação oficial de resolução e persistência segura no backend (isPrefetch: false)
+    // Confirmação com aproveitamento do Prefetch em memória e persistência otimizada
     try {
       setIsSubmittingAnswer(true);
       setSolveError(null);
 
-      const confirmPromise = fetch('/api/questions/solve', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          questionId: question.id,
-          selectedOption: pendingSelected,
-          isPrefetch: false
-        })
-      }).then((res) => res.json());
+      const prefetchKey = `${question.id}_${pendingSelected}`;
+      const existingPrefetchPromise = prefetchPromisesRef.current[prefetchKey];
 
-      const data = await confirmPromise;
+      let data: any = null;
+      if (existingPrefetchPromise) {
+        try {
+          data = await existingPrefetchPromise;
+        } catch {
+          data = null;
+        }
+      }
+
+      if (!data || !data.success) {
+        const confirmPromise = fetch('/api/questions/solve', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            questionId: question.id,
+            selectedOption: pendingSelected,
+            isPrefetch: false
+          })
+        }).then((res) => res.json());
+
+        data = await confirmPromise;
+      } else {
+        // Gabarito obtido instantaneamente via prefetch: confirma persistência em background
+        fetch('/api/questions/solve', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            questionId: question.id,
+            selectedOption: pendingSelected,
+            isPrefetch: false
+          })
+        }).catch((e) => console.warn('[QuestionCard] Erro ao sincronizar resposta em background:', e));
+      }
+
       if (!data || !data.success) {
         if (data?.limitReached) {
           openUpgradeModal(null, true);

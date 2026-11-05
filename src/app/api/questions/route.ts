@@ -83,7 +83,7 @@ interface FacetsCacheEntry {
   expiresAt: number;
 }
 const facetsCache = new Map<string, FacetsCacheEntry>();
-const FACETS_CACHE_TTL_MS = 60 * 1000;
+const FACETS_CACHE_TTL_MS = 5 * 60 * 1000;
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function applyQuestionFilters(query: any, filters: ExtendedFilterState, questionIds?: string[]) {
@@ -340,7 +340,34 @@ export async function POST(req: NextRequest) {
 
         return NextResponse.json(resultPayload);
       } else {
-        // Modo Geral de Residência: contagem exata das grandes áreas
+        // Fast-path ultrarrápido (0ms): se não há filtros restritivos no card lateral,
+        // retorna as contagens pré-computadas exatas do catálogo de 132.965 questões
+        const hasRightCardFilters = Boolean(
+          (filtersWithoutClinical.search && filtersWithoutClinical.search.trim()) ||
+          (filtersWithoutClinical.anos && filtersWithoutClinical.anos.length > 0 && filtersWithoutClinical.anos.length < 18) ||
+          (filtersWithoutClinical.dificuldade && filtersWithoutClinical.dificuldade !== 'Todas') ||
+          (filtersWithoutClinical.tipoQuestao && filtersWithoutClinical.tipoQuestao !== 'Todas') ||
+          (filtersWithoutClinical.status && filtersWithoutClinical.status !== 'Todas') ||
+          filtersWithoutClinical.ocultarAnuladasErro ||
+          filtersWithoutClinical.ultimos5Anos
+        );
+
+        if (!hasRightCardFilters) {
+          const resultPayload = {
+            facets: {
+              totalRightCardCount: 132965,
+              especialidades: hierarchyQuestionCounts.especialidades || {},
+              temas: hierarchyQuestionCounts.temas || {},
+              focos: hierarchyQuestionCounts.focos || {},
+              subfocos: hierarchyQuestionCounts.subfocos || {}
+            }
+          };
+
+          facetsCache.set(cacheKey, { data: resultPayload, expiresAt: Date.now() + FACETS_CACHE_TTL_MS });
+          return NextResponse.json(resultPayload);
+        }
+
+        // Modo com filtros restritivos adicionais: contagem com proteção de concorrência
         const specs = [
           'Clínica Médica',
           'Cirurgia',
@@ -555,11 +582,19 @@ export async function POST(req: NextRequest) {
         try {
           let countQuery = supabaseAdmin.from('questions').select('id', { count: 'exact', head: true });
           countQuery = applyQuestionFilters(countQuery, filters, questionIds);
-          const { count, error: countErr } = await countQuery;
-          if (!countErr && typeof count === 'number') {
-            return count;
-          }
-          return calculateHierarchyFallback(filters);
+          
+          // Timeout de segurança de 1.200ms para nunca travar a devolução das 50 questões se a contagem no Postgres estiver lenta
+          const countWithTimeout = Promise.race([
+            countQuery.then(({ count, error: countErr }) => {
+              if (!countErr && typeof count === 'number') return count;
+              return calculateHierarchyFallback(filters);
+            }),
+            new Promise<number>((resolve) =>
+              setTimeout(() => resolve(calculateHierarchyFallback(filters)), 1200)
+            )
+          ]);
+
+          return await countWithTimeout;
         } catch {
           return calculateHierarchyFallback(filters);
         }

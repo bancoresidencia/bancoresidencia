@@ -616,12 +616,19 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
 
       setUserAnswers((prev) => {
         const next = { ...prev, [questionId]: answerObj };
-        try {
-          const key = getUserAnswersStorageKey(user?.id);
-          localStorage.setItem(key, JSON.stringify(next));
-        } catch {}
         return next;
       });
+
+      // Persistência em localStorage assíncrona (queueMicrotask) para zero bloqueio da renderização
+      if (typeof window !== 'undefined') {
+        queueMicrotask(() => {
+          try {
+            const key = getUserAnswersStorageKey(user?.id);
+            const current = userAnswersRef.current;
+            localStorage.setItem(key, JSON.stringify({ ...current, [questionId]: answerObj }));
+          } catch {}
+        });
+      }
 
       setSessionAnswers((prev) => ({
         ...prev,

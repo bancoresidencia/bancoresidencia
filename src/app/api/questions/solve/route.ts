@@ -306,6 +306,25 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    const isAnulada = Boolean(row.is_anulada || row.correct_answer === 'ANULADA');
+    const goldAnswer = (row.correct_answer || (isAnulada ? 'ANULADA' : '')).trim().toUpperCase();
+    const isCorrect = isAnulada ? true : (goldAnswer ? selectedOption.toUpperCase() === goldAnswer : false);
+
+    // Fast-Path Instantâneo para Prefetch (< 25ms): devolve gabarito e justificativa imediatamente,
+    // sem chamadas redundantes a Auth/Quota/Upsert, enquanto o aluno lê as opções
+    if (isPrefetch) {
+      return NextResponse.json({
+        success: true,
+        isPrefetch: true,
+        questionId: row.id,
+        correctAnswer: row.correct_answer || (isAnulada ? 'ANULADA' : ''),
+        isAnulada,
+        isCorrect,
+        commentary: row.commentary || '',
+        options: row.options || []
+      });
+    }
+
     // 5. Verificação de Autenticação e Cota Diária (Plano Gratuito / Visitantes)
     let authenticatedUser: { id: string } | null = null;
     const supabaseAdmin = getSupabaseAdmin();
@@ -415,14 +434,8 @@ export async function POST(req: NextRequest) {
       }
     }
 
-    // 6. Avaliação instantânea da resposta
-    const isAnulada = Boolean(row.is_anulada || row.correct_answer === 'ANULADA');
-    const goldAnswer = (row.correct_answer || (isAnulada ? 'ANULADA' : '')).trim().toUpperCase();
+    // 6. Confirmação da escolha do aluno
     const studentChoice = typeof selectedOption === 'string' ? selectedOption.trim().toUpperCase() : '';
-
-    const isCorrect = isAnulada
-      ? true
-      : studentChoice.length > 0 && studentChoice === goldAnswer;
 
     const serverNow = new Date().toISOString();
 

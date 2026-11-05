@@ -107,6 +107,16 @@ async function main() {
       if (fs.existsSync('scripts/tests/test_fase4_bundle_analysis.mjs')) {
         run('node scripts/tests/test_fase4_bundle_analysis.mjs');
       }
+      const optTests = [
+        'scripts/tests/test_opt_fase1_ghost_refetch.mjs',
+        'scripts/tests/test_opt_fase2_prefetch.mjs',
+        'scripts/tests/test_opt_fase3_facet_storm.mjs',
+        'scripts/tests/test_opt_fase4_fast_search.mjs',
+        'scripts/tests/test_opt_fase5_solve_pipeline.mjs'
+      ];
+      for (const ot of optTests) {
+        if (fs.existsSync(ot)) run('node ' + ot);
+      }
       console.log('✅ Todos os testes passaram com sucesso!');
     } catch {
       console.error('\n❌ BLOQUEADO: Houve falha nos testes unitários.');
