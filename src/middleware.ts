@@ -1,3 +1,12 @@
+function constantTimeEqual(a: string, b: string): boolean {
+  if (a.length !== b.length) return false;
+  let result = 0;
+  for (let i = 0; i < a.length; i++) {
+    result |= a.charCodeAt(i) ^ b.charCodeAt(i);
+  }
+  return result === 0;
+}
+
 import { NextResponse, type NextRequest } from 'next/server';
 import { updateSession } from '@/lib/supabase/middleware';
 import { isPrivilegedRole } from '@/utils/security';
@@ -57,7 +66,7 @@ export async function middleware(request: NextRequest) {
     const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
     if (authHeader && serviceRoleKey) {
       const token = authHeader.replace(/^Bearer\s+/i, '').trim();
-      if (token === serviceRoleKey) {
+      if (constantTimeEqual(token, serviceRoleKey)) {
         return supabaseResponse;
       }
     }
@@ -141,6 +150,6 @@ export const config = {
      * - favicon.ico (favicon file)
      * - Public assets like images, fonts, etc.
      */
-    '/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)'
+    '/((?!_next/static|_next/image|favicon.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|ico|woff|woff2|ttf|eot)$).*)'
   ]
 };

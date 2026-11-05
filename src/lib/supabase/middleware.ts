@@ -13,6 +13,17 @@ export async function updateSession(request: NextRequest) {
     return { supabaseResponse, user: null, supabase: null };
   }
 
+  // Otimização de Borda (TTFB): Se a requisição não contém cookies de autenticação do Supabase,
+  // evita disparar um round-trip HTTP externo ao Supabase Auth que adicionaria 150-300ms desnecessários.
+  const allCookies = request.cookies.getAll();
+  const hasAuthCookie = allCookies.some(
+    (c) => c.name.startsWith('sb-') || c.name.includes('auth-token')
+  );
+
+  if (!hasAuthCookie) {
+    return { supabaseResponse, user: null, supabase: null };
+  }
+
   const supabase = createServerClient(supabaseUrl, supabaseAnonKey, {
     cookies: {
       getAll() {
@@ -33,7 +44,6 @@ export async function updateSession(request: NextRequest) {
   // IMPORTANT: Do NOT run code between createServerClient and
   // supabase.auth.getUser(). A simple mistake could make it very hard to debug
   // issues with users being randomly logged out.
-
   const {
     data: { user }
   } = await supabase.auth.getUser();

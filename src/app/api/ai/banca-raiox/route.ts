@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { supabase } from '@/lib/supabase';
 import { resolveBancaList } from '@/services/questionService';
 import { callGeminiAi, parseCleanJson } from '@/lib/gemini';
+import { verifyStudentSession } from '@/lib/supabase/studentAuth';
 
 export const dynamic = 'force-dynamic';
 
@@ -10,6 +11,15 @@ const CACHE_TTL_MS = 10 * 60 * 1000; // 10 minutos
 
 export async function POST(req: NextRequest) {
   try {
+    // Blindagem de segurança: Acesso restrito a estudantes autenticados
+    const auth = await verifyStudentSession(req);
+    if (!auth.authorized || !auth.user) {
+      return NextResponse.json(
+        { success: false, error: auth.error || 'Acesso não autorizado: faça login para acessar o Raio-X da banca.' },
+        { status: auth.status }
+      );
+    }
+
     const body = await req.json();
     const bancaRaw = (body.banca || 'ENARE').trim();
 

@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { callGeminiAi, parseCleanJson } from '@/lib/gemini';
 import { AiDecisionBadge, AiDecisionDetails } from '@/components/dashboard/scheduleTypes';
+import { verifyStudentSession } from '@/lib/supabase/studentAuth';
 
 export const dynamic = 'force-dynamic';
 
@@ -279,6 +280,15 @@ function generateHeuristicSuggestions(
 
 export async function POST(req: NextRequest) {
   try {
+    // Blindagem de segurança: Acesso restrito a estudantes autenticados
+    const auth = await verifyStudentSession(req);
+    if (!auth.authorized || !auth.user) {
+      return NextResponse.json(
+        { success: false, error: auth.error || 'Acesso não autorizado: faça login para otimizar sua agenda.' },
+        { status: auth.status }
+      );
+    }
+
     const body = await req.json();
     const events: CalendarSlotInput[] = body.events || [];
     const userContext = body.userContext || {};

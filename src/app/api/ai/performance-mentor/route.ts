@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { callGeminiAi, parseCleanJson } from '@/lib/gemini';
+import { verifyStudentSession } from '@/lib/supabase/studentAuth';
 
 interface CachedDiagnosis {
   timestamp: number;
@@ -11,6 +12,15 @@ const CACHE_TTL_MS = 10 * 60 * 1000; // 10 minutos
 
 export async function POST(req: Request) {
   try {
+    // Blindagem de segurança: Acesso restrito a estudantes autenticados
+    const auth = await verifyStudentSession(req);
+    if (!auth.authorized || !auth.user) {
+      return NextResponse.json(
+        { success: false, error: auth.error || 'Acesso não autorizado: faça login para usar o mentor de IA.' },
+        { status: auth.status }
+      );
+    }
+
     const body = await req.json();
     const {
       targetExam = 'ENARE 2026',

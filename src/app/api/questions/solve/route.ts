@@ -435,56 +435,55 @@ export async function POST(req: NextRequest) {
         const targetIsCorrect = isCorrect;
         const finalStatusRetrial = statusRetrial || (targetIsCorrect ? 'recuperado' : 'pendente');
 
-        (async () => {
-          try {
-            // Reconciliação Monotônica de Tentativas: busca tentativas anteriores para não apagar histórico
-            let finalAttempts = Array.isArray(attempts) && attempts.length > 0
-              ? attempts
-              : [{ letter: targetChoice, isCorrect: targetIsCorrect, timestamp: Date.now() }];
+        // Persistência com await garantido: previne congelamento prematuro de lambdas na Vercel
+        try {
+          // Reconciliação Monotônica de Tentativas: busca tentativas anteriores para não apagar histórico
+          let finalAttempts = Array.isArray(attempts) && attempts.length > 0
+            ? attempts
+            : [{ letter: targetChoice, isCorrect: targetIsCorrect, timestamp: Date.now() }];
 
-            const { data: existingRow } = await supabaseAdmin
-              .from('user_answers')
-              .select('attempts')
-              .eq('user_id', targetUserId)
-              .eq('question_id', targetQuestionId)
-              .maybeSingle();
+          const { data: existingRow } = await supabaseAdmin
+            .from('user_answers')
+            .select('attempts')
+            .eq('user_id', targetUserId)
+            .eq('question_id', targetQuestionId)
+            .maybeSingle();
 
-            if (existingRow && Array.isArray(existingRow.attempts) && existingRow.attempts.length > 0) {
-              const combinedMap = new Map<string, any>();
-              for (const att of existingRow.attempts) {
-                if (att && att.timestamp) combinedMap.set(`${att.timestamp}_${att.letter}`, att);
-              }
-              for (const att of finalAttempts) {
-                if (att && att.timestamp) combinedMap.set(`${att.timestamp}_${att.letter}`, att);
-              }
-              finalAttempts = Array.from(combinedMap.values()).sort((a, b) => a.timestamp - b.timestamp);
+          if (existingRow && Array.isArray(existingRow.attempts) && existingRow.attempts.length > 0) {
+            const combinedMap = new Map<string, any>();
+            for (const att of existingRow.attempts) {
+              if (att && att.timestamp) combinedMap.set(`${att.timestamp}_${att.letter}`, att);
             }
-
-            await supabaseAdmin.from('user_answers').upsert(
-              {
-                user_id: targetUserId,
-                question_id: targetQuestionId,
-                selected_option: targetChoice,
-                is_correct: targetIsCorrect,
-                answered_at: serverNow,
-                specialty: row.especialidade || null,
-                tema: row.tema || null,
-                foco: row.foco || null,
-                subfoco: row.subfoco || null,
-                difficulty: row.difficulty || null,
-                banca: row.banca || null,
-                year: row.year ? Number(row.year) : null,
-                attempts: finalAttempts,
-                student_notes: studentNotes || null,
-                error_reason: errorReason || null,
-                status_retrial: finalStatusRetrial
-              },
-              { onConflict: 'user_id,question_id' }
-            );
-          } catch (authSyncErr) {
-            console.warn('[API Solve] Aviso ao registrar histórico em background:', authSyncErr);
+            for (const att of finalAttempts) {
+              if (att && att.timestamp) combinedMap.set(`${att.timestamp}_${att.letter}`, att);
+            }
+            finalAttempts = Array.from(combinedMap.values()).sort((a, b) => a.timestamp - b.timestamp);
           }
-        })().catch(() => {});
+
+          await supabaseAdmin.from('user_answers').upsert(
+            {
+              user_id: targetUserId,
+              question_id: targetQuestionId,
+              selected_option: targetChoice,
+              is_correct: targetIsCorrect,
+              answered_at: serverNow,
+              specialty: row.especialidade || null,
+              tema: row.tema || null,
+              foco: row.foco || null,
+              subfoco: row.subfoco || null,
+              difficulty: row.difficulty || null,
+              banca: row.banca || null,
+              year: row.year ? Number(row.year) : null,
+              attempts: finalAttempts,
+              student_notes: studentNotes || null,
+              error_reason: errorReason || null,
+              status_retrial: finalStatusRetrial
+            },
+            { onConflict: 'user_id,question_id' }
+          );
+        } catch (authSyncErr) {
+          console.warn('[API Solve] Erro ao persistir resposta no banco:', authSyncErr);
+        }
       } else {
         recordGuestSolve(clientIp, row.id);
       }

@@ -4,6 +4,7 @@ import { callVertexAi } from '@/lib/vertexAi';
 import { callGeminiAi } from '@/lib/gemini';
 import { medicalKnowledgeService, KnowledgeChunk } from '@/services/medicalKnowledgeService';
 import { guidelinesKnowledgeService } from '@/services/guidelinesKnowledgeService';
+import { verifyStudentSession } from '@/lib/supabase/studentAuth';
 
 export const dynamic = 'force-dynamic';
 export const maxDuration = 60; // Janela exclusiva de 60s dedicada 100% à qualidade do resumo
@@ -30,6 +31,15 @@ const PALETTE = ['#3B82F6', '#10B981', '#EC4899', '#8B5CF6', '#F59E0B', '#06B6D4
 
 export async function POST(req: NextRequest) {
   try {
+    // Blindagem de segurança: Acesso restrito a estudantes autenticados
+    const auth = await verifyStudentSession(req);
+    if (!auth.authorized || !auth.user) {
+      return NextResponse.json(
+        { success: false, error: auth.error || 'Acesso não autorizado: faça login para gerar materiais de estudo.' },
+        { status: auth.status }
+      );
+    }
+
     const body: StudyGeneratorRequest = await req.json();
     const {
       especialidade,

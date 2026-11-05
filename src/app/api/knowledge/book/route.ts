@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient as createSupabaseAdminClient } from '@supabase/supabase-js';
 import catalogData from '@/data/medicalKnowledgeCatalog.json';
+import { verifyStudentSession } from '@/lib/supabase/studentAuth';
 
 export const dynamic = 'force-dynamic';
 
@@ -66,6 +67,15 @@ function isRateLimited(ip: string): boolean {
 
 export async function GET(req: NextRequest) {
   try {
+    // 0. Autenticação obrigatória: Acesso exclusivo a estudantes cadastrados
+    const auth = await verifyStudentSession(req);
+    if (!auth.authorized || !auth.user) {
+      return NextResponse.json(
+        { success: false, error: auth.error || 'Acesso restrito a estudantes cadastrados.' },
+        { status: auth.status }
+      );
+    }
+
     // 1. Rate limiting por IP
     const clientIp =
       req.headers.get('x-forwarded-for')?.split(',')[0].trim() ||

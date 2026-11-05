@@ -106,7 +106,7 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
       if (!remoteRows) {
         const { data, error } = await supabase
           .from('user_answers')
-          .select('question_id, selected_option, is_correct, answered_at, specialty, tema, foco, subfoco, difficulty, banca, year, status_retrial, error_reason, student_notes, attempts')
+          .select('question_id, selected_option, is_correct, answered_at, specialty, tema, foco, subfoco, difficulty, banca, year, status_retrial, error_reason, student_notes')
           .eq('user_id', userId);
 
         if (error || !data) return;

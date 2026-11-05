@@ -3,6 +3,58 @@ import { getPaymentService } from '@/lib/mercadopago';
 import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
 import { PLANS, PlanId } from '@/config/plans';
 import { recordReferralSale } from '@/services/ambassadorService';
+import crypto from 'crypto';
+
+function verifyMercadoPagoSignature(req: NextRequest, rawId: string): boolean {
+  const webhookSecret = process.env.MERCADO_PAGO_WEBHOOK_SECRET || process.env.MERCADOPAGO_WEBHOOK_SECRET;
+  const xSignature = req.headers.get('x-signature');
+  const xRequestId = req.headers.get('x-request-id');
+
+  // Se o cabeçalho x-signature foi fornecido (notificação formal do Mercado Pago)
+  if (xSignature) {
+    const parts = xSignature.split(',');
+    let ts = '';
+    let v1 = '';
+
+    for (const part of parts) {
+      const [key, val] = part.split('=');
+      if (key?.trim() === 'ts') ts = val?.trim() || '';
+      if (key?.trim() === 'v1') v1 = val?.trim() || '';
+    }
+
+    if (!ts || !v1) {
+      console.warn('[MercadoPago Webhook] Formato de x-signature inválido.');
+      return false;
+    }
+
+    if (webhookSecret) {
+      const manifest = `id:${rawId};request-id:${xRequestId || ''};ts:${ts};`;
+      const hmac = crypto.createHmac('sha256', webhookSecret);
+      hmac.update(manifest);
+      const calculatedHash = hmac.digest('hex');
+
+      try {
+        if (calculatedHash.length !== v1.length) return false;
+        return crypto.timingSafeEqual(Buffer.from(calculatedHash), Buffer.from(v1));
+      } catch {
+        return false;
+      }
+    } else {
+      // Assinatura foi enviada mas nenhum segredo está configurado: rejeita para evitar bypass
+      console.warn('[MercadoPago Webhook] Assinatura fornecida mas MERCADO_PAGO_WEBHOOK_SECRET não configurado.');
+      return false;
+    }
+  }
+
+  // Se não há x-signature e não há webhookSecret (modo dev permissivo local)
+  if (!webhookSecret) {
+    return true;
+  }
+
+  // Se o segredo está configurado mas a requisição não enviou assinatura: rejeita
+  return false;
+}
+
 
 export async function POST(req: NextRequest) {
   try {
@@ -23,6 +75,12 @@ export async function POST(req: NextRequest) {
     if (!rawId) {
       // Retornar 200 para o Mercado Pago não reenviar notificações vazias
       return NextResponse.json({ received: true, ignored: 'no_id' }, { status: 200 });
+    }
+
+    // Validação criptográfica HMAC da notificação
+    if (!verifyMercadoPagoSignature(req, String(rawId))) {
+      console.error('[MercadoPago Webhook] Rejeição de notificação com assinatura inválida.');
+      return NextResponse.json({ error: 'Assinatura do webhook inválida.' }, { status: 401 });
     }
 
     const supabaseAdmin = getSupabaseAdmin();

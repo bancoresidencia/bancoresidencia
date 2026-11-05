@@ -77,6 +77,14 @@ function mapRowToQuestion(row: QuestionDbRow): Question {
   };
 }
 
+// In-Memory Cache para Contagens Facetadas (TTL de 60s)
+interface FacetsCacheEntry {
+  data: unknown;
+  expiresAt: number;
+}
+const facetsCache = new Map<string, FacetsCacheEntry>();
+const FACETS_CACHE_TTL_MS = 60 * 1000;
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function applyQuestionFilters(query: any, filters: ExtendedFilterState, questionIds?: string[]) {
   // Regra de Gabarito: Todas as 132.965 questões presentes por padrão
@@ -86,35 +94,36 @@ function applyQuestionFilters(query: any, filters: ExtendedFilterState, question
     query = query.or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true');
   }
 
-  // Filtro de Status do Aluno via IDs diretos (100% integrado ao Supabase com limite seguro de URL)
+  // Se IDs específicos foram solicitados (ex: página paginada de Resolvidas/Acertadas/Erradas ou caderno)
+  if (questionIds && questionIds.length > 0) {
+    query = query.in('id', questionIds);
+    return query;
+  }
+
+  // Filtro de Status do Aluno via IDs diretos com limites seguros de PostgREST
   if (filters.status === 'Resolvidas') {
     if (filters.userSolvedIds && filters.userSolvedIds.length > 0) {
-      query = query.in('id', filters.userSolvedIds.slice(0, 150));
+      query = query.in('id', filters.userSolvedIds.slice(0, 100));
     } else {
       query = query.eq('id', '00000000-0000-0000-0000-000000000000');
     }
   } else if (filters.status === 'Acertadas') {
     if (filters.userCorrectIds && filters.userCorrectIds.length > 0) {
-      query = query.in('id', filters.userCorrectIds.slice(0, 150));
+      query = query.in('id', filters.userCorrectIds.slice(0, 100));
     } else {
       query = query.eq('id', '00000000-0000-0000-0000-000000000000');
     }
   } else if (filters.status === 'Erradas') {
     if (filters.userWrongIds && filters.userWrongIds.length > 0) {
-      query = query.in('id', filters.userWrongIds.slice(0, 150));
+      query = query.in('id', filters.userWrongIds.slice(0, 100));
     } else {
       query = query.eq('id', '00000000-0000-0000-0000-000000000000');
     }
   } else if (filters.status === 'Não vistas') {
     if (filters.userSolvedIds && filters.userSolvedIds.length > 0) {
-      query = query.not('id', 'in', `(${filters.userSolvedIds.slice(0, 120).join(',')})`);
+      const safePruneIds = filters.userSolvedIds.slice(0, 100);
+      query = query.not('id', 'in', `(${safePruneIds.join(',')})`);
     }
-  }
-
-  // Se IDs específicos foram solicitados
-  if (questionIds && questionIds.length > 0) {
-    query = query.in('id', questionIds);
-    return query;
   }
 
   // 1. Busca textual otimizada com sanitização estrita de PostgREST e suporte a acentuação clínica
@@ -261,6 +270,13 @@ export async function POST(req: NextRequest) {
         subfocos: []
       };
 
+      // 1. Verificação no cache em memória
+      const cacheKey = JSON.stringify({ isRevalida, hasBancas, isRPlusOrTitulo, filtersWithoutClinical });
+      const cached = facetsCache.get(cacheKey);
+      if (cached && cached.expiresAt > Date.now()) {
+        return NextResponse.json(cached.data);
+      }
+
       if (isRevalida || hasBancas || isRPlusOrTitulo) {
         // Volume moderado (<= 10.000 questões): busca linhas indexadas de especialidade, tema, foco, subfoco
         const CHUNK = 1000;
@@ -292,7 +308,6 @@ export async function POST(req: NextRequest) {
           const sub = row.subfoco;
 
           if (esp) {
-            // Normalizar especialidade para os nós da árvore clínica (Cirurgia Geral agrega em Cirurgia sem duplicar)
             const normalizedEsp = (esp === 'Cirurgia Geral' ? 'Cirurgia' : esp);
             especialidades[normalizedEsp] = (especialidades[normalizedEsp] || 0) + 1;
             if (normalizedEsp !== esp) {
@@ -307,7 +322,7 @@ export async function POST(req: NextRequest) {
           if (sub) subfocos[sub] = (subfocos[sub] || 0) + 1;
         }
 
-        return NextResponse.json({
+        const resultPayload = {
           facets: {
             totalRightCardCount,
             especialidades,
@@ -315,7 +330,15 @@ export async function POST(req: NextRequest) {
             focos,
             subfocos
           }
-        });
+        };
+
+        facetsCache.set(cacheKey, { data: resultPayload, expiresAt: Date.now() + FACETS_CACHE_TTL_MS });
+        if (facetsCache.size > 200) {
+          const firstKey = facetsCache.keys().next().value;
+          if (firstKey) facetsCache.delete(firstKey);
+        }
+
+        return NextResponse.json(resultPayload);
       } else {
         // Modo Geral de Residência: contagem exata das grandes áreas
         const specs = [
@@ -367,7 +390,7 @@ export async function POST(req: NextRequest) {
           subfocos[s] = Math.max(0, Math.round((count as number) * overallRatio));
         }
 
-        return NextResponse.json({
+        const resultPayload = {
           facets: {
             totalRightCardCount,
             especialidades,
@@ -375,28 +398,110 @@ export async function POST(req: NextRequest) {
             focos,
             subfocos
           }
-        });
+        };
+
+        facetsCache.set(cacheKey, { data: resultPayload, expiresAt: Date.now() + FACETS_CACHE_TTL_MS });
+        if (facetsCache.size > 200) {
+          const firstKey = facetsCache.keys().next().value;
+          if (firstKey) facetsCache.delete(firstKey);
+        }
+
+        return NextResponse.json(resultPayload);
       }
     }
 
-    // 1. Constroi a query base aplicando todos os filtros (omite correct_answer e commentary na listagem padrão)
     const selectCols = body.includeGabarito ? '*' : SAFE_QUESTION_COLUMNS;
+    const from = (page - 1) * pageSize;
+    const to = from + pageSize - 1;
+
+    // TRATAMENTO NATIVO E ILIMITADO DE STATUS: 'Resolvidas', 'Acertadas', 'Erradas'
+    // Elimina o limite de 150 IDs fatiando a lista de IDs por página (exatamente pageSize por query)
+    const isAnsweredStatus = Boolean(
+      filters.status &&
+      (filters.status === 'Resolvidas' || filters.status === 'Acertadas' || filters.status === 'Erradas')
+    );
+
+    if (isAnsweredStatus && (!questionIds || questionIds.length === 0)) {
+      let targetStatusIds: string[] = [];
+      if (filters.status === 'Resolvidas') targetStatusIds = filters.userSolvedIds || [];
+      else if (filters.status === 'Acertadas') targetStatusIds = filters.userCorrectIds || [];
+      else if (filters.status === 'Erradas') targetStatusIds = filters.userWrongIds || [];
+
+      const total = targetStatusIds.length;
+      if (total === 0) {
+        return NextResponse.json({
+          questions: [],
+          total: 0,
+          page,
+          pageSize,
+          totalPages: 0
+        });
+      }
+
+      // Paginação direta no array de IDs de status: apenas pageSize IDs são enviados ao Postgres
+      const pageTargetIds = targetStatusIds.slice(from, from + pageSize);
+      if (pageTargetIds.length === 0) {
+        return NextResponse.json({
+          questions: [],
+          total,
+          page,
+          pageSize,
+          totalPages: Math.ceil(total / pageSize)
+        });
+      }
+
+      let dataQuery = supabaseAdmin.from('questions').select(selectCols);
+      dataQuery = applyQuestionFilters(dataQuery, filters, pageTargetIds);
+
+      const { data, error } = await dataQuery;
+      if (error) {
+        console.error('[/api/questions] Erro ao buscar questões paginadas por status:', error.message || error);
+        return NextResponse.json({ questions: [], total: 0, page, pageSize, totalPages: 0, error: error.message }, { status: 500 });
+      }
+
+      let questions = (data || []).map((row) => mapRowToQuestion(row as unknown as QuestionDbRow));
+
+      // Preserva a ordenação original dos IDs paginados
+      const idMap = new Map(questions.map((q) => [q.id, q]));
+      const orderedQuestions: Question[] = [];
+      for (const id of pageTargetIds) {
+        const q = idMap.get(id);
+        if (q) orderedQuestions.push(q);
+      }
+      questions = orderedQuestions;
+
+      return NextResponse.json({
+        questions,
+        total,
+        page,
+        pageSize,
+        totalPages: Math.ceil(total / pageSize)
+      });
+    }
+
+    // 1. Constrói a query base aplicando todos os filtros normais
     let dataQuery = supabaseAdmin.from('questions').select(selectCols);
     dataQuery = applyQuestionFilters(dataQuery, filters, questionIds);
 
     // 2. Paginação com ordenação dinâmica
-    const from = (page - 1) * pageSize;
-    const to = from + pageSize - 1;
+    // Para 'Não vistas' com volume alto de resolvidas, amplia ligeiramente o range para filtrar em memória sem perda
+    const isUnseenWithManySolved = Boolean(
+      filters.status === 'Não vistas' &&
+      filters.userSolvedIds &&
+      filters.userSolvedIds.length > 100
+    );
+
+    const queryTo = isUnseenWithManySolved ? to + Math.min(filters.userSolvedIds!.length, 100) : to;
 
     if (filters.aleatorizar) {
       if (questionIds && questionIds.length > 0) {
-        dataQuery = dataQuery.range(from, to);
+        dataQuery = dataQuery.range(from, queryTo);
       } else {
         const isAsc = page % 2 === 1;
-        dataQuery = dataQuery.order('id', { ascending: isAsc }).range(from, to);
+        dataQuery = dataQuery.order('id', { ascending: isAsc }).range(from, queryTo);
       }
     } else {
-      dataQuery = dataQuery.order('year', { ascending: false }).order('id', { ascending: true }).range(from, to);
+      dataQuery = dataQuery.order('year', { ascending: false }).order('id', { ascending: true }).range(from, queryTo);
     }
 
     // 3. Cálculo preciso do total filtrado de questões
@@ -437,8 +542,6 @@ export async function POST(req: NextRequest) {
     );
 
     let total = baseTotal;
-
-    // Executa busca de dados e contagem precisa
     let countPromise: Promise<number>;
 
     if (questionIds && questionIds.length > 0) {
@@ -446,10 +549,8 @@ export async function POST(req: NextRequest) {
     } else if (!hasActiveFilters) {
       countPromise = Promise.resolve(baseTotal);
     } else if (hasClinicalFilters && !hasRightCardFilters) {
-      // Quando apenas filtros clínicos estão ativos, calcula instantaneamente a soma exata (0ms)
       countPromise = Promise.resolve(calculateHierarchyFallback(filters));
     } else {
-      // Para filtros refinados cruzados (ex: Pediatria + ENARE), executa contagem indexada leve no Supabase
       countPromise = (async () => {
         try {
           let countQuery = supabaseAdmin.from('questions').select('id', { count: 'exact', head: true });
@@ -481,6 +582,16 @@ export async function POST(req: NextRequest) {
     }
 
     let questions = (data || []).map((row) => mapRowToQuestion(row as unknown as QuestionDbRow));
+
+    // Para 'Não vistas', garante imunidade absoluta contra reaparecimento de qualquer questão resolvida
+    if (filters.status === 'Não vistas' && filters.userSolvedIds && filters.userSolvedIds.length > 0) {
+      const solvedSet = new Set(filters.userSolvedIds);
+      questions = questions.filter((q) => !solvedSet.has(q.id));
+      if (questions.length > pageSize) {
+        questions = questions.slice(0, pageSize);
+      }
+      total = Math.max(0, calculatedTotal - (filters.userSolvedIds.length > 100 ? (filters.userSolvedIds.length - 100) : 0));
+    }
 
     if (questionIds && questionIds.length > 0) {
       const idMap = new Map(questions.map((q) => [q.id, q]));

@@ -261,13 +261,17 @@ export async function fetchFacetedHierarchyCounts(
 
       // Status
       if (filters.status === 'Não vistas' && filters.userSolvedIds && filters.userSolvedIds.length > 0) {
-        q = q.not('id', 'in', `(${filters.userSolvedIds.slice(0, 120).join(',')})`);
+        const safePrune = filters.userSolvedIds.slice(0, 100);
+        q = q.not('id', 'in', `(${safePrune.join(',')})`);
       } else if (filters.status === 'Resolvidas' && filters.userSolvedIds && filters.userSolvedIds.length > 0) {
-        q = q.in('id', filters.userSolvedIds.slice(0, 150));
+        const chunkIds = filters.userSolvedIds.slice(offset, offset + PAGE_CHUNK);
+        q = q.in('id', chunkIds.length > 0 ? chunkIds : ['00000000-0000-0000-0000-000000000000']);
       } else if (filters.status === 'Acertadas' && filters.userCorrectIds && filters.userCorrectIds.length > 0) {
-        q = q.in('id', filters.userCorrectIds.slice(0, 150));
+        const chunkIds = filters.userCorrectIds.slice(offset, offset + PAGE_CHUNK);
+        q = q.in('id', chunkIds.length > 0 ? chunkIds : ['00000000-0000-0000-0000-000000000000']);
       } else if (filters.status === 'Erradas' && filters.userWrongIds && filters.userWrongIds.length > 0) {
-        q = q.in('id', filters.userWrongIds.slice(0, 150));
+        const chunkIds = filters.userWrongIds.slice(offset, offset + PAGE_CHUNK);
+        q = q.in('id', chunkIds.length > 0 ? chunkIds : ['00000000-0000-0000-0000-000000000000']);
       }
 
       const { data: chunk, error } = await q;

@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { callGeminiAi, parseCleanJson } from '@/lib/gemini';
 import { reconcileAIFilters } from '@/utils/taxonomyMatcher';
+import { verifyStudentSession } from '@/lib/supabase/studentAuth';
 
 export const dynamic = 'force-dynamic';
 
@@ -21,6 +22,15 @@ const KNOWN_BANCAS = [
 
 export async function POST(req: NextRequest) {
   try {
+    // Blindagem de segurança: Acesso restrito a estudantes autenticados
+    const auth = await verifyStudentSession(req);
+    if (!auth.authorized || !auth.user) {
+      return NextResponse.json(
+        { success: false, error: auth.error || 'Acesso não autorizado: faça login para usar o filtro inteligente.' },
+        { status: auth.status }
+      );
+    }
+
     const body = await req.json();
     const prompt = (body.prompt || '').trim();
 
