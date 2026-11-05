@@ -772,7 +772,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
       });
 
       setIsAnswered(true);
-      onAnswer(question.id, pendingSelected, data.isCorrect, { syncedRemotely: true });
+      onAnswer(question.id, pendingSelected, data.isCorrect, { syncedRemotely: true, serverAnsweredAt: data.answeredAt });
       setShowCommentary(true);
     } catch (err) {
       console.error('[QuestionCard] Falha ao resolver questão:', err);

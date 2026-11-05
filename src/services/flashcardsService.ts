@@ -32,7 +32,72 @@ function getUserCardsStorageKey(userId?: string | null): string {
   return userId ? `bancoresidencia_user_cards_${userId}` : USER_FLASHCARDS_KEY;
 }
 
+// Fila de Sincronização em Lote (Batching & Debounce) de Flashcards
+interface PendingFlashcardSyncItem {
+  userId: string;
+  cardId: string;
+  payload: {
+    user_id: string;
+    card_id: string;
+    state: string;
+    repetitions: number;
+    interval_days: number;
+    ease_factor: number;
+    stability: number;
+    difficulty: number;
+    retrievability: number;
+    lapses: number;
+    last_reviewed_at: string;
+    next_review_date: string;
+  };
+}
+
+const pendingFlashcardsQueue = new Map<string, PendingFlashcardSyncItem>();
+let flashcardsFlushTimeout: NodeJS.Timeout | null = null;
+const BATCH_FLUSH_INTERVAL_MS = 3000;
+const BATCH_FLUSH_MAX_SIZE = 5;
+
+export async function flushPendingFlashcards(): Promise<void> {
+  if (flashcardsFlushTimeout) {
+    clearTimeout(flashcardsFlushTimeout);
+    flashcardsFlushTimeout = null;
+  }
+  if (pendingFlashcardsQueue.size === 0) return;
+
+  const items = Array.from(pendingFlashcardsQueue.values());
+  pendingFlashcardsQueue.clear();
+
+  try {
+    const client = createClient();
+    const batch = items.map((item) => item.payload);
+    const { error } = await client
+      .from('user_flashcard_progress')
+      .upsert(batch, { onConflict: 'user_id,card_id' });
+
+    if (error) {
+      console.warn('[flashcardsService] Erro ao sincronizar lote de flashcards no Supabase:', error);
+      // Recoloca na fila para não perder o progresso
+      for (const item of items) {
+        if (!pendingFlashcardsQueue.has(`${item.userId}_${item.cardId}`)) {
+          pendingFlashcardsQueue.set(`${item.userId}_${item.cardId}`, item);
+        }
+      }
+    }
+  } catch (err) {
+    console.warn('[flashcardsService] Exceção no lote de flashcards:', err);
+  }
+}
+
+if (typeof window !== 'undefined') {
+  window.addEventListener('beforeunload', () => {
+    if (pendingFlashcardsQueue.size > 0) {
+      flushPendingFlashcards();
+    }
+  });
+}
+
 export const flashcardsService = {
+  flushPendingFlashcards,
   /**
    * Carrega todos os flashcards mesclando o acervo inicial com o progresso salvo no localStorage
    */
@@ -236,33 +301,33 @@ export const flashcardsService = {
     this.saveProgressToStorage(saved, userId);
 
     if (userId && userId !== 'demo-student') {
-      try {
-        const client = createClient();
-        client
-          .from('user_flashcard_progress')
-          .upsert(
-            {
-              user_id: userId,
-              card_id: cardId,
-              state: updatedProgress.state,
-              repetitions: updatedProgress.repetitions,
-              interval_days: updatedProgress.intervalDays,
-              ease_factor: updatedProgress.easeFactor,
-              stability: updatedProgress.stability,
-              difficulty: updatedProgress.difficulty,
-              retrievability: updatedProgress.retrievability,
-              lapses: updatedProgress.lapses,
-              last_reviewed_at: updatedProgress.lastReviewDate,
-              next_review_date: updatedProgress.nextReviewDate
-            },
-            { onConflict: 'user_id,card_id' }
-          )
-          .then((res: any) => {
-          const error = res?.error;
-            if (error) console.warn('[flashcardsService] Erro ao sincronizar progresso no Supabase:', error);
-          }, () => {});
-      } catch (err) {
-        console.warn('[flashcardsService] Falha ao despachar progresso no Supabase:', err);
+      const queueKey = `${userId}_${cardId}`;
+      pendingFlashcardsQueue.set(queueKey, {
+        userId,
+        cardId,
+        payload: {
+          user_id: userId,
+          card_id: cardId,
+          state: updatedProgress.state,
+          repetitions: updatedProgress.repetitions,
+          interval_days: updatedProgress.intervalDays,
+          ease_factor: updatedProgress.easeFactor,
+          stability: updatedProgress.stability,
+          difficulty: updatedProgress.difficulty,
+          retrievability: updatedProgress.retrievability,
+          lapses: updatedProgress.lapses,
+          last_reviewed_at: updatedProgress.lastReviewDate || new Date().toISOString(),
+          next_review_date: updatedProgress.nextReviewDate || new Date().toISOString()
+        }
+      });
+
+      if (pendingFlashcardsQueue.size >= BATCH_FLUSH_MAX_SIZE) {
+        flushPendingFlashcards();
+      } else {
+        if (flashcardsFlushTimeout) clearTimeout(flashcardsFlushTimeout);
+        flashcardsFlushTimeout = setTimeout(() => {
+          flushPendingFlashcards();
+        }, BATCH_FLUSH_INTERVAL_MS);
       }
     }
 

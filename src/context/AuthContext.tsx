@@ -31,6 +31,63 @@ interface AuthContextType {
   refreshUser: () => Promise<void>;
 }
 
+
+function migrateGuestAnswersToUser(userId: string, supabaseClient: any) {
+  if (typeof window === 'undefined' || !userId) return;
+  try {
+    const guestAnswersRaw = localStorage.getItem('bancoresidencia_user_answers_guest') || localStorage.getItem('bancoresidencia_user_answers');
+    if (!guestAnswersRaw) return;
+
+    let guestAnswers: Record<string, any>;
+    try {
+      guestAnswers = JSON.parse(guestAnswersRaw);
+    } catch {
+      return;
+    }
+    if (!guestAnswers || typeof guestAnswers !== 'object' || Object.keys(guestAnswers).length === 0) return;
+
+    const userKey = `bancoresidencia_user_answers_${userId}`;
+    let existingUserAnswers: Record<string, any> = {};
+    try {
+      const existingRaw = localStorage.getItem(userKey);
+      if (existingRaw) existingUserAnswers = JSON.parse(existingRaw);
+    } catch {}
+
+    const merged = { ...guestAnswers, ...existingUserAnswers };
+    localStorage.setItem(userKey, JSON.stringify(merged));
+
+    const payload = Object.entries(guestAnswers).map(([qid, ans]: [string, any]) => ({
+      user_id: userId,
+      question_id: qid,
+      selected_option: ans.letter,
+      is_correct: ans.isCorrect,
+      answered_at: new Date(ans.timestamp || Date.now()).toISOString(),
+      specialty: ans.specialty || null,
+      tema: ans.tema || null,
+      foco: ans.foco || null,
+      subfoco: ans.subfoco || null,
+      difficulty: ans.difficulty || null,
+      banca: ans.banca || null,
+      year: ans.year ? Number(ans.year) : null,
+      error_reason: ans.errorReason || null,
+      student_notes: ans.studentNotes || null,
+      status_retrial: ans.statusRetrial || (ans.isCorrect ? 'recuperado' : 'pendente'),
+      attempts: ans.attempts || [{ letter: ans.letter, isCorrect: ans.isCorrect, timestamp: ans.timestamp || Date.now() }]
+    }));
+
+    if (payload.length > 0) {
+      supabaseClient
+        .from('user_answers')
+        .upsert(payload, { onConflict: 'user_id,question_id' })
+        .then(() => {}, () => {});
+    }
+
+    localStorage.removeItem('bancoresidencia_user_answers_guest');
+  } catch (err) {
+    console.warn('[AuthContext] Aviso na migração de respostas de visitante:', err);
+  }
+}
+
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -264,6 +321,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       if (session?.user) {
         const account = await mapSupabaseUserToAccount(session.user);
         if (isMounted) setPersistedUser(account);
+        migrateGuestAnswersToUser(session.user.id, supabase);
       } else if (event === 'SIGNED_OUT') {
         if (isMounted) setPersistedUser(null);
         localStorage.removeItem(STORAGE_CURRENT_USER_KEY);
@@ -294,6 +352,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         const account = await mapSupabaseUserToAccount(data.user);
         setPersistedUser(account);
         localStorage.removeItem(STORAGE_CURRENT_USER_KEY);
+        migrateGuestAnswersToUser(data.user.id, supabase);
       }
 
       return { success: true };
@@ -387,9 +446,26 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   };
 
   const logout = async () => {
+    const currentUserId = user?.id;
     localStorage.removeItem(STORAGE_CURRENT_USER_KEY);
     localStorage.removeItem(STORAGE_CACHED_USER_KEY);
     setPersistedUser(null);
+
+    // Higienização completa de dados sensíveis da conta no navegador
+    if (currentUserId && typeof window !== 'undefined') {
+      try {
+        localStorage.removeItem(`bancoresidencia_user_answers_${currentUserId}`);
+        localStorage.removeItem(`bancoresidencia_folders_${currentUserId}`);
+        localStorage.removeItem(`bancoresidencia_lists_${currentUserId}`);
+        localStorage.removeItem(`bancoresidencia_bookmarks_${currentUserId}`);
+        localStorage.removeItem(`bancoresidencia_custom_decks_${currentUserId}`);
+        localStorage.removeItem(`bancoresidencia_user_cards_${currentUserId}`);
+        localStorage.removeItem(`bancoresidencia_flashcards_progress_${currentUserId}`);
+        localStorage.removeItem(`user_target_exam_name_${currentUserId}`);
+        localStorage.removeItem(`user_target_exam_date_${currentUserId}`);
+      } catch {}
+    }
+
     try {
       await supabase.auth.signOut();
     } catch {

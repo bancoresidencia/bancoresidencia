@@ -180,6 +180,7 @@ export interface UserAnswerItem {
   statusRetrial?: 'pendente' | 'recuperado';
   lastRetriedAt?: number;
   syncedRemotely?: boolean;
+  serverAnsweredAt?: string;
   // Rastreabilidade do Erro para Sessão de Revisão às Cegas
   previousLetter?: 'A' | 'B' | 'C' | 'D' | 'E';
   previousIsCorrect?: boolean;

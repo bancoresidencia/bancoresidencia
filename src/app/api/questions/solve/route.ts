@@ -1,3 +1,4 @@
+import crypto from 'crypto';
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient as createSupabaseAdminClient } from '@supabase/supabase-js';
 import { createClient as createSupabaseServerClient } from '@/lib/supabase/server';
@@ -49,6 +50,66 @@ function isRateLimited(ip: string): boolean {
 
   entry.count++;
   return false;
+}
+
+
+// Cota de Visitante Stateless com Cookie Assinado HMAC-SHA256 (Imune a reinicialização de lambdas Vercel)
+interface GuestQuotaPayload {
+  date: string;
+  ids: string[];
+}
+
+function getQuotaSecret(): string {
+  return process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'bancoresidencia-guest-quota-secret-key-32b';
+}
+
+function parseAndVerifyGuestQuotaCookie(cookieValue?: string | null): { date: string; questionIds: Set<string> } {
+  const todayStr = new Date().toISOString().slice(0, 10);
+  if (!cookieValue) {
+    return { date: todayStr, questionIds: new Set<string>() };
+  }
+
+  try {
+    const parts = cookieValue.split('.');
+    if (parts.length !== 2) {
+      return { date: todayStr, questionIds: new Set<string>() };
+    }
+    const [payloadB64, signature] = parts;
+
+    const expectedSignature = crypto
+      .createHmac('sha256', getQuotaSecret())
+      .update(payloadB64)
+      .digest('base64url');
+
+    if (signature !== expectedSignature) {
+      return { date: todayStr, questionIds: new Set<string>() };
+    }
+
+    const jsonStr = Buffer.from(payloadB64, 'base64url').toString('utf8');
+    const parsed: GuestQuotaPayload = JSON.parse(jsonStr);
+
+    if (parsed.date !== todayStr || !Array.isArray(parsed.ids)) {
+      return { date: todayStr, questionIds: new Set<string>() };
+    }
+
+    return { date: todayStr, questionIds: new Set(parsed.ids) };
+  } catch {
+    return { date: todayStr, questionIds: new Set<string>() };
+  }
+}
+
+function createSignedGuestQuotaCookie(questionIds: Set<string>): string {
+  const todayStr = new Date().toISOString().slice(0, 10);
+  const payload: GuestQuotaPayload = {
+    date: todayStr,
+    ids: Array.from(questionIds)
+  };
+  const payloadB64 = Buffer.from(JSON.stringify(payload)).toString('base64url');
+  const signature = crypto
+    .createHmac('sha256', getQuotaSecret())
+    .update(payloadB64)
+    .digest('base64url');
+  return `${payloadB64}.${signature}`;
 }
 
 // Rastreamento de cota diária de visitantes por IP contra evasão de login em aba anônima
@@ -334,15 +395,20 @@ export async function POST(req: NextRequest) {
         }
       }
     } else if (!isPrefetch) {
-      // 5.4 Visitante não autenticado (verificação de cota por IP para evitar burla em aba anônima)
+      // 5.4 Visitante não autenticado: verificação via cookie criptográfico assinado + fallback por IP
+      const guestQuota = parseAndVerifyGuestQuotaCookie(req.cookies.get('br_guest_quota')?.value);
       const guestCheck = checkGuestQuota(clientIp, row.id);
-      if (guestCheck.limitReached) {
+
+      const hasSolvedInCookie = guestQuota.questionIds.has(row.id);
+      const isOverLimit = (guestQuota.questionIds.size >= 10 || guestCheck.limitReached) && !hasSolvedInCookie;
+
+      if (isOverLimit) {
         return NextResponse.json(
           {
             success: false,
             limitReached: true,
             error: 'Limite diário de 10 questões para visitantes atingido. Crie sua conta ou faça login para continuar resolvendo.',
-            dailyResolvedCount: guestCheck.count
+            dailyResolvedCount: Math.max(guestQuota.questionIds.size, guestCheck.count)
           },
           { status: 403 }
         );
@@ -358,6 +424,8 @@ export async function POST(req: NextRequest) {
       ? true
       : studentChoice.length > 0 && studentChoice === goldAnswer;
 
+    const serverNow = new Date().toISOString();
+
     // 7. Sincronização em background com metadados clínicos completos (apenas em confirmação oficial, NUNCA no prefetch)
     if (!isPrefetch && studentChoice && row.id) {
       if (authenticatedUser) {
@@ -365,20 +433,40 @@ export async function POST(req: NextRequest) {
         const targetQuestionId = row.id;
         const targetChoice = studentChoice;
         const targetIsCorrect = isCorrect;
-        const finalAttempts = Array.isArray(attempts) && attempts.length > 0
-          ? attempts
-          : [{ letter: targetChoice, isCorrect: targetIsCorrect, timestamp: Date.now() }];
         const finalStatusRetrial = statusRetrial || (targetIsCorrect ? 'recuperado' : 'pendente');
 
         (async () => {
           try {
+            // Reconciliação Monotônica de Tentativas: busca tentativas anteriores para não apagar histórico
+            let finalAttempts = Array.isArray(attempts) && attempts.length > 0
+              ? attempts
+              : [{ letter: targetChoice, isCorrect: targetIsCorrect, timestamp: Date.now() }];
+
+            const { data: existingRow } = await supabaseAdmin
+              .from('user_answers')
+              .select('attempts')
+              .eq('user_id', targetUserId)
+              .eq('question_id', targetQuestionId)
+              .maybeSingle();
+
+            if (existingRow && Array.isArray(existingRow.attempts) && existingRow.attempts.length > 0) {
+              const combinedMap = new Map<string, any>();
+              for (const att of existingRow.attempts) {
+                if (att && att.timestamp) combinedMap.set(`${att.timestamp}_${att.letter}`, att);
+              }
+              for (const att of finalAttempts) {
+                if (att && att.timestamp) combinedMap.set(`${att.timestamp}_${att.letter}`, att);
+              }
+              finalAttempts = Array.from(combinedMap.values()).sort((a, b) => a.timestamp - b.timestamp);
+            }
+
             await supabaseAdmin.from('user_answers').upsert(
               {
                 user_id: targetUserId,
                 question_id: targetQuestionId,
                 selected_option: targetChoice,
                 is_correct: targetIsCorrect,
-                answered_at: new Date().toISOString(),
+                answered_at: serverNow,
                 specialty: row.especialidade || null,
                 tema: row.tema || null,
                 foco: row.foco || null,
@@ -403,9 +491,10 @@ export async function POST(req: NextRequest) {
     }
 
     // Resposta imediata em poucos milissegundos
-    return NextResponse.json({
+    const responseObj = NextResponse.json({
       success: true,
       isPrefetch: Boolean(isPrefetch),
+      answeredAt: serverNow,
       limitReached: false,
       questionId: row.id,
       correctAnswer: goldAnswer,
@@ -414,6 +503,22 @@ export async function POST(req: NextRequest) {
       commentary: row.commentary || '',
       options: Array.isArray(row.options) ? row.options : []
     });
+
+    // Se for confirmação oficial de visitante, atualiza o cookie assinado inviolável
+    if (!authenticatedUser && !isPrefetch && row.id) {
+      const guestQuota = parseAndVerifyGuestQuotaCookie(req.cookies.get('br_guest_quota')?.value);
+      guestQuota.questionIds.add(row.id);
+      const signedCookie = createSignedGuestQuotaCookie(guestQuota.questionIds);
+      responseObj.cookies.set('br_guest_quota', signedCookie, {
+        httpOnly: true,
+        secure: process.env.NODE_ENV === 'production',
+        sameSite: 'lax',
+        maxAge: 86400 * 2,
+        path: '/'
+      });
+    }
+
+    return responseObj;
   } catch (err: unknown) {
     const msg = err instanceof Error ? err.message : 'Erro interno do servidor';
     console.error('[API Solve] Exceção:', err);

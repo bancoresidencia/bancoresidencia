@@ -21,6 +21,7 @@
     "test:fase5": "node scripts/test_fase5_flashcards_study.mjs",
     "test:fase6": "node scripts/test_fase6_preferences_exam.mjs",
     "test:faseA": "npx tsx scripts/test_faseA_resolution_shield.ts",
+    "test:mitigacao": "npx tsx scripts/test_mitigacao_riscos.ts",
     "test:security": "node --experimental-strip-types tests/questionService.test.ts",
     "pull": "node scripts/safe-pull.mjs",
     "submit": "node scripts/safe-submit.mjs",

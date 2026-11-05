@@ -18,10 +18,12 @@ import {
   loadUserLists,
   saveUserLists,
   deleteUserListFromDb,
-  deleteUserFolderFromDb
+  deleteUserFolderFromDb,
+  getFolderStorageKey,
+  getListStorageKey
 } from '@/services/userListsService';
 import { calculatePercentile } from '@/utils/percentile';
-import { loadUserBookmarks, toggleUserBookmark } from '@/services/userBookmarksService';
+import { loadUserBookmarks, toggleUserBookmark, getBookmarksStorageKey } from '@/services/userBookmarksService';
 import { createClient } from '@/lib/supabase/client';
 
 interface StudentDataContextType {
@@ -95,17 +97,21 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
   >({});
 
   // Sincronização e Reconciliação SWR com o Supabase
-  const syncUserAnswersFromSupabase = useCallback(async (userId?: string | null) => {
+  const syncUserAnswersFromSupabase = useCallback(async (userId?: string | null, preloadedRows?: any[]) => {
     if (!userId || userId === 'demo-student' || typeof window === 'undefined') return;
 
     try {
       const supabase = createClient();
-      const { data: remoteRows, error } = await supabase
-        .from('user_answers')
-        .select('*')
-        .eq('user_id', userId);
+      let remoteRows = preloadedRows;
+      if (!remoteRows) {
+        const { data, error } = await supabase
+          .from('user_answers')
+          .select('question_id, selected_option, is_correct, answered_at, specialty, tema, foco, subfoco, difficulty, banca, year, status_retrial, error_reason, student_notes, attempts')
+          .eq('user_id', userId);
 
-      if (error || !remoteRows) return;
+        if (error || !data) return;
+        remoteRows = data;
+      }
 
       setUserAnswers((currentLocal) => {
         const merged: Record<string, UserAnswerItem> = { ...currentLocal };
@@ -159,7 +165,16 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
                 errorReason: (row.error_reason as any) || local.errorReason,
                 studentNotes: row.student_notes || local.studentNotes,
                 statusRetrial: row.status_retrial || local.statusRetrial,
-                attempts: remoteAttempts.length >= (local.attempts?.length || 0) ? remoteAttempts : local.attempts
+                attempts: (() => {
+                  const combinedMap = new Map<string, any>();
+                  for (const a of (local.attempts || [])) {
+                    if (a && a.timestamp) combinedMap.set(`${a.timestamp}_${a.letter}`, a);
+                  }
+                  for (const a of remoteAttempts) {
+                    if (a && a.timestamp) combinedMap.set(`${a.timestamp}_${a.letter}`, a);
+                  }
+                  return Array.from(combinedMap.values()).sort((a, b) => a.timestamp - b.timestamp);
+                })()
               };
               hasChanges = true;
             } else {
@@ -207,7 +222,7 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
           supabase
             .from('user_answers')
             .upsert(payload, { onConflict: 'user_id,question_id' })
-            .then(({ error: upErr }) => {
+            .then(({ error: upErr }: any) => {
               if (upErr) console.warn('[StudentDataContext] Aviso ao sincronizar respostas pendentes no Supabase:', upErr);
             }, () => {});
         }
@@ -256,12 +271,61 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
   const [bookmarkedQuestionIds, setBookmarkedQuestionIds] = useState<Record<string, boolean>>({});
 
   const refreshUserData = useCallback(async () => {
+    if (!user?.id) {
+      try {
+        const [userFolds, userLst, userBms] = await Promise.all([
+          loadUserFolders(null),
+          loadUserLists(null),
+          loadUserBookmarks(null)
+        ]);
+        setFolders(userFolds);
+        setLists(userLst);
+        if (userBms) setBookmarkedQuestionIds(userBms);
+      } catch {}
+      return;
+    }
+
+    try {
+      // 1. Otimização de Carga: Inicialização via endpoint de bootstrap unificado (1 único roundtrip HTTP)
+      const res = await fetch('/api/student/bootstrap');
+      if (res.ok) {
+        const data = await res.json();
+        if (data.success && data.authenticated) {
+          if (Array.isArray(data.folders)) {
+            setFolders(data.folders);
+            try { localStorage.setItem(getFolderStorageKey(user.id), JSON.stringify(data.folders)); } catch {}
+          }
+          if (Array.isArray(data.lists)) {
+            setLists(data.lists);
+            try { localStorage.setItem(getListStorageKey(user.id), JSON.stringify(data.lists)); } catch {}
+          }
+          if (Array.isArray(data.bookmarks)) {
+            const bmMap: Record<string, boolean> = {};
+            for (const id of data.bookmarks) bmMap[id] = true;
+            setBookmarkedQuestionIds(bmMap);
+            try { localStorage.setItem(getBookmarksStorageKey(user.id), JSON.stringify(bmMap)); } catch {}
+          }
+          if (data.profile?.preferences && typeof window !== 'undefined') {
+            window.dispatchEvent(new CustomEvent('bancoresidencia_preferences_synced', {
+              detail: data.profile.preferences
+            }));
+          }
+          if (Array.isArray(data.answers)) {
+            syncUserAnswersFromSupabase(user.id, data.answers);
+          }
+          return;
+        }
+      }
+    } catch {
+      // Fallback gracioso para carregamento individual se houver falha de rede
+    }
+
     try {
       const [userFolds, userLst, userBms] = await Promise.all([
-        loadUserFolders(user?.id),
-        loadUserLists(user?.id),
-        loadUserBookmarks(user?.id),
-        user?.id ? syncUserAnswersFromSupabase(user.id) : Promise.resolve()
+        loadUserFolders(user.id),
+        loadUserLists(user.id),
+        loadUserBookmarks(user.id),
+        syncUserAnswersFromSupabase(user.id)
       ]);
       setFolders(userFolds);
       setLists(userLst);
@@ -319,39 +383,45 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
     return () => window.removeEventListener('bancoresidencia_preferences_synced', handleSync);
   }, []);
 
+  const fontSizeDebounceRef = useRef<NodeJS.Timeout | null>(null);
+
   const setFontSize = useCallback((size: 'xs' | 'sm' | 'base' | 'lg' | 'xl') => {
     setFontSizeState(size);
     try {
       localStorage.setItem('bancoresidencia_question_font_size', size);
     } catch {}
 
-    // Sincroniza em background com preferences no Supabase
-    try {
-      const supabase = createClient();
-      supabase.auth.getSession().then(({ data: { session } }) => {
+    // Sincroniza em background com preferences no Supabase com debounce de 600ms
+    if (fontSizeDebounceRef.current) {
+      clearTimeout(fontSizeDebounceRef.current);
+    }
+    fontSizeDebounceRef.current = setTimeout(async () => {
+      try {
+        const supabase = createClient();
+        const { data: { session } } = await supabase.auth.getSession();
         if (session?.user?.id) {
-          supabase
+          const { data: profile } = await supabase
             .from('profiles')
             .select('preferences')
             .eq('id', session.user.id)
-            .maybeSingle()
-            .then(({ data: profile }) => {
-              const currentPrefs = (profile?.preferences as Record<string, unknown>) || {};
-              supabase
-                .from('profiles')
-                .update({
-                  preferences: {
-                    ...currentPrefs,
-                    fontSize: size,
-                    updatedAt: new Date().toISOString()
-                  }
-                })
-                .eq('id', session.user.id)
-                .then(() => {});
-            });
+            .maybeSingle();
+
+          const currentPrefs = (profile?.preferences as Record<string, unknown>) || {};
+          await supabase
+            .from('profiles')
+            .update({
+              preferences: {
+                ...currentPrefs,
+                fontSize: size,
+                updatedAt: new Date().toISOString()
+              }
+            })
+            .eq('id', session.user.id);
         }
-      });
-    } catch {}
+      } catch (err) {
+        console.warn('[StudentDataContext] Erro ao sincronizar fontSize no Supabase:', err);
+      }
+    }, 600);
   }, []);
 
   // Filtros de Desempenho
@@ -517,7 +587,7 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
       isCorrect: boolean,
       metadata?: Partial<UserAnswerItem>
     ) => {
-      const answerTimestamp = Date.now();
+      const answerTimestamp = (metadata as any)?.serverAnsweredAt ? new Date((metadata as any).serverAnsweredAt).getTime() : Date.now();
       const previousAnswer = userAnswersRef.current[questionId];
       const previousAttempts = previousAnswer?.attempts || [];
 

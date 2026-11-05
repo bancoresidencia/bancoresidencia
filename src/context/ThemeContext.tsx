@@ -576,34 +576,41 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
     }
   }, [mode, accent]);
 
-// Sincronização em background com as preferências no perfil do Supabase
-  const syncPreferencesToCloud = useCallback(async (newMode: ThemeMode, newAccent: AccentColor) => {
-    try {
-      const supabase = createClient();
-      const { data: { session } } = await supabase.auth.getSession();
-      if (session?.user?.id) {
-        const { data: profile } = await supabase
-          .from('profiles')
-          .select('preferences')
-          .eq('id', session.user.id)
-          .maybeSingle();
+// Sincronização em background com as preferências no perfil do Supabase com debounce de 600ms
+  const themeDebounceRef = useRef<NodeJS.Timeout | null>(null);
 
-        const currentPrefs = (profile?.preferences as Record<string, unknown>) || {};
-        const updatedPrefs = {
-          ...currentPrefs,
-          themeMode: newMode,
-          accentColor: newAccent,
-          updatedAt: new Date().toISOString()
-        };
-
-        await supabase
-          .from('profiles')
-          .update({ preferences: updatedPrefs })
-          .eq('id', session.user.id);
-      }
-    } catch {
-      // Ignora falhas de conexão de rede
+  const syncPreferencesToCloud = useCallback((newMode: ThemeMode, newAccent: AccentColor) => {
+    if (themeDebounceRef.current) {
+      clearTimeout(themeDebounceRef.current);
     }
+    themeDebounceRef.current = setTimeout(async () => {
+      try {
+        const supabase = createClient();
+        const { data: { session } } = await supabase.auth.getSession();
+        if (session?.user?.id) {
+          const { data: profile } = await supabase
+            .from('profiles')
+            .select('preferences')
+            .eq('id', session.user.id)
+            .maybeSingle();
+
+          const currentPrefs = (profile?.preferences as Record<string, unknown>) || {};
+          const updatedPrefs = {
+            ...currentPrefs,
+            themeMode: newMode,
+            accentColor: newAccent,
+            updatedAt: new Date().toISOString()
+          };
+
+          await supabase
+            .from('profiles')
+            .update({ preferences: updatedPrefs })
+            .eq('id', session.user.id);
+        }
+      } catch {
+        // Ignora falhas temporárias de conexão
+      }
+    }, 600);
   }, []);
 
   // Ouve evento disparado pelo AuthContext ao carregar perfil remoto do Supabase

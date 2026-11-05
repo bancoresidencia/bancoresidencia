@@ -222,3 +222,4 @@ runTests().catch((err) => {
   console.error('\n❌ ERRO NO TESTE DA FASE A:', err);
   process.exit(1);
 });
+
