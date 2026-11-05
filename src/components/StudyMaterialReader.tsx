@@ -16,7 +16,19 @@ import {
 } from 'lucide-react';
 import { StudyMaterialItem } from '@/types/flashcards';
 import { useTheme } from '@/context/ThemeContext';
-import { MermaidDiagram } from './study-material/MermaidDiagram';
+import dynamic from 'next/dynamic';
+
+const MermaidDiagram = dynamic(
+  () => import('./study-material/MermaidDiagram').then((mod) => mod.MermaidDiagram),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="p-6 my-4 rounded-xl border border-dashed border-slate-200 dark:border-zinc-800 bg-slate-50/50 dark:bg-zinc-900/50 flex items-center justify-center text-xs text-slate-400 animate-pulse">
+        Carregando esquema decisório...
+      </div>
+    )
+  }
+);
 import { FigoAnatomicalDiagram } from './study-material/FigoAnatomicalDiagram';
 import { UniversalRecurrenceStatsCard } from './study-material/UniversalRecurrenceStatsCard';
 import { ExamRecurrenceStatsCard } from './study-material/ExamRecurrenceStatsCard';

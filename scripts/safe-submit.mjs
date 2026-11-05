@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 import { execSync } from 'child_process';
 import readline from 'readline';
+import fs from 'fs';
+import path from 'path';
 
 function run(cmd, options = {}) {
   return execSync(cmd, { stdio: 'inherit', encoding: 'utf-8', ...options });
@@ -63,7 +65,32 @@ async function main() {
       process.exit(1);
     }
 
-    // 4. Barreira de Qualidade (Pre-flight QA): Lint e Testes
+    // 4. Barreira de Proteção contra Arquivos Pesados Acidentais em src/ (> 1.5MB)
+    console.log('\n🛡️ [Proteção de Bundle] Verificando se há arquivos gigantes em src/...');
+    const largeFiles = [];
+    function scanDir(dir) {
+      const entries = fs.readdirSync(dir, { withFileTypes: true });
+      for (const entry of entries) {
+        const full = path.join(dir, entry.name);
+        if (entry.isDirectory()) scanDir(full);
+        else if (entry.isFile()) {
+          const stats = fs.statSync(full);
+          if (stats.size > 1.5 * 1024 * 1024 && !entry.name.endsWith('.map')) {
+            largeFiles.push({ file: full, sizeMb: (stats.size / 1024 / 1024).toFixed(2) });
+          }
+        }
+      }
+    }
+    if (fs.existsSync('src')) scanDir('src');
+    if (largeFiles.length > 0) {
+      console.error('\n❌ BLOQUEADO: Foram encontrados arquivos gigantes em src/ que inflariam o bundle:');
+      largeFiles.forEach(f => console.error(`   - ${f.file} (${f.sizeMb} MB)`));
+      console.error('Mova esses arquivos para fora de src/ ou utilize carregamento remoto.\n');
+      process.exit(1);
+    }
+    console.log('✅ Nenhum arquivo pesado encontrado em src/ (limite de 1.5MB respeitado)!');
+
+    // 5. Barreira de Qualidade (Pre-flight QA): Lint e Testes
     console.log('\n🔍 [Passo 1/3] Executando verificação de código (ESLint)...');
     try {
       run('npm run lint');
@@ -77,6 +104,9 @@ async function main() {
     console.log('\n🧪 [Passo 2/3] Executando suíte de testes unitários...');
     try {
       run('npm run test:irt');
+      if (fs.existsSync('scripts/tests/test_fase4_bundle_analysis.mjs')) {
+        run('node scripts/tests/test_fase4_bundle_analysis.mjs');
+      }
       console.log('✅ Todos os testes passaram com sucesso!');
     } catch {
       console.error('\n❌ BLOQUEADO: Houve falha nos testes unitários.');
@@ -84,7 +114,7 @@ async function main() {
       process.exit(1);
     }
 
-    // 5. Definir a mensagem de commit
+    // 6. Definir a mensagem de commit
     let commitMessage = process.argv.slice(2).join(' ').trim();
     if (!commitMessage) {
       if (process.stdin.isTTY) {
@@ -100,12 +130,12 @@ async function main() {
 
     console.log(`\n📝 Mensagem de commit: "${commitMessage}"`);
 
-    // 6. Adicionar arquivos e commitar
+    // 7. Adicionar arquivos e commitar
     console.log('\n💾 [Passo 3/3] Registrando e enviando alterações...');
     run('git add .');
     run(`git commit -m "${commitMessage.replace(/"/g, '\\"')}"`);
 
-    // 7. Enviar para o repositório remoto
+    // 8. Enviar para o repositório remoto
     console.log(`\n⬆️ Enviando para o GitHub (origin/${currentBranch})...`);
     run(`git push origin ${currentBranch}`);
 

@@ -22,8 +22,8 @@ if (fs.existsSync('.env.local')) {
 }
 
 // Modelos
-const MODEL_FLASH_35  = 'gemini-2.0-flash'; // alias para "Flash Standard 3.5" disponível
-const MODEL_FLASH_LITE = 'gemini-2.0-flash-lite';
+const MODEL_FLASH_35 = 'gemini-3.5-flash'; // alias para "Flash Standard 3.5" disponível
+const MODEL_FLASH_LITE = 'gemini-3.5-flash-lite';
 
 // Chave (pega a primeira disponível)
 const API_KEY = Object.keys(env)
@@ -68,63 +68,80 @@ const letters = QUESTION.options.map(o => o.letter).join(', ');
 // Acumula custos e tokens
 const telemetry = [];
 
-async function callGemini(modelId, prompt, label) {
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${modelId}:generateContent?key=${API_KEY}`;
-  const t0 = Date.now();
+async function callGemini(modelId, prompt, label, retries = 6) {
+  const url = 'https://generativelanguage.googleapis.com/v1beta/models/' + modelId + ':generateContent?key=' + API_KEY;
+  for (let attempt = 1; attempt <= retries; attempt++) {
+    const t0 = Date.now();
+    try {
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          contents: [{ parts: [{ text: prompt }] }],
+          generationConfig: {
+            responseMimeType: 'application/json',
+            temperature: 0.15,
+            maxOutputTokens: 4096
+          }
+        })
+      });
 
-  const res = await fetch(url, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      contents: [{ parts: [{ text: prompt }] }],
-      generationConfig: {
-        responseMimeType: 'application/json',
-        temperature: 0.15,
-        maxOutputTokens: 4096
+      const latencyMs = Date.now() - t0;
+
+      if (res.status === 429) {
+        const waitMs = attempt * 12000;
+        console.log('[429] Rate limit em ' + label + '. Aguardando ' + (waitMs/1000) + 's (tentativa ' + attempt + '/' + retries + ')...');
+        await new Promise(r => setTimeout(r, waitMs));
+        continue;
       }
-    })
-  });
 
-  const latencyMs = Date.now() - t0;
+      if (!res.ok) {
+        const err = await res.text();
+        if (attempt < retries) {
+          console.warn('[HTTP ' + res.status + '] Tentativa ' + attempt + '. Aguardando 5s...');
+          await new Promise(r => setTimeout(r, 5000));
+          continue;
+        }
+        throw new Error('HTTP ' + res.status + ' em ' + label + ': ' + err.slice(0, 200));
+      }
 
-  if (!res.ok) {
-    const err = await res.text();
-    throw new Error(`HTTP ${res.status} em [${label}]: ${err.slice(0, 200)}`);
+      const json = await res.json();
+      const rawText = json.candidates?.[0]?.content?.parts?.[0]?.text || '';
+      const usage = json.usageMetadata || {};
+      const inputTk = usage.promptTokenCount || 0;
+      const outputTk = usage.candidatesTokenCount || 0;
+      const pricing = PRICING[modelId];
+      const costUSD = (inputTk / 1e6) * pricing.input + (outputTk / 1e6) * pricing.output;
+
+      const record = { label, model: pricing.label, inputTk, outputTk, latencyMs, costUSD };
+      telemetry.push(record);
+
+      console.log('\n' + '-'.repeat(60));
+      console.log('📡 [' + label + '] ' + pricing.label);
+      console.log('   Input: ' + inputTk + ' tk | Output: ' + outputTk + ' tk | Latência: ' + latencyMs + 'ms');
+      console.log('   Custo: $' + costUSD.toFixed(6) + ' USD');
+      console.log('-'.repeat(60));
+
+      let parsed = null;
+      try {
+        let clean = rawText.trim().replace(/^```json\s*/i, '').replace(/```\s*$/i, '').trim();
+        const a = clean.indexOf('{'), b = clean.lastIndexOf('}');
+        if (a !== -1 && b > a) clean = clean.slice(a, b + 1);
+        parsed = JSON.parse(clean);
+      } catch (e) {
+        console.warn('JSON malformado em ' + label + ': ' + e.message);
+      }
+
+      await new Promise(r => setTimeout(r, 2000));
+      return { parsed, rawText, inputTk, outputTk, costUSD };
+    } catch (err) {
+      if (attempt === retries) throw err;
+      console.warn('Erro em ' + label + ': ' + err.message + '. Retentando...');
+      await new Promise(r => setTimeout(r, 4000));
+    }
   }
-
-  const json = await res.json();
-  const rawText = json.candidates?.[0]?.content?.parts?.[0]?.text || '';
-  const usage = json.usageMetadata || {};
-  const inputTk = usage.promptTokenCount || 0;
-  const outputTk = usage.candidatesTokenCount || 0;
-  const pricing = PRICING[modelId];
-  const costUSD = (inputTk / 1e6) * pricing.input + (outputTk / 1e6) * pricing.output;
-
-  const record = { label, model: pricing.label, inputTk, outputTk, latencyMs, costUSD };
-  telemetry.push(record);
-
-  console.log(`\n${'─'.repeat(60)}`);
-  console.log(`📡 [${label}] ${pricing.label}`);
-  console.log(`   Input: ${inputTk} tokens | Output: ${outputTk} tokens | Latência: ${latencyMs}ms`);
-  console.log(`   Custo: $${costUSD.toFixed(6)} USD`);
-  console.log(`${'─'.repeat(60)}`);
-
-  // Parse JSON
-  let parsed = null;
-  try {
-    let clean = rawText.trim().replace(/^```json\s*/i, '').replace(/```\s*$/i, '').trim();
-    const a = clean.indexOf('{'), b = clean.lastIndexOf('}');
-    if (a !== -1 && b > a) clean = clean.slice(a, b + 1);
-    parsed = JSON.parse(clean);
-  } catch (e) {
-    console.warn(`⚠️ JSON malformado em [${label}]: ${e.message}`);
-    console.warn('Raw:', rawText.slice(0, 300));
-  }
-
-  return { parsed, rawText, inputTk, outputTk, costUSD };
 }
 
-// ─── CALL 1: Flash 3.5 — Justificativas das Alternativas ────────────────────
 const PROMPT_CALL1 = `Você é um preceptor médico especialista em provas de Residência Médica e Revalida no Brasil.
 
 Questão:

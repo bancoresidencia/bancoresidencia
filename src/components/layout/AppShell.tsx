@@ -18,9 +18,20 @@ import {
 import { Sidebar } from '@/components/Sidebar';
 import { GlobalSearchBar } from '@/components/GlobalSearchBar';
 import { ThemeSelector } from '@/components/ThemeSelector';
-import { KeyboardShortcutsModal } from '@/components/KeyboardShortcutsModal';
-import { OnboardingModal } from '@/components/OnboardingModal';
-import { SubscriptionModal } from '@/components/SubscriptionModal';
+import dynamic from 'next/dynamic';
+
+const KeyboardShortcutsModal = dynamic(
+  () => import('@/components/KeyboardShortcutsModal').then((mod) => mod.KeyboardShortcutsModal),
+  { ssr: false }
+);
+const OnboardingModal = dynamic(
+  () => import('@/components/OnboardingModal').then((mod) => mod.OnboardingModal),
+  { ssr: false }
+);
+const SubscriptionModal = dynamic(
+  () => import('@/components/SubscriptionModal').then((mod) => mod.SubscriptionModal),
+  { ssr: false }
+);
 import { useAuth } from '@/context/AuthContext';
 import { useTheme } from '@/context/ThemeContext';
 import { useSubscription } from '@/context/SubscriptionContext';
@@ -388,30 +399,36 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
         </div>
       )}
 
-      {/* 5. Modais Globais do Sistema */}
-      <KeyboardShortcutsModal
-        isOpen={isShortcutsModalOpen}
-        onClose={() => setIsShortcutsModalOpen(false)}
-      />
+      {/* 5. Modais Globais do Sistema (Carregados sob demanda apenas quando ativados) */}
+      {isShortcutsModalOpen && (
+        <KeyboardShortcutsModal
+          isOpen={isShortcutsModalOpen}
+          onClose={() => setIsShortcutsModalOpen(false)}
+        />
+      )}
 
-      <OnboardingModal
-        isOpen={isOnboardingOpen}
-        onClose={() => setIsOnboardingOpen(false)}
-        onComplete={(action) => {
-          setIsOnboardingOpen(false);
-          if (action === 'plans') {
-            router.push('/checkout');
-          } else if (action === 'questions') {
-            router.push('/questoes');
-          }
-        }}
-      />
+      {isOnboardingOpen && (
+        <OnboardingModal
+          isOpen={isOnboardingOpen}
+          onClose={() => setIsOnboardingOpen(false)}
+          onComplete={(action) => {
+            setIsOnboardingOpen(false);
+            if (action === 'plans') {
+              router.push('/checkout');
+            } else if (action === 'questions') {
+              router.push('/questoes');
+            }
+          }}
+        />
+      )}
 
-      <SubscriptionModal
-        isOpen={isUpgradeModalOpen}
-        onClose={closeUpgradeModal}
-        currentPlan={plan}
-      />
+      {isUpgradeModalOpen && (
+        <SubscriptionModal
+          isOpen={isUpgradeModalOpen}
+          onClose={closeUpgradeModal}
+          currentPlan={plan}
+        />
+      )}
     </div>
   );
 };

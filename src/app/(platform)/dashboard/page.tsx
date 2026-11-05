@@ -2,7 +2,20 @@
 
 import React from 'react';
 import { useRouter } from 'next/navigation';
-import { StudentHomeDashboard } from '@/components/StudentHomeDashboard';
+import dynamic from 'next/dynamic';
+
+const StudentHomeDashboard = dynamic(
+  () => import('@/components/StudentHomeDashboard').then((mod) => mod.StudentHomeDashboard),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="min-h-[70vh] flex flex-col items-center justify-center gap-3">
+        <div className="w-9 h-9 rounded-full border-2 border-primary border-t-transparent animate-spin" />
+        <span className="text-xs text-slate-400 font-medium">Carregando painel de estudos...</span>
+      </div>
+    )
+  }
+);
 import { useAuth } from '@/context/AuthContext';
 import { useStudentData } from '@/context/StudentDataContext';
 import { ActiveTab, QuestionList } from '@/types';
