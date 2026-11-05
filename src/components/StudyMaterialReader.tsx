@@ -12,10 +12,27 @@ import {
   ChevronLeft,
   ChevronRight,
   Stethoscope,
-  HeartPulse
+  HeartPulse,
+  Highlighter,
+  Check
 } from 'lucide-react';
 import { StudyMaterialItem } from '@/types/flashcards';
 import { useTheme } from '@/context/ThemeContext';
+import {
+  HighlightColor,
+  HighlightStyle,
+  HIGHLIGHT_COLORS,
+  StudyHighlight
+} from '@/types/studyMaterialAnnotations';
+import { studyAnnotationsService } from '@/services/studyAnnotationsService';
+import { MEDICAL_GLOSSARY } from '@/data/medicalGlossary';
+import { flashcardsService } from '@/services/flashcardsService';
+import { TextHighlightToolbar } from './study-material/TextHighlightToolbar';
+import { MedicalGlossaryTooltip } from './study-material/MedicalGlossaryTooltip';
+import { ExamTrapBadge } from './study-material/ExamTrapBadge';
+import { ClozeStudyToggle } from './study-material/ClozeStudyToggle';
+import { StudyHighlightsDrawer } from './study-material/StudyHighlightsDrawer';
+import { useAuth } from '@/context/AuthContext';
 import dynamic from 'next/dynamic';
 
 const MermaidDiagram = dynamic(
@@ -56,6 +73,185 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
   onPracticeFlashcards
 }) => {
   const { accentConfig } = useTheme();
+  const { user } = useAuth();
+  const articleRef = useRef<HTMLElement | null>(null);
+
+  // Estados de Grifos & Destaques de Texto
+  const [highlights, setHighlights] = useState<StudyHighlight[]>([]);
+  const [selectedToolbarState, setSelectedToolbarState] = useState<{
+    position: { top: number; left: number };
+    selectedText: string;
+    existingHighlight?: StudyHighlight | null;
+  } | null>(null);
+  const [isHighlightsDrawerOpen, setIsHighlightsDrawerOpen] = useState<boolean>(false);
+  const [toastMessage, setToastMessage] = useState<string | null>(null);
+
+  // Estados do Modo Oclusão Ativa (Cloze / Blur Mode)
+  const [isClozeMode, setIsClozeMode] = useState<boolean>(false);
+  const [revealAllCloze, setRevealAllCloze] = useState<boolean>(false);
+  const [revealedClozeIds, setRevealedClozeIds] = useState<Set<string>>(new Set());
+
+  // Carregamento inicial de grifos do material
+  useEffect(() => {
+    if (material?.id) {
+      const loaded = studyAnnotationsService.loadMaterialHighlights(material.id, user?.id);
+      setHighlights(loaded);
+    }
+  }, [material?.id, user?.id]);
+
+  const showToast = (msg: string) => {
+    setToastMessage(msg);
+    setTimeout(() => setToastMessage(null), 3000);
+  };
+
+  // Captura seleção de texto dentro do artigo
+  const handleTextSelection = () => {
+    setTimeout(() => {
+      const selection = window.getSelection();
+      if (!selection || selection.isCollapsed) return;
+      const text = selection.toString().trim();
+      if (text.length < 2) return;
+
+      if (articleRef.current && articleRef.current.contains(selection.anchorNode)) {
+        try {
+          const range = selection.getRangeAt(0);
+          const rect = range.getBoundingClientRect();
+          const existing = highlights.find(
+            (h) => h.textQuote.toLowerCase() === text.toLowerCase()
+          );
+
+          setSelectedToolbarState({
+            position: {
+              top: rect.top,
+              left: rect.left + rect.width / 2
+            },
+            selectedText: text,
+            existingHighlight: existing || null
+          });
+        } catch {
+          // fallback silencioso
+        }
+      }
+    }, 50);
+  };
+
+  const handleOpenHighlightToolbar = (hl: StudyHighlight, e: React.MouseEvent) => {
+    e.stopPropagation();
+    const rect = (e.currentTarget as HTMLElement).getBoundingClientRect();
+    setSelectedToolbarState({
+      position: {
+        top: rect.top,
+        left: rect.left + rect.width / 2
+      },
+      selectedText: hl.textQuote,
+      existingHighlight: hl
+    });
+  };
+
+  const handleApplyHighlight = (color: HighlightColor, style: HighlightStyle, note?: string) => {
+    if (!selectedToolbarState) return;
+    const text = selectedToolbarState.selectedText;
+    const existing = selectedToolbarState.existingHighlight;
+
+    if (existing) {
+      const updated = studyAnnotationsService.updateHighlight(
+        material.id,
+        existing.id,
+        { color, style, note },
+        user?.id
+      );
+      setHighlights(updated);
+    } else {
+      const newHighlight: StudyHighlight = {
+        id: `hl_${Date.now()}_${Math.random().toString(36).substring(2, 7)}`,
+        materialId: material.id,
+        userId: user?.id,
+        textQuote: text,
+        color,
+        style,
+        note,
+        createdAt: new Date().toISOString()
+      };
+      const updated = studyAnnotationsService.addHighlight(
+        material.id,
+        newHighlight,
+        user?.id
+      );
+      setHighlights(updated);
+    }
+
+    window.getSelection()?.removeAllRanges();
+    setSelectedToolbarState(null);
+    showToast('Destaque salvo no resumo!');
+  };
+
+  const handleRemoveHighlight = (id: string) => {
+    const updated = studyAnnotationsService.removeHighlight(material.id, id, user?.id);
+    setHighlights(updated);
+    setSelectedToolbarState(null);
+    showToast('Marcação removida');
+  };
+
+  const handleUpdateHighlightNote = (id: string, note?: string) => {
+    const updated = studyAnnotationsService.updateHighlight(
+      material.id,
+      id,
+      { note },
+      user?.id
+    );
+    setHighlights(updated);
+    showToast(note ? 'Anotação atualizada!' : 'Anotação removida');
+  };
+
+  const handleCreateFlashcard = (textQuote: string) => {
+    const newCard = {
+      id: `card_cloze_${Date.now()}_${Math.random().toString(36).substring(2, 6)}`,
+      front: `No contexto de ${material.title}: {{c1::${textQuote}}}`,
+      back: textQuote,
+      specialty: material.specialty,
+      theme: material.theme,
+      focus: material.focus,
+      comment: `Extraído do resumo clínico oficial "${material.title}".`,
+      priority: 'essential' as const
+    };
+
+    flashcardsService.saveNewFlashcard(newCard, user?.id);
+    showToast('Flashcard Cloze criado e adicionado à sua fila de estudos!');
+    setSelectedToolbarState(null);
+  };
+
+  const handleNavigateToHighlight = (textQuote: string) => {
+    setIsHighlightsDrawerOpen(false);
+    setTimeout(() => {
+      if (!articleRef.current) return;
+      const marks = articleRef.current.querySelectorAll('mark');
+      for (const mark of Array.from(marks)) {
+        if (
+          mark.textContent?.toLowerCase().includes(textQuote.toLowerCase()) ||
+          textQuote.toLowerCase().includes(mark.textContent?.toLowerCase() || '')
+        ) {
+          mark.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          mark.classList.add('ring-4', 'ring-amber-400', 'ring-offset-2');
+          setTimeout(() => {
+            mark.classList.remove('ring-4', 'ring-amber-400', 'ring-offset-2');
+          }, 2000);
+          break;
+        }
+      }
+    }, 150);
+  };
+
+  const toggleRevealCloze = (clozeId: string) => {
+    setRevealedClozeIds((prev) => {
+      const next = new Set(prev);
+      if (next.has(clozeId)) {
+        next.delete(clozeId);
+      } else {
+        next.add(clozeId);
+      }
+      return next;
+    });
+  };
 
   // Formatador de expressões matemáticas e clínicas (LaTeX -> Símbolos UTF-8 limpos)
   const formatMedicalMath = (raw: string): string => {
@@ -126,6 +322,84 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
     return text.trim();
   };
 
+  // Aplica marcações de grifos do estudante e tooltips do glossário médico
+  const applyHighlightsAndGlossary = (
+    textSegment: string,
+    contextKey: string
+  ): React.ReactNode => {
+    if (!textSegment) return null;
+
+    // 1. Prioridade: Destaques salvos pelo aluno (ordenados por maior extensão)
+    const sortedHighlights = [...highlights].sort(
+      (a, b) => b.textQuote.length - a.textQuote.length
+    );
+
+    for (const hl of sortedHighlights) {
+      if (!hl.textQuote) continue;
+      const quote = hl.textQuote;
+      const lowerText = textSegment.toLowerCase();
+      const idx = lowerText.indexOf(quote.toLowerCase());
+
+      if (idx !== -1) {
+        const before = textSegment.slice(0, idx);
+        const matched = textSegment.slice(idx, idx + quote.length);
+        const after = textSegment.slice(idx + quote.length);
+        const config = HIGHLIGHT_COLORS[hl.color] || HIGHLIGHT_COLORS.yellow;
+
+        return (
+          <React.Fragment key={`${contextKey}-hl-${hl.id}`}>
+            {applyHighlightsAndGlossary(before, `${contextKey}-b`)}
+            <mark
+              data-highlight-id={hl.id}
+              onClick={(e) => handleOpenHighlightToolbar(hl, e)}
+              className={`rounded px-1 py-0.5 mx-0.5 cursor-pointer transition-all duration-150 ${config.bgClass} ${hl.style === 'underline' ? 'underline decoration-2' : ''
+                } ${hl.style === 'strikethrough' ? 'line-through' : ''}`}
+              title={hl.note ? `Nota: ${hl.note}` : `${config.label} (Clique para editar/remover)`}
+            >
+              {matched}
+              {hl.note && (
+                <span
+                  className="ml-1 inline-flex items-center text-[10px] text-amber-500 font-bold select-none"
+                  title={`Nota: ${hl.note}`}
+                >
+                  📝
+                </span>
+              )}
+            </mark>
+            {applyHighlightsAndGlossary(after, `${contextKey}-a`)}
+          </React.Fragment>
+        );
+      }
+    }
+
+    // 2. Dicas de Glossário Médico e Siglas de Prova (on-hover / toque)
+    const glossaryKeys = Object.keys(MEDICAL_GLOSSARY);
+    for (const gKey of glossaryKeys) {
+      const regex = new RegExp(`\\b(${gKey.replace(/[-/\\^$*+?.()|[\]{}]/g, '\\$&')})\\b`, 'i');
+      const match = textSegment.match(regex);
+      if (match && match.index !== undefined) {
+        const start = match.index;
+        const matched = textSegment.slice(start, start + match[0].length);
+        const before = textSegment.slice(0, start);
+        const after = textSegment.slice(start + match[0].length);
+        const entry = MEDICAL_GLOSSARY[gKey];
+
+        return (
+          <React.Fragment key={`${contextKey}-gloss-${gKey}`}>
+            {applyHighlightsAndGlossary(before, `${contextKey}-gb`)}
+            <MedicalGlossaryTooltip term={matched} entry={entry}>
+              {matched}
+            </MedicalGlossaryTooltip>
+            {applyHighlightsAndGlossary(after, `${contextKey}-ga`)}
+          </React.Fragment>
+        );
+      }
+    }
+
+    return textSegment;
+  };
+
+  let clozeCounter = 0;
   const renderInlineFormatting = (rawText: string) => {
     const text = formatMedicalMath(rawText);
 
@@ -135,16 +409,54 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
 
     return parts.map((part, i) => {
       if (part.startsWith('**') && part.endsWith('**') && part.length >= 4) {
+        const innerText = part.slice(2, -2);
+        clozeCounter++;
+        const clozeId = `cloze_${clozeCounter}_${innerText.slice(0, 15)}`;
+
+        if (isClozeMode) {
+          const isRevealed = revealAllCloze || revealedClozeIds.has(clozeId);
+          if (!isRevealed) {
+            return (
+              <button
+                key={i}
+                type="button"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  toggleRevealCloze(clozeId);
+                }}
+                className="inline-block px-2 py-0.5 mx-0.5 rounded-md bg-zinc-200 dark:bg-zinc-800 border border-zinc-300 dark:border-zinc-700 blur-[3px] hover:blur-none active:blur-none transition-all duration-200 cursor-pointer text-zinc-800 dark:text-zinc-200 font-bold select-none text-xs"
+                title="Modo Treino: Clique para revelar o termo"
+              >
+                {innerText}
+              </button>
+            );
+          }
+
+          return (
+            <strong
+              key={i}
+              onClick={(e) => {
+                e.stopPropagation();
+                toggleRevealCloze(clozeId);
+              }}
+              className="font-bold text-amber-600 dark:text-amber-400 underline decoration-dotted underline-offset-2 cursor-pointer transition-colors"
+              title="Clique para ocultar novamente"
+            >
+              {applyHighlightsAndGlossary(innerText, `cloze-${i}`)}
+            </strong>
+          );
+        }
+
         return (
           <strong key={i} className="font-bold text-zinc-900 dark:text-zinc-100">
-            {part.slice(2, -2)}
+            {applyHighlightsAndGlossary(innerText, `strong-${i}`)}
           </strong>
         );
       }
       if (part.startsWith('*') && part.endsWith('*') && part.length >= 2) {
         return (
           <em key={i} className="italic text-zinc-800 dark:text-zinc-200">
-            {part.slice(1, -1)}
+            {applyHighlightsAndGlossary(part.slice(1, -1), `em-${i}`)}
           </em>
         );
       }
@@ -158,7 +470,7 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
           </code>
         );
       }
-      return part;
+      return applyHighlightsAndGlossary(part, `part-${i}`);
     });
   };
 
@@ -272,9 +584,8 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
           {/* Card Central em Foco com Transição Suave e Cor do Tema */}
           <div
             key={`curr-${currIdx}`}
-            className={`flex flex-col justify-start shrink-0 w-full max-w-[340px] sm:max-w-[420px] md:max-w-[480px] p-5 sm:p-6 rounded-2xl bg-white dark:bg-[#121215] border-2 shadow-md scale-100 opacity-100 space-y-3 min-h-[180px] transition-all duration-500 ease-out animate-in fade-in ${
-              slideDirection === 'right' ? 'slide-in-from-right-4' : 'slide-in-from-left-4'
-            }`}
+            className={`flex flex-col justify-start shrink-0 w-full max-w-[340px] sm:max-w-[420px] md:max-w-[480px] p-5 sm:p-6 rounded-2xl bg-white dark:bg-[#121215] border-2 shadow-md scale-100 opacity-100 space-y-3 min-h-[180px] transition-all duration-500 ease-out animate-in fade-in ${slideDirection === 'right' ? 'slide-in-from-right-4' : 'slide-in-from-left-4'
+              }`}
             style={{
               borderColor: accentConfig.primaryHex,
               boxShadow: `0 4px 14px -2px ${accentConfig.bgRgba}, 0 0 0 3px ${accentConfig.bgRgba}`
@@ -1369,7 +1680,34 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
           <span>Voltar para lista</span>
         </button>
 
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
+          {/* Modo Treino / Oclusão Ativa */}
+          <ClozeStudyToggle
+            isClozeMode={isClozeMode}
+            onToggleClozeMode={() => setIsClozeMode((prev) => !prev)}
+            revealAll={revealAllCloze}
+            onToggleRevealAll={() => setRevealAllCloze((prev) => !prev)}
+          />
+
+          {/* Botão Caderno de Destaques & Anotações */}
+          <button
+            type="button"
+            onClick={() => setIsHighlightsDrawerOpen(true)}
+            className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer border ${highlights.length > 0
+                ? 'bg-amber-500/10 text-amber-600 dark:text-amber-400 border-amber-500/30 hover:bg-amber-500/20'
+                : 'bg-zinc-100 dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 border-zinc-200/80 dark:border-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-800'
+              }`}
+            title="Abrir Caderno de Destaques e Anotações"
+          >
+            <Highlighter className="w-3.5 h-3.5" />
+            <span>Destaques</span>
+            {highlights.length > 0 && (
+              <span className="w-5 h-5 rounded-full bg-amber-500 text-zinc-950 font-black text-[10px] flex items-center justify-center ml-0.5">
+                {highlights.length}
+              </span>
+            )}
+          </button>
+
           {material.flashcardCount && material.flashcardCount > 0 ? (
             <button
               type="button"
@@ -1433,17 +1771,16 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
                   }}
                   href={`#${pill.slug}`}
                   onClick={() => setActiveSectionSlug(pill.slug)}
-                  className={`px-3 py-1.5 rounded-md text-xs font-bold whitespace-nowrap transition-all duration-200 border shrink-0 ${
-                    isActive
+                  className={`px-3 py-1.5 rounded-md text-xs font-bold whitespace-nowrap transition-all duration-200 border shrink-0 ${isActive
                       ? 'text-white shadow-xs'
                       : 'bg-zinc-100/80 dark:bg-zinc-900/80 text-zinc-700 dark:text-zinc-300 border-zinc-200/80 dark:border-zinc-800 hover:border-zinc-400 dark:hover:border-zinc-600'
-                  }`}
+                    }`}
                   style={
                     isActive
                       ? {
-                          backgroundColor: accentConfig.primaryHex,
-                          borderColor: accentConfig.primaryHex
-                        }
+                        backgroundColor: accentConfig.primaryHex,
+                        borderColor: accentConfig.primaryHex
+                      }
                       : {}
                   }
                 >
@@ -1456,7 +1793,12 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
       )}
 
       {/* Corpo Formatado do Material (Largura total expandida) */}
-      <article className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800/80 shadow-xs prose prose-zinc dark:prose-invert max-w-none">
+      <article
+        ref={articleRef}
+        onMouseUp={handleTextSelection}
+        onTouchEnd={handleTextSelection}
+        className="p-6 sm:p-8 rounded-3xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800/80 shadow-xs prose prose-zinc dark:prose-invert max-w-none relative"
+      >
         {renderMarkdownContent(material.markdownContent)}
       </article>
 
@@ -1483,6 +1825,39 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
           </button>
         ) : null}
       </div>
+
+      {/* Barra Flutuante de Marcação de Texto */}
+      {selectedToolbarState && (
+        <TextHighlightToolbar
+          position={selectedToolbarState.position}
+          selectedText={selectedToolbarState.selectedText}
+          existingHighlight={selectedToolbarState.existingHighlight}
+          onApplyHighlight={handleApplyHighlight}
+          onRemoveHighlight={handleRemoveHighlight}
+          onCreateFlashcard={handleCreateFlashcard}
+          onClose={() => setSelectedToolbarState(null)}
+        />
+      )}
+
+      {/* Caderno Lateral de Destaques & Anotações */}
+      <StudyHighlightsDrawer
+        isOpen={isHighlightsDrawerOpen}
+        onClose={() => setIsHighlightsDrawerOpen(false)}
+        highlights={highlights}
+        materialTitle={material.title}
+        onRemoveHighlight={handleRemoveHighlight}
+        onUpdateNote={handleUpdateHighlightNote}
+        onNavigateToHighlight={handleNavigateToHighlight}
+        onCreateFlashcardFromHighlight={handleCreateFlashcard}
+      />
+
+      {/* Toast Flutuante */}
+      {toastMessage && (
+        <div className="fixed bottom-6 right-6 z-50 flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-zinc-950 text-white dark:bg-zinc-100 dark:text-zinc-950 shadow-2xl text-xs font-bold animate-in fade-in slide-in-from-bottom-2">
+          <Check className="w-4 h-4 text-emerald-400 dark:text-emerald-600" />
+          <span>{toastMessage}</span>
+        </div>
+      )}
     </div>
   );
 };

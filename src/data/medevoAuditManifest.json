@@ -220,33 +220,12 @@
       "code": "USPHCFMUSP-2026-PED-23531",
       "banca": "USP/HCFMUSP",
       "year": 2026,
-      "hasTextHit": true,
-      "textHits": [
-        {
-          "field": "options[A].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
-        },
-        {
-          "field": "options[B].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
-        },
-        {
-          "field": "options[C].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
-        },
-        {
-          "field": "options[D].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
-        }
-      ],
-      "hasImageHit": true,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": false,
       "images": [
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-masculino-3-anos-e-7-meses-de-vida-comparece-a--alt-a-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-PED-23531_opt_A.webp",
           "field": "options[A]",
           "visionAudit": {
             "audited": true,
@@ -258,7 +237,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-masculino-3-anos-e-7-meses-de-vida-comparece-a--alt-b-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-PED-23531_opt_B.webp",
           "field": "options[B]",
           "visionAudit": {
             "audited": true,
@@ -270,7 +249,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-masculino-3-anos-e-7-meses-de-vida-comparece-a--alt-c-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-PED-23531_opt_C.webp",
           "field": "options[C]",
           "visionAudit": {
             "audited": true,
@@ -282,7 +261,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-masculino-3-anos-e-7-meses-de-vida-comparece-a--alt-d-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-PED-23531_opt_D.webp",
           "field": "options[D]",
           "visionAudit": {
             "audited": true,
@@ -294,7 +273,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-masculino-3-anos-e-7-meses-de-vida-comparece-a--01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-PED-23531_stmt_1.webp",
           "field": "statement.images",
           "visionAudit": {
             "audited": true,
@@ -378,33 +357,12 @@
       "code": "USPHCFMUSP-2023-GIN-7367",
       "banca": "USP/HCFMUSP",
       "year": 2023,
-      "hasTextHit": true,
-      "textHits": [
-        {
-          "field": "options[A].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1780685541746-0.64..."
-        },
-        {
-          "field": "options[B].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1780685555602-0.15..."
-        },
-        {
-          "field": "options[C].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1780685570408-0.51..."
-        },
-        {
-          "field": "options[D].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1780685582331-0.86..."
-        }
-      ],
-      "hasImageHit": true,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": false,
       "images": [
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1780685541746-0.64481854106727.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2023-GIN-7367_opt_A.webp",
           "field": "options[A]",
           "visionAudit": {
             "audited": true,
@@ -416,7 +374,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1780685555602-0.15405138829778586.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2023-GIN-7367_opt_B.webp",
           "field": "options[B]",
           "visionAudit": {
             "audited": true,
@@ -428,7 +386,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1780685570408-0.5149932980959293.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2023-GIN-7367_opt_C.webp",
           "field": "options[C]",
           "visionAudit": {
             "audited": true,
@@ -440,7 +398,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1780685582331-0.863239705381562.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2023-GIN-7367_opt_D.webp",
           "field": "options[D]",
           "visionAudit": {
             "audited": true,
@@ -459,33 +417,12 @@
       "code": "UNESPHCFMB-2026-MPS-21612",
       "banca": "UNESP/HCFMB",
       "year": 2026,
-      "hasTextHit": true,
-      "textHits": [
-        {
-          "field": "options[A].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/homem-recem-chegad..."
-        },
-        {
-          "field": "options[B].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/homem-recem-chegad..."
-        },
-        {
-          "field": "options[C].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/homem-recem-chegad..."
-        },
-        {
-          "field": "options[D].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/homem-recem-chegad..."
-        }
-      ],
-      "hasImageHit": true,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": false,
       "images": [
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/homem-recem-chegado-ao-pequeno-municipio-de-siriri-estava-em-alt-a-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/UNESPHCFMB-2026-MPS-21612_opt_A.webp",
           "field": "options[A]",
           "visionAudit": {
             "audited": true,
@@ -497,7 +434,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/homem-recem-chegado-ao-pequeno-municipio-de-siriri-estava-em-alt-b-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/UNESPHCFMB-2026-MPS-21612_opt_B.webp",
           "field": "options[B]",
           "visionAudit": {
             "audited": true,
@@ -509,7 +446,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/homem-recem-chegado-ao-pequeno-municipio-de-siriri-estava-em-alt-c-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/UNESPHCFMB-2026-MPS-21612_opt_C.webp",
           "field": "options[C]",
           "visionAudit": {
             "audited": true,
@@ -521,7 +458,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/homem-recem-chegado-ao-pequeno-municipio-de-siriri-estava-em-alt-d-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/UNESPHCFMB-2026-MPS-21612_opt_D.webp",
           "field": "options[D]",
           "visionAudit": {
             "audited": true,
@@ -600,33 +537,12 @@
       "code": "UNESPHCFMB-2021-MPS-7506",
       "banca": "UNESP/HCFMB",
       "year": 2021,
-      "hasTextHit": true,
-      "textHits": [
-        {
-          "field": "options[A].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1781113247263-0.60..."
-        },
-        {
-          "field": "options[B].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1781113279007-0.05..."
-        },
-        {
-          "field": "options[C].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1781113289572-0.59..."
-        },
-        {
-          "field": "options[D].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1781113302841-0.49..."
-        }
-      ],
-      "hasImageHit": true,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": false,
       "images": [
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1781113247263-0.6062571277681664.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/UNESPHCFMB-2021-MPS-7506_opt_A.webp",
           "field": "options[A]",
           "visionAudit": {
             "audited": true,
@@ -638,7 +554,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1781113279007-0.056233426599518244.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/UNESPHCFMB-2021-MPS-7506_opt_B.webp",
           "field": "options[B]",
           "visionAudit": {
             "audited": true,
@@ -650,7 +566,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1781113289572-0.5986630841283821.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/UNESPHCFMB-2021-MPS-7506_opt_C.webp",
           "field": "options[C]",
           "visionAudit": {
             "audited": true,
@@ -662,7 +578,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1781113302841-0.49604924190049515.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/UNESPHCFMB-2021-MPS-7506_opt_D.webp",
           "field": "options[D]",
           "visionAudit": {
             "audited": true,
@@ -727,33 +643,12 @@
       "code": "USPHCFMUSP-2026-PED-23540",
       "banca": "USP/HCFMUSP",
       "year": 2026,
-      "hasTextHit": true,
-      "textHits": [
-        {
-          "field": "options[A].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
-        },
-        {
-          "field": "options[B].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
-        },
-        {
-          "field": "options[C].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
-        },
-        {
-          "field": "options[D].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
-        }
-      ],
-      "hasImageHit": true,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": false,
       "images": [
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-masculino-1-mes-de-vida-previamente-higida-e-tr-alt-a-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-PED-23540_opt_A.webp",
           "field": "options[A]",
           "visionAudit": {
             "audited": true,
@@ -765,7 +660,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-masculino-1-mes-de-vida-previamente-higida-e-tr-alt-b-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-PED-23540_opt_B.webp",
           "field": "options[B]",
           "visionAudit": {
             "audited": true,
@@ -777,7 +672,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-masculino-1-mes-de-vida-previamente-higida-e-tr-alt-c-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-PED-23540_opt_C.webp",
           "field": "options[C]",
           "visionAudit": {
             "audited": true,
@@ -789,7 +684,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-masculino-1-mes-de-vida-previamente-higida-e-tr-alt-d-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-PED-23540_opt_D.webp",
           "field": "options[D]",
           "visionAudit": {
             "audited": true,
@@ -841,33 +736,12 @@
       "code": "USPHCFMUSP-2023-PED-7929",
       "banca": "USP/HCFMUSP",
       "year": 2023,
-      "hasTextHit": true,
-      "textHits": [
-        {
-          "field": "options[A].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1774407017470-0.40..."
-        },
-        {
-          "field": "options[B].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1774407030851-0.88..."
-        },
-        {
-          "field": "options[C].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1774407040822-0.35..."
-        },
-        {
-          "field": "options[D].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1774407048494-0.60..."
-        }
-      ],
-      "hasImageHit": true,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": false,
       "images": [
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1774407017470-0.40816437276004147.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2023-PED-7929_opt_A.webp",
           "field": "options[A]",
           "visionAudit": {
             "audited": true,
@@ -879,7 +753,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1774407030851-0.8869266526039513.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2023-PED-7929_opt_B.webp",
           "field": "options[B]",
           "visionAudit": {
             "audited": true,
@@ -891,7 +765,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1774407040822-0.35684000012786443.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2023-PED-7929_opt_C.webp",
           "field": "options[C]",
           "visionAudit": {
             "audited": true,
@@ -903,7 +777,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1774407048494-0.6082216378562778.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2023-PED-7929_opt_D.webp",
           "field": "options[D]",
           "visionAudit": {
             "audited": true,
@@ -922,37 +796,16 @@
       "code": "USPHCFMUSP-2023-CIR-10056",
       "banca": "USP/HCFMUSP",
       "year": 2023,
-      "hasTextHit": true,
-      "textHits": [
-        {
-          "field": "options[A].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2023/A%20(1).png"
-        },
-        {
-          "field": "options[B].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2023/B.png"
-        },
-        {
-          "field": "options[C].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2023/C.png"
-        },
-        {
-          "field": "options[D].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2023/D.png"
-        }
-      ],
-      "hasImageHit": true,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": false,
       "images": [
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2023/A%20(1).png",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2023-CIR-10056_opt_A.png",
           "field": "options[A]"
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2023/B.png",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2023-CIR-10056_opt_B.png",
           "field": "options[B]",
           "visionAudit": {
             "audited": true,
@@ -964,7 +817,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2023/C.png",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2023-CIR-10056_opt_C.png",
           "field": "options[C]",
           "visionAudit": {
             "audited": true,
@@ -976,7 +829,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2023/D.png",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2023-CIR-10056_opt_D.png",
           "field": "options[D]",
           "visionAudit": {
             "audited": true,
@@ -995,33 +848,12 @@
       "code": "USPHCFMUSP-2026-PED-23530",
       "banca": "USP/HCFMUSP",
       "year": 2026,
-      "hasTextHit": true,
-      "textHits": [
-        {
-          "field": "options[A].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
-        },
-        {
-          "field": "options[B].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
-        },
-        {
-          "field": "options[C].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
-        },
-        {
-          "field": "options[D].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
-        }
-      ],
-      "hasImageHit": true,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": false,
       "images": [
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-masculino-2-anos-de-idade-previamente-higida-in-alt-a-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-PED-23530_opt_A.webp",
           "field": "options[A]",
           "visionAudit": {
             "audited": true,
@@ -1033,7 +865,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-masculino-2-anos-de-idade-previamente-higida-in-alt-b-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-PED-23530_opt_B.webp",
           "field": "options[B]",
           "visionAudit": {
             "audited": true,
@@ -1045,7 +877,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-masculino-2-anos-de-idade-previamente-higida-in-alt-c-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-PED-23530_opt_C.webp",
           "field": "options[C]",
           "visionAudit": {
             "audited": true,
@@ -1057,7 +889,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-masculino-2-anos-de-idade-previamente-higida-in-alt-d-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-PED-23530_opt_D.webp",
           "field": "options[D]",
           "visionAudit": {
             "audited": true,
@@ -1109,38 +941,12 @@
       "code": "HUFMJ-2021-PED-19323",
       "banca": "HU-FMJ",
       "year": 2021,
-      "hasTextHit": true,
-      "textHits": [
-        {
-          "field": "options[A].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1781453143590-0.89..."
-        },
-        {
-          "field": "options[B].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1781453155772-0.22..."
-        },
-        {
-          "field": "options[C].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1781453165641-0.00..."
-        },
-        {
-          "field": "options[D].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1781453175254-0.06..."
-        },
-        {
-          "field": "options[E].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1781453185255-0.06..."
-        }
-      ],
-      "hasImageHit": true,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": false,
       "images": [
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1781453143590-0.8988924827013488.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/HUFMJ-2021-PED-19323_opt_A.webp",
           "field": "options[A]",
           "visionAudit": {
             "audited": true,
@@ -1152,7 +958,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1781453155772-0.2294984396961005.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/HUFMJ-2021-PED-19323_opt_B.webp",
           "field": "options[B]",
           "visionAudit": {
             "audited": true,
@@ -1164,7 +970,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1781453165641-0.005377701370122501.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/HUFMJ-2021-PED-19323_opt_C.webp",
           "field": "options[C]",
           "visionAudit": {
             "audited": true,
@@ -1176,7 +982,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1781453175254-0.06173166438301925.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/HUFMJ-2021-PED-19323_opt_D.webp",
           "field": "options[D]",
           "visionAudit": {
             "audited": true,
@@ -1188,7 +994,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1781453185255-0.0652102221585944.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/HUFMJ-2021-PED-19323_opt_E.webp",
           "field": "options[E]",
           "visionAudit": {
             "audited": true,
@@ -1263,33 +1069,12 @@
       "code": "USPHCFMUSP-2026-CLM-37360",
       "banca": "USP/HCFMUSP",
       "year": 2026,
-      "hasTextHit": true,
-      "textHits": [
-        {
-          "field": "options[A].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-53-anos-de-..."
-        },
-        {
-          "field": "options[B].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-53-anos-de-..."
-        },
-        {
-          "field": "options[C].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-53-anos-de-..."
-        },
-        {
-          "field": "options[D].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-53-anos-de-..."
-        }
-      ],
-      "hasImageHit": true,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": false,
       "images": [
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-53-anos-de-idade-antecedentes-desconhecidos-trazida-a-alt-a-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-CLM-37360_opt_A.webp",
           "field": "options[A]",
           "visionAudit": {
             "audited": true,
@@ -1301,7 +1086,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-53-anos-de-idade-antecedentes-desconhecidos-trazida-a-alt-b-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-CLM-37360_opt_B.webp",
           "field": "options[B]",
           "visionAudit": {
             "audited": true,
@@ -1313,7 +1098,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-53-anos-de-idade-antecedentes-desconhecidos-trazida-a-alt-c-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-CLM-37360_opt_C.webp",
           "field": "options[C]",
           "visionAudit": {
             "audited": true,
@@ -1325,7 +1110,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-53-anos-de-idade-antecedentes-desconhecidos-trazida-a-alt-d-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-CLM-37360_opt_D.webp",
           "field": "options[D]",
           "visionAudit": {
             "audited": true,
@@ -1408,33 +1193,12 @@
       "code": "USPHCFMUSP-2026-PED-23529",
       "banca": "USP/HCFMUSP",
       "year": 2026,
-      "hasTextHit": true,
-      "textHits": [
-        {
-          "field": "options[A].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
-        },
-        {
-          "field": "options[B].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
-        },
-        {
-          "field": "options[C].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
-        },
-        {
-          "field": "options[D].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
-        }
-      ],
-      "hasImageHit": true,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": false,
       "images": [
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-masculino-6-anos-de-idade-portadora-de-asma-nao-alt-a-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-PED-23529_opt_A.webp",
           "field": "options[A]",
           "visionAudit": {
             "audited": true,
@@ -1446,7 +1210,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-masculino-6-anos-de-idade-portadora-de-asma-nao-alt-b-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-PED-23529_opt_B.webp",
           "field": "options[B]",
           "visionAudit": {
             "audited": true,
@@ -1458,7 +1222,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-masculino-6-anos-de-idade-portadora-de-asma-nao-alt-c-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-PED-23529_opt_C.webp",
           "field": "options[C]",
           "visionAudit": {
             "audited": true,
@@ -1470,7 +1234,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-masculino-6-anos-de-idade-portadora-de-asma-nao-alt-d-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-PED-23529_opt_D.webp",
           "field": "options[D]",
           "visionAudit": {
             "audited": true,
@@ -1482,7 +1246,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-masculino-6-anos-de-idade-portadora-de-asma-nao-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-PED-23529_stmt_1.webp",
           "field": "statement.images",
           "visionAudit": {
             "audited": true,
@@ -1494,7 +1258,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-masculino-6-anos-de-idade-portadora-de-asma-nao-02.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-PED-23529_stmt_2.webp",
           "field": "statement.images",
           "visionAudit": {
             "audited": true,
@@ -1536,33 +1300,12 @@
       "code": "USPHCFMUSP-2026-CIR-20802",
       "banca": "USP/HCFMUSP",
       "year": 2026,
-      "hasTextHit": true,
-      "textHits": [
-        {
-          "field": "options[A].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-64-anos-de-..."
-        },
-        {
-          "field": "options[B].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-64-anos-de-..."
-        },
-        {
-          "field": "options[C].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-64-anos-de-..."
-        },
-        {
-          "field": "options[D].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-64-anos-de-..."
-        }
-      ],
-      "hasImageHit": true,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": false,
       "images": [
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-64-anos-de-idade-procura-o-servico-de-emergencia-com--alt-a-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-CIR-20802_opt_A.webp",
           "field": "options[A]",
           "visionAudit": {
             "audited": true,
@@ -1574,7 +1317,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-64-anos-de-idade-procura-o-servico-de-emergencia-com--alt-b-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-CIR-20802_opt_B.webp",
           "field": "options[B]",
           "visionAudit": {
             "audited": true,
@@ -1586,7 +1329,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-64-anos-de-idade-procura-o-servico-de-emergencia-com--alt-c-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-CIR-20802_opt_C.webp",
           "field": "options[C]",
           "visionAudit": {
             "audited": true,
@@ -1598,7 +1341,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-64-anos-de-idade-procura-o-servico-de-emergencia-com--alt-d-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-CIR-20802_opt_D.webp",
           "field": "options[D]",
           "visionAudit": {
             "audited": true,
@@ -1617,33 +1360,12 @@
       "code": "USPHCFMUSP-2026-CLM-37362",
       "banca": "USP/HCFMUSP",
       "year": 2026,
-      "hasTextHit": true,
-      "textHits": [
-        {
-          "field": "options[A].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-74-anos-de-..."
-        },
-        {
-          "field": "options[B].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-74-anos-de-..."
-        },
-        {
-          "field": "options[C].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-74-anos-de-..."
-        },
-        {
-          "field": "options[D].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-74-anos-de-..."
-        }
-      ],
-      "hasImageHit": true,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": false,
       "images": [
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-74-anos-de-idade-tabagista-tem-hipertensao-e-diabetes-alt-a-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-CLM-37362_opt_A.webp",
           "field": "options[A]",
           "visionAudit": {
             "audited": true,
@@ -1655,7 +1377,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-74-anos-de-idade-tabagista-tem-hipertensao-e-diabetes-alt-b-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-CLM-37362_opt_B.webp",
           "field": "options[B]",
           "visionAudit": {
             "audited": true,
@@ -1667,7 +1389,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-74-anos-de-idade-tabagista-tem-hipertensao-e-diabetes-alt-c-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-CLM-37362_opt_C.webp",
           "field": "options[C]",
           "visionAudit": {
             "audited": true,
@@ -1679,7 +1401,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-74-anos-de-idade-tabagista-tem-hipertensao-e-diabetes-alt-d-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-CLM-37362_opt_D.webp",
           "field": "options[D]",
           "visionAudit": {
             "audited": true,
@@ -1737,29 +1459,8 @@
       "code": "USPHCFMUSP-2026-CLM-37358",
       "banca": "USP/HCFMUSP",
       "year": 2026,
-      "hasTextHit": true,
-      "textHits": [
-        {
-          "field": "options[A].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
-        },
-        {
-          "field": "options[B].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
-        },
-        {
-          "field": "options[C].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
-        },
-        {
-          "field": "options[D].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-mascu..."
-        }
-      ],
+      "hasTextHit": false,
+      "textHits": [],
       "hasImageHit": true,
       "images": [
         {
@@ -1775,7 +1476,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-masculino-4-anos-de-idade-foi-admitido-no-pront-alt-b-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-CLM-37358_opt_B.webp",
           "field": "options[B]",
           "visionAudit": {
             "audited": true,
@@ -1787,7 +1488,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-masculino-4-anos-de-idade-foi-admitido-no-pront-alt-c-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-CLM-37358_opt_C.webp",
           "field": "options[C]",
           "visionAudit": {
             "audited": true,
@@ -1799,7 +1500,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/crianca-sexo-masculino-4-anos-de-idade-foi-admitido-no-pront-alt-d-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-CLM-37358_opt_D.webp",
           "field": "options[D]",
           "visionAudit": {
             "audited": true,
@@ -1874,33 +1575,12 @@
       "code": "USPHCFMUSP-2024-OBS-5393",
       "banca": "USP/HCFMUSP",
       "year": 2024,
-      "hasTextHit": true,
-      "textHits": [
-        {
-          "field": "options[A].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779112223063-0.16..."
-        },
-        {
-          "field": "options[B].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779112235489-0.79..."
-        },
-        {
-          "field": "options[C].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779112245858-0.11..."
-        },
-        {
-          "field": "options[D].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779112254390-0.80..."
-        }
-      ],
-      "hasImageHit": true,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": false,
       "images": [
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779112223063-0.16092752255619436.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2024-OBS-5393_opt_A.webp",
           "field": "options[A]",
           "visionAudit": {
             "audited": true,
@@ -1912,7 +1592,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779112235489-0.7975316504777614.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2024-OBS-5393_opt_B.webp",
           "field": "options[B]",
           "visionAudit": {
             "audited": true,
@@ -1924,7 +1604,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779112245858-0.11514096637484716.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2024-OBS-5393_opt_C.webp",
           "field": "options[C]",
           "visionAudit": {
             "audited": true,
@@ -1936,7 +1616,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779112254390-0.8060666941225038.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2024-OBS-5393_opt_D.webp",
           "field": "options[D]",
           "visionAudit": {
             "audited": true,
@@ -1948,7 +1628,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779112185639-0.23024582054154985.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2024-OBS-5393_stmt_1.webp",
           "field": "statement.images",
           "visionAudit": {
             "audited": true,
@@ -1967,38 +1647,12 @@
       "code": "HAOC-2021-CIR-16588",
       "banca": "HAOC",
       "year": 2021,
-      "hasTextHit": true,
-      "textHits": [
-        {
-          "field": "options[A].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1780763278532-0.53..."
-        },
-        {
-          "field": "options[B].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1780763287265-0.77..."
-        },
-        {
-          "field": "options[C].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1780763306681-0.24..."
-        },
-        {
-          "field": "options[D].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1780763332550-0.84..."
-        },
-        {
-          "field": "options[E].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1780763342322-0.22..."
-        }
-      ],
-      "hasImageHit": true,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": false,
       "images": [
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1780763278532-0.5321074777351692.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/HAOC-2021-CIR-16588_opt_A.webp",
           "field": "options[A]",
           "visionAudit": {
             "audited": true,
@@ -2010,7 +1664,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1780763287265-0.7753539330628708.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/HAOC-2021-CIR-16588_opt_B.webp",
           "field": "options[B]",
           "visionAudit": {
             "audited": true,
@@ -2022,7 +1676,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1780763306681-0.24449429851633753.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/HAOC-2021-CIR-16588_opt_C.webp",
           "field": "options[C]",
           "visionAudit": {
             "audited": true,
@@ -2034,7 +1688,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1780763332550-0.8407276391342702.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/HAOC-2021-CIR-16588_opt_D.webp",
           "field": "options[D]",
           "visionAudit": {
             "audited": true,
@@ -2046,7 +1700,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1780763342322-0.222179702295754.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/HAOC-2021-CIR-16588_opt_E.webp",
           "field": "options[E]",
           "visionAudit": {
             "audited": true,
@@ -2065,33 +1719,12 @@
       "code": "USPHCFMUSP-2026-PED-23527",
       "banca": "USP/HCFMUSP",
       "year": 2026,
-      "hasTextHit": true,
-      "textHits": [
-        {
-          "field": "options[A].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/durante-o-atendime..."
-        },
-        {
-          "field": "options[B].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/durante-o-atendime..."
-        },
-        {
-          "field": "options[C].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/durante-o-atendime..."
-        },
-        {
-          "field": "options[D].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/durante-o-atendime..."
-        }
-      ],
-      "hasImageHit": true,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": false,
       "images": [
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/durante-o-atendimento-em-sala-de-parto-um-recem-nascido-apre-alt-a-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-PED-23527_opt_A.webp",
           "field": "options[A]",
           "visionAudit": {
             "audited": true,
@@ -2103,7 +1736,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/durante-o-atendimento-em-sala-de-parto-um-recem-nascido-apre-alt-b-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-PED-23527_opt_B.webp",
           "field": "options[B]",
           "visionAudit": {
             "audited": true,
@@ -2115,7 +1748,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/durante-o-atendimento-em-sala-de-parto-um-recem-nascido-apre-alt-c-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-PED-23527_opt_C.webp",
           "field": "options[C]",
           "visionAudit": {
             "audited": true,
@@ -2127,7 +1760,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/durante-o-atendimento-em-sala-de-parto-um-recem-nascido-apre-alt-d-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-PED-23527_opt_D.webp",
           "field": "options[D]",
           "visionAudit": {
             "audited": true,
@@ -2176,33 +1809,12 @@
       "code": "USPHCFMUSP-2026-CIR-20800",
       "banca": "USP/HCFMUSP",
       "year": 2026,
-      "hasTextHit": true,
-      "textHits": [
-        {
-          "field": "options[A].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-66-anos-de-..."
-        },
-        {
-          "field": "options[B].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-66-anos-de-..."
-        },
-        {
-          "field": "options[C].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-66-anos-de-..."
-        },
-        {
-          "field": "options[D].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-66-anos-de-..."
-        }
-      ],
-      "hasImageHit": true,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": false,
       "images": [
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-66-anos-de-idade-apresentou-dor-abdominal-de-inicio-s-alt-a-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-CIR-20800_opt_A.webp",
           "field": "options[A]",
           "visionAudit": {
             "audited": true,
@@ -2214,7 +1826,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-66-anos-de-idade-apresentou-dor-abdominal-de-inicio-s-alt-b-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-CIR-20800_opt_B.webp",
           "field": "options[B]",
           "visionAudit": {
             "audited": true,
@@ -2226,7 +1838,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-66-anos-de-idade-apresentou-dor-abdominal-de-inicio-s-alt-c-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-CIR-20800_opt_C.webp",
           "field": "options[C]",
           "visionAudit": {
             "audited": true,
@@ -2238,7 +1850,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-66-anos-de-idade-apresentou-dor-abdominal-de-inicio-s-alt-d-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-CIR-20800_opt_D.webp",
           "field": "options[D]",
           "visionAudit": {
             "audited": true,
@@ -2250,7 +1862,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-66-anos-de-idade-apresentou-dor-abdominal-de-inicio-s-01.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/USPHCFMUSP-2026-CIR-20800_stmt_1.webp",
           "field": "statement.images",
           "visionAudit": {
             "audited": true,
@@ -2286,33 +1898,12 @@
       "code": "UNESPHCFMB-2021-MPS-16429",
       "banca": "UNESP/HCFMB",
       "year": 2021,
-      "hasTextHit": true,
-      "textHits": [
-        {
-          "field": "options[A].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779721473755-0.62..."
-        },
-        {
-          "field": "options[B].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779721481788-0.00..."
-        },
-        {
-          "field": "options[C].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779721489959-0.80..."
-        },
-        {
-          "field": "options[D].text",
-          "match": "medevo",
-          "snippet": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779721497536-0.69..."
-        }
-      ],
-      "hasImageHit": true,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": false,
       "images": [
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779721473755-0.6243421282825489.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/UNESPHCFMB-2021-MPS-16429_opt_A.webp",
           "field": "options[A]",
           "visionAudit": {
             "audited": true,
@@ -2324,7 +1915,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779721481788-0.007933910748066486.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/UNESPHCFMB-2021-MPS-16429_opt_B.webp",
           "field": "options[B]",
           "visionAudit": {
             "audited": true,
@@ -2336,7 +1927,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779721489959-0.8001177969549756.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/UNESPHCFMB-2021-MPS-16429_opt_C.webp",
           "field": "options[C]",
           "visionAudit": {
             "audited": true,
@@ -2348,7 +1939,7 @@
           }
         },
         {
-          "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/admin-uploads/1779721497536-0.6923053220125539.webp",
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/UNESPHCFMB-2021-MPS-16429_opt_D.webp",
           "field": "options[D]",
           "visionAudit": {
             "audited": true,
@@ -12138,7 +11729,7 @@
       "year": 2023,
       "hasTextHit": false,
       "textHits": [],
-      "hasImageHit": true,
+      "hasImageHit": false,
       "hasVisionHit": true,
       "visionHits": [
         {
