@@ -39,7 +39,7 @@ function checkGlobalApiRateLimit(ip: string): boolean {
   return false;
 }
 
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
   // 1. Rate limiting global de proteção de infraestrutura para rotas de API

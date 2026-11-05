@@ -264,13 +264,13 @@ export async function fetchFacetedHierarchyCounts(
         const safePrune = filters.userSolvedIds.slice(0, 100);
         q = q.not('id', 'in', `(${safePrune.join(',')})`);
       } else if (filters.status === 'Resolvidas' && filters.userSolvedIds && filters.userSolvedIds.length > 0) {
-        const chunkIds = filters.userSolvedIds.slice(offset, offset + PAGE_CHUNK);
+        const chunkIds = filters.userSolvedIds.slice(currentOffset, currentOffset + PAGE_CHUNK);
         q = q.in('id', chunkIds.length > 0 ? chunkIds : ['00000000-0000-0000-0000-000000000000']);
       } else if (filters.status === 'Acertadas' && filters.userCorrectIds && filters.userCorrectIds.length > 0) {
-        const chunkIds = filters.userCorrectIds.slice(offset, offset + PAGE_CHUNK);
+        const chunkIds = filters.userCorrectIds.slice(currentOffset, currentOffset + PAGE_CHUNK);
         q = q.in('id', chunkIds.length > 0 ? chunkIds : ['00000000-0000-0000-0000-000000000000']);
       } else if (filters.status === 'Erradas' && filters.userWrongIds && filters.userWrongIds.length > 0) {
-        const chunkIds = filters.userWrongIds.slice(offset, offset + PAGE_CHUNK);
+        const chunkIds = filters.userWrongIds.slice(currentOffset, currentOffset + PAGE_CHUNK);
         q = q.in('id', chunkIds.length > 0 ? chunkIds : ['00000000-0000-0000-0000-000000000000']);
       }
 
