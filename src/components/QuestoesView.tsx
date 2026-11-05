@@ -257,11 +257,6 @@ export const QuestoesView: React.FC = () => {
   const [isCreateCadernoModalOpen, setIsCreateCadernoModalOpen] = useState(false);
   const [isCreatingListLoading, setIsCreatingListLoading] = useState(false);
 
-  // Sincroniza respostas recentes em ref para evitar refetch cíclico a cada alternativa respondida
-  const userAnswersRef = useRef(userAnswers);
-  useEffect(() => {
-    userAnswersRef.current = userAnswers;
-  }, [userAnswers]);
 
   // Busca questões do Supabase com base nos filtros
   useEffect(() => {
