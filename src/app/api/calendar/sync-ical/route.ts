@@ -44,9 +44,58 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    if (!url.startsWith('http://') && !url.startsWith('https://')) {
+    let parsedUrl: URL;
+    try {
+      parsedUrl = new URL(url);
+    } catch {
       return NextResponse.json(
-        { error: 'Formato de link inválido. O link deve começar com https://' },
+        { error: 'Formato de link inválido. Certifique-se de que a URL é válida.' },
+        { status: 400 }
+      );
+    }
+
+    if (parsedUrl.protocol !== 'https:') {
+      return NextResponse.json(
+        { error: 'Por motivos de segurança, o link deve usar obrigatoriamente HTTPS seguro (https://).' },
+        { status: 400 }
+      );
+    }
+
+    const hostname = parsedUrl.hostname.toLowerCase();
+
+    // Bloqueia IPs diretos (IPv4 e IPv6), localhost e redes internas contra SSRF
+    const ipV4Regex = /^(\d{1,3}\.){3}\d{1,3}$/;
+    const isIpV4 = ipV4Regex.test(hostname);
+    const isIpV6 = hostname.startsWith('[') || hostname.includes(':');
+    const isLocalhost = hostname === 'localhost' || hostname.endsWith('.local') || hostname.endsWith('.internal');
+
+    if (isIpV4 || isIpV6 || isLocalhost) {
+      return NextResponse.json(
+        { error: 'Endereços IP diretos ou locais não são permitidos por segurança.' },
+        { status: 400 }
+      );
+    }
+
+    // Whitelist estrita de provedores de calendário homologados (Google, Microsoft, Apple)
+    const allowedDomains = [
+      'calendar.google.com',
+      'google.com',
+      'outlook.live.com',
+      'outlook.office.com',
+      'outlook.office365.com',
+      'icloud.com'
+    ];
+
+    const isAllowedDomain = allowedDomains.some(
+      (domain) => hostname === domain || hostname.endsWith('.' + domain)
+    );
+
+    if (!isAllowedDomain) {
+      return NextResponse.json(
+        {
+          error:
+            'Por motivos de segurança, são aceitos apenas endereços de agenda oficiais do Google Agenda (calendar.google.com), Microsoft Outlook ou Apple iCloud.'
+        },
         { status: 400 }
       );
     }

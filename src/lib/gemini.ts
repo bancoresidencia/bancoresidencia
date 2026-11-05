@@ -58,12 +58,12 @@ export function getAvailableGeminiKey(): string | null {
   return null;
 }
 
-// Ordem estrita de modelos testados e ativos na API do Google
+// Ordem estrita de modelos testados e com alta disponibilidade na API Google
 export const CANDIDATE_GEMINI_MODELS = [
-  'gemini-3-flash-preview', // Ativo, ultra-rápido e estável (HTTP 200)
-  'gemini-3.5-flash',       // Padrão ouro flash
-  'gemini-flash-latest',    // Fallback dinâmico
-  'gemini-3.8-flash'        // Fallback de alta capacidade
+  'gemini-3.5-flash',        // Padrão ouro flash (alta qualidade e estabilidade)
+  'gemini-3.5-flash-lite',   // Ultra-rápido, menor latência e alta tolerância a RPM
+  'gemini-3.1-flash-lite',   // Fallback resiliente com excelente disponibilidade (HTTP 200)
+  'gemini-3-flash-preview'   // Fallback secundário
 ];
 
 interface CallGeminiOptions {

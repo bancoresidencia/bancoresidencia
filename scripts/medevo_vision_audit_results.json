@@ -1,11 +1,11 @@
 {
   "startedAt": "2026-11-04T16:18:52.228Z",
-  "lastUpdatedAt": "2026-11-04T23:27:30.454Z",
+  "lastUpdatedAt": "2026-11-05T00:08:50.770Z",
   "targetMode": "medevo",
   "summary": {
-    "totalAudited": 1447,
+    "totalAudited": 1476,
     "detectedWithLogo": 105,
-    "clean": 1342,
+    "clean": 1371,
     "errors": 0,
     "byType": {
       "marca_dagua_sutil": 97,
@@ -27902,6 +27902,556 @@
       "location": "nenhum",
       "details": "A imagem alvo é um eletrocardiograma (ECG) padrão. Não foram encontrados o mascote, o nome 'MedEvo' ou qualquer marca d'água relacionada à marca nas áreas de cabeçalho, rodapé ou sobre o traçado.",
       "auditedAt": "2026-11-04T23:27:30.453Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/observe-a-figura-a-seguiralves-fta-prates-ejs-carneiro-lhp-s-01.webp": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/observe-a-figura-a-seguiralves-fta-prates-ejs-carneiro-lhp-s-01.webp",
+      "references": [
+        {
+          "questionId": "2b3862e7-2d0c-45c8-b65a-ce8dea3827ef",
+          "code": "UNESPHCFMB-2024-MPS-12514",
+          "banca": "UNESP/HCFMB",
+          "year": 2024,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo é um gráfico estatístico sobre mortalidade indígena no Brasil. Não há presença do logotipo, mascote ou texto relacionado à marca MedEvo.",
+      "auditedAt": "2026-11-04T23:29:50.999Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/observe-a-figura-a-seguiralves-fta-prates-ejs-carneiro-lhp-s-03.webp": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/observe-a-figura-a-seguiralves-fta-prates-ejs-carneiro-lhp-s-03.webp",
+      "references": [
+        {
+          "questionId": "2b3862e7-2d0c-45c8-b65a-ce8dea3827ef",
+          "code": "UNESPHCFMB-2024-MPS-12514",
+          "banca": "UNESP/HCFMB",
+          "year": 2024,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo é um gráfico estatístico sobre dados demográficos e não contém qualquer elemento, ícone ou texto relacionado à marca MedEvo.",
+      "auditedAt": "2026-11-04T23:31:22.657Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/juan-78-anos-de-idade-institucionalizado-ha-cerca-de-oito-me-01.webp": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/juan-78-anos-de-idade-institucionalizado-ha-cerca-de-oito-me-01.webp",
+      "references": [
+        {
+          "questionId": "2b6b7ced-61ca-47cf-aebc-7ec08a0a6cb0",
+          "code": "HEJAYMENEVES-2024-CLM-22728",
+          "banca": "HE Jayme Neves",
+          "year": 2024,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo é uma fotografia clínica de uma condição dermatológica no tórax. Não há presença de logotipos, ícones ou textos relacionados à marca MedEvo.",
+      "auditedAt": "2026-11-04T23:32:33.407Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/unicamp/acesso-direto/2026-morning/q012-1-12e9320438118a02.webp": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/unicamp/acesso-direto/2026-morning/q012-1-12e9320438118a02.webp",
+      "references": [
+        {
+          "questionId": "2b6e3511-5ab0-4960-88ee-e074e8d4ca47",
+          "code": "UNICAMPHC-2026-CIR-19732",
+          "banca": "UNICAMP/HC",
+          "year": 2026,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo é uma tomografia computadorizada de crânio sem qualquer presença de logotipos, marcas d'água ou texto relacionado à marca MedEvo.",
+      "auditedAt": "2026-11-04T23:33:25.731Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2015/abaixo-estao-apresentados-os-resultados-de-dois-ensaios-clin-01.webp": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2015/abaixo-estao-apresentados-os-resultados-de-dois-ensaios-clin-01.webp",
+      "references": [
+        {
+          "questionId": "2b779b6e-ae00-4b5f-a12e-1eb120b97368",
+          "code": "HMVMOINHOS-2015-MPS-8689",
+          "banca": "HMV/Moinhos",
+          "year": 2015,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo contém apenas uma tabela de dados médicos sobre estudos de eventos cardiovasculares. Não há presença do logotipo, mascote ou texto 'MedEvo'.",
+      "auditedAt": "2026-11-04T23:34:04.858Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2015/menino-de-08-anos-de-idade-e-trazido-a-tarde-ao-hospital-a-m-01.webp": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2015/menino-de-08-anos-de-idade-e-trazido-a-tarde-ao-hospital-a-m-01.webp",
+      "references": [
+        {
+          "questionId": "2ba6ea22-9aa1-413f-b9f8-1b5ca5206f86",
+          "code": "PSUMG-2015-PED-5073",
+          "banca": "PSU-MG",
+          "year": 2015,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo é uma fotografia clínica de um procedimento médico e não contém nenhum elemento, ícone ou texto relacionado à marca MedEvo.",
+      "auditedAt": "2026-11-04T23:35:29.243Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/para-cada-doente-o-numero-aproximado-de-alarmes-falsos-e-de-01.webp": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/para-cada-doente-o-numero-aproximado-de-alarmes-falsos-e-de-01.webp",
+      "references": [
+        {
+          "questionId": "2b881cfa-83b6-47a3-a1df-3ec8da269e00",
+          "code": "SUSSP-2018-MPS-7632",
+          "banca": "SUS-SP",
+          "year": 2018,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo contém apenas uma tabela estatística de sensibilidade e especificidade. Não há presença do logotipo, mascote ou texto 'MedEvo'.",
+      "auditedAt": "2026-11-04T23:36:10.422Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2023/homem-75-anos-foi-trazido-ao-servico-de-emergencia-pelos-fam-01.webp": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2023/homem-75-anos-foi-trazido-ao-servico-de-emergencia-pelos-fam-01.webp",
+      "references": [
+        {
+          "questionId": "2bc37ba2-8d6d-476b-a050-d6c2b8a7259a",
+          "code": "USPHCFMUSP-2023-CIR-11705",
+          "banca": "USP/HCFMUSP",
+          "year": 2023,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo é uma radiografia pélvica que não apresenta nenhum elemento gráfico, mascote ou texto relacionado à marca MedEvo.",
+      "auditedAt": "2026-11-04T23:37:48.277Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/paciente-masculino-33-anos-de-idade-com-dispneia-em-crises-n-01.webp": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/paciente-masculino-33-anos-de-idade-com-dispneia-em-crises-n-01.webp",
+      "references": [
+        {
+          "questionId": "2bd1deb8-1588-44a8-98aa-957aee7d4fdd",
+          "code": "UNIFESPEPM-2018-CLM-4495",
+          "banca": "UNIFESP/EPM",
+          "year": 2018,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo contém apenas uma tabela de dados médicos (espirometria) sem qualquer presença do logotipo, mascote ou texto relacionado à marca MedEvo.",
+      "auditedAt": "2026-11-04T23:38:27.492Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/homem-25-anos-notou-ha-3-meses-edema-de-face-ao-acordar-pela-01.webp": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/homem-25-anos-notou-ha-3-meses-edema-de-face-ao-acordar-pela-01.webp",
+      "references": [
+        {
+          "questionId": "2be2b0c1-63e6-4293-876b-10bad06fed4d",
+          "code": "USPHCRP-2024-CLM-30769",
+          "banca": "USP/HCRP",
+          "year": 2024,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo é uma radiografia de tórax padrão sem qualquer presença do logotipo, mascote ou texto da marca MedEvo.",
+      "auditedAt": "2026-11-04T23:39:30.647Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/ses-go/2026/suplementar/original-q24-25.png": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/ses-go/2026/suplementar/original-q24-25.png",
+      "references": [
+        {
+          "questionId": "2bdb7035-e33d-49b8-af6e-7f47a71a0e4a",
+          "code": "SESGO-2026-MPS-20030",
+          "banca": "SES-GO",
+          "year": 2026,
+          "field": "statement.images"
+        },
+        {
+          "questionId": "f488a999-aa27-4a0a-915c-9acac87f607a",
+          "code": "SESGO-2026-MPS-20033",
+          "banca": "SES-GO",
+          "year": 2026,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo é um heredograma (árvore genealógica genética) e não contém o logotipo, mascote ou texto da marca MedEvo.",
+      "auditedAt": "2026-11-04T23:39:40.662Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2016/para-monitorar-e-analisar-as-tendencias-dos-principais-fator-01.webp": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2016/para-monitorar-e-analisar-as-tendencias-dos-principais-fator-01.webp",
+      "references": [
+        {
+          "questionId": "2bef6aef-3209-41f8-bec0-4126ed56a8c4",
+          "code": "SANTACASADES-2016-MPS-15749",
+          "banca": "Santa Casa de São Paulo",
+          "year": 2016,
+          "field": "statement.images"
+        },
+        {
+          "questionId": "a23492ff-5325-4dd7-acca-7e5bc44f54be",
+          "code": "SANTACASADES-2016-MPS-15858",
+          "banca": "Santa Casa de São Paulo",
+          "year": 2016,
+          "field": "statement.images"
+        },
+        {
+          "questionId": "c59b398b-7710-4099-be3c-c21616cf0249",
+          "code": "SANTACASADES-2016-MPS-15983",
+          "banca": "Santa Casa de São Paulo",
+          "year": 2016,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo é uma tabela estatística de fatores de risco e morbidade. Não foram encontrados o mascote, o logotipo ou qualquer menção textual à marca MedEvo.",
+      "auditedAt": "2026-11-04T23:40:25.018Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/um-paciente-inconsciente-nao-responsivo-com-ausencia-de-puls-01.webp": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/um-paciente-inconsciente-nao-responsivo-com-ausencia-de-puls-01.webp",
+      "references": [
+        {
+          "questionId": "2bfc56f3-d748-473c-bc29-5919c5639030",
+          "code": "FUNDHACRE-2018-CLM-0841",
+          "banca": "Fundhacre",
+          "year": 2018,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo é um eletrocardiograma (ECG) em papel milimetrado. Não há presença do logotipo, mascote ou texto 'MedEvo' em nenhuma parte da imagem.",
+      "auditedAt": "2026-11-04T23:41:03.986Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/paciente-de-78-anos-refere-lesoes-localizadas-na-regiao-supr-01.webp": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/paciente-de-78-anos-refere-lesoes-localizadas-na-regiao-supr-01.webp",
+      "references": [
+        {
+          "questionId": "2c006549-97d1-482a-85ca-398f1a487209",
+          "code": "USPHCFMUSP-2024-CLM-21570",
+          "banca": "USP/HCFMUSP",
+          "year": 2024,
+          "field": "statement.images"
+        },
+        {
+          "questionId": "dc5f3076-16a7-4ef6-bd22-78fcc21a5525",
+          "code": "USPHCFMUSP-2024-CLM-21330",
+          "banca": "USP/HCFMUSP",
+          "year": 2024,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo contém apenas uma fotografia clínica de uma lesão cutânea e uma micrografia de fungos (hifas/leveduras). Não há presença de logotipos, mascotes ou texto relacionados à marca MedEvo.",
+      "auditedAt": "2026-11-04T23:41:44.035Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2016/seferin-e-colaboradores-estudaram-a-associacao-de-tireoidite-01.webp": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2016/seferin-e-colaboradores-estudaram-a-associacao-de-tireoidite-01.webp",
+      "references": [
+        {
+          "questionId": "2bf91479-1250-411e-b2cf-2fb5ff7341dd",
+          "code": "CENTROUNIVER-2016-CLM-19456",
+          "banca": "Centro Universitário FMABC",
+          "year": 2016,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo contém apenas uma tabela de dados médicos sobre carcinoma papilífero e tireoidite de Hashimoto. Não há presença do logotipo, mascote ou texto 'MedEvo'.",
+      "auditedAt": "2026-11-04T23:42:06.788Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2015/pesquisadores-alemaes-com-o-intuito-de-avaliar-a-relacao-ent-01.webp": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2015/pesquisadores-alemaes-com-o-intuito-de-avaliar-a-relacao-ent-01.webp",
+      "references": [
+        {
+          "questionId": "2c0f933c-955f-425d-96c1-8b874ddbd321",
+          "code": "HIAEEINSTEIN-2015-MPS-16573",
+          "banca": "HIAE/Einstein",
+          "year": 2015,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo é uma tabela estatística sobre emergências cardíacas e não contém nenhum elemento gráfico, mascote ou texto relacionado à marca MedEvo.",
+      "auditedAt": "2026-11-04T23:42:45.957Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/paciente-com-quadro-de-tosse-dor-toracica-dispneia-febre-e-q-01.webp": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/paciente-com-quadro-de-tosse-dor-toracica-dispneia-febre-e-q-01.webp",
+      "references": [
+        {
+          "questionId": "2c6d16be-3739-4020-aaea-545d99a2e37e",
+          "code": "FUNDHACRE-2018-CLM-19749",
+          "banca": "Fundhacre",
+          "year": 2018,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo é uma radiografia de tórax que não apresenta nenhum elemento gráfico, mascote ou texto relacionado à marca MedEvo.",
+      "auditedAt": "2026-11-04T23:45:20.491Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/sirio-libanes/2027/acesso-direto/q012-02-7c2f8770ccff.jpeg": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/sirio-libanes/2027/acesso-direto/q012-02-7c2f8770ccff.jpeg",
+      "references": [
+        {
+          "questionId": "2c76416e-283e-4e5d-9c95-6b7849f82d39",
+          "code": "HSLSRIO-2027-CLM-34321",
+          "banca": "HSL/Sírio",
+          "year": 2027,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo é uma tomografia computadorizada de tórax sem qualquer presença de logotipos, marcas d'água ou texto relacionado à marca MedEvo.",
+      "auditedAt": "2026-11-04T23:45:47.161Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/mulher-de-35-anos-de-idade-vem-a-consulta-de-retorno-para-tr-01.webp": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/mulher-de-35-anos-de-idade-vem-a-consulta-de-retorno-para-tr-01.webp",
+      "references": [
+        {
+          "questionId": "2c83c290-dab6-4462-b9dc-838f17d618be",
+          "code": "USPHCFMUSP-2018-CLM-12853",
+          "banca": "USP/HCFMUSP",
+          "year": 2018,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo contém apenas uma tabela de resultados de exames laboratoriais e um laudo de ultrassonografia. Não há presença do logotipo, mascote ou texto 'MedEvo'.",
+      "auditedAt": "2026-11-04T23:46:55.170Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/adolescente-13a-vitima-de-acidente-automobilistico-foi-ejeta-01.webp": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/adolescente-13a-vitima-de-acidente-automobilistico-foi-ejeta-01.webp",
+      "references": [
+        {
+          "questionId": "2c871f70-29f4-411d-8037-353f73f434fd",
+          "code": "UNICAMPHC-2025-CIR-11196",
+          "banca": "UNICAMP/HC",
+          "year": 2025,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo é uma radiografia de tórax padrão sem qualquer presença do logotipo, mascote ou texto da marca MedEvo.",
+      "auditedAt": "2026-11-04T23:47:49.055Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2020/estudo-buscando-estabelecer-entre-os-pontos-de-corte-do-indi-02.webp": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2020/estudo-buscando-estabelecer-entre-os-pontos-de-corte-do-indi-02.webp",
+      "references": [
+        {
+          "questionId": "2caa5cce-d31c-4cd9-903c-1b41983cc673",
+          "code": "SEMUSASMSMAC-2020-MPS-19175",
+          "banca": "SEMUSA (SMS) Macaé",
+          "year": 2020,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo é um mapa-múndi temático de saúde sem qualquer presença do logotipo, mascote ou texto da marca MedEvo.",
+      "auditedAt": "2026-11-04T23:48:55.217Z"
+    },
+    "/images/questoes/ginecologia/puerpera-de-23-anos-amamentando-ha-6-semanas-veio-a-consulta-01.webp": {
+      "url": "/images/questoes/ginecologia/puerpera-de-23-anos-amamentando-ha-6-semanas-veio-a-consulta-01.webp",
+      "references": [
+        {
+          "questionId": "008a243b-cdc9-43d6-9a91-adb2173b6161",
+          "code": "UFRGSHCPA-2015-GIN-1668",
+          "banca": "UFRGS/HCPA",
+          "year": 2024,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo é uma fotografia clínica de um tecido mamário e não contém qualquer elemento, texto ou ícone relacionado à marca MedEvo.",
+      "auditedAt": "2026-11-04T23:55:18.190Z"
+    },
+    "/images/questoes/ginecologia/paciente-23-anos-realiza-colpocitologia-oncotica-com-os-segu-01.webp": {
+      "url": "/images/questoes/ginecologia/paciente-23-anos-realiza-colpocitologia-oncotica-com-os-segu-01.webp",
+      "references": [
+        {
+          "questionId": "0149a42e-7ea8-4cee-aedd-4e547560380e",
+          "code": "USPHCFMUSP-2024-GIN-7333",
+          "banca": "USP/HCFMUSP",
+          "year": 2024,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo é uma captura de exame médico (colposcopia ou similar) e não apresenta nenhum elemento, ícone ou texto relacionado à marca MedEvo.",
+      "auditedAt": "2026-11-04T23:55:44.228Z"
+    },
+    "/images/questoes/ginecologia/o-achado-visto-ao-exame-citopatologico-de-colo-uterino-image-01.webp": {
+      "url": "/images/questoes/ginecologia/o-achado-visto-ao-exame-citopatologico-de-colo-uterino-image-01.webp",
+      "references": [
+        {
+          "questionId": "01f07c67-cb47-4bde-87ca-466164b21a9f",
+          "code": "UFRGSHCPA-2022-GIN-10581",
+          "banca": "UFRGS/HCPA",
+          "year": 2022,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo é uma micrografia histológica/citológica de células coradas, não contendo qualquer elemento do logotipo MedEvo, texto ou marca d'água relacionada.",
+      "auditedAt": "2026-11-04T23:56:13.885Z"
+    },
+    "/images/questoes/ginecologia/1780505823065-0.4040696406326797.webp": {
+      "url": "/images/questoes/ginecologia/1780505823065-0.4040696406326797.webp",
+      "references": [
+        {
+          "questionId": "017790d4-cd52-493f-a10b-ea208b306318",
+          "code": "SANTA-2021-GIN-2930",
+          "banca": "Santa Casa de São Paulo",
+          "year": 2021,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo contém apenas uma grade de números e letras (tabela de dados), sem qualquer presença do logotipo, mascote ou texto relacionado à marca MedEvo.",
+      "auditedAt": "2026-11-04T23:56:32.740Z"
+    },
+    "/images/questoes/ginecologia/uma-mulher-com-22-anos-de-idade-sexualmente-ativa-apresenta--02.webp": {
+      "url": "/images/questoes/ginecologia/uma-mulher-com-22-anos-de-idade-sexualmente-ativa-apresenta--02.webp",
+      "references": [
+        {
+          "questionId": "02e1a336-ff9b-4a7f-83a0-07fb17463e22",
+          "code": "INEP-2014-GIN-13005",
+          "banca": "INEP Revalida",
+          "year": 2014,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo é uma fotografia médica de tecido biológico (aparentemente mucosa gástrica ou intestinal) e não contém qualquer elemento, texto ou marca d'água relacionado à marca MedEvo.",
+      "auditedAt": "2026-11-04T23:57:02.359Z"
+    },
+    "/images/questoes/ginecologia/uma-mulher-com-22-anos-de-idade-sexualmente-ativa-apresenta--01.webp": {
+      "url": "/images/questoes/ginecologia/uma-mulher-com-22-anos-de-idade-sexualmente-ativa-apresenta--01.webp",
+      "references": [
+        {
+          "questionId": "02e1a336-ff9b-4a7f-83a0-07fb17463e22",
+          "code": "INEP-2014-GIN-13005",
+          "banca": "INEP Revalida",
+          "year": 2014,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo é uma fotografia médica de tecido biológico (provavelmente endoscopia) e não contém nenhum elemento, mascote ou texto relacionado à marca MedEvo.",
+      "auditedAt": "2026-11-04T23:57:32.697Z"
+    },
+    "/images/questoes/ginecologia/mulher-de-45-anos-de-idade-2-partos-normais-com-amamentacao-01.webp": {
+      "url": "/images/questoes/ginecologia/mulher-de-45-anos-de-idade-2-partos-normais-com-amamentacao-01.webp",
+      "references": [
+        {
+          "questionId": "0727d7e3-bed6-445a-827e-36deeb88626a",
+          "code": "FMRPUSP-2019-GIN-13113",
+          "banca": "FMRP-USP",
+          "year": 2019,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo é uma fotografia clínica de uma mão humana e não contém nenhum elemento, ícone ou texto relacionado à marca MedEvo.",
+      "auditedAt": "2026-11-05T00:02:44.485Z"
+    },
+    "/images/questoes/ginecologia/na-figura-1-abaixo-a-seta-indica-os-01.webp": {
+      "url": "/images/questoes/ginecologia/na-figura-1-abaixo-a-seta-indica-os-01.webp",
+      "references": [
+        {
+          "questionId": "0582117b-7f2f-4e40-bb70-db84d869567d",
+          "code": "AMRIGS-2025-GIN-8965",
+          "banca": "AMRIGS",
+          "year": 2025,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo é uma fotografia clínica de anatomia ginecológica com uma seta preta indicativa e a legenda 'Figura 1'. Não há presença do logotipo, mascote ou texto 'MedEvo' em qualquer parte da imagem.",
+      "auditedAt": "2026-11-05T00:03:44.113Z"
     }
   }
 }

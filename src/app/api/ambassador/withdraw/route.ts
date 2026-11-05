@@ -7,23 +7,24 @@ export async function POST(req: NextRequest) {
     let authUser = null;
     try {
       const supabase = await createClient();
-      const { data: { user } } = await supabase.auth.getUser();
-      authUser = user;
+      const { data: { user }, error: authError } = await supabase.auth.getUser();
+      if (!authError && user) {
+        authUser = user;
+      }
     } catch {
       // Falha esperada fora de escopo de cookies ou em chamadas diretas
     }
 
-    const body = await req.json();
-    const { amount, pixKey, pixKeyType, userId: bodyUserId } = body;
-
-    const effectiveUserId = authUser?.id || bodyUserId;
-
-    if (!effectiveUserId) {
+    if (!authUser) {
       return NextResponse.json(
-        { error: 'Usuário não autenticado.', success: false },
+        { error: 'Acesso não autorizado: faça login para solicitar o saque.', success: false },
         { status: 401 }
       );
     }
+
+    const body = await req.json();
+    const { amount, pixKey, pixKeyType } = body;
+    const effectiveUserId = authUser.id;
 
     if (!amount || typeof amount !== 'number' || amount <= 0) {
       return NextResponse.json(

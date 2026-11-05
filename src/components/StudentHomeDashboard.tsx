@@ -289,6 +289,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     prevRateRef.current = target;
 
     let startTime: number | null = null;
+    let lastUpdate = 0;
     const duration = 400; // ms
     let animId: number;
 
@@ -296,14 +297,16 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
       if (!startTime) startTime = currentTime;
       const elapsed = currentTime - startTime;
       const progress = Math.min(elapsed / duration, 1);
-      // Curva suave ease-out cubic
-      const easeOut = 1 - Math.pow(1 - progress, 3);
-      setAnimatedAccuracy(Number((target * easeOut).toFixed(1)));
+
+      // Throttling de 50ms para evitar dezenas de re-renderizações por segundo na árvore do dashboard
+      if (currentTime - lastUpdate >= 50 || progress >= 1) {
+        lastUpdate = currentTime;
+        const easeOut = 1 - Math.pow(1 - progress, 3);
+        setAnimatedAccuracy(progress >= 1 ? target : Number((target * easeOut).toFixed(1)));
+      }
 
       if (progress < 1) {
         animId = requestAnimationFrame(animate);
-      } else {
-        setAnimatedAccuracy(target);
       }
     };
 

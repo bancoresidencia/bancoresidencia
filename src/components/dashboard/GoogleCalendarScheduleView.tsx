@@ -96,9 +96,10 @@ export const GoogleCalendarScheduleView: React.FC<GoogleCalendarScheduleViewProp
   const [currentDate, setCurrentDate] = useState<Date>(() => new Date());
   const [nowDate, setNowDate] = useState<Date>(() => new Date());
 
-  // Atualiza o relógio em tempo real a cada 30 segundos para movimentar a linha de transição de horário
+  // Atualiza o relógio em tempo real a cada 30 segundos para movimentar a linha de transição de horário (pausado quando em background)
   useEffect(() => {
     const timer = setInterval(() => {
+      if (typeof document !== 'undefined' && document.hidden) return;
       setNowDate(new Date());
     }, 30000);
     return () => clearInterval(timer);

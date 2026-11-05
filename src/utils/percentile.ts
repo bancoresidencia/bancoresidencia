@@ -311,6 +311,24 @@ export interface UserStatsCalculationInput {
 /**
  * 9. & 16. CÁLCULO DE PERCENTIL DO ALUNO BASEADO NO MODELO IRT
  */
+// Cache estático dos scores IRT da população oficial (evita recomputar a TRI de centenas de candidatos mockados a cada renderização)
+const officialScoresCohortCache = new Map<string, number[]>();
+
+function getOrComputeOfficialCohortScores(officialCohort: StudentProfile[], filterKey: string): number[] {
+  const cached = officialScoresCohortCache.get(filterKey);
+  if (cached) return cached;
+
+  const scores = officialCohort.map((s) => {
+    const sAttempts = createCohortStudentAttempts(s);
+    const theta = calculateIRTAbility(sAttempts);
+    const se = calculateStandardError(theta, sAttempts);
+    return calculateIRTAdjustedScore(theta, se, s.answered);
+  });
+
+  officialScoresCohortCache.set(filterKey, scores);
+  return scores;
+}
+
 export function calculatePercentile(input: UserStatsCalculationInput): PercentileResult {
   const { totalAnswered, totalCorrect, filters, attempts } = input;
 
@@ -321,14 +339,10 @@ export function calculatePercentile(input: UserStatsCalculationInput): Percentil
 
   // População Oficial (>= 500 questões)
   const officialCohort = cohort.filter((s) => s.answered >= OFFICIAL_THRESHOLD);
+  const cacheKey = (filters.modalidade || 'Residência') + '_' + (filters.banca || 'Todas') + '_' + (filters.institutions || []).join(',') + '_' + (filters.period || '7d');
 
-  // Calcula scores IRT da população oficial
-  const officialScores: number[] = officialCohort.map((s) => {
-    const sAttempts = createCohortStudentAttempts(s);
-    const theta = calculateIRTAbility(sAttempts);
-    const se = calculateStandardError(theta, sAttempts);
-    return calculateIRTAdjustedScore(theta, se, s.answered);
-  });
+  // Recupera scores IRT da população oficial com cache memoizado instantâneo
+  const officialScores: number[] = getOrComputeOfficialCohortScores(officialCohort, cacheKey);
 
   // Constrói ou valida as tentativas do usuário
   let validUserAttempts: ValidatedAttempt[] = [];

@@ -113,7 +113,7 @@
       "HEVV": 1,
       "SES-DF": 1
     },
-    "visionAuditedCount": 1447,
+    "visionAuditedCount": 1476,
     "visionHitsCount": 91
   },
   "questions": [
@@ -711,16 +711,15 @@
       "code": "FACULDADEDEM-2025-CIR-19038",
       "banca": "Faculdade de Medicina de Marília",
       "year": 2025,
-      "hasTextHit": true,
-      "textHits": [
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": false,
+      "images": [
         {
-          "field": "statement",
-          "match": "MedEvo",
-          "snippet": "...a a seguir: [Imagem original não disponível nesta versão da MedEvo.] O diagnóstico provável do paciente é:"
+          "url": "https://ezluharxlmlqhdkqrjbz.supabase.co/storage/v1/object/public/questoes/remedied/46d816cb-d3af-409d-b7fa-d40bde060a8d_1793840826676.webp",
+          "field": "statement.images"
         }
       ],
-      "hasImageHit": false,
-      "images": [],
       "hasVisionHit": false
     },
     {

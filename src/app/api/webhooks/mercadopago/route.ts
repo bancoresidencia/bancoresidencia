@@ -130,13 +130,15 @@ export async function POST(req: NextRequest) {
             }
 
             // Atualiza ordem correspondente
-            await supabaseAdmin
+            const { data: updatedOrder } = await supabaseAdmin
               .from('orders')
               .update({
                 status: 'approved',
                 updated_at: now.toISOString()
               })
-              .eq('mp_payment_id', String(payment.id));
+              .eq('mp_payment_id', String(payment.id))
+              .select('id')
+              .maybeSingle();
 
             // Registrar indicação de embaixador se cupom esteve associado
             if (metadata.coupon_code) {
@@ -144,7 +146,9 @@ export async function POST(req: NextRequest) {
                 const finalAmount = Number(payment.transaction_amount) || planConfig.totalPrice;
                 const payer = payment.payer as { first_name?: string; last_name?: string; email?: string } | undefined;
                 const studentName = payer?.first_name ? `${payer.first_name} ${payer.last_name || ''}`.trim() : 'Estudante';
+                const orderId = updatedOrder?.id || (metadata.order_id as string) || String(payment.id);
                 await recordReferralSale({
+                  orderId,
                   couponCode: String(metadata.coupon_code),
                   studentName,
                   studentEmail: payer?.email || (metadata.user_email as string) || '',
@@ -185,6 +189,23 @@ export async function POST(req: NextRequest) {
                 updated_at: now.toISOString()
               })
               .eq('mp_payment_id', String(payment.id));
+
+            // Marca indicação de embaixador como cancelada/estornada para prevenir saques indevidos
+            try {
+              const { data: ord } = await supabaseAdmin
+                .from('orders')
+                .select('id')
+                .eq('mp_payment_id', String(payment.id))
+                .maybeSingle();
+
+              const orderId = ord?.id || String(payment.id);
+              await supabaseAdmin
+                .from('ambassador_referrals')
+                .update({ status: 'refunded' })
+                .eq('order_id', orderId);
+            } catch (refCancelErr) {
+              console.warn('Aviso ao cancelar indicação por estorno no webhook:', refCancelErr);
+            }
           }
         }
       } catch (paymentErr) {

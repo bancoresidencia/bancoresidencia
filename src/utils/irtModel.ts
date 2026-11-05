@@ -167,11 +167,22 @@ export function getItemParameters(attempt: ValidatedAttempt): IRTItemParameters 
  * Segunda derivada: f'(theta) = -sum a_i^2 * P_i(theta) * (1 - P_i(theta)) - 1 < 0
  * (Estritamente côncava, raiz única garantida)
  */
+// Cache LRU de estimativa de habilidade (evita re-executar Newton-Raphson para tentativas inalteradas)
+const abilityCache = new Map<string, number>();
+const seCache = new Map<string, number>();
+
 export function calculateIRTAbility(attempts: ValidatedAttempt[]): number {
   if (attempts.length === 0) return 0.0;
 
   const total = attempts.length;
   const correct = attempts.filter((a) => a.correct).length;
+  const lastId = attempts[attempts.length - 1]?.question_id || '';
+  const cacheKey = String(total) + '_' + String(correct) + '_' + lastId;
+
+  const cachedTheta = abilityCache.get(cacheKey);
+  if (cachedTheta !== undefined) {
+    return cachedTheta;
+  }
 
   // Valor inicial baseado na proporção de acertos regularizada
   const pRegularized = (correct + 1) / (total + 2);
@@ -206,6 +217,12 @@ export function calculateIRTAbility(attempts: ValidatedAttempt[]): number {
     }
   }
 
+  abilityCache.set(cacheKey, theta);
+  if (abilityCache.size > 500) {
+    const firstKey = abilityCache.keys().next().value;
+    if (firstKey) abilityCache.delete(firstKey);
+  }
+
   return theta;
 }
 
@@ -217,6 +234,15 @@ export function calculateIRTAbility(attempts: ValidatedAttempt[]): number {
 export function calculateStandardError(theta: number, attempts: ValidatedAttempt[]): number {
   if (attempts.length === 0) return 1.0;
 
+  const total = attempts.length;
+  const lastId = attempts[attempts.length - 1]?.question_id || '';
+  const cacheKey = theta.toFixed(4) + '_' + String(total) + '_' + lastId;
+
+  const cachedSe = seCache.get(cacheKey);
+  if (cachedSe !== undefined) {
+    return cachedSe;
+  }
+
   let fisherInfo = 0.0;
   for (let i = 0; i < attempts.length; i++) {
     const { difficulty_b, discrimination_a } = getItemParameters(attempts[i]);
@@ -226,7 +252,13 @@ export function calculateStandardError(theta: number, attempts: ValidatedAttempt
 
   // Prior Normal(0, 1) adiciona 1 unidade de informação
   const totalInfo = fisherInfo + 1.0;
-  return 1.0 / Math.sqrt(totalInfo);
+  const se = 1.0 / Math.sqrt(totalInfo);
+  seCache.set(cacheKey, se);
+  if (seCache.size > 500) {
+    const firstKey = seCache.keys().next().value;
+    if (firstKey) seCache.delete(firstKey);
+  }
+  return se;
 }
 
 /**

@@ -150,13 +150,30 @@ export const QuestoesView: React.FC = () => {
 
   useEffect(() => {
     let interval: NodeJS.Timeout | null = null;
+    let lastTick = Date.now();
+
+    const handleVisibility = () => {
+      lastTick = Date.now();
+    };
+    if (typeof document !== 'undefined') {
+      document.addEventListener('visibilitychange', handleVisibility);
+    }
+
     if (bancoMode === 'resolucao' && isTimerRunning) {
       interval = setInterval(() => {
-        setQuestionTimer((prev) => prev + 1);
-        setSessionTimer((prev) => prev + 1);
+        if (typeof document !== 'undefined' && document.hidden) return;
+        const now = Date.now();
+        const delta = Math.round((now - lastTick) / 1000);
+        lastTick = now;
+        const inc = delta > 0 && delta <= 5 ? delta : 1;
+        setQuestionTimer((prev) => prev + inc);
+        setSessionTimer((prev) => prev + inc);
       }, 1000);
     }
     return () => {
+      if (typeof document !== 'undefined') {
+        document.removeEventListener('visibilitychange', handleVisibility);
+      }
       if (interval) clearInterval(interval);
     };
   }, [bancoMode, isTimerRunning]);
@@ -233,6 +250,12 @@ export const QuestoesView: React.FC = () => {
   const [isCreateCadernoModalOpen, setIsCreateCadernoModalOpen] = useState(false);
   const [isCreatingListLoading, setIsCreatingListLoading] = useState(false);
 
+  // Sincroniza respostas recentes em ref para evitar refetch cíclico a cada alternativa respondida
+  const userAnswersRef = useRef(userAnswers);
+  useEffect(() => {
+    userAnswersRef.current = userAnswers;
+  }, [userAnswers]);
+
   // Busca questões do Supabase com base nos filtros
   useEffect(() => {
     let isCancelled = false;
@@ -254,11 +277,12 @@ export const QuestoesView: React.FC = () => {
           effectivePageSize = Math.min(200, sessionQuestionIds.length);
         }
 
-        const answeredIds = Object.keys(userAnswers);
-        const correctIds = Object.entries(userAnswers)
+        const currentAnswers = userAnswersRef.current;
+        const answeredIds = Object.keys(currentAnswers);
+        const correctIds = Object.entries(currentAnswers)
           .filter(([, a]) => a.isCorrect)
           .map(([id]) => id);
-        const wrongIds = Object.entries(userAnswers)
+        const wrongIds = Object.entries(currentAnswers)
           .filter(([, a]) => !a.isCorrect)
           .map(([id]) => id);
 
@@ -306,8 +330,7 @@ export const QuestoesView: React.FC = () => {
     lists,
     questionsPage,
     sessionQuestionLimit,
-    sessionQuestionIds,
-    userAnswers
+    sessionQuestionIds
   ]);
 
   const visibleQuestions = useMemo(() => {

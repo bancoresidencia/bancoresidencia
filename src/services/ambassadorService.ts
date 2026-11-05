@@ -394,6 +394,20 @@ export async function recordReferralSale(params: {
 
   try {
     const supabase = getSupabaseAdmin();
+
+    // Idempotência: Se orderId foi informado, checa se a indicação já foi computada
+    if (params.orderId) {
+      const { data: existingReferral } = await supabase
+        .from('ambassador_referrals')
+        .select('id')
+        .eq('order_id', params.orderId)
+        .maybeSingle();
+
+      if (existingReferral) {
+        return { success: true, referralId: existingReferral.id };
+      }
+    }
+
     const { data: profile } = await supabase
       .from('profiles')
       .select('id')
@@ -422,6 +436,14 @@ export async function recordReferralSale(params: {
     return { success: false };
   }
 
+  // Idempotência no fallback em memória
+  if (params.orderId && memoryFallback.sales[referrerId]) {
+    const existingMemory = memoryFallback.sales[referrerId].find((s) => s.orderId === params.orderId);
+    if (existingMemory) {
+      return { success: true, referralId: existingMemory.id };
+    }
+  }
+
   const now = new Date();
   const maturesAt = new Date(now.getTime() + AMBASSADOR_CONFIG.retentionDays * 24 * 60 * 60 * 1000);
   const maskedEmail = params.studentEmail
@@ -430,6 +452,7 @@ export async function recordReferralSale(params: {
 
   const referralItem: ReferralSale = {
     id: 'sale_' + Math.random().toString(36).substring(2, 9),
+    orderId: params.orderId,
     studentName: params.studentName,
     studentEmailMasked: maskedEmail,
     planName: params.planName,

@@ -26,6 +26,7 @@ export const AMBASSADOR_CONFIG: AmbassadorConfig = {
 
 export interface ReferralSale {
   id: string;
+  orderId?: string;
   studentName: string;
   studentEmailMasked: string;
   planName: string;

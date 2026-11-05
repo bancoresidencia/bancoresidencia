@@ -24,11 +24,12 @@ if (API_KEYS.length === 0) {
 
 console.log(`🔑 Pool de API Keys carregado: ${API_KEYS.length} chaves disponíveis.`);
 
-// Modelos suportados com cota Flash-Lite estável
 const MODELS = [
+  'gemini-3.5-flash',
+  'gemini-3-flash-preview',
+  'gemini-3.6-flash',
   'gemini-3.1-flash-lite',
-  'gemini-3.5-flash-lite',
-  'gemini-flash-lite-latest'
+  'gemini-3.5-flash-lite'
 ];
 
 let keyIndex = 0;
@@ -249,6 +250,12 @@ async function analyzeTargetImage(imageUrl) {
 
       if (!apiRes.ok) {
         const errText = await apiRes.text();
+        if (apiRes.status === 401) {
+          console.log('      ❌ Chave desabilitada (401). Removendo do pool.');
+          const idx = API_KEYS.indexOf(key);
+          if (idx !== -1) API_KEYS.splice(idx, 1);
+          continue;
+        }
         if (apiRes.status === 429 || apiRes.status === 503) {
           const waitSec = Math.min(25, 4 + attempt * 3);
           console.log(`      ⏳ Rate limit (HTTP ${apiRes.status}) na chave. Aguardando ${waitSec}s antes de tentar próxima chave/modelo...`);

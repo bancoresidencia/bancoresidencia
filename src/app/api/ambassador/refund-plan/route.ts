@@ -7,29 +7,22 @@ export async function POST(req: NextRequest) {
     let authUser = null;
     try {
       const supabase = await createClient();
-      const { data: { user } } = await supabase.auth.getUser();
-      authUser = user;
+      const { data: { user }, error: authError } = await supabase.auth.getUser();
+      if (!authError && user) {
+        authUser = user;
+      }
     } catch {
       // Falha esperada fora de escopo de cookies ou em chamadas diretas
     }
 
-    let bodyUserId = '';
-    try {
-      const body = await req.json();
-      bodyUserId = body?.userId || '';
-    } catch {
-      // Body opcional
-    }
-
-    const effectiveUserId = authUser?.id || bodyUserId;
-
-    if (!effectiveUserId) {
+    if (!authUser) {
       return NextResponse.json(
-        { error: 'Usuário não autenticado.', success: false },
+        { error: 'Acesso não autorizado: faça login para solicitar o reembolso.', success: false },
         { status: 401 }
       );
     }
 
+    const effectiveUserId = authUser.id;
     const res = await requestBackendPlanRefund(effectiveUserId);
 
     if (!res.success) {
