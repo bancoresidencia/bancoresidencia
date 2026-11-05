@@ -40,7 +40,7 @@ interface QuestionCardProps {
   question: Question;
   index: number;
   total: number;
-  onAnswer: (questionId: string, selectedLetter: 'A' | 'B' | 'C' | 'D' | 'E', isCorrect: boolean) => void;
+  onAnswer: (questionId: string, selectedLetter: 'A' | 'B' | 'C' | 'D' | 'E', isCorrect: boolean, metadata?: any) => void;
   userAnswer?: 'A' | 'B' | 'C' | 'D' | 'E';
   historicalAnswer?: {
     letter: 'A' | 'B' | 'C' | 'D' | 'E';
@@ -672,7 +672,8 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         questionId: question.id,
-        selectedOption: letter
+        selectedOption: letter,
+        isPrefetch: true
       })
     })
       .then((res) => res.json())
@@ -724,31 +725,37 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
       setIsAnswered(true);
       const isAnulada = Boolean(activeQuestion.isAnulada || resolvedCorrectAnswer === 'ANULADA');
       const isCorrect = isAnulada ? true : pendingSelected === resolvedCorrectAnswer;
-      onAnswer(question.id, pendingSelected, isCorrect);
+      fetch('/api/questions/solve', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          questionId: question.id,
+          selectedOption: pendingSelected,
+          isPrefetch: false
+        })
+      }).catch((e) => console.warn('[QuestionCard] Erro ao sincronizar resposta no backend:', e));
+
+      onAnswer(question.id, pendingSelected, isCorrect, { syncedRemotely: true });
       setShowCommentary(true);
       return;
     }
 
-    // Consulta segura e homologação em tempo real (utiliza o prefetch instantâneo se já iniciado)
+    // Confirmação oficial de resolução e persistência segura no backend (isPrefetch: false)
     try {
       setIsSubmittingAnswer(true);
       setSolveError(null);
 
-      const key = `${question.id}_${pendingSelected}`;
-      let dataPromise = prefetchPromisesRef.current[key];
-      if (!dataPromise) {
-        dataPromise = fetch('/api/questions/solve', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            questionId: question.id,
-            selectedOption: pendingSelected
-          })
-        }).then((res) => res.json());
-        prefetchPromisesRef.current[key] = dataPromise;
-      }
+      const confirmPromise = fetch('/api/questions/solve', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          questionId: question.id,
+          selectedOption: pendingSelected,
+          isPrefetch: false
+        })
+      }).then((res) => res.json());
 
-      const data = await dataPromise;
+      const data = await confirmPromise;
       if (!data || !data.success) {
         if (data?.limitReached) {
           openUpgradeModal(null, true);
@@ -765,7 +772,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
       });
 
       setIsAnswered(true);
-      onAnswer(question.id, pendingSelected, data.isCorrect);
+      onAnswer(question.id, pendingSelected, data.isCorrect, { syncedRemotely: true });
       setShowCommentary(true);
     } catch (err) {
       console.error('[QuestionCard] Falha ao resolver questão:', err);

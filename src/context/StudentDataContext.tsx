@@ -558,8 +558,8 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
         [questionId]: { letter: selectedLetter, isCorrect }
       }));
 
-      // Sincroniza em segundo plano com o Supabase com todos os metadados clínicos
-      if (user?.id) {
+      // Sincroniza em segundo plano com o Supabase com todos os metadados clínicos (se não sincronizado via solve)
+      if (user?.id && !metadata?.syncedRemotely) {
         const supabase = createClient();
         supabase
           .from('user_answers')

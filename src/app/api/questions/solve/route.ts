@@ -138,7 +138,15 @@ export async function POST(req: NextRequest) {
     }
 
     const body = await req.json();
-    const { questionId, selectedOption } = body;
+    const {
+      questionId,
+      selectedOption,
+      isPrefetch = false,
+      attempts,
+      studentNotes,
+      errorReason,
+      statusRetrial
+    } = body;
 
     // 2. Validação estrita do ID
     if (!questionId || !validateQuestionId(questionId)) {
@@ -264,8 +272,8 @@ export async function POST(req: NextRequest) {
       }
     }
 
-    // 5.3 Validação de plano e contagem diária no Supabase
-    if (authenticatedUser) {
+    // 5.3 Validação de plano e contagem diária no Supabase (apenas em confirmação oficial, prefetch não bloqueia nem debita)
+    if (!isPrefetch && authenticatedUser) {
       const { data: profile } = await supabaseAdmin
         .from('profiles')
         .select('role, subscription_plan, subscription_status, subscription_expires_at')
@@ -325,7 +333,7 @@ export async function POST(req: NextRequest) {
           }
         }
       }
-    } else {
+    } else if (!isPrefetch) {
       // 5.4 Visitante não autenticado (verificação de cota por IP para evitar burla em aba anônima)
       const guestCheck = checkGuestQuota(clientIp, row.id);
       if (guestCheck.limitReached) {
@@ -350,14 +358,18 @@ export async function POST(req: NextRequest) {
       ? true
       : studentChoice.length > 0 && studentChoice === goldAnswer;
 
-    // 7. Sincronização em background com metadados clínicos completos
-    if (studentChoice && row.id) {
+    // 7. Sincronização em background com metadados clínicos completos (apenas em confirmação oficial, NUNCA no prefetch)
+    if (!isPrefetch && studentChoice && row.id) {
       if (authenticatedUser) {
         const targetUserId = authenticatedUser.id;
         const targetQuestionId = row.id;
         const targetChoice = studentChoice;
         const targetIsCorrect = isCorrect;
-        
+        const finalAttempts = Array.isArray(attempts) && attempts.length > 0
+          ? attempts
+          : [{ letter: targetChoice, isCorrect: targetIsCorrect, timestamp: Date.now() }];
+        const finalStatusRetrial = statusRetrial || (targetIsCorrect ? 'recuperado' : 'pendente');
+
         (async () => {
           try {
             await supabaseAdmin.from('user_answers').upsert(
@@ -373,7 +385,11 @@ export async function POST(req: NextRequest) {
                 subfoco: row.subfoco || null,
                 difficulty: row.difficulty || null,
                 banca: row.banca || null,
-                year: row.year ? Number(row.year) : null
+                year: row.year ? Number(row.year) : null,
+                attempts: finalAttempts,
+                student_notes: studentNotes || null,
+                error_reason: errorReason || null,
+                status_retrial: finalStatusRetrial
               },
               { onConflict: 'user_id,question_id' }
             );
@@ -389,6 +405,7 @@ export async function POST(req: NextRequest) {
     // Resposta imediata em poucos milissegundos
     return NextResponse.json({
       success: true,
+      isPrefetch: Boolean(isPrefetch),
       limitReached: false,
       questionId: row.id,
       correctAnswer: goldAnswer,

@@ -179,6 +179,7 @@ export interface UserAnswerItem {
   studentNotes?: string;
   statusRetrial?: 'pendente' | 'recuperado';
   lastRetriedAt?: number;
+  syncedRemotely?: boolean;
   // Rastreabilidade do Erro para Sessão de Revisão às Cegas
   previousLetter?: 'A' | 'B' | 'C' | 'D' | 'E';
   previousIsCorrect?: boolean;

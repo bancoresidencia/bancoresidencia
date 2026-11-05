@@ -317,7 +317,12 @@ export const QuestoesView: React.FC = () => {
   const currentQuestion = visibleQuestions[Math.min(currentQuestionIndex, visibleQuestions.length - 1)];
 
   // Resposta da questão com verificação de limites
-  const handleAnswer = (questionId: string, selectedLetter: 'A' | 'B' | 'C' | 'D' | 'E', isCorrect: boolean) => {
+  const handleAnswer = (
+    questionId: string,
+    selectedLetter: 'A' | 'B' | 'C' | 'D' | 'E',
+    isCorrect: boolean,
+    extraMetadata?: any
+  ) => {
     if (!canSolveQuestion()) {
       openUpgradeModal(null, true);
       return;
@@ -336,7 +341,8 @@ export const QuestoesView: React.FC = () => {
       subfoco: q?.subfoco,
       banca: q?.banca,
       year: q?.year,
-      code: q?.code
+      code: q?.code,
+      ...extraMetadata
     });
   };
 
