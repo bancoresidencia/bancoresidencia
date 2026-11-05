@@ -225,16 +225,42 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   // Helper para renderizar texto com marcações em negrito (**texto**) de forma limpa e nativa
   const renderFormattedText = (text: string | null | undefined) => {
     if (!text) return null;
-    const parts = text.split(/(\*\*[^*]+\*\*)/g);
-    return parts.map((part, index) => {
-      if (part.startsWith('**') && part.endsWith('**')) {
-        return (
-          <strong key={index} className="font-bold text-slate-900 dark:text-white">
-            {part.slice(2, -2)}
-          </strong>
-        );
+
+    const parseItalics = (str: string, parentKey: string | number) => {
+      const italicParts = str.split(/(\*(?!\s)[^*\n]+?(?<!\s)\*|_(?!\s)[^_\n]+?(?<!\s)_)/g);
+      return italicParts.map((subPart, subIdx) => {
+        const key = `${parentKey}-${subIdx}`;
+        if (
+          (subPart.startsWith('*') && subPart.endsWith('*') && subPart.length > 2) ||
+          (subPart.startsWith('_') && subPart.endsWith('_') && subPart.length > 2)
+        ) {
+          return (
+            <em key={key} className="italic font-medium">
+              {subPart.slice(1, -1)}
+            </em>
+          );
+        }
+        return subPart;
+      });
+    };
+
+    const boldParts = text.split(/(\*{3}.*?\*{3}|\*{2}.*?\*{2})/g);
+    return boldParts.flatMap((part, index) => {
+      if (part.startsWith('***') && part.endsWith('***') && part.length > 6) {
+        return [
+          <strong key={`bi-${index}`} className="font-bold text-slate-900 dark:text-white">
+            <em className="italic font-medium">{part.slice(3, -3)}</em>
+          </strong>,
+        ];
       }
-      return part;
+      if (part.startsWith('**') && part.endsWith('**') && part.length > 4) {
+        return [
+          <strong key={`b-${index}`} className="font-bold text-slate-900 dark:text-white">
+            {parseItalics(part.slice(2, -2), `b-${index}`)}
+          </strong>,
+        ];
+      }
+      return parseItalics(part, `p-${index}`);
     });
   };
 

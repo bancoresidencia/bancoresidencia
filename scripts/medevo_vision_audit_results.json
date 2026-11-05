@@ -1,11 +1,11 @@
 {
   "startedAt": "2026-11-04T16:18:52.228Z",
-  "lastUpdatedAt": "2026-11-05T22:21:44.757Z",
+  "lastUpdatedAt": "2026-11-05T22:59:27.789Z",
   "targetMode": "medevo",
   "summary": {
-    "totalAudited": 3044,
+    "totalAudited": 3046,
     "detectedWithLogo": 154,
-    "clean": 2890,
+    "clean": 2892,
     "errors": 0,
     "byType": {
       "marca_dagua_sutil": 134,
@@ -58069,6 +58069,42 @@
       "location": "canto_inferior_esquerdo",
       "details": "O nome 'MedEvo' está presente em texto reduzido na margem branca inferior esquerda, posicionado abaixo das informações técnicas do eletrocardiograma.",
       "auditedAt": "2026-11-05T22:17:53.104Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/secundigesta-de-44-anos-apresenta-com-34-semanas-de-idade-ge-01.webp": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/secundigesta-de-44-anos-apresenta-com-34-semanas-de-idade-ge-01.webp",
+      "references": [
+        {
+          "questionId": "6eb553f4-ea9a-400c-9ac3-f39b4a323299",
+          "code": "UNESPHCFMB-2024-OBS-5128",
+          "banca": "UNESP/HCFMB",
+          "year": 2024,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo mostra apenas um gráfico de altura uterina em função das semanas de gestação, sem nenhum elemento, logotipo ou marca d'água da MedEvo.",
+      "auditedAt": "2026-11-05T22:55:36.010Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/uel/acesso-direto/2013/q092-1-275a5df3505d6272.webp": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/uel/acesso-direto/2013/q092-1-275a5df3505d6272.webp",
+      "references": [
+        {
+          "questionId": "6eb65920-135d-4c92-94bf-ab25b33f4d27",
+          "code": "UEL-2013-MPS-20409",
+          "banca": "UEL",
+          "year": 2013,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo contém apenas quatro gráficos de linhas representando dados estatísticos por faixa etária. Não há presença do logotipo, mascote ou texto da marca MedEvo.",
+      "auditedAt": "2026-11-05T22:55:47.629Z"
     }
   }
 }
