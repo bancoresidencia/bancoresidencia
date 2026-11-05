@@ -112,6 +112,82 @@ export const MEDICAL_GLOSSARY: Record<string, MedicalGlossaryEntry> = {
     definition: 'Sistema de pontuação para estratificação de probabilidade clínica de apendicite aguda.',
     examTip: 'Os dois critérios que pontuam 2 pontos no escore são: dor na fossa ilíaca direita (descompressão brusca) e leucocitose > 10.000.',
     category: 'cirurgia'
+  },
+  Bumm: {
+    term: 'Bumm',
+    fullName: 'Tríade de Bumm (Endometrite Puerperal)',
+    definition: 'Tríade clínica clássica patognomônica de infecção puerperal: 1) Febre em picos; 2) Útero subinvoluído, doloroso e amolecido (pastoso); 3) Lóquios escuros/achocolatados e de odor fétido.',
+    examTip: 'Nas provas, o útero NUNCA é duro e retraído; a miomalácia e atonia são marcadores do acometimento infeccioso da decídua e miométrio.',
+    category: 'obstetricia'
+  },
+  Endometrite: {
+    term: 'Endometrite',
+    fullName: 'Endometrite Puerperal (Infecção Puerperal)',
+    definition: 'Infecção bacteriana polimicrobiana mista (anaeróbios + Gram-negativos) do endométrio e decídua pós-parto. Principal causa de morbidade febril puerperal.',
+    examTip: 'Tratamento padrão-ouro hospitalar com Clindamicina 900mg IV 8/8h + Gentamicina 5mg/kg IV 24/24h até 48h afebril. Sem antibiótico oral após a alta!',
+    category: 'obstetricia'
+  },
+  Apojadura: {
+    term: 'Apojadura',
+    fullName: 'Apojadura Mamária Fisiológica ("Descida do Leite")',
+    definition: 'Descida fisiológica do leite que ocorre entre o 2º e 4º dia pós-parto por queda de progesterona e liberação de prolactina. Pode causar febre baixa autolimitada (< 24h) e mamas túrgidas bilaterais.',
+    examTip: 'Não é infecção! O útero está normal, a puérpera está em bom estado geral e NÃO se usa antibiótico. Aferição axilar pode ser falseada pelo calor mamário.',
+    category: 'obstetricia'
+  },
+  TPS: {
+    term: 'TPS',
+    fullName: 'Tromboflebite Pélvica Séptica',
+    definition: 'Trombose venosa infectada dos plexos pélvicos e veias ovarianas (especialmente a veia ovariana direita) após infecção puerperal.',
+    examTip: 'Suspeitar quando a puérpera mantém picos febris diários ("em agulha") após 48-72h de antibióticos venosos, com exame físico pélvico inocente. Confirmada pelo Teste da Heparina.',
+    category: 'obstetricia'
+  },
+  Loquiometra: {
+    term: 'Loquiometra',
+    fullName: 'Loquiometra Puerperal',
+    definition: 'Retenção patológica de secreções e lóquios no interior da cavidade uterina decorrente de espasmo ou estenose cervical pós-parto, favorecendo proliferação bacteriana e febre.',
+    examTip: 'Reconhecida por útero discretamente aumentado e doloroso sem fluxo externo de lóquios. Trata-se com ocitocina e desobstrução suave do canal cervical.',
+    category: 'obstetricia'
+  },
+  MEOWS: {
+    term: 'MEOWS',
+    fullName: 'Modified Early Obstetric Warning Score',
+    definition: 'Escore fisiológico de alerta precoce específico para obstetrícia, calibrado para detectar precocemente sepse materna e choque séptico puerperal.',
+    examTip: 'Substitui o qSOFA clássico no ciclo gravídico-puerperal, pois a leucocitose fisiológica pós-parto falseia escores clínicos comuns de adultos.',
+    category: 'obstetricia'
+  },
+  Giordano: {
+    term: 'Giordano',
+    fullName: 'Sinal de Giordano (Punho-percussão Lombar)',
+    definition: 'Dor aguda em pontada ou choque desencadeada pela percussão suave da região lombar (fossa renal) com a borda ulnar da mão, indicando distensão da cápsula renal.',
+    examTip: 'Sinal semiológico cardinal de pielonefrite aguda. Fundamental no puerpério febril para descartar infecção alta do trato urinário após sondagem vesical da cesárea.',
+    category: 'clinica'
+  },
+  Cefazolina: {
+    term: 'Cefazolina',
+    fullName: 'Cefazolina Sódica (Cefalosporina de 1ª Geração)',
+    definition: 'Antimicrobiano betalactâmico de primeira geração com excelente ação bactericida contra Staphylococcus aureus sensível e estreptococos de pele.',
+    examTip: 'Fármaco padrão-ouro para profilaxia cirúrgica em 100% das cesarianas: 2g IV (3g se IMC ≥ 35 ou peso ≥ 120 kg) infundido 30 a 60 min ANTES da incisão na pele (indução anestésica).',
+    category: 'obstetricia'
+  },
+  Gentamicina: {
+    term: 'Gentamicina',
+    fullName: 'Gentamicina (Aminoglicosídeo Pico-Dependente)',
+    definition: 'Antimicrobiano aminoglicosídeo bactericida concentração-dependente (pico-dependente), ativo contra bacilos Gram-negativos entéricos aeróbios/facultativos como E. coli e Klebsiella.',
+    examTip: 'Administrada em dose única diária (5 mg/kg IV uma vez ao dia). Possui efeito pós-antibiótico prolongado e menor nefro/ototoxicidade que o regime fracionado de 8/8h.',
+    category: 'obstetricia'
+  },
+  Clindamicina: {
+    term: 'Clindamicina',
+    fullName: 'Clindamicina Fosfato (Lincosamida)',
+    definition: 'Antimicrobiano da classe das lincosamidas com potente atividade contra bactérias anaeróbias estritas (incluindo Bacteroides fragilis) e cocos Gram-positivos.',
+    examTip: 'Dose padrão na endometrite: 900 mg IV a cada 8 horas. Sua associação com Gentamicina cobre 95% da flora polimicrobiana ascendente da infecção puerperal.',
+    category: 'obstetricia'
+  },
+  Lóquios: {
+    term: 'Lóquios',
+    fullName: 'Loquiação Puerperal Fisiológica',
+    definition: 'Corrimento fisiológico uterovaginal pós-parto composto por sangue, fragmentos de decídua desprendida, muco cervical e transudato de cicatrização.',
+    examTip: 'Evolução normal: rubros (sangue vivo, 1º-3º dia), serosos/fuscos (róseo-acastanhados, 4º-10º dia) e alvos/brancos (após 10º dia). Odor fétido e cor de borra de café indicam infecção (endometrite).',
+    category: 'obstetricia'
   }
 };
-

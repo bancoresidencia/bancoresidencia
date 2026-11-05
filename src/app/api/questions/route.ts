@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
 import { createClient as createSupabaseServerClient } from '@/lib/supabase/server';
+import { verifyAdminSession } from '@/lib/supabase/adminAuth';
 import {
   ExtendedFilterState,
   resolveBancaList,
@@ -437,7 +438,13 @@ export async function POST(req: NextRequest) {
       }
     }
 
-    const selectCols = body.includeGabarito ? '*' : SAFE_QUESTION_COLUMNS;
+    let selectCols = SAFE_QUESTION_COLUMNS;
+    if (body.includeGabarito) {
+      const auth = await verifyAdminSession(req);
+      if (auth.authorized) {
+        selectCols = '*';
+      }
+    }
     const from = (page - 1) * pageSize;
     const to = from + pageSize - 1;
 

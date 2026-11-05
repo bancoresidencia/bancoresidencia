@@ -41,6 +41,13 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    if (prompt.length > 500) {
+      return NextResponse.json(
+        { success: false, error: 'O texto excede o limite máximo permitido de 500 caracteres.' },
+        { status: 400 }
+      );
+    }
+
     const currentYear = new Date().getFullYear();
 
     const systemPrompt = `Você é o assistente inteligente de busca e filtros do Banco de Questões de Residência Médica (133.000 questões médicas oficiais).

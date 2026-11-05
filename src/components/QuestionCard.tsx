@@ -35,6 +35,12 @@ import { useSubscription } from '@/hooks/useSubscription';
 import { QuestionComments } from './QuestionComments';
 import { SendQuestionToFolderModal } from './SendQuestionToFolderModal';
 import { Folder } from '@/types';
+import {
+  getQuestionResolution,
+  subscribeToResolutions,
+  waitForQuestionResolution,
+  hasQuestionResolution
+} from '@/services/resolutionCache';
 
 interface QuestionCardProps {
   question: Question;
@@ -282,7 +288,18 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
 
   // Sincroniza estado de forma limpa quando a questão ou a resposta mudam
   useEffect(() => {
-    setResolvedOverrides({});
+    const cachedRes = getQuestionResolution(question.id);
+    if (cachedRes) {
+      setResolvedOverrides({
+        correctAnswer: cachedRes.correctAnswer,
+        commentary: cachedRes.commentary,
+        options: cachedRes.options && cachedRes.options.length > 0 ? cachedRes.options : question.options,
+        isAnulada: cachedRes.isAnulada
+      });
+      setIsLoadingResolution(false);
+    } else {
+      setResolvedOverrides({});
+    }
     setIsSubmittingAnswer(false);
     setSolveError(null);
     setPendingSelected(userAnswer || null);
@@ -294,6 +311,24 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     setOpenTopics({});
     setHighlights([]);
     setHoveredOptionLetter(null);
+
+    // Se inscreve caso a resolução do lote termine enquanto este card estiver ativo
+    const unsubscribe = subscribeToResolutions((updatedIds) => {
+      if (updatedIds.includes(question.id)) {
+        const updated = getQuestionResolution(question.id);
+        if (updated) {
+          setResolvedOverrides({
+            correctAnswer: updated.correctAnswer,
+            commentary: updated.commentary,
+            options: updated.options && updated.options.length > 0 ? updated.options : question.options,
+            isAnulada: updated.isAnulada
+          });
+          setIsLoadingResolution(false);
+        }
+      }
+    });
+
+    return unsubscribe;
   }, [question.id, question.correctAnswer, userAnswer]);
 
   // Carrega sob demanda gabarito e comentários caso a questão tenha sido respondida previamente
@@ -698,7 +733,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     setPendingSelected(letter);
 
     // Pré-carregamento instantâneo em background (enquanto o aluno lê/revisa antes de clicar em Resolver)
-    if (!activeQuestion.correctAnswer) {
+    if (!activeQuestion.correctAnswer && !hasQuestionResolution(question.id)) {
       prefetchSolve(letter);
     }
   };
@@ -721,10 +756,26 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     }
 
     // Se o gabarito oficial já estiver carregado no objeto da questão ou deduzido via fallback:
-    if (resolvedCorrectAnswer) {
+    // Se ainda não tiver resolvedCorrectAnswer, verifica o cache em lote (Abordagem A)
+    let batchResolution = resolvedCorrectAnswer ? null : getQuestionResolution(question.id);
+    if (!resolvedCorrectAnswer && !batchResolution) {
+      batchResolution = await waitForQuestionResolution(question.id, 600);
+    }
+
+    if (batchResolution && !resolvedCorrectAnswer) {
+      setResolvedOverrides({
+        correctAnswer: batchResolution.correctAnswer,
+        commentary: batchResolution.commentary,
+        options: batchResolution.options && batchResolution.options.length > 0 ? batchResolution.options : question.options,
+        isAnulada: batchResolution.isAnulada
+      });
+    }
+
+    const effectiveGoldAnswer = resolvedCorrectAnswer || batchResolution?.correctAnswer;
+    if (effectiveGoldAnswer) {
       setIsAnswered(true);
-      const isAnulada = Boolean(activeQuestion.isAnulada || resolvedCorrectAnswer === 'ANULADA');
-      const isCorrect = isAnulada ? true : pendingSelected === resolvedCorrectAnswer;
+      const isAnulada = Boolean(activeQuestion.isAnulada || batchResolution?.isAnulada || effectiveGoldAnswer === 'ANULADA');
+      const isCorrect = isAnulada ? true : pendingSelected === effectiveGoldAnswer;
       fetch('/api/questions/solve', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -739,6 +790,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
       setShowCommentary(true);
       return;
     }
+
 
     // Confirmação com aproveitamento do Prefetch em memória e persistência otimizada
     try {

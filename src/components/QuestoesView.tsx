@@ -52,6 +52,7 @@ import {
   fetchTotalQuestionsCount,
   fetchQuestionIdsForListCriteria
 } from '@/services/questionService';
+import { prefetchQuestionResolutions } from '@/services/resolutionCache';
 
 export const QuestoesView: React.FC = () => {
   const router = useRouter();
@@ -347,6 +348,16 @@ export const QuestoesView: React.FC = () => {
 
   const visibleQuestions = useMemo(() => {
     return supabaseQuestions;
+  }, [supabaseQuestions]);
+
+  // Disparo Imediato em Lote (Abordagem A): pré-carrega gabaritos, justificativas e comentários da lista ativa
+  useEffect(() => {
+    if (supabaseQuestions.length > 0) {
+      const ids = supabaseQuestions.map((q) => q.id).filter(Boolean);
+      prefetchQuestionResolutions(ids).catch((err) => {
+        console.warn('[QuestoesView] Falha silenciosa no prefetch de resoluções:', err);
+      });
+    }
   }, [supabaseQuestions]);
 
   const currentQuestion = visibleQuestions[Math.min(currentQuestionIndex, visibleQuestions.length - 1)];

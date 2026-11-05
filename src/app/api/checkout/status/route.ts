@@ -24,9 +24,25 @@ export async function GET(req: NextRequest) {
     const payment = await paymentService.get({ id: paymentId });
 
     const status = payment.status || 'pending';
+    const metadata = payment.metadata || {};
+    const paymentUserId = metadata.user_id;
+
+    // Blindagem BOLA / IDOR: Validação estrita de que o pagamento pertence ao usuário autenticado
+    if (paymentUserId && paymentUserId !== user.id) {
+      return NextResponse.json(
+        { error: 'Acesso negado: este pagamento não pertence à sua conta.', status: 'forbidden' },
+        { status: 403 }
+      );
+    }
 
     // Se estiver aprovado no Mercado Pago mas ainda pendente no banco, sincroniza
     if (status === 'approved') {
+      if (!paymentUserId || paymentUserId !== user.id) {
+        return NextResponse.json(
+          { error: 'Acesso negado: este pagamento não pertence à sua conta.', status: 'forbidden' },
+          { status: 403 }
+        );
+      }
       const supabaseAdmin = getSupabaseAdmin();
       const metadata = payment.metadata || {};
       const durationDays = Number(metadata.duration_days) || 365;

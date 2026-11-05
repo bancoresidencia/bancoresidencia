@@ -1,10 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { supabase } from '@/lib/supabase';
+import { getSupabaseAdmin } from '@/lib/supabase/adminClient';
 import { callVertexAi } from '@/lib/vertexAi';
 import { callGeminiAi } from '@/lib/gemini';
 import { medicalKnowledgeService, KnowledgeChunk } from '@/services/medicalKnowledgeService';
 import { guidelinesKnowledgeService } from '@/services/guidelinesKnowledgeService';
 import { verifyStudentSession } from '@/lib/supabase/studentAuth';
+import { sanitizePostgrestTerm } from '@/utils/security';
+import { FocusExamAnalytics } from '@/types/analytics';
+import { StudyMaterialItem } from '@/types/flashcards';
 
 export const dynamic = 'force-dynamic';
 export const maxDuration = 60; // Janela exclusiva de 60s dedicada 100% à qualidade do resumo
@@ -31,13 +35,22 @@ const PALETTE = ['#3B82F6', '#10B981', '#EC4899', '#8B5CF6', '#F59E0B', '#06B6D4
 
 export async function POST(req: NextRequest) {
   try {
-    // Blindagem de segurança: Acesso restrito a estudantes autenticados
-    const auth = await verifyStudentSession(req);
-    if (!auth.authorized || !auth.user) {
-      return NextResponse.json(
-        { success: false, error: auth.error || 'Acesso não autorizado: faça login para gerar materiais de estudo.' },
-        { status: auth.status }
-      );
+    // Blindagem de segurança: Acesso restrito a estudantes autenticados ou chave de administração/curadoria
+    const adminKey = req.headers.get('x-admin-key');
+    const validAdminKey = process.env.ADMIN_API_KEY || process.env.SUPABASE_SERVICE_ROLE_KEY;
+    const isAdminBypass = Boolean(adminKey && validAdminKey && adminKey === validAdminKey);
+
+    if (!isAdminBypass) {
+      const auth = await verifyStudentSession(req);
+      if (!auth.authorized || !auth.user) {
+        return NextResponse.json(
+          {
+            success: false,
+            error: auth.error || 'Acesso não autorizado: faça login ou utilize a chave administrativa para gerar resumos permanentes.'
+          },
+          { status: auth.status }
+        );
+      }
     }
 
     const body: StudyGeneratorRequest = await req.json();
@@ -68,7 +81,7 @@ export async function POST(req: NextRequest) {
       const { data: questions, count } = await supabase
         .from('questions')
         .select('id, subfoco, banca, difficulty', { count: 'exact' })
-        .or(`foco.ilike.%${foco}%,tema.ilike.%${tema}%`)
+        .or(`foco.ilike.%${sanitizePostgrestTerm(foco)}%,tema.ilike.%${sanitizePostgrestTerm(tema)}%`)
         .limit(1000);
 
       totalQuestions = count || questions?.length || 0;
@@ -302,7 +315,36 @@ ${retrievedChunksText || 'Utilize as diretrizes médicas oficiais vigentes mais 
     // Formata o StudyMaterialItem pronto para a plataforma
     const slugFoco = foco.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, '');
     const specPrefix = especialidade.toLowerCase().slice(0, 3);
-    const studyMaterialItem = {
+
+    const recurrenceStats: FocusExamAnalytics | undefined = examStats.length > 0 ? {
+      focusSlug: slugFoco,
+      specialty: especialidade,
+      theme: tema,
+      focus: foco,
+      totalQuestions,
+      timeframeRange: '2017-2026',
+      version: 1,
+      donutSlices: examStats.map((st, i) => ({
+        id: i + 1,
+        name: st.name,
+        shortName: st.shortName,
+        percentage: st.percentage,
+        questionCount: st.questionCount,
+        priority: st.priority,
+        color: st.color,
+        trend: 'estavel' as const,
+        trendLabel: '🏛️ Clássico de Prova',
+        takeaway: st.themeClue
+      })),
+      bancaBreakdown: {},
+      topTraps: [],
+      auditHash: `audit-${slugFoco}-${totalQuestions}`,
+      needsRecalc: false,
+      lastRecalculatedAt: new Date().toISOString(),
+      status: 'certified'
+    } : undefined;
+
+    const studyMaterialItem: StudyMaterialItem = {
       id: `mat-${specPrefix}-${slugFoco}`,
       focusId: `focus-${slugFoco}`,
       title: `${foco}: Resumo Padrão-Ouro de Alto Rendimento`,
@@ -318,8 +360,52 @@ ${retrievedChunksText || 'Utilize as diretrizes médicas oficiais vigentes mais 
         `Passo a passo da cascata decisória e condutas imediatas de emergência.`,
         `Alertas de pegadinhas e distratores de diretrizes anteriores nas bancas ENARE, USP e estaduais.`
       ],
-      markdownContent: summaryMarkdown
+      markdownContent: summaryMarkdown,
+      recurrenceStats
     };
+
+    // =========================================================================
+    // ETAPA 5: PERSISTÊNCIA PERMANENTE NO SUPABASE (public.study_materials)
+    // Os resumos gerados pelo preceptor tornam-se parte permanente da plataforma
+    // =========================================================================
+    let savedToSupabase = false;
+    let supabaseSaveError: string | null = null;
+
+    try {
+      const supabaseAdmin = getSupabaseAdmin();
+      const { error: upsertErr } = await supabaseAdmin
+        .from('study_materials')
+        .upsert(
+          {
+            id: studyMaterialItem.id,
+            focus_id: studyMaterialItem.focusId || null,
+            title: studyMaterialItem.title,
+            specialty: studyMaterialItem.specialty,
+            theme: studyMaterialItem.theme,
+            focus: studyMaterialItem.focus,
+            read_time_minutes: studyMaterialItem.readTimeMinutes,
+            last_updated_year: studyMaterialItem.lastUpdatedYear,
+            guideline_badge: studyMaterialItem.guidelineBadge || 'Consenso Oficial & Evidência Padrão-Ouro',
+            summary_snippet: studyMaterialItem.summarySnippet,
+            markdown_content: studyMaterialItem.markdownContent,
+            key_points: studyMaterialItem.keyPoints,
+            status: 'published',
+            updated_at: new Date().toISOString()
+          },
+          { onConflict: 'id' }
+        );
+
+      if (upsertErr) {
+        console.error('[StudyGenerator] Erro ao persistir material permanente no Supabase:', upsertErr);
+        supabaseSaveError = upsertErr.message;
+      } else {
+        savedToSupabase = true;
+      }
+    } catch (saveEx: unknown) {
+      const saveErrMsg = saveEx instanceof Error ? saveEx.message : String(saveEx);
+      console.warn('[StudyGenerator] Exceção ao persistir no Supabase:', saveErrMsg);
+      supabaseSaveError = saveErrMsg;
+    }
 
     return NextResponse.json({
       success: true,
@@ -338,6 +424,10 @@ ${retrievedChunksText || 'Utilize as diretrizes médicas oficiais vigentes mais 
       },
       summaryMarkdown,
       studyMaterialItem,
+      persistence: {
+        savedToSupabase,
+        error: supabaseSaveError
+      },
       qualityGate: {
         passed: !validationChecks.some(c => c.status === 'failed'),
         checks: validationChecks

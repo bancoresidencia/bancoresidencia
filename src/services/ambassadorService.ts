@@ -271,70 +271,85 @@ export async function getBackendAmbassadorStats(userId: string, userName?: strin
 /**
  * Solicitação de Saque PIX validada pelo backend
  */
+// Trava em memória contra race conditions de saque (TOCTOU)
+const activeWithdrawalLocks = new Set<string>();
+
 export async function requestBackendAmbassadorWithdrawal(
   userId: string,
   amount: number,
   pixKey: string,
   pixKeyType: 'cpf' | 'email' | 'phone' | 'random' = 'cpf'
 ): Promise<{ success: boolean; message: string; withdrawal?: AmbassadorWithdrawalRecord }> {
-  const stats = await getBackendAmbassadorStats(userId);
-
-  if (stats.validSalesCount < AMBASSADOR_CONFIG.minSalesForPixWithdrawal) {
+  if (activeWithdrawalLocks.has(userId)) {
     return {
       success: false,
-      message: `Saque bloqueado. Você precisa de pelo menos ${AMBASSADOR_CONFIG.minSalesForPixWithdrawal} indicações válidas (com 7+ dias de permanência após a confirmação do plano) para liberar saques via PIX. Faltam ${stats.salesNeededForPix} indicação(ões).`
+      message: 'Uma solicitação de saque já está sendo processada para esta conta. Aguarde alguns instantes.'
     };
   }
-
-  if (amount <= 0 || amount > stats.availableBalance) {
-    return {
-      success: false,
-      message: `Valor solicitado (R$ ${amount.toFixed(2).replace('.', ',')}) inválido ou excede o saldo disponível liberado (R$ ${stats.availableBalance.toFixed(2).replace('.', ',')}).`
-    };
-  }
-
-  const withdrawalRecord: AmbassadorWithdrawalRecord = {
-    id: 'pix_' + Math.random().toString(36).substring(2, 9),
-    amount,
-    pixKey: pixKey.trim(),
-    pixKeyType,
-    requestedAt: new Date().toISOString(),
-    status: 'pending'
-  };
+  activeWithdrawalLocks.add(userId);
 
   try {
-    const supabase = getSupabaseAdmin();
-    const { data: inserted, error } = await supabase
-      .from('ambassador_withdrawals')
-      .insert({
-        user_id: userId,
-        amount,
-        pix_key: pixKey.trim(),
-        pix_key_type: pixKeyType,
-        valid_referrals_count: stats.validSalesCount,
-        status: 'pending'
-      })
-      .select()
-      .maybeSingle();
+    const stats = await getBackendAmbassadorStats(userId);
 
-    if (!error && inserted) {
-      withdrawalRecord.id = inserted.id;
-    } else {
+    if (stats.validSalesCount < AMBASSADOR_CONFIG.minSalesForPixWithdrawal) {
+      return {
+        success: false,
+        message: `Saque bloqueado. Você precisa de pelo menos ${AMBASSADOR_CONFIG.minSalesForPixWithdrawal} indicações válidas (com 7+ dias de permanência após a confirmação do plano) para liberar saques via PIX. Faltam ${stats.salesNeededForPix} indicação(ões).`
+      };
+    }
+
+    if (amount <= 0 || amount > stats.availableBalance) {
+      return {
+        success: false,
+        message: `Valor solicitado (R$ ${amount.toFixed(2).replace('.', ',')}) inválido ou excede o saldo disponível liberado (R$ ${stats.availableBalance.toFixed(2).replace('.', ',')}).`
+      };
+    }
+
+    const withdrawalRecord: AmbassadorWithdrawalRecord = {
+      id: 'pix_' + Math.random().toString(36).substring(2, 9),
+      amount,
+      pixKey: pixKey.trim(),
+      pixKeyType,
+      requestedAt: new Date().toISOString(),
+      status: 'pending'
+    };
+
+    try {
+      const supabase = getSupabaseAdmin();
+      const { data: inserted, error } = await supabase
+        .from('ambassador_withdrawals')
+        .insert({
+          user_id: userId,
+          amount,
+          pix_key: pixKey.trim(),
+          pix_key_type: pixKeyType,
+          valid_referrals_count: stats.validSalesCount,
+          status: 'pending'
+        })
+        .select()
+        .maybeSingle();
+
+      if (!error && inserted) {
+        withdrawalRecord.id = inserted.id;
+      } else {
+        if (!memoryFallback.withdrawals[userId]) memoryFallback.withdrawals[userId] = [];
+        memoryFallback.withdrawals[userId].unshift(withdrawalRecord);
+      }
+    } catch {
       if (!memoryFallback.withdrawals[userId]) memoryFallback.withdrawals[userId] = [];
       memoryFallback.withdrawals[userId].unshift(withdrawalRecord);
     }
-  } catch {
-    if (!memoryFallback.withdrawals[userId]) memoryFallback.withdrawals[userId] = [];
-    memoryFallback.withdrawals[userId].unshift(withdrawalRecord);
+
+    memoryFallback.pixKeys[userId] = { key: pixKey.trim(), type: pixKeyType };
+
+    return {
+      success: true,
+      message: `Saque de R$ ${amount.toFixed(2).replace('.', ',')} solicitado com sucesso via PIX (${pixKey})! O valor será processado e enviado para sua conta bancária.`,
+      withdrawal: withdrawalRecord
+    };
+  } finally {
+    activeWithdrawalLocks.delete(userId);
   }
-
-  memoryFallback.pixKeys[userId] = { key: pixKey.trim(), type: pixKeyType };
-
-  return {
-    success: true,
-    message: `Saque de R$ ${amount.toFixed(2).replace('.', ',')} solicitado com sucesso via PIX (${pixKey})! O valor será processado e enviado para sua conta bancária.`,
-    withdrawal: withdrawalRecord
-  };
 }
 
 /**

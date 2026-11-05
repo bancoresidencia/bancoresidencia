@@ -233,19 +233,19 @@ export const flashcardsService = {
         repetitions += 1;
         if (repetitions <= 1) {
           intervalDays = 10 / (24 * 60); // 10 minutos (< 10 min)
-          nextDate = new Date(now.getTime() + 10 * 60 * 1000); // 10 minutos
+          nextDate = new Date(now.getTime() + 10 * 60 * 1000);
           state = 'learning';
         } else {
-          intervalDays = 1; // 1 dia
-          nextDate = new Date(now.getTime() + 1 * 24 * 60 * 60 * 1000);
+          intervalDays = Math.max(2, Math.round((current.intervalDays || 1) * easeFactor));
+          nextDate = new Date(now.getTime() + intervalDays * 24 * 60 * 60 * 1000);
           state = 'review';
         }
       } else if (rating === 'easy') {
         repetitions += 1;
-        intervalDays = 2; // 2 dias (< 4 dias)
+        intervalDays = repetitions <= 1 ? 2 : Math.max(3, Math.round(Math.max(current.intervalDays, 1.5) * easeFactor * 1.3));
         state = 'review';
         easeFactor = Math.min(3.0, easeFactor + 0.15);
-        nextDate = new Date(now.getTime() + 2 * 24 * 60 * 60 * 1000);
+        nextDate = new Date(now.getTime() + intervalDays * 24 * 60 * 60 * 1000);
       } else {
         nextDate = new Date(now.getTime() + 10 * 60 * 1000);
       }
@@ -267,15 +267,15 @@ export const flashcardsService = {
         nextDate = new Date(now.getTime() + 1 * 24 * 60 * 60 * 1000); // 1 dia
       } else if (rating === 'good') {
         repetitions += 1;
-        intervalDays = repetitions <= 1 ? 2 : Math.max(2, Math.round(intervalDays * easeFactor));
+        intervalDays = repetitions <= 1 ? 2 : Math.max(2, Math.round((current.intervalDays || 2) * easeFactor));
         state = 'review';
-        nextDate = new Date(now.getTime() + intervalDays * 24 * 60 * 60 * 1000); // 2 dias
+        nextDate = new Date(now.getTime() + intervalDays * 24 * 60 * 60 * 1000);
       } else if (rating === 'easy') {
         repetitions += 1;
-        intervalDays = 4; // 4 dias (< 4 dias ou 4 dias)
+        intervalDays = repetitions <= 1 ? 4 : Math.max(4, Math.round(Math.max(current.intervalDays, 2) * easeFactor * 1.3));
         state = 'review';
         easeFactor = Math.min(3.0, easeFactor + 0.15);
-        nextDate = new Date(now.getTime() + 4 * 24 * 60 * 60 * 1000); // 4 dias
+        nextDate = new Date(now.getTime() + intervalDays * 24 * 60 * 60 * 1000);
       } else {
         nextDate = new Date(now.getTime() + 1 * 24 * 60 * 60 * 1000);
       }
@@ -310,7 +310,7 @@ export const flashcardsService = {
           card_id: cardId,
           state: updatedProgress.state,
           repetitions: updatedProgress.repetitions,
-          interval_days: updatedProgress.intervalDays,
+          interval_days: Math.round(updatedProgress.intervalDays),
           ease_factor: updatedProgress.easeFactor,
           stability: updatedProgress.stability,
           difficulty: updatedProgress.difficulty,
@@ -1007,6 +1007,77 @@ export const flashcardsService = {
     } catch (e) {
       console.warn('Erro ao salvar novo flashcard:', e);
       return card;
+    }
+  },
+
+  /**
+   * Remove um flashcard criado pelo usuário (localmente e no Supabase)
+   */
+  deleteUserFlashcard(cardId: string, userId?: string | null): boolean {
+    if (typeof window === 'undefined') return false;
+    try {
+      const current = this.loadUserCreatedFlashcards(userId);
+      const updated = current.filter((c) => c.id !== cardId);
+      const key = getUserCardsStorageKey(userId);
+      localStorage.setItem(key, JSON.stringify(updated));
+      localStorage.setItem(USER_FLASHCARDS_KEY, JSON.stringify(updated));
+
+      if (userId && userId !== 'demo-student') {
+        const client = createClient();
+        client
+          .from('user_created_flashcards')
+          .delete()
+          .eq('id', cardId)
+          .eq('user_id', userId)
+          .then(() => {}, () => {});
+      }
+      return true;
+    } catch (e) {
+      console.warn('Erro ao excluir flashcard do usuário:', e);
+      return false;
+    }
+  },
+
+  /**
+   * Sincroniza materiais de estudo permanentes publicados no Supabase
+   */
+  async syncRemoteStudyMaterials(): Promise<StudyMaterialItem[]> {
+    if (typeof window === 'undefined') return [];
+    try {
+      const client = createClient();
+      const { data, error } = await client
+        .from('study_materials')
+        .select('*')
+        .eq('status', 'published');
+
+      if (!error && data && data.length > 0) {
+        const mapped: StudyMaterialItem[] = data.map((row: any) => ({
+          id: row.id,
+          focusId: row.focus_id || undefined,
+          title: row.title,
+          specialty: row.specialty,
+          theme: row.theme,
+          focus: row.focus,
+          readTimeMinutes: row.read_time_minutes || 8,
+          lastUpdatedYear: row.last_updated_year || 2026,
+          guidelineBadge: row.guideline_badge || 'Consenso Oficial & Evidência Padrão-Ouro',
+          summarySnippet: row.summary_snippet || '',
+          markdownContent: row.markdown_content,
+          keyPoints: Array.isArray(row.key_points) ? row.key_points : [],
+          recurrenceStats: row.recurrence_stats || undefined
+        }));
+
+        const local = this.loadUserCreatedStudyMaterials();
+        const localMap = new Map(local.map((m) => [m.id, m]));
+        mapped.forEach((m) => localMap.set(m.id, m));
+        const merged = Array.from(localMap.values());
+        localStorage.setItem(USER_STUDY_MATERIALS_KEY, JSON.stringify(merged));
+        return merged;
+      }
+      return this.loadUserCreatedStudyMaterials();
+    } catch (e) {
+      console.warn('[flashcardsService] Falha ao sincronizar materiais remotos:', e);
+      return [];
     }
   },
 

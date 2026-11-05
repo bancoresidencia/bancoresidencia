@@ -475,6 +475,15 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
       attempts: userAttemptsList.length > 0 ? userAttemptsList : undefined
     });
 
+    const normalizeSpecialtyName = (s: string): string => {
+      if (!s) return s;
+      const t = s.trim();
+      if (t === 'Cirurgia') return 'Cirurgia Geral';
+      if (t === 'Medicina Preventiva' || t === 'Preventiva') return 'Medicina Preventiva e Social';
+      if (t === 'GO' || t === 'Ginecologia e Obstetrícia') return 'Ginecologia';
+      return t;
+    };
+
     const specialtyMap: Record<string, { total: number; correct: number }> = {
       'Clínica Médica': { total: 0, correct: 0 },
       'Cirurgia Geral': { total: 0, correct: 0 },
@@ -488,19 +497,24 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
     const historyByDayMap: Record<string, { answered: number; correct: number }> = {};
 
     Object.entries(userAnswers).forEach(([, ans]) => {
-      const spec = ans.specialty;
+      const rawSpec = ans.specialty;
       const tema = ans.tema;
-      if (spec && specialtyMap[spec]) {
+      if (rawSpec) {
+        const spec = normalizeSpecialtyName(rawSpec);
+        if (!specialtyMap[spec]) {
+          specialtyMap[spec] = { total: 0, correct: 0 };
+        }
         specialtyMap[spec].total += 1;
         if (ans.isCorrect) specialtyMap[spec].correct += 1;
-      }
-      if (spec && tema) {
-        const key = `${spec} - ${tema}`;
-        if (!themeMap[key]) {
-          themeMap[key] = { specialty: spec, tema, total: 0, correct: 0 };
+
+        if (tema) {
+          const key = `${spec} - ${tema}`;
+          if (!themeMap[key]) {
+            themeMap[key] = { specialty: spec, tema, total: 0, correct: 0 };
+          }
+          themeMap[key].total += 1;
+          if (ans.isCorrect) themeMap[key].correct += 1;
         }
-        themeMap[key].total += 1;
-        if (ans.isCorrect) themeMap[key].correct += 1;
       }
 
       if (ans.timestamp) {

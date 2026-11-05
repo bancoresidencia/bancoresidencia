@@ -560,6 +560,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
           const end = new Date(filters.customEndDate + 'T23:59:59').getTime();
           return ts >= start && ts <= end;
         }
+        if (filters.period === '1d') return ts >= now - 1 * 86400000;
         if (filters.period === '7d') return ts >= now - 7 * 86400000;
         if (filters.period === '30d') return ts >= now - 30 * 86400000;
         if (filters.period === 'mes') {
@@ -771,24 +772,9 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
           const key = `${specConfig.nome}:::${t.tema}`;
           const recorded = themeAnswerMap[key];
 
-          // Se houver registro real em stats.byTheme, usa-o
-          let total = recorded ? Math.round(recorded.total * activeMetrics.factor) : 0;
-          let correct = recorded ? Math.round(recorded.correct * activeMetrics.factor) : 0;
-
-          // Se o usuário tiver resolvido questões nesta especialidade geral mas não tiver byTheme granular,
-          // faz uma distribuição representativa proporcional baseada no volume da especialidade
-          if (total === 0 && (!stats.byTheme || stats.byTheme.length === 0)) {
-            const specStat = stats.bySpecialty?.find((s) => s.specialty === specConfig.nome || (specConfig.nome === 'Cirurgia Geral' && s.specialty === 'Cirurgia'));
-            if (specStat && specStat.total > 0) {
-              const specTotal = Math.round(specStat.total * activeMetrics.factor);
-              // Mapeia apenas alguns temas-chave da especialidade com base no volume para não inflar artificialmente
-              const hash = (t.tema.length * 7 + specConfig.nome.length) % 10;
-              if (hash < 4 && specTotal > 0) {
-                total = Math.max(1, Math.round(specTotal * 0.25));
-                correct = Math.round(total * (specStat.accuracy / 100));
-              }
-            }
-          }
+          // Se houver registro real em stats.byTheme, usa-o diretamente
+          const total = recorded ? recorded.total : 0;
+          const correct = recorded ? recorded.correct : 0;
 
           const errors = Math.max(0, total - correct);
           const taxa = total > 0 ? (correct / total) * 100 : 0;
@@ -811,8 +797,8 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
       if (specResolvidas === 0) {
         const directStat = stats.bySpecialty?.find((s) => s.specialty === specConfig.nome || (specConfig.nome === 'Cirurgia Geral' && s.specialty === 'Cirurgia'));
         if (directStat && directStat.total > 0) {
-          specResolvidas = Math.round(directStat.total * activeMetrics.factor);
-          specAcertos = Math.round(directStat.correct * activeMetrics.factor);
+          specResolvidas = directStat.total;
+          specAcertos = directStat.correct;
         }
       }
 
@@ -986,54 +972,8 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
         });
       });
     } else {
-      // 2. MODO GLOBAL / DEMONSTRAÇÃO COMPARATIVA DA BASE
-      clinicalHierarchy.forEach((h) => {
-        let specName = h.especialidade;
-        if (specName === 'Cirurgia') specName = 'Cirurgia Geral';
-
-        if (selectedAreaFilter !== 'Todas' && specName !== selectedAreaFilter) {
-          return;
-        }
-
-        h.temas.forEach((t) => {
-          t.focos.forEach((f) => {
-            f.subfocos.forEach((sf, sfIdx) => {
-              if (subfocoSearch.trim()) {
-                const query = subfocoSearch.toLowerCase();
-                const match =
-                  sf.toLowerCase().includes(query) ||
-                  t.tema.toLowerCase().includes(query) ||
-                  f.foco.toLowerCase().includes(query) ||
-                  specName.toLowerCase().includes(query);
-                if (!match) return;
-              }
-
-              const baseMultiplier = (specName.length + t.tema.length + sf.length + sfIdx * 7) % 19;
-              const total = Math.max(8, Math.round(14 + baseMultiplier * 2.1));
-              const accuracyRaw = 52 + ((baseMultiplier * 3.3) % 44);
-              const accuracy = Math.min(96.5, Math.max(44.0, accuracyRaw));
-              const correct = Math.round((total * accuracy) / 100);
-              const errors = Math.max(0, total - correct);
-
-              let status: 'critico' | 'atencao' | 'dominado' = 'dominado';
-              if (accuracy < 60) status = 'critico';
-              else if (accuracy < 75) status = 'atencao';
-
-              items.push({
-                id: `${specName}-${t.tema}-${sf}`,
-                specialty: specName,
-                tema: t.tema,
-                subfoco: sf,
-                total,
-                correct,
-                errors,
-                accuracy,
-                status
-              });
-            });
-          });
-        });
-      });
+      // Quando não há respostas de subfoco no filtro atual, items permanece vazio ([])
+      // O componente renderiza o estado vazio instruindo o estudante a resolver questões.
     }
 
     // Filtro por status

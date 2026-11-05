@@ -193,9 +193,8 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
     return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
   };
 
-  // Parser do Cloze Deletion
+  // Parser do Cloze Deletion (Frente: omite com [...])
   const renderFrontContent = (text: string) => {
-    // Substitui {{c1::palavra}} por um marcador visual [...]
     const parts = text.split(/(\{\{c\d+::.*?\}\})/g);
     return parts.map((part, idx) => {
       if (part.startsWith('{{c') && part.includes('::')) {
@@ -210,6 +209,64 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
       }
       return part;
     });
+  };
+
+  // Parser do Cloze Deletion (Verso: renderiza frase completa com resposta em destaque)
+  const renderBackClozeContent = (text: string) => {
+    const parts = text.split(/(\{\{c\d+::.*?\}\})/g);
+    return parts.map((part, idx) => {
+      if (part.startsWith('{{c') && part.includes('::')) {
+        const match = part.match(/\{\{c\d+::(.*?)\}\}/);
+        const answer = match ? match[1] : part;
+        return (
+          <span
+            key={idx}
+            className="inline-flex items-center px-1.5 py-0.5 mx-0.5 rounded-md font-bold text-xs sm:text-sm bg-emerald-100 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-700 shadow-2xs"
+          >
+            {answer}
+          </span>
+        );
+      }
+      return part;
+    });
+  };
+
+  // Projeção dinâmica de intervalos FSRS baseada na repetição real do card
+  const getProjectedIntervalLabel = (card: FlashcardItem, rating: FlashcardRating): string => {
+    const isEssential = card.priority === 'essential';
+    const reps = card.progress?.repetitions || 0;
+    const currentInterval = card.progress?.intervalDays || (isEssential ? 1 : 2);
+    const ease = card.progress?.easeFactor || 2.5;
+
+    if (rating === 'again') {
+      return isEssential ? '<1 min' : '<10 min';
+    }
+    if (rating === 'hard') {
+      return isEssential ? '<5 min' : '1 dia';
+    }
+    if (rating === 'good') {
+      if (isEssential) {
+        if (reps <= 1) return '<10 min';
+        const d = Math.max(2, Math.round(currentInterval * ease));
+        return `${d}d`;
+      } else {
+        if (reps <= 1) return '2 dias';
+        const d = Math.max(2, Math.round(currentInterval * ease));
+        return `${d}d`;
+      }
+    }
+    if (rating === 'easy') {
+      if (isEssential) {
+        if (reps <= 1) return '<2 dias';
+        const d = Math.max(3, Math.round(Math.max(currentInterval, 1.5) * ease * 1.3));
+        return `${d}d`;
+      } else {
+        if (reps <= 1) return '<4 dias';
+        const d = Math.max(4, Math.round(Math.max(currentInterval, 2) * ease * 1.3));
+        return `${d}d`;
+      }
+    }
+    return '';
   };
 
   // Avança para o próximo card limpando estados efêmeros
@@ -678,6 +735,16 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
                 </div>
               )}
 
+              {/* Se for card com Cloze Deletion, renderiza a frase contextualizada preenchida */}
+              {!isInlineEditing && currentCard.front.includes('{{c') && (
+                <div className="p-3 rounded-xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200/80 dark:border-zinc-800/80 text-xs sm:text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed text-left">
+                  <div className="text-[10px] uppercase font-bold tracking-wider text-zinc-600 dark:text-zinc-300 mb-1">
+                    Enunciado Completo Preenchido
+                  </div>
+                  {renderBackClozeContent(currentCard.front)}
+                </div>
+              )}
+
               {/* Imagem médica diagnóstica autêntica se houver */}
               {isRealMedicalImage(currentCard.imageUrl) && (
                 <div className="pt-2">
@@ -735,7 +802,7 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
             >
               <span className="text-xs sm:text-sm font-bold">De novo (1)</span>
               <span className="text-[10px] font-medium opacity-80">
-                {currentCard.priority === 'essential' ? '<1 min' : '<10 min'}
+                {getProjectedIntervalLabel(currentCard, 'again')}
               </span>
             </button>
 
@@ -746,7 +813,7 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
             >
               <span className="text-xs sm:text-sm font-bold">Difícil (2)</span>
               <span className="text-[10px] font-medium opacity-80">
-                {currentCard.priority === 'essential' ? '<5 min' : '1 dia'}
+                {getProjectedIntervalLabel(currentCard, 'hard')}
               </span>
             </button>
 
@@ -757,7 +824,7 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
             >
               <span className="text-xs sm:text-sm font-bold">Bom (3)</span>
               <span className="text-[10px] font-medium opacity-80">
-                {currentCard.priority === 'essential' ? '<10 min' : '2 dias'}
+                {getProjectedIntervalLabel(currentCard, 'good')}
               </span>
             </button>
 
@@ -768,7 +835,7 @@ export const FlashcardStudySession: React.FC<FlashcardStudySessionProps> = ({
             >
               <span className="text-xs sm:text-sm font-bold">Fácil (4)</span>
               <span className="text-[10px] font-medium opacity-80">
-                {currentCard.priority === 'essential' ? '<2 dias' : '<4 dias'}
+                {getProjectedIntervalLabel(currentCard, 'easy')}
               </span>
             </button>
           </div>

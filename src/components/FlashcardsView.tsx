@@ -303,8 +303,16 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
     }
   }, [user?.id]);
 
-  const allStudyMaterials = useMemo(() => {
+  const [allStudyMaterials, setAllStudyMaterials] = useState<StudyMaterialItem[]>(() => {
     return flashcardsService.getStudyMaterials();
+  });
+
+  useEffect(() => {
+    flashcardsService.syncRemoteStudyMaterials().then((remote) => {
+      if (remote && remote.length > 0) {
+        setAllStudyMaterials(flashcardsService.getStudyMaterials());
+      }
+    });
   }, []);
 
   // Estatísticas FSRS
@@ -766,38 +774,33 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
     const cardsForFoco = getCardsForFoco(specName, temaName, focoName);
 
     const dynamicMat: StudyMaterialItem = {
-      id: `mat-foco-${normalizeText(focoName).replace(/\s+/g, '-')}`,
-      title: focoName,
+      id: `mat-curadoria-${normalizeText(focoName).replace(/\s+/g, '-')}`,
+      title: `${focoName}: Resumo em Curadoria Médica`,
       specialty: specName,
       theme: temaName,
       focus: focoName,
-      readTimeMinutes: 5,
+      readTimeMinutes: 3,
       lastUpdatedYear: 2026,
-      guidelineBadge: 'Diretriz & Evidência Oficial',
-      summarySnippet: `Síntese e pontos críticos de alta incidência para ${focoName} nas principais bancas de residência médica.`,
+      guidelineBadge: 'Em Homologação pelo Preceptor',
+      summarySnippet: `O resumo clínico padrão-ouro para ${focoName} está em processo de curadoria baseada nas diretrizes mais recentes e censo de questões.`,
       keyPoints: [
-        `Fisiopatologia e critérios diagnósticos essenciais de ${focoName}.`,
-        `Linhas de conduta terapêutica e estratificação de risco recomendadas.`,
-        `Principais armadilhas e pegadinhas recorrentes em provas oficiais.`
+        `Foco clínico: ${focoName} (${temaName} • ${specName}).`,
+        `Treine este tópico imediatamente com os ${cardsForFoco.length} flashcards disponíveis.`,
+        `O resumo completo com Donut Recharts e algoritmo decisório será homologado em breve.`
       ],
-      markdownContent: `# ${focoName}
+      markdownContent: `> [!NOTE] Material em Curadoria Canônica
+> O resumo clínico de alto rendimento para **${focoName}** está em homologação pelo preceptor médico sênior com base no censo estatístico de questões das bancas líderes (ENARE, USP, UNICAMP).
 
-## 1. Visão Geral e Fisiopatologia
-O foco clínico **${focoName}** integra o tema de **${temaName}** em **${specName}**. Nas provas de residência médica, o examinador prioriza o raciocínio clínico aplicado, diagnóstico diferencial e protocolos de conduta imediata.
+## Pratique Enquanto o Resumo é Homologado
 
----
+Enquanto o texto canônico e os gráficos de recorrência estão sendo finalizados, você pode consolidar este foco através da repetição espaçada (FSRS) com os flashcards já calibrados.
 
-## 2. Diagnóstico e Estratificação
-* **Quadro Clínico Típico:** Reconhecimento precoce de sinais de gravidade e manifestações cardinais.
-* **Exames Complementares:** Métodos padrão-ouro versus exames de triagem inicial.
-* **Critérios de Risco:** Estratificação conforme diretrizes oficiais brasileiras.
+* **Especialidade:** ${specName}
+* **Tema:** ${temaName}
+* **Foco Clínico:** ${focoName}
+* **Flashcards Disponíveis:** ${cardsForFoco.length} cartões ativos
 
----
-
-## 3. Conduta e Tratamento Padrão-Ouro
-* **Primeira Linha de Abordagem:** Estabilização e medidas iniciais indispensáveis.
-* **Terapêutica Farmacológica / Cirúrgica:** Doses consagradas, contraindicações absolutas e armadilhas frequentes de prova.
-* **Seguimento e Prognóstico:** Critérios de alta, internação ou encaminhamento.`,
+Utilize o botão de prática abaixo para iniciar seu treino de memorização ativa.`,
       flashcardCount: cardsForFoco.length
     };
 

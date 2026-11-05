@@ -19,10 +19,18 @@ export async function GET(request: NextRequest) {
   const code = searchParams.get('code');
   const error = searchParams.get('error');
 
-  // Determina host e protocolo corretos (NUNCA força HTTPS em localhost)
-  const host = request.headers.get('x-forwarded-host') || request.headers.get('host') || new URL(request.url).host;
-  const isLocal = host.includes('localhost') || host.includes('127.0.0.1');
-  const proto = isLocal ? 'http' : (request.headers.get('x-forwarded-proto') || (request.url.startsWith('https') ? 'https' : 'http'));
+  // Determina host e protocolo com proteção contra Host Header Injection
+  const appUrl = process.env.NEXT_PUBLIC_APP_URL || '';
+  const rawHost = (request.headers.get('x-forwarded-host') || request.headers.get('host') || new URL(request.url).host).toLowerCase().trim();
+  const isLocal = rawHost.includes('localhost') || rawHost.includes('127.0.0.1');
+  let allowedHost = 'bancoresidencia-kappa.vercel.app';
+  if (appUrl) {
+    try {
+      allowedHost = new URL(appUrl).host;
+    } catch {}
+  }
+  const host = (isLocal || rawHost === allowedHost || rawHost === 'bancoresidencia-kappa.vercel.app') ? rawHost : allowedHost;
+  const proto = isLocal ? 'http' : (request.headers.get('x-forwarded-proto') || 'https');
   const origin = `${proto}://${host}`;
 
   const redirectUri = `${origin}/api/auth/google/callback`;

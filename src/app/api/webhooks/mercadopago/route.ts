@@ -47,6 +47,14 @@ function verifyMercadoPagoSignature(req: NextRequest, rawId: string): boolean {
   }
 
   // Se não há x-signature e não há webhookSecret (modo dev permissivo local)
+  // Em produção, a assinatura e o segredo são estritamente mandatórios
+  if (process.env.NODE_ENV === 'production') {
+    if (!webhookSecret) {
+      console.error('[MercadoPago Webhook] ERRO CRÍTICO: MERCADO_PAGO_WEBHOOK_SECRET não configurado em produção.');
+    }
+    return false;
+  }
+
   if (!webhookSecret) {
     return true;
   }

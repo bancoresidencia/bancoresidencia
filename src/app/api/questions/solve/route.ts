@@ -60,7 +60,14 @@ interface GuestQuotaPayload {
 }
 
 function getQuotaSecret(): string {
-  return process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'bancoresidencia-guest-quota-secret-key-32b';
+  const secret = process.env.GUEST_QUOTA_SECRET || process.env.SUPABASE_SERVICE_ROLE_KEY;
+  if (!secret) {
+    if (process.env.NODE_ENV === 'production') {
+      throw new Error('GUEST_QUOTA_SECRET ou SUPABASE_SERVICE_ROLE_KEY obrigatório em produção.');
+    }
+    return 'bancoresidencia-dev-guest-quota-secret-key-32b';
+  }
+  return secret;
 }
 
 function parseAndVerifyGuestQuotaCookie(cookieValue?: string | null): { date: string; questionIds: Set<string> } {

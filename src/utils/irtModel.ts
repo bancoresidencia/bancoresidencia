@@ -175,9 +175,24 @@ export function calculateIRTAbility(attempts: ValidatedAttempt[]): number {
   if (attempts.length === 0) return 0.0;
 
   const total = attempts.length;
-  const correct = attempts.filter((a) => a.correct).length;
-  const lastId = attempts[attempts.length - 1]?.question_id || '';
-  const cacheKey = String(total) + '_' + String(correct) + '_' + lastId;
+  let correct = 0;
+  let easyC = 0, easyT = 0, medC = 0, medT = 0, hardC = 0, hardT = 0;
+  for (let i = 0; i < total; i++) {
+    const a = attempts[i];
+    if (a.correct) correct++;
+    if (a.difficulty === 'Fácil') {
+      easyT++;
+      if (a.correct) easyC++;
+    } else if (a.difficulty === 'Médio') {
+      medT++;
+      if (a.correct) medC++;
+    } else if (a.difficulty === 'Difícil') {
+      hardT++;
+      if (a.correct) hardC++;
+    }
+  }
+  const lastId = attempts[total - 1]?.question_id || '';
+  const cacheKey = `${easyC}/${easyT}_${medC}/${medT}_${hardC}/${hardT}_${lastId}`;
 
   const cachedTheta = abilityCache.get(cacheKey);
   if (cachedTheta !== undefined) {
@@ -235,8 +250,15 @@ export function calculateStandardError(theta: number, attempts: ValidatedAttempt
   if (attempts.length === 0) return 1.0;
 
   const total = attempts.length;
-  const lastId = attempts[attempts.length - 1]?.question_id || '';
-  const cacheKey = theta.toFixed(4) + '_' + String(total) + '_' + lastId;
+  let easyT = 0, medT = 0, hardT = 0;
+  for (let i = 0; i < total; i++) {
+    const a = attempts[i];
+    if (a.difficulty === 'Fácil') easyT++;
+    else if (a.difficulty === 'Médio') medT++;
+    else if (a.difficulty === 'Difícil') hardT++;
+  }
+  const lastId = attempts[total - 1]?.question_id || '';
+  const cacheKey = `${theta.toFixed(4)}_${easyT}_${medT}_${hardT}_${lastId}`;
 
   const cachedSe = seCache.get(cacheKey);
   if (cachedSe !== undefined) {

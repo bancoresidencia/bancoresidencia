@@ -210,23 +210,23 @@ export function UniversalRecurrenceStatsCard({
     switch (selectedBanca) {
       case 'ENARE':
         return {
-          howItCharges: `O **ENARE** formula casos clínicos hospitalares do SUS focados em **${topic}**, priorizando a conduta imediata de primeira linha, dosagens corretas e tempo de permanência hospitalar.`,
-          trapAlert: `Distrator clássico do ENARE induz o candidato a optar por condutas ambulatoriais inadequadas ou prescrever antibióticos por via oral desnecessários na alta.`
+          howItCharges: `O **ENARE** formula casos clínicos hospitalares e ambulatoriais do SUS focados em **${topic}**, priorizando a conduta de primeira linha, dosagens corretas e fluxos de regulação.`,
+          trapAlert: `Distrator clássico do ENARE induz o candidato a optar por condutas empíricas inadequadas ou solicitar exames complementares de alto custo antes da abordagem clínica inicial.`
         };
       case 'USP':
         return {
-          howItCharges: `A **USP** cobra **${topic}** exigindo domínio da semiologia detalhada, critérios diagnósticos precisos e conduta frente à falha terapêutica ou complicações sépticas.`,
-          trapAlert: `A pegadinha favorita da USP é colocar alternativas com exames invasivos de rotina (como biópsias ou swab vaginal) que são formalmente contraindicados.`
+          howItCharges: `A **USP** cobra **${topic}** exigindo domínio da semiologia detalhada, critérios diagnósticos precisos e conduta frente a casos refratários ou complicações.`,
+          trapAlert: `A pegadinha favorita da USP é colocar alternativas com exames invasivos desnecessários ou condutas revogadas por ensaios clínicos recentes.`
         };
       case 'UNICAMP':
         return {
-          howItCharges: `A **UNICAMP** valoriza o raciocínio clínico completo em casos longos de **${topic}**, explorando riscos iatrogênicos, posologias de segurança e critérios de internação.`,
-          trapAlert: `Cuidado com alternativas que propõem monoterapia empírica oral antes do tempo preconizado em consensos vigentes.`
+          howItCharges: `A **UNICAMP** valoriza o raciocínio clínico completo em casos de **${topic}**, explorando riscos iatrogênicos, posologias de segurança e critérios de internação.`,
+          trapAlert: `Cuidado com alternativas que propõem monoterapia empírica inadequada antes do tempo preconizado em consensos vigentes.`
         };
       case 'PSU-MG':
         return {
-          howItCharges: `O **PSU-MG** foca em critérios cronológicos estritos e tabelas temporais sobre **${topic}**, exigindo a correlação de dias pós-parto e parâmetros clínicos vitais.`,
-          trapAlert: `Alternativas que ignoram a janela de 48 horas afebril para cura clínica ou desconsideram a leucocitose fisiológica do pós-parto imediato.`
+          howItCharges: `O **PSU-MG** foca em critérios objetivos e classificações clínicas formais sobre **${topic}**, exigindo a correlação de parâmetros temporais e diretrizes vigentes.`,
+          trapAlert: `Alternativas que ignoram parâmetros clínicos vitais ou desconsideram a evolução cronológica da afecção.`
         };
       case 'AMRIGS':
         return {
@@ -236,12 +236,12 @@ export function UniversalRecurrenceStatsCard({
       case 'SUS-SP':
         return {
           howItCharges: `O **SUS-SP** prioriza o fluxo de pronto-atendimento sobre **${topic}**: reconhecimento rápido de sinais de gravidade e instituição imediata de medidas terapêuticas.`,
-          trapAlert: `Retardar o início do tratamento hospitalar para aguardar exames complementares de imagem ou culturas laboratoriais.`
+          trapAlert: `Retardar o início do tratamento hospitalar prioritário para aguardar exames complementares de imagem ou culturas laboratoriais.`
         };
       default:
         return {
           howItCharges: `As principais bancas cobram **${topic}** focando na identificação clínica imediata e na instituição da conduta terapêutica padrão-ouro sem atrasos. ${takeaway}`,
-          trapAlert: `A pegadinha mais frequente envolve a confusão entre alterações fisiológicas do puerpério e critérios patológicos que impõem internação imediata.`
+          trapAlert: `A pegadinha mais frequente envolve a confusão entre quadros fisiológicos/benignos e critérios patológicos que impõem intervenção imediata.`
         };
     }
   }, [activeSlice, selectedBanca]);

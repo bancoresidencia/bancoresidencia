@@ -1,10 +1,18 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { supabase } from '@/lib/supabase';
+import { verifyAdminSession } from '@/lib/supabase/adminAuth';
 
 export const dynamic = 'force-dynamic';
 
 export async function POST(req: NextRequest) {
   try {
+    const auth = await verifyAdminSession(req);
+    if (!auth.authorized) {
+      return NextResponse.json(
+        { success: false, error: auth.error || 'Acesso negado: permissões insuficientes.' },
+        { status: auth.status }
+      );
+    }
     const body = await req.json().catch(() => ({}));
     const { focusSlug, all = false } = body;
 

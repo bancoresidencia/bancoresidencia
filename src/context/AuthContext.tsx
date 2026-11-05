@@ -529,12 +529,26 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const updatePassword = async (currentPassword: string, newPassword: string): Promise<{ success: boolean; message?: string }> => {
     if (!user) return { success: false, message: 'Usuário não autenticado.' };
 
+    if (!currentPassword) {
+      return { success: false, message: 'Senha atual é obrigatória.' };
+    }
+
     const validation = validatePasswordRequirements(newPassword);
     if (!validation.isValid) {
       return { success: false, message: validation.errorMessage || 'A nova senha não atende aos requisitos de segurança.' };
     }
 
     try {
+      if (user.email) {
+        const { error: reauthError } = await supabase.auth.signInWithPassword({
+          email: user.email,
+          password: currentPassword,
+        });
+        if (reauthError) {
+          return { success: false, message: 'Senha atual incorreta.' };
+        }
+      }
+
       const { error } = await supabase.auth.updateUser({ password: newPassword });
       if (error) {
         return { success: false, message: error.message };

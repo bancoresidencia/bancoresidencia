@@ -36,8 +36,33 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5MB limit
+    if (file.size > MAX_FILE_SIZE) {
+      return NextResponse.json(
+        { success: false, error: 'Arquivo excede o limite máximo permitido de 5MB.' },
+        { status: 400 }
+      );
+    }
+
+    const ALLOWED_EXTS = new Set(['png', 'jpg', 'jpeg', 'webp']);
+    const ALLOWED_MIME = new Set(['image/png', 'image/jpeg', 'image/webp']);
+
+    const ext = (file.name.split('.').pop() || '').toLowerCase();
+    if (!ALLOWED_EXTS.has(ext) || !ALLOWED_MIME.has(file.type)) {
+      return NextResponse.json(
+        { success: false, error: 'Formato de arquivo não permitido. Apenas PNG, JPG, JPEG e WEBP são aceitos.' },
+        { status: 400 }
+      );
+    }
+
     const buffer = Buffer.from(await file.arrayBuffer());
-    const ext = (file.name.split('.').pop() || 'png').toLowerCase();
+    if (buffer.length > MAX_FILE_SIZE) {
+      return NextResponse.json(
+        { success: false, error: 'Arquivo excede o limite máximo permitido de 5MB.' },
+        { status: 400 }
+      );
+    }
+
     const safeQId = (questionId || 'question').replace(/[^a-zA-Z0-9_-]/g, '_');
     const storagePath = `remedied/${safeQId}_${Date.now()}.${ext}`;
 
