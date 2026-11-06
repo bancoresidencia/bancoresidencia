@@ -204,7 +204,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
   };
 
   return (
-    <div className="min-h-screen bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 flex flex-col selection:bg-[var(--primary-color)] selection:text-white transition-colors duration-200">
+    <div className="min-h-screen bg-zinc-50 dark:bg-[var(--bg-page)] text-zinc-900 dark:text-zinc-100 flex flex-col selection:bg-[var(--primary-color)] selection:text-white transition-colors duration-200 overflow-x-clip">
       {/* =========================================================================
           BANNER PROMOCIONAL SUPERIOR (ACESSO ANTECIPADO - CONDIÇÕES ESPECIAIS)
           ========================================================================= */}

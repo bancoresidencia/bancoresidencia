@@ -9,6 +9,7 @@ import {
 import { Question } from '@/types';
 import { useTheme } from '@/context/ThemeContext';
 import { useAuth } from '@/context/AuthContext';
+import { renderFormattedMedicalText } from '@/utils/textSanitizer';
 import {
   ShieldCheck,
   CheckCircle2,
@@ -884,7 +885,7 @@ export const AdminCuradoriaGabaritos: React.FC = () => {
                   Enunciado:
                 </h4>
                 <div className="text-sm sm:text-base leading-relaxed text-slate-800 dark:text-slate-200 font-serif whitespace-pre-line bg-slate-50/50 dark:bg-slate-900/30 p-4 rounded-2xl border border-slate-100 dark:border-slate-850">
-                  {currentQuestion.statement}
+                  {renderFormattedMedicalText(currentQuestion.statement)}
                 </div>
 
                 {/* Imagens anexas (se houver) */}
@@ -932,7 +933,7 @@ export const AdminCuradoriaGabaritos: React.FC = () => {
                             {opt.letter}
                           </div>
                           <div className="flex-1 text-xs sm:text-sm text-slate-800 dark:text-slate-200 pt-0.5 leading-relaxed">
-                            {opt.text}
+                            {renderFormattedMedicalText(opt.text)}
                           </div>
                           {isCurrentCorrect && (
                             <span className="px-2 py-0.5 rounded-md bg-emerald-600 text-white text-[10px] font-bold uppercase shrink-0">
@@ -1050,6 +1051,43 @@ export const AdminCuradoriaGabaritos: React.FC = () => {
               </div>
             </div>
           </div>
+        </div>
+      )}
+
+      {/* Barra de Homologação Rápida Fixa no Rodapé para Mobile */}
+      {currentQuestion && (
+        <div className="lg:hidden fixed bottom-14 left-0 right-0 z-30 bg-white/95 dark:bg-[#09090b]/95 backdrop-blur-md border-t border-zinc-200 dark:border-zinc-800 p-2 flex items-center justify-around gap-1.5 shadow-lg select-none">
+          {(['A', 'B', 'C', 'D', 'E'] as const).map((letter) => {
+            const isSelected = currentQuestion.correctAnswer === letter && !currentQuestion.isAnulada;
+            return (
+              <button
+                key={letter}
+                type="button"
+                disabled={isSaving}
+                onClick={() => handleAssignAnswer(letter, false)}
+                className={`flex-1 h-11 rounded-xl font-heading font-black text-base flex items-center justify-center transition-all cursor-pointer shadow-xs ${
+                  isSelected
+                    ? 'bg-emerald-600 text-white shadow-md'
+                    : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-white border border-zinc-300 dark:border-zinc-700'
+                }`}
+              >
+                {letter}
+              </button>
+            );
+          })}
+          <button
+            type="button"
+            disabled={isSaving}
+            onClick={() => handleAssignAnswer('', true)}
+            title="Marcar questão como anulada"
+            className={`h-11 px-3 rounded-xl font-bold text-xs flex items-center justify-center transition-all cursor-pointer border ${
+              currentQuestion.isAnulada
+                ? 'bg-rose-600 text-white border-rose-600'
+                : 'bg-rose-50 dark:bg-rose-950/60 text-rose-700 dark:text-rose-400 border-rose-300 dark:border-rose-900'
+            }`}
+          >
+            <Ban className="w-4 h-4" />
+          </button>
         </div>
       )}
 

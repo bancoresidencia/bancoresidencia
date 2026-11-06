@@ -37,6 +37,7 @@ interface SidebarProps {
   isCollapsed?: boolean;
   onToggleCollapse?: () => void;
   pendingErrorsCount?: number;
+  isMobileDrawer?: boolean;
 }
 
 export const Sidebar: React.FC<SidebarProps> = ({
@@ -46,7 +47,8 @@ export const Sidebar: React.FC<SidebarProps> = ({
   streakDays = 1,
   isCollapsed = true,
   onToggleCollapse,
-  pendingErrorsCount = 0
+  pendingErrorsCount = 0,
+  isMobileDrawer = false
 }) => {
   const pathname = usePathname();
   const { accentConfig } = useTheme();
@@ -83,55 +85,65 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
   return (
     <aside
-      className={`${
-        isCollapsed ? 'w-16' : 'w-60'
-      } bg-white dark:bg-[#09090b] border-r border-slate-200 dark:border-zinc-800 flex flex-col shrink-0 h-screen max-h-screen sticky top-0 self-start z-40 hidden md:flex transition-all duration-200 ease-in-out select-none overflow-hidden`}
+      className={
+        isMobileDrawer
+          ? 'w-full flex flex-col select-none'
+          : `${
+              isCollapsed ? 'w-16' : 'w-60'
+            } bg-white dark:bg-[#09090b] border-r border-slate-200 dark:border-zinc-800 flex flex-col shrink-0 h-screen max-h-screen sticky top-0 self-start z-40 hidden md:flex transition-all duration-200 ease-in-out select-none overflow-hidden`
+      }
       aria-label="Navegação Principal"
     >
       {/* 1. Topo: Logo Flat + Botão de Toggle */}
-      <div
-        className={`h-16 w-full border-b border-slate-100 dark:border-zinc-800/80 flex items-center ${
-          isCollapsed ? 'justify-center' : 'justify-between px-3.5'
-        }`}
-      >
-        <Link
-          href="/dashboard"
-          onClick={() => onNavigate?.('home')}
-          className="flex items-center gap-2.5 p-1 rounded-lg hover:bg-slate-100 dark:hover:bg-zinc-900 transition-colors cursor-pointer group min-w-0"
-          title={`Banco Residência • ${modalidade}`}
-          aria-label="Ir para a página inicial"
+      {!isMobileDrawer && (
+        <div
+          className={`h-16 w-full border-b border-slate-100 dark:border-zinc-800/80 flex items-center ${
+            isCollapsed ? 'justify-center' : 'justify-between px-3.5'
+          }`}
         >
-          <Logo className="w-8.5 h-8.5 shrink-0 transition-transform duration-200 group-hover:scale-105" />
-
-          {!isCollapsed && (
-            <div className="text-left overflow-hidden">
-              <span className="font-heading font-black text-xs sm:text-sm text-slate-900 dark:text-zinc-100 tracking-tight block leading-tight truncate">
-                Banco Residência
-              </span>
-              <span className="text-[10px] font-bold text-slate-400 dark:text-zinc-500 uppercase tracking-wider block">
-                {modalidade}
-              </span>
-            </div>
-          )}
-        </Link>
-
-        {!isCollapsed && onToggleCollapse && (
-          <button
-            type="button"
-            onClick={onToggleCollapse}
-            className="p-1 rounded-md text-slate-400 hover:text-slate-700 dark:hover:text-zinc-200 hover:bg-slate-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
-            title="Recolher barra lateral"
-            aria-label="Recolher barra lateral"
+          <Link
+            href="/dashboard"
+            onClick={() => onNavigate?.('home')}
+            className="flex items-center gap-2.5 p-1 rounded-lg hover:bg-slate-100 dark:hover:bg-zinc-900 transition-colors cursor-pointer group min-w-0"
+            title={`Banco Residência • ${modalidade}`}
+            aria-label="Ir para a página inicial"
           >
-            <PanelLeftClose className="w-4 h-4 stroke-[1.8]" />
-          </button>
-        )}
-      </div>
+            <Logo className="w-8.5 h-8.5 shrink-0 transition-transform duration-200 group-hover:scale-105" />
+
+            {!isCollapsed && (
+              <div className="text-left overflow-hidden">
+                <span className="font-heading font-black text-xs sm:text-sm text-slate-900 dark:text-zinc-100 tracking-tight block leading-tight truncate">
+                  Banco Residência
+                </span>
+                <span className="text-[10px] font-bold text-slate-400 dark:text-zinc-500 uppercase tracking-wider block">
+                  {modalidade}
+                </span>
+              </div>
+            )}
+          </Link>
+
+          {!isCollapsed && onToggleCollapse && (
+            <button
+              type="button"
+              onClick={onToggleCollapse}
+              className="p-1 rounded-md text-slate-400 hover:text-slate-700 dark:hover:text-zinc-200 hover:bg-slate-100 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
+              title="Recolher barra lateral"
+              aria-label="Recolher barra lateral"
+            >
+              <PanelLeftClose className="w-4 h-4 stroke-[1.8]" />
+            </button>
+          )}
+        </div>
+      )}
 
       {/* 2. Navegação Principal Flat */}
       <div
-        className={`flex-1 py-3 space-y-1 overflow-y-auto w-full flex flex-col ${
-          isCollapsed ? 'items-center px-2' : 'px-2.5'
+        className={`flex-1 py-3 space-y-1 w-full flex flex-col ${
+          isMobileDrawer
+            ? 'px-0 overflow-visible'
+            : isCollapsed
+            ? 'items-center px-2 overflow-y-auto'
+            : 'px-2.5 overflow-y-auto'
         }`}
       >
         {menuItems.map((item) => {
@@ -149,7 +161,11 @@ export const Sidebar: React.FC<SidebarProps> = ({
               title={isCollapsed ? item.label : undefined}
               aria-label={item.label}
               className={`rounded-lg flex items-center transition-colors duration-150 cursor-pointer group relative ${
-                isCollapsed ? 'w-10 h-10 justify-center' : 'w-full px-2.5 py-2 gap-2.5 justify-start'
+                isCollapsed
+                  ? 'w-10 h-10 justify-center'
+                  : isMobileDrawer
+                  ? 'w-full px-3 py-2.5 min-h-[44px] gap-3 justify-start'
+                  : 'w-full px-2.5 py-2 gap-2.5 justify-start'
               } ${
                 isActive
                   ? 'shadow-xs'
@@ -216,7 +232,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
       </div>
 
       {/* 3. Rodapé com Botão Flat de Expandir/Recolher */}
-      {onToggleCollapse && (
+      {!isMobileDrawer && onToggleCollapse && (
         <div
           className={`p-2.5 border-t border-slate-100 dark:border-zinc-800/80 w-full flex ${
             isCollapsed ? 'justify-center' : 'justify-between items-center'

@@ -279,6 +279,7 @@ export interface FetchQuestionsResult {
   page: number;
   pageSize: number;
   totalPages: number;
+  sessionTicket?: string;
 }
 
 export interface ExtendedFilterState extends Partial<AdvancedFilterState> {
@@ -488,7 +489,7 @@ export function calculateHierarchyFallback(filters: ExtendedFilterState): number
 export async function fetchQuestionsFromSupabase(
   filters: ExtendedFilterState = {},
   page: number = 1,
-  pageSize: number = 50,
+  pageSize: number = 20,
   questionIds?: string[]
 ): Promise<FetchQuestionsResult> {
   // Chamada via API Route interna (Node.js com Service Role) para garantir 100% de acesso às questões, comentários e gabaritos sem erro de permissão (42501)

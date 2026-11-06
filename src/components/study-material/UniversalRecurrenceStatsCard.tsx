@@ -402,7 +402,7 @@ export function UniversalRecurrenceStatsCard({
         </div>
 
         {/* Coluna Lista com Barras de Progresso Horizontais */}
-        <div className="lg:col-span-7 space-y-2.5 max-h-[320px] overflow-y-auto pr-1">
+        <div className="lg:col-span-7 space-y-2.5 max-h-none lg:max-h-[340px] lg:overflow-y-auto pr-1">
           {currentSlices.map((item, index) => {
             const isSelected = activeIndex === index;
             const isHovered = hoveredIndex === index;

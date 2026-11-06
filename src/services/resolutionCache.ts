@@ -59,7 +59,8 @@ export function setQuestionResolution(questionId: string, resolution: QuestionRe
  * Elimina duplicatas, pula questões já cacheadas e roda de forma não bloqueante em background.
  */
 export async function prefetchQuestionResolutions(
-  questionIds: string[]
+  questionIds: string[],
+  sessionTicket?: string
 ): Promise<Record<string, QuestionResolution>> {
   if (!Array.isArray(questionIds) || questionIds.length === 0) {
     return {};
@@ -100,7 +101,7 @@ export async function prefetchQuestionResolutions(
           const res = await fetch('/api/questions/solve-batch', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ questionIds: chunk })
+            body: JSON.stringify({ questionIds: chunk, sessionTicket })
           });
 
           if (!res.ok) {

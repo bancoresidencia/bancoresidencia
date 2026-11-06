@@ -33,6 +33,7 @@ import {
   ReviewSessionAnswerRecord
 } from '@/types';
 import { useTheme } from '@/context/ThemeContext';
+import { renderFormattedMedicalText } from '@/utils/textSanitizer';
 import { ERROR_REASON_CONFIG } from '@/utils/errorReasons';
 import {
   shuffleQuestionOptions,
@@ -209,46 +210,9 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
     }, 400);
   };
 
-  // Helper para renderizar negrito
+  // Helper para renderizar texto com marcações em negrito/itálico e sanitização médica completa
   const renderFormattedText = (text: string | null | undefined) => {
-    if (!text) return null;
-
-    const parseItalics = (str: string, parentKey: string | number) => {
-      const italicParts = str.split(/(\*(?!\s)[^*\n]+?(?<!\s)\*|_(?!\s)[^_\n]+?(?<!\s)_)/g);
-      return italicParts.map((subPart, subIdx) => {
-        const key = `${parentKey}-${subIdx}`;
-        if (
-          (subPart.startsWith('*') && subPart.endsWith('*') && subPart.length > 2) ||
-          (subPart.startsWith('_') && subPart.endsWith('_') && subPart.length > 2)
-        ) {
-          return (
-            <em key={key} className="italic font-medium">
-              {subPart.slice(1, -1)}
-            </em>
-          );
-        }
-        return subPart;
-      });
-    };
-
-    const boldParts = text.split(/(\*{3}.*?\*{3}|\*{2}.*?\*{2})/g);
-    return boldParts.flatMap((part, index) => {
-      if (part.startsWith('***') && part.endsWith('***') && part.length > 6) {
-        return [
-          <strong key={`bi-${index}`} className="font-bold text-slate-900 dark:text-white">
-            <em className="italic font-medium">{part.slice(3, -3)}</em>
-          </strong>,
-        ];
-      }
-      if (part.startsWith('**') && part.endsWith('**') && part.length > 4) {
-        return [
-          <strong key={`b-${index}`} className="font-bold text-slate-900 dark:text-white">
-            {parseItalics(part.slice(2, -2), `b-${index}`)}
-          </strong>,
-        ];
-      }
-      return parseItalics(part, `p-${index}`);
-    });
+    return renderFormattedMedicalText(text);
   };
 
   const currentElims = eliminatedOptions[currentQId] || {};
@@ -928,7 +892,7 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
                   {/* Texto da Alternativa */}
                   <div className="space-y-1 flex-1 leading-relaxed pt-0.5">
                     <span className={isEliminated && !isAnswered ? 'line-through' : ''}>
-                      {option.text}
+                      {renderFormattedMedicalText(option.text)}
                     </span>
 
                     {/* Tag Explicativa no Pós-Resposta */}
@@ -1037,7 +1001,7 @@ export const CadernoErrosReviewSession: React.FC<CadernoErrosReviewSessionProps>
                         <strong className="block text-[11px] uppercase tracking-wider text-purple-700 dark:text-purple-300 mb-0.5">
                           💡 Mensagem para Levar para a Prova (Take Home Message):
                         </strong>
-                        {currentQuestion.takeHomeMessage}
+                        {renderFormattedText(currentQuestion.takeHomeMessage)}
                       </div>
                     )}
                   </div>

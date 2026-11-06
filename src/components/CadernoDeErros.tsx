@@ -31,6 +31,7 @@ import {
   ReviewSessionMode
 } from '@/types';
 import { useTheme } from '@/context/ThemeContext';
+import { renderFormattedMedicalText } from '@/utils/textSanitizer';
 import { fetchQuestionsFromSupabase } from '@/services/questionService';
 import { CadernoErrosReviewSession } from './CadernoErrosReviewSession';
 import { ERROR_REASON_CONFIG } from '@/utils/errorReasons';
@@ -981,7 +982,7 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
 
                 {/* Enunciado da Questão */}
                 <div className="text-slate-900 dark:text-zinc-100 text-xs sm:text-sm leading-relaxed line-clamp-4 font-normal">
-                  {q?.statement || 'Carregando enunciado da questão...'}
+                  {renderFormattedMedicalText(q?.statement || 'Carregando enunciado da questão...')}
                 </div>
 
                 {/* Treino de Retrial Embutido no Card (Se o usuário clicou em "Refazer") */}
@@ -1022,7 +1023,7 @@ export const CadernoDeErros: React.FC<CadernoDeErrosProps> = ({
                             <span className="w-5 h-5 rounded-md font-mono font-bold flex items-center justify-center shrink-0 text-[11px] bg-slate-200/50 dark:bg-zinc-800">
                               {opt.letter}
                             </span>
-                            <span className="flex-1 leading-relaxed">{opt.text}</span>
+                            <span className="flex-1 leading-relaxed">{renderFormattedMedicalText(opt.text)}</span>
                           </div>
                         );
                       })}

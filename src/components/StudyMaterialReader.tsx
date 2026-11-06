@@ -14,7 +14,9 @@ import {
   Stethoscope,
   HeartPulse,
   Highlighter,
-  Check
+  Check,
+  BookOpen,
+  X
 } from 'lucide-react';
 import { StudyMaterialItem } from '@/types/flashcards';
 import { useTheme } from '@/context/ThemeContext';
@@ -515,6 +517,7 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
   const [activeKeyPointIndex, setActiveKeyPointIndex] = useState<number>(0);
   const [slideDirection, setSlideDirection] = useState<'left' | 'right'>('right');
   const [touchStartX, setTouchStartX] = useState<number | null>(null);
+  const [touchStartY, setTouchStartY] = useState<number | null>(null);
 
   const totalKeyPoints = material.keyPoints ? material.keyPoints.length : 0;
 
@@ -572,7 +575,7 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
             <button
               type="button"
               onClick={handlePrevKeyPoint}
-              className="p-1.5 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-700 transition-all cursor-pointer shadow-xs active:scale-95"
+              className="w-9 h-9 sm:w-8 sm:h-8 flex items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-700 transition-all cursor-pointer shadow-xs active:scale-95"
               aria-label="Ponto-chave anterior"
             >
               <ChevronLeft className="w-4 h-4" />
@@ -580,7 +583,7 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
             <button
               type="button"
               onClick={handleNextKeyPoint}
-              className="p-1.5 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-700 transition-all cursor-pointer shadow-xs active:scale-95"
+              className="w-9 h-9 sm:w-8 sm:h-8 flex items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-100 dark:hover:bg-zinc-700 transition-all cursor-pointer shadow-xs active:scale-95"
               aria-label="Próximo ponto-chave"
             >
               <ChevronRight className="w-4 h-4" />
@@ -590,13 +593,20 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
 
         {/* Carrossel em Loop Infinito: Card central em foco com transição suave, anterior e próximo nas laterais */}
         <div
-          onTouchStart={(e) => setTouchStartX(e.touches[0].clientX)}
+          onTouchStart={(e) => {
+            setTouchStartX(e.touches[0].clientX);
+            setTouchStartY(e.touches[0].clientY);
+          }}
           onTouchEnd={(e) => {
             if (touchStartX === null) return;
-            const delta = e.changedTouches[0].clientX - touchStartX;
-            if (delta > 40) handlePrevKeyPoint();
-            else if (delta < -40) handleNextKeyPoint();
+            const deltaX = e.changedTouches[0].clientX - touchStartX;
+            const deltaY = touchStartY !== null ? e.changedTouches[0].clientY - touchStartY : 0;
+            if (Math.abs(deltaX) > Math.abs(deltaY) * 1.5) {
+              if (deltaX > 40) handlePrevKeyPoint();
+              else if (deltaX < -40) handleNextKeyPoint();
+            }
             setTouchStartX(null);
+            setTouchStartY(null);
           }}
           className="flex items-stretch justify-center gap-3 sm:gap-4 md:gap-5 py-4 overflow-hidden relative select-none snap-x snap-mandatory"
         >
@@ -1232,16 +1242,18 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
               key={`math-${key}`}
               className="my-5 p-5 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200/90 dark:border-zinc-800 shadow-xs flex flex-col items-center justify-center text-center space-y-3 not-prose"
             >
-              <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 font-heading font-black text-xs sm:text-sm text-zinc-900 dark:text-zinc-100">
-                <span className="text-zinc-800 dark:text-zinc-200">{leftSide}</span>
-                <span className="text-zinc-400 font-normal text-base">=</span>
-                <div className="inline-flex flex-col items-center">
-                  <span className="px-4 pb-1.5 border-b-2 border-zinc-500 dark:border-zinc-400 text-zinc-900 dark:text-zinc-100 font-bold text-center">
-                    {num}
-                  </span>
-                  <span className="px-4 pt-1.5 text-zinc-600 dark:text-zinc-400 font-semibold text-center text-xs">
-                    {den}
-                  </span>
+              <div className="w-full overflow-x-auto no-scrollbar py-1">
+                <div className="inline-flex items-center justify-center gap-2 sm:gap-4 font-heading font-black text-xs sm:text-sm text-zinc-900 dark:text-zinc-100 whitespace-nowrap min-w-full">
+                  <span className="text-zinc-800 dark:text-zinc-200">{leftSide}</span>
+                  <span className="text-zinc-400 font-normal text-base">=</span>
+                  <div className="inline-flex flex-col items-center">
+                    <span className="px-4 pb-1.5 border-b-2 border-zinc-500 dark:border-zinc-400 text-zinc-900 dark:text-zinc-100 font-bold text-center">
+                      {num}
+                    </span>
+                    <span className="px-4 pt-1.5 text-zinc-600 dark:text-zinc-400 font-semibold text-center text-xs">
+                      {den}
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1318,9 +1330,9 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
       elements.push(
         <div
           key={`math-block-${key}`}
-          className="my-4 p-4 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200/90 dark:border-zinc-800 shadow-xs flex items-center justify-center text-center not-prose"
+          className="my-4 p-4 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200/90 dark:border-zinc-800 shadow-xs flex items-center justify-center text-center not-prose overflow-x-auto no-scrollbar"
         >
-          <span className="font-heading font-black text-xs sm:text-sm text-zinc-900 dark:text-zinc-100">
+          <span className="font-heading font-black text-xs sm:text-sm text-zinc-900 dark:text-zinc-100 whitespace-nowrap">
             {formatted}
           </span>
         </div>
@@ -1541,7 +1553,7 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
           <h2
             key={index}
             id={sectionSlug}
-            className="text-lg sm:text-xl font-heading font-bold text-zinc-900 dark:text-zinc-100 mt-8 mb-3 flex items-center gap-2 border-b border-zinc-100 dark:border-zinc-800/80 pb-2 scroll-mt-24"
+            className="text-lg sm:text-xl font-heading font-bold text-zinc-900 dark:text-zinc-100 mt-8 mb-3 flex items-center gap-2 border-b border-zinc-100 dark:border-zinc-800/80 pb-2 scroll-mt-28 md:scroll-mt-36"
           >
             <span
               className="w-1.5 h-4.5 rounded-full inline-block"
@@ -1670,7 +1682,21 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
 
   // Scroll Spy com Observer ajustado para não conflitar com a barra superior
   const [activeSectionSlug, setActiveSectionSlug] = useState<string>('');
+  const [isMobileTocOpen, setIsMobileTocOpen] = useState<boolean>(false);
+  const [readingProgress, setReadingProgress] = useState<number>(0);
   const pillRefs = useRef<Record<string, HTMLAnchorElement | null>>({});
+
+  // Cálculo da barra de progresso de leitura
+  useEffect(() => {
+    const handleScroll = () => {
+      const total = document.documentElement.scrollHeight - window.innerHeight;
+      if (total > 0) {
+        setReadingProgress(Math.min(100, Math.max(0, (window.scrollY / total) * 100)));
+      }
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   useEffect(() => {
     if (sectionPills.length === 0) return;
@@ -1807,9 +1833,15 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
         </div>
       </div>
 
-      {/* Barra de Navegação Rápida Sticky com Scroll Spy (Fixa abaixo da barra superior top-[4.5rem] com bordas retangulares) */}
+      {/* Barra de Progresso Fina no Topo */}
+      <div
+        className="fixed top-0 left-0 right-0 h-1 bg-amber-500 z-50 transition-all duration-75 pointer-events-none"
+        style={{ width: `${readingProgress}%` }}
+      />
+
+      {/* Barra de Navegação Rápida Sticky com Scroll Spy (Desktop) */}
       {sectionPills.length > 0 && (
-        <div className="sticky top-[4.5rem] z-20 p-2 sm:p-2.5 rounded-none bg-white/95 dark:bg-[#121215]/95 backdrop-blur-md border border-zinc-200/90 dark:border-zinc-800/80 shadow-xs transition-all">
+        <div className="hidden md:block sticky top-[4.5rem] z-20 p-2 sm:p-2.5 rounded-none bg-white/95 dark:bg-[#121215]/95 backdrop-blur-md border border-zinc-200/90 dark:border-zinc-800/80 shadow-xs transition-all">
           <div className="flex items-center gap-2 overflow-x-auto pb-0.5 scrollbar-none [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
             {sectionPills.map((pill) => {
               const isActive = activeSectionSlug === pill.slug;
@@ -1838,6 +1870,83 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
                 </a>
               );
             })}
+          </div>
+        </div>
+      )}
+
+      {/* Botão Flutuante do Sumário Clínico para Telas Mobile */}
+      {sectionPills.length > 0 && (
+        <div className="fixed bottom-20 right-4 z-40 md:hidden">
+          <button
+            type="button"
+            onClick={() => setIsMobileTocOpen(true)}
+            className="flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-bold text-white shadow-xl active:scale-95 transition-all cursor-pointer border border-white/20"
+            style={{
+              backgroundColor: accentConfig.primaryHex,
+              color: accentConfig.primaryContrastHex
+            }}
+          >
+            <BookOpen className="w-4 h-4" />
+            <span>Sumário ({sectionPills.length})</span>
+          </button>
+        </div>
+      )}
+
+      {/* Bottom Sheet do Sumário Clínico para Telas Mobile */}
+      {isMobileTocOpen && (
+        <div
+          className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex flex-col justify-end md:hidden animate-in fade-in"
+          onClick={() => setIsMobileTocOpen(false)}
+        >
+          <div
+            className="bg-white dark:bg-[#121215] rounded-t-3xl border-t border-zinc-200 dark:border-zinc-800 p-5 max-h-[70vh] overflow-y-auto space-y-3 shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between pb-2 border-b border-zinc-200 dark:border-zinc-800">
+              <span className="font-heading font-black text-sm text-slate-900 dark:text-white flex items-center gap-2">
+                <BookOpen className="w-4 h-4" />
+                <span>Navegação no Resumo</span>
+              </span>
+              <button
+                type="button"
+                onClick={() => setIsMobileTocOpen(false)}
+                className="w-10 h-10 flex items-center justify-center rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-zinc-200 cursor-pointer"
+                aria-label="Fechar sumário"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+            <div className="space-y-1.5 pt-1">
+              {sectionPills.map((pill) => {
+                const isActive = activeSectionSlug === pill.slug;
+                return (
+                  <a
+                    key={pill.slug}
+                    href={`#${pill.slug}`}
+                    onClick={() => {
+                      setActiveSectionSlug(pill.slug);
+                      setIsMobileTocOpen(false);
+                    }}
+                    className={`flex items-center justify-between px-3.5 py-3 rounded-xl text-xs font-bold transition-all min-h-[44px] ${
+                      isActive
+                        ? 'text-white'
+                        : 'bg-zinc-100 dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-800'
+                    }`}
+                    style={
+                      isActive
+                        ? {
+                            backgroundColor: accentConfig.primaryHex,
+                            color: accentConfig.primaryContrastHex
+                          }
+                        : {}
+                    }
+                  >
+                    <span>{pill.shortTitle}</span>
+                    <ChevronRight className="w-4 h-4 opacity-70" />
+                  </a>
+                );
+              })}
+            </div>
           </div>
         </div>
       )}

@@ -1213,7 +1213,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               value={hierarchySearch}
               onChange={(e) => setHierarchySearch(e.target.value)}
               placeholder="Filtrar conteúdo (ex: diabetes, sífilis, fórcipe, apendicite, ECG, ATLS...)"
-              className="w-full rounded-xl pl-8.5 pr-8 py-1.5 text-xs text-zinc-900 dark:text-white placeholder:text-zinc-400 dark:placeholder:text-zinc-500 bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 focus:outline-none focus:ring-1 focus:ring-[var(--primary-color)] transition-all font-sans"
+              className="w-full rounded-xl pl-8.5 pr-8 py-2 sm:py-1.5 text-base sm:text-xs min-h-[44px] sm:min-h-0 text-zinc-900 dark:text-white placeholder:text-zinc-400 dark:placeholder:text-zinc-500 bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 focus:outline-none focus:ring-1 focus:ring-[var(--primary-color)] transition-all font-sans"
             />
             {hierarchySearch && (
               <button
@@ -1628,7 +1628,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                     ? 'Buscar sociedade ou título (ex: TEGO, TEP, TECM, SBC)...'
                     : 'Buscar banca por sigla, nome ou estado (ex: ENARE, USP, SURCE, SP...)'
                 }
-                className="w-full rounded-xl pl-9 pr-8 py-1.5 text-xs text-zinc-900 dark:text-white placeholder:text-zinc-400 dark:placeholder:text-zinc-500 bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 focus:outline-none focus:ring-1 focus:ring-[var(--primary-color)] font-sans"
+                className="w-full rounded-xl pl-9 pr-8 py-2 sm:py-1.5 text-base sm:text-xs min-h-[44px] sm:min-h-0 text-zinc-900 dark:text-white placeholder:text-zinc-400 dark:placeholder:text-zinc-500 bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 focus:outline-none focus:ring-1 focus:ring-[var(--primary-color)] font-sans"
               />
               {instSearch && (
                 <button
@@ -1725,7 +1725,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             <div className="flex items-center justify-between">
               <span className="text-xs font-bold text-zinc-900 dark:text-zinc-100">Status da Questão</span>
             </div>
-            <div className="grid grid-cols-5 gap-1 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">
+            <div className="flex sm:grid sm:grid-cols-5 gap-1.5 p-1 rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 overflow-x-auto no-scrollbar">
               {(['Todas', 'Não vistas', 'Erradas', 'Resolvidas', 'Acertadas'] as QuestionStatus[]).map(
                 (st) => {
                   const isActive = filters.status === st;
@@ -1735,7 +1735,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                       key={st}
                       type="button"
                       onClick={() => onChange({ ...filters, status: st })}
-                      className={`py-1.5 text-center rounded-lg text-xs transition-all cursor-pointer truncate px-1 flex items-center justify-center font-medium ${
+                      className={`py-2 px-3 sm:py-1.5 sm:px-1 min-h-[40px] text-center rounded-lg text-xs transition-all cursor-pointer whitespace-nowrap sm:truncate shrink-0 sm:shrink flex items-center justify-center font-medium ${
                         isActive
                           ? 'text-white shadow-sm font-bold'
                           : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 hover:bg-zinc-200/60 dark:hover:bg-zinc-800/50'
@@ -2048,7 +2048,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
          ========================================================================= */}
       {!embedded && (
         <div 
-          className={`fixed bottom-0 right-0 z-30 transition-all duration-300 ${
+          className={`fixed bottom-14 md:bottom-0 right-0 z-30 transition-all duration-300 ${
             isSidebarCollapsed ? 'left-0 md:left-20' : 'left-0 md:left-64'
           } bg-white/95 dark:bg-[#09090b]/95 backdrop-blur-md border-t border-zinc-200 dark:border-zinc-800 px-3 sm:px-6 py-2 sm:py-3 shadow-[0_-4px_20px_rgba(0,0,0,0.06)] dark:shadow-[0_-8px_25px_rgba(0,0,0,0.6)] select-none`}
           style={{ paddingBottom: 'max(10px, env(safe-area-inset-bottom, 10px))' }}

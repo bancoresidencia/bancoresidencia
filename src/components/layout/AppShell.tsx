@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 import {
   Menu,
   X,
@@ -13,7 +13,11 @@ import {
   ShieldAlert,
   ChevronRight,
   LogOut,
-  Flame
+  Flame,
+  LayoutDashboard,
+  FileQuestion,
+  AlertOctagon,
+  Brain
 } from 'lucide-react';
 import { Sidebar } from '@/components/Sidebar';
 import { GlobalSearchBar } from '@/components/GlobalSearchBar';
@@ -46,6 +50,7 @@ interface AppShellProps {
 
 export const AppShell: React.FC<AppShellProps> = ({ children }) => {
   const router = useRouter();
+  const pathname = usePathname();
   const { user, isAdmin, logout } = useAuth();
   const { accentConfig } = useTheme();
   const {
@@ -65,6 +70,17 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
   // Barra lateral retrátil (persistida no localStorage)
   const [sidebarCollapsed, setSidebarCollapsed] = useState<boolean>(true);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  // Bloqueia rolagem do body quando drawer mobile estiver aberto
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      const origOverflow = document.body.style.overflow;
+      document.body.style.overflow = 'hidden';
+      return () => {
+        document.body.style.overflow = origOverflow;
+      };
+    }
+  }, [mobileMenuOpen]);
 
   useEffect(() => {
     try {
@@ -141,7 +157,7 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
       {/* 2. Container Principal à Direita da Sidebar */}
       <div className="flex-1 flex flex-col min-w-0 overflow-x-clip">
         {/* Cabeçalho Fixo Superior com Glassmorphism */}
-        <header className="sticky top-0 z-30 bg-[var(--bg-card)]/85 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800/80 transition-colors duration-200">
+        <header className="sticky top-0 z-30 bg-[var(--bg-card)]/85 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800/80 transition-colors duration-200 pt-[env(safe-area-inset-top,0px)]">
           <div className="max-w-6xl mx-auto px-3 sm:px-6 h-18 flex items-center justify-between gap-2 sm:gap-3">
             {/* Botão Mobile para abrir navegação */}
             <div className="md:hidden flex items-center shrink-0">
@@ -361,8 +377,89 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
         </header>
 
         {/* 3. Conteúdo da Página da Rota Ativa */}
-        <main className="flex-1 min-w-0"><TabFeatureGuard>{children}</TabFeatureGuard></main>
+        <main className="flex-1 min-w-0 pb-20 md:pb-0"><TabFeatureGuard>{children}</TabFeatureGuard></main>
       </div>
+
+      {/* Barra de Navegação Inferior Fixa para Dispositivos Móveis */}
+      <nav
+        aria-label="Navegação inferior mobile"
+        className="fixed bottom-0 left-0 right-0 z-40 bg-[var(--bg-card)]/95 backdrop-blur-lg border-t border-zinc-200 dark:border-zinc-800/80 px-2 pt-1.5 pb-[max(env(safe-area-inset-bottom,0px),0.5rem)] flex items-center justify-around md:hidden shadow-lg transition-colors select-none"
+      >
+        <Link
+          href="/dashboard"
+          className={`flex flex-col items-center justify-center gap-1 py-1 px-2.5 rounded-xl transition-all cursor-pointer min-w-[56px] min-h-[44px] ${
+            pathname === '/dashboard' || pathname === '/'
+              ? 'font-bold'
+              : 'text-slate-500 dark:text-zinc-400'
+          }`}
+          style={{
+            color: pathname === '/dashboard' || pathname === '/' ? accentConfig.primaryHex : undefined
+          }}
+        >
+          <LayoutDashboard className="w-5 h-5 stroke-[1.8]" />
+          <span className="text-[10px] tracking-tight">Início</span>
+        </Link>
+
+        <Link
+          href="/questoes"
+          className={`flex flex-col items-center justify-center gap-1 py-1 px-2.5 rounded-xl transition-all cursor-pointer min-w-[56px] min-h-[44px] ${
+            pathname?.startsWith('/questoes')
+              ? 'font-bold'
+              : 'text-slate-500 dark:text-zinc-400'
+          }`}
+          style={{
+            color: pathname?.startsWith('/questoes') ? accentConfig.primaryHex : undefined
+          }}
+        >
+          <FileQuestion className="w-5 h-5 stroke-[1.8]" />
+          <span className="text-[10px] tracking-tight">Questões</span>
+        </Link>
+
+        <Link
+          href="/caderno-de-erros"
+          className={`flex flex-col items-center justify-center gap-1 py-1 px-2.5 rounded-xl transition-all cursor-pointer min-w-[56px] min-h-[44px] relative ${
+            pathname?.startsWith('/caderno-de-erros')
+              ? 'font-bold'
+              : 'text-slate-500 dark:text-zinc-400'
+          }`}
+          style={{
+            color: pathname?.startsWith('/caderno-de-erros') ? accentConfig.primaryHex : undefined
+          }}
+        >
+          <div className="relative">
+            <AlertOctagon className="w-5 h-5 stroke-[1.8]" />
+            {pendingErrorsCount > 0 && (
+              <span className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-rose-500 ring-2 ring-white dark:ring-[#09090b]" />
+            )}
+          </div>
+          <span className="text-[10px] tracking-tight">Erros</span>
+        </Link>
+
+        <Link
+          href="/flashcards"
+          className={`flex flex-col items-center justify-center gap-1 py-1 px-2.5 rounded-xl transition-all cursor-pointer min-w-[56px] min-h-[44px] ${
+            pathname?.startsWith('/flashcards')
+              ? 'font-bold'
+              : 'text-slate-500 dark:text-zinc-400'
+          }`}
+          style={{
+            color: pathname?.startsWith('/flashcards') ? accentConfig.primaryHex : undefined
+          }}
+        >
+          <Brain className="w-5 h-5 stroke-[1.8]" />
+          <span className="text-[10px] tracking-tight">Flashcards</span>
+        </Link>
+
+        <button
+          type="button"
+          onClick={() => setMobileMenuOpen(true)}
+          className="flex flex-col items-center justify-center gap-1 py-1 px-2.5 rounded-xl transition-all cursor-pointer min-w-[56px] min-h-[44px] text-slate-500 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white"
+          aria-label="Abrir menu completo"
+        >
+          <Menu className="w-5 h-5 stroke-[1.8]" />
+          <span className="text-[10px] tracking-tight">Mais</span>
+        </button>
+      </nav>
 
       {/* 4. Menu Lateral Retrátil para Telas Mobile */}
       {mobileMenuOpen && (
@@ -381,7 +478,8 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(false)}
-                className="p-1 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-zinc-200"
+                className="w-10 h-10 flex items-center justify-center rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-zinc-200 active:scale-95 cursor-pointer"
+                aria-label="Fechar menu"
               >
                 <X className="w-5 h-5" />
               </button>
@@ -389,6 +487,7 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
             <div className="pt-4">
               <Sidebar
                 isCollapsed={false}
+                isMobileDrawer={true}
                 modalidade={performanceFilters.modalidade}
                 streakDays={stats.streakDays}
                 pendingErrorsCount={pendingErrorsCount}

@@ -222,7 +222,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
                 placeholder="Ex: Cardiologia, UTI, Doenças Valvares..."
                 value={newFolderName}
                 onChange={(e) => setNewFolderName(e.target.value)}
-                className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-xl px-3.5 py-2.5 text-xs text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
+                className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-xl px-3.5 py-2.5 text-base sm:text-xs min-h-[44px] text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
               />
             </div>
             <div>
@@ -232,7 +232,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
               <select
                 value={folderParentId || ''}
                 onChange={(e) => setFolderParentId(e.target.value ? e.target.value : null)}
-                className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-xl px-3.5 py-2.5 text-xs text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] cursor-pointer"
+                className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-xl px-3.5 py-2.5 text-base sm:text-xs min-h-[44px] text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] cursor-pointer"
               >
                 <option value="">📁 Pasta Maior (Nível 1 - Raiz)</option>
                 {rootFolders.map((r) => {
@@ -302,7 +302,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
               required
               value={editingFolder.name}
               onChange={(e) => setEditingFolder({ ...editingFolder, name: e.target.value })}
-              className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-xl px-3.5 py-2.5 text-xs text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-emerald-500"
+              className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-xl px-3.5 py-2.5 text-base sm:text-xs min-h-[44px] text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-emerald-500"
             />
           </div>
           <div className="flex justify-end gap-2.5 pt-1">
@@ -389,7 +389,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
                 required
                 value={editingList.title}
                 onChange={(e) => setEditingList({ ...editingList, title: e.target.value })}
-                className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-xl px-3.5 py-2.5 text-xs text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
+                className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-xl px-3.5 py-2.5 text-base sm:text-xs min-h-[44px] text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
               />
             </div>
             <div>
@@ -399,7 +399,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
               <select
                 value={editingList.folderId || ''}
                 onChange={(e) => setEditingList({ ...editingList, folderId: e.target.value || null })}
-                className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-xl px-3.5 py-2.5 text-xs text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] cursor-pointer"
+                className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-xl px-3.5 py-2.5 text-base sm:text-xs min-h-[44px] text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] cursor-pointer"
               >
                 <option value="">📁 Nenhuma pasta (Raiz de Listas)</option>
                 {rootFolders.map((r) => {
@@ -490,7 +490,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
                 placeholder="Ex: Treino Intenso de Cardiologia e HAS..."
                 value={newListTitle}
                 onChange={(e) => setNewListTitle(e.target.value)}
-                className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-xl px-3.5 py-2.5 text-xs text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
+                className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-xl px-3.5 py-2.5 text-base sm:text-xs min-h-[44px] text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)]"
               />
             </div>
             <div>
@@ -500,7 +500,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
               <select
                 value={listFolderId || ''}
                 onChange={(e) => setListFolderId(e.target.value ? e.target.value : null)}
-                className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-xl px-3.5 py-2.5 text-xs text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] cursor-pointer"
+                className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-xl px-3.5 py-2.5 text-base sm:text-xs min-h-[44px] text-zinc-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] cursor-pointer"
               >
                 <option value="">📁 Sem pasta (Raiz de Listas)</option>
                 {rootFolders.map((r) => {
@@ -671,10 +671,10 @@ export const ListManager: React.FC<ListManagerProps> = ({
                           e.stopPropagation();
                           setEditingFolder({ id: root.id, name: root.name });
                         }}
-                        className="p-1 text-slate-400 hover:text-zinc-700 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md transition-colors"
+                        className="p-2 sm:p-1 min-w-[32px] min-h-[32px] sm:min-w-0 sm:min-h-0 flex items-center justify-center text-slate-400 hover:text-zinc-700 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md transition-colors"
                         title="Renomear pasta"
                       >
-                        <Pencil className="w-3 h-3" />
+                        <Pencil className="w-3.5 h-3.5 sm:w-3 sm:h-3" />
                       </button>
                       <button
                         type="button"
@@ -682,10 +682,10 @@ export const ListManager: React.FC<ListManagerProps> = ({
                           e.stopPropagation();
                           setDeletingFolderId(root.id);
                         }}
-                        className="p-1 text-slate-400 hover:text-rose-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md transition-colors"
+                        className="p-2 sm:p-1 min-w-[32px] min-h-[32px] sm:min-w-0 sm:min-h-0 flex items-center justify-center text-slate-400 hover:text-rose-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md transition-colors"
                         title="Excluir pasta"
                       >
-                        <Trash2 className="w-3 h-3" />
+                        <Trash2 className="w-3.5 h-3.5 sm:w-3 sm:h-3" />
                       </button>
                       <span className="text-[10px] text-slate-400 font-mono font-semibold ml-0.5">
                         {lists.filter((l) => l.folderId === root.id).length}
@@ -743,10 +743,10 @@ export const ListManager: React.FC<ListManagerProps> = ({
                                     e.stopPropagation();
                                     setEditingFolder({ id: sub.id, name: sub.name });
                                   }}
-                                  className="p-0.5 text-slate-400 hover:text-zinc-700 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md transition-colors"
+                                  className="p-1.5 sm:p-0.5 min-w-[28px] min-h-[28px] sm:min-w-0 sm:min-h-0 flex items-center justify-center text-slate-400 hover:text-zinc-700 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md transition-colors"
                                   title="Renomear subpasta"
                                 >
-                                  <Pencil className="w-2.5 h-2.5" />
+                                  <Pencil className="w-3 h-3 sm:w-2.5 sm:h-2.5" />
                                 </button>
                                 <button
                                   type="button"
@@ -754,10 +754,10 @@ export const ListManager: React.FC<ListManagerProps> = ({
                                     e.stopPropagation();
                                     setDeletingFolderId(sub.id);
                                   }}
-                                  className="p-0.5 text-slate-400 hover:text-rose-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md transition-colors"
+                                  className="p-1.5 sm:p-0.5 min-w-[28px] min-h-[28px] sm:min-w-0 sm:min-h-0 flex items-center justify-center text-slate-400 hover:text-rose-500 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-md transition-colors"
                                   title="Excluir subpasta"
                                 >
-                                  <Trash2 className="w-2.5 h-2.5" />
+                                  <Trash2 className="w-3 h-3 sm:w-2.5 sm:h-2.5" />
                                 </button>
                                 <span className="text-[10px] text-slate-400 font-mono ml-0.5">
                                   {lists.filter((l) => l.folderId === sub.id).length}

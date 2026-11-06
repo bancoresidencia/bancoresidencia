@@ -8,6 +8,7 @@ import {
   BookOpen,
   ChevronDown,
   ChevronUp,
+  ChevronRight,
   Building,
   Layers,
   Highlighter,
@@ -28,13 +29,16 @@ import {
   Sparkles,
   AlertCircle,
   Loader2,
-  Zap
+  Zap,
+  ZoomIn,
+  X
 } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
 import { useSubscription } from '@/hooks/useSubscription';
 import { QuestionComments } from './QuestionComments';
 import { SendQuestionToFolderModal } from './SendQuestionToFolderModal';
 import { Folder } from '@/types';
+import { renderFormattedMedicalText, sanitizeMedicalText } from '@/utils/textSanitizer';
 import {
   getQuestionResolution,
   subscribeToResolutions,
@@ -65,6 +69,7 @@ interface QuestionCardProps {
   onSelectHighlighterColor?: (color: HighlighterColor) => void;
   isStrikethroughActive?: boolean;
   onToggleStrikethrough?: () => void;
+  onNextQuestion?: () => void;
 }
 
 export type HighlighterColor = 'yellow' | 'green' | 'pink' | 'blue' | 'orange' | 'purple';
@@ -176,13 +181,16 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
   activeHighlighterColor: propHighlighterColor,
   onSelectHighlighterColor,
   isStrikethroughActive = false,
-  onToggleStrikethrough
+  onToggleStrikethrough,
+  onNextQuestion
 }) => {
   const { accentConfig } = useTheme();
   const { plan: userPlan, dailyResolvedCount, isFreeLimitReached, openUpgradeModal } = useSubscription();
 
   // Modal para salvar em pastas de 3 níveis
   const [isFolderModalOpen, setIsFolderModalOpen] = useState(false);
+  // Modal de zoom / lightbox para imagens médicas
+  const [activeZoomImage, setActiveZoomImage] = useState<string | null>(null);
 
   // Estados de resolução da questão (seleção prévia vs confirmação no botão Resolver)
   const [pendingSelected, setPendingSelected] = useState<'A' | 'B' | 'C' | 'D' | 'E' | null>(userAnswer || null);
@@ -222,46 +230,9 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     setOpenTopics((prev) => ({ ...prev, [key]: !prev[key] }));
   };
 
-  // Helper para renderizar texto com marcações em negrito (**texto**) de forma limpa e nativa
+  // Helper para renderizar texto com marcações em negrito/itálico e sanitização médica completa
   const renderFormattedText = (text: string | null | undefined) => {
-    if (!text) return null;
-
-    const parseItalics = (str: string, parentKey: string | number) => {
-      const italicParts = str.split(/(\*(?!\s)[^*\n]+?(?<!\s)\*|_(?!\s)[^_\n]+?(?<!\s)_)/g);
-      return italicParts.map((subPart, subIdx) => {
-        const key = `${parentKey}-${subIdx}`;
-        if (
-          (subPart.startsWith('*') && subPart.endsWith('*') && subPart.length > 2) ||
-          (subPart.startsWith('_') && subPart.endsWith('_') && subPart.length > 2)
-        ) {
-          return (
-            <em key={key} className="italic font-medium">
-              {subPart.slice(1, -1)}
-            </em>
-          );
-        }
-        return subPart;
-      });
-    };
-
-    const boldParts = text.split(/(\*{3}.*?\*{3}|\*{2}.*?\*{2})/g);
-    return boldParts.flatMap((part, index) => {
-      if (part.startsWith('***') && part.endsWith('***') && part.length > 6) {
-        return [
-          <strong key={`bi-${index}`} className="font-bold text-slate-900 dark:text-white">
-            <em className="italic font-medium">{part.slice(3, -3)}</em>
-          </strong>,
-        ];
-      }
-      if (part.startsWith('**') && part.endsWith('**') && part.length > 4) {
-        return [
-          <strong key={`b-${index}`} className="font-bold text-slate-900 dark:text-white">
-            {parseItalics(part.slice(2, -2), `b-${index}`)}
-          </strong>,
-        ];
-      }
-      return parseItalics(part, `p-${index}`);
-    });
+    return renderFormattedMedicalText(text);
   };
 
   // Detecção abrangente de gabarito sob suspeita/possível erro ou divergência médica da banca
@@ -1058,10 +1029,10 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
       ? 'text-[17px] sm:text-[17.5px] leading-relaxed'
       : 'text-[18.5px] sm:text-[19px] leading-relaxed';
 
-  // Renderizador do enunciado com suporte a destaques múltiplos do marca-texto
+  // Renderizador do enunciado com suporte a destaques múltiplos do marca-texto e sanitização médica
   const renderHighlightedStatement = (statement: string) => {
     if (highlights.length === 0) {
-      return <span>{statement}</span>;
+      return <>{renderFormattedMedicalText(statement)}</>;
     }
 
     // Cria regex com todas as palavras/trechos destacados
@@ -1088,7 +1059,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                   title="Clique para remover o tachado (risco)"
                   className="cursor-pointer line-through decoration-rose-500/80 dark:decoration-rose-400 decoration-[2.5px] text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-300 font-medium px-0.5 rounded transition-all hover:bg-rose-500/10"
                 >
-                  {part}
+                  {renderFormattedMedicalText(part)}
                 </span>
               );
             }
@@ -1106,11 +1077,11 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                 }}
                 className="cursor-pointer px-1 py-0.5 rounded-md transition-all hover:opacity-85 text-black font-semibold border-b-2"
               >
-                {part}
+                {renderFormattedMedicalText(part)}
               </mark>
             );
           }
-          return <span key={i}>{part}</span>;
+          return <React.Fragment key={i}>{renderFormattedMedicalText(part)}</React.Fragment>;
         })}
       </>
     );
@@ -1399,8 +1370,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
           ref={statementRef}
           onMouseUp={handleStatementMouseUp}
           onTouchEnd={handleStatementMouseUp}
-          className={`${statementSizeClass} text-slate-950 dark:text-slate-100 font-medium whitespace-pre-line tracking-normal select-text text-justify ${selectionColorClass}`}
-          style={{ textAlign: 'justify', textJustify: 'inter-word' }}
+          className={`${statementSizeClass} text-slate-950 dark:text-slate-100 font-medium whitespace-pre-line tracking-normal select-text text-left sm:text-justify hyphens-auto break-words ${selectionColorClass}`}
         >
           {renderHighlightedStatement(question.statement)}
         </div>
@@ -1412,7 +1382,9 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
           {(question.images || (question.imageUrl ? [question.imageUrl] : [])).map((imgUrl, i) => (
             <div
               key={i}
-              className="rounded-2xl overflow-hidden border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/60 p-3 max-w-2xl shadow-inner"
+              onClick={() => setActiveZoomImage(imgUrl)}
+              className="rounded-2xl overflow-hidden border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/60 p-3 max-w-2xl shadow-inner relative group cursor-zoom-in"
+              title="Clique para ampliar a imagem médica"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
@@ -1421,6 +1393,10 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                 className="w-full h-auto object-contain rounded-xl max-h-[480px]"
                 loading="lazy"
               />
+              <div className="absolute bottom-4 right-4 bg-black/75 hover:bg-black text-white text-[11px] font-bold px-2.5 py-1.5 rounded-full flex items-center gap-1.5 shadow-md transition-all">
+                <ZoomIn className="w-3.5 h-3.5" />
+                <span>Ampliar</span>
+              </div>
             </div>
           ))}
         </div>
@@ -1565,7 +1541,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                             : ''
                         }`}
                       >
-                        {option.text}
+                        {renderFormattedMedicalText(option.text)}
                       </span>
                     )}
                   </div>
@@ -1576,19 +1552,22 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                     {!isAnswered && (
                       <button
                         type="button"
-                        onClick={(e) => toggleEliminateOption(option.letter, e)}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          toggleEliminateOption(option.letter, e);
+                        }}
                         title={
                           isEliminated
                             ? 'Restaurar alternativa descartada'
                             : 'Riscar alternativa (descartar distrator)'
                         }
-                        className={`p-1.5 rounded-lg text-xs transition-all cursor-pointer ${
+                        className={`w-9 h-9 sm:w-7 sm:h-7 flex items-center justify-center rounded-lg text-xs transition-all cursor-pointer ${
                           isEliminated
                             ? 'bg-rose-100 dark:bg-rose-950/60 text-rose-600 dark:text-rose-400 font-bold border border-rose-300 dark:border-rose-800'
                             : 'text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800/80 opacity-60 hover:opacity-100'
                         }`}
                       >
-                        <Strikethrough className="w-3.5 h-3.5" />
+                        <Strikethrough className="w-4 h-4 sm:w-3.5 sm:h-3.5" />
                       </button>
                     )}
 
@@ -1642,7 +1621,8 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                           }`}
                           title="Clique para ver ou ocultar a justificativa desta alternativa"
                         >
-                          <span>{isExplanationExpanded ? 'Ocultar Justificativa' : 'Ver Justificativa'}</span>
+                          <span className="hidden sm:inline">{isExplanationExpanded ? 'Ocultar Justificativa' : 'Ver Justificativa'}</span>
+                          <span className="sm:hidden">{isExplanationExpanded ? 'Ocultar' : 'Por quê?'}</span>
                           {isExplanationExpanded ? <ChevronUp className="w-3 h-3" /> : <ChevronDown className="w-3 h-3" />}
                         </button>
                       </div>
@@ -1694,7 +1674,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                   onClick={handleConfirmAnswer}
                   disabled={!pendingSelected || isSubmittingAnswer}
                   title={pendingSelected ? 'Resolver questão' : 'Selecione uma alternativa'}
-                  className={`flex items-center justify-center gap-2 px-6 py-2.5 rounded-xl text-xs font-extrabold shadow-sm transition-all cursor-pointer ${
+                  className={`flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3 sm:py-2.5 rounded-xl text-xs font-extrabold shadow-sm transition-all cursor-pointer min-h-[44px] ${
                     pendingSelected && !isSubmittingAnswer
                       ? 'hover:scale-102 active:scale-98 shadow-md'
                       : 'bg-slate-200 dark:bg-slate-800 text-slate-400 cursor-not-allowed'
@@ -1729,6 +1709,18 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                   <span>{solveError}</span>
                 </div>
               )}
+            </div>
+          ) : onNextQuestion ? (
+            <div className="pt-2 sm:hidden">
+              <button
+                type="button"
+                onClick={onNextQuestion}
+                className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl text-xs font-black text-white shadow-md cursor-pointer transition-transform active:scale-98 min-h-[44px]"
+                style={{ backgroundColor: accentConfig.primaryHex }}
+              >
+                <span>Avançar para Próxima Questão</span>
+                <ChevronRight className="w-4 h-4" />
+              </button>
             </div>
           ) : null}
         </div>
@@ -1948,7 +1940,7 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                       <ul className="list-disc list-inside space-y-1 text-[11.5px] text-slate-600 dark:text-slate-400">
                         {references.map((ref, idx) => (
                           <li key={idx} className="leading-relaxed">
-                            {ref}
+                            {renderFormattedText(ref)}
                           </li>
                         ))}
                       </ul>
@@ -1980,6 +1972,36 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
           onSaveToFolder={onSaveToFolder}
           savedFolderIds={savedFolderIds}
         />
+      )}
+
+      {/* Lightbox Modal de Imagem Médica (ECG, Tomografia, Raio-X, etc.) */}
+      {activeZoomImage && (
+        <div
+          className="fixed inset-0 z-50 bg-black/92 backdrop-blur-md flex flex-col items-center justify-center p-3 animate-in fade-in select-none"
+          onClick={() => setActiveZoomImage(null)}
+        >
+          <div className="w-full max-w-4xl flex justify-end pb-2">
+            <button
+              type="button"
+              onClick={() => setActiveZoomImage(null)}
+              className="w-11 h-11 rounded-full bg-zinc-800/90 text-white flex items-center justify-center hover:bg-zinc-700 active:scale-95 cursor-pointer shadow-xl border border-zinc-700"
+              aria-label="Fechar ampliação"
+            >
+              <X className="w-6 h-6" />
+            </button>
+          </div>
+          <div
+            className="max-h-[82vh] max-w-full overflow-auto flex items-center justify-center p-1"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={activeZoomImage}
+              alt="Imagem ampliada da questão médica"
+              className="max-h-[80vh] max-w-full object-contain rounded-xl shadow-2xl"
+            />
+          </div>
+        </div>
       )}
     </article>
   );

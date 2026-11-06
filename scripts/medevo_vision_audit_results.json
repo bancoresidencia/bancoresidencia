@@ -1,11 +1,11 @@
 {
   "startedAt": "2026-11-04T16:18:52.228Z",
-  "lastUpdatedAt": "2026-11-05T22:59:27.789Z",
+  "lastUpdatedAt": "2026-11-06T01:02:18.262Z",
   "targetMode": "medevo",
   "summary": {
-    "totalAudited": 3046,
+    "totalAudited": 3057,
     "detectedWithLogo": 154,
-    "clean": 2892,
+    "clean": 2903,
     "errors": 0,
     "byType": {
       "marca_dagua_sutil": 134,
@@ -58105,6 +58105,232 @@
       "location": "nenhum",
       "details": "A imagem alvo contém apenas quatro gráficos de linhas representando dados estatísticos por faixa etária. Não há presença do logotipo, mascote ou texto da marca MedEvo.",
       "auditedAt": "2026-11-05T22:55:47.629Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/mulher-43-anos-branca-queixa-se-de-dispneia-aos-esforcos-com-01.webp": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/mulher-43-anos-branca-queixa-se-de-dispneia-aos-esforcos-com-01.webp",
+      "references": [
+        {
+          "questionId": "6f0913ac-e084-4ef1-b381-4c1cec62991c",
+          "code": "USPHCRP-2024-CLM-6512",
+          "banca": "USP/HCRP",
+          "year": 2024,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo contém apenas diagramas de ausculta cardíaca (S1 e S2). Não há presença do mascote, logotipo ou texto relacionado à marca MedEvo.",
+      "auditedAt": "2026-11-05T22:59:44.945Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/unicamp/acesso-direto/2014/q071-1-3abe9d0bc61ab859.webp": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/unicamp/acesso-direto/2014/q071-1-3abe9d0bc61ab859.webp",
+      "references": [
+        {
+          "questionId": "6f5f7b95-8171-47a0-a828-be5340faab21",
+          "code": "UNICAMPHC-2014-MPS-20613",
+          "banca": "UNICAMP/HC",
+          "year": 2014,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo é um gráfico estatístico de metanálise (forest plot) contendo apenas dados numéricos e textuais referentes a estudos clínicos, sem qualquer vestígio do logotipo, mascote ou nome MedEvo.",
+      "auditedAt": "2026-11-05T23:05:50.069Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/paciente-de-48-anos-apresenta-ha-6-meses-lesoes-na-face-rash-01.webp": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/paciente-de-48-anos-apresenta-ha-6-meses-lesoes-na-face-rash-01.webp",
+      "references": [
+        {
+          "questionId": "6f64be42-cd37-4420-ad85-2b61db67bbe3",
+          "code": "USPHCFMUSP-2024-CLM-18949",
+          "banca": "USP/HCFMUSP",
+          "year": 2024,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo é uma fotografia clínica de uma face humana com eritema periorbital. Não há presença de logotipos, ícones ou textos relacionados à marca MedEvo.",
+      "auditedAt": "2026-11-05T23:08:52.453Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/considerando-a-hipotese-de-que-a-principal-causa-do-progress-01.webp": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/considerando-a-hipotese-de-que-a-principal-causa-do-progress-01.webp",
+      "references": [
+        {
+          "questionId": "6f7a4fe8-9478-4758-a3ff-4676943ffb4c",
+          "code": "UNICAMPHC-2018-MPS-16630",
+          "banca": "UNICAMP/HC",
+          "year": 2018,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 0.99,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "Nenhum elemento visual, texto ou marca d'água do logotipo MedEvo foi identificado no gráfico epidemiológico analisado.",
+      "auditedAt": "2026-11-05T23:11:33.500Z"
+    },
+    "/images/questoes/ginecologia/paciente-de-60-anos-de-idade-procura-ambulatorio-de-ginecolo-01.webp": {
+      "url": "/images/questoes/ginecologia/paciente-de-60-anos-de-idade-procura-ambulatorio-de-ginecolo-01.webp",
+      "references": [
+        {
+          "questionId": "708c57c1-f248-46bc-a63e-5c9d7f96345b",
+          "code": "SESPE-2024-GIN-3423",
+          "banca": "SES-PE",
+          "year": 2024,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo contém apenas uma tabela com valores numéricos em fundo branco, sem qualquer indício do logotipo, mascote ou texto da marca MedEvo.",
+      "auditedAt": "2026-11-05T23:33:05.893Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/pre-escolar-encontra-se-na-area-vermelha-de-um-hospital-pedi-01.webp": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/pre-escolar-encontra-se-na-area-vermelha-de-um-hospital-pedi-01.webp",
+      "references": [
+        {
+          "questionId": "70f99b35-7831-47d4-b825-a4bc855d2627",
+          "code": "SESPE-2025-PED-2936",
+          "banca": "SES-PE",
+          "year": 2025,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo mostra apenas um traçado de eletrocardiograma ou monitorização cardíaca sobre papel milimetrado, sem qualquer elemento do logotipo MedEvo.",
+      "auditedAt": "2026-11-05T23:37:07.481Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/foram-avaliadas-a-eficacia-e-a-seguranca-de-dois-antibiotico-01.webp": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/foram-avaliadas-a-eficacia-e-a-seguranca-de-dois-antibiotico-01.webp",
+      "references": [
+        {
+          "questionId": "70f86d2f-d496-4ae1-b8e4-d74c67cddac0",
+          "code": "SEMUSASMSMAC-2025-MPS-15928",
+          "banca": "SEMUSA (SMS) Macaé",
+          "year": 2025,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo contém apenas uma tabela comparativa de dados farmacológicos (Cefadroxil e Cefalexina). Não há presença do logotipo, mascote ou texto relacionado à marca MedEvo.",
+      "auditedAt": "2026-11-05T23:40:14.154Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/um-homem-de-55-anos-foi-encaminhado-ao-ambulatorio-de-cirurg-01.webp": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/um-homem-de-55-anos-foi-encaminhado-ao-ambulatorio-de-cirurg-01.webp",
+      "references": [
+        {
+          "questionId": "712d0546-51ba-44af-b3ee-b433f2d72527",
+          "code": "GRUPOOPTY-2024-CIR-17968",
+          "banca": "Grupo OPTY",
+          "year": 2024,
+          "field": "statement.images"
+        },
+        {
+          "questionId": "7b5b84b8-9785-4dee-9025-ad5293529112",
+          "code": "GRUPOOPTY-2024-CIR-18379",
+          "banca": "Grupo OPTY",
+          "year": 2024,
+          "field": "statement.images"
+        },
+        {
+          "questionId": "b6084b25-dfcd-46bf-aa06-32ca393e3265",
+          "code": "GRUPOOPTY-2024-CLM-33423",
+          "banca": "Grupo OPTY",
+          "year": 2024,
+          "field": "statement.images"
+        },
+        {
+          "questionId": "d725eb44-e917-44c0-aac0-3848c35bb91b",
+          "code": "GRUPOOPTY-2024-CLM-9136",
+          "banca": "Grupo OPTY",
+          "year": 2024,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem é um corte de tomografia computadorizada com créditos atribuídos ao livro Sabiston: Textbook of Surgery (Elsevier). Não foram encontrados vestígios do logotipo, mascote ou nome MedEvo.",
+      "auditedAt": "2026-11-05T23:47:15.750Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/alternativas/mulher-24-anos-de-idade-queixa-se-de-irregularidade-menstrua-alternativa-2.webp": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/alternativas/mulher-24-anos-de-idade-queixa-se-de-irregularidade-menstrua-alternativa-2.webp",
+      "references": [
+        {
+          "questionId": "71f85433-fb70-4d0d-a546-d96ef7072e3f",
+          "code": "USPHCFMUSP-2025-GIN-1400",
+          "banca": "USP/HCFMUSP",
+          "year": 2024,
+          "field": "options[C]"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "Nenhum elemento visual da marca MedEvo (mascote, cruz laranja, texto ou marca d'água) foi identificado na imagem de ultrassonografia.",
+      "auditedAt": "2026-11-06T00:07:59.653Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/alternativas/mulher-24-anos-de-idade-queixa-se-de-irregularidade-menstrua-alternativa-1.webp": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/alternativas/mulher-24-anos-de-idade-queixa-se-de-irregularidade-menstrua-alternativa-1.webp",
+      "references": [
+        {
+          "questionId": "71f85433-fb70-4d0d-a546-d96ef7072e3f",
+          "code": "USPHCFMUSP-2025-GIN-1400",
+          "banca": "USP/HCFMUSP",
+          "year": 2024,
+          "field": "options[B]"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo é uma ultrassonografia pélvica/ovariana sem qualquer presença de logotipos, marcas d'água ou texto relacionado à marca MedEvo.",
+      "auditedAt": "2026-11-06T00:08:05.465Z"
+    },
+    "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/uma-mulher-g3p1a1-encontra-se-na-10deg-semana-de-gestacao-ca-01.webp": {
+      "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/uma-mulher-g3p1a1-encontra-se-na-10deg-semana-de-gestacao-ca-01.webp",
+      "references": [
+        {
+          "questionId": "724d5196-a875-41d4-b8fd-eba218be91c6",
+          "code": "HSPUNIFESP-2017-OBS-2440",
+          "banca": "HSP/UNIFESP",
+          "year": 2017,
+          "field": "statement.images"
+        },
+        {
+          "questionId": "edbcff58-9969-418b-867d-b8472f43b6a4",
+          "code": "HSPUNIFESP-2017-OBS-2697",
+          "banca": "HSP/UNIFESP",
+          "year": 2017,
+          "field": "statement.images"
+        }
+      ],
+      "has_medevo": false,
+      "confidence": 1,
+      "presence_type": "nenhum",
+      "location": "nenhum",
+      "details": "A imagem alvo é uma ultrassonografia médica que não apresenta nenhum elemento, texto ou ícone relacionado à marca MedEvo.",
+      "auditedAt": "2026-11-06T00:22:59.212Z"
     }
   }
 }

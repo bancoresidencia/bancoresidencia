@@ -3,6 +3,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { createClient as createSupabaseAdminClient } from '@supabase/supabase-js';
 import { createClient as createSupabaseServerClient } from '@/lib/supabase/server';
 import { validateQuestionId, validateAnswerOption } from '@/utils/security';
+import { injectZeroWidthWatermark } from '@/utils/watermark';
 
 export const dynamic = 'force-dynamic';
 
@@ -320,6 +321,20 @@ export async function POST(req: NextRequest) {
     // Fast-Path Instantâneo para Prefetch (< 25ms): devolve gabarito e justificativa imediatamente,
     // sem chamadas redundantes a Auth/Quota/Upsert, enquanto o aluno lê as opções
     if (isPrefetch) {
+      const watermarkId = clientIp || 'prefetch';
+      const watermarkedCommentary = injectZeroWidthWatermark(row.commentary || '', watermarkId);
+      const rawOpts = Array.isArray(row.options) ? row.options : [];
+      const watermarkedOpts = rawOpts.map((opt: unknown) => {
+        if (opt && typeof opt === 'object' && 'justification' in opt) {
+          const optObj = opt as { justification?: string; [key: string]: unknown };
+          return {
+            ...optObj,
+            justification: injectZeroWidthWatermark(optObj.justification || '', watermarkId)
+          };
+        }
+        return opt;
+      });
+
       return NextResponse.json({
         success: true,
         isPrefetch: true,
@@ -327,8 +342,8 @@ export async function POST(req: NextRequest) {
         correctAnswer: row.correct_answer || (isAnulada ? 'ANULADA' : ''),
         isAnulada,
         isCorrect,
-        commentary: row.commentary || '',
-        options: row.options || []
+        commentary: watermarkedCommentary,
+        options: watermarkedOpts
       });
     }
 
@@ -509,7 +524,21 @@ export async function POST(req: NextRequest) {
       }
     }
 
-    // Resposta imediata em poucos milissegundos
+    // Resposta imediata em poucos milissegundos com marca d'água forense invisível (Fase 3)
+    const watermarkId = authenticatedUser?.id || clientIp;
+    const watermarkedCommentary = injectZeroWidthWatermark(row.commentary || '', watermarkId);
+    const rawOpts = Array.isArray(row.options) ? row.options : [];
+    const watermarkedOpts = rawOpts.map((opt: unknown) => {
+      if (opt && typeof opt === 'object' && 'justification' in opt) {
+        const optObj = opt as { justification?: string; [key: string]: unknown };
+        return {
+          ...optObj,
+          justification: injectZeroWidthWatermark(optObj.justification || '', watermarkId)
+        };
+      }
+      return opt;
+    });
+
     const responseObj = NextResponse.json({
       success: true,
       isPrefetch: Boolean(isPrefetch),
@@ -519,8 +548,8 @@ export async function POST(req: NextRequest) {
       correctAnswer: goldAnswer,
       isAnulada,
       isCorrect,
-      commentary: row.commentary || '',
-      options: Array.isArray(row.options) ? row.options : []
+      commentary: watermarkedCommentary,
+      options: watermarkedOpts
     });
 
     // Se for confirmação oficial de visitante, atualiza o cookie assinado inviolável

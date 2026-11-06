@@ -14,6 +14,7 @@ import {
 } from '@/services/questionService';
 import { Question } from '@/types';
 import { hierarchyQuestionCounts } from '@/data/hierarchyCounts';
+import { generateSessionTicket } from '@/utils/securityTickets';
 
 export const dynamic = 'force-dynamic';
 
@@ -228,9 +229,31 @@ export async function POST(req: NextRequest) {
     const {
       filters = {} as ExtendedFilterState,
       page = 1,
-      pageSize = 50,
+      pageSize = 20,
       questionIds
     } = body;
+
+    // Identificação de usuário para amarração segura de sessão (Session Binding)
+    let authenticatedUserId: string | undefined;
+    const authHeader = req.headers.get('authorization');
+    if (authHeader && authHeader.startsWith('Bearer ')) {
+      const token = authHeader.substring(7);
+      const { data: { user: authUser } } = await supabaseAdmin.auth.getUser(token);
+      if (authUser) {
+        authenticatedUserId = authUser.id;
+      }
+    }
+    if (!authenticatedUserId) {
+      try {
+        const supabaseServer = await createSupabaseServerClient();
+        const { data: { user: cookieUser } } = await supabaseServer.auth.getUser();
+        if (cookieUser) {
+          authenticatedUserId = cookieUser.id;
+        }
+      } catch {
+        // visitante
+      }
+    }
 
     // Se o filtro de status estiver ativo e os IDs ainda não tiverem sido fornecidos pelo client, consulta no Supabase
     if (filters.status && filters.status !== 'Todas') {
@@ -278,164 +301,93 @@ export async function POST(req: NextRequest) {
         return NextResponse.json(cached.data);
       }
 
-      if (isRevalida || hasBancas || isRPlusOrTitulo) {
-        // Volume moderado (<= 10.000 questões): busca linhas indexadas de especialidade, tema, foco, subfoco
-        const CHUNK = 1000;
-        let offset = 0;
-        const allRows: Array<{ id: string; especialidade?: string; tema?: string; foco?: string; subfoco?: string }> = [];
+      // Fast-path ultrarrápido (0ms): se não há filtros restritivos no card lateral nem de modalidade/banca,
+      // retorna as contagens pré-computadas exatas do catálogo de 132.965 questões
+      const hasRightCardFilters = Boolean(
+        isRevalida ||
+        hasBancas ||
+        isRPlusOrTitulo ||
+        (filtersWithoutClinical.search && filtersWithoutClinical.search.trim()) ||
+        (filtersWithoutClinical.anos && filtersWithoutClinical.anos.length > 0 && filtersWithoutClinical.anos.length < 18) ||
+        (filtersWithoutClinical.dificuldade && filtersWithoutClinical.dificuldade !== 'Todas') ||
+        (filtersWithoutClinical.tipoQuestao && filtersWithoutClinical.tipoQuestao !== 'Todas') ||
+        (filtersWithoutClinical.status && filtersWithoutClinical.status !== 'Todas') ||
+        filtersWithoutClinical.ocultarAnuladasErro ||
+        filtersWithoutClinical.ultimos5Anos
+      );
 
-        while (offset < 10000) {
-          let chunkQuery = supabaseAdmin
-            .from('questions')
-            .select('id, especialidade, tema, foco, subfoco');
-          chunkQuery = applyQuestionFilters(chunkQuery, filtersWithoutClinical);
-          const { data: chunk, error: chunkErr } = await chunkQuery.range(offset, offset + CHUNK - 1);
-          if (chunkErr || !chunk || chunk.length === 0) break;
-          allRows.push(...chunk);
-          if (chunk.length < CHUNK) break;
-          offset += CHUNK;
-        }
-
-        const especialidades: Record<string, number> = {};
-        const temas: Record<string, number> = {};
-        const focos: Record<string, number> = {};
-        const subfocos: Record<string, number> = {};
-        const totalRightCardCount = allRows.length;
-
-        for (const row of allRows) {
-          const esp = row.especialidade;
-          const tem = row.tema;
-          const foc = row.foco;
-          const sub = row.subfoco;
-
-          if (esp) {
-            const normalizedEsp = (esp === 'Cirurgia Geral' ? 'Cirurgia' : esp);
-            especialidades[normalizedEsp] = (especialidades[normalizedEsp] || 0) + 1;
-            if (normalizedEsp !== esp) {
-              especialidades[esp] = (especialidades[esp] || 0) + 1;
-            }
-            if (normalizedEsp === 'Ginecologia' || normalizedEsp === 'Obstetrícia') {
-              especialidades['Ginecologia e Obstetrícia'] = (especialidades['Ginecologia e Obstetrícia'] || 0) + 1;
-            }
-          }
-          if (tem) temas[tem] = (temas[tem] || 0) + 1;
-          if (foc) focos[foc] = (focos[foc] || 0) + 1;
-          if (sub) subfocos[sub] = (subfocos[sub] || 0) + 1;
-        }
-
+      if (!hasRightCardFilters) {
         const resultPayload = {
           facets: {
-            totalRightCardCount,
-            especialidades,
-            temas,
-            focos,
-            subfocos
+            totalRightCardCount: 132965,
+            especialidades: hierarchyQuestionCounts.especialidades || {},
+            temas: hierarchyQuestionCounts.temas || {},
+            focos: hierarchyQuestionCounts.focos || {},
+            subfocos: hierarchyQuestionCounts.subfocos || {}
           }
         };
-
         facetsCache.set(cacheKey, { data: resultPayload, expiresAt: Date.now() + FACETS_CACHE_TTL_MS });
-        if (facetsCache.size > 200) {
-          const firstKey = facetsCache.keys().next().value;
-          if (firstKey) facetsCache.delete(firstKey);
-        }
-
-        return NextResponse.json(resultPayload);
-      } else {
-        // Fast-path ultrarrápido (0ms): se não há filtros restritivos no card lateral,
-        // retorna as contagens pré-computadas exatas do catálogo de 132.965 questões
-        const hasRightCardFilters = Boolean(
-          (filtersWithoutClinical.search && filtersWithoutClinical.search.trim()) ||
-          (filtersWithoutClinical.anos && filtersWithoutClinical.anos.length > 0 && filtersWithoutClinical.anos.length < 18) ||
-          (filtersWithoutClinical.dificuldade && filtersWithoutClinical.dificuldade !== 'Todas') ||
-          (filtersWithoutClinical.tipoQuestao && filtersWithoutClinical.tipoQuestao !== 'Todas') ||
-          (filtersWithoutClinical.status && filtersWithoutClinical.status !== 'Todas') ||
-          filtersWithoutClinical.ocultarAnuladasErro ||
-          filtersWithoutClinical.ultimos5Anos
-        );
-
-        if (!hasRightCardFilters) {
-          const resultPayload = {
-            facets: {
-              totalRightCardCount: 132965,
-              especialidades: hierarchyQuestionCounts.especialidades || {},
-              temas: hierarchyQuestionCounts.temas || {},
-              focos: hierarchyQuestionCounts.focos || {},
-              subfocos: hierarchyQuestionCounts.subfocos || {}
-            }
-          };
-
-          facetsCache.set(cacheKey, { data: resultPayload, expiresAt: Date.now() + FACETS_CACHE_TTL_MS });
-          return NextResponse.json(resultPayload);
-        }
-
-        // Modo com filtros restritivos adicionais: contagem com proteção de concorrência
-        const specs = [
-          'Clínica Médica',
-          'Cirurgia',
-          'Cirurgia Geral',
-          'Pediatria',
-          'Ginecologia',
-          'Obstetrícia',
-          'Medicina Preventiva e Social'
-        ];
-
-        const specPromises = specs.map(async (sp) => {
-          let qSpec = supabaseAdmin
-            .from('questions')
-            .select('id', { count: 'exact', head: true })
-            .eq('especialidade', sp);
-          qSpec = applyQuestionFilters(qSpec, filtersWithoutClinical);
-          const { count } = await qSpec;
-          return { sp, count: count || 0 };
-        });
-
-        const specResults = await Promise.all(specPromises);
-        const especialidades: Record<string, number> = {};
-        let totalRightCardCount = 0;
-
-        specResults.forEach(({ sp, count }) => {
-          especialidades[sp] = count;
-          totalRightCardCount += count;
-        });
-
-        especialidades['Cirurgia Geral'] = (especialidades['Cirurgia'] || 0) + (especialidades['Cirurgia Geral'] || 0);
-        especialidades['Ginecologia e Obstetrícia'] = (especialidades['Ginecologia'] || 0) + (especialidades['Obstetrícia'] || 0);
-
-        const globalTotal = 132965;
-        const overallRatio = globalTotal > 0 ? totalRightCardCount / globalTotal : 1;
-
-        const temas: Record<string, number> = {};
-        const focos: Record<string, number> = {};
-        const subfocos: Record<string, number> = {};
-
-        for (const [t, count] of Object.entries(hierarchyQuestionCounts.temas || {})) {
-          temas[t] = Math.max(0, Math.round((count as number) * overallRatio));
-        }
-        for (const [f, count] of Object.entries(hierarchyQuestionCounts.focos || {})) {
-          focos[f] = Math.max(0, Math.round((count as number) * overallRatio));
-        }
-        for (const [s, count] of Object.entries(hierarchyQuestionCounts.subfocos || {})) {
-          subfocos[s] = Math.max(0, Math.round((count as number) * overallRatio));
-        }
-
-        const resultPayload = {
-          facets: {
-            totalRightCardCount,
-            especialidades,
-            temas,
-            focos,
-            subfocos
-          }
-        };
-
-        facetsCache.set(cacheKey, { data: resultPayload, expiresAt: Date.now() + FACETS_CACHE_TTL_MS });
-        if (facetsCache.size > 200) {
-          const firstKey = facetsCache.keys().next().value;
-          if (firstKey) facetsCache.delete(firstKey);
-        }
-
         return NextResponse.json(resultPayload);
       }
+
+      // 2. Consulta Atômica Única (Pilar 2 da Arquitetura Híbrida):
+      // Projeta apenas colunas mínimas de hierarquia (sem texto de enunciado/opções/imagens)
+      // Elimina o loop de 10.000 linhas e as 7 queries simultâneas com Promise.all
+      let facetQuery = supabaseAdmin
+        .from('questions')
+        .select('especialidade, tema, foco, subfoco', { count: 'exact' });
+      facetQuery = applyQuestionFilters(facetQuery, filtersWithoutClinical);
+
+      const { data: facetRows, count: exactFacetCount, error: facetErr } = await facetQuery.limit(4000);
+      if (facetErr) {
+        console.warn('[/api/questions] Aviso ao buscar facetas atômicas:', facetErr.message || facetErr);
+      }
+
+      const rows = (facetRows || []) as Array<{ especialidade?: string; tema?: string; foco?: string; subfoco?: string }>;
+      const especialidades: Record<string, number> = {};
+      const temas: Record<string, number> = {};
+      const focos: Record<string, number> = {};
+      const subfocos: Record<string, number> = {};
+      const totalRightCardCount = typeof exactFacetCount === 'number' ? exactFacetCount : rows.length;
+
+      for (const row of rows) {
+        const esp = row.especialidade;
+        const tem = row.tema;
+        const foc = row.foco;
+        const sub = row.subfoco;
+
+        if (esp) {
+          const normalizedEsp = (esp === 'Cirurgia Geral' ? 'Cirurgia' : esp);
+          especialidades[normalizedEsp] = (especialidades[normalizedEsp] || 0) + 1;
+          if (normalizedEsp !== esp) {
+            especialidades[esp] = (especialidades[esp] || 0) + 1;
+          }
+          if (normalizedEsp === 'Ginecologia' || normalizedEsp === 'Obstetrícia') {
+            especialidades['Ginecologia e Obstetrícia'] = (especialidades['Ginecologia e Obstetrícia'] || 0) + 1;
+          }
+        }
+        if (tem) temas[tem] = (temas[tem] || 0) + 1;
+        if (foc) focos[foc] = (focos[foc] || 0) + 1;
+        if (sub) subfocos[sub] = (subfocos[sub] || 0) + 1;
+      }
+
+      const resultPayload = {
+        facets: {
+          totalRightCardCount,
+          especialidades,
+          temas,
+          focos,
+          subfocos
+        }
+      };
+
+      facetsCache.set(cacheKey, { data: resultPayload, expiresAt: Date.now() + FACETS_CACHE_TTL_MS });
+      if (facetsCache.size > 200) {
+        const firstKey = facetsCache.keys().next().value;
+        if (firstKey) facetsCache.delete(firstKey);
+      }
+
+      return NextResponse.json(resultPayload);
     }
 
     let selectCols = SAFE_QUESTION_COLUMNS;
@@ -504,12 +456,16 @@ export async function POST(req: NextRequest) {
       }
       questions = orderedQuestions;
 
+      const pageQuestionIds = questions.map((q) => q.id).filter(Boolean);
+      const sessionTicket = generateSessionTicket(authenticatedUserId || 'anonymous', pageQuestionIds);
+
       return NextResponse.json({
         questions,
         total,
         page,
         pageSize,
-        totalPages: Math.ceil(total / pageSize)
+        totalPages: Math.ceil(total / pageSize),
+        sessionTicket
       });
     }
 
@@ -649,12 +605,16 @@ export async function POST(req: NextRequest) {
 
     const totalPages = Math.ceil(total / pageSize);
 
+    const pageQuestionIds = questions.map((q) => q.id).filter(Boolean);
+    const sessionTicket = generateSessionTicket(authenticatedUserId || 'anonymous', pageQuestionIds);
+
     return NextResponse.json({
       questions,
       total,
       page,
       pageSize,
-      totalPages
+      totalPages,
+      sessionTicket
     });
   } catch (err: unknown) {
     const msg = err instanceof Error ? err.message : 'Erro interno do servidor';

@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import { Plus_Jakarta_Sans, Inter, Bebas_Neue } from "next/font/google";
 import "./globals.css";
@@ -22,6 +22,16 @@ const bebasNeue = Bebas_Neue({
   weight: "400",
   display: "swap",
 });
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#fafafa" },
+    { media: "(prefers-color-scheme: dark)", color: "#09090b" }
+  ]
+};
 
 export const metadata: Metadata = {
   title: "Banco Residência Médica | Plataforma de Alta Performance",

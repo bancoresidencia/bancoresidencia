@@ -1,8 +1,9 @@
-import crypto from 'crypto';
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient as createSupabaseAdminClient } from '@supabase/supabase-js';
 import { createClient as createSupabaseServerClient } from '@/lib/supabase/server';
 import { validateQuestionId } from '@/utils/security';
+import { verifySessionTicket } from '@/utils/securityTickets';
+import { injectZeroWidthWatermark } from '@/utils/watermark';
 
 export const dynamic = 'force-dynamic';
 
@@ -52,56 +53,30 @@ function isBatchRateLimited(ip: string): boolean {
   return false;
 }
 
-// Cota de Visitante Stateless com Cookie Assinado HMAC-SHA256
-interface GuestQuotaPayload {
-  date: string;
-  ids: string[];
+// Telemetria de Cadência Humana (Behavioral Rate Limiter)
+// Um médico/estudante leva no mínimo 30 a 90 segundos por questão.
+// Solicitar mais de 5 lotes de 20 questões em 20 segundos é inumano (100 questões em 20s = 0,2s/questão).
+interface UserCadenceEntry {
+  batchCount: number;
+  firstRequestAt: number;
 }
+const userCadenceMap = new Map<string, UserCadenceEntry>();
 
-function getQuotaSecret(): string {
-  const secret = process.env.GUEST_QUOTA_SECRET || process.env.SUPABASE_SERVICE_ROLE_KEY;
-  if (!secret) {
-    if (process.env.NODE_ENV === 'production') {
-      throw new Error('GUEST_QUOTA_SECRET ou SUPABASE_SERVICE_ROLE_KEY obrigatório em produção.');
-    }
-    return 'bancoresidencia-dev-guest-quota-secret-key-32b';
-  }
-  return secret;
-}
+function checkUserCadence(userId: string): boolean {
+  const now = Date.now();
+  const entry = userCadenceMap.get(userId);
 
-function parseAndVerifyGuestQuotaCookie(cookieValue?: string | null): { date: string; questionIds: Set<string> } {
-  const todayStr = new Date().toISOString().slice(0, 10);
-  if (!cookieValue) {
-    return { date: todayStr, questionIds: new Set<string>() };
+  if (!entry || now - entry.firstRequestAt > 20000) {
+    userCadenceMap.set(userId, { batchCount: 1, firstRequestAt: now });
+    return true;
   }
 
-  try {
-    const parts = cookieValue.split('.');
-    if (parts.length !== 2) {
-      return { date: todayStr, questionIds: new Set<string>() };
-    }
-    const [payloadB64, signature] = parts;
-
-    const expectedSignature = crypto
-      .createHmac('sha256', getQuotaSecret())
-      .update(payloadB64)
-      .digest('base64url');
-
-    if (signature !== expectedSignature) {
-      return { date: todayStr, questionIds: new Set<string>() };
-    }
-
-    const jsonStr = Buffer.from(payloadB64, 'base64url').toString('utf8');
-    const parsed: GuestQuotaPayload = JSON.parse(jsonStr);
-
-    if (parsed.date !== todayStr || !Array.isArray(parsed.ids)) {
-      return { date: todayStr, questionIds: new Set<string>() };
-    }
-
-    return { date: todayStr, questionIds: new Set(parsed.ids) };
-  } catch {
-    return { date: todayStr, questionIds: new Set<string>() };
+  entry.batchCount++;
+  if (entry.batchCount > 5) {
+    return false;
   }
+
+  return true;
 }
 
 export async function POST(req: NextRequest) {
@@ -126,6 +101,7 @@ export async function POST(req: NextRequest) {
 
     const body = await req.json().catch(() => ({}));
     const rawIds = body.questionIds;
+    const sessionTicket = body.sessionTicket;
 
     if (!Array.isArray(rawIds) || rawIds.length === 0) {
       return NextResponse.json({ success: true, resolutions: {}, count: 0 });
@@ -140,7 +116,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ success: true, resolutions: {}, count: 0 });
     }
 
-    // 1. Identificar se o usuário está autenticado
+    // 1. Identificar usuário autenticado (Fase 1.2: Rota em lote é exclusiva para alunos logados)
     let authenticatedUser: { id: string } | null = null;
     const supabaseAdmin = getSupabaseAdmin();
 
@@ -165,46 +141,48 @@ export async function POST(req: NextRequest) {
       }
     }
 
-    // 2. Para visitantes, respeitar a cota diária de 10 questões
-    let allowedIds = validIds;
-    let guestLimitReached = false;
-
     if (!authenticatedUser) {
-      const quotaCookie = req.cookies.get('br_guest_quota_v1')?.value;
-      const { questionIds: guestSolvedToday } = parseAndVerifyGuestQuotaCookie(quotaCookie);
-      const guestUsedCount = guestSolvedToday.size;
-      const guestRemainingQuota = Math.max(0, 10 - guestUsedCount);
+      return NextResponse.json(
+        {
+          success: false,
+          error: 'Autenticação necessária para pré-carregamento em lote.',
+          requiresAuth: true
+        },
+        { status: 401 }
+      );
+    }
 
-      if (guestRemainingQuota === 0) {
-        guestLimitReached = true;
-        // Se a cota já expirou, permite rever apenas as questões que o visitante já respondeu hoje
-        allowedIds = validIds.filter((id) => guestSolvedToday.has(id));
-      } else {
-        // Permite carregar até a cota restante
-        const alreadyAnswered = validIds.filter((id) => guestSolvedToday.has(id));
-        const newQuestions = validIds.filter((id) => !guestSolvedToday.has(id));
-        const allowedNew = newQuestions.slice(0, guestRemainingQuota);
-        allowedIds = [...alreadyAnswered, ...allowedNew];
-        if (newQuestions.length > guestRemainingQuota) {
-          guestLimitReached = true;
+    // 2. Validação do Ticket de Sessão Criptografado (Fase 2: Session Binding)
+    const ticketVerification = verifySessionTicket(sessionTicket, validIds, authenticatedUser.id);
+    if (!ticketVerification.isValid) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: ticketVerification.error || 'Ticket de sessão inválido ou expirado.'
+        },
+        { status: 403 }
+      );
+    }
+
+    // 3. Telemetria de Cadência de Leitura Humana (Fase 4: Behavioral Limiter)
+    if (!checkUserCadence(authenticatedUser.id)) {
+      return NextResponse.json(
+        {
+          success: false,
+          error: 'Cadência de leitura inumana detectada. Por favor, aguarde alguns segundos antes de solicitar novos lotes.'
+        },
+        {
+          status: 429,
+          headers: { 'Retry-After': '10' }
         }
-      }
+      );
     }
 
-    if (allowedIds.length === 0) {
-      return NextResponse.json({
-        success: true,
-        resolutions: {},
-        count: 0,
-        guestLimitReached: true
-      });
-    }
-
-    // 3. Consulta em lote no PostgreSQL via Primary Key (WHERE id = ANY(allowedIds))
+    // 4. Consulta em lote no PostgreSQL via Primary Key (WHERE id = ANY(validIds))
     const { data, error } = await supabaseAdmin
       .from('questions')
       .select('id, code, correct_answer, is_anulada, commentary, options')
-      .in('id', allowedIds);
+      .in('id', validIds);
 
     if (error) {
       console.error('[/api/questions/solve-batch] Erro no Supabase:', error.message || error);
@@ -235,6 +213,8 @@ export async function POST(req: NextRequest) {
       }
     > = {};
 
+    const userIdForWatermark = authenticatedUser.id;
+
     ((data || []) as QuestionBatchRow[]).forEach((row) => {
       const isAnulada = Boolean(row.is_anulada || row.correct_answer === 'ANULADA');
       const rawAnswer = (row.correct_answer || (isAnulada ? 'ANULADA' : '')).trim().toUpperCase();
@@ -243,21 +223,34 @@ export async function POST(req: NextRequest) {
         ? (rawAnswer as 'A' | 'B' | 'C' | 'D' | 'E' | 'ANULADA')
         : (isAnulada ? 'ANULADA' : '');
 
+      // Injeção de Marca d'Água Esteganográfica Forense (Fase 3: Zero-Width Watermarking)
+      const watermarkedCommentary = injectZeroWidthWatermark(row.commentary || '', userIdForWatermark);
+      const rawOptions = Array.isArray(row.options) ? row.options : [];
+      const watermarkedOptions = rawOptions.map((opt: unknown) => {
+        if (opt && typeof opt === 'object' && 'justification' in opt) {
+          const optObj = opt as { justification?: string; [key: string]: unknown };
+          return {
+            ...optObj,
+            justification: injectZeroWidthWatermark(optObj.justification || '', userIdForWatermark)
+          };
+        }
+        return opt;
+      });
+
       resolutions[row.id] = {
         questionId: row.id,
         code: row.code || '',
         correctAnswer,
         isAnulada,
-        commentary: row.commentary || '',
-        options: Array.isArray(row.options) ? row.options : []
+        commentary: watermarkedCommentary,
+        options: watermarkedOptions
       };
     });
 
     return NextResponse.json({
       success: true,
       resolutions,
-      count: Object.keys(resolutions).length,
-      guestLimitReached
+      count: Object.keys(resolutions).length
     });
   } catch (err: unknown) {
     const msg = err instanceof Error ? err.message : 'Erro interno';
@@ -265,4 +258,3 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ success: false, error: msg }, { status: 500 });
   }
 }
-

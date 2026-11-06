@@ -124,6 +124,9 @@ export const QuestoesView: React.FC = () => {
   // Referência estável para userAnswers: evita que responder uma questão acione refetch fantasma de 50 questões
   const userAnswersRef = useRef(userAnswers);
   const isFirstLoadRef = useRef(true);
+  const lastPrefetchedPageRef = useRef(1);
+  const latestSessionTicketRef = useRef<string | undefined>(undefined);
+  const isSimulado = searchParams.get('mode') === 'simulado' || searchParams.get('simulado') === 'true' || searchParams.get('tab') === 'simulados';
   useEffect(() => {
     userAnswersRef.current = userAnswers;
   }, [userAnswers]);
@@ -267,7 +270,7 @@ export const QuestoesView: React.FC = () => {
       setIsLoadingSupabase(true);
       try {
         let questionIds: string[] | undefined;
-        let effectivePageSize = sessionQuestionLimit ? Math.min(200, sessionQuestionLimit) : 50;
+        let effectivePageSize = sessionQuestionLimit ? Math.min(200, sessionQuestionLimit) : 20;
 
         if (activeListId) {
           const currentList = lists.find((l) => l.id === activeListId);
@@ -304,6 +307,9 @@ export const QuestoesView: React.FC = () => {
         );
 
         if (!isCancelled) {
+          if (res.sessionTicket) {
+            latestSessionTicketRef.current = res.sessionTicket;
+          }
           if (questionsPage === 1) {
             setSupabaseQuestions(res.questions);
           } else {
@@ -350,15 +356,40 @@ export const QuestoesView: React.FC = () => {
     return supabaseQuestions;
   }, [supabaseQuestions]);
 
-  // Disparo Imediato em Lote (Abordagem A): pré-carrega gabaritos, justificativas e comentários da lista ativa
+  // Auto-Prefetch da próxima página em segundo plano (Pilar 1 da Arquitetura Híbrida)
+  // Quando o aluno estiver na questão 14 de 20 (a 6 questões do fim do buffer atual),
+  // dispara silenciosamente o carregamento da próxima página para transição em 0ms
   useEffect(() => {
+    if (
+      !isLoadingSupabase &&
+      visibleQuestions.length > 0 &&
+      visibleQuestions.length < totalSupabaseCount &&
+      currentQuestionIndex >= visibleQuestions.length - 6 &&
+      lastPrefetchedPageRef.current === questionsPage
+    ) {
+      lastPrefetchedPageRef.current = questionsPage + 1;
+      const timer = setTimeout(() => {
+        setQuestionsPage((prev) => prev + 1);
+      }, 50);
+      return () => clearTimeout(timer);
+    }
+  }, [currentQuestionIndex, visibleQuestions.length, totalSupabaseCount, isLoadingSupabase, questionsPage]);
+
+  // Disparo Imediato em Lote (Abordagem A): pré-carrega gabaritos, justificativas e comentários da lista ativa
+  // Blindagem de Segurança (Fase 1 e Fase 2):
+  // 1. Desativado em Simulados e Provas Oficiais para impedir consulta de respostas no DevTools antes de responder.
+  // 2. Desativado para visitantes não autenticados (visitantes resolvem questão a questão via /api/questions/solve).
+  // 3. Envia o latestSessionTicketRef.current assinado para autorização estrita.
+  useEffect(() => {
+    if (isSimulado) return;
+    if (!user) return;
     if (supabaseQuestions.length > 0) {
       const ids = supabaseQuestions.map((q) => q.id).filter(Boolean);
-      prefetchQuestionResolutions(ids).catch((err) => {
+      prefetchQuestionResolutions(ids, latestSessionTicketRef.current).catch((err) => {
         console.warn('[QuestoesView] Falha silenciosa no prefetch de resoluções:', err);
       });
     }
-  }, [supabaseQuestions]);
+  }, [supabaseQuestions, isSimulado, user]);
 
   const currentQuestion = visibleQuestions[Math.min(currentQuestionIndex, visibleQuestions.length - 1)];
 
@@ -412,6 +443,7 @@ export const QuestoesView: React.FC = () => {
       aleatorizar: false
     });
     setSessionQuestionIds(null);
+    lastPrefetchedPageRef.current = 1;
     setQuestionsPage(1);
     setCurrentQuestionIndex(0);
   };
@@ -767,7 +799,7 @@ export const QuestoesView: React.FC = () => {
                   </div>
 
                   {/* Direita: Ferramentas de Estudo (Tempo Duplo, Marca-Texto 6 cores, Riscar, Fonte, Favoritar, Reportar, Atalhos, Filtros, Finalizar) */}
-                  <div className="flex items-center justify-between sm:justify-end gap-2 sm:gap-2.5 shrink-0 border-t lg:border-t-0 pt-2 lg:pt-0 border-slate-100 dark:border-slate-800">
+                  <div className="flex items-center justify-start sm:justify-end gap-2 sm:gap-2.5 shrink-0 border-t lg:border-t-0 pt-2 lg:pt-0 border-slate-100 dark:border-slate-800 overflow-x-auto max-w-full no-scrollbar pb-1">
                     {/* Relógios de Performance: Tempo na Questão e Tempo Total */}
                     <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-2xs">
                       {isTimerVisible ? (
@@ -1206,6 +1238,20 @@ export const QuestoesView: React.FC = () => {
                   onSelectHighlighterColor={setActiveHighlighterColor}
                   isStrikethroughActive={isStrikethroughActive}
                   onToggleStrikethrough={() => setIsStrikethroughActive((prev) => !prev)}
+                  onNextQuestion={
+                    currentQuestionIndex < visibleQuestions.length - 1 || visibleQuestions.length < totalSupabaseCount
+                      ? () => {
+                          if (currentQuestionIndex + 1 < visibleQuestions.length) {
+                            setCurrentQuestionIndex((prev) => prev + 1);
+                            setQuestionTimer(0);
+                          } else if (visibleQuestions.length < totalSupabaseCount) {
+                            setQuestionsPage((prev) => prev + 1);
+                            setCurrentQuestionIndex((prev) => prev + 1);
+                            setQuestionTimer(0);
+                          }
+                        }
+                      : undefined
+                  }
                 />
               )}
 

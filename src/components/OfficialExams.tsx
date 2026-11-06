@@ -273,7 +273,7 @@ export const OfficialExams: React.FC<OfficialExamsProps> = ({ onStartExam }) => 
                   }
                 }}
                 placeholder="Busque por instituição ou sigla (Ex.: USP, UNICAMP, ENARE, SUS-SP, AMRIGS)..."
-                className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-2xl pl-10 pr-9 py-2.5 text-xs text-zinc-900 dark:text-white placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] shadow-xs"
+                className="w-full bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-2xl pl-10 pr-9 py-2.5 text-base sm:text-xs min-h-[44px] text-zinc-900 dark:text-white placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] shadow-xs"
               />
               {searchQuery && (
                 <button
@@ -294,7 +294,7 @@ export const OfficialExams: React.FC<OfficialExamsProps> = ({ onStartExam }) => 
               <select
                 value={selectedState}
                 onChange={(e) => setSelectedState(e.target.value)}
-                className="bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-2xl px-3 py-2 text-xs font-bold text-zinc-700 dark:text-zinc-200 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] shadow-xs cursor-pointer"
+                className="bg-zinc-50 dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 rounded-2xl px-3 py-2 text-base sm:text-xs min-h-[44px] font-bold text-zinc-700 dark:text-zinc-200 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] shadow-xs cursor-pointer"
               >
                 {availableStates.map((st) => (
                   <option key={st} value={st}>

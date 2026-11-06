@@ -11,6 +11,7 @@ import {
   BookOpenCheck
 } from 'lucide-react';
 import { useTheme } from '@/context/ThemeContext';
+import { renderFormattedMedicalText } from '@/utils/textSanitizer';
 import questionsData from '@/data/landingDemoQuestions.json';
 
 type TabKey = 'internato' | 'residencia' | 'revalida' | 'rplus';
@@ -229,7 +230,7 @@ export const LandingDemoQuestionsSection: React.FC<LandingDemoQuestionsSectionPr
 
           {/* Enunciado Clínico */}
           <div className="text-slate-800 dark:text-slate-100 text-sm sm:text-base leading-relaxed font-normal">
-            {currentQuestion.statement}
+            {renderFormattedMedicalText(currentQuestion.statement)}
           </div>
 
           {/* Alternativas de Resposta */}
@@ -280,7 +281,7 @@ export const LandingDemoQuestionsSection: React.FC<LandingDemoQuestionsSectionPr
                     )}
                   </div>
                   <div className="text-xs sm:text-sm font-medium leading-relaxed pt-0.5">
-                    {option.text}
+                    {renderFormattedMedicalText(option.text)}
                   </div>
                 </button>
               );
@@ -318,7 +319,7 @@ export const LandingDemoQuestionsSection: React.FC<LandingDemoQuestionsSectionPr
 
               {/* Texto explicativo clínico */}
               <div className="text-xs sm:text-sm text-slate-700 dark:text-slate-300 leading-relaxed whitespace-pre-line bg-white/70 dark:bg-slate-900/60 p-4 rounded-xl border border-slate-200/80 dark:border-slate-800/80">
-                {currentQuestion.commentary}
+                {renderFormattedMedicalText(currentQuestion.commentary)}
               </div>
 
               {/* Botão para próxima questão */}

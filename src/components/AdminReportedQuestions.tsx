@@ -25,6 +25,7 @@ import {
   updateQuestionReportStatus
 } from '@/services/questionService';
 import { useTheme } from '@/context/ThemeContext';
+import { renderFormattedMedicalText } from '@/utils/textSanitizer';
 
 interface StagingState {
   reportId: string;
@@ -39,44 +40,7 @@ interface StagingState {
 }
 
 const renderFormattedText = (text: string | null | undefined) => {
-  if (!text) return null;
-
-  const parseItalics = (str: string, parentKey: string | number) => {
-    const italicParts = str.split(/(\*(?!\s)[^*\n]+?(?<!\s)\*|_(?!\s)[^_\n]+?(?<!\s)_)/g);
-    return italicParts.map((subPart, subIdx) => {
-      const key = `${parentKey}-${subIdx}`;
-      if (
-        (subPart.startsWith('*') && subPart.endsWith('*') && subPart.length > 2) ||
-        (subPart.startsWith('_') && subPart.endsWith('_') && subPart.length > 2)
-      ) {
-        return (
-          <em key={key} className="italic font-medium">
-            {subPart.slice(1, -1)}
-          </em>
-        );
-      }
-      return subPart;
-    });
-  };
-
-  const boldParts = text.split(/(\*{3}.*?\*{3}|\*{2}.*?\*{2})/g);
-  return boldParts.flatMap((part, index) => {
-    if (part.startsWith('***') && part.endsWith('***') && part.length > 6) {
-      return [
-        <strong key={`bi-${index}`} className="font-bold text-zinc-900 dark:text-white">
-          <em className="italic font-medium">{part.slice(3, -3)}</em>
-        </strong>,
-      ];
-    }
-    if (part.startsWith('**') && part.endsWith('**') && part.length > 4) {
-      return [
-        <strong key={`b-${index}`} className="font-bold text-zinc-900 dark:text-white">
-          {parseItalics(part.slice(2, -2), `b-${index}`)}
-        </strong>,
-      ];
-    }
-    return parseItalics(part, `p-${index}`);
-  });
+  return renderFormattedMedicalText(text, { boldColorClass: 'font-bold text-zinc-900 dark:text-white' });
 };
 
 export const AdminReportedQuestions: React.FC = () => {
@@ -665,7 +629,7 @@ export const AdminReportedQuestions: React.FC = () => {
                     <div>
                       <span className="font-bold text-zinc-700 dark:text-zinc-300 block mb-1">Enunciado:</span>
                       <p className="text-zinc-800 dark:text-zinc-200 whitespace-pre-wrap leading-relaxed">
-                        {q.statement}
+                        {renderFormattedText(q.statement)}
                       </p>
                     </div>
 
@@ -684,7 +648,7 @@ export const AdminReportedQuestions: React.FC = () => {
                             <span className="w-5 h-5 rounded-md text-[10px] font-bold flex items-center justify-center bg-zinc-200 dark:bg-zinc-800 shrink-0">
                               {opt.letter}
                             </span>
-                            <span className="flex-1">{opt.text}</span>
+                            <span className="flex-1">{renderFormattedText(opt.text)}</span>
                           </div>
                         ))}
                       </div>
@@ -879,7 +843,7 @@ export const AdminReportedQuestions: React.FC = () => {
                             Enunciado Oficial
                           </span>
                           <p className="text-zinc-800 dark:text-zinc-200 whitespace-pre-wrap leading-relaxed">
-                            {q?.statement}
+                            {renderFormattedText(q?.statement)}
                           </p>
                         </div>
 
@@ -912,7 +876,7 @@ export const AdminReportedQuestions: React.FC = () => {
                                   </span>
                                   <div className="flex-1 space-y-1.5 text-xs">
                                     <div className="flex items-center justify-between gap-2">
-                                      <span className="font-medium leading-relaxed">{opt.text}</span>
+                                      <span className="font-medium leading-relaxed">{renderFormattedText(opt.text)}</span>
                                       <span
                                         className={`px-2 py-0.5 rounded-md text-[10px] font-bold shrink-0 ${
                                           isTarget
