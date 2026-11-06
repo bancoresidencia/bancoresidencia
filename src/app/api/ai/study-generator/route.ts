@@ -6,7 +6,8 @@ import { callGeminiAi } from '@/lib/gemini';
 import { medicalKnowledgeService, KnowledgeChunk } from '@/services/medicalKnowledgeService';
 import { guidelinesKnowledgeService } from '@/services/guidelinesKnowledgeService';
 import { verifyStudentSession } from '@/lib/supabase/studentAuth';
-import { sanitizePostgrestTerm } from '@/utils/security';
+import { sanitizePostgrestTerm, isPrivilegedRole } from '@/utils/security';
+import { isAiRateLimited } from '@/lib/aiProtection';
 import { FocusExamAnalytics } from '@/types/analytics';
 import { StudyMaterialItem } from '@/types/flashcards';
 
@@ -40,6 +41,7 @@ export async function POST(req: NextRequest) {
     const validAdminKey = process.env.ADMIN_API_KEY || process.env.SUPABASE_SERVICE_ROLE_KEY;
     const isAdminBypass = Boolean(adminKey && validAdminKey && adminKey === validAdminKey);
 
+    let isPrivilegedUser = isAdminBypass;
     if (!isAdminBypass) {
       const auth = await verifyStudentSession(req);
       if (!auth.authorized || !auth.user) {
@@ -49,6 +51,21 @@ export async function POST(req: NextRequest) {
             error: auth.error || 'Acesso não autorizado: faça login ou utilize a chave administrativa para gerar resumos permanentes.'
           },
           { status: auth.status }
+        );
+      }
+
+      const appRole = auth.user.app_metadata?.role;
+      if (isPrivilegedRole(appRole)) {
+        isPrivilegedUser = true;
+      }
+
+      // Rate limit estrito para requisições de geração de estudo (máx 5/min)
+      const clientIp = req.headers.get('x-forwarded-for')?.split(',')[0].trim() || 'unknown-ip';
+      const rateLimitId = `study_gen_${auth.user.id}_${clientIp}`;
+      if (isAiRateLimited(rateLimitId, 5)) {
+        return NextResponse.json(
+          { success: false, error: 'Limite de geração de resumos atingido. Aguarde 1 minuto antes de solicitar novamente.' },
+          { status: 429 }
         );
       }
     }
@@ -371,8 +388,11 @@ ${retrievedChunksText || 'Utilize as diretrizes médicas oficiais vigentes mais 
     let savedToSupabase = false;
     let supabaseSaveError: string | null = null;
 
-    try {
-      const supabaseAdmin = getSupabaseAdmin();
+    if (!isPrivilegedUser) {
+      supabaseSaveError = 'Apenas administradores ou curadores podem publicar resumos oficiais no acervo permanente.';
+    } else {
+      try {
+        const supabaseAdmin = getSupabaseAdmin();
       const { error: upsertErr } = await supabaseAdmin
         .from('study_materials')
         .upsert(
@@ -405,6 +425,7 @@ ${retrievedChunksText || 'Utilize as diretrizes médicas oficiais vigentes mais 
       const saveErrMsg = saveEx instanceof Error ? saveEx.message : String(saveEx);
       console.warn('[StudyGenerator] Exceção ao persistir no Supabase:', saveErrMsg);
       supabaseSaveError = saveErrMsg;
+      }
     }
 
     return NextResponse.json({

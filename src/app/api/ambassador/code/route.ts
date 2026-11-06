@@ -1,29 +1,25 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createClient } from '@/lib/supabase/server';
+import { verifyStudentSession } from '@/lib/supabase/studentAuth';
 import { updateUserReferralCode } from '@/services/ambassadorService';
+
+export const dynamic = 'force-dynamic';
 
 export async function POST(req: NextRequest) {
   try {
-    let authUser = null;
-    try {
-      const supabase = await createClient();
-      const { data: { user } } = await supabase.auth.getUser();
-      authUser = user;
-    } catch {
-      // Falha esperada fora de escopo de cookies ou em chamadas diretas
-    }
-
-    const body = await req.json();
-    const { code, userId: bodyUserId } = body;
-
-    const effectiveUserId = authUser?.id || bodyUserId;
-
-    if (!effectiveUserId) {
+    // 1. Autenticação obrigatória (suporta cookies de sessão e Bearer token)
+    const auth = await verifyStudentSession(req);
+    if (!auth.authorized || !auth.user) {
       return NextResponse.json(
-        { error: 'Usuário não autenticado.', success: false },
+        { error: 'Acesso não autorizado: faça login para alterar seu código de indicação.', success: false },
         { status: 401 }
       );
     }
+
+    const body = await req.json().catch(() => ({}));
+    const { code } = body;
+
+    // Blindagem IDOR: O usuário só pode alterar o seu próprio código de indicação
+    const effectiveUserId = auth.user.id;
 
     if (!code || typeof code !== 'string') {
       return NextResponse.json(

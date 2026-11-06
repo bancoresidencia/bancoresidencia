@@ -316,6 +316,24 @@ export async function requestBackendAmbassadorWithdrawal(
 
     try {
       const supabase = getSupabaseAdmin();
+
+      // Blindagem distribuída contra Race Conditions e Double Spending entre instâncias Serverless
+      const fifteenSecAgo = new Date(Date.now() - 15000).toISOString();
+      const { data: recentPending } = await supabase
+        .from('ambassador_withdrawals')
+        .select('id')
+        .eq('user_id', userId)
+        .eq('status', 'pending')
+        .gte('requested_at', fifteenSecAgo)
+        .limit(1);
+
+      if (recentPending && recentPending.length > 0) {
+        return {
+          success: false,
+          message: 'Uma solicitação de saque já está em processamento para esta conta. Aguarde alguns instantes.'
+        };
+      }
+
       const { data: inserted, error } = await supabase
         .from('ambassador_withdrawals')
         .insert({

@@ -63,7 +63,8 @@ export function hasRightCardActiveFilters(filters: ExtendedFilterState): boolean
  * Utiliza COUNT(DISTINCT id) para evitar duplicações.
  */
 export async function fetchFacetedHierarchyCounts(
-  filters: ExtendedFilterState
+  filters: ExtendedFilterState,
+  signal?: AbortSignal
 ): Promise<FacetedHierarchyCountsResult | null> {
   if (!hasRightCardActiveFilters(filters)) {
     return null; // Sem filtros contextuais no card direito, usa base completa
@@ -94,7 +95,8 @@ export async function fetchFacetedHierarchyCounts(
       const apiRes = await fetch('/api/questions', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ action: 'facets', filters })
+        body: JSON.stringify({ action: 'facets', filters }),
+        signal
       });
       if (apiRes.ok) {
         const json = await apiRes.json();
@@ -103,7 +105,10 @@ export async function fetchFacetedHierarchyCounts(
           return json.facets;
         }
       }
-    } catch (e) {
+    } catch (e: unknown) {
+      if (e instanceof Error && e.name === 'AbortError') {
+        return null;
+      }
       console.warn('[stratifiedQuizService] Falha na rota /api/questions (facets), usando fallback local:', e);
     }
   }

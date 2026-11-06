@@ -8,8 +8,32 @@ import {
   LastReadSummaryInfo,
   CardCommunityStats
 } from '@/types/flashcards';
-import { INITIAL_FLASHCARDS } from '@/data/flashcardsData';
-import { INITIAL_STUDY_MATERIALS } from '@/data/studyMaterialsData';
+// Carregamento dinâmico sob demanda para proteger o acervo contra raspagem estática e reduzir o bundle em ~587 KB
+let _cachedInitialFlashcards: FlashcardItem[] | null = null;
+function getInitialFlashcards(): FlashcardItem[] {
+  if (!_cachedInitialFlashcards) {
+    try {
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
+      _cachedInitialFlashcards = require('@/data/flashcardsData').INITIAL_FLASHCARDS;
+    } catch {
+      _cachedInitialFlashcards = [];
+    }
+  }
+  return _cachedInitialFlashcards || [];
+}
+
+let _cachedInitialStudyMaterials: StudyMaterialItem[] | null = null;
+function getInitialStudyMaterials(): StudyMaterialItem[] {
+  if (!_cachedInitialStudyMaterials) {
+    try {
+      // eslint-disable-next-line @typescript-eslint/no-require-imports
+      _cachedInitialStudyMaterials = require('@/data/studyMaterialsData').INITIAL_STUDY_MATERIALS;
+    } catch {
+      _cachedInitialStudyMaterials = [];
+    }
+  }
+  return _cachedInitialStudyMaterials || [];
+}
 import { createClient } from '@/lib/supabase/client';
 
 const STORAGE_KEY = 'bancoresidencia_flashcards_progress_v1';
@@ -113,7 +137,7 @@ export const flashcardsService = {
     const userEdits = this.loadUserCardEdits();
     const now = new Date().toISOString();
     const userCreated = this.loadUserCreatedFlashcards(filter?.userId);
-    const combined = [...userCreated, ...INITIAL_FLASHCARDS];
+    const combined = [...userCreated, ...getInitialFlashcards()];
 
     let list = combined.map((card) => {
       const edit = userEdits[card.id];
@@ -180,7 +204,7 @@ export const flashcardsService = {
   getFlashcardById(cardId: string): FlashcardItem | undefined {
     const userCreated = this.loadUserCreatedFlashcards();
     const userEdits = this.loadUserCardEdits();
-    const combined = [...userCreated, ...INITIAL_FLASHCARDS];
+    const combined = [...userCreated, ...getInitialFlashcards()];
     const card = combined.find((c) => c.id === cardId);
     if (!card) return undefined;
     const edit = userEdits[card.id];
@@ -456,12 +480,13 @@ export const flashcardsService = {
    * Obtém a lista de Materiais de Apoio / Resumos Clínicos
    */
   getStudyMaterials(filter?: { specialty?: string; search?: string }): StudyMaterialItem[] {
-    const canonicalIds = new Set(INITIAL_STUDY_MATERIALS.map((m) => m.id));
-    const canonicalFoci = new Set(INITIAL_STUDY_MATERIALS.map((m) => m.focus.toLowerCase().trim()));
+    const initialMaterials = getInitialStudyMaterials();
+    const canonicalIds = new Set(initialMaterials.map((m) => m.id));
+    const canonicalFoci = new Set(initialMaterials.map((m) => m.focus.toLowerCase().trim()));
     const userCreated = this.loadUserCreatedStudyMaterials().filter(
       (uc) => !canonicalIds.has(uc.id) && !canonicalFoci.has(uc.focus.toLowerCase().trim())
     );
-    let list = [...userCreated, ...INITIAL_STUDY_MATERIALS];
+    let list = [...userCreated, ...initialMaterials];
 
     if (filter) {
       if (filter.specialty && filter.specialty !== 'Todas') {

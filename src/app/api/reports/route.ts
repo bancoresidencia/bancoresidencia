@@ -21,8 +21,41 @@ function isValidUuid(id?: string | null): boolean {
   return /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(id);
 }
 
+interface ReportRateLimitEntry {
+  count: number;
+  resetAt: number;
+}
+const reportRateLimitMap = new Map<string, ReportRateLimitEntry>();
+
+function isReportRateLimited(ip: string): boolean {
+  const now = Date.now();
+  if (reportRateLimitMap.size > 2000) {
+    for (const [k, v] of reportRateLimitMap.entries()) {
+      if (v.resetAt < now) reportRateLimitMap.delete(k);
+    }
+  }
+  const entry = reportRateLimitMap.get(ip);
+  if (!entry || entry.resetAt < now) {
+    reportRateLimitMap.set(ip, { count: 1, resetAt: now + 60000 });
+    return false;
+  }
+  if (entry.count >= 20) {
+    return true;
+  }
+  entry.count++;
+  return false;
+}
+
 export async function POST(req: NextRequest) {
   try {
+    const clientIp = req.headers.get('x-forwarded-for')?.split(',')[0].trim() || 'unknown-ip';
+    if (isReportRateLimited(clientIp)) {
+      return NextResponse.json(
+        { success: false, error: 'Limite de reportes excedido. Por favor, aguarde alguns instantes.' },
+        { status: 429 }
+      );
+    }
+
     const body = await req.json();
     const supabaseAdmin = getSupabaseAdmin();
 

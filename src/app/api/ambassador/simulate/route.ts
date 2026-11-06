@@ -1,29 +1,33 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { createClient } from '@/lib/supabase/server';
+import { verifyAdminSession } from '@/lib/supabase/adminAuth';
 import { simulateBackendAmbassadorSale } from '@/services/ambassadorService';
+
+export const dynamic = 'force-dynamic';
 
 export async function POST(req: NextRequest) {
   try {
-    let authUser = null;
-    try {
-      const supabase = await createClient();
-      const { data: { user } } = await supabase.auth.getUser();
-      authUser = user;
-    } catch {
-      // Falha esperada fora de escopo de cookies ou em chamadas diretas
-    }
-
-    const body = await req.json();
-    const { planType, matured, daysAgo, userId: bodyUserId } = body;
-
-    const effectiveUserId = authUser?.id || bodyUserId;
-
-    if (!effectiveUserId) {
+    // 1. Bloqueio absoluto em produção
+    if (process.env.NODE_ENV === 'production') {
       return NextResponse.json(
-        { error: 'Usuário não autenticado.', success: false },
-        { status: 401 }
+        { success: false, error: 'Endpoint de simulação indisponível em ambiente de produção.' },
+        { status: 403 }
       );
     }
+
+    // 2. Em ambiente de desenvolvimento/teste, exige estritamente credenciais administrativas
+    const auth = await verifyAdminSession(req);
+    if (!auth.authorized || !auth.user) {
+      return NextResponse.json(
+        { success: false, error: auth.error || 'Acesso restrito exclusivamente a administradores em ambiente de teste.' },
+        { status: auth.status || 401 }
+      );
+    }
+
+    const body = await req.json().catch(() => ({}));
+    const { planType, matured, daysAgo, userId: bodyUserId } = body;
+
+    // Permite especificar outro ID apenas se for admin explícito; por padrão usa o próprio admin autenticado
+    const effectiveUserId = bodyUserId && typeof bodyUserId === 'string' ? bodyUserId : auth.user.id;
 
     const sale = await simulateBackendAmbassadorSale(
       effectiveUserId,

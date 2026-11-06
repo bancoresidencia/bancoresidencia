@@ -330,9 +330,62 @@ export async function POST(req: NextRequest) {
         return NextResponse.json(resultPayload);
       }
 
-      // 2. Consulta Atômica Única (Pilar 2 da Arquitetura Híbrida):
+      // 2. Consulta de Alta Performance via RPC Nativa (Fase 2 da Otimização):
+      // Executa o agrupamento no PostgreSQL com Anti-Join em tempo recorde (< 20ms)
+      try {
+        const resolvedBancas = filtersWithoutClinical.instituicoes && filtersWithoutClinical.instituicoes.length > 0
+          ? resolveBancaList(filtersWithoutClinical.instituicoes)
+          : null;
+
+        const { data: rpcResult, error: rpcErr } = await supabaseAdmin.rpc('get_faceted_question_counts', {
+          p_bancas: resolvedBancas,
+          p_years: filtersWithoutClinical.anos && filtersWithoutClinical.anos.length > 0 ? filtersWithoutClinical.anos : null,
+          p_especialidades: null,
+          p_modalidades: filtersWithoutClinical.modalidades && filtersWithoutClinical.modalidades.length > 0 ? filtersWithoutClinical.modalidades : null,
+          p_dificuldades: filtersWithoutClinical.dificuldade && filtersWithoutClinical.dificuldade !== 'Todas' ? [filtersWithoutClinical.dificuldade] : null,
+          p_tipos: filtersWithoutClinical.tipoQuestao && filtersWithoutClinical.tipoQuestao !== 'Todas' ? [filtersWithoutClinical.tipoQuestao] : null,
+          p_ocultar_anuladas: Boolean(filtersWithoutClinical.ocultarAnuladasErro),
+          p_ultimos_5_anos: Boolean(filtersWithoutClinical.ultimos5Anos),
+          p_status: filtersWithoutClinical.status || 'Todas',
+          p_user_id: authenticatedUserId || null
+        });
+
+        if (!rpcErr && rpcResult && typeof rpcResult === 'object' && typeof (rpcResult as Record<string, unknown>).totalRightCardCount === 'number') {
+          const typedResult = rpcResult as {
+            totalRightCardCount: number;
+            especialidades: Record<string, number>;
+            temas: Record<string, number>;
+          };
+
+          // Normalizações canônicas de especialidades
+          const especialidades = { ...typedResult.especialidades };
+          if (especialidades['Cirurgia Geral'] && !especialidades['Cirurgia']) {
+            especialidades['Cirurgia'] = especialidades['Cirurgia Geral'];
+          }
+          if (especialidades['Ginecologia'] || especialidades['Obstetrícia']) {
+            especialidades['Ginecologia e Obstetrícia'] =
+              (especialidades['Ginecologia'] || 0) + (especialidades['Obstetrícia'] || 0);
+          }
+
+          const resultPayload = {
+            facets: {
+              totalRightCardCount: typedResult.totalRightCardCount,
+              especialidades,
+              temas: typedResult.temas || {},
+              focos: {},
+              subfocos: {}
+            }
+          };
+
+          facetsCache.set(cacheKey, { data: resultPayload, expiresAt: Date.now() + FACETS_CACHE_TTL_MS });
+          return NextResponse.json(resultPayload);
+        }
+      } catch (errRpc) {
+        console.warn('[/api/questions] RPC get_faceted_question_counts indisponível, usando fallback seguro:', errRpc);
+      }
+
+      // 3. Fallback Resiliente (Pilar 2 da Arquitetura Híbrida):
       // Projeta apenas colunas mínimas de hierarquia (sem texto de enunciado/opções/imagens)
-      // Elimina o loop de 10.000 linhas e as 7 queries simultâneas com Promise.all
       let facetQuery = supabaseAdmin
         .from('questions')
         .select('especialidade, tema, foco, subfoco', { count: 'exact' });

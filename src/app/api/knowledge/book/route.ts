@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient as createSupabaseAdminClient } from '@supabase/supabase-js';
 import catalogData from '@/data/medicalKnowledgeCatalog.json';
-import { verifyStudentSession } from '@/lib/supabase/studentAuth';
+import { verifyAdminSession } from '@/lib/supabase/adminAuth';
 
 export const dynamic = 'force-dynamic';
 
@@ -67,12 +67,16 @@ function isRateLimited(ip: string): boolean {
 
 export async function GET(req: NextRequest) {
   try {
-    // 0. Autenticação obrigatória: Acesso exclusivo a estudantes cadastrados
-    const auth = await verifyStudentSession(req);
-    if (!auth.authorized || !auth.user) {
+    // 0. Bloqueio absoluto: nenhum aluno ou visitante tem acesso ao download direto de livros.
+    // Acesso exclusivo a processos internos (M2M Service Role) e curadores/administradores da plataforma.
+    const auth = await verifyAdminSession(req);
+    if (!auth.authorized) {
       return NextResponse.json(
-        { success: false, error: auth.error || 'Acesso restrito a estudantes cadastrados.' },
-        { status: auth.status }
+        {
+          success: false,
+          error: 'Acesso restrito exclusivamente ao motor de inteligência médica e curadoria interna.'
+        },
+        { status: 403 }
       );
     }
 

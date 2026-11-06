@@ -394,6 +394,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
   useEffect(() => {
     let isMounted = true;
+    const abortController = new AbortController();
+
     const timer = setTimeout(async () => {
       try {
         const answeredIds = Object.keys(userAnswers || {});
@@ -407,17 +409,20 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
           userWrongIds: wrongIds
         };
 
-        const res = await fetchFacetedHierarchyCounts(enrichedFilters);
-        if (isMounted) {
+        const res = await fetchFacetedHierarchyCounts(enrichedFilters, abortController.signal);
+        if (isMounted && res) {
           setFacetedCounts(res);
         }
-      } catch {
-        if (isMounted) setFacetedCounts(null);
+      } catch (err: any) {
+        if (err?.name !== 'AbortError' && isMounted) {
+          setFacetedCounts(null);
+        }
       }
-    }, 200);
+    }, 120);
 
     return () => {
       isMounted = false;
+      abortController.abort();
       clearTimeout(timer);
     };
   }, [

@@ -318,36 +318,7 @@ export async function POST(req: NextRequest) {
     const goldAnswer = (row.correct_answer || (isAnulada ? 'ANULADA' : '')).trim().toUpperCase();
     const isCorrect = isAnulada ? true : (goldAnswer ? selectedOption.toUpperCase() === goldAnswer : false);
 
-    // Fast-Path Instantâneo para Prefetch (< 25ms): devolve gabarito e justificativa imediatamente,
-    // sem chamadas redundantes a Auth/Quota/Upsert, enquanto o aluno lê as opções
-    if (isPrefetch) {
-      const watermarkId = clientIp || 'prefetch';
-      const watermarkedCommentary = injectZeroWidthWatermark(row.commentary || '', watermarkId);
-      const rawOpts = Array.isArray(row.options) ? row.options : [];
-      const watermarkedOpts = rawOpts.map((opt: unknown) => {
-        if (opt && typeof opt === 'object' && 'justification' in opt) {
-          const optObj = opt as { justification?: string; [key: string]: unknown };
-          return {
-            ...optObj,
-            justification: injectZeroWidthWatermark(optObj.justification || '', watermarkId)
-          };
-        }
-        return opt;
-      });
-
-      return NextResponse.json({
-        success: true,
-        isPrefetch: true,
-        questionId: row.id,
-        correctAnswer: row.correct_answer || (isAnulada ? 'ANULADA' : ''),
-        isAnulada,
-        isCorrect,
-        commentary: watermarkedCommentary,
-        options: watermarkedOpts
-      });
-    }
-
-    // 5. Verificação de Autenticação e Cota Diária (Plano Gratuito / Visitantes)
+    // 5. Verificação de Identidade (Bearer Token ou Cookies SSR)
     let authenticatedUser: { id: string } | null = null;
     const supabaseAdmin = getSupabaseAdmin();
 
@@ -372,6 +343,56 @@ export async function POST(req: NextRequest) {
       } catch {
         // Sem cookies de sessão
       }
+    }
+
+    // 5.3 Para visitantes anônimos (sem login): aplica a cota estrita de 10 questões/dia
+    // Bloqueia qualquer raspagem acelerada disfarçada de prefetch
+    if (!authenticatedUser) {
+      const guestQuota = parseAndVerifyGuestQuotaCookie(req.cookies.get('br_guest_quota')?.value);
+      const guestCheck = checkGuestQuota(clientIp, row.id);
+      const hasSolvedInCookie = guestQuota.questionIds.has(row.id);
+      const isOverLimit = (guestQuota.questionIds.size >= 10 || guestCheck.limitReached) && !hasSolvedInCookie;
+
+      if (isOverLimit) {
+        return NextResponse.json(
+          {
+            success: false,
+            limitReached: true,
+            error: 'Limite diário de 10 questões para visitantes atingido. Crie sua conta gratuita ou faça login para continuar resolvendo.',
+            dailyResolvedCount: Math.max(guestQuota.questionIds.size, guestCheck.count)
+          },
+          { status: 403 }
+        );
+      }
+    }
+
+    // Fast-Path Instantâneo para Prefetch (< 25ms):
+    // Entrega o gabarito instantaneamente aos alunos legítimos (0ms na UI) e visitantes dentro da cota
+    if (isPrefetch) {
+      const watermarkId = authenticatedUser?.id || clientIp || 'prefetch';
+      const watermarkedCommentary = injectZeroWidthWatermark(row.commentary || '', watermarkId);
+      const rawOpts = Array.isArray(row.options) ? row.options : [];
+      const watermarkedOpts = rawOpts.map((opt: unknown) => {
+        if (opt && typeof opt === 'object' && 'justification' in opt) {
+          const optObj = opt as { justification?: string; [key: string]: unknown };
+          return {
+            ...optObj,
+            justification: injectZeroWidthWatermark(optObj.justification || '', watermarkId)
+          };
+        }
+        return opt;
+      });
+
+      return NextResponse.json({
+        success: true,
+        isPrefetch: true,
+        questionId: row.id,
+        correctAnswer: row.correct_answer || (isAnulada ? 'ANULADA' : ''),
+        isAnulada,
+        isCorrect,
+        commentary: watermarkedCommentary,
+        options: watermarkedOpts
+      });
     }
 
     // 5.3 Validação de plano e contagem diária no Supabase (apenas em confirmação oficial, prefetch não bloqueia nem debita)
@@ -434,25 +455,6 @@ export async function POST(req: NextRequest) {
             );
           }
         }
-      }
-    } else if (!isPrefetch) {
-      // 5.4 Visitante não autenticado: verificação via cookie criptográfico assinado + fallback por IP
-      const guestQuota = parseAndVerifyGuestQuotaCookie(req.cookies.get('br_guest_quota')?.value);
-      const guestCheck = checkGuestQuota(clientIp, row.id);
-
-      const hasSolvedInCookie = guestQuota.questionIds.has(row.id);
-      const isOverLimit = (guestQuota.questionIds.size >= 10 || guestCheck.limitReached) && !hasSolvedInCookie;
-
-      if (isOverLimit) {
-        return NextResponse.json(
-          {
-            success: false,
-            limitReached: true,
-            error: 'Limite diário de 10 questões para visitantes atingido. Crie sua conta ou faça login para continuar resolvendo.',
-            dailyResolvedCount: Math.max(guestQuota.questionIds.size, guestCheck.count)
-          },
-          { status: 403 }
-        );
       }
     }
 

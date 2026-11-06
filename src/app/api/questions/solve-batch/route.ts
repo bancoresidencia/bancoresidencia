@@ -66,13 +66,15 @@ function checkUserCadence(userId: string): boolean {
   const now = Date.now();
   const entry = userCadenceMap.get(userId);
 
-  if (!entry || now - entry.firstRequestAt > 20000) {
+  // Janela calibrada para navegação rápida de estudantes (até 10 trocas de página em 30s)
+  // Bloqueia apenas robôs de raspagem que disparam centenas de requisições por segundo
+  if (!entry || now - entry.firstRequestAt > 30000) {
     userCadenceMap.set(userId, { batchCount: 1, firstRequestAt: now });
     return true;
   }
 
   entry.batchCount++;
-  if (entry.batchCount > 5) {
+  if (entry.batchCount > 10) {
     return false;
   }
 
