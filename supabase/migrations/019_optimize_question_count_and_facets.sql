@@ -74,20 +74,20 @@ BEGIN
       -- Tratamento de Status do Usuário com Anti-Join ou Semi-Join
       AND (
         p_status = 'Todas' 
-        OR p_user_id IS NULL
-        OR (p_status = 'Não vistas' AND NOT EXISTS (
+        OR (p_user_id IS NULL AND p_status = 'Não vistas')
+        OR (p_user_id IS NOT NULL AND p_status = 'Não vistas' AND NOT EXISTS (
             SELECT 1 FROM public.user_answers ua 
             WHERE ua.user_id = p_user_id AND ua.question_id = q.id
         ))
-        OR (p_status = 'Resolvidas' AND EXISTS (
+        OR (p_user_id IS NOT NULL AND p_status = 'Resolvidas' AND EXISTS (
             SELECT 1 FROM public.user_answers ua 
             WHERE ua.user_id = p_user_id AND ua.question_id = q.id
         ))
-        OR (p_status = 'Acertadas' AND EXISTS (
+        OR (p_user_id IS NOT NULL AND p_status = 'Acertadas' AND EXISTS (
             SELECT 1 FROM public.user_answers ua 
             WHERE ua.user_id = p_user_id AND ua.question_id = q.id AND ua.is_correct = TRUE
         ))
-        OR (p_status = 'Erradas' AND EXISTS (
+        OR (p_user_id IS NOT NULL AND p_status = 'Erradas' AND EXISTS (
             SELECT 1 FROM public.user_answers ua 
             WHERE ua.user_id = p_user_id AND ua.question_id = q.id AND ua.is_correct = FALSE
         ))

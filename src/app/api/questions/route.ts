@@ -367,13 +367,26 @@ export async function POST(req: NextRequest) {
               (especialidades['Ginecologia'] || 0) + (especialidades['Obstetrícia'] || 0);
           }
 
+          const globalTotal = 132965;
+          const overallRatio = globalTotal > 0 ? typedResult.totalRightCardCount / globalTotal : 1;
+          const focos: Record<string, number> = {};
+          const subfocos: Record<string, number> = {};
+          if (typedResult.totalRightCardCount > 0) {
+            for (const [f, count] of Object.entries(hierarchyQuestionCounts.focos || {})) {
+              focos[f] = Math.max(0, Math.round((count as number) * overallRatio));
+            }
+            for (const [s, count] of Object.entries(hierarchyQuestionCounts.subfocos || {})) {
+              subfocos[s] = Math.max(0, Math.round((count as number) * overallRatio));
+            }
+          }
+
           const resultPayload = {
             facets: {
               totalRightCardCount: typedResult.totalRightCardCount,
               especialidades,
               temas: typedResult.temas || {},
-              focos: {},
-              subfocos: {}
+              focos,
+              subfocos
             }
           };
 
@@ -474,6 +487,47 @@ export async function POST(req: NextRequest) {
           page,
           pageSize,
           totalPages: 0
+        });
+      }
+
+      const hasOtherFilters = Boolean(
+        (filters.especialidades && filters.especialidades.length > 0) ||
+        (filters.temas && filters.temas.length > 0) ||
+        (filters.focos && filters.focos.length > 0) ||
+        (filters.subfocos && filters.subfocos.length > 0) ||
+        (filters.instituicoes && filters.instituicoes.length > 0) ||
+        (filters.anos && filters.anos.length > 0) ||
+        (filters.dificuldade && filters.dificuldade !== 'Todas') ||
+        (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') ||
+        (filters.search && filters.search.trim()) ||
+        filters.ocultarAnuladasErro ||
+        filters.ultimos5Anos
+      );
+
+      if (hasOtherFilters) {
+        let dataQuery = supabaseAdmin.from('questions').select(selectCols, { count: 'exact' });
+        const safeTargetIds = targetStatusIds.slice(0, 1000);
+        dataQuery = applyQuestionFilters(dataQuery, filters, safeTargetIds);
+        dataQuery = dataQuery.range(from, to);
+
+        const { data, count, error } = await dataQuery;
+        if (error) {
+          console.error('[/api/questions] Erro ao buscar questões com status e filtros cruzados:', error.message || error);
+          return NextResponse.json({ questions: [], total: 0, page, pageSize, totalPages: 0, error: error.message }, { status: 500 });
+        }
+
+        const realTotal = typeof count === 'number' ? count : (data || []).length;
+        const questions = (data || []).map((row) => mapRowToQuestion(row as unknown as QuestionDbRow));
+        const pageQuestionIds = questions.map((q) => q.id).filter(Boolean);
+        const sessionTicket = generateSessionTicket(authenticatedUserId || 'anonymous', pageQuestionIds);
+
+        return NextResponse.json({
+          questions,
+          total: realTotal,
+          page,
+          pageSize,
+          totalPages: Math.ceil(realTotal / pageSize),
+          sessionTicket
         });
       }
 

@@ -92,9 +92,18 @@ export async function fetchFacetedHierarchyCounts(
   // Tenta obter contagens via rota interna /api/questions (acesso com Service Role e suporte total a Revalida/Status)
   if (typeof window !== 'undefined') {
     try {
+      const reqHeaders: Record<string, string> = { 'Content-Type': 'application/json' };
+      try {
+        const { data: authData } = await supabase.auth.getSession();
+        if (authData?.session?.access_token) {
+          reqHeaders['Authorization'] = `Bearer ${authData.session.access_token}`;
+        }
+      } catch {
+        // anônimo
+      }
       const apiRes = await fetch('/api/questions', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: reqHeaders,
         body: JSON.stringify({ action: 'facets', filters }),
         signal
       });

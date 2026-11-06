@@ -495,9 +495,18 @@ export async function fetchQuestionsFromSupabase(
   // Chamada via API Route interna (Node.js com Service Role) para garantir 100% de acesso às questões, comentários e gabaritos sem erro de permissão (42501)
   if (typeof window !== 'undefined') {
     try {
+      const reqHeaders: Record<string, string> = { 'Content-Type': 'application/json' };
+      try {
+        const { data: authData } = await supabase.auth.getSession();
+        if (authData?.session?.access_token) {
+          reqHeaders['Authorization'] = `Bearer ${authData.session.access_token}`;
+        }
+      } catch {
+        // anônimo
+      }
       const apiRes = await fetch('/api/questions', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: reqHeaders,
         body: JSON.stringify({ filters, page, pageSize, questionIds })
       });
       if (apiRes.ok) {
@@ -524,28 +533,54 @@ export async function fetchQuestionsFromSupabase(
     query = query.eq('is_anulada', false);
   }
 
+  const hasOtherFilters = Boolean(
+    (filters.especialidades && filters.especialidades.length > 0) ||
+    (filters.temas && filters.temas.length > 0) ||
+    (filters.focos && filters.focos.length > 0) ||
+    (filters.subfocos && filters.subfocos.length > 0) ||
+    (filters.instituicoes && filters.instituicoes.length > 0) ||
+    (filters.anos && filters.anos.length > 0) ||
+    (filters.dificuldade && filters.dificuldade !== 'Todas') ||
+    (filters.tipoQuestao && filters.tipoQuestao !== 'Todas') ||
+    (filters.search && filters.search.trim()) ||
+    filters.ocultarAnuladasErro ||
+    filters.ultimos5Anos
+  );
+
   // Filtro de Status do Aluno via paginação direta de IDs (sem limite artificial de 150)
   if (filters.status === 'Resolvidas') {
     if (!filters.userSolvedIds || filters.userSolvedIds.length === 0) {
       return { questions: [], total: 0, page, pageSize, totalPages: 0 };
     }
-    const from = (page - 1) * pageSize;
-    const pageTargetIds = filters.userSolvedIds.slice(from, from + pageSize);
-    query = query.in('id', pageTargetIds.length > 0 ? pageTargetIds : ['00000000-0000-0000-0000-000000000000']);
+    if (hasOtherFilters) {
+      query = query.in('id', filters.userSolvedIds.slice(0, 500));
+    } else {
+      const from = (page - 1) * pageSize;
+      const pageTargetIds = filters.userSolvedIds.slice(from, from + pageSize);
+      query = query.in('id', pageTargetIds.length > 0 ? pageTargetIds : ['00000000-0000-0000-0000-000000000000']);
+    }
   } else if (filters.status === 'Acertadas') {
     if (!filters.userCorrectIds || filters.userCorrectIds.length === 0) {
       return { questions: [], total: 0, page, pageSize, totalPages: 0 };
     }
-    const from = (page - 1) * pageSize;
-    const pageTargetIds = filters.userCorrectIds.slice(from, from + pageSize);
-    query = query.in('id', pageTargetIds.length > 0 ? pageTargetIds : ['00000000-0000-0000-0000-000000000000']);
+    if (hasOtherFilters) {
+      query = query.in('id', filters.userCorrectIds.slice(0, 500));
+    } else {
+      const from = (page - 1) * pageSize;
+      const pageTargetIds = filters.userCorrectIds.slice(from, from + pageSize);
+      query = query.in('id', pageTargetIds.length > 0 ? pageTargetIds : ['00000000-0000-0000-0000-000000000000']);
+    }
   } else if (filters.status === 'Erradas') {
     if (!filters.userWrongIds || filters.userWrongIds.length === 0) {
       return { questions: [], total: 0, page, pageSize, totalPages: 0 };
     }
-    const from = (page - 1) * pageSize;
-    const pageTargetIds = filters.userWrongIds.slice(from, from + pageSize);
-    query = query.in('id', pageTargetIds.length > 0 ? pageTargetIds : ['00000000-0000-0000-0000-000000000000']);
+    if (hasOtherFilters) {
+      query = query.in('id', filters.userWrongIds.slice(0, 500));
+    } else {
+      const from = (page - 1) * pageSize;
+      const pageTargetIds = filters.userWrongIds.slice(from, from + pageSize);
+      query = query.in('id', pageTargetIds.length > 0 ? pageTargetIds : ['00000000-0000-0000-0000-000000000000']);
+    }
   } else if (filters.status === 'Não vistas') {
     if (filters.userSolvedIds && filters.userSolvedIds.length > 0) {
       const safePrune = filters.userSolvedIds.slice(0, 100);
@@ -829,17 +864,29 @@ export async function fetchQuestionsFromSupabase(
         if (!filters.userSolvedIds || filters.userSolvedIds.length === 0) {
           return { questions: [], total: 0, page, pageSize, totalPages: 0 };
         }
-        total = filters.userSolvedIds.length;
+        if (hasOtherFilters) {
+          countQuery = countQuery.in('id', filters.userSolvedIds.slice(0, 500));
+        } else {
+          total = filters.userSolvedIds.length;
+        }
       } else if (filters.status === 'Acertadas') {
         if (!filters.userCorrectIds || filters.userCorrectIds.length === 0) {
           return { questions: [], total: 0, page, pageSize, totalPages: 0 };
         }
-        total = filters.userCorrectIds.length;
+        if (hasOtherFilters) {
+          countQuery = countQuery.in('id', filters.userCorrectIds.slice(0, 500));
+        } else {
+          total = filters.userCorrectIds.length;
+        }
       } else if (filters.status === 'Erradas') {
         if (!filters.userWrongIds || filters.userWrongIds.length === 0) {
           return { questions: [], total: 0, page, pageSize, totalPages: 0 };
         }
-        total = filters.userWrongIds.length;
+        if (hasOtherFilters) {
+          countQuery = countQuery.in('id', filters.userWrongIds.slice(0, 500));
+        } else {
+          total = filters.userWrongIds.length;
+        }
       } else if (filters.status === 'Não vistas') {
         if (filters.userSolvedIds && filters.userSolvedIds.length > 0) {
           const safePrune = filters.userSolvedIds.slice(0, 100);
