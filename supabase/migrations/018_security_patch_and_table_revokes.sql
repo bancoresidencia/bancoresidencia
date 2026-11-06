@@ -80,10 +80,16 @@ USING (false)
 WITH CHECK (false);
 
 -- ------------------------------------------------------------------------------
--- 3. TRAVA ATÔMICA DE BANCO CONTRA RACE CONDITIONS EM SAQUES PIX
--- Garante que nenhuma solicitação duplicada seja aceita concorrentemente
+-- 3. ÍNDICE CONDICIONAL PARA SAQUES (Executa apenas se a tabela já existir)
 -- ------------------------------------------------------------------------------
-CREATE INDEX IF NOT EXISTS idx_ambassador_withdrawals_recent_pending
-ON public.ambassador_withdrawals(user_id, status, requested_at);
+DO $$
+BEGIN
+  IF EXISTS (
+    SELECT 1 FROM information_schema.tables 
+    WHERE table_schema = 'public' AND table_name = 'ambassador_withdrawals'
+  ) THEN
+    EXECUTE 'CREATE INDEX IF NOT EXISTS idx_ambassador_withdrawals_recent_pending ON public.ambassador_withdrawals(user_id, status, requested_at)';
+  END IF;
+END $$;
 
 COMMIT;
