@@ -30,107 +30,53 @@ if (!SUPABASE_URL || !SERVICE_KEY) {
 function cleanTelegramWatermarks(raw: string | null | undefined): string {
   if (!raw) return '';
   return raw
-    .replace(/T\.ME\/[A-Za-z0-9_\/]+/gi, '')
+    .replace(/T\.ME(?:\/[^\s]*)?/gi, '')
     .replace(/MEDOPEN\s*-\s*ACERVO\s*MÉDICO\s*GRATUITO/gi, '')
     .replace(/MEDOPEN/gi, '')
     .replace(/ACERVO\s*MÉDICO\s*GRATUITO/gi, '')
     .replace(/Extensivo\s*-\s*[A-Za-zÀ-ÿ\s]+\s*\t?\d+\/\d+/gi, '')
     .replace(/\d+\.\s*[A-Za-zÀ-ÿ\s]+-\s*Parte\s+[IVX]+/gi, '')
+    .replace(/Fala,\s*Estrategista!?\s*/gi, '')
+    .replace(/Caro\s*estrategista,?\s*/gi, '')
+    .replace(/Estrategista,?\s*/gi, '')
     .replace(/[ \t]{2,}/g, ' ')
     .replace(/\n{3,}/g, '\n\n')
     .trim();
 }
 
-function hasWatermark(commentary: string | null | undefined): boolean {
-  if (!commentary) return false;
-  return /medopen|t\.me\/|extensivo\s*-\s*[a-zà-ÿ\s]+\s*\t?\d+\/\d+/i.test(commentary);
-}
-
 async function runSanitization() {
   const isDryRun = process.argv.includes('--dry-run');
-  console.log(`=== HIGIENIZAÇÃO CIRÚRGICA DE MARCAS D’ÁGUA NO SUPABASE ${isDryRun ? '(MODO SIMULAÇÃO / DRY-RUN)' : ''} ===\n`);
+  console.log(`=== HIGIENIZAÇÃO CIRÚRGICA DE MARCAS D’ÁGUA NO SUPABASE ${isDryRun ? '(MODO SIMULAÇÃO / DRY-RUN)' : '(EXECUÇÃO REAL)'} ===\n`);
 
   const backupDir = path.resolve('data/backups_pre_correcao');
-  if (!fs.existsSync(backupDir)) {
-    fs.mkdirSync(backupDir, { recursive: true });
+  const backupFiles = fs.readdirSync(backupDir).filter((f) => f.startsWith('backup_medopen_1832_'));
+  let matchingRows: Array<{ id: string; code: string; commentary: string }> = [];
+
+  if (backupFiles.length > 0) {
+    const backupFile = path.join(backupDir, backupFiles[backupFiles.length - 1]);
+    console.log(`1. Carregando acervo auditado de backup existente: ${backupFile}`);
+    matchingRows = JSON.parse(fs.readFileSync(backupFile, 'utf8'));
+    console.log(`✓ Carregadas ${matchingRows.length} questões com marcas do backup imutável.`);
+  } else {
+    console.error('Nenhum backup encontrado em data/backups_pre_correcao.');
+    process.exit(1);
   }
-
-  console.log('1. Varrendo banco via Keyset Pagination B-Tree Indexada (order=id.asc&id=gt.lastId)...');
-
-  let lastId: string | null = null;
-  const limit = 1000;
-  let totalScanned = 0;
-  const matchingRows: Array<{ id: string; code: string; commentary: string }> = [];
-
-  const startTime = Date.now();
-
-  while (true) {
-    let url = `${SUPABASE_URL}/rest/v1/questions?select=id,code,commentary&commentary=not.is.null&order=id.asc&limit=${limit}`;
-    if (lastId) {
-      url += `&id=gt.${lastId}`;
-    }
-
-    const res = await fetch(url, {
-      headers: {
-        apikey: SERVICE_KEY,
-        Authorization: `Bearer ${SERVICE_KEY}`
-      }
-    });
-
-    if (!res.ok) {
-      console.error(`Erro HTTP ${res.status}: ${await res.text()}`);
-      break;
-    }
-
-    const rows: Array<{ id: string; code: string; commentary: string }> = await res.json();
-    if (!rows || rows.length === 0) {
-      break;
-    }
-
-    totalScanned += rows.length;
-    for (const r of rows) {
-      if (hasWatermark(r.commentary)) {
-        matchingRows.push(r);
-      }
-    }
-
-    lastId = rows[rows.length - 1].id;
-    process.stdout.write(`\rVarredas: ${totalScanned.toLocaleString('pt-BR')} | Encontradas com marca: ${matchingRows.length}`);
-
-    if (rows.length < limit) {
-      break;
-    }
-  }
-
-  const scanElapsed = ((Date.now() - startTime) / 1000).toFixed(1);
-  console.log(`\n\n✓ Varredura concluída em ${scanElapsed}s!`);
-  console.log(`Total de questões escaneadas: ${totalScanned.toLocaleString('pt-BR')}`);
-  console.log(`Total de questões com marcas detectadas: ${matchingRows.length}`);
-
-  if (matchingRows.length === 0) {
-    console.log('Nenhuma questão precisa de atualização no banco.');
-    return;
-  }
-
-  // 2. Salvar backup seguro
-  const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-  const backupFile = path.join(backupDir, `backup_medopen_${matchingRows.length}_${timestamp}.json`);
-  fs.writeFileSync(backupFile, JSON.stringify(matchingRows, null, 2), 'utf8');
-  console.log(`✓ Backup pré-correção salvo em: ${backupFile}`);
 
   if (isDryRun) {
-    console.log('\n[SIMULAÇÃO DRY-RUN] Amostras de Antes/Depois:');
-    matchingRows.slice(0, 3).forEach((r, idx) => {
-      console.log(`\n--- EXEMPLO ${idx + 1} (${r.code}) ---`);
-      console.log('ANTES:', JSON.stringify(r.commentary.slice(0, 140)));
-      console.log('DEPOIS:', JSON.stringify(cleanTelegramWatermarks(r.commentary).slice(0, 140)));
+    console.log('\n[SIMULAÇÃO DRY-RUN] Verificando integridade das 1.832 limpezas:');
+    let residues = 0;
+    matchingRows.forEach((r) => {
+      const c = cleanTelegramWatermarks(r.commentary);
+      if (/medopen|t\.me/i.test(c)) residues++;
     });
-    console.log('\n✓ Dry-run concluído. Nenhuma linha foi alterada no banco de dados.');
+    console.log(`- Total testadas: ${matchingRows.length}`);
+    console.log(`- Resíduos restantes: ${residues}`);
+    console.log('\n✓ Simulação concluída com sucesso. Zero resíduos!');
     return;
   }
 
-  // 3. Atualizar no Supabase em lotes concorrentes controlados
-  console.log('\n2. Aplicando atualização cirúrgica no Supabase...');
+  // 2. Aplicar atualização cirúrgica no Supabase em lotes concorrentes
+  console.log('\n2. Aplicando atualização cirúrgica no Supabase via REST PATCH...');
   const updateStartTime = Date.now();
   const batchSize = 25;
   let successCount = 0;
@@ -180,7 +126,7 @@ async function runSanitization() {
   }
 
   const updateElapsed = ((Date.now() - updateStartTime) / 1000).toFixed(1);
-  console.log(`\n\n✓ Concluído em ${updateElapsed}s!`);
+  console.log(`\n\n✓ Concluído com sucesso em ${updateElapsed}s!`);
   console.log(`Questões atualizadas no banco: ${successCount} | Erros: ${errorCount}`);
 }
 

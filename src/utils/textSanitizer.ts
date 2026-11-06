@@ -48,14 +48,15 @@ export function sanitizeMedicalText(rawText: string | null | undefined): string 
 
   // 2. Remover Marcas de Água de Telegram e Paginação de Apostilas
   text = text
-    .replace(/T\.ME\/[A-Za-z0-9_\/]+/gi, '')
+    .replace(/T\.ME(?:\/[^\s]*)?/gi, '')
     .replace(/MEDOPEN\s*-\s*ACERVO\s*MÉDICO\s*GRATUITO/gi, '')
     .replace(/MEDOPEN/gi, '')
     .replace(/ACERVO\s*MÉDICO\s*GRATUITO/gi, '')
     .replace(/Extensivo\s*-\s*[A-Za-zÀ-ÿ\s]+\s*\t?\d+\/\d+/gi, '')
     .replace(/\d+\.\s*[A-Za-zÀ-ÿ\s]+-\s*Parte\s+[IVX]+/gi, '')
-    .replace(/Fala,\s*Estrategista!?/gi, '')
+    .replace(/Fala,\s*Estrategista!?\s*/gi, '')
     .replace(/Caro\s*estrategista,?\s*/gi, '')
+    .replace(/Estrategista,?\s*/gi, '')
     .replace(/estrat[ée]gia\s*med/gi, 'Base Médica Teórica')
     .replace(/estrat[ée]gia\s*vestibulares/gi, 'Base Teórica')
     .replace(/estrat[ée]gia/gi, 'Literatura Oficial');
