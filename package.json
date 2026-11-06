@@ -64,7 +64,9 @@
     "generate:study": "node scripts/generate_canonical_study.mjs",
     "audit:medevo:vision": "node scripts/audit_medevo_vision.mjs",
     "audit:medevo:all": "node scripts/audit_medevo_vision.mjs --target=all",
-    "audit:medevo:sync": "node scripts/sync_vision_hits_to_manifest.mjs"
+    "audit:medevo:sync": "node scripts/sync_vision_hits_to_manifest.mjs",
+    "tokens": "node scripts/monitor-tokens.mjs",
+    "tokens:watch": "node scripts/monitor-tokens.mjs --watch"
   },
   "dependencies": {
     "@mercadopago/sdk-react": "^1.0.7",

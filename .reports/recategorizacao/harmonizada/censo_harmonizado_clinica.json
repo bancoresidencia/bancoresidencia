@@ -1,0 +1,1549 @@
+{
+  "Cardiologia": {
+    "Síndrome Coronariana Aguda": {
+      "total": 806,
+      "subfocos": {
+        "Diagnóstico da SCA: Clínica, ECG e Marcadores de Necrose": 516,
+        "Manejo Farmacológico: Antiplaquetários e Anticoagulação": 114,
+        "Estratificação de Risco (TIMI, GRACE)": 24,
+        "Estratégias de Reperfusão e Revascularização": 102,
+        "Estratificação de Risco e Complicações da SCA": 50
+      }
+    },
+    "Valvopatias": {
+      "total": 376,
+      "subfocos": {
+        "Valvopatias Mitrais: Estenose e Insuficiência": 123,
+        "Valvopatias Aórticas: Estenose e Insuficiência": 108,
+        "Diagnóstico e Etiologia das Valvopatias": 88,
+        "Cardiopatias Congênitas e Valvares": 23,
+        "Indicações Cirúrgicas e Complicações de Valvopatias": 34
+      }
+    },
+    "Síndromes Aórticas Agudas": {
+      "total": 80,
+      "subfocos": {
+        "Dissecção Aórtica: Stanford, Diagnóstico, Marfan e Manejo": 74,
+        "Aneurisma de Aorta Torácica": 5,
+        "Aneurismas de Aorta: Epidemiologia, Ruptura e Complicações": 1
+      }
+    },
+    "Hipertensão Arterial Sistêmica": {
+      "total": 1073,
+      "subfocos": {
+        "Tratamento da HAS: Farmacológico e Não Farmacológico": 392,
+        "Diagnóstico, Classificação e Monitorização (MAPA/MRPA)": 322,
+        "HAS Secundária e Resistente: Investigação e Manejo": 138,
+        "HAS em Populações Específicas e Lesão de Órgão-Alvo": 96,
+        "Crises e Emergências Hipertensivas: Manejo e Tratamento": 125
+      }
+    },
+    "Fibrilação Atrial: Estratificação e Anticoagulação": {
+      "total": 219,
+      "subfocos": {
+        "Estratificação de Risco: CHA₂DS₂-VASc e HAS-BLED": 48,
+        "Cardioversão: Indicações e Técnicas": 15,
+        "Anticoagulação na FA: Indicações e Cenários Específicos": 134,
+        "Ablação de Fibrilação Atrial": 12,
+        "Cardioversão Elétrica e Farmacológica": 10
+      }
+    },
+    "DAC Crônica e Prevenção Secundária": {
+      "total": 577,
+      "subfocos": {
+        "Tratamento Farmacológico da DAC: Estatinas e Anti-hipertensivos": 61,
+        "Prevenção Secundária e Risco Cardiovascular": 462,
+        "Indicações e Métodos de Revascularização": 23,
+        "Angina Estável e Doença Microvascular Coronariana": 30,
+        "Revascularização (ICP vs RM)": 1
+      }
+    },
+    "Insuficiência Cardíaca": {
+      "total": 890,
+      "subfocos": {
+        "IC Aguda e Descompensada": 165,
+        "Tratamento Farmacológico: ICFER, ICFEp e Diuréticos": 373,
+        "Classificação, Etiologia e Semiologia da IC": 247,
+        "Avaliação Diagnóstica e Biomarcadores (BNP/NT-proBNP)": 84,
+        "Terapias Avançadas e Transplante": 9,
+        "Complicações, Comorbidades e Manifestações Específicas": 12
+      }
+    },
+    "Taquiarritmias": {
+      "total": 571,
+      "subfocos": {
+        "Taquicardia Ventricular e Fibrilação Ventricular": 238,
+        "Taquicardias Supraventriculares e Síndromes do QT Longo": 172,
+        "Arritmias em Condições Específicas e Distúrbios Eletrolíticos": 40,
+        "Flutter Atrial": 59,
+        "Eletrofisiologia Cardíaca e Farmacologia Antiarrítmica": 62
+      }
+    },
+    "Cardiomiopatias": {
+      "total": 224,
+      "subfocos": {
+        "Cardiomiopatia Hipertrófica: Diagnóstico e Manejo": 49,
+        "Cardiomiopatia Dilatada e Fibrose Miocárdica": 35,
+        "Miocardite: Etiologia, Diagnóstico e Tratamento": 91,
+        "Síndrome de Takotsubo: Diagnóstico e Fisiopatologia": 20,
+        "Cardiomiopatia Restritiva: Etiologia e Diagnóstico": 29
+      }
+    },
+    "Pericardite e Doenças do Pericárdio": {
+      "total": 201,
+      "subfocos": {
+        "Tamponamento Cardíaco: Reconhecimento e Manejo de Emergência": 77,
+        "Pericardite Aguda: Etiologias, Diagnóstico e ECG": 81,
+        "Pericardite Crônica, Constritiva e Pós-IAM (Dressler)": 16,
+        "Pericardiocentese e Janela Pericárdica": 2,
+        "Tratamento da Pericardite: AINEs, Colchicina e Outras Terapias": 25
+      }
+    },
+    "Síncope": {
+      "total": 15,
+      "subfocos": {
+        "Síncope Vasovagal": 8,
+        "Síncope Cardíaca (Arritmogênica)": 2,
+        "Hipotensão Ortostática": 5
+      }
+    },
+    "Endocardite Infecciosa: Critérios de Duke, Antibiótico e Indicações Cirúrgicas": {
+      "total": 199,
+      "subfocos": {
+        "Tratamento: Antibioticoterapia e Indicações Cirúrgicas": 47,
+        "Profilaxia Antibiótica para Endocardite Infecciosa": 35,
+        "Critérios de Duke: Classificação e Fenômenos Associados": 28,
+        "Etiologia, Patogênese e Manifestações Clínicas": 69,
+        "Complicações e Endocardite em Próteses/Dispositivos": 20
+      }
+    },
+    "Embolia Pulmonar: Cor Pulmonale e Repercussão Hemodinâmica": {
+      "total": 102,
+      "subfocos": {
+        "TEP Maciço e Instabilidade Hemodinâmica": 78,
+        "Hipertensão Pulmonar Tromboembólica Crônica": 15,
+        "Cor Pulmonale Crônico": 5,
+        "Cor Pulmonale Agudo": 4
+      }
+    },
+    "Bradiarritmias e Bloqueios AV": {
+      "total": 194,
+      "subfocos": {
+        "Indicações de Marcapasso": 34,
+        "Bloqueio AV de 2º Grau (Mobitz I e II)": 28,
+        "Bradicardia Sinusal": 29,
+        "Bloqueio AV de 1º Grau": 87,
+        "Bloqueio AV de 3º Grau (BAVT)": 16
+      }
+    }
+  },
+  "Reumatologia": {
+    "Lúpus Eritematoso Sistêmico": {
+      "total": 307,
+      "subfocos": {
+        "Nefrite Lúpica e Manifestações Neuropsiquiátricas do LES": 54,
+        "LES: Tratamento, Monitoramento e Atividade de Doença": 48,
+        "SAF Associada ao LES e Fatores de Prognóstico": 10,
+        "LES: Quadro Clínico, Autoanticorpos e Critérios Diagnósticos": 182,
+        "LES Induzido por Drogas": 13
+      }
+    },
+    "Espondiloartrites": {
+      "total": 174,
+      "subfocos": {
+        "Espondiloartrites: Classificação, Genética e Critérios Diagnósticos": 39,
+        "Espondilite Anquilosante: Manifestações e Complicações": 33,
+        "Sacroileíte e Critérios de Imagem": 13,
+        "Artrite Reativa e Artrite Psoriásica": 80,
+        "Espondiloartrites: Tratamento e Manejo": 9
+      }
+    },
+    "Artrite Reumatoide e Osteoartrite": {
+      "total": 397,
+      "subfocos": {
+        "Artrite Reumatoide: Quadro Clínico e Critérios Diagnósticos": 199,
+        "Artrite Reumatoide: Tratamento e Monitoramento": 106,
+        "Diagnóstico Diferencial de Artrites e Artrite Séptica": 44,
+        "Manifestações Extra-articulares da AR": 45,
+        "Tratamento de Artrite Idiopática Juvenil": 3
+      }
+    },
+    "Vasculites": {
+      "total": 229,
+      "subfocos": {
+        "Vasculites de Grandes Vasos: ACG e Polimialgia Reumática": 80,
+        "Vasculites de Médios e Pequenos Vasos: PAN, IgA e Leucocitoclástica": 53,
+        "Vasculites ANCA-positivas: GPA, PAM e Síndrome Pulmão-Rim": 62,
+        "Vasculites: Classificação de Chapel Hill e Investigação por ANCA": 10,
+        "Vasculites Secundárias: Hepatites Virais e Doença de Buerger": 24
+      }
+    },
+    "Autoimunes Sistêmicas: Esclerose, Sjögren e Miopatias": {
+      "total": 326,
+      "subfocos": {
+        "Esclerodermia Sistêmica: Diagnóstico e Manifestações Multissistêmicas": 104,
+        "Síndrome de Sjögren: Diagnóstico e Manifestações": 42,
+        "Fibromialgia: Diagnóstico e Manifestações Associadas": 48,
+        "Miopatias Inflamatórias: Polimiosite e Dermatomiosite": 60,
+        "Colagenoses Indiferenciadas, DMTC e SAF": 72
+      }
+    },
+    "Gota e Doenças por Cristais": {
+      "total": 177,
+      "subfocos": {
+        "Gota: Tratamento da Crise Aguda e Manutenção": 50,
+        "Gota: Fisiopatologia, Apresentação Clínica e Diagnóstico": 109,
+        "Tofos e Artropatia Crônica": 4,
+        "Pseudogota: Diagnóstico e Manejo": 13,
+        "Gota: Manifestações Atípicas e Complicações": 1
+      }
+    }
+  },
+  "Hematologia": {
+    "Tromboses": {
+      "total": 310,
+      "subfocos": {
+        "Fatores de Risco, Profilaxia e Tromboses em Sítios Atípicos": 127,
+        "Trombose Venosa Profunda (TVP): Diagnóstico e Tratamento": 81,
+        "Anticoagulação: Heparinas e Anticoagulantes Orais": 52,
+        "Trombofilia Hereditária e Adquirida": 23,
+        "Trombofilias e Síndrome Antifosfolípide (SAF)": 27
+      }
+    },
+    "Anemias no Adulto": {
+      "total": 494,
+      "subfocos": {
+        "Anemias Carenciais: Ferropriva e Megaloblástica": 280,
+        "Anemias Hemolíticas e Hemoglobinopatias": 128,
+        "Abordagem Geral e Classificação das Anemias": 51,
+        "Insuficiência Medular e Síndromes Mielodisplásicas": 14,
+        "Anemias em Contextos Específicos": 21
+      }
+    },
+    "Gamopatias Monoclonais": {
+      "total": 143,
+      "subfocos": {
+        "Mieloma Múltiplo: Diagnóstico e Manifestações Clínicas": 92,
+        "Amiloidose AL e Macroglobulinemia de Waldenström": 18,
+        "MGUS e Diagnóstico Laboratorial das Gamopatias": 12,
+        "Síndrome POEMS": 10,
+        "Mieloma Múltiplo: Tratamento e Monitoramento": 11
+      }
+    },
+    "Leucemias no Adulto": {
+      "total": 93,
+      "subfocos": {
+        "Leucemia Mieloide Aguda (LMA) e Promielocítica (LPA)": 25,
+        "Síndromes Mielodisplásicas, Mieloproliferativas e Aspectos Gerais": 26,
+        "Leucemia Mieloide Crônica (LMC): Diagnóstico e Tratamento": 21,
+        "Leucemia Linfoide Crônica (LLC) e Leucemias Raras": 16,
+        "Leucemia Linfoide Aguda (LLA): Diagnóstico e Tratamento": 2,
+        "Complicações Hematológicas, TMO e Terapia de Suporte": 3
+      }
+    },
+    "Coagulopatias": {
+      "total": 260,
+      "subfocos": {
+        "Reversão de Anticoagulantes e Manejo de Sangramento": 58,
+        "Púrpuras Trombocitopênicas: PTI e PTT": 83,
+        "Hemofilia e Doença de von Willebrand": 78,
+        "Coagulação Intravascular Disseminada (CIVD)": 27,
+        "Trombocitopenia Induzida por Heparina (TIH)": 14
+      }
+    },
+    "Linfomas": {
+      "total": 133,
+      "subfocos": {
+        "Linfomas: Apresentação Clínica e Estadiamento": 44,
+        "Linfomas Não-Hodgkin: Classificação e Subtipos": 24,
+        "Linfoma de Hodgkin: Diagnóstico, Estadiamento e Tratamento": 47,
+        "Linfomas Não-Hodgkin: Tratamento e Manejo": 10,
+        "Linfomas em Contextos Específicos": 8
+      }
+    },
+    "Transfusão e Reações Transfusionais: Indicações e Eventos Adversos": {
+      "total": 127,
+      "subfocos": {
+        "Indicações de Transfusão de Hemocomponentes": 60,
+        "Reações Transfusionais Pulmonares (TRALI/TACO)": 27,
+        "Reações Transfusionais Imunes: Hemolíticas, Febris e Alérgicas": 28,
+        "Hemotransfusão Maciça": 6,
+        "Complicações Tardias e Não Imunológicas": 6
+      }
+    }
+  },
+  "Endocrinologia": {
+    "Doenças da Tireoide": {
+      "total": 848,
+      "subfocos": {
+        "Hipotireoidismo: Diagnóstico, Etiologias e Tratamento": 239,
+        "Tireoidites: Hashimoto, Subaguda e Outras": 92,
+        "Hipertireoidismo: Doença de Graves e Outras Causas": 182,
+        "Câncer de Tireoide Diferenciado: Diagnóstico, Tratamento e Complicações Pós-Cirúrgicas": 79,
+        "Nódulos Tireoidianos: Investigação, TI-RADS e Conduta": 183,
+        "Câncer de Tireoide: Medular e Formas Raras (Anaplásico)": 71,
+        "Disfunções Tireoidianas na Gestação": 2
+      }
+    },
+    "Diabetes Mellitus": {
+      "total": 1346,
+      "subfocos": {
+        "Antidiabéticos Orais e Tratamento Nutricional": 223,
+        "Complicações Crônicas Macrovasculares e Outras": 180,
+        "Classificação, Diagnóstico e Fisiopatologia do DM": 487,
+        "Insulinoterapia: Esquemas, Bomba e Tecnologias": 176,
+        "Complicações Crônicas Microvasculares (Retinopatia, Nefropatia e Neuropatia)": 131,
+        "Metas Glicêmicas, Monitoramento e Diabetes Perioperatório": 133,
+        "Diabetes Secundário e Formas Especiais": 16
+      }
+    },
+    "Doenças da Adrenal": {
+      "total": 307,
+      "subfocos": {
+        "Feocromocitoma e Paraganglioma: Diagnóstico e Tratamento": 69,
+        "Hiperplasia Adrenal Congênita (HAC) e NEM": 24,
+        "Hiperaldosteronismo Primário: Diagnóstico e Manejo": 67,
+        "Incidentaloma Adrenal: Avaliação e Conduta": 38,
+        "Síndrome de Cushing: Diagnóstico Etiológico e Diferencial": 19,
+        "Síndrome de Cushing: Manifestações Clínicas e Tratamento": 36,
+        "Insuficiência Adrenal: Primária, Secundária e Terciária": 54
+      }
+    },
+    "Complicações Agudas do DM": {
+      "total": 339,
+      "subfocos": {
+        "Crises Hiperglicêmicas: Comparativo, Distúrbios Eletrolíticos e Prevenção": 24,
+        "Hipoglicemia: Diagnóstico, Manejo e Glucagon": 55,
+        "CAD: Complicações, Resolução e Formas Atípicas (Euglicêmica)": 36,
+        "Cetoacidose Diabética (CAD): Diagnóstico, Fisiopatologia e Manejo": 204,
+        "Estado Hiperglicêmico Hiperosmolar (EHH): Diagnóstico e Manejo": 20
+      }
+    },
+    "Metabolismo Ósseo e Mineral": {
+      "total": 389,
+      "subfocos": {
+        "Doença de Paget: Diagnóstico e Manejo": 8,
+        "Hiperparatireoidismo: Diagnóstico e Manejo": 98,
+        "Osteoporose: Diagnóstico, Fatores de Risco e Rastreamento": 136,
+        "Vitamina D: Deficiência e Reposição": 37,
+        "Hipocalcemia, Hipoparatireoidismo e Hipercalcemia Secundária": 56,
+        "Osteoporose: Tratamento Farmacológico e Não Farmacológico": 54
+      }
+    },
+    "Emergências Tireoidianas: Crise Tireotóxica e Coma Mixedematoso": {
+      "total": 66,
+      "subfocos": {
+        "Crise Tireotóxica (Tempestade Tireoidiana): Diagnóstico e Tratamento": 43,
+        "Tireotoxicose: Etiologia e Diagnóstico Diferencial": 2,
+        "Coma Mixedematoso: Diagnóstico e Tratamento": 19,
+        "Bloqueio Adrenérgico na Crise Tireotóxica": 2
+      }
+    },
+    "Distúrbios Hipofisários": {
+      "total": 218,
+      "subfocos": {
+        "Prolactinoma: Diagnóstico e Tratamento": 59,
+        "Regulação Hormonal Hipotalâmico-Hipofisária": 38,
+        "Hipopituitarismo: Etiologia, Diagnóstico e Reposição Hormonal": 40,
+        "Doença de Cushing Hipofisária: Diagnóstico e Tratamento": 24,
+        "Acromegalia: Diagnóstico, Manifestações e Tratamento": 18,
+        "Diabetes Insipidus e Distúrbios do ADH": 27,
+        "Distúrbios da Puberdade e Hipogonadismo Central": 12
+      }
+    },
+    "Síndrome Metabólica": {
+      "total": 217,
+      "subfocos": {
+        "Critérios Diagnósticos da Síndrome Metabólica": 74,
+        "Resistência Insulínica e Obesidade Central": 25,
+        "Fisiopatologia e Componentes da SM": 52,
+        "Tratamento Não Farmacológico da SM": 16,
+        "Risco Cardiovascular na Síndrome Metabólica": 50
+      }
+    },
+    "Insuficiência Adrenal Aguda e Crise Addisoniana": {
+      "total": 97,
+      "subfocos": {
+        "Insuficiência Adrenal: Manejo Terapêutico e Monitoramento": 35,
+        "Insuficiência Adrenal: Etiologia e Diagnóstico": 28,
+        "Crise Adrenal Aguda: Apresentação Clínica e Laboratorial": 28,
+        "Reposição de Glicocorticoide em Estresse": 6
+      }
+    }
+  },
+  "Psiquiatria": {
+    "Transtornos de Humor": {
+      "total": 215,
+      "subfocos": {
+        "Transtornos de Personalidade e Outros Transtornos de Humor": 21,
+        "Depressão Maior: Diagnóstico, Distimia e Critérios": 71,
+        "Antidepressivos: ISRS, Outros Fármacos e Manejo de Efeitos Adversos": 69,
+        "Transtorno Bipolar: Diagnóstico, Mania e Diferencial": 31,
+        "Estabilizadores de Humor e Tratamento do Bipolar": 23
+      }
+    },
+    "Transtornos de Ansiedade": {
+      "total": 124,
+      "subfocos": {
+        "Transtornos Somáticos, Burnout e Insônia": 19,
+        "TOC e TEPT: Diagnóstico e Tratamento": 27,
+        "TAG e Ansiedade: Tratamento Farmacológico e BZDs": 18,
+        "Transtorno do Pânico, Fobias e Agorafobia": 39,
+        "TAG: Diagnóstico, Critérios e Apresentação": 21
+      }
+    },
+    "Esquizofrenia e Transtornos Psicóticos": {
+      "total": 87,
+      "subfocos": {
+        "Antipsicóticos: Típicos, Atípicos e Escolha Terapêutica": 21,
+        "Esquizofrenia: Diagnóstico, Sintomas e Critérios DSM-5": 36,
+        "Sintomas Negativos e Reabilitação": 3,
+        "Síndrome Neuroléptica Maligna, Discinesia Tardia e Efeitos Adversos": 17,
+        "Primeiro Episódio Psicótico, Catatonia e Outros Transtornos": 10
+      }
+    },
+    "Dependência Química": {
+      "total": 102,
+      "subfocos": {
+        "Alcoolismo: Síndrome de Abstinência e Tratamento": 40,
+        "Dependência de Estimulantes, Maconha e Outras Substâncias": 14,
+        "Tabagismo: Avaliação, Cessação e Farmacoterapia": 13,
+        "Dependência de Álcool: Diagnóstico e Critérios": 31,
+        "Dependência de Benzodiazepínicos: Clínica e Abstinência": 4
+      }
+    },
+    "Risco de Suicídio e Manejo da Crise: Avaliação e Medidas de Segurança": {
+      "total": 47,
+      "subfocos": {
+        "Manejo da Crise Suicida: Medidas de Segurança": 20,
+        "Avaliação de Risco Suicida: Fatores e Métodos": 23,
+        "Internação Psiquiátrica para Risco Suicida": 4
+      }
+    }
+  },
+  "Gastroenterologia": {
+    "Doenças Biliares e Pancreatite Aguda": {
+      "total": 1240,
+      "subfocos": {
+        "Colelitíase e Síndrome Pós-Colecistectomia": 178,
+        "Pancreatite Aguda: Diagnóstico e Manejo": 631,
+        "Complicações: Necrose, Infecção e Síndromes": 62,
+        "Colecistite e Colangite": 306,
+        "Pancreatite Crônica: Etiologia e Diagnóstico": 63
+      }
+    },
+    "Hepatite Autoimune e Hepatopatia Viral Crônica": {
+      "total": 355,
+      "subfocos": {
+        "Hepatite Autoimune: Diagnóstico e Tratamento": 129,
+        "Doença de Wilson e Hemocromatose": 21,
+        "Hepatopatia Medicamentosa e Tóxica": 126,
+        "Colangite Biliar e Colangite Esclerosante": 21,
+        "Colangite Aguda e Abscessos Hepáticos": 26,
+        "DHGNA e Esteato-hepatite": 32
+      }
+    },
+    "Hemorragia Digestiva Baixa e Isquemia Mesentérica": {
+      "total": 292,
+      "subfocos": {
+        "HDB: Etiologia e Diagnóstico": 170,
+        "HDB: Neoplasias e Causas Incomuns": 17,
+        "Doença Diverticular e Angiodisplasia": 49,
+        "Pólipos Colônicos e Neoplasias": 15,
+        "Colonoscopia e Terapia Endoscópica": 11,
+        "HDB: Ressuscitação e Manejo Inicial": 30
+      }
+    },
+    "Cirrose e Complicações": {
+      "total": 809,
+      "subfocos": {
+        "Encefalopatia Hepática e Síndrome Hepatorrenal": 82,
+        "Ascite e Peritonite Bacteriana Espontânea": 35,
+        "Cirrose: Complicações e Etiologia": 375,
+        "Peritonite Bacteriana Espontânea (PBE)": 141,
+        "Diagnóstico e Manejo da Ascite": 119,
+        "Síndrome Hepatorrenal (SHR)": 57
+      }
+    },
+    "Diarreia Aguda e Crônica": {
+      "total": 316,
+      "subfocos": {
+        "Diarreia Aguda: Etiologia e Manejo": 168,
+        "Causas Endócrinas de Diarreia": 7,
+        "Diarreia: Complicações e Situações Especiais": 34,
+        "Síndrome do Intestino Irritável e Funcional": 24,
+        "Diarreia Crônica: Síndrome do Intestino Irritável": 19,
+        "Diarreia Crônica: Investigação e Classificação": 64
+      }
+    },
+    "Hemorragia Digestiva Alta": {
+      "total": 584,
+      "subfocos": {
+        "HDA Varicosa: Manejo e Profilaxia": 101,
+        "Avaliação Inicial e Ressuscitação na HDA": 172,
+        "HDA Não Varicosa: Etiologia e Endoscopia": 226,
+        "Escores Prognósticos e Estratificação de Risco": 62,
+        "TIPS e Resgate Hemostático": 23
+      }
+    },
+    "Doença do Refluxo Gastroesofágico (DRGE)": {
+      "total": 524,
+      "subfocos": {
+        "DRGE: Tratamento Clínico e Cirúrgico": 103,
+        "DRGE: Fisiopatologia e Diagnóstico": 235,
+        "Distúrbios Motores do Esôfago": 41,
+        "Esôfago de Barrett e Adenocarcinoma": 125,
+        "Esofagites Infecciosas e Eosinofílicas": 13,
+        "Emergências Esofágicas": 5,
+        "Ingestão de Cáusticos e Corpos Estranhos": 2
+      }
+    },
+    "Doença Inflamatória Intestinal e Diverticulite": {
+      "total": 572,
+      "subfocos": {
+        "Crohn: Diagnóstico e Manejo": 218,
+        "Retocolite Ulcerativa: Diagnóstico e Manejo": 92,
+        "DII: Tratamento Farmacológico": 59,
+        "DII: Complicações e Manifestações Extraintestinais": 93,
+        "Diverticulite Aguda: Diagnóstico e Classificação": 95,
+        "Doença Celíaca: Rastreamento e Diagnóstico": 15
+      }
+    },
+    "Úlcera Péptica e H. pylori": {
+      "total": 385,
+      "subfocos": {
+        "Úlcera Péptica: Patogênese e Diagnóstico": 137,
+        "Úlcera Péptica: Tratamento e Complicações": 63,
+        "H. pylori: Diagnóstico e Erradicação": 159,
+        "Gastropatias e Uso de AINEs": 18,
+        "Sangramento por Úlcera e Classificação de Forrest": 8
+      }
+    }
+  },
+  "Infectologia": {
+    "Arboviroses e Viroses Epidêmicas (Dengue, Chikungunya, Zika, Influenza, COVID-19)": {
+      "total": 935,
+      "subfocos": {
+        "Influenza e COVID-19: Diagnóstico e Manejo": 185,
+        "Chikungunya e Zika: Diagnóstico e Manejo": 85,
+        "Dengue: Diagnóstico, Classificação e Manejo": 350,
+        "Arboviroses: Diagnóstico Diferencial e Epidemiologia": 216,
+        "Leptospirose: Diagnóstico e Manejo": 22,
+        "Malária: Diagnóstico e Tratamento": 49,
+        "Febre Amarela: Diagnóstico e Manejo": 28
+      }
+    },
+    "Infecções Bacterianas Sistêmicas e Nosocomiais": {
+      "total": 1030,
+      "subfocos": {
+        "Infecções por Gram-Positivos e Negativos": 220,
+        "Antibioticoterapia Empírica e Multirresistência": 147,
+        "Sífilis: Diagnóstico e Tratamento": 251,
+        "Infecções Bacterianas Específicas: Clostridium difficile": 111,
+        "Endocardite e Infecções Ósteo-articulares": 51,
+        "Leptospirose e Febre Tifóide": 130,
+        "Sepse e Bacteremia: Manejo": 120
+      }
+    },
+    "Hepatites Virais: Diagnóstico, Tratamento e Profilaxia": {
+      "total": 328,
+      "subfocos": {
+        "Hepatites A e E: Agudas": 34,
+        "Hepatite B: Diagnóstico e Tratamento": 72,
+        "Hepatite C: Diagnóstico e Tratamento": 82,
+        "Hepatites: Diagnóstico Diferencial e Imunoprofilaxia": 93,
+        "Hepatite Fulminante": 23,
+        "Coinfecção HIV/HBV e HIV/HCV": 24
+      }
+    },
+    "Sepse: Etiologia, Diagnóstico e Antibioticoterapia": {
+      "total": 326,
+      "subfocos": {
+        "Definição e Critérios Diagnósticos (Sepse-3, qSOFA)": 134,
+        "Manejo Inicial: Bundle de 1 Hora": 102,
+        "Hemoculturas e Coleta de Amostras": 2,
+        "Antibioticoterapia Empírica e Guiada": 57,
+        "Choque Séptico: Fluidos e Vasopressores": 31
+      }
+    },
+    "Tuberculose Extrapulmonar, Resistência e Esquemas Especiais": {
+      "total": 304,
+      "subfocos": {
+        "TB: Multirresistência e Esquemas Especiais": 44,
+        "TB Extrapulmonar e Latente": 184,
+        "TB e Coinfecção HIV": 30,
+        "TB Pulmonar: Diagnóstico e Esquema RHZE": 34,
+        "TB Multirresistente (MDR-TB)": 12
+      }
+    },
+    "HIV/AIDS": {
+      "total": 383,
+      "subfocos": {
+        "HIV: Terapia Antirretroviral": 128,
+        "HIV: Prevenção, PEP e PrEP": 59,
+        "HIV: Diagnóstico e Estadiamento": 83,
+        "HIV: Manifestações Dermatológicas e Orais": 80,
+        "HIV: Coinfecções e Gestação": 33
+      }
+    },
+    "Infecções Oportunistas no HIV": {
+      "total": 239,
+      "subfocos": {
+        "Pneumocistose e Infecções Respiratórias": 76,
+        "Infecções GI e CMV no HIV": 22,
+        "Neurotoxoplasmose e Neurocriptococose": 69,
+        "TB e Micobacterioses no HIV": 38,
+        "Profilaxias Primárias e Secundárias no HIV": 28,
+        "Síndrome Inflamatória da Reconstituição Imune": 6
+      }
+    },
+    "Parasitoses e Doenças Tropicais": {
+      "total": 42,
+      "subfocos": {
+        "Esquistossomose: Diagnóstico e Manejo": 39,
+        "Malária: Plasmodium e Recaídas": 3
+      }
+    },
+    "Meningites e Encefalites no Adulto: Antibiótico Empírico e Janela Terapêutica": {
+      "total": 277,
+      "subfocos": {
+        "Meningite Bacteriana: Etiologia e Manejo": 136,
+        "Meningite Viral e Asséptica": 51,
+        "Profilaxia e Vacinação Meningocócica": 29,
+        "Meningite Fúngica e Tuberculosa": 18,
+        "Análise do LCR e Diagnóstico": 43
+      }
+    },
+    "Retroviroses e Infecções Virais Crônicas": {
+      "total": 6,
+      "subfocos": {
+        "HTLV-1: Manifestações Dermatológicas": 6
+      }
+    }
+  },
+  "Pneumologia": {
+    "Câncer de Pulmão: Diagnóstico e Tratamento Oncológico": {
+      "total": 270,
+      "subfocos": {
+        "Tipos Histológicos e Diagnóstico Diferencial (NSCLC vs SCLC)": 72,
+        "Rastreamento de Câncer de Pulmão com TC de Baixa Dose": 27,
+        "Estadiamento TNM e Opções Terapêuticas": 64,
+        "Nódulo Pulmonar Solitário e Tumores Benignos": 46,
+        "Manifestações Clínicas, Síndromes Paraneoplásicas e SVCS": 61
+      }
+    },
+    "Pneumonia Adquirida na Comunidade": {
+      "total": 464,
+      "subfocos": {
+        "Diagnóstico, Imagem e Estratificação de Gravidade (CURB-65, PSI)": 161,
+        "Pneumonias Especiais: Aspiração e Populações Específicas": 40,
+        "Etiologia da PAC: Agentes Típicos e Atípicos": 96,
+        "Antibioticoterapia Empírica e Direcionada": 149,
+        "Complicações da PAC: Derrame Parapneumônico e Abscesso": 18
+      }
+    },
+    "Asma": {
+      "total": 461,
+      "subfocos": {
+        "Diagnóstico e Avaliação da Função Pulmonar": 86,
+        "Tratamento de Manutenção e Classificação de Controle (GINA)": 186,
+        "Manejo da Crise Aguda de Asma": 78,
+        "Fisiopatologia, Epidemiologia e Fenótipos da Asma": 92,
+        "Asma Grave, Biológicos e Fenótipos Especiais": 19
+      }
+    },
+    "TEP: Diagnóstico, Estratificação e Anticoagulação": {
+      "total": 290,
+      "subfocos": {
+        "Diagnóstico por Imagem: Angiotomografia e Cintilografia V/Q": 72,
+        "Avaliação Clínica: Escore de Wells e D-dímero": 83,
+        "TEP Maciço: Trombólise, Filtro de VCI e Manejo": 46,
+        "Fatores de Risco, Prevenção e TEP Pós-operatório": 33,
+        "Anticoagulação no TEP: Início, Manutenção e Duração": 38,
+        "Estratificação de Risco (PESI) e Complicações": 18
+      }
+    },
+    "Derrame Pleural: Investigação e Manejo Clínico": {
+      "total": 417,
+      "subfocos": {
+        "Derrames Pleurais Específicos: Tuberculoso, Neoplásico e Transudativo": 127,
+        "Abordagem Diagnóstica: Critérios de Light e Toracocentese": 120,
+        "Pneumotórax: Diagnóstico e Manejo": 11,
+        "Derrame Parapneumônico e Empiema: Diagnóstico e Manejo": 125,
+        "Toracostomia e Drenagem Torácica": 34
+      }
+    },
+    "DPOC: Manejo e Exacerbação": {
+      "total": 471,
+      "subfocos": {
+        "Exacerbação da DPOC: Manejo Clínico": 139,
+        "Diagnóstico, Classificação GOLD e Fisiopatologia": 179,
+        "Comorbidades e Cor Pulmonale": 15,
+        "Tratamento Farmacológico da DPOC Estável": 75,
+        "Oxigenoterapia, Suporte Ventilatório e Reabilitação Pulmonar": 48,
+        "Tabagismo, Cessação e Prognóstico (BODE)": 15
+      }
+    },
+    "Pneumonia Associada à Assistência à Saúde": {
+      "total": 70,
+      "subfocos": {
+        "Definição, Epidemiologia e Fatores de Risco da PAAS": 17,
+        "Diagnóstico e Marcadores da PAAS": 24,
+        "Prevenção da PAAS": 6,
+        "Tratamento da PAAS: Antibioticoterapia e Duração": 21,
+        "Pneumonia Hospitalar e Associada à Ventilação Mecânica (PAV)": 2
+      }
+    },
+    "Pneumopatias Intersticiais": {
+      "total": 193,
+      "subfocos": {
+        "TCAR e Avaliação Radiológica em Doenças Intersticiais": 17,
+        "Fibrose Pulmonar Idiopática (FPI): Diagnóstico e Tratamento": 46,
+        "Outras PIDs: Organização, Doenças Sistêmicas e Ocupacionais": 72,
+        "Sarcoidose Pulmonar: Diagnóstico, Tratamento e Prognóstico": 39,
+        "Pneumonite de Hipersensibilidade: Etiologia, Diagnóstico e Radiologia": 15,
+        "Fibrose Cística: Genética e Manifestações Pulmonares": 4
+      }
+    },
+    "Tuberculose Pulmonar: Diagnóstico e Tratamento Inicial": {
+      "total": 301,
+      "subfocos": {
+        "ILTB e Quimioprofilaxia": 19,
+        "Diagnóstico da TB: Clínica, Baciloscopia, Testes Rápidos e Imagem": 186,
+        "Tratamento da TB: Esquema RHZE e Casos Resistentes": 70,
+        "TB Latente, Prevenção e Controle da Transmissão": 11,
+        "TB Pleural e Extrapulmonar": 15
+      }
+    },
+    "SAHOS (Apneia Obstrutiva do Sono)": {
+      "total": 43,
+      "subfocos": {
+        "CPAP e BiPAP": 4,
+        "Diagnóstico Clínico e Polissonografia": 32,
+        "Complicações Cardiovasculares da SAHOS": 5,
+        "Síndrome Obesidade-Hipoventilação": 2
+      }
+    },
+    "Exacerbação de Asma e DPOC: VNI e Manejo": {
+      "total": 125,
+      "subfocos": {
+        "Ventilação Não-Invasiva (VNI): Indicações e Manejo": 41,
+        "Exacerbação de DPOC: Manejo Clínico e Farmacológico": 23,
+        "Insuficiência Respiratória Aguda: Manejo e Critérios de Intubação": 40,
+        "Exacerbação de Asma: Manejo Farmacológico e Fatores de Risco": 21
+      }
+    }
+  },
+  "Toxicologia Clínica": {
+    "Intoxicação por Drogas de Abuso": {
+      "total": 66,
+      "subfocos": {
+        "Cocaína e Anfetaminas: Toxicidade Cardiovascular, Neurológica e Sistêmica": 32,
+        "Toxíndromes e Sinais Clínicos: Serotoninérgica, Pupilar e Emese": 6,
+        "Opioides: Intoxicação Aguda, Abstinência e Naloxona": 21,
+        "Cannabis, Alucinógenos, Nicotina e Drogas Diversas": 3,
+        "Sedativos, Hipnóticos e Anticolinérgicos: Intoxicação e Manejo": 4
+      }
+    },
+    "Intoxicação Alcoólica": {
+      "total": 55,
+      "subfocos": {
+        "Síndrome de Abstinência Alcoólica e Delirium Tremens": 20,
+        "Encefalopatia de Wernicke-Korsakoff": 13,
+        "Diagnóstico e Manejo da Intoxicação Alcoólica Aguda": 8,
+        "Intoxicação por Metanol e Etilenoglicol": 13,
+        "Complicações Neurológicas da Abstinência Alcoólica": 1
+      }
+    },
+    "Intoxicação por Medicamentos": {
+      "total": 280,
+      "subfocos": {
+        "Isoniazida e Antibióticos: Neurotoxicidade e Antídotos Específicos": 80,
+        "Digoxina, Metformina, Estatinas e Outros: Toxicidade Sistêmica": 71,
+        "Princípios de Toxicologia: Farmacocinética, Cáusticos e Descontaminação": 60,
+        "Antidepressivos Tricíclicos e Lítio: Cardiotoxicidade e Manejo": 26,
+        "Paracetamol e Salicilatos: Hepatotoxicidade, Acidose e Antídotos": 30,
+        "Benzodiazepínicos, Anticonvulsivantes e Síndromes de Abstinência": 13
+      }
+    },
+    "Envenenamentos": {
+      "total": 185,
+      "subfocos": {
+        "Acidentes Ofídicos: Botrópico, Crotálico, Laquético e Elapídico": 80,
+        "Acidentes por Aranhas: Phoneutria, Loxosceles e Outras": 9,
+        "Acidentes por Escorpiões, Lagartas e Outros Animais Peçonhentos": 25,
+        "Intoxicação por Organofosforados, Carbamatos e Cáusticos": 43,
+        "Intoxicação por Metais Pesados: Chumbo, Mercúrio e Outros": 28
+      }
+    },
+    "Intoxicação por Agrotóxicos": {
+      "total": 59,
+      "subfocos": {
+        "Organofosforados: Clínica, Diagnóstico e Síndrome Colinérgica": 24,
+        "Intoxicação por Agrotóxicos: Aspectos Gerais e Ocupacionais": 21,
+        "Pralidoxima e Atropina": 8,
+        "Paraquat, Herbicidas e Intoxicações Diversas por Agrotóxicos": 4,
+        "Organofosforados: Tratamento, Antídotos e Efeitos Tardios": 2
+      }
+    }
+  },
+  "Oncologia Clínica": {
+    "Rastreamento e Prevenção de Câncer": {
+      "total": 278,
+      "subfocos": {
+        "Rastreamento de Câncer: Testes Genéticos e Síndromes Familiares": 33,
+        "CCR: Pólipos, Lesões Pré-Malignas e Síndromes Hereditárias": 116,
+        "Rastreamento de CCR: Diretrizes, Métodos e Fatores de Risco": 47,
+        "Rastreamento Ginecológico: Colo Uterino, HPV e Sangramento": 38,
+        "Rastreamento de Próstata, Pulmão e Pele": 37,
+        "Rastreamento de Mama: Diretrizes, Mamografia e Biópsia": 7
+      }
+    },
+    "Tumores Sólidos Frequentes": {
+      "total": 524,
+      "subfocos": {
+        "CCR: Tratamento Adjuvante, Linfomas e Outros Tumores": 76,
+        "Tumores de Mama, Ovário e Ginecológicos: Subtipos e Conduta": 13,
+        "Tumores de Pulmão e Renais: NSCLC, SCLC e CCR": 53,
+        "Tumores Hepatobiliopancreáticos: Diagnóstico e Tratamento": 176,
+        "Tumores Gástricos, Esofágicos e GIST: Diagnóstico e Tratamento": 196,
+        "Tumores de Pele: Melanoma e Não Melanoma": 10
+      }
+    },
+    "Emergências Oncológicas: Neutropenia Febril, Hipercalcemia e Compressão Medular": {
+      "total": 250,
+      "subfocos": {
+        "Fisiopatologia e Alterações Eletrolíticas da Síndrome da Lise Tumoral": 57,
+        "Diagnóstico e Manejo da Neutropenia Febril": 91,
+        "Hipercalcemia Maligna: Mecanismos e Tratamento": 62,
+        "Compressão Medular Neoplásica: Diagnóstico e Conduta": 21,
+        "Síndrome da Veia Cava Superior": 19
+      }
+    },
+    "Quimioterapia e Efeitos Adversos": {
+      "total": 77,
+      "subfocos": {
+        "Princípios de QT, Mecanismos e Biomarcadores": 20,
+        "Toxicidade Cardio, Renal e Neurológica por QT": 34,
+        "Neutropenia Febril, Lise Tumoral e Sepse no Imunossuprimido": 13,
+        "Imunoterapia: ICIs, Efeitos Adversos e Reativação Viral": 4,
+        "Efeitos Adversos GI: Náuseas, Mucosite e Manejo": 6
+      }
+    },
+    "Dor e Cuidados de Suporte": {
+      "total": 26,
+      "subfocos": {
+        "Dor Neuropática em Pacientes Oncológicos": 9,
+        "Uso de Corticosteroides em Suporte Oncológico": 3,
+        "Manejo da Dor Oncológica com Opioides": 14
+      }
+    }
+  },
+  "Nefrologia": {
+    "Insuficiência Renal Aguda": {
+      "total": 454,
+      "subfocos": {
+        "Rabdomiólise e Nefrotoxicidade": 75,
+        "IRA Pós-Renal e Obstrutiva": 27,
+        "IRA: Classificação e Critérios KDIGO": 55,
+        "Necrose Tubular Aguda e IRA Intrínseca": 145,
+        "IRA Pré-Renal: Diagnóstico e Manejo": 125,
+        "Indicações de Diálise de Urgência": 27
+      }
+    },
+    "Glomerulopatias": {
+      "total": 458,
+      "subfocos": {
+        "Síndromes Glomerulares: Nefrítica e Nefrótica": 119,
+        "Glomerulopatias Primárias e Secundárias": 146,
+        "Glomerulonefrite Pós-Infecciosa (Ex: Estreptocócica)": 45,
+        "Biópsia Renal e Imunofluorescência": 32,
+        "Síndrome Nefrítica: Etiologias e Manifestações": 34,
+        "Nefropatia por IgA (Doença de Berger)": 50,
+        "Glomerulonefrite Rapidamente Progressiva (GNRP)": 32
+      }
+    },
+    "Doença Renal Crônica": {
+      "total": 482,
+      "subfocos": {
+        "Nefropatia Diabética e Hipertensiva": 134,
+        "DRC: Manejo Conservador e Complicações": 165,
+        "DRC: Classificação e Progressão": 86,
+        "Anemia e Doença Mineral-Óssea na DRC": 67,
+        "Aspectos Nutricionais na DRC": 4,
+        "DRC: Complicações Cardiovasculares e Nutrição": 26
+      }
+    },
+    "Distúrbios Hidroeletrolíticos": {
+      "total": 667,
+      "subfocos": {
+        "Distúrbios Eletrolíticos em Situações Específicas": 132,
+        "Distúrbios do Potássio": 235,
+        "Hipernatremia: Diagnóstico e Tratamento": 41,
+        "Hiponatremia: Diagnóstico e Tratamento": 205,
+        "Distúrbios do Cálcio e Fósforo": 39,
+        "Distúrbios do Magnésio e Reposição": 15
+      }
+    },
+    "Distúrbios Ácido-Base": {
+      "total": 246,
+      "subfocos": {
+        "Distúrbios Respiratórios e Mistos": 47,
+        "Acidose Metabólica: Gap e Não-Gap": 135,
+        "Alcalose Metabólica: Etiologia e Manejo": 38,
+        "Gasometria: Interpretação Sistemática": 16,
+        "Fisiologia Ácido-Base e Regulação Renal": 10
+      }
+    },
+    "Infecção do Trato Urinário": {
+      "total": 338,
+      "subfocos": {
+        "ITU em Populações Especiais": 41,
+        "ITU Recorrente e Profilaxia": 29,
+        "ITU Não Complicada: Cistite e Pielonefrite": 180,
+        "Diagnóstico Laboratorial e por Imagem em ITU": 18,
+        "ITU: Urinálise e Cultura": 34,
+        "ITU Complicada e de Repetição": 36
+      }
+    },
+    "Terapia Renal Substitutiva: Urgências Dialíticas e Acesso": {
+      "total": 66,
+      "subfocos": {
+        "Hemodiálise: Princípios e Indicações": 42,
+        "Acesso Vascular e Complicações da TRS": 8,
+        "Uremia e suas Manifestações": 5,
+        "Diálise Peritoneal: Indicações e Complicações": 10,
+        "Acesso Vascular para Hemodiálise: Fístula vs. Cateter": 1
+      }
+    },
+    "Nefrolitíase": {
+      "total": 170,
+      "subfocos": {
+        "Cólica Renal: Diagnóstico e Manejo Agudo": 41,
+        "Tipos de Cálculos e Fisiopatologia": 46,
+        "Imagem na Nefrolitíase": 8,
+        "Investigação Metabólica e Prevenção": 70,
+        "Urolitíase Complicada e Intervenção": 5
+      }
+    }
+  },
+  "Geriatria": {
+    "Síndromes Geriátricas": {
+      "total": 309,
+      "subfocos": {
+        "Alterações Fisiológicas do Envelhecimento": 51,
+        "Polifarmácia, Iatrogenia e Prescrição em Cascata": 105,
+        "Incontinência Urinária, Envelhecimento e Abordagem Integrada": 20,
+        "Fragilidade e Sarcopenia: Critérios, Diagnóstico e Manejo": 51,
+        "Quedas, Imobilidade e Úlceras por Pressão": 82
+      }
+    },
+    "Avaliação Geriátrica Ampla": {
+      "total": 170,
+      "subfocos": {
+        "AVD Básicas e Instrumentais: Escalas e Aplicação": 38,
+        "Fragilidade, Nutrição e Escalas Geriátricas": 90,
+        "Avaliação Cognitiva, Humor e Testes de Rastreio": 17,
+        "Avaliação de Risco de Quedas e Marcha": 11,
+        "Avaliação de Humor e Depressão Geriátrica": 14
+      }
+    },
+    "Delirium": {
+      "total": 182,
+      "subfocos": {
+        "Identificação e Critérios Diagnósticos de Delirium": 90,
+        "Delirium Hiperativo vs Hipoativo": 17,
+        "Fatores Desencadeantes e Causas Precipitantes de Delirium": 68,
+        "Delirium: Fisiopatologia e Mecanismos Celulares": 2,
+        "Manejo Não Farmacológico do Delirium": 5
+      }
+    }
+  },
+  "Terapia Intensiva": {
+    "Sedação e Analgesia": {
+      "total": 28,
+      "subfocos": {
+        "RASS e BPS": 2,
+        "Farmacologia e Uso de Sedativos": 22,
+        "Escalas de Avaliação de Sedação e Consciência": 4
+      }
+    },
+    "Suporte Hemodinâmico": {
+      "total": 69,
+      "subfocos": {
+        "Suporte Inotrópico e Vasodilatador": 15,
+        "Manejo de Choque Séptico e Vasopressores": 15,
+        "Avaliação e Reposição Volêmica": 23,
+        "Hipertensão Intra-abdominal: Diagnóstico e Tratamento": 12,
+        "PAM Alvo e Lactato": 4
+      }
+    },
+    "Sepse e Choque Séptico: Bundles de 1 e 3 Horas, Fonte e Metas": {
+      "total": 156,
+      "subfocos": {
+        "Bundle de 1 Hora: Avaliação e Intervenção Inicial": 86,
+        "Definição e Critérios Diagnósticos (Sepse-3)": 36,
+        "Bundle de 3 Horas: Ressuscitação Volêmica e Hemodinâmica": 19,
+        "Controle da Fonte Infecciosa": 6,
+        "Sepse: Avaliação Distúrbios Ácido-Básicos": 9
+      }
+    },
+    "Choque: Vasopressores, Monitorização Avançada e Metas Hemodinâmicas": {
+      "total": 95,
+      "subfocos": {
+        "Choque Cardiogênico e Distributivo: Causas e Abordagem": 13,
+        "Metas de Ressuscitação e Vasopressores": 61,
+        "Monitorização Hemodinâmica: PAI, POCUS e Parâmetros": 11,
+        "Choque Hipovolêmico e Cenários Específicos de Choque": 5,
+        "Choque Séptico: Diagnóstico, Manejo Inicial e IRA": 5
+      }
+    },
+    "Ventilação Mecânica": {
+      "total": 129,
+      "subfocos": {
+        "Indicações de IOT e Modos Ventilatórios Básicos": 30,
+        "Complicações da Ventilação Mecânica": 18,
+        "Modos Avançados: PSV, SIMV e Outros": 24,
+        "PEEP, FiO2 e Monitorização de Curvas/Gasometria": 26,
+        "Desmame Ventilatório e Falência Respiratória": 31
+      }
+    },
+    "Síndrome do Desconforto Respiratório Agudo (SDRA)": {
+      "total": 93,
+      "subfocos": {
+        "Fisiopatologia da SDRA": 21,
+        "Manejo Ventilatório Protetor na SDRA": 43,
+        "Critérios Diagnósticos e Classificação da SDRA (Berlim)": 22,
+        "Ventilação Protetora e Prone": 4,
+        "ECMO e Terapias de Resgate": 3
+      }
+    }
+  },
+  "Oftalmologia": {
+    "Retinopatias e Doenças da Retina": {
+      "total": 29,
+      "subfocos": {
+        "Retinopatia Diabética: Achados e Classificação": 14,
+        "Oftalmoparesia: Etiologia e Diagnóstico": 3,
+        "Retinopatias Infecciosas e Inflamatórias": 7,
+        "Oclusão da Artéria Central da Retina": 4,
+        "Oclusão da Veia Central da Retina": 1
+      }
+    },
+    "Glaucoma": {
+      "total": 25,
+      "subfocos": {
+        "Glaucoma Agudo de Ângulo Fechado: Apresentação Clínica e Emergência": 12,
+        "Tonometria e Diagnóstico": 6,
+        "Tratamento Medicamentoso (Colírios)": 4,
+        "Glaucoma Primário de Ângulo Aberto: Fatores de Risco e Epidemiologia": 3
+      }
+    },
+    "Olho Vermelho e Conjuntivites": {
+      "total": 25,
+      "subfocos": {
+        "Conjuntivite: Diagnóstico Diferencial e Agentes Etiológicos": 9,
+        "Olho Vermelho: Sintomas Inespecíficos e Avaliação Inicial": 5,
+        "Conjuntivite Viral: Quadro Clínico e Complicações": 6,
+        "Conjuntivite Bacteriana: Tratamento": 3,
+        "Conjuntivite Alérgica: Etiologia e Clínica": 1,
+        "Conjuntivite Crônica e Tracoma": 1
+      }
+    },
+    "Catarata e Cristalino": {
+      "total": 16,
+      "subfocos": {
+        "Causas de Visão Turva": 11,
+        "Exames e Manifestações de Doenças Lacrimais": 2,
+        "Indicação e Técnica de Facectomia": 3
+      }
+    },
+    "Traumas Oculares": {
+      "total": 23,
+      "subfocos": {
+        "Trauma Contuso e Perfurante": 6,
+        "Corpo Estranho Ocular (Não Químico)": 2,
+        "Queimadura Química Ocular": 11,
+        "Exposição a 'Flash' de Solda": 4
+      }
+    },
+    "Uveítes e Doenças Inflamatórias": {
+      "total": 5,
+      "subfocos": {
+        "Tratamento Imunossupressor em Uveítes": 1,
+        "Uveíte e Doenças Sistêmicas": 1,
+        "Uveíte Anterior: Etiologia e Diagnóstico": 3
+      }
+    }
+  },
+  "Otorrinolaringologia": {
+    "Otites e Infecções do Ouvido": {
+      "total": 28,
+      "subfocos": {
+        "Otite Média Aguda: Diagnóstico, Etiologia e Tratamento": 7,
+        "Otite Externa, Cerúmen e Lesões Auriculares": 6,
+        "Audiologia: Testes, Hipoacusia e PAIR": 8,
+        "Otite Média com Efusão e Complicações": 3,
+        "Paralisia Facial, Glândula Parótida e Manifestações Atípicas": 4
+      }
+    },
+    "Vertigem e Doenças do Labirinto": {
+      "total": 50,
+      "subfocos": {
+        "Doença de Ménière: Clínica e Diagnóstico": 9,
+        "Vertigem Aguda: Diagnóstico Diferencial (Periférica vs. Central)": 13,
+        "Vertigem Posicional Paroxística Benigna (VPPB): Diagnóstico e Manobras": 19,
+        "Tratamento Sintomático e Farmacológico da Vertigem": 5,
+        "Manobra de Epley": 4
+      }
+    },
+    "Epistaxe": {
+      "total": 6,
+      "subfocos": {
+        "Epistaxe: Tamponamento Nasal": 4,
+        "Epistaxe: Manejo Inicial e Urgência": 1,
+        "Epistaxe: Etiologia e Classificação": 1
+      }
+    },
+    "Faringoamigdalites": {
+      "total": 24,
+      "subfocos": {
+        "Faringite Viral e Diagnóstico Diferencial": 7,
+        "Amigdalite Bacteriana: Tratamento e Falha Terapêutica": 6,
+        "Abscesso Periamigdaliano": 5,
+        "Apneia Obstrutiva do Sono e Orofaringe": 4,
+        "Faringite Bacteriana Aguda: Diagnóstico e Critérios": 2
+      }
+    },
+    "Rinossinusites": {
+      "total": 27,
+      "subfocos": {
+        "Rinossinusite Aguda: Diagnóstico, Etiologia e Antibioticoterapia": 19,
+        "Patologia Nasofaríngea, Sinusal e Otalgia Referida": 3,
+        "Rinossinusite Fúngica": 1,
+        "Complicações da Rinossinusite e Diagnóstico por Imagem": 4
+      }
+    },
+    "Corpos Estranhos em Vias Aéreas": {
+      "total": 3,
+      "subfocos": {
+        "Corpo Estranho em Esôfago: Conduta e Remoção": 1,
+        "Corpo Estranho em Vias Aéreas Superiores: Causas e Diagnóstico": 2
+      }
+    }
+  },
+  "Neurologia": {
+    "Coma e Alterações da Consciência": {
+      "total": 222,
+      "subfocos": {
+        "Delirium: Diagnóstico e Manejo": 16,
+        "Alterações da Consciência: Causas Estruturais/Traumáticas": 62,
+        "Encefalopatia de Wernicke: Tríade e Diagnóstico": 21,
+        "Escala de Coma de Glasgow: Aplicação Clínica": 66,
+        "Hidrocefalia e Hipertensão Intracraniana": 35,
+        "Morte Encefálica: Critérios Diagnósticos": 22
+      }
+    },
+    "AVC Isquêmico": {
+      "total": 456,
+      "subfocos": {
+        "Avaliação Clínica e Diagnóstico Inicial (NIHSS, Déficits Focais)": 157,
+        "Terapia de Recanalização: Trombólise (rtPA)": 150,
+        "Prevenção Secundária: Fatores de Risco e Manejo": 65,
+        "Manejo Pós-AVC e Reabilitação": 21,
+        "Etiologias do AVC Isquêmico (Classificação TOAST)": 63
+      }
+    },
+    "AVC Hemorrágico": {
+      "total": 180,
+      "subfocos": {
+        "Hemorragia Subaracnoidea: Manejo e Complicações": 64,
+        "Hemorragia Intraparenquimatosa: Etiologia e Fatores de Risco": 28,
+        "Hemorragia Intraparenquimatosa: Manejo Clínico e Controle Pressórico": 43,
+        "Hemorragia Subaracnoidea: Etiologia e Fatores de Risco": 41,
+        "Hemorragias Cerebrais: Manejo Cirúrgico e Endovascular": 4
+      }
+    },
+    "Doenças Desmielinizantes": {
+      "total": 203,
+      "subfocos": {
+        "Neuromielite Óptica: Diagnóstico e Critérios": 8,
+        "Encefalites Autoimunes e Desmielinizantes": 124,
+        "Esclerose Múltipla: Tratamento Modificador da Doença": 13,
+        "Mielite Transversa: Diagnóstico e Etiologia": 29,
+        "Esclerose Múltipla: Diagnóstico e Critérios": 29
+      }
+    },
+    "Demências": {
+      "total": 265,
+      "subfocos": {
+        "Demências Reversíveis e Secundárias": 83,
+        "Doença de Alzheimer: Apresentação Clínica e Diagnóstico": 97,
+        "Diagnóstico e Avaliação Cognitiva Inicial": 58,
+        "Demência Frontotemporal: Apresentação e Diagnóstico": 17,
+        "Demência Vascular: Fisiopatologia e Manifestações": 10
+      }
+    },
+    "Cefaleias": {
+      "total": 315,
+      "subfocos": {
+        "Cefaleias Primárias: Classificação Geral": 32,
+        "Cefaleias Secundárias: Sinais de Alarme": 79,
+        "Tratamento Abortivo de Enxaqueca": 59,
+        "Cefaleia Tensional Episódica": 29,
+        "Enxaqueca sem Aura": 45,
+        "Cefaleia em Salvas: Clínica e Diagnóstico": 71
+      }
+    },
+    "Doenças Neurodegenerativas (Parkinson, ELA, Ataxias)": {
+      "total": 213,
+      "subfocos": {
+        "Esclerose Lateral Amiotrófica (ELA): Diagnóstico e Clínica": 52,
+        "Doença de Parkinson: Manifestações Motoras Clássicas": 41,
+        "Transtornos do Movimento: Tremor Essencial e Coreias": 42,
+        "Doença de Parkinson: Tratamento e Manejo": 32,
+        "Doenças Neurodegenerativas Atípicas e Parkinsonismos": 46
+      }
+    },
+    "Doenças Neuromusculares": {
+      "total": 104,
+      "subfocos": {
+        "Neuropatias Periféricas e Miastenia Gravis": 31,
+        "Síndrome de Guillain-Barré": 26,
+        "Crise Miastênica": 7,
+        "Miastenia Gravis": 33,
+        "Miopatias Inflamatórias (DM, PM)": 5,
+        "Esclerose Lateral Amiotrófica": 2
+      }
+    },
+    "Estado de Mal Epiléptico: Algoritmo e Manejo da Via Aérea": {
+      "total": 43,
+      "subfocos": {
+        "Algoritmo Terapêutico do Estado de Mal Epiléptico": 17,
+        "Tratamento de Segunda e Terceira Linha do EME": 14,
+        "Definição e Critérios Diagnósticos de Estado de Mal Epiléptico": 8,
+        "Manejo da Via Aérea e Ventilação no EME": 4
+      }
+    },
+    "Epilepsia no Adulto": {
+      "total": 61,
+      "subfocos": {
+        "Diagnóstico Diferencial de Crises": 14,
+        "Farmacoterapia da Epilepsia": 15,
+        "Classificação de Crises Epilépticas": 9,
+        "Epilepsia e Gestação": 18,
+        "Síndromes Epilépticas Específicas": 5
+      }
+    }
+  },
+  "Alergia e Imunologia": {
+    "Reações de Hipersensibilidade (Tipos I a IV)": {
+      "total": 101,
+      "subfocos": {
+        "Reações de Hipersensibilidade Tipo I: Anafilaxia e Alergias Agudas": 54,
+        "Reações de Hipersensibilidade Tipo IV: Tardias e Celulares": 37,
+        "Alergias Alimentares Específicas": 6,
+        "Reações de Hipersensibilidade Tipo III: Imunocomplexos": 2,
+        "Reações de Hipersensibilidade Tipo II: Citotóxicas": 2
+      }
+    },
+    "Imunodeficiências e Imunologia Básica": {
+      "total": 96,
+      "subfocos": {
+        "HIV/AIDS: Diagnóstico, Manifestações, Tratamento e Profilaxia": 13,
+        "Imunologia Geral: Células, Citocinas e Respostas Imunes": 56,
+        "Imunodeficiências Primárias: Sinais de Alerta e Classificação": 24,
+        "Imunodeficiências Primárias: Autoimunidade, Tratamento e TMO": 3
+      }
+    },
+    "Anafilaxia e Manejo Agudo: Adrenalina IM e Alta Segura": {
+      "total": 108,
+      "subfocos": {
+        "Critérios Diagnósticos e Reconhecimento da Anafilaxia": 32,
+        "Adrenalina IM: Primeira Linha no Manejo Agudo": 67,
+        "Tratamento Adjuvante: Corticoides e Anti-histamínicos": 7,
+        "Dessensibilização": 2
+      }
+    },
+    "Urticária e Angioedema no Adulto": {
+      "total": 14,
+      "subfocos": {
+        "Angioedema Adquirido: Causas e Manejo": 4,
+        "Angioedema Hereditário: Fisiopatologia e Subtipos": 2,
+        "Urticária e Angioedema: Manifestações e Diagnóstico": 3,
+        "Urticária Crônica: Diagnóstico e Classificação": 2,
+        "Tratamento Farmacológico da Urticária e Angioedema": 3
+      }
+    },
+    "Rinite Alérgica": {
+      "total": 18,
+      "subfocos": {
+        "Diagnóstico e Classificação da Rinite Alérgica": 14,
+        "Tratamento Farmacológico da Rinite Alérgica": 3,
+        "Prevenção e Controle de Doenças Alérgicas": 1
+      }
+    }
+  },
+  "Dermatologia": {
+    "Dermatoses Inflamatórias": {
+      "total": 233,
+      "subfocos": {
+        "Doenças de Anexos, Dermatoses Ocupacionais e Outras Condições": 22,
+        "Farmacodermias, DRESS e Dermatoses Neutrofílicas": 41,
+        "Eczemas: Dermatite Atópica, de Contato e Seborreica": 41,
+        "Semiologia Dermatológica, Exantemas e Manifestações Cutâneas Sistêmicas": 71,
+        "Psoríase: Diagnóstico, Classificação e Tratamento": 37,
+        "Dermatoses Bolhosas Autoimunes e Não Autoimunes": 21
+      }
+    },
+    "Dermatoses Infecciosas": {
+      "total": 389,
+      "subfocos": {
+        "Infecções Virais Cutâneas: Herpes Simples e Zóster": 77,
+        "Ectoparasitoses e Infestações Cutâneas": 50,
+        "Infecções Bacterianas Cutâneas: Impetigo, Erisipela e Celulite": 105,
+        "Micoses Superficiais e Profundas": 111,
+        "Leishmaniose Cutânea": 46
+      }
+    },
+    "Hanseníase": {
+      "total": 167,
+      "subfocos": {
+        "Reações Hansênicas Tipo 1 e Tipo 2": 28,
+        "Classificação Operacional (PB e MB)": 41,
+        "Prevenção de Incapacidades": 15,
+        "Formas Clínicas (Indeterminada, T, D, V)": 40,
+        "Poliquimioterapia (PQT)": 43
+      }
+    },
+    "Lesões Cutâneas Malignas": {
+      "total": 204,
+      "subfocos": {
+        "Melanoma: Diagnóstico, Regra ABCDE e Fatores de Risco": 71,
+        "Carcinoma Basocelular: Epidemiologia e Tipos": 34,
+        "Carcinoma Espinocelular: Diagnóstico e Tratamento": 54,
+        "Lesões Pré-Malignas, Neoplasias Benignas e Tumores Raros": 27,
+        "Melanoma: Estadiamento, Tratamento e Seguimento": 18
+      }
+    },
+    "Acne e Rosácea": {
+      "total": 20,
+      "subfocos": {
+        "Acne Vulgar: Tratamento Tópico, Sistêmico e Isotretinoína": 8,
+        "Isotretinoína e Efeitos Adversos": 2,
+        "Acne Vulgar: Classificação e Apresentação Clínica": 7,
+        "Rosácea: Diagnóstico e Manejo": 2,
+        "Acne Conglobata e Fulminans": 1
+      }
+    }
+  },
+  "Propedêutica e Raciocínio Clínico": {
+    "Raciocínio Clínico e Diagnóstico Diferencial": {
+      "total": 842,
+      "subfocos": {
+        "DD por Queixa: Dor Abdominal, Sintomas GI e Urinários": 315,
+        "Raciocínio Diagnóstico: Princípios, Bayesiano e MBE": 203,
+        "DD por Queixa: Cardiovascular, Respiratório e Musculoesquelético": 87,
+        "DD por Queixa: Hematológico, Endócrino e Neurológico": 198,
+        "DD por Queixa: Dermatológico, Síndromes e Doenças Raras": 39
+      }
+    },
+    "Semiologia e Propedêutica": {
+      "total": 427,
+      "subfocos": {
+        "Anamnese, História Clínica e Sinais Vitais": 190,
+        "Avaliação Pré-operatória, Anatomia Aplicada e Propedêutica Geral": 34,
+        "Exame Físico: Abdome, TGI e Urológico": 74,
+        "Exame Físico: Neurológico, Musculoesquelético e Dermatológico": 71,
+        "Exame Físico: Cardiovascular, Respiratório e Vascular": 58
+      }
+    },
+    "Febre de Origem Indeterminada e Síndromes Febris": {
+      "total": 157,
+      "subfocos": {
+        "Febre de Origem Indeterminada (FOI) e Obscura (FOO)": 85,
+        "Investigação Diagnóstica e Diagnóstico Diferencial de Febre": 29,
+        "Fisiopatologia, Termorregulação e Tratamento Antipirético": 33,
+        "Febre em Populações Especiais: Imunocomprometidos, Pós-Op e Comorbidades": 10
+      }
+    },
+    "Interpretação de Exames Complementares": {
+      "total": 331,
+      "subfocos": {
+        "Bioquímica: Função Renal, Hepática, Enzimas e Marcadores": 61,
+        "Exames de Imagem: Radiografia, TC, RM e Ultrassom": 147,
+        "Testes Diagnósticos: Validade e Especificidade": 22,
+        "Gasometria Arterial e Distúrbios Ácido-Base": 15,
+        "Hemograma, Coagulograma e Análise Hematológica": 72,
+        "Urinálise: Exame Tipo 1 e Colúria": 14
+      }
+    }
+  },
+  "Nutrologia": {
+    "Terapia Nutricional e Suporte": {
+      "total": 147,
+      "subfocos": {
+        "Nutrição Parenteral: Indicações, Complicações e Componentes": 39,
+        "Pós-Cirurgia Bariátrica e Avaliação de Necessidades Energéticas": 9,
+        "Nutrição em Condições Específicas: Oncologia, Hepatopatia, DRC e Celíaca": 34,
+        "Nutrição Enteral: Indicações, Vias e Formulações": 44,
+        "Nutrição no Paciente Crítico, Perioperatório e Fístulas": 21
+      }
+    },
+    "Obesidade": {
+      "total": 124,
+      "subfocos": {
+        "Tratamento Farmacológico e Não Farmacológico da Obesidade": 33,
+        "Classificação e Diagnóstico por IMC e Circunferência Abdominal": 33,
+        "Fisiopatologia, Síndromes Genéticas e Comorbidades": 45,
+        "Cirurgia Bariátrica: Indicações, Técnicas e Populações Especiais": 2,
+        "Medicamentos Antiobesidade (GLP-1, Orlistat)": 11
+      }
+    },
+    "Deficiências Vitamínicas": {
+      "total": 219,
+      "subfocos": {
+        "Tiamina (B1): Beribéri, Wernicke-Korsakoff e Pós-Bariátrica": 58,
+        "Niacina, Complexo B e Outras Deficiências Vitamínicas": 37,
+        "Vitamina A e D: Manifestações e Metabolismo Ósseo": 37,
+        "Vitamina C, Ferro e Outros Micronutrientes": 27,
+        "Vitamina B12: Anemia Megaloblástica, Neurológica e Absorção": 60
+      }
+    },
+    "Desnutrição": {
+      "total": 80,
+      "subfocos": {
+        "Nutrição em Doenças Crônicas, Cirurgias e Condições Específicas": 10,
+        "Desnutrição Proteico-Energética: Kwashiorkor e Marasmo": 25,
+        "Metabolismo, Adaptação à Inanição e Sarcopenia": 15,
+        "Avaliação Nutricional: Marcadores, Antropometria e Triagem": 24,
+        "Terapia Nutricional: Suporte Oral e Enteral": 6
+      }
+    },
+    "Síndrome de Realimentação: Identificação de Risco e Prevenção": {
+      "total": 25,
+      "subfocos": {
+        "Fisiopatologia e Manifestações Clínicas da SR": 17,
+        "Prevenção e Manejo Inicial da SR": 2,
+        "Identificação de Pacientes de Risco para SR": 3,
+        "Reposição de Fósforo e Eletrólitos": 2,
+        "Monitorização e Progressão Calórica": 1
+      }
+    },
+    "Transtornos Alimentares no Adulto": {
+      "total": 19,
+      "subfocos": {
+        "Anorexia Nervosa: Diagnóstico, Fisiopatologia e Achados": 7,
+        "Bulimia Nervosa: Diagnóstico e Sinais": 6,
+        "Anorexia Nervosa": 4,
+        "Bulimia Nervosa": 2
+      }
+    }
+  },
+  "Cuidados Paliativos": {
+    "Controle de Sintomas": {
+      "total": 85,
+      "subfocos": {
+        "Manejo da Dispneia em Doenças Avançadas": 40,
+        "Manejo da Constipação e Obstrução Intestinal": 9,
+        "Cuidados Paliativos Pediátricos e Familiares": 30,
+        "Manejo de Náuseas e Vômitos": 4,
+        "Avaliação e Manejo do Delirium": 2
+      }
+    },
+    "Cuidados de Fim de Vida": {
+      "total": 95,
+      "subfocos": {
+        "Controle de Sintomas (Dor, Dispneia, Náusea)": 17,
+        "Identificação e Indicação de Cuidados Paliativos": 63,
+        "Sedação Paliativa": 8,
+        "Diretivas Antecipadas de Vontade": 6,
+        "Comunicação de Más Notícias (SPIKES)": 1
+      }
+    },
+    "Comunicação e Aspectos Éticos": {
+      "total": 75,
+      "subfocos": {
+        "Tomada de Decisão Compartilhada e Autonomia do Paciente": 30,
+        "Diretivas Antecipadas de Vontade e Testamento Vital": 7,
+        "Comunicação de Más Notícias: Protocolo SPIKES": 21,
+        "Princípios Éticos e Filosóficos dos Cuidados Paliativos": 13,
+        "Conferência Familiar": 4
+      }
+    },
+    "Suporte à Família e Luto": {
+      "total": 15,
+      "subfocos": {
+        "Fases e Tipos de Luto": 6,
+        "Luto Complicado": 1,
+        "Suporte à Família e Rede Social": 8
+      }
+    },
+    "Controle da Dor": {
+      "total": 74,
+      "subfocos": {
+        "Adjuvantes Analgésicos": 7,
+        "Escada Analgésica da OMS: Princípios e Aplicação": 21,
+        "Manejo de Opioides: Uso, Efeitos e Toxicidade": 25,
+        "Dor Neuropática: Fisiopatologia e Tratamento": 13,
+        "Escala de Dor e Avaliação": 8
+      }
+    }
+  },
+  "Medicina de Emergência": {
+    "Choque: Reconhecimento e Protocolo Inicial": {
+      "total": 271,
+      "subfocos": {
+        "Choque Hipovolêmico, Neurogênico e Distributivo": 58,
+        "Choque Cardiogênico e Obstrutivo: Causas e Manejo": 22,
+        "Choque: Manejo Inicial, Fluidoterapia e Vasopressores": 75,
+        "Choque: Reconhecimento, Classificação e Monitorização Hemodinâmica": 77,
+        "Choque Séptico: Diagnóstico, Focos Infecciosos e Protocolo": 34,
+        "Emergências Neurológicas, Hipotermia e Situações Especiais": 5
+      }
+    },
+    "Parada Cardiorrespiratória no Adulto": {
+      "total": 369,
+      "subfocos": {
+        "SAV: Algoritmos, Desfibrilação e Via Aérea Avançada": 143,
+        "Cuidados Pós-PCR: Hipotermia Terapêutica e Neuroproteção": 13,
+        "SBV: Cadeia de Sobrevivência, Compressões e DEA": 100,
+        "Ritmos de PCR: Chocáveis vs Não Chocáveis": 31,
+        "Causas Reversíveis (5H5T) e Farmacoterapia na PCR": 82
+      }
+    },
+    "Trauma: Avaliação Inicial e ATLS": {
+      "total": 71,
+      "subfocos": {
+        "Avaliação Primária (ABCDE), Triagem e Classificação de Risco": 15,
+        "TCE: Avaliação, Glasgow, Lesões Específicas e HIC": 34,
+        "Hipertermia Maligna, Lesões Tardias e Complicações do Trauma": 9,
+        "Trauma Torácico, Abdominal e Pélvico: Diagnóstico e Conduta": 11,
+        "Queimaduras, Ferimentos e Traumas em Populações Especiais": 2
+      }
+    },
+    "Intoxicações: Estabilização Inicial e Antídotos de Primeira Hora": {
+      "total": 61,
+      "subfocos": {
+        "Opioides, CO e Agentes Químicos: Reconhecimento e Tratamento": 32,
+        "Paracetamol, Organofosforados e Antídotos Específicos": 19,
+        "Intoxicações Agudas: Diagnóstico Diferencial e Descontaminação": 6,
+        "Lavagem Gástrica e Carvão Ativado": 1,
+        "Abstinência Alcoólica: Clínica e Manejo": 3
+      }
+    },
+    "Insuficiência Respiratória Aguda": {
+      "total": 1,
+      "subfocos": {
+        "Diagnóstico, Critérios e Avaliação Clínica": 1
+      }
+    },
+    "POCUS: Point-of-Care Ultrasound na Emergência": {
+      "total": 3,
+      "subfocos": {
+        "Avaliação Pulmonar (Pneumotórax, Derrame)": 1,
+        "Acesso Vascular Guiado por USG": 2
+      }
+    }
+  }
+}

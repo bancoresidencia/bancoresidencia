@@ -1,0 +1,607 @@
+{
+  "Climatério e Menopausa": {
+    "Síndrome Climatérica": {
+      "total": 1781,
+      "subfocos": {
+        "Atrofia Urogenital (Dispareunia e Secura Vaginal)": 1090,
+        "Sintomas Vasomotores (Fogachos e Sudorese)": 259,
+        "Climatério: Alterações Hormonais Iniciais": 432
+      }
+    },
+    "Osteoporose Pós-Menopausa": {
+      "total": 9879,
+      "subfocos": {
+        "Fatores de Risco e Prevenção Primária": 2164,
+        "Diagnóstico: Densitometria Óssea e Fatores de Risco": 4729,
+        "Exercício Físico e Saúde Óssea": 2710,
+        "Osteoporose Induzida por Medicamentos": 276
+      }
+    },
+    "Terapia Hormonal da Menopausa: Indicações e Contraindicações": {
+      "total": 2496,
+      "subfocos": {
+        "Contraindicações Relativas da TH": 713,
+        "Esquemas Terapêuticos: Terapia Estrogênica Isolada": 283,
+        "Terapia Androgênica na Menopausa": 1205,
+        "Metabolismo Hormonal na Menopausa: Tecido Adiposo": 156,
+        "Esquemas Terapêuticos: Combinação Estrogênio-Progestagênio": 139
+      }
+    },
+    "Sintomas Vasomotores": {
+      "total": 829,
+      "subfocos": {
+        "Tratamento Hormonal: Indicações e Contraindicações": 223,
+        "Fogachos: Fisiopatologia e Fatores Associados": 497,
+        "Tratamento Não-Hormonal: Outras Opções": 82,
+        "Tratamento Não-Hormonal: ISRS/ISRN e Gabapentina": 27
+      }
+    }
+  },
+  "Oncologia Ginecológica": {
+    "Rastreamento do Colo do Útero, HPV, NIC e Colposcopia": {
+      "total": 936,
+      "subfocos": {
+        "Colposcopia e Citologia Cervical": 136,
+        "Lesões Intraepiteliais: LSIL, HSIL e Atipias": 409,
+        "Atipias Glandulares (AGC) e Endometriais": 41,
+        "HPV: Tipos Oncogênicos e Vacinação": 114,
+        "Citologia Cervical: Achados e Interpretação": 236
+      }
+    },
+    "Câncer de Colo Uterino": {
+      "total": 415,
+      "subfocos": {
+        "Estadiamento FIGO e Tratamento por Estádio": 173,
+        "Classificação de Bethesda: LSIL, HSIL, ASC": 40,
+        "HPV 16/18 e Carcinogênese": 107,
+        "Wertheim-Meigs: Histerectomia Radical": 24,
+        "CAF/LLETZ e Conização": 71
+      }
+    },
+    "Câncer de Ovário": {
+      "total": 329,
+      "subfocos": {
+        "Diagnóstico: Massas Anexiais e Marcadores Tumorais": 108,
+        "Epidemiologia, Fatores de Risco e Prognóstico": 145,
+        "Estadiamento FIGO e Classificação Histológica": 65,
+        "Marcadores Tumorais (CA-125 e Outros)": 11
+      }
+    },
+    "Câncer de Endométrio": {
+      "total": 313,
+      "subfocos": {
+        "Diagnóstico e Investigação do Sangramento Pós-Menopausa": 118,
+        "Fatores de Risco e Proteção": 100,
+        "Manejo e Tratamento Adjuvante": 51,
+        "Estadiamento e Classificação Histopatológica": 28,
+        "Hiperplasia, NTG e Populações Especiais": 16
+      }
+    },
+    "Câncer de Vulva e Vagina": {
+      "total": 95,
+      "subfocos": {
+        "Diagnóstico e Estadiamento do Câncer de Vulva": 52,
+        "Epidemiologia, Fatores de Risco e Dermatoses": 16,
+        "Dermatoses Vulvares e Diagnóstico Diferencial": 20,
+        "Lesões HPV e Outras Neoplasias Ginecológicas": 4,
+        "Neoplasia Intraepitelial Vaginal (NIVA) e Cervical (NIC)": 3
+      }
+    }
+  },
+  "Fundamentos de Ginecologia": {
+    "Anatomia e Embriologia do Trato Genital Feminino": {
+      "total": 325,
+      "subfocos": {
+        "Anatomia: Órgãos Genitais Femininos e Vascularização": 171,
+        "Anomalias Congênitas do Trato Genital": 141,
+        "Desenvolvimento da Genitália Externa": 8,
+        "Anatomia da Parede Abdominal Feminina": 2,
+        "Ação Hormonal na Diferenciação Sexual": 3
+      }
+    },
+    "Métodos Diagnósticos em Ginecologia": {
+      "total": 58,
+      "subfocos": {
+        "Histeroscopia Diagnóstica": 22,
+        "Histerossalpingografia: Avaliação de Tubas": 7,
+        "Ultrassonografia Transvaginal: Indicações": 12,
+        "Colposcopia: Achados Normais e Anormais": 7,
+        "Videolaparoscopia Diagnóstica": 3,
+        "Biópsia Endometrial: Técnica": 7
+      }
+    },
+    "Ciclo Menstrual e Endocrinologia Reprodutiva": {
+      "total": 317,
+      "subfocos": {
+        "Ciclo Ovariano e Hormônios: Estrogênio e Progesterona": 140,
+        "Eixo HHO, Puberdade e Ações Hormonais": 51,
+        "Anovulação, Distúrbios Menstruais e Coagulopatia": 65,
+        "Ações Hormonais em Órgãos Reprodutivos": 61
+      }
+    },
+    "Exame Ginecológico: Técnica, Inspeção e Toque Bimanual": {
+      "total": 33,
+      "subfocos": {
+        "Exame das Mamas: Técnica": 4,
+        "Anamnese Ginecológica: História Menstrual e Sexual": 9,
+        "Exame Especular e Colpocitologia (Papanicolau)": 16,
+        "Exame Físico: Inspeção e Palpação Abdominal": 4
+      }
+    }
+  },
+  "Infecções Ginecológicas": {
+    "Doença Inflamatória Pélvica": {
+      "total": 481,
+      "subfocos": {
+        "Agentes Etiológicos e Fatores de Risco": 127,
+        "Diagnóstico Clínico, DDx e Fitz-Hugh-Curtis": 263,
+        "Complicações: Abscesso Tubo-Ovariano": 86,
+        "DIP no Puerpério e Pós-parto": 5
+      }
+    },
+    "ISTs: Diagnóstico Sindrômico e Manejo Clínico": {
+      "total": 319,
+      "subfocos": {
+        "Diagnóstico e Tratamento da Clamídia": 113,
+        "Corrimento Vaginal e Cervicite (Não Específica)": 14,
+        "Abordagem Sindrômica: Úlceras e Corrimento": 147,
+        "Câncer de Colo Uterino Associado ao HPV": 38,
+        "Complicações da Gonorreia e Clamídia (DIP, Infertilidade)": 7
+      }
+    },
+    "Cervicites: Clamídia e Gonococo": {
+      "total": 97,
+      "subfocos": {
+        "Diagnóstico Etiológico: Clamídia": 57,
+        "Complicações, Rastreamento e Manejo de Parceiros": 33,
+        "Causas e Diagnóstico Diferencial": 6,
+        "Cervicite Crônica e Não Infecciosa": 1
+      }
+    },
+    "Vaginose Bacteriana e Tricomoníase": {
+      "total": 519,
+      "subfocos": {
+        "Microbiota Vaginal Fisiológica e Desequilíbrios": 52,
+        "Critérios Diagnósticos de Amsel para Vaginose Bacteriana": 119,
+        "Diagnóstico e Quadro Clínico da Tricomoníase": 184,
+        "Tratamento da Vaginose Bacteriana": 83,
+        "Teste de Whiff (KOH) e pH Vaginal": 43,
+        "Tratamento da Tricomoníase": 38
+      }
+    },
+    "Vulvovaginites": {
+      "total": 167,
+      "subfocos": {
+        "Vaginose Bacteriana: Etiologia e Manejo": 28,
+        "Candidíase Vulvovaginal: Diagnóstico e Tratamento": 23,
+        "Vulvovaginites e Vaginoses: Conceitos Gerais": 101,
+        "Tricomoníase Vulvovaginal: Clínica e Terapêutica": 9,
+        "Dispareunia: Etiologia e Abordagem": 4,
+        "Vaginite Atrófica e Alterações Vulvares": 2
+      }
+    },
+    "Úlceras Genitais": {
+      "total": 222,
+      "subfocos": {
+        "Diagnóstico Diferencial de Úlceras Genitais": 68,
+        "Herpes Genital: Diagnóstico e Manifestações Clínicas": 62,
+        "Cancro Mole, Donovanose e LGV": 69,
+        "Abordagem Sindrômica de Úlceras Genitais": 23
+      }
+    },
+    "Candidíase Vulvovaginal": {
+      "total": 178,
+      "subfocos": {
+        "Candidíase Vulvovaginal Recorrente: Definição e Manejo": 36,
+        "Candidíase Vulvovaginal: Diagnóstico Laboratorial e Propedêutica": 91,
+        "Candidíase Vulvovaginal: Manejo do Parceiro Sexual": 25,
+        "Candidíase Vulvovaginal: Fatores de Risco e Desencadeantes": 22,
+        "Candidíase Vulvovaginal: Classificação e Casos Específicos": 4
+      }
+    }
+  },
+  "Miomas e Patologias Anexiais": {
+    "Cistos Ovarianos": {
+      "total": 180,
+      "subfocos": {
+        "Cistos Funcionais Simples": 88,
+        "Massa Ovariana Complexa e Atípica": 34,
+        "Teratoma (Tumor de Células Germinativas)": 45,
+        "Cistoadenoma Seroso e Mucinoso": 9,
+        "Diagnóstico e Manejo de Emergência": 4
+      }
+    },
+    "Pólipos Endometriais": {
+      "total": 55,
+      "subfocos": {
+        "Pólipos Endocervicais": 3,
+        "Diagnóstico de Pólipos Endometriais": 24,
+        "Tratamento e Manejo de Pólipos Endometriais": 23,
+        "Risco de Malignidade e Pólipos": 5
+      }
+    },
+    "Miomas Uterinos": {
+      "total": 448,
+      "subfocos": {
+        "Epidemiologia e Fatores de Risco": 173,
+        "Cirurgia: Miomectomia, Histerectomia e Minimamente Invasiva": 175,
+        "Classificação FIGO, Epidemiologia e DDx Anexial": 78,
+        "Abordagens Minimamente Invasivas": 6,
+        "Diagnóstico por Imagem": 16
+      }
+    },
+    "Torção Ovariana": {
+      "total": 58,
+      "subfocos": {
+        "Diagnóstico: Imagem, Doppler e Diferencial": 37,
+        "Epidemiologia e Fatores de Risco": 4,
+        "Manejo Cirúrgico de Urgência": 15,
+        "Complicações da Torção Anexial": 2
+      }
+    }
+  },
+  "Violência Sexual e Aspectos Legais": {
+    "Profilaxia Pós-Exposição Sexual": {
+      "total": 51,
+      "subfocos": {
+        "Profilaxia de ISTs: Esquema Terapêutico Padrão": 20,
+        "Profilaxia para HIV Pós-Exposição Sexual": 17,
+        "Profilaxia para Hepatite B Pós-Exposição Sexual": 8,
+        "Manejo e Condutas Imediatas em Violência Sexual": 6
+      }
+    },
+    "Atendimento à Vítima de Violência Sexual": {
+      "total": 133,
+      "subfocos": {
+        "Acolhimento e Abordagem Humanizada": 15,
+        "Aspectos Éticos e Legais": 22,
+        "Profilaxias e Condutas Pós-Exposição": 77,
+        "Exame Físico e Coleta de Evidências Forenses": 13,
+        "Consequências a Longo Prazo e Saúde Mental": 6
+      }
+    },
+    "Aborto Legal e Aspectos Éticos": {
+      "total": 54,
+      "subfocos": {
+        "Aborto Legal por Estupro: Não Exige BO": 51,
+        "Aborto por Risco de Vida Materna": 3
+      }
+    },
+    "Anticoncepção de Emergência": {
+      "total": 35,
+      "subfocos": {
+        "Profilaxia de Gestação com Levonorgestrel (até 72h)": 19,
+        "DIU de Cobre como Contracepção de Emergência": 3,
+        "Contracepção de Emergência: Opções e Indicações": 13
+      }
+    }
+  },
+  "Mastologia": {
+    "Doenças Benignas da Mama": {
+      "total": 206,
+      "subfocos": {
+        "Descarga Papilar: Causas, Investigação e Alarme": 78,
+        "Alterações Fibrocísticas: Diagnóstico e Manejo": 116,
+        "Anatomia, Embriologia e Anomalias da Mama": 12
+      }
+    },
+    "Nódulos e Massas Mamárias": {
+      "total": 280,
+      "subfocos": {
+        "Biópsia: PAAF, Core Biopsy e Mamotomia": 70,
+        "Lesões Suspeitas (BI-RADS 4/5) e Secreção Papilar": 67,
+        "Fibroadenoma e Nódulos em Populações Específicas": 63,
+        "Lesões Não Palpáveis: Localização e Biópsia Guiada": 7,
+        "Cistos Mamários: Caracterização e Conduta": 73
+      }
+    },
+    "Mastites e Abcessos Mamários": {
+      "total": 68,
+      "subfocos": {
+        "Mastite Periareolar e Abscesso Periareolar": 22,
+        "Mastite Lactacional: Diagnóstico e Manejo Inicial": 26,
+        "Galactoforite e Alterações Ductais": 7,
+        "Agentes Etiológicos e Resistência em Mastites": 10,
+        "Mastite Granulomatosa Idiopática": 3
+      }
+    },
+    "Câncer de Mama e Tratamento": {
+      "total": 400,
+      "subfocos": {
+        "Imuno-histoquímica, Histopatologia e Molecular": 68,
+        "Epidemiologia, Fatores de Risco e Genética": 121,
+        "Cirurgia: Conservador, Mastectomia e Linfonodo Sentinela": 105,
+        "Câncer de Mama Hereditário e Genética": 15,
+        "Diagnóstico por Imagem e Estadiamento Clínico": 91
+      }
+    },
+    "Rastreamento do Câncer de Mama": {
+      "total": 413,
+      "subfocos": {
+        "Mamografia: Indicações e Periodicidade (Geral)": 156,
+        "BI-RADS: Interpretação e Conduta (Categorias 0-6)": 180,
+        "Mamografia: Complementação em Mamas Densas": 7,
+        "Mamografia: Tecnologias e Comparativos": 4,
+        "Rastreamento e Imagem em Pacientes de Alto Risco": 65,
+        "Calcificação Arterial Mamária: Achados e Implicações": 1
+      }
+    }
+  },
+  "Planejamento Familiar": {
+    "DIU e Métodos de Longa Duração": {
+      "total": 338,
+      "subfocos": {
+        "DIU de Levonorgestrel: Indicações e Mecanismo": 58,
+        "Complicações, Contraindicações e Populações Especiais": 237,
+        "DIU de Cobre: Mecanismo, Eficácia e Duração": 37,
+        "Contracepção de Emergência com DIU": 6
+      }
+    },
+    "Métodos Contraceptivos Hormonais": {
+      "total": 697,
+      "subfocos": {
+        "Contraindicações, Critérios OMS e Interações": 365,
+        "ACO Combinados: Benefícios, Efeitos Adversos e Trombose": 125,
+        "Contraceptivos Orais Combinados: Composição e Tipos": 58,
+        "Benefícios Não Contraceptivos e Efeitos Colaterais": 71,
+        "Contracepção Hormonal Não-Oral: Injetáveis e Implantes": 78
+      }
+    },
+    "Métodos de Barreira e Comportamentais": {
+      "total": 43,
+      "subfocos": {
+        "Eficácia Comparativa e Índice de Pearl": 23,
+        "Métodos Comportamentais: Muco Cervical (Billings)": 11,
+        "Métodos Comportamentais: LAM, Muco e Temperatura": 6,
+        "Métodos Comportamentais: Temperatura Basal": 3
+      }
+    },
+    "Esterilização e Laqueadura": {
+      "total": 68,
+      "subfocos": {
+        "Aspectos Legais da Esterilização Voluntária": 50,
+        "Síndrome Pós-Laqueadura e Complicações": 13,
+        "Laqueadura Tubária: Técnicas Cirúrgicas": 2,
+        "Vasectomia: Indicações e Procedimento": 3
+      }
+    }
+  },
+  "Sangramento Uterino e Dor Pélvica": {
+    "Dismenorreia": {
+      "total": 90,
+      "subfocos": {
+        "Dismenorreia Primária: Prostaglandinas F2α": 36,
+        "AINEs e ACO: Primeira Linha de Tratamento": 23,
+        "Dismenorreia Secundária: Endometriose, Adenomiose": 23,
+        "DIU de Levonorgestrel em Dismenorreia": 8
+      }
+    },
+    "Sangramento Uterino Anormal": {
+      "total": 418,
+      "subfocos": {
+        "Menorragia, Metrorragia e Distúrbios de Coagulação": 190,
+        "Classificação PALM-COEIN: Não Estrutural e Outras (C, O, E, I, N)": 144,
+        "Dor Abdominal Aguda Ginecológica": 34,
+        "Diagnóstico por Imagem no SUA": 46,
+        "Cisto e Abscesso de Bartholin: Diagnóstico e Manejo": 4
+      }
+    },
+    "Hiperplasia Endometrial e Sangramento Pós-Menopausa": {
+      "total": 277,
+      "subfocos": {
+        "Fatores de Risco e Condutas Específicas": 5,
+        "Avaliação Inicial e Conduta em Sangramento Pós-Menopausa": 210,
+        "Hiperplasia Endometrial: Diagnóstico e Classificação": 21,
+        "Sangramento Uterino na Perimenopausa": 10,
+        "Tratamento da Hiperplasia Endometrial": 26,
+        "Seguimento e Manejo a Longo Prazo": 5
+      }
+    },
+    "Dor Pélvica Crônica: Abordagem Sindrômica": {
+      "total": 76,
+      "subfocos": {
+        "Etiologias Ginecológicas Comuns": 23,
+        "Etiologias Não-Ginecológicas": 6,
+        "Definição e Critérios Diagnósticos (Dor > 6 meses)": 17,
+        "Dor Pélvica Aguda vs. Crônica": 6,
+        "Investigação Diagnóstica e Exames": 11,
+        "Abordagem Terapêutica e Manejo": 13
+      }
+    },
+    "Fisiologia Menstrual: Eixo Hipotálamo-Hipófise-Ovário": {
+      "total": 62,
+      "subfocos": {
+        "Alterações do Ciclo Menstrual na Adolescência": 3,
+        "Fases do Ciclo Menstrual e Regulação Hormonal": 33,
+        "GnRH, FSH e LH: Eixo Hipotálamo-Hipófise": 23,
+        "Estrogênio e Progesterona: Ação Ovariana": 3
+      }
+    },
+    "Amenorreia": {
+      "total": 303,
+      "subfocos": {
+        "Investigação Diagnóstica da Amenorreia: Propedêutica Inicial": 93,
+        "Amenorreia Primária: Etiologia e Diagnóstico": 110,
+        "Amenorreia Secundária: Causas Endócrinas e Metabólicas": 42,
+        "Amenorreia Secundária: Causas Anatômicas e Uterinas": 58
+      }
+    },
+    "Disfunções Sexuais Femininas: Desejo, Excitação e Dor": {
+      "total": 53,
+      "subfocos": {
+        "Fisiologia e Modelos da Resposta Sexual Feminina": 13,
+        "Transtorno do Desejo Sexual Hipoativo": 17,
+        "Dispareunia e Vaginismo: Diagnóstico e Tratamento": 23
+      }
+    }
+  },
+  "Infertilidade Conjugal": {
+    "Propedêutica do Casal Infértil": {
+      "total": 163,
+      "subfocos": {
+        "Definição, Epidemiologia e Fatores Endócrinos": 54,
+        "Causas Específicas de Infertilidade Feminina": 93,
+        "Abortamento de Repetição: Investigação": 5,
+        "Avaliação do Parceiro (Além do Espermograma)": 11
+      }
+    },
+    "Fator Ovulatório": {
+      "total": 51,
+      "subfocos": {
+        "Avaliação da Ovulação e Reserva Ovariana": 24,
+        "Indução: Clomifeno e Gonadotrofinas": 12,
+        "Anovulação: SOP, Hiperprolactinemia e Causas": 15
+      }
+    },
+    "Reprodução Assistida": {
+      "total": 66,
+      "subfocos": {
+        "Técnicas e Procedimentos da FIV": 23,
+        "Aspectos Éticos e Legais da Reprodução Assistida": 16,
+        "Estimulação Ovariana e Síndrome de Hiperestimulação": 9,
+        "Criopreservação de Gametas e Embriões": 4,
+        "Indicações e Contraindicações da FIV": 14
+      }
+    },
+    "Fator Tuboperitoneal e Uterino": {
+      "total": 88,
+      "subfocos": {
+        "Doença Inflamatória Pélvica (DIP) e Sequela Tubária": 51,
+        "Miomas Uterinos e Infertilidade": 10,
+        "Pólipos Endometriais e Infertilidade": 2,
+        "Endometriose e Infertilidade": 12,
+        "Gravidez Ectópica: Diagnóstico e Manejo": 4,
+        "Malformações Uterinas e Infertilidade": 9
+      }
+    },
+    "Fator Masculino": {
+      "total": 23,
+      "subfocos": {
+        "Técnicas de Reprodução Assistida em Fator Masculino": 5,
+        "Interpretação do Espermograma: Parâmetros e Diagnóstico": 13,
+        "Varicocele: Diagnóstico, Classificação e Indicações de Tratamento": 4,
+        "Azoospermia: Etiologia e Abordagem Diagnóstica": 1
+      }
+    }
+  },
+  "Ginecologia Endócrina": {
+    "Insuficiência Ovariana Prematura": {
+      "total": 177,
+      "subfocos": {
+        "Definição e Critérios Diagnósticos de IOP": 101,
+        "Etiologia e Fatores de Risco da IOP": 42,
+        "Tratamento e Terapia de Reposição Hormonal na IOP": 34
+      }
+    },
+    "Hiperprolactinemia": {
+      "total": 170,
+      "subfocos": {
+        "Amenorreia Secundária e Hiperprolactinemia": 57,
+        "Prolactinomas: Diagnóstico e Manejo": 49,
+        "Hiperprolactinemia: Causas Medicamentosas e Indiretas": 32,
+        "Galactorreia: Investigação e Diagnóstico": 24,
+        "Fisiologia da Prolactina e Lactação": 5,
+        "Macroprolactina: Identificação e Implicações": 3
+      }
+    },
+    "Puberdade e Distúrbios Pubertários": {
+      "total": 156,
+      "subfocos": {
+        "Anomalias Genitais e Testes Farmacológicos": 27,
+        "Eixo Hipotálamo-Hipófise-Ovário": 21,
+        "Desenvolvimento Puberal: Tanner e Fisiologia": 39,
+        "Amenorreia Primária: Causas e Síndromes": 69
+      }
+    },
+    "Hiperandrogenismo: Diagnóstico Diferencial além da SOP": {
+      "total": 419,
+      "subfocos": {
+        "Fisiologia da Esteroidogênese e Ciclo Ovariano": 159,
+        "HAC, Tumores e Insensibilidade Androgênica": 129,
+        "Amenorreia Primária e Secundária": 131
+      }
+    }
+  },
+  "Uroginecologia": {
+    "Disfunções do Assoalho Pélvico": {
+      "total": 38,
+      "subfocos": {
+        "Incontinência Urinária, Fecal e Rotura Perineal": 18,
+        "Disfunções Pós-Parto, Cistite e Condições Vulvares": 3,
+        "Anatomia e Fisiologia do Assoalho Pélvico": 8,
+        "Cistite Intersticial e Síndrome da Bexiga Dolorosa": 5,
+        "Condições Vulvares e Dermatoses": 4
+      }
+    },
+    "Incontinência Urinária": {
+      "total": 412,
+      "subfocos": {
+        "IUE: Diagnóstico e Tratamento Cirúrgico": 167,
+        "Avaliação e Manejo de Incontinência em Populações Específicas": 68,
+        "Anatomia e Fisiologia Miccional": 42,
+        "IUU, IU Mista e Prolapsos": 68,
+        "Incontinência Urinária Mista": 67
+      }
+    },
+    "Prolapsos Genitais": {
+      "total": 253,
+      "subfocos": {
+        "Classificação POP-Q: Interpretação e Aplicação": 83,
+        "Cistocele, Retocele e Prolapso Uterino": 101,
+        "Anatomia, Fatores de Risco e Etiologia": 54,
+        "Prolapsos de Parede Vaginal Posterior (Retocele)": 15
+      }
+    },
+    "Fístulas Urogenitais": {
+      "total": 38,
+      "subfocos": {
+        "Fístulas Urogenitais: Etiologia Geral": 12,
+        "Fístulas Urogenitais: Diagnóstico por Imagem": 7,
+        "Fístula Retovaginal, Colovesical e Uretral": 14,
+        "Fístula Colovesical: Etiologia e Diagnóstico": 4,
+        "Fístulas Urogenitais: Complicações e Manejo": 1
+      }
+    }
+  },
+  "Endometriose e Adenomiose": {
+    "Endometriose": {
+      "total": 493,
+      "subfocos": {
+        "USG Transvaginal com Preparo Intestinal": 58,
+        "Lesões Peritoneais: Típicas e Atípicas": 232,
+        "Estadiamento ASRM I-IV": 69,
+        "Endometriose Profunda: Septo Retovaginal": 96,
+        "Endometrioma Ovariano: Chocolate": 38
+      }
+    },
+    "Adenomiose": {
+      "total": 74,
+      "subfocos": {
+        "Histopatologia e Definição da Adenomiose": 14,
+        "Fatores de Risco e Epidemiologia": 9,
+        "Diagnóstico: USG e Ressonância Magnética": 40,
+        "Manejo Clínico e Farmacológico": 11
+      }
+    },
+    "Tratamento Cirúrgico da Endometriose": {
+      "total": 35,
+      "subfocos": {
+        "Indicações de Videolaparoscopia em Endometriose": 6,
+        "Manejo Pós-operatório e Recorrência": 4,
+        "Endometrioma Ovariano: Cistectomia": 9,
+        "Endometriose Profunda: Ressecção e Abordagem": 16
+      }
+    },
+    "Infertilidade e Endometriose": {
+      "total": 69,
+      "subfocos": {
+        "Diagnóstico e Estadiamento da Endometriose": 33,
+        "Reprodução Assistida em Endometriose": 9,
+        "Endometriose Mínima/Leve e Infertilidade": 8,
+        "Fisiopatologia da Infertilidade Associada à Endometriose": 8,
+        "Tratamento Cirúrgico vs. Reprodução Assistida": 8,
+        "Endometriose Moderada/Grave e Infertilidade": 3
+      }
+    }
+  }
+}

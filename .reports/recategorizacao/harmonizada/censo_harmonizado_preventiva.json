@@ -1,0 +1,474 @@
+{
+  "Vigilância em Saúde": {
+    "Investigação de Surtos e Resposta a Epidemias: Definição de Caso, SINAN e Controle": {
+      "total": 1488,
+      "subfocos": {
+        "Medidas de Contenção e Bloqueio": 34,
+        "Conceito de Surto, Epidemia, Endemia e Pandemia": 1065,
+        "SINAN e Notificação de Agravos": 79,
+        "Definição de Caso e Curva Epidêmica": 233,
+        "Etapas da Investigação de Surtos": 77
+      }
+    },
+    "Vigilância Epidemiológica": {
+      "total": 1475,
+      "subfocos": {
+        "Monitoramento de Indicadores de Saúde": 155,
+        "Doenças de Notificação Compulsória: Lista e SVE": 804,
+        "Tipos de Vigilância: Passiva, Ativa e Sentinela": 84,
+        "Conceito e Funções da Vigilância Epidemiológica": 276,
+        "Sistemas de Informação: SIM, SINASC, SINAN": 156
+      }
+    },
+    "Zoonoses e Controle Vetorial: Arboviroses, Febre Amarela e Manejo Territorial": {
+      "total": 391,
+      "subfocos": {
+        "Febre Amarela: Silvestre vs Urbana e Vacinação": 205,
+        "Leishmanioses e Outras Zoonoses de Importância": 53,
+        "Arboviroses: Dengue, Zika, Chikungunya - Epidemiologia": 65,
+        "Controle Vetorial do Aedes aegypti": 29,
+        "Raiva: Profilaxia Pré e Pós-Exposição": 39
+      }
+    },
+    "Vigilância do Óbito Materno, Infantil e Fetal: Comitês e Evitabilidade": {
+      "total": 234,
+      "subfocos": {
+        "Indicadores de Mortalidade Infantil e Neonatal": 62,
+        "Indicadores de Mortalidade Materna e Coeficientes": 99,
+        "Mortalidade Fetal e Perinatal": 24,
+        "Comitês de Mortalidade e Investigação de Evitabilidade": 22,
+        "Declaração de Óbito (DO) e Sistemas de Informação": 27
+      }
+    },
+    "Vigilância Ambiental: Qualidade da Água, VIGIAGUA e Controle de Riscos": {
+      "total": 101,
+      "subfocos": {
+        "VIGIAGUA: Cloro Residual e Potabilidade": 17,
+        "Saneamento: Esgoto 80% das Doenças Hídricas": 53,
+        "VIGIAR: Qualidade do Ar": 15,
+        "VIGISOLO: Contaminação do Solo": 6,
+        "VIGIDESASTRES: Desastres Naturais": 10
+      }
+    },
+    "Vigilância Sanitária": {
+      "total": 155,
+      "subfocos": {
+        "ANVISA e Sistema Nacional de Vigilância Sanitária": 19,
+        "Regulação de Medicamentos e Produtos de Saúde": 35,
+        "Conceito e Campos de Atuação da VISA": 72,
+        "Fiscalização de Estabelecimentos e Serviços": 21,
+        "Vigilância de Eventos Adversos e Tecnovigilância": 8
+      }
+    }
+  },
+  "Sistema Único de Saúde": {
+    "História e Modelos de Sistemas de Saúde": {
+      "total": 339,
+      "subfocos": {
+        "Modelos Históricos de Sistemas de Saúde": 117,
+        "Brasil Pré-SUS: Previdência e Modelos Assistenciais": 29,
+        "Constituição de 1988: Saúde como Direito": 47,
+        "Normas Operacionais do SUS (NOB/NOAS)": 46,
+        "Movimento Sanitário e Reforma da Saúde": 69,
+        "História da Saúde Pública no Brasil (Pré-SUS)": 31
+      }
+    },
+    "Marcos Legais do SUS: Leis 8.080 e 8.142": {
+      "total": 663,
+      "subfocos": {
+        "Lei 8.142/1990: Participação Social e Financiamento": 144,
+        "Pacto pela Saúde 2006 e Decreto 7.508/2011": 59,
+        "COAP e Instrumentos de Planejamento do SUS": 60,
+        "Lei 8.080/1990: Organização e Funcionamento do SUS": 384,
+        "NOBs e NOAS: Evolução Normativa do SUS": 16
+      }
+    },
+    "Níveis de Atenção à Saúde": {
+      "total": 1238,
+      "subfocos": {
+        "Atenção Primária: Porta de Entrada e Coordenação": 801,
+        "Integralidade e Fluxos entre Níveis": 199,
+        "Níveis de Prevenção de Leavell e Clark": 124,
+        "Atenção Secundária: Especialidades e Apoio Diagnóstico": 77,
+        "Atenção Terciária e Quaternária: Alta Complexidade": 37
+      }
+    },
+    "Políticas Nacionais de Saúde": {
+      "total": 642,
+      "subfocos": {
+        "Política Nacional de Promoção da Saúde": 181,
+        "Políticas de Equidade: LGBTQIA+, Negros, Indígenas": 138,
+        "Política Nacional de Humanização (PNH)": 211,
+        "Política Nacional de Educação Permanente": 54,
+        "Política Nacional de Medicamentos e Assistência Farmacêutica": 58
+      }
+    },
+    "Financiamento do SUS": {
+      "total": 256,
+      "subfocos": {
+        "Fontes de Financiamento: União, Estados e Municípios": 63,
+        "Fundos de Saúde e Gestão Financeira": 34,
+        "Blocos de Financiamento e Transferências FaF": 60,
+        "EC 29 e LC 141: Mínimos Constitucionais": 53,
+        "Subfinanciamento e Desafios Atuais": 46
+      }
+    },
+    "Princípios e Diretrizes do SUS": {
+      "total": 1221,
+      "subfocos": {
+        "Princípios Doutrinários: Universalidade, Integralidade, Equidade": 980,
+        "Princípios Organizativos: Descentralização e Regionalização": 96,
+        "Complementaridade do Setor Privado": 59,
+        "Participação e Controle Social: Conselhos e Conferências": 39,
+        "Hierarquização e Resolubilidade": 47
+      }
+    },
+    "Controle Social e Conselhos de Saúde": {
+      "total": 622,
+      "subfocos": {
+        "Funções e Atribuições dos Conselhos e Conferências de Saúde": 170,
+        "Composição e Representatividade dos Conselhos de Saúde": 317,
+        "Princípio da Participação Popular e Controle Social no SUS": 135
+      }
+    },
+    "Financiamento da APS no Previne Brasil: Capitação Ponderada e Desempenho": {
+      "total": 94,
+      "subfocos": {
+        "Capitação Ponderada e Cadastro Efetivo": 6,
+        "Modelo Previne Brasil: Componentes e Cálculo": 52,
+        "Indicadores de Desempenho: ISF e ISF-AP": 27,
+        "Incentivos Financeiros e Ações Estratégicas": 9
+      }
+    },
+    "Descentralização e Regionalização": {
+      "total": 204,
+      "subfocos": {
+        "Descentralização: Princípios e Comando Único": 41,
+        "Comissões Intergestores: Bipartite (CIB)": 19,
+        "Municipalização: Gestão e Responsabilidades": 30,
+        "Regionalização: Definição e Decreto 7.508/11": 98,
+        "Comissões Intergestores: Tripartite (CIT)": 9,
+        "Comissões Intergestores: Regional (CIR)": 7
+      }
+    }
+  },
+  "Epidemiologia": {
+    "Medidas de Frequência": {
+      "total": 1158,
+      "subfocos": {
+        "Taxas de Mortalidade: Geral, Específica e Infantil": 296,
+        "Padronização de Taxas: Direta e Indireta": 37,
+        "Letalidade, Morbidade e Anos Potenciais de Vida Perdidos": 263,
+        "Incidência: Cálculo e Interpretação": 263,
+        "Prevalência: Pontual e de Período": 299
+      }
+    },
+    "Medidas de Associação: Risco Relativo, Odds Ratio e Risco Atribuível": {
+      "total": 693,
+      "subfocos": {
+        "Risco Relativo (RR): Cálculo e Interpretação": 393,
+        "Odds Ratio (OR): Cálculo e Quando Usar": 136,
+        "Interpretação de IC nas Medidas de Associação": 52,
+        "Risco Atribuível (RA) e Fração Atribuível na População": 65,
+        "NNT e NNH: Número Necessário para Tratar/Prejudicar": 47
+      }
+    },
+    "Desenhos de Estudos: Coorte, Caso-Controle e Transversal": {
+      "total": 1127,
+      "subfocos": {
+        "Estudo de Coorte: Características e Vantagens": 422,
+        "Estudo Caso-Controle: Delineamento e Resultados": 387,
+        "Ensaio Clínico Randomizado: Princípios e Vieses": 87,
+        "Estudo Transversal: Definição e Aplicações": 231
+      }
+    },
+    "Distribuição de Doenças: Tempo, Pessoa, Espaço": {
+      "total": 495,
+      "subfocos": {
+        "Distribuição por Pessoa: Idade, Sexo, Raça e Etnia": 284,
+        "Padrões Temporais: Sazonalidade e Variações Cíclicas": 82,
+        "Distribuição Espacial: Geográfica e Ambiental": 50,
+        "Distribuição por Pessoa: Ocupação, Escolaridade e Condição Socioeconômica": 37,
+        "Tendências de Longo Prazo e Secular": 22,
+        "Mapeamento Epidemiológico e SIG": 20
+      }
+    },
+    "Transição Demográfica e Epidemiológica": {
+      "total": 358,
+      "subfocos": {
+        "Carga de Doenças no Brasil: Dupla e Tripla": 30,
+        "Estrutura Etária Populacional: Pirâmides e Envelhecimento": 92,
+        "Transição Epidemiológica: Doenças Infecciosas vs. Crônicas": 147,
+        "Transição Demográfica: Fecundidade e Mortalidade": 72,
+        "Transição Nutricional: Desnutrição e Obesidade": 17
+      }
+    },
+    "Rastreamento: Critérios de Wilson-Jungner e Lead-time Bias": {
+      "total": 306,
+      "subfocos": {
+        "Definição e Aplicação de Especificidade": 23,
+        "Interpretação de Testes em Diferentes Prevalências": 98,
+        "Cálculo e Interpretação de VPP e VPN": 93,
+        "Definição e Aplicação de Sensibilidade": 60,
+        "Matriz de Contingência e Acurácia Diagnóstica": 32
+      }
+    },
+    "Causalidade em Epidemiologia": {
+      "total": 661,
+      "subfocos": {
+        "Conceitos de Causalidade: Associação vs Causa": 474,
+        "Confundimento e Modificação de Efeito": 67,
+        "Vieses: Seleção, Aferição e Informação": 48,
+        "Critérios de Hill para Causalidade": 46,
+        "Modelo dos Componentes Causais de Rothman": 26
+      }
+    },
+    "Epidemiologia de Doenças Transmissíveis": {
+      "total": 636,
+      "subfocos": {
+        "Modos de Transmissão: Direto, Indireto e Vetorial": 260,
+        "Medidas de Controle: Bloqueio, Quarentena, Isolamento": 26,
+        "Período de Incubação, Latência e Transmissibilidade": 149,
+        "Imunidade de Rebanho e R0": 52,
+        "Cadeia Epidemiológica: Agente, Hospedeiro, Meio": 149
+      }
+    },
+    "Determinantes Sociais: Modelo de Dahlgren-Whitehead": {
+      "total": 315,
+      "subfocos": {
+        "Iniquidades em Saúde e Gradiente Social": 99,
+        "Determinantes Proximais: Comportamento e Estilo de Vida": 35,
+        "Determinantes Intermediários: Condições de Vida e Trabalho": 85,
+        "Modelo de Dahlgren-Whitehead: Camadas e Determinantes": 69,
+        "Determinantes Estruturais: Macroeconomia e Políticas": 27
+      }
+    }
+  },
+  "Atenção Primária à Saúde": {
+    "Estratégia Saúde da Família": {
+      "total": 2714,
+      "subfocos": {
+        "Princípios e Atributos da APS/ESF": 772,
+        "Composição e Atribuições da Equipe de Saúde da Família": 1304,
+        "Acolhimento, Clínica Ampliada e MCCP": 358,
+        "Ferramentas de Abordagem Familiar: Genograma e Ecomapa": 197,
+        "Territorialização, Cadastro e Indicadores de Desempenho": 83
+      }
+    },
+    "Segurança do Paciente e IRAS: Bundles, Indicadores e Notificação": {
+      "total": 530,
+      "subfocos": {
+        "Metas Internacionais de Segurança do Paciente": 414,
+        "Notificação de Eventos Adversos e Indicadores": 41,
+        "Prevenção de IRAS: Bundles e Protocolos": 45,
+        "Higienização das Mãos e Precauções Padrão": 30
+      }
+    },
+    "Visita Domiciliar e Cuidado Longitudinal": {
+      "total": 288,
+      "subfocos": {
+        "Indicações: Acamados, Idosos, Puérperas": 78,
+        "PTS: Projeto Terapêutico Singular": 90,
+        "Cuidado Paliativo Domiciliar": 85,
+        "Equipes de Atenção Domiciliar (EMAD/EMAP)": 15,
+        "Avaliação de Contexto: Genograma e Ecomapa": 20
+      }
+    },
+    "Condições Crônicas na APS": {
+      "total": 955,
+      "subfocos": {
+        "Diabetes Mellitus na APS: Rastreamento, Diagnóstico e Manejo": 584,
+        "Risco Cardiovascular: Dislipidemia, Obesidade e Tabagismo": 99,
+        "Hipertensão Arterial na APS: Diagnóstico, Monitoramento e Tratamento": 103,
+        "Outras Condições Crônicas: Renais, Infecciosas e Organização do Cuidado": 78,
+        "Saúde Mental e Uso de Substâncias na APS": 91
+      }
+    },
+    "Territorialização e Cadastramento": {
+      "total": 203,
+      "subfocos": {
+        "Conceito e Delimitação do Território Adscrito": 104,
+        "Microáreas, Áreas de Risco e Populações Vulneráveis": 59,
+        "Cadastramento de Famílias no e-SUS APS": 19,
+        "Mapeamento de Recursos e Diagnóstico Comunitário": 21
+      }
+    },
+    "Prevenção Combinada do HIV na APS: Testagem, PEP e PrEP": {
+      "total": 249,
+      "subfocos": {
+        "TasP e Prevenção da Transmissão Vertical": 161,
+        "Epidemiologia, Transmissão e Testagem do HIV": 19,
+        "PrEP: Profilaxia Pré-Exposição e Populações-Chave": 45,
+        "PEP: Profilaxia Pós-Exposição e Indicações": 22,
+        "Violência Sexual e Profilaxias Combinadas": 2
+      }
+    }
+  },
+  "Bioestatística": {
+    "Estatística Inferencial: Conceitos de Hipótese e Erro Tipo I/II": {
+      "total": 61,
+      "subfocos": {
+        "Erros Tipo I (Alfa) e Tipo II (Beta)": 46,
+        "Conceitos de Inferência: População e Amostra": 10,
+        "Poder Estatístico e Fatores que o Influenciam": 4,
+        "Distribuições Amostrais e Teorema Central do Limite": 1
+      }
+    },
+    "Amostragem e Representação Gráfica": {
+      "total": 438,
+      "subfocos": {
+        "Amostragem Não-Probabilística e Vieses": 391,
+        "Amostragem Probabilística: Simples, Sistemática e Estratificada": 20,
+        "Representação Gráfica: Histogramas, Box-Plot e Pirâmides": 15,
+        "Amostragem por Conglomerados e Técnicas Complexas": 3,
+        "Cálculo de Tamanho Amostral e Erros": 9
+      }
+    },
+    "Tipos de Variáveis e Medidas-Resumo": {
+      "total": 100,
+      "subfocos": {
+        "Medidas-Resumo por Tipo de Variável": 56,
+        "Variáveis Qualitativas: Nominais e Ordinais": 14,
+        "Variáveis Quantitativas: Discretas e Contínuas": 12,
+        "Escalas de Medida: Nominal, Ordinal, Intervalar, Razão": 10,
+        "Variáveis Dependentes, Independentes e de Confusão": 8
+      }
+    },
+    "Interpretação de P-valor e IC": {
+      "total": 449,
+      "subfocos": {
+        "Conceito e Interpretação Correta do P-valor": 273,
+        "Relação entre P-valor e IC: Quando Cruzam 1 ou 0": 139,
+        "Intervalo de Confiança 95%: Cálculo e Significado": 20,
+        "Erros Comuns na Interpretação de P-valor": 10,
+        "Significância Estatística vs Significância Clínica": 7
+      }
+    },
+    "Estatística Descritiva": {
+      "total": 101,
+      "subfocos": {
+        "Medidas de Tendência Central: Média, Mediana e Moda": 46,
+        "Distribuição Normal e Assimetria": 16,
+        "Percentis, Quartis e Coeficiente de Variação": 10,
+        "Medidas de Dispersão: Variância, DP e Amplitude": 14,
+        "Tabelas de Frequência e Análise Exploratória": 15
+      }
+    },
+    "Curva ROC e Likelihood Ratios em Testes Diagnósticos": {
+      "total": 166,
+      "subfocos": {
+        "Likelihood Ratios (LR+ e LR-) e Probabilidade Pós-Teste": 107,
+        "AUC: Área sob a Curva e Capacidade Discriminativa": 26,
+        "Construção e Interpretação da Curva ROC": 13,
+        "Escolha de Ponto de Corte e Comparação de Testes": 20
+      }
+    },
+    "Testes Não-Paramétricos e Escolha do Método Estatístico": {
+      "total": 44,
+      "subfocos": {
+        "Correlação de Spearman vs Pearson": 18,
+        "Mann-Whitney e Wilcoxon: Comparação de Grupos": 8,
+        "Indicações para Testes Não-Paramétricos": 11,
+        "Kruskal-Wallis: Alternativa à ANOVA": 7
+      }
+    },
+    "Testes de Hipótese: t-Student, Qui-quadrado e ANOVA": {
+      "total": 24,
+      "subfocos": {
+        "Teste t de Student: Pareado e Não-Pareado": 9,
+        "Qui-quadrado e Teste Exato de Fisher": 9,
+        "Formulação de Hipóteses: H0 e H1": 2,
+        "ANOVA e Comparações Múltiplas (Bonferroni, Tukey)": 1,
+        "Pressupostos e Escolha do Teste Adequado": 3
+      }
+    }
+  },
+  "Saúde do Trabalhador": {
+    "Doenças Ocupacionais": {
+      "total": 213,
+      "subfocos": {
+        "Lista de Doenças Relacionadas ao Trabalho (LDRT)": 60,
+        "Dermatoses Ocupacionais e Neoplasias Relacionadas": 38,
+        "Conceito: Doença Profissional vs Doença do Trabalho": 53,
+        "PAIR: Perda Auditiva Induzida por Ruído": 46,
+        "Pneumoconioses: Silicose, Asbestose, Antracose": 16
+      }
+    },
+    "Acidentes de Trabalho": {
+      "total": 173,
+      "subfocos": {
+        "Acidente de Trajeto e Equiparados": 24,
+        "Conceito e Tipos de Acidente de Trabalho": 52,
+        "Prevenção de Acidentes e Indicadores": 26,
+        "CAT: Comunicação de Acidente de Trabalho": 69,
+        "Nexo Técnico Epidemiológico (NTEP)": 2
+      }
+    },
+    "Vigilância em Saúde do Trabalhador": {
+      "total": 165,
+      "subfocos": {
+        "Notificação de Agravos Relacionados ao Trabalho": 78,
+        "Conceito e Objetivos da VISAT": 77,
+        "Inspeções Sanitárias em Ambientes de Trabalho": 7,
+        "SINAN-NET: Sistema de Informação de Agravos": 1,
+        "CEREST: Centro de Referência em Saúde do Trabalhador": 2
+      }
+    },
+    "Pneumoconioses Ocupacionais": {
+      "total": 65,
+      "subfocos": {
+        "Silicose: Etiologia, Diagnóstico e Manifestações Radiológicas": 16,
+        "Asbestose: Exposição ao Amianto e Doenças Associadas": 32,
+        "Quadro Clínico e Epidemiologia das Pneumoconioses": 12,
+        "Pneumonite por Hipersensibilidade e Bissinose": 3,
+        "Prevenção e Controle de Doenças Ocupacionais Respiratórias": 2
+      }
+    },
+    "CEREST e Notificações": {
+      "total": 31,
+      "subfocos": {
+        "Notificação Compulsória de Agravos à Saúde do Trabalhador": 21,
+        "Ações Integradas em Saúde do Trabalhador (Vigilância, Assistência, Promoção)": 3,
+        "Atribuições e Estrutura do CEREST": 5,
+        "Rede Nacional de Atenção Integral à Saúde do Trabalhador (RENAST)": 2
+      }
+    },
+    "Normas Regulamentadoras (NRs) Principais": {
+      "total": 90,
+      "subfocos": {
+        "NR-7 (PCMSO) e ASO": 24,
+        "NR-17 (Ergonomia) e NR-32 (Serviços de Saúde)": 22,
+        "NR-4 (SESMT) e NR-5 (CIPA)": 14,
+        "NR-15 (Insalubridade) e NR-16 (Periculosidade)": 13,
+        "NR-6 (EPI) e NR-9 (PGR)": 17
+      }
+    },
+    "Evolução Histórica da Saúde do Trabalhador: Ramazzini aos Dias Atuais": {
+      "total": 16,
+      "subfocos": {
+        "Ramazzini: De Morbis Artificum Diatriba (1700)": 6,
+        "RENAST e PNSTT: Brasil Atual": 4,
+        "Revolução Industrial e Medicina do Trabalho": 6
+      }
+    },
+    "Transtornos Mentais Ocupacionais": {
+      "total": 42,
+      "subfocos": {
+        "Síndrome de Burnout: Diagnóstico e Nexo Ocupacional": 21,
+        "Prevenção e Promoção da Saúde Mental no Trabalho": 9,
+        "TEPT Ocupacional e Violência no Trabalho": 6,
+        "Fatores Psicossociais do Trabalho": 5,
+        "Transtornos de Ansiedade e Depressão no Trabalho": 1
+      }
+    },
+    "DORT/LER: Lesões por Esforços Repetitivos": {
+      "total": 50,
+      "subfocos": {
+        "Conceito e Fatores de Risco para DORT/LER": 11,
+        "Prevenção: Ergonomia e Pausas": 7,
+        "Diagnóstico e Nexo Causal": 21,
+        "Principais Síndromes: Túnel do Carpo, Epicondilite": 11
+      }
+    }
+  }
+}
