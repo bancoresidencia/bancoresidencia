@@ -62,6 +62,7 @@ __pycache__/
 *.pyc
 
 # raw datasets & extraction scratch
+data/staging/
 data/hardwork/
 data/backups*/
 /data/*.json

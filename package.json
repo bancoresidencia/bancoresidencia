@@ -57,6 +57,8 @@
     "download:images": "node scripts/download_medbrave_images.mjs",
     "token:medbrave": "node scripts/set_medbrave_token.mjs",
     "login:medbrave": "node scripts/open_medevo_login.mjs",
+    "dashboard": "node scripts/dashboard_server.mjs",
+    "produce:clinica": "node scripts/produce_clinica_text_batch.mjs",
     "solve:pipeline": "node scripts/solve_pipeline.mjs",
     "solve:specialty": "node scripts/batch_solve_specialty.mjs",
     "solve:status": "node scripts/check_resolution_progress.mjs",

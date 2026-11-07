@@ -5,7 +5,7 @@ argument-hint: "[enunciado, questao-json, id-questao, ou tema-medico]"
 license: MIT
 metadata:
   author: bancoresidencia-medical-curation
-  version: "1.0.0"
+  version: "3.0.0"
 ---
 
 # Professor de Questões Médicas — Protocolo Padrão-Ouro de Curadoria e Resolução
@@ -60,13 +60,21 @@ A resposta de uma questão deve conter **6 componentes essenciais**, organizados
 
 ---
 
-## 4. Comentário Final / Síntese Clínica
+## 4. Comentário Final / Síntese Clínica (Teto Estrito de 650 Caracteres)
 
-- **Objetivo:** Fornecer uma visão macro do caso sem reproduzir o texto das alternativas.
-- **Conteúdo Mandatório:**
-  - Linha diagnóstica lógica: Fatores de risco + quadro clínico + exames confirmatórios.
-  - Escalonamento da conduta: Primeira linha de tratamento, exames de triagem vs padrão-ouro, critérios de gravidade ou internação.
-  - O "pulo do gato" da banca: O conceito médico-chave que o examinador estava cobrando.
+> **Comando de Calibração:** *"O campo 'finalCommentary' DEVE ser objetivo, contendo no máximo 650 caracteres no total. Vá direto ao ponto sem qualquer palavra dispensável."*
+
+### 4.1. Cenário A: Questões Convencionais (Sem itens I, II, III...)
+- **Formato:** Texto corrido único, sem subdivisões de tópicos como "Fisiopatologia", "Raciocínio Diagnóstico" ou "Conduta Escalonada".
+- **Conteúdo:** Apresentar a síntese clínica conectando diretamente o diagnóstico à conduta prioritária.
+- **Parcimônia de Complexidade:** Raciocínio fisiopatológico aprofundado só deve ser desenvolvido quando for estritamente necessário (caso raro, atípico ou controverso da banca).
+
+### 4.2. Cenário B: Questões com Múltiplas Assertivas (Itens I, II, III, IV...)
+- **Formato:** Estruturado **exclusivamente em tópicos** correspondentes a cada item:
+  - `• Item I: [análise técnica concisa do ponto diferencial que valida ou invalida]`
+  - `• Item II: [análise técnica concisa do ponto diferencial que valida ou invalida]`
+  - `• Item III: [análise técnica concisa do ponto diferencial que valida ou invalida]`
+- **Regra:** Sem prefixos artificiais como `[VERDADEIRO]` ou `[FALSO]`, poupando tokens e respeitando o teto de 650 caracteres globais.
 
 ---
 

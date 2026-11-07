@@ -168,7 +168,12 @@ ${optionsSchemaExample}
                 };
               });
 
-              const finalCommentary = sanitizeText(parsed.finalCommentary || '');
+              let finalCommentary = sanitizeText(parsed.finalCommentary || '');
+              if (finalCommentary.length > 650) {
+                const lastP = finalCommentary.slice(0, 650).lastIndexOf('.');
+                if (lastP > 400) finalCommentary = finalCommentary.slice(0, lastP + 1).trim();
+                else finalCommentary = finalCommentary.slice(0, 647).trim() + '...';
+              }
               const mainErrorReason = sanitizeText(parsed.mainErrorReason || '');
               const takeHomeMessage = sanitizeText(parsed.takeHomeMessage || '');
               const guidelineEvolution = sanitizeText(parsed.guidelineEvolution || '');
