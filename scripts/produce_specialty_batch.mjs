@@ -70,12 +70,12 @@ function checkHasImage(q) {
   return false;
 }
 
-// Filtra apenas questões de texto puro com gabarito homologado sem comentários
+// Filtra apenas questões de texto puro com gabarito homologado sem comentários padrão-ouro
 const validAnswers = ['A', 'B', 'C', 'D', 'E', 'ANULADA'];
 const pendingQuestions = allQuestions.filter(q => {
   const ans = (q.correctAnswer || q.correct_answer || '').toUpperCase().trim();
   const hasValidAns = validAnswers.includes(ans);
-  const needsComm = !q.commentary || q.commentary.length < 200;
+  const needsComm = !q.commentary || !q.commentary.includes('Take-Home Message:') || q.commentary.length < 200;
   const noImg = !checkHasImage(q);
   return hasValidAns && needsComm && noImg;
 });

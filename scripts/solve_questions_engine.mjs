@@ -565,8 +565,8 @@ ${optionsSchemaExample}
         console.warn('⚠️ Timeout atingido, alternando par chave/modelo...');
         continue;
       }
-      if (attempt < 4) {
-        await new Promise(r => setTimeout(r, 1000));
+      if (attempt < 12) {
+        await new Promise(r => setTimeout(r, 1200));
       } else {
         console.error(`❌ Falha na questão ${question.id}: ${err.message}`);
         return null;

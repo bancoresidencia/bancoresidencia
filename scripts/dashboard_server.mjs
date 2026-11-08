@@ -7,6 +7,15 @@ const PORT = 3005;
 const STATE_PATH = path.resolve('data/pipeline_progress_state.json');
 const SIGNAL_PATH = path.resolve('data/pipeline.signal');
 
+const SPECIALTY_MAP = {
+  obstetricia: { file: 'data/obstetricia_final_questions.json', name: 'Obstetrícia' },
+  clinica: { file: 'data/clinica_medica_final_questions.json', name: 'Clínica Médica' },
+  ginecologia: { file: 'data/ginecologia_final_questions.json', name: 'Ginecologia' },
+  pediatria: { file: 'data/pediatria_final_questions.json', name: 'Pediatria' },
+  cirurgia: { file: 'data/cirurgia_final_questions.json', name: 'Cirurgia Geral' },
+  preventiva: { file: 'data/medicina_preventiva_final_questions.json', name: 'Medicina Preventiva' }
+};
+
 let runnerProcess = null;
 
 function getStatus() {
@@ -43,19 +52,26 @@ const server = http.createServer((req, res) => {
         return sendJson(res, { ok: false, message: 'A esteira já está em execução!' });
       }
 
+      const specKey = url.searchParams.get('specialty') || 'obstetricia';
+      const spec = SPECIALTY_MAP[specKey] || SPECIALTY_MAP['obstetricia'];
       const workers = url.searchParams.get('workers') || '4';
 
       // Remove sinais antigos
       if (fs.existsSync(SIGNAL_PATH)) fs.unlinkSync(SIGNAL_PATH);
 
-      // Inicia processo em segundo plano com a flag de workers
-      runnerProcess = spawn('node', ['scripts/produce_clinica_text_batch.mjs', `--workers=${workers}`], {
+      // Inicia processo em segundo plano com produce_specialty_batch.mjs
+      runnerProcess = spawn('node', [
+        'scripts/produce_specialty_batch.mjs',
+        `--file=${spec.file}`,
+        `--specialty=${spec.name}`,
+        `--workers=${workers}`
+      ], {
         stdio: 'inherit',
         detached: true
       });
       runnerProcess.unref();
 
-      return sendJson(res, { ok: true, message: `Produção iniciada em segundo plano com ${workers} workers!` });
+      return sendJson(res, { ok: true, message: `Produção de ${spec.name} iniciada em segundo plano com ${workers} workers!` });
     }
 
     if (url.pathname === '/api/action/pause') {
@@ -64,8 +80,33 @@ const server = http.createServer((req, res) => {
     }
 
     if (url.pathname === '/api/action/resume') {
-      fs.writeFileSync(SIGNAL_PATH, 'resume', 'utf8');
-      return sendJson(res, { ok: true, message: 'Sinal de retomada enviado!' });
+      const state = getStatus();
+      if (fs.existsSync(SIGNAL_PATH)) {
+        fs.writeFileSync(SIGNAL_PATH, 'resume', 'utf8');
+        return sendJson(res, { ok: true, message: 'Sinal de retomada enviado à esteira ativa!' });
+      }
+
+      if (state.status === 'RUNNING' && runnerProcess && !runnerProcess.killed) {
+        return sendJson(res, { ok: true, message: 'A esteira já está em execução!' });
+      }
+
+      // Se estava parado ou encerrado, reinicia
+      const specKey = url.searchParams.get('specialty') || (state.specialty ? Object.keys(SPECIALTY_MAP).find(k => SPECIALTY_MAP[k].name === state.specialty) : 'obstetricia') || 'obstetricia';
+      const spec = SPECIALTY_MAP[specKey] || SPECIALTY_MAP['obstetricia'];
+      const workers = url.searchParams.get('workers') || state.concurrency || '4';
+
+      runnerProcess = spawn('node', [
+        'scripts/produce_specialty_batch.mjs',
+        `--file=${spec.file}`,
+        `--specialty=${spec.name}`,
+        `--workers=${workers}`
+      ], {
+        stdio: 'inherit',
+        detached: true
+      });
+      runnerProcess.unref();
+
+      return sendJson(res, { ok: true, message: `Esteira de ${spec.name} reiniciada com ${workers} workers!` });
     }
 
     if (url.pathname === '/api/action/stop') {
@@ -131,6 +172,19 @@ function renderDashboardHtml() {
       <!-- Seletor de Workers & Controles -->
       <div class="flex items-center gap-3 flex-wrap">
         
+        <!-- Seletor de Especialidade -->
+        <div class="flex items-center gap-1.5 bg-zinc-950/80 border border-zinc-800 p-1.5 rounded-xl">
+          <span class="text-[11px] font-bold text-zinc-400 px-1 uppercase tracking-wider">🎯 Especialidade:</span>
+          <select id="specSelect" onchange="setSpecialty(this.value)" class="bg-zinc-900 border border-zinc-700 text-white rounded-lg px-2.5 py-1 text-xs font-semibold focus:outline-none focus:ring-1 focus:ring-emerald-500 cursor-pointer">
+            <option value="clinica" selected>Clínica Médica (~8.460 pendentes Padrão-Ouro) — ATIVA</option>
+            <option value="ginecologia">Ginecologia (99,2% Concluída ✅)</option>
+            <option value="obstetricia">Obstetrícia (98,9% Concluída ✅)</option>
+            <option value="pediatria">Pediatria (4.013 pendentes)</option>
+            <option value="cirurgia">Cirurgia Geral (12.341 pendentes)</option>
+            <option value="preventiva">Medicina Preventiva (15.993 pendentes)</option>
+          </select>
+        </div>
+
         <!-- Seletor 4x / 6x -->
         <div class="flex items-center gap-1 bg-zinc-950/80 border border-zinc-800 p-1 rounded-xl">
           <span class="text-[11px] font-bold text-emerald-400 px-2 uppercase tracking-wider">🔒 Free Workers:</span>
@@ -140,16 +194,16 @@ function renderDashboardHtml() {
 
         <!-- Botões de Ação -->
         <div class="flex items-center gap-2">
-          <button id="btnStart" onclick="triggerAction('start')" class="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm rounded-xl shadow-lg transition-all flex items-center gap-2">
+          <button id="btnStart" onclick="triggerAction('start')" class="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm rounded-xl shadow-lg transition-all flex items-center gap-2 cursor-pointer">
             ▶️ Iniciar Produção
           </button>
-          <button id="btnPause" onclick="triggerAction('pause')" class="px-3.5 py-2 bg-amber-600/80 hover:bg-amber-600 text-white font-bold text-xs sm:text-sm rounded-xl transition-all hidden">
+          <button id="btnPause" onclick="triggerAction('pause')" class="px-3.5 py-2 bg-amber-600/80 hover:bg-amber-600 text-white font-bold text-xs sm:text-sm rounded-xl transition-all hidden cursor-pointer">
             ⏸️ Pausar
           </button>
-          <button id="btnResume" onclick="triggerAction('resume')" class="px-3.5 py-2 bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs sm:text-sm rounded-xl transition-all hidden">
+          <button id="btnResume" onclick="triggerAction('resume')" class="px-3.5 py-2 bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs sm:text-sm rounded-xl transition-all hidden cursor-pointer">
             ▶️ Retomar
           </button>
-          <button id="btnStop" onclick="triggerAction('stop')" class="px-3.5 py-2 bg-rose-900/60 hover:bg-rose-800 text-rose-200 font-bold text-xs sm:text-sm rounded-xl border border-rose-700/60 transition-all hidden">
+          <button id="btnStop" onclick="triggerAction('stop')" class="px-3.5 py-2 bg-rose-900/60 hover:bg-rose-800 text-rose-200 font-bold text-xs sm:text-sm rounded-xl border border-rose-700/60 transition-all hidden cursor-pointer">
             🛑 Parar Gracioso
           </button>
         </div>
@@ -275,8 +329,28 @@ function renderDashboardHtml() {
 
   </div>
 
+  <!-- Toast Notification -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 px-4 py-3 rounded-xl bg-zinc-900 border border-emerald-500/50 text-emerald-400 text-xs font-bold shadow-2xl transition-all duration-300 opacity-0 pointer-events-none translate-y-2"></div>
+
   <script>
     let currentWorkers = 4;
+    let selectedSpecialty = 'clinica';
+
+    function setSpecialty(s) {
+      selectedSpecialty = s;
+    }
+
+    function showToast(msg, isError = false) {
+      const t = document.getElementById('toast');
+      if (!t) return;
+      t.textContent = msg;
+      t.className = 'fixed bottom-6 right-6 z-50 px-4 py-3 rounded-xl bg-zinc-900 border ' + 
+        (isError ? 'border-rose-500/60 text-rose-300 shadow-rose-950/50' : 'border-emerald-500/60 text-emerald-300 shadow-emerald-950/50') + 
+        ' text-xs font-bold shadow-2xl transition-all duration-300 opacity-100 translate-y-0';
+      setTimeout(() => {
+        t.className = 'fixed bottom-6 right-6 z-50 px-4 py-3 rounded-xl bg-zinc-900 border border-emerald-500/50 text-emerald-400 text-xs font-bold shadow-2xl transition-all duration-300 opacity-0 pointer-events-none translate-y-2';
+      }, 3500);
+    }
 
     function setWorkers(n) {
       currentWorkers = n;
@@ -295,15 +369,15 @@ function renderDashboardHtml() {
     async function triggerAction(action) {
       try {
         let endpoint = '/api/action/' + action;
-        if (action === 'start') {
-          endpoint += '?workers=' + currentWorkers;
+        if (action === 'start' || action === 'resume') {
+          endpoint += '?workers=' + currentWorkers + '&specialty=' + selectedSpecialty;
         }
         const res = await fetch(endpoint, { method: 'POST' });
         const data = await res.json();
-        alert(data.message);
+        showToast(data.message, !data.ok);
         fetchStatus();
       } catch (err) {
-        alert('Erro ao enviar comando: ' + err.message);
+        showToast('Erro ao enviar comando: ' + err.message, true);
       }
     }
 
@@ -329,6 +403,9 @@ function renderDashboardHtml() {
 
       if (s.concurrency) {
         document.getElementById('valWorkers').textContent = s.concurrency + ' Workers';
+      }
+      if (s.specialty) {
+        document.getElementById('valSpecialty').textContent = s.specialty;
       }
 
       // Botões e status

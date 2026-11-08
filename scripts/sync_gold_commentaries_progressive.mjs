@@ -49,9 +49,11 @@ function sanitizePostgres(str) {
 const SOURCES = [
   { name: 'Obstetrícia', path: 'data/obstetricia_final_questions.json' },
   { name: 'Ginecologia', path: 'data/ginecologia_final_questions.json' },
+  { name: 'Pediatria', path: 'data/pediatria_final_questions.json' },
   { name: 'Urologia', path: 'data/urologia_final_questions.json' },
   { name: 'Clínica Médica', path: 'data/clinica_medica_final_questions.json' },
-  { name: 'Cirurgia', path: 'data/cirurgia_final_questions.json' }
+  { name: 'Cirurgia', path: 'data/cirurgia_final_questions.json' },
+  { name: 'Preventiva', path: 'data/medicina_preventiva_final_questions.json' }
 ];
 
 async function collectPendingTasks() {
