@@ -26,6 +26,7 @@ import {
 import { useAuth } from '@/context/AuthContext';
 import { useTheme } from '@/context/ThemeContext';
 import { useStudentData } from '@/context/StudentDataContext';
+import { getLocalDateStr } from '@/context/StudyTimerContext';
 import { GoogleCalendarScheduleView } from './dashboard/GoogleCalendarScheduleView';
 import { AiScheduleDrawer } from './dashboard/AiScheduleDrawer';
 import {
@@ -191,7 +192,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
       try {
         const saved = localStorage.getItem('bancoresidencia_exported_slots');
         if (saved) return JSON.parse(saved);
-      } catch {}
+      } catch { }
     }
     return {};
   });
@@ -224,10 +225,10 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
   useEffect(() => {
     const handleStorageChange = (e: StorageEvent) => {
       if (e.key === 'bancoresidencia_user_scheduled_tasks' && e.newValue) {
-        try { setUserScheduledTasks(JSON.parse(e.newValue)); } catch {}
+        try { setUserScheduledTasks(JSON.parse(e.newValue)); } catch { }
       }
       if (e.key === 'bancoresidencia_real_calendar_events' && e.newValue) {
-        try { setRealCalendarEvents(JSON.parse(e.newValue)); } catch {}
+        try { setRealCalendarEvents(JSON.parse(e.newValue)); } catch { }
       }
       if (e.key === 'bancoresidencia_google_calendar_connected') {
         setIsGoogleCalendarConnected(e.newValue === 'true');
@@ -454,10 +455,10 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
   // Pacing diário
   const todayAnswered = useMemo(() => {
     if (!userAnswers) return 0;
-    const today = new Date().toISOString().split('T')[0];
+    const today = getLocalDateStr(new Date());
     return Object.values(userAnswers).filter((ans) => {
       if (!ans || !ans.timestamp) return false;
-      const d = new Date(ans.timestamp).toISOString().split('T')[0];
+      const d = getLocalDateStr(ans.timestamp);
       return d === today;
     }).length;
   }, [userAnswers]);
@@ -1128,10 +1129,10 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
 
       {/* ── 2. GRID PRINCIPAL (5 COLS ESQUERDA / 7 COLS DIREITA) ── */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-        
+
         {/* ── COLUNA ESQUERDA: CONTROLE, IA, PACING & CRONOBIOLOGIA (lg:col-span-5) ── */}
         <div className="lg:col-span-5 space-y-4">
-          
+
           {/* Botão Sincronizar Google Agenda */}
           <button
             type="button"
@@ -1420,11 +1421,10 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
               <button
                 type="button"
                 onClick={() => setCalendarSyncMode('api')}
-                className={`flex-1 py-2 text-xs font-bold rounded-xl transition-all cursor-pointer flex items-center justify-center gap-1.5 ${
-                  calendarSyncMode === 'api'
+                className={`flex-1 py-2 text-xs font-bold rounded-xl transition-all cursor-pointer flex items-center justify-center gap-1.5 ${calendarSyncMode === 'api'
                     ? 'bg-white dark:bg-zinc-900 text-blue-600 dark:text-blue-400 shadow-xs'
                     : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
-                }`}
+                  }`}
               >
                 <GoogleIcon className="w-3.5 h-3.5" />
                 <span>Google</span>
@@ -1433,11 +1433,10 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
               <button
                 type="button"
                 onClick={() => setCalendarSyncMode('ical')}
-                className={`flex-1 py-2 text-xs font-bold rounded-xl transition-all cursor-pointer flex items-center justify-center gap-1.5 ${
-                  calendarSyncMode === 'ical'
+                className={`flex-1 py-2 text-xs font-bold rounded-xl transition-all cursor-pointer flex items-center justify-center gap-1.5 ${calendarSyncMode === 'ical'
                     ? 'bg-white dark:bg-zinc-900 text-blue-600 dark:text-blue-400 shadow-xs'
                     : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
-                }`}
+                  }`}
               >
                 <Calendar className="w-3.5 h-3.5 text-zinc-500" />
                 <span>Link iCal (.ics)</span>
@@ -1595,11 +1594,10 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
                     key={mins}
                     type="button"
                     onClick={() => setCustomDelayMinutes(mins)}
-                    className={`py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
-                      customDelayMinutes === mins
+                    className={`py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${customDelayMinutes === mins
                         ? 'bg-rose-600 text-white shadow-xs'
                         : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700'
-                    }`}
+                      }`}
                   >
                     +{mins}m
                   </button>
@@ -1711,11 +1709,10 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
                         key={cat.id}
                         type="button"
                         onClick={() => setManualSlotCategory(cat.id as any)}
-                        className={`p-2 rounded-xl text-xs font-bold transition-all cursor-pointer flex flex-col items-center gap-1 border ${
-                          isSelected
+                        className={`p-2 rounded-xl text-xs font-bold transition-all cursor-pointer flex flex-col items-center gap-1 border ${isSelected
                             ? 'bg-blue-600 text-white border-blue-600 shadow-xs'
                             : 'bg-zinc-50 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 border-zinc-200 dark:border-zinc-700 hover:text-zinc-900 dark:hover:text-white'
-                        }`}
+                          }`}
                       >
                         <CatIcon className="w-4 h-4" />
                         <span className="text-[10px]">{cat.label}</span>

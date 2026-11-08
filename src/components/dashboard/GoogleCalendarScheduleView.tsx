@@ -23,7 +23,7 @@ import {
 } from 'lucide-react';
 import { DailyScheduleSlot, CalendarViewMode, TimelineFilter } from './scheduleTypes';
 import { MonthlyStudyCalendarView } from './MonthlyStudyCalendarView';
-import { useStudyTimer, formatSecondsToShort } from '@/context/StudyTimerContext';
+import { useStudyTimer, formatSecondsToShort, getLocalDateStr } from '@/context/StudyTimerContext';
 import { StudySession } from '@/types/studyTimer';
 import { CORE_SPECIALTIES } from '@/services/taxonomySearchService';
 
@@ -314,8 +314,8 @@ export const GoogleCalendarScheduleView: React.FC<GoogleCalendarScheduleViewProp
                   type="button"
                   onClick={() => setViewMode(tab.id as CalendarViewMode)}
                   className={`px-3 py-1 text-xs font-bold rounded-lg transition-all cursor-pointer ${active
-                      ? 'bg-white dark:bg-zinc-900 text-blue-600 dark:text-blue-400 shadow-2xs'
-                      : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
+                    ? 'bg-white dark:bg-zinc-900 text-blue-600 dark:text-blue-400 shadow-2xs'
+                    : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
                     }`}
                 >
                   {tab.label}
@@ -345,8 +345,8 @@ export const GoogleCalendarScheduleView: React.FC<GoogleCalendarScheduleViewProp
                   type="button"
                   onClick={() => setTimelineFilter(f.id as any)}
                   className={`px-2.5 py-1 rounded-lg text-[11px] font-bold transition-all cursor-pointer ${isActive
-                      ? 'bg-blue-600 text-white shadow-2xs'
-                      : 'bg-white dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700 hover:text-zinc-900 dark:hover:text-white'
+                    ? 'bg-blue-600 text-white shadow-2xs'
+                    : 'bg-white dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 border border-zinc-200 dark:border-zinc-700 hover:text-zinc-900 dark:hover:text-white'
                     }`}
                 >
                   {f.label}
@@ -518,16 +518,13 @@ const DayView: React.FC<DayViewProps> = ({
   onOpenAiCommand,
   onOpenAddManual
 }) => {
-  // Sessões Realizadas no Cronômetro para o Dia Selecionado
+  // Sessões Realizadas no Cronômetro para o Dia Selecionado (respeitando o fuso local do estudante)
   const selectedDateStr = useMemo(() => {
-    const y = currentDate.getFullYear();
-    const m = String(currentDate.getMonth() + 1).padStart(2, '0');
-    const d = String(currentDate.getDate()).padStart(2, '0');
-    return `${y}-${m}-${d}`;
+    return getLocalDateStr(currentDate);
   }, [currentDate]);
 
   const dayRealizedSessions = useMemo(() => {
-    return allSessions.filter((s) => s.startTime && s.startTime.startsWith(selectedDateStr));
+    return allSessions.filter((s) => s.startTime && getLocalDateStr(s.startTime) === selectedDateStr);
   }, [allSessions, selectedDateStr]);
 
   const dayTotalRealizedSec = useMemo(() => {
@@ -637,7 +634,7 @@ const DayView: React.FC<DayViewProps> = ({
                 const eDate = new Date(sess.endTime);
                 startFormatted = sDate.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
                 endFormatted = eDate.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
-              } catch {}
+              } catch { }
 
               return (
                 <div
@@ -734,10 +731,10 @@ const DayView: React.FC<DayViewProps> = ({
                   {/* Card do Bloco estilo Google Agenda */}
                   <div
                     className={`p-3.5 sm:p-4 rounded-2xl border transition-all flex items-center justify-between gap-3 ${style.cardBg} ${isCurrentActive
-                        ? 'ring-2 ring-blue-500/50 shadow-md'
-                        : isPast
-                          ? 'opacity-70'
-                          : 'shadow-2xs'
+                      ? 'ring-2 ring-blue-500/50 shadow-md'
+                      : isPast
+                        ? 'opacity-70'
+                        : 'shadow-2xs'
                       }`}
                   >
                     <div className="flex items-center gap-3.5 min-w-0">
@@ -945,8 +942,8 @@ const WeekView: React.FC<WeekViewProps> = ({
               </span>
               <div
                 className={`w-7 h-7 mx-auto rounded-full flex items-center justify-center font-bold text-xs mt-0.5 ${isToday
-                    ? 'bg-blue-600 text-white shadow-2xs'
-                    : 'text-zinc-800 dark:text-zinc-200'
+                  ? 'bg-blue-600 text-white shadow-2xs'
+                  : 'text-zinc-800 dark:text-zinc-200'
                   }`}
               >
                 {d.getDate()}
@@ -972,8 +969,8 @@ const WeekView: React.FC<WeekViewProps> = ({
               key={colIdx}
               onClick={() => onSelectDate(d)}
               className={`p-1.5 rounded-xl border border-dashed flex flex-col gap-1.5 cursor-pointer transition-all ${isToday
-                  ? 'border-blue-500/40 bg-blue-50/20 dark:bg-blue-950/20'
-                  : 'border-zinc-200/60 dark:border-zinc-800/60 hover:border-zinc-300 dark:hover:border-zinc-700'
+                ? 'border-blue-500/40 bg-blue-50/20 dark:bg-blue-950/20'
+                : 'border-zinc-200/60 dark:border-zinc-800/60 hover:border-zinc-300 dark:hover:border-zinc-700'
                 }`}
             >
               {dayEvents.length === 0 ? (
@@ -1038,8 +1035,8 @@ const YearView: React.FC<YearViewProps> = ({
               key={mIdx}
               onClick={() => onSelectDate(new Date(currentYear, mIdx, 1))}
               className={`p-3 rounded-2xl border cursor-pointer transition-all ${isCurrentMonth
-                  ? 'border-blue-500/40 bg-blue-50/15 dark:bg-blue-950/20'
-                  : 'border-zinc-200/80 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700'
+                ? 'border-blue-500/40 bg-blue-50/15 dark:bg-blue-950/20'
+                : 'border-zinc-200/80 dark:border-zinc-800 hover:border-zinc-300 dark:hover:border-zinc-700'
                 }`}
             >
               <h5 className="text-xs font-bold text-zinc-900 dark:text-zinc-100 mb-2">
@@ -1071,8 +1068,8 @@ const YearView: React.FC<YearViewProps> = ({
                     <span
                       key={dayNum}
                       className={`py-0.5 rounded ${isToday
-                          ? 'bg-blue-600 text-white font-bold'
-                          : 'text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800'
+                        ? 'bg-blue-600 text-white font-bold'
+                        : 'text-zinc-600 dark:text-zinc-400 hover:bg-zinc-100 dark:hover:bg-zinc-800'
                         }`}
                     >
                       {dayNum}

@@ -36,6 +36,7 @@ import {
 import { StudySession } from '@/types/studyTimer';
 import { UserAnswerItem, PerformanceFilterState } from '@/types';
 import { useTheme } from '@/context/ThemeContext';
+import { getLocalDateStr } from '@/context/StudyTimerContext';
 import { formatSecondsToDetailed } from './StudyTimeAnalyticsCard';
 
 export interface StudyTimeViewProps {
@@ -201,9 +202,9 @@ export const StudyTimeView: React.FC<StudyTimeViewProps> = ({
     const daysSet = new Set<string>();
     sessions.forEach((s) => {
       if (s.startTime) {
-        const d = new Date(s.startTime);
-        if (!isNaN(d.getTime())) {
-          daysSet.add(d.toISOString().slice(0, 10));
+        const key = getLocalDateStr(s.startTime);
+        if (key) {
+          daysSet.add(key);
         }
       }
     });
@@ -229,17 +230,15 @@ export const StudyTimeView: React.FC<StudyTimeViewProps> = ({
     // Inicializa os dias da janela
     for (let i = periodDays - 1; i >= 0; i--) {
       const d = new Date(now.getFullYear(), now.getMonth(), now.getDate() - i);
-      const key = d.toISOString().slice(0, 10);
+      const key = getLocalDateStr(d);
       dayMap.set(key, { seconds: 0, count: 0, dateObj: d });
     }
 
     // Preenche com sessões
     sessions.forEach((s) => {
       if (!s.startTime) return;
-      const d = new Date(s.startTime);
-      if (isNaN(d.getTime())) return;
-      const key = d.toISOString().slice(0, 10);
-      if (dayMap.has(key)) {
+      const key = getLocalDateStr(s.startTime);
+      if (key && dayMap.has(key)) {
         const prev = dayMap.get(key)!;
         prev.seconds += s.durationSeconds || 0;
         prev.count += 1;
@@ -512,44 +511,40 @@ export const StudyTimeView: React.FC<StudyTimeViewProps> = ({
               <button
                 type="button"
                 onClick={() => onFilterChange({ ...filters, period: '30d' })}
-                className={`px-2.5 py-1 rounded-lg font-semibold transition-all cursor-pointer ${
-                  filters.period === '30d'
+                className={`px-2.5 py-1 rounded-lg font-semibold transition-all cursor-pointer ${filters.period === '30d'
                     ? 'bg-slate-900 dark:bg-white text-white dark:text-zinc-900 shadow-xs'
                     : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white'
-                }`}
+                  }`}
               >
                 30 Dias
               </button>
               <button
                 type="button"
                 onClick={() => onFilterChange({ ...filters, period: '3m' })}
-                className={`px-2.5 py-1 rounded-lg font-semibold transition-all cursor-pointer ${
-                  filters.period === '3m'
+                className={`px-2.5 py-1 rounded-lg font-semibold transition-all cursor-pointer ${filters.period === '3m'
                     ? 'bg-slate-900 dark:bg-white text-white dark:text-zinc-900 shadow-xs'
                     : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white'
-                }`}
+                  }`}
               >
                 3 Meses
               </button>
               <button
                 type="button"
                 onClick={() => onFilterChange({ ...filters, period: '6m' })}
-                className={`px-2.5 py-1 rounded-lg font-semibold transition-all cursor-pointer ${
-                  filters.period === '6m'
+                className={`px-2.5 py-1 rounded-lg font-semibold transition-all cursor-pointer ${filters.period === '6m'
                     ? 'bg-slate-900 dark:bg-white text-white dark:text-zinc-900 shadow-xs'
                     : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white'
-                }`}
+                  }`}
               >
                 6 Meses
               </button>
               <button
                 type="button"
                 onClick={() => onOpenCalendar?.()}
-                className={`px-2.5 py-1 rounded-lg font-semibold transition-all cursor-pointer flex items-center gap-1 ${
-                  filters.period === 'custom'
+                className={`px-2.5 py-1 rounded-lg font-semibold transition-all cursor-pointer flex items-center gap-1 ${filters.period === 'custom'
                     ? 'bg-slate-900 dark:bg-white text-white dark:text-zinc-900 shadow-xs'
                     : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white'
-                }`}
+                  }`}
               >
                 <Calendar className="w-3 h-3" />
                 <span>Livre</span>
@@ -750,11 +745,10 @@ export const StudyTimeView: React.FC<StudyTimeViewProps> = ({
                     onClick={() => {
                       setSelectedSpecialty(isSelected ? null : item.name);
                     }}
-                    className={`flex items-center justify-between text-xs p-2.5 rounded-xl transition-all cursor-pointer ${
-                      isSelected
+                    className={`flex items-center justify-between text-xs p-2.5 rounded-xl transition-all cursor-pointer ${isSelected
                         ? 'bg-indigo-50 dark:bg-indigo-950/40 border-2 border-indigo-500 shadow-xs'
                         : 'hover:bg-slate-100 dark:hover:bg-zinc-800/70 border border-transparent'
-                    }`}
+                      }`}
                   >
                     <div className="flex items-center gap-2.5 min-w-0 pr-2">
                       <span

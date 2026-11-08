@@ -6,6 +6,7 @@ import { DailyReviewLog } from '@/types/flashcards';
 import { flashcardsService } from '@/services/flashcardsService';
 import { useAuth } from '@/context/AuthContext';
 import { useTheme } from '@/context/ThemeContext';
+import { getLocalDateStr } from '@/context/StudyTimerContext';
 
 interface AnkiReviewHeatmapProps {
   initialLogs?: Record<string, DailyReviewLog>;
@@ -86,9 +87,9 @@ export const AnkiReviewHeatmap: React.FC<AnkiReviewHeatmapProps> = ({
     return flashcardsService.getDailyReviewLogs(selectedYear, activeUserId);
   }, [initialLogs, syncedLogs, selectedYear, activeUserId]);
 
-  // Data de hoje em YYYY-MM-DD
+  // Data de hoje em YYYY-MM-DD (fuso local do estudante)
   const todayStr = useMemo(() => {
-    return new Date().toISOString().split('T')[0];
+    return getLocalDateStr(new Date());
   }, []);
 
   const todayLog = dailyLogs[todayStr];
@@ -350,11 +351,10 @@ export const AnkiReviewHeatmap: React.FC<AnkiReviewHeatmapProps> = ({
   return (
     <div
       style={{ backgroundColor: isDark ? '#121215' : '#ffffff' }}
-      className={`border rounded-2xl p-3 sm:p-4 shadow-xs transition-all relative ${
-        isDark
+      className={`border rounded-2xl p-3 sm:p-4 shadow-xs transition-all relative ${isDark
           ? 'bg-[#121215] border-zinc-800/80 text-zinc-100'
           : 'bg-white border-slate-200 text-zinc-900'
-      } ${className}`}
+        } ${className}`}
     >
       {/* 1. TOPO ESTILO ANKI: Frase Centralizada + Botão de Minimizar */}
       <div className="relative flex items-center justify-center pb-1">
@@ -413,13 +413,12 @@ export const AnkiReviewHeatmap: React.FC<AnkiReviewHeatmapProps> = ({
                   return (
                     <div
                       key={wIdx}
-                      className={`flex flex-col gap-[3px] rounded-[3px] transition-colors p-[1px] -m-[1px] ${
-                        isColHovered
+                      className={`flex flex-col gap-[3px] rounded-[3px] transition-colors p-[1px] -m-[1px] ${isColHovered
                           ? isDark
                             ? 'bg-zinc-700/60 ring-1 ring-zinc-500/60'
                             : 'bg-zinc-300/70 ring-1 ring-zinc-400/70'
                           : ''
-                      }`}
+                        }`}
                     >
                       {week.map((cell, dIdx) => {
                         if (!cell) {
@@ -451,11 +450,10 @@ export const AnkiReviewHeatmap: React.FC<AnkiReviewHeatmapProps> = ({
                               height: 11,
                               backgroundColor: bgHex
                             }}
-                            className={`rounded-[2px] transition-all cursor-pointer shrink-0 border border-zinc-800/50 dark:border-zinc-700/40 ${
-                              isCellHovered
+                            className={`rounded-[2px] transition-all cursor-pointer shrink-0 border border-zinc-800/50 dark:border-zinc-700/40 ${isCellHovered
                                 ? 'ring-2 ring-white dark:ring-white z-20 scale-125 shadow-md border-transparent'
                                 : 'hover:opacity-90'
-                            } ${isTodayHighlight}`}
+                              } ${isTodayHighlight}`}
                           />
                         );
                       })}

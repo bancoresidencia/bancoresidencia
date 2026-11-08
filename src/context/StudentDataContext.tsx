@@ -25,6 +25,7 @@ import {
 import { calculatePercentile } from '@/utils/percentile';
 import { loadUserBookmarks, toggleUserBookmark, getBookmarksStorageKey } from '@/services/userBookmarksService';
 import { createClient } from '@/lib/supabase/client';
+import { getLocalDateStr } from '@/context/StudyTimerContext';
 
 interface StudentDataContextType {
   userAnswers: Record<string, UserAnswerItem>;
@@ -195,7 +196,7 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
           try {
             const key = getUserAnswersStorageKey(userId);
             localStorage.setItem(key, JSON.stringify(merged));
-          } catch {}
+          } catch { }
         }
 
         // Upload das respostas locais pendentes para o Supabase
@@ -224,7 +225,7 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
             .upsert(payload, { onConflict: 'user_id,question_id' })
             .then(({ error: upErr }: any) => {
               if (upErr) console.warn('[StudentDataContext] Aviso ao sincronizar respostas pendentes no Supabase:', upErr);
-            }, () => {});
+            }, () => { });
         }
 
         return hasChanges ? merged : currentLocal;
@@ -281,7 +282,7 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
         setFolders(userFolds);
         setLists(userLst);
         if (userBms) setBookmarkedQuestionIds(userBms);
-      } catch {}
+      } catch { }
       return;
     }
 
@@ -293,17 +294,17 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
         if (data.success && data.authenticated) {
           if (Array.isArray(data.folders)) {
             setFolders(data.folders);
-            try { localStorage.setItem(getFolderStorageKey(user.id), JSON.stringify(data.folders)); } catch {}
+            try { localStorage.setItem(getFolderStorageKey(user.id), JSON.stringify(data.folders)); } catch { }
           }
           if (Array.isArray(data.lists)) {
             setLists(data.lists);
-            try { localStorage.setItem(getListStorageKey(user.id), JSON.stringify(data.lists)); } catch {}
+            try { localStorage.setItem(getListStorageKey(user.id), JSON.stringify(data.lists)); } catch { }
           }
           if (Array.isArray(data.bookmarks)) {
             const bmMap: Record<string, boolean> = {};
             for (const id of data.bookmarks) bmMap[id] = true;
             setBookmarkedQuestionIds(bmMap);
-            try { localStorage.setItem(getBookmarksStorageKey(user.id), JSON.stringify(bmMap)); } catch {}
+            try { localStorage.setItem(getBookmarksStorageKey(user.id), JSON.stringify(bmMap)); } catch { }
           }
           if (data.profile?.preferences && typeof window !== 'undefined') {
             window.dispatchEvent(new CustomEvent('bancoresidencia_preferences_synced', {
@@ -349,17 +350,17 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
       if (savedGoal) {
         setCustomDailyGoal(Number(savedGoal));
       }
-    } catch {}
+    } catch { }
   }, []);
 
   const updateDailyGoal = useCallback((newGoal: number) => {
     setCustomDailyGoal(newGoal);
     try {
       localStorage.setItem('bancoresidencia_custom_daily_goal', String(newGoal));
-    } catch {}
+    } catch { }
   }, []);
 
-    // Tamanho de Fonte
+  // Tamanho de Fonte
   const [fontSize, setFontSizeState] = useState<'xs' | 'sm' | 'base' | 'lg' | 'xl'>('sm');
   useEffect(() => {
     try {
@@ -371,7 +372,7 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
         | 'xl'
         | null;
       if (savedFontSize) setFontSizeState(savedFontSize);
-    } catch {}
+    } catch { }
 
     const handleSync = (e: Event) => {
       const detail = (e as CustomEvent).detail;
@@ -389,7 +390,7 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
     setFontSizeState(size);
     try {
       localStorage.setItem('bancoresidencia_question_font_size', size);
-    } catch {}
+    } catch { }
 
     // Sincroniza em background com preferences no Supabase com debounce de 600ms
     if (fontSizeDebounceRef.current) {
@@ -518,10 +519,12 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
       }
 
       if (ans.timestamp) {
-        const d = new Date(ans.timestamp).toISOString().split('T')[0];
-        if (!historyByDayMap[d]) historyByDayMap[d] = { answered: 0, correct: 0 };
-        historyByDayMap[d].answered += 1;
-        if (ans.isCorrect) historyByDayMap[d].correct += 1;
+        const d = getLocalDateStr(ans.timestamp);
+        if (d) {
+          if (!historyByDayMap[d]) historyByDayMap[d] = { answered: 0, correct: 0 };
+          historyByDayMap[d].answered += 1;
+          if (ans.isCorrect) historyByDayMap[d].correct += 1;
+        }
       }
     });
 
@@ -549,19 +552,21 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
     let streakDays = 0;
     try {
       const datesAnswered = new Set(
-        Object.values(userAnswers).map((a) => new Date(a.timestamp).toISOString().split('T')[0])
+        Object.values(userAnswers)
+          .map((a) => (a.timestamp ? getLocalDateStr(a.timestamp) : ''))
+          .filter(Boolean)
       );
       const today = new Date();
       const cur = new Date(today);
       while (true) {
-        const key = cur.toISOString().split('T')[0];
+        const key = getLocalDateStr(cur);
         if (datesAnswered.has(key)) {
           streakDays++;
           cur.setDate(cur.getDate() - 1);
         } else {
           if (streakDays === 0) {
             cur.setDate(cur.getDate() - 1);
-            const yKey = cur.toISOString().split('T')[0];
+            const yKey = getLocalDateStr(cur);
             if (datesAnswered.has(yKey)) {
               streakDays++;
               cur.setDate(cur.getDate() - 1);
@@ -571,7 +576,7 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
           break;
         }
       }
-    } catch {}
+    } catch { }
 
     const calculatedStreak = Math.max(streakDays, 1);
 
@@ -640,7 +645,7 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
             const key = getUserAnswersStorageKey(user?.id);
             const current = userAnswersRef.current;
             localStorage.setItem(key, JSON.stringify({ ...current, [questionId]: answerObj }));
-          } catch {}
+          } catch { }
         });
       }
 
@@ -720,7 +725,7 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
         try {
           const key = getUserAnswersStorageKey(user?.id);
           localStorage.setItem(key, JSON.stringify(next));
-        } catch {}
+        } catch { }
         return next;
       });
 
@@ -837,11 +842,11 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
       const next = lists.map((l) =>
         l.id === listId
           ? {
-              ...l,
-              title: newTitle,
-              folderId: newFolderId !== undefined ? newFolderId || undefined : l.folderId,
-              updatedAt: new Date().toISOString()
-            }
+            ...l,
+            title: newTitle,
+            folderId: newFolderId !== undefined ? newFolderId || undefined : l.folderId,
+            updatedAt: new Date().toISOString()
+          }
           : l
       );
       setLists(next);

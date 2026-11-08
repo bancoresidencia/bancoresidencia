@@ -41,6 +41,24 @@ export function formatSecondsToShort(totalSec: number): string {
   return `${s}s`;
 }
 
+/**
+ * Converte qualquer entrada de data (Date, timestamp ms, string ISO ou YYYY-MM-DD)
+ * em uma string "YYYY-MM-DD" estritamente alinhada ao FUSO HORÁRIO LOCAL do usuário (ex: América/São Paulo, UTC-3).
+ * Evita o clássico bug de deslocamento de dia ao usar .toISOString().split('T')[0] à noite (21h-23h59).
+ */
+export function getLocalDateStr(dateInput?: string | Date | number | null): string {
+  if (!dateInput) return '';
+  if (typeof dateInput === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(dateInput)) {
+    return dateInput;
+  }
+  const d = typeof dateInput === 'string' || typeof dateInput === 'number' ? new Date(dateInput) : dateInput;
+  if (isNaN(d.getTime())) return '';
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, '0');
+  const day = String(d.getDate()).padStart(2, '0');
+  return `${y}-${m}-${day}`;
+}
+
 interface StoredTimerState {
   status: 'running' | 'paused';
   accumulatedSeconds: number;
@@ -149,11 +167,11 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       };
       try {
         localStorage.setItem(TIMER_STORAGE_KEY, JSON.stringify(stateToSave));
-      } catch {}
+      } catch { }
     } else if (status === 'idle') {
       try {
         localStorage.removeItem(TIMER_STORAGE_KEY);
-      } catch {}
+      } catch { }
     }
   }, [status, selectedTaxonomy, sessionStartTime]);
 
@@ -224,7 +242,7 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     setStatus('idle');
     try {
       localStorage.removeItem(TIMER_STORAGE_KEY);
-    } catch {}
+    } catch { }
   }, []);
 
   // Modal de Salvar
@@ -307,7 +325,7 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
           source: 'plataforma',
           description: `Tempo líquido: ${formatted}.${data.questionsCount ? ` ${data.questionsCount} questões (${data.correctCount || 0} acertos).` : ''}${data.notes ? ` Obs: ${data.notes}` : ''}`,
           action: 'treinar',
-          date: startDate.toISOString().split('T')[0]
+          date: getLocalDateStr(startDate)
         };
 
         const existingTasksJson = localStorage.getItem('bancoresidencia_user_scheduled_tasks');
@@ -338,7 +356,7 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       const updated = prev.filter((s) => s.id !== sessionId);
       try {
         localStorage.setItem(SESSIONS_STORAGE_KEY, JSON.stringify(updated));
-      } catch {}
+      } catch { }
       return updated;
     });
 
@@ -354,22 +372,54 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
           newValue: JSON.stringify(filteredTasks)
         }));
       }
-    } catch {}
+    } catch { }
   }, []);
+
+  // Auto-cura de tarefas agendadas salvas com fuso UTC deslocado
+  useEffect(() => {
+    try {
+      const rawTasks = localStorage.getItem('bancoresidencia_user_scheduled_tasks');
+      if (!rawTasks) return;
+      const tasks: DailyScheduleSlot[] = JSON.parse(rawTasks);
+      if (!Array.isArray(tasks) || tasks.length === 0) return;
+
+      let modified = false;
+      const fixedTasks = tasks.map((task) => {
+        if (task.source === 'plataforma' && task.id.startsWith('task_sess_')) {
+          const sessionId = task.id.replace('task_', '');
+          const matchingSess = savedSessions.find((s) => s.id === sessionId);
+          if (matchingSess?.startTime) {
+            const correctDate = getLocalDateStr(matchingSess.startTime);
+            if (correctDate && task.date !== correctDate) {
+              modified = true;
+              return { ...task, date: correctDate };
+            }
+          }
+        }
+        return task;
+      });
+
+      if (modified) {
+        localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(fixedTasks));
+        window.dispatchEvent(new StorageEvent('storage', {
+          key: 'bancoresidencia_user_scheduled_tasks',
+          newValue: JSON.stringify(fixedTasks)
+        }));
+      }
+    } catch (err) {
+      console.warn('Erro na sincronização de datas de tarefas:', err);
+    }
+  }, [savedSessions]);
 
   // Sessões e tempo total do dia de hoje (respeitando o fuso horário local do estudante)
   const todayStr = useMemo(() => {
-    const now = new Date();
-    return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+    return getLocalDateStr(new Date());
   }, []);
 
   const todaySessions = useMemo(() => {
     return savedSessions.filter((s) => {
       if (!s.startTime) return false;
-      const d = new Date(s.startTime);
-      if (isNaN(d.getTime())) return false;
-      const sessionDate = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
-      return sessionDate === todayStr;
+      return getLocalDateStr(s.startTime) === todayStr;
     });
   }, [savedSessions, todayStr]);
 

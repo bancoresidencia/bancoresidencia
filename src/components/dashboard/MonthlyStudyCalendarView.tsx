@@ -15,7 +15,7 @@ import {
 import { StudySession } from '@/types/studyTimer';
 import { DailyScheduleSlot } from './scheduleTypes';
 import { CORE_SPECIALTIES } from '@/services/taxonomySearchService';
-import { formatSecondsToShort, useStudyTimer } from '@/context/StudyTimerContext';
+import { formatSecondsToShort, useStudyTimer, getLocalDateStr } from '@/context/StudyTimerContext';
 import { DayStudyDetailsModal } from './DayStudyDetailsModal';
 
 const MONTH_NAMES = [
@@ -75,12 +75,13 @@ export const MonthlyStudyCalendarView: React.FC<MonthlyStudyCalendarViewProps> =
     updateCurrentDate(new Date());
   };
 
-  // Mapeamento de Sessões por Data ("YYYY-MM-DD")
+  // Mapeamento de Sessões por Data ("YYYY-MM-DD" alinhado ao fuso local do estudante)
   const sessionsByDate = useMemo(() => {
     const map: Record<string, StudySession[]> = {};
     for (const sess of allSessions) {
       if (!sess.startTime) continue;
-      const dateKey = sess.startTime.split('T')[0];
+      const dateKey = getLocalDateStr(sess.startTime);
+      if (!dateKey) continue;
       if (!map[dateKey]) map[dateKey] = [];
       map[dateKey].push(sess);
     }
@@ -91,7 +92,8 @@ export const MonthlyStudyCalendarView: React.FC<MonthlyStudyCalendarViewProps> =
   const googleEventsByDate = useMemo(() => {
     const map: Record<string, DailyScheduleSlot[]> = {};
     for (const evt of googleEvents) {
-      const dateKey = evt.date || nowDate.toISOString().split('T')[0];
+      const dateKey = getLocalDateStr(evt.date || evt.startTime || nowDate);
+      if (!dateKey) continue;
       if (!map[dateKey]) map[dateKey] = [];
       map[dateKey].push(evt);
     }
@@ -112,14 +114,14 @@ export const MonthlyStudyCalendarView: React.FC<MonthlyStudyCalendarViewProps> =
     const firstDayOfWeek = firstDay.getDay(); // 0 = Domingo
     for (let i = firstDayOfWeek - 1; i >= 0; i--) {
       const d = new Date(year, month, -i);
-      const dateStr = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+      const dateStr = getLocalDateStr(d);
       cells.push({ date: d, dateStr, isCurrentMonth: false });
     }
 
     // Dias do mês atual
     for (let d = 1; d <= lastDay.getDate(); d++) {
       const dateObj = new Date(year, month, d);
-      const dateStr = `${year}-${String(month + 1).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
+      const dateStr = getLocalDateStr(dateObj);
       cells.push({ date: dateObj, dateStr, isCurrentMonth: true });
     }
 
@@ -128,7 +130,7 @@ export const MonthlyStudyCalendarView: React.FC<MonthlyStudyCalendarViewProps> =
     if (remaining < 7) {
       for (let i = 1; i <= remaining; i++) {
         const d = new Date(year, month + 1, i);
-        const dateStr = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+        const dateStr = getLocalDateStr(d);
         cells.push({ date: d, dateStr, isCurrentMonth: false });
       }
     }
@@ -228,9 +230,8 @@ export const MonthlyStudyCalendarView: React.FC<MonthlyStudyCalendarViewProps> =
           {WEEKDAY_NAMES.map((w, i) => (
             <span
               key={i}
-              className={`text-[11px] font-black uppercase tracking-wider ${
-                i === 0 || i === 6 ? 'text-zinc-400' : 'text-slate-600 dark:text-zinc-300'
-              }`}
+              className={`text-[11px] font-black uppercase tracking-wider ${i === 0 || i === 6 ? 'text-zinc-400' : 'text-slate-600 dark:text-zinc-300'
+                }`}
             >
               {w}
             </span>
@@ -270,27 +271,25 @@ export const MonthlyStudyCalendarView: React.FC<MonthlyStudyCalendarViewProps> =
               <div
                 key={idx}
                 onClick={() => setSelectedDayDateStr(cell.dateStr)}
-                className={`min-h-[82px] sm:min-h-[105px] p-2 rounded-2xl border transition-all cursor-pointer flex flex-col justify-between group relative overflow-hidden ${
-                  !cell.isCurrentMonth
+                className={`min-h-[82px] sm:min-h-[105px] p-2 rounded-2xl border transition-all cursor-pointer flex flex-col justify-between group relative overflow-hidden ${!cell.isCurrentMonth
                     ? 'border-transparent opacity-30 bg-zinc-50/40 dark:bg-zinc-900/10'
                     : isToday
-                    ? 'border-blue-500/60 bg-blue-50/20 dark:bg-blue-950/20 ring-2 ring-blue-500/30'
-                    : hasStudy
-                    ? 'border-emerald-500/30 bg-emerald-500/5 dark:bg-emerald-950/20 hover:border-emerald-500/60 shadow-2xs'
-                    : 'border-zinc-200/80 dark:border-zinc-800/80 bg-zinc-50/40 dark:bg-zinc-900/30 hover:border-zinc-300 dark:hover:border-zinc-700'
-                }`}
+                      ? 'border-blue-500/60 bg-blue-50/20 dark:bg-blue-950/20 ring-2 ring-blue-500/30'
+                      : hasStudy
+                        ? 'border-emerald-500/30 bg-emerald-500/5 dark:bg-emerald-950/20 hover:border-emerald-500/60 shadow-2xs'
+                        : 'border-zinc-200/80 dark:border-zinc-800/80 bg-zinc-50/40 dark:bg-zinc-900/30 hover:border-zinc-300 dark:hover:border-zinc-700'
+                  }`}
                 title={`Clique para inspecionar ${cell.dateStr}`}
               >
                 {/* Linha Superior: Número do Dia + Indicador Hoje / Google */}
                 <div className="flex items-center justify-between">
                   <span
-                    className={`text-xs font-black w-6 h-6 rounded-xl flex items-center justify-center transition-transform group-hover:scale-105 ${
-                      isToday
+                    className={`text-xs font-black w-6 h-6 rounded-xl flex items-center justify-center transition-transform group-hover:scale-105 ${isToday
                         ? 'bg-blue-600 text-white shadow-xs'
                         : hasStudy
-                        ? 'text-emerald-700 dark:text-emerald-300 font-extrabold'
-                        : 'text-zinc-600 dark:text-zinc-400'
-                    }`}
+                          ? 'text-emerald-700 dark:text-emerald-300 font-extrabold'
+                          : 'text-zinc-600 dark:text-zinc-400'
+                      }`}
                   >
                     {cell.date.getDate()}
                   </span>
