@@ -402,101 +402,66 @@ export const AnkiReviewHeatmap: React.FC<AnkiReviewHeatmapProps> = ({
             </button>
           </div>
 
-          {/* 3. GRID ANUAL DE 365 DIAS (CALENDÁRIO ANKI COM DESTAQUE DE COLUNA E DIAS SEPARADOS) */}
+          {/* 3. GRID ANUAL DE 365 DIAS (CALENDÁRIO ANKI COMPACTO E CANÔNICO) */}
           <div className="overflow-x-auto py-1 flex justify-center custom-scrollbar">
-            <div className="inline-flex flex-col select-none p-1">
-              {/* Linha dos Meses */}
-              <div className="flex text-[10px] text-zinc-400 dark:text-zinc-500 font-semibold select-none pb-1 pl-6">
-                <div
-                  className="relative h-4 w-full"
-                  style={{ minWidth: weeksGrid.length * 14 }}
-                >
-                  {monthLabels.map((m, idx) => (
-                    <span
-                      key={idx}
-                      className="absolute font-mono"
-                      style={{ left: m.colIndex * 14 }}
+            <div className="p-2 sm:p-2.5 rounded-xl bg-zinc-950/30 dark:bg-black/40 border border-zinc-800/40 inline-flex flex-col select-none">
+              {/* 53 Colunas de Semanas: 1 para cada dia do ano, visivelmente separadas */}
+              <div className="inline-flex gap-[3px]">
+                {weeksGrid.map((week, wIdx) => {
+                  const isColHovered = hoveredColIndex === wIdx;
+
+                  return (
+                    <div
+                      key={wIdx}
+                      className={`flex flex-col gap-[3px] rounded-[3px] transition-colors p-[1px] -m-[1px] ${
+                        isColHovered
+                          ? isDark
+                            ? 'bg-zinc-700/60 ring-1 ring-zinc-500/60'
+                            : 'bg-zinc-300/70 ring-1 ring-zinc-400/70'
+                          : ''
+                      }`}
                     >
-                      {m.name}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
-              {/* Grid: Dias da semana à esquerda + 53 colunas com destaque de coluna no hover */}
-              <div className="flex items-start gap-1.5">
-                {/* Coluna dos Dias da Semana (Seg, Qua, Sex) */}
-                <div
-                  className="flex flex-col text-[9px] font-mono font-medium text-zinc-400 dark:text-zinc-500 justify-between select-none shrink-0"
-                  style={{ height: 7 * 11 + 6 * 3 }}
-                >
-                  <span style={{ height: 11, lineHeight: '11px' }}></span>
-                  <span style={{ height: 11, lineHeight: '11px' }}>Seg</span>
-                  <span style={{ height: 11, lineHeight: '11px' }}></span>
-                  <span style={{ height: 11, lineHeight: '11px' }}>Qua</span>
-                  <span style={{ height: 11, lineHeight: '11px' }}></span>
-                  <span style={{ height: 11, lineHeight: '11px' }}>Sex</span>
-                  <span style={{ height: 11, lineHeight: '11px' }}></span>
-                </div>
-
-                {/* 53 Colunas de Semanas: Cada coluna destacada suavemente no hover sem layout shift */}
-                <div className="inline-flex gap-[3px]">
-                  {weeksGrid.map((week, wIdx) => {
-                    const isColHovered = hoveredColIndex === wIdx;
-
-                    return (
-                      <div
-                        key={wIdx}
-                        className={`flex flex-col gap-[3px] rounded-[3px] transition-colors p-[1px] -m-[1px] ${
-                          isColHovered
-                            ? isDark
-                              ? 'bg-zinc-800/80 ring-1 ring-zinc-700/60'
-                              : 'bg-zinc-200/80 ring-1 ring-zinc-300/60'
-                            : ''
-                        }`}
-                      >
-                        {week.map((cell, dIdx) => {
-                          if (!cell) {
-                            return (
-                              <div
-                                key={`empty-${dIdx}`}
-                                className="opacity-0 shrink-0"
-                                style={{ width: 11, height: 11 }}
-                              />
-                            );
-                          }
-
-                          const bgHex = getCellBg(cell.reviews);
-                          const isTodayHighlight = cell.isToday
-                            ? 'ring-2 ring-amber-400 z-10'
-                            : '';
-                          const isCellHovered =
-                            hoveredDay?.dateStr === cell.dateStr;
-
+                      {week.map((cell, dIdx) => {
+                        if (!cell) {
                           return (
                             <div
-                              key={cell.dateStr}
-                              onMouseEnter={(e) =>
-                                handleMouseEnterCell(e, cell, wIdx)
-                              }
-                              onMouseLeave={handleMouseLeaveCell}
-                              style={{
-                                width: 11,
-                                height: 11,
-                                backgroundColor: bgHex
-                              }}
-                              className={`rounded-[2px] transition-all cursor-pointer shrink-0 ${
-                                isCellHovered
-                                  ? 'ring-2 ring-zinc-900 dark:ring-white z-20 scale-125 shadow-md'
-                                  : 'hover:opacity-90'
-                              } ${isTodayHighlight}`}
+                              key={`empty-${dIdx}`}
+                              className="opacity-0 shrink-0"
+                              style={{ width: 11, height: 11 }}
                             />
                           );
-                        })}
-                      </div>
-                    );
-                  })}
-                </div>
+                        }
+
+                        const bgHex = getCellBg(cell.reviews);
+                        const isTodayHighlight = cell.isToday
+                          ? 'ring-2 ring-amber-400 z-10'
+                          : '';
+                        const isCellHovered =
+                          hoveredDay?.dateStr === cell.dateStr;
+
+                        return (
+                          <div
+                            key={cell.dateStr}
+                            onMouseEnter={(e) =>
+                              handleMouseEnterCell(e, cell, wIdx)
+                            }
+                            onMouseLeave={handleMouseLeaveCell}
+                            style={{
+                              width: 11,
+                              height: 11,
+                              backgroundColor: bgHex
+                            }}
+                            className={`rounded-[2px] transition-all cursor-pointer shrink-0 border border-zinc-800/50 dark:border-zinc-700/40 ${
+                              isCellHovered
+                                ? 'ring-2 ring-white dark:ring-white z-20 scale-125 shadow-md border-transparent'
+                                : 'hover:opacity-90'
+                            } ${isTodayHighlight}`}
+                          />
+                        );
+                      })}
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
