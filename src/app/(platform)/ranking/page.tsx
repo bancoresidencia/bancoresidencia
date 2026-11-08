@@ -12,7 +12,7 @@ export default function RankingPage() {
   const { stats, performanceFilters, userAnswers } = useStudentData();
   const [leaderboardData, setLeaderboardData] = useState<LeaderboardResponse | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string | null>(null);
+  const [, setError] = useState<string | null>(null);
 
   // Lista de tentativas reais do aluno logado
   const userAttempts = useMemo(() => {
@@ -21,7 +21,7 @@ export default function RankingPage() {
       difficulty: a.difficulty,
       correct: a.isCorrect,
       user_id: user?.id || 'current-user',
-      timestamp: a.timestamp || Date.now(),
+      timestamp: a.timestamp || 0,
       banca: a.banca,
       year: a.year
     }));

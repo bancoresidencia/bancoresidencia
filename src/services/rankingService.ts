@@ -7,8 +7,7 @@ import {
   calculateEmpiricalPercentile,
   ValidatedAttempt,
   OFFICIAL_THRESHOLD,
-  PROVISIONAL_THRESHOLD,
-  CALIBRATING_THRESHOLD
+  PROVISIONAL_THRESHOLD
 } from '@/utils/irtModel';
 
 export interface LeaderboardStudent {
