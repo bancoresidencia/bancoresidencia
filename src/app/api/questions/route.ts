@@ -89,11 +89,14 @@ const FACETS_CACHE_TTL_MS = 5 * 60 * 1000;
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function applyQuestionFilters(query: any, filters: ExtendedFilterState, questionIds?: string[]) {
-  // Regra de Gabarito: Todas as 132.965 questões presentes por padrão
+  // Regra Canônica de Gabarito: Por padrão, alunos só veem questões com gabarito homologado
   if (filters.gabaritoStatus === 'sem_gabarito') {
-    query = query.or('correct_answer.is.null,correct_answer.eq.').eq('is_anulada', false);
-  } else if (filters.gabaritoStatus === 'com_gabarito') {
-    query = query.or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true');
+    query = query.eq('has_gabarito', false);
+  } else if (filters.gabaritoStatus === 'todas') {
+    // Curadoria/Admin irrestrito
+  } else {
+    // Padrão do aluno (com_gabarito):
+    query = query.eq('has_gabarito', true);
   }
 
   // Se IDs específicos foram solicitados (ex: página paginada de Resolvidas/Acertadas/Erradas ou caderno)
@@ -319,7 +322,7 @@ export async function POST(req: NextRequest) {
       if (!hasRightCardFilters) {
         const resultPayload = {
           facets: {
-            totalRightCardCount: 132965,
+            totalRightCardCount: 121635,
             especialidades: hierarchyQuestionCounts.especialidades || {},
             temas: hierarchyQuestionCounts.temas || {},
             focos: hierarchyQuestionCounts.focos || {},
@@ -367,7 +370,7 @@ export async function POST(req: NextRequest) {
               (especialidades['Ginecologia'] || 0) + (especialidades['Obstetrícia'] || 0);
           }
 
-          const globalTotal = 132965;
+          const globalTotal = 121635;
           const overallRatio = globalTotal > 0 ? typedResult.totalRightCardCount / globalTotal : 1;
           const focos: Record<string, number> = {};
           const subfocos: Record<string, number> = {};
@@ -603,7 +606,7 @@ export async function POST(req: NextRequest) {
 
     // 3. Cálculo preciso do total filtrado de questões
     const isRevalida = Boolean(filters.modalidades?.some((m: string) => m.toLowerCase().includes('revalida')));
-    const baseTotal = isRevalida ? 2921 : 132965;
+    const baseTotal = isRevalida ? 2921 : 121635;
     const hasActiveFilters = Boolean(
       isRevalida ||
       (filters.search && filters.search.trim()) ||

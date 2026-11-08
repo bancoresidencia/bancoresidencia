@@ -3,6 +3,7 @@
 import React from 'react';
 import { StudentDataProvider } from '@/context/StudentDataContext';
 import { TabAvailabilityProvider } from '@/context/TabAvailabilityContext';
+import { StudyTimerProvider } from '@/context/StudyTimerContext';
 import { AppShell } from '@/components/layout/AppShell';
 import { useAuth } from '@/context/AuthContext';
 import { Logo } from '@/components/Logo';
@@ -28,7 +29,9 @@ export default function PlatformLayout({ children }: { children: React.ReactNode
   return (
     <StudentDataProvider>
       <TabAvailabilityProvider>
-        <AppShell>{children}</AppShell>
+        <StudyTimerProvider>
+          <AppShell>{children}</AppShell>
+        </StudyTimerProvider>
       </TabAvailabilityProvider>
     </StudentDataProvider>
   );

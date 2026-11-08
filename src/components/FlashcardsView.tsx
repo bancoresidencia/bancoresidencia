@@ -25,7 +25,10 @@ import {
   Bookmark,
   TrendingUp,
   Tag,
-  Shuffle
+  Shuffle,
+  GraduationCap,
+  FolderKanban,
+  Layers
 } from 'lucide-react';
 import {
   FlashcardItem,
@@ -39,6 +42,11 @@ import { flashcardsService } from '@/services/flashcardsService';
 import { clinicalHierarchy } from '@/data/mockQuestions';
 import { FlashcardStudySession } from './FlashcardStudySession';
 import { StudyMaterialReader } from './StudyMaterialReader';
+import { AnkiCompactHeader } from './flashcards/AnkiCompactHeader';
+import { AnkiDeckTree } from './flashcards/AnkiDeckTree';
+import { AnkiReviewHeatmap } from './flashcards/AnkiReviewHeatmap';
+import { OriginalCardsSection } from './flashcards/OriginalCardsSection';
+import { AddFlashcardDrawer } from './flashcards/AddFlashcardDrawer';
 
 export interface SpecialtyConfig {
   id: string;
@@ -256,7 +264,7 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
   const normalizedQuery = useMemo(() => normalizeText(searchQuery), [searchQuery]);
 
   const continuationTitle = useMemo(() => {
-    if (mode === 'flashcards') {
+    if ((mode as any) === 'flashcards') {
       return lastFlashcardSession
         ? lastFlashcardSession.deckTitle
         : 'Alta Incidência: Cartões Prioritários (Clínica & Cirurgia)';
@@ -268,6 +276,9 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
 
   // Estado do Drawer Central de Adicionar Flashcard
   const [isAddCardDrawerOpen, setIsAddCardDrawerOpen] = useState(false);
+  const [flashcardTab, setFlashcardTab] = useState<'br' | 'originais'>('br');
+  const [activeDeckIdForNewCard, setActiveDeckIdForNewCard] = useState<string>('deck-padrao');
+  const [heatmapRefreshKey, setHeatmapRefreshKey] = useState(0);
   const [newCardSpecialty, setNewCardSpecialty] = useState('Clínica Médica');
   const [newCardTema, setNewCardTema] = useState('');
   const [newCardFoco, setNewCardFoco] = useState('');
@@ -287,7 +298,7 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
     setAllFlashcards(flashcardsService.getFlashcards({ userId: user?.id }));
   }, [activeSessionCards]);
 
-// SWR: Sincroniza progresso remoto, baralhos e cards criados pelo usuário
+// SWR: Sincroniza progresso remoto, baralhos, cards criados pelo usuário e logs do Heatmap
   useEffect(() => {
     if (user?.id) {
       flashcardsService.syncRemoteProgress(user.id).then(() => {
@@ -297,6 +308,7 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
       flashcardsService.syncRemoteUserCreatedCards(user.id).then(() => {
         setAllFlashcards(flashcardsService.getFlashcards({ userId: user.id }));
       });
+      flashcardsService.syncRemoteDailyLogs(user.id);
       flashcardsService.syncRemoteStudyProgress(user.id).then((lastSumm) => {
         if (lastSumm) setLastReadSummary(lastSumm);
       });
@@ -346,12 +358,13 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
   const handleStartStudy = (
     cardsToStudy: FlashcardItem[],
     sessionTitle?: string,
-    overridePriorityOnly?: boolean
+    overridePriorityOnly?: boolean,
+    allCardsMode?: boolean
   ) => {
     if (!cardsToStudy || cardsToStudy.length === 0) return;
 
     const shouldFilterEssential = overridePriorityOnly ?? filterEssentialOnly;
-    const filtered = shouldFilterEssential
+    const filtered = (shouldFilterEssential && !allCardsMode)
       ? cardsToStudy.filter((c) => c.priority === 'essential')
       : cardsToStudy;
 
@@ -499,7 +512,7 @@ export const FlashcardsView: React.FC<FlashcardsViewProps> = ({
     if (normFoco.includes(normalizedQuery) || normalizedQuery.includes(normFoco)) return true;
     if (normTema.includes(normalizedQuery) || normSpec.includes(normalizedQuery)) return true;
 
-    if (mode === 'flashcards') {
+    if ((mode as any) === 'flashcards') {
       const cards = getCardsForFoco(specName, temaName, focoName);
       return cards.some(
         (c) =>
@@ -812,7 +825,14 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
     return (
       <FlashcardStudySession
         cards={activeSessionCards}
-        onExit={() => setActiveSessionCards(null)}
+        onExit={() => {
+          setActiveSessionCards(null);
+          setHeatmapRefreshKey((k) => k + 1);
+          flashcardsService.flushPendingFlashcards();
+          if (user?.id) {
+            flashcardsService.syncRemoteDailyLogs(user.id);
+          }
+        }}
         onOpenMaterial={(mat) => handleOpenMaterial(mat)}
         initialShuffled={isShuffleEnabled}
       />
@@ -843,6 +863,119 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
           }
         }}
       />
+    );
+  }
+
+  if ((mode as any) === 'flashcards') {
+    return (
+      <div className="space-y-3 animate-in fade-in duration-200">
+        {/* Topo Compacto Estilo Anki */}
+        <AnkiCompactHeader
+          totalCards={allFlashcards.length}
+          newCardsCount={stats.newCards}
+          learningCardsCount={stats.learning}
+          dueTodayCount={stats.dueToday}
+          essentialCardsCount={essentialCardsCount}
+          filterEssentialOnly={filterEssentialOnly}
+          onToggleFilterEssentialOnly={() => setFilterEssentialOnly((prev) => !prev)}
+          isShuffleEnabled={isShuffleEnabled}
+          onToggleShuffle={() => {
+            const next = !isShuffleEnabled;
+            setIsShuffleEnabled(next);
+            try {
+              localStorage.setItem('bancoresidencia_flashcards_shuffle', String(next));
+            } catch {}
+          }}
+          onOpenAddCard={() => {
+            setActiveDeckIdForNewCard('deck-padrao');
+            setIsAddCardDrawerOpen(true);
+            if (drawerTemas.length > 0 && !newCardTema) {
+              setNewCardTema(drawerTemas[0].tema);
+              if (drawerTemas[0].focos.length > 0) {
+                setNewCardFoco(drawerTemas[0].focos[0].foco);
+              }
+            }
+          }}
+          lastSessionTitle={lastFlashcardSession?.deckTitle}
+          onContinueLastSession={lastFlashcardSession ? handleContinueLastSession : undefined}
+        />
+
+        {/* Seletor de Modo: Cartões do BR vs. Cartões Originais */}
+        <div className="flex items-center justify-between border-b border-zinc-200/80 dark:border-zinc-800/80 pb-2 pt-1">
+          <div className="flex items-center gap-1.5">
+            <button
+              type="button"
+              onClick={() => setFlashcardTab('br')}
+              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-2 ${
+                flashcardTab === 'br'
+                  ? 'bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 shadow-xs'
+                  : 'bg-zinc-100/80 dark:bg-zinc-800/60 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100'
+              }`}
+            >
+              <GraduationCap className="w-3.5 h-3.5" />
+              <span>Cartões do BR</span>
+              <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-zinc-200/70 dark:bg-zinc-700/70 font-mono">
+                {allFlashcards.filter((c) => !c.id.startsWith('fc-user-')).length}
+              </span>
+            </button>
+
+            <button
+              type="button"
+              onClick={() => setFlashcardTab('originais')}
+              className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer inline-flex items-center gap-2 ${
+                flashcardTab === 'originais'
+                  ? 'bg-zinc-900 text-white dark:bg-white dark:text-zinc-900 shadow-xs'
+                  : 'bg-zinc-100/80 dark:bg-zinc-800/60 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100'
+              }`}
+            >
+              <FolderKanban className="w-3.5 h-3.5" />
+              <span>Cartões Originais</span>
+              <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-zinc-200/70 dark:bg-zinc-700/70 font-mono">
+                {allFlashcards.filter((c) => c.id.startsWith('fc-user-')).length}
+              </span>
+            </button>
+          </div>
+        </div>
+
+        {/* Conteúdo da Aba Selecionada (Filtros e Baralhos de Estudo) */}
+        {flashcardTab === 'br' ? (
+          <AnkiDeckTree
+            allFlashcards={allFlashcards}
+            hierarchy={clinicalHierarchy}
+            filterEssentialOnly={filterEssentialOnly}
+            onStartStudy={(cards, title, overridePriorityOnly, allCardsMode) => {
+              handleStartStudy(cards, title, overridePriorityOnly, allCardsMode);
+            }}
+          />
+        ) : (
+          <OriginalCardsSection
+            onStartStudy={(cards, title, overridePriorityOnly, allCardsMode) => {
+              handleStartStudy(cards, title, overridePriorityOnly, allCardsMode);
+            }}
+            onOpenAddCardForDeck={(deckId: string) => {
+              setActiveDeckIdForNewCard(deckId);
+              setIsAddCardDrawerOpen(true);
+            }}
+          />
+        )}
+
+        {/* Heatmap Anki de Revisões Anuais (Posicionado ABAIXO dos filtros de baralhos) */}
+        <AnkiReviewHeatmap
+          userId={user?.id}
+          key={`heatmap-${heatmapRefreshKey}`}
+        />
+
+        {/* Drawer Central de Adicionar Flashcard */}
+        <AddFlashcardDrawer
+          isOpen={isAddCardDrawerOpen}
+          initialDeckId={activeDeckIdForNewCard}
+          onClose={() => setIsAddCardDrawerOpen(false)}
+          onCardSaved={() => {
+            setAllFlashcards(flashcardsService.getFlashcards({ userId: user?.id }));
+            setHeatmapRefreshKey((k) => k + 1);
+          }}
+        />
+      </div>
     );
   }
 

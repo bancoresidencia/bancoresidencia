@@ -12,6 +12,7 @@ import {
   auditQuestionsQuality,
   calibrateItemEmpirically,
   ValidatedAttempt,
+  CALIBRATING_THRESHOLD,
   UNRANKED_THRESHOLD,
   OFFICIAL_THRESHOLD
 } from './irtModel';
@@ -26,6 +27,7 @@ export {
   computeStudentIRTEvaluation,
   auditQuestionsQuality,
   calibrateItemEmpirically,
+  CALIBRATING_THRESHOLD,
   UNRANKED_THRESHOLD,
   OFFICIAL_THRESHOLD
 };

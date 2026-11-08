@@ -18,9 +18,14 @@ import {
   Activity,
   Layers,
   Filter,
-  CheckCircle2
+  CheckCircle2,
+  Trash2
 } from 'lucide-react';
 import { DailyScheduleSlot, CalendarViewMode, TimelineFilter } from './scheduleTypes';
+import { MonthlyStudyCalendarView } from './MonthlyStudyCalendarView';
+import { useStudyTimer, formatSecondsToShort } from '@/context/StudyTimerContext';
+import { StudySession } from '@/types/studyTimer';
+import { CORE_SPECIALTIES } from '@/services/taxonomySearchService';
 
 // Ícone Oficial do Google
 const GoogleIcon = ({ className = "w-3.5 h-3.5" }: { className?: string }) => (
@@ -89,6 +94,9 @@ export const GoogleCalendarScheduleView: React.FC<GoogleCalendarScheduleViewProp
   onClearUserScheduledTasks,
   isBatchSyncing = false
 }) => {
+  // Sessões de Estudo Cronometradas (Aprovado App Engine)
+  const { allSessions, deleteSession } = useStudyTimer();
+
   // Estado do Modo de Visualização do Google Agenda (Dia, Semana, Mês, Ano)
   const [viewMode, setViewMode] = useState<CalendarViewMode>('dia');
 
@@ -403,6 +411,9 @@ export const GoogleCalendarScheduleView: React.FC<GoogleCalendarScheduleViewProp
           filteredEvents={filteredEvents}
           DAY_HOURS={DAY_HOURS}
           nowDate={nowDate}
+          currentDate={currentDate}
+          allSessions={allSessions}
+          onDeleteSession={deleteSession}
           currentMinutesNow={currentMinutesNow}
           isSelectedDateToday={isSelectedDateToday}
           getEventStyle={getEventStyle}
@@ -434,12 +445,14 @@ export const GoogleCalendarScheduleView: React.FC<GoogleCalendarScheduleViewProp
       )}
 
       {viewMode === 'mes' && (
-        <MonthView
+        <MonthlyStudyCalendarView
+          allSessions={allSessions}
+          googleEvents={events}
+          primaryAccentHex={primaryAccentHex}
+          onDeleteSession={deleteSession}
           currentDate={currentDate}
-          nowDate={nowDate}
-          events={filteredEvents}
-          getEventStyle={getEventStyle}
-          onSelectDate={(d) => {
+          onDateChange={setCurrentDate}
+          onSelectDateToDayView={(d) => {
             setCurrentDate(d);
             setViewMode('dia');
           }}
@@ -466,6 +479,9 @@ interface DayViewProps {
   filteredEvents: DailyScheduleSlot[];
   DAY_HOURS: number[];
   nowDate: Date;
+  currentDate: Date;
+  allSessions?: StudySession[];
+  onDeleteSession?: (sessionId: string) => void;
   currentMinutesNow: number;
   isSelectedDateToday: boolean;
   getEventStyle: (slot: DailyScheduleSlot) => { cardBg: string; badgeBg: string; dotColor: string };
@@ -485,6 +501,9 @@ const DayView: React.FC<DayViewProps> = ({
   filteredEvents,
   DAY_HOURS,
   nowDate,
+  currentDate,
+  allSessions = [],
+  onDeleteSession,
   currentMinutesNow,
   isSelectedDateToday,
   getEventStyle,
@@ -499,6 +518,22 @@ const DayView: React.FC<DayViewProps> = ({
   onOpenAiCommand,
   onOpenAddManual
 }) => {
+  // Sessões Realizadas no Cronômetro para o Dia Selecionado
+  const selectedDateStr = useMemo(() => {
+    const y = currentDate.getFullYear();
+    const m = String(currentDate.getMonth() + 1).padStart(2, '0');
+    const d = String(currentDate.getDate()).padStart(2, '0');
+    return `${y}-${m}-${d}`;
+  }, [currentDate]);
+
+  const dayRealizedSessions = useMemo(() => {
+    return allSessions.filter((s) => s.startTime && s.startTime.startsWith(selectedDateStr));
+  }, [allSessions, selectedDateStr]);
+
+  const dayTotalRealizedSec = useMemo(() => {
+    return dayRealizedSessions.reduce((acc, s) => acc + (s.durationSeconds || 0), 0);
+  }, [dayRealizedSessions]);
+
   // Cálculo da posição da Linha de Transição do Horário (Current Time Indicator)
   // Grade vai de 06:00 (360m) a 24:00 (1440m)
   const startDayMinutes = 6 * 60; // 360
@@ -514,7 +549,8 @@ const DayView: React.FC<DayViewProps> = ({
     return `${h}:${m}`;
   }, [nowDate]);
 
-  if (filteredEvents.length === 0) {
+  // Se não houver eventos agendados mas houver sessões realizadas, exibe as sessões realizadas com banner
+  if (filteredEvents.length === 0 && dayRealizedSessions.length === 0) {
     return (
       <div className="p-8 rounded-2xl border border-dashed border-zinc-300 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/30 text-center space-y-3">
         <div className="w-12 h-12 rounded-2xl bg-blue-500/10 text-blue-500 flex items-center justify-center mx-auto shadow-2xs">
@@ -551,182 +587,304 @@ const DayView: React.FC<DayViewProps> = ({
   }
 
   return (
-    <div className="relative rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#0c1017] p-3 sm:p-5 overflow-hidden">
-      {/* Grade de Horários com a Linha de Transição */}
-      <div className="space-y-3">
-        {filteredEvents.map((slot, idx) => {
-          const style = getEventStyle(slot);
-          const isHospital = isHospitalOrDutyEvent(slot);
-          const isUserAdded = slot.source === 'plataforma';
-          const isCurrentActive =
-            isSelectedDateToday &&
-            currentMinutesNow >= slot.startMinutes &&
-            currentMinutesNow < slot.endMinutes;
-          const isPast = isSelectedDateToday && slot.endMinutes <= currentMinutesNow;
+    <div className="space-y-4">
+      {/* ── SEÇÃO: SESSÕES DE ESTUDO REALIZADAS NO CRONÔMETRO (ESTILO APROVADO APP) ── */}
+      {dayRealizedSessions.length > 0 && (
+        <div className="p-4 rounded-3xl bg-emerald-500/10 border border-emerald-500/25 space-y-2.5 animate-in fade-in duration-150">
+          <div className="flex items-center justify-between flex-wrap gap-2">
+            <div className="flex items-center gap-2">
+              <span className="p-1.5 rounded-xl bg-emerald-500/20 text-emerald-600 dark:text-emerald-400">
+                <CheckCircle2 className="w-4 h-4" />
+              </span>
+              <div>
+                <h4 className="text-xs sm:text-sm font-black text-emerald-800 dark:text-emerald-300">
+                  Estudo Realizado no Cronômetro
+                </h4>
+                <span className="text-[10px] text-emerald-600 dark:text-emerald-400 font-bold">
+                  {dayRealizedSessions.length} {dayRealizedSessions.length === 1 ? 'sessão realizada' : 'sessões realizadas'}
+                </span>
+              </div>
+            </div>
 
-          // Gap livre com relação ao bloco anterior
-          const prevSlot = idx > 0 ? filteredEvents[idx - 1] : null;
-          const gapMinutes = prevSlot ? slot.startMinutes - prevSlot.endMinutes : 0;
-          const showFreeGap = gapMinutes >= 30;
+            {/* Tempo Total de Estudo em Destaque (Sem a palavra 'líquido', tipografia ampliada) */}
+            <div className="flex items-baseline gap-1.5 shrink-0 px-3 py-1 rounded-2xl bg-emerald-500/15 border border-emerald-500/25">
+              <Clock className="w-5 h-5 text-emerald-600 dark:text-emerald-400 self-center" />
+              <span className="text-2xl sm:text-3xl font-black font-[var(--font-inter)] tabular-nums tracking-tight text-emerald-800 dark:text-emerald-200">
+                {formatSecondsToShort(dayTotalRealizedSec)}
+              </span>
+            </div>
+          </div>
 
-          return (
-            <React.Fragment key={slot.id || idx}>
-              {/* Gap Livre entre eventos */}
-              {showFreeGap && (
-                <div className="px-3.5 py-2 rounded-xl border border-dashed border-emerald-500/30 bg-emerald-500/5 text-emerald-700 dark:text-emerald-400 text-xs font-medium flex items-center justify-between gap-2">
-                  <div className="flex items-center gap-2">
-                    <span className="w-2 h-2 rounded-full bg-emerald-500" />
-                    <span>
-                      Janela Livre de <strong>{gapMinutes}m</strong> ({prevSlot?.endTime} às {slot.startTime})
-                    </span>
-                  </div>
-                  <span className="text-[10px] text-emerald-600 dark:text-emerald-400 italic hidden sm:inline">
-                    Ideal para Flashcards ou Descanso
-                  </span>
-                </div>
-              )}
+          {/* Listagem das Sessões uma abaixo da outra em cards menores e compactos */}
+          <div className="flex flex-col gap-1.5 pt-1">
+            {dayRealizedSessions.map((sess) => {
+              const specColor =
+                CORE_SPECIALTIES.find(
+                  (c) => c.name.toLowerCase() === (sess.taxonomy.especialidade || '').toLowerCase()
+                )?.color || '#10b981';
 
-              {/* Card do Bloco estilo Google Agenda */}
-              <div
-                className={`p-3.5 sm:p-4 rounded-2xl border transition-all flex items-center justify-between gap-3 ${style.cardBg} ${isCurrentActive
-                    ? 'ring-2 ring-blue-500/50 shadow-md'
-                    : isPast
-                      ? 'opacity-70'
-                      : 'shadow-2xs'
-                  }`}
-              >
-                <div className="flex items-center gap-3.5 min-w-0">
-                  <div className="w-10 h-10 rounded-xl bg-white dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700 flex flex-col items-center justify-center shrink-0 shadow-2xs">
-                    <span className="font-mono text-[10px] font-bold text-zinc-500">
-                      {slot.startTime.split(':')[0]}h
-                    </span>
-                    <span className="w-1.5 h-1.5 rounded-full mt-0.5" style={{ backgroundColor: primaryAccentHex }} />
-                  </div>
+              const topicTitle =
+                sess.taxonomy.subfoco ||
+                sess.taxonomy.foco ||
+                sess.taxonomy.tema ||
+                sess.taxonomy.especialidade ||
+                'Estudo Geral';
 
-                  <div className="min-w-0 space-y-1">
-                    <div className="flex items-center gap-2 flex-wrap">
-                      <span className="font-mono text-xs font-bold text-zinc-800 dark:text-zinc-200">
-                        {slot.startTime} – {slot.endTime}
+              let startFormatted = '';
+              let endFormatted = '';
+              try {
+                const sDate = new Date(sess.startTime);
+                const eDate = new Date(sess.endTime);
+                startFormatted = sDate.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+                endFormatted = eDate.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+              } catch {}
+
+              return (
+                <div
+                  key={sess.id}
+                  className="p-2 sm:py-2 sm:px-3 rounded-xl bg-white dark:bg-[#121215] border border-emerald-500/20 shadow-2xs hover:border-emerald-500/40 transition-all flex items-center justify-between gap-2.5 relative overflow-hidden"
+                >
+                  <div className="absolute left-0 top-0 bottom-0 w-1" style={{ backgroundColor: specColor }} />
+
+                  <div className="min-w-0 pl-1.5 flex items-center gap-2 flex-wrap sm:flex-nowrap">
+                    <div className="flex items-center gap-1.5 min-w-0">
+                      <span className="text-[11px] sm:text-xs font-bold text-zinc-900 dark:text-zinc-100 truncate">
+                        {topicTitle}
                       </span>
-
-                      {/* Badge "AGORA" se o bloco estiver em andamento */}
-                      {isCurrentActive && (
-                        <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30">
-                          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                          Agora ({slot.endMinutes - currentMinutesNow}m restantes)
-                        </span>
-                      )}
-
-                      {/* Badges de Categoria e Origem */}
-                      <span className={`px-2 py-0.5 rounded text-[10px] font-bold border ${style.badgeBg}`}>
-                        {isHospital
-                          ? 'Plantão / Internato'
-                          : slot.category === 'flashcard'
-                            ? 'Flashcards FSRS'
-                            : slot.category === 'simulado'
-                              ? 'Simulado Blitz'
-                              : slot.category === 'revisao'
-                                ? 'Caderno de Erros'
-                                : 'Treino TRI'}
+                      <span className="px-1.5 py-0.2 rounded text-[8px] sm:text-[9px] font-bold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 shrink-0">
+                        Realizado
                       </span>
+                    </div>
 
-                      {slot.source === 'google' && (
-                        <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-bold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
-                          <Check className="w-2.5 h-2.5" />
-                          Google Agenda
-                        </span>
+                    <div className="text-[10px] text-zinc-400 flex items-center gap-2 font-mono shrink-0">
+                      {startFormatted && (
+                        <span>{startFormatted} – {endFormatted}</span>
                       )}
-
-                      {slot.isAiSuggested && (
-                        <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-bold bg-purple-500/10 text-purple-600 dark:text-purple-400 border border-purple-500/20">
-                          <Sparkles className="w-2.5 h-2.5" />
-                          Sugerido por IA
+                      {sess.questionsCount && sess.questionsCount > 0 ? (
+                        <span className="text-blue-600 dark:text-blue-400 font-semibold font-sans">
+                          • {sess.questionsCount}Q ({sess.correctCount || 0} acertos)
+                        </span>
+                      ) : null}
+                      {sess.notes && (
+                        <span className="text-zinc-500 italic truncate max-w-[140px] hidden md:inline">
+                          • &ldquo;{sess.notes}&rdquo;
                         </span>
                       )}
                     </div>
+                  </div>
 
-                    <h5 className="text-sm font-bold text-zinc-900 dark:text-zinc-100 truncate">
-                      {slot.title}
-                    </h5>
-
-                    {(slot.location || cleanEventDescription(slot.description)) && (
-                      <p className="text-xs text-zinc-500 dark:text-zinc-400 truncate">
-                        {slot.location ? `${slot.location} • ` : ''}
-                        {cleanEventDescription(slot.description)}
-                      </p>
-                    )}
-
-                    {slot.rationale && (
-                      <p className="text-[11px] text-blue-600 dark:text-blue-300 italic">
-                        💡 {slot.rationale}
-                      </p>
+                  <div className="flex items-center gap-1.5 shrink-0">
+                    <span className="font-[var(--font-inter)] tabular-nums font-black text-[11px] sm:text-xs text-emerald-700 dark:text-emerald-300 bg-emerald-500/10 px-2 py-0.5 rounded-md">
+                      {sess.durationFormatted}
+                    </span>
+                    {onDeleteSession && (
+                      <button
+                        type="button"
+                        onClick={() => onDeleteSession(sess.id)}
+                        className="p-1 text-zinc-400 hover:text-rose-500 hover:bg-rose-500/10 rounded-md transition-colors cursor-pointer"
+                        title="Excluir registro desta sessão"
+                      >
+                        <Trash2 className="w-3.5 h-3.5" />
+                      </button>
                     )}
                   </div>
                 </div>
-
-                {/* Ações do Bloco */}
-                <div className="shrink-0 flex items-center gap-1.5">
-                  {slot.action && onAction && (
-                    <button
-                      type="button"
-                      onClick={() => onAction(slot.action!, slot)}
-                      className="px-3 py-1.5 rounded-xl text-white text-xs font-bold cursor-pointer transition-opacity hover:opacity-95 shadow-2xs"
-                      style={{ backgroundColor: primaryAccentHex }}
-                    >
-                      {slot.action === 'treinar' && 'Treinar'}
-                      {slot.action === 'flashcards' && 'Revisar FSRS'}
-                      {slot.action === 'caderno_erros' && 'Abrir Erros'}
-                      {slot.action === 'simulado' && 'Simulado'}
-                    </button>
-                  )}
-
-                  {slot.source === 'plataforma' && onExportSlotToGoogle && (
-                    exportedSlotIds[slot.id] ? (
-                      <span className="inline-flex items-center gap-1 px-2 py-1 rounded-lg border border-emerald-500/30 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 text-[10px] font-bold">
-                        <CheckCircle2 className="w-3 h-3 text-emerald-500" />
-                        <span>Salvo</span>
-                      </span>
-                    ) : (
-                      <button
-                        type="button"
-                        onClick={() => onExportSlotToGoogle(slot)}
-                        disabled={exportingSlotId === slot.id}
-                        className="px-2 py-1.5 rounded-lg border border-blue-500/25 bg-blue-50/50 dark:bg-blue-950/30 text-blue-600 dark:text-blue-400 hover:bg-blue-100/70 text-[10px] font-bold flex items-center gap-1 transition-all cursor-pointer disabled:opacity-50"
-                        title="Salvar no Google Agenda"
-                      >
-                        <GoogleIcon className="w-3 h-3" />
-                        <span className="hidden sm:inline">+ Google</span>
-                      </button>
-                    )
-                  )}
-
-                  {isUserAdded && (
-                    <button
-                      type="button"
-                      onClick={() => onRemoveTask(slot.id)}
-                      className="p-1.5 rounded-lg text-zinc-400 hover:text-rose-500 hover:bg-rose-500/10 transition-colors cursor-pointer"
-                      title="Remover do cronograma"
-                    >
-                      <X className="w-3.5 h-3.5" />
-                    </button>
-                  )}
-                </div>
-              </div>
-            </React.Fragment>
-          );
-        })}
-      </div>
-
-      {/* ── LINHA QUE MOSTRA A TRANSIÇÃO DO HORÁRIO (GOOGLE CALENDAR CURRENT TIME INDICATOR) ── */}
-      {isSelectedDateToday && isCurrentTimeInDayRange && (
-        <div className="mt-4 pt-3 border-t border-zinc-200 dark:border-zinc-800 flex items-center gap-2 text-xs">
-          <div className="flex items-center gap-1 text-red-500 font-mono font-bold">
-            <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-ping" />
-            <span className="w-2.5 h-2.5 rounded-full bg-red-500 -ml-3.5" />
-            <span>Linha de Transição Atual: {formattedCurrentTime}</span>
+              );
+            })}
           </div>
-          <div className="h-[2px] bg-red-500 flex-1 rounded-full shadow-2xs" />
-          <span className="text-[10px] text-zinc-400 font-mono">Google Calendar Live Sync</span>
+        </div>
+      )}
+
+      {/* Grade de Horários com a Linha de Transição */}
+      {filteredEvents.length > 0 ? (
+        <div className="relative rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#0c1017] p-3 sm:p-5 overflow-hidden">
+          <div className="space-y-3">
+            {filteredEvents.map((slot, idx) => {
+              const style = getEventStyle(slot);
+              const isHospital = isHospitalOrDutyEvent(slot);
+              const isUserAdded = slot.source === 'plataforma';
+              const isCurrentActive =
+                isSelectedDateToday &&
+                currentMinutesNow >= slot.startMinutes &&
+                currentMinutesNow < slot.endMinutes;
+              const isPast = isSelectedDateToday && slot.endMinutes <= currentMinutesNow;
+
+              // Gap livre com relação ao bloco anterior
+              const prevSlot = idx > 0 ? filteredEvents[idx - 1] : null;
+              const gapMinutes = prevSlot ? slot.startMinutes - prevSlot.endMinutes : 0;
+              const showFreeGap = gapMinutes >= 30;
+
+              return (
+                <React.Fragment key={slot.id || idx}>
+                  {/* Gap Livre entre eventos */}
+                  {showFreeGap && (
+                    <div className="px-3.5 py-2 rounded-xl border border-dashed border-emerald-500/30 bg-emerald-500/5 text-emerald-700 dark:text-emerald-400 text-xs font-medium flex items-center justify-between gap-2">
+                      <div className="flex items-center gap-2">
+                        <span className="w-2 h-2 rounded-full bg-emerald-500" />
+                        <span>
+                          Janela Livre de <strong>{gapMinutes}m</strong> ({prevSlot?.endTime} às {slot.startTime})
+                        </span>
+                      </div>
+                      <span className="text-[10px] text-emerald-600 dark:text-emerald-400 italic hidden sm:inline">
+                        Ideal para Flashcards ou Descanso
+                      </span>
+                    </div>
+                  )}
+
+                  {/* Card do Bloco estilo Google Agenda */}
+                  <div
+                    className={`p-3.5 sm:p-4 rounded-2xl border transition-all flex items-center justify-between gap-3 ${style.cardBg} ${isCurrentActive
+                        ? 'ring-2 ring-blue-500/50 shadow-md'
+                        : isPast
+                          ? 'opacity-70'
+                          : 'shadow-2xs'
+                      }`}
+                  >
+                    <div className="flex items-center gap-3.5 min-w-0">
+                      <div className="w-10 h-10 rounded-xl bg-white dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700 flex flex-col items-center justify-center shrink-0 shadow-2xs">
+                        <span className="font-mono text-[10px] font-bold text-zinc-500">
+                          {slot.startTime.split(':')[0]}h
+                        </span>
+                        <span className="w-1.5 h-1.5 rounded-full mt-0.5" style={{ backgroundColor: primaryAccentHex }} />
+                      </div>
+
+                      <div className="min-w-0 space-y-1">
+                        <div className="flex items-center gap-2 flex-wrap">
+                          <span className="font-mono text-xs font-bold text-zinc-800 dark:text-zinc-200">
+                            {slot.startTime} – {slot.endTime}
+                          </span>
+
+                          {/* Badge "AGORA" se o bloco estiver em andamento */}
+                          {isCurrentActive && (
+                            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30">
+                              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                              Agora ({slot.endMinutes - currentMinutesNow}m restantes)
+                            </span>
+                          )}
+
+                          {/* Badges de Categoria e Origem */}
+                          <span className={`px-2 py-0.5 rounded text-[10px] font-bold border ${style.badgeBg}`}>
+                            {isHospital
+                              ? 'Plantão / Internato'
+                              : slot.category === 'flashcard'
+                                ? 'Flashcards FSRS'
+                                : slot.category === 'simulado'
+                                  ? 'Simulado Blitz'
+                                  : slot.category === 'revisao'
+                                    ? 'Caderno de Erros'
+                                    : 'Treino TRI'}
+                          </span>
+
+                          {slot.source === 'google' && (
+                            <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-bold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
+                              <Check className="w-2.5 h-2.5" />
+                              Google Agenda
+                            </span>
+                          )}
+
+                          {slot.isAiSuggested && (
+                            <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-bold bg-purple-500/10 text-purple-600 dark:text-purple-400 border border-purple-500/20">
+                              <Sparkles className="w-2.5 h-2.5" />
+                              Sugerido por IA
+                            </span>
+                          )}
+                        </div>
+
+                        <h5 className="text-sm font-bold text-zinc-900 dark:text-zinc-100 truncate">
+                          {slot.title}
+                        </h5>
+
+                        {(slot.location || cleanEventDescription(slot.description)) && (
+                          <p className="text-xs text-zinc-500 dark:text-zinc-400 truncate">
+                            {slot.location ? `${slot.location} • ` : ''}
+                            {cleanEventDescription(slot.description)}
+                          </p>
+                        )}
+
+                        {slot.rationale && (
+                          <p className="text-[11px] text-blue-600 dark:text-blue-300 italic">
+                            💡 {slot.rationale}
+                          </p>
+                        )}
+                      </div>
+                    </div>
+
+                    {/* Ações do Bloco */}
+                    <div className="shrink-0 flex items-center gap-1.5">
+                      {slot.action && onAction && (
+                        <button
+                          type="button"
+                          onClick={() => onAction(slot.action!, slot)}
+                          className="px-3 py-1.5 rounded-xl text-white text-xs font-bold cursor-pointer transition-opacity hover:opacity-95 shadow-2xs"
+                          style={{ backgroundColor: primaryAccentHex }}
+                        >
+                          {slot.action === 'treinar' && 'Treinar'}
+                          {slot.action === 'flashcards' && 'Revisar FSRS'}
+                          {slot.action === 'caderno_erros' && 'Abrir Erros'}
+                          {slot.action === 'simulado' && 'Simulado'}
+                        </button>
+                      )}
+
+                      {slot.source === 'plataforma' && onExportSlotToGoogle && (
+                        exportedSlotIds[slot.id] ? (
+                          <span className="inline-flex items-center gap-1 px-2 py-1 rounded-lg border border-emerald-500/30 bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 text-[10px] font-bold">
+                            <CheckCircle2 className="w-3 h-3 text-emerald-500" />
+                            <span>Salvo</span>
+                          </span>
+                        ) : (
+                          <button
+                            type="button"
+                            onClick={() => onExportSlotToGoogle(slot)}
+                            disabled={exportingSlotId === slot.id}
+                            className="px-2 py-1.5 rounded-lg border border-blue-500/25 bg-blue-50/50 dark:bg-blue-950/30 text-blue-600 dark:text-blue-400 hover:bg-blue-100/70 text-[10px] font-bold flex items-center gap-1 transition-all cursor-pointer disabled:opacity-50"
+                            title="Salvar no Google Agenda"
+                          >
+                            <GoogleIcon className="w-3 h-3" />
+                            <span className="hidden sm:inline">+ Google</span>
+                          </button>
+                        )
+                      )}
+
+                      {isUserAdded && (
+                        <button
+                          type="button"
+                          onClick={() => onRemoveTask(slot.id)}
+                          className="p-1.5 rounded-lg text-zinc-400 hover:text-rose-500 hover:bg-rose-500/10 transition-colors cursor-pointer"
+                          title="Remover do cronograma"
+                        >
+                          <X className="w-3.5 h-3.5" />
+                        </button>
+                      )}
+                    </div>
+                  </div>
+                </React.Fragment>
+              );
+            })}
+          </div>
+
+          {/* ── LINHA QUE MOSTRA A TRANSIÇÃO DO HORÁRIO (GOOGLE CALENDAR CURRENT TIME INDICATOR) ── */}
+          {isSelectedDateToday && isCurrentTimeInDayRange && (
+            <div className="mt-4 pt-3 border-t border-zinc-200 dark:border-zinc-800 flex items-center gap-2 text-xs">
+              <div className="flex items-center gap-1 text-red-500 font-mono font-bold">
+                <span className="w-2.5 h-2.5 rounded-full bg-red-500 animate-ping" />
+                <span className="w-2.5 h-2.5 rounded-full bg-red-500 -ml-3.5" />
+                <span>Linha de Transição Atual: {formattedCurrentTime}</span>
+              </div>
+              <div className="h-[2px] bg-red-500 flex-1 rounded-full shadow-2xs" />
+              <span className="text-[10px] text-zinc-400 font-mono">Google Calendar Live Sync</span>
+            </div>
+          )}
+        </div>
+      ) : (
+        <div className="p-4 rounded-2xl border border-dashed border-zinc-200 dark:border-zinc-800 text-center text-xs text-zinc-400 flex items-center justify-between gap-2">
+          <span>Nenhum outro compromisso ou plantão agendado para este dia.</span>
+          <button
+            type="button"
+            onClick={onOpenAddManual}
+            className="px-3 py-1 rounded-lg border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-800 text-xs font-bold text-zinc-700 dark:text-zinc-300 transition-colors cursor-pointer"
+          >
+            + Adicionar Bloco
+          </button>
         </div>
       )}
     </div>
@@ -839,125 +997,6 @@ const WeekView: React.FC<WeekViewProps> = ({
                     </div>
                   );
                 })
-              )}
-            </div>
-          );
-        })}
-      </div>
-    </div>
-  );
-};
-
-// ── COMPONENTE: VISUALIZAÇÃO MÊS ESTILO GOOGLE CALENDAR ──
-interface MonthViewProps {
-  currentDate: Date;
-  nowDate: Date;
-  events: DailyScheduleSlot[];
-  getEventStyle: (slot: DailyScheduleSlot) => { cardBg: string; badgeBg: string; dotColor: string };
-  onSelectDate: (d: Date) => void;
-}
-
-const MonthView: React.FC<MonthViewProps> = ({
-  currentDate,
-  nowDate,
-  events,
-  getEventStyle,
-  onSelectDate
-}) => {
-  // Gera os 35 a 42 dias da matriz mensal
-  const monthCells = useMemo(() => {
-    const year = currentDate.getFullYear();
-    const month = currentDate.getMonth();
-
-    const firstDay = new Date(year, month, 1);
-    const lastDay = new Date(year, month + 1, 0);
-
-    const cells: Array<{ date: Date; isCurrentMonth: boolean }> = [];
-
-    // Dias do mês anterior
-    const firstDayOfWeek = firstDay.getDay(); // 0 = Domingo
-    for (let i = firstDayOfWeek - 1; i >= 0; i--) {
-      const d = new Date(year, month, -i);
-      cells.push({ date: d, isCurrentMonth: false });
-    }
-
-    // Dias do mês atual
-    for (let d = 1; d <= lastDay.getDate(); d++) {
-      cells.push({ date: new Date(year, month, d), isCurrentMonth: true });
-    }
-
-    // Dias do mês seguinte para completar matriz de 7 colunas
-    const remaining = 7 - (cells.length % 7);
-    if (remaining < 7) {
-      for (let i = 1; i <= remaining; i++) {
-        cells.push({ date: new Date(year, month + 1, i), isCurrentMonth: false });
-      }
-    }
-
-    return cells;
-  }, [currentDate]);
-
-  return (
-    <div className="rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#0c1017] p-3 sm:p-4 overflow-hidden">
-      {/* Cabeçalho dos Dias da Semana (Dom a Sáb) */}
-      <div className="grid grid-cols-7 gap-1 border-b border-zinc-200 dark:border-zinc-800 pb-2 text-center">
-        {WEEKDAY_NAMES_SHORT.map((w, i) => (
-          <span key={i} className="text-[10px] font-bold uppercase tracking-wider text-zinc-400">
-            {w}
-          </span>
-        ))}
-      </div>
-
-      {/* Matriz Mensal */}
-      <div className="grid grid-cols-7 gap-1 pt-2">
-        {monthCells.map((cell, idx) => {
-          const isToday =
-            cell.date.getDate() === nowDate.getDate() &&
-            cell.date.getMonth() === nowDate.getMonth() &&
-            cell.date.getFullYear() === nowDate.getFullYear();
-
-          const hasEvents = isToday && events.length > 0;
-
-          return (
-            <div
-              key={idx}
-              onClick={() => onSelectDate(cell.date)}
-              className={`min-h-[64px] sm:min-h-[76px] p-1.5 rounded-xl border transition-all cursor-pointer flex flex-col justify-between ${isToday
-                  ? 'border-blue-500/50 bg-blue-50/20 dark:bg-blue-950/20 ring-1 ring-blue-500/20'
-                  : cell.isCurrentMonth
-                    ? 'border-zinc-200/70 dark:border-zinc-800/80 bg-zinc-50/30 dark:bg-zinc-900/20 hover:border-zinc-300 dark:hover:border-zinc-700'
-                    : 'border-transparent opacity-40 bg-transparent'
-                }`}
-            >
-              <div className="flex items-center justify-between">
-                <span
-                  className={`text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center ${isToday ? 'bg-blue-600 text-white' : 'text-zinc-700 dark:text-zinc-300'
-                    }`}
-                >
-                  {cell.date.getDate()}
-                </span>
-                {hasEvents && (
-                  <span className="w-1.5 h-1.5 rounded-full bg-blue-600 dark:bg-blue-400" />
-                )}
-              </div>
-
-              {/* Eventos resumidos no dia de hoje */}
-              {hasEvents && (
-                <div className="space-y-0.5 mt-1">
-                  {events.slice(0, 2).map((s, si) => (
-                    <div
-                      key={si}
-                      className="text-[9px] font-bold px-1 py-0.2 rounded bg-blue-500/10 text-blue-600 dark:text-blue-400 truncate"
-                    >
-                      {s.startTime} {s.title}
-                    </div>
-                  ))}
-                  {events.length > 2 && (
-                    <span className="text-[8px] text-zinc-400 font-bold block">
-                      +{events.length - 2} mais
-                    </span>
-                  )}
-                </div>
               )}
             </div>
           );

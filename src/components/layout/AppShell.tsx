@@ -21,6 +21,7 @@ import {
 } from 'lucide-react';
 import { Sidebar } from '@/components/Sidebar';
 import { GlobalSearchBar } from '@/components/GlobalSearchBar';
+import { HeaderStudyTimer } from '@/components/HeaderStudyTimer';
 import { ThemeSelector } from '@/components/ThemeSelector';
 import dynamic from 'next/dynamic';
 
@@ -170,6 +171,9 @@ export const AppShell: React.FC<AppShellProps> = ({ children }) => {
                 {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
               </button>
             </div>
+
+            {/* Cronômetro de Estudo (Fixo no cabeçalho ao lado esquerdo da barra de pesquisa) */}
+            <HeaderStudyTimer />
 
             {/* Barra de Pesquisa Global */}
             <GlobalSearchBar

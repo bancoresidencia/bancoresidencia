@@ -770,7 +770,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
     if (hasActiveFilters) {
       if (isRevalidaMode) {
-        if (typeof totalFiltered === 'number' && totalFiltered !== 132965) {
+        if (typeof totalFiltered === 'number' && totalFiltered !== 121635) {
           return totalFiltered;
         }
         if (facetedCounts) {
@@ -816,7 +816,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       }
 
       // 2. Se há resposta real da API com contagem cruzada válida
-      if (typeof totalFiltered === 'number' && totalFiltered !== 132965) {
+      if (typeof totalFiltered === 'number' && totalFiltered !== 121635) {
         return totalFiltered;
       }
 
@@ -838,7 +838,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       }
       return typeof totalFiltered === 'number' ? totalFiltered : 0;
     }
-    return totalAvailable || 132965;
+    return totalAvailable || 121635;
   }, [
     totalAvailable,
     totalFiltered,

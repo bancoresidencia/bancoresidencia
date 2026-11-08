@@ -84,7 +84,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
     aleatorizar: false
   });
   const [filterError, setFilterError] = useState<string | null>(null);
-  const [dynamicFilteredCount, setDynamicFilteredCount] = useState<number>(132965);
+  const [dynamicFilteredCount, setDynamicFilteredCount] = useState<number>(121635);
 
   useEffect(() => {
     if (!isCreatingList) return;
@@ -575,7 +575,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
                   ultimos5Anos: false
                 })
               }
-              totalAvailable={132965}
+              totalAvailable={121635}
               totalFiltered={dynamicFilteredCount}
               onCreateListFromFilter={() => {}}
               embedded={true}

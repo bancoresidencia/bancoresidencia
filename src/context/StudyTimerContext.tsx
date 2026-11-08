@@ -1,0 +1,415 @@
+'use client';
+
+import React, {
+  createContext,
+  useContext,
+  useState,
+  useEffect,
+  useRef,
+  useCallback,
+  useMemo
+} from 'react';
+import {
+  TimerStatus,
+  StudyType,
+  SelectedTaxonomy,
+  StudySession,
+  StudyTimerContextType
+} from '@/types/studyTimer';
+import { useAuth } from '@/context/AuthContext';
+import { DailyScheduleSlot } from '@/components/dashboard/scheduleTypes';
+
+const TIMER_STORAGE_KEY = 'bancoresidencia_study_timer_state';
+const SESSIONS_STORAGE_KEY = 'bancoresidencia_study_sessions';
+
+export function formatSecondsToHms(totalSec: number): string {
+  if (isNaN(totalSec) || totalSec < 0) return '00:00:00';
+  const h = Math.floor(totalSec / 3600);
+  const m = Math.floor((totalSec % 3600) / 60);
+  const s = totalSec % 60;
+  return `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+}
+
+export function formatSecondsToShort(totalSec: number): string {
+  if (isNaN(totalSec) || totalSec < 0) return '0s';
+  const h = Math.floor(totalSec / 3600);
+  const m = Math.floor((totalSec % 3600) / 60);
+  const s = totalSec % 60;
+
+  if (h > 0) return `${h}h ${m}m ${s}s`;
+  if (m > 0) return `${m}m ${s}s`;
+  return `${s}s`;
+}
+
+interface StoredTimerState {
+  status: 'running' | 'paused';
+  accumulatedSeconds: number;
+  runningSince: number | null; // timestamp ms
+  sessionStartTime: string;
+  selectedTaxonomy: SelectedTaxonomy;
+}
+
+const StudyTimerContext = createContext<StudyTimerContextType | undefined>(undefined);
+
+export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  const { user } = useAuth();
+
+  // Estados fundamentais
+  const [status, setStatus] = useState<TimerStatus>('idle');
+  const [elapsedSeconds, setElapsedSeconds] = useState<number>(0);
+  const [selectedTaxonomy, setSelectedTaxonomy] = useState<SelectedTaxonomy>({});
+  const [sessionStartTime, setSessionStartTime] = useState<string>('');
+
+  // Refs de controle temporal preciso (resiliente contra throttling de background)
+  const accumulatedSecondsRef = useRef<number>(0);
+  const runningSinceRef = useRef<number | null>(null);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Lista de sessões salvas
+  const [savedSessions, setSavedSessions] = useState<StudySession[]>([]);
+
+  // Carrega sessões anteriores do localStorage
+  useEffect(() => {
+    try {
+      const storedSessions = localStorage.getItem(SESSIONS_STORAGE_KEY);
+      if (storedSessions) {
+        setSavedSessions(JSON.parse(storedSessions));
+      }
+    } catch (err) {
+      console.warn('Erro ao carregar sessões de estudo do localStorage:', err);
+    }
+  }, []);
+
+  // Recupera estado salvo do timer ao montar (resiliência a F5)
+  useEffect(() => {
+    try {
+      const raw = localStorage.getItem(TIMER_STORAGE_KEY);
+      if (!raw) return;
+
+      const saved: StoredTimerState = JSON.parse(raw);
+      if (!saved) return;
+
+      setSelectedTaxonomy(saved.selectedTaxonomy || {});
+      setSessionStartTime(saved.sessionStartTime || new Date().toISOString());
+
+      if (saved.status === 'running' && saved.runningSince) {
+        const deltaSec = Math.max(0, Math.floor((Date.now() - saved.runningSince) / 1000));
+        const total = (saved.accumulatedSeconds || 0) + deltaSec;
+        accumulatedSecondsRef.current = total;
+        runningSinceRef.current = Date.now();
+        setElapsedSeconds(total);
+        setStatus('running');
+      } else if (saved.status === 'paused') {
+        accumulatedSecondsRef.current = saved.accumulatedSeconds || 0;
+        runningSinceRef.current = null;
+        setElapsedSeconds(saved.accumulatedSeconds || 0);
+        setStatus('paused');
+      }
+    } catch (err) {
+      console.warn('Erro ao restaurar estado do cronômetro:', err);
+    }
+  }, []);
+
+  // Tique-taque contínuo do cronômetro
+  useEffect(() => {
+    if (status === 'running') {
+      if (intervalRef.current) clearInterval(intervalRef.current);
+
+      intervalRef.current = setInterval(() => {
+        if (runningSinceRef.current) {
+          const deltaSec = Math.max(0, Math.floor((Date.now() - runningSinceRef.current) / 1000));
+          const currentTotal = accumulatedSecondsRef.current + deltaSec;
+          setElapsedSeconds(currentTotal);
+        }
+      }, 500);
+    } else {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null;
+      }
+    }
+
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null;
+      }
+    };
+  }, [status]);
+
+  // Persistência contínua do estado no localStorage
+  useEffect(() => {
+    if (status === 'running' || status === 'paused') {
+      const stateToSave: StoredTimerState = {
+        status: status === 'running' ? 'running' : 'paused',
+        accumulatedSeconds: accumulatedSecondsRef.current,
+        runningSince: runningSinceRef.current,
+        sessionStartTime: sessionStartTime || new Date().toISOString(),
+        selectedTaxonomy
+      };
+      try {
+        localStorage.setItem(TIMER_STORAGE_KEY, JSON.stringify(stateToSave));
+      } catch {}
+    } else if (status === 'idle') {
+      try {
+        localStorage.removeItem(TIMER_STORAGE_KEY);
+      } catch {}
+    }
+  }, [status, selectedTaxonomy, sessionStartTime]);
+
+  // Sincronização em tempo real do título da aba (document.title - padrão Aprovado)
+  useEffect(() => {
+    const originalTitle = 'Banco Residência — Questões & Residência Médica';
+    const activeLabel =
+      selectedTaxonomy.subfoco ||
+      selectedTaxonomy.foco ||
+      selectedTaxonomy.tema ||
+      selectedTaxonomy.especialidade ||
+      'Estudo';
+
+    if (status === 'running') {
+      document.title = `${formatSecondsToShort(elapsedSeconds)} - ${activeLabel} | Banco Residência`;
+    } else if (status === 'paused') {
+      document.title = `❙❙ ${formatSecondsToShort(elapsedSeconds)} - ${activeLabel} | Banco Residência`;
+    } else {
+      document.title = originalTitle;
+    }
+
+    return () => {
+      document.title = originalTitle;
+    };
+  }, [status, elapsedSeconds, selectedTaxonomy]);
+
+  // Iniciar Cronômetro (sempre do zero a cada sessão)
+  const startTimer = useCallback((taxonomyOverride?: SelectedTaxonomy) => {
+    const nowIso = new Date().toISOString();
+    accumulatedSecondsRef.current = 0;
+    runningSinceRef.current = Date.now();
+
+    setElapsedSeconds(0);
+    setSessionStartTime(nowIso);
+
+    if (taxonomyOverride) {
+      setSelectedTaxonomy(taxonomyOverride);
+    }
+    setStatus('running');
+  }, []);
+
+  // Pausar Cronômetro (congela tempo líquido)
+  const pauseTimer = useCallback(() => {
+    if (runningSinceRef.current) {
+      const deltaSec = Math.max(0, Math.floor((Date.now() - runningSinceRef.current) / 1000));
+      accumulatedSecondsRef.current += deltaSec;
+      runningSinceRef.current = null;
+    }
+    setElapsedSeconds(accumulatedSecondsRef.current);
+    setStatus('paused');
+  }, []);
+
+  // Continuar / Retomar Cronômetro
+  const resumeTimer = useCallback(() => {
+    runningSinceRef.current = Date.now();
+    setStatus('running');
+  }, []);
+
+  // Cancelar e resetar para o zero sem salvar
+  const cancelTimer = useCallback(() => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+      intervalRef.current = null;
+    }
+    accumulatedSecondsRef.current = 0;
+    runningSinceRef.current = null;
+    setElapsedSeconds(0);
+    setStatus('idle');
+    try {
+      localStorage.removeItem(TIMER_STORAGE_KEY);
+    } catch {}
+  }, []);
+
+  // Modal de Salvar
+  const openSaveModal = useCallback(() => {
+    // Garante pausa no tempo antes de abrir
+    if (status === 'running') {
+      if (runningSinceRef.current) {
+        const deltaSec = Math.max(0, Math.floor((Date.now() - runningSinceRef.current) / 1000));
+        accumulatedSecondsRef.current += deltaSec;
+        runningSinceRef.current = null;
+      }
+      setElapsedSeconds(accumulatedSecondsRef.current);
+    }
+    setStatus('modal_saving');
+  }, [status]);
+
+  const closeSaveModal = useCallback(() => {
+    // Retorna ao estado pausado caso o modal seja cancelado/fechado sem salvar
+    setStatus('paused');
+  }, []);
+
+  // Salvar sessão e integrar com Agenda / Storage
+  const saveSession = useCallback(
+    async (data: {
+      studyType?: StudyType;
+      questionsCount?: number;
+      correctCount?: number;
+      notes?: string;
+    }): Promise<StudySession> => {
+      const endTimeIso = new Date().toISOString();
+      const finalDuration = accumulatedSecondsRef.current;
+      const formatted = formatSecondsToHms(finalDuration);
+
+      const topicTitle =
+        selectedTaxonomy.subfoco ||
+        selectedTaxonomy.foco ||
+        selectedTaxonomy.tema ||
+        selectedTaxonomy.especialidade ||
+        'Estudo Livre';
+
+      const newSession: StudySession = {
+        id: `sess_${Date.now()}_${Math.random().toString(36).substring(2, 7)}`,
+        userId: user?.id,
+        startTime: sessionStartTime || endTimeIso,
+        endTime: endTimeIso,
+        durationSeconds: finalDuration,
+        durationFormatted: formatted,
+        taxonomy: selectedTaxonomy,
+        studyType: data.studyType || 'questoes',
+        questionsCount: data.questionsCount || 0,
+        correctCount: data.correctCount || 0,
+        notes: data.notes || '',
+        createdAt: endTimeIso
+      };
+
+      // 1. Atualiza lista de sessões no estado e localStorage
+      const updatedSessions = [newSession, ...savedSessions];
+      setSavedSessions(updatedSessions);
+      try {
+        localStorage.setItem(SESSIONS_STORAGE_KEY, JSON.stringify(updatedSessions));
+      } catch (err) {
+        console.warn('Erro ao salvar sessão no localStorage:', err);
+      }
+
+      // 2. Integra diretamente na Agenda (`bancoresidencia_user_scheduled_tasks`)
+      try {
+        const startDate = new Date(newSession.startTime);
+        const endDate = new Date(newSession.endTime);
+        const startMinutes = startDate.getHours() * 60 + startDate.getMinutes();
+        const endMinutes = Math.max(startMinutes + 1, endDate.getHours() * 60 + endDate.getMinutes());
+
+        const scheduleSlot: DailyScheduleSlot = {
+          id: `task_${newSession.id}`,
+          title: `Estudo: ${topicTitle}`,
+          category: 'estudo',
+          startTime: `${String(startDate.getHours()).padStart(2, '0')}:${String(startDate.getMinutes()).padStart(2, '0')}`,
+          endTime: `${String(endDate.getHours()).padStart(2, '0')}:${String(endDate.getMinutes()).padStart(2, '0')}`,
+          startMinutes,
+          endMinutes,
+          source: 'plataforma',
+          description: `Tempo líquido: ${formatted}.${data.questionsCount ? ` ${data.questionsCount} questões (${data.correctCount || 0} acertos).` : ''}${data.notes ? ` Obs: ${data.notes}` : ''}`,
+          action: 'treinar',
+          date: startDate.toISOString().split('T')[0]
+        };
+
+        const existingTasksJson = localStorage.getItem('bancoresidencia_user_scheduled_tasks');
+        const existingTasks: DailyScheduleSlot[] = existingTasksJson ? JSON.parse(existingTasksJson) : [];
+        const newTasks = [scheduleSlot, ...existingTasks];
+        localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(newTasks));
+
+        // Dispara evento de storage para sincronizar abas e telas da Agenda instantaneamente
+        window.dispatchEvent(new StorageEvent('storage', {
+          key: 'bancoresidencia_user_scheduled_tasks',
+          newValue: JSON.stringify(newTasks)
+        }));
+      } catch (agendaErr) {
+        console.warn('Erro ao integrar sessão na Agenda:', agendaErr);
+      }
+
+      // 3. Reseta o cronômetro
+      cancelTimer();
+
+      return newSession;
+    },
+    [user, sessionStartTime, selectedTaxonomy, savedSessions, cancelTimer]
+  );
+
+  // Excluir uma sessão realizada
+  const deleteSession = useCallback((sessionId: string) => {
+    setSavedSessions((prev) => {
+      const updated = prev.filter((s) => s.id !== sessionId);
+      try {
+        localStorage.setItem(SESSIONS_STORAGE_KEY, JSON.stringify(updated));
+      } catch {}
+      return updated;
+    });
+
+    // Remove também da linha do tempo da agenda se estiver lá
+    try {
+      const existingTasksJson = localStorage.getItem('bancoresidencia_user_scheduled_tasks');
+      if (existingTasksJson) {
+        const existingTasks: DailyScheduleSlot[] = JSON.parse(existingTasksJson);
+        const filteredTasks = existingTasks.filter((t) => t.id !== `task_${sessionId}`);
+        localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(filteredTasks));
+        window.dispatchEvent(new StorageEvent('storage', {
+          key: 'bancoresidencia_user_scheduled_tasks',
+          newValue: JSON.stringify(filteredTasks)
+        }));
+      }
+    } catch {}
+  }, []);
+
+  // Sessões e tempo total do dia de hoje
+  const todayStr = useMemo(() => new Date().toISOString().split('T')[0], []);
+
+  const todaySessions = useMemo(() => {
+    return savedSessions.filter((s) => {
+      const sessionDate = s.startTime ? s.startTime.split('T')[0] : '';
+      return sessionDate === todayStr;
+    });
+  }, [savedSessions, todayStr]);
+
+  const todayTotalSeconds = useMemo(() => {
+    return todaySessions.reduce((acc, curr) => acc + (curr.durationSeconds || 0), 0);
+  }, [todaySessions]);
+
+  const todayTotalFormatted = useMemo(() => {
+    return formatSecondsToShort(todayTotalSeconds);
+  }, [todayTotalSeconds]);
+
+  const formattedTime = useMemo(() => {
+    return formatSecondsToHms(elapsedSeconds);
+  }, [elapsedSeconds]);
+
+  const value: StudyTimerContextType = {
+    status,
+    elapsedSeconds,
+    formattedTime,
+    selectedTaxonomy,
+    setSelectedTaxonomy,
+    startTimer,
+    pauseTimer,
+    resumeTimer,
+    cancelTimer,
+    openSaveModal,
+    closeSaveModal,
+    saveSession,
+    todaySessions,
+    todayTotalSeconds,
+    todayTotalFormatted,
+    allSessions: savedSessions,
+    deleteSession
+  };
+
+  return (
+    <StudyTimerContext.Provider value={value}>
+      {children}
+    </StudyTimerContext.Provider>
+  );
+};
+
+export const useStudyTimer = (): StudyTimerContextType => {
+  const context = useContext(StudyTimerContext);
+  if (!context) {
+    throw new Error('useStudyTimer deve ser utilizado dentro de um StudyTimerProvider');
+  }
+  return context;
+};

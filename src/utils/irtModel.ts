@@ -327,11 +327,12 @@ export function calculateAdjustedScore(
 
 /**
  * 8. STATUS DO RANKING
- * - 0–149 questões válidas: Não participa do ranking (unranked)
+ * - 0–29 questões válidas: Não participa do ranking (unranked)
+ * - 30–149 questões válidas: Em calibração inicial (calibrando)
  * - 150–499 questões válidas: Ranking Provisório
  * - >=500 questões válidas: Ranking Oficial
  */
-export type RankingStatusType = 'unranked' | 'provisional' | 'official';
+export type RankingStatusType = 'unranked' | 'calibrando' | 'provisional' | 'official';
 
 export interface RankingStatusInfo {
   status: RankingStatusType;
@@ -344,20 +345,36 @@ export interface RankingStatusInfo {
   isOfficial: boolean;
 }
 
-export const UNRANKED_THRESHOLD = 150;
+export const CALIBRATING_THRESHOLD = 30;
+export const UNRANKED_THRESHOLD = 30; // Threshold mínimo para ingressar no ranking da plataforma
+export const PROVISIONAL_THRESHOLD = 150;
 export const OFFICIAL_THRESHOLD = 500;
 
 export function getRankingStatus(validCount: number): RankingStatusInfo {
-  if (validCount < UNRANKED_THRESHOLD) {
-    const missing = UNRANKED_THRESHOLD - validCount;
+  if (validCount < CALIBRATING_THRESHOLD) {
+    const missing = CALIBRATING_THRESHOLD - validCount;
     return {
       status: 'unranked',
-      label: 'Sem ranking (<150)',
+      label: 'Sem ranking (<30)',
       badgeLabel: 'Sem Ranking',
       missingForNextTier: missing,
-      nextTierName: 'Ranking Provisório',
-      message: 'Continue resolvendo questões para liberar seu percentil.',
+      nextTierName: 'Em Calibração',
+      message: 'Resolva mais questões para liberar seu percentil inicial (mínimo 30 questões).',
       isEligibleForRanking: false,
+      isOfficial: false
+    };
+  }
+
+  if (validCount < PROVISIONAL_THRESHOLD) {
+    const missing = PROVISIONAL_THRESHOLD - validCount;
+    return {
+      status: 'calibrando',
+      label: 'Em calibração (30–149)',
+      badgeLabel: 'Em Calibração',
+      missingForNextTier: missing,
+      nextTierName: 'Ranking Provisório',
+      message: `Você já participa do ranking da comunidade! Faltam ${missing} questões para o ranking provisório (≥150).`,
+      isEligibleForRanking: true,
       isOfficial: false
     };
   }
@@ -370,7 +387,7 @@ export function getRankingStatus(validCount: number): RankingStatusInfo {
       badgeLabel: 'Provisório',
       missingForNextTier: missing,
       nextTierName: 'Ranking Oficial',
-      message: `Faltam ${missing} questões para entrar no ranking oficial.`,
+      message: `Faltam ${missing} questões para o ranking oficial consolidado (≥500).`,
       isEligibleForRanking: true,
       isOfficial: false
     };
@@ -636,9 +653,13 @@ export function computeStudentIRTEvaluation(
   if (statusInfo.isEligibleForRanking) {
     const percResult = calculateEmpiricalPercentile(adjustedScore, cohortScores);
     percentile = percResult.roundedPercentile;
-    formattedPercentile = statusInfo.status === 'provisional'
-      ? `${percResult.formattedPercentile} (Provisório)`
-      : percResult.formattedPercentile;
+    if (statusInfo.status === 'provisional') {
+      formattedPercentile = `${percResult.formattedPercentile} (Provisório)`;
+    } else if (statusInfo.status === 'calibrando') {
+      formattedPercentile = `${percResult.formattedPercentile} (Calibrando)`;
+    } else {
+      formattedPercentile = percResult.formattedPercentile;
+    }
   }
 
   return {

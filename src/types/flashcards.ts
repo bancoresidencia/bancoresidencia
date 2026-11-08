@@ -46,10 +46,12 @@ export interface FlashcardItem {
   theme: string;
   focus: string;
   subfocus?: string | null;
+  deckId?: string | null;
   type?: string;
   sourceQuestionId?: string | null;
   priority?: 'essential' | 'standard';
   tags?: string[];
+  createdAt?: string;
   progress?: FlashcardProgress;
 }
 
@@ -101,6 +103,7 @@ export interface CustomFlashcardDeck {
   priorityOnly?: boolean;
   limitCards?: number;
   cardIds?: string[];
+  isDefault?: boolean;
   createdAt: string;
   lastStudiedAt?: string;
 }
@@ -124,4 +127,12 @@ export interface LastReadSummaryInfo {
   readTimeMinutes: number;
   guidelineBadge?: string;
   lastReadAt: string;
+}
+
+export interface DailyReviewLog {
+  date: string; // YYYY-MM-DD
+  feitos: number; // Cards novos estudados pela 1ª vez
+  revisao: number; // Cards revisados no ciclo FSRS
+  total: number;
+  durationSeconds: number;
 }

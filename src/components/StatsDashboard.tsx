@@ -64,6 +64,9 @@ import { FigmaCardWrapper } from './dashboard/FigmaCardWrapper';
 import { FigmaCustomizerBar } from './dashboard/FigmaCustomizerBar';
 import { FigmaSmartGuides } from './dashboard/FigmaSmartGuides';
 import { SmartGuidesState } from './dashboard/smartGuidesEngine';
+import { useStudyTimer } from '@/context/StudyTimerContext';
+import { StudyTimeView } from './dashboard/StudyTimeView';
+import { StudyTimeAnalyticsCard, formatSecondsToDetailed, matchesSpecialty } from './dashboard/StudyTimeAnalyticsCard';
 
 
 // Ícone anatômico de Ginecologia: Útero, colo uterino, trompas de Falópio e ovários bilaterais
@@ -218,7 +221,7 @@ const quickPeriodConfig: Record<string, { factor: number; label: string; trendVo
   'custom': { factor: 0.65, label: 'Personalizado', trendVolume: '+21.0%', trendAproveitamento: '+3.0%' }
 };
 
-type StatsSubTab = 'overview' | 'specialties' | 'weaknesses';
+type StatsSubTab = 'overview' | 'specialties' | 'weaknesses' | 'time';
 
 interface CustomEvolutionLabelProps {
   x?: number | string;
@@ -289,6 +292,58 @@ const CustomBarTooltip: React.FC<CustomBarTooltipProps> = ({ active, payload, la
               {data.erros} <span className="text-[10px] font-normal text-rose-600/80 dark:text-rose-400/80">({taxaErros}%)</span>
             </span>
           </div>
+        </div>
+      </div>
+    );
+  }
+  return null;
+};
+
+const CustomTimeBarTooltip: React.FC<any> = ({ active, payload, label }) => {
+  if (active && payload && payload.length) {
+    const data = payload[0].payload;
+    const displayTitle = data.dateFull || (data.date && data.date !== data.label ? `${data.label} (${data.date})` : (data.date || label));
+    const studyHoursFormatted = data.studyHoursFormatted || (data.studySeconds > 0 ? formatSecondsToDetailed(data.studySeconds) : '0m');
+    const sessionsCount = data.sessionsCount || 0;
+    const trendHours = data.trendStudyHours || 0;
+
+    return (
+      <div className="bg-[var(--bg-card)]/95 backdrop-blur-md border border-[var(--card-border)] rounded-xl p-3.5 shadow-2xl min-w-[190px] text-xs">
+        <div className="flex items-center justify-between border-b border-[var(--card-border)] pb-2 mb-2.5">
+          <span className="font-bold text-slate-900 dark:text-white uppercase tracking-wider font-heading">{displayTitle}</span>
+          <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full border text-indigo-700 dark:text-indigo-400 bg-indigo-500/10 border-indigo-500/25">
+            {sessionsCount} {sessionsCount === 1 ? 'sessão' : 'sessões'}
+          </span>
+        </div>
+        <div className="space-y-1.5">
+          <div className="flex items-center justify-between">
+            <span className="text-slate-600 dark:text-zinc-400 flex items-center gap-1.5 font-medium">
+              <span className="w-2 h-2 rounded-full bg-indigo-500" />
+              Tempo Estudado:
+            </span>
+            <span className="font-black text-slate-900 dark:text-white font-[var(--font-inter)] tabular-nums">
+              {studyHoursFormatted}
+            </span>
+          </div>
+          <div className="flex items-center justify-between">
+            <span className="text-slate-500 dark:text-zinc-400 flex items-center gap-1.5 font-medium">
+              <span className="w-2 h-2 rounded-full bg-slate-400 dark:bg-zinc-500" />
+              Média Móvel:
+            </span>
+            <span className="font-bold text-slate-700 dark:text-zinc-300 font-[var(--font-inter)] tabular-nums">
+              {trendHours}h / dia
+            </span>
+          </div>
+          {data.resolvidas > 0 && (
+            <div className="flex items-center justify-between pt-1 border-t border-[var(--card-border)]/50">
+              <span className="text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5 font-medium">
+                Questões Feitas:
+              </span>
+              <span className="font-bold text-slate-900 dark:text-white font-sans tabular-nums">
+                {data.resolvidas} ({data.acertos} acertos)
+              </span>
+            </div>
+          )}
         </div>
       </div>
     );
@@ -516,6 +571,77 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
     return map[filters.period] || 'Período';
   }, [filters.period, filters.customStartDate, filters.customEndDate]);
 
+  // Integração com o Cronômetro e Histórico de Sessões de Estudo
+  const { allSessions } = useStudyTimer();
+  const [evolutionMetric, setEvolutionMetric] = useState<'questoes' | 'tempo'>('questoes');
+
+  // Filtragem de sessões de estudo reativas aos mesmos filtros temporais e de especialidade
+  const activeStudySessions = useMemo(() => {
+    if (!allSessions || allSessions.length === 0) return [];
+    const now = Date.now();
+    const nowObj = new Date();
+    const todayStart = new Date(nowObj.getFullYear(), nowObj.getMonth(), nowObj.getDate(), 0, 0, 0, 0).getTime();
+    const todayEnd = new Date(nowObj.getFullYear(), nowObj.getMonth(), nowObj.getDate(), 23, 59, 59, 999).getTime();
+
+    return allSessions.filter((session) => {
+      const sessionTs = new Date(session.startTime).getTime();
+      if (isNaN(sessionTs)) return false;
+
+      // Filtro por período temporal idêntico ao de questões
+      if (filters.period === 'custom' && filters.customStartDate && filters.customEndDate) {
+        const start = new Date(filters.customStartDate + 'T00:00:00').getTime();
+        const end = new Date(filters.customEndDate + 'T23:59:59').getTime();
+        if (sessionTs < Math.min(start, end) || sessionTs > Math.max(start, end)) return false;
+      } else if (filters.period === '1d') {
+        if (sessionTs < todayStart || sessionTs > todayEnd) return false;
+      } else if (filters.period === '7d') {
+        if (sessionTs < now - 7 * 86400000) return false;
+      } else if (filters.period === '30d') {
+        if (sessionTs < now - 30 * 86400000) return false;
+      } else if (filters.period === 'mes') {
+        const startOfMonth = new Date(nowObj.getFullYear(), nowObj.getMonth(), 1, 0, 0, 0, 0).getTime();
+        if (sessionTs < startOfMonth) return false;
+      } else if (filters.period === '3m') {
+        if (sessionTs < now - 90 * 86400000) return false;
+      } else if (filters.period === '6m') {
+        if (sessionTs < now - 180 * 86400000) return false;
+      } else if (filters.period === '2026.1') {
+        const start = new Date(2026, 0, 1, 0, 0, 0, 0).getTime();
+        const end = new Date(2026, 5, 30, 23, 59, 59, 999).getTime();
+        if (sessionTs < start || sessionTs > end) return false;
+      } else if (filters.period === '2026.2') {
+        const start = new Date(2026, 6, 1, 0, 0, 0, 0).getTime();
+        const end = new Date(2026, 11, 31, 23, 59, 59, 999).getTime();
+        if (sessionTs < start || sessionTs > end) return false;
+      }
+
+      return true;
+    });
+  }, [allSessions, filters.period, filters.customStartDate, filters.customEndDate]);
+
+  // Agregações de tempo de estudo ativo no período
+  const activeStudyMetrics = useMemo(() => {
+    const totalSecs = activeStudySessions.reduce((acc, s) => acc + (s.durationSeconds || 0), 0);
+    const totalFormatted = formatSecondsToDetailed(totalSecs);
+    const sessionsCount = activeStudySessions.length;
+
+    const daysSet = new Set(
+      activeStudySessions.map((s) => new Date(s.startTime).toDateString())
+    );
+    const activeDaysCount = daysSet.size;
+    const avgDailySecs = activeDaysCount > 0 ? Math.round(totalSecs / activeDaysCount) : 0;
+    const avgDailyFormatted = activeDaysCount > 0 ? `${formatSecondsToDetailed(avgDailySecs)} / dia ativo` : '0m / dia';
+
+    return {
+      totalSeconds: totalSecs,
+      totalFormatted,
+      sessionsCount,
+      activeDaysCount,
+      avgDailySeconds: avgDailySecs,
+      avgDailyFormatted
+    };
+  }, [activeStudySessions]);
+
   // Métricas ativas com base no período e nas respostas reais do aluno (userAnswers)
   const activeMetrics = useMemo(() => {
     const q = quickPeriodConfig[filters.period] || quickPeriodConfig['all'];
@@ -660,6 +786,10 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
       resolvidas: number;
       acertos: number;
       erros: number;
+      studySeconds: number;
+      studyHours: number;
+      studyHoursFormatted: string;
+      sessionsCount: number;
     }
 
     const dailyRawItems: DailyRawItem[] = [];
@@ -690,13 +820,26 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
 
       const dayErr = Math.max(0, dayAns - dayCor);
 
+      // Sessões de estudo e tempo acumulado no dia
+      const sessionsInDay = activeStudySessions.filter((s) => {
+        const sTs = new Date(s.startTime).getTime();
+        return sTs >= dayStart && sTs <= dayEnd;
+      });
+      const dayStudySeconds = sessionsInDay.reduce((acc, s) => acc + (s.durationSeconds || 0), 0);
+      const dayStudyHours = Number((dayStudySeconds / 3600).toFixed(2));
+      const daySessionsCount = sessionsInDay.length;
+
       dailyRawItems.push({
         label,
         date: dateFormatted,
         dateFull,
         resolvidas: dayAns,
         acertos: dayCor,
-        erros: dayErr
+        erros: dayErr,
+        studySeconds: dayStudySeconds,
+        studyHours: dayStudyHours,
+        studyHoursFormatted: formatSecondsToDetailed(dayStudySeconds),
+        sessionsCount: daySessionsCount
       });
     }
 
@@ -708,13 +851,15 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
       const slice = dailyRawItems.slice(startIdx, idx + 1);
       const avgTotal = slice.reduce((acc, curr) => acc + curr.resolvidas, 0) / slice.length;
       const avgAcertos = slice.reduce((acc, curr) => acc + curr.acertos, 0) / slice.length;
+      const avgStudyHours = slice.reduce((acc, curr) => acc + (curr.studyHours || 0), 0) / slice.length;
 
       return {
         ...item,
         answered: item.resolvidas,
         correct: item.acertos,
         trendTotal: Number(avgTotal.toFixed(1)),
-        trendAcertos: Number(avgAcertos.toFixed(1))
+        trendAcertos: Number(avgAcertos.toFixed(1)),
+        trendStudyHours: Number(avgStudyHours.toFixed(2))
       };
     });
 
@@ -730,9 +875,10 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
       unique,
       ineditas,
       chartData,
-      dailyRawItems
+      dailyRawItems,
+      filteredAnswers
     };
-  }, [filters, stats, userAnswers, user]);
+  }, [filters, stats, userAnswers, user, activeStudySessions]);
 
   // Especialidades mapeadas com as cores dinâmicas do tema ativo
   const dynamicSpecialties = useMemo(() => {
@@ -1112,6 +1258,20 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
             >
               {criticalCount}
             </span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => setActiveSubTab('time')}
+            className={`flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
+              activeSubTab === 'time'
+                ? 'text-white shadow-lg'
+                : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-zinc-100 hover:bg-slate-100 dark:hover:bg-zinc-800/40'
+            }`}
+            style={activeSubTab === 'time' ? { backgroundColor: accentConfig.primaryHex } : undefined}
+          >
+            <Clock className="w-3.5 h-3.5" />
+            <span>Tempo de Estudo</span>
           </button>
         </div>
 
@@ -1661,7 +1821,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     onSmartGuidesChange={setSmartGuidesState}
                     allCardsConfig={visibleOverviewCards}
                   >
-                    {/* Gráfico de Evolução Diária (Barras Empilhadas + Tendência Suave) */}
+                    {/* Gráfico de Evolução Diária (Questões/Acertos) */}
           <div className="bg-[var(--bg-card)] border border-[var(--card-border)] rounded-2xl p-5 sm:p-6 space-y-4">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
               {/* Título limpo 'Evolução' e Pílulas Rápidas de Período */}
@@ -1677,7 +1837,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     onClick={() => onFilterChange({ ...filters, period: '30d' })}
                     className={`px-2.5 py-1 rounded-lg font-semibold transition-all cursor-pointer ${
                       filters.period === '30d'
-                        ? 'bg-emerald-500 text-white shadow-xs'
+                        ? 'bg-slate-900 dark:bg-white text-white dark:text-zinc-900 shadow-xs'
                         : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white'
                     }`}
                   >
@@ -1688,7 +1848,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     onClick={() => onFilterChange({ ...filters, period: '3m' })}
                     className={`px-2.5 py-1 rounded-lg font-semibold transition-all cursor-pointer ${
                       filters.period === '3m'
-                        ? 'bg-emerald-500 text-white shadow-xs'
+                        ? 'bg-slate-900 dark:bg-white text-white dark:text-zinc-900 shadow-xs'
                         : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white'
                     }`}
                   >
@@ -1699,7 +1859,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     onClick={() => onFilterChange({ ...filters, period: '6m' })}
                     className={`px-2.5 py-1 rounded-lg font-semibold transition-all cursor-pointer ${
                       filters.period === '6m'
-                        ? 'bg-emerald-500 text-white shadow-xs'
+                        ? 'bg-slate-900 dark:bg-white text-white dark:text-zinc-900 shadow-xs'
                         : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white'
                     }`}
                   >
@@ -1710,7 +1870,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                     onClick={() => setIsCalendarOpen(true)}
                     className={`px-2.5 py-1 rounded-lg font-semibold transition-all cursor-pointer flex items-center gap-1 ${
                       filters.period === 'custom'
-                        ? 'bg-emerald-500 text-white shadow-xs'
+                        ? 'bg-slate-900 dark:bg-white text-white dark:text-zinc-900 shadow-xs'
                         : 'text-slate-600 dark:text-zinc-400 hover:text-slate-900 dark:hover:text-white'
                     }`}
                   >
@@ -1720,7 +1880,7 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                 </div>
               </div>
 
-              {/* Legenda Concisa */}
+              {/* Legenda Estática de Questões */}
               <div className="flex items-center gap-3.5 text-xs flex-wrap">
                 <span className="flex items-center gap-1.5 text-slate-600 dark:text-zinc-300 font-medium">
                   <span className="w-2.5 h-2.5 rounded-xs bg-emerald-500" />
@@ -2028,6 +2188,17 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                             <span className="text-slate-800 dark:text-zinc-200 font-medium truncate">{item.nome}</span>
                           </div>
                           <div className="flex items-center gap-2.5 shrink-0">
+                            {(() => {
+                              const specSecs = activeStudySessions
+                                .filter((s) => matchesSpecialty(s.taxonomy?.especialidade, item.nome))
+                                .reduce((acc, s) => acc + (s.durationSeconds || 0), 0);
+                              if (specSecs <= 0) return null;
+                              return (
+                                <span className="text-[10px] font-bold text-indigo-600 dark:text-indigo-400 font-[var(--font-inter)] tabular-nums hidden sm:inline">
+                                  {formatSecondsToDetailed(specSecs)}
+                                </span>
+                              );
+                            })()}
                             <span className="text-slate-500 dark:text-zinc-400 font-sans tabular-nums">{item.resolvidas} q.</span>
                             <span className="font-bold text-slate-900 dark:text-white w-12 text-right font-sans tabular-nums">
                               {item.resolvidas > 0 ? pct : '0.0'}%
@@ -2138,10 +2309,24 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
                           </h3>
                         </div>
 
-                        {/* Total feitas alinhado à direita (Estilo Imagem 2) */}
-                        <span className="text-xs text-slate-500 dark:text-zinc-400 font-sans tabular-nums shrink-0 font-medium">
-                          {area.resolvidas} {area.resolvidas === 1 ? 'feita' : 'feitas'}
-                        </span>
+                        {/* Total feitas e Horas de Estudo alinhados à direita (Estilo Imagem 2) */}
+                        <div className="flex flex-col items-end shrink-0">
+                          <span className="text-xs text-slate-500 dark:text-zinc-400 font-sans tabular-nums font-medium">
+                            {area.resolvidas} {area.resolvidas === 1 ? 'feita' : 'feitas'}
+                          </span>
+                          {(() => {
+                            const specSecs = activeStudySessions
+                              .filter((s) => matchesSpecialty(s.taxonomy?.especialidade, area.nome))
+                              .reduce((acc, s) => acc + (s.durationSeconds || 0), 0);
+                            if (specSecs <= 0) return null;
+                            return (
+                              <span className="text-[11px] font-bold text-indigo-600 dark:text-indigo-400 font-[var(--font-inter)] tabular-nums flex items-center gap-1 mt-0.5">
+                                <Clock className="w-2.5 h-2.5" />
+                                {formatSecondsToDetailed(specSecs)}
+                              </span>
+                            );
+                          })()}
+                        </div>
                       </div>
 
                       {/* Barra de Progresso Dual (Estilo Imagem 2) */}
@@ -2658,6 +2843,23 @@ export const StatsDashboard: React.FC<StatsDashboardProps> = ({
             </div>
           )}
         </div>
+      )}
+
+      {/* =========================================================================
+          ABA 4: TEMPO DE ESTUDO & DISTRIBUIÇÃO NAS 5 ESPECIALIDADES
+      ========================================================================== */}
+      {activeSubTab === 'time' && (
+        <StudyTimeView
+          sessions={activeStudySessions}
+          filteredAnswers={activeMetrics.filteredAnswers}
+          filters={filters}
+          onFilterChange={onFilterChange}
+          periodLabel={activeMetrics.label}
+          onOpenCalendar={() => setIsCalendarOpen(true)}
+          onNavigateToSpecialty={() => {
+            setActiveSubTab('specialties');
+          }}
+        />
       )}
 
 

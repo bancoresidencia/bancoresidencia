@@ -196,7 +196,7 @@ export async function fetchFacetedHierarchyCounts(
         (especialidades['Ginecologia'] || 0) + (especialidades['Obstetrícia'] || 0);
 
       // Proporcionalidade consistente para temas, focos e subfocos
-      const globalTotal = 132965;
+      const globalTotal = 121635;
       const overallRatio = globalTotal > 0 ? totalRightCardCount / globalTotal : 1;
 
       const temas: Record<string, number> = {};

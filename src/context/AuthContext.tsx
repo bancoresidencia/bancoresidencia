@@ -88,6 +88,152 @@ function migrateGuestAnswersToUser(userId: string, supabaseClient: any) {
   }
 }
 
+function migrateGuestFlashcardsToUser(userId: string, supabaseClient: any) {
+  if (typeof window === 'undefined' || !userId) return;
+  try {
+    // 1. Migra Progresso FSRS
+    const guestProgressRaw = localStorage.getItem('bancoresidencia_flashcards_progress_v1');
+    if (guestProgressRaw) {
+      try {
+        const guestProgress = JSON.parse(guestProgressRaw);
+        if (guestProgress && typeof guestProgress === 'object' && Object.keys(guestProgress).length > 0) {
+          const userKey = `bancoresidencia_flashcards_progress_${userId}`;
+          const existingRaw = localStorage.getItem(userKey);
+          const existing = existingRaw ? JSON.parse(existingRaw) : {};
+          const merged = { ...guestProgress, ...existing };
+          localStorage.setItem(userKey, JSON.stringify(merged));
+
+          const payload = Object.entries(guestProgress).map(([cid, p]: [string, any]) => ({
+            user_id: userId,
+            card_id: cid,
+            state: p.state || 'new',
+            repetitions: p.repetitions || 0,
+            interval_days: Math.round(p.intervalDays || 0),
+            ease_factor: p.easeFactor || 2.5,
+            stability: p.stability || 1.0,
+            difficulty: p.difficulty || 5.0,
+            retrievability: p.retrievability || 1.0,
+            lapses: p.lapses || 0,
+            last_reviewed_at: p.lastReviewDate || null,
+            next_review_date: p.nextReviewDate || new Date().toISOString()
+          }));
+
+          if (payload.length > 0) {
+            supabaseClient
+              .from('user_flashcard_progress')
+              .upsert(payload, { onConflict: 'user_id,card_id' })
+              .then(() => {}, () => {});
+          }
+          localStorage.removeItem('bancoresidencia_flashcards_progress_v1');
+        }
+      } catch {}
+    }
+
+    // 2. Migra Logs Diários do Heatmap
+    const guestLogsRaw = localStorage.getItem('bancoresidencia_daily_review_logs_v1');
+    if (guestLogsRaw) {
+      try {
+        const guestLogs = JSON.parse(guestLogsRaw);
+        if (guestLogs && typeof guestLogs === 'object' && Object.keys(guestLogs).length > 0) {
+          const userKey = `bancoresidencia_daily_review_logs_${userId}`;
+          const existingRaw = localStorage.getItem(userKey);
+          const existing = existingRaw ? JSON.parse(existingRaw) : {};
+          const merged = { ...guestLogs, ...existing };
+          localStorage.setItem(userKey, JSON.stringify(merged));
+
+          const payload = Object.entries(guestLogs).map(([dStr, l]: [string, any]) => ({
+            user_id: userId,
+            date: dStr,
+            total: l.total || 0,
+            feitos: l.feitos || 0,
+            revisao: l.revisao || 0,
+            duration_seconds: l.durationSeconds || 0,
+            updated_at: new Date().toISOString()
+          }));
+
+          if (payload.length > 0) {
+            supabaseClient
+              .from('user_flashcard_daily_logs')
+              .upsert(payload, { onConflict: 'user_id,date' })
+              .then(() => {}, () => {});
+          }
+          localStorage.removeItem('bancoresidencia_daily_review_logs_v1');
+        }
+      } catch {}
+    }
+
+    // 3. Migra Baralhos Autorais de Visitante
+    const guestDecksRaw = localStorage.getItem('bancoresidencia_custom_flashcard_decks');
+    if (guestDecksRaw) {
+      try {
+        const guestDecks = JSON.parse(guestDecksRaw);
+        if (Array.isArray(guestDecks) && guestDecks.length > 0) {
+          const userKey = `bancoresidencia_custom_decks_${userId}`;
+          const existingRaw = localStorage.getItem(userKey);
+          const existing = existingRaw ? JSON.parse(existingRaw) : [];
+          const merged = [...guestDecks, ...existing.filter((e: any) => !guestDecks.some((g: any) => g.id === e.id))];
+          localStorage.setItem(userKey, JSON.stringify(merged));
+
+          const payload = guestDecks.map((d: any) => ({
+            id: d.id,
+            user_id: userId,
+            title: d.name || d.title,
+            description: d.description || '',
+            card_ids: d.cardIds || [],
+            updated_at: new Date().toISOString()
+          }));
+
+          if (payload.length > 0) {
+            supabaseClient
+              .from('user_flashcard_decks')
+              .upsert(payload, { onConflict: 'id' })
+              .then(() => {}, () => {});
+          }
+          localStorage.removeItem('bancoresidencia_custom_flashcard_decks');
+        }
+      } catch {}
+    }
+
+    // 4. Migra Cartões Criados pelo Visitante
+    const guestCardsRaw = localStorage.getItem('bancoresidencia_user_created_cards');
+    if (guestCardsRaw) {
+      try {
+        const guestCards = JSON.parse(guestCardsRaw);
+        if (Array.isArray(guestCards) && guestCards.length > 0) {
+          const userKey = `bancoresidencia_user_cards_${userId}`;
+          const existingRaw = localStorage.getItem(userKey);
+          const existing = existingRaw ? JSON.parse(existingRaw) : [];
+          const merged = [...guestCards, ...existing.filter((e: any) => !guestCards.some((g: any) => g.id === e.id))];
+          localStorage.setItem(userKey, JSON.stringify(merged));
+
+          const payload = guestCards.map((c: any) => ({
+            id: c.id,
+            user_id: userId,
+            front: c.front,
+            back: c.back,
+            specialty: c.specialty || '',
+            theme: c.theme || '',
+            focus: c.focus || '',
+            comment: c.comment || '',
+            priority: c.priority || 'standard',
+            updated_at: new Date().toISOString()
+          }));
+
+          if (payload.length > 0) {
+            supabaseClient
+              .from('user_created_flashcards')
+              .upsert(payload, { onConflict: 'id' })
+              .then(() => {}, () => {});
+          }
+          localStorage.removeItem('bancoresidencia_user_created_cards');
+        }
+      } catch {}
+    }
+  } catch (err) {
+    console.warn('[AuthContext] Erro na migração de flashcards do visitante:', err);
+  }
+}
+
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -322,6 +468,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         const account = await mapSupabaseUserToAccount(session.user);
         if (isMounted) setPersistedUser(account);
         migrateGuestAnswersToUser(session.user.id, supabase);
+        migrateGuestFlashcardsToUser(session.user.id, supabase);
       } else if (event === 'SIGNED_OUT') {
         if (isMounted) setPersistedUser(null);
         localStorage.removeItem(STORAGE_CURRENT_USER_KEY);
@@ -353,6 +500,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         setPersistedUser(account);
         localStorage.removeItem(STORAGE_CURRENT_USER_KEY);
         migrateGuestAnswersToUser(data.user.id, supabase);
+        migrateGuestFlashcardsToUser(data.user.id, supabase);
       }
 
       return { success: true };

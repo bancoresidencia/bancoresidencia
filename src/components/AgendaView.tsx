@@ -1053,17 +1053,9 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
               <CalendarDays className="w-5 h-5 stroke-[2.2]" />
             </div>
             <div>
-              <div className="flex items-center gap-2">
-                <h1 className="font-heading font-black text-xl sm:text-2xl text-slate-900 dark:text-zinc-100 tracking-tight">
-                  Agenda de Estudos
-                </h1>
-                <span className="px-2 py-0.5 rounded-full text-[10px] font-black uppercase tracking-wider bg-blue-500/15 text-blue-600 dark:text-blue-400 border border-blue-500/30">
-                  Adaptativa
-                </span>
-              </div>
-              <p className="text-xs text-slate-500 dark:text-zinc-400 mt-0.5">
-                Cronograma inteligente integrado ao Google Agenda, plantões e ciclo de revisões
-              </p>
+              <h1 className="font-heading font-black text-xl sm:text-2xl text-slate-900 dark:text-zinc-100 tracking-tight">
+                Agenda
+              </h1>
             </div>
           </div>
         </div>
@@ -1140,74 +1132,20 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
         {/* ── COLUNA ESQUERDA: CONTROLE, IA, PACING & CRONOBIOLOGIA (lg:col-span-5) ── */}
         <div className="lg:col-span-5 space-y-4">
           
-          {/* Card 1: Google Agenda Status & Conexão */}
-          <div className={`p-4 rounded-2xl border transition-all ${
-            isGoogleCalendarConnected
-              ? 'bg-blue-500/5 dark:bg-blue-950/20 border-blue-500/30'
-              : 'bg-white dark:bg-zinc-900 border-zinc-200 dark:border-zinc-800'
-          }`}>
-            <div className="flex items-center justify-between gap-3">
-              <div className="flex items-center gap-2.5 min-w-0">
-                <div className="w-10 h-10 rounded-xl bg-white dark:bg-[#18181b] border border-blue-500/20 shadow-xs flex items-center justify-center shrink-0">
-                  <GoogleIcon className="w-4.5 h-4.5" />
-                </div>
-                <div className="min-w-0">
-                  <div className="flex items-center gap-1.5">
-                    <h3 className="text-xs font-bold text-zinc-900 dark:text-zinc-100 truncate">
-                      Google Agenda
-                    </h3>
-                    <span className={`px-1.5 py-0.2 rounded-full text-[9px] font-bold ${
-                      isGoogleCalendarConnected
-                        ? 'bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30'
-                        : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-500'
-                    }`}>
-                      {isGoogleCalendarConnected ? 'Ativa' : 'Desconectada'}
-                    </span>
-                  </div>
-                  <p className="text-[11px] text-zinc-500 dark:text-zinc-400 truncate">
-                    {isGoogleCalendarConnected ? googleCalendarAccount : 'Sincronize plantões e rotina médica'}
-                  </p>
-                  {lastCalendarSyncTime && (
-                    <span className="text-[10px] text-zinc-400 dark:text-zinc-500 block truncate">
-                      Última sync: {lastCalendarSyncTime}
-                    </span>
-                  )}
-                </div>
-              </div>
-
-              <div className="flex items-center gap-1.5 shrink-0">
-                {isGoogleCalendarConnected ? (
-                  <>
-                    <button
-                      type="button"
-                      onClick={handleSyncNow}
-                      disabled={isSyncingCalendar}
-                      className="p-2 rounded-lg border border-blue-500/30 bg-white dark:bg-zinc-900 text-blue-600 dark:text-blue-400 hover:bg-blue-50 text-xs font-bold cursor-pointer transition-colors disabled:opacity-50"
-                      title="Sincronizar agora com Google"
-                    >
-                      <RefreshCw className={`w-3.5 h-3.5 ${isSyncingCalendar ? 'animate-spin' : ''}`} />
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setIsGoogleModalOpen(true)}
-                      className="px-2.5 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-[11px] font-bold cursor-pointer transition-colors"
-                    >
-                      Configurar
-                    </button>
-                  </>
-                ) : (
-                  <button
-                    type="button"
-                    onClick={() => setIsGoogleModalOpen(true)}
-                    className="px-3 py-1.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold cursor-pointer transition-colors flex items-center gap-1.5 shadow-2xs"
-                  >
-                    <GoogleIcon className="w-3.5 h-3.5" />
-                    <span>Conectar</span>
-                  </button>
-                )}
-              </div>
-            </div>
-          </div>
+          {/* Botão Sincronizar Google Agenda */}
+          <button
+            type="button"
+            onClick={isGoogleCalendarConnected ? handleSyncNow : () => setIsGoogleModalOpen(true)}
+            disabled={isSyncingCalendar}
+            className="w-full px-4 py-2.5 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-xs font-bold text-zinc-800 dark:text-zinc-200 flex items-center justify-center gap-2 shadow-2xs transition-all cursor-pointer disabled:opacity-50"
+            title={isGoogleCalendarConnected ? "Sincronizar Google Agenda agora" : "Conectar e Sincronizar Google Agenda"}
+          >
+            <GoogleIcon className="w-4 h-4 shrink-0" />
+            <span>{isSyncingCalendar ? 'Sincronizando...' : 'Sincronizar Google Agenda'}</span>
+            {isGoogleCalendarConnected && (
+              <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0" title="Google Agenda Conectada" />
+            )}
+          </button>
 
           {/* Card 2: "O Que Fazer Agora" (Live Hero) */}
           <div className="p-5 rounded-2xl border border-blue-500/40 bg-gradient-to-br from-blue-500/10 via-indigo-500/5 to-transparent dark:bg-[#121622] space-y-3.5 shadow-xs">
@@ -1332,43 +1270,6 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
                   <span>Praticar Questões Agora</span>
                 </button>
               )}
-            </div>
-          </div>
-
-          {/* Card 3: Pacing e Metas de Hoje */}
-          <div className="p-4 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 space-y-3">
-            <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500 dark:text-zinc-400 block">
-              Pacing e Metas de Hoje
-            </span>
-
-            <div className="grid grid-cols-3 gap-2">
-              <div className="p-3 rounded-xl bg-zinc-50 dark:bg-zinc-800/60 border border-zinc-200/80 dark:border-zinc-800 text-center">
-                <span className="text-[9px] font-bold text-slate-400 dark:text-zinc-500 uppercase block">Questões</span>
-                <span className="text-base font-black font-mono text-slate-900 dark:text-zinc-100">
-                  {todayAnswered}/{dailyGoal || 30}
-                </span>
-              </div>
-
-              <div className="p-3 rounded-xl bg-zinc-50 dark:bg-zinc-800/60 border border-zinc-200/80 dark:border-zinc-800 text-center">
-                <span className="text-[9px] font-bold text-slate-400 dark:text-zinc-500 uppercase block">Tempo</span>
-                <span className="text-base font-black font-mono text-slate-900 dark:text-zinc-100">
-                  {todayStudyMinutes}m
-                </span>
-              </div>
-
-              <div className="p-3 rounded-xl bg-blue-500/10 border border-blue-500/20 text-center">
-                <span className="text-[9px] font-bold text-blue-600 dark:text-blue-400 uppercase block">Blocos</span>
-                <span className="text-base font-black font-mono text-blue-600 dark:text-blue-400">
-                  {daySchedule.length}
-                </span>
-              </div>
-            </div>
-
-            <div className="pt-1 flex items-center justify-between text-[11px] text-zinc-500 dark:text-zinc-400">
-              <span>Status da Meta:</span>
-              <span className="font-bold text-slate-800 dark:text-zinc-200">
-                {todayAnswered >= (dailyGoal || 30) ? '🎉 Meta batida hoje!' : `Faltam ${(dailyGoal || 30) - todayAnswered} questões`}
-              </span>
             </div>
           </div>
 

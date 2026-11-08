@@ -1,42 +1,84 @@
 'use client';
 
-import React, { useState } from 'react';
-import { Trophy, Medal, ShieldAlert, Sparkles, HelpCircle } from 'lucide-react';
-import { RankedStudent, getPercentileColor, getProvisionalRanking } from '@/utils/percentile';
+import React, { useState, useMemo } from 'react';
+import { Trophy, Medal, ShieldAlert, Sparkles, HelpCircle, RefreshCw, Users } from 'lucide-react';
+import { RankedStudent, getPercentileColor } from '@/utils/percentile';
 import { PerformanceFilterState } from '@/types';
 import { useTheme } from '@/context/ThemeContext';
+import { LeaderboardStudent } from '@/services/rankingService';
 
 interface OfficialRankingProps {
-  ranking: RankedStudent[];
+  ranking?: RankedStudent[];
+  candidates?: LeaderboardStudent[];
   filters: PerformanceFilterState;
   userQuestions: number;
   userPercentile?: number;
   userCorrect?: number;
   userName?: string;
+  currentUserLeaderboard?: LeaderboardStudent | null;
+  isLoading?: boolean;
+  onRefresh?: () => void;
 }
 
 export const OfficialRanking: React.FC<OfficialRankingProps> = ({
-  ranking,
+  ranking = [],
+  candidates,
   filters,
   userQuestions,
   userPercentile,
   userCorrect = 0,
-  userName = 'Você'
+  userName = 'Você',
+  currentUserLeaderboard,
+  isLoading = false,
+  onRefresh
 }) => {
   const { accentConfig, mode } = useTheme();
-  const [activeRankingTab, setActiveRankingTab] = useState<'official' | 'provisional'>('official');
+  const [activeRankingTab, setActiveRankingTab] = useState<'all' | 'official' | 'provisional'>('all');
 
   const isUserEligibleOfficial = userQuestions >= 500;
   const isUserEligibleProvisional = userQuestions >= 150;
+  const isUserEligibleCalibrating = userQuestions >= 30;
 
-  // Carrega ranking provisório de candidatos reais (150 - 499 questões)
-  const provisionalRanking = getProvisionalRanking(filters, {
-    answered: userQuestions,
-    correct: userCorrect,
-    name: userName
-  });
+  // Normaliza candidatos da API ou do ranking local
+  const allCandidates: RankedStudent[] = useMemo(() => {
+    if (candidates && candidates.length > 0) {
+      return candidates.map((c, index) => ({
+        rank: index + 1,
+        name: c.isCurrentUser ? `${c.name} (Você)` : c.name,
+        institution: c.college || 'Geral',
+        banca: c.bancaFoco || 'Todas',
+        answered: c.totalAnswered,
+        correct: c.totalCorrect,
+        rawAccuracy: c.accuracy,
+        adjustedScore: c.adjustedScore,
+        percentile: c.percentile,
+        formattedPercentile: c.formattedPercentile,
+        theta: c.theta,
+        standard_error: c.standardError,
+        isOfficial: c.isOfficial
+      }));
+    }
+    return ranking;
+  }, [candidates, ranking]);
 
-  const displayedList = activeRankingTab === 'official' ? ranking : provisionalRanking;
+  // Filtra pela aba selecionada
+  const displayedList = useMemo(() => {
+    if (activeRankingTab === 'official') {
+      const filtered = allCandidates.filter(s => s.answered >= 500);
+      return filtered.map((item, idx) => ({ ...item, rank: idx + 1 }));
+    }
+    if (activeRankingTab === 'provisional') {
+      const filtered = allCandidates.filter(s => s.answered >= 150 && s.answered < 500);
+      return filtered.map((item, idx) => ({ ...item, rank: idx + 1 }));
+    }
+    // Aba 'all': Todos os candidatos da plataforma (incluindo em calibração)
+    return allCandidates;
+  }, [activeRankingTab, allCandidates]);
+
+  // Contadores para as abas
+  const officialCount = useMemo(() => allCandidates.filter(s => s.answered >= 500).length, [allCandidates]);
+  const provisionalCount = useMemo(() => allCandidates.filter(s => s.answered >= 150 && s.answered < 500).length, [allCandidates]);
+  const totalCount = allCandidates.length;
 
   return (
     <div className="bg-white dark:bg-[var(--bg-card)] border border-zinc-200 dark:border-zinc-800/80 rounded-3xl p-6 sm:p-8 shadow-sm space-y-6">
@@ -57,52 +99,85 @@ export const OfficialRanking: React.FC<OfficialRankingProps> = ({
                   backgroundColor: 'rgba(245, 158, 11, 0.12)',
                   color: '#f59e0b',
                   borderColor: 'rgba(245, 158, 11, 0.35)'
+                } : activeRankingTab === 'provisional' ? {
+                  backgroundColor: 'rgba(59, 130, 246, 0.12)',
+                  color: '#3b82f6',
+                  borderColor: 'rgba(59, 130, 246, 0.35)'
                 } : {
                   backgroundColor: accentConfig.bgRgba,
                   color: accentConfig.primaryHex,
                   borderColor: accentConfig.borderRgba
                 }}
               >
-                {activeRankingTab === 'official' ? 'Oficial (≥500 Q)' : 'Provisório (150–499 Q)'}
+                {activeRankingTab === 'official'
+                  ? `Oficial (≥500 Q) • ${officialCount}`
+                  : activeRankingTab === 'provisional'
+                  ? `Provisório (150–499 Q) • ${provisionalCount}`
+                  : `Geral da Plataforma • ${totalCount}`}
               </span>
             </div>
             <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-0.5">
-              Classificação por Modelo IRT Bayesiano 2PL com P-valor empírico
+              Classificação contínua por Modelo IRT Bayesiano 2PL com P-valor empírico
             </p>
           </div>
         </div>
 
-        {/* Abas Alternativas: Oficial vs Provisório */}
-        <div className="flex items-center gap-1.5 p-1 bg-slate-100 dark:bg-slate-900/90 rounded-2xl border border-slate-200 dark:border-slate-800 self-start sm:self-auto">
-          <button
-            type="button"
-            onClick={() => setActiveRankingTab('official')}
-            className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
-              activeRankingTab === 'official'
-                ? 'bg-white dark:bg-slate-800 text-amber-700 dark:text-amber-400 shadow-xs font-extrabold border border-slate-200/80 dark:border-slate-700'
-                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
-            }`}
-          >
-            🏆 Ranking Oficial
-          </button>
-          <button
-            type="button"
-            onClick={() => setActiveRankingTab('provisional')}
-            className={`px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
-              activeRankingTab === 'provisional'
-                ? 'bg-white dark:bg-slate-800 shadow-xs font-extrabold border border-slate-200/80 dark:border-slate-700'
-                : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
-            }`}
-            style={activeRankingTab === 'provisional' ? { color: accentConfig.primaryHex } : undefined}
-          >
-            ⚡ Provisório
-          </button>
+        {/* Abas Alternativas: Geral vs Oficial vs Provisório + Botão Atualizar */}
+        <div className="flex items-center gap-2 flex-wrap self-start sm:self-auto">
+          <div className="flex items-center gap-1.5 p-1 bg-slate-100 dark:bg-slate-900/90 rounded-2xl border border-slate-200 dark:border-slate-800">
+            <button
+              type="button"
+              onClick={() => setActiveRankingTab('all')}
+              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                activeRankingTab === 'all'
+                  ? 'bg-white dark:bg-slate-800 text-slate-900 dark:text-white shadow-xs font-extrabold border border-slate-200/80 dark:border-slate-700'
+                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+              }`}
+            >
+              👥 Geral ({totalCount})
+            </button>
+            <button
+              type="button"
+              onClick={() => setActiveRankingTab('official')}
+              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                activeRankingTab === 'official'
+                  ? 'bg-white dark:bg-slate-800 text-amber-700 dark:text-amber-400 shadow-xs font-extrabold border border-slate-200/80 dark:border-slate-700'
+                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+              }`}
+            >
+              🏆 Oficial ({officialCount})
+            </button>
+            <button
+              type="button"
+              onClick={() => setActiveRankingTab('provisional')}
+              className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                activeRankingTab === 'provisional'
+                  ? 'bg-white dark:bg-slate-800 shadow-xs font-extrabold border border-slate-200/80 dark:border-slate-700'
+                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+              }`}
+              style={activeRankingTab === 'provisional' ? { color: accentConfig.primaryHex } : undefined}
+            >
+              ⚡ Provisório ({provisionalCount})
+            </button>
+          </div>
+
+          {onRefresh && (
+            <button
+              type="button"
+              onClick={onRefresh}
+              disabled={isLoading}
+              title="Atualizar dados do ranking em tempo real"
+              className="p-2 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300 transition-all cursor-pointer disabled:opacity-50"
+            >
+              <RefreshCw className={`w-4 h-4 ${isLoading ? 'animate-spin text-amber-500' : ''}`} />
+            </button>
+          )}
         </div>
       </div>
 
       {/* CARD: SEU PERCENTIL E DESEMPENHO NO RANKING */}
       {(() => {
-        const pValue = userPercentile ?? 78;
+        const pValue = currentUserLeaderboard?.percentile ?? userPercentile ?? 50;
         const tier = getPercentileColor(pValue);
         const userInList = displayedList.find((s) => s.name.includes('(Você)'));
         const userRank = userInList ? `#${userInList.rank}` : (isUserEligibleOfficial ? 'Homologado' : 'Sem ranking');
@@ -149,11 +224,11 @@ export const OfficialRanking: React.FC<OfficialRankingProps> = ({
                   <p className="text-xs text-slate-600 dark:text-slate-300">
                     {userInList ? (
                       <>
-                        Você está na posição <strong className="font-bold text-slate-900 dark:text-white">#{userInList.rank}</strong> com base no modelo TRI Bayesiano oficial.
+                        Você está na posição <strong className="font-bold text-slate-900 dark:text-white">#{userInList.rank}</strong> no ranking com base no modelo TRI Bayesiano oficial da plataforma.
                       </>
                     ) : (
                       <>
-                        Você resolveu <strong className="font-bold text-slate-900 dark:text-white">{userQuestions} questões</strong>. {isUserEligibleOfficial ? 'Você atingiu o requisito de questões para homologação oficial.' : `Resolva mais ${Math.max(0, (activeRankingTab === 'official' ? 500 : 150) - userQuestions)} questões para figurar no ranking.`}
+                        Você resolveu <strong className="font-bold text-slate-900 dark:text-white">{userQuestions} questões</strong>. {isUserEligibleOfficial ? 'Você atingiu o requisito de questões para homologação oficial.' : `Resolva mais ${Math.max(0, (activeRankingTab === 'official' ? 500 : activeRankingTab === 'provisional' ? 150 : 30) - userQuestions)} questões para figurar nesta aba.`}
                       </>
                     )}
                   </p>
@@ -171,7 +246,7 @@ export const OfficialRanking: React.FC<OfficialRankingProps> = ({
                 <div className="px-3.5 py-2 rounded-2xl bg-white/80 dark:bg-slate-900/80 border border-slate-200/80 dark:border-slate-800 text-center">
                   <span className="text-[10px] font-bold text-slate-400 block uppercase">Status</span>
                   <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400">
-                    {isUserEligibleOfficial ? 'Homologado' : (isUserEligibleProvisional ? 'Provisório' : 'Em Progresso')}
+                    {isUserEligibleOfficial ? 'Homologado' : (isUserEligibleProvisional ? 'Provisório' : isUserEligibleCalibrating ? 'Calibrando' : 'Em Progresso')}
                   </span>
                 </div>
               </div>
@@ -193,7 +268,7 @@ export const OfficialRanking: React.FC<OfficialRankingProps> = ({
                 </span>
               ) : (
                 <span className="block mt-1 text-slate-600 dark:text-slate-400">
-                  Continue praticando para alcançar 150 questões e liberar seu percentil provisório!
+                  Consulte a aba <strong>Geral</strong> para acompanhar sua posição entre os candidatos ativos da plataforma!
                 </span>
               )}
             </div>
@@ -230,7 +305,18 @@ export const OfficialRanking: React.FC<OfficialRankingProps> = ({
             </tr>
           </thead>
           <tbody className="divide-y divide-slate-100 dark:divide-slate-800/60">
-            {displayedList.length === 0 ? (
+            {isLoading ? (
+              <tr>
+                <td colSpan={7} className="py-12 px-4 text-center">
+                  <div className="flex flex-col items-center justify-center gap-3">
+                    <RefreshCw className="w-6 h-6 animate-spin text-amber-500" />
+                    <span className="text-sm font-semibold text-slate-600 dark:text-slate-300">
+                      Calculando posições por modelo IRT...
+                    </span>
+                  </div>
+                </td>
+              </tr>
+            ) : displayedList.length === 0 ? (
               <tr>
                 <td colSpan={7} className="py-12 px-4 text-center">
                   <div className="flex flex-col items-center justify-center gap-3 max-w-md mx-auto">
@@ -241,12 +327,16 @@ export const OfficialRanking: React.FC<OfficialRankingProps> = ({
                       <h4 className="font-bold text-slate-800 dark:text-slate-100 text-sm">
                         {activeRankingTab === 'official'
                           ? 'Nenhum candidato no Ranking Oficial ainda'
-                          : 'Nenhum candidato no Ranking Provisório ainda'}
+                          : activeRankingTab === 'provisional'
+                          ? 'Nenhum candidato no Ranking Provisório ainda'
+                          : 'Nenhum candidato cadastrado'}
                       </h4>
                       <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
                         {activeRankingTab === 'official'
                           ? 'São necessárias pelo menos 500 questões válidas para figurar no ranking consolidado. Resolva questões e dispute o Top 3!'
-                          : 'São necessárias pelo menos 150 questões válidas para figurar no ranking provisório. Continue praticando para estrear no ranking!'}
+                          : activeRankingTab === 'provisional'
+                          ? 'São necessárias pelo menos 150 questões válidas para figurar no ranking provisório. Continue praticando para estrear no ranking!'
+                          : 'Resolva questões para ingressar no ranking da plataforma!'}
                       </p>
                     </div>
                   </div>
@@ -323,10 +413,7 @@ export const OfficialRanking: React.FC<OfficialRankingProps> = ({
                   borderLeftClass = 'border-l-4 border-blue-600';
                 }
 
-                const anonymizedLabel = isCurrentUser
-                  ? 'Você (Seu Perfil)'
-                  : student.name;
-
+                const displayName = student.name;
                 const badgeTextColor = mode === 'light' ? tier.textLight : tier.textDark;
 
                 return (
@@ -340,7 +427,7 @@ export const OfficialRanking: React.FC<OfficialRankingProps> = ({
                     <td className="py-4 px-4">
                       <div className="font-bold text-slate-900 dark:text-white flex items-center gap-2 flex-wrap">
                         <span className={isCurrentUser ? 'text-blue-700 dark:text-blue-300 font-extrabold' : 'text-slate-800 dark:text-slate-200 font-semibold'}>
-                          {anonymizedLabel}
+                          {displayName}
                         </span>
                         {topTag}
                         {isCurrentUser && (

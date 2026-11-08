@@ -96,10 +96,16 @@ console.log(`[6] 500 q (70% acerto) -> Theta: ${test6_theta.toFixed(3)}, Score: 
 assert(test4_theta > test6_theta, '80% acerto deve ter theta maior que 70%');
 assert(test4_score > test6_score, '80% acerto deve ter score maior que 70%');
 
-// 7. Teste: Aluno com 149 questões
+// 7. Teste: Aluno com 29 questões (< 30)
+const status29 = getRankingStatus(29);
+console.log(`[7a] 29 questões -> Status: ${status29.status} ("${status29.label}"), Faltam: ${status29.missingForNextTier}`);
+assert.strictEqual(status29.status, 'unranked', '29 questões deve ser unranked');
+assert.strictEqual(status29.missingForNextTier, 1, 'Deve faltar exatamente 1 questão para calibração inicial');
+
+// 7b. Teste: Aluno com 149 questões (30 a 149)
 const status149 = getRankingStatus(149);
-console.log(`[7] 149 questões -> Status: ${status149.status} ("${status149.label}"), Faltam: ${status149.missingForNextTier}`);
-assert.strictEqual(status149.status, 'unranked', '149 questões deve ser unranked');
+console.log(`[7b] 149 questões -> Status: ${status149.status} ("${status149.label}"), Faltam: ${status149.missingForNextTier}`);
+assert.strictEqual(status149.status, 'calibrando', '149 questões deve ser calibrando');
 assert.strictEqual(status149.missingForNextTier, 1, 'Deve faltar exatamente 1 questão para o ranking provisório');
 
 // 8. Teste: Aluno com 150 questões

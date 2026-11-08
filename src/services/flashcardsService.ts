@@ -6,7 +6,8 @@ import {
   CustomFlashcardDeck,
   LastFlashcardSessionInfo,
   LastReadSummaryInfo,
-  CardCommunityStats
+  CardCommunityStats,
+  DailyReviewLog
 } from '@/types/flashcards';
 // Carregamento dinâmico sob demanda para proteger o acervo contra raspagem estática e reduzir o bundle em ~587 KB
 let _cachedInitialFlashcards: FlashcardItem[] | null = null;
@@ -43,6 +44,7 @@ const CUSTOM_DECKS_KEY = 'bancoresidencia_custom_flashcard_decks';
 const USER_FLASHCARDS_KEY = 'bancoresidencia_user_created_flashcards';
 const USER_CARD_EDITS_KEY = 'bancoresidencia_user_card_edits';
 const USER_STUDY_MATERIALS_KEY = 'bancoresidencia_user_created_study_materials';
+const DAILY_LOGS_KEY = 'bancoresidencia_daily_review_logs';
 
 function getProgressStorageKey(userId?: string | null): string {
   return userId ? `bancoresidencia_flashcards_progress_${userId}` : STORAGE_KEY;
@@ -54,6 +56,10 @@ function getDecksStorageKey(userId?: string | null): string {
 
 function getUserCardsStorageKey(userId?: string | null): string {
   return userId ? `bancoresidencia_user_cards_${userId}` : USER_FLASHCARDS_KEY;
+}
+
+function getDailyLogsStorageKey(userId?: string | null): string {
+  return userId ? `bancoresidencia_daily_review_logs_${userId}` : DAILY_LOGS_KEY;
 }
 
 // Fila de Sincronização em Lote (Batching & Debounce) de Flashcards
@@ -76,9 +82,32 @@ interface PendingFlashcardSyncItem {
   };
 }
 
+interface PendingDailyLogItem {
+  user_id: string;
+  date: string;
+  total: number;
+  feitos: number;
+  revisao: number;
+  duration_seconds: number;
+  updated_at: string;
+}
+
+interface PendingReviewEventItem {
+  user_id: string;
+  card_id: string;
+  rating: string;
+  state_before: string;
+  state_after: string;
+  interval_days: number;
+  duration_seconds: number;
+  reviewed_at: string;
+}
+
 const pendingFlashcardsQueue = new Map<string, PendingFlashcardSyncItem>();
+const pendingDailyLogsQueue = new Map<string, PendingDailyLogItem>();
+const pendingReviewEventsQueue: PendingReviewEventItem[] = [];
 let flashcardsFlushTimeout: NodeJS.Timeout | null = null;
-const BATCH_FLUSH_INTERVAL_MS = 3000;
+const BATCH_FLUSH_INTERVAL_MS = 2500;
 const BATCH_FLUSH_MAX_SIZE = 5;
 
 export async function flushPendingFlashcards(): Promise<void> {
@@ -86,35 +115,92 @@ export async function flushPendingFlashcards(): Promise<void> {
     clearTimeout(flashcardsFlushTimeout);
     flashcardsFlushTimeout = null;
   }
-  if (pendingFlashcardsQueue.size === 0) return;
 
-  const items = Array.from(pendingFlashcardsQueue.values());
+  const hasCards = pendingFlashcardsQueue.size > 0;
+  const hasLogs = pendingDailyLogsQueue.size > 0;
+  const hasReviews = pendingReviewEventsQueue.length > 0;
+
+  if (!hasCards && !hasLogs && !hasReviews) return;
+
+  const cardItems = Array.from(pendingFlashcardsQueue.values());
   pendingFlashcardsQueue.clear();
+
+  const logItems = Array.from(pendingDailyLogsQueue.values());
+  pendingDailyLogsQueue.clear();
+
+  const reviewItems = [...pendingReviewEventsQueue];
+  pendingReviewEventsQueue.length = 0;
 
   try {
     const client = createClient();
-    const batch = items.map((item) => item.payload);
-    const { error } = await client
-      .from('user_flashcard_progress')
-      .upsert(batch, { onConflict: 'user_id,card_id' });
+    const tasks: Promise<void>[] = [];
 
-    if (error) {
-      console.warn('[flashcardsService] Erro ao sincronizar lote de flashcards no Supabase:', error);
-      // Recoloca na fila para não perder o progresso
-      for (const item of items) {
-        if (!pendingFlashcardsQueue.has(`${item.userId}_${item.cardId}`)) {
-          pendingFlashcardsQueue.set(`${item.userId}_${item.cardId}`, item);
-        }
-      }
+    // 1. Sincroniza progresso FSRS dos cards
+    if (cardItems.length > 0) {
+      tasks.push(
+        (async () => {
+          const batchCards = cardItems.map((item) => item.payload);
+          const { error } = await client
+            .from('user_flashcard_progress')
+            .upsert(batchCards, { onConflict: 'user_id,card_id' });
+
+          if (error) {
+            console.warn('[flashcardsService] Erro ao sincronizar lote de flashcards no Supabase:', error);
+            for (const item of cardItems) {
+              if (!pendingFlashcardsQueue.has(`${item.userId}_${item.cardId}`)) {
+                pendingFlashcardsQueue.set(`${item.userId}_${item.cardId}`, item);
+              }
+            }
+          }
+        })()
+      );
     }
+
+    // 2. Sincroniza logs diários do Review Heatmap
+    if (logItems.length > 0) {
+      tasks.push(
+        (async () => {
+          const { error } = await client
+            .from('user_flashcard_daily_logs')
+            .upsert(logItems, { onConflict: 'user_id,date' });
+
+          if (error) {
+            console.warn('[flashcardsService] Erro ao sincronizar logs diários no Supabase:', error);
+            for (const item of logItems) {
+              const key = `${item.user_id}_${item.date}`;
+              if (!pendingDailyLogsQueue.has(key)) {
+                pendingDailyLogsQueue.set(key, item);
+              }
+            }
+          }
+        })()
+      );
+    }
+
+    // 3. Sincroniza eventos atômicos de revisão para auditoria
+    if (reviewItems.length > 0) {
+      tasks.push(
+        (async () => {
+          const { error } = await client
+            .from('user_flashcard_reviews')
+            .insert(reviewItems);
+
+          if (error) {
+            console.warn('[flashcardsService] Erro ao registrar eventos de revisão no Supabase:', error);
+          }
+        })()
+      );
+    }
+
+    await Promise.allSettled(tasks);
   } catch (err) {
-    console.warn('[flashcardsService] Exceção no lote de flashcards:', err);
+    console.warn('[flashcardsService] Exceção no lote de sincronização de flashcards:', err);
   }
 }
 
 if (typeof window !== 'undefined') {
   window.addEventListener('beforeunload', () => {
-    if (pendingFlashcardsQueue.size > 0) {
+    if (pendingFlashcardsQueue.size > 0 || pendingDailyLogsQueue.size > 0 || pendingReviewEventsQueue.length > 0) {
       flushPendingFlashcards();
     }
   });
@@ -214,9 +300,15 @@ export const flashcardsService = {
   /**
    * Salva a avaliação do aluno no algoritmo FSRS (Repetição Espaçada)
    * Suporta tempos encurtados para cards 'essential' (alta incidência em provas)
-   * e tempos padrão para cards 'standard'
+   * e tempos padrão para cards 'standard'.
+   * Sincroniza estado FSRS, log diário e evento atômico de revisão.
    */
-  recordReview(cardId: string, rating: FlashcardRating, userId?: string | null): FlashcardProgress {
+  recordReview(
+    cardId: string,
+    rating: FlashcardRating,
+    userId?: string | null,
+    responseTimeSeconds: number = 12
+  ): FlashcardProgress {
     const saved = this.loadSavedProgress(userId);
     const current = saved[cardId] || {
       state: 'new',
@@ -230,6 +322,7 @@ export const flashcardsService = {
       lapses: 0
     };
 
+    const stateBefore = current.state;
     const card = this.getFlashcardById(cardId);
     const isEssential = card?.priority === 'essential';
     const now = new Date();
@@ -324,6 +417,9 @@ export const flashcardsService = {
     saved[cardId] = updatedProgress;
     this.saveProgressToStorage(saved, userId);
 
+    const isFirstReview = !current || current.repetitions === 0;
+    this.recordDailyReview(isFirstReview, responseTimeSeconds, userId);
+
     if (userId && userId !== 'demo-student') {
       const queueKey = `${userId}_${cardId}`;
       pendingFlashcardsQueue.set(queueKey, {
@@ -345,7 +441,23 @@ export const flashcardsService = {
         }
       });
 
-      if (pendingFlashcardsQueue.size >= BATCH_FLUSH_MAX_SIZE) {
+      // Registra evento atômico na fila de revisões
+      pendingReviewEventsQueue.push({
+        user_id: userId,
+        card_id: cardId,
+        rating,
+        state_before: stateBefore,
+        state_after: updatedProgress.state,
+        interval_days: Math.round(updatedProgress.intervalDays * 100) / 100,
+        duration_seconds: responseTimeSeconds,
+        reviewed_at: now.toISOString()
+      });
+
+      if (
+        pendingFlashcardsQueue.size >= BATCH_FLUSH_MAX_SIZE ||
+        pendingDailyLogsQueue.size >= BATCH_FLUSH_MAX_SIZE ||
+        pendingReviewEventsQueue.length >= BATCH_FLUSH_MAX_SIZE
+      ) {
         flushPendingFlashcards();
       } else {
         if (flashcardsFlushTimeout) clearTimeout(flashcardsFlushTimeout);
@@ -842,16 +954,220 @@ export const flashcardsService = {
     return this.getLastReadSummary();
   },
 
+  /**
+   * Registra uma revisão diária para o Review Heatmap (Local + Nuvem em Lote)
+   */
+  recordDailyReview(isNew: boolean, seconds: number = 10, userId?: string | null): void {
+    if (typeof window === 'undefined') return;
+    try {
+      const now = new Date();
+      const yyyy = now.getFullYear();
+      const mm = String(now.getMonth() + 1).padStart(2, '0');
+      const dd = String(now.getDate()).padStart(2, '0');
+      const dateKey = `${yyyy}-${mm}-${dd}`;
+      const storageKey = getDailyLogsStorageKey(userId);
+      const raw = localStorage.getItem(storageKey);
+      const logs: Record<string, DailyReviewLog> = raw ? JSON.parse(raw) : {};
+
+      const current = logs[dateKey] || {
+        date: dateKey,
+        feitos: 0,
+        revisao: 0,
+        total: 0,
+        durationSeconds: 0
+      };
+
+      if (isNew) {
+        current.feitos += 1;
+      } else {
+        current.revisao += 1;
+      }
+      current.total += 1;
+      current.durationSeconds += seconds;
+
+      logs[dateKey] = current;
+      localStorage.setItem(storageKey, JSON.stringify(logs));
+      if (!userId) {
+        localStorage.setItem(DAILY_LOGS_KEY, JSON.stringify(logs));
+      }
+
+      // Enfileira sincronização com Supabase se usuário autenticado
+      if (userId && userId !== 'demo-student') {
+        const queueKey = `${userId}_${dateKey}`;
+        pendingDailyLogsQueue.set(queueKey, {
+          user_id: userId,
+          date: dateKey,
+          total: current.total,
+          feitos: current.feitos,
+          revisao: current.revisao,
+          duration_seconds: current.durationSeconds,
+          updated_at: now.toISOString()
+        });
+
+        if (pendingDailyLogsQueue.size >= BATCH_FLUSH_MAX_SIZE || pendingFlashcardsQueue.size >= BATCH_FLUSH_MAX_SIZE) {
+          flushPendingFlashcards();
+        } else {
+          if (flashcardsFlushTimeout) clearTimeout(flashcardsFlushTimeout);
+          flashcardsFlushTimeout = setTimeout(() => {
+            flushPendingFlashcards();
+          }, BATCH_FLUSH_INTERVAL_MS);
+        }
+      }
+    } catch (e) {
+      console.warn('Erro ao registrar log diário de flashcard:', e);
+    }
+  },
+
+  /**
+   * Retorna os logs diários de revisão para o Heatmap (Opção A: 100% limpo e legítimo para novos alunos)
+   */
+  getDailyReviewLogs(year?: number, userId?: string | null): Record<string, DailyReviewLog> {
+    if (typeof window === 'undefined') return {};
+    try {
+      const storageKey = getDailyLogsStorageKey(userId);
+      const raw = localStorage.getItem(storageKey);
+      if (raw) {
+        const parsed: Record<string, DailyReviewLog> = JSON.parse(raw);
+        if (parsed && typeof parsed === 'object') return parsed;
+      }
+      return {};
+    } catch {
+      return {};
+    }
+  },
+
+  /**
+   * Sincroniza logs diários do Heatmap com o Supabase (SWR Reconciliação Bidirecional)
+   */
+  async syncRemoteDailyLogs(userId?: string | null, year?: number): Promise<Record<string, DailyReviewLog>> {
+    const local = this.getDailyReviewLogs(year, userId);
+    if (!userId || userId === 'demo-student') return local;
+
+    try {
+      const targetYear = year || new Date().getFullYear();
+      const startDate = `${targetYear}-01-01`;
+      const endDate = `${targetYear}-12-31`;
+
+      const client = createClient();
+      const { data, error } = await client
+        .from('user_flashcard_daily_logs')
+        .select('*')
+        .eq('user_id', userId)
+        .gte('date', startDate)
+        .lte('date', endDate);
+
+      if (!error && data) {
+        const merged: Record<string, DailyReviewLog> = { ...local };
+        const missingOnRemote: Array<PendingDailyLogItem> = [];
+
+        for (const row of data as any[]) {
+          const dateStr = typeof row.date === 'string' ? row.date.split('T')[0] : String(row.date);
+          if (!dateStr) continue;
+
+          const remoteLog: DailyReviewLog = {
+            date: dateStr,
+            feitos: Number(row.feitos) || 0,
+            revisao: Number(row.revisao) || 0,
+            total: Number(row.total) || 0,
+            durationSeconds: Number(row.duration_seconds) || 0
+          };
+
+          const localLog = merged[dateStr];
+          if (!localLog) {
+            merged[dateStr] = remoteLog;
+          } else {
+            // Se o remoto tiver mais ou igual quantidade de revisões, atualiza o local
+            if (remoteLog.total >= localLog.total) {
+              merged[dateStr] = remoteLog;
+            } else {
+              // Local possui mais revisões (estudo offline recente), enfileira para atualizar o remoto
+              missingOnRemote.push({
+                user_id: userId,
+                date: dateStr,
+                total: localLog.total,
+                feitos: localLog.feitos,
+                revisao: localLog.revisao,
+                duration_seconds: localLog.durationSeconds,
+                updated_at: new Date().toISOString()
+              });
+            }
+          }
+        }
+
+        // Verifica se há dias locais que sequer constam no banco
+        const remoteDates = new Set(
+          (data as any[]).map((r) => (typeof r.date === 'string' ? r.date.split('T')[0] : String(r.date)))
+        );
+        for (const [dateStr, log] of Object.entries(local)) {
+          if (!remoteDates.has(dateStr) && log.total > 0) {
+            missingOnRemote.push({
+              user_id: userId,
+              date: dateStr,
+              total: log.total,
+              feitos: log.feitos,
+              revisao: log.revisao,
+              duration_seconds: log.durationSeconds,
+              updated_at: new Date().toISOString()
+            });
+          }
+        }
+
+        // Salva mesclado localmente
+        const storageKey = getDailyLogsStorageKey(userId);
+        localStorage.setItem(storageKey, JSON.stringify(merged));
+
+        // Envia dados faltantes para o Supabase
+        if (missingOnRemote.length > 0) {
+          client
+            .from('user_flashcard_daily_logs')
+            .upsert(missingOnRemote, { onConflict: 'user_id,date' })
+            .then(() => {}, () => {});
+        }
+
+        return merged;
+      }
+    } catch (e) {
+      console.warn('[flashcardsService] Erro ao sincronizar logs diários remotos:', e);
+    }
+
+    return local;
+  },
+
   getCustomDecks(userId?: string | null): CustomFlashcardDeck[] {
     if (typeof window === 'undefined') return [];
     try {
       const key = getDecksStorageKey(userId);
       const data = localStorage.getItem(key);
-      if (data) return JSON.parse(data);
-      const fallback = localStorage.getItem(CUSTOM_DECKS_KEY);
-      return fallback ? JSON.parse(fallback) : [];
+      let list: CustomFlashcardDeck[] = data ? JSON.parse(data) : [];
+      if (!list || list.length === 0) {
+        const fallback = localStorage.getItem(CUSTOM_DECKS_KEY);
+        list = fallback ? JSON.parse(fallback) : [];
+      }
+
+      // Garante sempre ao menos o "Baralho Padrão"
+      if (!list.some((d) => d.id === 'deck-padrao')) {
+        const defaultDeck: CustomFlashcardDeck = {
+          id: 'deck-padrao',
+          name: 'Baralho Padrão',
+          description: 'Baralho principal para seus cartões autorais e anotações clínicas.',
+          specialties: [],
+          createdAt: new Date().toISOString()
+        };
+        list = [defaultDeck, ...list];
+        localStorage.setItem(key, JSON.stringify(list));
+      }
+
+      return list;
     } catch {
-      return [];
+      return [
+        {
+          id: 'deck-padrao',
+          name: 'Baralho Padrão',
+          description: 'Baralho principal para seus cartões autorais e anotações clínicas.',
+          specialties: [],
+          createdAt: new Date().toISOString()
+        }
+      ];
     }
   },
 
@@ -1002,7 +1318,12 @@ export const flashcardsService = {
     if (typeof window === 'undefined') return card;
     try {
       const current = this.loadUserCreatedFlashcards(userId);
-      const updated = [card, ...current];
+      const cardToSave: FlashcardItem = {
+        ...card,
+        deckId: card.deckId || 'deck-padrao',
+        createdAt: card.createdAt || new Date().toISOString()
+      };
+      const updated = [cardToSave, ...current.filter((c) => c.id !== card.id)];
       const key = getUserCardsStorageKey(userId);
       localStorage.setItem(key, JSON.stringify(updated));
       localStorage.setItem(USER_FLASHCARDS_KEY, JSON.stringify(updated));

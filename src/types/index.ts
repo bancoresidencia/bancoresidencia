@@ -213,7 +213,7 @@ export interface StudentProfile {
   semester: '2026.1' | '2026.2';
 }
 
-export type RankingStatus = 'locked' | 'approximate' | 'official' | 'unranked' | 'provisional';
+export type RankingStatus = 'locked' | 'approximate' | 'official' | 'unranked' | 'provisional' | 'calibrando';
 
 export interface PercentileResult {
   percentile: number | null;

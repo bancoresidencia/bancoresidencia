@@ -458,7 +458,7 @@ export async function fetchTotalQuestionsCount(onlyClassifiedWithAnswer: boolean
   }
 
   // Universo oficial consolidado padrão-ouro homologado (132.965 questões)
-  const OFFICIAL_CONSOLIDATED_COUNT = 132965;
+  const OFFICIAL_CONSOLIDATED_COUNT = 121635;
   countCache.set(cacheKey, { count: OFFICIAL_CONSOLIDATED_COUNT, timestamp: Date.now() });
   return OFFICIAL_CONSOLIDATED_COUNT;
 }
@@ -483,7 +483,7 @@ export function calculateHierarchyFallback(filters: ExtendedFilterState): number
     const sum = filters.especialidades.reduce((acc, e) => acc + (getQuestionCount('especialidades', e) || 0), 0);
     if (sum > 0) return Math.max(1, Math.round(sum * ratio));
   }
-  return isRevalida ? 2921 : 132965;
+  return isRevalida ? 2921 : 121635;
 }
 
 export async function fetchQuestionsFromSupabase(
@@ -528,7 +528,16 @@ export async function fetchQuestionsFromSupabase(
   // Consulta segura e protegida contra raspagem: omite correct_answer e commentary na busca pública
   let query = supabase.from('questions').select(SAFE_QUESTION_COLUMNS);
 
-  // Regra de Gabarito: Todas as 132.965 questões presentes por padrão
+  // Regra Canônica de Gabarito: Alunos só visualizam questões com gabarito homologado (A-E ou Anuladas)
+  if (filters.gabaritoStatus === 'sem_gabarito') {
+    query = query.eq('has_gabarito', false);
+  } else if (filters.gabaritoStatus === 'todas') {
+    // Curadoria administrativa visualiza todas
+  } else {
+    // Padrão do aluno: oculta discursivas sem alternativa e questões de bancas sem gabarito
+    query = query.eq('has_gabarito', true);
+  }
+
   if (filters.ocultarAnuladasErro) {
     query = query.eq('is_anulada', false);
   }
@@ -753,6 +762,11 @@ export async function fetchQuestionsFromSupabase(
     try {
       const publicCols = 'id,code,institution,banca,year,tipo_prova,modalidade,especialidade,tema,foco,subfoco,difficulty,type,is_anulada,statement,options,images';
       let retryQuery = supabase.from('questions').select(publicCols);
+      if (filters.gabaritoStatus === 'sem_gabarito') {
+        retryQuery = retryQuery.eq('has_gabarito', false);
+      } else if (filters.gabaritoStatus !== 'todas') {
+        retryQuery = retryQuery.eq('has_gabarito', true);
+      }
       if (filters.ocultarAnuladasErro) retryQuery = retryQuery.eq('is_anulada', false);
       if (questionIds && questionIds.length > 0) {
         retryQuery = retryQuery.in('id', questionIds);
@@ -803,7 +817,7 @@ export async function fetchQuestionsFromSupabase(
 
   // Resolução de contagem do universo com base consolidada (132.965 para Residência Geral, 2.921 para Revalida)
   const isRevalida = Boolean(filters.modalidades?.some((m) => m.toLowerCase().includes('revalida')));
-  const baseTotal = isRevalida ? 2921 : 132965;
+  const baseTotal = isRevalida ? 2921 : 121635;
   let total: number = baseTotal;
   const hasActiveFilters = Boolean(
     isRevalida ||
@@ -855,6 +869,12 @@ export async function fetchQuestionsFromSupabase(
       let countQuery = supabase
         .from('questions')
         .select('id', { count: 'exact', head: true });
+
+      if (filters.gabaritoStatus === 'sem_gabarito') {
+        countQuery = countQuery.eq('has_gabarito', false);
+      } else if (filters.gabaritoStatus !== 'todas') {
+        countQuery = countQuery.eq('has_gabarito', true);
+      }
 
       if (filters.ocultarAnuladasErro) {
         countQuery = countQuery.eq('is_anulada', false);
@@ -1014,10 +1034,10 @@ export async function fetchQuestionsFromSupabase(
         } else if (filters.especialidades && filters.especialidades.length > 0) {
           fallbackSum = filters.especialidades.reduce((acc, e) => acc + (getQuestionCount('especialidades', e) || 0), 0);
         }
-        total = fallbackSum > 0 ? fallbackSum : (isRevalida ? 2921 : Math.max(from + questions.length, 132965));
+        total = fallbackSum > 0 ? fallbackSum : (isRevalida ? 2921 : Math.max(from + questions.length, 121635));
       }
     } catch {
-      total = isRevalida ? 2921 : Math.max(from + questions.length, 132965);
+      total = isRevalida ? 2921 : Math.max(from + questions.length, 121635);
     }
   }
 
