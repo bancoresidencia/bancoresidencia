@@ -82,6 +82,8 @@ import { useAuth } from '@/context/AuthContext';
 import { useSubscription } from '@/context/SubscriptionContext';
 import { getAccountTargetExam } from '@/utils/userTargetExam';
 import { flashcardsService } from '@/services/flashcardsService';
+import { useStudyTimer } from '@/context/StudyTimerContext';
+import { formatSecondsToDetailed } from './dashboard/StudyTimeAnalyticsCard';
 import {
   getRecentOfficialExams,
   saveRecentOfficialExam,
@@ -350,6 +352,11 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   const examInfo = React.useMemo(() => getAccountTargetExam(user), [user]);
   const [targetExamName, setTargetExamName] = useState<string>(examInfo.examName);
   const [targetDaysLeft, setTargetDaysLeft] = useState<number>(examInfo.daysLeft);
+
+  // Tempo de estudo realizado hoje (vinculado ao cronômetro)
+  const { todayTotalSeconds, status: timerStatus, elapsedSeconds } = useStudyTimer();
+  const currentTodayStudySeconds = todayTotalSeconds + ((timerStatus === 'running' || timerStatus === 'paused') ? elapsedSeconds : 0);
+  const formattedTodayStudy = formatSecondsToDetailed(currentTodayStudySeconds);
 
   useEffect(() => {
     const updated = getAccountTargetExam(user);
@@ -2959,6 +2966,34 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     </div>
 
                     <div className="flex items-center gap-2 sm:gap-2.5 shrink-0">
+                      {/* Tempo Estudado Hoje */}
+                      <div
+                        onClick={() => onNavigate('stats')}
+                        title="Tempo de estudo acumulado hoje. Clique para abrir seu desempenho detalhado."
+                        className="flex items-center gap-2.5 px-3 py-1.5 rounded-xl bg-slate-50 dark:bg-zinc-900/60 border border-slate-200/70 dark:border-zinc-800 hover:border-slate-300 dark:hover:border-zinc-700 transition-colors cursor-pointer"
+                      >
+                        <div
+                          className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0"
+                          style={{
+                            backgroundColor: accentConfig.timeAccent.bgRgba,
+                            color: accentConfig.timeAccent.hex
+                          }}
+                        >
+                          <Clock className="w-3.5 h-3.5" />
+                        </div>
+                        <div>
+                          <div
+                            className="text-xs sm:text-sm font-bold font-sans tracking-tight leading-none font-[var(--font-inter)] tabular-nums"
+                            style={{ color: accentConfig.timeAccent.hex }}
+                          >
+                            {formattedTodayStudy}
+                          </div>
+                          <div className="text-[10px] text-slate-500 dark:text-zinc-400 font-medium truncate">
+                            estudado hoje
+                          </div>
+                        </div>
+                      </div>
+
                       {/* Prova Alvo */}
                       <div className="flex items-center gap-2.5 px-3 py-1.5 rounded-xl bg-slate-50 dark:bg-zinc-900/60 border border-slate-200/70 dark:border-zinc-800">
                         <div

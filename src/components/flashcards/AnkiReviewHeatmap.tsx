@@ -22,12 +22,20 @@ export const AnkiReviewHeatmap: React.FC<AnkiReviewHeatmapProps> = ({
   const { mode } = useTheme();
 
   // Detecção resiliente de Dark Mode: avalia classe .dark no HTML ou preferência
-  const [isDark, setIsDark] = useState<boolean>(true);
+  const [isDark, setIsDark] = useState<boolean>(() => {
+    if (typeof window !== 'undefined') {
+      const hasDarkClass = document.documentElement.classList.contains('dark');
+      const savedMode = localStorage.getItem('banco_theme_mode');
+      return mode === 'dark' || hasDarkClass || savedMode !== 'light';
+    }
+    return true;
+  });
 
   useEffect(() => {
     const updateTheme = () => {
       const hasDarkClass = document.documentElement.classList.contains('dark');
-      setIsDark(mode === 'dark' || hasDarkClass);
+      const savedMode = localStorage.getItem('banco_theme_mode');
+      setIsDark(mode === 'dark' || hasDarkClass || savedMode !== 'light');
     };
     updateTheme();
 
@@ -341,7 +349,12 @@ export const AnkiReviewHeatmap: React.FC<AnkiReviewHeatmapProps> = ({
 
   return (
     <div
-      className={`bg-white dark:bg-[#121215] border border-slate-200 dark:border-zinc-800/80 rounded-2xl p-3 sm:p-4 shadow-xs transition-all relative text-zinc-900 dark:text-zinc-100 ${className}`}
+      style={{ backgroundColor: isDark ? '#121215' : '#ffffff' }}
+      className={`border rounded-2xl p-3 sm:p-4 shadow-xs transition-all relative ${
+        isDark
+          ? 'bg-[#121215] border-zinc-800/80 text-zinc-100'
+          : 'bg-white border-slate-200 text-zinc-900'
+      } ${className}`}
     >
       {/* 1. TOPO ESTILO ANKI: Frase Centralizada + Botão de Minimizar */}
       <div className="relative flex items-center justify-center pb-1">
@@ -362,11 +375,11 @@ export const AnkiReviewHeatmap: React.FC<AnkiReviewHeatmapProps> = ({
       {!isCollapsed && (
         <>
           {/* 2. CONTROLES DE NAVEGAÇÃO CENTRALIZADOS: < T > (Fiel ao Anki) */}
-          <div className="flex items-center justify-center gap-1.5 py-1 select-none">
+          <div className="flex items-center justify-center gap-1 py-1 select-none">
             <button
               type="button"
               onClick={() => setSelectedYear((prev) => prev - 1)}
-              className="px-2 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 font-mono text-[11px] font-bold transition-colors cursor-pointer"
+              className="px-2 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800/80 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 font-mono text-[11px] font-bold transition-colors cursor-pointer"
               title="Ano anterior"
             >
               &lt;
@@ -374,7 +387,7 @@ export const AnkiReviewHeatmap: React.FC<AnkiReviewHeatmapProps> = ({
             <button
               type="button"
               onClick={() => setSelectedYear(currentRealYear)}
-              className="px-2.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-zinc-100 font-mono text-[11px] font-bold transition-colors cursor-pointer"
+              className="px-2.5 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800/80 text-zinc-700 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-zinc-100 font-mono text-[11px] font-bold transition-colors cursor-pointer"
               title="Voltar para Hoje"
             >
               T
@@ -382,7 +395,7 @@ export const AnkiReviewHeatmap: React.FC<AnkiReviewHeatmapProps> = ({
             <button
               type="button"
               onClick={() => setSelectedYear((prev) => prev + 1)}
-              className="px-2 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 font-mono text-[11px] font-bold transition-colors cursor-pointer"
+              className="px-2 py-0.5 rounded bg-zinc-100 dark:bg-zinc-800/80 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 font-mono text-[11px] font-bold transition-colors cursor-pointer"
               title="Próximo ano"
             >
               &gt;
@@ -396,13 +409,13 @@ export const AnkiReviewHeatmap: React.FC<AnkiReviewHeatmapProps> = ({
               <div className="flex text-[10px] text-zinc-400 dark:text-zinc-500 font-semibold select-none pb-1 pl-6">
                 <div
                   className="relative h-4 w-full"
-                  style={{ minWidth: weeksGrid.length * 15 }}
+                  style={{ minWidth: weeksGrid.length * 14 }}
                 >
                   {monthLabels.map((m, idx) => (
                     <span
                       key={idx}
                       className="absolute font-mono"
-                      style={{ left: m.colIndex * 15 }}
+                      style={{ left: m.colIndex * 14 }}
                     >
                       {m.name}
                     </span>
@@ -415,7 +428,7 @@ export const AnkiReviewHeatmap: React.FC<AnkiReviewHeatmapProps> = ({
                 {/* Coluna dos Dias da Semana (Seg, Qua, Sex) */}
                 <div
                   className="flex flex-col text-[9px] font-mono font-medium text-zinc-400 dark:text-zinc-500 justify-between select-none shrink-0"
-                  style={{ height: 7 * 11 + 6 * 3.5 }}
+                  style={{ height: 7 * 11 + 6 * 3 }}
                 >
                   <span style={{ height: 11, lineHeight: '11px' }}></span>
                   <span style={{ height: 11, lineHeight: '11px' }}>Seg</span>
@@ -426,22 +439,21 @@ export const AnkiReviewHeatmap: React.FC<AnkiReviewHeatmapProps> = ({
                   <span style={{ height: 11, lineHeight: '11px' }}></span>
                 </div>
 
-                {/* 53 Colunas de Semanas: Cada coluna pode ser destacada verticalmente */}
-                <div className="inline-flex" style={{ gap: 3.5 }}>
+                {/* 53 Colunas de Semanas: Cada coluna destacada suavemente no hover sem layout shift */}
+                <div className="inline-flex gap-[3px]">
                   {weeksGrid.map((week, wIdx) => {
                     const isColHovered = hoveredColIndex === wIdx;
 
                     return (
                       <div
                         key={wIdx}
-                        className={`flex flex-col rounded-[3px] transition-colors ${
+                        className={`flex flex-col gap-[3px] rounded-[3px] transition-colors p-[1px] -m-[1px] ${
                           isColHovered
                             ? isDark
-                              ? 'bg-zinc-800/80 ring-2 ring-zinc-700/50'
-                              : 'bg-zinc-200/80 ring-2 ring-zinc-300/50'
+                              ? 'bg-zinc-800/80 ring-1 ring-zinc-700/60'
+                              : 'bg-zinc-200/80 ring-1 ring-zinc-300/60'
                             : ''
                         }`}
-                        style={{ gap: 3.5, padding: isColHovered ? '1px 0' : 0 }}
                       >
                         {week.map((cell, dIdx) => {
                           if (!cell) {
@@ -475,7 +487,7 @@ export const AnkiReviewHeatmap: React.FC<AnkiReviewHeatmapProps> = ({
                               }}
                               className={`rounded-[2px] transition-all cursor-pointer shrink-0 ${
                                 isCellHovered
-                                  ? 'ring-2 ring-white dark:ring-zinc-100 z-20 scale-125 shadow-md'
+                                  ? 'ring-2 ring-zinc-900 dark:ring-white z-20 scale-125 shadow-md'
                                   : 'hover:opacity-90'
                               } ${isTodayHighlight}`}
                             />

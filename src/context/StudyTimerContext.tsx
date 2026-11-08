@@ -357,12 +357,18 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     } catch {}
   }, []);
 
-  // Sessões e tempo total do dia de hoje
-  const todayStr = useMemo(() => new Date().toISOString().split('T')[0], []);
+  // Sessões e tempo total do dia de hoje (respeitando o fuso horário local do estudante)
+  const todayStr = useMemo(() => {
+    const now = new Date();
+    return `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+  }, []);
 
   const todaySessions = useMemo(() => {
     return savedSessions.filter((s) => {
-      const sessionDate = s.startTime ? s.startTime.split('T')[0] : '';
+      if (!s.startTime) return false;
+      const d = new Date(s.startTime);
+      if (isNaN(d.getTime())) return false;
+      const sessionDate = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
       return sessionDate === todayStr;
     });
   }, [savedSessions, todayStr]);
