@@ -24,12 +24,13 @@ data/
 
 ## 2. Especificação dos 4 Bancos
 
-| Banco / Arquivo | Modalidade Canônica | Volume | Faixa de Anos | Principais Instituições | Índices Criados |
+| Banco / Arquivo | Modalidade Canônica | Volume Líquido | Faixa de Anos | Principais Instituições | Índices Ativos |
 | :--- | :--- | :---: | :---: | :--- | :--- |
-| `residencia_acesso_direto.db` | `Residência Médica` | **164.870** | 1993 a 2027 | USP, AMRIGS, PSU-MG, ENARE, UNICAMP, SES-RJ, UERJ, SES-PE | `ano`, `instituicao`, `banca`, `especialidade`, `tema`, `foco`, `gabarito`, `is_anulada` |
-| `r_plus.db` | `R+ Cirurgia / Clínica / Pediatria / GO` | **50.582** | 2009 a 2027 | USP, UNICAMP, IAMSPE, UNESP, FMABC, USP-RP, UNIFESP, AMP | `ano`, `instituicao`, `banca`, `especialidade`, `tema`, `foco`, `gabarito`, `is_anulada` |
-| `revalida.db` | `Revalida` | **4.429** | 2011 a 2026 | INEP (Revalida Nacional), UFMT, USP, UFES | `ano`, `instituicao`, `banca`, `especialidade`, `tema`, `foco`, `gabarito`, `is_anulada` |
-| `titulo_especialista.db` | `Título de Especialista` | **870** | 2011 a 2026 | TEGO (FEBRASGO), TECM (AMB/SBCM) | `ano`, `instituicao`, `banca`, `especialidade`, `tema`, `foco`, `gabarito`, `is_anulada` |
+| `residencia_acesso_direto.db` | `Residência Médica` | **64.531** | 2009 a 2027 | FAMERP, USP, UNICAMP, AMRIGS, PSU-MG, ENARE, SES-PE, SES-RJ, PUCPR, HCPA... | `ano`, `instituicao`, `banca`, `especialidade`, `tema`, `foco`, `gabarito`, `is_anulada`, `tipo_origem` |
+| `r_plus.db` | `R+ Cirurgia / Clínica / Pediatria / GO` | **50.582** | 2009 a 2027 | USP, UNICAMP, IAMSPE, UNESP, FMABC, USP-RP, UNIFESP, AMP... | `ano`, `instituicao`, `banca`, `especialidade`, `tema`, `foco`, `gabarito`, `is_anulada` |
+| `revalida.db` | `Revalida` | **4.429** | 2004 a 2026 | INEP (Revalida Nacional), UFMT, USP, UFES... | `ano`, `instituicao`, `banca`, `especialidade`, `tema`, `foco`, `gabarito`, `is_anulada` |
+| `titulo_especialista.db` | `Título de Especialista` | **870** | 2011 a 2026 | TEGO (FEBRASGO), TECM (AMB/SBCM)... | `ano`, `instituicao`, `banca`, `especialidade`, `tema`, `foco`, `gabarito`, `is_anulada` |
+| **TOTAL EXPANSÃO** | *4 modalidades 100% purificadas* | **120.412** | — | **Zero duplicatas com o banco ativo e zero concursos gerais** | *Pronto para consumo* |
 
 ---
 

@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import {
   Calendar,
+  CalendarPlus,
   ChevronLeft,
   ChevronRight,
   Clock,
@@ -51,6 +52,7 @@ interface GoogleCalendarScheduleViewProps {
   setTimelineFilter: (f: TimelineFilter) => void;
   isGoogleCalendarConnected: boolean;
   onOpenAddManual: () => void;
+  onOpenCreateTask?: () => void;
   onOpenAiCommand: () => void;
   onOpenAiDrawer: () => void;
   hasAiSuggestions: boolean;
@@ -76,6 +78,7 @@ export const GoogleCalendarScheduleView: React.FC<GoogleCalendarScheduleViewProp
   setTimelineFilter,
   isGoogleCalendarConnected,
   onOpenAddManual,
+  onOpenCreateTask,
   onOpenAiCommand,
   onOpenAiDrawer,
   hasAiSuggestions,
@@ -125,19 +128,22 @@ export const GoogleCalendarScheduleView: React.FC<GoogleCalendarScheduleViewProp
     );
   }, [currentDate]);
 
-  // Filtragem dos eventos
+  // Filtragem dos eventos conforme as duas categorizações independentes
   const filteredEvents = useMemo(() => {
     let list = events;
     if (timelineFilter === 'estudos') {
-      list = list.filter(s => s.source === 'plataforma' || s.isAiSuggested);
+      list = list.filter(s => s.isStudySession || s.category === 'estudo' || s.category === 'flashcard' || s.category === 'revisao' || s.category === 'simulado');
+    } else if (timelineFilter === 'tarefas') {
+      list = list.filter(s => s.isCalendarTask || s.source === 'google' || isHospitalOrDutyEvent(s));
     } else if (timelineFilter === 'google') {
       list = list.filter(s => s.source === 'google');
     }
     return [...list].sort((a, b) => a.startMinutes - b.startMinutes);
-  }, [events, timelineFilter]);
+  }, [events, timelineFilter, isHospitalOrDutyEvent]);
 
   // Contadores para o filtro
-  const studyCount = useMemo(() => events.filter(s => s.source === 'plataforma' || s.isAiSuggested).length, [events]);
+  const studyCount = useMemo(() => events.filter(s => s.isStudySession || s.category === 'estudo' || s.category === 'flashcard' || s.category === 'revisao' || s.category === 'simulado').length, [events]);
+  const taskCount = useMemo(() => events.filter(s => s.isCalendarTask || s.source === 'google' || isHospitalOrDutyEvent(s)).length, [events, isHospitalOrDutyEvent]);
   const googleCount = useMemo(() => events.filter(s => s.source === 'google').length, [events]);
 
   // Navegação de datas: Hoje, Anterior, Próximo
@@ -212,6 +218,20 @@ export const GoogleCalendarScheduleView: React.FC<GoogleCalendarScheduleViewProp
         cardBg: 'bg-slate-500/10 dark:bg-slate-900/50 border-l-4 border-slate-500 hover:bg-slate-500/15',
         badgeBg: 'bg-slate-500/15 text-slate-700 dark:text-slate-300 border-slate-500/25',
         dotColor: 'bg-slate-500'
+      };
+    }
+    if (slot.isCalendarTask) {
+      return {
+        cardBg: 'bg-zinc-100/80 dark:bg-[#151518] border-l-4 border-emerald-500 hover:bg-zinc-100 dark:hover:bg-[#18181c]',
+        badgeBg: 'bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border-emerald-500/25',
+        dotColor: 'bg-emerald-500'
+      };
+    }
+    if (slot.isStudySession) {
+      return {
+        cardBg: 'bg-blue-500/10 dark:bg-blue-950/25 border-l-4 border-blue-600 hover:bg-blue-500/15',
+        badgeBg: 'bg-blue-500/15 text-blue-700 dark:text-blue-300 border-blue-500/30',
+        dotColor: 'bg-blue-600'
       };
     }
     if (slot.source === 'google') {
@@ -335,8 +355,9 @@ export const GoogleCalendarScheduleView: React.FC<GoogleCalendarScheduleViewProp
             </span>
             {[
               { id: 'todos', label: `Todos (${events.length})` },
-              { id: 'estudos', label: `Estudos (${studyCount})` },
-              { id: 'google', label: `Google / Plantões (${googleCount})` }
+              { id: 'tarefas', label: `Tarefas (${taskCount})` },
+              { id: 'estudos', label: `Sessões de Estudo (${studyCount})` },
+              { id: 'google', label: `Google (${googleCount})` }
             ].map(f => {
               const isActive = timelineFilter === f.id;
               return (
@@ -355,7 +376,7 @@ export const GoogleCalendarScheduleView: React.FC<GoogleCalendarScheduleViewProp
             })}
           </div>
 
-          {/* Botões de Ação: IA, + Novo Bloco, Sincronizar Google */}
+          {/* Botões de Ação: IA, Criar Tarefa, + Novo Bloco, Sincronizar Google */}
           <div className="flex items-center gap-2 flex-wrap">
             {userScheduledTasks.length > 0 && onSyncAllTasksToGoogle && (
               <button
@@ -381,7 +402,20 @@ export const GoogleCalendarScheduleView: React.FC<GoogleCalendarScheduleViewProp
               </button>
             )}
 
-            {/* Botão de Sugestão / Mentor IA (abre o drawer central secundário ou modal de comando) */}
+            {/* Botão Criar Tarefa */}
+            {onOpenCreateTask && (
+              <button
+                type="button"
+                onClick={onOpenCreateTask}
+                className="px-2.5 py-1.5 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 text-zinc-700 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-700 text-xs font-bold flex items-center gap-1 shadow-2xs transition-all cursor-pointer"
+                title="Criar tarefa de calendário (plantão, aula, compromisso)"
+              >
+                <CalendarPlus className="w-3.5 h-3.5 text-emerald-500" />
+                <span>Criar Tarefa</span>
+              </button>
+            )}
+
+            {/* Botão de Sugestão / Mentor IA */}
             <button
               type="button"
               onClick={hasAiSuggestions ? onOpenAiDrawer : onOpenAiCommand}
@@ -396,7 +430,8 @@ export const GoogleCalendarScheduleView: React.FC<GoogleCalendarScheduleViewProp
             <button
               type="button"
               onClick={onOpenAddManual}
-              className="px-3 py-1.5 rounded-xl bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 hover:opacity-90 text-xs font-bold flex items-center gap-1 shadow-2xs transition-all cursor-pointer"
+              className="px-3 py-1.5 rounded-xl text-white text-xs font-bold flex items-center gap-1 shadow-2xs transition-all cursor-pointer hover:opacity-90"
+              style={{ backgroundColor: primaryAccentHex }}
             >
               <Plus className="w-3.5 h-3.5" />
               <span>+ Novo Bloco</span>
@@ -427,6 +462,7 @@ export const GoogleCalendarScheduleView: React.FC<GoogleCalendarScheduleViewProp
           primaryAccentHex={primaryAccentHex}
           onOpenAiCommand={onOpenAiCommand}
           onOpenAddManual={onOpenAddManual}
+          onOpenCreateTask={onOpenCreateTask}
         />
       )}
 
@@ -495,6 +531,7 @@ interface DayViewProps {
   primaryAccentHex: string;
   onOpenAiCommand: () => void;
   onOpenAddManual: () => void;
+  onOpenCreateTask?: () => void;
 }
 
 const DayView: React.FC<DayViewProps> = ({
@@ -516,7 +553,8 @@ const DayView: React.FC<DayViewProps> = ({
   onAction,
   primaryAccentHex,
   onOpenAiCommand,
-  onOpenAddManual
+  onOpenAddManual,
+  onOpenCreateTask
 }) => {
   // Sessões Realizadas no Cronômetro para o Dia Selecionado (respeitando o fuso local do estudante)
   const selectedDateStr = useMemo(() => {
@@ -546,8 +584,8 @@ const DayView: React.FC<DayViewProps> = ({
     return `${h}:${m}`;
   }, [nowDate]);
 
-  // Se não houver eventos agendados mas houver sessões realizadas, exibe as sessões realizadas com banner
-  if (filteredEvents.length === 0 && dayRealizedSessions.length === 0) {
+  // Se não houver eventos ou sessões na grade
+  if (filteredEvents.length === 0) {
     return (
       <div className="p-8 rounded-2xl border border-dashed border-zinc-300 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/30 text-center space-y-3">
         <div className="w-12 h-12 rounded-2xl bg-blue-500/10 text-blue-500 flex items-center justify-center mx-auto shadow-2xs">
@@ -558,25 +596,36 @@ const DayView: React.FC<DayViewProps> = ({
             Nenhum compromisso marcado para este dia
           </h5>
           <p className="text-xs text-zinc-500 dark:text-zinc-400">
-            Seu cronograma está livre! Use o Mentor IA para sugerir tarefas ou adicione um novo bloco manual.
+            Seu cronograma está livre! Crie uma tarefa de calendário, registre um novo bloco de estudo ou use o Mentor IA.
           </p>
         </div>
-        <div className="pt-2 flex items-center justify-center gap-2">
-          <button
-            type="button"
-            onClick={onOpenAiCommand}
-            className="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold flex items-center gap-1.5 shadow-2xs cursor-pointer transition-all"
-          >
-            <Sparkles className="w-3.5 h-3.5" />
-            <span>Sugerir Tarefas com IA</span>
-          </button>
+        <div className="pt-2 flex items-center justify-center gap-2 flex-wrap">
+          {onOpenCreateTask && (
+            <button
+              type="button"
+              onClick={onOpenCreateTask}
+              className="px-3.5 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-200 text-xs font-bold flex items-center gap-1.5 shadow-2xs cursor-pointer transition-all"
+            >
+              <CalendarPlus className="w-3.5 h-3.5 text-emerald-500" />
+              <span>Criar Tarefa</span>
+            </button>
+          )}
           <button
             type="button"
             onClick={onOpenAddManual}
-            className="px-4 py-2 rounded-xl border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-200 text-xs font-bold flex items-center gap-1.5 shadow-2xs cursor-pointer transition-all"
+            className="px-3.5 py-2 rounded-xl text-white text-xs font-bold flex items-center gap-1.5 shadow-2xs cursor-pointer transition-all"
+            style={{ backgroundColor: primaryAccentHex }}
           >
             <Plus className="w-3.5 h-3.5" />
             <span>+ Novo Bloco</span>
+          </button>
+          <button
+            type="button"
+            onClick={onOpenAiCommand}
+            className="px-3.5 py-2 rounded-xl border border-blue-500/30 bg-blue-50 dark:bg-blue-950/30 text-blue-600 dark:text-blue-400 text-xs font-bold flex items-center gap-1.5 shadow-2xs cursor-pointer transition-all"
+          >
+            <Sparkles className="w-3.5 h-3.5" />
+            <span>Mentor IA</span>
           </button>
         </div>
       </div>
@@ -585,113 +634,6 @@ const DayView: React.FC<DayViewProps> = ({
 
   return (
     <div className="space-y-4">
-      {/* ── SEÇÃO: SESSÕES DE ESTUDO REALIZADAS NO CRONÔMETRO (ESTILO APROVADO APP) ── */}
-      {dayRealizedSessions.length > 0 && (
-        <div className="p-4 rounded-3xl bg-emerald-500/10 border border-emerald-500/25 space-y-2.5 animate-in fade-in duration-150">
-          <div className="flex items-center justify-between flex-wrap gap-2">
-            <div className="flex items-center gap-2">
-              <span className="p-1.5 rounded-xl bg-emerald-500/20 text-emerald-600 dark:text-emerald-400">
-                <CheckCircle2 className="w-4 h-4" />
-              </span>
-              <div>
-                <h4 className="text-xs sm:text-sm font-black text-emerald-800 dark:text-emerald-300">
-                  Estudo Realizado no Cronômetro
-                </h4>
-                <span className="text-[10px] text-emerald-600 dark:text-emerald-400 font-bold">
-                  {dayRealizedSessions.length} {dayRealizedSessions.length === 1 ? 'sessão realizada' : 'sessões realizadas'}
-                </span>
-              </div>
-            </div>
-
-            {/* Tempo Total de Estudo em Destaque (Sem a palavra 'líquido', tipografia ampliada) */}
-            <div className="flex items-baseline gap-1.5 shrink-0 px-3 py-1 rounded-2xl bg-emerald-500/15 border border-emerald-500/25">
-              <Clock className="w-5 h-5 text-emerald-600 dark:text-emerald-400 self-center" />
-              <span className="text-2xl sm:text-3xl font-black font-[var(--font-inter)] tabular-nums tracking-tight text-emerald-800 dark:text-emerald-200">
-                {formatSecondsToShort(dayTotalRealizedSec)}
-              </span>
-            </div>
-          </div>
-
-          {/* Listagem das Sessões uma abaixo da outra em cards menores e compactos */}
-          <div className="flex flex-col gap-1.5 pt-1">
-            {dayRealizedSessions.map((sess) => {
-              const specColor =
-                CORE_SPECIALTIES.find(
-                  (c) => c.name.toLowerCase() === (sess.taxonomy.especialidade || '').toLowerCase()
-                )?.color || '#10b981';
-
-              const topicTitle =
-                sess.taxonomy.subfoco ||
-                sess.taxonomy.foco ||
-                sess.taxonomy.tema ||
-                sess.taxonomy.especialidade ||
-                'Estudo Geral';
-
-              let startFormatted = '';
-              let endFormatted = '';
-              try {
-                const sDate = new Date(sess.startTime);
-                const eDate = new Date(sess.endTime);
-                startFormatted = sDate.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
-                endFormatted = eDate.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
-              } catch { }
-
-              return (
-                <div
-                  key={sess.id}
-                  className="p-2 sm:py-2 sm:px-3 rounded-xl bg-white dark:bg-[#121215] border border-emerald-500/20 shadow-2xs hover:border-emerald-500/40 transition-all flex items-center justify-between gap-2.5 relative overflow-hidden"
-                >
-                  <div className="absolute left-0 top-0 bottom-0 w-1" style={{ backgroundColor: specColor }} />
-
-                  <div className="min-w-0 pl-1.5 flex items-center gap-2 flex-wrap sm:flex-nowrap">
-                    <div className="flex items-center gap-1.5 min-w-0">
-                      <span className="text-[11px] sm:text-xs font-bold text-zinc-900 dark:text-zinc-100 truncate">
-                        {topicTitle}
-                      </span>
-                      <span className="px-1.5 py-0.2 rounded text-[8px] sm:text-[9px] font-bold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 shrink-0">
-                        Realizado
-                      </span>
-                    </div>
-
-                    <div className="text-[10px] text-zinc-400 flex items-center gap-2 font-mono shrink-0">
-                      {startFormatted && (
-                        <span>{startFormatted} – {endFormatted}</span>
-                      )}
-                      {sess.questionsCount && sess.questionsCount > 0 ? (
-                        <span className="text-blue-600 dark:text-blue-400 font-semibold font-sans">
-                          • {sess.questionsCount}Q ({sess.correctCount || 0} acertos)
-                        </span>
-                      ) : null}
-                      {sess.notes && (
-                        <span className="text-zinc-500 italic truncate max-w-[140px] hidden md:inline">
-                          • &ldquo;{sess.notes}&rdquo;
-                        </span>
-                      )}
-                    </div>
-                  </div>
-
-                  <div className="flex items-center gap-1.5 shrink-0">
-                    <span className="font-[var(--font-inter)] tabular-nums font-black text-[11px] sm:text-xs text-emerald-700 dark:text-emerald-300 bg-emerald-500/10 px-2 py-0.5 rounded-md">
-                      {sess.durationFormatted}
-                    </span>
-                    {onDeleteSession && (
-                      <button
-                        type="button"
-                        onClick={() => onDeleteSession(sess.id)}
-                        className="p-1 text-zinc-400 hover:text-rose-500 hover:bg-rose-500/10 rounded-md transition-colors cursor-pointer"
-                        title="Excluir registro desta sessão"
-                      >
-                        <Trash2 className="w-3.5 h-3.5" />
-                      </button>
-                    )}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      )}
-
       {/* Grade de Horários com a Linha de Transição */}
       {filteredEvents.length > 0 ? (
         <div className="relative rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#0c1017] p-3 sm:p-5 overflow-hidden">
@@ -759,18 +701,36 @@ const DayView: React.FC<DayViewProps> = ({
                             </span>
                           )}
 
-                          {/* Badges de Categoria e Origem */}
-                          <span className={`px-2 py-0.5 rounded text-[10px] font-bold border ${style.badgeBg}`}>
-                            {isHospital
-                              ? 'Plantão / Internato'
-                              : slot.category === 'flashcard'
-                                ? 'Flashcards FSRS'
-                                : slot.category === 'simulado'
-                                  ? 'Simulado Blitz'
-                                  : slot.category === 'revisao'
-                                    ? 'Caderno de Erros'
-                                    : 'Treino TRI'}
-                          </span>
+                          {/* Badges de Categoria: Distinção Clara entre Obrigação vs Sessão de Estudo */}
+                          {slot.isStudySession ? (
+                            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold bg-blue-500/15 text-blue-700 dark:text-blue-300 border border-blue-500/30">
+                              <Clock className="w-2.5 h-2.5" />
+                              Sessão de Estudo
+                            </span>
+                          ) : slot.isCalendarTask ? (
+                            <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-bold bg-zinc-200/60 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 border border-zinc-300/40 dark:border-zinc-700">
+                              Obrigação
+                            </span>
+                          ) : (
+                            <span className={`px-2 py-0.5 rounded text-[10px] font-bold border ${style.badgeBg}`}>
+                              {isHospital
+                                ? 'Plantão / Internato'
+                                : slot.category === 'flashcard'
+                                  ? 'Flashcards FSRS'
+                                  : slot.category === 'simulado'
+                                    ? 'Simulado Blitz'
+                                    : slot.category === 'revisao'
+                                      ? 'Caderno de Erros'
+                                      : 'Treino TRI'}
+                            </span>
+                          )}
+
+                          {/* Quantidade de Questões em Destaque */}
+                          {slot.questionsCount !== undefined && slot.questionsCount > 0 && (
+                            <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-bold bg-blue-600/10 text-blue-600 dark:text-blue-400 border border-blue-500/20 font-mono">
+                              {slot.questionsCount}Q ({slot.correctCount || 0} acertos)
+                            </span>
+                          )}
 
                           {slot.source === 'google' && (
                             <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded text-[10px] font-bold bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
@@ -872,18 +832,7 @@ const DayView: React.FC<DayViewProps> = ({
             </div>
           )}
         </div>
-      ) : (
-        <div className="p-4 rounded-2xl border border-dashed border-zinc-200 dark:border-zinc-800 text-center text-xs text-zinc-400 flex items-center justify-between gap-2">
-          <span>Nenhum outro compromisso ou plantão agendado para este dia.</span>
-          <button
-            type="button"
-            onClick={onOpenAddManual}
-            className="px-3 py-1 rounded-lg border border-zinc-300 dark:border-zinc-700 hover:bg-zinc-100 dark:hover:bg-zinc-800 text-xs font-bold text-zinc-700 dark:text-zinc-300 transition-colors cursor-pointer"
-          >
-            + Adicionar Bloco
-          </button>
-        </div>
-      )}
+      ) : null}
     </div>
   );
 };

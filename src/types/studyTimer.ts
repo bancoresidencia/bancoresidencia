@@ -68,4 +68,14 @@ export interface StudyTimerContextType {
   todayTotalFormatted: string;
   allSessions: StudySession[];
   deleteSession: (id: string) => void;
+  addManualSession: (data: {
+    taxonomy: SelectedTaxonomy;
+    startTime: string; // "HH:mm" ou ISO
+    endTime: string;   // "HH:mm" ou ISO
+    date?: string;     // "YYYY-MM-DD"
+    studyType?: StudyType;
+    questionsCount?: number;
+    correctCount?: number;
+    notes?: string;
+  }) => Promise<StudySession>;
 }

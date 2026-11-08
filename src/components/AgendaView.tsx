@@ -5,28 +5,26 @@ import { useRouter } from 'next/navigation';
 import {
   CalendarDays,
   Calendar,
+  CalendarPlus,
   Clock,
   Sparkles,
   RotateCcw,
   Plus,
-  Play,
-  Brain,
   AlertOctagon,
-  Trophy,
   CheckCircle2,
-  AlertTriangle,
-  AlertCircle,
   RefreshCw,
   X,
-  Zap,
   Lightbulb,
-  ExternalLink,
-  ChevronRight
+  Trash2,
+  BookOpen,
+  Search
 } from 'lucide-react';
 import { useAuth } from '@/context/AuthContext';
 import { useTheme } from '@/context/ThemeContext';
 import { useStudentData } from '@/context/StudentDataContext';
-import { getLocalDateStr } from '@/context/StudyTimerContext';
+import { useStudyTimer, formatSecondsToShort, getLocalDateStr } from '@/context/StudyTimerContext';
+import { searchTaxonomy, TaxonomyItem, CORE_SPECIALTIES } from '@/services/taxonomySearchService';
+import { SelectedTaxonomy } from '@/types/studyTimer';
 import { GoogleCalendarScheduleView } from './dashboard/GoogleCalendarScheduleView';
 import { AiScheduleDrawer } from './dashboard/AiScheduleDrawer';
 import {
@@ -197,14 +195,17 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
     return {};
   });
 
+  const { todaySessions, deleteSession, addManualSession } = useStudyTimer();
+
   const [isSyncingCalendar, setIsSyncingCalendar] = useState(false);
   const [calendarSyncError, setCalendarSyncError] = useState<string | null>(null);
   const [calendarSyncSuccessMsg, setCalendarSyncSuccessMsg] = useState<string | null>(null);
   const [timelineFilter, setTimelineFilter] = useState<TimelineFilter>('todos');
 
-  // Modais
+  // Modais de Criação
   const [isGoogleModalOpen, setIsGoogleModalOpen] = useState(false);
-  const [showAddManualModal, setShowAddManualModal] = useState(false);
+  const [showCreateTaskModal, setShowCreateTaskModal] = useState(false);
+  const [showManualStudyModal, setShowManualStudyModal] = useState(false);
   const [showDelayModal, setShowDelayModal] = useState(false);
   const [customDelayMinutes, setCustomDelayMinutes] = useState(60);
   const [showAiCommandModal, setShowAiCommandModal] = useState(false);
@@ -214,12 +215,68 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
   const [scheduleAiAnalysis, setScheduleAiAnalysis] = useState<AiScheduleAnalysis | null>(null);
   const [isBatchSyncing, setIsBatchSyncing] = useState(false);
 
-  // Campos Bloco Manual
-  const [manualSlotTitle, setManualSlotTitle] = useState('');
-  const [manualSlotCategory, setManualSlotCategory] = useState<'estudo' | 'flashcard' | 'revisao' | 'simulado'>('estudo');
-  const [manualSlotStart, setManualSlotStart] = useState('14:00');
-  const [manualSlotEnd, setManualSlotEnd] = useState('15:00');
-  const [manualSlotNotes, setManualSlotNotes] = useState('');
+  // Campos Modal "Criar Tarefa" (Obrigação do Calendário)
+  const [taskTitle, setTaskTitle] = useState('');
+  const [taskDate, setTaskDate] = useState(() => getLocalDateStr(new Date()));
+  const [taskStart, setTaskStart] = useState('08:00');
+  const [taskEnd, setTaskEnd] = useState('17:00');
+  const [taskDescription, setTaskDescription] = useState('');
+
+  // Campos Modal "Novo Bloco" (Registro Manual de Sessão de Estudo)
+  const [manualStudyTaxonomy, setManualStudyTaxonomy] = useState<SelectedTaxonomy>({});
+  const [manualStudyStart, setManualStudyStart] = useState('14:00');
+  const [manualStudyEnd, setManualStudyEnd] = useState('15:30');
+
+  // Estados de busca de taxonomia (idênticos ao relógio oficial)
+  const [taxonomyQuery, setTaxonomyQuery] = useState('');
+  const [taxonomyResults, setTaxonomyResults] = useState<TaxonomyItem[]>([]);
+  const [isLoadingTaxonomy, setIsLoadingTaxonomy] = useState(false);
+  const [isTaxonomyDropdownOpen, setIsTaxonomyDropdownOpen] = useState(false);
+  const taxonomyInputRef = React.useRef<HTMLInputElement>(null);
+  const taxonomyContainerRef = React.useRef<HTMLDivElement>(null);
+
+  // Fecha dropdown de taxonomia ao clicar fora
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (taxonomyContainerRef.current && !taxonomyContainerRef.current.contains(e.target as Node)) {
+        setIsTaxonomyDropdownOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  const loadTaxonomySuggestions = useCallback(async (q: string) => {
+    setIsLoadingTaxonomy(true);
+    try {
+      const results = await searchTaxonomy(q, 15);
+      setTaxonomyResults(results);
+    } finally {
+      setIsLoadingTaxonomy(false);
+    }
+  }, []);
+
+  // Sessões Realizadas Hoje (Mais recente no topo / ordem decrescente)
+  const sortedTodaySessions = useMemo(() => {
+    return [...todaySessions].sort((a, b) => {
+      const timeA = new Date(a.endTime || a.startTime || a.createdAt).getTime();
+      const timeB = new Date(b.endTime || b.startTime || b.createdAt).getTime();
+      return timeB - timeA;
+    });
+  }, [todaySessions]);
+
+  // Estatísticas agregadas de estudo do dia
+  const todayStats = useMemo(() => {
+    const totalSeconds = todaySessions.reduce((acc, s) => acc + (s.durationSeconds || 0), 0);
+    const totalQuestions = todaySessions.reduce((acc, s) => acc + (s.questionsCount || 0), 0);
+    const totalCorrect = todaySessions.reduce((acc, s) => acc + (s.correctCount || 0), 0);
+    return {
+      totalSeconds,
+      totalTimeFormatted: formatSecondsToShort(totalSeconds),
+      totalQuestions,
+      totalCorrect
+    };
+  }, [todaySessions]);
 
   // Sincronização entre abas do navegador via Storage Event
   useEffect(() => {
@@ -273,29 +330,68 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
     );
   }, []);
 
-  // União ordenada dos eventos
+  // União ordenada dos eventos (Tarefas de Calendário + Sessões de Estudo sobreponíveis)
   const daySchedule = useMemo<DailyScheduleSlot[]>(() => {
+    const slots: DailyScheduleSlot[] = [];
+    const existingIds = new Set<string>();
+
+    // 1. Eventos do Google Agenda (Obrigações)
     if (isGoogleCalendarConnected) {
-      const slots: DailyScheduleSlot[] = [...realCalendarEvents];
-      if (userScheduledTasks.length > 0) {
-        const existingIds = new Set(slots.map(s => s.id));
-        for (const task of userScheduledTasks) {
-          if (!existingIds.has(task.id)) {
-            slots.push(task);
-            existingIds.add(task.id);
-          }
+      for (const ev of realCalendarEvents) {
+        slots.push({ ...ev, isCalendarTask: true });
+        existingIds.add(ev.id);
+      }
+    }
+
+    // 2. Tarefas e compromissos criados na plataforma
+    if (userScheduledTasks.length > 0) {
+      for (const task of userScheduledTasks) {
+        if (!existingIds.has(task.id)) {
+          slots.push(task);
+          existingIds.add(task.id);
         }
       }
-      slots.sort((a, b) => a.startMinutes - b.startMinutes);
-      return slots;
     }
 
-    if (userScheduledTasks.length > 0) {
-      return [...userScheduledTasks].sort((a, b) => a.startMinutes - b.startMinutes);
+    // 3. Sessões de Estudo realizadas hoje (independentes e sobreponíveis)
+    for (const sess of todaySessions) {
+      const sessSlotId = `sess_slot_${sess.id}`;
+      const legacyTaskId = `task_${sess.id}`;
+      if (existingIds.has(sessSlotId) || existingIds.has(legacyTaskId)) continue;
+
+      const sDate = new Date(sess.startTime);
+      const eDate = new Date(sess.endTime);
+      const startMinutes = isNaN(sDate.getTime()) ? 0 : sDate.getHours() * 60 + sDate.getMinutes();
+      const endMinutes = isNaN(eDate.getTime()) ? startMinutes + 60 : Math.max(startMinutes + 1, eDate.getHours() * 60 + eDate.getMinutes());
+      const topicTitle =
+        sess.taxonomy.subfoco ||
+        sess.taxonomy.foco ||
+        sess.taxonomy.tema ||
+        sess.taxonomy.especialidade ||
+        'Estudo Realizado';
+
+      slots.push({
+        id: sessSlotId,
+        title: topicTitle === 'Treino Geral' ? 'Treino de Questões' : `Estudo: ${topicTitle}`,
+        category: 'estudo',
+        startTime: `${String(Math.floor(startMinutes / 60)).padStart(2, '0')}:${String(startMinutes % 60).padStart(2, '0')}`,
+        endTime: `${String(Math.floor(endMinutes / 60)).padStart(2, '0')}:${String(endMinutes % 60).padStart(2, '0')}`,
+        startMinutes,
+        endMinutes,
+        source: 'plataforma',
+        description: sess.questionsCount ? `${sess.questionsCount} questões resolvidas (${sess.correctCount || 0} acertos)` : 'Sessão de estudo realizada',
+        action: 'treinar',
+        isStudySession: true,
+        questionsCount: sess.questionsCount,
+        correctCount: sess.correctCount,
+        date: getLocalDateStr(sess.startTime)
+      });
+      existingIds.add(sessSlotId);
     }
 
-    return [];
-  }, [isGoogleCalendarConnected, realCalendarEvents, userScheduledTasks]);
+    slots.sort((a, b) => a.startMinutes - b.startMinutes);
+    return slots;
+  }, [isGoogleCalendarConnected, realCalendarEvents, userScheduledTasks, todaySessions]);
 
   // Cálculo da Atividade Atual / Período
   const currentPeriodInfo = useMemo(() => {
@@ -694,48 +790,74 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
     setCalendarSyncSuccessMsg(`Cronograma reorganizado com sucesso (+${minsToUse}m)! A IA adaptou seus blocos restantes.`);
   };
 
-  // Adicionar Bloco Manual
-  const handleCreateManualSlot = () => {
-    if (!manualSlotTitle.trim()) return;
+  // ── 1. CRIAR TAREFA DE CALENDÁRIO (OBRIGAÇÃO) ──
+  const handleCreateCalendarTask = () => {
+    if (!taskTitle.trim()) return;
 
-    const [sh, sm] = manualSlotStart.split(':').map(Number);
-    const [eh, em] = manualSlotEnd.split(':').map(Number);
+    const [sh, sm] = taskStart.split(':').map(Number);
+    const [eh, em] = taskEnd.split(':').map(Number);
     const startMins = (sh || 0) * 60 + (sm || 0);
     const endMins = (eh || 0) * 60 + (em || 0);
 
-    const actionMap: Record<string, 'treinar' | 'flashcards' | 'caderno_erros' | 'simulado'> = {
-      estudo: 'treinar',
-      flashcard: 'flashcards',
-      revisao: 'caderno_erros',
-      simulado: 'simulado'
-    };
-
-    const newSlot: DailyScheduleSlot = {
-      id: `manual_slot_${Date.now()}`,
-      title: manualSlotTitle.trim(),
-      category: manualSlotCategory as any,
-      startTime: manualSlotStart,
-      endTime: manualSlotEnd,
+    const newTask: DailyScheduleSlot = {
+      id: `cal_task_${Date.now()}`,
+      title: taskTitle.trim(),
+      category: 'hospital',
+      startTime: taskStart,
+      endTime: taskEnd,
       startMinutes: startMins,
       endMinutes: endMins > startMins ? endMins : startMins + 60,
       source: 'plataforma',
-      action: actionMap[manualSlotCategory] || 'treinar',
-      description: manualSlotNotes.trim() || 'Bloco de estudo personalizado criado por você',
-      rationale: 'Planejamento pessoal adicionado à grade.'
+      description: taskDescription.trim() || 'Obrigação / Tarefa de Calendário',
+      date: taskDate || getLocalDateStr(new Date()),
+      isCalendarTask: true,
+      rationale: 'Obrigação / Tarefa de calendário adicionada.'
     };
 
     setUserScheduledTasks((prev) => {
-      const updated = [...prev, newSlot];
+      const updated = [...prev, newTask];
       if (typeof window !== 'undefined') {
         localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(updated));
       }
       return updated;
     });
 
-    setManualSlotTitle('');
-    setManualSlotNotes('');
-    setShowAddManualModal(false);
-    setCalendarSyncSuccessMsg(`Bloco "${newSlot.title}" adicionado à sua agenda!`);
+    setTaskTitle('');
+    setTaskDescription('');
+    setShowCreateTaskModal(false);
+    setCalendarSyncSuccessMsg(`Tarefa "${newTask.title}" adicionada com sucesso à sua agenda!`);
+  };
+
+  // ── 2. REGISTRO MANUAL DE SESSÃO DE ESTUDO (NOVO BLOCO) ──
+  const handleCreateManualStudySession = async () => {
+    const topicLabel =
+      manualStudyTaxonomy.rawLabel ||
+      manualStudyTaxonomy.subfoco ||
+      manualStudyTaxonomy.foco ||
+      manualStudyTaxonomy.tema ||
+      manualStudyTaxonomy.especialidade;
+
+    if (!topicLabel) {
+      setCalendarSyncError('Selecione ou busque uma matéria/assunto para registrar o estudo.');
+      return;
+    }
+
+    try {
+      await addManualSession({
+        taxonomy: manualStudyTaxonomy,
+        startTime: manualStudyStart,
+        endTime: manualStudyEnd,
+        date: getLocalDateStr(new Date())
+      });
+
+      setManualStudyTaxonomy({});
+      setTaxonomyQuery('');
+      setShowManualStudyModal(false);
+      setCalendarSyncSuccessMsg(`Sessão de estudo em "${topicLabel}" registrada com sucesso!`);
+    } catch (err) {
+      console.error('Erro ao salvar sessão manual:', err);
+      setCalendarSyncError('Não foi possível salvar a sessão de estudo.');
+    }
   };
 
   // Exportar 1 Bloco para Google Agenda
@@ -1039,7 +1161,6 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
 
   const isCurrentActive = currentPeriodInfo.status === 'em_andamento';
   const activeSlot = isCurrentActive ? currentPeriodInfo.slot : null;
-  const upcomingSlot = currentPeriodInfo.status === 'proximo' ? currentPeriodInfo.slot : null;
 
   return (
     <div className="space-y-6">
@@ -1063,22 +1184,33 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
 
         {/* Botões Rápidos de Topo */}
         <div className="flex items-center gap-2 flex-wrap">
+          {/* Botão 1: Criar Tarefa (Obrigação do Calendário) */}
           <button
             type="button"
-            onClick={() => setShowAddManualModal(true)}
-            className="px-3 py-2 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-xs font-bold text-slate-700 dark:text-zinc-200 flex items-center gap-1.5 transition-all shadow-2xs cursor-pointer"
+            onClick={() => setShowCreateTaskModal(true)}
+            className="px-3.5 py-2 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-xs font-bold text-zinc-700 dark:text-zinc-200 flex items-center gap-1.5 transition-all shadow-2xs cursor-pointer"
           >
-            <Plus className="w-4 h-4 text-blue-500" />
-            <span>Adicionar Bloco</span>
+            <CalendarPlus className="w-4 h-4 text-emerald-500" />
+            <span>Criar Tarefa</span>
+          </button>
+
+          {/* Botão 2: Novo Bloco (Registro Manual de Sessão de Estudo) */}
+          <button
+            type="button"
+            onClick={() => setShowManualStudyModal(true)}
+            className="px-3.5 py-2 rounded-xl text-white text-xs font-bold flex items-center gap-1.5 transition-all shadow-xs cursor-pointer hover:opacity-95"
+            style={{ backgroundColor: accentConfig.primaryHex }}
+          >
+            <Plus className="w-4 h-4" />
+            <span>Novo Bloco</span>
           </button>
 
           <button
             type="button"
             onClick={() => setShowAiCommandModal(true)}
-            className="px-3.5 py-2 rounded-xl text-white text-xs font-bold flex items-center gap-1.5 transition-all shadow-xs cursor-pointer hover:opacity-95"
-            style={{ backgroundColor: accentConfig.primaryHex }}
+            className="px-3 py-2 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-xs font-bold text-zinc-700 dark:text-zinc-300 flex items-center gap-1.5 transition-all shadow-2xs cursor-pointer"
           >
-            <Sparkles className="w-3.5 h-3.5" />
+            <Sparkles className="w-3.5 h-3.5 text-blue-500" />
             <span>Mentor IA</span>
           </button>
 
@@ -1130,7 +1262,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
       {/* ── 2. GRID PRINCIPAL (5 COLS ESQUERDA / 7 COLS DIREITA) ── */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
 
-        {/* ── COLUNA ESQUERDA: CONTROLE, IA, PACING & CRONOBIOLOGIA (lg:col-span-5) ── */}
+        {/* ── COLUNA ESQUERDA: CONTROLE E SESSÕES REALIZADAS DO DIA (lg:col-span-5) ── */}
         <div className="lg:col-span-5 space-y-4">
 
           {/* Botão Sincronizar Google Agenda */}
@@ -1138,7 +1270,7 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
             type="button"
             onClick={isGoogleCalendarConnected ? handleSyncNow : () => setIsGoogleModalOpen(true)}
             disabled={isSyncingCalendar}
-            className="w-full px-4 py-2.5 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:bg-zinc-50 dark:hover:bg-zinc-800 text-xs font-bold text-zinc-800 dark:text-zinc-200 flex items-center justify-center gap-2 shadow-2xs transition-all cursor-pointer disabled:opacity-50"
+            className="w-full px-4 py-2.5 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#121215] hover:bg-zinc-50 dark:hover:bg-zinc-800 text-xs font-bold text-zinc-800 dark:text-zinc-200 flex items-center justify-center gap-2 shadow-2xs transition-all cursor-pointer disabled:opacity-50"
             title={isGoogleCalendarConnected ? "Sincronizar Google Agenda agora" : "Conectar e Sincronizar Google Agenda"}
           >
             <GoogleIcon className="w-4 h-4 shrink-0" />
@@ -1148,194 +1280,159 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
             )}
           </button>
 
-          {/* Card 2: "O Que Fazer Agora" (Live Hero) */}
-          <div className="p-5 rounded-2xl border border-blue-500/40 bg-gradient-to-br from-blue-500/10 via-indigo-500/5 to-transparent dark:bg-[#121622] space-y-3.5 shadow-xs">
+          {/* ── SESSÕES DE ESTUDO REALIZADAS HOJE (A MAIS RECENTE NO TOPO) ── */}
+          <div className="p-4 rounded-2xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 shadow-xs space-y-3">
+            {/* Cabeçalho Limpo */}
             <div className="flex items-center justify-between">
-              <span className="text-[10px] font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 flex items-center gap-1.5">
-                {isCurrentActive ? (
-                  <>
-                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                    Bloco em Andamento Agora
-                  </>
-                ) : upcomingSlot ? (
-                  <>
-                    <Clock className="w-3.5 h-3.5 text-blue-500" />
-                    Próxima Ação Programada
-                  </>
-                ) : (
-                  <>
-                    <Sparkles className="w-3.5 h-3.5 text-amber-500" />
-                    Janela de Estudo Livre
-                  </>
+              <div className="flex items-center gap-2">
+                <div
+                  className="w-7 h-7 rounded-lg flex items-center justify-center"
+                  style={{ backgroundColor: `${accentConfig.primaryHex}15`, color: accentConfig.primaryHex }}
+                >
+                  <Clock className="w-3.5 h-3.5 stroke-[2.2]" />
+                </div>
+                <div>
+                  <h3 className="font-heading font-black text-xs sm:text-sm text-zinc-900 dark:text-zinc-100">
+                    Sessões de Hoje
+                  </h3>
+                </div>
+              </div>
+
+              {/* Resumo Direto de Métricas (Microcopy cirúrgico: sem adjetivos, tabular) */}
+              <div className="flex items-center gap-1.5 text-[11px] font-bold font-mono">
+                <span className="px-2 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300">
+                  {todayStats.totalTimeFormatted}
+                </span>
+                {todayStats.totalQuestions > 0 && (
+                  <span
+                    className="px-2 py-0.5 rounded-md text-white"
+                    style={{ backgroundColor: accentConfig.primaryHex }}
+                  >
+                    {todayStats.totalQuestions}Q
+                  </span>
                 )}
-              </span>
-              {isCurrentActive && (
-                <span className="font-mono text-[11px] font-bold text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-md border border-emerald-500/20">
-                  {currentPeriodInfo.minutesRemaining}m restantes
-                </span>
-              )}
-              {!isCurrentActive && upcomingSlot && (
-                <span className="font-mono text-[11px] font-bold text-blue-600 dark:text-blue-400 bg-blue-500/10 px-2 py-0.5 rounded-md border border-blue-500/20">
-                  Inicia às {upcomingSlot.startTime}
-                </span>
-              )}
-            </div>
-
-            <div>
-              <h3 className="text-base font-black text-zinc-900 dark:text-zinc-100">
-                {isCurrentActive && activeSlot
-                  ? activeSlot.title
-                  : upcomingSlot
-                    ? upcomingSlot.title
-                    : 'Nenhum compromisso imediato no momento'}
-              </h3>
-              <p className="text-xs text-zinc-500 dark:text-zinc-400 mt-1 leading-relaxed">
-                {isCurrentActive && activeSlot
-                  ? (cleanEventDescription(activeSlot.description) || activeSlot.rationale || 'Mantenha o foco até o término deste bloco.')
-                  : upcomingSlot
-                    ? (cleanEventDescription(upcomingSlot.description) || upcomingSlot.rationale || `Começa em ${currentPeriodInfo.minutesUntil || 15} minutos.`)
-                    : 'Seu cronograma está livre de plantões e blocos obrigatórios. Que tal antecipar questões da sua área prioritária?'}
-              </p>
-            </div>
-
-            {/* Barra de Progresso do Bloco Atual */}
-            {isCurrentActive && (
-              <div className="space-y-1">
-                <div className="flex items-center justify-between text-[10px] text-zinc-400">
-                  <span>Progresso do Bloco</span>
-                  <span className="font-mono font-bold text-blue-600 dark:text-blue-400">{currentPeriodInfo.progressPercent}%</span>
-                </div>
-                <div className="w-full h-1.5 rounded-full bg-blue-500/20 overflow-hidden">
-                  <div
-                    className="h-full bg-blue-600 transition-all duration-300 rounded-full"
-                    style={{ width: `${currentPeriodInfo.progressPercent}%` }}
-                  />
-                </div>
-              </div>
-            )}
-
-            {/* CTAs Diretos de Ação */}
-            <div className="pt-1">
-              {isCurrentActive && activeSlot?.action === 'treinar' && (
-                <button
-                  type="button"
-                  onClick={() => onNavigateToBanco ? onNavigateToBanco('Clínica Médica') : router.push('/questoes')}
-                  className="w-full py-2.5 rounded-xl text-white text-xs font-bold cursor-pointer transition-all hover:opacity-95 shadow-xs flex items-center justify-center gap-2"
-                  style={{ backgroundColor: accentConfig.primaryHex }}
-                >
-                  <Play className="w-3.5 h-3.5 fill-current" />
-                  <span>Continuar Treino de Questões</span>
-                </button>
-              )}
-
-              {isCurrentActive && activeSlot?.action === 'flashcards' && (
-                <button
-                  type="button"
-                  onClick={() => onNavigateToFlashcards ? onNavigateToFlashcards() : router.push('/flashcards')}
-                  className="w-full py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold cursor-pointer transition-all shadow-xs flex items-center justify-center gap-2"
-                >
-                  <Brain className="w-3.5 h-3.5" />
-                  <span>Revisar Flashcards FSRS</span>
-                </button>
-              )}
-
-              {isCurrentActive && activeSlot?.action === 'caderno_erros' && (
-                <button
-                  type="button"
-                  onClick={() => onNavigateToCadernoErros ? onNavigateToCadernoErros() : router.push('/caderno-de-erros')}
-                  className="w-full py-2.5 rounded-xl bg-rose-600 hover:bg-rose-500 text-white text-xs font-bold cursor-pointer transition-all shadow-xs flex items-center justify-center gap-2"
-                >
-                  <AlertOctagon className="w-3.5 h-3.5" />
-                  <span>Abrir Caderno de Erros</span>
-                </button>
-              )}
-
-              {isCurrentActive && activeSlot?.action === 'simulado' && (
-                <button
-                  type="button"
-                  onClick={() => onNavigateToSimulados ? onNavigateToSimulados() : router.push('/simulados')}
-                  className="w-full py-2.5 rounded-xl bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold cursor-pointer transition-all shadow-xs flex items-center justify-center gap-2"
-                >
-                  <Trophy className="w-3.5 h-3.5" />
-                  <span>Iniciar Simulado Blitz</span>
-                </button>
-              )}
-
-              {(!isCurrentActive || !activeSlot?.action) && (
-                <button
-                  type="button"
-                  onClick={() => onNavigateToBanco ? onNavigateToBanco('Clínica Médica') : router.push('/questoes')}
-                  className="w-full py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold cursor-pointer transition-all shadow-xs flex items-center justify-center gap-2"
-                >
-                  <Play className="w-3.5 h-3.5 fill-current" />
-                  <span>Praticar Questões Agora</span>
-                </button>
-              )}
-            </div>
-          </div>
-
-          {/* Card 4: Curva de Cronobiologia & Energia Mental */}
-          <div className="p-4 rounded-2xl bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 space-y-2.5">
-            <div className="flex items-center justify-between">
-              <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 flex items-center gap-1">
-                <Zap className="w-3.5 h-3.5 text-amber-500" />
-                Guia de Energia Cognitiva
-              </span>
-              {cognitiveEnergyStats.hasData && cognitiveEnergyStats.bestShift && (
-                <span className="text-[9px] font-bold px-1.5 py-0.5 rounded-md bg-purple-500/10 text-purple-600 dark:text-purple-400 border border-purple-500/20">
-                  Melhor: {cognitiveEnergyStats.bestShift} ({cognitiveEnergyStats.bestShiftTaxa}%)
-                </span>
-              )}
-            </div>
-
-            <div className="space-y-2 text-[11px]">
-              {/* Manhã */}
-              <div className="flex items-center justify-between text-zinc-600 dark:text-zinc-300">
-                <span className="flex items-center gap-1.5">
-                  <span className="font-mono text-amber-500 font-bold">⚡⚡⚡ Manhã:</span>
-                  <span>Questões Inéditas (TRI)</span>
-                </span>
-                <span className="text-[10px] text-zinc-400 font-mono">
-                  {cognitiveEnergyStats.morning.resolvidas > 0
-                    ? `${cognitiveEnergyStats.morning.taxa}% • ${cognitiveEnergyStats.morning.resolvidas}Q`
-                    : 'Pico de Foco'}
-                </span>
-              </div>
-
-              {/* Tarde */}
-              <div className="flex items-center justify-between text-zinc-600 dark:text-zinc-300">
-                <span className="flex items-center gap-1.5">
-                  <span className="font-mono text-blue-500 font-bold">⚡⚡ Tarde:</span>
-                  <span>Caderno de Erros</span>
-                </span>
-                <span className="text-[10px] text-zinc-400 font-mono">
-                  {cognitiveEnergyStats.afternoon.resolvidas > 0
-                    ? `${cognitiveEnergyStats.afternoon.taxa}% • ${cognitiveEnergyStats.afternoon.resolvidas}Q`
-                    : 'Reteste & Foco'}
-                </span>
-              </div>
-
-              {/* Noite */}
-              <div className="flex items-center justify-between text-zinc-600 dark:text-zinc-300">
-                <span className="flex items-center gap-1.5">
-                  <span className="font-mono text-emerald-500 font-bold">⚡ Noite:</span>
-                  <span>Flashcards FSRS</span>
-                </span>
-                <span className="text-[10px] text-zinc-400 font-mono">
-                  {cognitiveEnergyStats.night.resolvidas > 0
-                    ? `${cognitiveEnergyStats.night.taxa}% • ${cognitiveEnergyStats.night.resolvidas}Q`
-                    : 'Fixação Leve'}
-                </span>
               </div>
             </div>
 
-            {cognitiveEnergyStats.fatigueAlert && (
-              <div className="pt-2 border-t border-amber-500/20 flex items-center gap-1.5 text-[10px] font-medium text-amber-600 dark:text-amber-400">
-                <AlertTriangle className="w-3.5 h-3.5 shrink-0" />
-                <span>Alerta de fadiga noturna detectado. Priorize revisões curtas à noite.</span>
+            {/* Lista das Sessões de Hoje (A mais recente no topo) */}
+            {sortedTodaySessions.length === 0 ? (
+              <div className="py-6 px-3 rounded-xl border border-dashed border-zinc-200 dark:border-zinc-800 text-center space-y-1 bg-zinc-50/50 dark:bg-zinc-900/30">
+                <p className="text-xs font-bold text-zinc-700 dark:text-zinc-300">
+                  Nenhuma sessão realizada hoje
+                </p>
+                <p className="text-[11px] text-zinc-400">
+                  Inicie o cronômetro no topo ou clique em + Novo Bloco.
+                </p>
+              </div>
+            ) : (
+              <div className="space-y-2 max-h-[460px] overflow-y-auto pr-0.5 scrollbar-thin">
+                {sortedTodaySessions.map((sess) => {
+                  const specColor =
+                    CORE_SPECIALTIES.find(
+                      (c) => c.name.toLowerCase() === (sess.taxonomy.especialidade || '').toLowerCase()
+                    )?.color || accentConfig.primaryHex;
+
+                  const topicTitle =
+                    sess.taxonomy.subfoco ||
+                    sess.taxonomy.foco ||
+                    sess.taxonomy.tema ||
+                    sess.taxonomy.especialidade ||
+                    'Estudo Geral';
+
+                  let startFormatted = '';
+                  let endFormatted = '';
+                  try {
+                    const sDate = new Date(sess.startTime);
+                    const eDate = new Date(sess.endTime);
+                    startFormatted = sDate.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+                    endFormatted = eDate.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
+                  } catch { }
+
+                  return (
+                    <div
+                      key={sess.id}
+                      className="p-2.5 rounded-xl bg-zinc-50/80 dark:bg-zinc-900/60 border border-zinc-200/80 dark:border-zinc-800/80 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all flex items-center justify-between gap-2.5 relative overflow-hidden"
+                    >
+                      {/* Faixa lateral cromática da especialidade médica */}
+                      <div className="absolute left-0 top-0 bottom-0 w-1" style={{ backgroundColor: specColor }} />
+
+                      <div className="min-w-0 pl-1.5 space-y-0.5">
+                        <div className="flex items-center gap-1.5 min-w-0">
+                          <span className="text-xs font-bold text-zinc-900 dark:text-zinc-100 truncate">
+                            {topicTitle}
+                          </span>
+                          {sess.taxonomy.especialidade && sess.taxonomy.especialidade !== topicTitle && (
+                            <span className="text-[9px] font-semibold text-zinc-400 truncate hidden sm:inline">
+                              • {sess.taxonomy.especialidade}
+                            </span>
+                          )}
+                        </div>
+
+                        <div className="flex items-center gap-2 text-[10px] text-zinc-500 dark:text-zinc-400 font-mono">
+                          {startFormatted && (
+                            <span>{startFormatted} – {endFormatted}</span>
+                          )}
+                          {/* Quantidade de Questões em destaque cirúrgico */}
+                          {sess.questionsCount && sess.questionsCount > 0 ? (
+                            <span className="font-bold text-blue-600 dark:text-blue-400 font-sans">
+                              • {sess.questionsCount} questões ({sess.correctCount || 0} acertos)
+                            </span>
+                          ) : (
+                            <span className="text-zinc-400 font-sans italic">
+                              • Teoria / Revisão
+                            </span>
+                          )}
+                        </div>
+                      </div>
+
+                      <div className="flex items-center gap-1.5 shrink-0">
+                        <span className="font-mono tabular-nums font-bold text-[11px] text-zinc-700 dark:text-zinc-300 bg-zinc-200/60 dark:bg-zinc-800 px-2 py-0.5 rounded-md">
+                          {sess.durationFormatted}
+                        </span>
+                        <button
+                          type="button"
+                          onClick={() => {
+                            if (confirm(`Excluir o registro de estudo "${topicTitle}"?`)) {
+                              deleteSession(sess.id);
+                            }
+                          }}
+                          className="p-1 text-zinc-400 hover:text-rose-500 hover:bg-rose-500/10 rounded-md transition-colors cursor-pointer"
+                          title="Excluir este registro de estudo"
+                        >
+                          <Trash2 className="w-3.5 h-3.5" />
+                        </button>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             )}
           </div>
+
+          {/* Banner Compacto de Bloco em Andamento (Aparece apenas quando houver atividade ao vivo) */}
+          {isCurrentActive && activeSlot && (
+            <div className="p-3.5 rounded-2xl border border-blue-500/40 bg-blue-500/5 dark:bg-blue-950/20 flex items-center justify-between gap-3">
+              <div className="min-w-0">
+                <div className="flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">
+                    Em Andamento Agora
+                  </span>
+                </div>
+                <h4 className="text-xs font-bold text-zinc-900 dark:text-zinc-100 truncate mt-0.5">
+                  {activeSlot.title}
+                </h4>
+              </div>
+              <button
+                type="button"
+                onClick={() => onNavigateToBanco ? onNavigateToBanco('Clínica Médica') : router.push('/questoes')}
+                className="px-3 py-1.5 rounded-xl text-white text-xs font-bold shrink-0 cursor-pointer transition-all hover:opacity-95 shadow-2xs"
+                style={{ backgroundColor: accentConfig.primaryHex }}
+              >
+                Continuar
+              </button>
+            </div>
+          )}
         </div>
 
         {/* ── COLUNA DIREITA: CRONOGRAMA VISUAL GOOGLE AGENDA (lg:col-span-7) ── */}
@@ -1345,7 +1442,8 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
             timelineFilter={timelineFilter}
             setTimelineFilter={setTimelineFilter}
             isGoogleCalendarConnected={isGoogleCalendarConnected}
-            onOpenAddManual={() => setShowAddManualModal(true)}
+            onOpenAddManual={() => setShowManualStudyModal(true)}
+            onOpenCreateTask={() => setShowCreateTaskModal(true)}
             onOpenAiCommand={() => setShowAiCommandModal(true)}
             onOpenAiDrawer={() => setShowAiScheduleDrawer(true)}
             hasAiSuggestions={Boolean(scheduleAiAnalysis?.suggestions && scheduleAiAnalysis.suggestions.length > 0)}
@@ -1644,11 +1742,11 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
         </div>
       )}
 
-      {/* Modal 3: Adicionar Bloco Manual */}
-      {showAddManualModal && (
+      {/* ── MODAL 1: CRIAR TAREFA DE CALENDÁRIO (OBRIGAÇÃO) ── */}
+      {showCreateTaskModal && (
         <div
           className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 animate-in fade-in duration-200"
-          onClick={() => setShowAddManualModal(false)}
+          onClick={() => setShowCreateTaskModal(false)}
         >
           <div
             className="w-full max-w-lg bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl p-6 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200"
@@ -1656,21 +1754,21 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
           >
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2.5">
-                <div className="w-10 h-10 rounded-2xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-600 dark:text-blue-400 shadow-xs">
-                  <Plus className="w-5 h-5" />
+                <div className="w-10 h-10 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-600 dark:text-emerald-400 shadow-xs">
+                  <CalendarPlus className="w-5 h-5" />
                 </div>
                 <div>
                   <h3 className="font-heading text-base font-bold text-zinc-900 dark:text-zinc-100">
-                    Adicionar Bloco de Estudo
+                    Criar Tarefa
                   </h3>
                   <p className="text-xs text-zinc-500 dark:text-zinc-400">
-                    Crie um horário dedicado na sua grade de hoje
+                    Adicione um compromisso, plantão ou aula à sua grade
                   </p>
                 </div>
               </div>
               <button
                 type="button"
-                onClick={() => setShowAddManualModal(false)}
+                onClick={() => setShowCreateTaskModal(false)}
                 className="p-2 text-zinc-400 hover:text-zinc-600 dark:hover:text-white rounded-xl transition-colors cursor-pointer"
               >
                 <X className="w-4 h-4" />
@@ -1678,50 +1776,34 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
             </div>
 
             <div className="space-y-3.5">
+              {/* Campo 1: Título */}
               <div>
                 <label className="text-xs font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
-                  Nome do Bloco
+                  Título da Tarefa
                 </label>
                 <input
                   type="text"
-                  value={manualSlotTitle}
-                  onChange={(e) => setManualSlotTitle(e.target.value)}
-                  placeholder="Ex: Treino de Pediatria ou Revisão de Trauma"
-                  className="w-full px-3.5 py-2.5 rounded-xl text-xs bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500 font-medium"
+                  value={taskTitle}
+                  onChange={(e) => setTaskTitle(e.target.value)}
+                  placeholder="Ex: Plantão Pronto-Socorro Infantil, Aula Teórica, Reunião Clínica"
+                  className="w-full px-3.5 py-2.5 rounded-xl text-xs bg-zinc-50 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700 text-zinc-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-emerald-500 font-medium"
                 />
               </div>
 
+              {/* Campo 2: Dia */}
               <div>
                 <label className="text-xs font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
-                  Tipo de Atividade
+                  Dia
                 </label>
-                <div className="grid grid-cols-4 gap-1.5">
-                  {[
-                    { id: 'estudo', label: 'Questões', icon: Play },
-                    { id: 'flashcard', label: 'Flashcards', icon: Brain },
-                    { id: 'revisao', label: 'Cad. Erros', icon: AlertOctagon },
-                    { id: 'simulado', label: 'Simulado', icon: Trophy }
-                  ].map((cat) => {
-                    const isSelected = manualSlotCategory === cat.id;
-                    const CatIcon = cat.icon;
-                    return (
-                      <button
-                        key={cat.id}
-                        type="button"
-                        onClick={() => setManualSlotCategory(cat.id as any)}
-                        className={`p-2 rounded-xl text-xs font-bold transition-all cursor-pointer flex flex-col items-center gap-1 border ${isSelected
-                            ? 'bg-blue-600 text-white border-blue-600 shadow-xs'
-                            : 'bg-zinc-50 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 border-zinc-200 dark:border-zinc-700 hover:text-zinc-900 dark:hover:text-white'
-                          }`}
-                      >
-                        <CatIcon className="w-4 h-4" />
-                        <span className="text-[10px]">{cat.label}</span>
-                      </button>
-                    );
-                  })}
-                </div>
+                <input
+                  type="date"
+                  value={taskDate}
+                  onChange={(e) => setTaskDate(e.target.value)}
+                  className="w-full px-3.5 py-2.5 rounded-xl text-xs bg-zinc-50 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700 text-zinc-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-emerald-500 font-medium font-mono"
+                />
               </div>
 
+              {/* Campos 3 e 4: Início e Término */}
               <div className="grid grid-cols-2 gap-3">
                 <div>
                   <label className="text-xs font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
@@ -1729,9 +1811,9 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
                   </label>
                   <input
                     type="time"
-                    value={manualSlotStart}
-                    onChange={(e) => setManualSlotStart(e.target.value)}
-                    className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-xs font-mono font-bold text-zinc-900 dark:text-white"
+                    value={taskStart}
+                    onChange={(e) => setTaskStart(e.target.value)}
+                    className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700 text-xs font-mono font-bold text-zinc-900 dark:text-white"
                   />
                 </div>
                 <div>
@@ -1740,23 +1822,24 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
                   </label>
                   <input
                     type="time"
-                    value={manualSlotEnd}
-                    onChange={(e) => setManualSlotEnd(e.target.value)}
-                    className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-xs font-mono font-bold text-zinc-900 dark:text-white"
+                    value={taskEnd}
+                    onChange={(e) => setTaskEnd(e.target.value)}
+                    className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700 text-xs font-mono font-bold text-zinc-900 dark:text-white"
                   />
                 </div>
               </div>
 
+              {/* Campo 5: Descrição */}
               <div>
                 <label className="text-xs font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
-                  Observações (Opcional)
+                  Descrição
                 </label>
-                <input
-                  type="text"
-                  value={manualSlotNotes}
-                  onChange={(e) => setManualSlotNotes(e.target.value)}
-                  placeholder="Ex: Resolver 25 questões comentadas da banca"
-                  className="w-full px-3.5 py-2.5 rounded-xl text-xs bg-zinc-50 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500"
+                <textarea
+                  rows={3}
+                  value={taskDescription}
+                  onChange={(e) => setTaskDescription(e.target.value)}
+                  placeholder="Observações, plantonistas, sala, preparativos ou detalhes da obrigação..."
+                  className="w-full px-3.5 py-2.5 rounded-xl text-xs bg-zinc-50 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700 text-zinc-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-emerald-500 resize-none"
                 />
               </div>
             </div>
@@ -1764,19 +1847,228 @@ export const AgendaView: React.FC<AgendaViewProps> = ({
             <div className="pt-2 flex items-center gap-2.5">
               <button
                 type="button"
-                onClick={() => setShowAddManualModal(false)}
+                onClick={() => setShowCreateTaskModal(false)}
                 className="flex-1 py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 text-xs font-semibold hover:bg-zinc-100 dark:hover:bg-zinc-800 cursor-pointer transition-colors"
               >
                 Cancelar
               </button>
               <button
                 type="button"
-                onClick={handleCreateManualSlot}
-                disabled={!manualSlotTitle.trim()}
-                className="flex-1 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 disabled:opacity-50 text-white text-xs font-bold cursor-pointer transition-all flex items-center justify-center gap-2 shadow-sm"
+                onClick={handleCreateCalendarTask}
+                disabled={!taskTitle.trim()}
+                className="flex-1 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 disabled:opacity-50 text-white text-xs font-bold cursor-pointer transition-all flex items-center justify-center gap-2 shadow-xs"
+              >
+                <CalendarPlus className="w-3.5 h-3.5" />
+                <span>Salvar Tarefa</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ── MODAL 2: NOVO BLOCO (REGISTRO MANUAL DE SESSÃO DE ESTUDO) ── */}
+      {showManualStudyModal && (
+        <div
+          className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 animate-in fade-in duration-200"
+          onClick={() => setShowManualStudyModal(false)}
+        >
+          <div
+            className="w-full max-w-lg bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800 rounded-3xl p-6 shadow-2xl space-y-5 animate-in zoom-in-95 duration-200"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2.5">
+                <div
+                  className="w-10 h-10 rounded-2xl flex items-center justify-center shadow-xs"
+                  style={{ backgroundColor: `${accentConfig.primaryHex}20`, color: accentConfig.primaryHex }}
+                >
+                  <Clock className="w-5 h-5 stroke-[2.2]" />
+                </div>
+                <div>
+                  <h3 className="font-heading text-base font-bold text-zinc-900 dark:text-zinc-100">
+                    Novo Bloco de Estudo
+                  </h3>
+                  <p className="text-xs text-zinc-500 dark:text-zinc-400">
+                    Registro manual de sessão de estudo com assunto e horários
+                  </p>
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={() => setShowManualStudyModal(false)}
+                className="p-2 text-zinc-400 hover:text-zinc-600 dark:hover:text-white rounded-xl transition-colors cursor-pointer"
+              >
+                <X className="w-4 h-4" />
+              </button>
+            </div>
+
+            <div className="space-y-4">
+              {/* Campo 1: Assunto (Funções do relógio oficial) */}
+              <div ref={taxonomyContainerRef} className="relative">
+                <label className="text-xs font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
+                  Assunto de Estudo
+                </label>
+
+                {/* Se já tiver assunto selecionado */}
+                {(manualStudyTaxonomy.rawLabel || manualStudyTaxonomy.subfoco || manualStudyTaxonomy.tema || manualStudyTaxonomy.especialidade) ? (
+                  <div className="p-3 rounded-xl bg-zinc-50 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700 flex items-center justify-between gap-2">
+                    <div className="min-w-0">
+                      <div className="flex items-center gap-1.5">
+                        <BookOpen className="w-3.5 h-3.5 text-blue-500 shrink-0" />
+                        <span className="text-xs font-bold text-zinc-900 dark:text-zinc-100 truncate">
+                          {manualStudyTaxonomy.subfoco || manualStudyTaxonomy.foco || manualStudyTaxonomy.tema || manualStudyTaxonomy.especialidade}
+                        </span>
+                      </div>
+                      <p className="text-[10px] text-zinc-400 truncate mt-0.5">
+                        {manualStudyTaxonomy.rawLabel || [manualStudyTaxonomy.especialidade, manualStudyTaxonomy.tema, manualStudyTaxonomy.foco, manualStudyTaxonomy.subfoco].filter(Boolean).join(' › ')}
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setManualStudyTaxonomy({});
+                        setIsTaxonomyDropdownOpen(true);
+                        setTimeout(() => taxonomyInputRef.current?.focus(), 50);
+                      }}
+                      className="px-2.5 py-1 rounded-lg text-[10px] font-bold border border-zinc-300 dark:border-zinc-600 text-zinc-600 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-colors"
+                    >
+                      Alterar
+                    </button>
+                  </div>
+                ) : (
+                  <div className="space-y-2">
+                    {/* Input de Busca */}
+                    <div className="relative">
+                      <Search className="w-4 h-4 text-zinc-400 absolute left-3 top-1/2 -translate-y-1/2" />
+                      <input
+                        ref={taxonomyInputRef}
+                        type="text"
+                        value={taxonomyQuery}
+                        onFocus={() => {
+                          setIsTaxonomyDropdownOpen(true);
+                          loadTaxonomySuggestions(taxonomyQuery);
+                        }}
+                        onChange={(e) => {
+                          const val = e.target.value;
+                          setTaxonomyQuery(val);
+                          setIsTaxonomyDropdownOpen(true);
+                          loadTaxonomySuggestions(val);
+                        }}
+                        placeholder="Buscar por tema, doença ou especialidade..."
+                        className="w-full pl-9 pr-3.5 py-2.5 rounded-xl text-xs bg-zinc-50 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700 text-zinc-900 dark:text-white focus:outline-none focus:ring-1 focus:ring-blue-500 font-medium"
+                      />
+                    </div>
+
+                    {/* Atalhos Rápidos das 6 Grandes Áreas (1-Toque) */}
+                    <div className="flex items-center gap-1.5 flex-wrap">
+                      {CORE_SPECIALTIES.map((spec) => (
+                        <button
+                          key={spec.name}
+                          type="button"
+                          onClick={() => {
+                            setManualStudyTaxonomy({
+                              especialidade: spec.name,
+                              rawLabel: spec.name
+                            });
+                            setIsTaxonomyDropdownOpen(false);
+                            setTaxonomyQuery('');
+                          }}
+                          className="px-2 py-1 rounded-lg text-[10px] font-bold border border-zinc-200 dark:border-zinc-700 hover:border-zinc-400 dark:hover:border-zinc-500 bg-white dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 transition-all flex items-center gap-1 cursor-pointer"
+                        >
+                          <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: spec.color }} />
+                          <span>{spec.name}</span>
+                        </button>
+                      ))}
+                    </div>
+
+                    {/* Dropdown de Resultados da Busca */}
+                    {isTaxonomyDropdownOpen && (
+                      <div className="absolute left-0 right-0 top-full mt-1 z-30 max-h-48 overflow-y-auto rounded-xl bg-white dark:bg-[#18181b] border border-zinc-200 dark:border-zinc-700 shadow-xl p-1 divide-y divide-zinc-100 dark:divide-zinc-800">
+                        {isLoadingTaxonomy ? (
+                          <div className="p-3 text-center text-xs text-zinc-400">
+                            Buscando taxonomia médica...
+                          </div>
+                        ) : taxonomyResults.length === 0 ? (
+                          <div className="p-3 text-center text-xs text-zinc-400">
+                            Nenhum assunto encontrado para &ldquo;{taxonomyQuery}&rdquo;
+                          </div>
+                        ) : (
+                          taxonomyResults.map((item, idx) => (
+                            <button
+                              key={`${item.especialidade}_${item.tema}_${item.subfoco || idx}`}
+                              type="button"
+                              onClick={() => {
+                                setManualStudyTaxonomy({
+                                  especialidade: item.especialidade,
+                                  tema: item.tema,
+                                  foco: item.foco,
+                                  subfoco: item.subfoco,
+                                  rawLabel: item.breadcrumb
+                                });
+                                setIsTaxonomyDropdownOpen(false);
+                                setTaxonomyQuery('');
+                              }}
+                              className="w-full text-left p-2 rounded-lg hover:bg-zinc-100 dark:hover:bg-zinc-800/80 transition-colors cursor-pointer group"
+                            >
+                              <div className="text-xs font-bold text-zinc-900 dark:text-zinc-100 group-hover:text-blue-500">
+                                {item.subfoco || item.foco || item.tema || item.especialidade}
+                              </div>
+                              <div className="text-[10px] text-zinc-400 truncate mt-0.5">
+                                {item.breadcrumb}
+                              </div>
+                            </button>
+                          ))
+                        )}
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
+
+              {/* Campos 2 e 3: Horário de Início e Horário de Término (APENAS) */}
+              <div className="grid grid-cols-2 gap-3">
+                <div>
+                  <label className="text-xs font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
+                    Horário de Início
+                  </label>
+                  <input
+                    type="time"
+                    value={manualStudyStart}
+                    onChange={(e) => setManualStudyStart(e.target.value)}
+                    className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700 text-xs font-mono font-bold text-zinc-900 dark:text-white"
+                  />
+                </div>
+                <div>
+                  <label className="text-xs font-bold text-zinc-700 dark:text-zinc-300 block mb-1">
+                    Horário de Término
+                  </label>
+                  <input
+                    type="time"
+                    value={manualStudyEnd}
+                    onChange={(e) => setManualStudyEnd(e.target.value)}
+                    className="w-full px-3 py-2 rounded-xl bg-zinc-50 dark:bg-zinc-800/80 border border-zinc-200 dark:border-zinc-700 text-xs font-mono font-bold text-zinc-900 dark:text-white"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div className="pt-2 flex items-center gap-2.5">
+              <button
+                type="button"
+                onClick={() => setShowManualStudyModal(false)}
+                className="flex-1 py-2.5 rounded-xl border border-zinc-200 dark:border-zinc-800 text-zinc-600 dark:text-zinc-400 text-xs font-semibold hover:bg-zinc-100 dark:hover:bg-zinc-800 cursor-pointer transition-colors"
+              >
+                Cancelar
+              </button>
+              <button
+                type="button"
+                onClick={handleCreateManualStudySession}
+                disabled={!(manualStudyTaxonomy.rawLabel || manualStudyTaxonomy.subfoco || manualStudyTaxonomy.tema || manualStudyTaxonomy.especialidade)}
+                className="flex-1 py-2.5 rounded-xl text-white text-xs font-bold cursor-pointer transition-all flex items-center justify-center gap-2 shadow-xs hover:opacity-95 disabled:opacity-50"
+                style={{ backgroundColor: accentConfig.primaryHex }}
               >
                 <Plus className="w-3.5 h-3.5" />
-                <span>Salvar Bloco</span>
+                <span>Salvar Sessão</span>
               </button>
             </div>
           </div>

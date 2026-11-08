@@ -107,7 +107,7 @@ import { FigmaSmartGuides } from './dashboard/FigmaSmartGuides';
 import { SmartGuidesState } from './dashboard/smartGuidesEngine';
 import { GoogleCalendarScheduleView } from './dashboard/GoogleCalendarScheduleView';
 import { AiScheduleDrawer } from './dashboard/AiScheduleDrawer';
-import { DailyScheduleSlot, AiScheduleAnalysis } from './dashboard/scheduleTypes';
+import { DailyScheduleSlot, AiScheduleAnalysis, TimelineFilter } from './dashboard/scheduleTypes';
 import {
   buildGoogleCalendarTemplateUrl,
   requestGoogleCalendarAccessToken,
@@ -361,6 +361,16 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   const { todayTotalSeconds, status: timerStatus, elapsedSeconds, allSessions } = useStudyTimer();
   const currentTodayStudySeconds = todayTotalSeconds + ((timerStatus === 'running' || timerStatus === 'paused') ? elapsedSeconds : 0);
   const formattedTodayStudy = formatSecondsToDetailed(currentTodayStudySeconds);
+
+  // Sessões salvas pelo cronômetro no site para hoje
+  const todayRecordedSessions = React.useMemo(() => {
+    const todayStr = getLocalDateStr(new Date());
+    if (!allSessions || allSessions.length === 0) return [];
+    return allSessions.filter((s) => {
+      const sDate = s.startTime ? getLocalDateStr(s.startTime) : (s.createdAt ? getLocalDateStr(s.createdAt) : '');
+      return sDate === todayStr;
+    });
+  }, [allSessions]);
 
   // Sequência da semana vigente (Segunda a Domingo) para o StreakTracker
   const currentWeekStreak = React.useMemo(() => {
@@ -1339,7 +1349,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   const [calendarSyncSuccessMsg, setCalendarSyncSuccessMsg] = useState<string | null>(null);
 
   // ── ESTADOS E RECURSOS DA CENTRAL DE AGENDA OTIMIZADA (2 COLUNAS & ADAPTAÇÃO MÉDICA) ──
-  const [timelineFilter, setTimelineFilter] = useState<'todos' | 'estudos' | 'google'>('todos');
+  const [timelineFilter, setTimelineFilter] = useState<TimelineFilter>('todos');
   const [showAddManualSlot, setShowAddManualSlot] = useState(false);
   const [showAddManualModal, setShowAddManualModal] = useState(false);
   const [showDelayModal, setShowDelayModal] = useState(false);
@@ -2296,16 +2306,55 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     return [];
   }, [isGoogleCalendarConnected, realCalendarEvents, userScheduledTasks]);
 
-  // Lista filtrada para a visualização na Linha do Tempo (Todos / Somente Estudos / Google Agenda)
+  // Lista filtrada para a visualização na Linha do Tempo (Todos / Tarefas / Somente Estudos / Google Agenda)
   const filteredDaySchedule = React.useMemo(() => {
     if (timelineFilter === 'estudos') {
-      return daySchedule.filter(s => s.source === 'plataforma' || s.isAiSuggested);
+      return daySchedule.filter(s => s.isStudySession || s.source === 'plataforma' || s.isAiSuggested);
+    }
+    if (timelineFilter === 'tarefas') {
+      return daySchedule.filter(s => s.isCalendarTask);
     }
     if (timelineFilter === 'google') {
       return daySchedule.filter(s => s.source === 'google');
     }
     return daySchedule;
   }, [daySchedule, timelineFilter]);
+
+  // Atividades de ESTUDO programadas na agenda do dia (apenas estudos do dia cruzados com a agenda, sem duplicar sessões do cronômetro)
+  const todayAgendaActivities = React.useMemo(() => {
+    if (daySchedule.length === 0) return [];
+    const nonTimerSlots = daySchedule.filter((slot) => !slot.id.startsWith('task_'));
+    const sourceSlots = nonTimerSlots.length > 0 ? nonTimerSlots : daySchedule;
+
+    return sourceSlots.filter((slot) => {
+      // 1. Tarefas criadas na plataforma ou sugeridas pela IA são sempre estudos
+      if (slot.isAiSuggested || slot.source === 'plataforma') return true;
+
+      // 2. Categoria explícita de estudo, revisão, flashcard ou simulado
+      if (
+        slot.category === 'estudo' ||
+        slot.category === 'revisao' ||
+        slot.category === 'flashcard' ||
+        slot.category === 'simulado'
+      ) {
+        return true;
+      }
+
+      // 3. Para eventos do Google Calendar / externos: filtrar estritamente SOMENTE ESTUDOS
+      const text = `${slot.title} ${slot.description || ''}`.toLowerCase();
+      const isHospitalOrClinical =
+        slot.category === 'hospital' ||
+        slot.category === 'pausa' ||
+        /prática|pratica|seminário|seminario|estágio|estagio|plantão|plantao|enfermaria|ambulatório|ambulatorio|visita|aula/i.test(text);
+
+      if (isHospitalOrClinical) {
+        // Se for atividade clínica/hospitalar/aula, só inclui se for explicitamente estudo/questões/revisão
+        return /estudo:|estudo\b|questõ|revis|simulado|flashcard/i.test(text);
+      }
+
+      return /estudo|questõ|revis|simulado|flashcard|resumo|caderno/i.test(text);
+    });
+  }, [daySchedule]);
 
   // Cálculo da Atividade Específica para AQUELE Período de Tempo
   const currentPeriodInfo = React.useMemo(() => {
@@ -4109,14 +4158,14 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 onSmartGuidesChange={setSmartGuidesState}
                 allCardsConfig={visibleCards}
               >
-                {/* Card: Agenda de Estudos Fluida do Dia */}
+                {/* Card: Agenda de Estudos Fluida do Dia (2 Colunas: Atividades da Agenda vs Sessões do Cronômetro) */}
                 <div
                   onClick={() => { if (isCustomizing) return; onNavigate('agenda'); }}
                   className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-4 sm:p-5 shadow-xs cursor-pointer hover:border-blue-500/40 transition-all group flex flex-col justify-between min-h-0 h-full relative overflow-hidden space-y-3"
                   title="Abrir agenda de estudos completa"
                 >
                   <div className="space-y-2.5">
-                    {/* Header: Título "Agenda de Estudos" + Status/Data */}
+                    {/* Header: Título "Agenda de Estudos" + Contadores Cruzados */}
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
                         <div
@@ -4133,154 +4182,166 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         </span>
                       </div>
 
-                      <div className="flex items-center gap-1.5">
+                      <div className="flex items-center gap-2">
                         <span className="text-[10px] font-semibold text-zinc-400 dark:text-zinc-500">
-                          {daySchedule.length > 0 ? `${daySchedule.length} atividades` : 'Hoje'}
+                          {todayAgendaActivities.length} ativ. • {todayRecordedSessions.length} sessões
                         </span>
                         <ChevronRight className="w-4 h-4 text-zinc-400 group-hover:translate-x-0.5 group-hover:text-blue-500 transition-all shrink-0" />
                       </div>
                     </div>
 
-                    {/* Lista Fluida das Atividades do Dia (Horário + Atividade, Sem Descrição) */}
-                    {daySchedule.length > 0 ? (
-                      <div className="space-y-1.5 max-h-[175px] overflow-y-auto pr-0.5 scrollbar-thin">
-                        {daySchedule.map((slot, idx) => {
-                          const now = new Date();
-                          const currentMinutes = now.getHours() * 60 + now.getMinutes();
-                          const isCurrent = currentMinutes >= slot.startMinutes && currentMinutes < slot.endMinutes;
-                          const isPast = currentMinutes >= slot.endMinutes;
+                    {/* Grade em 2 Colunas: Atividades de Estudo da Agenda (Azul) vs Sessões do Cronômetro (Verde) */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 pt-1">
+                      {/* Coluna 1: Atividades de Estudo do Dia (Destaque Azul) */}
+                      <div className="space-y-2 flex flex-col min-w-0">
+                        <div className="flex items-center justify-between pb-1.5 border-b border-blue-500/20">
+                          <div className="flex items-center gap-1.5 min-w-0">
+                            <span className="w-2 h-2 rounded-full bg-blue-500 shrink-0" />
+                            <span className="text-[11px] font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 truncate">
+                              Atividades de Estudo
+                            </span>
+                          </div>
+                          <span className="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded-md bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20 shrink-0">
+                            {todayAgendaActivities.length}
+                          </span>
+                        </div>
 
-                          return (
-                            <div
-                              key={slot.id || idx}
-                              className={`flex items-center justify-between p-2 sm:p-2.5 rounded-xl border transition-all ${isCurrent
-                                  ? 'bg-emerald-500/10 border-emerald-500/30 text-emerald-950 dark:text-emerald-100 shadow-2xs'
-                                  : isPast
-                                    ? 'bg-zinc-50/40 dark:bg-zinc-900/40 border-zinc-200/50 dark:border-zinc-800/50 text-zinc-500 opacity-60'
-                                    : 'bg-zinc-50/70 dark:bg-zinc-900/60 border-zinc-200/70 dark:border-zinc-800/80 hover:bg-zinc-100 dark:hover:bg-zinc-800/90 text-zinc-800 dark:text-zinc-200'
-                                }`}
-                            >
-                              <div className="flex items-center gap-2.5 min-w-0 flex-1 pr-2">
-                                {/* Indicador de Status */}
-                                {isCurrent ? (
-                                  <span className="relative flex h-2 w-2 shrink-0">
-                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-                                  </span>
-                                ) : isPast ? (
-                                  <CheckCircle2 className="w-3.5 h-3.5 text-zinc-400 shrink-0" />
-                                ) : (
-                                  <span
-                                    className="w-2 h-2 rounded-full shrink-0"
-                                    style={{ backgroundColor: accentConfig.primaryHex }}
-                                  />
-                                )}
+                        {/* Lista com Barra de Rolagem Flat no Padrão do Site */}
+                        <div className="space-y-1.5 max-h-[165px] overflow-y-auto pr-1 flat-scrollbar">
+                          {todayAgendaActivities.length > 0 ? (
+                            todayAgendaActivities.map((slot, idx) => {
+                              const now = new Date();
+                              const currentMinutes = now.getHours() * 60 + now.getMinutes();
+                              const isCurrent = currentMinutes >= slot.startMinutes && currentMinutes < slot.endMinutes;
+                              const isPast = currentMinutes >= slot.endMinutes;
 
-                                {/* Nome da Atividade (Sem descrição) */}
-                                <span className="text-xs font-bold truncate">
-                                  {slot.title}
-                                </span>
-                              </div>
-
-                              {/* Horário */}
-                              <span
-                                className={`text-[11px] font-mono font-bold shrink-0 px-2 py-0.5 rounded-md ${isCurrent
-                                    ? 'bg-emerald-500/20 text-emerald-600 dark:text-emerald-400'
-                                    : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400'
+                              return (
+                                <div
+                                  key={slot.id || idx}
+                                  className={`flex items-center justify-between p-2 rounded-xl border transition-all ${
+                                    isCurrent
+                                      ? 'bg-blue-500/15 border-blue-500/35 text-blue-950 dark:text-blue-100 shadow-2xs'
+                                      : isPast
+                                      ? 'bg-zinc-50/40 dark:bg-zinc-900/40 border-zinc-200/50 dark:border-zinc-800/50 text-zinc-500 opacity-60'
+                                      : 'bg-zinc-50/70 dark:bg-zinc-900/60 border-zinc-200/70 dark:border-zinc-800/80 hover:bg-blue-500/5 hover:border-blue-500/25 text-zinc-800 dark:text-zinc-200'
                                   }`}
-                              >
-                                {slot.startTime} - {slot.endTime}
-                              </span>
-                            </div>
-                          );
-                        })}
-                      </div>
-                    ) : (
-                      <div className="space-y-1.5">
-                        {[
-                          {
-                            id: 'bloco_manha',
-                            title: 'Bloco de Questões: Clínica Médica',
-                            startTime: '09:00',
-                            endTime: '11:00',
-                            startMinutes: 540,
-                            endMinutes: 660
-                          },
-                          {
-                            id: 'bloco_tarde',
-                            title: 'Revisão de Flashcards do Dia',
-                            startTime: '14:30',
-                            endTime: '15:30',
-                            startMinutes: 870,
-                            endMinutes: 930
-                          },
-                          {
-                            id: 'bloco_noite',
-                            title: 'Treino de Caderno de Erros',
-                            startTime: '19:00',
-                            endTime: '20:30',
-                            startMinutes: 1140,
-                            endMinutes: 1230
-                          }
-                        ].map((slot, idx) => {
-                          const now = new Date();
-                          const currentMinutes = now.getHours() * 60 + now.getMinutes();
-                          const isCurrent = currentMinutes >= slot.startMinutes && currentMinutes < slot.endMinutes;
-                          const isPast = currentMinutes >= slot.endMinutes;
+                                >
+                                  <div className="flex items-center gap-2 min-w-0 flex-1 pr-1.5">
+                                    {isCurrent ? (
+                                      <span className="relative flex h-2 w-2 shrink-0">
+                                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75" />
+                                        <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500" />
+                                      </span>
+                                    ) : isPast ? (
+                                      <CheckCircle2 className="w-3.5 h-3.5 text-zinc-400 shrink-0" />
+                                    ) : (
+                                      <span className="w-2 h-2 rounded-full bg-blue-500 shrink-0" />
+                                    )}
+                                    <span className="text-[11px] font-bold truncate" title={slot.title}>
+                                      {slot.title}
+                                    </span>
+                                  </div>
 
-                          return (
-                            <div
-                              key={slot.id || idx}
-                              className={`flex items-center justify-between p-2 sm:p-2.5 rounded-xl border transition-all ${isCurrent
-                                  ? 'bg-emerald-500/10 border-emerald-500/30 text-emerald-950 dark:text-emerald-100 shadow-2xs'
-                                  : isPast
-                                    ? 'bg-zinc-50/40 dark:bg-zinc-900/40 border-zinc-200/50 dark:border-zinc-800/50 text-zinc-500 opacity-60'
-                                    : 'bg-zinc-50/70 dark:bg-zinc-900/60 border-zinc-200/70 dark:border-zinc-800/80 hover:bg-zinc-100 dark:hover:bg-zinc-800/90 text-zinc-800 dark:text-zinc-200'
-                                }`}
-                            >
-                              <div className="flex items-center gap-2.5 min-w-0 flex-1 pr-2">
-                                {isCurrent ? (
-                                  <span className="relative flex h-2 w-2 shrink-0">
-                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-                                  </span>
-                                ) : isPast ? (
-                                  <CheckCircle2 className="w-3.5 h-3.5 text-zinc-400 shrink-0" />
-                                ) : (
                                   <span
-                                    className="w-2 h-2 rounded-full shrink-0"
-                                    style={{ backgroundColor: accentConfig.primaryHex }}
-                                  />
-                                )}
-
-                                <span className="text-xs font-bold truncate">
-                                  {slot.title}
-                                </span>
-                              </div>
-
-                              <span
-                                className={`text-[11px] font-mono font-bold shrink-0 px-2 py-0.5 rounded-md ${isCurrent
-                                    ? 'bg-emerald-500/20 text-emerald-600 dark:text-emerald-400'
-                                    : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400'
-                                  }`}
-                              >
-                                {slot.startTime} - {slot.endTime}
-                              </span>
+                                    className={`text-[10px] font-mono font-bold shrink-0 px-1.5 py-0.5 rounded-md border ${
+                                      isCurrent
+                                        ? 'bg-blue-500/20 text-blue-600 dark:text-blue-300 border-blue-500/30'
+                                        : 'bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-500/20'
+                                    }`}
+                                  >
+                                    {slot.startTime} - {slot.endTime}
+                                  </span>
+                                </div>
+                              );
+                            })
+                          ) : (
+                            <div className="py-7 text-center text-xs text-zinc-400 dark:text-zinc-500 space-y-1">
+                              <p className="font-light">Nenhum estudo agendado hoje.</p>
+                              <p className="text-[10px] text-blue-500/80 dark:text-blue-400/80 font-normal">Atividades de estudo da agenda aparecem aqui.</p>
                             </div>
-                          );
-                        })}
+                          )}
+                        </div>
                       </div>
-                    )}
+
+                      {/* Coluna 2: Sessões Salvas pelo Cronômetro no Site (Destaque Verde) */}
+                      <div className="space-y-2 flex flex-col min-w-0">
+                        <div className="flex items-center justify-between pb-1.5 border-b border-emerald-500/20">
+                          <div className="flex items-center gap-1.5 min-w-0">
+                            <span className="w-2 h-2 rounded-full bg-emerald-500 shrink-0" />
+                            <span className="text-[11px] font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 truncate">
+                              Sessões no Site (Cronômetro)
+                            </span>
+                          </div>
+                          <span className="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 shrink-0">
+                            {todayRecordedSessions.length}
+                          </span>
+                        </div>
+
+                        {/* Lista com Barra de Rolagem Flat no Padrão do Site */}
+                        <div className="space-y-1.5 max-h-[165px] overflow-y-auto pr-1 flat-scrollbar">
+                          {todayRecordedSessions.length > 0 ? (
+                            todayRecordedSessions.map((sess) => {
+                              const topicTitle =
+                                sess.taxonomy?.subfoco ||
+                                sess.taxonomy?.tema ||
+                                sess.taxonomy?.especialidade ||
+                                sess.taxonomy?.rawLabel ||
+                                'Treino de Questões';
+                              const startFormatted = sess.startTime
+                                ? new Date(sess.startTime).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })
+                                : '';
+                              const endFormatted = sess.endTime
+                                ? new Date(sess.endTime).toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })
+                                : '';
+
+                              return (
+                                <div
+                                  key={sess.id}
+                                  className="flex items-center justify-between p-2 rounded-xl border border-emerald-500/20 bg-emerald-500/5 hover:bg-emerald-500/10 transition-colors text-xs"
+                                >
+                                  <div className="flex items-center gap-2 min-w-0 flex-1 pr-1.5">
+                                    <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
+                                    <div className="min-w-0 flex-1">
+                                      <span className="text-[11px] font-bold text-zinc-900 dark:text-zinc-100 truncate block" title={topicTitle}>
+                                        {topicTitle}
+                                      </span>
+                                      {sess.questionsCount && sess.questionsCount > 0 ? (
+                                        <span className="text-[9px] text-zinc-400 font-light block">
+                                          {sess.questionsCount} questões • {sess.correctCount || 0} acertos ({sess.accuracy !== undefined ? `${sess.accuracy}%` : `${Math.round(((sess.correctCount || 0) / sess.questionsCount) * 100)}%`})
+                                        </span>
+                                      ) : (
+                                        <span className="text-[9px] text-zinc-400 font-light block">
+                                          {startFormatted && endFormatted ? `${startFormatted} – ${endFormatted}` : 'Estudo cronometrado'}
+                                        </span>
+                                      )}
+                                    </div>
+                                  </div>
+
+                                  <span className="text-[10px] font-mono font-bold shrink-0 px-2 py-0.5 rounded-md bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
+                                    {sess.durationFormatted}
+                                  </span>
+                                </div>
+                              );
+                            })
+                          ) : (
+                            <div className="py-7 text-center text-xs text-zinc-400 dark:text-zinc-500 space-y-1">
+                              <p className="font-light">Nenhuma sessão salva hoje.</p>
+                              <p className="text-[10px] text-emerald-600/80 dark:text-emerald-400/80 font-medium">Inicie o cronômetro no topo para registrar!</p>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    </div>
                   </div>
 
                   {/* Rodapé Fluido */}
                   <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between text-xs text-zinc-500 dark:text-zinc-400">
-                    <span className="text-[11px]">
-                      {currentPeriodInfo.status === 'em_andamento'
-                        ? `Em andamento • Restam ${currentPeriodInfo.minutesRemaining}m`
-                        : isGoogleCalendarConnected
-                          ? 'Google Agenda sincronizada'
-                          : 'Cronograma diário inteligente'}
+                    <span className="text-[11px] flex items-center gap-1.5">
+                      <span className="w-1.5 h-1.5 rounded-full bg-blue-500" />
+                      <span>{todayAgendaActivities.length} na agenda</span>
+                      <span className="text-zinc-300 dark:text-zinc-700">•</span>
+                      <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+                      <span>{todayRecordedSessions.length} no site</span>
                     </span>
                     <span className="text-xs font-bold text-blue-600 dark:text-blue-400 flex items-center gap-1 group-hover:underline">
                       Ver agenda completa <ArrowRight className="w-3 h-3" />

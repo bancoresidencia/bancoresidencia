@@ -568,6 +568,91 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     } catch { }
   }, []);
 
+  // Adiciona manualmente uma sessão de estudo (Novo Bloco)
+  const addManualSession = useCallback(
+    async (data: {
+      taxonomy: SelectedTaxonomy;
+      startTime: string; // "HH:mm" ou ISO
+      endTime: string;   // "HH:mm" ou ISO
+      date?: string;     // "YYYY-MM-DD"
+      studyType?: StudyType;
+      questionsCount?: number;
+      correctCount?: number;
+      notes?: string;
+    }): Promise<StudySession> => {
+      const targetDateStr = data.date || getLocalDateStr(new Date());
+
+      let startIso = data.startTime;
+      let endIso = data.endTime;
+
+      if (/^\d{2}:\d{2}$/.test(data.startTime)) {
+        const d = new Date(`${targetDateStr}T${data.startTime}:00`);
+        startIso = isNaN(d.getTime()) ? new Date().toISOString() : d.toISOString();
+      }
+
+      if (/^\d{2}:\d{2}$/.test(data.endTime)) {
+        const d = new Date(`${targetDateStr}T${data.endTime}:00`);
+        endIso = isNaN(d.getTime()) ? new Date().toISOString() : d.toISOString();
+      }
+
+      const sDate = new Date(startIso);
+      let eDate = new Date(endIso);
+      if (eDate.getTime() <= sDate.getTime()) {
+        eDate = new Date(sDate.getTime() + 60 * 60 * 1000); // 1 hora de fallback
+        endIso = eDate.toISOString();
+      }
+
+      const diffSec = Math.max(60, Math.floor((eDate.getTime() - sDate.getTime()) / 1000));
+      const formattedDuration = formatSecondsToHms(diffSec);
+
+      const activeTaxonomy = data.taxonomy || {};
+      const totalQ = data.questionsCount || 0;
+      const correctQ = data.correctCount || 0;
+      const incorrectQ = Math.max(0, totalQ - correctQ);
+      const acc = totalQ > 0 ? Math.round((correctQ / totalQ) * 100) : undefined;
+
+      const newSession: StudySession = {
+        id: `sess_manual_${Date.now()}_${Math.random().toString(36).substring(2, 7)}`,
+        userId: userRef.current?.id,
+        startTime: startIso,
+        endTime: endIso,
+        durationSeconds: diffSec,
+        durationFormatted: formattedDuration,
+        taxonomy: activeTaxonomy,
+        studyType: data.studyType || 'questoes',
+        questionsCount: totalQ,
+        correctCount: correctQ,
+        incorrectCount: incorrectQ,
+        accuracy: acc,
+        sessionSource: 'manual',
+        notes: data.notes || '',
+        createdAt: new Date().toISOString()
+      };
+
+      setSavedSessions((prev) => {
+        const updated = [newSession, ...prev];
+        try {
+          localStorage.setItem(SESSIONS_STORAGE_KEY, JSON.stringify(updated));
+        } catch (err) {
+          console.warn('Erro ao salvar sessão manual no localStorage:', err);
+        }
+        return updated;
+      });
+
+      try {
+        window.dispatchEvent(
+          new StorageEvent('storage', {
+            key: SESSIONS_STORAGE_KEY,
+            newValue: JSON.stringify([newSession, ...savedSessions])
+          })
+        );
+      } catch { }
+
+      return newSession;
+    },
+    [savedSessions]
+  );
+
   // Auto-cura de tarefas agendadas salvas com fuso UTC deslocado
   useEffect(() => {
     try {
@@ -651,7 +736,8 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     todayTotalSeconds,
     todayTotalFormatted,
     allSessions: savedSessions,
-    deleteSession
+    deleteSession,
+    addManualSession
   };
 
   return (

@@ -28,6 +28,10 @@ export interface DailyScheduleSlot {
   rationale?: string;
   aiDecision?: AiDecisionDetails;
   date?: string; // Formato 'YYYY-MM-DD'
+  isCalendarTask?: boolean;
+  isStudySession?: boolean;
+  questionsCount?: number;
+  correctCount?: number;
 }
 
 export interface FreeGapInfo {
@@ -43,4 +47,4 @@ export interface AiScheduleAnalysis {
 }
 
 export type CalendarViewMode = 'dia' | 'semana' | 'mes' | 'ano';
-export type TimelineFilter = 'todos' | 'estudos' | 'google';
+export type TimelineFilter = 'todos' | 'tarefas' | 'estudos' | 'google';
