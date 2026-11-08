@@ -48,6 +48,7 @@ import {
   type FacetedHierarchyCountsResult
 } from '@/services/questionService';
 import { useTheme } from '@/context/ThemeContext';
+import { Button, Badge } from '@/components/ui';
 import { SmartAIFilterModal } from './SmartAIFilterModal';
 import { BancaRaioXModal } from './BancaRaioXModal';
 
@@ -2114,9 +2115,11 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               {/* Tags Ativas Removíveis com quebra inteligente em 2 ou mais fileiras */}
               <div className="flex flex-wrap items-center gap-1.5 max-h-24 overflow-y-auto custom-scrollbar py-0.5 flex-1 min-w-0">
                 {activeTags.map((t) => (
-                  <span
+                  <Badge
                     key={t.id}
-                    className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-semibold border"
+                    variant="theme"
+                    size="sm"
+                    className="inline-flex items-center gap-1"
                     style={{
                       backgroundColor: accentConfig.bgRgba,
                       borderColor: accentConfig.borderRgba,
@@ -2133,20 +2136,22 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                     >
                       ✕
                     </button>
-                  </span>
+                  </Badge>
                 ))}
               </div>
 
               {activeTags.length > 0 && (
-                <button
+                <Button
                   type="button"
+                  variant="ghost"
+                  size="xs"
                   onClick={onReset}
-                  className="flex items-center gap-1 text-[11px] text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white font-medium shrink-0 cursor-pointer transition-colors px-1.5 py-1 rounded-md hover:bg-zinc-100 dark:hover:bg-zinc-800"
+                  className="text-[11px] text-zinc-500 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white shrink-0"
                   title="Limpar todos os filtros"
+                  leftIcon={<RotateCcw className="w-3 h-3" />}
                 >
-                  <RotateCcw className="w-3 h-3" />
                   <span className="hidden sm:inline">Limpar</span>
-                </button>
+                </Button>
               )}
             </div>
 
@@ -2154,19 +2159,18 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             <div className="flex items-center justify-between lg:justify-end gap-1.5 sm:gap-2.5 shrink-0 w-full lg:w-auto">
               {/* Cotas (se houver) */}
               {itemsToConfigure.length > 1 && (
-                <button
+                <Button
                   type="button"
+                  variant={isCotasDrawerOpen ? 'primary' : 'secondary'}
+                  size="xs"
                   onClick={() => setIsCotasDrawerOpen(!isCotasDrawerOpen)}
-                  className={`flex items-center gap-1 px-2 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer border shrink-0 ${isCotasDrawerOpen
-                      ? 'bg-amber-500/20 border-amber-500 text-amber-700 dark:text-amber-300 shadow-sm'
-                      : 'bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800 border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300'
-                    }`}
+                  className="shrink-0"
                   title="Personalizar cotas por filtro"
+                  leftIcon={<PieChart className="w-3.5 h-3.5 text-amber-500 dark:text-amber-400" />}
                 >
-                  <PieChart className="w-3.5 h-3.5 text-amber-500 dark:text-amber-400" />
                   <span className="hidden sm:inline">Cotas</span>
                   <span>({itemsToConfigure.length})</span>
-                </button>
+                </Button>
               )}
 
               {/* Seletor de Quantidade */}
@@ -2267,20 +2271,23 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
               </div>
 
               {/* Botão Salvar Lista */}
-              <button
+              <Button
                 type="button"
+                variant="secondary"
+                size="xs"
                 onClick={onCreateListFromFilter}
-                className="p-2 sm:px-3 sm:py-1.5 rounded-xl text-xs font-semibold bg-zinc-100 hover:bg-zinc-200 text-zinc-800 border border-zinc-300 dark:bg-zinc-800 dark:hover:bg-zinc-700 dark:text-zinc-100 dark:border-zinc-700 transition-colors cursor-pointer shadow-xs shrink-0 flex items-center gap-1"
+                className="shrink-0"
                 title="Salvar como Caderno / Lista"
+                leftIcon={<ListPlus className="w-4 h-4" />}
               >
-                <ListPlus className="w-4 h-4" />
                 <span className="hidden sm:inline">Salvar</span>
-              </button>
+              </Button>
 
               {/* Botão Primário Iniciar */}
-              <button
+              <Button
                 type="button"
                 disabled={isStartingQuestions || displayedQuestionCount === 0 || isLoading}
+                isLoading={isStartingQuestions}
                 onClick={async () => {
                   if (displayedQuestionCount === 0) return;
                   try {
@@ -2291,36 +2298,30 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                     setIsStartingQuestions(false);
                   }
                 }}
-                className={`flex-1 sm:flex-initial flex items-center justify-center gap-1.5 px-3.5 sm:px-5 py-2 rounded-xl text-white font-bold text-xs sm:text-sm shadow-md transition-all shrink-0 ${displayedQuestionCount === 0
+                className={`flex-1 sm:flex-initial text-xs sm:text-sm font-bold shadow-md shrink-0 ${displayedQuestionCount === 0
                     ? 'opacity-50 cursor-not-allowed bg-zinc-400 dark:bg-zinc-700'
-                    : isStartingQuestions
-                      ? 'opacity-80 cursor-wait'
-                      : 'cursor-pointer active:scale-98 hover:opacity-95'
+                    : ''
                   }`}
                 style={{
                   backgroundColor: displayedQuestionCount === 0 ? undefined : accentConfig.primaryHex,
                   boxShadow: displayedQuestionCount === 0 ? undefined : `0 4px 14px ${accentConfig.bgRgba}`
                 }}
-              >
-                {isStartingQuestions ? (
-                  <>
-                    <Loader2 className="w-4 h-4 animate-spin text-white" />
-                    <span className="truncate">Iniciando...</span>
-                  </>
-                ) : displayedQuestionCount === 0 ? (
-                  <>
+                leftIcon={
+                  displayedQuestionCount === 0 ? (
                     <Ban className="w-4 h-4 text-white/80 shrink-0" />
-                    <span className="truncate">Sem questões (0)</span>
-                  </>
-                ) : (
-                  <>
+                  ) : !isStartingQuestions ? (
                     <Play className="w-4 h-4 fill-white shrink-0" />
-                    <span className="truncate">
-                      Iniciar ({Math.min(resolveCount, displayedQuestionCount)})
-                    </span>
-                  </>
+                  ) : undefined
+                }
+              >
+                {displayedQuestionCount === 0 ? (
+                  <span className="truncate">Sem questões (0)</span>
+                ) : (
+                  <span className="truncate">
+                    Iniciar ({Math.min(resolveCount, displayedQuestionCount)})
+                  </span>
                 )}
-              </button>
+              </Button>
             </div>
           </div>
         </div>

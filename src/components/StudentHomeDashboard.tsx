@@ -78,11 +78,12 @@ import { UserStats, QuestionList, ActiveTab, Modalidade, UserAnswerItem, PeriodF
 import { UterusIcon, PregnantWomanIcon } from './StatsDashboard';
 import { getPercentileColor } from '@/utils/percentile';
 import { useTheme } from '@/context/ThemeContext';
+import { Button, Card, Badge, ProgressBar, StreakTracker } from '@/components/ui';
 import { useAuth } from '@/context/AuthContext';
 import { useSubscription } from '@/context/SubscriptionContext';
 import { getAccountTargetExam } from '@/utils/userTargetExam';
 import { flashcardsService } from '@/services/flashcardsService';
-import { useStudyTimer } from '@/context/StudyTimerContext';
+import { useStudyTimer, getLocalDateStr } from '@/context/StudyTimerContext';
 import { formatSecondsToDetailed } from './dashboard/StudyTimeAnalyticsCard';
 import {
   getRecentOfficialExams,
@@ -353,10 +354,50 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   const [targetExamName, setTargetExamName] = useState<string>(examInfo.examName);
   const [targetDaysLeft, setTargetDaysLeft] = useState<number>(examInfo.daysLeft);
 
-  // Tempo de estudo realizado hoje (vinculado ao cronômetro)
-  const { todayTotalSeconds, status: timerStatus, elapsedSeconds } = useStudyTimer();
+  // Tempo de estudo realizado hoje (vinculado ao cronômetro da agenda)
+  const { todayTotalSeconds, status: timerStatus, elapsedSeconds, allSessions } = useStudyTimer();
   const currentTodayStudySeconds = todayTotalSeconds + ((timerStatus === 'running' || timerStatus === 'paused') ? elapsedSeconds : 0);
   const formattedTodayStudy = formatSecondsToDetailed(currentTodayStudySeconds);
+
+  // Sequência da semana vigente (Segunda a Domingo) para o StreakTracker
+  const currentWeekStreak = React.useMemo(() => {
+    const now = new Date();
+    const dayOfWeek = now.getDay(); // 0 = Domingo, 1 = Segunda, ...
+    const diffToMonday = (dayOfWeek + 6) % 7;
+    const monday = new Date(now);
+    monday.setDate(now.getDate() - diffToMonday);
+    monday.setHours(0, 0, 0, 0);
+
+    const labels = ['Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb', 'Dom'] as const;
+    const todayStr = getLocalDateStr(now);
+
+    return labels.map((dayLabel, idx) => {
+      const d = new Date(monday);
+      d.setDate(monday.getDate() + idx);
+      const dateStr = getLocalDateStr(d);
+      const isToday = dateStr === todayStr;
+      const isFuture = d.getTime() > now.getTime() && !isToday;
+
+      // Critério (A): Bater QUALQUER uma das metas (questões respondidas OU tempo no cronômetro da agenda)
+      const questionsAnswered = stats?.historyByDay?.find((h) => h.date === dateStr)?.answered || 0;
+      const timerSeconds = (allSessions || []).filter((s) => {
+        if (!s.startTime) return false;
+        return getLocalDateStr(s.startTime) === dateStr;
+      }).reduce((acc, curr) => acc + (curr.durationSeconds || 0), 0);
+
+      const totalTimer = timerSeconds + (isToday && (timerStatus === 'running' || timerStatus === 'paused') ? elapsedSeconds : 0);
+
+      const isCompleted = questionsAnswered > 0 || totalTimer > 0;
+
+      return {
+        dayLabel,
+        dateStr,
+        isCompleted,
+        isToday,
+        isFuture
+      };
+    });
+  }, [stats?.historyByDay, allSessions, timerStatus, elapsedSeconds]);
 
   useEffect(() => {
     const updated = getAccountTargetExam(user);
@@ -405,7 +446,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     setIsEditingGoals(false);
   };
 
-  const todayStudyMinutes = Math.round(todayAnswered * 2.5);
+  // Tempo de estudo do dia vinculado exclusivamente ao cronômetro da agenda
+  const todayStudyMinutes = Math.floor(currentTodayStudySeconds / 60);
   const timeGoalPercentage = Math.min(100, Math.round((todayStudyMinutes / (dailyTimeGoal || 1)) * 100));
 
   // Tier cromático do percentil independente com suporte a modo claro/escuro
@@ -2918,7 +2960,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 onSmartGuidesChange={setSmartGuidesState}
                 allCardsConfig={visibleCards}
               >
-                <section className="relative overflow-hidden bg-white dark:bg-[#121215] border border-slate-200/90 dark:border-zinc-800 rounded-2xl p-4 sm:p-5 shadow-xs">
+                <section className="relative overflow-hidden bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] rounded-2xl p-4 sm:p-5 shadow-xs">
                   <div
                     className="absolute -right-16 -top-16 w-60 h-60 rounded-full blur-3xl opacity-10 pointer-events-none"
                     style={{ backgroundColor: accentConfig.primaryHex }}
@@ -2926,7 +2968,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
                   <div className="relative flex flex-col sm:flex-row sm:items-center justify-between gap-3.5">
                     <div className="space-y-1">
-                      <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-zinc-400 font-medium">
+                      <div className="flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400 font-medium">
                         <GreetingIcon className={`w-3.5 h-3.5 ${greeting.color}`} />
                         <span>{greeting.text}</span>
                         <span>•</span>
@@ -2934,68 +2976,51 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       </div>
 
                       <div className="flex flex-wrap items-center gap-2.5 pt-0.5">
-                        <h1 className="font-heading text-xl sm:text-2xl font-black text-slate-900 dark:text-zinc-100 tracking-tight">
+                        <h1 className="font-heading text-xl sm:text-2xl font-black text-zinc-900 dark:text-zinc-100 tracking-tight">
                           {studentName}
                         </h1>
 
-                        {plan !== 'free' ? (
-                          <span className="px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700">
-                            Pro
-                          </span>
-                        ) : (
-                          <span className="px-2 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider bg-slate-100 dark:bg-zinc-800 text-slate-600 dark:text-zinc-300 border border-slate-200 dark:border-zinc-700">
-                            Free
-                          </span>
-                        )}
+                        <Badge variant={plan !== 'free' ? 'warning' : 'default'} size="sm">
+                          {plan !== 'free' ? 'PRO' : 'FREE'}
+                        </Badge>
 
                         {plan === 'free' && (
-                          <button
-                            type="button"
+                          <Button
+                            variant="primary"
+                            size="xs"
                             onClick={() => openUpgradeModal()}
-                            className="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl text-xs font-black text-white shadow-xs hover:scale-[1.02] active:scale-95 transition-all cursor-pointer"
-                            style={{
-                              backgroundColor: accentConfig.primaryHex
-                            }}
+                            leftIcon={<Zap className="w-3.5 h-3.5 fill-current" />}
                             title="Liberar questões ilimitadas, métricas TRI e gabaritos completos"
                           >
-                            <Zap className="w-3.5 h-3.5 fill-current" />
-                            <span>Liberar Ilimitado</span>
-                          </button>
+                            Liberar Ilimitado
+                          </Button>
                         )}
                       </div>
                     </div>
 
                     <div className="flex items-center gap-2 sm:gap-2.5 shrink-0">
-                      {/* Tempo Estudado Hoje */}
+                      {/* Tempo Estudado Hoje - Destaque em Verde */}
                       <div
                         onClick={() => onNavigate('stats')}
-                        title="Tempo de estudo acumulado hoje. Clique para abrir seu desempenho detalhado."
-                        className="flex items-center gap-2.5 px-3 py-1.5 rounded-xl bg-slate-50 dark:bg-zinc-900/60 border border-slate-200/70 dark:border-zinc-800 hover:border-slate-300 dark:hover:border-zinc-700 transition-colors cursor-pointer"
+                        title="Tempo de estudo acumulado hoje no cronômetro da agenda. Clique para abrir seu desempenho detalhado."
+                        className="flex items-center gap-2.5 px-3 py-1.5 rounded-xl bg-emerald-50/60 dark:bg-emerald-950/20 border border-emerald-200/80 dark:border-emerald-800/50 hover:border-emerald-300 dark:hover:border-emerald-700 transition-colors cursor-pointer shadow-2xs"
                       >
-                        <div
-                          className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0"
-                          style={{
-                            backgroundColor: accentConfig.timeAccent.bgRgba,
-                            color: accentConfig.timeAccent.hex
-                          }}
-                        >
+                        <div className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0 bg-emerald-500/15 text-emerald-600 dark:text-emerald-400">
                           <Clock className="w-3.5 h-3.5" />
                         </div>
                         <div>
-                          <div
-                            className="text-xs sm:text-sm font-bold font-sans tracking-tight leading-none font-[var(--font-inter)] tabular-nums"
-                            style={{ color: accentConfig.timeAccent.hex }}
-                          >
+                          <div className="text-xs sm:text-sm font-black font-sans tracking-tight leading-none text-zinc-900 dark:text-zinc-100 tabular-nums">
                             {formattedTodayStudy}
                           </div>
-                          <div className="text-[10px] text-slate-500 dark:text-zinc-400 font-medium truncate">
-                            estudado hoje
+                          <div className="text-[10px] sm:text-[11px] font-bold text-emerald-600 dark:text-emerald-400 flex items-center gap-1 leading-none mt-1">
+                            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse shrink-0" />
+                            <span>Estudado hoje</span>
                           </div>
                         </div>
                       </div>
 
                       {/* Prova Alvo */}
-                      <div className="flex items-center gap-2.5 px-3 py-1.5 rounded-xl bg-slate-50 dark:bg-zinc-900/60 border border-slate-200/70 dark:border-zinc-800">
+                      <div className="flex items-center gap-2.5 px-3 py-1.5 rounded-xl bg-zinc-50 dark:bg-zinc-900/60 border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)]">
                         <div
                           className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0"
                           style={{
@@ -3012,42 +3037,17 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           >
                             {targetDaysLeft === 1 ? '1 dia' : `${targetDaysLeft} dias`}
                           </div>
-                          <div className="text-[10px] text-slate-500 dark:text-zinc-400 font-medium truncate max-w-[120px]" title={targetExamName}>
+                          <div className="text-[10px] text-zinc-500 dark:text-zinc-400 font-medium truncate max-w-[120px]" title={targetExamName}>
                             p/ {targetExamName}
                           </div>
                         </div>
                       </div>
 
-
-
-
-                      {/* Constância */}
-                      <div className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-50 dark:bg-zinc-900/60 border border-slate-200/70 dark:border-zinc-800">
-                        <div
-                          className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0"
-                          style={{
-                            backgroundColor: accentConfig.energyAccent.bgRgba,
-                            color: accentConfig.energyAccent.hex
-                          }}
-                        >
-                          <Flame className="w-3.5 h-3.5 fill-current" />
-                        </div>
-                        <div>
-                          <div
-                            className="text-xs sm:text-sm font-bold font-sans tracking-tight leading-none"
-                            style={{ color: accentConfig.energyAccent.hex }}
-                          >
-                            {stats.streakDays} {stats.streakDays === 1 ? 'dia' : 'dias'}
-                          </div>
-                          <div className="text-[10px] text-slate-500 dark:text-zinc-400 font-medium">
-                            de ofensiva
-                          </div>
-                        </div>
-                      </div>
-
                       {/* Botão Personalizar Layout (Tela de Início) */}
-                      <button
+                      <Button
                         type="button"
+                        variant={isCustomizing ? 'primary' : 'outline'}
+                        size="xs"
                         onClick={() => {
                           if (isCustomizing) {
                             autoConformLayout();
@@ -3055,15 +3055,11 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           setIsCustomizing((prev) => !prev);
                         }}
                         title={isCustomizing ? "Concluir personalização do layout" : "Personalizar layout dos cards"}
-                        className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl border text-xs font-semibold transition-all cursor-pointer ${
-                          isCustomizing
-                            ? 'bg-blue-600 text-white border-blue-600 shadow-md ring-2 ring-blue-500/20'
-                            : 'bg-slate-50 dark:bg-zinc-900/60 border-slate-200/70 dark:border-zinc-800 text-slate-700 dark:text-zinc-200 hover:text-blue-600 dark:hover:text-blue-400 hover:border-blue-400'
-                        }`}
+                        leftIcon={<SlidersHorizontal className="w-3.5 h-3.5" />}
+                        className="shadow-2xs"
                       >
-                        <SlidersHorizontal className="w-3.5 h-3.5 text-blue-500" />
                         <span className="hidden sm:inline">{isCustomizing ? 'Concluir' : 'Layout'}</span>
-                      </button>
+                      </Button>
                     </div>
                   </div>
 
@@ -3112,35 +3108,36 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 onSmartGuidesChange={setSmartGuidesState}
                 allCardsConfig={visibleCards}
               >
-                {/* Card 1: Metas Diárias */}
-                <div className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-5 shadow-xs flex flex-col justify-between min-h-0 h-full space-y-3.5">
-                  <div>
+                {/* Card 1: Sequência & Metas Diárias */}
+                <div className="bento-card bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] rounded-2xl p-4 sm:p-5 shadow-xs flex flex-col justify-between min-h-0 h-full space-y-2.5">
+                  <div className="space-y-2">
+                    {/* Header: Título "Sequência" + Botão "Ajustar" */}
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
                         <div
                           className="w-8 h-8 rounded-xl flex items-center justify-center shadow-xs border border-zinc-200/60 dark:border-zinc-800/80"
-                          style={{ backgroundColor: accentConfig.bgRgba, color: accentConfig.primaryHex }}
+                          style={{ backgroundColor: accentConfig.energyAccent.bgRgba, color: accentConfig.energyAccent.hex }}
                         >
-                          <Target className="w-4 h-4" />
+                          <Flame className="w-4 h-4 fill-current" />
                         </div>
-                        <span className="text-xs font-bold text-zinc-700 dark:text-zinc-300 uppercase tracking-wider">
-                          Metas Diárias
+                        <span className="text-xs font-bold text-zinc-800 dark:text-zinc-200 uppercase tracking-wider">
+                          Sequência
                         </span>
                       </div>
 
-                      <button
-                        type="button"
+                      <Button
+                        variant="outline"
+                        size="xs"
                         onClick={handleToggleEditGoals}
-                        className="flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-bold border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors cursor-pointer"
+                        leftIcon={<SlidersHorizontal className="w-3 h-3" />}
                         title="Ajustar metas de questões e tempo"
                       >
-                        <SlidersHorizontal className="w-3 h-3" />
-                        <span>{isEditingGoals ? 'Fechar' : 'Ajustar'}</span>
-                      </button>
+                        {isEditingGoals ? 'Fechar' : 'Ajustar'}
+                      </Button>
                     </div>
 
                     {isEditingGoals ? (
-                      <form onSubmit={handleSaveCustomGoals} className="pt-2.5 space-y-2 animate-in fade-in duration-150">
+                      <form onSubmit={handleSaveCustomGoals} className="pt-1.5 space-y-2 animate-in fade-in duration-150">
                         <div className="grid grid-cols-2 gap-2 text-xs">
                           <div>
                             <label className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 block mb-1">
@@ -3172,67 +3169,77 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           </div>
                         </div>
                         <div className="flex items-center gap-1.5 pt-1">
-                          <button
+                          <Button
                             type="submit"
-                            className="flex-1 flex items-center justify-center gap-1 py-1.5 px-2.5 rounded-lg text-xs font-bold text-white shadow-xs transition-opacity hover:opacity-90 cursor-pointer"
+                            size="xs"
+                            className="flex-1 text-xs font-bold text-white"
                             style={{ backgroundColor: accentConfig.primaryHex }}
+                            leftIcon={<Check className="w-3.5 h-3.5" />}
                           >
-                            <Check className="w-3.5 h-3.5" />
-                            <span>Salvar</span>
-                          </button>
-                          <button
+                            Salvar
+                          </Button>
+                          <Button
                             type="button"
+                            variant="outline"
+                            size="xs"
                             onClick={() => setIsEditingGoals(false)}
-                            className="p-1.5 rounded-lg border border-zinc-200 dark:border-zinc-800 text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200"
                           >
                             <X className="w-3.5 h-3.5" />
-                          </button>
+                          </Button>
                         </div>
                       </form>
                     ) : (
-                      <div className="pt-3 grid grid-cols-2 gap-3 divide-x divide-zinc-100 dark:divide-zinc-800/80">
-                        <div className="pr-1 space-y-1.5">
-                          <div className="flex items-center justify-between text-xs font-bold text-zinc-500 dark:text-zinc-400">
-                            <span className="flex items-center gap-1">
-                              <Target className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
-                              Questões
+                      <>
+                        {/* Linha Central: Valor da Sequência à esquerda + 7 Micro-quadradinhos ao lado à direita */}
+                        <div className="pt-1 pb-0.5 flex items-center justify-between">
+                          <div className="flex items-baseline gap-1.5">
+                            <span className="text-2xl sm:text-3xl font-black font-sans tracking-tight text-zinc-900 dark:text-zinc-100 flex items-center gap-1.5">
+                              <Flame className="w-5 h-5 fill-current text-amber-500 animate-pulse" />
+                              <span>{stats.streakDays}</span>
                             </span>
-                            <span className="font-sans font-bold text-zinc-800 dark:text-zinc-200 text-xs">
-                              {todayAnswered}/{dailyGoal}
+                            <span className="text-xs text-zinc-400 dark:text-zinc-500 font-medium">
+                              {stats.streakDays === 1 ? 'dia' : 'dias'}
                             </span>
                           </div>
-                          <div className="w-full bg-zinc-100 dark:bg-zinc-900 rounded-full h-2 overflow-hidden border border-zinc-200/60 dark:border-zinc-800">
-                            <div
-                              className="h-2 rounded-full transition-all duration-500 ease-out"
-                              style={{
-                                width: `${goalPercentage}%`,
-                                backgroundColor: accentConfig.primaryHex
-                              }}
-                            />
-                          </div>
+
+                          {/* 7 Micro-quadradinhos da semana atual bem pertos */}
+                          <StreakTracker
+                            days={currentWeekStreak}
+                            accentHex={accentConfig.primaryHex}
+                            accentBgRgba={accentConfig.bgRgba}
+                            size="xs"
+                          />
                         </div>
 
-                        <div className="pl-3 space-y-1.5">
-                          <div className="flex items-center justify-between text-xs font-bold text-zinc-500 dark:text-zinc-400">
-                            <span className="flex items-center gap-1">
-                              <Clock className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
-                              Tempo
-                            </span>
-                            <span className="font-sans font-bold text-zinc-800 dark:text-zinc-200 text-xs">
-                              {todayStudyMinutes}m/{dailyTimeGoal}m
-                            </span>
+                        {/* Metas Diárias: Questões e Tempo do Cronômetro da Agenda */}
+                        <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 grid grid-cols-2 gap-3 divide-x divide-zinc-100 dark:divide-zinc-800/80">
+                          <div className="pr-1 space-y-1">
+                            <div className="flex items-center justify-between text-xs font-bold text-zinc-500 dark:text-zinc-400">
+                              <span className="flex items-center gap-1">
+                                <Target className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
+                                Questões
+                              </span>
+                              <span className="font-sans font-bold text-zinc-800 dark:text-zinc-200 text-xs tabular-nums">
+                                {todayAnswered}/{dailyGoal}
+                              </span>
+                            </div>
+                            <ProgressBar value={todayAnswered} max={dailyGoal} variant="primary" size="xs" />
                           </div>
-                          <div className="w-full bg-zinc-100 dark:bg-zinc-900 rounded-full h-2 overflow-hidden border border-zinc-200/60 dark:border-zinc-800">
-                            <div
-                              className="h-2 rounded-full transition-all duration-500 ease-out"
-                              style={{
-                                width: `${timeGoalPercentage}%`,
-                                backgroundColor: accentConfig.primaryHex
-                              }}
-                            />
+
+                          <div className="pl-3 space-y-1">
+                            <div className="flex items-center justify-between text-xs font-bold text-zinc-500 dark:text-zinc-400">
+                              <span className="flex items-center gap-1">
+                                <Clock className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
+                                Tempo
+                              </span>
+                              <span className="font-sans font-bold text-zinc-800 dark:text-zinc-200 text-xs tabular-nums">
+                                {todayStudyMinutes}m/{dailyTimeGoal}m
+                              </span>
+                            </div>
+                            <ProgressBar value={todayStudyMinutes} max={dailyTimeGoal} variant="time" size="xs" />
                           </div>
                         </div>
-                      </div>
+                      </>
                     )}
 
                     {/* VISÃO EXPANDIDA ADAPTATIVA: Sessões Programadas do Dia */}
@@ -3269,7 +3276,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     )}
                   </div>
 
-                  <div className="card-height-compact-hide pt-2.5 flex items-center justify-between text-xs text-zinc-500 dark:text-zinc-400 border-t border-zinc-100 dark:border-zinc-800/80">
+                  <div className="card-height-compact-hide pt-2 flex items-center justify-between text-xs text-zinc-500 dark:text-zinc-400 border-t border-zinc-100 dark:border-zinc-800/80">
                     <span className="text-[11px] font-medium">Conclusão diária</span>
                     <span className="font-bold text-zinc-800 dark:text-zinc-200 font-sans text-xs">
                       {Math.round((goalPercentage + timeGoalPercentage) / 2)}%
@@ -3297,7 +3304,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 allCardsConfig={visibleCards}
               >
                 {/* Card 2: Aproveitamento com Seletor Interativo e Mini Sparkline com Tooltips */}
-                <div className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-5 shadow-xs flex flex-col justify-between min-h-0 h-full space-y-3.5">
+                <div className="bento-card bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] rounded-2xl p-4 sm:p-5 shadow-xs flex flex-col justify-between min-h-0 h-full space-y-3">
                   <div>
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
@@ -3398,14 +3405,13 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                       )}
                     </div>
 
-                    {/* Barra de Progresso Suave */}
-                    <div className="w-full bg-zinc-100 dark:bg-zinc-900 rounded-full h-2 overflow-hidden border border-zinc-200/60 dark:border-zinc-800 mt-2.5">
-                      <div
-                        className="h-2 rounded-full transition-all duration-700 ease-out"
-                        style={{
-                          width: `${Math.min(100, Math.max(0, animatedAccuracy))}%`,
-                          backgroundColor: accentConfig.primaryHex
-                        }}
+                    {/* Barra de Progresso Suave Padronizada */}
+                    <div className="mt-2.5">
+                      <ProgressBar
+                        value={animatedAccuracy}
+                        max={100}
+                        variant="accuracy"
+                        size="sm"
                       />
                     </div>
 
@@ -3482,7 +3488,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 {/* Card 3: Percentil Oficial */}
                 <div
                   ref={percentileCardRef}
-                  className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-5 shadow-xs flex flex-col justify-between min-h-0 h-full space-y-3.5 relative overflow-hidden transition-all duration-300 group"
+                  className="bento-card bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] rounded-2xl p-4 sm:p-5 shadow-xs flex flex-col justify-between min-h-0 h-full space-y-3.5 relative overflow-hidden transition-all duration-300 group"
                 >
                   {isMedalAnimating && (
                     <div className="absolute inset-0 bg-white/75 dark:bg-black/75 backdrop-blur-[2px] pointer-events-none rounded-2xl animate-in fade-in duration-300 z-10" />
@@ -3507,17 +3513,13 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         </span>
                       </div>
                       {!isPercentileCalibrating ? (
-                        <span
-                          className="text-[10px] font-bold font-sans px-2.5 py-0.5 rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 transition-colors shadow-2xs"
-                        >
+                        <Badge variant="default" size="sm" className="font-sans">
                           Top {Math.max(1, 100 - (stats.percentileInfo.percentile || 0))}%
-                        </span>
+                        </Badge>
                       ) : (
-                        <span
-                          className="text-[10px] font-bold font-sans px-2 py-0.5 rounded-md border text-zinc-500 dark:text-zinc-400 border-zinc-200 dark:border-zinc-800 bg-zinc-100 dark:bg-zinc-900"
-                        >
+                        <Badge variant="outline" size="sm" className="font-sans text-zinc-500">
                           {percentileTier.rangeLabel}
-                        </span>
+                        </Badge>
                       )}
                     </div>
 
@@ -3527,21 +3529,16 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           <span className="text-2xl sm:text-3xl font-black font-sans tracking-tight text-zinc-900 dark:text-zinc-100">
                             P{stats.percentileInfo.percentile}
                           </span>
-                          <span
-                            className="text-xs font-bold px-2 py-0.5 rounded-md border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300 shadow-2xs"
-                          >
+                          <Badge variant="outline" size="sm">
                             Nível {percentileTier.name}
-                          </span>
+                          </Badge>
                         </div>
-                        <div className="w-full bg-zinc-100 dark:bg-zinc-900 rounded-full h-2 overflow-hidden border border-zinc-200/60 dark:border-zinc-800">
-                          <div
-                            className="h-2 rounded-full transition-all duration-700 ease-out"
-                            style={{
-                              width: `${Math.max(5, stats.percentileInfo.percentile || 0)}%`,
-                              backgroundColor: percentileTier.color
-                            }}
-                          />
-                        </div>
+                        <ProgressBar
+                          value={Math.max(5, stats.percentileInfo.percentile || 0)}
+                          max={100}
+                          variant="energy"
+                          size="sm"
+                        />
                       </div>
                     ) : (
                       <div className="pt-2 space-y-2.5">
@@ -3552,30 +3549,25 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                             </span>
                             <span className="text-xs text-zinc-500 dark:text-zinc-400 font-medium">questões restantes</span>
                           </div>
-                          <span
-                            className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-bold border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900 text-zinc-700 dark:text-zinc-300"
-                          >
+                          <Badge variant="warning" size="sm" className="gap-1">
                             <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ backgroundColor: percentileTier.color }} />
                             Calibrando
-                          </span>
+                          </Badge>
                         </div>
-                        <div className="w-full bg-zinc-100 dark:bg-zinc-900 rounded-full h-2 overflow-hidden border border-zinc-200/60 dark:border-zinc-800">
-                          <div
-                            className="h-2 rounded-full transition-all duration-700 ease-out"
-                            style={{
-                              width: `${Math.max(
-                                5,
-                                Math.min(
-                                  100,
-                                  Math.round(
-                                    ((150 - (stats.percentileInfo.missingForApprox || 150)) / 150) * 100
-                                  )
-                                )
-                              )}%`,
-                              backgroundColor: percentileTier.color
-                            }}
-                          />
-                        </div>
+                        <ProgressBar
+                          value={Math.max(
+                            5,
+                            Math.min(
+                              100,
+                              Math.round(
+                                ((150 - (stats.percentileInfo.missingForApprox || 150)) / 150) * 100
+                              )
+                            )
+                          )}
+                          max={100}
+                          variant="energy"
+                          size="sm"
+                        />
                       </div>
                     )}
 
@@ -3763,23 +3755,24 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
                     <div className="pt-1 flex flex-wrap items-center gap-2">
                       {/* Botão Treinar -> Abre Drawer Central com Subtemas e Radar da Banca */}
-                      <button
+                      <Button
                         type="button"
                         onClick={() => { if (isCustomizing) return; setActiveCentralDrawer('treinar_recomendacao'); }}
-                        className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl text-white text-xs sm:text-sm font-bold transition-all cursor-pointer shadow-sm hover:opacity-95 active:scale-98"
+                        className="w-full sm:w-auto text-xs sm:text-sm font-bold"
                         style={{
                           backgroundColor: accentConfig.primaryHex,
                           boxShadow: `0 3px 10px ${accentConfig.bgRgba}`
                         }}
                         title="Abrir centro de treino com subtemas e radar da banca"
+                        leftIcon={<Play className="w-3.5 h-3.5 fill-current" />}
                       >
-                        <Play className="w-3.5 h-3.5 fill-current" />
-                        <span>Treinar {recommendedArea.label}</span>
-                      </button>
+                        Treinar {recommendedArea.label}
+                      </Button>
 
                       {/* Botão Blitz TRI */}
-                      <button
+                      <Button
                         type="button"
+                        variant="secondary"
                         onClick={() => {
                           if (onStartSimuladoExpress) {
                             onStartSimuladoExpress(10);
@@ -3787,12 +3780,12 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                             handlePracticeArea(recommendedArea.filterName);
                           }
                         }}
-                        className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-3.5 py-2.5 rounded-xl text-xs font-semibold border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/60 text-zinc-700 dark:text-zinc-300 hover:border-zinc-300 dark:hover:border-zinc-700 hover:text-zinc-900 dark:hover:text-white transition-all cursor-pointer"
+                        className="w-full sm:w-auto text-xs font-semibold"
                         title="Treino expresso de 10 questões calibradas pelo modelo psicométrico TRI (~12 min)"
+                        leftIcon={<Zap className="w-3.5 h-3.5 text-amber-500" />}
                       >
-                        <Zap className="w-3.5 h-3.5 text-amber-500" />
-                        <span>Blitz TRI (10Q • 12 min)</span>
-                      </button>
+                        Blitz TRI (10Q • 12 min)
+                      </Button>
                     </div>
                   </div>
 
@@ -4068,17 +4061,18 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                             <span className="text-zinc-600 dark:text-zinc-400 truncate max-w-[260px]">
                               {activeDetailedMnemonic.examFrequency || 'Alta frequência nas provas'}
                             </span>
-                            <button
+                            <Button
                               type="button"
+                              size="xs"
                               onClick={(e) => {
                                 e.stopPropagation();
                                 const q = activeDetailedMnemonic.practiceQuery;
                                 if (onStartTopicPractice && q) onStartTopicPractice(q.specialty, q.search);
                               }}
-                              className="px-2.5 py-1 rounded-lg bg-amber-500 text-white font-bold text-[10px] hover:bg-amber-600 transition-colors shrink-0 cursor-pointer shadow-2xs"
+                              className="bg-amber-500 hover:bg-amber-600 text-white font-bold text-[10px] shadow-2xs"
                             >
                               Treinar Tema
-                            </button>
+                            </Button>
                           </div>
                         )}
                       </div>
@@ -4163,10 +4157,11 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           </span>
                         </div>
                         {/* Barra de Progresso do Período Atual */}
-                        <div className="w-full bg-zinc-100 dark:bg-zinc-800/80 rounded-full h-1.5 overflow-hidden mt-1">
-                          <div
-                            className="h-1.5 rounded-full bg-emerald-500 transition-all duration-500"
-                            style={{ width: `${currentPeriodInfo.progressPercent}%` }}
+                        <div className="mt-1">
+                          <ProgressBar
+                            value={currentPeriodInfo.progressPercent}
+                            size="xs"
+                            variant="success"
                           />
                         </div>
                       </>
@@ -4179,11 +4174,11 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                             Próxima Atividade • {currentPeriodInfo.minutesUntil > 120 ? `Às ${currentPeriodInfo.slot.startTime}` : `Em ${currentPeriodInfo.minutesUntil} min (${currentPeriodInfo.slot.startTime})`}
                           </span>
                         </div>
-                        <h4 className="font-heading text-sm sm:text-base font-bold text-slate-900 dark:text-zinc-100 truncate">
+                        <h4 className="font-heading text-sm sm:text-base font-bold text-zinc-900 dark:text-zinc-100 truncate">
                           {currentPeriodInfo.slot.title}
                         </h4>
                         {cleanEventDescription(currentPeriodInfo.slot.description) && (
-                          <p className="text-xs text-slate-500 dark:text-zinc-400 truncate">
+                          <p className="text-xs text-zinc-500 dark:text-zinc-400 truncate">
                             {cleanEventDescription(currentPeriodInfo.slot.description)}
                           </p>
                         )}
@@ -4197,11 +4192,11 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                             Período Noturno • Descanso & Consolidação
                           </span>
                         </div>
-                        <h4 className="font-heading text-sm sm:text-base font-bold text-slate-900 dark:text-zinc-100 truncate">
+                        <h4 className="font-heading text-sm sm:text-base font-bold text-zinc-900 dark:text-zinc-100 truncate">
                           {currentPeriodInfo.slot.title}
                         </h4>
                         {cleanEventDescription(currentPeriodInfo.slot.description) && (
-                          <p className="text-xs text-slate-600 dark:text-zinc-400 line-clamp-1">
+                          <p className="text-xs text-zinc-600 dark:text-zinc-400 line-clamp-1">
                             {cleanEventDescription(currentPeriodInfo.slot.description)}
                           </p>
                         )}
@@ -4216,11 +4211,11 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                             {isGoogleCalendarConnected ? 'Agenda Sincronizada • Horários Livres' : 'Cronograma Livre'}
                           </span>
                         </div>
-                        <h4 className="font-heading text-sm sm:text-base font-bold text-slate-900 dark:text-zinc-100 truncate">
+                        <h4 className="font-heading text-sm sm:text-base font-bold text-zinc-900 dark:text-zinc-100 truncate">
                           {currentPeriodInfo.slot.title}
                         </h4>
                         {cleanEventDescription(currentPeriodInfo.slot.description) && (
-                          <p className="text-xs text-slate-500 dark:text-zinc-400 truncate">
+                          <p className="text-xs text-zinc-500 dark:text-zinc-400 truncate">
                             {cleanEventDescription(currentPeriodInfo.slot.description)}
                           </p>
                         )}
@@ -4231,15 +4226,17 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                   {/* Footer Bar */}
                   <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between text-xs">
                     {!isGoogleCalendarConnected ? (
-                      <button
+                      <Button
                         type="button"
+                        size="xs"
+                        variant="outline"
                         onClick={(e) => { e.stopPropagation(); if (isCustomizing) return; setIsGoogleModalOpen(true); }}
-                        className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-[10px] font-bold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-900/60 hover:bg-blue-100 dark:hover:bg-blue-900/40 transition-colors cursor-pointer"
+                        className="text-[10px] font-bold text-blue-600 dark:text-blue-400 border-blue-200 dark:border-blue-900/60 bg-blue-50 dark:bg-blue-950/40"
                         title="Conectar com o Google Agenda"
+                        leftIcon={<GoogleIcon className="w-3.5 h-3.5" />}
                       >
-                        <GoogleIcon className="w-3.5 h-3.5" />
-                        <span>Conectar Google Agenda</span>
-                      </button>
+                        Conectar Google Agenda
+                      </Button>
                     ) : (
                       <span className="text-[10px] text-zinc-600 dark:text-zinc-300 flex items-center gap-1.5 font-medium">
                         <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
@@ -4757,20 +4754,13 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
                   {/* PAINEL 1: CADERNOS DE QUESTÕES */}
                   {studyResumeTab === 'cadernos' && (
-                    <div className="bento-card bg-white dark:bg-[#121215] border border-slate-200/90 dark:border-zinc-800 rounded-2xl p-5 sm:p-6 shadow-xs space-y-4 animate-in fade-in duration-200">
+                    <div className="bento-card bg-[var(--bg-card,#ffffff)] dark:bg-[var(--card,#121215)] border border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)] rounded-2xl p-4 sm:p-5 shadow-xs space-y-4 animate-in fade-in duration-200">
                       {/* Cabeçalho do Card */}
-                      <div className="flex items-center justify-between gap-2 pb-3 border-b border-slate-100 dark:border-zinc-800/80">
+                      <div className="flex items-center justify-between gap-2 pb-3 border-b border-[var(--card-border,#e4e4e7)] dark:border-[var(--card-border,#27272a)]/80">
                         <div className="flex items-center gap-2">
-                          <span
-                            className="text-[10px] font-extrabold uppercase tracking-wider px-2.5 py-0.5 rounded-md border"
-                            style={{
-                              backgroundColor: accentConfig.bgRgba,
-                              borderColor: accentConfig.borderRgba,
-                              color: accentConfig.primaryHex
-                            }}
-                          >
+                          <Badge variant="theme" size="sm">
                             Caderno Ativo
-                          </span>
+                          </Badge>
                           {(activeCaderno || recentList || allLists[0]) && (
                             <span
                               className="text-[11px] font-bold flex items-center gap-1"
@@ -4807,10 +4797,10 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                             <div className="space-y-4">
                               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
                                 <div className="space-y-1">
-                                  <h4 className="font-heading text-base sm:text-lg font-bold text-slate-900 dark:text-zinc-100" title={item.title}>
+                                  <h4 className="font-heading text-base sm:text-lg font-bold text-zinc-900 dark:text-zinc-100" title={item.title}>
                                     {item.title}
                                   </h4>
-                                  <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-zinc-400 flex-wrap">
+                                  <div className="flex items-center gap-2 text-xs text-zinc-500 dark:text-zinc-400 flex-wrap">
                                     <span>{item.completedQuestions} de {item.totalQuestions} questões resolvidas</span>
                                     {item.lastQuestionIndex !== undefined && item.lastQuestionIndex > 0 && (
                                       <>
@@ -4831,61 +4821,51 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
                                 <div className="flex items-center gap-3">
                                   <div className="text-right">
-                                    <div className="text-xl sm:text-2xl font-black font-sans text-slate-900 dark:text-zinc-100">
+                                    <div className="text-xl sm:text-2xl font-black font-sans text-zinc-900 dark:text-zinc-100">
                                       {item.progressPercentage}%
                                     </div>
-                                    <div className="text-[10px] uppercase font-bold text-slate-400 dark:text-zinc-500">
+                                    <div className="text-[10px] uppercase font-bold text-zinc-400 dark:text-zinc-500">
                                       Concluído
                                     </div>
                                   </div>
 
-                                  <button
-                                    type="button"
+                                  <Button
+                                    variant="primary"
+                                    size="md"
                                     onClick={() => onContinueList(item)}
-                                    className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-white text-xs sm:text-sm font-bold transition-all cursor-pointer shadow-sm hover:opacity-95 active:scale-98 shrink-0"
-                                    style={{
-                                      backgroundColor: accentConfig.primaryHex,
-                                      boxShadow: `0 4px 12px ${accentConfig.bgRgba}`
-                                    }}
+                                    leftIcon={<Play className="w-3.5 h-3.5 fill-current" />}
                                   >
-                                    <Play className="w-3.5 h-3.5 fill-current" />
-                                    <span>
-                                      {item.lastQuestionIndex !== undefined && item.lastQuestionIndex > 0
-                                        ? `Continuar (Q${item.lastQuestionIndex + 1})`
-                                        : 'Continuar Caderno'}
-                                    </span>
-                                  </button>
+                                    {item.lastQuestionIndex !== undefined && item.lastQuestionIndex > 0
+                                      ? `Continuar (Q${item.lastQuestionIndex + 1})`
+                                      : 'Continuar'}
+                                  </Button>
                                 </div>
                               </div>
 
                               {/* Barra de Progresso Larga */}
-                              <div className="w-full bg-slate-100 dark:bg-zinc-900 rounded-full h-2 overflow-hidden border border-slate-200/60 dark:border-zinc-800">
-                                <div
-                                  className="h-2 rounded-full transition-all duration-500"
-                                  style={{
-                                    width: `${item.progressPercentage}%`,
-                                    backgroundColor: accentConfig.primaryHex
-                                  }}
-                                />
-                              </div>
+                              <ProgressBar
+                                value={item.progressPercentage}
+                                max={100}
+                                variant="primary"
+                                size="sm"
+                              />
                             </div>
                           );
                         })()
                       ) : (
                         <div className="py-6 text-center space-y-2">
-                          <p className="text-sm font-semibold text-slate-700 dark:text-zinc-300">Nenhum caderno em andamento</p>
-                          <p className="text-xs text-slate-500 dark:text-zinc-400 max-w-md mx-auto">
+                          <p className="text-sm font-semibold text-zinc-700 dark:text-zinc-300">Nenhum caderno em andamento</p>
+                          <p className="text-xs text-zinc-500 dark:text-zinc-400 max-w-md mx-auto">
                             Crie cadernos personalizados filtrando por especialidades, temas e bancas para praticar questões direcionadas.
                           </p>
                           <div className="pt-2">
-                            <button
-                              type="button"
+                            <Button
+                              variant="primary"
+                              size="md"
                               onClick={() => onNavigate('listas')}
-                              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-white text-xs font-bold transition-all cursor-pointer shadow-sm hover:opacity-95 active:scale-98"
-                              style={{ backgroundColor: accentConfig.primaryHex }}
                             >
-                              <span>+ Criar Primeiro Caderno</span>
-                            </button>
+                              + Criar Primeiro Caderno
+                            </Button>
                           </div>
                         </div>
                       )}
@@ -5192,22 +5172,28 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
 
                       {/* Setas de navegação ergonômicas */}
-                      <button
+                      <Button
                         type="button"
+                        variant="secondary"
+                        size="icon"
                         onClick={handlePrevCard}
-                        className="p-1.5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#121215] text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white hover:border-zinc-300 dark:hover:border-zinc-700 transition-all cursor-pointer shadow-2xs"
+                        className="w-8 h-8 rounded-lg shadow-2xs"
                         title="Card anterior"
+                        aria-label="Card anterior"
                       >
                         <ChevronLeft className="w-4 h-4" />
-                      </button>
-                      <button
+                      </Button>
+                      <Button
                         type="button"
+                        variant="secondary"
+                        size="icon"
                         onClick={handleNextCard}
-                        className="p-1.5 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-[#121215] text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white hover:border-zinc-300 dark:hover:border-zinc-700 transition-all cursor-pointer shadow-2xs"
+                        className="w-8 h-8 rounded-lg shadow-2xs"
                         title="Próximo card"
+                        aria-label="Próximo card"
                       >
                         <ChevronRight className="w-4 h-4" />
-                      </button>
+                      </Button>
                     </div>
                   </div>
 
@@ -5281,8 +5267,9 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                                       {activeCard.title}
                                     </h4>
                                     {activeCard.countBadge !== null && activeCard.countBadge !== undefined && (
-                                      <span
-                                        className="text-[10px] font-bold font-sans px-2 py-0.5 rounded-full border shadow-2xs"
+                                      <Badge
+                                        variant="theme"
+                                        size="sm"
                                         style={{
                                           backgroundColor: accentConfig.bgRgba,
                                           borderColor: accentConfig.borderRgba,
@@ -5290,7 +5277,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                                         }}
                                       >
                                         {activeCard.countBadge}
-                                      </span>
+                                      </Badge>
                                     )}
                                   </div>
                                   <p className="text-xs text-zinc-500 dark:text-zinc-400 font-medium mt-0.5 truncate max-w-[220px] sm:max-w-[280px]">

@@ -65,3 +65,13 @@ Ao validar as ferramentas interativas de um material de estudo, a Skill audita:
 Nenhum bloco de código customizado pode vazar para a interface do aluno em formato de terminal (`<pre><code>`):
 1. **Blocos `diff-diagnosis`:** Devem renderizar uma matriz comparativa quadricular ou horizontal com cards individuais para cada doença, exibindo período de instalação, curva térmica, sinais cardinais e conduta padrão-ouro destacada.
 2. **Blocos `clinical-score`:** Devem renderizar a tabela formal com parâmetros, faixas normais, gatilhos de alerta destacados em vermelho e o card de conduta com o pacote de medidas imediatas (ex: Pacote da 1ª Hora na sepse materna).
+
+---
+
+## 🏛️ 5. Padrão de Componentes Primitivos (`src/components/ui/`)
+
+Toda ferramenta interativa embutida deve utilizar exclusivamente os primitivos homologados:
+- **Seletores de Bancas / Filtros:** `<Button variant="secondary" size="xs">` ou `<Badge variant="theme">`.
+- **Contêineres de Calculadoras e Simuladores:** `<Card variant="default">` com `<CardHeader>` e `<CardContent>`.
+- **Barras de Distribuição:** `<ProgressBar size="sm" variant="accuracy">`.
+- **Chaves de Alternância (Ex: Modo Treino / Oclusão):** `<Toggle>`.

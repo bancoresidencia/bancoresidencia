@@ -39,6 +39,7 @@ import { QuestionComments } from './QuestionComments';
 import { SendQuestionToFolderModal } from './SendQuestionToFolderModal';
 import { Folder } from '@/types';
 import { renderFormattedMedicalText, sanitizeMedicalText } from '@/utils/textSanitizer';
+import { Button, Badge } from '@/components/ui';
 import {
   getQuestionResolution,
   subscribeToResolutions,
@@ -1160,25 +1161,27 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
         <div className="flex flex-wrap items-center justify-between gap-2.5">
           {/* Canto Superior Esquerdo: Origem da Questão (Banca • Ano) + Status Resolvida */}
           <div className="flex flex-wrap items-center gap-2">
-            <span className="text-xs font-bold px-3 py-1.5 rounded-xl bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 text-zinc-800 dark:text-zinc-200 flex items-center gap-1.5 shadow-xs">
+            <Badge variant="secondary" size="md" className="gap-1.5 font-bold">
               <Building className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
               <span>{displayOrigin}</span>
-              <span className="text-slate-400">•</span>
+              <span className="text-zinc-400">•</span>
               <span>{displayYear}</span>
-            </span>
+            </Badge>
 
             {/* Badge de Cota Diária do Plano Free (10 questões/dia) */}
             {userPlan === 'free' && (
-              <button
+              <Button
                 type="button"
+                variant="outline"
+                size="xs"
                 onClick={() => openUpgradeModal(null, dailyResolvedCount >= 10)}
                 title="Você tem 10 questões gratuitas por dia. Clique para desbloquear o acesso ilimitado!"
-                className="inline-flex items-center gap-1.5 px-2.5 py-1 text-[11px] font-bold rounded-xl border border-amber-500/30 bg-amber-500/10 text-amber-700 dark:text-amber-400 hover:bg-amber-500/20 transition-all cursor-pointer shadow-2xs"
+                className="border-amber-500/30 bg-amber-500/10 text-amber-700 dark:text-amber-400 hover:bg-amber-500/20 shadow-2xs font-bold"
+                leftIcon={<Zap className="w-3 h-3 text-amber-500 fill-amber-500" />}
               >
-                <Zap className="w-3 h-3 text-amber-500 fill-amber-500" />
                 <span>{dailyResolvedCount}/10 hoje</span>
                 <span className="text-[10px] underline ml-0.5 font-extrabold">Liberar Ilimitado</span>
-              </button>
+              </Button>
             )}
 
             {/* Mini-card de Status de Resolução Anterior ou na Sessão */}
@@ -1211,88 +1214,91 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                 )}
                 <span>{isAnswered ? 'Resolvida nesta sessão' : 'Resolvida anteriormente'}</span>
                 {isAnswered && (
-                  <button
+                  <Button
                     type="button"
+                    variant="outline"
+                    size="xs"
                     onClick={handleStartReSolve}
                     title="Resolver novamente esta questão"
-                    className="ml-1 inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md text-[10px] font-extrabold bg-white dark:bg-zinc-900 border border-current hover:opacity-80 transition-all cursor-pointer shadow-2xs"
+                    className="ml-1 h-5 px-1.5 py-0 text-[10px] font-extrabold bg-white dark:bg-zinc-900 border-current"
+                    leftIcon={<RotateCcw className="w-2.5 h-2.5" />}
                   >
-                    <RotateCcw className="w-2.5 h-2.5" />
-                    <span>Refazer</span>
-                  </button>
+                    Refazer
+                  </Button>
                 )}
               </div>
             )}
 
             {/* Borracha rápida de limpar destaques se houver marcações na questão */}
             {highlights.length > 0 && (
-              <button
+              <Button
                 type="button"
+                variant="outline"
+                size="xs"
                 onClick={clearAllHighlights}
                 title={`Limpar ${highlights.length} marcação(ões) desta questão`}
-                className="flex items-center gap-1 px-2.5 py-1 text-[11px] font-semibold text-rose-600 hover:text-rose-700 dark:text-rose-400 dark:hover:text-rose-300 hover:bg-rose-50 dark:hover:bg-rose-950/40 rounded-xl transition-colors cursor-pointer border border-rose-200 dark:border-rose-900/50 shadow-xs"
+                className="text-[11px] font-semibold text-rose-600 hover:text-rose-700 dark:text-rose-400 dark:hover:text-rose-300 hover:bg-rose-50 dark:hover:bg-rose-950/40 border-rose-200 dark:border-rose-900/50"
+                leftIcon={<Eraser className="w-3.5 h-3.5" />}
               >
-                <Eraser className="w-3.5 h-3.5" />
-                <span>Limpar ({highlights.length})</span>
-              </button>
+                Limpar ({highlights.length})
+              </Button>
             )}
           </div>
 
           {/* Canto Superior Direito: Ações (Detalhes, Salvar na Pasta) + Contador da Questão */}
           <div className="flex items-center gap-2">
             {/* Botão para Revelar/Ocultar detalhes da questão (Apenas Ícone) */}
-            <button
+            <Button
               type="button"
+              variant={showDetails ? 'secondary' : 'outline'}
+              size="icon"
               onClick={toggleShowDetails}
-              className={`p-1.5 sm:px-2 sm:py-1.5 rounded-xl border text-[11px] font-bold transition-all cursor-pointer shadow-xs ${
-                showDetails
-                  ? 'shadow-xs'
-                  : 'btn-secondary-adaptive hover:scale-105'
-              }`}
+              className="w-8 h-8 rounded-xl shadow-xs"
               style={showDetails ? {
                 backgroundColor: accentConfig.bgRgba,
                 borderColor: accentConfig.borderRgba,
                 color: accentConfig.primaryHex
               } : undefined}
               title={showDetails ? 'Ocultar detalhes extras da questão' : 'Visualizar detalhes extras (especialidade, nível e temas)'}
+              aria-label={showDetails ? 'Ocultar detalhes extras' : 'Visualizar detalhes extras'}
             >
               {showDetails ? (
                 <EyeOff className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
               ) : (
-                <Eye className="w-3.5 h-3.5 text-slate-400" />
+                <Eye className="w-3.5 h-3.5 text-zinc-400" />
               )}
-            </button>
+            </Button>
 
             {/* Botão de Salvar em Pasta Personalizada */}
             {folders && onSaveToFolder && (
-              <button
+              <Button
                 type="button"
+                variant={savedFolderIds.length > 0 ? 'secondary' : 'outline'}
+                size="xs"
                 onClick={() => setIsFolderModalOpen(true)}
-                className={`flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl border text-[11px] font-bold transition-all cursor-pointer shadow-xs ${
-                  savedFolderIds.length > 0
-                    ? 'shadow-xs'
-                    : 'btn-secondary-adaptive hover:scale-102'
-                }`}
+                className="text-[11px] font-bold shadow-xs"
                 style={savedFolderIds.length > 0 ? {
                   backgroundColor: accentConfig.bgRgba,
                   borderColor: accentConfig.borderRgba,
                   color: accentConfig.primaryHex
                 } : undefined}
                 title="Salvar esta questão em uma pasta de estudos"
+                leftIcon={
+                  <FolderPlus
+                    className="w-3.5 h-3.5 transition-transform"
+                    style={{
+                      color: savedFolderIds.length > 0 ? accentConfig.primaryHex : undefined
+                    }}
+                  />
+                }
               >
-                <FolderPlus
-                  className="w-3.5 h-3.5 transition-transform"
-                  style={{
-                    color: savedFolderIds.length > 0 ? accentConfig.primaryHex : undefined
-                  }}
-                />
                 <span className="hidden sm:inline">{savedFolderIds.length > 0 ? `Na Pasta (${savedFolderIds.length})` : 'Salvar na Pasta'}</span>
-              </button>
+              </Button>
             )}
 
             {/* Contador de Questão (1/50) */}
-            <div className="ml-1 pl-2 border-l border-slate-200 dark:border-slate-800">
-              <span className="text-xs sm:text-sm font-sans font-black text-slate-700 dark:text-slate-300 whitespace-nowrap">
+            <div className="ml-1 pl-2 border-l border-zinc-200 dark:border-zinc-800">
+              <span className="text-xs sm:text-sm font-sans font-black text-zinc-700 dark:text-zinc-300 whitespace-nowrap">
                 {index + 1}/{total}
               </span>
             </div>
@@ -1301,61 +1307,62 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
 
         {/* Linha 2: Badges Médicos & Hierarquia Temática (Visíveis quando showDetails está ativo) */}
         {showDetails && (
-          <div className="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-slate-100 dark:border-slate-800/60 animate-in fade-in duration-150">
+          <div className="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-zinc-100 dark:border-zinc-800/60 animate-in fade-in duration-150">
             {/* Badges de Especialidade, Dificuldade e Tipo de Prova */}
             <div className="flex flex-wrap items-center gap-1.5">
               {(question.especialidade || question.specialty) && (
-                <span className="text-xs font-bold px-3 py-1 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/60 shadow-xs">
+                <Badge variant="theme" size="md">
                   {question.especialidade || question.specialty}
-                </span>
+                </Badge>
               )}
 
               {question.difficulty && (
-                <span
-                  className={`text-xs font-semibold px-2.5 py-1 rounded-xl border shadow-xs ${
+                <Badge
+                  variant={
                     question.difficulty === 'Fácil'
-                      ? 'bg-blue-50 dark:bg-blue-950/30 text-blue-700 dark:text-blue-300 border-blue-200 dark:border-blue-800/50'
+                      ? 'success'
                       : question.difficulty === 'Médio'
-                      ? 'bg-amber-50 dark:bg-amber-950/30 text-amber-700 dark:text-amber-300 border-amber-200 dark:border-amber-800/50'
-                      : 'bg-rose-50 dark:bg-rose-950/30 text-rose-700 dark:text-rose-300 border-rose-200 dark:border-rose-800/50'
-                  }`}
+                      ? 'warning'
+                      : 'destructive'
+                  }
+                  size="md"
                 >
                   {question.difficulty}
-                </span>
+                </Badge>
               )}
 
               {question.tipoProva && (
-                <span className="text-xs px-2.5 py-1 rounded-xl bg-slate-50 dark:bg-slate-900 text-slate-500 dark:text-slate-400 font-medium border border-slate-200 dark:border-slate-800">
+                <Badge variant="outline" size="md">
                   {question.tipoProva}
-                </span>
+                </Badge>
               )}
 
               {isAnswered && isSuspectKey && (
-                <span className="text-xs px-2.5 py-1 rounded-xl bg-amber-500/10 text-amber-700 dark:text-amber-400 font-bold border border-amber-500/30 flex items-center gap-1.5 shadow-2xs animate-in fade-in duration-200">
+                <Badge variant="warning" size="md" className="flex items-center gap-1.5 animate-in fade-in duration-200">
                   <AlertTriangle className="w-3.5 h-3.5 shrink-0" />
                   <span>Gabarito Sob Curadoria Médica</span>
-                </span>
+                </Badge>
               )}
             </div>
 
             {/* Tema, Foco e Subfoco Clínico */}
             {(question.subtheme || question.tema) && (
-              <div className="flex flex-wrap items-center gap-1.5 text-xs text-slate-600 dark:text-slate-400">
+              <div className="flex flex-wrap items-center gap-1.5 text-xs text-zinc-600 dark:text-zinc-400">
                 <Layers className="w-3.5 h-3.5" style={{ color: accentConfig.primaryHex }} />
                 <span className="font-semibold">Tema:</span>
-                <span className="text-slate-900 dark:text-slate-200 font-bold">
+                <span className="text-zinc-900 dark:text-zinc-200 font-bold">
                   {question.subtheme || question.tema}
                 </span>
                 {question.foco && (
                   <>
-                    <span className="text-slate-300 dark:text-slate-700">•</span>
+                    <span className="text-zinc-300 dark:text-zinc-700">•</span>
                     <span className="text-purple-600 dark:text-purple-400 font-medium">{question.foco}</span>
                   </>
                 )}
                 {question.subfoco && (
                   <>
-                    <span className="text-slate-300 dark:text-slate-700">•</span>
-                    <span className="text-slate-600 dark:text-slate-400 italic">{question.subfoco}</span>
+                    <span className="text-zinc-300 dark:text-zinc-700">•</span>
+                    <span className="text-zinc-600 dark:text-zinc-400 italic">{question.subfoco}</span>
                   </>
                 )}
               </div>
@@ -1669,15 +1676,16 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
           {!isAnswered ? (
             <div className="pt-2 flex flex-col gap-2">
               <div className="flex items-center justify-end gap-2">
-                <button
+                <Button
                   type="button"
                   onClick={handleConfirmAnswer}
                   disabled={!pendingSelected || isSubmittingAnswer}
+                  isLoading={isSubmittingAnswer}
                   title={pendingSelected ? 'Resolver questão' : 'Selecione uma alternativa'}
-                  className={`flex items-center justify-center gap-2 w-full sm:w-auto px-6 py-3 sm:py-2.5 rounded-xl text-xs font-extrabold shadow-sm transition-all cursor-pointer min-h-[44px] ${
+                  className={`w-full sm:w-auto text-xs font-extrabold ${
                     pendingSelected && !isSubmittingAnswer
-                      ? 'hover:scale-102 active:scale-98 shadow-md'
-                      : 'bg-slate-200 dark:bg-slate-800 text-slate-400 cursor-not-allowed'
+                      ? 'shadow-md'
+                      : 'bg-zinc-200 dark:bg-zinc-800 text-zinc-400 cursor-not-allowed'
                   }`}
                   style={
                     pendingSelected && !isSubmittingAnswer
@@ -1688,19 +1696,10 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                         }
                       : undefined
                   }
+                  leftIcon={!isSubmittingAnswer ? <Send className="w-3.5 h-3.5" /> : undefined}
                 >
-                  {isSubmittingAnswer ? (
-                    <>
-                      <Loader2 className="w-3.5 h-3.5 animate-spin" />
-                      <span>Resolvendo...</span>
-                    </>
-                  ) : (
-                    <>
-                      <Send className="w-3.5 h-3.5" />
-                      <span>Resolver</span>
-                    </>
-                  )}
-                </button>
+                  Resolver
+                </Button>
               </div>
 
               {solveError && (
@@ -1712,15 +1711,15 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
             </div>
           ) : onNextQuestion ? (
             <div className="pt-2 sm:hidden">
-              <button
+              <Button
                 type="button"
                 onClick={onNextQuestion}
-                className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl text-xs font-black text-white shadow-md cursor-pointer transition-transform active:scale-98 min-h-[44px]"
+                className="w-full text-xs font-black text-white shadow-md min-h-[44px]"
                 style={{ backgroundColor: accentConfig.primaryHex }}
+                rightIcon={<ChevronRight className="w-4 h-4" />}
               >
-                <span>Avançar para Próxima Questão</span>
-                <ChevronRight className="w-4 h-4" />
-              </button>
+                Avançar para Próxima Questão
+              </Button>
             </div>
           ) : null}
         </div>
@@ -1736,37 +1735,41 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
               className="w-full h-32 p-4 rounded-xl bg-white dark:bg-[var(--bg-input)] border border-zinc-200 dark:border-zinc-800 text-sm text-zinc-900 dark:text-white placeholder:text-zinc-400 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] resize-none font-sans"
             />
             {!isAnswered ? (
-              <button
+              <Button
                 type="button"
                 onClick={() => {
                   setShowCommentary(true);
                   setIsAnswered(true);
                 }}
-                className="px-5 py-2.5 text-white text-xs font-bold rounded-xl transition-all cursor-pointer shadow-md hover:scale-102 flex items-center gap-2"
+                className="text-white text-xs font-bold shadow-md"
                 style={{ backgroundColor: accentConfig.primaryHex }}
+                leftIcon={<Send className="w-3.5 h-3.5" />}
               >
-                <Send className="w-3.5 h-3.5" />
-                <span>Ver Padrão de Resposta & Espelho</span>
-              </button>
+                Ver Padrão de Resposta & Espelho
+              </Button>
             ) : (
-              <div className="pt-2 border-t border-slate-200 dark:border-slate-800 flex flex-wrap items-center gap-2">
-                <span className="text-xs text-slate-500 font-bold">Autoavaliação do Espelho:</span>
-                <button
+              <div className="pt-2 border-t border-zinc-200 dark:border-zinc-800 flex flex-wrap items-center gap-2">
+                <span className="text-xs text-zinc-500 font-bold">Autoavaliação do Espelho:</span>
+                <Button
                   type="button"
+                  variant="outline"
+                  size="xs"
                   onClick={() => onAnswer(question.id, 'A', true)}
-                  className="px-3.5 py-1.5 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-xl transition-all cursor-pointer flex items-center gap-1.5 shadow-xs"
+                  className="bg-emerald-600 hover:bg-emerald-500 text-white border-transparent text-xs font-bold"
+                  leftIcon={<CheckCircle2 className="w-3.5 h-3.5" />}
                 >
-                  <CheckCircle2 className="w-3.5 h-3.5" />
-                  <span>Acertei os Critérios</span>
-                </button>
-                <button
+                  Acertei os Critérios
+                </Button>
+                <Button
                   type="button"
+                  variant="outline"
+                  size="xs"
                   onClick={() => onAnswer(question.id, 'E', false)}
-                  className="px-3.5 py-1.5 bg-rose-600 hover:bg-rose-500 text-white text-xs font-bold rounded-xl transition-all cursor-pointer flex items-center gap-1.5 shadow-xs"
+                  className="bg-rose-600 hover:bg-rose-500 text-white border-transparent text-xs font-bold"
+                  leftIcon={<XCircle className="w-3.5 h-3.5" />}
                 >
-                  <XCircle className="w-3.5 h-3.5" />
-                  <span>Preciso Revisar</span>
-                </button>
+                  Preciso Revisar
+                </Button>
               </div>
             )}
           </div>

@@ -38,6 +38,7 @@ import {
 } from '@/types/flashcards';
 import { useTheme } from '@/context/ThemeContext';
 import { useAuth } from '@/context/AuthContext';
+import { Button, Badge } from '@/components/ui';
 import { flashcardsService } from '@/services/flashcardsService';
 import { clinicalHierarchy } from '@/data/mockQuestions';
 import { FlashcardStudySession } from './FlashcardStudySession';
@@ -982,7 +983,7 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
   return (
     <div className="space-y-6">
       {/* 1. CONTAINER UNIFICADO (HEADER + CONTINUAÇÃO + BUSCA + KPIS FUNDIDOS EM 1 SÓ CARD) */}
-      <div className="bg-white dark:bg-[#121215] border border-slate-200 dark:border-zinc-800/80 p-5 sm:p-6 rounded-3xl shadow-xs space-y-4">
+      <div className="bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800/80 p-5 sm:p-6 rounded-3xl shadow-xs space-y-4">
         {/* Topo: Identificação do Módulo + Ação Primária */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3.5">
           <div className="flex items-center gap-3.5">
@@ -1003,12 +1004,12 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
 
             <div>
               <div className="flex items-center gap-2">
-                <h1 className="font-heading text-lg sm:text-xl font-black text-slate-900 dark:text-zinc-100 tracking-tight">
+                <h1 className="font-heading text-lg sm:text-xl font-black text-zinc-900 dark:text-zinc-100 tracking-tight">
                   {mode === 'flashcards' ? 'Flashcards' : 'Resumos Clínicos'}
                 </h1>
-                <span className="text-[10px] font-bold px-2 py-0.5 rounded-md bg-rose-500/10 text-rose-600 dark:text-rose-400 border border-rose-500/20 uppercase tracking-wider">
+                <Badge variant="destructive" size="sm" className="uppercase tracking-wider">
                   {mode === 'flashcards' ? 'Repetição Espaçada' : 'Diretrizes & Condutas'}
-                </span>
+                </Badge>
               </div>
             </div>
           </div>
@@ -1017,22 +1018,26 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
           {mode === 'flashcards' && (
             <div className="flex items-center gap-2 flex-wrap w-full sm:w-auto">
               {/* Botão Resolver Só Essenciais */}
-              <button
+              <Button
                 type="button"
+                variant="outline"
+                size="sm"
                 onClick={handleStartEssentialStudy}
                 title={`Iniciar sessão apenas com os ${essentialCardsCount} flashcards essenciais mais cobrados em prova`}
-                className="px-3.5 sm:px-4 py-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer shadow-xs flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500/20 to-orange-500/20 hover:from-amber-500/30 hover:to-orange-500/30 text-amber-700 dark:text-amber-300 border border-amber-500/40 active:scale-98"
+                className="bg-gradient-to-r from-amber-500/10 to-orange-500/10 hover:from-amber-500/20 hover:to-orange-500/20 text-amber-700 dark:text-amber-300 border-amber-500/40 text-xs font-bold"
+                leftIcon={<Star className="w-4 h-4 fill-amber-500 text-amber-500 shrink-0" />}
               >
-                <Star className="w-4 h-4 fill-amber-500 text-amber-500 shrink-0" />
                 <span>Resolver Só Essenciais</span>
                 <span className="px-1.5 py-0.5 rounded-md text-[10px] font-mono bg-amber-500/20 text-amber-900 dark:text-amber-200">
                   {essentialCardsCount}
                 </span>
-              </button>
+              </Button>
 
               {/* Botão Embaralhar Flashcards */}
-              <button
+              <Button
                 type="button"
+                variant={isShuffleEnabled ? 'primary' : 'secondary'}
+                size="sm"
                 onClick={() => {
                   const next = !isShuffleEnabled;
                   setIsShuffleEnabled(next);
@@ -1041,18 +1046,16 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
                   } catch { }
                 }}
                 title={isShuffleEnabled ? 'Embaralhar flashcards está ativado (Clique para ordem fixa)' : 'Ordem fixa dos flashcards (Clique para embaralhar)'}
-                className={`px-3 sm:px-3.5 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center justify-center gap-1.5 cursor-pointer border shadow-2xs active:scale-98 ${isShuffleEnabled
-                    ? 'bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900 border-zinc-900 dark:border-zinc-100'
-                    : 'bg-zinc-50 dark:bg-zinc-900 text-zinc-600 dark:text-zinc-400 border-zinc-200 dark:border-zinc-800 hover:bg-zinc-100 dark:hover:bg-zinc-800'
-                  }`}
+                className="text-xs font-bold"
+                leftIcon={<Shuffle className="w-3.5 h-3.5 shrink-0" />}
               >
-                <Shuffle className="w-3.5 h-3.5 shrink-0" />
                 <span className="hidden sm:inline">{isShuffleEnabled ? 'Embaralhar: ON' : 'Embaralhar: OFF'}</span>
-              </button>
+              </Button>
 
               {/* Botão de Adicionar Flashcard */}
-              <button
+              <Button
                 type="button"
+                size="sm"
                 onClick={() => {
                   setIsAddCardDrawerOpen(true);
                   if (drawerTemas.length > 0 && !newCardTema) {
@@ -1062,22 +1065,22 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
                     }
                   }
                 }}
-                className="px-3.5 sm:px-4 py-2.5 rounded-xl text-white text-xs font-bold transition-all cursor-pointer shadow-md flex items-center justify-center gap-2 hover:opacity-95 active:scale-98"
+                className="text-white text-xs font-bold shadow-md"
                 style={{
                   backgroundColor: accentConfig.primaryHex,
                   boxShadow: `0 6px 16px -4px ${accentConfig.bgRgba}`
                 }}
+                leftIcon={<Plus className="w-4 h-4 stroke-[2.5]" />}
               >
-                <Plus className="w-4 h-4 stroke-[2.5]" />
                 <span className="hidden sm:inline">Adicionar Flashcard</span>
                 <span className="sm:hidden">Criar</span>
-              </button>
+              </Button>
             </div>
           )}
         </div>
 
         {/* Faixa Integrada de Continuação (Card 2 Fundido com Altíssima Densidade UX) */}
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-3 sm:p-3.5 rounded-2xl bg-slate-50 dark:bg-zinc-900/60 border border-slate-200/70 dark:border-zinc-800/60 transition-all hover:border-slate-300 dark:hover:border-zinc-700">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 p-3 sm:p-3.5 rounded-2xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-200/70 dark:border-zinc-800/60 transition-all hover:border-zinc-300 dark:hover:border-zinc-700">
           <div className="flex items-center gap-3 min-w-0">
             <div
               className="w-8 h-8 rounded-xl flex items-center justify-center text-white shrink-0 shadow-2xs"
@@ -1090,33 +1093,31 @@ Utilize o botão de prática abaixo para iniciar seu treino de memorização ati
               )}
             </div>
             <div className="min-w-0">
-              <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 dark:text-zinc-500 block leading-tight">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 block leading-tight">
                 {mode === 'flashcards' ? 'Continuar Estudo' : 'Continuar Leitura'}
               </span>
-              <span className="font-heading font-bold text-xs sm:text-sm text-slate-800 dark:text-zinc-200 truncate block">
+              <span className="font-heading font-bold text-xs sm:text-sm text-zinc-800 dark:text-zinc-200 truncate block">
                 {continuationTitle}
               </span>
             </div>
           </div>
 
-          <button
+          <Button
             type="button"
+            size="sm"
             onClick={mode === 'flashcards' ? handleContinueLastSession : handleContinueLastSummary}
-            className="w-full sm:w-auto px-4 py-2 rounded-xl text-xs font-bold text-white shadow-2xs cursor-pointer hover:opacity-95 transition-all shrink-0 inline-flex items-center justify-center gap-1.5"
+            className="w-full sm:w-auto text-xs font-bold text-white shadow-2xs"
             style={{ backgroundColor: accentConfig.primaryHex }}
-          >
-            {mode === 'flashcards' ? (
-              <>
+            leftIcon={
+              mode === 'flashcards' ? (
                 <Play className="w-3.5 h-3.5 fill-current" />
-                <span>Continuar</span>
-              </>
-            ) : (
-              <>
+              ) : (
                 <BookOpen className="w-3.5 h-3.5" />
-                <span>Continuar</span>
-              </>
-            )}
-          </button>
+              )
+            }
+          >
+            Continuar
+          </Button>
         </div>
 
         {/* Mini-KPIs embutidos no mesmo card conjunto (quando em Flashcards) */}

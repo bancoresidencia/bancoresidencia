@@ -14,7 +14,7 @@ export const DEFAULT_HOME_CARDS: DashboardCardConfig[] = [
   },
   {
     id: 'home_meta_diaria',
-    title: 'Metas Diárias',
+    title: 'Sequência',
     colSpan: 4,
     minColSpan: 3,
     minHeight: 65,

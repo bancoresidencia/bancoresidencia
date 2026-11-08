@@ -100,6 +100,7 @@ Toda auditoria produz um relatório estruturado no seguinte padrão:
 - [ ] 8. Doses, vias e tempos de tratamento estão explícitos e sem ambiguidade.
 - [ ] 9. Ancoragem em negrito aplicada (leitura escaneável anti-fadiga).
 - [ ] 10. Resumo enxuto, sem duplicação de títulos ou prolixidade vazia.
+- [ ] 11. Conformidade com o Design System (`src/components/ui/`): Zero classes `slate-*` azuladas, cards padronizados `rounded-2xl` e botões com variantes canônicas.
 
 ---
 

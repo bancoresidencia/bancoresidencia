@@ -99,6 +99,17 @@ node scripts/validate-tokens.cjs --dir src/
 
 ## Integration
 
+### Banco Residência Canonical Implementation
+- **Tokens Semânticos & CSS:** `src/app/globals.css` (Tailwind v4 `@theme inline`, True Neutral Dark `#09090b` / `#121215`).
+- **Runtime de Cores do Estudante:** `src/context/ThemeContext.tsx` (7 acentos cromáticos dinâmicos).
+- **Utilitário de Fusão:** `src/components/ui/cn.ts` (`clsx` + `tailwind-merge`).
+- **Primitivos Homologados (`src/components/ui/`):**
+  - `Button.tsx`: variantes `primary`, `secondary`, `outline`, `ghost`, `destructive`, `link`, `subtle`.
+  - `Card.tsx`: `Card`, `CardHeader`, `CardTitle`, `CardDescription`, `CardContent`, `CardFooter` (`rounded-2xl`).
+  - `Badge.tsx`: `default`, `theme`, `secondary`, `outline`, `success`, `warning`, `destructive`, `time`, `accuracy`, `energy`.
+  - `ProgressBar.tsx`: `default`, `accuracy`, `time`, `energy`, `success`, `warning`, `destructive`.
+  - `Input.tsx`, `Dialog.tsx`, `Tabs.tsx`, `Skeleton.tsx`, `Toggle.tsx`, `Tooltip.tsx`.
+
 **With brand:** Extract primitives from brand colors/typography
 **With ui-styling:** Component tokens → Tailwind config
 

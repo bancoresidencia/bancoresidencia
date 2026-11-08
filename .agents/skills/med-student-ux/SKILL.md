@@ -155,3 +155,35 @@ Antes de homologar qualquer alteração na Home do Aluno ou componentes correlat
 - [ ] **Teste de Ergonomia de Cards:** Os paddings e alturas permitem visualizar o status e o caderno ativo sem necessidade de rolagem excessiva em monitores 1080p e tablets?
 - [ ] **Teste de Tipografia Tabular:** Todos os números (questões, porcentagens, dias) usam fontes sans tabulares ou fontes mono sem jitter de layout quando atualizados?
 - [ ] **Teste de Microcopy:** Algum texto ultrapassa 2 linhas? Se sim, encurte imediatamente.
+- [ ] **Teste de Primitivos Canônicos:** O código importa botões, badges e cards de `@/components/ui`, sem inventar tags HTML cruas com classes repetidas?
+
+---
+
+## 7. Biblioteca Canônica de Primitivos de UI (`src/components/ui/`)
+
+Qualquer nova tela, refatoração ou recurso no frontend do **Banco Residência** deve consumir **obrigatoriamente** a biblioteca de componentes primitivos atômicos localizada em `src/components/ui/`.
+
+### 7.1. Regra Mandatória de Importação
+```tsx
+// ✅ FORMA CORRETA:
+import { Button, Card, CardHeader, CardTitle, CardContent, Badge, ProgressBar } from '@/components/ui';
+
+// ❌ PROIBIDO:
+// Criar <button className="px-5 py-2.5 rounded-xl bg-blue-600 text-white font-bold...">
+// Criar <div className="rounded-2xl border border-zinc-200 p-4 bg-white dark:bg-[#121215]...">
+```
+
+### 7.2. Catálogo de Primitivos e Props Canônicas
+
+| Primitivo | Variantes (`variant`) | Tamanhos (`size`) | Props Especiais |
+| :--- | :--- | :--- | :--- |
+| **`Button`** | `primary`, `secondary`, `outline`, `ghost`, `destructive`, `link`, `subtle` | `xs`, `sm`, `md`, `lg`, `icon` | `isLoading` (spinner automático), `leftIcon`, `rightIcon`, touch target de 44px integrado |
+| **`Card`** | `default`, `interactive`, `bordered`, `flat` | N/A | Subcomponentes: `CardHeader`, `CardTitle`, `CardDescription`, `CardContent`, `CardFooter` (sempre `rounded-2xl`) |
+| **`Badge`** | `default`, `theme`, `secondary`, `outline`, `success`, `warning`, `destructive`, `time`, `accuracy`, `energy` | `sm`, `md` | Herda cor e borda do `ThemeContext` dinamicamente quando `variant="theme"` |
+| **`ProgressBar`** | `default`, `accuracy`, `time`, `energy`, `success`, `warning`, `destructive` | `xs`, `sm`, `md`, `lg` | `value` (0 a 100), `animated`, `showLabel`, `role="progressbar"` acessível |
+| **`Input`** | N/A | `sm`, `md` | `leftIcon`, `rightIcon`, `error`, `isInvalid`, anel de foco adaptativo |
+| **`Dialog`** | N/A | `sm`, `md`, `lg`, `xl` | `isOpen`, `onClose`, `title`, trap de tecla ESC, bloqueio de scroll |
+| **`Tabs`** | N/A | N/A | `Tabs`, `TabsList`, `TabsTrigger`, `TabsContent` |
+| **`Skeleton`** | `text`, `circular`, `card` | N/A | Shimmer de carregamento anti-layout shift |
+| **`Toggle`** | N/A | N/A | `checked`, `onChange`, switch booleano animado |
+| **`Tooltip`** | N/A | N/A | `content`, `position` (top, bottom, left, right), hover cirúrgico |

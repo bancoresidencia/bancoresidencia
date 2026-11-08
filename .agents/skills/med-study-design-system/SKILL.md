@@ -125,3 +125,39 @@ Critérios de reprovação imediata:
 4. Existência de referências ou citações institucionais no topo do resumo.
 5. Presença de seção estática de "Pontos-Chave" duplicando conteúdo do carrossel.
 6. Ausência de componentes visuais canônicos homologados.
+7. Uso de tags HTML cruas com estilização manual quando houver primitivo equivalente em `@/components/ui`.
+
+---
+
+## 🏛️ 4. Integração com a Biblioteca de Primitivos (`src/components/ui/`)
+
+Todos os componentes nativos de resumos clínicos interceptados pelo leitor [`StudyMaterialReader.tsx`](file:///d:/bancoresidencia/src/components/StudyMaterialReader.tsx) devem consumir os primitivos canônicos:
+
+```tsx
+import { Button, Card, CardHeader, CardTitle, CardContent, Badge, ProgressBar } from '@/components/ui';
+
+// Navegação e Ações Rápidas de Estudo:
+<Button
+  size="xs"
+  variant="secondary"
+  onClick={onBack}
+  leftIcon={<ArrowLeft className="w-4 h-4" />}
+>
+  Voltar para lista
+</Button>
+
+// Badges de Diretrizes Oficiais e Especialidades:
+<Badge variant="success" size="sm" className="gap-1 font-bold">
+  <CheckCircle2 className="w-3 h-3" />
+  {material.guidelineBadge}
+</Badge>
+
+// Barras de Recorrência e Frequência nas Bancas:
+<ProgressBar
+  value={recurrencePercentage}
+  variant="accuracy"
+  size="xs"
+  animated
+/>
+```
+

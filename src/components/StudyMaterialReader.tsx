@@ -20,6 +20,7 @@ import {
 } from 'lucide-react';
 import { StudyMaterialItem } from '@/types/flashcards';
 import { useTheme } from '@/context/ThemeContext';
+import { Button, Badge } from '@/components/ui';
 import {
   HighlighterColor,
   HighlightStyle,
@@ -1752,14 +1753,15 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
     <div className="space-y-6 w-full max-w-7xl mx-auto">
       {/* Barra Superior de Ações */}
       <div className="flex items-center justify-between gap-3 border-b border-zinc-200 dark:border-zinc-800 pb-4">
-        <button
+        <Button
           type="button"
+          variant="secondary"
+          size="xs"
           onClick={onBack}
-          className="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs font-bold text-zinc-700 dark:text-zinc-300 bg-zinc-100 dark:bg-zinc-900 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-colors cursor-pointer"
+          leftIcon={<ArrowLeft className="w-4 h-4" />}
         >
-          <ArrowLeft className="w-4 h-4" />
-          <span>Voltar para lista</span>
-        </button>
+          Voltar para lista
+        </Button>
 
         <div className="flex flex-wrap items-center gap-2">
           {/* Barra de Controle de Marca-Texto Instantâneo (Fluidez Máxima) */}
@@ -1782,18 +1784,17 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
             onToggleRevealAll={() => setRevealAllCloze((prev) => !prev)}
           />
 
-          
-
           {material.flashcardCount && material.flashcardCount > 0 ? (
-            <button
+            <Button
               type="button"
+              size="xs"
               onClick={() => onPracticeFlashcards && onPracticeFlashcards(material)}
-              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs font-bold text-white shadow-xs cursor-pointer hover:opacity-95 transition-all"
+              className="text-white shadow-xs"
               style={{ backgroundColor: accentConfig.primaryHex }}
+              leftIcon={<Play className="w-3.5 h-3.5 fill-current" />}
             >
-              <Play className="w-3.5 h-3.5 fill-current" />
-              <span>Praticar {material.flashcardCount} Flashcards</span>
-            </button>
+              Praticar {material.flashcardCount} Flashcards
+            </Button>
           ) : null}
         </div>
       </div>
@@ -1801,18 +1802,18 @@ export const StudyMaterialReader: React.FC<StudyMaterialReaderProps> = ({
       {/* Cabeçalho do Material Limpo (Largura total harmonizada com o restante do site) */}
       <div className="p-5 sm:p-6 rounded-3xl bg-white dark:bg-[#121215] border border-zinc-200 dark:border-zinc-800/80 shadow-xs space-y-3">
         <div className="flex flex-wrap items-center gap-2 text-xs">
-          <span className="px-2.5 py-0.5 rounded-md font-semibold bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300">
+          <Badge variant="secondary" size="sm">
             {material.specialty}
-          </span>
+          </Badge>
           <span className="text-zinc-400">•</span>
           <span className="text-zinc-500 dark:text-zinc-400 font-medium">{material.theme}</span>
           {material.guidelineBadge && (
             <>
               <span className="text-zinc-400">•</span>
-              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md font-bold text-[11px] bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
+              <Badge variant="success" size="sm" className="gap-1 font-bold">
                 <CheckCircle2 className="w-3 h-3" />
                 {material.guidelineBadge}
-              </span>
+              </Badge>
             </>
           )}
         </div>
