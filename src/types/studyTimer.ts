@@ -28,6 +28,9 @@ export interface StudySession {
   studyType: StudyType;
   questionsCount?: number;
   correctCount?: number;
+  incorrectCount?: number;
+  accuracy?: number; // 0 - 100%
+  sessionSource?: 'manual' | 'questoes' | 'simulado' | 'flashcards';
   notes?: string;
   createdAt: string;
 }
@@ -48,8 +51,18 @@ export interface StudyTimerContextType {
     studyType?: StudyType;
     questionsCount?: number;
     correctCount?: number;
+    incorrectCount?: number;
+    accuracy?: number;
+    sessionSource?: 'manual' | 'questoes' | 'simulado' | 'flashcards';
     notes?: string;
   }) => Promise<StudySession>;
+  // Métodos e estados específicos para sessões do Banco de Questões (Zero-Touch)
+  sessionQuestionsCount: number;
+  sessionCorrectCount: number;
+  sessionIncorrectCount: number;
+  startQuestionSession: (taxonomy: SelectedTaxonomy, studyType?: StudyType) => void;
+  recordQuestionAnswer: (isCorrect: boolean) => void;
+  autoFinishQuestionSession: (customNotes?: string) => Promise<StudySession | null>;
   todaySessions: StudySession[];
   todayTotalSeconds: number;
   todayTotalFormatted: string;

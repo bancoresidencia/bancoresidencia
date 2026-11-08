@@ -71,7 +71,7 @@ export default function DashboardPage() {
   };
 
   return (
-    <div className="p-3 sm:p-6 lg:p-8 max-w-7xl mx-auto space-y-6 sm:space-y-8 animate-in fade-in duration-200 min-w-0 max-w-full overflow-x-clip">
+    <div className="p-4 sm:p-6 lg:p-8 max-w-7xl mx-auto space-y-6 animate-in fade-in duration-200 min-w-0 overflow-x-clip">
       <StudentHomeDashboard
         studentName={user?.name || 'Médico Residente'}
         stats={stats}

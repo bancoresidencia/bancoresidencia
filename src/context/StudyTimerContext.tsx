@@ -78,6 +78,29 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
   const [selectedTaxonomy, setSelectedTaxonomy] = useState<SelectedTaxonomy>({});
   const [sessionStartTime, setSessionStartTime] = useState<string>('');
 
+  // Refs de sincronização e estabilidade de callbacks
+  const userRef = useRef(user);
+  useEffect(() => {
+    userRef.current = user;
+  }, [user]);
+
+  const statusRef = useRef<TimerStatus>(status);
+  useEffect(() => {
+    statusRef.current = status;
+  }, [status]);
+
+  const selectedTaxonomyRef = useRef<SelectedTaxonomy>(selectedTaxonomy);
+  useEffect(() => {
+    selectedTaxonomyRef.current = selectedTaxonomy;
+  }, [selectedTaxonomy]);
+
+  const sessionStartTimeRef = useRef<string>(sessionStartTime);
+  useEffect(() => {
+    sessionStartTimeRef.current = sessionStartTime;
+  }, [sessionStartTime]);
+
+  const isSavingRef = useRef<boolean>(false);
+
   // Refs de controle temporal preciso (resiliente contra throttling de background)
   const accumulatedSecondsRef = useRef<number>(0);
   const runningSinceRef = useRef<number | null>(null);
@@ -85,6 +108,16 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
 
   // Lista de sessões salvas
   const [savedSessions, setSavedSessions] = useState<StudySession[]>([]);
+
+  // Contadores dinâmicos de questões da sessão em andamento (Zero-Touch)
+  const [sessionQuestionsCount, setSessionQuestionsCount] = useState<number>(0);
+  const [sessionCorrectCount, setSessionCorrectCount] = useState<number>(0);
+  const [sessionIncorrectCount, setSessionIncorrectCount] = useState<number>(0);
+  const sessionQuestionsCountRef = useRef<number>(0);
+  const sessionCorrectCountRef = useRef<number>(0);
+  const sessionIncorrectCountRef = useRef<number>(0);
+  const activeStudyTypeRef = useRef<StudyType>('questoes');
+  const sessionSourceRef = useRef<'manual' | 'questoes' | 'simulado' | 'flashcards'>('manual');
 
   // Carrega sessões anteriores do localStorage
   useEffect(() => {
@@ -270,42 +303,67 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
       studyType?: StudyType;
       questionsCount?: number;
       correctCount?: number;
+      incorrectCount?: number;
+      accuracy?: number;
+      sessionSource?: 'manual' | 'questoes' | 'simulado' | 'flashcards';
       notes?: string;
     }): Promise<StudySession> => {
       const endTimeIso = new Date().toISOString();
       const finalDuration = accumulatedSecondsRef.current;
       const formatted = formatSecondsToHms(finalDuration);
 
+      const activeTaxonomy = selectedTaxonomyRef.current;
       const topicTitle =
-        selectedTaxonomy.subfoco ||
-        selectedTaxonomy.foco ||
-        selectedTaxonomy.tema ||
-        selectedTaxonomy.especialidade ||
+        activeTaxonomy.rawLabel ||
+        activeTaxonomy.subfoco ||
+        activeTaxonomy.foco ||
+        activeTaxonomy.tema ||
+        activeTaxonomy.especialidade ||
         'Estudo Livre';
+
+      const totalQ = data.questionsCount !== undefined ? data.questionsCount : sessionQuestionsCountRef.current;
+      const correctQ = data.correctCount !== undefined ? data.correctCount : sessionCorrectCountRef.current;
+      const incorrectQ =
+        data.incorrectCount !== undefined
+          ? data.incorrectCount
+          : sessionIncorrectCountRef.current > 0
+          ? sessionIncorrectCountRef.current
+          : Math.max(0, totalQ - correctQ);
+      const acc =
+        data.accuracy !== undefined
+          ? data.accuracy
+          : totalQ > 0
+          ? Math.round((correctQ / totalQ) * 100)
+          : undefined;
 
       const newSession: StudySession = {
         id: `sess_${Date.now()}_${Math.random().toString(36).substring(2, 7)}`,
-        userId: user?.id,
-        startTime: sessionStartTime || endTimeIso,
+        userId: userRef.current?.id,
+        startTime: sessionStartTimeRef.current || endTimeIso,
         endTime: endTimeIso,
         durationSeconds: finalDuration,
         durationFormatted: formatted,
-        taxonomy: selectedTaxonomy,
-        studyType: data.studyType || 'questoes',
-        questionsCount: data.questionsCount || 0,
-        correctCount: data.correctCount || 0,
+        taxonomy: activeTaxonomy,
+        studyType: data.studyType || activeStudyTypeRef.current || 'questoes',
+        questionsCount: totalQ,
+        correctCount: correctQ,
+        incorrectCount: incorrectQ,
+        accuracy: acc,
+        sessionSource: data.sessionSource || sessionSourceRef.current,
         notes: data.notes || '',
         createdAt: endTimeIso
       };
 
-      // 1. Atualiza lista de sessões no estado e localStorage
-      const updatedSessions = [newSession, ...savedSessions];
-      setSavedSessions(updatedSessions);
-      try {
-        localStorage.setItem(SESSIONS_STORAGE_KEY, JSON.stringify(updatedSessions));
-      } catch (err) {
-        console.warn('Erro ao salvar sessão no localStorage:', err);
-      }
+      // 1. Atualiza lista de sessões no estado e localStorage de forma funcional e segura
+      setSavedSessions((prev) => {
+        const updated = [newSession, ...prev];
+        try {
+          localStorage.setItem(SESSIONS_STORAGE_KEY, JSON.stringify(updated));
+        } catch (err) {
+          console.warn('Erro ao salvar sessão no localStorage:', err);
+        }
+        return updated;
+      });
 
       // 2. Integra diretamente na Agenda (`bancoresidencia_user_scheduled_tasks`)
       try {
@@ -314,16 +372,21 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
         const startMinutes = startDate.getHours() * 60 + startDate.getMinutes();
         const endMinutes = Math.max(startMinutes + 1, endDate.getHours() * 60 + endDate.getMinutes());
 
+        let questionsSummary = '';
+        if (totalQ > 0) {
+          questionsSummary = ` ${totalQ} questões (${correctQ} acertos, ${incorrectQ} erros • ${acc}% de aproveitamento).`;
+        }
+
         const scheduleSlot: DailyScheduleSlot = {
           id: `task_${newSession.id}`,
-          title: `Estudo: ${topicTitle}`,
+          title: topicTitle === 'Treino Geral' ? 'Treino Geral de Questões' : `Estudo: ${topicTitle}`,
           category: 'estudo',
           startTime: `${String(startDate.getHours()).padStart(2, '0')}:${String(startDate.getMinutes()).padStart(2, '0')}`,
           endTime: `${String(endDate.getHours()).padStart(2, '0')}:${String(endDate.getMinutes()).padStart(2, '0')}`,
           startMinutes,
           endMinutes,
           source: 'plataforma',
-          description: `Tempo líquido: ${formatted}.${data.questionsCount ? ` ${data.questionsCount} questões (${data.correctCount || 0} acertos).` : ''}${data.notes ? ` Obs: ${data.notes}` : ''}`,
+          description: `Tempo líquido: ${formatted}.${questionsSummary}${data.notes ? ` Obs: ${data.notes}` : ''}`,
           action: 'treinar',
           date: getLocalDateStr(startDate)
         };
@@ -334,20 +397,150 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
         localStorage.setItem('bancoresidencia_user_scheduled_tasks', JSON.stringify(newTasks));
 
         // Dispara evento de storage para sincronizar abas e telas da Agenda instantaneamente
-        window.dispatchEvent(new StorageEvent('storage', {
-          key: 'bancoresidencia_user_scheduled_tasks',
-          newValue: JSON.stringify(newTasks)
-        }));
+        window.dispatchEvent(
+          new StorageEvent('storage', {
+            key: 'bancoresidencia_user_scheduled_tasks',
+            newValue: JSON.stringify(newTasks)
+          })
+        );
       } catch (agendaErr) {
         console.warn('Erro ao integrar sessão na Agenda:', agendaErr);
       }
 
-      // 3. Reseta o cronômetro
+      // 3. Reseta contadores e cronômetro
+      setSessionQuestionsCount(0);
+      setSessionCorrectCount(0);
+      setSessionIncorrectCount(0);
+      sessionQuestionsCountRef.current = 0;
+      sessionCorrectCountRef.current = 0;
+      sessionIncorrectCountRef.current = 0;
+      sessionSourceRef.current = 'manual';
       cancelTimer();
 
       return newSession;
     },
-    [user, sessionStartTime, selectedTaxonomy, savedSessions, cancelTimer]
+    [cancelTimer]
+  );
+
+  // Iniciar sessão automatizada pelo Banco de Questões (Zero-Touch)
+  const startQuestionSession = useCallback(
+    (taxonomy: SelectedTaxonomy, studyType: StudyType = 'questoes') => {
+      setSelectedTaxonomy(taxonomy);
+      selectedTaxonomyRef.current = taxonomy;
+      activeStudyTypeRef.current = studyType;
+      sessionSourceRef.current = 'questoes';
+      setSessionQuestionsCount(0);
+      setSessionCorrectCount(0);
+      setSessionIncorrectCount(0);
+      sessionQuestionsCountRef.current = 0;
+      sessionCorrectCountRef.current = 0;
+      sessionIncorrectCountRef.current = 0;
+
+      // Inicia a contagem do tempo imediatamente
+      accumulatedSecondsRef.current = 0;
+      runningSinceRef.current = Date.now();
+      setElapsedSeconds(0);
+      const nowIso = new Date().toISOString();
+      setSessionStartTime(nowIso);
+      sessionStartTimeRef.current = nowIso;
+      setStatus('running');
+      statusRef.current = 'running';
+
+      try {
+        localStorage.setItem(
+          TIMER_STORAGE_KEY,
+          JSON.stringify({
+            status: 'running',
+            accumulatedSeconds: 0,
+            runningSince: Date.now(),
+            sessionStartTime: nowIso,
+            selectedTaxonomy: taxonomy
+          })
+        );
+      } catch {}
+    },
+    []
+  );
+
+  // Registrar resposta de questão na sessão ativa
+  const recordQuestionAnswer = useCallback((isCorrect: boolean) => {
+    setSessionQuestionsCount((prev) => {
+      const next = prev + 1;
+      sessionQuestionsCountRef.current = next;
+      return next;
+    });
+
+    if (isCorrect) {
+      setSessionCorrectCount((prev) => {
+        const next = prev + 1;
+        sessionCorrectCountRef.current = next;
+        return next;
+      });
+    } else {
+      setSessionIncorrectCount((prev) => {
+        const next = prev + 1;
+        sessionIncorrectCountRef.current = next;
+        return next;
+      });
+    }
+  }, []);
+
+  // Encerramento silencioso ao sair da tela de resolução (Zero-Touch)
+  const autoFinishQuestionSession = useCallback(
+    async (customNotes?: string): Promise<StudySession | null> => {
+      const curStatus = statusRef.current;
+      // Se não estava rodando ou em contagem, ou se já está em processo de salvamento, não faz nada
+      if ((curStatus !== 'running' && curStatus !== 'paused') || isSavingRef.current) {
+        return null;
+      }
+
+      isSavingRef.current = true;
+
+      try {
+        // Calcula tempo total cronometrado até o momento
+        let finalSecs = accumulatedSecondsRef.current;
+        if (curStatus === 'running' && runningSinceRef.current) {
+          finalSecs += Math.max(0, Math.floor((Date.now() - runningSinceRef.current) / 1000));
+          accumulatedSecondsRef.current = finalSecs;
+        }
+
+        const qTotal = sessionQuestionsCountRef.current;
+        const qCorrect = sessionCorrectCountRef.current;
+        const qIncorrect = sessionIncorrectCountRef.current;
+
+        // Regra do Usuário: Descarta se nenhuma questão foi respondida (qTotal === 0)
+        if (qTotal === 0) {
+          cancelTimer();
+          setSessionQuestionsCount(0);
+          setSessionCorrectCount(0);
+          setSessionIncorrectCount(0);
+          sessionQuestionsCountRef.current = 0;
+          sessionCorrectCountRef.current = 0;
+          sessionIncorrectCountRef.current = 0;
+          sessionSourceRef.current = 'manual';
+          return null;
+        }
+
+        // Garante ao menos 1 segundo se respondeu questões para não zerar tempo líquido
+        if (finalSecs <= 0) {
+          finalSecs = Math.max(1, qTotal * 5);
+          accumulatedSecondsRef.current = finalSecs;
+        }
+
+        // Salva silenciosamente com os dados da sessão
+        return await saveSession({
+          studyType: activeStudyTypeRef.current || 'questoes',
+          questionsCount: qTotal,
+          correctCount: qCorrect,
+          incorrectCount: qIncorrect,
+          sessionSource: 'questoes',
+          notes: customNotes
+        });
+      } finally {
+        isSavingRef.current = false;
+      }
+    },
+    [saveSession, cancelTimer]
   );
 
   // Excluir uma sessão realizada
@@ -448,6 +641,12 @@ export const StudyTimerProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     openSaveModal,
     closeSaveModal,
     saveSession,
+    sessionQuestionsCount,
+    sessionCorrectCount,
+    sessionIncorrectCount,
+    startQuestionSession,
+    recordQuestionAnswer,
+    autoFinishQuestionSession,
     todaySessions,
     todayTotalSeconds,
     todayTotalFormatted,

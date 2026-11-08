@@ -47,6 +47,8 @@ import { useAuth } from '@/context/AuthContext';
 import { useTheme } from '@/context/ThemeContext';
 import { useSubscription } from '@/context/SubscriptionContext';
 import { useStudentData } from '@/context/StudentDataContext';
+import { useStudyTimer } from '@/context/StudyTimerContext';
+import { deduceStudyTaxonomy } from '@/utils/taxonomyDeduction';
 import {
   fetchQuestionsFromSupabase,
   fetchTotalQuestionsCount,
@@ -81,6 +83,17 @@ export const QuestoesView: React.FC = () => {
     bookmarkedQuestionIds,
     toggleBookmark
   } = useStudentData();
+
+  // Integração com o Relógio de Estudos (Zero-Touch - Fonte Única da Verdade)
+  const {
+    startQuestionSession,
+    recordQuestionAnswer,
+    autoFinishQuestionSession,
+    pauseTimer,
+    resumeTimer,
+    status: timerStatus,
+    elapsedSeconds
+  } = useStudyTimer();
 
   // Modo do Banco: 'filtros' | 'resolucao' | 'resultado'
   const initialMode = searchParams.get('mode') === 'resolucao' ? 'resolucao' : 'filtros';
@@ -153,13 +166,59 @@ export const QuestoesView: React.FC = () => {
   // Índice da questão atual
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState<number>(0);
 
-  // Temporizadores: Tempo na questão atual + Tempo total acumulado da sessão
+  // Temporizador individual da questão ativa
   const [questionTimer, setQuestionTimer] = useState<number>(0);
-  const [sessionTimer, setSessionTimer] = useState<number>(0);
-  const [isTimerRunning, setIsTimerRunning] = useState<boolean>(true);
   const [isTimerVisible, setIsTimerVisible] = useState<boolean>(true);
 
+  // Sincroniza filtros ativos para dedução taxonômica imediata
+  const advancedFiltersRef = useRef(advancedFilters);
   useEffect(() => {
+    advancedFiltersRef.current = advancedFilters;
+  }, [advancedFilters]);
+
+  // Função canônica para iniciar a sessão de estudos com taxonomia deduzida
+  const handleStartStudySession = useCallback((overrideFilters?: AdvancedFilterState) => {
+    const filtersToUse = overrideFilters || advancedFiltersRef.current;
+    const deducedTaxonomy = deduceStudyTaxonomy(filtersToUse);
+    startQuestionSession(deducedTaxonomy, isSimulado ? 'simulado' : 'questoes');
+    setQuestionTimer(0);
+  }, [isSimulado, startQuestionSession]);
+
+  // Transições seguras de saída de resolução com salvamento automático
+  const handleReturnToFilters = useCallback(() => {
+    autoFinishQuestionSession();
+    setBancoMode('filtros');
+  }, [autoFinishQuestionSession]);
+
+  const handleFinishToResults = useCallback(() => {
+    autoFinishQuestionSession();
+    setBancoMode('resultado');
+  }, [autoFinishQuestionSession]);
+
+  // Se o aluno entrou direto pela URL em modo de resolução e o relógio está parado
+  useEffect(() => {
+    if (initialMode === 'resolucao' && timerStatus === 'idle') {
+      handleStartStudySession();
+    }
+  }, [initialMode, timerStatus, handleStartStudySession]);
+
+  // Encerramento garantido e resiliente exclusivamente na desmontagem do componente (saída da tela/rota)
+  const autoFinishRef = useRef(autoFinishQuestionSession);
+  useEffect(() => {
+    autoFinishRef.current = autoFinishQuestionSession;
+  }, [autoFinishQuestionSession]);
+
+  useEffect(() => {
+    return () => {
+      // Disparo estrito apenas quando o QuestoesView for desmontado da árvore de componentes
+      autoFinishRef.current();
+    };
+  }, []); // Array estritamente vazio para não disparar limpezas fantasmas em renders intermediários
+
+  // Contagem do tempo exclusivamente na questão individual (enquanto bancoMode === 'resolucao' e sessão 'running')
+  useEffect(() => {
+    if (bancoMode !== 'resolucao' || timerStatus !== 'running') return;
+
     let interval: NodeJS.Timeout | null = null;
     let lastTick = Date.now();
 
@@ -170,24 +229,22 @@ export const QuestoesView: React.FC = () => {
       document.addEventListener('visibilitychange', handleVisibility);
     }
 
-    if (bancoMode === 'resolucao' && isTimerRunning) {
-      interval = setInterval(() => {
-        if (typeof document !== 'undefined' && document.hidden) return;
-        const now = Date.now();
-        const delta = Math.round((now - lastTick) / 1000);
-        lastTick = now;
-        const inc = delta > 0 && delta <= 5 ? delta : 1;
-        setQuestionTimer((prev) => prev + inc);
-        setSessionTimer((prev) => prev + inc);
-      }, 1000);
-    }
+    interval = setInterval(() => {
+      if (typeof document !== 'undefined' && document.hidden) return;
+      const now = Date.now();
+      const delta = Math.round((now - lastTick) / 1000);
+      lastTick = now;
+      const inc = delta > 0 && delta <= 5 ? delta : 1;
+      setQuestionTimer((prev) => prev + inc);
+    }, 1000);
+
     return () => {
       if (typeof document !== 'undefined') {
         document.removeEventListener('visibilitychange', handleVisibility);
       }
       if (interval) clearInterval(interval);
     };
-  }, [bancoMode, isTimerRunning]);
+  }, [bancoMode, timerStatus]);
 
   // Ferramentas de leitura e marca-texto (6 cores)
   const [activeHighlighterColor, setActiveHighlighterColor] = useState<HighlighterColor>('yellow');
@@ -410,6 +467,9 @@ export const QuestoesView: React.FC = () => {
     const isAnulada = Boolean(q?.isAnulada || q?.correctAnswer === 'ANULADA');
     const finalIsCorrect = isAnulada ? true : isCorrect;
 
+    // Registra acerto/erro na sessão de estudo do relógio em tempo real
+    recordQuestionAnswer(finalIsCorrect);
+
     recordAnswer(questionId, selectedLetter, finalIsCorrect, {
       difficulty: q?.difficulty || 'Médio',
       specialty: q?.especialidade,
@@ -499,7 +559,7 @@ export const QuestoesView: React.FC = () => {
       if (e.key === 'Escape' || (e.altKey && e.key === 'ArrowLeft')) {
         if (!isShortcutsModalOpen && !isReportDrawerOpen && !isCreateCadernoModalOpen) {
           e.preventDefault();
-          setBancoMode('filtros');
+          handleReturnToFilters();
           return;
         }
       }
@@ -604,7 +664,9 @@ export const QuestoesView: React.FC = () => {
     setFontSize,
     isShortcutsModalOpen,
     isReportDrawerOpen,
-    isCreateCadernoModalOpen
+    isCreateCadernoModalOpen,
+    handleReturnToFilters,
+    toggleBookmark
   ]);
 
   return (
@@ -622,7 +684,7 @@ export const QuestoesView: React.FC = () => {
             type="button"
             onClick={() => {
               setActiveListId(null);
-              setBancoMode('filtros');
+              handleReturnToFilters();
             }}
             className="px-3 py-1.5 rounded-xl bg-blue-100 dark:bg-blue-900/40 hover:bg-blue-200 dark:hover:bg-blue-800/40 font-bold transition-colors cursor-pointer"
           >
@@ -652,16 +714,19 @@ export const QuestoesView: React.FC = () => {
               if (idx !== -1) {
                 setCurrentQuestionIndex(idx);
               }
+              handleStartStudySession(advancedFilters);
               setBancoMode('resolucao');
             }}
             onStartSequentialSolving={async (limit, quotas, explicitFilters) => {
               const finalLimit = limit ? Math.min(200, Math.max(1, limit)) : 200;
               const activeFilters = explicitFilters || advancedFilters;
               setAdvancedFilters(activeFilters);
+              advancedFiltersRef.current = activeFilters;
               setActiveListId(null);
               setSessionQuestionLimit(finalLimit);
               setCurrentQuestionIndex(0);
               setQuestionTimer(0);
+              handleStartStudySession(activeFilters);
 
               try {
                 setIsLoadingSupabase(true);
@@ -699,7 +764,7 @@ export const QuestoesView: React.FC = () => {
         <SessionPerformanceView
           questions={visibleQuestions}
           userAnswers={userAnswers}
-          onReturnToFilters={() => setBancoMode('filtros')}
+          onReturnToFilters={handleReturnToFilters}
           onReviewAll={() => {
             setBancoMode('resolucao');
             setCurrentQuestionIndex(0);
@@ -727,7 +792,7 @@ export const QuestoesView: React.FC = () => {
                     {/* Botão de Retorno à Página Anterior */}
                     <button
                       type="button"
-                      onClick={() => setBancoMode('filtros')}
+                      onClick={handleReturnToFilters}
                       className="w-9 h-9 flex items-center justify-center rounded-xl bg-zinc-100 hover:bg-zinc-200 dark:bg-zinc-800/80 dark:hover:bg-zinc-700/80 border border-zinc-200/80 dark:border-zinc-700/60 text-zinc-700 dark:text-zinc-200 transition-all cursor-pointer shadow-xs group shrink-0 active:scale-95"
                       title="Voltar aos Filtros (Esc)"
                       aria-label="Voltar"
@@ -816,24 +881,30 @@ export const QuestoesView: React.FC = () => {
 
                           <span className="text-slate-300 dark:text-zinc-700 font-light">|</span>
 
-                          {/* Tempo Total Acumulado */}
+                          {/* Tempo Total Acumulado (Fonte Única da Verdade) */}
                           <div
                             className="flex items-center gap-1 text-[11px] font-bold text-slate-700 dark:text-zinc-200"
                             title="Tempo total acumulado nesta sessão de estudos"
                           >
                             <Clock className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
-                            <span className="font-mono tabular-nums">{formatTimer(sessionTimer)}</span>
+                            <span className="font-mono tabular-nums">{formatTimer(elapsedSeconds)}</span>
                             <span className="text-[9px] uppercase font-semibold text-slate-400 dark:text-zinc-500">Total</span>
                           </div>
 
-                          {/* Botão Pausar / Retomar */}
+                          {/* Botão Pausar / Retomar (Sincronizado com a Navbar) */}
                           <button
                             type="button"
-                            onClick={() => setIsTimerRunning(!isTimerRunning)}
-                            title={isTimerRunning ? 'Pausar contagem' : 'Retomar contagem'}
+                            onClick={() => {
+                              if (timerStatus === 'running') {
+                                pauseTimer();
+                              } else {
+                                resumeTimer();
+                              }
+                            }}
+                            title={timerStatus === 'running' ? 'Pausar contagem' : 'Retomar contagem'}
                             className="p-0.5 rounded-md hover:bg-slate-200 dark:hover:bg-zinc-800 text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors cursor-pointer"
                           >
-                            {isTimerRunning ? (
+                            {timerStatus === 'running' ? (
                               <Pause className="w-3 h-3 text-slate-600 dark:text-zinc-300" />
                             ) : (
                               <Play className="w-3 h-3 fill-current text-emerald-500" />
@@ -1076,7 +1147,7 @@ export const QuestoesView: React.FC = () => {
                     {/* Botão de Filtros */}
                     <button
                       type="button"
-                      onClick={() => setBancoMode('filtros')}
+                      onClick={handleReturnToFilters}
                       className="flex items-center gap-1.5 p-2 sm:px-2.5 sm:py-1.5 rounded-xl border border-slate-200 dark:border-slate-800 text-xs font-bold text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all cursor-pointer shadow-xs"
                       title="Filtros de questões"
                     >
@@ -1095,7 +1166,7 @@ export const QuestoesView: React.FC = () => {
                     {/* Botão Finalizar Treino */}
                     <button
                       type="button"
-                      onClick={() => setBancoMode('resultado')}
+                      onClick={handleFinishToResults}
                       className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-extrabold text-white shadow-xs transition-transform hover:scale-105 cursor-pointer"
                       style={{ backgroundColor: accentConfig.primaryHex }}
                       title="Finalizar treino e ver resultado"
@@ -1277,7 +1348,7 @@ export const QuestoesView: React.FC = () => {
                 {currentQuestionIndex >= visibleQuestions.length - 1 ? (
                   <button
                     type="button"
-                    onClick={() => setBancoMode('resultado')}
+                    onClick={handleFinishToResults}
                     className="flex items-center gap-2 px-5 py-2.5 rounded-2xl text-xs font-black text-white shadow-md hover:scale-102 transition-transform cursor-pointer"
                     style={{ backgroundColor: accentConfig.primaryHex }}
                   >
@@ -1318,7 +1389,7 @@ export const QuestoesView: React.FC = () => {
                   </p>
                   <button
                     type="button"
-                    onClick={() => setBancoMode('filtros')}
+                    onClick={handleReturnToFilters}
                     className="mt-3 px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white hover:bg-blue-700 transition-colors cursor-pointer"
                   >
                     Ajustar Filtros

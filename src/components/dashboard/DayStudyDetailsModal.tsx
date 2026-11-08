@@ -237,13 +237,29 @@ export const DayStudyDetailsModal: React.FC<DayStudyDetailsModalProps> = ({
                         </div>
                       </div>
 
-                      {/* Dados adicionais: Questões / Acertos / Anotações */}
+                      {/* Dados adicionais: Questões / Acertos / Erros / Aproveitamento / Anotações */}
                       {(Boolean(sess.questionsCount && sess.questionsCount > 0) || sess.notes) && (
                         <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between text-xs text-zinc-600 dark:text-zinc-400 pl-1 gap-2 flex-wrap">
                           {sess.questionsCount && sess.questionsCount > 0 ? (
-                            <div className="font-mono text-[11px] font-semibold text-blue-600 dark:text-blue-400">
-                              {sess.questionsCount} questões • {sess.correctCount || 0} acertos (
-                              {Math.round(((sess.correctCount || 0) / sess.questionsCount) * 100)}%)
+                            <div className="flex items-center gap-2 font-mono text-[11px] font-semibold flex-wrap">
+                              <span className="text-blue-600 dark:text-blue-400">
+                                {sess.questionsCount} questões resolvidas
+                              </span>
+                              <span className="text-zinc-300 dark:text-zinc-700">•</span>
+                              <span className="text-emerald-600 dark:text-emerald-400 font-bold">
+                                {sess.correctCount || 0} acertos
+                              </span>
+                              <span className="text-zinc-300 dark:text-zinc-700">•</span>
+                              <span className="text-rose-500 font-bold">
+                                {sess.incorrectCount !== undefined
+                                  ? sess.incorrectCount
+                                  : Math.max(0, sess.questionsCount - (sess.correctCount || 0))} erros
+                              </span>
+                              <span className="px-1.5 py-0.5 rounded-md bg-zinc-100 dark:bg-zinc-800 text-[10px] text-zinc-700 dark:text-zinc-300 font-bold">
+                                {sess.accuracy !== undefined
+                                  ? `${sess.accuracy}%`
+                                  : `${Math.round(((sess.correctCount || 0) / sess.questionsCount) * 100)}%`}
+                              </span>
                             </div>
                           ) : null}
                           {sess.notes && (

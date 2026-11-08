@@ -48,7 +48,10 @@ import {
   Lightbulb,
   BookmarkPlus,
   RefreshCw,
-  Plus
+  Plus,
+  LayoutGrid,
+  GraduationCap,
+  PlayCircle
 } from 'lucide-react';
 
 // Ícone Oficial do Google
@@ -231,7 +234,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     toggleVisibility,
     restoreDefaults,
     autoConformLayout,
-  } = useDashboardLayout('bancoresidencia_layout_home', DEFAULT_HOME_CARDS);
+  } = useDashboardLayout('bancoresidencia_layout_home_v5', DEFAULT_HOME_CARDS);
 
   // Fonte única da verdade para personalização (sincronizada globalmente com o ThemeContext)
   const isCustomizing = Boolean(isDashboardCustomizing);
@@ -2801,105 +2804,6 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
     onNavigate('simulados');
   };
 
-  // Índice do card central e direção da transição no carrossel de Acesso Rápido
-  const [carouselIndex, setCarouselIndex] = useState(0);
-  const [slideDirection, setSlideDirection] = useState<'left' | 'right'>('right');
-
-  const userPercentile = stats.percentileInfo?.percentile;
-
-  // Cartões do Carrossel de Acesso Rápido com Seleção Central (sem redundâncias de texto)
-  const quickNavCards = React.useMemo(() => [
-    {
-      tab: 'banco',
-      title: 'Questões',
-      subtitle: 'Banco de questões com filtros inteligentes',
-      icon: FileQuestion
-    },
-    {
-      tab: 'resumos',
-      title: 'Resumos',
-      subtitle: 'Diretrizes oficiais e sínteses clínicas',
-      icon: BookOpen
-    },
-    {
-      tab: 'listas',
-      title: 'Cadernos',
-      subtitle: allLists && allLists.length > 0 ? `${allLists.length} cadernos salvos para revisão` : 'Listas e cadernos de estudo',
-      icon: ListFilter,
-      countBadge: allLists && allLists.length > 0 ? allLists.length : null
-    },
-    {
-      tab: 'simulados',
-      title: 'Simulados',
-      subtitle: 'Provas cronometradas com TRI oficial',
-      icon: FileCheck2
-    },
-    {
-      tab: 'stats',
-      title: 'Desempenho',
-      subtitle: stats.totalAnswered > 0 ? `${Math.round(stats.accuracyRate)}% de acerto geral` : 'Métricas e proficiência TRI',
-      icon: BarChart2
-    },
-    {
-      tab: 'ranking',
-      title: 'Ranking',
-      subtitle: (!isPercentileCalibrating && userPercentile != null)
-        ? `Top ${Math.max(1, 100 - Math.round(userPercentile))}% na classificação`
-        : 'Classificação geral dos candidatos',
-      icon: Trophy
-    }
-  ], [allLists, stats.totalAnswered, stats.accuracyRate, userPercentile, isPercentileCalibrating]);
-
-  const handlePrevCard = () => {
-    setSlideDirection('left');
-    setCarouselIndex((prev) => (prev - 1 + quickNavCards.length) % quickNavCards.length);
-  };
-
-  const handleNextCard = () => {
-    setSlideDirection('right');
-    setCarouselIndex((prev) => (prev + 1) % quickNavCards.length);
-  };
-
-  // Navegação suave com as setas do teclado (ArrowLeft / ArrowRight), Enter e números silenciosos
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      // Ignorar se estiver digitando em campo de input, textarea ou select
-      const activeTag = document.activeElement?.tagName.toLowerCase();
-      if (activeTag === 'input' || activeTag === 'textarea' || activeTag === 'select') {
-        return;
-      }
-      if (e.key === 'ArrowLeft') {
-        e.preventDefault();
-        setSlideDirection('left');
-        setCarouselIndex((prev) => (prev - 1 + quickNavCards.length) % quickNavCards.length);
-        return;
-      }
-      if (e.key === 'ArrowRight') {
-        e.preventDefault();
-        setSlideDirection('right');
-        setCarouselIndex((prev) => (prev + 1) % quickNavCards.length);
-        return;
-      }
-      if (e.key === 'Enter') {
-        const activeCard = quickNavCards[carouselIndex];
-        if (activeCard) {
-          onNavigate(activeCard.tab as ActiveTab);
-        }
-        return;
-      }
-      const keyNum = parseInt(e.key, 10);
-      if (keyNum >= 1 && keyNum <= quickNavCards.length) {
-        e.preventDefault();
-        const targetIndex = keyNum - 1;
-        setSlideDirection(targetIndex >= carouselIndex ? 'right' : 'left');
-        setCarouselIndex(targetIndex);
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [quickNavCards, carouselIndex, onNavigate]);
-
   return (
     <div
       className={`space-y-4 sm:space-y-5 transition-all duration-300 ${isCustomizing ? "canvas-grid-quadriculado" : ""}`}
@@ -3831,6 +3735,66 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
             );
           }
           if (cardConfig.id === 'home_retencao') {
+            const targetList = activeCaderno || (allLists && allLists.length > 0 ? allLists[0] : null);
+            const SHORTCUTS = [
+              {
+                id: 'banco',
+                label: 'Banco de Questões',
+                tab: 'banco' as ActiveTab,
+                icon: Layers,
+              },
+              {
+                id: 'flashcards',
+                label: 'Flashcards',
+                tab: 'flashcards' as ActiveTab,
+                icon: Brain,
+                badge: isMounted && flashcardsStats.dueToday > 0 ? flashcardsStats.dueToday : null,
+              },
+              {
+                id: 'caderno_erros',
+                label: 'Caderno de Erros',
+                tab: 'caderno_erros' as ActiveTab,
+                icon: AlertOctagon,
+                badge: pendingErrorsCount > 0 ? pendingErrorsCount : null,
+              },
+              {
+                id: 'listas',
+                label: 'Listas de Treino',
+                tab: 'listas' as ActiveTab,
+                icon: FolderOpen,
+              },
+              {
+                id: 'simulados',
+                label: 'Simulados',
+                tab: 'simulados' as ActiveTab,
+                icon: GraduationCap,
+              },
+              {
+                id: 'stats',
+                label: 'Desempenho',
+                tab: 'stats' as ActiveTab,
+                icon: TrendingUp,
+              },
+              {
+                id: 'ranking',
+                label: 'Ranking Oficial',
+                tab: 'ranking' as ActiveTab,
+                icon: Trophy,
+              },
+              {
+                id: 'resumos',
+                label: 'Materiais Teóricos',
+                tab: 'resumos' as ActiveTab,
+                icon: BookOpen,
+              },
+              {
+                id: 'agenda',
+                label: 'Agenda de Estudos',
+                tab: 'agenda' as ActiveTab,
+                icon: Calendar,
+              }
+            ];
+
             return (
               <FigmaCardWrapper
                 key={cardConfig.id}
@@ -3847,125 +3811,171 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 onSmartGuidesChange={setSmartGuidesState}
                 allCardsConfig={visibleCards}
               >
-                <div className="w-full bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-4 sm:p-5 shadow-xs relative overflow-hidden group space-y-2.5 min-h-0 h-full flex flex-col justify-between">
-                  <div className="space-y-2.5">
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-500 block">
-                      Retenção & Repetição Espaçada
-                    </span>
-
-                    <div className="space-y-2">
-                      {/* Botão Caderno de Erros -> Abre Drawer Central */}
-                      <div
-                        onClick={() => {
-                          if (isCustomizing) return;
-                          setActiveCentralDrawer('caderno_erros');
-                          setDrawerSearch('');
-                          setDrawerErrorSpecialty('Todas');
-                        }}
-                        className="flex items-center justify-between p-2.5 rounded-xl border border-zinc-200/80 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/50 hover:bg-zinc-100 dark:hover:bg-zinc-800/80 cursor-pointer transition-all group gap-2"
-                        title="Abrir central de foco do Caderno de Erros"
-                      >
-                        <div className="flex items-center gap-2.5 min-w-0 flex-1 overflow-hidden">
-                          <div className="w-8 h-8 rounded-lg bg-rose-500/10 text-rose-500 flex items-center justify-center shrink-0 relative">
-                            <AlertOctagon className="w-4 h-4" />
-                            {cardConfig.colSpan <= 3 && pendingErrorsCount > 0 && (
-                              <span className="absolute -top-1 -right-1 px-1 py-0.2 bg-rose-500 text-white text-[8px] font-extrabold rounded-full leading-none">
-                                {pendingErrorsCount}
-                              </span>
-                            )}
-                          </div>
-                          <div className="min-w-0 flex-1 overflow-hidden">
-                            <div className="text-xs font-bold text-zinc-800 dark:text-zinc-200 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors truncate">
-                              {cardConfig.colSpan <= 2 ? 'Erros' : 'Caderno de Erros'}
-                            </div>
-                            <div className="text-[10px] text-zinc-500 dark:text-zinc-400 truncate">
-                              {pendingErrorsCount > 0 ? `${pendingErrorsCount} pendentes` : 'Tudo em dia'}
-                            </div>
-                          </div>
+                <div className="w-full bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-3 sm:p-3.5 shadow-xs relative overflow-hidden group space-y-2.5 min-h-0 h-full flex flex-col justify-between">
+                  <div className="space-y-1.5">
+                    {/* Header do Card */}
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-1.5">
+                        <div
+                          className="w-6 h-6 rounded-lg flex items-center justify-center shadow-xs border"
+                          style={{
+                            backgroundColor: accentConfig.bgRgba,
+                            borderColor: accentConfig.borderRgba,
+                            color: accentConfig.primaryHex
+                          }}
+                        >
+                          <LayoutGrid className="w-3 h-3" />
                         </div>
-                        {cardConfig.colSpan > 3 ? (
-                          <div className="flex items-center gap-1.5 shrink-0 ml-auto">
-                            <span className="text-[10px] font-medium text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-200 card-action-text whitespace-nowrap">Ver Foco</span>
-                            <ChevronRight className="w-4 h-4 text-zinc-400 group-hover:translate-x-0.5 group-hover:text-zinc-600 dark:group-hover:text-zinc-200 transition-all shrink-0" />
-                          </div>
-                        ) : (
-                          <ChevronRight className="w-3.5 h-3.5 text-zinc-400 shrink-0 ml-auto" />
-                        )}
+                        <span className="text-[11px] font-bold text-zinc-800 dark:text-zinc-200 uppercase tracking-wider">
+                          Atalhos
+                        </span>
                       </div>
-
-                      {/* Botão Flashcards -> Abre Drawer Central */}
-                      <div
-                        onClick={() => {
-                          if (isCustomizing) return;
-                          setActiveCentralDrawer('flashcards');
-                          setDrawerSearch('');
-                          setDrawerFlashcardSpecialty('Todas');
-                        }}
-                        className="flex items-center justify-between p-2.5 rounded-xl border border-zinc-200/80 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/50 hover:bg-zinc-100 dark:hover:bg-zinc-800/80 cursor-pointer transition-all group gap-2"
-                        title="Abrir central de foco dos Flashcards"
-                      >
-                        <div className="flex items-center gap-2.5 min-w-0 flex-1 overflow-hidden">
-                          <div
-                            className="w-8 h-8 rounded-lg flex items-center justify-center shrink-0 relative"
-                            style={{ backgroundColor: accentConfig.bgRgba, color: accentConfig.primaryHex }}
-                          >
-                            <Brain className="w-4 h-4" />
-                            {cardConfig.colSpan <= 3 && flashcardsStats.dueToday > 0 && (
-                              <span className="absolute -top-1 -right-1 px-1 py-0.2 bg-blue-600 text-white text-[8px] font-extrabold rounded-full leading-none">
-                                {flashcardsStats.dueToday}
-                              </span>
-                            )}
-                          </div>
-                          <div className="min-w-0 flex-1 overflow-hidden">
-                            <div className="text-xs font-bold text-zinc-800 dark:text-zinc-200 group-hover:text-zinc-900 dark:group-hover:text-white transition-colors truncate">
-                              {cardConfig.colSpan <= 2 ? 'Cards' : 'Flashcards'}
-                            </div>
-                            <div className="text-[10px] text-zinc-500 dark:text-zinc-400 truncate" suppressHydrationWarning>
-                              {isMounted ? (flashcardsStats.dueToday > 0 ? `${flashcardsStats.dueToday} para hoje` : 'Em dia • FSRS') : 'Flashcards • FSRS'}
-                            </div>
-                          </div>
-                        </div>
-                        {cardConfig.colSpan > 3 ? (
-                          <div className="flex items-center gap-1.5 shrink-0 ml-auto">
-                            <span className="text-[10px] font-medium text-zinc-400 group-hover:text-zinc-600 dark:group-hover:text-zinc-200 card-action-text whitespace-nowrap">Ver Foco</span>
-                            <ChevronRight className="w-4 h-4 text-zinc-400 group-hover:translate-x-0.5 group-hover:text-zinc-600 dark:group-hover:text-zinc-200 transition-all shrink-0" />
-                          </div>
-                        ) : (
-                          <ChevronRight className="w-3.5 h-3.5 text-zinc-400 shrink-0 ml-auto" />
-                        )}
-                      </div>
+                      <span className="text-[9px] font-semibold text-zinc-400 dark:text-zinc-500">
+                        Acesso rápido
+                      </span>
                     </div>
 
-                    {/* VISÃO EXPANDIDA ADAPTATIVA: Focos Críticos de Reteste */}
-                    {Boolean(cardConfig.customHeight ? cardConfig.customHeight > 175 : false) && (
-                      <div className="pt-2.5 pb-1 space-y-2 border-t border-zinc-100 dark:border-zinc-800/80 animate-in fade-in duration-200">
-                        <div className="flex items-center justify-between text-[11px]">
-                          <span className="font-bold text-zinc-700 dark:text-zinc-300 flex items-center gap-1.5">
-                            <span className="w-1.5 h-1.5 rounded-full bg-rose-500" />
-                            Focos Críticos de Reteste Prioritário
+                    {/* Grade de 9 Atalhos Fluida e Condensada (sem estilo card, ícones no tema, texto inter light) */}
+                    <div className="grid grid-cols-3 gap-x-1 gap-y-1.5 pt-0.5">
+                      {SHORTCUTS.map((item) => {
+                        const IconComp = item.icon;
+                        return (
+                          <button
+                            key={item.id}
+                            type="button"
+                            onClick={() => {
+                              if (isCustomizing) return;
+                              onNavigate(item.tab);
+                            }}
+                            className="group/btn relative flex flex-col items-center justify-start p-1 rounded-lg hover:bg-zinc-100/50 dark:hover:bg-zinc-800/40 active:scale-95 transition-all text-center cursor-pointer"
+                            title={`Navegar para ${item.label}`}
+                          >
+                            {/* Ícone no estilo do tema */}
+                            <div
+                              className="relative w-7 h-7 sm:w-8 sm:h-8 rounded-lg flex items-center justify-center mb-0.5 transition-transform duration-200 group-hover/btn:scale-105 border shadow-2xs"
+                              style={{
+                                backgroundColor: accentConfig.bgRgba,
+                                borderColor: accentConfig.borderRgba,
+                                color: accentConfig.primaryHex
+                              }}
+                            >
+                              <IconComp className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0" />
+                              {/* Badge de Pendências sutil */}
+                              {Boolean(item.badge) && (
+                                <span
+                                  className="absolute -top-1 -right-1 px-1 py-0.2 min-w-[13px] h-[13px] rounded-full text-[8px] font-black text-white leading-none shadow-xs flex items-center justify-center"
+                                  style={{ backgroundColor: accentConfig.primaryHex }}
+                                >
+                                  {item.badge}
+                                </span>
+                              )}
+                            </div>
+
+                            {/* Título do Atalho: Nome Completo em Inter Light */}
+                            <span className="font-light text-[10px] text-zinc-600 dark:text-zinc-300 group-hover/btn:text-zinc-900 dark:group-hover/btn:text-white transition-colors text-center leading-tight line-clamp-2 max-w-[78px]">
+                              {item.label}
+                            </span>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+
+                  {/* Função: Continuar Lista Condensada (destaca a última lista que o aluno estava fazendo) */}
+                  <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 space-y-1.5">
+                    <div className="flex items-center justify-between px-0.5">
+                      <div className="flex items-center gap-1.5 min-w-0">
+                        <PlayCircle className="w-3.5 h-3.5 shrink-0" style={{ color: accentConfig.primaryHex }} />
+                        <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-zinc-600 dark:text-zinc-400 truncate">
+                          Continuar Lista
+                        </span>
+                        {targetList && (
+                          <span
+                            className="text-[8px] font-bold flex items-center gap-1 px-1.5 py-0.2 rounded-md shrink-0"
+                            style={{
+                              backgroundColor: accentConfig.bgRgba,
+                              color: accentConfig.primaryHex
+                            }}
+                          >
+                            <span
+                              className="w-1.5 h-1.5 rounded-full animate-pulse"
+                              style={{ backgroundColor: accentConfig.primaryHex }}
+                            />
+                            {targetList.progressPercentage && targetList.progressPercentage >= 100 ? 'Concluída' : 'Ativa'}
                           </span>
-                          <span className="text-[10px] text-zinc-400">Algoritmo FSRS</span>
+                        )}
+                      </div>
+                      <button
+                        type="button"
+                        onClick={() => {
+                          if (isCustomizing) return;
+                          onNavigate('listas');
+                        }}
+                        className="text-[9px] font-medium text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 transition-colors cursor-pointer shrink-0"
+                      >
+                        Listas →
+                      </button>
+                    </div>
+
+                    {targetList ? (
+                      <div className="p-2 rounded-xl border border-zinc-200/80 dark:border-zinc-800 bg-zinc-50/60 dark:bg-zinc-900/40 space-y-1.5">
+                        <div className="flex items-center justify-between gap-2">
+                          <h4
+                            className="text-[11px] sm:text-xs font-bold text-zinc-900 dark:text-zinc-100 truncate flex-1"
+                            title={targetList.title}
+                          >
+                            {targetList.title}
+                          </h4>
+                          <span className="text-[10px] font-bold text-zinc-700 dark:text-zinc-300 shrink-0">
+                            {targetList.progressPercentage || 0}%
+                          </span>
                         </div>
 
-                        <div className="grid grid-cols-2 sm:grid-cols-3 gap-1.5 text-[10px]">
-                          <div className="p-1.5 rounded-lg bg-rose-500/10 border border-rose-500/20 text-rose-700 dark:text-rose-400 flex flex-col">
-                            <span className="font-bold truncate">Clínica Médica</span>
-                            <span className="text-[9px] opacity-80">32 pendentes</span>
-                          </div>
-                          <div className="p-1.5 rounded-lg bg-amber-500/10 border border-amber-500/20 text-amber-700 dark:text-amber-400 flex flex-col">
-                            <span className="font-bold truncate">Pediatria</span>
-                            <span className="text-[9px] opacity-80">24 pendentes</span>
-                          </div>
-                          <div className="p-1.5 rounded-lg bg-purple-500/10 border border-purple-500/20 text-purple-700 dark:text-purple-400 flex flex-col">
-                            <span className="font-bold truncate">Ginecologia</span>
-                            <span className="text-[9px] opacity-80">18 pendentes</span>
-                          </div>
+                        {/* Barra de progresso */}
+                        <div className="w-full bg-zinc-200 dark:bg-zinc-800 h-1.5 rounded-full overflow-hidden">
+                          <div
+                            className="h-full rounded-full transition-all duration-300"
+                            style={{
+                              width: `${Math.min(100, Math.max(0, targetList.progressPercentage || 0))}%`,
+                              backgroundColor: accentConfig.primaryHex
+                            }}
+                          />
                         </div>
 
-                        <div className="flex items-center justify-between text-[10px] text-zinc-500 dark:text-zinc-400 bg-zinc-50 dark:bg-zinc-900 px-2.5 py-1.5 rounded-lg border border-zinc-200/50 dark:border-zinc-800/60">
-                          <span>Estabilidade de Memória (R): <strong>88.5%</strong></span>
-                          <span>Próx. ciclo: <strong>Hoje às 19h</strong></span>
+                        <div className="flex items-center justify-between gap-1.5 pt-0.5">
+                          <span className="text-[9px] text-zinc-500 dark:text-zinc-400 font-light truncate">
+                            {targetList.completedQuestions || 0}/{targetList.totalQuestions || 0} resolvidas
+                          </span>
+                          <button
+                            type="button"
+                            onClick={() => {
+                              if (isCustomizing) return;
+                              onContinueList(targetList);
+                            }}
+                            className="px-2 py-0.5 rounded-md text-[10px] font-bold text-white shadow-2xs flex items-center gap-1 transition-transform active:scale-95 hover:opacity-90 cursor-pointer shrink-0"
+                            style={{ backgroundColor: accentConfig.primaryHex }}
+                          >
+                            <Play className="w-2.5 h-2.5 fill-current" />
+                            <span>Continuar</span>
+                          </button>
                         </div>
+                      </div>
+                    ) : (
+                      <div className="p-2 rounded-xl border border-dashed border-zinc-200 dark:border-zinc-800 text-center flex items-center justify-between gap-2">
+                        <span className="text-[10px] font-light text-zinc-500 dark:text-zinc-400 truncate">
+                          Nenhuma lista em andamento
+                        </span>
+                        <button
+                          type="button"
+                          onClick={() => {
+                            if (isCustomizing) return;
+                            onNavigate('listas');
+                          }}
+                          className="text-[10px] font-semibold hover:underline cursor-pointer shrink-0"
+                          style={{ color: accentConfig.primaryHex }}
+                        >
+                          + Criar Lista
+                        </button>
                       </div>
                     )}
                   </div>
@@ -4099,191 +4109,183 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 onSmartGuidesChange={setSmartGuidesState}
                 allCardsConfig={visibleCards}
               >
-                {/* Card 2: Agenda de Estudos do Dia (Foco Exclusivo no Período Atual + Google Agenda) */}
+                {/* Card: Agenda de Estudos Fluida do Dia */}
                 <div
                   onClick={() => { if (isCustomizing) return; onNavigate('agenda'); }}
-                  className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-5 shadow-xs cursor-pointer hover:border-blue-500/40 transition-all group flex flex-col justify-between min-h-0 h-full relative overflow-hidden space-y-3.5"
-                  title="Abrir cronograma de blocos do dia"
+                  className="bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-4 sm:p-5 shadow-xs cursor-pointer hover:border-blue-500/40 transition-all group flex flex-col justify-between min-h-0 h-full relative overflow-hidden space-y-3"
+                  title="Abrir agenda de estudos completa"
                 >
-                  {/* Top Bar */}
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <div className="w-8 h-8 rounded-xl bg-blue-500/10 text-blue-500 flex items-center justify-center shrink-0 border border-blue-500/20 shadow-2xs">
-                        <CalendarDays className="w-4 h-4" />
-                      </div>
-                      <div className="flex items-center gap-1.5 flex-wrap">
-                        <span className="text-[10px] font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">
+                  <div className="space-y-2.5">
+                    {/* Header: Título "Agenda de Estudos" + Status/Data */}
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <div
+                          className="w-8 h-8 rounded-xl flex items-center justify-center shadow-xs border border-zinc-200/60 dark:border-zinc-800/80"
+                          style={{
+                            backgroundColor: accentConfig.bgRgba,
+                            color: accentConfig.primaryHex
+                          }}
+                        >
+                          <CalendarDays className="w-4 h-4" />
+                        </div>
+                        <span className="text-xs font-bold text-zinc-800 dark:text-zinc-200 uppercase tracking-wider">
                           Agenda de Estudos
                         </span>
-                        {isGoogleCalendarConnected ? (
-                          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20">
-                            <GoogleIcon className="w-3 h-3" />
-                            Google Agenda
-                          </span>
-                        ) : (
-                          <span className="inline-flex items-center px-1.5 py-0.5 rounded-md text-[10px] font-medium text-zinc-500 dark:text-zinc-400 bg-zinc-100 dark:bg-zinc-800">
-                            Cronograma
-                          </span>
-                        )}
                       </div>
-                    </div>
 
-                    <ChevronRight className="w-4 h-4 text-blue-600 dark:text-blue-400 group-hover:translate-x-0.5 transition-transform shrink-0" />
-                  </div>
-
-                  {/* Middle: APONTA SOMENTE A ATIVIDADE DA PESSOA NAQUELE PERÍODO DE TEMPO */}
-                  <div className="space-y-1.5 flex-1 flex flex-col justify-center">
-                    {currentPeriodInfo.status === 'em_andamento' && (
-                      <>
-                        <div className="flex items-center gap-2">
-                          <span className="relative flex h-2 w-2">
-                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-                          </span>
-                          <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
-                            Em Andamento Agora • {currentPeriodInfo.slot.startTime} às {currentPeriodInfo.slot.endTime}
-                          </span>
-                        </div>
-                        <h4 className="font-heading text-sm sm:text-base font-bold text-slate-900 dark:text-zinc-100 truncate">
-                          {currentPeriodInfo.slot.title}
-                        </h4>
-                        <div className="flex items-center justify-between gap-2 text-xs text-slate-600 dark:text-zinc-400">
-                          <span className="truncate text-[11px]">
-                            {currentPeriodInfo.slot.location ? `${currentPeriodInfo.slot.location} • ` : ''}
-                            {cleanEventDescription(currentPeriodInfo.slot.description)}
-                          </span>
-                          <span className="text-[10px] font-mono font-bold text-emerald-600 dark:text-emerald-400 shrink-0">
-                            restam {currentPeriodInfo.minutesRemaining}m
-                          </span>
-                        </div>
-                        {/* Barra de Progresso do Período Atual */}
-                        <div className="mt-1">
-                          <ProgressBar
-                            value={currentPeriodInfo.progressPercent}
-                            size="xs"
-                            variant="success"
-                          />
-                        </div>
-                      </>
-                    )}
-
-                    {currentPeriodInfo.status === 'proximo' && (
-                      <>
-                        <div className="flex items-center gap-2">
-                          <span className="text-[10px] font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">
-                            Próxima Atividade • {currentPeriodInfo.minutesUntil > 120 ? `Às ${currentPeriodInfo.slot.startTime}` : `Em ${currentPeriodInfo.minutesUntil} min (${currentPeriodInfo.slot.startTime})`}
-                          </span>
-                        </div>
-                        <h4 className="font-heading text-sm sm:text-base font-bold text-zinc-900 dark:text-zinc-100 truncate">
-                          {currentPeriodInfo.slot.title}
-                        </h4>
-                        {cleanEventDescription(currentPeriodInfo.slot.description) && (
-                          <p className="text-xs text-zinc-500 dark:text-zinc-400 truncate">
-                            {cleanEventDescription(currentPeriodInfo.slot.description)}
-                          </p>
-                        )}
-                      </>
-                    )}
-
-                    {currentPeriodInfo.status === 'noturno' && (
-                      <>
-                        <div className="flex items-center gap-2">
-                          <span className="text-[10px] font-bold uppercase tracking-wider text-indigo-500 dark:text-indigo-400">
-                            Período Noturno • Descanso & Consolidação
-                          </span>
-                        </div>
-                        <h4 className="font-heading text-sm sm:text-base font-bold text-zinc-900 dark:text-zinc-100 truncate">
-                          {currentPeriodInfo.slot.title}
-                        </h4>
-                        {cleanEventDescription(currentPeriodInfo.slot.description) && (
-                          <p className="text-xs text-zinc-600 dark:text-zinc-400 line-clamp-1">
-                            {cleanEventDescription(currentPeriodInfo.slot.description)}
-                          </p>
-                        )}
-                      </>
-                    )}
-
-                    {currentPeriodInfo.status === 'livre' && (
-                      <>
-                        <div className="flex items-center gap-2">
-                          <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 flex items-center gap-1">
-                            <CheckCircle2 className="w-3 h-3 text-emerald-500" />
-                            {isGoogleCalendarConnected ? 'Agenda Sincronizada • Horários Livres' : 'Cronograma Livre'}
-                          </span>
-                        </div>
-                        <h4 className="font-heading text-sm sm:text-base font-bold text-zinc-900 dark:text-zinc-100 truncate">
-                          {currentPeriodInfo.slot.title}
-                        </h4>
-                        {cleanEventDescription(currentPeriodInfo.slot.description) && (
-                          <p className="text-xs text-zinc-500 dark:text-zinc-400 truncate">
-                            {cleanEventDescription(currentPeriodInfo.slot.description)}
-                          </p>
-                        )}
-                      </>
-                    )}
-                  </div>
-
-                  {/* Footer Bar */}
-                  <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between text-xs">
-                    {!isGoogleCalendarConnected ? (
-                      <Button
-                        type="button"
-                        size="xs"
-                        variant="outline"
-                        onClick={(e) => { e.stopPropagation(); if (isCustomizing) return; setIsGoogleModalOpen(true); }}
-                        className="text-[10px] font-bold text-blue-600 dark:text-blue-400 border-blue-200 dark:border-blue-900/60 bg-blue-50 dark:bg-blue-950/40"
-                        title="Conectar com o Google Agenda"
-                        leftIcon={<GoogleIcon className="w-3.5 h-3.5" />}
-                      >
-                        Conectar Google Agenda
-                      </Button>
-                    ) : (
-                      <span className="text-[10px] text-zinc-600 dark:text-zinc-300 flex items-center gap-1.5 font-medium">
-                        <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
-                        <span>{daySchedule.length} atividades adaptadas hoje</span>
-                      </span>
-                    )}
-
-                    {currentPeriodInfo.status === 'em_andamento' && currentPeriodInfo.nextSlot && (
-                      <span className="text-[10px] text-zinc-400 dark:text-zinc-500 truncate max-w-[170px]">
-                        ↳ A seguir: {currentPeriodInfo.nextSlot.title}
-                      </span>
-                    )}
-                  </div>
-
-                  {/* VISÃO EXPANDIDA ADAPTATIVA: Linha do Tempo dos Próximos Blocos do Dia */}
-                  {Boolean(cardConfig.customHeight ? cardConfig.customHeight > 140 : false) && (
-                    <div className="pt-2.5 space-y-1.5 border-t border-zinc-100 dark:border-zinc-800/80 animate-in fade-in duration-200">
-                      <div className="flex items-center justify-between text-[11px]">
-                        <span className="font-bold text-zinc-700 dark:text-zinc-300 flex items-center gap-1.5">
-                          <Clock className="w-3 h-3 text-blue-500" />
-                          Cronograma dos Blocos do Dia
+                      <div className="flex items-center gap-1.5">
+                        <span className="text-[10px] font-semibold text-zinc-400 dark:text-zinc-500">
+                          {daySchedule.length > 0 ? `${daySchedule.length} atividades` : 'Hoje'}
                         </span>
-                        <span className="text-[10px] text-zinc-400">{daySchedule.length} blocos hoje</span>
+                        <ChevronRight className="w-4 h-4 text-zinc-400 group-hover:translate-x-0.5 group-hover:text-blue-500 transition-all shrink-0" />
                       </div>
-
-                      <div className="grid grid-cols-1 sm:grid-cols-3 gap-1.5 text-[10px]">
-                        {daySchedule.slice(0, 3).map((slot, idx) => (
-                          <div
-                            key={idx}
-                            className="p-1.5 rounded-lg bg-zinc-50 dark:bg-zinc-900 border border-zinc-200/60 dark:border-zinc-800 flex flex-col justify-between"
-                          >
-                            <span className="font-mono text-[9px] text-blue-600 dark:text-blue-400 font-bold">
-                              {slot.startTime} - {slot.endTime}
-                            </span>
-                            <span className="font-bold text-zinc-800 dark:text-zinc-200 truncate mt-0.5">{slot.title}</span>
-                          </div>
-                        ))}
-                      </div>
-
-                      {Boolean(cardConfig.customHeight ? cardConfig.customHeight > 175 : false) && (
-                        <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between text-[10px] text-zinc-500 dark:text-zinc-400">
-                          <span>Tempo Planejado: <strong>4h 30m</strong></span>
-                          <span className="text-emerald-600 dark:text-emerald-400 font-bold">Cronobiologia Otimizada</span>
-                        </div>
-                      )}
                     </div>
-                  )}
+
+                    {/* Lista Fluida das Atividades do Dia (Horário + Atividade, Sem Descrição) */}
+                    {daySchedule.length > 0 ? (
+                      <div className="space-y-1.5 max-h-[175px] overflow-y-auto pr-0.5 scrollbar-thin">
+                        {daySchedule.map((slot, idx) => {
+                          const now = new Date();
+                          const currentMinutes = now.getHours() * 60 + now.getMinutes();
+                          const isCurrent = currentMinutes >= slot.startMinutes && currentMinutes < slot.endMinutes;
+                          const isPast = currentMinutes >= slot.endMinutes;
+
+                          return (
+                            <div
+                              key={slot.id || idx}
+                              className={`flex items-center justify-between p-2 sm:p-2.5 rounded-xl border transition-all ${isCurrent
+                                  ? 'bg-emerald-500/10 border-emerald-500/30 text-emerald-950 dark:text-emerald-100 shadow-2xs'
+                                  : isPast
+                                    ? 'bg-zinc-50/40 dark:bg-zinc-900/40 border-zinc-200/50 dark:border-zinc-800/50 text-zinc-500 opacity-60'
+                                    : 'bg-zinc-50/70 dark:bg-zinc-900/60 border-zinc-200/70 dark:border-zinc-800/80 hover:bg-zinc-100 dark:hover:bg-zinc-800/90 text-zinc-800 dark:text-zinc-200'
+                                }`}
+                            >
+                              <div className="flex items-center gap-2.5 min-w-0 flex-1 pr-2">
+                                {/* Indicador de Status */}
+                                {isCurrent ? (
+                                  <span className="relative flex h-2 w-2 shrink-0">
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                                  </span>
+                                ) : isPast ? (
+                                  <CheckCircle2 className="w-3.5 h-3.5 text-zinc-400 shrink-0" />
+                                ) : (
+                                  <span
+                                    className="w-2 h-2 rounded-full shrink-0"
+                                    style={{ backgroundColor: accentConfig.primaryHex }}
+                                  />
+                                )}
+
+                                {/* Nome da Atividade (Sem descrição) */}
+                                <span className="text-xs font-bold truncate">
+                                  {slot.title}
+                                </span>
+                              </div>
+
+                              {/* Horário */}
+                              <span
+                                className={`text-[11px] font-mono font-bold shrink-0 px-2 py-0.5 rounded-md ${isCurrent
+                                    ? 'bg-emerald-500/20 text-emerald-600 dark:text-emerald-400'
+                                    : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400'
+                                  }`}
+                              >
+                                {slot.startTime} - {slot.endTime}
+                              </span>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    ) : (
+                      <div className="space-y-1.5">
+                        {[
+                          {
+                            id: 'bloco_manha',
+                            title: 'Bloco de Questões: Clínica Médica',
+                            startTime: '09:00',
+                            endTime: '11:00',
+                            startMinutes: 540,
+                            endMinutes: 660
+                          },
+                          {
+                            id: 'bloco_tarde',
+                            title: 'Revisão de Flashcards do Dia',
+                            startTime: '14:30',
+                            endTime: '15:30',
+                            startMinutes: 870,
+                            endMinutes: 930
+                          },
+                          {
+                            id: 'bloco_noite',
+                            title: 'Treino de Caderno de Erros',
+                            startTime: '19:00',
+                            endTime: '20:30',
+                            startMinutes: 1140,
+                            endMinutes: 1230
+                          }
+                        ].map((slot, idx) => {
+                          const now = new Date();
+                          const currentMinutes = now.getHours() * 60 + now.getMinutes();
+                          const isCurrent = currentMinutes >= slot.startMinutes && currentMinutes < slot.endMinutes;
+                          const isPast = currentMinutes >= slot.endMinutes;
+
+                          return (
+                            <div
+                              key={slot.id || idx}
+                              className={`flex items-center justify-between p-2 sm:p-2.5 rounded-xl border transition-all ${isCurrent
+                                  ? 'bg-emerald-500/10 border-emerald-500/30 text-emerald-950 dark:text-emerald-100 shadow-2xs'
+                                  : isPast
+                                    ? 'bg-zinc-50/40 dark:bg-zinc-900/40 border-zinc-200/50 dark:border-zinc-800/50 text-zinc-500 opacity-60'
+                                    : 'bg-zinc-50/70 dark:bg-zinc-900/60 border-zinc-200/70 dark:border-zinc-800/80 hover:bg-zinc-100 dark:hover:bg-zinc-800/90 text-zinc-800 dark:text-zinc-200'
+                                }`}
+                            >
+                              <div className="flex items-center gap-2.5 min-w-0 flex-1 pr-2">
+                                {isCurrent ? (
+                                  <span className="relative flex h-2 w-2 shrink-0">
+                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                                  </span>
+                                ) : isPast ? (
+                                  <CheckCircle2 className="w-3.5 h-3.5 text-zinc-400 shrink-0" />
+                                ) : (
+                                  <span
+                                    className="w-2 h-2 rounded-full shrink-0"
+                                    style={{ backgroundColor: accentConfig.primaryHex }}
+                                  />
+                                )}
+
+                                <span className="text-xs font-bold truncate">
+                                  {slot.title}
+                                </span>
+                              </div>
+
+                              <span
+                                className={`text-[11px] font-mono font-bold shrink-0 px-2 py-0.5 rounded-md ${isCurrent
+                                    ? 'bg-emerald-500/20 text-emerald-600 dark:text-emerald-400'
+                                    : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400'
+                                  }`}
+                              >
+                                {slot.startTime} - {slot.endTime}
+                              </span>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Rodapé Fluido */}
+                  <div className="pt-2 border-t border-zinc-100 dark:border-zinc-800/80 flex items-center justify-between text-xs text-zinc-500 dark:text-zinc-400">
+                    <span className="text-[11px]">
+                      {currentPeriodInfo.status === 'em_andamento'
+                        ? `Em andamento • Restam ${currentPeriodInfo.minutesRemaining}m`
+                        : isGoogleCalendarConnected
+                          ? 'Google Agenda sincronizada'
+                          : 'Cronograma diário inteligente'}
+                    </span>
+                    <span className="text-xs font-bold text-blue-600 dark:text-blue-400 flex items-center gap-1 group-hover:underline">
+                      Ver agenda completa <ArrowRight className="w-3 h-3" />
+                    </span>
+                  </div>
                 </div>
               </FigmaCardWrapper>
             );
@@ -4307,370 +4309,370 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
               >
                 {/* 4. RAIO-X DAS 6 GRANDES ÁREAS */}
                 <section className="w-full bento-card bg-white dark:bg-[#121215] border border-zinc-200/90 dark:border-zinc-800 rounded-2xl p-4 sm:p-6 shadow-xs space-y-4 min-h-0 h-full overflow-hidden flex flex-col justify-between">
-                      <div className="flex items-center justify-between gap-2 pb-2 border-b border-slate-100 dark:border-zinc-800/80">
-                        <div className="flex items-center gap-2">
-                          <div
-                            className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0 border"
-                            style={{
-                              backgroundColor: accentConfig.bgRgba,
-                              borderColor: accentConfig.borderRgba,
-                              color: accentConfig.primaryHex
-                            }}
-                          >
-                            <BarChart2 className="w-3.5 h-3.5" />
-                          </div>
-                          <div>
-                            <h4 className="font-heading text-sm sm:text-base font-bold text-slate-900 dark:text-zinc-100 leading-tight">
-                              Raio-X das 6 Grandes Áreas
-                            </h4>
-                            <p className="text-[11px] text-slate-500 dark:text-zinc-400">
-                              Clique em qualquer cor do gráfico para ver a área
-                            </p>
-                          </div>
-                        </div>
+                  <div className="flex items-center justify-between gap-2 pb-2 border-b border-slate-100 dark:border-zinc-800/80">
+                    <div className="flex items-center gap-2">
+                      <div
+                        className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0 border"
+                        style={{
+                          backgroundColor: accentConfig.bgRgba,
+                          borderColor: accentConfig.borderRgba,
+                          color: accentConfig.primaryHex
+                        }}
+                      >
+                        <BarChart2 className="w-3.5 h-3.5" />
                       </div>
+                      <div>
+                        <h4 className="font-heading text-sm sm:text-base font-bold text-slate-900 dark:text-zinc-100 leading-tight">
+                          Raio-X das 6 Grandes Áreas
+                        </h4>
+                        <p className="text-[11px] text-slate-500 dark:text-zinc-400">
+                          Clique em qualquer cor do gráfico para ver a área
+                        </p>
+                      </div>
+                    </div>
+                  </div>
 
-                      {/* Gráfico Donut + Gráfico de Evolução */}
-                      <div className={`grid grid-cols-1 ${cardConfig.colSpan >= 8 ? 'md:grid-cols-12' : 'grid-cols-1'} gap-5 sm:gap-8 items-center pt-1`}>
-                        {/* Donut Chart (Esquerda - 5 cols quando largo, coluna única quando compacto) */}
-                        <div className={`${cardConfig.colSpan >= 8 ? 'md:col-span-5' : 'col-span-1'} flex flex-col items-center justify-center space-y-2`}>
-                          <div className={`h-48 w-full max-w-[220px] relative flex items-center justify-center mx-auto ${!isPieAnimationDone ? 'pointer-events-none' : ''}`}>
-                            <ResponsiveContainer width="100%" height="100%">
-                              <PieChart>
-                                <Pie
-                                  data={donutData}
-                                  dataKey="value"
-                                  nameKey="name"
-                                  cx="50%"
-                                  cy="50%"
-                                  innerRadius={55}
-                                  outerRadius={80}
-                                  paddingAngle={4}
-                                  isAnimationActive={!isPieAnimationDone}
-                                  animationBegin={0}
-                                  animationDuration={1400}
-                                  animationEasing="ease-out"
-                                  onAnimationEnd={() => setIsPieAnimationDone(true)}
-                                  onMouseEnter={(_, index) => {
-                                    if (!isPieAnimationDone) return;
-                                    setHoveredPieIndex(index);
-                                  }}
-                                  onMouseLeave={() => {
-                                    if (!isPieAnimationDone) return;
-                                    setHoveredPieIndex(null);
-                                  }}
-                                  onClick={(entry: { id?: string; payload?: { id?: string } } | undefined, index: number) => {
-                                    if (!isPieAnimationDone) return;
-                                    const targetId = entry?.id || entry?.payload?.id || (typeof index === 'number' && donutData[index]?.id);
-                                    if (targetId) {
-                                      handlePieSectorClick(targetId);
-                                    }
-                                  }}
-                                  stroke="none"
-                                  className="cursor-pointer"
-                                >
-                                  {donutData.map((entry, index) => {
-                                    const isSelected = selectedAreaId === entry.id;
-                                    const isHovered = hoveredPieIndex === index;
-
-                                    let opacity = 1;
-                                    if (hoveredPieIndex !== null) {
-                                      opacity = isHovered ? 1 : 0.28;
-                                    } else if (selectedAreaId !== 'geral') {
-                                      opacity = isSelected ? 1 : 0.28;
-                                    } else {
-                                      opacity = 1;
-                                    }
-
-                                    return (
-                                      <Cell
-                                        key={`cell-core-${index}`}
-                                        fill={entry.cor}
-                                        opacity={opacity}
-                                        className="transition-opacity duration-200 cursor-pointer outline-none focus:outline-none"
-                                        onClick={(e) => {
-                                          e?.stopPropagation?.();
-                                          if (!isPieAnimationDone) return;
-                                          handlePieSectorClick(entry.id);
-                                        }}
-                                      />
-                                    );
-                                  })}
-                                </Pie>
-                              </PieChart>
-                            </ResponsiveContainer>
-
-                            {/* Centro do Gráfico Donut (Clique para alternar para o panorama Geral) */}
-                            <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
-                              <div
-                                onClick={(e) => {
-                                  e.stopPropagation();
-                                  setSelectedAreaId('geral');
-                                }}
-                                className="w-[100px] h-[100px] rounded-full flex flex-col items-center justify-center text-center px-1 pointer-events-auto cursor-pointer group transition-transform hover:scale-105 active:scale-95 z-10"
-                                title="Clique para ver o panorama Geral"
-                              >
-                                {(() => {
-                                  const currentHovered = hoveredPieIndex !== null ? donutData[hoveredPieIndex] : null;
-                                  const activeData = currentHovered || (selectedAreaId !== 'geral' ? donutData.find((d) => d.id === selectedAreaId) : null);
-
-                                  if (activeData) {
-                                    return (
-                                      <>
-                                        <span className="text-[9px] uppercase tracking-wider font-bold text-slate-500 dark:text-zinc-400 line-clamp-1 max-w-[100px]">
-                                          {activeData.name}
-                                        </span>
-                                        <span className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white font-sans tabular-nums mt-0.5">
-                                          {activeData.realValue}
-                                        </span>
-                                        <span
-                                          className="text-[9px] font-bold"
-                                          style={{ color: activeData.cor }}
-                                        >
-                                          {activeData.hasData
-                                            ? `${activeData.accuracy}% acerto`
-                                            : '0 resolvidas'}
-                                        </span>
-                                      </>
-                                    );
-                                  }
-
-                                  return (
-                                    <>
-                                      <span className="text-[9px] uppercase tracking-wider font-bold text-slate-500 dark:text-zinc-400">
-                                        VOLUME TOTAL
-                                      </span>
-                                      <span className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white font-sans tabular-nums mt-0.5">
-                                        {totalCoreVolume}
-                                      </span>
-                                      <span className="text-[10px] font-medium text-slate-600 dark:text-zinc-400 group-hover:text-emerald-500 transition-colors">
-                                        6 Grandes Áreas
-                                      </span>
-                                    </>
-                                  );
-                                })()}
-                              </div>
-                            </div>
-                          </div>
-
-                          {/* Seletor Rápido por Cor (Legenda Interativa: Geral + 6 Grandes Áreas) */}
-                          <div className="flex items-center justify-center gap-1.5 flex-wrap pt-1 w-full">
-                            <button
-                              type="button"
-                              onClick={() => setSelectedAreaId('geral')}
-                              className={`px-2 py-0.5 rounded-md text-[10px] font-bold transition-all cursor-pointer flex items-center gap-1 border ${selectedAreaId === 'geral'
-                                ? 'shadow-xs scale-105 border-slate-400 dark:border-zinc-500 bg-slate-200/60 dark:bg-zinc-800 text-slate-900 dark:text-white'
-                                : 'opacity-70 hover:opacity-100 hover:scale-102 border-transparent text-slate-600 dark:text-zinc-400'
-                                }`}
-                              title="Visualizar evolução geral (todas as áreas)"
-                            >
-                              <BarChart2 className="w-2.5 h-2.5" />
-                              <span>Geral</span>
-                            </button>
-                            {areasResumo.map((area) => {
-                              const isSelected = selectedAreaId === area.id;
-                              const shortLabel = area.id === 'clinica' ? 'Clínica' : area.id === 'cirurgia' ? 'Cirurgia' : area.label;
-                              return (
-                                <button
-                                  key={area.id}
-                                  type="button"
-                                  onClick={() => setSelectedAreaId((prev) => (prev === area.id ? 'geral' : area.id))}
-                                  className={`px-2 py-0.5 rounded-md text-[10px] font-bold transition-all cursor-pointer flex items-center gap-1.5 border ${isSelected
-                                    ? 'shadow-xs scale-105'
-                                    : 'opacity-70 hover:opacity-100 hover:scale-102'
-                                    }`}
-                                  style={{
-                                    backgroundColor: isSelected ? `${area.colorHex}22` : 'transparent',
-                                    borderColor: isSelected ? area.colorHex : 'transparent',
-                                    color: isSelected ? area.colorHex : undefined
-                                  }}
-                                  title={`Clique para selecionar ${area.label}`}
-                                >
-                                  <span
-                                    className="w-2 h-2 rounded-full shrink-0"
-                                    style={{ backgroundColor: area.colorHex }}
-                                  />
-                                  <span className="text-slate-700 dark:text-zinc-300">
-                                    {shortLabel}
-                                  </span>
-                                </button>
-                              );
-                            })}
-                          </div>
-                        </div>
-
-                        {/* Gráfico de Evolução da Especialidade Selecionada ou Geral */}
-                        <div className={`${cardConfig.colSpan >= 8 ? 'md:col-span-7' : 'col-span-1'} flex flex-col justify-between space-y-3`}>
-                          {/* Cabeçalho do Gráfico: Filtro de Período (Esquerda) + Legenda Horizontal Inline (Direita - Imagem 3) */}
-                          <div className="flex flex-wrap items-center justify-between gap-3 pb-2 border-b border-slate-100 dark:border-zinc-850">
-                            <div className="flex items-center gap-2">
-                              {/* Botão no canto superior esquerdo para abrir o Modal de Período */}
-                              <button
-                                type="button"
-                                onClick={() => setIsPeriodDrawerOpen(true)}
-                                className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-xl text-xs font-semibold bg-emerald-50 dark:bg-emerald-950/30 text-emerald-700 dark:text-emerald-400 border border-emerald-500/30 hover:bg-emerald-100 dark:hover:bg-emerald-900/40 transition-all cursor-pointer shadow-2xs group"
-                                title="Filtrar período do gráfico"
-                              >
-                                <Calendar className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 group-hover:scale-110 transition-transform" />
-                                <span>{getSpecialtyPeriodLabel()}</span>
-                                <SlidersHorizontal className="w-3 h-3 opacity-60 ml-0.5" />
-                              </button>
-                            </div>
-
-                            {/* Legenda Horizontal Inline (Imagem 3: um do lado do outro) */}
-                            <div className="flex items-center gap-4 text-xs whitespace-nowrap">
-                              <span className="inline-flex items-center gap-1.5 text-slate-600 dark:text-zinc-300 font-medium text-[11px]">
-                                <span className="w-2.5 h-2.5 rounded-xs bg-[#10B981] shrink-0" />
-                                Acertos (topo)
-                              </span>
-                              <span className="inline-flex items-center gap-1.5 text-slate-600 dark:text-zinc-300 font-medium text-[11px]">
-                                <span className="w-2.5 h-2.5 rounded-xs bg-[#F43F5E] shrink-0" />
-                                Erros (base)
-                              </span>
-                              <span className="inline-flex items-center gap-1.5 text-slate-600 dark:text-zinc-300 font-medium text-[11px]">
-                                <span className="w-3.5 h-0.5 bg-slate-400 dark:bg-zinc-400 opacity-60 shrink-0" />
-                                Tendência
-                              </span>
-                            </div>
-                          </div>
-
-                          {/* Gráfico Composto: Barras Empilhadas (Erros base + Acertos topo) + Linha de Tendência */}
-                          <div className="h-52 sm:h-56 w-full pt-1">
-                            <ResponsiveContainer width="100%" height="100%">
-                              <ComposedChart
-                                data={specialtyEvolutionData}
-                                margin={{ top: 10, right: 8, left: -24, bottom: 0 }}
-                              >
-                                <CartesianGrid
-                                  strokeDasharray="3 3"
-                                  vertical={false}
-                                  stroke={mode === 'dark' ? '#27272A' : '#E2E8F0'}
-                                  strokeOpacity={0.6}
-                                />
-                                <XAxis
-                                  dataKey="label"
-                                  minTickGap={16}
-                                  axisLine={{ stroke: mode === 'dark' ? '#27272A' : '#CBD5E1' }}
-                                  tickLine={false}
-                                  tick={{ fill: mode === 'dark' ? '#71717A' : '#64748B', fontSize: 10, fontWeight: 500 }}
-                                  dy={6}
-                                />
-                                <YAxis
-                                  axisLine={false}
-                                  tickLine={false}
-                                  tick={{ fill: mode === 'dark' ? '#71717A' : '#64748B', fontSize: 10 }}
-                                />
-                                <Tooltip
-                                  content={<AreaEvolutionTooltip colorHex={selectedArea.colorHex} areaLabel={selectedArea.label} />}
-                                />
-
-                                {/* Barra Vermelha Abaixo (Erros) */}
-                                <Bar
-                                  dataKey="erros"
-                                  name="Erros (base)"
-                                  stackId="specialtyEvolution"
-                                  fill="#F43F5E"
-                                  maxBarSize={specialtyPeriod === '6m' ? 8 : specialtyPeriod === '3m' ? 12 : 20}
-                                />
-
-                                {/* Barra Verde Acima (Acertos) */}
-                                <Bar
-                                  dataKey="acertos"
-                                  name="Acertos (topo)"
-                                  stackId="specialtyEvolution"
-                                  fill="#10B981"
-                                  radius={[2.5, 2.5, 0, 0]}
-                                  maxBarSize={specialtyPeriod === '6m' ? 8 : specialtyPeriod === '3m' ? 12 : 20}
-                                />
-
-                                {/* Linha Suave de Tendência */}
-                                <Line
-                                  type="monotone"
-                                  dataKey="trendTotal"
-                                  name="Tendência"
-                                  stroke={mode === 'dark' ? '#94A3B8' : '#64748B'}
-                                  strokeWidth={2}
-                                  strokeOpacity={0.5}
-                                  dot={false}
-                                  activeDot={{
-                                    r: 3,
-                                    stroke: mode === 'dark' ? '#94A3B8' : '#64748B',
-                                    strokeWidth: 1.5,
-                                    fill: mode === 'dark' ? '#18181b' : '#ffffff'
-                                  }}
-                                />
-                              </ComposedChart>
-                            </ResponsiveContainer>
-                          </div>
-
-                          {/* Rodapé do Gráfico: Resumo de Acertos e Questões Resolvidas + Botão de Treino */}
-                          <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-2.5 border-t border-slate-100 dark:border-zinc-850">
-                            <div className="flex items-center gap-2 text-xs text-slate-600 dark:text-zinc-400">
-                              <span className="font-semibold text-slate-800 dark:text-zinc-200">
-                                {selectedArea.correct} acertos de {selectedArea.total} questões resolvidas
-                              </span>
-                            </div>
-
-                            <button
-                              type="button"
-                              onClick={() => handlePracticeArea(selectedArea.filterName)}
-                              className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-4 py-1.5 rounded-xl text-white text-xs font-bold transition-all cursor-pointer shadow-xs hover:opacity-95 active:scale-98 shrink-0"
-                              style={{
-                                backgroundColor: selectedArea.colorHex,
-                                boxShadow: `0 2px 8px ${selectedArea.colorHex}33`
+                  {/* Gráfico Donut + Gráfico de Evolução */}
+                  <div className={`grid grid-cols-1 ${cardConfig.colSpan >= 8 ? 'md:grid-cols-12' : 'grid-cols-1'} gap-5 sm:gap-8 items-center pt-1`}>
+                    {/* Donut Chart (Esquerda - 5 cols quando largo, coluna única quando compacto) */}
+                    <div className={`${cardConfig.colSpan >= 8 ? 'md:col-span-5' : 'col-span-1'} flex flex-col items-center justify-center space-y-2`}>
+                      <div className={`h-48 w-full max-w-[220px] relative flex items-center justify-center mx-auto ${!isPieAnimationDone ? 'pointer-events-none' : ''}`}>
+                        <ResponsiveContainer width="100%" height="100%">
+                          <PieChart>
+                            <Pie
+                              data={donutData}
+                              dataKey="value"
+                              nameKey="name"
+                              cx="50%"
+                              cy="50%"
+                              innerRadius={55}
+                              outerRadius={80}
+                              paddingAngle={4}
+                              isAnimationActive={!isPieAnimationDone}
+                              animationBegin={0}
+                              animationDuration={1400}
+                              animationEasing="ease-out"
+                              onAnimationEnd={() => setIsPieAnimationDone(true)}
+                              onMouseEnter={(_, index) => {
+                                if (!isPieAnimationDone) return;
+                                setHoveredPieIndex(index);
                               }}
+                              onMouseLeave={() => {
+                                if (!isPieAnimationDone) return;
+                                setHoveredPieIndex(null);
+                              }}
+                              onClick={(entry: { id?: string; payload?: { id?: string } } | undefined, index: number) => {
+                                if (!isPieAnimationDone) return;
+                                const targetId = entry?.id || entry?.payload?.id || (typeof index === 'number' && donutData[index]?.id);
+                                if (targetId) {
+                                  handlePieSectorClick(targetId);
+                                }
+                              }}
+                              stroke="none"
+                              className="cursor-pointer"
                             >
-                              <Play className="w-3.5 h-3.5 fill-current" />
-                              <span>{selectedAreaId === 'geral' ? 'Treinar Questões Gerais' : `Treinar ${selectedArea.label}`}</span>
-                            </button>
+                              {donutData.map((entry, index) => {
+                                const isSelected = selectedAreaId === entry.id;
+                                const isHovered = hoveredPieIndex === index;
+
+                                let opacity = 1;
+                                if (hoveredPieIndex !== null) {
+                                  opacity = isHovered ? 1 : 0.28;
+                                } else if (selectedAreaId !== 'geral') {
+                                  opacity = isSelected ? 1 : 0.28;
+                                } else {
+                                  opacity = 1;
+                                }
+
+                                return (
+                                  <Cell
+                                    key={`cell-core-${index}`}
+                                    fill={entry.cor}
+                                    opacity={opacity}
+                                    className="transition-opacity duration-200 cursor-pointer outline-none focus:outline-none"
+                                    onClick={(e) => {
+                                      e?.stopPropagation?.();
+                                      if (!isPieAnimationDone) return;
+                                      handlePieSectorClick(entry.id);
+                                    }}
+                                  />
+                                );
+                              })}
+                            </Pie>
+                          </PieChart>
+                        </ResponsiveContainer>
+
+                        {/* Centro do Gráfico Donut (Clique para alternar para o panorama Geral) */}
+                        <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
+                          <div
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              setSelectedAreaId('geral');
+                            }}
+                            className="w-[100px] h-[100px] rounded-full flex flex-col items-center justify-center text-center px-1 pointer-events-auto cursor-pointer group transition-transform hover:scale-105 active:scale-95 z-10"
+                            title="Clique para ver o panorama Geral"
+                          >
+                            {(() => {
+                              const currentHovered = hoveredPieIndex !== null ? donutData[hoveredPieIndex] : null;
+                              const activeData = currentHovered || (selectedAreaId !== 'geral' ? donutData.find((d) => d.id === selectedAreaId) : null);
+
+                              if (activeData) {
+                                return (
+                                  <>
+                                    <span className="text-[9px] uppercase tracking-wider font-bold text-slate-500 dark:text-zinc-400 line-clamp-1 max-w-[100px]">
+                                      {activeData.name}
+                                    </span>
+                                    <span className="text-xl sm:text-2xl font-black text-slate-900 dark:text-white font-sans tabular-nums mt-0.5">
+                                      {activeData.realValue}
+                                    </span>
+                                    <span
+                                      className="text-[9px] font-bold"
+                                      style={{ color: activeData.cor }}
+                                    >
+                                      {activeData.hasData
+                                        ? `${activeData.accuracy}% acerto`
+                                        : '0 resolvidas'}
+                                    </span>
+                                  </>
+                                );
+                              }
+
+                              return (
+                                <>
+                                  <span className="text-[9px] uppercase tracking-wider font-bold text-slate-500 dark:text-zinc-400">
+                                    VOLUME TOTAL
+                                  </span>
+                                  <span className="text-2xl sm:text-3xl font-black text-slate-900 dark:text-white font-sans tabular-nums mt-0.5">
+                                    {totalCoreVolume}
+                                  </span>
+                                  <span className="text-[10px] font-medium text-slate-600 dark:text-zinc-400 group-hover:text-emerald-500 transition-colors">
+                                    6 Grandes Áreas
+                                  </span>
+                                </>
+                              );
+                            })()}
                           </div>
                         </div>
                       </div>
 
-                    {/* VISÃO EXPANDIDA ADAPTATIVA: Benchmark Comparativo das 6 Grandes Áreas */}
-                    {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 550) && (
-                      <div className="pt-3 border-t border-slate-100 dark:border-zinc-800/80 space-y-2 animate-in fade-in duration-200">
-                        <div className="flex items-center justify-between text-xs">
-                          <span className="font-bold text-slate-800 dark:text-zinc-200 flex items-center gap-1.5">
-                            <Sparkles className="w-3.5 h-3.5 text-amber-500" />
-                            Desempenho Detalhado por Grande Área
-                          </span>
-                          <span className="text-[10px] text-slate-400">Taxa de Acertos vs Meta (75%)</span>
+                      {/* Seletor Rápido por Cor (Legenda Interativa: Geral + 6 Grandes Áreas) */}
+                      <div className="flex items-center justify-center gap-1.5 flex-wrap pt-1 w-full">
+                        <button
+                          type="button"
+                          onClick={() => setSelectedAreaId('geral')}
+                          className={`px-2 py-0.5 rounded-md text-[10px] font-bold transition-all cursor-pointer flex items-center gap-1 border ${selectedAreaId === 'geral'
+                            ? 'shadow-xs scale-105 border-slate-400 dark:border-zinc-500 bg-slate-200/60 dark:bg-zinc-800 text-slate-900 dark:text-white'
+                            : 'opacity-70 hover:opacity-100 hover:scale-102 border-transparent text-slate-600 dark:text-zinc-400'
+                            }`}
+                          title="Visualizar evolução geral (todas as áreas)"
+                        >
+                          <BarChart2 className="w-2.5 h-2.5" />
+                          <span>Geral</span>
+                        </button>
+                        {areasResumo.map((area) => {
+                          const isSelected = selectedAreaId === area.id;
+                          const shortLabel = area.id === 'clinica' ? 'Clínica' : area.id === 'cirurgia' ? 'Cirurgia' : area.label;
+                          return (
+                            <button
+                              key={area.id}
+                              type="button"
+                              onClick={() => setSelectedAreaId((prev) => (prev === area.id ? 'geral' : area.id))}
+                              className={`px-2 py-0.5 rounded-md text-[10px] font-bold transition-all cursor-pointer flex items-center gap-1.5 border ${isSelected
+                                ? 'shadow-xs scale-105'
+                                : 'opacity-70 hover:opacity-100 hover:scale-102'
+                                }`}
+                              style={{
+                                backgroundColor: isSelected ? `${area.colorHex}22` : 'transparent',
+                                borderColor: isSelected ? area.colorHex : 'transparent',
+                                color: isSelected ? area.colorHex : undefined
+                              }}
+                              title={`Clique para selecionar ${area.label}`}
+                            >
+                              <span
+                                className="w-2 h-2 rounded-full shrink-0"
+                                style={{ backgroundColor: area.colorHex }}
+                              />
+                              <span className="text-slate-700 dark:text-zinc-300">
+                                {shortLabel}
+                              </span>
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </div>
+
+                    {/* Gráfico de Evolução da Especialidade Selecionada ou Geral */}
+                    <div className={`${cardConfig.colSpan >= 8 ? 'md:col-span-7' : 'col-span-1'} flex flex-col justify-between space-y-3`}>
+                      {/* Cabeçalho do Gráfico: Filtro de Período (Esquerda) + Legenda Horizontal Inline (Direita - Imagem 3) */}
+                      <div className="flex flex-wrap items-center justify-between gap-3 pb-2 border-b border-slate-100 dark:border-zinc-850">
+                        <div className="flex items-center gap-2">
+                          {/* Botão no canto superior esquerdo para abrir o Modal de Período */}
+                          <button
+                            type="button"
+                            onClick={() => setIsPeriodDrawerOpen(true)}
+                            className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-xl text-xs font-semibold bg-emerald-50 dark:bg-emerald-950/30 text-emerald-700 dark:text-emerald-400 border border-emerald-500/30 hover:bg-emerald-100 dark:hover:bg-emerald-900/40 transition-all cursor-pointer shadow-2xs group"
+                            title="Filtrar período do gráfico"
+                          >
+                            <Calendar className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 group-hover:scale-110 transition-transform" />
+                            <span>{getSpecialtyPeriodLabel()}</span>
+                            <SlidersHorizontal className="w-3 h-3 opacity-60 ml-0.5" />
+                          </button>
                         </div>
 
-                        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-1.5 text-[10px]">
-                          {[
-                            { name: 'Clínica', color: '#3b82f6', acertos: '72%', status: 'Forte' },
-                            { name: 'Cirurgia', color: '#ef4444', acertos: '58%', status: 'Atenção' },
-                            { name: 'Ginecologia', color: '#ec4899', acertos: '65%', status: 'Estável' },
-                            { name: 'Obstetrícia', color: '#a855f7', acertos: '70%', status: 'Forte' },
-                            { name: 'Pediatria', color: '#eab308', acertos: '64%', status: 'Estável' },
-                            { name: 'Preventiva', color: '#10b981', acertos: '79%', status: 'Excelente' },
-                          ].map((item, idx) => (
-                            <div
-                              key={idx}
-                              className="p-2 rounded-xl bg-slate-50 dark:bg-zinc-900 border border-slate-200/60 dark:border-zinc-800 flex flex-col justify-between"
-                            >
-                              <div className="flex items-center justify-between">
-                                <span className="font-bold text-slate-700 dark:text-zinc-300">{item.name}</span>
-                                <span
-                                  className="w-1.5 h-1.5 rounded-full"
-                                  style={{ backgroundColor: item.color }}
-                                />
-                              </div>
-                              <div className="flex items-baseline justify-between mt-1">
-                                <span className="font-extrabold text-slate-900 dark:text-zinc-100 text-xs">
-                                  {item.acertos}
-                                </span>
-                                <span className={`text-[9px] font-medium ${item.status === 'Atenção' ? 'text-rose-500' : 'text-slate-400'}`}>
-                                  {item.status}
-                                </span>
-                              </div>
-                            </div>
-                          ))}
+                        {/* Legenda Horizontal Inline (Imagem 3: um do lado do outro) */}
+                        <div className="flex items-center gap-4 text-xs whitespace-nowrap">
+                          <span className="inline-flex items-center gap-1.5 text-slate-600 dark:text-zinc-300 font-medium text-[11px]">
+                            <span className="w-2.5 h-2.5 rounded-xs bg-[#10B981] shrink-0" />
+                            Acertos (topo)
+                          </span>
+                          <span className="inline-flex items-center gap-1.5 text-slate-600 dark:text-zinc-300 font-medium text-[11px]">
+                            <span className="w-2.5 h-2.5 rounded-xs bg-[#F43F5E] shrink-0" />
+                            Erros (base)
+                          </span>
+                          <span className="inline-flex items-center gap-1.5 text-slate-600 dark:text-zinc-300 font-medium text-[11px]">
+                            <span className="w-3.5 h-0.5 bg-slate-400 dark:bg-zinc-400 opacity-60 shrink-0" />
+                            Tendência
+                          </span>
                         </div>
                       </div>
-                    )}
+
+                      {/* Gráfico Composto: Barras Empilhadas (Erros base + Acertos topo) + Linha de Tendência */}
+                      <div className="h-52 sm:h-56 w-full pt-1">
+                        <ResponsiveContainer width="100%" height="100%">
+                          <ComposedChart
+                            data={specialtyEvolutionData}
+                            margin={{ top: 10, right: 8, left: -24, bottom: 0 }}
+                          >
+                            <CartesianGrid
+                              strokeDasharray="3 3"
+                              vertical={false}
+                              stroke={mode === 'dark' ? '#27272A' : '#E2E8F0'}
+                              strokeOpacity={0.6}
+                            />
+                            <XAxis
+                              dataKey="label"
+                              minTickGap={16}
+                              axisLine={{ stroke: mode === 'dark' ? '#27272A' : '#CBD5E1' }}
+                              tickLine={false}
+                              tick={{ fill: mode === 'dark' ? '#71717A' : '#64748B', fontSize: 10, fontWeight: 500 }}
+                              dy={6}
+                            />
+                            <YAxis
+                              axisLine={false}
+                              tickLine={false}
+                              tick={{ fill: mode === 'dark' ? '#71717A' : '#64748B', fontSize: 10 }}
+                            />
+                            <Tooltip
+                              content={<AreaEvolutionTooltip colorHex={selectedArea.colorHex} areaLabel={selectedArea.label} />}
+                            />
+
+                            {/* Barra Vermelha Abaixo (Erros) */}
+                            <Bar
+                              dataKey="erros"
+                              name="Erros (base)"
+                              stackId="specialtyEvolution"
+                              fill="#F43F5E"
+                              maxBarSize={specialtyPeriod === '6m' ? 8 : specialtyPeriod === '3m' ? 12 : 20}
+                            />
+
+                            {/* Barra Verde Acima (Acertos) */}
+                            <Bar
+                              dataKey="acertos"
+                              name="Acertos (topo)"
+                              stackId="specialtyEvolution"
+                              fill="#10B981"
+                              radius={[2.5, 2.5, 0, 0]}
+                              maxBarSize={specialtyPeriod === '6m' ? 8 : specialtyPeriod === '3m' ? 12 : 20}
+                            />
+
+                            {/* Linha Suave de Tendência */}
+                            <Line
+                              type="monotone"
+                              dataKey="trendTotal"
+                              name="Tendência"
+                              stroke={mode === 'dark' ? '#94A3B8' : '#64748B'}
+                              strokeWidth={2}
+                              strokeOpacity={0.5}
+                              dot={false}
+                              activeDot={{
+                                r: 3,
+                                stroke: mode === 'dark' ? '#94A3B8' : '#64748B',
+                                strokeWidth: 1.5,
+                                fill: mode === 'dark' ? '#18181b' : '#ffffff'
+                              }}
+                            />
+                          </ComposedChart>
+                        </ResponsiveContainer>
+                      </div>
+
+                      {/* Rodapé do Gráfico: Resumo de Acertos e Questões Resolvidas + Botão de Treino */}
+                      <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-2.5 border-t border-slate-100 dark:border-zinc-850">
+                        <div className="flex items-center gap-2 text-xs text-slate-600 dark:text-zinc-400">
+                          <span className="font-semibold text-slate-800 dark:text-zinc-200">
+                            {selectedArea.correct} acertos de {selectedArea.total} questões resolvidas
+                          </span>
+                        </div>
+
+                        <button
+                          type="button"
+                          onClick={() => handlePracticeArea(selectedArea.filterName)}
+                          className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-4 py-1.5 rounded-xl text-white text-xs font-bold transition-all cursor-pointer shadow-xs hover:opacity-95 active:scale-98 shrink-0"
+                          style={{
+                            backgroundColor: selectedArea.colorHex,
+                            boxShadow: `0 2px 8px ${selectedArea.colorHex}33`
+                          }}
+                        >
+                          <Play className="w-3.5 h-3.5 fill-current" />
+                          <span>{selectedAreaId === 'geral' ? 'Treinar Questões Gerais' : `Treinar ${selectedArea.label}`}</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* VISÃO EXPANDIDA ADAPTATIVA: Benchmark Comparativo das 6 Grandes Áreas */}
+                  {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 550) && (
+                    <div className="pt-3 border-t border-slate-100 dark:border-zinc-800/80 space-y-2 animate-in fade-in duration-200">
+                      <div className="flex items-center justify-between text-xs">
+                        <span className="font-bold text-slate-800 dark:text-zinc-200 flex items-center gap-1.5">
+                          <Sparkles className="w-3.5 h-3.5 text-amber-500" />
+                          Desempenho Detalhado por Grande Área
+                        </span>
+                        <span className="text-[10px] text-slate-400">Taxa de Acertos vs Meta (75%)</span>
+                      </div>
+
+                      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-1.5 text-[10px]">
+                        {[
+                          { name: 'Clínica', color: '#3b82f6', acertos: '72%', status: 'Forte' },
+                          { name: 'Cirurgia', color: '#ef4444', acertos: '58%', status: 'Atenção' },
+                          { name: 'Ginecologia', color: '#ec4899', acertos: '65%', status: 'Estável' },
+                          { name: 'Obstetrícia', color: '#a855f7', acertos: '70%', status: 'Forte' },
+                          { name: 'Pediatria', color: '#eab308', acertos: '64%', status: 'Estável' },
+                          { name: 'Preventiva', color: '#10b981', acertos: '79%', status: 'Excelente' },
+                        ].map((item, idx) => (
+                          <div
+                            key={idx}
+                            className="p-2 rounded-xl bg-slate-50 dark:bg-zinc-900 border border-slate-200/60 dark:border-zinc-800 flex flex-col justify-between"
+                          >
+                            <div className="flex items-center justify-between">
+                              <span className="font-bold text-slate-700 dark:text-zinc-300">{item.name}</span>
+                              <span
+                                className="w-1.5 h-1.5 rounded-full"
+                                style={{ backgroundColor: item.color }}
+                              />
+                            </div>
+                            <div className="flex items-baseline justify-between mt-1">
+                              <span className="font-extrabold text-slate-900 dark:text-zinc-100 text-xs">
+                                {item.acertos}
+                              </span>
+                              <span className={`text-[9px] font-medium ${item.status === 'Atenção' ? 'text-rose-500' : 'text-slate-400'}`}>
+                                {item.status}
+                              </span>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </section>
               </FigmaCardWrapper>
             );
@@ -5133,284 +5135,6 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                           </div>
                         </div>
                       )}
-                    </div>
-                  )}
-                </section>
-              </FigmaCardWrapper>
-            );
-          }
-          if (cardConfig.id === 'home_carrossel') {
-            return (
-              <FigmaCardWrapper
-                key={cardConfig.id}
-                config={cardConfig}
-                isCustomizing={isCustomizing}
-                isSelected={selectedCardId === cardConfig.id}
-                onSelect={(id) => setSelectedCardId(id)}
-                onUpdateColSpan={updateColSpan}
-                onUpdateHeight={updateCardHeight}
-                onUpdateSettings={updateCardSettings}
-                onMoveCard={moveCard}
-                onToggleVisibility={toggleVisibility}
-                onReorder={reorderCard}
-                onSmartGuidesChange={setSmartGuidesState}
-                allCardsConfig={visibleCards}
-              >
-                {/* 4. Acesso Rápido em Carrossel com Seleção Central */}
-                <section className="space-y-3">
-                  <div className="flex items-center justify-between px-1">
-                    <div className="flex items-center gap-2">
-                      <h3 className="text-[11px] font-bold text-zinc-500 dark:text-zinc-400 uppercase tracking-wider">
-                        Acesso Rápido
-                      </h3>
-                      <span className="text-[10px] text-zinc-400 dark:text-zinc-500">
-                        ({carouselIndex + 1} de {quickNavCards.length})
-                      </span>
-                    </div>
-
-                    <div className="flex items-center gap-1.5">
-
-
-                      {/* Setas de navegação ergonômicas */}
-                      <Button
-                        type="button"
-                        variant="secondary"
-                        size="icon"
-                        onClick={handlePrevCard}
-                        className="w-8 h-8 rounded-lg shadow-2xs"
-                        title="Card anterior"
-                        aria-label="Card anterior"
-                      >
-                        <ChevronLeft className="w-4 h-4" />
-                      </Button>
-                      <Button
-                        type="button"
-                        variant="secondary"
-                        size="icon"
-                        onClick={handleNextCard}
-                        className="w-8 h-8 rounded-lg shadow-2xs"
-                        title="Próximo card"
-                        aria-label="Próximo card"
-                      >
-                        <ChevronRight className="w-4 h-4" />
-                      </Button>
-                    </div>
-                  </div>
-
-                  {/* Carrossel: 1 Card Central em Destaque + 2 Cards Laterais Prévios */}
-                  {(() => {
-                    const prevIndex = (carouselIndex - 1 + quickNavCards.length) % quickNavCards.length;
-                    const nextIndex = (carouselIndex + 1) % quickNavCards.length;
-                    const prevCard = quickNavCards[prevIndex];
-                    const activeCard = quickNavCards[carouselIndex];
-                    const nextCard = quickNavCards[nextIndex];
-                    const PrevIcon = prevCard.icon;
-                    const ActiveIcon = activeCard.icon;
-                    const NextIcon = nextCard.icon;
-
-                    return (
-                      <div className="space-y-3">
-                        <div className="relative flex items-center justify-center gap-2 sm:gap-4 py-1 overflow-hidden select-none">
-                          {/* Card Esquerdo (Anterior) */}
-                          <div
-                            onClick={() => {
-                              setSlideDirection('left');
-                              setCarouselIndex(prevIndex);
-                            }}
-                            className="hidden md:flex flex-col justify-between p-3.5 rounded-2xl border border-zinc-200/80 dark:border-zinc-800/80 bg-white/70 dark:bg-[#121215]/70 hover:bg-white dark:hover:bg-[#121215] opacity-55 hover:opacity-85 scale-90 cursor-pointer transition-all duration-300 w-48 lg:w-56 h-36 shrink-0 shadow-2xs"
-                          >
-                            <div className="flex items-center justify-between">
-                              <div
-                                className="w-8 h-8 rounded-lg flex items-center justify-center border"
-                                style={{
-                                  backgroundColor: accentConfig.bgRgba,
-                                  borderColor: accentConfig.borderRgba,
-                                  color: accentConfig.primaryHex
-                                }}
-                              >
-                                <PrevIcon className="w-4 h-4" />
-                              </div>
-
-                            </div>
-                            <div>
-                              <h4 className="font-heading text-xs font-bold text-zinc-700 dark:text-zinc-300 truncate">
-                                {prevCard.title}
-                              </h4>
-                              <p className="text-[10px] text-zinc-400 dark:text-zinc-500 truncate mt-0.5">
-                                {prevCard.subtitle}
-                              </p>
-                            </div>
-                          </div>
-
-                          {/* Card Central (Selecionado / Ativo) */}
-                          <div
-                            key={carouselIndex}
-                            onClick={() => onNavigate(activeCard.tab as ActiveTab)}
-                            className={`bento-card relative z-10 w-full max-w-sm sm:max-w-md h-38 sm:h-40 p-4 sm:p-5 rounded-2xl bg-white dark:bg-[#121215] border border-slate-200/90 dark:border-zinc-800 shadow-sm hover:shadow-md hover:border-slate-300 dark:hover:border-zinc-700 transition-all duration-300 cursor-pointer flex flex-col justify-between group hover:-translate-y-0.5 active:scale-99 animate-in fade-in duration-300 ease-out ${slideDirection === 'right' ? 'slide-in-from-right-4' : 'slide-in-from-left-4'}`}
-                          >
-                            {/* Topo do Card Central: Ícone em Destaque + Badge e Atalho */}
-                            <div className="flex items-center justify-between w-full">
-                              <div className="flex items-center gap-3">
-                                <div
-                                  className="w-10 h-10 rounded-xl flex items-center justify-center border shadow-xs transition-transform duration-200 group-hover:scale-105"
-                                  style={{
-                                    backgroundColor: accentConfig.bgRgba,
-                                    borderColor: accentConfig.borderRgba,
-                                    color: accentConfig.primaryHex
-                                  }}
-                                >
-                                  <ActiveIcon className="w-5 h-5" />
-                                </div>
-                                <div>
-                                  <div className="flex items-center gap-2">
-                                    <h4 className="font-heading text-base font-bold text-zinc-900 dark:text-white leading-tight">
-                                      {activeCard.title}
-                                    </h4>
-                                    {activeCard.countBadge !== null && activeCard.countBadge !== undefined && (
-                                      <Badge
-                                        variant="theme"
-                                        size="sm"
-                                        style={{
-                                          backgroundColor: accentConfig.bgRgba,
-                                          borderColor: accentConfig.borderRgba,
-                                          color: accentConfig.primaryHex
-                                        }}
-                                      >
-                                        {activeCard.countBadge}
-                                      </Badge>
-                                    )}
-                                  </div>
-                                  <p className="text-xs text-zinc-500 dark:text-zinc-400 font-medium mt-0.5 truncate max-w-[220px] sm:max-w-[280px]">
-                                    {activeCard.subtitle}
-                                  </p>
-                                </div>
-                              </div>
-
-
-                            </div>
-
-                            {/* Rodapé do Card Central: Botão de Ação Direta */}
-                            <div className="pt-2 flex items-center justify-end border-t border-zinc-100 dark:border-zinc-800/80">
-                              <div
-                                className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-bold text-white shadow-xs group-hover:opacity-95 transition-opacity"
-                                style={{ backgroundColor: accentConfig.primaryHex }}
-                              >
-                                <span>Acessar {activeCard.title}</span>
-                                <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
-                              </div>
-                            </div>
-                          </div>
-
-                          {/* Card Direito (Próximo) */}
-                          <div
-                            onClick={() => {
-                              setSlideDirection('right');
-                              setCarouselIndex(nextIndex);
-                            }}
-                            className="hidden md:flex flex-col justify-between p-3.5 rounded-2xl border border-zinc-200/80 dark:border-zinc-800/80 bg-white/70 dark:bg-[#121215]/70 hover:bg-white dark:hover:bg-[#121215] opacity-55 hover:opacity-85 scale-90 cursor-pointer transition-all duration-300 w-48 lg:w-56 h-36 shrink-0 shadow-2xs"
-                          >
-                            <div className="flex items-center justify-between">
-                              <div
-                                className="w-8 h-8 rounded-lg flex items-center justify-center border"
-                                style={{
-                                  backgroundColor: accentConfig.bgRgba,
-                                  borderColor: accentConfig.borderRgba,
-                                  color: accentConfig.primaryHex
-                                }}
-                              >
-                                <NextIcon className="w-4 h-4" />
-                              </div>
-
-                            </div>
-                            <div>
-                              <h4 className="font-heading text-xs font-bold text-zinc-700 dark:text-zinc-300 truncate">
-                                {nextCard.title}
-                              </h4>
-                              <p className="text-[10px] text-zinc-400 dark:text-zinc-500 truncate mt-0.5">
-                                {nextCard.subtitle}
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-
-                        {/* Indicador de Bolinhas (Dots) Minimalistas */}
-                        <div className="flex items-center justify-center gap-1.5 pt-0.5">
-                          {quickNavCards.map((c, idx) => {
-                            const isActive = idx === carouselIndex;
-                            return (
-                              <button
-                                key={c.tab}
-                                type="button"
-                                onClick={() => {
-                                  setSlideDirection(idx >= carouselIndex ? 'right' : 'left');
-                                  setCarouselIndex(idx);
-                                }}
-                                className={`transition-all duration-300 cursor-pointer ${isActive
-                                  ? 'w-6 h-1.5 rounded-full'
-                                  : 'w-1.5 h-1.5 rounded-full bg-zinc-300 dark:bg-zinc-700 hover:bg-zinc-400 dark:hover:bg-zinc-600'
-                                  }`}
-                                style={{
-                                  backgroundColor: isActive ? accentConfig.primaryHex : undefined
-                                }}
-                                title={`Ir para ${c.title}`}
-                              />
-                            );
-                          })}
-                        </div>
-                      </div>
-                    );
-                  })()}
-
-                  {/* VISÃO EXPANDIDA ADAPTATIVA: Grid de Navegação Direta de Todos os Módulos */}
-                  {Boolean(cardConfig.customHeight && cardConfig.customHeight >= 260) && (
-                    <div className="pt-3 border-t border-zinc-100 dark:border-zinc-800/80 space-y-2 animate-in fade-in duration-200">
-                      <div className="flex items-center justify-between text-xs px-1">
-                        <span className="font-bold text-zinc-700 dark:text-zinc-300 flex items-center gap-1.5">
-                          <Layers className="w-3.5 h-3.5 text-blue-500" />
-                          Acesso Rápido a Todos os Módulos
-                        </span>
-                        <span className="text-[10px] text-zinc-400">Navegação Expressa</span>
-                      </div>
-
-                      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2">
-                        {quickNavCards.map((nav, idx) => {
-                          const NavIcon = nav.icon;
-                          return (
-                            <button
-                              key={idx}
-                              type="button"
-                              onClick={() => onNavigate(nav.tab as ActiveTab)}
-                              className="p-2.5 rounded-xl border border-zinc-200/80 dark:border-zinc-800 bg-zinc-50/60 dark:bg-zinc-900/40 hover:bg-zinc-100 dark:hover:bg-zinc-800 hover:border-blue-400 transition-all text-left flex flex-col justify-between group/nav cursor-pointer"
-                            >
-                              <div className="flex items-center justify-between">
-                                <div
-                                  className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0 border"
-                                  style={{
-                                    backgroundColor: accentConfig.bgRgba,
-                                    borderColor: accentConfig.borderRgba,
-                                    color: accentConfig.primaryHex
-                                  }}
-                                >
-                                  <NavIcon className="w-3.5 h-3.5" />
-                                </div>
-                                {nav.countBadge !== null && nav.countBadge !== undefined && (
-                                  <span className="text-[9px] font-bold px-1.5 py-0.2 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 border border-blue-500/20">
-                                    {nav.countBadge}
-                                  </span>
-                                )}
-                              </div>
-                              <div className="mt-1.5">
-                                <div className="text-[11px] font-bold text-zinc-800 dark:text-zinc-200 group-hover/nav:text-blue-600 dark:group-hover/nav:text-blue-400 transition-colors truncate">
-                                  {nav.title}
-                                </div>
-                                <div className="text-[9px] text-zinc-400 truncate">
-                                  {nav.subtitle}
-                                </div>
-                              </div>
-                            </button>
-                          );
-                        })}
-                      </div>
                     </div>
                   )}
                 </section>
@@ -6346,14 +6070,14 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
 
                     {/* GRID PRINCIPAL EM 2 COLUNAS (5 COLS ESQUERDA / 7 COLS DIREITA) */}
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 items-start">
-                      
+
                       {/* ── COLUNA ESQUERDA: CONTROLE, MÉTRICAS, IA & ENERGIA COGNITIVA (lg:col-span-5) ── */}
                       <div className="lg:col-span-5 space-y-4">
-                        
+
                         {/* 1. Status Compacto do Google Agenda */}
                         <div className={`p-4 rounded-2xl border transition-all ${isGoogleCalendarConnected
-                            ? 'bg-blue-500/10 border-blue-500/30'
-                            : 'bg-zinc-50 dark:bg-zinc-900/60 border-zinc-200 dark:border-zinc-800'
+                          ? 'bg-blue-500/10 border-blue-500/30'
+                          : 'bg-zinc-50 dark:bg-zinc-900/60 border-zinc-200 dark:border-zinc-800'
                           }`}>
                           <div className="flex items-center justify-between gap-3">
                             <div className="flex items-center gap-2.5 min-w-0">
@@ -6366,8 +6090,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                                     {isGoogleCalendarConnected ? 'Google Agenda' : 'Google Agenda'}
                                   </h4>
                                   <span className={`px-1.5 py-0.2 rounded-full text-[9px] font-bold ${isGoogleCalendarConnected
-                                      ? 'bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30'
-                                      : 'bg-zinc-200 dark:bg-zinc-800 text-zinc-500'
+                                    ? 'bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30'
+                                    : 'bg-zinc-200 dark:bg-zinc-800 text-zinc-500'
                                     }`}>
                                     {isGoogleCalendarConnected ? 'Ativa' : 'Desconectada'}
                                   </span>
@@ -7034,7 +6758,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
         </div>
       )}
 
-{/* 5. MODAL DE CONEXÃO COM GOOGLE AGENDA */}
+      {/* 5. MODAL DE CONEXÃO COM GOOGLE AGENDA */}
       {isGoogleModalOpen && (
         <div
           className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4 animate-in fade-in duration-200"
@@ -7073,8 +6797,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 type="button"
                 onClick={() => setCalendarSyncMode('api')}
                 className={`flex-1 py-2 text-xs font-bold rounded-xl transition-all cursor-pointer flex items-center justify-center gap-1.5 ${calendarSyncMode === 'api'
-                    ? 'bg-white dark:bg-zinc-900 text-blue-600 dark:text-blue-400 shadow-xs'
-                    : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
+                  ? 'bg-white dark:bg-zinc-900 text-blue-600 dark:text-blue-400 shadow-xs'
+                  : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
                   }`}
               >
                 <GoogleIcon className="w-3.5 h-3.5" />
@@ -7085,8 +6809,8 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                 type="button"
                 onClick={() => setCalendarSyncMode('ical')}
                 className={`flex-1 py-2 text-xs font-bold rounded-xl transition-all cursor-pointer flex items-center justify-center gap-1.5 ${calendarSyncMode === 'ical'
-                    ? 'bg-white dark:bg-zinc-900 text-blue-600 dark:text-blue-400 shadow-xs'
-                    : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
+                  ? 'bg-white dark:bg-zinc-900 text-blue-600 dark:text-blue-400 shadow-xs'
+                  : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white'
                   }`}
               >
                 <Calendar className="w-3.5 h-3.5 text-zinc-500" />
@@ -7341,11 +7065,10 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                     key={mins}
                     type="button"
                     onClick={() => setCustomDelayMinutes(mins)}
-                    className={`py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
-                      customDelayMinutes === mins
-                        ? 'bg-rose-600 text-white shadow-xs'
-                        : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700'
-                    }`}
+                    className={`py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${customDelayMinutes === mins
+                      ? 'bg-rose-600 text-white shadow-xs'
+                      : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-700'
+                      }`}
                   >
                     +{mins}m
                   </button>
@@ -7468,11 +7191,10 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
                         key={cat.id}
                         type="button"
                         onClick={() => setManualSlotCategory(cat.id as any)}
-                        className={`p-2 rounded-xl text-xs font-bold transition-all cursor-pointer flex flex-col items-center gap-1 border ${
-                          isSelected
-                            ? 'bg-blue-600 text-white border-blue-600 shadow-xs'
-                            : 'bg-zinc-50 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 border-zinc-200 dark:border-zinc-700 hover:text-zinc-900 dark:hover:text-white'
-                        }`}
+                        className={`p-2 rounded-xl text-xs font-bold transition-all cursor-pointer flex flex-col items-center gap-1 border ${isSelected
+                          ? 'bg-blue-600 text-white border-blue-600 shadow-xs'
+                          : 'bg-zinc-50 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 border-zinc-200 dark:border-zinc-700 hover:text-zinc-900 dark:hover:text-white'
+                          }`}
                       >
                         <CatIcon className="w-4 h-4" />
                         <span className="text-[10px]">{cat.label}</span>

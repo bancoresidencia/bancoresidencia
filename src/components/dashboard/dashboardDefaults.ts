@@ -46,20 +46,20 @@ export const DEFAULT_HOME_CARDS: DashboardCardConfig[] = [
     settings: { showIcons: true, showDetails: true, compactMode: false }
   },
   {
-    id: 'home_recomendacao',
-    title: 'Recomendação do Dia',
-    colSpan: 6,
-    minColSpan: 3,
+    id: 'home_agenda',
+    title: 'Agenda de Estudos',
+    colSpan: 8,
+    minColSpan: 4,
     minHeight: 65,
-    maxHeight: 360,
+    maxHeight: 340,
     order: 4,
     isVisible: true,
     settings: { showIcons: true, showDetails: true, compactMode: false }
   },
   {
     id: 'home_retencao',
-    title: 'Retenção & Repetição',
-    colSpan: 6,
+    title: 'Atalhos',
+    colSpan: 4,
     minColSpan: 3,
     minHeight: 65,
     maxHeight: 340,
@@ -79,12 +79,12 @@ export const DEFAULT_HOME_CARDS: DashboardCardConfig[] = [
     settings: { showIcons: true, showDetails: true, compactMode: false }
   },
   {
-    id: 'home_agenda',
-    title: 'Agenda do Dia',
+    id: 'home_recomendacao',
+    title: 'Recomendação do Dia',
     colSpan: 6,
     minColSpan: 3,
     minHeight: 65,
-    maxHeight: 310,
+    maxHeight: 360,
     order: 7,
     isVisible: true,
     settings: { showIcons: true, showDetails: true, compactMode: false }
@@ -110,18 +110,7 @@ export const DEFAULT_HOME_CARDS: DashboardCardConfig[] = [
     order: 9,
     isVisible: true,
     settings: { showIcons: true, showDetails: true, compactMode: false }
-  },
-  {
-    id: 'home_carrossel',
-    title: 'Acesso Rápido / Atalhos',
-    colSpan: 12,
-    minColSpan: 4,
-    minHeight: 65,
-    maxHeight: 550,
-    order: 10,
-    isVisible: true,
-    settings: { showIcons: true, showDetails: true, compactMode: false }
-  },
+  }
 ];
 
 export const DEFAULT_STATS_OVERVIEW_CARDS: DashboardCardConfig[] = [
