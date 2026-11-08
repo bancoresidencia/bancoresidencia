@@ -8,105 +8,58 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 <!-- END:nextjs-agent-rules -->
 
-# Banco Residência — Guia Rápido de Contexto para Agentes (Token-Optimized)
+# Banco Residência — Diretrizes para Agentes
 
-Plataforma médica de alto desempenho para preparação a Residência Médica, Revalida e Especialidades (R+/Títulos), combinando banco de questões, métricas psicométricas (TRI/IRT), provas oficiais na íntegra, curadoria de gabaritos e base de conhecimento clínico.
+## Propósito
+Plataforma de preparação de alto padrão para Residência Médica, Revalida e Especialidades (R+).
+Combina banco de questões com resoluções comentadas, psicometria (TRI/IRT), flashcards (repetição espaçada), resumos teóricos oficiais e métricas analíticas de estudo.
 
----
+## Mapa do Projeto
+- `src/app/(platform)`, `(admin)` e `(checkout)` são route groups com regras de acesso e layouts distintos.
+- O modelo psicométrico da TRI fica em `src/utils/irtModel.ts` (qualquer alteração exige `npm run test:irt`).
+- Documentação técnica e especificações de arquitetura estão em `docs/`.
 
-## ⚡ Stack Tecnológico
+## Limites Críticos e Segurança
 
-| Camada | Tecnologia | Detalhes |
-| :--- | :--- | :--- |
-| **Framework** | Next.js 16.3.8 + React 19.2.8 | App Router, Turbopack |
-| **Estilos** | Tailwind CSS v4 | `@tailwindcss/postcss`, PostCSS |
-| **Visualização** | Recharts 3.10.1 | Gráficos de evolução, radar e distribuição |
-| **Ícones** | Lucide React | Biblioteca padrão de ícones |
-| **Backend & Storage**| Supabase (`@supabase/supabase-js`)| Auth, Postgres, Storage (`medical-knowledge`) |
-| **Automação/ETL** | Node.js (ESM), Python 3, Playwright | Crawlers, parsing de PDFs de bancas, sync de gabaritos |
+### Banco de Dados e Supabase
+- **Migrações e RLS:** Mudanças de schema ocorrem exclusivamente via migrações (`npx supabase migration new <nome>` em `supabase/migrations/`). Nunca edite migrações já aplicadas. Nunca desabilite Row Level Security (RLS) nas tabelas.
+- **Separação de Clientes:**
+  - `src/lib/supabase/client.ts` (`createClient`): exclusivo para Client Components (`'use client'`). Usa apenas `NEXT_PUBLIC_` keys.
+  - `src/lib/supabase/server.ts`: para Server Components e rotas normais de estudante (mantém RLS sob o token de sessão do usuário).
+  - `src/lib/supabase/adminClient.ts` (`getSupabaseAdmin`): restrito a jobs/webhooks internos e rotas administrativas protegidas (`isPrivilegedRole`). Nunca importe em Client Components nem use em rotas públicas.
+- **Variáveis de Ambiente:** Ver `.env.example`. Nenhuma variável privada pode ter prefixo `NEXT_PUBLIC_`; as chaves `SERVICE_ROLE`, `ACCESS_TOKEN`, `WEBHOOK_SECRET` e `GEMINI` são sempre server-only e nunca devem ser versionadas.
 
----
+### Alunos, Pagamentos e IA
+- **Dados do Aluno e BOLA/IDOR:** O `userId` deve ser extraído sempre da sessão autenticada (`supabase.auth.getUser()`), nunca aceito cegamente do payload ou query do cliente. Nunca logue PII (CPF, senhas, e-mails).
+- **Ativação de Assinaturas (Mercado Pago):** Ao receber notificação no webhook, valide a assinatura HMAC `x-signature` com `crypto.timingSafeEqual`. Nunca desative, comente ou crie bypass para essa verificação (nem para testes). Busque o pagamento diretamente na API do Mercado Pago pelo ID, confirme status `approved`, valide o valor esperado e vincule o plano ao aluno via `external_reference`/`metadata` gravado na criação da preferência — nunca por dados não verificados do corpo do webhook. Garanta idempotência via restrição única de `payment_id` no banco.
+- **Rotas de IA (`/api/ai/*`):** Autenticação de sessão obrigatória. Valide tamanho máximo de input e aplique rate limit via `isAiRateLimited` (`src/lib/aiProtection.ts`) para mitigar DoS e abuso de custos. A saída do modelo nunca deve ser executada nem renderizada como HTML sem sanitização estrita.
+- **Proteção de Questões:** Em listagens públicas (`/api/questions`), omita `correct_answer` e `commentary` para usuários sem papel de curador/admin (`SAFE_QUESTION_COLUMNS`). Sanitize buscas dinâmicas com `sanitizePostgrestTerm` (`src/utils/security.ts`).
+- **Conteúdo Médico:** Nunca altere gabaritos, assertivas ou comentários médicos em massa sem validação e curadoria humana explícita.
 
-## 📁 Estrutura Essencial do Projeto
+## Comandos Operacionais
 
-```
-bancoresidencia/
-├── src/
-│   ├── app/
-│   │   ├── page.tsx               # Orquestrador SPA (Dashboard, Questões, Provas, Ranking, Curadoria)
-│   │   ├── layout.tsx             # Root layout (Auth & Theme providers, fontes)
-│   │   └── globals.css            # Variáveis CSS e estilos base Tailwind v4
-│   ├── components/                # Componentes modulares
-│   │   ├── QuestionCard.tsx       # Renderizador de questão, alternativas, comentários e gabarito
-│   │   ├── AdvancedQuestionFilters.tsx # Filtros multicritério (banca, área, ano, foco)
-│   │   ├── StatsDashboard.tsx     # Métricas, KPIs, Recharts, TRI e percentil
-│   │   ├── OfficialExams.tsx      # Visualizador de provas oficiais na íntegra
-│   │   ├── ListManager.tsx        # Gestão de cadernos de questões e pastas
-│   │   ├── AdminCuradoriaGabaritos.tsx # Painel de homologação de gabaritos
-│   │   └── StudentHomeDashboard.tsx # Home personalizada do estudante
-│   ├── context/
-│   │   ├── AuthContext.tsx        # Sessão do usuário (Supabase / local fallback)
-│   │   └── ThemeContext.tsx       # Gerenciamento de tema (Dark/Light/Accent)
-│   ├── data/                      # Catálogos estáticos e dados médicos locais
-│   │   ├── medicalKnowledgeCatalog.json # Índice dos 341 livros / 15k chunks
-│   │   ├── hierarchyCounts.ts     # Contadores da árvore de especialidades
-│   │   └── officialExamsData.json # Provas oficiais mapeadas
-│   ├── services/
-│   │   ├── questionService.ts     # Busca, filtros e paginação de questões
-│   │   ├── officialExamsService.ts# Recuperação de exames na íntegra
-│   │   └── medicalKnowledgeService.ts # Acesso à base de livros no Supabase
-│   ├── types/
-│   │   ├── index.ts               # Tipos centrais: Question, AdvancedFilterState, UserStats
-│   │   ├── auth.ts                # Tipagens de usuário e sessão
-│   │   └── officialExams.ts       # Estruturas de prova e caderno oficial
-│   └── utils/
-│       ├── irtModel.ts            # Teoria de Resposta ao Item (TRI) e score de proficiência
-│       ├── percentile.ts          # Normalização e cálculo de percentil comparativo
-│       └── modalidades.ts         # Agrupamentos de Residência / Revalida / R+
-├── scripts/                       # Pipelines de coleta, OCR, parsing e upload de gabaritos
-│   ├── safe-pull.mjs              # Pull seguro com auto-stash
-│   ├── safe-submit.mjs            # Push seguro com validações
-│   └── sync_knowledge_from_supabase.mjs # Sincronização da base médica
-└── docs/                          # Documentação técnica e arquitetura de dados
-```
+- **Dev:** `npm run dev`
+- **Definição de Pronto (Definition of Done):** `npm run lint && npm run build && npm test && npm run test:security`
+- **Rodar Teste Único:** `npx tsx tests/<arquivo>.test.ts`
+- **Tipos do Banco:** `npm run db:types`
+- **Git Seguro:** `npm run pull` e `npm run submit`. Nunca execute `git push` manual nem utilize `--no-verify`.
 
----
+## Regras de Engenharia
 
-## 🧬 Domínio e Regras de Negócio
+- **Dependências:** Pergunte ao usuário antes de adicionar qualquer dependência nova ao projeto.
+- **Tipagem Estrita:** Sem `any`, `as any`, `@ts-ignore` ou `@ts-expect-error` para mascarar erros.
+- **Arquitetura Modular:** Mantenha arquivos sob ~350 linhas. Isole interface em `src/components/`, lógica de negócio em `src/services/` e cálculos puros em `src/utils/`. Rotas de API devem tratar erros com `try/catch` e responder JSON com status HTTP semânticos.
+- **KaTeX / Fórmulas:** Delimitadores válidos obrigatórios (`$...$` inline, `$$...$$` em blocos isolados), prevenindo sintaxe crua.
+- **Idioma e Convenções:**
+  - UI, feedbacks e conteúdo médico: `pt-BR`.
+  - Código novo (funções, componentes, tipos, variáveis genéricas e commits): `inglês`.
+  - Exceção de domínio: termos médicos e colunas de banco permanecem em português para preservar fidelidade às bancas (`especialidade`, `tema`, `foco`, `subfoco`, `banca`, `gabarito`, `anulada`, `simulado`, `caderno`).
+- **Preservação de Blocos:** O cabeçalho `<!-- BEGIN:nextjs-agent-rules --> ... <!-- END:nextjs-agent-rules -->` é mandatório e nunca deve ser removido.
 
-1. **Hierarquia Clínica**:
-   - `Especialidade` → `Tema` → `Foco` → `Subfoco`.
-   - 21 Especialidades com 341 livros estruturados no Supabase Storage (`medical-knowledge`).
-2. **Modelo de Resolução de Questões**:
-   - Alternativas A-E com justificativas específicas por opção.
-   - Explicação padrão-ouro: fisiopatologia, conduta, referências e mensagem "take home".
-3. **Métricas Psicométricas**:
-   - `irtModel.ts`: estima proficiência com base no parâmetro de discriminação ($a$), dificuldade ($b$) e acerto ao acaso ($c$).
-   - `percentile.ts`: classifica desempenho relativo em faixas visuais de percentile.
-4. **Curadoria de Gabaritos**:
-   - Status de homologação por banca/ano (ENARE, USP, AMRIGS, PSU-MG, SES-PE, etc.).
-   - Processamento contínuo em `scripts/` para resolução de gabaritos anulados ou divergentes.
+## Stack Tecnológico
 
----
-
-## 🛠️ Comandos Principais
-
-| Ação | Comando |
-| :--- | :--- |
-| **Iniciar Dev** | `npm run dev` (porta 3000 com Turbopack) |
-| **Lint** | `npm run lint` |
-| **Testar Modelo TRI** | `npm run test:irt` |
-| **Git Pull Seguro** | `npm run pull` ou `pull.bat` (executa `safe-pull.mjs`) |
-| **Git Push Seguro** | `npm run submit` ou `submit.bat` (executa `safe-submit.mjs`) |
-| **Sync Base Médica** | `npm run pull:knowledge` (baixa chunks do Supabase Storage) |
-| **Status Gabaritos** | `npm run status:gabaritos` |
-
----
-
-## 🤖 Diretrizes Críticas para Agentes (Token Optimization)
-
-- **Leituras Cirúrgicas**: O arquivo `src/app/page.tsx` possui ~2.000 linhas e arquivos em `src/data/` possuem dezenas de milhares de linhas. **Nunca carregue arquivos inteiros quando apenas trechos específicos forem necessários**. Use `view_file` com `StartLine` e `EndLine`, ou `grep_search`.
-- **Edições Modulares**: Prefira editar subcomponentes dedicados em `src/components/` ou utilitários em `src/utils/` antes de inflar o `page.tsx`.
-- **Preserve o Bloco Next.js**: Não remova o bloco `<!-- BEGIN:nextjs-agent-rules -->` deste arquivo; ele é sincronizado automaticamente pelo Next.js.
-- **Segurança de Git**: Ao sugerir ou executar sincronizações no repositório, utilize sempre `safe-pull.mjs` e `safe-submit.mjs` para evitar perdas em arquivos de curadoria não versionados.
-- **Tipagem Estrita**: Respeite os tipos em `src/types/index.ts`. Qualquer campo adicionado a `Question` ou `AdvancedFilterState` deve ser tipado e propagado de forma retrocompatível.
+- **Frontend:** Next.js (App Router, Turbopack), React, Tailwind CSS
+- **Linguagem:** TypeScript
+- **Backend & Dados:** Supabase (PostgreSQL, Auth, Row Level Security, Storage)
+- **Visualização & UI:** Recharts, Mermaid, Lucide React
+- **Pagamentos & Automação:** Mercado Pago SDK, Playwright
