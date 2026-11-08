@@ -147,3 +147,11 @@ supabase/.temp/
 # Ignore full data folder except README
 /data/
 !/data/README.md
+
+# Rascunhos, relatorios locais e arquivos de sessao de scripts
+.reports/
+scratch/
+coletor_gabaritos/
+docs/*.pdf
+scripts/*.json
+!scripts/package.json
