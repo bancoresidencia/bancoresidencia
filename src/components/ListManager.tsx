@@ -20,6 +20,7 @@ import { Folder, QuestionList, AdvancedFilterState } from '@/types';
 import { AdvancedQuestionFilters } from './AdvancedQuestionFilters';
 import { useTheme } from '@/context/ThemeContext';
 import { fetchQuestionsFromSupabase } from '@/services/questionService';
+import { homologatedDiretoBaseline, homologatedRevalidaBaseline } from '@/data/homologatedFacetsBaseline';
 
 interface ListManagerProps {
   folders: Folder[];
@@ -84,7 +85,7 @@ export const ListManager: React.FC<ListManagerProps> = ({
     aleatorizar: false
   });
   const [filterError, setFilterError] = useState<string | null>(null);
-  const [dynamicFilteredCount, setDynamicFilteredCount] = useState<number>(121635);
+  const [dynamicFilteredCount, setDynamicFilteredCount] = useState<number>(homologatedDiretoBaseline.total);
 
   useEffect(() => {
     if (!isCreatingList) return;
@@ -575,7 +576,11 @@ export const ListManager: React.FC<ListManagerProps> = ({
                   ultimos5Anos: false
                 })
               }
-              totalAvailable={121635}
+              totalAvailable={
+                listFilters.modalidades?.length === 1 && listFilters.modalidades[0] === 'Revalida'
+                  ? homologatedRevalidaBaseline.total
+                  : homologatedDiretoBaseline.total
+              }
               totalFiltered={dynamicFilteredCount}
               onCreateListFromFilter={() => {}}
               embedded={true}

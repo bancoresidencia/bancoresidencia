@@ -8,7 +8,8 @@ import {
   SlidersHorizontal,
   Eye,
   EyeOff,
-  RotateCcw
+  RotateCcw,
+  Loader2
 } from 'lucide-react';
 import { useAuth } from '@/context/AuthContext';
 import { useTabAvailability } from '@/context/TabAvailabilityContext';
@@ -28,6 +29,7 @@ export const AdminTabToggle: React.FC = () => {
   } = useTabAvailability();
 
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [isPending, setIsPending] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   // Fecha dropdown ao clicar fora
@@ -57,15 +59,37 @@ export const AdminTabToggle: React.FC = () => {
         {currentTab ? (
           <button
             type="button"
-            onClick={() => toggleTab(currentTab.key)}
+            disabled={isPending}
+            onClick={async () => {
+              try {
+                setIsPending(true);
+                if (isCurrentActive) {
+                  // Bloqueia a aba e ativa visualização imediata da tela opaca
+                  await toggleTab(currentTab.key, false);
+                  setPreviewAsStudent(true);
+                } else {
+                  // Desbloqueia a aba e desativa a visualização de aluno
+                  await toggleTab(currentTab.key, true);
+                  setPreviewAsStudent(false);
+                }
+              } finally {
+                setIsPending(false);
+              }
+            }}
             className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg transition-all cursor-pointer ${
               isCurrentActive
                 ? 'bg-emerald-500/15 text-emerald-700 dark:text-emerald-400 hover:bg-emerald-500/25 border border-emerald-500/20'
                 : 'bg-amber-500/15 text-amber-700 dark:text-amber-400 hover:bg-amber-500/25 border border-amber-500/20'
-            }`}
-            title={`Clique para ${isCurrentActive ? 'desativar (Em Breve)' : 'ativar'} a aba ${currentTab.label} para os alunos`}
+            } ${isPending ? 'opacity-70 pointer-events-none' : ''}`}
+            title={`Clique para ${isCurrentActive ? 'bloquear (Em Breve)' : 'ativar'} a aba ${currentTab.label} para os alunos`}
           >
-            {isCurrentActive ? (
+            {isPending ? (
+              <>
+                <Loader2 className="w-3.5 h-3.5 animate-spin text-zinc-500" />
+                <span className="font-bold">{currentTab.label}:</span>
+                <span className="text-[11px] font-normal">Salvando...</span>
+              </>
+            ) : isCurrentActive ? (
               <>
                 <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
                 <span className="font-bold">{currentTab.label}:</span>
@@ -117,7 +141,15 @@ export const AdminTabToggle: React.FC = () => {
 
             <button
               type="button"
-              onClick={resetAllTabs}
+              disabled={isPending}
+              onClick={async () => {
+                try {
+                  setIsPending(true);
+                  await resetAllTabs();
+                } finally {
+                  setIsPending(false);
+                }
+              }}
               className="text-[10px] text-zinc-400 hover:text-zinc-600 dark:hover:text-zinc-200 p-1 rounded hover:bg-zinc-100 dark:hover:bg-zinc-900 cursor-pointer flex items-center gap-1"
               title="Restaurar todas as abas como ativas"
             >
@@ -194,12 +226,26 @@ export const AdminTabToggle: React.FC = () => {
 
                   <button
                     type="button"
-                    onClick={() => toggleTab(tab.key)}
+                    disabled={isPending}
+                    onClick={async () => {
+                      const nextState = !active;
+                      try {
+                        setIsPending(true);
+                        await toggleTab(tab.key, nextState);
+                        if (isCurrent && !nextState) {
+                          setPreviewAsStudent(true);
+                        } else if (isCurrent && nextState) {
+                          setPreviewAsStudent(false);
+                        }
+                      } finally {
+                        setIsPending(false);
+                      }
+                    }}
                     className={`shrink-0 px-2 py-0.8 rounded-lg text-[10px] font-bold transition-all cursor-pointer ${
                       active
                         ? 'bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 hover:bg-emerald-500/20'
                         : 'bg-amber-500/15 text-amber-700 dark:text-amber-400 hover:bg-amber-500/25 border border-amber-500/20'
-                    }`}
+                    } ${isPending ? 'opacity-70 pointer-events-none' : ''}`}
                   >
                     {active ? 'Ativa' : 'Em Breve'}
                   </button>

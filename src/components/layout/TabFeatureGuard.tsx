@@ -66,7 +66,7 @@ export const TabFeatureGuard: React.FC<TabFeatureGuardProps> = ({ children }) =>
           <div className="flex items-center gap-2">
             <Lock className="w-4 h-4 text-amber-500 shrink-0" />
             <span>
-              <strong>Modo Administrador:</strong> A aba <u>{currentTab.label}</u> está desativada para os alunos (em implementação). Você tem acesso irrestrito para testes e curadoria.
+              <strong>Modo Administrador:</strong> A aba <u>{currentTab.label}</u> está bloqueada para os alunos (Em Breve). Você tem acesso irrestrito para testes e curadoria.
             </span>
           </div>
 
@@ -77,7 +77,7 @@ export const TabFeatureGuard: React.FC<TabFeatureGuardProps> = ({ children }) =>
               className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-zinc-900 text-white dark:bg-zinc-100 dark:text-zinc-900 font-bold text-[11px] shadow-xs hover:scale-102 active:scale-98 transition-all cursor-pointer"
             >
               <EyeOff className="w-3.5 h-3.5" />
-              Pré-visualizar como Aluno
+              Ver Tela Bloqueada dos Alunos
             </button>
 
             <button
@@ -168,16 +168,28 @@ export const TabFeatureGuard: React.FC<TabFeatureGuardProps> = ({ children }) =>
             </button>
           </div>
 
-          {/* Se for Admin simulando visão de aluno, botão para sair da pré-visualização */}
-          {isAdmin && previewAsStudent && (
-            <div className="pt-4 border-t border-zinc-100 dark:border-zinc-800/80">
+          {/* Painel de Controle Exclusivo do Administrador no Bloqueio */}
+          {isAdmin && (
+            <div className="pt-4 border-t border-zinc-100 dark:border-zinc-800/80 space-y-2">
+              <button
+                type="button"
+                onClick={async () => {
+                  await toggleTab(currentTab.key, true);
+                  setPreviewAsStudent(false);
+                }}
+                className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl font-bold text-xs bg-emerald-600 hover:bg-emerald-700 text-white shadow-md transition-all hover:scale-102 active:scale-98 cursor-pointer"
+              >
+                <Unlock className="w-4 h-4" />
+                <span>Reativar {currentTab.label} (Liberar aos Alunos)</span>
+              </button>
+
               <button
                 type="button"
                 onClick={() => setPreviewAsStudent(false)}
-                className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-600 dark:text-amber-400 hover:underline cursor-pointer"
+                className="w-full inline-flex items-center justify-center gap-1.5 text-xs font-semibold text-zinc-500 hover:text-zinc-800 dark:hover:text-zinc-200 transition-colors cursor-pointer"
               >
                 <EyeOff className="w-3.5 h-3.5" />
-                Sair do Modo de Pré-visualização (Voltar ao Admin)
+                <span>Voltar ao Modo Curadoria (Editar Conteúdo)</span>
               </button>
             </div>
           )}

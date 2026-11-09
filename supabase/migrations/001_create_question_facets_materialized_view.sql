@@ -9,16 +9,7 @@
 BEGIN;
 
 -- ==============================================================================
--- 1. CORREÇÃO DA TAXONOMIA DE MODALIDADE (REVALIDA E BANCAS OFICIAIS)
--- ==============================================================================
-UPDATE public.questions
-SET modalidade = 'Revalida'
-WHERE banca IN ('INEP Revalida', 'UFMT Revalida', 'UEPA Revalida', 'UNIRG Revalida', 'FMRP-USP')
-   OR code LIKE '%REVALIDA%'
-   OR institution ILIKE '%Revalida%';
-
--- ==============================================================================
--- 2. ÍNDICES COMPOSTOS E ESTRATÉGICOS NA TABELA 'questions'
+-- 1. ÍNDICES COMPOSTOS E ESTRATÉGICOS NA TABELA 'questions'
 -- ==============================================================================
 CREATE INDEX IF NOT EXISTS idx_questions_esp_year 
   ON public.questions (especialidade, year DESC);
@@ -42,7 +33,7 @@ CREATE INDEX IF NOT EXISTS idx_questions_order_page
   ON public.questions (year DESC, id ASC);
 
 -- ==============================================================================
--- 3. CRIAÇÃO DA MATERIALIZED VIEW 'question_facets'
+-- 2. CRIAÇÃO DA MATERIALIZED VIEW 'question_facets'
 -- ==============================================================================
 -- Agrupa 132.947 linhas pesadas em uma tabela enxuta (~45k tuplas pré-agregadas),
 -- permitindo respostas em < 15ms sem varredura de enunciados e opções.
@@ -102,6 +93,23 @@ CREATE INDEX idx_qfacets_year ON public.question_facets (year);
 CREATE INDEX idx_qfacets_modalidade ON public.question_facets (modalidade);
 
 -- ==============================================================================
+-- 3. REMOVE TODAS AS VERSÕES ANTERIORES DA FUNÇÃO (EVITA ERRO 42725)
+-- ==============================================================================
+DO $$
+DECLARE
+  r RECORD;
+BEGIN
+  FOR r IN (
+    SELECT oid::regprocedure AS func_sig
+    FROM pg_proc
+    WHERE proname = 'get_faceted_question_counts'
+      AND pronamespace = 'public'::regnamespace
+  ) LOOP
+    EXECUTE 'DROP FUNCTION IF EXISTS ' || r.func_sig || ' CASCADE';
+  END LOOP;
+END $$;
+
+-- ==============================================================================
 -- 4. FUNÇÃO RPC 'get_faceted_question_counts' (AGREGAÇÃO DIRETA NA VIEW)
 -- ==============================================================================
 -- Substitui a estimativa proporcional (overallRatio) por contagem real exata de
@@ -133,7 +141,6 @@ DECLARE
   v_subfocos jsonb := '{}'::jsonb;
   v_result jsonb;
 BEGIN
-  -- CTE com os filtros aplicados sobre a Materialized View
   WITH filtered AS (
     SELECT
       especialidade,
@@ -226,10 +233,14 @@ END;
 $$;
 
 -- ==============================================================================
--- 6. PERMISSÕES & SEGURANÇA (ROLES ANON, AUTHENTICATED E SERVICE_ROLE)
+-- 6. PERMISSÕES & SEGURANÇA (COM ASSINATURA EXPLÍCITA PARA EVITAR 42725)
 -- ==============================================================================
 GRANT SELECT ON public.question_facets TO anon, authenticated, service_role;
-GRANT EXECUTE ON FUNCTION public.get_faceted_question_counts TO anon, authenticated, service_role;
-GRANT EXECUTE ON FUNCTION public.refresh_question_facets TO authenticated, service_role;
+
+GRANT EXECUTE ON FUNCTION public.get_faceted_question_counts(
+  text[], int[], text[], text[], text[], text[], boolean, boolean, text, text
+) TO anon, authenticated, service_role;
+
+GRANT EXECUTE ON FUNCTION public.refresh_question_facets() TO authenticated, service_role;
 
 COMMIT;

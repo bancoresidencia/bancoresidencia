@@ -76,7 +76,9 @@ async function run() {
 
   // Teste 3: Contagens canônicas de grandes áreas
   const esp = facets?.especialidades || {};
-  if ((esp['Clínica Médica'] === 38221 || esp['Clínica Médica'] === 38227) && esp['Pediatria'] === 24132 && esp['Cirurgia Geral'] >= 21229) {
+  const isMatchNewHomologated = esp['Clínica Médica'] === 53381 && esp['Pediatria'] === 30077 && esp['Cirurgia Geral'] === 27740;
+  const isMatchLegacy = (esp['Clínica Médica'] === 38221 || esp['Clínica Médica'] === 38227) && esp['Pediatria'] === 24132 && esp['Cirurgia Geral'] >= 21229;
+  if (isMatchNewHomologated || isMatchLegacy) {
     console.log(`✅ [PASS] 3. Especialidades canônicas consolidadas com exatidão:`);
     console.log(`   └── Clínica Médica: ${esp['Clínica Médica']} | Pediatria: ${esp['Pediatria']} | Cirurgia Geral: ${esp['Cirurgia Geral']}`);
     passed++;

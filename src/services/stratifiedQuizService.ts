@@ -1,6 +1,7 @@
 import { supabase } from '@/lib/supabase';
 import { ExtendedFilterState, resolveBancaList, BANCA_ALIASES, buildClinicalFilterClauses, REVALIDA_POSTGREST_FILTER } from './questionService';
 import { hierarchyQuestionCounts } from '@/data/hierarchyCounts';
+import { homologatedDiretoBaseline, homologatedRevalidaBaseline } from '@/data/homologatedFacetsBaseline';
 import { sanitizePostgrestTerm } from '@/utils/security';
 
 // Cache em memória para contagens facetadas (TTL 60s)
@@ -47,13 +48,12 @@ export function hasRightCardActiveFilters(filters: ExtendedFilterState): boolean
   const hasSearch = Boolean(filters.search && filters.search.trim());
   const hasAnuladas = Boolean(filters.ocultarAnuladasErro);
   const has5Anos = Boolean(filters.ultimos5Anos);
-  const hasModalidade = Boolean(
+  const hasRPlusOrTitulo = Boolean(
     filters.modalidades &&
-    filters.modalidades.length > 0 &&
-    !(filters.modalidades.length === 1 && filters.modalidades[0] === 'Residência Médica')
+    filters.modalidades.some(m => m.startsWith('R+') || m.startsWith('Título'))
   );
 
-  return hasBancas || hasAnos || hasDiff || hasType || hasStatus || hasSearch || hasAnuladas || has5Anos || hasModalidade;
+  return hasBancas || hasAnos || hasDiff || hasType || hasStatus || hasSearch || hasAnuladas || has5Anos || hasRPlusOrTitulo;
 }
 
 /**
@@ -66,8 +66,17 @@ export async function fetchFacetedHierarchyCounts(
   filters: ExtendedFilterState,
   signal?: AbortSignal
 ): Promise<FacetedHierarchyCountsResult | null> {
+  const isRevalidaMode = Boolean(filters.modalidades?.some((m) => m.toLowerCase().includes('revalida')));
+
   if (!hasRightCardActiveFilters(filters)) {
-    return null; // Sem filtros contextuais no card direito, usa base completa
+    const baseline = isRevalidaMode ? homologatedRevalidaBaseline : homologatedDiretoBaseline;
+    return {
+      totalRightCardCount: baseline.total,
+      especialidades: baseline.especialidades,
+      temas: baseline.temas,
+      focos: (baseline.focos as Record<string, number>) || {},
+      subfocos: (baseline.subfocos as Record<string, number>) || {}
+    };
   }
 
   const cacheKey = JSON.stringify({
@@ -196,17 +205,18 @@ export async function fetchFacetedHierarchyCounts(
         (especialidades['Ginecologia'] || 0) + (especialidades['Obstetrícia'] || 0);
 
       // Proporcionalidade consistente para temas, focos e subfocos
-      const globalTotal = 121635;
+      const globalTotal = isRevalidaMode ? homologatedRevalidaBaseline.total : homologatedDiretoBaseline.total;
+      const baseline = isRevalidaMode ? homologatedRevalidaBaseline : homologatedDiretoBaseline;
       const overallRatio = globalTotal > 0 ? totalRightCardCount / globalTotal : 1;
 
       const temas: Record<string, number> = {};
       const focos: Record<string, number> = {};
       const subfocos: Record<string, number> = {};
 
-      for (const [t, count] of Object.entries(hierarchyQuestionCounts.temas || {})) {
+      for (const [t, count] of Object.entries(baseline.temas || {})) {
         temas[t] = Math.max(0, Math.round((count as number) * overallRatio));
       }
-      for (const [f, count] of Object.entries(hierarchyQuestionCounts.focos || {})) {
+      for (const [f, count] of Object.entries((baseline.focos as Record<string, number>) || hierarchyQuestionCounts.focos || {})) {
         focos[f] = Math.max(0, Math.round((count as number) * overallRatio));
       }
       for (const [s, count] of Object.entries(hierarchyQuestionCounts.subfocos || {})) {

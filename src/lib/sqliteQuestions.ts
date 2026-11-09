@@ -311,10 +311,13 @@ export function buildSqlWhereClauses(filters: ExtendedFilterState = {}, question
 
     if (hasRevalida) {
       whereParts.push(`(modalidade = 'Revalida' OR banca IN ('INEP Revalida', 'UFMT Revalida', 'UEPA Revalida', 'UNIRG Revalida', 'FMRP-USP'))`);
-    } else if (!isOnlyDefault) {
-      const placeholders = filters.modalidades.map(() => '?').join(',');
-      whereParts.push(`modalidade IN (${placeholders})`);
-      params.push(...filters.modalidades);
+    } else {
+      whereParts.push(`(modalidade != 'Revalida' AND banca NOT IN ('INEP Revalida', 'UFMT Revalida', 'UEPA Revalida', 'UNIRG Revalida', 'FMRP-USP'))`);
+      if (!isOnlyDefault) {
+        const placeholders = filters.modalidades.map(() => '?').join(',');
+        whereParts.push(`modalidade IN (${placeholders})`);
+        params.push(...filters.modalidades);
+      }
     }
   }
 

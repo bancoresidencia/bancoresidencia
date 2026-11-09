@@ -3,7 +3,7 @@ import path from 'path';
 import { pipeline, cos_sim } from '@xenova/transformers';
 
 // ============================================================================
-// PIPELINE DE CLASSIFICAÇÃO TAXONÔMICA E EXPANSÃO NO SUPABASE
+// PIPELINE DE CLASSIFICAÇÃO TAXONÔMICA E EXPANSÃO NO SUPABASE (OTIMIZADO)
 // ============================================================================
 // Escopo Restrito: 'questions_expansion_revalida' e 'questions_expansion_direto'
 // ============================================================================
@@ -46,26 +46,39 @@ const getArg = (flag, defaultVal = null) => {
 const TARGET_TABLE = getArg('--table', 'questions_expansion_direto');
 const LIMIT = getArg('--limit') ? parseInt(getArg('--limit'), 10) : null;
 const PAGE_SIZE = parseInt(getArg('--pagesize', '250'), 10);
+const CONCURRENCY = parseInt(getArg('--concurrency', '45'), 10); // Ponto de equilíbrio: 45
 
 assertSafeTable(TARGET_TABLE);
 
-// Checkpoint automático
+// Checkpoint automático inteligente
 const CHECKPOINT_FILE = path.resolve(`data/checkpoint_${TARGET_TABLE}.json`);
+const QUARANTINE_FILE = path.resolve(`data/quarentena_${TARGET_TABLE}.jsonl`);
+
 let initialOffset = 0;
+let initialProcessed = 0;
+let initialApproved = 0;
+let initialQuarantine = 0;
+
 if (fs.existsSync(CHECKPOINT_FILE)) {
   try {
     const cp = JSON.parse(fs.readFileSync(CHECKPOINT_FILE, 'utf8'));
-    if (typeof cp.offset === 'number') initialOffset = cp.offset;
+    if (typeof cp.offset === 'number') {
+      initialOffset = cp.offset;
+      initialProcessed = cp.processedCount || cp.offset;
+      initialApproved = cp.approvedCount || 0;
+      initialQuarantine = cp.quarantineCount || 0;
+    }
   } catch {}
 }
 const OFFSET = getArg('--offset') !== null ? parseInt(getArg('--offset'), 10) : initialOffset;
 
 console.log('========================================================================');
-console.log('⚡ PIPELINE DE CLASSIFICAÇÃO TAXONÔMICA CANÔNICA NO SUPABASE');
-console.log(`🎯 Tabela Alvo:  ${TARGET_TABLE} (Blindagem Ativa)`);
-console.log(`🔍 Limite:      ${LIMIT ? LIMIT : 'Todos os registros'}`);
-console.log(`📍 Offset:      ${OFFSET}`);
-console.log(`📦 Page Size:   ${PAGE_SIZE}`);
+console.log('⚡ PIPELINE DE CLASSIFICAÇÃO TAXONÔMICA CANÔNICA NO SUPABASE (SWEET SPOT)');
+console.log(`🎯 Tabela Alvo:      ${TARGET_TABLE} (Blindagem Ativa)`);
+console.log(`📍 Offset de Início: ${OFFSET} (Retomando sem retrabalho)`);
+console.log(`📦 Page Size:       ${PAGE_SIZE}`);
+console.log(`🚀 Concorrência:    ${CONCURRENCY} conexões paralelas (Keep-Alive)`);
+console.log(`📁 Quarentena:      Streaming direto em disco (zero vazamento de RAM)`);
 console.log('========================================================================\n');
 
 // 3. Carregar Árvore Canônica Oficial
@@ -206,7 +219,7 @@ const NOSOLOGICAL_ANCHORS = [
 // 6. Carregamento do Extrator de Embeddings Local (Transformers.js)
 console.log('⏳ Carregando modelo local de embeddings (Xenova/paraphrase-multilingual-MiniLM-L12-v2)...');
 const extractor = await pipeline('feature-extraction', 'Xenova/paraphrase-multilingual-MiniLM-L12-v2');
-console.log('✅ Extrator de embeddings carregado com sucesso!\n');
+console.log('✅ Extrator de embeddings pronto!\n');
 
 // 7. Vetores em Cache dos Focos e Subfocos Canônicos
 const VECTOR_CACHE_FILE = path.resolve('data/cache_canonical_tree_vectors.json');
@@ -345,8 +358,8 @@ function scoreFocoLexical(q, focoEntry, correctOptText, commandPrompt, normFullT
   return score / Math.pow(Math.max(focoEntry.tokens.length, 1), 0.65);
 }
 
-// Função de atualização concorrente por blocos seguros
-async function patchInBatches(items, concurrency = 30) {
+// 10. Atualização concorrente balanceada (Concorrência = 45 com headers HTTP Keep-Alive)
+async function patchInBatches(items, concurrency = 45) {
   for (let i = 0; i < items.length; i += concurrency) {
     const chunk = items.slice(i, i + concurrency);
     await Promise.all(chunk.map(async (item) => {
@@ -356,7 +369,8 @@ async function patchInBatches(items, concurrency = 30) {
         headers: {
           'apikey': SERVICE_KEY,
           'Authorization': `Bearer ${SERVICE_KEY}`,
-          'Content-Type': 'application/json'
+          'Content-Type': 'application/json',
+          'Connection': 'keep-alive'
         },
         body: JSON.stringify({
           especialidade: item.especialidade,
@@ -372,7 +386,7 @@ async function patchInBatches(items, concurrency = 30) {
   }
 }
 
-// 10. Processamento Principal com Extração Vetorial em Batches e Envio em Lotes
+// 11. Processamento Principal com Extração Vetorial em Batches e Streaming de Quarentena
 async function runPipeline() {
   console.log(`📡 Consultando total de registros em [${TARGET_TABLE}]...`);
   const countRes = await fetch(`${SUPABASE_URL}/rest/v1/${TARGET_TABLE}?select=id`, {
@@ -390,10 +404,9 @@ async function runPipeline() {
   const effectiveLimit = LIMIT ? Math.min(LIMIT, totalInTable - OFFSET) : (totalInTable - OFFSET);
   console.log(`Alvo desta execução: ${effectiveLimit.toLocaleString('pt-BR')} questões (a partir do offset ${OFFSET}).\n`);
 
-  let processedCount = 0;
-  let approvedCount = 0;
-  let quarantineCount = 0;
-  const quarantineLog = [];
+  let processedCount = initialProcessed;
+  let approvedCount = initialApproved;
+  let quarantineCount = initialQuarantine;
 
   let currentOffset = OFFSET;
 
@@ -405,7 +418,8 @@ async function runPipeline() {
       headers: {
         'apikey': SERVICE_KEY,
         'Authorization': `Bearer ${SERVICE_KEY}`,
-        'Range': rangeHeader
+        'Range': rangeHeader,
+        'Connection': 'keep-alive'
       }
     });
 
@@ -457,9 +471,9 @@ async function runPipeline() {
       });
     }
 
-    // EXTRAÇÃO VETORIAL OTIMIZADA EM SUB-LOTES DE 32
+    // EXTRAÇÃO VETORIAL OTIMIZADA EM SUB-LOTES DE 48
     const embeddingsByRow = [];
-    const EMBED_CHUNK = 32;
+    const EMBED_CHUNK = 48;
     for (let i = 0; i < snippetsForEmbedding.length; i += EMBED_CHUNK) {
       const chunk = snippetsForEmbedding.slice(i, i + EMBED_CHUNK);
       const out = await extractor(chunk, { pooling: 'mean', normalize: true });
@@ -470,6 +484,7 @@ async function runPipeline() {
     }
 
     const updatesToApply = [];
+    const pageQuarantineLog = [];
 
     // DUPLO PASSO DE AVALIAÇÃO PARA CADA QUESTÃO DO LOTE
     for (let idx = 0; idx < preparedRows.length; idx++) {
@@ -533,7 +548,7 @@ async function runPipeline() {
         });
       } else {
         quarantineCount++;
-        quarantineLog.push({
+        pageQuarantineLog.push(JSON.stringify({
           id: q.id,
           code: q.code,
           especialidade_original: q.especialidade,
@@ -546,7 +561,8 @@ async function runPipeline() {
           semCosine: topSemFoco.cosSim.toFixed(3),
           semMargin: (semMargin * 100).toFixed(1) + '%',
           motivo: `[Quarentena Segura] Margem ou score aquém do limiar pericial. Retido para análise futura.`
-        });
+        }));
+
         if (targetEsp !== q.especialidade) {
           updatesToApply.push({
             id: q.id,
@@ -559,27 +575,39 @@ async function runPipeline() {
       }
     }
 
-    // Aplicação concorrente dos Updates no Supabase
+    // Aplicação concorrente dos Updates no Supabase (Concorrência equilibrada = 45)
     if (updatesToApply.length > 0) {
-      await patchInBatches(updatesToApply, 30);
+      await patchInBatches(updatesToApply, CONCURRENCY);
     }
 
-    currentOffset += rows.length;
-    const pct = ((processedCount / effectiveLimit) * 100).toFixed(1);
-    console.log(`Progress: ${processedCount.toLocaleString('pt-BR')} / ${effectiveLimit.toLocaleString('pt-BR')} (${pct}%) | Aprovadas: ${approvedCount.toLocaleString('pt-BR')} | Quarentena: ${quarantineCount.toLocaleString('pt-BR')}`);
+    // DESAFOGA A MEMÓRIA RAM: Grava quarentena em streaming no disco e zera o array imediatamente
+    if (pageQuarantineLog.length > 0) {
+      fs.appendFileSync(QUARANTINE_FILE, pageQuarantineLog.join('\n') + '\n', 'utf8');
+      pageQuarantineLog.length = 0; // Libera RAM instantaneamente
+    }
+
+    // Limpa referências locais para o Garbage Collector do V8
+    rows.length = 0;
+    preparedRows.length = 0;
+    snippetsForEmbedding.length = 0;
+    embeddingsByRow.length = 0;
+    updatesToApply.length = 0;
+
+    currentOffset += pageLimit;
+    const pct = ((processedCount / totalInTable) * 100).toFixed(1);
+    console.log(`Progress: ${processedCount.toLocaleString('pt-BR')} / ${totalInTable.toLocaleString('pt-BR')} (${pct}%) | Aprovadas: ${approvedCount.toLocaleString('pt-BR')} | Quarentena: ${quarantineCount.toLocaleString('pt-BR')}`);
 
     // Salvar Checkpoint a cada página
-    fs.writeFileSync(CHECKPOINT_FILE, JSON.stringify({ offset: currentOffset, processedCount, approvedCount, quarantineCount, timestamp: new Date().toISOString() }), 'utf8');
+    fs.writeFileSync(CHECKPOINT_FILE, JSON.stringify({
+      offset: currentOffset,
+      processedCount,
+      approvedCount,
+      quarantineCount,
+      timestamp: new Date().toISOString()
+    }), 'utf8');
   }
 
-  // 6. Salvar Registro da Quarentena Localmente
-  if (quarantineLog.length > 0) {
-    const qFile = path.resolve(`data/quarentena_${TARGET_TABLE}.json`);
-    fs.writeFileSync(qFile, JSON.stringify(quarantineLog, null, 2), 'utf8');
-    console.log(`\n📁 Arquivo de auditoria de quarentena salvo: ${qFile} (${quarantineLog.length} casos retidos)`);
-  }
-
-  // 7. Bateria de Testes Pós-Execução (Invariantes no Supabase)
+  // 12. Bateria de Testes Pós-Execução (Invariantes no Supabase)
   console.log('\n========================================================================');
   console.log('🧪 BATERIA DE TESTES DE INTEGRIDADE E INVARIANTES NO SUPABASE');
   console.log('========================================================================');

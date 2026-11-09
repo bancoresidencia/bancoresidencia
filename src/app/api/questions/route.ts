@@ -14,6 +14,7 @@ import {
 } from '@/services/questionService';
 import { Question } from '@/types';
 import { hierarchyQuestionCounts } from '@/data/hierarchyCounts';
+import { homologatedDiretoBaseline, homologatedRevalidaBaseline } from '@/data/homologatedFacetsBaseline';
 import { generateSessionTicket } from '@/utils/securityTickets';
 import { sanitizeMedicalText } from '@/utils/textSanitizer';
 
@@ -83,6 +84,24 @@ function mapRowToQuestion(row: QuestionDbRow): Question {
     commentary: sanitizeMedicalText(row.commentary || ''),
     images: Array.isArray(row.images) ? row.images : []
   };
+}
+
+function resolveTargetTable(filters: ExtendedFilterState): string {
+  const isRevalida = Boolean(filters.modalidades?.some((m: string) => m.toLowerCase().includes('revalida')));
+  return isRevalida ? 'view_questions_revalida' : 'view_questions_acesso_direto';
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+async function executeResilientQuery<T = any>(
+  queryFn: (tableName: string) => Promise<{ data: T | null; count?: number | null; error: any }>,
+  preferredTable: string
+): Promise<{ data: T | null; count?: number | null; error: any }> {
+  const result = await queryFn(preferredTable);
+  if (result.error && (result.error.code === '42P01' || result.error.message?.includes('does not exist') || result.error.message?.includes('relation'))) {
+    console.warn(`[/api/questions] View '${preferredTable}' indisponível no Supabase. Fallback automático para 'questions'.`);
+    return await queryFn('questions');
+  }
+  return result;
 }
 
 // In-Memory Cache para Contagens Facetadas (TTL de 60s)
@@ -302,10 +321,9 @@ export async function POST(req: NextRequest) {
         subfocos: []
       };
 
-      // Fast-path ultrarrápido (0ms): se não há filtros restritivos no card lateral nem de modalidade/banca,
-      // retorna as contagens pré-computadas exatas do catálogo de 132.947 questões
+      // Fast-path ultrarrápido (0ms): se não há filtros restritivos no card lateral (bancas, anos, etc.),
+      // retorna as contagens pré-computadas exatas do catálogo homologado (173.526 Acesso Direto ou 5.499 Revalida)
       const hasRightCardFilters = Boolean(
-        isRevalida ||
         hasBancas ||
         isRPlusOrTitulo ||
         (filtersWithoutClinical.search && filtersWithoutClinical.search.trim()) ||
@@ -318,13 +336,14 @@ export async function POST(req: NextRequest) {
       );
 
       if (!hasRightCardFilters) {
+        const baseline = isRevalida ? homologatedRevalidaBaseline : homologatedDiretoBaseline;
         return NextResponse.json({
           facets: {
-            totalRightCardCount: 132947,
-            especialidades: hierarchyQuestionCounts.especialidades || {},
-            temas: hierarchyQuestionCounts.temas || {},
-            focos: hierarchyQuestionCounts.focos || {},
-            subfocos: hierarchyQuestionCounts.subfocos || {}
+            totalRightCardCount: baseline.total,
+            especialidades: baseline.especialidades,
+            temas: baseline.temas,
+            focos: (baseline.focos as Record<string, number>) || {},
+            subfocos: (baseline.subfocos as Record<string, number>) || {}
           }
         });
       }
@@ -365,7 +384,8 @@ export async function POST(req: NextRequest) {
           p_ocultar_anuladas: Boolean(filtersWithoutClinical.ocultarAnuladasErro),
           p_ultimos_5_anos: Boolean(filtersWithoutClinical.ultimos5Anos),
           p_status: filtersWithoutClinical.status || 'Todas',
-          p_user_id: authenticatedUserId || null
+          p_user_id: authenticatedUserId || null,
+          p_is_revalida: isRevalida
         });
 
         if (!rpcErr && rpcResult && typeof rpcResult === 'object' && typeof (rpcResult as Record<string, unknown>).totalRightCardCount === 'number') {
@@ -396,10 +416,11 @@ export async function POST(req: NextRequest) {
             subfocos = typedResult.subfocos || {};
           } else {
             // Fallback proporcional se a versão anterior da RPC estiver ativa
-            const globalTotal = 132947;
+            const globalTotal = isRevalida ? homologatedRevalidaBaseline.total : homologatedDiretoBaseline.total;
+            const baseline = isRevalida ? homologatedRevalidaBaseline : homologatedDiretoBaseline;
             const overallRatio = globalTotal > 0 ? typedResult.totalRightCardCount / globalTotal : 1;
             if (typedResult.totalRightCardCount > 0) {
-              for (const [f, count] of Object.entries(hierarchyQuestionCounts.focos || {})) {
+              for (const [f, count] of Object.entries((baseline.focos as Record<string, number>) || hierarchyQuestionCounts.focos || {})) {
                 focos[f] = Math.max(0, Math.round((count as number) * overallRatio));
               }
               for (const [s, count] of Object.entries(hierarchyQuestionCounts.subfocos || {})) {
@@ -427,8 +448,9 @@ export async function POST(req: NextRequest) {
 
       // 3. Fallback Resiliente (Pilar 2 da Arquitetura Híbrida):
       // Projeta apenas colunas mínimas de hierarquia (sem texto de enunciado/opções/imagens)
+      const targetTable = resolveTargetTable(filters);
       let facetQuery = supabaseAdmin
-        .from('questions')
+        .from(targetTable)
         .select('especialidade, tema, foco, subfoco', { count: 'exact' });
       facetQuery = applyQuestionFilters(facetQuery, filtersWithoutClinical);
 
@@ -552,12 +574,13 @@ export async function POST(req: NextRequest) {
       );
 
       if (hasOtherFilters) {
-        let dataQuery = supabaseAdmin.from('questions').select(selectCols, { count: 'exact' });
-        const safeTargetIds = targetStatusIds.slice(0, 1000);
-        dataQuery = applyQuestionFilters(dataQuery, filters, safeTargetIds);
-        dataQuery = dataQuery.range(from, to);
-
-        const { data, count, error } = await dataQuery;
+        const targetTable = resolveTargetTable(filters);
+        const { data, count, error } = await executeResilientQuery(async (tbl) => {
+          let q = supabaseAdmin.from(tbl).select(selectCols, { count: 'exact' });
+          const safeTargetIds = targetStatusIds.slice(0, 1000);
+          q = applyQuestionFilters(q, filters, safeTargetIds);
+          return await q.range(from, to);
+        }, targetTable);
         if (error) {
           console.error('[/api/questions] Erro ao buscar questões com status e filtros cruzados:', error.message || error);
           return NextResponse.json({ questions: [], total: 0, page, pageSize, totalPages: 0, error: error.message }, { status: 500 });
@@ -590,10 +613,12 @@ export async function POST(req: NextRequest) {
         });
       }
 
-      let dataQuery = supabaseAdmin.from('questions').select(selectCols);
-      dataQuery = applyQuestionFilters(dataQuery, filters, pageTargetIds);
-
-      const { data, error } = await dataQuery;
+      const targetTable = resolveTargetTable(filters);
+      const { data, error } = await executeResilientQuery(async (tbl) => {
+        let q = supabaseAdmin.from(tbl).select(selectCols);
+        q = applyQuestionFilters(q, filters, pageTargetIds);
+        return await q;
+      }, targetTable);
       if (error) {
         console.error('[/api/questions] Erro ao buscar questões paginadas por status:', error.message || error);
         return NextResponse.json({ questions: [], total: 0, page, pageSize, totalPages: 0, error: error.message }, { status: 500 });
@@ -623,12 +648,12 @@ export async function POST(req: NextRequest) {
       });
     }
 
-    // 1. Constrói a query base aplicando todos os filtros normais
-    let dataQuery = supabaseAdmin.from('questions').select(selectCols);
-    dataQuery = applyQuestionFilters(dataQuery, filters, questionIds);
+    // 1. Identifica a tabela/view alvo conforme o modo (Acesso Direto vs Revalida)
+    const isRevalida = Boolean(filters.modalidades?.some((m: string) => m.toLowerCase().includes('revalida')));
+    const targetTable = resolveTargetTable(filters);
+    const baseTotal = isRevalida ? 5499 : 173526;
 
     // 2. Paginação com ordenação dinâmica
-    // Para 'Não vistas' com volume alto de resolvidas, amplia ligeiramente o range para filtrar em memória sem perda
     const isUnseenWithManySolved = Boolean(
       filters.status === 'Não vistas' &&
       filters.userSolvedIds &&
@@ -637,20 +662,24 @@ export async function POST(req: NextRequest) {
 
     const queryTo = isUnseenWithManySolved ? to + Math.min(filters.userSolvedIds!.length, 100) : to;
 
-    if (filters.aleatorizar) {
-      if (questionIds && questionIds.length > 0) {
-        dataQuery = dataQuery.range(from, queryTo);
+    // Constrói a busca principal com fallback resiliente
+    const dataQueryPromise = executeResilientQuery(async (tbl) => {
+      let q = supabaseAdmin.from(tbl).select(selectCols);
+      q = applyQuestionFilters(q, filters, questionIds);
+      if (filters.aleatorizar) {
+        if (questionIds && questionIds.length > 0) {
+          q = q.range(from, queryTo);
+        } else {
+          const isAsc = page % 2 === 1;
+          q = q.order('id', { ascending: isAsc }).range(from, queryTo);
+        }
       } else {
-        const isAsc = page % 2 === 1;
-        dataQuery = dataQuery.order('id', { ascending: isAsc }).range(from, queryTo);
+        q = q.order('year', { ascending: false }).order('id', { ascending: true }).range(from, queryTo);
       }
-    } else {
-      dataQuery = dataQuery.order('year', { ascending: false }).order('id', { ascending: true }).range(from, queryTo);
-    }
+      return await q;
+    }, targetTable);
 
     // 3. Cálculo preciso do total filtrado de questões
-    const isRevalida = Boolean(filters.modalidades?.some((m: string) => m.toLowerCase().includes('revalida')));
-    const baseTotal = isRevalida ? 2921 : 132965;
     const hasActiveFilters = Boolean(
       isRevalida ||
       (filters.search && filters.search.trim()) ||
@@ -698,12 +727,13 @@ export async function POST(req: NextRequest) {
     } else {
       countPromise = (async () => {
         try {
-          let countQuery = supabaseAdmin.from('questions').select('id', { count: 'exact', head: true });
-          countQuery = applyQuestionFilters(countQuery, filters, questionIds);
-          
-          // Timeout de segurança de 1.200ms para nunca travar a devolução das 50 questões se a contagem no Postgres estiver lenta
+          // Executa contagem com fallback resiliente e timeout de segurança de 1.200ms
           const countWithTimeout = Promise.race([
-            countQuery.then(({ count, error: countErr }) => {
+            executeResilientQuery(async (tbl) => {
+              let q = supabaseAdmin.from(tbl).select('id', { count: 'exact', head: true });
+              q = applyQuestionFilters(q, filters, questionIds);
+              return await q;
+            }, targetTable).then(({ count, error: countErr }) => {
               if (!countErr && typeof count === 'number') return count;
               return calculateHierarchyFallback(filters);
             }),
@@ -720,7 +750,7 @@ export async function POST(req: NextRequest) {
     }
 
     const [{ data, error }, calculatedTotal] = await Promise.all([
-      dataQuery,
+      dataQueryPromise,
       countPromise
     ]);
 

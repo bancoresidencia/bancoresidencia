@@ -44,11 +44,32 @@ export const TabAvailabilityProvider: React.FC<{ children: React.ReactNode }> = 
   const [previewAsStudent, setPreviewAsStudent] = useState<boolean>(false);
   const supabase = useMemo(() => createClient(), []);
 
-  // Sincroniza inicialmente com Supabase se a tabela/config existir
+  // Sincroniza inicialmente com API/Supabase e escuta eventos em tempo real
   useEffect(() => {
     let isMounted = true;
 
-    async function loadFromRemote() {
+    async function loadStatus() {
+      // 1. Tenta carregar da API do servidor
+      try {
+        const res = await fetch('/api/tab-availability', { credentials: 'include', cache: 'no-store' });
+        if (res.ok) {
+          const data = await res.json();
+          if (data?.tabStatus && isMounted) {
+            setTabStatus((prev) => {
+              const merged: TabStatusMap = { ...prev, ...data.tabStatus };
+              try {
+                localStorage.setItem(STORAGE_KEY, JSON.stringify(merged));
+              } catch {}
+              return merged;
+            });
+            return;
+          }
+        }
+      } catch (err) {
+        console.warn('Erro ao carregar status de abas via API:', err);
+      }
+
+      // 2. Fallback direto no Supabase
       try {
         const { data, error } = await supabase
           .from('platform_settings')
@@ -59,21 +80,56 @@ export const TabAvailabilityProvider: React.FC<{ children: React.ReactNode }> = 
         if (!error && data?.value && isMounted) {
           const remoteStatus = data.value as TabStatusMap;
           setTabStatus((prev) => {
-            const merged = { ...prev, ...remoteStatus };
+            const merged: TabStatusMap = { ...prev, ...remoteStatus };
             try {
               localStorage.setItem(STORAGE_KEY, JSON.stringify(merged));
             } catch {}
             return merged;
           });
         }
-      } catch {
-        // Tabela opcional ou offline: fallback gracioso para localStorage
-      }
+      } catch {}
     }
 
-    loadFromRemote();
+    loadStatus();
 
-    // Sincroniza abas abertas no mesmo navegador
+    // 1. Polling a cada 15s e na reativação da janela para estudantes online
+    const interval = setInterval(loadStatus, 15000);
+    const onVisibilityChange = () => {
+      if (document.visibilityState === 'visible') {
+        loadStatus();
+      }
+    };
+    document.addEventListener('visibilitychange', onVisibilityChange);
+
+    // 2. Escuta ativa Realtime do Supabase (quando a tabela platform_settings estiver no banco)
+    const channel = supabase
+      .channel('platform_settings_realtime')
+      .on(
+        'postgres_changes',
+        {
+          event: '*',
+          schema: 'public',
+          table: 'platform_settings',
+          filter: `key=eq.${SUPABASE_SETTINGS_KEY}`
+        },
+        (payload) => {
+          if (payload.new && typeof (payload.new as Record<string, unknown>).value === 'object') {
+            const remoteStatus = (payload.new as { value: TabStatusMap }).value;
+            if (isMounted) {
+              setTabStatus((prev) => {
+                const merged = { ...prev, ...remoteStatus };
+                try {
+                  localStorage.setItem(STORAGE_KEY, JSON.stringify(merged));
+                } catch {}
+                return merged;
+              });
+            }
+          }
+        }
+      )
+      .subscribe();
+
+    // 3. Sincroniza abas abertas no mesmo navegador
     const handleStorageChange = (e: StorageEvent) => {
       if (e.key === STORAGE_KEY && e.newValue) {
         try {
@@ -86,7 +142,10 @@ export const TabAvailabilityProvider: React.FC<{ children: React.ReactNode }> = 
     window.addEventListener('storage', handleStorageChange);
     return () => {
       isMounted = false;
+      clearInterval(interval);
+      document.removeEventListener('visibilitychange', onVisibilityChange);
       window.removeEventListener('storage', handleStorageChange);
+      supabase.removeChannel(channel);
     };
   }, [supabase]);
 
@@ -113,7 +172,33 @@ export const TabAvailabilityProvider: React.FC<{ children: React.ReactNode }> = 
         console.warn('Erro ao salvar status de abas no localStorage:', err);
       }
 
-      // 2. Tenta persistir no Supabase para sincronizar com todos os estudantes
+      // Obtém o token de sessão do Supabase para garantir autenticação confiável
+      let token: string | undefined;
+      try {
+        const { data: { session } } = await supabase.auth.getSession();
+        token = session?.access_token;
+      } catch {}
+
+      // 2. Persiste via API protegida do servidor (grava em disco e no Supabase)
+      try {
+        const res = await fetch('/api/tab-availability', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            ...(token ? { 'Authorization': `Bearer ${token}` } : {})
+          },
+          credentials: 'include',
+          body: JSON.stringify({ tabStatus: updatedStatus })
+        });
+        if (!res.ok) {
+          const errData = await res.json().catch(() => null);
+          console.warn('Falha ao persistir status de abas via API:', errData?.error || res.statusText);
+        }
+      } catch (err) {
+        console.warn('Erro ao persistir status de abas via API:', err);
+      }
+
+      // 3. Tenta persistir no Supabase diretamente
       try {
         await supabase
           .from('platform_settings')
@@ -123,7 +208,7 @@ export const TabAvailabilityProvider: React.FC<{ children: React.ReactNode }> = 
             updated_at: new Date().toISOString()
           }, { onConflict: 'key' });
       } catch {
-        // Fallback silencioso mantendo o localStorage
+        // Fallback silencioso mantendo API e localStorage
       }
     },
     [tabStatus, supabase]
@@ -133,6 +218,23 @@ export const TabAvailabilityProvider: React.FC<{ children: React.ReactNode }> = 
     setTabStatus(DEFAULT_TAB_STATUS);
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(DEFAULT_TAB_STATUS));
+
+      let token: string | undefined;
+      try {
+        const { data: { session } } = await supabase.auth.getSession();
+        token = session?.access_token;
+      } catch {}
+
+      await fetch('/api/tab-availability', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          ...(token ? { 'Authorization': `Bearer ${token}` } : {})
+        },
+        credentials: 'include',
+        body: JSON.stringify({ tabStatus: DEFAULT_TAB_STATUS })
+      });
+
       await supabase
         .from('platform_settings')
         .upsert({

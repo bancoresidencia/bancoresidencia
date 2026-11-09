@@ -17,6 +17,7 @@ import {
   type FacetedHierarchyCountsResult
 } from './stratifiedQuizService';
 import { getQuestionCount } from '@/data/hierarchyCounts';
+import { homologatedDiretoBaseline, homologatedRevalidaBaseline } from '@/data/homologatedFacetsBaseline';
 import { clinicalHierarchy } from '@/data/mockQuestions';
 
 // Projeção segura de colunas: omite estritamente correct_answer e commentary contra scraping
@@ -453,44 +454,44 @@ export function resolveBancaList(rawBancas: string[]): string[] {
 /**
  * Retorna contagem total de questões homologadas e consolidadas
  */
-export async function fetchTotalQuestionsCount(onlyClassifiedWithAnswer: boolean = true): Promise<number> {
-  const cacheKey = `total_q_count_${onlyClassifiedWithAnswer}`;
+export async function fetchTotalQuestionsCount(onlyClassifiedWithAnswer: boolean = true, isRevalida: boolean = false): Promise<number> {
+  const cacheKey = `total_q_count_${onlyClassifiedWithAnswer}_${isRevalida}`;
   const cached = countCache.get(cacheKey);
   if (cached && Date.now() - cached.timestamp < 180000) {
     return cached.count;
   }
 
-  // Universo oficial consolidado padrão-ouro homologado (132.965 questões)
-  const OFFICIAL_CONSOLIDATED_COUNT = 121635;
-  countCache.set(cacheKey, { count: OFFICIAL_CONSOLIDATED_COUNT, timestamp: Date.now() });
-  return OFFICIAL_CONSOLIDATED_COUNT;
+  // Universo oficial consolidado padrão-ouro homologado (173.526 Acesso Direto / 5.499 Revalida)
+  const count = isRevalida ? homologatedRevalidaBaseline.total : homologatedDiretoBaseline.total;
+  countCache.set(cacheKey, { count, timestamp: Date.now() });
+  return count;
 }
 
 export function calculateHierarchyFallback(filters: ExtendedFilterState): number {
   const isRevalida = Boolean(filters.modalidades?.some((m) => m.toLowerCase().includes('revalida')));
-  const ratio = isRevalida ? 0.0253 : 1;
+  const baseline = isRevalida ? homologatedRevalidaBaseline : homologatedDiretoBaseline;
 
   if (filters.subSubfocos && filters.subSubfocos.length > 0) {
     const sum = filters.subSubfocos.reduce((acc, ss) => acc + (getQuestionCount('sub_subfocos', ss) || 0), 0);
-    if (sum > 0) return Math.max(1, Math.round(sum * ratio));
+    if (sum > 0) return Math.max(1, isRevalida ? Math.round(sum * 0.031) : sum);
   }
   if (filters.subfocos && filters.subfocos.length > 0) {
     const sum = filters.subfocos.reduce((acc, s) => acc + (getQuestionCount('subfocos', s) || 0), 0);
-    if (sum > 0) return Math.max(1, Math.round(sum * ratio));
+    if (sum > 0) return Math.max(1, isRevalida ? Math.round(sum * 0.031) : sum);
   }
   if (filters.focos && filters.focos.length > 0) {
-    const sum = filters.focos.reduce((acc, f) => acc + (getQuestionCount('focos', f) || 0), 0);
-    if (sum > 0) return Math.max(1, Math.round(sum * ratio));
+    const sum = filters.focos.reduce((acc, f) => acc + ((baseline.focos as Record<string, number>)[f] || getQuestionCount('focos', f) || 0), 0);
+    if (sum > 0) return Math.max(1, sum);
   }
   if (filters.temas && filters.temas.length > 0) {
-    const sum = filters.temas.reduce((acc, t) => acc + (getQuestionCount('temas', t) || 0), 0);
-    if (sum > 0) return Math.max(1, Math.round(sum * ratio));
+    const sum = filters.temas.reduce((acc, t) => acc + ((baseline.temas as Record<string, number>)[t] || getQuestionCount('temas', t) || 0), 0);
+    if (sum > 0) return Math.max(1, sum);
   }
   if (filters.especialidades && filters.especialidades.length > 0) {
-    const sum = filters.especialidades.reduce((acc, e) => acc + (getQuestionCount('especialidades', e) || 0), 0);
-    if (sum > 0) return Math.max(1, Math.round(sum * ratio));
+    const sum = filters.especialidades.reduce((acc, e) => acc + ((baseline.especialidades as Record<string, number>)[e] || getQuestionCount('especialidades', e) || 0), 0);
+    if (sum > 0) return Math.max(1, sum);
   }
-  return isRevalida ? 2921 : 121635;
+  return isRevalida ? homologatedRevalidaBaseline.total : homologatedDiretoBaseline.total;
 }
 
 export async function fetchQuestionsFromSupabase(
@@ -532,8 +533,10 @@ export async function fetchQuestionsFromSupabase(
   const now = Date.now();
   const hasFreshCache = cachedCountEntry && (now - cachedCountEntry.timestamp < 90000);
 
-  // Consulta segura e protegida contra raspagem: omite correct_answer e commentary na busca pública
-  let query = supabase.from('questions').select(SAFE_QUESTION_COLUMNS);
+  // Consulta segura e protegida contra raspagem com chaveamento dinâmico entre Acesso Direto e Revalida
+  const isRevalidaMode = Boolean(filters.modalidades?.some((m: string) => m.toLowerCase().includes('revalida')));
+  const targetViewTable = isRevalidaMode ? 'view_questions_revalida' : 'view_questions_acesso_direto';
+  let query = supabase.from(targetViewTable).select(SAFE_QUESTION_COLUMNS);
 
   // Regra Canônica de Gabarito: Alunos só visualizam questões com gabarito homologado (A-E ou Anuladas)
   if (filters.gabaritoStatus === 'sem_gabarito') {
@@ -828,9 +831,9 @@ export async function fetchQuestionsFromSupabase(
     }
   }
 
-  // Resolução de contagem do universo com base consolidada (132.965 para Residência Geral, 2.921 para Revalida)
+  // Resolução de contagem do universo com base homologada (173.526 para Acesso Direto, 5.499 para Revalida)
   const isRevalida = Boolean(filters.modalidades?.some((m) => m.toLowerCase().includes('revalida')));
-  const baseTotal = isRevalida ? 2921 : 121635;
+  const baseTotal = isRevalida ? homologatedRevalidaBaseline.total : homologatedDiretoBaseline.total;
   let total: number = baseTotal;
   const hasActiveFilters = Boolean(
     isRevalida ||
@@ -1047,10 +1050,10 @@ export async function fetchQuestionsFromSupabase(
         } else if (filters.especialidades && filters.especialidades.length > 0) {
           fallbackSum = filters.especialidades.reduce((acc, e) => acc + (getQuestionCount('especialidades', e) || 0), 0);
         }
-        total = fallbackSum > 0 ? fallbackSum : (isRevalida ? 2921 : Math.max(from + questions.length, 121635));
+        total = fallbackSum > 0 ? fallbackSum : (isRevalida ? homologatedRevalidaBaseline.total : Math.max(from + questions.length, homologatedDiretoBaseline.total));
       }
     } catch {
-      total = isRevalida ? 2921 : Math.max(from + questions.length, 121635);
+      total = isRevalida ? homologatedRevalidaBaseline.total : Math.max(from + questions.length, homologatedDiretoBaseline.total);
     }
   }
 

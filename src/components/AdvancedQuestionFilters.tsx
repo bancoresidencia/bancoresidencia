@@ -89,6 +89,7 @@ import {
   medicalInstitutionsDirectory
 } from '@/data/mockQuestions';
 import { getQuestionCount } from '@/data/hierarchyCounts';
+import { homologatedDiretoBaseline, homologatedRevalidaBaseline } from '@/data/homologatedFacetsBaseline';
 import { getInstitutionSupabaseCount } from '@/data/institutionCounts';
 import {
   fetchFacetedHierarchyCounts,
@@ -428,6 +429,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   // Mini-seletor de Cotas e Distribuição Proporcional (Round-Robin)
   const [quotasByItem, setQuotasByItem] = useState<Record<string, number>>({});
   const [isCotasDrawerOpen, setIsCotasDrawerOpen] = useState<boolean>(false);
+
+  const isRevalidaMode = filters.modalidades?.length === 1 && filters.modalidades[0] === 'Revalida';
 
   // Faceted Search: Contagens dinâmicas por linha sincronizadas com o banco (apenas filtros do card direito)
   const [facetedCounts, setFacetedCounts] = useState<FacetedHierarchyCountsResult | null>(null);
@@ -850,6 +853,15 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   // --- CÁLCULO DINÂMICO DE QUESTÕES ENCONTRADAS (INTERSECÇÃO REAL DO BANCO DE DADOS) ---
   const displayedQuestionCount = useMemo(() => {
     const isRevalidaMode = filters.modalidades?.length === 1 && filters.modalidades[0] === 'Revalida';
+    const defaultBaseline = isRevalidaMode ? homologatedRevalidaBaseline.total : homologatedDiretoBaseline.total;
+
+    const hasClinicalFilters = Boolean(
+      (filters.especialidades && filters.especialidades.length > 0) ||
+      (filters.temas && filters.temas.length > 0) ||
+      (filters.focos && filters.focos.length > 0) ||
+      (filters.subfocos && filters.subfocos.length > 0) ||
+      (filters.subSubfocos && filters.subSubfocos.length > 0)
+    );
 
     const hasRightCardFilters = Boolean(
       (filters.search && filters.search.trim()) ||
@@ -860,98 +872,37 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       (filters.status && filters.status !== 'Todas') ||
       filters.ocultarAnuladasErro ||
       filters.ultimos5Anos ||
-      isRevalidaMode
-    );
-
-    const hasClinicalFilters = Boolean(
-      (filters.especialidades && filters.especialidades.length > 0) ||
-      (filters.temas && filters.temas.length > 0) ||
-      (filters.focos && filters.focos.length > 0) ||
-      (filters.subfocos && filters.subfocos.length > 0)
+      (filters.modalidades && filters.modalidades.some(m => m.startsWith('R+') || m.startsWith('Título')))
     );
 
     const hasActiveFilters = hasClinicalFilters || hasRightCardFilters;
 
     if (hasActiveFilters) {
-      if (isRevalidaMode) {
-        if (typeof totalFiltered === 'number' && totalFiltered !== 121635) {
-          return totalFiltered;
-        }
-        if (facetedCounts) {
-          if (filters.subfocos && filters.subfocos.length > 0) {
-            const sum = filters.subfocos.reduce((acc, s) => acc + (facetedCounts.subfocos[s] || 0), 0);
-            if (sum > 0) return sum;
-          } else if (filters.focos && filters.focos.length > 0) {
-            const sum = filters.focos.reduce((acc, f) => acc + (facetedCounts.focos[f] || 0), 0);
-            if (sum > 0) return sum;
-          } else if (filters.temas && filters.temas.length > 0) {
-            const sum = filters.temas.reduce((acc, t) => acc + (facetedCounts.temas[t] || 0), 0);
-            if (sum > 0) return sum;
-          } else if (filters.especialidades && filters.especialidades.length > 0) {
-            const sum = filters.especialidades.reduce((acc, e) => acc + (facetedCounts.especialidades[e] || 0), 0);
-            if (sum > 0) return sum;
-          }
-          if (typeof facetedCounts.totalRightCardCount === 'number' && facetedCounts.totalRightCardCount > 0) {
-            return facetedCounts.totalRightCardCount;
-          }
-        }
-        if (filters.instituicoes && filters.instituicoes.length > 0) {
-          const instSum = filters.instituicoes.reduce((acc, inst) => acc + (getInstitutionSupabaseCount(inst) || 0), 0);
-          if (instSum > 0) return instSum;
-        }
-        return 2921;
-      }
-
-      // 1. Resposta instantânea (0ms) para Residência Geral
-      if (hasClinicalFilters && !hasRightCardFilters) {
-        let clinicalSum = 0;
-        if (filters.subfocos && filters.subfocos.length > 0) {
-          clinicalSum = filters.subfocos.reduce((acc, s) => acc + (getQuestionCount('subfocos', s) || 0), 0);
-        } else if (filters.focos && filters.focos.length > 0) {
-          clinicalSum = filters.focos.reduce((acc, f) => acc + (getQuestionCount('focos', f) || 0), 0);
-        } else if (filters.temas && filters.temas.length > 0) {
-          clinicalSum = filters.temas.reduce((acc, t) => acc + (getQuestionCount('temas', t) || 0), 0);
-        } else if (filters.especialidades && filters.especialidades.length > 0) {
-          clinicalSum = filters.especialidades.reduce((acc, e) => acc + (getQuestionCount('especialidades', e) || 0), 0);
-        }
-        if (clinicalSum > 0) {
-          return clinicalSum;
-        }
-      }
-
-      // 2. Se há resposta real da API com contagem cruzada válida
-      if (typeof totalFiltered === 'number' && totalFiltered !== 121635) {
+      // 1. Resposta real direta da query do banco (prioridade absoluta)
+      if (typeof totalFiltered === 'number') {
         return totalFiltered;
       }
 
-      // 3. Fallback inteligente durante carregamento ou debounce:
-      let localSum = 0;
-      if (filters.subfocos && filters.subfocos.length > 0) {
-        localSum = filters.subfocos.reduce((acc, s) => acc + (getQuestionCount('subfocos', s) || 0), 0);
-      } else if (filters.focos && filters.focos.length > 0) {
-        localSum = filters.focos.reduce((acc, f) => acc + (getQuestionCount('focos', f) || 0), 0);
-      } else if (filters.temas && filters.temas.length > 0) {
-        localSum = filters.temas.reduce((acc, t) => acc + (getQuestionCount('temas', t) || 0), 0);
-      } else if (filters.especialidades && filters.especialidades.length > 0) {
-        localSum = filters.especialidades.reduce((acc, e) => acc + (getQuestionCount('especialidades', e) || 0), 0);
-      } else if (filters.instituicoes && filters.instituicoes.length > 0) {
-        localSum = filters.instituicoes.reduce((acc, inst) => acc + (getInstitutionSupabaseCount(inst) || 0), 0);
+      // 2. Facetas atômicas sincronizadas
+      if (facetedCounts && typeof facetedCounts.totalRightCardCount === 'number' && facetedCounts.totalRightCardCount > 0) {
+        return facetedCounts.totalRightCardCount;
       }
-      if (localSum > 0) {
-        return localSum;
-      }
-      return typeof totalFiltered === 'number' ? totalFiltered : 0;
+
+      return defaultBaseline;
     }
-    return totalAvailable || 121635;
+
+    return isRevalidaMode ? homologatedRevalidaBaseline.total : (totalAvailable || homologatedDiretoBaseline.total);
   }, [
     totalAvailable,
     totalFiltered,
+    facetedCounts,
     filters.modalidades,
     filters.search,
     filters.especialidades,
     filters.temas,
     filters.focos,
     filters.subfocos,
+    filters.subSubfocos,
     filters.anos,
     filters.instituicoes,
     filters.dificuldade,
@@ -1423,7 +1374,9 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                   ? (typeof facetedCounts.especialidades[esp.especialidade] === 'number'
                     ? facetedCounts.especialidades[esp.especialidade]
                     : 0)
-                  : (getQuestionCount('especialidades', esp.especialidade) || 0);
+                  : (isRevalidaMode
+                    ? (homologatedRevalidaBaseline.especialidades[esp.especialidade] || 0)
+                    : (homologatedDiretoBaseline.especialidades[esp.especialidade] || 0));
 
               // Filtragem textual se houver busca
               const qTerm = deferredHierarchySearch.toLowerCase().trim();
@@ -1534,7 +1487,9 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                             ? (typeof facetedCounts.temas[tem.tema] === 'number'
                               ? facetedCounts.temas[tem.tema]
                               : 0)
-                            : (getQuestionCount('temas', tem.tema) || 0);
+                            : (isRevalidaMode
+                              ? (homologatedRevalidaBaseline.temas[tem.tema] || 0)
+                              : (homologatedDiretoBaseline.temas[tem.tema] || 0));
 
                         if (
                           qTerm &&
@@ -1620,11 +1575,12 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                   const isFocoExpanded = Boolean(expandedFoco[foc.foco]) || Boolean(qTerm);
                                   const focoCount =
                                     facetedCounts
-                                      ? (typeof facetedCounts.focos[foc.foco] === 'number'
+                                      ? (typeof facetedCounts.focos?.[foc.foco] === 'number'
                                         ? facetedCounts.focos[foc.foco]
                                         : 0)
-                                      : (getQuestionCount('focos', foc.foco) ||
-                                        Math.round(temaCount / Math.max(1, tem.focos.length)));
+                                      : (isRevalidaMode
+                                        ? ((homologatedRevalidaBaseline.focos as Record<string, number>)?.[foc.foco] || 0)
+                                        : ((homologatedDiretoBaseline.focos as Record<string, number>)?.[foc.foco] || getQuestionCount('focos', foc.foco) || 0));
 
                                   if (
                                     qTerm &&
@@ -1709,11 +1665,12 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                             const isSubfocoExpanded = Boolean(expandedSubfoco[sub] || hasMatchingChild);
                                             const subCount =
                                               facetedCounts
-                                                ? (typeof facetedCounts.subfocos[sub] === 'number'
+                                                ? (typeof facetedCounts.subfocos?.[sub] === 'number'
                                                   ? facetedCounts.subfocos[sub]
                                                   : 0)
-                                                : (getQuestionCount('subfocos', sub) ||
-                                                  Math.round(focoCount / Math.max(1, foc.subfocos.length)));
+                                                : (isRevalidaMode
+                                                  ? 0
+                                                  : (getQuestionCount('subfocos', sub) || 0));
 
                                             if (
                                               qTerm &&

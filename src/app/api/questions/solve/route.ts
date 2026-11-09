@@ -279,6 +279,20 @@ export async function POST(req: NextRequest) {
         row = data;
       }
 
+      if (!row && !error) {
+        for (const tbl of ['questions_expansion_direto', 'questions_revalida_base', 'questions_expansion_revalida']) {
+          const res = await supabaseAdmin
+            .from(tbl)
+            .select('id, code, correct_answer, is_anulada, commentary, options, especialidade, tema, foco, subfoco, difficulty, banca, year')
+            .or(`id.eq.${questionId},code.eq.${questionId}`)
+            .maybeSingle();
+          if (res.data) {
+            row = res.data;
+            break;
+          }
+        }
+      }
+
       if (error) {
         console.error('[API Solve] Erro ao consultar questão:', error);
         return NextResponse.json({ success: false, error: 'Erro no banco de dados.' }, { status: 500 });
