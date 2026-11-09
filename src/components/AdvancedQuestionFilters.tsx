@@ -93,6 +93,7 @@ import { homologatedDiretoBaseline, homologatedRevalidaBaseline } from '@/data/h
 import { getInstitutionSupabaseCount } from '@/data/institutionCounts';
 import {
   fetchFacetedHierarchyCounts,
+  hasRightCardActiveFilters,
   type FacetedHierarchyCountsResult
 } from '@/services/questionService';
 import { useTheme } from '@/context/ThemeContext';
@@ -434,6 +435,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
 
   // Faceted Search: Contagens dinâmicas por linha sincronizadas com o banco (apenas filtros do card direito)
   const [facetedCounts, setFacetedCounts] = useState<FacetedHierarchyCountsResult | null>(null);
+  const hasRightFilters = useMemo(() => hasRightCardActiveFilters(filters), [filters]);
 
   useEffect(() => {
     let isMounted = true;
@@ -1369,14 +1371,12 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
             {clinicalHierarchy.map((esp) => {
               const isEspSelected = filters.especialidades.includes(esp.especialidade);
               const isEspExpanded = Boolean(expandedEspec[esp.especialidade]);
-              const espCount =
-                facetedCounts
-                  ? (typeof facetedCounts.especialidades[esp.especialidade] === 'number'
-                    ? facetedCounts.especialidades[esp.especialidade]
-                    : 0)
-                  : (isRevalidaMode
-                    ? (homologatedRevalidaBaseline.especialidades[esp.especialidade] || 0)
-                    : (homologatedDiretoBaseline.especialidades[esp.especialidade] || 0));
+              const baselineEspCount = isRevalidaMode
+                ? (homologatedRevalidaBaseline.especialidades[esp.especialidade] || 0)
+                : (homologatedDiretoBaseline.especialidades[esp.especialidade] || 0);
+              const espCount = facetedCounts
+                ? (hasRightFilters ? (facetedCounts.especialidades?.[esp.especialidade] ?? 0) : (facetedCounts.especialidades?.[esp.especialidade] ?? baselineEspCount))
+                : baselineEspCount;
 
               // Filtragem textual se houver busca
               const qTerm = deferredHierarchySearch.toLowerCase().trim();
@@ -1482,14 +1482,12 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                         const isTemaSelected =
                           filters.temas.includes(tem.tema) || isEspSelected;
                         const isTemaExpanded = Boolean(expandedTema[tem.tema]) || Boolean(qTerm);
-                        const temaCount =
-                          facetedCounts
-                            ? (typeof facetedCounts.temas[tem.tema] === 'number'
-                              ? facetedCounts.temas[tem.tema]
-                              : 0)
-                            : (isRevalidaMode
-                              ? (homologatedRevalidaBaseline.temas[tem.tema] || 0)
-                              : (homologatedDiretoBaseline.temas[tem.tema] || 0));
+                        const baselineTemaCount = isRevalidaMode
+                          ? (homologatedRevalidaBaseline.temas[tem.tema] || 0)
+                          : (homologatedDiretoBaseline.temas[tem.tema] || 0);
+                        const temaCount = facetedCounts
+                          ? (hasRightFilters ? (facetedCounts.temas?.[tem.tema] ?? 0) : (facetedCounts.temas?.[tem.tema] ?? baselineTemaCount))
+                          : baselineTemaCount;
 
                         if (
                           qTerm &&
@@ -1573,14 +1571,12 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                   const isFocoSelected =
                                     filters.focos.includes(foc.foco) || isTemaSelected;
                                   const isFocoExpanded = Boolean(expandedFoco[foc.foco]) || Boolean(qTerm);
-                                  const focoCount =
-                                    facetedCounts
-                                      ? (typeof facetedCounts.focos?.[foc.foco] === 'number'
-                                        ? facetedCounts.focos[foc.foco]
-                                        : 0)
-                                      : (isRevalidaMode
-                                        ? ((homologatedRevalidaBaseline.focos as Record<string, number>)?.[foc.foco] || 0)
-                                        : ((homologatedDiretoBaseline.focos as Record<string, number>)?.[foc.foco] || getQuestionCount('focos', foc.foco) || 0));
+                                  const baselineFocoCount = isRevalidaMode
+                                    ? ((homologatedRevalidaBaseline.focos as Record<string, number>)?.[foc.foco] || 0)
+                                    : ((homologatedDiretoBaseline.focos as Record<string, number>)?.[foc.foco] || getQuestionCount('focos', foc.foco) || 0);
+                                  const focoCount = facetedCounts
+                                    ? (hasRightFilters ? (facetedCounts.focos?.[foc.foco] ?? 0) : (facetedCounts.focos?.[foc.foco] ?? baselineFocoCount))
+                                    : baselineFocoCount;
 
                                   if (
                                     qTerm &&
@@ -1663,14 +1659,12 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                               filters.subfocos.includes(sub) || isFocoSelected;
                                             const hasMatchingChild = qTerm ? subSubList.some((ss) => ss.toLowerCase().includes(qTerm)) : false;
                                             const isSubfocoExpanded = Boolean(expandedSubfoco[sub] || hasMatchingChild);
-                                            const subCount =
-                                              facetedCounts
-                                                ? (typeof facetedCounts.subfocos?.[sub] === 'number'
-                                                  ? facetedCounts.subfocos[sub]
-                                                  : 0)
-                                                : (isRevalidaMode
-                                                  ? 0
-                                                  : (getQuestionCount('subfocos', sub) || 0));
+                                            const baselineSubCount = isRevalidaMode
+                                              ? ((homologatedRevalidaBaseline.subfocos as Record<string, number>)?.[sub] || 0)
+                                              : ((homologatedDiretoBaseline.subfocos as Record<string, number>)?.[sub] || getQuestionCount('subfocos', sub) || 0);
+                                            const subCount = facetedCounts
+                                              ? (hasRightFilters ? (facetedCounts.subfocos?.[sub] ?? 0) : (facetedCounts.subfocos?.[sub] ?? baselineSubCount))
+                                              : baselineSubCount;
 
                                             if (
                                               qTerm &&

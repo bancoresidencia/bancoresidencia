@@ -476,8 +476,8 @@ export function calculateHierarchyFallback(filters: ExtendedFilterState): number
     if (sum > 0) return Math.max(1, isRevalida ? Math.round(sum * 0.031) : sum);
   }
   if (filters.subfocos && filters.subfocos.length > 0) {
-    const sum = filters.subfocos.reduce((acc, s) => acc + (getQuestionCount('subfocos', s) || 0), 0);
-    if (sum > 0) return Math.max(1, isRevalida ? Math.round(sum * 0.031) : sum);
+    const sum = filters.subfocos.reduce((acc, s) => acc + ((baseline.subfocos as Record<string, number>)?.[s] || getQuestionCount('subfocos', s) || 0), 0);
+    if (sum > 0) return Math.max(1, sum);
   }
   if (filters.focos && filters.focos.length > 0) {
     const sum = filters.focos.reduce((acc, f) => acc + ((baseline.focos as Record<string, number>)[f] || getQuestionCount('focos', f) || 0), 0);

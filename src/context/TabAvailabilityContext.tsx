@@ -90,13 +90,24 @@ export const TabAvailabilityProvider: React.FC<{ children: React.ReactNode }> = 
       } catch {}
     }
 
-    loadStatus();
+    let inFlight = false;
+    const safeLoadStatus = async () => {
+      if (inFlight) return;
+      inFlight = true;
+      try {
+        await loadStatus();
+      } finally {
+        inFlight = false;
+      }
+    };
 
-    // 1. Polling a cada 15s e na reativação da janela para estudantes online
-    const interval = setInterval(loadStatus, 15000);
+    safeLoadStatus();
+
+    // 1. Polling a cada 60s e na reativação da janela para estudantes online
+    const interval = setInterval(safeLoadStatus, 60000);
     const onVisibilityChange = () => {
       if (document.visibilityState === 'visible') {
-        loadStatus();
+        safeLoadStatus();
       }
     };
     document.addEventListener('visibilitychange', onVisibilityChange);

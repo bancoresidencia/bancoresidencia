@@ -423,7 +423,7 @@ export async function POST(req: NextRequest) {
               for (const [f, count] of Object.entries((baseline.focos as Record<string, number>) || hierarchyQuestionCounts.focos || {})) {
                 focos[f] = Math.max(0, Math.round((count as number) * overallRatio));
               }
-              for (const [s, count] of Object.entries(hierarchyQuestionCounts.subfocos || {})) {
+              for (const [s, count] of Object.entries((baseline.subfocos as Record<string, number>) || hierarchyQuestionCounts.subfocos || {})) {
                 subfocos[s] = Math.max(0, Math.round((count as number) * overallRatio));
               }
             }
