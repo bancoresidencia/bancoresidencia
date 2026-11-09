@@ -15,6 +15,11 @@ export function getDbPath(): string {
 }
 
 export function isSqliteAvailable(): boolean {
+  // O cache local SQLite só pode ser utilizado se explicitamente habilitado via env
+  // evitando mascarar o acervo homologado de 173.526 questões do Supabase com o arquivo antigo de 132k
+  if (process.env.ENABLE_LOCAL_SQLITE !== 'true') {
+    return false;
+  }
   return fs.existsSync(getDbPath());
 }
 

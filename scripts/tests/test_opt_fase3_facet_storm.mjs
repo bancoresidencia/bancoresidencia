@@ -24,7 +24,7 @@ async function postJson(path, payload) {
       res.on('end', () => {
         const totalMs = Math.round(performance.now() - t0);
         let json = null;
-        try { json = JSON.parse(raw); } catch {}
+        try { json = JSON.parse(raw); } catch { }
         resolve({ status: res.statusCode, totalMs, json, rawLength: raw.length });
       });
     });
