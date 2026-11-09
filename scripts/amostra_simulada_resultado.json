@@ -1,0 +1,116 @@
+[
+  {
+    "id": "078d867e-3dab-4bfa-8628-c3878c721e91",
+    "code": "UFPAHUJBB-2023-PED-6071",
+    "especialidade": "Pediatria",
+    "tema": "Imunizações e Calendário Vacinal",
+    "foco": "Vacinas em Populações Especiais e CRIE",
+    "subfocos_disponiveis": [
+      "Indicações de Imunobiológicos Especiais no CRIE",
+      "Indicações de Vacina Acelular (DTPa)"
+    ],
+    "subfoco_escolhido": "Indicações de Imunobiológicos Especiais no CRIE",
+    "sub_subfoco_escolhido": null,
+    "justificativa_clinica": "História familiar de imunodeficiência indica risco de erro inato da imunidade, sendo o principal sinal de alerta.",
+    "enunciado": "Ao discutir o caso de um lactente com 60 dias de vida, admitido em unidade de terapia intensiva com sépsis secundária a abscesso cutâneo pós-picada de inseto, o preceptor questiona a seus residentes sobre os sinais de alerta para erro inato da imunidade em crianças. A resposta correta é",
+    "alternativas": [
+      {
+        "text": "duas ou mais otites por ano.",
+        "letter": "A"
+      },
+      {
+        "text": "quatro ou mais pneumonias por ano.",
+        "letter": "B"
+      },
+      {
+        "text": "candidíase oral em recém-nascidos.",
+        "letter": "C"
+      },
+      {
+        "text": "história de imunodeficiência na família.",
+        "letter": "D"
+      },
+      {
+        "text": "diarreia aguda.",
+        "letter": "E"
+      }
+    ],
+    "gabarito": "D"
+  },
+  {
+    "id": "07a15e0d-f66e-4eb1-8802-3eef66bca956",
+    "code": "HMDI-2017-GIN-10178",
+    "especialidade": "Ginecologia",
+    "tema": "Endometriose e Dor Pélvica Crônica",
+    "foco": "Endometriose Pélvica e Ovariana (Endometrioma)",
+    "subfocos_disponiveis": [
+      "Quadro Clínico e os \"6 Ds\" da Endometriose",
+      "Mapeamento por Imagem e Terapêutica Escalonada"
+    ],
+    "subfoco_escolhido": "Quadro Clínico e os \"6 Ds\" da Endometriose",
+    "sub_subfoco_escolhido": null,
+    "justificativa_clinica": "A classificação ASRM descreve quatro estágios (I mínima, II leve, III moderada, IV severa), correspondendo à alternativa B.",
+    "enunciado": "A principal classificação de endometriose é a da Sociedade Americana de Medicina Reprodutiva (ASRM). Segundo esta classificação esta doença divide-se em:",
+    "alternativas": [
+      {
+        "text": "Três estágios: I - mínima, II - moderada e III - Severa",
+        "letter": "A",
+        "explanation": "A classificação da ASRM não utiliza a divisão em **três estágios**, sendo incorreta a nomenclatura de 'mínima, moderada e severa' como única subdivisão, omitindo o estágio leve e o estágio IV."
+      },
+      {
+        "text": "Quatro estágios: I - mínima, II - leve, III - moderada e IV - severa",
+        "letter": "B",
+        "explanation": "A classificação revisada da Sociedade Americana de Medicina Reprodutiva (rASRM) estabelece um sistema de pontuação baseado na localização, extensão e profundidade dos implantes e aderências, dividindo a doença em **quatro estágios: I (mínima, 1-5 pontos), II (leve, 6-15 pontos), III (moderada, 16-40 pontos) e IV (severa, >40 pontos)**."
+      },
+      {
+        "text": "Cinco estágios: I - mínima, II - leve, III - moderada, IV - severa e V - grave profunda).",
+        "letter": "C",
+        "explanation": "Não existe a classificação em **cinco estágios** na rASRM, e a inclusão de um estágio V para 'grave profunda' é uma invenção que não consta nos critérios validados pela literatura médica internacional."
+      },
+      {
+        "text": "Seis estágios: I - mínima, II - leve, III - moderada, IV - severa, V - grave (profunda) e VI - Com comprometimento de intestino e bexiga.",
+        "letter": "D",
+        "explanation": "A classificação da ASRM não prevê **seis estágios**, nem utiliza critérios baseados exclusivamente no comprometimento de órgãos específicos como intestino ou bexiga para definir o estágio, mas sim um sistema de pontuação cumulativa."
+      }
+    ],
+    "gabarito": "B"
+  },
+  {
+    "id": "07af0236-cac9-4e1f-9b70-040276c6a9a5",
+    "code": "CLNICACAMPOG-2015-PED-9272",
+    "especialidade": "Pediatria",
+    "tema": "Neonatologia e Cuidados Perinatais",
+    "foco": "Hiperbilirrubinemia e Icterícia Neonatal",
+    "subfocos_disponiveis": [
+      "Icterícia Fisiológica vs Patológica",
+      "Doença Hemolítica Perinatal e Tratamento"
+    ],
+    "subfoco_escolhido": "Icterícia Fisiológica vs Patológica",
+    "sub_subfoco_escolhido": null,
+    "justificativa_clinica": "Icterícia conjugada precoce com sinal de cordão triangular e fibrose periportal caracteriza icterícia patológica por atresia biliar.",
+    "enunciado": "Recém nascido de 37 dias, ictérico desde o primeiro dia de vida, acolia fecal, hepatomegalia, fígado endurecido a palpação. Bilirrubina direta aumentada, transaminases pouco elevadas. Ecografia evidencia o sinal \"cordão triangular\". Estudo histológico do tecido hepático mostra fibrose periportal. Qual o diagnóstico mais provável?",
+    "alternativas": [
+      {
+        "text": "Icterícia por baixa oferta de leite materno.",
+        "letter": "A"
+      },
+      {
+        "text": "Incompatibilidade RH.",
+        "letter": "B"
+      },
+      {
+        "text": "Hipotireoidismo congênito.",
+        "letter": "C"
+      },
+      {
+        "text": "Atresia de vias biliares.",
+        "letter": "D"
+      },
+      {
+        "text": "Citomegalovirose congênita.",
+        "letter": "E"
+      }
+    ],
+    "gabarito": "D"
+  }
+]

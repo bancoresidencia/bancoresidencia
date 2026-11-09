@@ -104,6 +104,9 @@ export const QuestoesView: React.FC = () => {
     const search = searchParams.get('search') || searchParams.get('q') || '';
     const espParam = searchParams.get('especialidade');
     const temaParam = searchParams.get('tema');
+    const focoParam = searchParams.get('foco');
+    const subfocoParam = searchParams.get('subfoco');
+    const subSubfocoParam = searchParams.get('subSubfoco') || searchParams.get('sub_subfoco');
     const instParam = searchParams.get('instituicao');
     const anoParam = searchParams.get('ano');
 
@@ -112,8 +115,9 @@ export const QuestoesView: React.FC = () => {
       modalidades: ['Residência Médica'],
       especialidades: espParam ? [espParam] : [],
       temas: temaParam ? [temaParam] : [],
-      focos: [],
-      subfocos: [],
+      focos: focoParam ? [focoParam] : [],
+      subfocos: subfocoParam ? [subfocoParam] : [],
+      subSubfocos: subSubfocoParam ? [subSubfocoParam] : [],
       instituicoes: instParam ? [instParam] : [],
       anos: anoParam ? [parseInt(anoParam, 10)] : [],
       tipoProva: [],
@@ -153,6 +157,39 @@ export const QuestoesView: React.FC = () => {
       setBancoMode('resolucao');
     }
   }, [searchParams, setActiveListId]);
+
+  // Sincroniza filtros caso haja mudança em query params (ex: navegação com subfoco ou sub-subfoco)
+  useEffect(() => {
+    const espParam = searchParams.get('especialidade');
+    const temaParam = searchParams.get('tema');
+    const focoParam = searchParams.get('foco');
+    const subfocoParam = searchParams.get('subfoco');
+    const subSubfocoParam = searchParams.get('subSubfoco') || searchParams.get('sub_subfoco');
+    const instParam = searchParams.get('instituicao');
+    const anoParam = searchParams.get('ano');
+    const searchParam = searchParams.get('search') || searchParams.get('q');
+    const modeParam = searchParams.get('mode');
+
+    if (espParam || temaParam || focoParam || subfocoParam || subSubfocoParam || instParam || anoParam || searchParam) {
+      setAdvancedFilters((prev) => ({
+        ...prev,
+        especialidades: espParam ? [espParam] : prev.especialidades,
+        temas: temaParam ? [temaParam] : prev.temas,
+        focos: focoParam ? [focoParam] : prev.focos,
+        subfocos: subfocoParam ? [subfocoParam] : prev.subfocos,
+        subSubfocos: subSubfocoParam ? [subSubfocoParam] : (prev.subSubfocos || []),
+        instituicoes: instParam ? [instParam] : prev.instituicoes,
+        anos: anoParam ? [parseInt(anoParam, 10)] : prev.anos,
+        search: searchParam !== null && searchParam !== undefined ? searchParam : prev.search
+      }));
+    }
+
+    if (modeParam === 'resolucao') {
+      setBancoMode('resolucao');
+    } else if (modeParam === 'filtros') {
+      setBancoMode('filtros');
+    }
+  }, [searchParams]);
 
   // Carrega total global
   useEffect(() => {
@@ -476,6 +513,8 @@ export const QuestoesView: React.FC = () => {
       tema: q?.tema,
       foco: q?.foco,
       subfoco: q?.subfoco,
+      sub_subfoco: q?.sub_subfoco || q?.subSubfoco,
+      subSubfoco: q?.subSubfoco || q?.sub_subfoco,
       banca: q?.banca,
       year: q?.year,
       code: q?.code,
@@ -491,6 +530,7 @@ export const QuestoesView: React.FC = () => {
       temas: [],
       focos: [],
       subfocos: [],
+      subSubfocos: [],
       instituicoes: [],
       anos: [],
       tipoProva: [],
@@ -528,6 +568,7 @@ export const QuestoesView: React.FC = () => {
     if (advancedFilters.temas.length > 0) count += advancedFilters.temas.length;
     if (advancedFilters.focos.length > 0) count += advancedFilters.focos.length;
     if (advancedFilters.subfocos.length > 0) count += advancedFilters.subfocos.length;
+    if (advancedFilters.subSubfocos && advancedFilters.subSubfocos.length > 0) count += advancedFilters.subSubfocos.length;
     if (advancedFilters.instituicoes.length > 0) count += advancedFilters.instituicoes.length;
     if (advancedFilters.anos.length > 0) count += advancedFilters.anos.length;
     if (advancedFilters.tipoProva.length > 0) count += advancedFilters.tipoProva.length;

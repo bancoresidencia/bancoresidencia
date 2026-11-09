@@ -7,8 +7,55 @@ import {
   QuestionStatus,
   QuestionDifficulty,
   QuestionType,
-  UserAnswerItem
+  UserAnswerItem,
+  SubfocoItem
 } from '@/types';
+
+const getSubfocoName = (item: SubfocoItem): string =>
+  typeof item === 'string' ? item : item.subfoco;
+
+const getSubSubfocos = (item: SubfocoItem): string[] =>
+  typeof item === 'string' ? [] : (item.sub_subfocos || []);
+
+/**
+ * Higieniza o rótulo de exibição visual EXCLUSIVAMENTE para nós de 4º nível (sub_subfocos).
+ * Remove sufixos descritivos longos, critérios após dois-pontos e posologias extensas na interface,
+ * preservando o valor e ID originais íntegros para buscas, queries e filtros do motor.
+ */
+export const formatSubSubfocoDisplay = (ss: string): string => {
+  if (!ss) return '';
+  let clean = ss;
+
+  // 1. Se tem dois-pontos: o que vem depois costuma ser detalhamento de critérios ou regras clínicas
+  if (clean.includes(':')) {
+    const rawPrefix = clean.split(':')[0].trim();
+    const simplifiedPrefix = rawPrefix
+      .replace(/\s*\([^)]*(?:pelo menos|mais de|após|entre|não neoplásicas|não podendo afastar)[^)]*\)/gi, '')
+      .replace(/\s*\([^)]+\)/g, (match) => match.length > 20 ? '' : match)
+      .trim();
+    if (simplifiedPrefix.length >= 4) {
+      return simplifiedPrefix;
+    }
+  }
+
+  // 2. Se tem ponto-e-vírgula com alternativas ou posologia secundária
+  if (clean.includes(';')) {
+    clean = clean.split(';')[0].trim();
+  }
+
+  // 3. Remove posologias farmacológicas detalhadas entre parênteses
+  clean = clean.replace(/\s*\(\s*\d+\s*(?:mg|mcg|g|ui|UI|h|dias|noites|semanas|meses)[^)]*\)/gi, '');
+
+  // 4. Remove parênteses explicativos longos (> 25 caracteres)
+  clean = clean.replace(/\s*\([^)(]{25,}\)/g, '');
+
+  // 5. Se ainda for muito extenso e tiver travessão
+  if (clean.length > 70 && clean.includes(' - ')) {
+    clean = clean.split(' - ')[0].trim();
+  }
+
+  return clean.trim();
+};
 import {
   Search,
   X,
@@ -355,9 +402,10 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       (filters.especialidades?.length || 0) +
       (filters.temas?.length || 0) +
       (filters.focos?.length || 0) +
-      (filters.subfocos?.length || 0)
+      (filters.subfocos?.length || 0) +
+      (filters.subSubfocos?.length || 0)
     );
-  }, [filters.especialidades, filters.temas, filters.focos, filters.subfocos]);
+  }, [filters.especialidades, filters.temas, filters.focos, filters.subfocos, filters.subSubfocos]);
 
   const activeBancasCount = useMemo(() => {
     let count = (filters.instituicoes?.length || 0) + (filters.anos?.length || 0);
@@ -471,8 +519,12 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       filters.subfocos.forEach((sub) => list.push({ id: sub, name: sub, category: 'Subfoco' }));
     }
 
+    if (filters.subSubfocos && filters.subSubfocos.length > 0) {
+      filters.subSubfocos.forEach((ss) => list.push({ id: ss, name: formatSubSubfocoDisplay(ss), category: '4º Nível' }));
+    }
+
     return list;
-  }, [filters.especialidades, filters.temas, filters.focos, filters.subfocos]);
+  }, [filters.especialidades, filters.temas, filters.focos, filters.subfocos, filters.subSubfocos]);
 
   // Retorna cotas balanceadas automáticas ou personalizadas
   const getEffectiveQuotas = (): Record<string, number> => {
@@ -520,6 +572,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
   const [expandedEspec, setExpandedEspec] = useState<Record<string, boolean>>({});
   const [expandedTema, setExpandedTema] = useState<Record<string, boolean>>({});
   const [expandedFoco, setExpandedFoco] = useState<Record<string, boolean>>({});
+  const [expandedSubfoco, setExpandedSubfoco] = useState<Record<string, boolean>>({});
 
   // Busca e categoria de instituições
   const [instSearch, setInstSearch] = useState<string>('');
@@ -549,18 +602,21 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     let nextTemas = [...filters.temas];
     let nextFocos = [...filters.focos];
     let nextSubfocos = [...filters.subfocos];
+    let nextSubSubfocos = filters.subSubfocos ? [...filters.subSubfocos] : [];
 
     if (isSelected) {
       nextSpecs = filters.especialidades.filter((e) => e !== espName);
-      // Remove temas, focos e subfocos filhos dessa especialidade
+      // Remove temas, focos, subfocos e sub-subfocos filhos dessa especialidade
       const espNode = clinicalHierarchy.find((h) => h.especialidade === espName);
       if (espNode) {
         const childTemas = espNode.temas.map((t) => t.tema);
         nextTemas = nextTemas.filter((t) => !childTemas.includes(t));
         const childFocos = espNode.temas.flatMap((t) => t.focos.map((f) => f.foco));
         nextFocos = nextFocos.filter((f) => !childFocos.includes(f));
-        const childSubfocos = espNode.temas.flatMap((t) => t.focos.flatMap((f) => f.subfocos));
+        const childSubfocos = espNode.temas.flatMap((t) => t.focos.flatMap((f) => f.subfocos.map(getSubfocoName)));
         nextSubfocos = nextSubfocos.filter((s) => !childSubfocos.includes(s));
+        const childSubSub = espNode.temas.flatMap((t) => t.focos.flatMap((f) => f.subfocos.flatMap(getSubSubfocos)));
+        nextSubSubfocos = nextSubSubfocos.filter((ss) => !childSubSub.includes(ss));
       }
     } else {
       nextSpecs = [...filters.especialidades, espName];
@@ -571,7 +627,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       especialidades: nextSpecs,
       temas: nextTemas,
       focos: nextFocos,
-      subfocos: nextSubfocos
+      subfocos: nextSubfocos,
+      subSubfocos: nextSubSubfocos
     });
   };
 
@@ -580,17 +637,20 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     let nextTemas: string[];
     let nextFocos = [...filters.focos];
     let nextSubfocos = [...filters.subfocos];
+    let nextSubSubfocos = filters.subSubfocos ? [...filters.subSubfocos] : [];
 
     if (isSelected) {
       nextTemas = filters.temas.filter((t) => t !== temaName);
-      // Remove focos e subfocos filhos desse tema
+      // Remove focos, subfocos e sub-subfocos filhos desse tema
       clinicalHierarchy.forEach((esp) => {
         const temaNode = esp.temas.find((t) => t.tema === temaName);
         if (temaNode) {
           const childFocos = temaNode.focos.map((f) => f.foco);
           nextFocos = nextFocos.filter((f) => !childFocos.includes(f));
-          const childSubfocos = temaNode.focos.flatMap((f) => f.subfocos);
+          const childSubfocos = temaNode.focos.flatMap((f) => f.subfocos.map(getSubfocoName));
+          const childSubSub = temaNode.focos.flatMap((f) => f.subfocos.flatMap(getSubSubfocos));
           nextSubfocos = nextSubfocos.filter((s) => !childSubfocos.includes(s));
+          nextSubSubfocos = nextSubSubfocos.filter((ss) => !childSubSub.includes(ss));
         }
       });
     } else {
@@ -601,7 +661,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       ...filters,
       temas: nextTemas,
       focos: nextFocos,
-      subfocos: nextSubfocos
+      subfocos: nextSubfocos,
+      subSubfocos: nextSubSubfocos
     });
   };
 
@@ -609,15 +670,19 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     const isSelected = filters.focos.includes(focoName);
     let nextFocos: string[];
     let nextSubfocos = [...filters.subfocos];
+    let nextSubSubfocos = filters.subSubfocos ? [...filters.subSubfocos] : [];
 
     if (isSelected) {
       nextFocos = filters.focos.filter((f) => f !== focoName);
-      // Remove subfocos desse foco
+      // Remove subfocos e sub-subfocos desse foco
       clinicalHierarchy.forEach((esp) => {
         esp.temas.forEach((tem) => {
           const focoNode = tem.focos.find((f) => f.foco === focoName);
           if (focoNode) {
-            nextSubfocos = nextSubfocos.filter((s) => !focoNode.subfocos.includes(s));
+            const childSubfocos = focoNode.subfocos.map(getSubfocoName);
+            const childSubSub = focoNode.subfocos.flatMap(getSubSubfocos);
+            nextSubfocos = nextSubfocos.filter((s) => !childSubfocos.includes(s));
+            nextSubSubfocos = nextSubSubfocos.filter((ss) => !childSubSub.includes(ss));
           }
         });
       });
@@ -628,19 +693,50 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     onChange({
       ...filters,
       focos: nextFocos,
-      subfocos: nextSubfocos
+      subfocos: nextSubfocos,
+      subSubfocos: nextSubSubfocos
     });
   };
 
   const toggleSubfoco = (subfocoName: string) => {
     const isSelected = filters.subfocos.includes(subfocoName);
-    const next = isSelected
+    const nextSubfocos = isSelected
       ? filters.subfocos.filter((s) => s !== subfocoName)
       : [...filters.subfocos, subfocoName];
 
+    let nextSubSubfocos = filters.subSubfocos ? [...filters.subSubfocos] : [];
+    if (isSelected && nextSubSubfocos.length > 0) {
+      clinicalHierarchy.forEach((esp) => {
+        esp.temas.forEach((tem) => {
+          tem.focos.forEach((foc) => {
+            foc.subfocos.forEach((subItem) => {
+              if (getSubfocoName(subItem) === subfocoName) {
+                const childSS = getSubSubfocos(subItem);
+                nextSubSubfocos = nextSubSubfocos.filter((ss) => !childSS.includes(ss));
+              }
+            });
+          });
+        });
+      });
+    }
+
     onChange({
       ...filters,
-      subfocos: next
+      subfocos: nextSubfocos,
+      subSubfocos: nextSubSubfocos
+    });
+  };
+
+  const toggleSubSubfoco = (ssName: string) => {
+    const current = filters.subSubfocos || [];
+    const isSelected = current.includes(ssName);
+    const next = isSelected
+      ? current.filter((s) => s !== ssName)
+      : [...current, ssName];
+
+    onChange({
+      ...filters,
+      subSubfocos: next
     });
   };
 
@@ -649,24 +745,30 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
     const espMap: Record<string, boolean> = {};
     const temaMap: Record<string, boolean> = {};
     const focoMap: Record<string, boolean> = {};
+    const subMap: Record<string, boolean> = {};
     clinicalHierarchy.forEach((esp) => {
       espMap[esp.especialidade] = true;
       esp.temas.forEach((tem) => {
         temaMap[tem.tema] = true;
         tem.focos.forEach((foc) => {
           focoMap[foc.foco] = true;
+          foc.subfocos.forEach((subItem) => {
+            subMap[getSubfocoName(subItem)] = true;
+          });
         });
       });
     });
     setExpandedEspec(espMap);
     setExpandedTema(temaMap);
     setExpandedFoco(focoMap);
+    setExpandedSubfoco(subMap);
   };
 
   const handleCollapseAll = () => {
     setExpandedEspec({});
     setExpandedTema({});
     setExpandedFoco({});
+    setExpandedSubfoco({});
   };
 
   const handleSelectAllSpecialties = () => {
@@ -676,7 +778,8 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
       especialidades: all,
       temas: [],
       focos: [],
-      subfocos: []
+      subfocos: [],
+      subSubfocos: []
     });
   };
 
@@ -987,6 +1090,17 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
         onRemove: () => toggleSubfoco(sub)
       });
     });
+
+    // Sub-subfocos (4º Nível)
+    if (filters.subSubfocos) {
+      filters.subSubfocos.forEach((ss) => {
+        tags.push({
+          id: `ss-${ss}`,
+          label: `4º Nível: ${formatSubSubfocoDisplay(ss)}`,
+          onRemove: () => toggleSubSubfoco(ss)
+        });
+      });
+    }
 
     // Instituições
     filters.instituicoes.forEach((inst) => {
@@ -1322,7 +1436,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                     t.focos.some(
                       (f) =>
                         f.foco.toLowerCase().includes(qTerm) ||
-                        f.subfocos.some((s) => s.toLowerCase().includes(qTerm))
+                        f.subfocos.some((s) => getSubfocoName(s).toLowerCase().includes(qTerm) || getSubSubfocos(s).some((ss) => ss.toLowerCase().includes(qTerm)))
                     )
                 )
               ) {
@@ -1428,7 +1542,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                           !tem.focos.some(
                             (f) =>
                               f.foco.toLowerCase().includes(qTerm) ||
-                              f.subfocos.some((s) => s.toLowerCase().includes(qTerm))
+                              f.subfocos.some((s) => getSubfocoName(s).toLowerCase().includes(qTerm) || getSubSubfocos(s).some((ss) => ss.toLowerCase().includes(qTerm)))
                           )
                         ) {
                           return null;
@@ -1515,7 +1629,7 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                   if (
                                     qTerm &&
                                     !foc.foco.toLowerCase().includes(qTerm) &&
-                                    !foc.subfocos.some((s) => s.toLowerCase().includes(qTerm))
+                                    !foc.subfocos.some((s) => getSubfocoName(s).toLowerCase().includes(qTerm) || getSubSubfocos(s).some((ss) => ss.toLowerCase().includes(qTerm)))
                                   ) {
                                     return null;
                                   }
@@ -1583,12 +1697,16 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                         </span>
                                       </div>
 
-                                      {/* Linha 4: Subfocos (Filhos de Foco) */}
+                                      {/* Linha 4: Subfocos (Filhos de Foco) e 4º Nível (Sub-subfocos) */}
                                       {isFocoExpanded && foc.subfocos.length > 0 && (
                                         <div className="pl-4 space-y-0.5 border-l border-zinc-200/40 dark:border-zinc-800/50 ml-2">
-                                          {foc.subfocos.map((sub) => {
+                                          {foc.subfocos.map((subItem) => {
+                                            const sub = getSubfocoName(subItem);
+                                            const subSubList = getSubSubfocos(subItem);
                                             const isSubSelected =
                                               filters.subfocos.includes(sub) || isFocoSelected;
+                                            const hasMatchingChild = qTerm ? subSubList.some((ss) => ss.toLowerCase().includes(qTerm)) : false;
+                                            const isSubfocoExpanded = Boolean(expandedSubfoco[sub] || hasMatchingChild);
                                             const subCount =
                                               facetedCounts
                                                 ? (typeof facetedCounts.subfocos[sub] === 'number'
@@ -1600,40 +1718,123 @@ export const AdvancedQuestionFilters: React.FC<AdvancedQuestionFiltersProps> = (
                                             if (
                                               qTerm &&
                                               !sub.toLowerCase().includes(qTerm) &&
-                                              !foc.foco.toLowerCase().includes(qTerm)
+                                              !foc.foco.toLowerCase().includes(qTerm) &&
+                                              !hasMatchingChild
                                             ) {
                                               return null;
                                             }
 
                                             return (
-                                              <div
-                                                key={sub}
-                                                onClick={() => toggleSubfoco(sub)}
-                                                className={`flex items-center justify-between py-1.5 px-2 rounded-lg text-xs cursor-pointer transition-colors ${isSubSelected
-                                                    ? 'font-semibold text-zinc-900 dark:text-white'
-                                                    : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 hover:bg-zinc-50 dark:hover:bg-zinc-900/60'
-                                                  }`}
-                                              >
-                                                <div className="flex items-center gap-2 truncate min-w-0" title={sub}>
-                                                  <div
-                                                    className={`w-3.5 h-3.5 rounded-md border flex items-center justify-center shrink-0 ${isSubSelected
-                                                        ? 'text-white'
-                                                        : 'border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900'
-                                                      }`}
-                                                    style={{
-                                                      backgroundColor: isSubSelected ? accentConfig.primaryHex : undefined,
-                                                      borderColor: isSubSelected ? accentConfig.primaryHex : undefined
-                                                    }}
-                                                  >
-                                                    {isSubSelected && (
-                                                      <Check className="w-2.5 h-2.5 stroke-[3]" />
+                                              <div key={sub} className="space-y-0.5">
+                                                <div
+                                                  className={`flex items-center justify-between py-1 px-2 rounded-lg text-xs transition-colors ${isSubSelected
+                                                      ? 'font-semibold text-zinc-900 dark:text-white'
+                                                      : 'text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-200 hover:bg-zinc-50 dark:hover:bg-zinc-900/60'
+                                                    }`}
+                                                >
+                                                  <div className="flex items-center gap-1.5 truncate min-w-0 flex-1">
+                                                    <button
+                                                      type="button"
+                                                      onClick={() => toggleSubfoco(sub)}
+                                                      className={`w-3.5 h-3.5 rounded-md border flex items-center justify-center shrink-0 cursor-pointer ${isSubSelected
+                                                          ? 'text-white'
+                                                          : 'border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900'
+                                                        }`}
+                                                      style={{
+                                                        backgroundColor: isSubSelected ? accentConfig.primaryHex : undefined,
+                                                        borderColor: isSubSelected ? accentConfig.primaryHex : undefined
+                                                      }}
+                                                    >
+                                                      {isSubSelected && (
+                                                        <Check className="w-2.5 h-2.5 stroke-[3]" />
+                                                      )}
+                                                    </button>
+
+                                                    {subSubList.length > 0 && (
+                                                      <button
+                                                        type="button"
+                                                        onClick={(e) => {
+                                                          e.stopPropagation();
+                                                          setExpandedSubfoco((prev) => ({
+                                                            ...prev,
+                                                            [sub]: !prev[sub]
+                                                          }));
+                                                        }}
+                                                        className="p-0.5 rounded text-zinc-400 dark:text-zinc-500 hover:text-zinc-700 dark:hover:text-zinc-200 shrink-0 cursor-pointer"
+                                                        title={isSubfocoExpanded ? 'Recolher 4º nível' : 'Expandir 4º nível'}
+                                                      >
+                                                        {isSubfocoExpanded ? (
+                                                          <ChevronDown className="w-3.5 h-3.5" />
+                                                        ) : (
+                                                          <ChevronRight className="w-3.5 h-3.5" />
+                                                        )}
+                                                      </button>
                                                     )}
+
+                                                    <span
+                                                      onClick={() => toggleSubfoco(sub)}
+                                                      className="truncate text-zinc-800 dark:text-zinc-300 cursor-pointer"
+                                                      title={sub}
+                                                    >
+                                                      {sub}
+                                                    </span>
                                                   </div>
-                                                  <span className="truncate text-zinc-800 dark:text-zinc-300">{sub}</span>
+                                                  <span className="px-1.5 py-0.5 rounded-md bg-transparent border border-zinc-200/50 dark:border-zinc-800/60 text-[10px] font-mono text-zinc-500 dark:text-zinc-400 ml-2 shrink-0">
+                                                    {subCount.toLocaleString('pt-BR')}
+                                                  </span>
                                                 </div>
-                                                <span className="px-1.5 py-0.5 rounded-md bg-transparent border border-zinc-200/50 dark:border-zinc-800/60 text-[10px] font-mono text-zinc-500 dark:text-zinc-400 ml-2 shrink-0">
-                                                  {subCount.toLocaleString('pt-BR')}
-                                                </span>
+
+                                                {/* Linha 5: 4º Nível (Sub-subfocos) */}
+                                                {isSubfocoExpanded && subSubList.length > 0 && (
+                                                  <div className="pl-5 space-y-0.5 border-l border-zinc-200/40 dark:border-zinc-800/50 ml-3 py-0.5">
+                                                    {subSubList.map((ss) => {
+                                                      const isSsSelected =
+                                                        (filters.subSubfocos && filters.subSubfocos.includes(ss)) || isSubSelected;
+                                                      const ssCount = getQuestionCount('sub_subfocos', ss) || 0;
+
+                                                      if (
+                                                        qTerm &&
+                                                        !ss.toLowerCase().includes(qTerm) &&
+                                                        !sub.toLowerCase().includes(qTerm) &&
+                                                        !foc.foco.toLowerCase().includes(qTerm)
+                                                      ) {
+                                                        return null;
+                                                      }
+
+                                                      return (
+                                                        <div
+                                                          key={ss}
+                                                          onClick={() => toggleSubSubfoco(ss)}
+                                                          className={`flex items-center justify-between py-1 px-2 rounded-lg text-[11px] cursor-pointer transition-colors ${isSsSelected
+                                                              ? 'font-medium text-zinc-900 dark:text-white bg-zinc-100/70 dark:bg-zinc-800/50'
+                                                              : 'text-zinc-500 dark:text-zinc-400 hover:text-zinc-800 dark:hover:text-zinc-200 hover:bg-zinc-50 dark:hover:bg-zinc-900/40'
+                                                            }`}
+                                                        >
+                                                          <div className="flex items-center gap-1.5 min-w-0 flex-1" title={ss}>
+                                                            <div
+                                                              className={`w-3 h-3 rounded border flex items-center justify-center shrink-0 ${isSsSelected
+                                                                  ? 'text-white'
+                                                                  : 'border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900'
+                                                                }`}
+                                                              style={{
+                                                                backgroundColor: isSsSelected ? accentConfig.primaryHex : undefined,
+                                                                borderColor: isSsSelected ? accentConfig.primaryHex : undefined
+                                                              }}
+                                                            >
+                                                              {isSsSelected && <Check className="w-2 h-2 stroke-[3]" />}
+                                                            </div>
+                                                            <span className="truncate leading-tight text-zinc-700 dark:text-zinc-300">{formatSubSubfocoDisplay(ss)}</span>
+                                                          </div>
+                                                          {ssCount > 0 && (
+                                                            <span className="px-1.5 py-0.2 rounded bg-transparent border border-zinc-200/40 dark:border-zinc-800/50 text-[9px] font-mono text-zinc-400 dark:text-zinc-500 ml-2 shrink-0">
+                                                              {ssCount.toLocaleString('pt-BR')}
+                                                            </span>
+                                                          )}
+                                                        </div>
+                                                      );
+                                                    })}
+                                                  </div>
+                                                )}
                                               </div>
                                             );
                                           })}

@@ -4,6 +4,7 @@ import { createClient as createSupabaseAdminClient } from '@supabase/supabase-js
 import { createClient as createSupabaseServerClient } from '@/lib/supabase/server';
 import { validateQuestionId, validateAnswerOption } from '@/utils/security';
 import { injectZeroWidthWatermark } from '@/utils/watermark';
+import { sanitizeMedicalText } from '@/utils/textSanitizer';
 
 export const dynamic = 'force-dynamic';
 
@@ -370,14 +371,14 @@ export async function POST(req: NextRequest) {
     // Entrega o gabarito instantaneamente aos alunos legítimos (0ms na UI) e visitantes dentro da cota
     if (isPrefetch) {
       const watermarkId = authenticatedUser?.id || clientIp || 'prefetch';
-      const watermarkedCommentary = injectZeroWidthWatermark(row.commentary || '', watermarkId);
+      const watermarkedCommentary = injectZeroWidthWatermark(sanitizeMedicalText(row.commentary || ''), watermarkId);
       const rawOpts = Array.isArray(row.options) ? row.options : [];
       const watermarkedOpts = rawOpts.map((opt: unknown) => {
         if (opt && typeof opt === 'object' && 'justification' in opt) {
           const optObj = opt as { justification?: string; [key: string]: unknown };
           return {
             ...optObj,
-            justification: injectZeroWidthWatermark(optObj.justification || '', watermarkId)
+            justification: injectZeroWidthWatermark(sanitizeMedicalText(optObj.justification || (optObj as any).explanation || ''), watermarkId)
           };
         }
         return opt;

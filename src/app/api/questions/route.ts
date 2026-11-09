@@ -15,8 +15,12 @@ import {
 import { Question } from '@/types';
 import { hierarchyQuestionCounts } from '@/data/hierarchyCounts';
 import { generateSessionTicket } from '@/utils/securityTickets';
+import { sanitizeMedicalText } from '@/utils/textSanitizer';
+
+import { isSqliteAvailable, queryQuestionsFromSqlite, queryFacetsFromSqlite } from '@/lib/sqliteQuestions';
 
 export const dynamic = 'force-dynamic';
+export const runtime = 'nodejs';
 
 function getSupabaseAdmin() {
   const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || '';
@@ -68,13 +72,15 @@ function mapRowToQuestion(row: QuestionDbRow): Question {
     tema: row.tema || '',
     foco: row.foco || '',
     subfoco: row.subfoco || '',
+    sub_subfoco: (row as any).sub_subfoco || (row as any).subSubfoco || '',
+    subSubfoco: (row as any).subSubfoco || (row as any).sub_subfoco || '',
     difficulty: row.difficulty || 'Médio',
     type: row.type || 'Múltipla escolha',
     isAnulada: Boolean(row.is_anulada),
-    statement: row.statement || '',
-    options: Array.isArray(row.options) ? row.options : [],
+    statement: sanitizeMedicalText(row.statement || ''),
+    options: Array.isArray(row.options) ? row.options.map(opt => ({ ...opt, text: sanitizeMedicalText(opt.text) })) : [],
     correctAnswer: (row.correct_answer as Question['correctAnswer']) || '',
-    commentary: row.commentary || '',
+    commentary: sanitizeMedicalText(row.commentary || ''),
     images: Array.isArray(row.images) ? row.images : []
   };
 }
@@ -89,14 +95,11 @@ const FACETS_CACHE_TTL_MS = 5 * 60 * 1000;
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function applyQuestionFilters(query: any, filters: ExtendedFilterState, questionIds?: string[]) {
-  // Regra Canônica de Gabarito: Por padrão, alunos só veem questões com gabarito homologado
+  // Regra de Gabarito: Todas as 132.965 questões presentes por padrão
   if (filters.gabaritoStatus === 'sem_gabarito') {
-    query = query.eq('has_gabarito', false);
-  } else if (filters.gabaritoStatus === 'todas') {
-    // Curadoria/Admin irrestrito
-  } else {
-    // Padrão do aluno (com_gabarito):
-    query = query.eq('has_gabarito', true);
+    query = query.or('correct_answer.is.null,correct_answer.eq.').eq('is_anulada', false);
+  } else if (filters.gabaritoStatus === 'com_gabarito') {
+    query = query.or('correct_answer.in.(A,B,C,D,E,ANULADA),is_anulada.eq.true');
   }
 
   // Se IDs específicos foram solicitados (ex: página paginada de Resolvidas/Acertadas/Erradas ou caderno)
@@ -147,7 +150,7 @@ function applyQuestionFilters(query: any, filters: ExtendedFilterState, question
   }
 
   // 2. Árvore Clínica: Refinamento Pai -> Filho e SOMA / UNIÃO entre ramos diferentes
-  const { orParts, standaloneSpecs, standaloneTemas, standaloneFocos } = buildClinicalFilterClauses(filters);
+  const { orParts, standaloneSpecs, standaloneTemas, standaloneFocos, standaloneSubfocos } = buildClinicalFilterClauses(filters);
 
   if (orParts.length === 1) {
     if (standaloneSpecs.length > 0) {
@@ -156,6 +159,8 @@ function applyQuestionFilters(query: any, filters: ExtendedFilterState, question
       query = query.in('tema', standaloneTemas);
     } else if (standaloneFocos.length > 0) {
       query = query.in('foco', standaloneFocos);
+    } else if (standaloneSubfocos && standaloneSubfocos.length > 0) {
+      query = query.in('subfoco', standaloneSubfocos);
     } else {
       query = query.or(orParts[0]);
     }
@@ -297,15 +302,8 @@ export async function POST(req: NextRequest) {
         subfocos: []
       };
 
-      // 1. Verificação no cache em memória
-      const cacheKey = JSON.stringify({ isRevalida, hasBancas, isRPlusOrTitulo, filtersWithoutClinical });
-      const cached = facetsCache.get(cacheKey);
-      if (cached && cached.expiresAt > Date.now()) {
-        return NextResponse.json(cached.data);
-      }
-
       // Fast-path ultrarrápido (0ms): se não há filtros restritivos no card lateral nem de modalidade/banca,
-      // retorna as contagens pré-computadas exatas do catálogo de 132.965 questões
+      // retorna as contagens pré-computadas exatas do catálogo de 132.947 questões
       const hasRightCardFilters = Boolean(
         isRevalida ||
         hasBancas ||
@@ -320,18 +318,35 @@ export async function POST(req: NextRequest) {
       );
 
       if (!hasRightCardFilters) {
-        const resultPayload = {
+        return NextResponse.json({
           facets: {
-            totalRightCardCount: 121635,
+            totalRightCardCount: 132947,
             especialidades: hierarchyQuestionCounts.especialidades || {},
             temas: hierarchyQuestionCounts.temas || {},
             focos: hierarchyQuestionCounts.focos || {},
             subfocos: hierarchyQuestionCounts.subfocos || {}
           }
-        };
-        facetsCache.set(cacheKey, { data: resultPayload, expiresAt: Date.now() + FACETS_CACHE_TTL_MS });
-        return NextResponse.json(resultPayload);
+        });
       }
+
+      if (isSqliteAvailable()) {
+        try {
+          const localFacets = queryFacetsFromSqlite(filters);
+          if (localFacets) {
+            return NextResponse.json(localFacets);
+          }
+        } catch (sqliteErr) {
+          console.warn('[/api/questions] Fallback to Supabase for facets due to SQLite error:', sqliteErr);
+        }
+      }
+
+      // 1. Verificação no cache em memória
+      const cacheKey = JSON.stringify({ isRevalida, hasBancas, isRPlusOrTitulo, filtersWithoutClinical });
+      const cached = facetsCache.get(cacheKey);
+      if (cached && cached.expiresAt > Date.now()) {
+        return NextResponse.json(cached.data);
+      }
+
 
       // 2. Consulta de Alta Performance via RPC Nativa (Fase 2 da Otimização):
       // Executa o agrupamento no PostgreSQL com Anti-Join em tempo recorde (< 20ms)
@@ -358,6 +373,8 @@ export async function POST(req: NextRequest) {
             totalRightCardCount: number;
             especialidades: Record<string, number>;
             temas: Record<string, number>;
+            focos?: Record<string, number>;
+            subfocos?: Record<string, number>;
           };
 
           // Normalizações canônicas de especialidades
@@ -370,16 +387,24 @@ export async function POST(req: NextRequest) {
               (especialidades['Ginecologia'] || 0) + (especialidades['Obstetrícia'] || 0);
           }
 
-          const globalTotal = 121635;
-          const overallRatio = globalTotal > 0 ? typedResult.totalRightCardCount / globalTotal : 1;
-          const focos: Record<string, number> = {};
-          const subfocos: Record<string, number> = {};
-          if (typedResult.totalRightCardCount > 0) {
-            for (const [f, count] of Object.entries(hierarchyQuestionCounts.focos || {})) {
-              focos[f] = Math.max(0, Math.round((count as number) * overallRatio));
-            }
-            for (const [s, count] of Object.entries(hierarchyQuestionCounts.subfocos || {})) {
-              subfocos[s] = Math.max(0, Math.round((count as number) * overallRatio));
+          let focos: Record<string, number> = {};
+          let subfocos: Record<string, number> = {};
+
+          // Se a RPC da Materialized View retornar contagens reais de focos e subfocos, usa diretamente
+          if (typedResult.focos && Object.keys(typedResult.focos).length > 0) {
+            focos = typedResult.focos;
+            subfocos = typedResult.subfocos || {};
+          } else {
+            // Fallback proporcional se a versão anterior da RPC estiver ativa
+            const globalTotal = 132947;
+            const overallRatio = globalTotal > 0 ? typedResult.totalRightCardCount / globalTotal : 1;
+            if (typedResult.totalRightCardCount > 0) {
+              for (const [f, count] of Object.entries(hierarchyQuestionCounts.focos || {})) {
+                focos[f] = Math.max(0, Math.round((count as number) * overallRatio));
+              }
+              for (const [s, count] of Object.entries(hierarchyQuestionCounts.subfocos || {})) {
+                subfocos[s] = Math.max(0, Math.round((count as number) * overallRatio));
+              }
             }
           }
 
@@ -466,6 +491,24 @@ export async function POST(req: NextRequest) {
         selectCols = '*';
       }
     }
+    if (isSqliteAvailable()) {
+      try {
+        const localResult = queryQuestionsFromSqlite({
+          filters,
+          page,
+          pageSize,
+          questionIds,
+          includeGabarito: selectCols === '*',
+          authenticatedUserId
+        });
+        if (localResult) {
+          return NextResponse.json(localResult);
+        }
+      } catch (sqliteErr) {
+        console.warn('[/api/questions] Fallback to Supabase due to SQLite error:', sqliteErr);
+      }
+    }
+
     const from = (page - 1) * pageSize;
     const to = from + pageSize - 1;
 
@@ -498,6 +541,7 @@ export async function POST(req: NextRequest) {
         (filters.temas && filters.temas.length > 0) ||
         (filters.focos && filters.focos.length > 0) ||
         (filters.subfocos && filters.subfocos.length > 0) ||
+        (filters.subSubfocos && filters.subSubfocos.length > 0) ||
         (filters.instituicoes && filters.instituicoes.length > 0) ||
         (filters.anos && filters.anos.length > 0) ||
         (filters.dificuldade && filters.dificuldade !== 'Todas') ||
@@ -606,7 +650,7 @@ export async function POST(req: NextRequest) {
 
     // 3. Cálculo preciso do total filtrado de questões
     const isRevalida = Boolean(filters.modalidades?.some((m: string) => m.toLowerCase().includes('revalida')));
-    const baseTotal = isRevalida ? 2921 : 121635;
+    const baseTotal = isRevalida ? 2921 : 132965;
     const hasActiveFilters = Boolean(
       isRevalida ||
       (filters.search && filters.search.trim()) ||
@@ -638,7 +682,8 @@ export async function POST(req: NextRequest) {
       (filters.especialidades && filters.especialidades.length > 0) ||
       (filters.temas && filters.temas.length > 0) ||
       (filters.focos && filters.focos.length > 0) ||
-      (filters.subfocos && filters.subfocos.length > 0)
+      (filters.subfocos && filters.subfocos.length > 0) ||
+      (filters.subSubfocos && filters.subSubfocos.length > 0)
     );
 
     let total = baseTotal;

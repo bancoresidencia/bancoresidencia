@@ -653,7 +653,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onOpenAuth, onLoginDem
                   {banca.logoSlug ? (
                     // eslint-disable-next-line @next/next/no-img-element
                     <img
-                      src={`https://www.medevo.com.br/assets/pulso/institutions/${banca.logoSlug}-192.webp`}
+                      src={`/images/institutions/${banca.logoSlug}.webp`}
                       alt={banca.name}
                       loading="lazy"
                       className="h-6 sm:h-7 w-auto max-w-[90px] object-contain group-hover:scale-105 transition-transform"

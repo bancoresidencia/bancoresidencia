@@ -5,6 +5,7 @@ import {
   validateAnswerOption,
   isPrivilegedRole
 } from '../src/utils/security.ts';
+import { sanitizeMedicalText } from '../src/utils/textSanitizer.ts';
 
 console.log('=== INICIANDO TESTES UNITÁRIOS DE SEGURANÇA E VALIDAÇÃO ===\n');
 
@@ -127,6 +128,43 @@ assert.strictEqual(
   'Evento sem entityId deve ser rejeitado'
 );
 console.log('    ✓ Invariantes de auditoria e validação de schema foram verificados com sucesso.');
+
+// 8. Teste de Sanitização de \u00A0 (&nbsp; non-breaking space)
+console.log('[8] Teste de sanitização de \\u00A0 (&nbsp;)...');
+const paTest = 'Pressão Arterial:\u00A0120x80 mmHg';
+const sanitizedPa = sanitizeMedicalText(paTest);
+assert(!sanitizedPa.includes('\u00A0'), 'Não deve conter caractere \\u00A0');
+assert.strictEqual(sanitizedPa, 'Pressão Arterial: 120x80 mmHg');
+assert.deepStrictEqual(sanitizedPa.split(' '), ['Pressão', 'Arterial:', '120x80', 'mmHg'], 'split(" ") deve funcionar normalmente');
+console.log('    ✓ \\u00A0 foi convertido para espaço regular ASCII 0x20 e split(" ") funciona.');
+
+// 9. Teste de Sanitização de \u200B (Zero-Width Space e caracteres invisíveis)
+console.log('[9] Teste de eliminação de \\u200B (Zero-Width Space)...');
+const invisibleTest = '\u200BPaciente de 45 anos com febre\u200B';
+const sanitizedInvisible = sanitizeMedicalText(invisibleTest);
+assert(!sanitizedInvisible.includes('\u200B'), 'Não deve conter \\u200B');
+assert.strictEqual(sanitizedInvisible === 'Paciente de 45 anos com febre', true, 'Comparação estrita === deve ser idêntica');
+console.log('    ✓ Caracteres de largura zero foram expurgados e === avalia como true.');
+
+// 10. Teste de Sanitização de Tags HTML Escapadas (&lt;p&gt;, &amp;, &quot;, <br/>)
+console.log('[10] Teste de sanitização de tags HTML escapadas...');
+const escapedHtml = '&lt;p&gt;Paciente hipertenso.&lt;br/&gt;&lt;strong&gt;Conduta:&lt;/strong&gt; Iniciar &amp;quot;IECA&amp;quot;.&lt;/p&gt;';
+const sanitizedHtml = sanitizeMedicalText(escapedHtml);
+assert(!sanitizedHtml.includes('&lt;'), 'Não deve conter &lt;');
+assert(!sanitizedHtml.includes('&gt;'), 'Não deve conter &gt;');
+assert(!sanitizedHtml.includes('<p>'), 'Não deve conter tag <p>');
+assert(!sanitizedHtml.includes('</p>'), 'Não deve conter tag </p>');
+assert(!sanitizedHtml.includes('<br/>'), 'Não deve conter tag <br/>');
+assert(sanitizedHtml.includes('**Conduta:**'), 'Deve converter <strong> para ** em Markdown');
+assert(sanitizedHtml.includes('"IECA"'), 'Deve decodificar &quot; para aspas');
+console.log('    ✓ Tags HTML escapadas foram decodificadas e convertidas para Markdown limpo.');
+
+// 11. Teste de Sanitização de busca PostgREST com \u00A0 e \u200B
+console.log('[11] Teste de busca com \\u00A0 e \\u200B em PostgREST...');
+const searchWithResidue = 'Pressão\u00A0Arterial\u200B';
+const sanitizedSearch = sanitizePostgrestTerm(searchWithResidue);
+assert.strictEqual(sanitizedSearch, 'Pressão Arterial');
+console.log('    ✓ Termos de busca com resíduos invisíveis ou insecáveis foram higienizados.');
 
 console.log('\n✅ TODOS OS TESTES DE SEGURANÇA E AUDITORIA FORAM APROVADOS COM SUCESSO!\n');
 

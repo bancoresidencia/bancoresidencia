@@ -60,7 +60,7 @@ export async function proxy(request: NextRequest) {
   const { supabaseResponse, user, supabase } = await updateSession(request);
 
   // 2. Proteção de rotas de API Administrativa (/api/admin/*)
-  if (pathname.startsWith('/api/admin')) {
+  if (pathname.startsWith('/api/admin') && !pathname.startsWith('/api/admin/medevo/inpaint')) {
     // Permite M2M se o header de Authorization contiver a SERVICE_ROLE_KEY
     const authHeader = request.headers.get('authorization');
     const serviceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;

@@ -232,9 +232,10 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
           focoMap.set(fKey, fCards);
 
           foc.subfocos?.forEach((sub) => {
-            const subKey = `${spec.especialidade}:::${tem.tema}:::${foc.foco}:::${sub}`;
+            const subName = typeof sub === 'string' ? sub : sub.subfoco;
+            const subKey = `${spec.especialidade}:::${tem.tema}:::${foc.foco}:::${subName}`;
             const subCards = fCards.filter((c) =>
-              cardMatchesSubfoco(c, spec.especialidade, tem.tema, foc.foco, sub)
+              cardMatchesSubfoco(c, spec.especialidade, tem.tema, foc.foco, subName)
             );
             subfocoMap.set(subKey, subCards);
           });
@@ -823,8 +824,9 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
                                 {isFocoExpanded &&
                                   hasSubfocos &&
                                   foc.subfocos?.map((sub) => {
-                                    const subKey = `subfoco:${spec.especialidade}:::${tem.tema}:::${foc.foco}:::${sub}`;
-                                    const rawSubKey = `${spec.especialidade}:::${tem.tema}:::${foc.foco}:::${sub}`;
+                                    const subName = typeof sub === 'string' ? sub : sub.subfoco;
+                                    const subKey = `subfoco:${spec.especialidade}:::${tem.tema}:::${foc.foco}:::${subName}`;
+                                    const rawSubKey = `${spec.especialidade}:::${tem.tema}:::${foc.foco}:::${subName}`;
                                     const isSubSelected = selectedNodeKeys.has(subKey);
 
                                     const subCards =
@@ -842,7 +844,7 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
 
                                     return (
                                       <div
-                                        key={sub}
+                                        key={subName}
                                         className={`grid grid-cols-12 items-center px-4 py-1 transition-colors group select-none pl-16 sm:pl-24 ${
                                           isSubSelected
                                             ? 'bg-blue-50/30 dark:bg-blue-950/10'
@@ -875,9 +877,9 @@ export const AnkiDeckTree: React.FC<AnkiDeckTreeProps> = ({
 
                                           <span
                                             className="text-[11px] text-zinc-500 dark:text-zinc-400 truncate italic"
-                                            title={sub}
+                                            title={subName}
                                           >
-                                            {sub}
+                                            {subName}
                                           </span>
                                         </div>
 

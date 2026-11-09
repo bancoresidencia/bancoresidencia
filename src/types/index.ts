@@ -22,13 +22,21 @@ export type QuestionDifficulty = 'Todas' | 'Fácil' | 'Médio' | 'Difícil' | 'D
 
 export type QuestionType = 'Todas' | 'Múltipla escolha' | 'Discursiva' | 'Verdadeiro ou falso';
 
+export interface SubfocoNode {
+  subfoco: string;
+  sub_subfocos?: string[];
+  questoes_est?: number;
+}
+
+export type SubfocoItem = string | SubfocoNode;
+
 export interface SpecialtyHierarchy {
   especialidade: string;
   temas: {
     tema: string;
     focos: {
       foco: string;
-      subfocos: string[];
+      subfocos: SubfocoItem[];
     }[];
   }[];
 }
@@ -40,6 +48,7 @@ export interface AdvancedFilterState {
   temas: string[];
   focos: string[];
   subfocos: string[];
+  subSubfocos?: string[];
   instituicoes: string[];
   anos: number[];
   tipoProva: string[];
@@ -87,6 +96,8 @@ export interface Question {
   tema: string;
   foco: string;
   subfoco: string;
+  sub_subfoco?: string;
+  subSubfoco?: string;
   subtheme?: string;
   difficulty: 'Fácil' | 'Médio' | 'Difícil' | 'Desconhecido';
   type: 'Múltipla escolha' | 'Discursiva' | 'Verdadeiro ou falso';
@@ -172,6 +183,8 @@ export interface UserAnswerItem {
   tema?: string;
   foco?: string;
   subfoco?: string;
+  sub_subfoco?: string;
+  subSubfoco?: string;
   banca?: string;
   year?: number | string;
   code?: string;
@@ -248,6 +261,8 @@ export interface UserAttempt {
   tema?: string;
   foco?: string;
   subfoco?: string;
+  sub_subfoco?: string;
+  subSubfoco?: string;
 }
 
 export interface DetailedHierarchyStats {

@@ -1,0 +1,687 @@
+
+==================================================
+TEMA 1: Cardiologia (Subfocos: 17, Bullets: 48)
+==================================================
+  [1] Síndromes Coronarianas Isquêmicas (Aguda e Crônica) -> IAM com Supradesnivelamento do Segmento ST (IAMCSST)
+  [2] Síndromes Coronarianas Isquêmicas (Aguda e Crônica) -> Síndrome Coronariana Aguda sem Supra de ST (SCASST) e Angina Instável
+  [3] Síndromes Coronarianas Isquêmicas (Aguda e Crônica) -> Doença Arterial Coronariana Crônica e Angina Estável
+  [4] Insuficiência Cardíaca e Cardiomiopatias -> Insuficiência Cardíaca com Fração de Ejeção Reduzida (ICFER)
+  [5] Insuficiência Cardíaca e Cardiomiopatias -> Insuficiência Cardíaca Agudamente Descompensada
+  [6] Insuficiência Cardíaca e Cardiomiopatias -> Cardiomiopatia Hipertrófica e Cardiomiopatia Chagásica
+  [7] Taquiarritmias e Bradiarritmias -> Fibrilação Atrial e Flutter Atrial
+  [8] Taquiarritmias e Bradiarritmias -> Taquicardias Supraventriculares Paroxísticas
+  [9] Taquiarritmias e Bradiarritmias -> Bradiarritmias e Bloqueios Atrioventriculares
+  [10] Doenças Valvares Cardíacas -> Estenose Aórtica
+  [11] Doenças Valvares Cardíacas -> Insuficiência Mitral e Estenose Mitral
+  [12] Hipertensão Arterial Sistêmica e Crise Hipertensiva -> Diagnóstico e Manejo Ambulatorial da Hipertensão
+  [13] Hipertensão Arterial Sistêmica e Crise Hipertensiva -> Crise Hipertensiva (Urgência vs Emergência Hipertensiva)
+  [14] Doenças do Pericárdio e Endocardite Infecciosa -> Pericardite Aguda e Tamponamento Cardíaco
+  [15] Doenças do Pericárdio e Endocardite Infecciosa -> Endocardite Infecciosa
+  [16] Parada Cardiorrespiratória e Ressuscitação (ACLS) -> Ritmos Chocáveis e Não Chocáveis
+  [17] Parada Cardiorrespiratória e Ressuscitação (ACLS) -> Cuidados Pós-Parada Cardiorrespiratória
+--- BULLETS ---
+  (B1) Eletrocardiograma e Localização da Parede Infartada (Anterior, Inferior com VD, Lateral)
+  (B2) Terapia de Reperfusão Imediata: Angioplastia Primária (< 90-120 min) vs Fibrinólise (< 30 min e até 12h)
+  (B3) Terapia Farmacológica Coadjuvante (Dupla Antiagregação, Anticoagulação, Estatina e Betabloqueador)
+  (B4) Complicações Mecânicas (Rotura de Parede Livre, Septo Interventricular e Músculo Papilar) e Elétricas
+  (B5) Estratificação de Risco (Escores TIMI e GRACE) e Biomarcadores de Necrose (Troponina Ultrassensível)
+  (B6) Estratégia Invasiva Precoce (< 24h) vs Imediata (< 2h) vs Seletiva
+  (B7) Investigação Diagnóstica não Invasiva (Teste Ergométrico, Angio-TC Coronariana e Cintilografia)
+  (B8) Otimização da Terapia Antianginosa e Modificação de Estilo de Vida
+  (B9) Critérios Diagnósticos de Framingham e Papel dos Peptídeos Natriuréticos (BNP / NT-proBNP)
+  (B10) O "Quarteto Fantástico" Modificador de Sobrevida (iSGLT2, iECA/BRA/ARNI, Betabloqueador e Antagonista da Aldosterona)
+  (B11) Indicações de Dispositivos (Cardiodesfibrilador Implantável - CDI e Terapia de Ressincronização Cardíaca)
+  (B12) Perfil Hemodinâmico de Stevenson (Perfil A Quente/Seco, B Quente/Úmido, L Frio/Seco, C Frio/Úmido)
+  (B13) Edema Agudo de Pulmão Cardiogênico (Furosemida EV, Vasodilatador EV e VNI com CPAP/BIPAP)
+  (B14) Choque Cardiogênico e Uso Racional de Inotrópicos (Dobutamina) e Vasopressores (Noradrenalina)
+  (B15) Cardiomiopatia Hipertrófica: Sopro Sistólico que Aumenta com Valsalva e Manejo com Betabloqueador
+  (B16) Cardiopatia Chagásica: Aneurisma de Ponta do VE, Bloqueio de Ramo Direito + BDAS e Arritmias Ventriculares
+  (B17) Avaliação de Risco Tromboembólico pelo Escore CHA2DS2-VASc e Indicação de Anticoagulação Oral (DOACs vs Varfarina)
+  (B18) Escore HAS-BLED para Risco de Sangramento
+  (B19) Controle de Ritmo (Cardioversão Química/Elétrica) vs Controle de Frequência Cardíaca (Betabloqueador / Bloqueador de Canal de Cálcio)
+  (B20) Conduta na Instabilidade Hemodinâmica (Cardioversão Elétrica Sincronizada Imediata)
+  (B21) Taquicardia por Reentrada Nodal (TRN): Manobras Vagais e Adenosina EV em Bolus Rápido
+  (B22) Síndrome de Wolff-Parkinson-White (Pré-Excitação: Onda Delta e Intervalo PR Curto)
+  (B23) Bloqueio Atrioventricular de 1º Grau e 2º Grau Mobitz I (Wenckebach) - Geralmente Benignos
+  (B24) BAV de 2º Grau Mobitz II e BAV de 3º Grau / Total (Indicação Mandatória de Marcapasso Provisório e Definitivo)
+  (B25) Manejo Agudo da Bradicardia Instável: Atropina EV, Marcapasso Transcutâneo e Adrenalina/Dopamina
+  (B26) Tríade Clássica de Gravidade: Angina, Síncope e Dispneia aos Esforços
+  (B27) Exame Físico: Sopro Mesossistólico em Diamante com Irradiação para Carótidas e Pulso Parvus et Tardus
+  (B28) Tratamento Cirúrgico: Troca Valvar Aórtica Cirúrgica vs TAVI (Transcatheter Aortic Valve Implantation)
+  (B29) Estenose Mitral Reumática: Ruflar Diastólico com Estalido de Abertura, Reforço Pré-Sistólico e Hipertensão Pulmonar
+  (B30) Insuficiência Mitral Crônica e Aguda (Sopro Holossistólico em Ápice com Irradiação para Axila)
+  (B31) Critérios da Diretriz Brasileira de HAS: Classificação em Estágios 1, 2 e 3 e Metas Pressóricas
+  (B32) Papel do MAPA e MRPA (Fenômeno do Avental Branco e Hipertensão Mascarada)
+  (B33) Escolha de Anti-hipertensivos de 1ª Linha (Tiazídicos, Bloqueadores de Canal de Cálcio, iECA/BRA) e Associações
+  (B34) Emergência Hipertensiva: Lesão Aguda e Progressiva de Órgãos-Alvo (Redução com Nitroprussiato ou Nitroglicerina EV)
+  (B35) Urgência Hipertensiva: Elevação Pressórica sem Lesão de Órgão-Alvo (Anti-hipertensivos Orais e Alta Programada)
+  (B36) Encefalopatia Hipertensiva e Dissecção Aguda de Aorta (Meta de PAS < 120 mmHg e FC < 60 bpm com Esmolol + Nitroprussiato)
+  (B37) Pericardite: Dor Torácica Pleurítica que Melhora ao Inclinar o Tronco para Frente, Atrito Pericárdico e Supra de ST Côncavo Difuso
+  (B38) Tamponamento Cardíaco: Tríade de Beck (Hipotensão, Hipofonese de Bulhas e Turgência Jugular) + Pulso Paradoxal
+  (B39) Conduta Imediata no Tamponamento: Pericardiocentese de Urgência (Manobra de Marfan)
+  (B40) Critérios Modificados de Duke (Critérios Maiores: Hemoculturas Típicas e Vegetação no Ecocardiograma)
+  (B41) Fenômenos Vasculares e Imunológicos (Nódulos de Osler, Lesões de Janeway, Manchas de Roth)
+  (B42) Profilaxia de Endocardite para Procedimentos Odontológicos em Pacientes de Alto Risco (Amoxicilina 2g 1h antes)
+  (B43) Ritmos Chocáveis: Fibrilação Ventricular (FV) e Taquicardia Ventricular sem Pulso (TVSP) - Choque Imediato + RCP
+  (B44) Ritmos Não Chocáveis: Assistolia e Atividade Elétrica sem Pulso (AESP) - RCP Imediata + Adrenalina 1 mg precoce
+  (B45) Drogas no Suporte Avançado de Vida (Adrenalina a cada 3-5 min e Amiodarona / Lidocaína para Ritmos Chocáveis)
+  (B46) Causas Reversíveis de PCR: Mnemônicos dos 5 Hs e 5 Ts
+  (B47) Controle Direcionado de Temperatura (32 a 36°C) em Pacientes Comatosos
+  (B48) Coronariografia de Emergência e Otimização Hemodinâmica
+
+==================================================
+TEMA 2: Pneumologia (Subfocos: 14, Bullets: 34)
+==================================================
+  [1] Doenças Obstrutivas das Vias Aéreas (Asma e DPOC) -> Asma Brônquica no Adulto
+  [2] Doenças Obstrutivas das Vias Aéreas (Asma e DPOC) -> Doença Pulmonar Obstrutiva Crônica (DPOC)
+  [3] Infecções Respiratórias Baixas (Pneumonias e Abscessos) -> Pneumonia Adquirida na Comunidade (PAC) no Adulto
+  [4] Infecções Respiratórias Baixas (Pneumonias e Abscessos) -> Abscesso Pulmonar e Pneumonia Aspirativa
+  [5] Doenças Vasculares Pulmonares (TEP e Hipertensão Pulmonar) -> Tromboembolismo Pulmonar (TEP)
+  [6] Doenças Vasculares Pulmonares (TEP e Hipertensão Pulmonar) -> Hipertensão Pulmonar
+  [7] Doenças Pleurais (Derrames e Pneumotórax) -> Derrame Pleural e Critérios de Light
+  [8] Doenças Pleurais (Derrames e Pneumotórax) -> Pneumotórax Espontâneo no Adulto
+  [9] Doenças Pulmonares Intersticiais e Fibrose -> Fibrose Pulmonar Idiopática (FPI) e Padrão TCAR de PIU
+  [10] Doenças Pulmonares Intersticiais e Fibrose -> Sarcoidose e Pneumonite por Hipersensibilidade (PH)
+  [11] Tuberculose Pulmonar e Micobacterioses -> Diagnóstico e Manejo Clínico da Tuberculose Ativa
+  [12] Tuberculose Pulmonar e Micobacterioses -> Infecção Latente pelo Mycobacterium tuberculosis (ILTB)
+  [13] Neoplasias Pulmonares e Nódulo Pulmonar Solitário -> Nódulo Pulmonar Solitário (NPS): Critérios de Fleischner e Malignidade
+  [14] Neoplasias Pulmonares e Nódulo Pulmonar Solitário -> Carcinoma Pulmonar Clínico: Marcadores Moleculares e Terapia-Alvo
+--- BULLETS ---
+  (B1) Diagnóstico Espirométrico: Distúrbio Ventilatório Obstrutivo com Resposta Significativa ao Broncodilatador (Aumento VEF1 > 12% e > 200 mL)
+  (B2) Manejo Crônico pelo GINA: Corticoide Inalatório como Pilar Central Obrigatório (Associação com Formoterol de Demanda/Manutenção)
+  (B3) Crise Asmática Aguda no Pronto-Socorro: Beta-2 Agonista Inalatório, Corticoide Sistêmico Precoce e Brometo de Ipratrópio
+  (B4) Diagnóstico Espirométrico: Obstrução Fixa Pós-Broncodilatador (VEF1 / CVF < 0,70)
+  (B5) Estratificação GOLD (ABCD / ABE) e Terapia de Manutenção (LAMA, LABA e Associação com Corticoide Inalatório em Eosinofilia >= 300)
+  (B6) Exacerbação Aguda da DPOC: Critérios de Anthonisen (Aumento do Escarro, Purulência e Piora da Dispneia) e Indicações de Antibiótico e VNI
+  (B7) Medidas Modificadoras de Sobrevida na DPOC: Cessação do Tabagismo e Oxigenoterapia Domiciliar Prolongada
+  (B8) Estratificação de Gravidade pelo Escore CURB-65 (Confusão, Ureia >= 50, FR >= 30, PAS < 90 ou PAD <= 60, Idade >= 65)
+  (B9) Esquemas de Antibioticoterapia Empírica: Ambulatorial (Amoxicilina ou Macrolídeo), Enfermaria (Beta-lactâmico + Macrolídeo ou Quinolona Respiratória) e UTI
+  (B10) Agentes Anaeróbios da Cavidade Oral, Imagem com Nível Hidroaéreo e Tratamento com Amoxicilina/Clavulanato ou Clindamicina
+  (B11) Critérios para Drenagem Externa vs Suporte Clínico Prolongado
+  (B12) Estratificação de Probabilidade Clínica pelos Escores de Wells e Genebra
+  (B13) Algoritmo Diagnóstico: D-Dímero em Baixa/Intermediária Probabilidade vs Angio-TC de Tórax em Alta Probabilidade
+  (B14) TEP Maciço / Choque Obstrutivo: Indicação de Trombólise Sistêmica (Alteplase) e Suporte Hemodinâmico
+  (B15) Anticoagulação Plena (DOACs de 1ª Escolha, Enoxaparina e Varfarina) e Duração Mínima do Tratamento
+  (B16) Classificação em 5 Grupos Clínicos da OMS
+  (B17) Diagnóstico Hemodinâmico por Cateterismo Cardíaco Direito (Pressão Média de Artéria Pulmonar > 20 mmHg) e Vasodilatadores Específicos
+  (B18) Critérios de Light para Diferenciação Transudato vs Exsudato (Proteína Pleural/Sérica > 0,5, LDH Pleural/Sérico > 0,6, LDH Pleural > 2/3 LSN Sérico)
+  (B19) Derrame Parapneumônico Complicado e Empiema (Critérios de Drenagem em Selo d'Água: pH < 7,20, Glicose < 40, Bactérias ou Pus Franco)
+  (B20) Pneumotórax Primário (Jovens Longilíneos com Blebs Apicais) vs Secundário (DPOC com Bolhas Enfisematosas)
+  (B21) Conduta pelo Tamanho: Observação com O2 em Pequenos Volumes vs Drenagem Torácica Fechada e Pleurodese em Recidivantes
+  (B22) Padrão Tomográfico de Pneumonia Intersticial Usual (PIU: Faveolamento Subpleural, Bronquiectasias de Tração e Gradiente Ápico-Basal)
+  (B23) Terapia Antifibrótica com Nintedanibe e Pirfenidona para Redução do Declínio da CVF
+  (B24) Sarcoidose Pulmonar: Linfadenopatia Hilar Bilateral Simétrica, Granulomas Não-Caseificantes e Corticoterapia
+  (B25) Pneumonite por Hipersensibilidade: Exposição a Mofo/Pássaros, Padrão em Mosaico e Lavado com Linfocitose CD4/CD8
+  (B26) Diagnóstico Laboratorial: Teste Rápido Molecular para TB (TRM-TB) com Detecção de Resistência à Rifampicina e Bacilos Álcool-Ácido Resistentes (BAAR)
+  (B27) Esquema Básico RIPE (Rifampicina, Isoniazida, Pirazinamida e Etambutol por 2 meses + Rifampicina e Isoniazida por 4 meses)
+  (B28) Efeitos Adversos dos Fármacos Antituberculose (Hepatotoxicidade, Neurite Óptica pelo Etambutol, Hiperuricemia)
+  (B29) Indicações de Rastreamento com PPD / IGRA (Contatos Domiciliares, PVHIV, Imunossuprimidos)
+  (B30) Esquemas de Tratamento da ILTB: Isoniazida por 6 a 9 Meses ou Rifapentina + Isoniazida por 3 Meses (3HP)
+  (B31) Estratificação de Risco pelo Critério de Fleischner (Tamanho, Vidro Fosco vs Sólido, Margens Espiculadas)
+  (B32) Conduta Propedêutica: Acompanhamento Tomográfico vs PET-CT e Biópsia/Ressonância em Alto Risco
+  (B33) Pesquisa de Mutações Condutoras no Adenocarcinoma (EGFR, ALK, ROS1, BRAF e Expressão de PD-L1)
+  (B34) Síndrome da Veia Cava Superior e Síndrome de Pancoast (Dor no Ombro e Síndrome de Horner por Invasão do Gânglio Estrelado)
+
+==================================================
+TEMA 3: Gastroenterologia (Subfocos: 14, Bullets: 27)
+==================================================
+  [1] Doenças Esofágicas e Gastroduodenais (DRGE, Úlcera e Gastrite) -> Doença do Refluxo Gastroesofágico (DRGE) e Esôfago de Barrett
+  [2] Doenças Esofágicas e Gastroduodenais (DRGE, Úlcera e Gastrite) -> Doença Ulcerosa Péptica e Erradicação do Helicobacter pylori
+  [3] Hemorragia Digestiva (Alta e Baixa) -> Hemorragia Digestiva Alta (HDA) Não-Varicosa vs Varicosa
+  [4] Hemorragia Digestiva (Alta e Baixa) -> Hemorragia Digestiva Baixa (HDB): Divertículos, Angiodisplasia e Conduta
+  [5] Hepatites Agudas e Crônicas (Virais, Tóxicas e Autoimunes) -> Hepatite B e C: Interpretação Sorológica e Terapia Antiviral
+  [6] Hepatites Agudas e Crônicas (Virais, Tóxicas e Autoimunes) -> Hepatite Autoimune e Doença Hepática Alcoólica
+  [7] Cirrose Hepática e Hipertensão Portal -> Estratificação Prognóstica (Child-Pugh e MELD) e Síndrome de Hipertensão Portal
+  [8] Cirrose Hepática e Hipertensão Portal -> Manejo da Ascite, Peritonite Bacteriana Espontânea (PBE) e Encefalopatia Hepática
+  [9] Doenças da Vesícula, Vias Biliares e Pancreatite -> Pancreatite Aguda no Adulto: Diagnóstico Clínico e Escores Prognósticos
+  [10] Doenças da Vesícula, Vias Biliares e Pancreatite -> Pancreatite Crônica, Doenças Colestáticas (Cirrose Biliar Primária e CEP)
+  [11] Doenças Inflamatórias Intestinais (Crohn e RCU) -> Diagnóstico Diferencial Clínico e Endoscópico: Doença de Crohn vs Retocolite Ulcerativa
+  [12] Doenças Inflamatórias Intestinais (Crohn e RCU) -> Terapia de Indução e Manutenção (Biológicos) e Megacólon Tóxico
+  [13] Síndromes Malabsortivas e Transtornos Funcionais Intestinais -> Doença Celíaca: Fisiopatologia, Sorologia e Biópsia Duodenal
+  [14] Síndromes Malabsortivas e Transtornos Funcionais Intestinais -> Síndrome do Intestino Irritável (Critérios de Roma IV) e Supercrescimento Bacteriano (SIBO)
+--- BULLETS ---
+  (B1) Sintomas Típicos (Pirose e Regurgitação) e Indicações de Endoscopia Digestiva Alta (Sinais de Alarme ou Idade > 40-45 anos)
+  (B2) Esôfago de Barrett (Metaplasia Intestinal Especializada com Células Caliciformes) e Protocolo de Vigilância Histológica
+  (B3) Diferenciação Úlcera Gástrica (Obrigatoriedade de Biópsia para Excluir Neoplasia) vs Duodenal (Maior Associação com H. pylori)
+  (B4) Esquema Canônico de Erradicação de 1ª Linha: IBP + Claritromicina + Amoxicilina por 14 Dias e Controle de Cura
+  (B5) Estratificação de Risco (Escore de Glasgow-Blatchford e Rockall) e EDA Precoce nas Primeiras 24 Horas
+  (B6) Classificação de Forrest para Úlcera Sangrante e Terapia Endoscópica Combinada (Injeção de Adrenalina + Termocoagulação/Clipe)
+  (B7) Principais Causas: Doença Diverticular dos Cólons (Sangramento Arterial Volumoso) e Angiodisplasias (Idosos e DRC)
+  (B8) Algoritmo Propedêutico: Colonoscopia após Preparo Rápido vs Angio-TC e Arteriografia com Embolização na Instabilidade
+  (B9) Perfil Sorológico da Hepatite B (HBsAg, Anti-HBc IgM/IgG, HBeAg e Anti-HBe) e Critérios de Tratamento com Tenofovir/Entecavir
+  (B10) Hepatite C: Diagnóstico com Anti-HCV e Carga Viral (HCV-RNA) e Cura com Antivirais de Ação Direta (Sofosbuvir/Velpatasvir)
+  (B11) Hepatite Autoimune: Elevação de IgG, Autoanticorpos (FAN, Antimúsculo Liso, Anti-LKM1) e Resposta a Prednisona e Azatioprina
+  (B12) Hepatite Alcoólica Aguda: Relação AST/ALT > 2 com AST < 300-500 U/L e Cálculo da Função Discriminante de Maddrey (Corticoide se >= 32)
+  (B13) Classificação de Child-Pugh (Bilirrubina, Albumina, INR, Ascite, Encefalopatia) e Escore MELD para Fila de Transplante Hepático
+  (B14) Gradiente de Pressão Venosa Hepática (GPVH >= 10 mmHg para Hipertensão Portal Clinicamente Significativa) e Varizes Esofágicas
+  (B15) Análise do Líquido Ascítico pelo GASA (GASA >= 1,1 g/dL Indica Hipertensão Portal) e Tratamento com Espironolactona + Furosemida
+  (B16) Diagnóstico de PBE (PMN >= 250/mm3 no Líquido Ascítico), Tratamento com Cefotaxima e Profilaxia com Albumina Humana (1,5g/kg no D1 e 1g/kg no D3)
+  (B17) Critérios Diagnósticos de Atlanta (2 de 3: Dor Típica em Faixa, Amilase/Lipase > 3x o LSN, Achados Radiológicos em TC/USG)
+  (B18) Estratificação Prognóstica Precoce (Critérios de Ranson, BISAP, Apache II e Hematócrito > 44%) e Hidratação Vigorosa com Ringer Lactato
+  (B19) Tríade da Pancreatite Crônica Avançada: Calcificações Pancreáticas à TC, Esteatorreia e Diabetes Mellitus Secundário
+  (B20) Colangite Biliar Primária (Anticorpo Antimitocôndria - AMA Positivo e Ácido Ursodesoxicólico) vs Colangite Esclerosante Primária (p-ANCA)
+  (B21) Retocolite Ulcerativa: Acometimento Contínuo, Restrito à Mucosa, Iniciando no Reto com Sangramento Retal Frequente e Pseudopólipos
+  (B22) Doença de Crohn: Acometimento Transmural, Salteado (Skip Lesions), da Boca ao Ânus (Íleo Terminal), com Fístulas, Estenoses e Fissuras
+  (B23) Escalonamento Terapêutico: Derivados de 5-ASA (Mesalazina), Corticoides para Crise e Biológicos Anti-TNF (Infliximabe, Adalimumabe)
+  (B24) Megacólon Tóxico: Dilatação do Cólon Transverso > 6 cm à Radiografia com Toxemia Sistêmica (Urgência Clínica e Cirúrgica)
+  (B25) Propedêutica Sorológica: Anticorpo Antitransglutaminase Tecidual IgA (Anti-tTG) e Dosagem Concomitante de IgA Total
+  (B26) Critérios de Roma IV para SII: Dor Abdominal Recorrente >= 1 dia/semana associada a Mudança na Frequência ou Forma das Fezes
+  (B27) Supercrescimento Bacteriano no Intestino Delgado (SIBO): Teste Respiratório do Hidrogênio Expirado e Tratamento com Rifaximina
+
+==================================================
+TEMA 4: Nefrologia (Subfocos: 14, Bullets: 31)
+==================================================
+  [1] Injúria Renal Aguda (LRA) -> Classificação KDIGO e Fisiopatologia da LRA
+  [2] Injúria Renal Aguda (LRA) -> Indicações de Diálise de Urgência
+  [3] Doença Renal Crônica (DRC) e Manejo Conservador/Dialítico -> Estadiamento da DRC (KDIGO por TFG e Albuminúria) e Medidas Nefroprotetoras
+  [4] Doença Renal Crônica (DRC) e Manejo Conservador/Dialítico -> Manejo das Complicações Urêmicas, Anemia e Distúrbio Mineral Ósseo (DMO-DRC)
+  [5] Distúrbios Hidroeletrolíticos (Sódio, Potássio, Cálcio, Magnésio) -> Hiponatremia e Hipernatremia
+  [6] Distúrbios Hidroeletrolíticos (Sódio, Potássio, Cálcio, Magnésio) -> Distúrbios do Potássio (Hipercalemia e Hipocalemia)
+  [7] Distúrbios do Equilíbrio Ácido-Base -> Acidose Metabólica com Ânion Gap Elevado vs Normal (Hiperclorêmica)
+  [8] Distúrbios do Equilíbrio Ácido-Base -> Alcalose Metabólica e Distúrbios Respiratórios (Acidose e Alcalose)
+  [9] Síndromes Glomerulares (Nefrítica, Nefrótica, GNRP) -> Síndrome Nefrótica: Fisiopatologia, Complicações e Padrões Histológicos
+  [10] Síndromes Glomerulares (Nefrítica, Nefrótica, GNRP) -> Síndrome Nefrítica, GNRP e Glomerulonefrite Difusa Aguda (GNDA)
+  [11] Doenças Tubulointersticiais e Microangiopatias Trombóticas -> Nefrite Intersticial Aguda (NIA) e Necrose Tubular Aguda (NTA)
+  [12] Doenças Tubulointersticiais e Microangiopatias Trombóticas -> Microangiopatia Trombótica: Púrpura Trombocitopênica Trombótica (PTT) e SHU
+  [13] Litíase Renal e Infecções Urinárias no Adulto -> Investigação Metabólica da Nefrolitíase Recorrente
+  [14] Litíase Renal e Infecções Urinárias no Adulto -> Cistite, Pielonefrite Aguda e ITU Complicada no Adulto
+--- BULLETS ---
+  (B1) Estágios KDIGO 1, 2 e 3 Baseados em Níveis de Creatinina Sérica e Débito Urinário
+  (B2) Diferenciação LRA Pré-Renal vs Necrose Tubular Aguda (NTA): Fração de Excreção de Sódio (FeNa < 1% vs > 2%) e Osmolaridade Urinária
+  (B3) Sedimento Urinário: Cilindros Hialinos (Pré-Renal) vs Cilindros Granulosos Pigmentares / Marrom-Grumosos (NTA)
+  (B4) Indicações Absolutas de Terapia Renal Substitutiva de Urgência (Critérios AEIOU: Acidose Refratária pH < 7,15, Hipercalemia Grave Refratária, Intoxicações Exógenas Dialisáveis, Sobrecarga Volêmica / Edema Agudo Refratário, Uremia Grave Encefalopatia/Pericardite)
+  (B5) Manejo Clínico Inicial de Estabilização Pré-Diálise e Seleção de Modalidade Dialítica (Hemodiálise Intermitente vs Métodos Contínuos em Choque/Instabilidade Hemodinâmica)
+  (B6) Classificação KDIGO (Estágios G1 a G5 combinados com Categorias de Albuminúria A1 < 30, A2 30-300, A3 > 300 mg/g)
+  (B7) Nefroproteção Canônica: Controle Estrito de PA com Bloqueadores do SRAA (IECA/BRA), Inibidores de SGLT2 e Restrição Salina
+  (B8) Anemia da DRC por Deficiência de Eritropoietina (Alvo de Hemoglobina 10-11,5 g/dL com Reposição de Ferro e Alfaepoetina)
+  (B9) DMO-DRC: Hiperparatireoidismo Secundário, Controle de Fósforo com Quelantes e Indicações Formais de Hemodiálise de Urgência
+  (B10) Hiponatremia Hipotônica: Diferenciação pelo Volume Extracelular (Hipovolêmica, Euvolêmica - SIADH, Hipervolêmica)
+  (B11) Correção com Solução Salina Hipertônica a 3% na Hiponatremia Aguda Sintomática Grave
+  (B12) Limite de Correção da Natremia: Não Ultrapassar 8-10 mEq/L em 24 Horas para Evitar Síndrome de Desmielinização Osmótica (Mielinólise Pontina)
+  (B13) Alterações Eletrocardiográficas da Hipercalemia: Onda T Apiculada e Simétrica em Tenda, Achatamento de P, Alargamento de QRS e Ritmo Sinusoidal
+  (B14) Tratamento Imediato da Hipercalemia com Alteração de ECG: Gluconato de Cálcio a 10% EV para Estabilização da Membrana Miocárdica
+  (B15) Medidas de Translocação (Glicoinsulina, Inalação com Beta-2 Agonista) e Eliminação (Furosemida, Resinas de Troca)
+  (B16) Cálculo do Ânion Gap Sérico (Na - [Cl + HCO3]; Normal: 8 a 12 mEq/L) e Causas de AG Elevado (Mnemônico GOLD MARK: Cetoacidose, Uremia, Lático)
+  (B17) Acidose Metabólica Hiperclorêmica (Ânion Gap Normal): Perdas Digestivas Baixas (Diarreia) e Acidoses Tubulares Renais (ATRs)
+  (B18) Alcalose Metabólica: Avaliação do Cloro Urinário (Cl-Responsiva < 15 mEq/L por Vômitos/Diuréticos vs Cl-Resistente por Hiperaldosteronismo)
+  (B19) Compensação Respiratória Esperada (Fórmula de Winter: pCO2 = [1,5 x HCO3] + 8 +/- 2) para Identificação de Distúrbios Mistos
+  (B20) Tríade Clássica: Proteinúria Maciça (> 3,5 g/24h ou Relação P/C urinária > 3,0), Hipoalbuminemia Severa e Edema Generalizado
+  (B21) Principais Nefropatias: Lesão Mínima (Crianças, Resposta a Corticoide), GESF (Mais Comum em Adultos), Membranosa (Anticorpo Anti-PLA2R) e Risco de Trombose de Veia Renal
+  (B22) Tétrade Nefrítica: Hematúria Dismórfica com Cilindros Hemáticos, Hipertensão Arterial, Edema Periorbital e Oligúria
+  (B23) GNDA Pós-Estreptocócica (Queda Transitória de C3 e Consumo de Complemento) vs Glomerulonefrite Rapidamente Progressiva com Crescentes Celulares
+  (B24) Nefrite Intersticial Aguda Induzida por Fármacos (Beta-lactâmicos, AINEs, IBP) com Tríade Típica: Febre, Rash Cutâneo e Eosinofilia/Eosinofilúria
+  (B25) Necrose Tubular Aguda (NTA Isquêmica ou Tóxica por Aminoglicosídeos/Contraste Iodado) com Cilindros Granulosos Pigmentares e FeNa > 1%
+  (B26) PTT no Adulto: Deficiência Severa da Metaloprotease ADAMTS13 (< 10%), Presença de Esquizócitos no Sangue Periférico e Plasmaférese Terapêutica de Emergência
+  (B27) Síndrome Hemolítico-Urêmica (SHU Típica por E. coli produtora de Toxina Shiga vs Atípica por Desregulação do Complemento)
+  (B28) Composição dos Cálculos (Oxalato de Cálcio 75-80%, Ácido Úrico radiotransparente, Fosfato de Cálcio e Estruvita / Coraliforme)
+  (B29) Painel Metabólico Urinário de 24 Horas: Hipercalciúria Idiopática (Tratamento com Tiazídicos) e Hipocitratúria (Citrato de Potássio)
+  (B30) Tratamento da Cistite Aguda Não-Complicada em Mulheres (Fosfomicina Trometamol 3g Dose Única ou Nitrofurantoína 100mg 6/6h por 5 dias)
+  (B31) Pielonefrite Aguda: Critérios de Internação Hospitalar e Terapia Empírica Guiada por Antibiograma (Ceftriaxona vs Ciprofloxacino)
+
+==================================================
+TEMA 5: Endocrinologia (Subfocos: 14, Bullets: 31)
+==================================================
+  [1] Diabetes Mellitus e Complicações Agudas (CAD e EHH) -> Diagnóstico e Metas Glicêmicas no Diabetes Tipo 2
+  [2] Diabetes Mellitus e Complicações Agudas (CAD e EHH) -> Cetoacidose Diabética (CAD) e Estado Hiperglicêmico Hiperosmolar (EHH)
+  [3] Complicações Crônicas do Diabetes (Nefropatia, Retinopatia, Neuropatia) -> Doença Renal do Diabetes (DRD) e Rastreamento de Albuminúria
+  [4] Complicações Crônicas do Diabetes (Nefropatia, Retinopatia, Neuropatia) -> Retinopatia Diabética, Polineuropatia Simétrica Distal e Pé Diabético
+  [5] Doenças da Glândula Tireoide (Hipo, Hiper e Tireoidites) -> Hipotireoidismo Primário (Tireoidite de Hashimoto) e Hipotireoidismo Subclínico
+  [6] Doenças da Glândula Tireoide (Hipo, Hiper e Tireoidites) -> Hipertireoidismo (Doença de Graves, Bócio Multinodular Tóxico) e Tireoidites
+  [7] Doenças das Glândulas Adrenais (Cushing, Addison, Feocromocitoma) -> Síndrome de Cushing: Algoritmo de Triagem e Localização Etiológica
+  [8] Doenças das Glândulas Adrenais (Cushing, Addison, Feocromocitoma) -> Insuficiência Adrenal (Doença de Addison) e Feocromocitoma
+  [9] Distúrbios Hipotálamo-Hipofisários e Prolactina -> Hiperprolactinemia e Prolactinomas (Micro vs Macroprolactinomas)
+  [10] Distúrbios Hipotálamo-Hipofisários e Prolactina -> Acromegalia e Diabetes Insipidus (Central vs Nefrogênico)
+  [11] Obesidade, Síndrome Metabólica e Dislipidemias -> Critérios Diagnósticos de Síndrome Metabólica (NCEP-ATP III / IDF)
+  [12] Obesidade, Síndrome Metabólica e Dislipidemias -> Dislipidemias: Metas de LDL-c e Terapia Farmacológica (Estatinas e Ezetimiba)
+  [13] Distúrbios do Metabolismo Ósseo e Paratireoide -> Osteoporose no Adulto: Densitometria Óssea e Escore FRAX
+  [14] Distúrbios do Metabolismo Ósseo e Paratireoide -> Distúrbios do Cálcio: Hipercalcemia da Malignidade vs Hiperparatireoidismo
+--- BULLETS ---
+  (B1) Critérios Diagnósticos da SBD/ADA (Glicemia de Jejum >= 126 mg/dL, TOTG 2h >= 200 mg/dL, HbA1c >= 6,5% ou Sintomas Típicos com Glicemia Casual >= 200)
+  (B2) Metas Terapêuticas Individualizadas de Hemoglobina Glicada (Geral < 7,0%; Idosos/Frágeis < 8,0%)
+  (B3) Fármacos de Escolha com Proteção Cardiorrenal Comprovada: Inibidores de SGLT2 e Agonistas do GLP-1
+  (B4) Critérios Laboratoriais da CAD: Glicemia > 250, Cetonemia/Cetonúria, Acidose Metabólica pH < 7,30 e Bicarbonato < 15
+  (B5) Manejo Terapêutico da CAD: Hidratação Venosa com Solução Fisiológica a 0,9%, Monitorização Rigorosa do Potássio e Insulina Regular EV Contínua
+  (B6) Regra de Ouro do Potássio: Não Iniciar Insulina se K+ < 3,3 mEq/L (Repor Potássio Primeiro)
+  (B7) Critérios de Resolução da CAD e Transição Segura para Insulina Subcutânea
+  (B8) Rastreamento Anual Obrigatório: Relação Albuminúria/Creatinúria (RAC em Amostra Isolada) e Estimativa da TFG
+  (B9) Histologia Típica: Glomeruloesclerose Nodular Intercapilar (Nódulos de Kimmelstiel-Wilson) e Terapia com iSGLT2 e Finerenona
+  (B10) Retinopatia Diabética Não-Proliferativa (Microaneurismas e Exsudatos) vs Proliferativa (Neovascularização de Retina e Laserterapia)
+  (B11) Exame do Pé Diabético: Teste do Monofilamento de Semmes-Weinstein de 10g para Perda da Sensibilidade Protetora e Prevenção de Úlceras
+  (B12) Diagnóstico Laboratorial: TSH Elevado e T4 Livre Baixo; Anticorpo Anti-TPO Positivo Confirmando Doença de Hashimoto
+  (B13) Tratamento com Levotiroxina (1,6 mcg/kg/dia em Jejum) e Critérios de Tratamento do Hipotireoidismo Subclínico (TSH > 10 ou Gravidez)
+  (B14) Doença de Graves: Anticorpo Anti-Receptor de TSH (TRAb) Positivo, Bócio Difuso Vascularizado e Oftalmopatia Infiltrativa
+  (B15) Tireoidite Subaguda de De Quervain (Pós-Viral, Dor Cervical Intensa, VHS Muito Alto, Captação de Iodo Baixa e Tratamento com AINEs)
+  (B16) Testes de Triagem Inicial (Cortisol Salivar Noturno, Cortisol Livre Urinário de 24h e Teste de Supressão com 1mg de Dexametasona)
+  (B17) Dosagem de ACTH Plasmático para Diferenciação: ACTH-Dependente (Doença de Cushing Hipofisária) vs ACTH- Independente (Adenoma Adrenal)
+  (B18) Insuficiência Adrenal Primária: Hipotensão, Hiponatremia, Hipercalemia e Hiperpigmentação Cutaneomucosa por Excesso de ACTH
+  (B19) Feocromocitoma: Paroxismos de Cefaleia, Sudorese e Palpitações associados a HAS Severa e Dosagem de Metanefrinas Livres Plasmáticas
+  (B20) Causas Mais Frequentes: Fármacos Antidopaminérgicos (Antipsicóticos, Metoclopramida), Hipotireoidismo Primário e Prolactinomas
+  (B21) Tratamento Clínico de 1ª Linha com Agonistas Dopaminérgicos (Cabergolina / Bromocriptina) Promovendo Controle Hormonal e Redução Tumoral
+  (B22) Acromegalia: Dosagem de IGF-1 Sérico Elevado e Falha de Supressão do GH no Teste Oral de Tolerância à Glicose
+  (B23) Diabetes Insipidus: Poliúria Hipotônica (Osmolaridade Urinária < 300 mOsm/kg) e Teste da Desmopressina (dDAVP) para Diferenciação Central vs Renal
+  (B24) Critérios Harmonizados (Presença de 3 ou mais: Circunferência Abdominal Aumentada, Triglicerídeos >= 150, HDL < 40/50, PA >= 130/85, Glicemia >= 100)
+  (B25) Fisiopatologia Central da Resistência Insulínica e Risco Cardiovascular Exponencial
+  (B26) Estratificação do Risco Cardiovascular (Baixo, Intermediário, Alto e Muito Alto Risco) com Metas Específicas de LDL-c (< 50 mg/dL no Muito Alto)
+  (B27) Terapia Hipolipemiante de Alta Potência (Atorvastatina 40-80mg ou Rosuvastatina 20-40mg) associada a Ezetimiba e Inibidores de PCSK9
+  (B28) Critérios Diagnósticos da OMS à Densitometria (T-score <= -2,5 Desvios-Padrão em Coluna Lombar ou Colo Femoral)
+  (B29) Tratamento Farmacológico Anti-Reabsortivo (Bisfosfonatos Orais e Intravenosos: Alendronato e Zoledronato) e Teriparatida
+  (B30) Hipercalcemia da Malignidade: Queda Rápida do Estado Geral, PTH Suprimido e Elevação do Peptídeo Relacionado ao PTH (PTHrP)
+  (B31) Tratamento Imediato da Crise Hipercalcêmica com Hidratação Vigorosa com Solução Salina 0,9% e Ácido Zoledrônico EV
+
+==================================================
+TEMA 6: Reumatologia (Subfocos: 14, Bullets: 27)
+==================================================
+  [1] Artrite Reumatoide e Doença de Still -> Critérios de Classificação ACR/EULAR 2010 da Artrite Reumatoide
+  [2] Artrite Reumatoide e Doença de Still -> Medicamentos Modificadores do Curso da Doença (DMARDs) e Doença de Still
+  [3] Lúpus Eritematoso Sistêmico (LES) e SAF -> Critérios EULAR/ACR 2019 de Classificação do LES
+  [4] Lúpus Eritematoso Sistêmico (LES) e SAF -> Síndrome do Anticorpo Antifosfolípide (SAF) e Tratamento do LES
+  [5] Espondiloartrites (Espondilite Anquilosante, Artrite Psoriásica, Reativa) -> Espondilite Anquilosante: Lombalgia Inflamatória e HLA-B27
+  [6] Espondiloartrites (Espondilite Anquilosante, Artrite Psoriásica, Reativa) -> Artrite Psoriásica e Artrite Reativa (Síndrome de Reiter)
+  [7] Vasculites Sistêmicas (Grandes, Médios e Pequenos Vasos) -> Vasculites de Grandes e Médios Vasos (Arterite Temporal, Takayasu e Poliarterite Nodosa)
+  [8] Vasculites Sistêmicas (Grandes, Médios e Pequenos Vasos) -> Vasculites de Pequenos Vasos Associadas ao ANCA e por Imunocomplexos
+  [9] Esclerose Sistêmica e Miopatias Inflamatórias -> Esclerose Sistêmica Limitada (Síndrome CREST) vs Difusa
+  [10] Esclerose Sistêmica e Miopatias Inflamatórias -> Polimiosite e Dermatomiosite: Diagnóstico Clínico e Imunológico
+  [11] Artropatias por Microcristais (Gota e Pseudogota) -> Gota Úrica: Fisiopatologia, Crise Aguda de Podagra e Artrocentese
+  [12] Artropatias por Microcristais (Gota e Pseudogota) -> Tratamento da Crise Aguda vs Terapia Hipouricemiante Crônica
+  [13] Osteoartrite e Fibromialgia -> Osteoartrite (Artrose): Fisiopatologia, Nódulos de Heberden/Bouchard e Radiologia
+  [14] Osteoartrite e Fibromialgia -> Fibromialgia: Critérios Diagnósticos do ACR e Terapia Farmacológica
+--- BULLETS ---
+  (B1) Poliartrite Crônica, Simétrica, Periférica, de Pequenas e Grandes Articulações, com Rigidez Matinal > 1 Hora e Poupação das Interfalângicas Distais (IFD)
+  (B2) Marcadores Sorológicos: Fator Reumatoide (FR) e Anticorpo Antipeptídeo Citrulinado Cíclico (Anti-CCP: Alta Especificidade)
+  (B3) Terapia de 1ª Linha Canônica: Metotrexato (MTX) associado a Ácido Fólico e Associação com Biológicos Anti-TNF na Falha Terapêutica
+  (B4) Doença de Still do Adulto: Febre Diária em Agulha, Erupção Cutânea Evanescente Cor Salmão e Hiperferritinemia Acentuada
+  (B5) Critério de Entrada Obrigatório: Anticorpo Antinuclear (FAN) Positivo em Título >= 1:80 em Células HEp-2
+  (B6) Critérios Aditivos e Específicos: Anti-Sm e Anti-DNA Dupla Hélice (Nativo), Queda de Complemento (C3 e C4) e Nefrite Lúpica
+  (B7) SAF: Eventos Trombóticos Vasculares ou Morbidade Gestacional associados a Anticoagulante Lúpico, Anticardiolipina ou Anti-Beta-2-Glicoproteína I
+  (B8) Pilar Terapêutico Universal do LES: Hidroxicloroquina para Todos os Pacientes e Imunossupressão (Micofenolato / Ciclofosfamida na Nefrite)
+  (B9) Características da Dor Lombar Inflamatória (Início < 45 anos, Melhora com Movimento, Piora com Repouso e Rigidez Matinal > 30 min)
+  (B10) Sacroiliíte Bilateral à Ressonância Magnética / Radiografia e Presença do Antígeno HLA-B27
+  (B11) Artrite Psoriásica: Padrão Oligoarticular Assimétrico ou Poliarticular com Acometimento de IFD, Dactilite ('Dedo em Salsicha') e Pitting Ungueal
+  (B12) Artrite Reativa: Tríade Clássica (Artrite Assimétrica, Uretrite Não-Gonocócica e Conjuntivite) após Infecção Geniturinária ou Gastrointestinal
+  (B13) Arterite de Células Gigantes / Temporal: Idosos > 50 Anos com Cefaleia Temporal, Claudicação de Mandíbula, VHS Muito Alto e Risco de Cegueira por Oclusão da Artéria Ciliar
+  (B14) Arterite de Takayasu (Mulheres Jovens, Assimetria de Pulsos e Sopros Vasculares) e Poliarterite Nodosa (Associação com Hepatite B)
+  (B15) Granulomatose com Poliangiite / Wegener (c-ANCA / Anti-PR3 Positivo, Sinusopatia Crônica, Nódulos Pulmonares Cavitados e Glomerulonefrite)
+  (B16) Poliangiite Microscópica (p-ANCA / Anti-MPO) e Púrpura de Henoch-Schönlein (Vasculite por IgA com Púrpura Palpável em Membros Inferiores)
+  (B17) Síndrome CREST (Calcinose, Raynaud, Esofagopatia, Esclerodactilia, Telangiectasias) com Anticorpo Anticentrômero Positivo e Risco de Hipertensão Pulmonar
+  (B18) Forma Difusa: Espessamento Cutâneo Proximal aos Cotovelos/Joelhos, Anticorpo Anti-Scl-70 (Topoisomerase I) e Risco de Crise Renal Esclerodérmica
+  (B19) Fraqueza Muscular Proximal e Simétrica com Elevação Acentuada de Enzimas Musculares (CPK e Aldolase) e Eletromiografia Típica
+  (B20) Manifestações Cutâneas Patognomônicas da Dermatomiosite: Heliótropo (Eritema Violáceo Periorbital) e Pápulas de Gottron sobre as Articulações
+  (B21) Quadro Clínico da Crise Aguda: Monoartrite Hiperaguda Exuberante, Mais Comumente na 1ª Articulação Metatarsofalângica (Podagra)
+  (B22) Manejo da Crise Inflamatória: AINEs em Doses Plenas, Colchicina Precoce ou Corticoides Orais (Proibido Alterar Dose de Alopurinol na Crise)
+  (B23) Controle Crônico com Alopurinol associado a Profilaxia de Crise com Colchicina em Baixa Dose (Meta de Ácido Úrico < 6,0 mg/dL)
+  (B24) Quadro Clínico: Dor Articular Mecânica que Piora com o Uso e Melhora com o Repouso, Rigidez Matinal Breve (< 30 min) e Crepitação
+  (B25) Sinais Radiológicos Típicos: Redução Assimétrica do Espaço Articular, Esclerose Subcondral, Osteófitos Marginais e Cistos Subcondrais
+  (B26) Quadro de Dor Crônica Difusa Generalizada por mais de 3 Meses associada a Fadiga Crônica, Sono Não-Reparador e Disfunção Cognitiva
+  (B27) Tratamento Multidisciplinar com Exercícios Físicos Aeróbicos Regulares e Farmacoterapia Central (Duloxetina, Pregabalina e Ciclobenzaprina)
+
+==================================================
+TEMA 7: Infectologia (Subfocos: 16, Bullets: 35)
+==================================================
+  [1] Infecção pelo HIV e Doenças Oportunistas -> Diagnóstico e Terapia Antirretroviral (TARV)
+  [2] Infecção pelo HIV e Doenças Oportunistas -> Doenças Oportunistas Maiores no HIV
+  [3] Arboviroses e Viroses Sistêmicas (Dengue, Chikungunya, Zika, Febre Amarela) -> Dengue (Classificação de Risco e Manejo Clínico)
+  [4] Arboviroses e Viroses Sistêmicas (Dengue, Chikungunya, Zika, Febre Amarela) -> Febre Amarela, Chikungunya e Zika Vírus
+  [5] Sepse e Choque Séptico no Adulto -> Definições do Consenso Sepsis-3 e Escore SOFA / qSOFA
+  [6] Sepse e Choque Séptico no Adulto -> Pacote de 1 Hora do Surviving Sepsis Campaign (SSC)
+  [7] Infecções por Micobactérias e Fungos Sistêmicos -> Tuberculose Pulmonar: Diagnóstico (TRM-TB, Baciloscopia) e Esquema RIPE
+  [8] Infecções por Micobactérias e Fungos Sistêmicos -> Micoses Endêmicas: Paracoccidioidomicose, Histoplasmose e Criptococose
+  [9] Zoonoses e Doenças Tropicais (Leptospirose, Malária, Chagas, Leishmanioses) -> Leptospirose (Doença de Weil) e Malária no Brasil
+  [10] Zoonoses e Doenças Tropicais (Leptospirose, Malária, Chagas, Leishmanioses) -> Doença de Chagas (Fase Aguda e Crônica) e Leishmaniose Visceral (Calazar)
+  [11] Infecções Respiratórias e Faríngeas (COVID-19, Influenza) -> Síndrome Respiratória Aguda Grave (SRAG) por Influenza e Oseltamivir
+  [12] Infecções Respiratórias e Faríngeas (COVID-19, Influenza) -> COVID-19 no Adulto: Estratificação de Gravidade e Manejo Terapêutico
+  [13] Infecções do Sistema Nervoso Central no Adulto (Meningites e Encefalites) -> Meningite Bacteriana Aguda: Quadro Clínico, Punção Lombar e Análise Liquórica
+  [14] Infecções do Sistema Nervoso Central no Adulto (Meningites e Encefalites) -> Terapia Antimicrobiana Empírica Imediata e Encefalite Herpética
+  [15] Infecções Hospitalares e Uso Racional de Antimicrobianos -> Pneumonia Associada à Ventilação Mecânica (PAV) e Infecções de Corrente Sanguínea (IPCS)
+  [16] Infecções Hospitalares e Uso Racional de Antimicrobianos -> Patógenos Multirresistentes (MDR / ESKAPE) e Stewardship de Antimicrobianos
+--- BULLETS ---
+  (B1) Diagnóstico pelo Fluxograma do MS (Testes Rápidos em Paralelo ou Sequencial e Carga Viral)
+  (B2) Esquema Inicial de Escolha no Brasil: Tenofovir (TDF) + Lamivudina (3TC) + Dolutegravir (DTG)
+  (B3) Monitorização Terapêutica: Carga Viral Indetectável e Contagem de Linfócitos T CD4+
+  (B4) Profilaxia Pré-Exposição (PrEP) e Profilaxia Pós-Exposição (PEP em até 72h)
+  (B5) Neurotoxoplasmose (CD4 < 100: Lesões Expansivas com Realce Anelar de Contraste e Edema Perilesional à TC/RM; Tratamento com Sulfadiazina + Pirimetamina + Ácido Folínico)
+  (B6) Pneumocistose / PCP (CD4 < 200: Dispneia Progressiva, Tosse Seca, Infiltrado Intersticial Peri-Hilar Bilateral; Tratamento e Profilaxia com Sulfametoxazol-Trimetoprima)
+  (B7) Meningite Criptocócica: Líquor com Tinta da China Positiva e Tratamento com Anfotericina B Lipossomal + Flucitosina
+  (B8) Grupos de Manejo do MS: Grupo A (Sem Alarme/Risco - Hidratação Oral Domiciliar), Grupo B (Condição Especial / Risco Social - Hidratação Oral Supervisionada no Posto)
+  (B9) Sinais de Alarme (Dor Abdominal Intensa/Contínua, Vômitos Persistentes, Acúmulo de Líquidos, Hipotensão Postural, Hepatomegalia > 2 cm, Letargia e Hemoconcentração) = Grupo C (Hidratação Venosa Imediata 10 mL/kg na 1ª hora)
+  (B10) Choque e Sangramento Grave = Grupo D (Ressuscitação Volêmica Venosa Agressiva 20 mL/kg em 20 min)
+  (B11) Febre Amarela: Sinal de Faget (Dissociação Pulso-Temperatura), Insuficiência Hepatorrenal Ictérica e Hemorrágica
+  (B12) Febre de Chikungunya: Poliartrite Intensa, Simétrica, Incapacitante e Risco de Cronificação Articular
+  (B13) Sepse: Disfunção Orgânica Ameaçadora à Vida Causada por Resposta Desregulada do Hospedeiro à Infecção (Aumento de >= 2 Pontos no Escore SOFA)
+  (B14) Choque Séptico: Necessidade de Vasopressor (Noradrenalina) para Manter PAM >= 65 mmHg E Lactato Sérico > 2 mmol/L apesar de Ressuscitação Volêmica Adequada
+  (B15) Medidas Canônicas Obrigatórias na 1ª Hora: Dosagem de Lactato Sérico, Coleta de Hemoculturas antes dos Antibióticos e Início Imediato de Antimicrobianos de Amplo Espectro
+  (B16) Ressuscitação Volêmica com Cristaloides (30 mL/kg nas Primeiras 3 Horas) em Caso de Hipotensão ou Lactato >= 4 mmol/L
+  (B17) Teste Rápido Molecular para Tuberculose (TRM-TB): Detecção do DNA do M. tuberculosis e Detecção Rápida de Resistência à Rifampicina
+  (B18) Paracoccidioidomicose: Exposição Rural, Lesões Mucosas em Estomatite Moriforme e Leveduras com Brotamento Múltiplo em 'Roda de Leme'
+  (B19) Histoplasmose Disseminada e Criptococose Meníngea no Paciente Imunodeprimido (Tratamento com Anfotericina B e Fluconazol)
+  (B20) Síndrome de Weil (Forma Ictero-Hemorrágica Grave): Tríade de Icterícia Rubínica / Alaranjada, Insuficiência Renal Aguda Hipocalêmica e Hemorragia Pulmonar
+  (B21) Malária: Febre Terçã (P. vivax e P. falciparum) vs Quartã (P. malariae), Diagnóstico por Gota Espessa e Tratamento com Cloroquina + Primaquina
+  (B22) Doença de Chagas: Formas Clínicas Crônicas Cardíaca (Bloqueio de Ramo Direito + BDAS) e Digestiva (Megaesôfago e Megacólon)
+  (B23) Leishmaniose Visceral: Febre Prolongada, Hepatoesplenomegalia Volumosa Maciça, Pancitopenia e Terapia com Antimoniato de Meglumina ou Anfotericina B Lipossomal
+  (B24) Definição de SRAG (Síndrome Gripal associada a Dispneia, Saturação de O2 < 95% em ar ambiente ou Desconforto Respiratório)
+  (B25) Indicação Precoce de Inibidores da Neuraminidase (Oseltamivir Oral) em até 48 Horas para Pacientes com Fatores de Risco ou SRAG
+  (B26) Critérios de Gravidade e Indicação de Oxigenoterapia em Pacientes Hipoxêmicos
+  (B27) Terapia com Corticosteroides Sistêmicos (Dexametasona 6 mg/dia por até 10 dias) nos Pacientes que Requerem Suporte de Oxigênio
+  (B28) Tríade Clássica: Febre Alta, Rigidez de Nuca (Sinais de Kernig e Brudzinski) e Alteração do Nível de Consciência
+  (B29) Padrão Liquórico Bacteriano Típico: Pleocitose com Predomínio Neutrofílico (> 80%), Hiperproteinorraquia (> 100-200 mg/dL) e Hipoglicorraquia Severa (Razão Líquor/Sérica < 0,4)
+  (B30) Esquema Empírico de 1ª Linha: Ceftriaxona 2g EV 12/12h associada a Dexametasona EV Precoce antes ou junto com a Primeira Dose de Antibiótico
+  (B31) Encefalite por Herpes Simples (HSV-1): Febre, Alteração Comportamental, Crises Focais, Acometimento Temporal Típico à RNM e Aciclovir EV Imediato
+  (B32) PAV: Critérios Diagnósticos Radiológicos e Clínicos, Coleta de Aspirado Traqueal e Pacote de Medidas Preventivas (Cabeceira Elevada 30-45°)
+  (B33) Infecção Primária de Corrente Sanguínea associada a Cateter Venoso Central (CVC) e Princípios de Coleta de Hemoculturas Pareadas
+  (B34) Mecanismos de Resistência: Enterobactérias Produtoras de ESBL (Tratamento com Carbapenêmicos) e KPC (Tratamento com Ceftazidima-Avibactam)
+  (B35) Staphylococcus aureus Resistente à Meticilina (MRSA: Tratamento com Vancomicina e Daptomicina) e Descalonamento Guiado por Cultura
+
+==================================================
+TEMA 8: Hematologia (Subfocos: 14, Bullets: 28)
+==================================================
+  [1] Anemias Carenciais e de Doença Crônica -> Anemia Ferropriva: Cinética do Ferro e Propedêutica Laboratorial
+  [2] Anemias Carenciais e de Doença Crônica -> Anemia de Doença Crônica e Anemias Megaloblásticas (B12 e Folato)
+  [3] Anemias Hemolíticas Adquiridas e Congênitas -> Achados Gerais de Hemólise e Anemia Falciforme (Crises Vaso-Oclusivas)
+  [4] Anemias Hemolíticas Adquiridas e Congênitas -> Anemias Hemolíticas Autoimunes (AHAI) e Esferocitose Hereditária
+  [5] Leucemias Agudas e Crônicas no Adulto -> Leucemia Mieloide Aguda (LMA) e Leucemia Linfoide Aguda (LLA)
+  [6] Leucemias Agudas e Crônicas no Adulto -> Leucemia Mieloide Crônica (LMC) e Leucemia Linfoide Crônica (LLC)
+  [7] Linfomas (Hodgkin e Não-Hodgkin) e Mieloma Múltiplo -> Linfoma de Hodgkin vs Linfoma Não-Hodgkin (LNH)
+  [8] Linfomas (Hodgkin e Não-Hodgkin) e Mieloma Múltiplo -> Mieloma Múltiplo: Critérios Diagnósticos Canônicos (CRAB)
+  [9] Distúrbios da Hemostasia e Coagulopatias (Hemofilias e Plaquetopenias) -> Púrpura Trombocitopênica Imunológica (PTI) e Trombocitopenia Induzida por Heparina (HIT)
+  [10] Distúrbios da Hemostasia e Coagulopatias (Hemofilias e Plaquetopenias) -> Hemofilias Congênitas (Hemofilia A e B) e Coagulação Intravascular Disseminada (CIVD)
+  [11] Trombofilias e Trombose -> Trombofilias Hereditárias (Fator V de Leiden, Mutação da Protrombina)
+  [12] Trombofilias e Trombose -> Indicações de Rastreamento de Trombofilias e Duração da Anticoagulação
+  [13] Medicina Transfusional e Reações Hemolíticas -> Gatilhos Transfusionais para Concentrado de Hemácias e Plaquetas
+  [14] Medicina Transfusional e Reações Hemolíticas -> Reações Transfusionais Graves: TRALI, TACO e Hemólise Aguda Imune
+--- BULLETS ---
+  (B1) Padrão Laboratorial Clássico: Microcitose e Hipocromia com RDW Elevado (Anisocitose), Ferritina Sérica Baixa (< 30 ng/mL) e Capacidade Total de Ligação do Ferro (TIBC) Elevada
+  (B2) Investigação Etiológica Obrigatória de Sangramento Gastrointestinal Oculto em Homens Adultos e Mulheres Pós- Menopausadas
+  (B3) Anemia de Doença Crônica / Inflamatória: Bloqueio de Ferro Mediado por Hepcidina com Ferritina Normal ou Elevada e Ferro Sérico Baixo
+  (B4) Anemia Megaloblástica: Macrocitose Acentuada (VCM > 100-110 fL), Neutrófilos Hipersegmentados e Deficiência de Vitamina B12 com Sintomas Neurológicos
+  (B5) Tétrade Laboratorial da Hemólise: Aumento de Reticulócitos, Elevação de LDH, Hiperbilirrubinemia Indireta e Queda Acentuada de Haptoglobina
+  (B6) Anemia Falciforme: Manejo da Crise Álgica Aguda Vaso-Oclusiva (Hidratação, Analgesia Escalonada com Opioides) e Síndrome Torácica Aguda
+  (B7) AHAI por Anticorpos Quentes (IgG, Teste de Coombs Direto Positivo, Resposta a Corticoide) vs Anticorpos Frios (IgM / Aglutininas Frias)
+  (B8) Esferocitose Hereditária: Defeito no Citoesqueleto Eritrocitário (Espectrina/Anquirina), Teste de Fragilidade Osmótica Aumentado e Esplenectomia
+  (B9) Definição Diagnóstica de Leucemia Aguda: Presença de >= 20% de Blastos na Medula Óssea ou Sangue Periférico
+  (B10) LMA: Presença de Bastonetes de Auer ao Mielograma e Leucemia Promielocítica Aguda (LMA-M3 / Translocação t[15;17] tratada com ATRA)
+  (B11) LMC: Neutrofilia Intensa com Desvio Escalonado à Esquerda, Cromossomo Philadelphia t(9;22) com Gene de Fusão BCR- ABL e Tratamento com Imatinibe
+  (B12) LLC: Linfocitose B Clonal Absoluta Persistente em Idosos, Manchas de Gumprecht no Esfregaço e Estadiamento de Rai e Binet
+  (B13) Linfoma de Hodgkin: Presença Típica de Células de Reed-Sternberg à Biópsia Linfonodal Excisional e Sintomas B (Febre Pel-Ebstein, Sudorese Noturna e Perda de Peso)
+  (B14) Linfomas Não-Hodgkin: Linfoma Difuso de Grandes Células B (Tipo Mais Comum, Agressivo) e Linfoma Folicular Indolente
+  (B15) Tétrade CRAB: Hipercalcemia (C), Insuficiência Renal (R), Anemia Normo/Normo (A) e Lesões Ósseas Líticas em 'Saca- Bocado' (B)
+  (B16) Propedêutica: Eletroforese de Proteínas com Pico Monoclonal, Cadeias Leves Livres Séricas e Mielograma com Plasmócitos Clonais >= 10%
+  (B17) PTI Primária: Trombocitopenia Isolada sem Outras Citopenias ou Esquizócitos e Tratamento Inicial com Corticoides ou Imunoglobulina Humana EV
+  (B18) HIT Tipo II: Queda de > 50% das Plaquetas após 5-10 Dias de Heparina com Alto Risco Paradoxal de Trombose (Suspensão e Troca por Fondaparinux)
+  (B19) Hemofilia A (Deficiência de Fator VIII) e B (Deficiência de Fator IX): Herança Ligada ao X, Alargamento Isolado do TTPA com TP Normal e Hemartroses
+  (B20) CIVD: Consumo de Fatores e Plaquetas com Alargamento Simultâneo de TP e TTPA, Hipofibrinogenemia e Elevação Maciça de Dímero-D
+  (B21) Trombofilia Hereditária Mais Comum: Fator V de Leiden (Resistência à Proteína C Ativada) e Mutação G20210A da Protrombina
+  (B22) Deficiências de Inibidores Naturais da Coagulação: Antitrombina III, Proteína C e Proteína S (Risco de Necrose Cutânea por Varfarina)
+  (B23) Critérios Clínicos de Investigação: TVP Não-Provocada em Idade Jovem (< 50 anos), Trombose em Sítios Incomuns (Mesentérica, Cerebral) ou Trombose Recorrente
+  (B24) Momento Correto da Coleta: Evitar Dosagens na Fase Aguda da Trombose ou sob Uso de Anticoagulantes para Evitar Falso-Positivos
+  (B25) Gatilho Restritivo Padrão: Hemoglobina < 7,0 g/dL no Paciente Crítico Estável (Gatilho < 8,0 g/dL em Pacientes com Doença Cardiovascular Aguda)
+  (B26) Transfusão de Plaquetas: Profilática em Contagens < 10.000/mm3 (Falência Medular) ou < 50.000/mm3 antes de Procedimentos Invasivos de Médio Porte
+  (B27) TRALI (Lesão Pulmonar Aguda Relacionada à Transfusão): Hipoxemia e Infiltrado Pulmonar Bilateral Não-Cardiogênico em até 6 Horas Pós-Transfusão
+  (B28) TACO (Sobrecarga Circulatória Associada à Transfusão): Edema Agudo Cardiogênico com Aumento de Pressão Venosa e BNP (Tratamento com Furosemida EV)
+
+==================================================
+TEMA 9: Neurologia (Subfocos: 14, Bullets: 31)
+==================================================
+  [1] Acidente Vascular Cerebral (Isquêmico e Hemorrágico) -> Acidente Vascular Cerebral Isquêmico (AVCi) Agudo
+  [2] Acidente Vascular Cerebral (Isquêmico e Hemorrágico) -> Acidente Vascular Cerebral Hemorrágico e Hemorragia Subaracnóidea
+  [3] Epilepsias e Estado de Mal Epiléptico no Adulto -> Classificação das Crises Epilépticas (Focais vs Generalizadas)
+  [4] Epilepsias e Estado de Mal Epiléptico no Adulto -> Protocolo de Manejo do Estado de Mal Epiléptico (Status Epilepticus)
+  [5] Cefaleias Primárias e Secundárias -> Cefaleias Primárias: Enxaqueca, Tensional e Cefaleia em Salvas
+  [6] Cefaleias Primárias e Secundárias -> Sinais de Alarme (Red Flags) e Cefaleia Secundária (Hemorragia Subaracnóidea)
+  [7] Síndromes Demenciais e Doença de Alzheimer -> Doença de Alzheimer: Fisiopatologia, Perda de Memória Recente e Farmacoterapia
+  [8] Síndromes Demenciais e Doença de Alzheimer -> Diagnóstico Diferencial: Demência Vascular, Corpos de Lewy e Frontotemporal
+  [9] Doenças Desmielinizantes (Esclerose Múltipla) -> Esclerose Múltipla: Fisiopatologia, Disseminação no Tempo e Espaço (Critérios de McDonald)
+  [10] Doenças Desmielinizantes (Esclerose Múltipla) -> Tratamento do Surto Agudo (Pulsoterapia) e Terapias Modificadoras de Doença
+  [11] Doenças Neuromusculares e Polineuropatias (Guillain-Barré, Miastenia Gravis) -> Síndrome de Guillain-Barré (Polirradiculoneuropatia Inflamatória Desmielinizante Aguda)
+  [12] Doenças Neuromusculares e Polineuropatias (Guillain-Barré, Miastenia Gravis) -> Miastenia Gravis: Fisiopatologia Autoimune da Placa Motora e Crise Miastênica
+  [13] Doença de Parkinson e Distúrbios do Movimento -> Tétrade Motora Canônica do Parkinsonismo e Diagnóstico Clínico
+  [14] Doença de Parkinson e Distúrbios do Movimento -> Tratamento com Levodopa/Carbidopa e Diagnóstico Diferencial de Parkinsonismo Secundário
+--- BULLETS ---
+  (B1) Tomografia de Crânio sem Contraste Imediata para Exclusão de Sangramento
+  (B2) Janela de Trombólise Intravenosa com Alteplase em até 4,5 Horas do Ictus (Critérios de Inclusão, Exclusão e Alvo Pressórico < 185x110 mmHg)
+  (B3) Trombectomia Mecânica Endovascular em até 6 a 24 Horas para Oclusão de Grandes Vasos da Circulação Anterior
+  (B4) Prevenção Secundária: Antiagregação Plaquetária (AAS / Clopidogrel), Estatina de Alta Potência e Anticoagulação se Origem Cardioembólica
+  (B5) Hemorragia Intraparenquimatosa Espontânea: Controle Rigoroso da Pressão Arterial (PAS < 140 mmHg) e Reversão de Anticoagulação
+  (B6) Hemorragia Subaracnóidea (HSA) por Aneurisma Sacular: Cefaleia Súbita e Explosiva ("Pior Cefaleia da Vida"), TC sem Contraste / Punção Lombar (Xantocromia)
+  (B7) Complicações da HSA: Vasoespasmo Cerebral (Prevenção com Nimodipino Oral) e Ressangramento
+  (B8) Crises Focais com Percepção Preservada vs Comprometida (Origem Temporal com Automatismos Motores) e Crises Tônico-Clônicas Generalizadas Bilaterais
+  (B9) Propedêutica Inicial do 1º Episódio Crítico: Neuroimagem (TC/RNM) e Eletroencefalograma (EEG) para Pesquisa de Descargas Epileptiformes
+  (B10) Definição Operacional (Crise Convulsiva Contínua >= 5 Minutos ou 2 Crises sem Recuperação da Consciência)
+  (B11) Algoritmo Escalonado: 1ª Linha com Benzodiazepínico EV (Diazepam / Lorazepam) seguido de 2ª Linha (Fenitoína EV ou Levetiracetam)
+  (B12) Migrânea / Enxaqueca: Unilateral, Pulsátil, Moderada a Grave, Piora com Atividade, Foto/Fonofobia e Náuseas (Tratamento Agudo com Triptanos)
+  (B13) Cefaleia em Salvas: Dor Periorbital Unilateral Excruciante em Homens, Acompanhada de Sinais Autonômicos (Lacrimejamento e Rinorreia, Tratada com O2 a 100%)
+  (B14) Sinais de Alarme (Mnemônico SNOOP: Sintomas Sistêmicos, Déficit Neurológico, Início Súbito 'Em Trovoada' e Mudança de Padrão)
+  (B15) Hemorragia Subaracnóidea por Ruptura de Aneurisma Sacular: Cefaleia em Trovoada Hiperaguda, Rigidez de Nuca e TC de Crânio Imediata
+  (B16) Déficit Amnéstico Precoce da Memória Episódica Recente com Preservação da Memória Remota e Deposição de Placas Beta-Amiloides e Emaranhados Tau
+  (B17) Tratamento com Inibidores da Acetilcolinesterase (Donepezila, Rivastigmina, Galantamina) e Antagonista NMDA (Memantina nas Fases Moderadas a Graves)
+  (B18) Demência com Corpos de Lewy: Flutuação Cognitiva Cognitiva Precoce, Alucinações Visuais Vívidas e Parkinsonismo Espontâneo
+  (B19) Demência Vascular (Evolução em Degraus associada a Doença Cerebrovascular) e Demência Frontotemporal com Alteração Comportamental Precoce
+  (B20) Manifestações Típicas em Mulheres Jovens: Neurite Óptica Unilateral Dolorosa, Mielite Transversa e Síndrome de Fadiga
+  (B21) Ressonância Magnética com Lesões Desmielinizantes Periventriculares ('Dedos de Dawson') e Bandas Oligoclonais no Líquor
+  (B22) Tratamento do Surto Neurológico Agudo com Metilprednisolona Intravenosa em Altas Doses (1g/dia por 3 a 5 dias)
+  (B23) Terapias de Manutenção Modificadoras da Doença (Interferon-beta, Acetato de Glatirâmer, Natalizumabe e Ocrelizumabe)
+  (B24) Quadro Clínico: Paralisia Flácida Ascendente, Simétrica e Arreflexia com Início após Infecção Prévia (Campylobacter jejuni)
+  (B25) Dissociação Proteíno-Citológica no Líquor (Proteína Elevada sem Elevação de Celularidade) e Tratamento com Imunoglobulina EV ou Plasmaférese
+  (B26) Fatigabilidade Muscular Flutuante com Piora ao Final do Dia (Ptose Palpebral, Diplopia, Disartria) e Anticorpos Anti- Receptor de Acetilcolina (Anti-AChR)
+  (B27) Tratamento com Piridostigmina (Inibidor da Acetilcolinesterase), Corticoides, Timectomia e Manejo da Crise Miastênica com Suporte Ventilatório
+  (B28) Quadro Clínico: Tremor de Repouso Unilateral ('Contar Moedas'), Rigidez em 'Roda Dentada', Bradicinesia Obrigatória e Instabilidade Postural Tardia
+  (B29) Assimetria dos Sintomas Motores no Início e Excelente Resposta Terapêutica ao Teste com Levodopa Confirmando o Diagnóstico
+  (B30) Uso da Levodopa associada a Inibidor da Dopa-Descarboxilase e Complicações Motoras Tardias (Flutuações 'On-Off' e Discinesias)
+  (B31) Parkinsonismo Medicamentoso Induzido por Antagonistas Dopaminérgicos (Antipsicóticos, Metoclopramida, Flunarizina: Quadro Bilateral e Simétrico)
+
+==================================================
+TEMA 10: Dermatologia (Subfocos: 12, Bullets: 24)
+==================================================
+  [1] Dermatoses Inflamatórias e Eritêmato-Descamativas (Psoríase, Dermatite Atópica) -> Psoríase Vulgar: Fisiopatologia, Quadro Clínico e Fenômeno de Koebner
+  [2] Dermatoses Inflamatórias e Eritêmato-Descamativas (Psoríase, Dermatite Atópica) -> Dermatite Atópica e Dermatite de Contato (Alérgica vs Irritativa)
+  [3] Erupções Medicamentosas Graves (DRESS, Stevens-Johnson, NET) -> Síndrome DRESS (Drug Reaction with Eosinophilia and Systemic Symptoms)
+  [4] Erupções Medicamentosas Graves (DRESS, Stevens-Johnson, NET) -> Síndrome de Stevens-Johnson (SSJ) e Necrólise Epidérmica Tóxica (NET)
+  [5] Doenças Bolhosas Autoimunes (Pênfigos e Penfigoide) -> Pênfigo Vulgar vs Pênfigo Foliáceo
+  [6] Doenças Bolhosas Autoimunes (Pênfigos e Penfigoide) -> Penfigoide Bolhoso: Fisiopatologia e Quadro Clínico em Idosos
+  [7] Infecções Cutâneas Bacterianas, Fúngicas e Virais -> Infecções Bacterianas Cutâneas: Erisipela, Celulite e Fasciíte Necrosante
+  [8] Infecções Cutâneas Bacterianas, Fúngicas e Virais -> Micoses Superficiais (Dermatofitoses) e Infecções Virais (Herpes-Zóster)
+  [9] Hanseníase e Manifestações Cutâneas -> Classificação de Ridley-Jopling e Formas Operacionais (Paucibacilar vs Multibacilar)
+  [10] Hanseníase e Manifestações Cutâneas -> Poliquimioterapia Única (PQT-U) e Estados Reacionais Hansênicos
+  [11] Câncer de Pele e Lesões Pré-Malignas no Adulto -> Carcinomas Cutâneos (CBC e CEC) e Ceratose Actínica na Prática Clínica
+  [12] Câncer de Pele e Lesões Pré-Malignas no Adulto -> Melanoma Cutâneo: Reconhecimento Precoce e Triagem Dermatológica
+--- BULLETS ---
+  (B1) Placas Eritematodescamativas Bem Delimitadas com Escamas Prateadas em Áreas de Extensão (Cotovelos, Joelhos e Couro Cabeludo)
+  (B2) Semiologia Dermatológica Típica: Curetagem de Brocq (Sinal da Vela e Orvalho Sanguinante de Auspitz) e Fenômeno de Koebner
+  (B3) Dermatite Atópica: Prurido Intenso, Pele Seca e Lesões Eczematosas em Áreas Flexurais (Fossas Antecubitais e Poplíteas) associadas a Asma e Rinite
+  (B4) Dermatite de Contato por Irritante Primário (Dano Direto, Todos Indivíduos) vs Alérgica por Hipersensibilidade Tipo IV (Níquel, Teste de Contato Positivo)
+  (B5) Início Tardio (2 a 8 Semanas após Fármacos como Anticonvulsivantes e Alopurinol) com Erupção Morbiliforme, Febre Alta e Linfadenopatia
+  (B6) Comprometimento de Órgão-Alvo (Hepatite Aguda, Nefrite) e Marcada Eosinofilia Sérica e Linfócitos Atípicos
+  (B7) Destacamento Epidérmico Agudo Necrótico com Sinal de Nikolsky Positivo e Acometimento Severo de Múltiplas Mucosas (Oral, Ocular, Genital)
+  (B8) Diferenciação por Área de Superfície Corporal Descolada: SSJ (< 10%), Superposição SSJ/NET (10-30%) e NET (> 30%) com Tratamento em Centro de Queimados
+  (B9) Pênfigo Vulgar: Autoanticorpos Anti-Desmogleína 3, Bolhas Flácidas Intraepidérmicas Suprabasais que se Rompem Facilmente, Sinal de Nikolsky Positivo e Envolvimento Mucoso Oral Extenso
+  (B10) Pênfigo Foliáceo ('Fogo Selvagem'): Anticorpos Anti-Desmogleína 1, Bolhas Subcórneas Superficiais com Crostas e Poupação Mandatória de Mucosas
+  (B11) Autoanticorpos contra a Zona da Membrana Basal (Anti-BP180 e Anti-BP230) com Formação de Bolhas Subepidérmicas Tensas e Raras Lesões Mucosas
+  (B12) Acometimento Predominante em Idosos com Sinal de Nikolsky Negativo e Resposta Favorável a Corticosteroides Sistêmicos
+  (B13) Erisipela (Estrepto do Grupo A: Superficial, Bordas Nítidas, Bem Delimitadas e Dor Aguda) vs Celulite (Estafilo/Estrepto: Mais Profunda e Bordas Indistintas)
+  (B14) Fasciíte Necrosante: Emergência Cirúrgica Ameaçadora com Dor Desproporcional aos Achados Físicos, Crepitação e Rápida Progressão com Bolhas Hemorrágicas
+  (B15) Tinea Corporis, Cruris e Pedis: Lesões Anulares com Bordas Eritematosas Elevadas e Centro Mais Claro (Exame Micológico Direto com Hifas Hialinas)
+  (B16) Herpes-Zóster: Reativação do Vírus Varicela-Zóster em Dermátomo Unilateral com Vesículas Agrupadas em Base Eritematosa e Neuralgia Pós-Herpética
+  (B17) Critérios Diagnósticos Clínicos: Lesão Cutânea com Alteração Térmica, Dolorosa e Tátil associada a Espessamento de Nervos Periféricos
+  (B18) Classificação Operacional da OMS: Paucibacilar (Até 5 lesões de pele: Formas Indeterminada e Tuberculoide) vs Multibacilar (Mais de 5 lesões: Virchowiana e Dimorfa)
+  (B19) Esquema Terapêutico Padrão PQT-U (Rifampicina, Dapsona e Clofazimina) por 6 Meses (PB) ou 12 Meses (MB)
+  (B20) Reações Hansênicas: Reação Tipo 1 (Reversa: Neurite Aguda tratada com Prednisona) vs Reação Tipo 2 (Eritema Nodoso Hansênico tratado com Talidomida)
+  (B21) Identificação Clínica de Ceratoses Actínicas (Placas Ásperas Eritematosas Hiperceratóticas em Áreas Expostas ao Sol tratadas com Crioterapia ou Fluorouracil)
+  (B22) Suspeição Clínica de Carcinoma Basocelular e Espinocelular e Encaminhamento com Biópsia Confirmatória
+  (B23) Aplicação da Regra do ABCDE no Exame Físico de Rotina e Identificação do 'Sinal do Patinho Feio' (Lesão Pigmentada Doadora Distinta das Demais)
+  (B24) Indicação Precisa de Biópsia Excisional em Lesões Pigmentadas Suspeitas e Avaliação de Linfonodos Regionais
+
+==================================================
+TEMA 11: Alergia e Imunologia (Subfocos: 8, Bullets: 15)
+==================================================
+  [1] Anafilaxia e Reações Alérgicas Graves -> Critérios Clínicos de Diagnóstico Imediato da Anafilaxia
+  [2] Anafilaxia e Reações Alérgicas Graves -> Protocolo de Emergência: Adrenalina Intramuscular Precoce e Manejo
+  [3] Urticária e Angioedema (Hereditário e Adquirido) -> Urticária Aguda vs Crônica e Terapia com Anti-Histamínicos H1
+  [4] Urticária e Angioedema (Hereditário e Adquirido) -> Angioedema Hereditário Mediado por Bradicinina
+  [5] Rinite Alérgica e Alergias Alimentares/Medicamentosas -> Rinite Alérgica: Classificação ARIA e Corticoterapia Nasal
+  [6] Rinite Alérgica e Alergias Alimentares/Medicamentosas -> Reações Adversas a Fármacos: Reações Alérgicas Tipo I (IgE) vs Reações Pseudoalérgicas
+  [7] Imunodeficiências Primárias e Secundárias no Adulto -> Imunodeficiência Comum Variável (IDCV) no Adulto
+  [8] Imunodeficiências Primárias e Secundárias no Adulto -> Imunodeficiências Secundárias a Fármacos Imunossupressores e Doenças Sistêmicas
+--- BULLETS ---
+  (B1) Início Agudo (Minutos a Horas) envolvendo Pele/Mucosas (Urticária, Angioedema) associado a Comprometimento Respiratório OU Hipotensão/Colapso Cardiovascular
+  (B2) Principais Gatilhos: Alimentos (Amendoim, Frutos do Mar), Medicamentos (Beta-lactâmicos, AINEs) e Venenos de Insetos Himenópteros
+  (B3) Medicamento de 1ª Linha Absoluto e Mandatório: Adrenalina Aquosa (1:1.000) por Via Intramuscular na Face Anterolateral da Coxa (0,3 a 0,5 mg no Adulto)
+  (B4) Posicionamento em Decúbito Dorsal com Elevação de Membros, Oxigenoterapia, Expansão com Cristaloide e Corticoide/Anti-histamínico apenas como Coadjuvantes Tardios
+  (B5) Definição Temporal: Urticária Aguda (< 6 semanas) vs Urticária Crônica Espontânea (>= 6 semanas com Lesões Fugazes e Pruriginosas que Duram < 24h sem Deixar Marcas)
+  (B6) Tratamento Escalonado de 1ª Linha: Anti-histamínicos H1 de 2ª Geração Não-Sedantes (Cetirizina, Fexofenadina) com Possibilidade de Aumento da Dose em até 4 Vezes
+  (B7) Fisiopatologia: Deficiência Quantitativa ou Funcional do Inibidor de C1-Esterase (C1-INH) com Edema Subcutâneo/Mucoso Não-Pruriginoso e sem Urticária Concomitante
+  (B8) Risco de Edema de Glote e Refratariedade a Adrenalina e Corticoides; Tratamento Específico com Concentrado de C1-INH ou Antagonista do Receptor B2 de Bradicinina (Icatibanto)
+  (B9) Classificação ARIA (Intermitente vs Persistente; Leve vs Moderada-Grave) e Tríade de Prurido Nasal, Espirros em Salva e Rinorreia Clara
+  (B10) Reações Mediadas por IgE a Antibióticos Beta-Lactâmicos e Papel dos Testes Cutâneos e Dessensibilização
+  (B11) Reações de Hipersensibilidade a AINEs Mediadas por Inibição da COX-1 e Desvio para Via dos Leucotrienos (Tríade de Samter / Doença Respiratória Exacerbada por AAS)
+  (B12) Imunodeficiência Primária Sintomática Mais Frequente no Adulto: Infecções Sinopulmonares de Repetição por Bactérias Encapsuladas e Bronquiectasias
+  (B13) Achado Laboratorial Típico: Hipogamaglobulinemia Marcada (Redução Significativa de IgG associada a IgA ou IgM) e Tratamento com Imunoglobulina Humana de Reposição
+  (B14) Imunossupressão Iatrogênica por Corticoterapia Prolongada, Agentes Biológicos Anti-TNF e Inibidores de Checkpoint Imunológico
+  (B15) Risco Aumentado de Reativação de Infecções Latentes (Tuberculose, Hepatite B, Estrongiloidíase) e Profilaxias Recomendadas
+
+==================================================
+TEMA 12: Oncologia Clínica (Subfocos: 8, Bullets: 16)
+==================================================
+  [1] Princípios de Oncogênese, Estadiamento e Biópsia -> Bases Biológicas do Câncer e Avaliação do Performance Status (ECOG / Karnofsky)
+  [2] Princípios de Oncogênese, Estadiamento e Biópsia -> Princípios do Sistema TNM e Importância da Confirmação Histopatológica
+  [3] Emergências Oncológicas (Síndrome de Lise Tumoral, Neutropenia Febril, Hipercalcemia) -> Síndrome de Lise Tumoral (SLT): Fisiopatologia, Critérios de Cairo-Bishop e Rasburicase
+  [4] Emergências Oncológicas (Síndrome de Lise Tumoral, Neutropenia Febril, Hipercalcemia) -> Neutropenia Febril e Compressão Medular Maligna
+  [5] Toxicidades de Quimioterapia, Imunoterapia e Terapia-Alvo -> Toxicidades Clássicas de Quimioterápicos Citotóxicos
+  [6] Toxicidades de Quimioterapia, Imunoterapia e Terapia-Alvo -> Eventos Adversos Imunomediados por Inibidores de Checkpoint (Anti-PD-1, Anti-CTLA-4)
+  [7] Síndromes Paraneoplásicas -> Síndromes Paraneoplásicas Endócrinas (SIADH, Cushing Ectópico, Hipercalcemia)
+  [8] Síndromes Paraneoplásicas -> Síndromes Paraneoplásicas Neurológicas e Hematológicas
+--- BULLETS ---
+  (B1) Hallmarks do Câncer (Sustentação de Sinal Proliferativo, Evasão de Supressores, Resistência à Apoptose, Angiogênese e Metástase)
+  (B2) Escalas de Funcionalidade Clínica: ECOG (0: Atividade Plena a 4: Confinado ao Leito) como Determinante Crítico de Elegibilidade Quimioterápica
+  (B3) Sistema de Estadiamento TNM (Tamanho do Tumor Primário, Linfonodos Regionais e Metástase a Distância)
+  (B4) Obrigatoriedade de Biópsia Tecidual com Análise Imuno-histoquímica antes de Qualquer Intervenção Sistêmica Neoplásica
+  (B5) Alterações Laboratoriais Típicas por Destruição Celular Maciça: Hiperuricemia, Hipercalemia, Hiperfosfatemia e Hipocalcemia Secundária
+  (B6) Prevenção e Tratamento: Hiper-hidratação Venosa Vigorosa associada a Hipouricemiantes (Alopurinol) ou Rasburicase (Urato Oxidase Recombinante)
+  (B7) Neutropenia Febril (Neutrófilos Totais < 500/mm3 associados a Temperatura >= 38,3°C): Emergência com Início Imediato de Cefepime EV em até 1 Hora
+  (B8) Compressão Medular Neoplásica: Dor Dorsal/Lombar com Déficit Motor e Disfunção Esfincteriana (RNM de Coluna Total e Dexametasona em Altas Doses)
+  (B9) Cardiotoxicidade por Antraciclinas (Doxorrubicina com Disfunção Ventricular Cumulativa) e Nefrotoxicidade/Ototoxicidade por Platinas (Cisplatina)
+  (B10) Neuropatia Periférica Sensitiva por Taxanos e Oxaliplatina e Alopecia Induzida por Quimioterapia
+  (B11) Toxicidades Autoimunes Induzidas por Pembrolizumabe e Ipilimumabe: Colite Imunomediada, Hipofisite, Pneumonite e Tiroidite
+  (B12) Manejo das Toxicidades Imunomediadas Graves com Suspensão do Agente Imunoterápico e Instituição Precoce de Corticoterapia em Altas Doses
+  (B13) SIADH Paraneoplásica associada ao Carcinoma Pulmonar de Pequenas Células (Oat-Cell) com Hiponatremia Hipotônica Euvolêmica
+  (B14) Síndrome de Cushing Ectópica por Secreção de ACTH por Tumores Neuroendócrinos Pulmonares com Alcalose Metabólica e Hiperpigmentação
+  (B15) Síndrome Miastênica de Lambert-Eaton (Anticorpos contra Canais de Cálcio Voltagem-Dependentes, Melhora com Repetição do Movimento, Pequenas Células de Pulmão)
+  (B16) Encefalite Límbica Paraneoplásica e Tromboflebite Migratória (Sinal de Trousseau associado ao Adenocarcinoma de Pâncreas)
+
+==================================================
+TEMA 13: Medicina de Emergência (Subfocos: 10, Bullets: 18)
+==================================================
+  [1] Choque Circulatório e Monitorização Hemodinâmica -> Diferenciação Hemodinâmica dos 4 Tipos de Choque (Distributivo, Cardiogênico, Hipovolêmico, Obstrutivo)
+  [2] Choque Circulatório e Monitorização Hemodinâmica -> Uso de Drogas Vasoativas, Inotrópicos e Ressuscitação Guiada por Metas
+  [3] Insuficiência Respiratória Aguda e Ventilação Mecânica -> Insuficiência Respiratória Tipo 1 (Hipoxêmica) vs Tipo 2 (Hipercápnica)
+  [4] Insuficiência Respiratória Aguda e Ventilação Mecânica -> Parâmetros Iniciais da Ventilação Mecânica Protetora na SDRA
+  [5] Intoxicações Exógenas Agudas e Síndromes Tóxicas -> Descontaminação Gastrointestinal e Métodos de Eliminação Acelerada
+  [6] Intoxicações Exógenas Agudas e Síndromes Tóxicas -> Reconhecimento das Toxidromes e Antídotos Específicos em Emergência
+  [7] Coma e Alteração Aguda do Nível de Consciência (Delirium) -> Coma Agudo: Escala de Coma de Glasgow-P e Avaliação de Tronco Encefálico
+  [8] Coma e Alteração Aguda do Nível de Consciência (Delirium) -> Delirium no Paciente Grave: Avaliação com CAM-ICU e Manejo
+  [9] Hipotermia e Queimaduras no Adulto em UTI -> Hipotermia Acidental Grave no Adulto e Reaquecimento Ativo
+  [10] Hipotermia e Queimaduras no Adulto em UTI -> Suporte Intensivo ao Grande Queimado Adulto e Complicações Sistêmicas
+--- BULLETS ---
+  (B1) Choque Distributivo (Séptico/Anafilático): RVP Baixa, Débito Cardíaco Elevado na Fase Inicial e Saturação Venosa Central (SvcO2) Normal ou Elevada
+  (B2) Choque Cardiogênico e Hipovolêmico (RVP Elevada Compensatória com Baixo Débito Cardíaco) vs Obstrutivo (Tamponamento, TEP Maciço, Pneumotórax Hipertensivo)
+  (B3) Vasopressor de 1ª Escolha Universal: Noradrenalina Titulada para Alvo de PAM >= 65 mmHg associada precocemente a Vasopressina
+  (B4) Inotrópico de Escolha na Disfunção Miocárdica: Dobutamina associada a Alvos de Clearance de Lactato e Tempo de Enchimento Capilar
+  (B5) Tipo 1 / Hipoxêmica (Distúrbio V/Q e Shunt Intrapulmonar em EAP, Pneumonia e SDRA com Gradiente Alvéolo-Arterial Elevado)
+  (B6) Tipo 2 / Hipercápnica (Hipoventilação Alveolar em DPOC Descompensada, Doenças Neuromusculares e Depressão do SNC com pCO2 > 45-50 mmHg)
+  (B7) Protocolo ARDSNet: Volume Corrente Baixo (4 a 6 mL/kg de Peso Predito) para Prevenção de Volutrauma e Biotrauma
+  (B8) Limitação de Pressão de Platô <= 30 cmH2O e Pressão de Distensão Alveolar (Driving Pressure <= 15 cmH2O) associada a PEEP Titulada
+  (B9) Carvão Ativado em Dose Única (1 g/kg até 1-2 Horas da Ingestão Oral) e Contraindicações (Cáusticos, Hidrocarbonetos, Metais)
+  (B10) Lavagem Gástrica (Apenas em Ingestões Potencialmente Fatais em até 1 Hora com Via Aérea Protegida) e Alcalinização Urinária para Salicilatos
+  (B11) Síndrome Opioide (Depressão Respiratória, Miose Puntiforme e Coma tratada com Naloxona EV Titulada)
+  (B12) Síndrome Sedativo-Hipnótica (Flumazenil com Cuidado em Usuários Crônicos de BZD) e Síndrome Anticolinérgica
+  (B13) Aplicação da Escala de Glasgow Atualizada com Reatividade Pupilar (ECG-P: Pontuação de 1 a 15) e Indicação de IOT se Pontuação <= 8
+  (B14) Reflexos de Tronco Encefálico: Fotomotor, Córneo-Palpebral, Oculocefálico ('Olhos de Boneca') e Oculovestibular
+  (B15) Critérios do CAM-ICU (Início Agudo/Flutuante, Inatenção associada a Pensamento Desorganizado ou Nível Alterado de Consciência)
+  (B16) Subtipos Hiperativo vs Hipoativo (Mais Comum e de Pior Prognóstico) e Manejo Não-Farmacológico Primário associado a Antipsicóticos (Haloperidol)
+  (B17) Estadiamento da Hipotermia: Leve (32-35°C), Moderada (28-32°C com Arritmias e Bradicardia) e Grave (< 28°C com Risco de FV)
+  (B18) Eletrocardiograma Típico: Ondas J de Osborn e Técnicas de Reaquecimento Ativo Interno (Fluidos Aquecidos EV, Lavagem Pleural/Peritoneal)
+
+==================================================
+TEMA 14: Geriatria (Subfocos: 8, Bullets: 18)
+==================================================
+  [1] Grandes Síndromes Geriátricas (Instabilidade, Quedas e Fragilidade) -> Síndrome da Fragilidade no Idoso: Fenótipo de Fried
+  [2] Grandes Síndromes Geriátricas (Instabilidade, Quedas e Fragilidade) -> Instabilidade Postural, Marcha e Avaliação de Quedas em Idosos
+  [3] Polifarmácia e Critérios de Beers/STOPP-START -> Definição de Polifarmácia e Efeito Cascata Iatrogênico
+  [4] Polifarmácia e Critérios de Beers/STOPP-START -> Critérios de Beers e Ferramenta STOPP/START para Prescrição Segura
+  [5] Avaliação Geriátrica Ampla (AGA) e Funcionalidade -> Instrumentos de Avaliação das Atividades de Vida Diária (AVDs e AIVDs)
+  [6] Avaliação Geriátrica Ampla (AGA) e Funcionalidade -> Avaliação Cognitiva e Rastreamento de Humor no Idoso (MEEM e GDS)
+  [7] Incontinência e Imobilidade no Idoso -> Incontinência Urinária no Idoso: Causas Transitórias (Mnemônico DIAPPERS)
+  [8] Incontinência e Imobilidade no Idoso -> Síndrome da Imobilidade e Consequências Sistêmicas do Confinamento ao Leito
+--- BULLETS ---
+  (B1) Hipermetabolismo Severo no Grande Queimado, Síndrome da Resposta Inflamatória Sistêmica e Nutrição Enteral Precoce
+  (B2) Monitorização do Débito Urinário (Alvo de 0,5 mL/kg/h em Adultos) e Manejo da Mioglobinúria e Rabdomiólise associadas
+  (B3) Critérios do Fenótipo de Fried (>= 3 presentes: Perda de Peso Não-Intencional, Exaustão, Fraqueza na Força de Preensão, Marcha Lenta e Baixa Atividade Física)
+  (B4) Fisiopatologia da Sarcopenia e Vulnerabilidade Acentuada a Desfechos Adversos e Hospitalização
+  (B5) Avaliação Funcional da Mobilidade com Teste Timed Up and Go (TUG > 12-14 segundos indica Alto Risco de Quedas)
+  (B6) Investigação Multifatorial de Quedas: Hipotensão Postural, Déficits Sensoriais, Fatores Ambientais Domiciliares e Polifarmácia
+  (B7) Conceito de Polifarmácia (Uso Concomitante de >= 5 Medicamentos Contínuos) e Farmacocinética do Envelhecimento (Queda de TFG e Aumento de Gordura Corporal)
+  (B8) Cascata Iatrogênica: Prescrição de Novo Fármaco para Tratar Efeito Colateral Não Reconhecido de Medicamento Prévio
+  (B9) Medicamentos Potencialmente Inapropriados para Idosos (Benzodiazepínicos de Longa Ação, Anticolinérgicos, AINEs Contínuos e Antipsicóticos)
+  (B10) Desprescrição Estruturada e Aplicação dos Critérios START para Iniciar Terapias com Benefício Comprovado
+  (B11) Atividades Básicas de Vida Diária (ABVD / Índice de Katz: Banho, Vestir-se, Higiene Pessoal, Transferência, Continência e Alimentação)
+  (B12) Atividades Instrumentais de Vida Diária (AIVD / Escala de Lawton: Uso do Telefone, Compras, Preparo de Refeições, Tarefas Domésticas e Gestão de Finanças)
+  (B13) Miniexame do Estado Mental (MEEM / Folstein) e Teste de Fluência Verbal com Ajuste Obrigatório pela Escolaridade
+  (B14) Escala de Depressão Geriátrica (GDS-15: Triagem Específica de Sintomas Depressivos no Paciente Idoso)
+  (B15) Mnemônico DIAPPERS: Delirium, Infecção Urinária, Atrofia Vaginal, Farmacológica, Psiquiátrica, Excesso de Produção de Urina, Restrição de Mobilidade e Fecaloma
+  (B16) Diferenciação Canônica: Incontinência de Urgência (Bexiga Hiperativa) vs Esforço vs Transbordamento por Retenção Urinária Crônica
+  (B17) Critérios Maiores e Menores da Síndrome de Imobilização Prolongada (Contraturas Articulares, Úlceras por Pressão e Atrofia Muscular)
+  (B18) Prevenção Terciária e Reabilitação Motora Multidisciplinar com Fisioterapia Motora Precoce
+
+==================================================
+TEMA 15: Cuidados Paliativos (Subfocos: 8, Bullets: 15)
+==================================================
+  [1] Princípios e Filosofia dos Cuidados Paliativos -> Definição da OMS, Indicações Precoces e Ortogásia
+  [2] Princípios e Filosofia dos Cuidados Paliativos -> Avaliação do Sofrimento Global (Dor Total de Cicely Saunders)
+  [3] Manejo da Dor Crônica e Escada Analgésica da OMS -> Escada Analgésica da OMS para Dor Oncológica e Não-Oncológica
+  [4] Manejo da Dor Crônica e Escada Analgésica da OMS -> Conversão de Opioides, Manejo de Efeitos Colaterais e Dor Incidental
+  [5] Controle de Sintomas Não-Dor (Dispneia, Náusea, Estertor, Agitação) -> Dispneia Refratária em Cuidados Paliativos e Uso de Opioides
+  [6] Controle de Sintomas Não-Dor (Dispneia, Náusea, Estertor, Agitação) -> Manejo de Sintomas Digestivos e Neuropsiquiátricos (Estertor Agônico)
+  [7] Sedação Paliativa e Comunicação em Fim de Vida -> Critérios Éticos e Indicações Formais de Sedação Paliativa
+  [8] Sedação Paliativa e Comunicação em Fim de Vida -> Protocolos Farmacológicos de Sedação com Midazolam e Cuidados com a Família
+--- BULLETS ---
+  (B1) Conceito Canônico de Cuidados Paliativos: Abordagem que Aprimora a Qualidade de Vida de Pacientes e Familiares diante de Doenças Ameaçadoras da Vida
+  (B2) Integração Precoce dos Cuidados Paliativos Concomitante à Terapia Modificadora de Doença desde o Diagnóstico de Doença Crônica Avançada
+  (B3) Conceito de Dor Total: Dimensões Física, Psicológica, Social e Espiritual do Sofrimento Humano
+  (B4) Comunicação de Más Notícias: Protocolo SPIKES (Setting, Perception, Invitation, Knowledge, Empathy, Strategy/Summary)
+  (B5) Degraus Canônicos: Degrau 1 (Não-Opioides: Dipirona/Paracetamol +/- Adjuvante); Degrau 2 (Opioides Fracos: Codeína, Tramadol); Degrau 3 (Opioides Fortes: Morfina, Metadona, Fentanil)
+  (B6) Princípios Fundamentais: Administração 'Pelo Relógio' (Horário Fixo, Não se Dor), Pela Boca (Via Oral Preferencial) e Individualizada
+  (B7) Cálculo de Doses de Resgate para Dor Irruptiva (10 a 1/6 da Dose Total Diária de Morfina Oral em Tomadas Extras)
+  (B8) Manejo Obrigatório da Constipação Induzida por Opioides com Laxativos Estimulantes (Bisacodil, Senne) e Profilaxia de Náuseas Iniciais
+  (B9) Medidas Não-Farmacológicas Eficazes: Posicionamento Elevado, Ventilação Facial Direta com Ventilador Portátil e Janela Aberta
+  (B10) Estertor do Fim de Vida ('Respiração Ruidosa'): Esclarecimento à Família e Terapia com Anticolinérgicos (Butilescopolamina SC)
+  (B11) Náuseas e Vômitos Intratáveis: Diferenciação entre Causas Centrais (Haloperidol), Gastroparesia (Metoclopramida) e Hipertensão Intracraniana (Dexametasona)
+  (B12) Indicação Estrita: Presença de Sintoma Refratário Insuportável (Dispneia Asfixiante, Delirium Hiperativo Grave, Dor Incontrolável) no Paciente em Fase Terminal
+  (B13) Distinção Ética e Legal Absoluta entre Sedação Paliativa (Objetivo de Alívio do Sofrimento) e Eutanásia (Objetivo de Provocar a Morte)
+  (B14) Fármaco de Escolha Canônico: Midazolam em Infusão Contínua Subcutânea ou Intravenosa Titulado até o Alívio do Sintoma Alvo
+  (B15) Apoio Psicológico e Espiritual à Família, Acolhimento do Luto Antecipatório e Adequação do Plano de Cuidados
+
+==================================================
+TEMA 16: Toxicologia Clínica (Subfocos: 8, Bullets: 16)
+==================================================
+  [1] Síndromes Tóxicas (Anticolinérgica, Colinérgica, Simpaticomimética, Opioide) -> Síndrome Colinérgica e Síndrome Anticolinérgica
+  [2] Síndromes Tóxicas (Anticolinérgica, Colinérgica, Simpaticomimética, Opioide) -> Síndrome Simpaticomimética (Cocaína, Anfetaminas) vs Síndrome Serotoninérgica
+  [3] Intoxicações por Medicamentos (Paracetamol, Benzodiazepínicos, Antidepressivos) -> Intoxicação por Paracetamol (Acetaminofeno) e N-Acetilcisteína
+  [4] Intoxicações por Medicamentos (Paracetamol, Benzodiazepínicos, Antidepressivos) -> Intoxicação por Antidepressivos Tricíclicos (ADT) e Bicarbonato de Sódio
+  [5] Acidentes por Animais Peçonhentos (Ofídico, Escorpiônico, Aracnídico) -> Acidentes Ofídicos no Brasil: Botrópico, Crotálico, Laquético e Elapídico
+  [6] Acidentes por Animais Peçonhentos (Ofídico, Escorpiônico, Aracnídico) -> Escorpionismo (Tityus serrulatus) e Araneísmo (Loxosceles e Phoneutria)
+  [7] Intoxicação por Agrotóxicos e Álcoois Tóxicos (Metanol, Etilenoglicol) -> Intoxicação por Inibidores da Colinesterase (Organofosforados e Carbamatos)
+  [8] Intoxicação por Agrotóxicos e Álcoois Tóxicos (Metanol, Etilenoglicol) -> Álcoois Tóxicos: Metanol e Etilenoglicol (Fomepizol e Etanol)
+--- BULLETS ---
+  (B1) Síndrome Colinérgica (Organofosforados/Carbamatos): Miose, Sialorreia Intensa, Broncorreia, Broncoespasmo, Fasciculações e Bradicardia (Tratamento com Atropina)
+  (B2) Síndrome Anticolinérgica: 'Cego como uma Coruja, Louco como um Chapeleiro, Vermelho como uma Beterraba, Seco como um Osso' (Midríase, Pele Seca e Quente, Retenção Urinária)
+  (B3) Simpaticomimética: Midríase, Taquicardia, Hipertensão, Sudorese Profusa e Agitação Psicomotora (Tratamento com Benzodiazepínicos e Contraindicação a Beta-Bloqueadores Puros)
+  (B4) Síndrome Serotoninérgica: Hiper-reflexia Acentuada, Clônus Induzível/Espontâneo, Instabilidade Autonômica e Hipertermia após Antidepressivos
+  (B5) Fisiopatologia: Depleção de Glutationa Hepática e Acúmulo do Metabólito Tóxico NAPQI causando Necrose Hepática Fulminante
+  (B6) Nomograma de Rumack-Matthew para Avaliação do Risco de Hepatotoxicidade e Tratamento com N-Acetilcisteína (NAC) Precoce em até 8 Horas
+  (B7) Tétrade Tóxica: Alteração da Consciência, Arritmias Cardíacas Ventriculares, Convulsões e Efeitos Anticolinérgicos
+  (B8) Eletrocardiograma Típico (Alargamento de QRS > 100 ms e Onda R Alta em aVR) e Tratamento Específico Imediato com Bicarbonato de Sódio a 8,4% EV
+  (B9) Acidente Botrópico (Jararaca: Mais Comum - 85% dos casos, Ação Proteolítica/Inflamatória Local, Coagulante e Hemorrágica)
+  (B10) Acidente Crotálico (Cascavel: Ação Neurotóxica com Fácies Miatênica/Ptose, Miotóxica com Rabdomiólise e Urina Escura, sem Reação Local)
+  (B11) Escorpionismo Grave em Crianças: Manifestações Sistêmicas Autonômicas (Vômitos Profusos, Sudorese, Insuficiência Cardíaca e Edema Pulmonar tratados com Soro Antiescorpiônico)
+  (B12) Loxoscelismo (Aranha-Marrom): Placa Marmórea Típica com Necrose Cutânea Tardia e Forma Cutâneo-Hemolítica Grave
+  (B13) Inibição Irreversível da Acetilcolinesterase por Organofosforados ('Envelhecimento da Enzima') vs Reversível por Carbamatos (Chumbinho)
+  (B14) Atropinização Contínua Titulada com Alvo em Parâmetros Pulmonares (Cessação da Broncorreia e Ressecamento de Secreções) e Oximas (Pralidoxima)
+  (B15) Metanol (Ácido Fórmico causando Neurite Óptica e Cegueira Típica) vs Etilenoglicol (Ácido Oxálico com Cristais de Oxalato de Cálcio e Insuficiência Renal Aguda)
+  (B16) Acidose Metabólica com Ânion Gap Elevado e Gap Osmolar Aumentado (> 10-15 mOsm/kg); Tratamento com Fomepizol ou Etanol EV e Hemodiálise de Urgência

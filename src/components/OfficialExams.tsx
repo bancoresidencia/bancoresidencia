@@ -54,7 +54,7 @@ const InstitutionLogo: React.FC<{ inst: OfficialInstitution; size?: 'sm' | 'md' 
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src={`https://www.medevo.com.br/assets/pulso/institutions/${inst.logoSlug}-192.webp`}
+          src={`/images/institutions/${inst.logoSlug}.webp`}
           alt={inst.shortName}
           loading="lazy"
           onError={() => setImgError(true)}
@@ -97,7 +97,7 @@ const InstitutionCardBackground: React.FC<{ inst: OfficialInstitution }> = ({ in
         {inst.logoSlug && !imgError ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img
-            src={`https://www.medevo.com.br/assets/pulso/institutions/${inst.logoSlug}-192.webp`}
+            src={`/images/institutions/${inst.logoSlug}.webp`}
             alt=""
             loading="lazy"
             onError={() => setImgError(true)}

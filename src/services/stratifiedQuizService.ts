@@ -461,7 +461,7 @@ export async function generateStratifiedQuiz(
     const selectedContent: string[] = [];
 
     // Coleta estritamente os ramos selecionados pelo estudante (incluindo mesclagem de especialidade + tema)
-    const { standaloneSpecs, standaloneTemas, standaloneFocos, subfocosByParentFoco } = buildClinicalFilterClauses(filters);
+    const { standaloneSpecs, standaloneTemas, standaloneFocos, standaloneSubfocos, subfocosByParentFoco } = buildClinicalFilterClauses(filters);
 
     if (standaloneSpecs.length > 0) {
       selectedContent.push(...standaloneSpecs);
@@ -472,8 +472,13 @@ export async function generateStratifiedQuiz(
     if (standaloneFocos.length > 0) {
       selectedContent.push(...standaloneFocos);
     }
-    if (subfocosByParentFoco.length > 0) {
+    if (standaloneSubfocos && standaloneSubfocos.length > 0) {
+      selectedContent.push(...standaloneSubfocos);
+    } else if (subfocosByParentFoco.length > 0) {
       subfocosByParentFoco.forEach(([_, subs]) => selectedContent.push(...subs));
+    }
+    if (selectedContent.length === 0 && filters.subfocos && filters.subfocos.length > 0) {
+      selectedContent.push(...filters.subfocos);
     }
 
     if (selectedContent.length > 0) {

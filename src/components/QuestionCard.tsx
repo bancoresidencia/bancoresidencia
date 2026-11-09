@@ -409,13 +409,9 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
     let extractedGuideline = activeQuestion.guidelineEvolution || '';
     let extractedRefs: string[] = activeQuestion.references ? [...activeQuestion.references] : [];
 
-    // Função de sanitização: remove qualquer menção a termos comerciais/concorrentes
+    // Sanitização canônica completa (remove resíduos de \u00A0, \u200B, tags HTML e concorrentes)
     const sanitizeText = (txt: string): string => {
-      if (!txt) return '';
-      return txt
-        .replace(/estrat[ée]gia\s*med/gi, 'Base Médica Teórica')
-        .replace(/estrat[ée]gia\s*vestibulares/gi, 'Base Teórica')
-        .replace(/estrat[ée]gia/gi, 'Literatura Oficial');
+      return sanitizeMedicalText(txt);
     };
 
     // Extração de Evolução de Diretrizes
@@ -1363,6 +1359,12 @@ export const QuestionCard: React.FC<QuestionCardProps> = React.memo(({
                   <>
                     <span className="text-zinc-300 dark:text-zinc-700">•</span>
                     <span className="text-zinc-600 dark:text-zinc-400 italic">{question.subfoco}</span>
+                  </>
+                )}
+                {(question.subSubfoco || question.sub_subfoco) && (
+                  <>
+                    <span className="text-slate-300 dark:text-slate-700">•</span>
+                    <span className="text-emerald-600 dark:text-emerald-400 font-medium">{question.subSubfoco || question.sub_subfoco}</span>
                   </>
                 )}
               </div>

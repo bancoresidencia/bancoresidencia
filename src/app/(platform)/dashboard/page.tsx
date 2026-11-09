@@ -70,6 +70,17 @@ export default function DashboardPage() {
     );
   };
 
+  const handleNavigateToBancoWithSubfoco = (specialty: string, tema: string, subfoco: string, subSubfoco?: string) => {
+    const params = new URLSearchParams({
+      especialidade: specialty,
+      tema,
+      subfoco,
+      mode: 'resolucao'
+    });
+    if (subSubfoco) params.set('subSubfoco', subSubfoco);
+    router.push(`/questoes?${params.toString()}`);
+  };
+
   return (
     <div className="p-4 sm:p-6 lg:p-8 max-w-7xl mx-auto space-y-6 animate-in fade-in duration-200 min-w-0 overflow-x-clip">
       <StudentHomeDashboard
@@ -84,6 +95,7 @@ export default function DashboardPage() {
         onStartOfficialExam={handleStartOfficialExam}
         onNavigateToBancoWithSpecialty={handleNavigateToBancoWithSpecialty}
         onStartTopicPractice={handleStartTopicPractice}
+        onNavigateToBancoWithSubfoco={handleNavigateToBancoWithSubfoco}
         userAnswers={userAnswers}
       />
     </div>

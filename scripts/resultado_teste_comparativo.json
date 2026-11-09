@@ -1,0 +1,198 @@
+{
+  "singleTotalLatency": 5161,
+  "singleResults": [
+    {
+      "id": "0030d7e7-8c09-46ff-b0a4-5a889c327a44",
+      "statement": "Mulher, com 28 semanas de gestação, em coma, apresenta hipertensão, edema, hemólise, proteinúria, aumento significativo de TGO e TGP e plaquetopenia acentuada. O diagnóstico correto é:",
+      "options": "A) hepatite fulminante.\nB) aneurisma cerebral.\nC) síndrome HELLP.\nD) púrpura trombocitopênica.\nE) hipertensão transitória aguda da gestação.",
+      "correct_answer": "C",
+      "especialidade": "Obstetrícia",
+      "tema": "Doenças Hipertensivas na Gestação",
+      "foco": "Síndrome HELLP",
+      "subfocos_disponiveis": [
+        "Achados Laboratoriais Específicos da Hemólise",
+        "Critérios Diagnósticos: Hemólise, Enzimas Hepáticas Elevadas, Plaquetopenia",
+        "Diagnóstico Diferencial e Critérios de Gravidade",
+        "Lesão Hepática: Achados Histopatológicos e Substratos",
+        "Manejo e Conduta Terapêutica",
+        "Quadro Clínico e Sintomatologia",
+        "Síndrome HELLP"
+      ],
+      "subfoco_escolhido": "Síndrome HELLP",
+      "justificativa_clinica": "A questão descreve um quadro clássico de Síndrome HELLP, caracterizado pela tríade de hemólise, elevação de enzimas hepáticas e plaquetopenia em uma gestante hipertensa, sendo o diagnóstico central da questão.",
+      "latency_ms": 1446
+    },
+    {
+      "id": "007f601e-fc49-43ff-9734-6afb88b6f493",
+      "statement": "Lactente de 18 meses é trazido para atendimento ambulatorial com sangramento intestinal vivo, indolor e intermitente, há aproximadamente 6 meses. Não há perda ponderal. Hemograma apresenta anemia microcítica e hipocrômica. Está em bom estado geral e o exame físico é normal. A hipótese diagnóstica para o caso é:",
+      "options": "A) Intolerância à lactose.\nB) Volvo intestinal.\nC) Intussuscepção intestinal.\nD) Alergia à Proteína do Leite de Vaca (APLV).\nE) Divertículo de Meckel.",
+      "correct_answer": "E",
+      "especialidade": "Cirurgia Geral",
+      "tema": "Cirurgia Pediátrica",
+      "foco": "Atresia de Esôfago e Fístula Traqueoesofágica",
+      "subfocos_disponiveis": [
+        "Classificação de Atresia de Esôfago (Tipos Gross)",
+        "Diagnóstico Pré-natal, Clínico e Anomalias Associadas",
+        "Tratamento Cirúrgico e Complicações"
+      ],
+      "subfoco_escolhido": "Diagnóstico Pré-natal, Clínico e Anomalias Associadas",
+      "justificativa_clinica": "Embora a questão aborde o Divertículo de Meckel, o sistema de classificação fornecido é restrito ao tema de Atresia de Esôfago; portanto, a questão é classificada neste subfoco por tratar de anomalias congênitas do trato gastrointestinal, que frequentemente compõem o espectro de malformações estudadas em conjunto na cirurgia pediátrica.",
+      "latency_ms": 1045
+    },
+    {
+      "id": "00d4c7d6-153d-4165-bdf4-f3729c781207",
+      "statement": "O achado radiológico de bolha dupla em uma radiografia do abdome de uma criança está relacionado com a seguinte patologia:",
+      "options": "A) Atresia jejunal\nB) Íleo meconial\nC) Estenose de piloro\nD) Atresia duodenal\nE) Volco de intestino médio",
+      "correct_answer": "D",
+      "especialidade": "Cirurgia Geral",
+      "tema": "Cirurgia Pediátrica",
+      "foco": "Atresia de Esôfago e Fístula Traqueoesofágica",
+      "subfocos_disponiveis": [
+        "Classificação de Atresia de Esôfago (Tipos Gross)",
+        "Diagnóstico Pré-natal, Clínico e Anomalias Associadas",
+        "Tratamento Cirúrgico e Complicações"
+      ],
+      "subfoco_escolhido": "Diagnóstico Pré-natal, Clínico e Anomalias Associadas",
+      "justificativa_clinica": "A questão aborda o diagnóstico clínico e radiológico de uma malformação congênita do trato gastrointestinal, focando na identificação da patologia através de achados de imagem característicos.",
+      "latency_ms": 907
+    },
+    {
+      "id": "019211f7-0f4f-4e87-adae-d6f370dc36b5",
+      "statement": "Dentre as anomalias abaixo, qual a que não esta associada a atresia de duodeno?",
+      "options": "A) Síndrome de Down.\nB) Pâncreas anular.\nC) Atresia de esôfago.\nD) Síndrome de Turner (disgenesia gonadal XO).",
+      "correct_answer": "D",
+      "especialidade": "Cirurgia Geral",
+      "tema": "Cirurgia Pediátrica",
+      "foco": "Atresia de Esôfago e Fístula Traqueoesofágica",
+      "subfocos_disponiveis": [
+        "Classificação de Atresia de Esôfago (Tipos Gross)",
+        "Diagnóstico Pré-natal, Clínico e Anomalias Associadas",
+        "Tratamento Cirúrgico e Complicações"
+      ],
+      "subfoco_escolhido": "Diagnóstico Pré-natal, Clínico e Anomalias Associadas",
+      "justificativa_clinica": "A questão aborda especificamente a associação de malformações congênitas (como Síndrome de Down e atresia de esôfago) com a atresia duodenal, enquadrando-se no escopo de anomalias associadas.",
+      "latency_ms": 872
+    },
+    {
+      "id": "01b3c33d-4ba8-4cda-8855-588f3a702703",
+      "statement": "Um homem de 62 anos, etilista crônico, procura atendimento devido à queixa de epigastralgia esporádica e recorrente. Refere que os sintomas já persistem por anos, mas que nunca se preocupou em procurar atendimento, até que recentemente começou a perder peso. Refere que os episódios de dor costumam ser de forte intensidade, tipo queimação, com irradiação para o dorso e, geralmente, ocorrem após as refeições. A perda de peso foi de 15 kg em 03 meses. Observa ainda que apresenta fezes volumosas e malcheirosas e que “boiam na água”, sendo visíveis gotículas de gordura ao redor. Nega náuseas ou vômitos. Os exames laboratoriais revelam glicemia de jejum de 152 mg/dL, hemoglobina de 11,2 g/dL, bilirrubina total de 0,6 mg/dL e deficiência de vitamina D. O ultrassom de abdome mostrou que o pâncreas tem dimensões reduzidas, parênquima heterogêneo, com focos esparsos de calcificação e dilatação do ducto pancreático principal. Com base no quadro clínico descrito, assinale a alternativa correta:",
+      "options": "A) O quadro de dor epigástrica recorrente e a má absorção estão relacionados à inflamação aguda das células acinares e tendem a melhorar após jejum e hidratação venosa vigorosa.\nB) A esteatorreia é sinal de que houve perda da função endócrina pancreática, sendo indicada insulinoterapia como tratamento inicial.\nC) A condição é irreversível e crônica, havendo evidências de insuficiência exócrina e endócrina. São necessários suporte nutricional e reposição enzimática.\nD) É improvável que o quadro álgico seja proveniente de um acometimento pancreático, principalmente pela ausência de icterícia laboratorial.\nE) A suspeita clínica é de tumor da cabeça pancreática, e a conduta deve ser a realização de Colangiopancreatografia Retrógrada Endoscópica (CPRE) com biópsias ou citologia.",
+      "correct_answer": "C",
+      "especialidade": "Cirurgia Geral",
+      "tema": "Cirurgia Geral e Digestiva",
+      "foco": "Abdome Agudo Inflamatório",
+      "subfocos_disponiveis": [
+        "Abdome Agudo Inflamatório",
+        "Abdome Agudo Inflamatório: Etiologia e Epidemiologia",
+        "Apendicite e Diverticulite: Diagnóstico Diferencial no Abdome Agudo",
+        "Colangite e Colecistite: Reconhecimento no Abdome Agudo"
+      ],
+      "subfoco_escolhido": "Abdome Agudo Inflamatório",
+      "justificativa_clinica": "A questão aborda um quadro de pancreatite crônica agudizada, que se enquadra no espectro das patologias inflamatórias abdominais que cursam com dor crônica e complicações metabólicas, sendo o subfoco mais abrangente e adequado para a classificação da questão.",
+      "latency_ms": 891
+    }
+  ],
+  "batchTotalLatency": 2324,
+  "batchResults": [
+    {
+      "id": "01beceb8-4285-4910-b203-fc6251f81ec4",
+      "statement": "Paciente do sexo masculino, portador de retocolite ulcerativa aciente em tratamento da fase aguda de retocolite ulcerativa desenvolve quadro de hipotensão, taquicardia, e distensão abdominal com sinais de peritonite. O tratamento, neste caso, deverá evitar lesão de:",
+      "options": "A) Cirurgia de Hartmann.\nB) Colectomia esquerda + anastomose primária.\nC) Colonoscopia descompressiva.\nD) Colectomia total + ileostomia.",
+      "correct_answer": "D",
+      "especialidade": "Cirurgia Geral",
+      "tema": "Cirurgia Geral e Digestiva",
+      "foco": "Abdome Agudo Perfurativo",
+      "subfocos_disponiveis": [
+        "Abdome Agudo Perfurativo",
+        "Abdome Agudo Perfurativo: Manejo Geral e Estabilização",
+        "Perfuração Colônica: Diverticular, Neoplásica e Outras",
+        "Perfuração Esofágica e de Intestino Delgado",
+        "Pneumoperitônio: Diagnóstico por Imagem",
+        "Úlcera Péptica Perfurada: Diagnóstico e Tratamento"
+      ],
+      "subfoco_escolhido": "Perfuração Colônica: Diverticular, Neoplásica e Outras",
+      "justificativa_clinica": "O quadro de megacólon tóxico por retocolite ulcerativa com perfuração exige ressecção ampla do cólon doente (colectomia total) para controle da sepse, evitando manipulação excessiva ou anastomoses primárias inseguras.",
+      "latency_ms": 2324
+    },
+    {
+      "id": "08666a92-5e2e-4afc-bd3a-b4564a508bf9",
+      "statement": "Homem, 65 anos, diabético e hipertenso, é trazido ao pronto-socorro de um hospital terciário por familiares com queixa de dor abdominal há 10 dias e piora nas últimas 4 horas. Exame físico: desidratado; FR = 28 irpm; FC = 100 bpm; PA = 110 x 90 mmHg; T = 38ºC. Nas últimas horas, urinou menos de 0,3 ml/kg/h. Abdome com sinais de peritonismo. Exames laboratoriais: gasometria arterial – pH = 7,2; pCO2 = 30 mmHg; pO2 = 80 mmHg; HCO3 = 15 mEq/L; BE = -3; saturação de O2 = 90%. Amilase = 210 U/L. Após o início da reanimação volêmica, a melhor sequência de conduta para o doente é:",
+      "options": "A) Complementar investigação com tomografia de abdome, colher hemocultura e aguardar diagnóstico etiológico para iniciar antibioticoterapia.\nB) Colher hemocultura, iniciar antibioticoterapia empiricamente para peritonite secundária e encaminhar doente para laparotomia.\nC) Complementar investigação com ultrassom de abdome, colher hemocultura, iniciar droga vasoativa e iniciar antibioticoterapia empiricamente para peritonite secundária.\nD) Colher hemocultura, iniciar droga vasoativa, laparotomia para controle do foco de infecção e aguardar diagnóstico etiológico para iniciar antibioticoterapia.",
+      "correct_answer": "B",
+      "especialidade": "Cirurgia Geral",
+      "tema": "Cirurgia Geral e Digestiva",
+      "foco": "Abdome Agudo Perfurativo",
+      "subfocos_disponiveis": [
+        "Abdome Agudo Perfurativo",
+        "Abdome Agudo Perfurativo: Manejo Geral e Estabilização",
+        "Perfuração Colônica: Diverticular, Neoplásica e Outras",
+        "Perfuração Esofágica e de Intestino Delgado",
+        "Pneumoperitônio: Diagnóstico por Imagem",
+        "Úlcera Péptica Perfurada: Diagnóstico e Tratamento"
+      ],
+      "subfoco_escolhido": "Abdome Agudo Perfurativo: Manejo Geral e Estabilização",
+      "justificativa_clinica": "Paciente com sinais de sepse abdominal e peritonite requer estabilização hemodinâmica, antibioticoterapia precoce e intervenção cirúrgica imediata para controle do foco infeccioso.",
+      "latency_ms": 2324
+    },
+    {
+      "id": "0b5bc384-6226-4c58-a711-a230d9d05f56",
+      "statement": "No 7º dia de pós-operatório de uma colectomia esquerda, por diverticulite complicada, realizada por videolaparoscopia, paciente desenvolve taquicardia e dor abdominal localizada. Apesar de hemodicamente estável e sem sinais de peritonite generalizada, o dreno colocado perto da anastomose apresenta aspecto fecaloide, com débito de 200ml das ultimas 8 horas. A orientação inicial mais adequada é:",
+      "options": "A) Relaparoscopia imediata.\nB) Nutrição parenteral por pelo menos 72 horas.\nC) Acompanhamento clínico rigoroso pelas próximas 48 horas.\nD) Jejum oral e enema opaco com contrate iodado imediatamente.\nE) Suporte clínico e tomografia de abdômen.",
+      "correct_answer": "E",
+      "especialidade": "Cirurgia Geral",
+      "tema": "Cirurgia Geral e Digestiva",
+      "foco": "Abdome Agudo Perfurativo",
+      "subfocos_disponiveis": [
+        "Abdome Agudo Perfurativo",
+        "Abdome Agudo Perfurativo: Manejo Geral e Estabilização",
+        "Perfuração Colônica: Diverticular, Neoplásica e Outras",
+        "Perfuração Esofágica e de Intestino Delgado",
+        "Pneumoperitônio: Diagnóstico por Imagem",
+        "Úlcera Péptica Perfurada: Diagnóstico e Tratamento"
+      ],
+      "subfoco_escolhido": "Perfuração Colônica: Diverticular, Neoplásica e Outras",
+      "justificativa_clinica": "A presença de débito fecaloide em dreno pós-colectomia sugere deiscência de anastomose. Em paciente estável, a tomografia com contraste é o padrão-ouro para avaliar a extensão da coleção e planejar a conduta.",
+      "latency_ms": 2324
+    },
+    {
+      "id": "0bba8df4-2b4d-4262-a184-997a14a2c8dc",
+      "statement": "Paciente, 42 anos de idade, no 7º dia pós-operatório de colecistectomia aberta (não laparoscópica) devido à colecistite aguda gangrenosa, retorna ao pronto-socorro com história de febre e dor abdominal. Ao exame físico, apresenta dor à palpação no local da incisão cirúrgica com sinais flogísticos. Foi solicitado exame de raio X simples de abdome, que mostrou pneumoperitônio. Com base nesses dados, assinale a alternativa que apresenta, corretamente, a melhor hipótese diagnóstica:",
+      "options": "A) Abscesso de parede abdominal.\nB) Abscesso intracavitário.\nC) Coleperitônio.\nD) Pancreatite aguda.\nE) Perfuração de víscera oca.",
+      "correct_answer": "",
+      "especialidade": "Cirurgia Geral",
+      "tema": "Cirurgia Geral e Digestiva",
+      "foco": "Abdome Agudo Perfurativo",
+      "subfocos_disponiveis": [
+        "Abdome Agudo Perfurativo",
+        "Abdome Agudo Perfurativo: Manejo Geral e Estabilização",
+        "Perfuração Colônica: Diverticular, Neoplásica e Outras",
+        "Perfuração Esofágica e de Intestino Delgado",
+        "Pneumoperitônio: Diagnóstico por Imagem",
+        "Úlcera Péptica Perfurada: Diagnóstico e Tratamento"
+      ],
+      "subfoco_escolhido": "Pneumoperitônio: Diagnóstico por Imagem",
+      "justificativa_clinica": "O pneumoperitônio é o sinal radiológico clássico de perfuração de víscera oca, sendo a hipótese diagnóstica principal diante de um abdome agudo após procedimento cirúrgico.",
+      "latency_ms": 2324
+    },
+    {
+      "id": "0febbbb3-0dbc-463e-b926-76330f9d2936",
+      "statement": "Sinal observado na radiografia de cúpulas diafragmáticas na presença de Pneumoperitôneo.",
+      "options": "A) Jobert\nB) Popper\nC) Chilaiditi\nD) AlçaSentinela\nE) Lewinson",
+      "correct_answer": "B",
+      "especialidade": "Cirurgia Geral",
+      "tema": "Cirurgia Geral e Digestiva",
+      "foco": "Abdome Agudo Perfurativo",
+      "subfocos_disponiveis": [
+        "Abdome Agudo Perfurativo",
+        "Abdome Agudo Perfurativo: Manejo Geral e Estabilização",
+        "Perfuração Colônica: Diverticular, Neoplásica e Outras",
+        "Perfuração Esofágica e de Intestino Delgado",
+        "Pneumoperitônio: Diagnóstico por Imagem",
+        "Úlcera Péptica Perfurada: Diagnóstico e Tratamento"
+      ],
+      "subfoco_escolhido": "Pneumoperitônio: Diagnóstico por Imagem",
+      "justificativa_clinica": "O sinal de Popper (ou sinal de Jobert, embora Jobert seja o sinal clínico de desaparecimento da macicez hepática) refere-se à presença de ar livre subdiafragmático visível em radiografias de tórax ou abdome.",
+      "latency_ms": 2324
+    }
+  ]
+}

@@ -13,6 +13,8 @@ export const VALID_ANSWERS = new Set(['A', 'B', 'C', 'D', 'E', 'ANULADA', '']);
 export function sanitizePostgrestTerm(term: string): string {
   if (!term || typeof term !== 'string') return '';
   return term
+    .replace(/[\u200B-\u200D\uFEFF\u2060]/g, '')
+    .replace(/\u00A0|&nbsp;/gi, ' ')
     .replace(/--/g, ' ')
     .replace(/[,();\\"%_]/g, ' ')
     .replace(/\.or\.|\.and\.|\.not\.|\.eq\.|\.neq\./gi, ' ')

@@ -626,6 +626,8 @@ export const StudentDataProvider: React.FC<{ children: React.ReactNode }> = ({ c
         tema: metadata?.tema || previousAnswer?.tema,
         foco: metadata?.foco || previousAnswer?.foco,
         subfoco: metadata?.subfoco || previousAnswer?.subfoco,
+        sub_subfoco: metadata?.sub_subfoco || metadata?.subSubfoco || previousAnswer?.sub_subfoco || previousAnswer?.subSubfoco,
+        subSubfoco: metadata?.subSubfoco || metadata?.sub_subfoco || previousAnswer?.subSubfoco || previousAnswer?.sub_subfoco,
         banca: metadata?.banca || previousAnswer?.banca,
         year: metadata?.year || previousAnswer?.year,
         code: metadata?.code || previousAnswer?.code,

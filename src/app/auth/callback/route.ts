@@ -4,8 +4,8 @@ import { NextResponse, type NextRequest } from 'next/server';
 export const dynamic = 'force-dynamic';
 
 const ALLOWED_HOSTS = new Set([
-  'medevo.com.br',
-  'www.medevo.com.br',
+  'bancoresidencia.com.br',
+  'www.bancoresidencia.com.br',
   'bancoresidencia-kappa.vercel.app',
   'localhost:3000',
   '127.0.0.1:3000'

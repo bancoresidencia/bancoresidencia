@@ -7,10 +7,12 @@ import { FlashcardsView } from '@/components/FlashcardsView';
 export default function ResumosPage() {
   const router = useRouter();
 
-  const handleNavigateToBanco = (specialty?: string, tema?: string) => {
+  const handleNavigateToBanco = (specialty?: string, tema?: string, subfoco?: string, subSubfoco?: string) => {
     const params = new URLSearchParams();
     if (specialty) params.set('especialidade', specialty);
     if (tema) params.set('tema', tema);
+    if (subfoco) params.set('subfoco', subfoco);
+    if (subSubfoco) params.set('subSubfoco', subSubfoco);
     params.set('mode', 'filtros');
     router.push(`/questoes?${params.toString()}`);
   };

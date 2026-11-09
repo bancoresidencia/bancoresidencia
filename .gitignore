@@ -42,36 +42,47 @@ yarn-error.log*
 next-env.d.ts
 
 # auth & background extraction
+scripts/service-account.json
 scripts/drive_auth_state.json
 scripts/.*profile*
 scripts/.chrome_profile/
 scripts/.chromium_clean_profile/
 scripts/.chromium_profile/
+data/knowledge/*
+!data/knowledge/extracao_ajudamedico/
+!data/knowledge/extracao_ajudamedico/**
+!data/knowledge/ajudamedico_consolidado_9223.json
+
+
+data/extraction_status.json
+.playwright-mcp/
+.playwright-mcp/
+
 # python cache
 __pycache__/
 *.pyc
 
-# raw datasets, heavy backups & extraction scratch
-data/backups*/
-data/**/*.bak*
-*.bak*
-
-data/knowledge/
-data/staging/
+# raw datasets & extraction scratch
 data/hardwork/
-data/audit*/
-data/scraped*/
-data/checkpoints/
-
-# Ignore heavy raw JSON datasets (use Google Drive / external storage)
-data/*.json
-data/**/*.json
-scripts/nexmed_questions_catalog.json
+data/backups*/
+/data/*.json
+!data/gabarito_das_questoes_manifest.json
+!data/all_homologated_questions_gold.json
+!data/questoes_ineditas_livros_drive_7822.json
+!data/medcurso_extracao_manifest.json
+!data/medcurso_comparacao_resultado.json
+!data/medcurso_all_questoes_folders.json
+!data/medcurso_extraction_status.json
+!data/exam_to_question_ids.json
+!data/ajudamedico_extraction_status.json
+!data/ajudamedico_vs_platform_report.json
+!data/relatorio_detalhado_978_e_356.json
+!data/relatorio_execucao_textual_gabaritos.json
 
 /data/official_exams/**/*.pdf
 /data/official_exams/**/*.rar
 /data/official_exams/**/*.zip
-/data/official_exams/
+!data/official_exams/manifest.json
 /data/enare_pdfs/
 /data/enare_raw/
 /data/enare_test/
@@ -91,12 +102,12 @@ docs/massivobanco/
 data/backups_pre_drive/
 data/provaderesidencia_coleta.db*
 data/questmed_extracted_exams.db*
+data/questoes_132k.db*
+.backup_taxonomia_local/
 *.db
 *.sqlite
 *.sqlite3
 data/*.tmp
-data/*.signal
-*.signal
 data/*.html
 data/*.pdf
 /data/uel_pdfs/
@@ -142,16 +153,5 @@ data/audit_hardwork/
 supabase/.temp/
 
 
-.playwright-mcp/
-
-# Ignore full data folder except README
-/data/
-!/data/README.md
-
-# Rascunhos, relatorios locais e arquivos de sessao de scripts
-.reports/
-scratch/
-coletor_gabaritos/
-docs/*.pdf
-scripts/*.json
-!scripts/package.json
+# Arquivo histórico de dados legados
+data/archive/

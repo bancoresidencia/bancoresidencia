@@ -1,5 +1,6 @@
 import { supabase } from '@/lib/supabase';
 import { Question, QuestionOption, AdvancedFilterState, QuestionReport, ReportStatus } from '@/types';
+import { sanitizeMedicalText } from '@/utils/textSanitizer';
 import {
   sanitizePostgrestTerm,
   validateQuestionId,
@@ -29,7 +30,8 @@ export function getParentFocosForSubfocoList(subfocos: string[]): string[] {
     clinicalHierarchy.forEach((esp) => {
       esp.temas.forEach((tem) => {
         tem.focos.forEach((foc) => {
-          foc.subfocos.forEach((sub) => {
+          foc.subfocos.forEach((subItem) => {
+            const sub = typeof subItem === 'string' ? subItem : subItem.subfoco;
             const list = subfocoToParentFocos.get(sub) || [];
             if (!list.includes(foc.foco)) {
               list.push(foc.foco);
@@ -56,6 +58,7 @@ export interface ClinicalFilterClausesResult {
   standaloneSpecs: string[];
   standaloneTemas: string[];
   standaloneFocos: string[];
+  standaloneSubfocos: string[];
   subfocosByParentFoco: [string, string[]][];
 }
 
@@ -86,7 +89,8 @@ export function buildClinicalFilterClauses(filters: ExtendedFilterState): Clinic
           specsWithChildren.add(esp.especialidade);
           temasWithChildren.add(tem.tema);
         }
-        foc.subfocos.forEach((sub) => {
+        foc.subfocos.forEach((subItem) => {
+          const sub = typeof subItem === 'string' ? subItem : subItem.subfoco;
           if (selectedSubfocos.has(sub)) {
             specsWithChildren.add(esp.especialidade);
             temasWithChildren.add(tem.tema);
@@ -136,7 +140,8 @@ export function buildClinicalFilterClauses(filters: ExtendedFilterState): Clinic
     clinicalHierarchy.forEach((esp) => {
       esp.temas.forEach((tem) => {
         tem.focos.forEach((foc) => {
-          foc.subfocos.forEach((sub) => {
+          foc.subfocos.forEach((subItem) => {
+            const sub = typeof subItem === 'string' ? subItem : subItem.subfoco;
             if (selectedSubfocos.has(sub)) {
               const list = subfocosByParentFoco.get(foc.foco) || [];
               if (!list.includes(sub)) list.push(sub);
@@ -161,12 +166,7 @@ export function buildClinicalFilterClauses(filters: ExtendedFilterState): Clinic
     const focoList = Array.from(standaloneFocos).map((f) => `"${f}"`).join(',');
     orParts.push(`foco.in.(${focoList})`);
   }
-  subfocosByParentFoco.forEach((subs, parentFoc) => {
-    const subList = subs.map((s) => `"${s}"`).join(',');
-    orParts.push(`and(foco.eq."${parentFoc}",subfoco.in.(${subList}))`);
-  });
-
-  if (selectedSubfocos.size > 0 && subfocosByParentFoco.size === 0) {
+  if (selectedSubfocos.size > 0) {
     const subList = Array.from(selectedSubfocos).map((s) => `"${s}"`).join(',');
     orParts.push(`subfoco.in.(${subList})`);
   }
@@ -176,6 +176,7 @@ export function buildClinicalFilterClauses(filters: ExtendedFilterState): Clinic
     standaloneSpecs: Array.from(standaloneSpecs),
     standaloneTemas: Array.from(standaloneTemas),
     standaloneFocos: Array.from(standaloneFocos),
+    standaloneSubfocos: Array.from(selectedSubfocos),
     subfocosByParentFoco: Array.from(subfocosByParentFoco.entries())
   };
 }
@@ -262,13 +263,15 @@ function mapRowToQuestion(row: QuestionDbRow): Question {
     tema: row.tema || '',
     foco: row.foco || '',
     subfoco: row.subfoco || '',
+    sub_subfoco: (row as any).sub_subfoco || (row as any).subSubfoco || '',
+    subSubfoco: (row as any).subSubfoco || (row as any).sub_subfoco || '',
     difficulty: row.difficulty || 'Médio',
     type: row.type || 'Múltipla escolha',
     isAnulada: Boolean(row.is_anulada),
-    statement: row.statement || '',
-    options: cleanOptions,
+    statement: sanitizeMedicalText(row.statement || ''),
+    options: cleanOptions.map(opt => ({ ...opt, text: sanitizeMedicalText(opt.text) })),
     correctAnswer: (row.correct_answer as Question['correctAnswer']) || '',
-    commentary: row.commentary || '',
+    commentary: sanitizeMedicalText(row.commentary || ''),
     images: Array.isArray(row.images) ? row.images : []
   };
 }
@@ -467,6 +470,10 @@ export function calculateHierarchyFallback(filters: ExtendedFilterState): number
   const isRevalida = Boolean(filters.modalidades?.some((m) => m.toLowerCase().includes('revalida')));
   const ratio = isRevalida ? 0.0253 : 1;
 
+  if (filters.subSubfocos && filters.subSubfocos.length > 0) {
+    const sum = filters.subSubfocos.reduce((acc, ss) => acc + (getQuestionCount('sub_subfocos', ss) || 0), 0);
+    if (sum > 0) return Math.max(1, Math.round(sum * ratio));
+  }
   if (filters.subfocos && filters.subfocos.length > 0) {
     const sum = filters.subfocos.reduce((acc, s) => acc + (getQuestionCount('subfocos', s) || 0), 0);
     if (sum > 0) return Math.max(1, Math.round(sum * ratio));
@@ -652,18 +659,28 @@ export async function fetchQuestionsFromSupabase(
       const focoList = filters.focos.map((f) => `"${f}"`).join(',');
       contentOrParts.push(`foco.in.(${focoList})`);
     }
-    const parentFocos = (filters.subfocos && filters.subfocos.length > 0)
-      ? getParentFocosForSubfocoList(filters.subfocos)
-      : [];
+    const effectiveSubfocos = new Set(filters.subfocos || []);
+    if (filters.subSubfocos && filters.subSubfocos.length > 0) {
+      clinicalHierarchy.forEach((esp) => {
+        esp.temas.forEach((tem) => {
+          tem.focos.forEach((foc) => {
+            foc.subfocos.forEach((subItem) => {
+              if (typeof subItem !== 'string' && subItem.sub_subfocos) {
+                const matches = subItem.sub_subfocos.some((ss) => filters.subSubfocos!.includes(ss));
+                if (matches) {
+                  effectiveSubfocos.add(subItem.subfoco);
+                }
+              }
+            });
+          });
+        });
+      });
+    }
 
-    if (filters.subfocos && filters.subfocos.length > 0) {
-      const subfocoList = filters.subfocos.map((s) => `"${s}"`).join(',');
-      if (parentFocos.length > 0) {
-        const parentFocoList = parentFocos.map((f) => `"${f}"`).join(',');
-        contentOrParts.push(`and(foco.in.(${parentFocoList}),subfoco.in.(${subfocoList}))`);
-      } else {
-        contentOrParts.push(`subfoco.in.(${subfocoList})`);
-      }
+    if (effectiveSubfocos.size > 0) {
+      const allSubs = Array.from(effectiveSubfocos);
+      const subfocoList = allSubs.map((s) => `"${s}"`).join(',');
+      contentOrParts.push(`subfoco.in.(${subfocoList})`);
     }
 
     if (contentOrParts.length === 1) {
@@ -673,12 +690,8 @@ export async function fetchQuestionsFromSupabase(
         query = query.in('tema', filters.temas);
       } else if (filters.focos && filters.focos.length > 0) {
         query = query.in('foco', filters.focos);
-      } else if (filters.subfocos && filters.subfocos.length > 0) {
-        if (parentFocos.length > 0) {
-          query = query.in('foco', parentFocos).in('subfoco', filters.subfocos);
-        } else {
-          query = query.in('subfoco', filters.subfocos);
-        }
+      } else if (effectiveSubfocos.size > 0) {
+        query = query.in('subfoco', Array.from(effectiveSubfocos));
       }
     } else if (contentOrParts.length > 1) {
       query = query.or(contentOrParts.join(','));

@@ -101,7 +101,16 @@ const resultJson = {
     estatisticas_por_especialidade: summary
   },
   // Formato hierárquico padrão compatível com SpecialtyHierarchy
-  hierarquia_padrao: hierarquia,
+  hierarquia_padrao: hierarquia.map(h => ({
+    especialidade: h.especialidade,
+    temas: h.temas.map(t => ({
+      tema: t.tema,
+      focos: t.focos.map(f => ({
+        foco: f.foco,
+        subfocos: (f.subfocos || []).map(s => typeof s === 'string' ? s : s.subfoco)
+      }))
+    }))
+  })),
   // Formato enriquecido com métricas de questões por nível
   hierarquia_enriquecida: hierarquiaEnriquecida
 };

@@ -1,7 +1,7 @@
 {
   "summary": {
     "totalAudited": 132965,
-    "totalAffected": 497,
+    "totalAffected": 537,
     "textHitsCount": 38,
     "imageHitsCount": 398,
     "bothCount": 26,
@@ -113,8 +113,8 @@
       "HEVV": 1,
       "SES-DF": 1
     },
-    "visionAuditedCount": 3846,
-    "visionHitsCount": 145
+    "visionAuditedCount": 5363,
+    "visionHitsCount": 185
   },
   "questions": [
     {
@@ -1090,7 +1090,7 @@
           "field": "options[B]",
           "visionAudit": {
             "audited": true,
-            "has_medevo": true,
+            "has_medevo": false,
             "confidence": 0.98,
             "presence_type": "marca_dagua_sutil",
             "location": "centro",
@@ -1122,7 +1122,7 @@
           }
         }
       ],
-      "hasVisionHit": true,
+      "hasVisionHit": false,
       "visionHits": [
         {
           "url": "https://api.medevo.com.br/storage/v1/object/public/questoes/revalida/2026/mulher-53-anos-de-idade-antecedentes-desconhecidos-trazida-a-alt-a-01.webp",
@@ -1152,7 +1152,9 @@
           "confidence": 0.95,
           "details": "O ícone do cérebro azul com a cruz laranja está presente como uma marca d'água semitransparente sobreposta à região central da radiografia torácica."
         }
-      ]
+      ],
+      "isApprovedClean": true,
+      "approvedAt": "2026-11-07T19:21:01.897Z"
     },
     {
       "id": "a3aaed81-d791-45ce-b994-e7ae07be99de",
@@ -14523,6 +14525,1326 @@
             "presence_type": "parcial_cortado",
             "location": "canto_inferior_esquerdo",
             "details": "O ícone do cérebro (mascote) está presente como uma marca d'água sutil e parcialmente cortada no canto inferior esquerdo da imagem."
+          }
+        }
+      ]
+    },
+    {
+      "id": "b77108b8-ac55-4f18-b99a-fa92c814b486",
+      "code": "UNIFESPEPM-2026-CLM-2346",
+      "banca": "UNIFESP/EPM",
+      "year": 2026,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2026/homem-68-anos-de-idade-fumante-atual-45-anos-maco-tem-diagno-01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "centro",
+          "confidence": 0.95,
+          "details": "O mascote em formato de cérebro azul está visível como uma marca d'água sutil ao fundo, centralizado na tabela espirométrica."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2026/homem-68-anos-de-idade-fumante-atual-45-anos-maco-tem-diagno-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "marca_dagua_sutil",
+            "location": "centro",
+            "details": "O mascote em formato de cérebro azul está visível como uma marca d'água sutil ao fundo, centralizado na tabela espirométrica."
+          }
+        }
+      ]
+    },
+    {
+      "id": "b8c88b80-0e53-4a7f-9198-493453180a5d",
+      "code": "UFRJHUCFF-2025-CIR-1216",
+      "banca": "UFRJ/HUCFF",
+      "year": 2025,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/rn-38-semanas-de-gestacao-apresenta-vomitos-biliosos-cerca-d-01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "centro",
+          "confidence": 0.95,
+          "details": "O mascote de cérebro azul com cruz laranja está visível como uma marca d'água semitransparente na região central da radiografia."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2025/rn-38-semanas-de-gestacao-apresenta-vomitos-biliosos-cerca-d-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "marca_dagua_sutil",
+            "location": "centro",
+            "details": "O mascote de cérebro azul com cruz laranja está visível como uma marca d'água semitransparente na região central da radiografia."
+          }
+        }
+      ]
+    },
+    {
+      "id": "ba71c2ba-12fc-45ea-bc5d-8a858155dbb5",
+      "code": "INEPREVALIDA-2015-OBS-13865",
+      "banca": "INEP Revalida",
+      "year": 2015,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2015/uma-mulher-de-23-anos-de-idade-foi-admitida-n-a-emergencia-e-01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "centro",
+          "confidence": 0.95,
+          "details": "Marca d'água semitransparente com o texto/logotipo posicionada verticalmente no centro do documento."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2015/uma-mulher-de-23-anos-de-idade-foi-admitida-n-a-emergencia-e-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "marca_dagua_sutil",
+            "location": "centro",
+            "details": "Marca d'água semitransparente com o texto/logotipo posicionada verticalmente no centro do documento."
+          }
+        }
+      ]
+    },
+    {
+      "id": "bac4fb0c-4476-45a6-87dc-da463dabf2cf",
+      "code": "UNIFESPEPM-2026-CIR-12864",
+      "banca": "UNIFESP/EPM",
+      "year": 2026,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2026/homem-30-anos-de-idade-com-lombalgia-disponibiliza-na-consul-01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "canto_inferior_esquerdo",
+          "confidence": 0.95,
+          "details": "Presença sutil do mascote cérebro azul com cruz laranja no canto inferior esquerdo da imagem de ressonância magnética."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2026/homem-30-anos-de-idade-com-lombalgia-disponibiliza-na-consul-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "marca_dagua_sutil",
+            "location": "canto_inferior_esquerdo",
+            "details": "Presença sutil do mascote cérebro azul com cruz laranja no canto inferior esquerdo da imagem de ressonância magnética."
+          }
+        }
+      ]
+    },
+    {
+      "id": "bac7fe40-9b93-41d7-80b0-cd32ebcf5183",
+      "code": "SANTACASADES-2026-CLM-28696",
+      "banca": "Santa Casa de São Paulo",
+      "year": 2026,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2026/paciente-59-anos-com-ictericia-ha-3-semanas-acompanhada-de-c-01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "centro",
+          "confidence": 0.95,
+          "details": "O mascote em formato de cérebro azul com cruz laranja está visível como uma marca d'água sutil ao centro, entre as duas imagens de tomografia."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2026/paciente-59-anos-com-ictericia-ha-3-semanas-acompanhada-de-c-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "marca_dagua_sutil",
+            "location": "centro",
+            "details": "O mascote em formato de cérebro azul com cruz laranja está visível como uma marca d'água sutil ao centro, entre as duas imagens de tomografia."
+          }
+        }
+      ]
+    },
+    {
+      "id": "bea7b83b-9842-4d28-b214-6622d02ad455",
+      "code": "INEPREVALIDA-2014-CLM-37449",
+      "banca": "INEP Revalida",
+      "year": 2014,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2014/um-paciente-com-50-anos-de-idade-com-diagnostico-de-hiperten-01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "centro",
+          "confidence": 0.95,
+          "details": "O mascote em formato de cérebro com cruz médica está presente como uma marca d'água semitransparente na região central da radiografia de tórax."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2014/um-paciente-com-50-anos-de-idade-com-diagnostico-de-hiperten-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "marca_dagua_sutil",
+            "location": "centro",
+            "details": "O mascote em formato de cérebro com cruz médica está presente como uma marca d'água semitransparente na região central da radiografia de tórax."
+          }
+        }
+      ]
+    },
+    {
+      "id": "bf973ed9-786c-4ccd-aac0-1573b1d4db16",
+      "code": "UEL-2013-CLM-35442",
+      "banca": "UEL",
+      "year": 2013,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/uel/acesso-direto/2013/q057-1-d99d1259b442fbe0.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "centro",
+          "confidence": 0.95,
+          "details": "O mascote em formato de cérebro azul está presente como uma marca d'água sutil e semitransparente no fundo azul do eletrocardiograma."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/uel/acesso-direto/2013/q057-1-d99d1259b442fbe0.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "marca_dagua_sutil",
+            "location": "centro",
+            "details": "O mascote em formato de cérebro azul está presente como uma marca d'água sutil e semitransparente no fundo azul do eletrocardiograma."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c052cdba-2e97-4024-b307-8ba7694b4cd4",
+      "code": "INEPREVALIDA-2012-PED-23655",
+      "banca": "INEP Revalida",
+      "year": 2012,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2012/um-lactente-com-12-meses-de-idade-e-levado-ao-pronto-socorro-01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "centro",
+          "confidence": 0.95,
+          "details": "O mascote em formato de cérebro azul com cruz laranja está visível como uma marca d'água semitransparente no centro da imagem de raio-X."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2012/um-lactente-com-12-meses-de-idade-e-levado-ao-pronto-socorro-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "marca_dagua_sutil",
+            "location": "centro",
+            "details": "O mascote em formato de cérebro azul com cruz laranja está visível como uma marca d'água semitransparente no centro da imagem de raio-X."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c3a3248e-cad2-4907-ad6c-320f5c171b96",
+      "code": "INEPREVALIDA-2014-OBS-13791",
+      "banca": "INEP Revalida",
+      "year": 2014,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2014/uma-gestante-com-27-anos-de-idade-tercigesta-com-antecedente-01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "centro",
+          "confidence": 0.95,
+          "details": "O mascote em formato de cérebro azul está presente como uma marca d'água semitransparente ao centro do gráfico de cervicodilatação."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2014/uma-gestante-com-27-anos-de-idade-tercigesta-com-antecedente-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "marca_dagua_sutil",
+            "location": "centro",
+            "details": "O mascote em formato de cérebro azul está presente como uma marca d'água semitransparente ao centro do gráfico de cervicodilatação."
+          }
+        }
+      ]
+    },
+    {
+      "id": "c72e51d8-43db-488f-ab96-f4f5158cccca",
+      "code": "HUFMJ-2026-CLM-13272",
+      "banca": "HU-FMJ",
+      "year": 2026,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2026/paciente-homem-de-32-anos-de-idade-apresentou-anemia-grave-h-01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "centro",
+          "confidence": 0.95,
+          "details": "Marca d'água sutil do mascote MedEvo visível no centro da imagem de esfregaço sanguíneo."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2026/paciente-homem-de-32-anos-de-idade-apresentou-anemia-grave-h-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "marca_dagua_sutil",
+            "location": "centro",
+            "details": "Marca d'água sutil do mascote MedEvo visível no centro da imagem de esfregaço sanguíneo."
+          }
+        }
+      ]
+    },
+    {
+      "id": "ca4accaa-60fc-4e9f-8542-24e368600519",
+      "code": "FACULDADEDEM-2026-CLM-31450",
+      "banca": "Faculdade de Medicina de Marília",
+      "year": 2026,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2026/paciente-de-32-anos-trazido-pelo-suporte-avancado-do-samu-e--01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "centro",
+          "confidence": 0.95,
+          "details": "O ícone do cérebro azul com a cruz laranja está aplicado como uma marca d'água semitransparente no centro da imagem, sobreposta ao traçado do eletrocardiograma."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2026/paciente-de-32-anos-trazido-pelo-suporte-avancado-do-samu-e--01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "marca_dagua_sutil",
+            "location": "centro",
+            "details": "O ícone do cérebro azul com a cruz laranja está aplicado como uma marca d'água semitransparente no centro da imagem, sobreposta ao traçado do eletrocardiograma."
+          }
+        }
+      ]
+    },
+    {
+      "id": "ce2c9a76-b8d8-4fd0-ada2-7a8cf288d788",
+      "code": "SEMUSASMSMAC-2019-CLM-27764",
+      "banca": "SEMUSA (SMS) Macaé",
+      "year": 2019,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2019/o-numero-de-pedidos-de-exames-sem-indicacao-clinica-vem-aume-01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "canto_inferior_direito",
+          "confidence": 0.95,
+          "details": "Marca d'água semitransparente do logotipo MedEvo visível no canto inferior direito da imagem."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2019/o-numero-de-pedidos-de-exames-sem-indicacao-clinica-vem-aume-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "marca_dagua_sutil",
+            "location": "canto_inferior_direito",
+            "details": "Marca d'água semitransparente do logotipo MedEvo visível no canto inferior direito da imagem."
+          }
+        }
+      ]
+    },
+    {
+      "id": "d096384d-7051-4f31-9db0-3f1be5064c80",
+      "code": "UFPBHULW-2016-CLM-29131",
+      "banca": "UFPB/HULW",
+      "year": 2016,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2016/observe-o-quadro-adaptado-do-tratado-de-medicina-de-familia-01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "centro",
+          "confidence": 0.95,
+          "details": "O mascote de cérebro azul está presente como uma marca d'água sutil e translúcida ao fundo da tabela."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2016/observe-o-quadro-adaptado-do-tratado-de-medicina-de-familia-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "marca_dagua_sutil",
+            "location": "centro",
+            "details": "O mascote de cérebro azul está presente como uma marca d'água sutil e translúcida ao fundo da tabela."
+          }
+        }
+      ]
+    },
+    {
+      "id": "d310550e-2002-47de-aaa1-2ac51d29160b",
+      "code": "INEPREVALIDA-2017-MPS-21672",
+      "banca": "INEP Revalida",
+      "year": 2017,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/observe-a-figura-abaixo-que-representa-a-taxa-de-mortalidade-01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "centro",
+          "confidence": 0.95,
+          "details": "Marca d'água sutil com o mascote de cérebro azul e cruz laranja presente no centro da imagem, por trás do gráfico de linhas."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/observe-a-figura-abaixo-que-representa-a-taxa-de-mortalidade-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "marca_dagua_sutil",
+            "location": "centro",
+            "details": "Marca d'água sutil com o mascote de cérebro azul e cruz laranja presente no centro da imagem, por trás do gráfico de linhas."
+          }
+        }
+      ]
+    },
+    {
+      "id": "d5089c8f-9795-4fd9-8699-be05fa939fd4",
+      "code": "HIAEEINSTEIN-2026-MPS-19266",
+      "banca": "HIAE/Einstein",
+      "year": 2026,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2026/forde-et-al-publicaram-recentemente-overall-survival-with-ne-01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "centro",
+          "confidence": 0.95,
+          "details": "O mascote do cérebro azul com a cruz laranja está visível como uma marca d'água semitransparente no centro da imagem sobre o gráfico de sobrevivência global."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2026/forde-et-al-publicaram-recentemente-overall-survival-with-ne-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "marca_dagua_sutil",
+            "location": "centro",
+            "details": "O mascote do cérebro azul com a cruz laranja está visível como uma marca d'água semitransparente no centro da imagem sobre o gráfico de sobrevivência global."
+          }
+        }
+      ]
+    },
+    {
+      "id": "d57ac428-a25e-4fb4-ae96-f9f90935bad3",
+      "code": "SURCE-2020-CLM-28238",
+      "banca": "SURCE",
+      "year": 2020,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2020/mulher-de-32-anos-procurou-assistencia-medica-ha-10-dias-por-01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "canto_inferior_esquerdo",
+          "confidence": 0.95,
+          "details": "Marca d'água semitransparente do logotipo MedEvo visível no canto inferior esquerdo da imagem sobre fundo escuro."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2020/mulher-de-32-anos-procurou-assistencia-medica-ha-10-dias-por-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "marca_dagua_sutil",
+            "location": "canto_inferior_esquerdo",
+            "details": "Marca d'água semitransparente do logotipo MedEvo visível no canto inferior esquerdo da imagem sobre fundo escuro."
+          }
+        }
+      ]
+    },
+    {
+      "id": "d5efd1cc-74b1-476a-b83f-7cef259c70f5",
+      "code": "FACULDADEDEM-2026-CIR-9171",
+      "banca": "Faculdade de Medicina de Marília",
+      "year": 2026,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2026/mulher-42-anos-queixa-se-de-fadiga-progressiva-com-diplopia--01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "centro",
+          "confidence": 0.95,
+          "details": "O mascote de cérebro azul está visível como uma marca d'água semitransutil centralizada na imagem entre os painéis A e B das tomografias."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2026/mulher-42-anos-queixa-se-de-fadiga-progressiva-com-diplopia--01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "marca_dagua_sutil",
+            "location": "centro",
+            "details": "O mascote de cérebro azul está visível como uma marca d'água semitransutil centralizada na imagem entre os painéis A e B das tomografias."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dcf1c6da-664a-4640-bc8d-46c15e2f6a5f",
+      "code": "SESGO-2015-OBS-0992",
+      "banca": "SES-GO",
+      "year": 2015,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2015/observe-o-partograma-abaixo-e-responda-a-questao-considerand-01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "canto_inferior_esquerdo",
+          "confidence": 0.85,
+          "details": "O mascote em marca d'água sutil aparece parcialmente cortado na parte inferior esquerda da imagem."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2015/observe-o-partograma-abaixo-e-responda-a-questao-considerand-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.85,
+            "presence_type": "marca_dagua_sutil",
+            "location": "canto_inferior_esquerdo",
+            "details": "O mascote em marca d'água sutil aparece parcialmente cortado na parte inferior esquerda da imagem."
+          }
+        }
+      ]
+    },
+    {
+      "id": "dd8cf0e3-053c-4997-bf1d-d3c8a0aac2f1",
+      "code": "HMTJ-2020-CIR-8082",
+      "banca": "HMTJ",
+      "year": 2020,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2020/paciente-com-colecistite-tem-tomografia-computadorizada-most-01.webp",
+          "presence_type": "parcial_cortado",
+          "location": "canto_superior_esquerdo",
+          "confidence": 0.99,
+          "details": "O icone do cérebro azul sorridente com a cruz laranja está parcialmente visível e cortado no canto superior esquerdo da imagem."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2020/paciente-com-colecistite-tem-tomografia-computadorizada-most-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.99,
+            "presence_type": "parcial_cortado",
+            "location": "canto_superior_esquerdo",
+            "details": "O icone do cérebro azul sorridente com a cruz laranja está parcialmente visível e cortado no canto superior esquerdo da imagem."
+          }
+        }
+      ]
+    },
+    {
+      "id": "deadc672-dd42-4e36-934b-051af0724a41",
+      "code": "USPHCRP-2019-MPS-8686",
+      "banca": "USP/HCRP",
+      "year": 2019,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2019/o-grafico-abaixo-expressa-as-taxas-de-mortalidade-infantil-n-01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "centro",
+          "confidence": 0.95,
+          "details": "O mascote do cérebro azul está presente como uma marca d'água sutil e semitransparente ao fundo do gráfico de mortalidade infantil."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2019/o-grafico-abaixo-expressa-as-taxas-de-mortalidade-infantil-n-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "marca_dagua_sutil",
+            "location": "centro",
+            "details": "O mascote do cérebro azul está presente como uma marca d'água sutil e semitransparente ao fundo do gráfico de mortalidade infantil."
+          }
+        }
+      ]
+    },
+    {
+      "id": "e1e55f84-0a9b-4773-b6c9-9bb2d57dcf96",
+      "code": "UFRGSHCPA-2024-MPS-19214",
+      "banca": "UFRGS/HCPA",
+      "year": 2024,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/a-piramide-etaria-abaixo-refere-se-a-uma-populacao-de-uma-un-01.webp",
+          "presence_type": "apenas_icone",
+          "location": "outro",
+          "confidence": 0.95,
+          "details": "O ícone do cérebro azul sorridente está visível no lado direito da pirâmide etária, alinhado à faixa etária de 55 a 59 anos."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2024/a-piramide-etaria-abaixo-refere-se-a-uma-populacao-de-uma-un-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "apenas_icone",
+            "location": "outro",
+            "details": "O ícone do cérebro azul sorridente está visível no lado direito da pirâmide etária, alinhado à faixa etária de 55 a 59 anos."
+          }
+        }
+      ]
+    },
+    {
+      "id": "e4ea31a3-62fc-472a-a52f-ee36d9f81ba7",
+      "code": "INEPREVALIDA-2017-CIR-20940",
+      "banca": "INEP Revalida",
+      "year": 2017,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/um-homem-com-24-anos-de-idade-vitima-de-ferimento-por-arma-d-01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "centro",
+          "confidence": 0.95,
+          "details": "O mascote de cérebro com a cruz está presente como uma marca d'água semitransparente na região central da radiografia de tórax."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2017/um-homem-com-24-anos-de-idade-vitima-de-ferimento-por-arma-d-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "marca_dagua_sutil",
+            "location": "centro",
+            "details": "O mascote de cérebro com a cruz está presente como uma marca d'água semitransparente na região central da radiografia de tórax."
+          }
+        }
+      ]
+    },
+    {
+      "id": "ea7aa842-4249-408d-94d4-3870dda71172",
+      "code": "USPHCRP-2016-PED-11918",
+      "banca": "USP/HCRP",
+      "year": 2016,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2016/crianca-com-8-meses-de-idade-com-historia-de-febre-ha-3-dias-01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "canto_inferior_esquerdo",
+          "confidence": 1,
+          "details": "O ícone do cérebro azul com a cruz laranja está presente como uma marca d'água sutil no canto inferior esquerdo da radiografia."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2016/crianca-com-8-meses-de-idade-com-historia-de-febre-ha-3-dias-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 1,
+            "presence_type": "marca_dagua_sutil",
+            "location": "canto_inferior_esquerdo",
+            "details": "O ícone do cérebro azul com a cruz laranja está presente como uma marca d'água sutil no canto inferior esquerdo da radiografia."
+          }
+        }
+      ]
+    },
+    {
+      "id": "eaea482a-976d-476f-8675-2a6d6aef9644",
+      "code": "INEPREVALIDA-2014-OBS-13793",
+      "banca": "INEP Revalida",
+      "year": 2014,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2014/uma-primigesta-com-36-semanas-de-gestacao-procura-a-maternid-01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "centro",
+          "confidence": 0.95,
+          "details": "O mascote (cérebro azul com cruz laranja) está presente como uma marca d'água sutil e semitransparente centralizada sobre o gráfico de monitoramento fetal."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2014/uma-primigesta-com-36-semanas-de-gestacao-procura-a-maternid-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "marca_dagua_sutil",
+            "location": "centro",
+            "details": "O mascote (cérebro azul com cruz laranja) está presente como uma marca d'água sutil e semitransparente centralizada sobre o gráfico de monitoramento fetal."
+          }
+        }
+      ]
+    },
+    {
+      "id": "ed114f28-5461-4acc-8d5e-b7145df83f0e",
+      "code": "INEPREVALIDA-2015-MPS-21684",
+      "banca": "INEP Revalida",
+      "year": 2015,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2015/em-uma-cidade-ocorreram-varios-casos-de-uma-doenca-de-notifi-01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "centro",
+          "confidence": 0.95,
+          "details": "O ícone do cérebro azul está presente como uma marca d'água sutil e semitransparente no centro da imagem, sobreposta ao gráfico."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2015/em-uma-cidade-ocorreram-varios-casos-de-uma-doenca-de-notifi-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "marca_dagua_sutil",
+            "location": "centro",
+            "details": "O ícone do cérebro azul está presente como uma marca d'água sutil e semitransparente no centro da imagem, sobreposta ao gráfico."
+          }
+        }
+      ]
+    },
+    {
+      "id": "eed73d26-0134-4657-a5d8-ff3dd41cb86f",
+      "code": "USPHCRP-2020-CIR-11966",
+      "banca": "USP/HCRP",
+      "year": 2020,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2020/homem-53-anos-de-idade-apresentou-episodio-de-pancreatite-ag-01.webp",
+          "presence_type": "parcial_cortado",
+          "location": "canto_superior_esquerdo",
+          "confidence": 0.95,
+          "details": "O ícone do cérebro azul com a cruz laranja está visível no canto superior esquerdo da imagem, parcialmente cortado pela borda superior."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2020/homem-53-anos-de-idade-apresentou-episodio-de-pancreatite-ag-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "parcial_cortado",
+            "location": "canto_superior_esquerdo",
+            "details": "O ícone do cérebro azul com a cruz laranja está visível no canto superior esquerdo da imagem, parcialmente cortado pela borda superior."
+          }
+        }
+      ]
+    },
+    {
+      "id": "eee00574-58c9-4da8-bed2-3331a708d785",
+      "code": "FACULDADEDEM-2026-CLM-1393",
+      "banca": "Faculdade de Medicina de Marília",
+      "year": 2026,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2026/paciente-do-sexo-masculino-de-58-anos-tabagista-portador-de--01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "centro",
+          "confidence": 0.95,
+          "details": "O logotipo (cérebro azul com cruz laranja) está presente como uma marca d'água sutil e semitransparente centralizada sobre o traçado do eletrocardiograma."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2026/paciente-do-sexo-masculino-de-58-anos-tabagista-portador-de--01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "marca_dagua_sutil",
+            "location": "centro",
+            "details": "O logotipo (cérebro azul com cruz laranja) está presente como uma marca d'água sutil e semitransparente centralizada sobre o traçado do eletrocardiograma."
+          }
+        }
+      ]
+    },
+    {
+      "id": "ef6ed2e9-f3b9-43d6-aa0b-42ac7c76b6d7",
+      "code": "AMP-2026-CLM-4783",
+      "banca": "AMP",
+      "year": 2026,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2026/mrs-16-anos-compareceu-ao-pronto-socorro-acompanhado-pela-ma-01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "centro",
+          "confidence": 1,
+          "details": "O ícone do cérebro azul com a cruz laranja está presente como uma marca d'água sutil e semitransparente no centro da imagem, sobreposta ao gráfico de espirometria."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2026/mrs-16-anos-compareceu-ao-pronto-socorro-acompanhado-pela-ma-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 1,
+            "presence_type": "marca_dagua_sutil",
+            "location": "centro",
+            "details": "O ícone do cérebro azul com a cruz laranja está presente como uma marca d'água sutil e semitransparente no centro da imagem, sobreposta ao gráfico de espirometria."
+          }
+        }
+      ]
+    },
+    {
+      "id": "f173e6b0-b0ce-4a12-ba2f-d33c734511df",
+      "code": "UFUHC-2016-CIR-11631",
+      "banca": "UFU/HC",
+      "year": 2016,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2016/joao-paulo-65-anos-apresenta-se-com-dor-abdominal-progressiv-01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "canto_inferior_esquerdo",
+          "confidence": 0.95,
+          "details": "O ícone do cérebro azul com a cruz laranja está presente como uma marca d'água sutil e semitransparente no canto inferior esquerdo da radiografia."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2016/joao-paulo-65-anos-apresenta-se-com-dor-abdominal-progressiv-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "marca_dagua_sutil",
+            "location": "canto_inferior_esquerdo",
+            "details": "O ícone do cérebro azul com a cruz laranja está presente como uma marca d'água sutil e semitransparente no canto inferior esquerdo da radiografia."
+          }
+        }
+      ]
+    },
+    {
+      "id": "f357170c-e0a8-4b7e-92d2-e8b315d2b283",
+      "code": "UFRGSHCPA-2020-OBS-11894",
+      "banca": "UFRGS/HCPA",
+      "year": 2020,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2020/alternativas/misoprostol-e-uma-prostaglandina-e1-utilizada-em-diferentes-alternativa-1.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "outro",
+          "confidence": 0.98,
+          "details": "O ícone do mascote (cérebro com cruz) está presente de forma sutil e em tons de cinza na extremidade superior da linha do gráfico."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2020/alternativas/misoprostol-e-uma-prostaglandina-e1-utilizada-em-diferentes-alternativa-1.webp",
+          "field": "options[B]",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.98,
+            "presence_type": "marca_dagua_sutil",
+            "location": "outro",
+            "details": "O ícone do mascote (cérebro com cruz) está presente de forma sutil e em tons de cinza na extremidade superior da linha do gráfico."
+          }
+        }
+      ]
+    },
+    {
+      "id": "f38232ab-e3d0-41b4-b438-d9306f34f5f8",
+      "code": "INEPREVALIDA-2014-CLM-37447",
+      "banca": "INEP Revalida",
+      "year": 2014,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2014/um-paciente-com-24-anos-de-idade-estudante-universitario-pro-01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "centro",
+          "confidence": 0.95,
+          "details": "O mascote (cérebro azul com cruz laranja) está aplicado como uma marca d'água semitransparente sobreposta à região central da radiografia de tórax."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2014/um-paciente-com-24-anos-de-idade-estudante-universitario-pro-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "marca_dagua_sutil",
+            "location": "centro",
+            "details": "O mascote (cérebro azul com cruz laranja) está aplicado como uma marca d'água semitransparente sobreposta à região central da radiografia de tórax."
+          }
+        }
+      ]
+    },
+    {
+      "id": "f38ba477-404c-466b-9dc8-09e6199cccf6",
+      "code": "INEPREVALIDA-2016-CIR-20993",
+      "banca": "INEP Revalida",
+      "year": 2016,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2016/durante-o-plantao-em-um-hospital-geral-chegam-varias-vitimas-01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "centro",
+          "confidence": 0.95,
+          "details": "O mascote (cérebro azul com cruz laranja) está presente como uma marca d'água sutil e semitransparente centralizada atrás da grade de quadrantes."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2016/durante-o-plantao-em-um-hospital-geral-chegam-varias-vitimas-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "marca_dagua_sutil",
+            "location": "centro",
+            "details": "O mascote (cérebro azul com cruz laranja) está presente como uma marca d'água sutil e semitransparente centralizada atrás da grade de quadrantes."
+          }
+        }
+      ]
+    },
+    {
+      "id": "f60e81db-c16a-468b-b68a-cda402a93f20",
+      "code": "SUSSP-2026-MPS-18034",
+      "banca": "SUS-SP",
+      "year": 2026,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2026/foram-realizados-cinco-estudos-prospectivos-de-coorte-para-e-01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "centro",
+          "confidence": 1,
+          "details": "O ícone do cérebro azul com a cruz laranja está presente como uma marca d'água de baixa opacidade centralizada no gráfico de floresta (forest plot)."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2026/foram-realizados-cinco-estudos-prospectivos-de-coorte-para-e-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 1,
+            "presence_type": "marca_dagua_sutil",
+            "location": "centro",
+            "details": "O ícone do cérebro azul com a cruz laranja está presente como uma marca d'água de baixa opacidade centralizada no gráfico de floresta (forest plot)."
+          }
+        }
+      ]
+    },
+    {
+      "id": "f7857f63-7c91-4082-9b00-ad60fec89ee0",
+      "code": "USPHCRP-2015-GIN-6251",
+      "banca": "USP/HCRP",
+      "year": 2015,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "/images/questoes/ginecologia/paciente-48-anos-g3p2a1-relata-que-ha-dois-meses-tem-notado-01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "centro",
+          "confidence": 0.95,
+          "details": "O ícone do cérebro azul com a cruz laranja está presente como uma marca d'água sutil e semitransparente sobreposta à imagem de diagnóstico (radiografia/tomografia)."
+        }
+      ],
+      "images": [
+        {
+          "url": "/images/questoes/ginecologia/paciente-48-anos-g3p2a1-relata-que-ha-dois-meses-tem-notado-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "marca_dagua_sutil",
+            "location": "centro",
+            "details": "O ícone do cérebro azul com a cruz laranja está presente como uma marca d'água sutil e semitransparente sobreposta à imagem de diagnóstico (radiografia/tomografia)."
+          }
+        }
+      ]
+    },
+    {
+      "id": "f8586cb7-728b-4a53-aef2-2a8cac63a6bc",
+      "code": "HST-2018-MPS-3780",
+      "banca": "HST",
+      "year": 2018,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/observe-as-tabelas-1-e-2-abaixo-e-responda-o-padrao-de-morta-01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "centro",
+          "confidence": 1,
+          "details": "O mascote (cérebro azul com cruz laranja) está presente como uma marca d'água sutil e transparente sobreposta ao fundo da tabela de dados."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2018/observe-as-tabelas-1-e-2-abaixo-e-responda-o-padrao-de-morta-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 1,
+            "presence_type": "marca_dagua_sutil",
+            "location": "centro",
+            "details": "O mascote (cérebro azul com cruz laranja) está presente como uma marca d'água sutil e transparente sobreposta ao fundo da tabela de dados."
+          }
+        }
+      ]
+    },
+    {
+      "id": "f9da2c09-2655-495f-b37b-a62d410b97ac",
+      "code": "SANTACASADES-2026-MPS-4938",
+      "banca": "Santa Casa de São Paulo",
+      "year": 2026,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2026/o-grafico-abaixo-revela-as-taxas-de-mortalidade-infantil-de--01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "centro",
+          "confidence": 0.95,
+          "details": "O mascote (cérebro azul com cruz laranja) está presente como uma marca d'água de baixa opacidade centralizada no gráfico."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2026/o-grafico-abaixo-revela-as-taxas-de-mortalidade-infantil-de--01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "marca_dagua_sutil",
+            "location": "centro",
+            "details": "O mascote (cérebro azul com cruz laranja) está presente como uma marca d'água de baixa opacidade centralizada no gráfico."
+          }
+        }
+      ]
+    },
+    {
+      "id": "fa70f22e-f11f-4312-ba84-f6b32d7177dc",
+      "code": "IAMSPEHSPE-2023-CLM-8697",
+      "banca": "IAMSPE/HSPE",
+      "year": 2023,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2023/um-paciente-de-35-anos-de-idade-sem-comorbidades-procura-o-p-01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "canto_inferior_esquerdo",
+          "confidence": 0.95,
+          "details": "O texto 'MedEvo' está presente como uma marca d'água sutil na parte inferior esquerda da imagem do eletrocardiograma."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2023/um-paciente-de-35-anos-de-idade-sem-comorbidades-procura-o-p-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "marca_dagua_sutil",
+            "location": "canto_inferior_esquerdo",
+            "details": "O texto 'MedEvo' está presente como uma marca d'água sutil na parte inferior esquerda da imagem do eletrocardiograma."
+          }
+        }
+      ]
+    },
+    {
+      "id": "faf9520e-8eca-4397-be11-a83fd49e19a4",
+      "code": "HEAAFMC-2023-CLM-6199",
+      "banca": "HEAA-FMC",
+      "year": 2023,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2023/homem-78-anos-viuvo-aposentado-residente-em-area-distante-do-01.webp",
+          "presence_type": "parcial_cortado",
+          "location": "canto_superior_central",
+          "confidence": 0.95,
+          "details": "O ícone do cérebro azul com a cruz laranja está parcialmente visível na borda superior central da imagem, indicando um corte ou sobreposição de marca d'água."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2023/homem-78-anos-viuvo-aposentado-residente-em-area-distante-do-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "parcial_cortado",
+            "location": "canto_superior_central",
+            "details": "O ícone do cérebro azul com a cruz laranja está parcialmente visível na borda superior central da imagem, indicando um corte ou sobreposição de marca d'água."
+          }
+        }
+      ]
+    },
+    {
+      "id": "fd775bba-eb24-494a-9fc4-b8b7ca8ddf0b",
+      "code": "SUSBA-2021-CIR-6668",
+      "banca": "SUS-BA",
+      "year": 2021,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/admin-uploads/1761405499333-0.37522043751100753.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "canto_superior_direito",
+          "confidence": 0.95,
+          "details": "O texto 'MedEvo' está presente como uma marca d'água sutil no canto superior direito da radiografia, sobreposto à área do ombro/clavícula do paciente."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/admin-uploads/1761405499333-0.37522043751100753.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "marca_dagua_sutil",
+            "location": "canto_superior_direito",
+            "details": "O texto 'MedEvo' está presente como uma marca d'água sutil no canto superior direito da radiografia, sobreposto à área do ombro/clavícula do paciente."
+          }
+        }
+      ]
+    },
+    {
+      "id": "fe605141-6612-4f9a-8ca6-13fcefb21d3f",
+      "code": "INEPREVALIDA-2016-MPS-21817",
+      "banca": "INEP Revalida",
+      "year": 2016,
+      "hasTextHit": false,
+      "textHits": [],
+      "hasImageHit": true,
+      "hasVisionHit": true,
+      "visionHits": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2016/em-1993-a-tuberculose-passou-a-ser-reconhecida-pela-organiza-01.webp",
+          "presence_type": "marca_dagua_sutil",
+          "location": "centro",
+          "confidence": 0.95,
+          "details": "O mascote (cérebro azul com cruz laranja) está presente como uma marca d'água sutil e semitransparente centralizada no fundo do gráfico."
+        }
+      ],
+      "images": [
+        {
+          "url": "https://bxedpdmgvgatjdfxgxij.supabase.co/storage/v1/object/public/questoes/revalida/2016/em-1993-a-tuberculose-passou-a-ser-reconhecida-pela-organiza-01.webp",
+          "field": "statement.images",
+          "visionAudit": {
+            "audited": true,
+            "has_medevo": true,
+            "confidence": 0.95,
+            "presence_type": "marca_dagua_sutil",
+            "location": "centro",
+            "details": "O mascote (cérebro azul com cruz laranja) está presente como uma marca d'água sutil e semitransparente centralizada no fundo do gráfico."
           }
         }
       ]

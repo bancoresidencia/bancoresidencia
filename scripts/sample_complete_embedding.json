@@ -1,0 +1,41 @@
+[
+  {
+    "id": "01ac6550-1f27-400f-b8e3-56ec03960dc6",
+    "especialidade": "Clínica Médica",
+    "novo_tema": "Gastroenterologia (Aparelho Digestivo e Fígado)",
+    "novo_foco": "Hemorragia Digestiva (Alta e Baixa)",
+    "novo_subfoco": "Hemorragia Digestiva Baixa (HDB): Divertículos, Angiodisplasia e Conduta",
+    "novo_sub_subfoco": null,
+    "statement": "Paciente do sexo masculino, 40 anos, alcoolista, com ingestão de 1L cachaça/dia há 20 anos, é trazido à emergência pelos bombeiros por enterorragia volumosa. Inspeção anal sem particularidades, mas com sangue em dedo de luva. Exame físico: SV: PA= 90 x 50 mmHg, FC= 110 bpm; FR= 24 rpm; T= 36,2°C. Estado geral regular; hipocorado++/4; alerta; orientado; pele xerótica; ausculta cardiopulmonar; exame do abdome e MMII normais. Duas horas após admissão, hemoglobina de 8,7 g/dl e hematócrito de 26%. Qual a melhor conduta inicial para o caso?",
+    "options": "[{\"text\":\"SF 0,9% 2000 ml + SG 10% 1000 ml 24h + omeprazol 40 mg 12/12h + colonoscopia.\",\"letter\":\"A\",\"explanation\":\"**Colonoscopia como exame inicial** para enterorragia volumosa é inadequada; a **EDA deve preceder**. Realizar **Soro Fisiológico isolado** em grande volume agrava a **ascite potencial**. O uso de **omeprazol 12/12h** é excessivo.\"},{\"text\":\"SG 5% 2000 ml + NaCl 20% 2 ampolas em cada SG 5% 24h + omeprazol 40 mg 12/12h + EDA nas primeiras 12h.\",\"letter\":\"B\",\"explanation\":\"A conduta inicial prioriza a **reposição volêmica cuidadosa com eletrólitos**, **inibidor de bomba de prótons** e a **realização de EDA nas primeiras 12h**, visto que a principal causa de **enterorragia volumosa com instabilidade hemodinâmica** ainda é o **sangramento de fonte alta**.\"},{\"text\":\"SF 0,9% 2000 ml 24h + SG 10% 1000 24h + octreotide 6 ampolas 24h + EDA nas primeiras 24h.\",\"letter\":\"C\",\"explanation\":\"**Octreotida por 24h** é insuficiente para o manejo de **varizes esofagianas**; a **EDA nas primeiras 24h** é tardia para o quadro de instabilidade e o **uso de SF 0,9% isolado** não previne o **agravamento do gradiente sinusoidal**.\"},{\"text\":\"SF 0,9% 1500 ml + NaCl 20% 1 ampola em cada SG 5% 24h + 2CH + omeprazol 40 mg/dia + EDA nas primeiras 24h.\",\"letter\":\"D\",\"explanation\":\"**Transfusão imediata de 2 concentrados de hemácias** é precipitada com Hb de 8,7 g/dl e **alvo restritivo de Hb > 7 g/dl**; o uso de **omeprazol em dose diária** é subótimo na fase aguda.\"},{\"text\":\"SF 0,9% 1000 ml + SG 5% 1000 ml 24h + SNG + omeprazol 40 mg/dia + colonoscopia.\",\"letter\":\"E\",\"explanation\":\"**Passagem de sonda nasogástrica rotineira** e **colonoscopia** ignoram que a **hemorragia digestiva alta volumosa** pode se manifestar como enterorragia com instabilidade, exigindo **EDA urgente**.\"}]",
+    "correct_answer": "B",
+    "commentary": "Paciente etilista crônico apresenta **enterorragia volumosa** associada à **instabilidade hemodinâmica** (hipotensão e taquicardia). Embora o sintoma seja enterorragia, cerca de 10% a 15% das **hemorragias digestivas altas graves** manifestam-se como **melena ou enterorragia** acompanhadas de trânsito acelerado. Portanto, a **endoscopia digestiva alta (EDA)** é o exame mandatório e deve ser realizada **nas primeiras 12 horas** após a ressuscitação inicial. A hidratação deve evitar o aporte excessivo de cloreto de sódio isotônico isolado para não precipitar **ascite ou edema**, utilizando **soro glicosado com reposição de sódio**.\n\nPrincipal Motivo de Erro:\nA principal armadilha da questão é induzir o examinando a solicitar uma **colonoscopia imediata** devido ao termo enterorragia, ignorando que o **sangramento alto volumoso** cursa com trânsito intestinal rápido e se manifesta como evacuação de sangue vivo.\n\nTake-Home Message:\nToda **hemorragia digestiva volumosa com instabilidade hemodinâmica**, mesmo manifestada por enterorragia, deve ser investigada inicialmente com **endoscopia digestiva alta urgente**.\n\nEvolução de Diretrizes:\nNão houveram atualizações recentes nas diretrizes em relação ao tema da questão.\n\nReferências:\n• Em atualização",
+    "motivo_regra": "[Embedding Local paraphrase-multilingual-MiniLM-L12-v2] Similaridade: 58.9% (Margem: +6.6%) | Foco: 'Hemorragia Digestiva (Alta e Baixa)'"
+  },
+  {
+    "id": "01b3c33d-4ba8-4cda-8855-588f3a702703",
+    "especialidade": "Cirurgia",
+    "novo_tema": "Abdome Agudo Cirúrgico",
+    "novo_foco": "Abdome Agudo Inflamatório",
+    "novo_subfoco": "Apendicite Aguda",
+    "novo_sub_subfoco": null,
+    "statement": "Um homem de 62 anos, etilista crônico, procura atendimento devido à queixa de epigastralgia esporádica e recorrente. Refere que os sintomas já persistem por anos, mas que nunca se preocupou em procurar atendimento, até que recentemente começou a perder peso. Refere que os episódios de dor costumam ser de forte intensidade, tipo queimação, com irradiação para o dorso e, geralmente, ocorrem após as refeições. A perda de peso foi de 15 kg em 03 meses. Observa ainda que apresenta fezes volumosas e malcheirosas e que “boiam na água”, sendo visíveis gotículas de gordura ao redor. Nega náuseas ou vômitos. Os exames laboratoriais revelam glicemia de jejum de 152 mg/dL, hemoglobina de 11,2 g/dL, bilirrubina total de 0,6 mg/dL e deficiência de vitamina D. O ultrassom de abdome mostrou que o pâncreas tem dimensões reduzidas, parênquima heterogêneo, com focos esparsos de calcificação e dilatação do ducto pancreático principal. Com base no quadro clínico descrito, assinale a alternativa correta:",
+    "options": "[{\"text\":\"O quadro de dor epigástrica recorrente e a má absorção estão relacionados à inflamação aguda das células acinares e tendem a melhorar após jejum e hidratação venosa vigorosa.\",\"letter\":\"A\"},{\"text\":\"A esteatorreia é sinal de que houve perda da função endócrina pancreática, sendo indicada insulinoterapia como tratamento inicial.\",\"letter\":\"B\"},{\"text\":\"A condição é irreversível e crônica, havendo evidências de insuficiência exócrina e endócrina. São necessários suporte nutricional e reposição enzimática.\",\"letter\":\"C\"},{\"text\":\"É improvável que o quadro álgico seja proveniente de um acometimento pancreático, principalmente pela ausência de icterícia laboratorial.\",\"letter\":\"D\"},{\"text\":\"A suspeita clínica é de tumor da cabeça pancreática, e a conduta deve ser a realização de Colangiopancreatografia Retrógrada Endoscópica (CPRE) com biópsias ou citologia.\",\"letter\":\"E\"}]",
+    "correct_answer": "C",
+    "commentary": "",
+    "motivo_regra": "[Embedding Local paraphrase-multilingual-MiniLM-L12-v2] Similaridade: 48.7% (Margem: +7.9%) | Foco: 'Abdome Agudo Inflamatório'"
+  },
+  {
+    "id": "01beceb8-4285-4910-b203-fc6251f81ec4",
+    "especialidade": "Cirurgia",
+    "novo_tema": "Abdome Agudo Cirúrgico",
+    "novo_foco": "Abdome Agudo Perfurativo",
+    "novo_subfoco": "Perfuração de Cólon e Corpo Estranho Gastrointestinal",
+    "novo_sub_subfoco": null,
+    "statement": "Paciente do sexo masculino, portador de retocolite ulcerativa aciente em tratamento da fase aguda de retocolite ulcerativa desenvolve quadro de hipotensão, taquicardia, e distensão abdominal com sinais de peritonite. O tratamento, neste caso, deverá evitar lesão de:",
+    "options": "[{\"text\":\"Cirurgia de Hartmann.\",\"letter\":\"A\"},{\"text\":\"Colectomia esquerda + anastomose primária.\",\"letter\":\"B\"},{\"text\":\"Colonoscopia descompressiva.\",\"letter\":\"C\"},{\"text\":\"Colectomia total + ileostomia.\",\"letter\":\"D\"}]",
+    "correct_answer": "D",
+    "commentary": "Gabarito Oficial Homologado - CEPOA 2019 (Prova Oficial Definitiva)",
+    "motivo_regra": "[Embedding Local paraphrase-multilingual-MiniLM-L12-v2] Similaridade: 64.4% (Margem: +16.3%) | Foco: 'Abdome Agudo Perfurativo'"
+  }
+]

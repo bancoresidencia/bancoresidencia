@@ -4,6 +4,7 @@ import { createClient as createSupabaseServerClient } from '@/lib/supabase/serve
 import { validateQuestionId } from '@/utils/security';
 import { verifySessionTicket } from '@/utils/securityTickets';
 import { injectZeroWidthWatermark } from '@/utils/watermark';
+import { sanitizeMedicalText } from '@/utils/textSanitizer';
 
 export const dynamic = 'force-dynamic';
 
@@ -226,14 +227,14 @@ export async function POST(req: NextRequest) {
         : (isAnulada ? 'ANULADA' : '');
 
       // Injeção de Marca d'Água Esteganográfica Forense (Fase 3: Zero-Width Watermarking)
-      const watermarkedCommentary = injectZeroWidthWatermark(row.commentary || '', userIdForWatermark);
+      const watermarkedCommentary = injectZeroWidthWatermark(sanitizeMedicalText(row.commentary || ''), userIdForWatermark);
       const rawOptions = Array.isArray(row.options) ? row.options : [];
       const watermarkedOptions = rawOptions.map((opt: unknown) => {
         if (opt && typeof opt === 'object' && 'justification' in opt) {
           const optObj = opt as { justification?: string; [key: string]: unknown };
           return {
             ...optObj,
-            justification: injectZeroWidthWatermark(optObj.justification || '', userIdForWatermark)
+            justification: injectZeroWidthWatermark(sanitizeMedicalText(optObj.justification || (optObj as any).explanation || ''), userIdForWatermark)
           };
         }
         return opt;

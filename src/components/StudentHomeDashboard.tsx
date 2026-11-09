@@ -138,6 +138,7 @@ interface StudentHomeDashboardProps {
   onNavigateToBancoWithSpecialty?: (specialty: string) => void;
   onStartSimuladoExpress?: (count?: number) => void;
   onStartTopicPractice?: (specialty: string, tema?: string, search?: string, limit?: number) => void;
+  onNavigateToBancoWithSubfoco?: (specialty: string, tema: string, subfoco: string, subSubfoco?: string) => void;
   userAnswers?: Record<string, UserAnswerItem>;
 }
 
@@ -208,6 +209,7 @@ export const StudentHomeDashboard: React.FC<StudentHomeDashboardProps> = ({
   onNavigateToBancoWithSpecialty,
   onStartSimuladoExpress,
   onStartTopicPractice,
+  onNavigateToBancoWithSubfoco,
   userAnswers
 }) => {
   const { accentConfig, mode, isDashboardCustomizing, setIsDashboardCustomizing, setCanCustomizeLayout } = useTheme();

@@ -1,1848 +1,1891 @@
-import { SpecialtyHierarchy } from '@/types';
+import { SpecialtyHierarchy } from "@/types";
 
 export const cirurgiaHierarchy: SpecialtyHierarchy = {
-  "especialidade": "Cirurgia",
+  "especialidade": "Cirurgia Geral",
   "temas": [
     {
-      "tema": "Anestesiologia",
-      "focos": [
-        {
-          "foco": "Bloqueios Anestésicos Regionais",
-          "subfocos": [
-            "Anestesia Peridural e Diferenças da Raqui",
-            "Bloqueio de Plexo Braquial: Interescalênico e Supraclavicular",
-            "Bloqueio Femoral e Ciático",
-            "Bloqueios Anestésicos Regionais",
-            "Raquianestesia: Técnica, Hipotensão e CPPD"
-          ]
-        },
-        {
-          "foco": "Complicações Anestésicas",
-          "subfocos": [
-            "Broncoaspiração: Diagnóstico e Consequências",
-            "Broncoaspiração: Prevenção e Fatores de Risco",
-            "Complicações Anestésicas",
-            "Hipertermia Maligna: Diagnóstico e Fisiopatologia",
-            "Hipertermia Maligna: Tratamento e Manejo",
-            "Reações Anafiláticas e Anestésicos Locais"
-          ]
-        },
-        {
-          "foco": "Farmacologia Anestésica",
-          "subfocos": [
-            "Anestésicos Inalatórios: Propriedades e Comparação",
-            "Anestésicos Locais: Lidocaína, Bupivacaína e Outros",
-            "Anestésicos Venosos: Propofol, Midazolam e Outros",
-            "Bloqueadores Neuromusculares e Reversão",
-            "Complicações e Toxicidade de Anestésicos",
-            "Farmacologia Anestésica",
-            "Opioides: Farmacologia e Uso Clínico"
-          ]
-        },
-        {
-          "foco": "Relaxantes Musculares",
-          "subfocos": [
-            "Relaxantes Musculares",
-            "Rocurônio e Vecurônio: Não-despolarizantes",
-            "Succinilcolina: Fasciculações e Hipercalemia",
-            "Sugamadex: Reversão Rápida do Rocurônio"
-          ]
-        },
-        {
-          "foco": "Tipos de Anestesia",
-          "subfocos": [
-            "Anestesia Geral e Manejo de Vias Aéreas",
-            "Anestesia Neuroaxial: Raqui, Peridural e Combinada",
-            "Avaliação Pré-Anestésica, Sedação e Situações Especiais",
-            "Monitorização e Avaliação em Anestesia",
-            "Tipos de Anestesia"
-          ]
-        },
-        {
-          "foco": "Via Aérea Difícil",
-          "subfocos": [
-            "Algoritmo de Via Aérea Difícil e Dispositivos Supraglóticos",
-            "Avaliação e Manejo da Via Aérea",
-            "Avaliação e Predição de Via Aérea Difícil",
-            "Cricotireoidostomia e Acesso Cirúrgico de Emergência",
-            "Via Aérea Difícil"
-          ]
-        }
-      ]
+        "tema": "Trauma e Atendimento Inicial",
+        "focos": [
+            {
+                "foco": "Avaliação Inicial e Via Aérea no Trauma (A do ATLS)",
+                "subfocos": [
+                    {
+                        "subfoco": "Sistematização do Exame Primário (ABCDE do ATLS)",
+                        "sub_subfocos": [
+                            "A: Via Aérea com Controle Cervical (Colar Cervical e Prancha Rígida)",
+                            "B: Respiração e Ventilação; C: Circulação e Controle da Hemorragia; D: Incapacidade e Estado Neurológico; E: Exposição com Controle de Hipotermia"
+                        ]
+                    },
+                    {
+                        "subfoco": "Via Aérea Definitiva e Via Aérea Difícil no Trauma",
+                        "sub_subfocos": [
+                            "Sequência de Prioridades e Reavaliação Contínua",
+                            "Indicações Formais de Via Aérea Definitiva: Apneia, Glasgow <= 8, Fraturas Faciais Graves, Queimadura de Vias Aéreas",
+                            "Intubação Orotraqueal com Estabilização Cervical Manual em Linha",
+                            "Cricotireoidostomia Cirúrgica como Via Aérea Cirúrgica de Escolha no Trauma (\"Não Intubo, Não Ventilo\") vs Traqueostomia"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Trauma Torácico com Risco Iminente de Morte (Pneumotórax Hipertensivo/Aberto, Hemotórax Maciço, Tamponamento)",
+                "subfocos": [
+                    {
+                        "subfoco": "Pneumotórax Hipertensivo e Pneumotórax Aberto",
+                        "sub_subfocos": [
+                            "Pneumotórax Hipertensivo: Diagnóstico Clínico Imediato (Hipotensão, Turgência Jugular, Murmúrio Vesicular Abolido e Desvio de Traqueia) - Jamais Aguardar Radiografia"
+                        ]
+                    },
+                    {
+                        "subfoco": "Hemotórax Maciço e Tamponamento Cardíaco",
+                        "sub_subfocos": [
+                            "Descompressão Imediata por Toracostomia com Agulha (5º EIC na Linha Axilar Anterior ou 2º EIC na Linha Hemiclavicular) seguida de Drenagem Tubular em Selo d'Água",
+                            "Pneumotórax Aberto: Curativo de 3 Pontas Provisório e Drenagem em Sítio Cirúrgico Distante",
+                            "Hemotórax Maciço: Drenagem Torácica Imediata > 1.500 mL de Sangue ou > 200-300 mL/hora por 2-4 Horas Consecutivas = Indicação de Toracotomia de Urgência",
+                            "Tamponamento Cardíaco: Tríade de Beck (Hipotensão, Hipofonese de Bulhas e Turgência Jugular) e Janela Subxifoide / Toracotomia de Emergência"
+                        ]
+                    },
+                    {
+                        "subfoco": "Tórax Instável e Contusão Pulmonar",
+                        "sub_subfocos": [
+                            "Fratura de 2 ou Mais Costelas Consecutivas em pelo menos 2 Pontos com Respiração Paradoxal"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Trauma Abdominal Contuso e Penetrante (FAST e Laparotomia)",
+                "subfocos": [
+                    {
+                        "subfoco": "Avaliação por FAST e Lavado Peritoneal Diagnóstico",
+                        "sub_subfocos": [
+                            "Tratamento Centrado na Analgesia Agressiva (Bloqueio Epidural), Fisioterapia Respiratória e Ventilação Mecânica se Necessário",
+                            "E-FAST: Avaliação dos 4 Espaços Anatômicos (Hepatorrenal / Morrison, Esplenorrenal, Pelve / Suprapúbico e Subxifoide / Pericárdico) + Janelas Apicais Pleurais"
+                        ]
+                    },
+                    {
+                        "subfoco": "Trauma Penetrante: Arma Branca vs Arma de Fogo",
+                        "sub_subfocos": [
+                            "Paciente Instável com FAST Positivo = Laparotomia Exploradora Imediata sem Perda de Tempo com TC",
+                            "Paciente Estável com Trauma Fechado = Tomografia de Abdome com Contraste Venoso",
+                            "Ferimento por Arma de Fogo com Trajeto Abdominal = Laparotomia Exploradora Mandatória (> 90% de Lesões Viscerais)",
+                            "Ferimento por Arma Branca: Exploração Digital da Ferida sob Anestesia Local; se Fáscia Íntegra -> Alta; se Fáscia Violada - > Observação Seriada por 24h ou Laparotomia se Peritonite"
+                        ]
+                    },
+                    {
+                        "subfoco": "Trauma de Baço e Fígado (Manejo Não Operatório - MNO)",
+                        "sub_subfocos": [
+                            "Critérios de MNO: Paciente Hemodinamicamente Estável, Ausência de Sinais de Peritonite e Disponibilidade de UTI / Cirurgião de Plantão"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Trauma Cranioencefálico (TCE Leve, Moderado e Grave)",
+                "subfocos": [
+                    {
+                        "subfoco": "Hematoma Extradural vs Hematoma Subdural Agudo",
+                        "sub_subfocos": [
+                            "Angioembolização em Lesões de Alto Grau com \"Blush\" Arterial de Contraste na TC",
+                            "Hematoma Extradural / Epidural: Rotura da Artéria Meníngea Média, História de \"Intervalo Lúcido\", TC com Imagem Biconvexa / Hiperdensa que Respeita as Suturas Cranianas",
+                            "Hematoma Subdural Agudo: Ruptura de Veias Pontes Corticais, Idosos e Alcoólatras, TC com Imagem em Crescente / Semilunar Hiperdensa que Ultrapassa as Suturas"
+                        ]
+                    },
+                    {
+                        "subfoco": "Manejo da Hipertensão Intracraniana e Escala de Glasgow",
+                        "sub_subfocos": [
+                            "Classificação: TCE Leve (Glasgow 13-15), Moderado (9-12) e Grave (<= 8)",
+                            "Tríade de Cushing (Hipertensão Arterial, Bradicardia e Respiração Irregular)",
+                            "Medidas de Neuroproteção: Cabeceira Elevada a 30°, Sedação, Normotermia, Salina Hipertônica a 3% ou Manitol e Meta de PAM"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Trauma Raquimedular (TRM)",
+                "subfocos": [
+                    {
+                        "subfoco": "Avaliação Neurológica Inicial e Nível de Lesão (Escala ASIA)",
+                        "sub_subfocos": [
+                            "Classificação da Escala de Deficiência de ASIA (A: Completo a E: Normal) e Nível Motor/Sensitivo",
+                            "Diferenciação Canônica: Choque Medular (Flacidez e Arreflexia Transitória) vs Choque Neurogênico (Hipotensão e Bradicardia por Perda de Tônus Simpático)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Imobilização, Propedêutica por Imagem e Indicações Cirúrgicas de Descompressão",
+                        "sub_subfocos": [
+                            "Critérios de Restrição de Movimento da Coluna e Critérios NEXUS / Canadian C-Spine Rule para TC de Coluna",
+                            "Indicações Cirúrgicas de Urgência: Déficit Neurológico Progressivo, Fratura Instável e Compressão Medular Aguda",
+                            "Mecanismos Canônicos: Compressão Anteroposterior ('Livro Aberto' / Ruptura do Plexo Venoso Pré-Sacral), Compressão Lateral e Cisalhamento Vertical"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Trauma Pélvico e Hemorragia Retroperitoneal",
+                "subfocos": [
+                    {
+                        "subfoco": "Mecanismo de Trauma, Classificação de Young-Burgess e Diagnóstico",
+                        "sub_subfocos": [
+                            "Propedêutica Rápida no Trauma: Radiografia de Bacia no ATLS, FAST Estendido e Angio-TC em Paciente Estável"
+                        ]
+                    },
+                    {
+                        "subfoco": "Estabilização Hemodinâmica, Lençol Pélvico, Fixador Externo e Angioembolização",
+                        "sub_subfocos": [
+                            "Fechamento Imediato da Pelve no Choque com Lençol / Cinta Pélvica na Altura dos Grandes Trocanteres"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Choque no Trauma e Ressuscitação Hemostática",
+                "subfocos": [
+                    {
+                        "subfoco": "Classificação do Choque Hemorrágico (Classes I a IV do ATLS)",
+                        "sub_subfocos": [
+                            "Algoritmo no Paciente Instável: Fixação Externa e Packing Pré-Peritoneal vs Angiografia com Embolização Seletiva"
+                        ]
+                    },
+                    {
+                        "subfoco": "Hipotensão Permissiva e Alvos de Ressuscitação",
+                        "sub_subfocos": [
+                            "Classe I (< 15% de perda), Classe II (15-30% - Taquicardia, PA normal), Classe III (30-40% - Hipotensão, Oligúria), Classe IV (> 40% - Choque Profundo, Rebaixamento)",
+                            "Transfusão Maciça: Relação 1:1:1 (Concentrado de Hemácias, Plasma Fresco Congelado e Plaquetas)",
+                            "Ácido Tranexâmico (TXA): 1 g em Bolus em até 3 Horas do Trauma seguido de 1 g em Infusão Contínua por 8 Horas"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Cirurgia de Controle de Danos (Damage Control)",
+                "subfocos": [
+                    {
+                        "subfoco": "As 3 Fases do Damage Control Surgery",
+                        "sub_subfocos": [
+                            "Alvo de PAS entre 80-90 mmHg até o Controle Cirúrgico Definitivo da Hemorragia (Exceto se TCE Grave Concomitante)",
+                            "Controle Agressivo da Tríade Letal: Hipotermia, Acidose Metabólica e Coagulopatia",
+                            "Fase 1 (Bloco Cirúrgico): Laparotomia Abreviada, Controle Hemostático (Empacotamento / Packing Hepático) e Controle de Contaminação (Ligadura de Alças sem Anastomoses) e Fechamento Provisório (Bolsa de Bogotá / Vácuo)",
+                            "Fase 2 (UTI): Reaquecimento Ativo, Correção da Acidose e da Coagulopatia, Otimização Ventilatória"
+                        ]
+                    },
+                    {
+                        "subfoco": "Síndrome Compartimental Abdominal (SCA)",
+                        "sub_subfocos": [
+                            "Fase 3 (Reoperação Programada em 24-72h): Retirada de Compressas, Reconstrução do Trânsito e Fechamento Definitivo",
+                            "Pressão Intra-Abdominal (PIA) Normal vs Hipertensão Intra-Abdominal (HIA > 12 mmHg)",
+                            "Critério de SCA: PIA > 20 mmHg associada a Nova Disfunção Orgânica (Oligúria, Hipoxemia, Queda do Débito Cardíaco)",
+                            "Tratamento Definitivo: Laparostomia Descompressiva de Emergência"
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     {
-      "tema": "Antibioticoprofilaxia e Infecção",
-      "focos": [
-        {
-          "foco": "Antibioticoprofilaxia Cirúrgica",
-          "subfocos": [
-            "Antibioticoprofilaxia Cirúrgica",
-            "Descontaminação e Preparo do Sítio Cirúrgico",
-            "Escolha do Antibiótico Profilático em Cirurgias",
-            "Indicações de Antibioticoprofilaxia em Cirurgias Eletivas",
-            "Repique e Situações Especiais (Obesidade, Alergia)",
-            "Timing e Duração da Antibioticoprofilaxia Cirúrgica"
-          ]
-        },
-        {
-          "foco": "Fascite Necrosante e Gangrena",
-          "subfocos": [
-            "Fasceíte Necrosante: Apresentação Clínica e Diagnóstico",
-            "Fasceíte Necrosante: Manejo e Conduta",
-            "Fascite Necrosante e Gangrena",
-            "Síndrome de Fournier: Etiologia e Fatores de Risco"
-          ]
-        },
-        {
-          "foco": "Infecção de Sítio Cirúrgico",
-          "subfocos": [
-            "Classificação de Feridas (Limpa, Potencialmente Contaminada, Contaminada, Infectada)",
-            "Diagnóstico, Manejo e Antibioticoterapia da ISC",
-            "Fatores de Risco e Prevenção de ISC",
-            "Infecção de Sítio Cirúrgico",
-            "Infecção de Sítio Cirúrgico de Órgão/Cavidade (ISC)",
-            "Infecção de Sítio Cirúrgico Profunda (ISC)",
-            "Infecção de Sítio Cirúrgico Superficial (ISC)"
-          ]
-        },
-        {
-          "foco": "Sepse no Paciente Cirúrgico",
-          "subfocos": [
-            "Controle de Foco: Drenagem e Debridamento",
-            "Definição de Sepse e Choque Séptico (Sepsis-3)",
-            "Focos Infecciosos Cirúrgicos: Abdome e Partes Moles",
-            "Ressuscitação Inicial: Bundle da 1ª Hora",
-            "Sepse no Paciente Cirúrgico"
-          ]
-        },
-        {
-          "foco": "Tétano",
-          "subfocos": [
-            "Classificação de Feridas Tetanogênicas",
-            "Fisiopatologia e Quadro Clínico",
-            "Profilaxia: Vacina e Imunoglobulina",
-            "Tétano",
-            "Tratamento do Tétano Estabelecido"
-          ]
-        }
-      ]
+        "tema": "Abdome Agudo Cirúrgico",
+        "focos": [
+            {
+                "foco": "Abdome Agudo Inflamatório",
+                "subfocos": [
+                    {
+                        "subfoco": "Apendicite Aguda",
+                        "sub_subfocos": [
+                            "Fisiopatologia, Cronologia de Murphy e Sinais Físicos Canônicos (Blumberg, Rovsing, Lenander, Obturador e Psoas)",
+                            "Escore de Alvarado, Propedêutica por Imagem (USG vs TC) e Apendicectomia Videolaparoscópica de Urgência"
+                        ]
+                    },
+                    {
+                        "subfoco": "Colecistite Aguda Litiásica e Alitiásica",
+                        "sub_subfocos": [
+                            "Tríade Diagnóstica de Tóquio (Sinal de Murphy, Sinais Sistêmicos e Achados USG com Parede Espessada > 4 mm)",
+                            "Colecistectomia Videolaparoscópica Precoce (< 72h) vs Colecistostomia Percutânea em Pacientes Graves"
+                        ]
+                    },
+                    {
+                        "subfoco": "Diverticulite Aguda dos Cólons",
+                        "sub_subfocos": [
+                            "Classificação Tomográfica de Hinchey (Estágios I a IV) e Diagnóstico por TC com Contraste",
+                            "Tratamento Clínico com Dieta/Antibiótico vs Drenagem Percutânea (Hinchey II) vs Cirurgia de Hartmann (III e IV)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Pancreatite Aguda Necrosante Cirúrgica",
+                        "sub_subfocos": [
+                            "Necrose Pancreática Estéril vs Infectada (Gás à TC ou Punção) e Abordagem Escalonada (Step-Up Approach)",
+                            "Indicações e Momento da Colecistectomia na Pancreatite Biliar (Na Mesma Internação se Leve)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Abdome Agudo Obstrutivo",
+                "subfocos": [
+                    {
+                        "subfoco": "Obstrução Intestinal por Bridas e Aderências",
+                        "sub_subfocos": [
+                            "Quadro Clínico (Dor em Cólica, Vômitos Biliosos, Parada de Eliminação de Gases e Fezes e Níveis Hidroaéreos)",
+                            "Tratamento Conservador Inicial com Sonda Nasogástrica e Hidratação vs Laparotomia por Estrangulamento / Sofrimento de Alça"
+                        ]
+                    },
+                    {
+                        "subfoco": "Volvo de Sigmoide e Ceco",
+                        "sub_subfocos": [
+                            "Sinal do 'Grão de Café' / 'U Invertido' à Radiografia de Abdome e Volvo de Sigmoide",
+                            "Descompressão Endoscópica por Colonoscopia seguida de Sigmoidectomia Eletiva vs Cirurgia de Emergência se Isquemia"
+                        ]
+                    },
+                    {
+                        "subfoco": "Neoplasia Colorretal Obstrutiva e Hérnias Encarceradas",
+                        "sub_subfocos": [
+                            "Câncer de Cólon Esquerdo Obstrutivo: Prótese Endoscópica Autoexpansível vs Cirurgia de Hartmann de Urgência",
+                            "Hérnias Inguinais e Femorais Encarceradas e Estranguladas (Indicação Cirúrgica Imediata sem Tentativa de Redução)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Íleo Paralítico vs Síndrome de Ogilvie (Pseudo-obstrução)",
+                        "sub_subfocos": [
+                            "Diferenciação: Íleo Paralítico Pós-Operatório / Hidroeletrolítico (Difuso) vs Síndrome de Ogilvie (Dilatação Maciça de Cólon)",
+                            "Manejo da Síndrome de Ogilvie: Descompressão com Neostigmina EV e Colonoscopia Descompressiva se Ceco > 10-12 cm"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Abdome Agudo Perfurativo",
+                "subfocos": [
+                    {
+                        "subfoco": "Úlcera Péptica Perfurada (Gástrica e Duodenal)",
+                        "sub_subfocos": [
+                            "Quadro Hiperagudo: Dor Súbita Lancinante em Facada com Abdome em Tábua e Pneumoperitônio (Sinal de Jobert)",
+                            "Tratamento Cirúrgico: Laparotomia / Laparoscopia com Úlcerorrafia e Patch de Omento (Manobra de Graham)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Perfuração de Cólon e Corpo Estranho Gastrointestinal",
+                        "sub_subfocos": [
+                            "Perfuração de Divertículo, Neoplasia ou Pós-Colonoscopia com Pneumoperitônio e Peritonite Fecaloide",
+                            "Ressuscitação Volêmica Agressiva, Antibioticoterapia de Amplo Espectro e Laparotomia com Ressecção e Estoma"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Abdome Agudo Vascular",
+                "subfocos": [
+                    {
+                        "subfoco": "Isquemia Mesentérica Aguda (Embolia e Trombose Arterial)",
+                        "sub_subfocos": [
+                            "Dor Abdominal Desproporcional aos Achados do Exame Físico Inicial em Cardiopatas com Fibrilação Atrial",
+                            "Evolução Tardia: Acidose Láctica Grave, Distensão Abdominal e Sinais de Necrose de Alça / Peritonite"
+                        ]
+                    },
+                    {
+                        "subfoco": "Isquemia Mesentérica Não Oclusiva (IMNO) e Trombose Venosa Mesentérica",
+                        "sub_subfocos": [
+                            "IMNO em Pacientes Críticos em Choque em Uso de Vasopressores em Altas Doses (Infusão de Vasodilatadores Intra- arteriais)",
+                            "Trombose Venosa Mesentérica em Pacientes com Trombofilias (Anticoagulação Plena com Heparina)",
+                            "Isquemia Transitória de Baixo Fluxo em Áreas de Divisor de Águas (Ponto de Griffith e Ponto de Sudeck)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Colite Isquêmica",
+                        "sub_subfocos": [
+                            "Colonoscopia Precoce sem Insuflação Excessiva e Tratamento Conservador na Maioria dos Casos"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Abdome Agudo Hemorrágico",
+                "subfocos": [
+                    {
+                        "subfoco": "Rotura de Aneurisma de Aorta Abdominal (AAA)",
+                        "sub_subfocos": [
+                            "Tríade Clássica: Dor Lombar/Abdominal Súbita Intensa, Hipotensão/Choque e Massa Abdominal Pulsátil Palpável",
+                            "Conduta na Instabilidade Hemodinâmica: Laparotomia Imediata com Clampeamento Aórtico Supra/Infrarrenal vs Reparo Endovascular (EVAR)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Rotura de Cisto Ovariano Hemorrágico e Gravidez Ectópica Rota Cirúrgica",
+                        "sub_subfocos": [
+                            "Choque Hemorrágico Ginecológico-Cirúrgico com Sinal de Proust (Abaulamento e Dor Excruciante no Fundo de Saco de Douglas)",
+                            "Tratamento Cirúrgico por Laparoscopia / Salpingectomia de Emergência"
+                        ]
+                    },
+                    {
+                        "subfoco": "Rotura Espontânea de Neoplasias Hepáticas (Adenoma e Hepatocarcinoma)",
+                        "sub_subfocos": [
+                            "Hemoperitônio Agudo em Mulher Jovem em Uso Prolongado de ACO (Adenoma Hepático Roto)",
+                            "Embolização Angiográfica de Emergência vs Hepatectomia"
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     {
-      "tema": "Cirurgia Bariátrica e Metabólica",
-      "focos": [
-        {
-          "foco": "Bypass Gástrico em Y-de-Roux",
-          "subfocos": [
-            "Bypass Gástrico em Y-de-Roux",
-            "Complicações Específicas do Bypass (Precoces e Tardias)",
-            "Síndrome de Dumping e Efeitos Metabólicos",
-            "Técnica Cirúrgica e Alterações Anatômicas"
-          ]
-        },
-        {
-          "foco": "Cirurgia Metabólica",
-          "subfocos": [
-            "Cirurgia Metabólica para DM2: Critérios IDF/IFSO",
-            "Critérios de Indicação: IMC ≥40 ou ≥35 com Comorbidades",
-            "Efeito Incretínico e Mecanismos de Remissão do DM"
-          ]
-        },
-        {
-          "foco": "Cirurgias Disabsortivas",
-          "subfocos": [
-            "Complicações Nutricionais e Suplementação",
-            "Derivação Biliopancreática: Scopinaro e Duodenal Switch",
-            "Indicações e Contraindicações",
-            "Mecanismo de Perda Ponderal"
-          ]
-        },
-        {
-          "foco": "Cirurgias Restritivas",
-          "subfocos": [
-            "Banda Gástrica Ajustável",
-            "Complicações: Fístula e Estenose",
-            "Gastrectomia Vertical (Sleeve)",
-            "Mecanismo de Perda Ponderal"
-          ]
-        },
-        {
-          "foco": "Complicações da Cirurgia Bariátrica",
-          "subfocos": [
-            "Complicações da Cirurgia Bariátrica",
-            "Complicações Precoces: Hemorragia, TEP e Rabdomiólise",
-            "Complicações Tardias: DRGE Pós-Sleeve, Reganho de Peso e Deficiências Nutricionais",
-            "Estenose e Úlcera Marginal",
-            "Fístula Anastomótica: Diagnóstico e Manejo",
-            "Hérnia Interna e Obstrução Intestinal"
-          ]
-        },
-        {
-          "foco": "Tratamento Cirúrgico da Obesidade",
-          "subfocos": [
-            "Avaliação Multidisciplinar e Preparo Pré-operatório",
-            "Complicações e Riscos Perioperatórios",
-            "Critérios de Elegibilidade e Indicação Cirúrgica",
-            "Regulamentação, Legislação e Dados Epidemiológicos",
-            "Técnicas Cirúrgicas e Mecanismos de Ação",
-            "Tratamento Cirúrgico da Obesidade"
-          ]
-        }
-      ]
+        "tema": "Cirurgia do Trato Gastrointestinal Alto",
+        "focos": [
+            {
+                "foco": "Câncer Gástrico (Adenocarcinoma e GIST)",
+                "subfocos": [
+                    {
+                        "subfoco": "Adenocarcinoma Gástrico e Classificação de Lauren",
+                        "sub_subfocos": [
+                            "Classificação Histológica de Lauren: Tipo Intestinal (Idosos, Homens, Diferenciado, Relação com Gastrite Atrófica / *H. pylori*) vs Tipo Difuso (Jovens, Mulheres, Células em Anel de Sinete, Hereditário, Pior Prognóstico)",
+                            "Sinais de Incurabilidade / Metástases à Distância: Linfonodo de Virchow (Supraclavicular Esquerdo), Linfonodo de Irish (Axilar Esquerdo), Nódulo da Irmã Maria José (Umbilical), Prateleira de Blumer e Tumor de Krukenberg"
+                        ]
+                    },
+                    {
+                        "subfoco": "Estadiamento e Tratamento Cirúrgico com Linfadenectomia D2",
+                        "sub_subfocos": [
+                            "Indicação de Gastrectomia Subtotal (Lesões Distais / Antrais com Margem de Segurança >= 5 cm) vs Total (Lesões Proximais / Corpo Alto / Tipo Difuso)",
+                            "Tumores Estromais Gastrointestinais (GIST): Origem nas Células de Cajal, Marcador c-KIT / CD117 Positivo e Terapia com Imatinibe"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Úlcera Péptica e Complicações Cirúrgicas (Sangramento e Estenose)",
+                "subfocos": [
+                    {
+                        "subfoco": "Complicações Cirúrgicas da Doença Ulcerosa Péptica",
+                        "sub_subfocos": [
+                            "Estenose Pilórica Cicatricial (Vômitos Pós-Prandiais Tardios de Alimentos Não Digeridos, Alcalose Metabólica Hipoclorêmica e Hipocalêmica)",
+                            "Hemorragia Digestiva Refratária a Tratamento Endoscópico (Indicações de Cirurgia de Urgência)",
+                            "Técnicas de Reconstrução: Billroth I (Gastroduodenostomia), Billroth II (Gastrojejunostomia com Alça Aferente) e Y de Roux"
+                        ]
+                    },
+                    {
+                        "subfoco": "Síndromes Pós-Gastrectomia",
+                        "sub_subfocos": [
+                            "Síndrome de Dumping Precoce (Sintomas Vasomotores e Gastrointestinais 20-30 min pós-dieta hiperosmolar) vs Tardia (Hipoglicemia Reativa 2-3h pós-refeição)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Doença do Refluxo Gastroesofágico e Hérnia de Hiato Cirúrgica",
+                "subfocos": [
+                    {
+                        "subfoco": "Indicações de Tratamento Cirúrgico da DRGE",
+                        "sub_subfocos": [
+                            "Gastrite por Refluxo Biliar / Alcalino e Síndrome da Alça Aferente",
+                            "Pacientes Jovens Refratários a IBP, Intolerantes à Medicação, com Grandes Hérnias de Hiato ou Complicações Respiratórias Recorrentes",
+                            "Exames Pré-Operatórios Obrigatórios: EDA, Esofagomanometria (Avaliar Motilidade do Corpo Esofágico) e pHmetria de 24 Horas"
+                        ]
+                    },
+                    {
+                        "subfoco": "Fundoplicatura Laparoscópica (Técnicas)",
+                        "sub_subfocos": [
+                            "Fundoplicatura Total a Nissen (360° - Indicada se Motilidade Esofágica Normal)",
+                            "Fundoplicaturas Parciais: Toupet (Posterior 270°) ou Dor (Anterior 180°) se Hipomotilidade Esofágica para Prevenção de Disfagia Pós-Operatória",
+                            "Hérnias Paraesofágicas / Mistas (Risco de Volvo Gástrico e Estrangulamento)",
+                            "Perda dos Plexos Mioentéricos de Auerbach (Etiologia Idiopática vs Doença de Chagas)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Megaesôfago e Acalasia",
+                "subfocos": [
+                    {
+                        "subfoco": "Fisiopatologia e Diagnóstico da Acalasia",
+                        "sub_subfocos": [
+                            "Disfagia de Transferência Lenta e Progressiva para Sólidos e Líquidos associada a Regurgitação e Perda Ponderal",
+                            "Esofagograma Baritado: Sinal do \"Bico de Pássaro\" ou \"Chama de Vela"
+                        ]
+                    },
+                    {
+                        "subfoco": "Classificação Radiológica de Rezende e Tratamento",
+                        "sub_subfocos": [
+                            "Graus de Rezende: Grupo I (Até 4 cm), Grupo II (4 a 7 cm), Grupo III (7 a 10 cm), Grupo IV (Dolicomegaesôfago > 10 cm)",
+                            "Tratamento de Escolha para Grupos II e III: Cardiomiotomia a Heller associada a Fundoplicatura Antirrefluxo Parcial Videolaparoscópica",
+                            "Esofagectomia Subtotal com Reconstrução Gástrica em Dolicomegaesôfago Grau IV Refratário"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Câncer de Esôfago",
+                "subfocos": [
+                    {
+                        "subfoco": "Carcinoma Espinocelular (CEC) vs Adenocarcinoma",
+                        "sub_subfocos": [
+                            "CEC de Esôfago: Terço Médio e Superior, Associação Forte com Tabagismo e Etilismo",
+                            "Adenocarcinoma de Esôfago: Terço Inferior e Junção Esofagogástrica, Relação Direta com DRGE Crônica e Esôfago de Barrett"
+                        ]
+                    },
+                    {
+                        "subfoco": "Estadiamento e Tratamento Cirúrgico",
+                        "sub_subfocos": [
+                            "Ecoendoscopia (Ultrassom Endoscópico) para Avaliação de Profundidade Tumoral (T) e Linfonodos (N)",
+                            "Quimiorradioterapia Neoadjuvante seguida de Esofagectomia Transtorácica (Ivor Lewis ou McKeown) ou Trans-Hiatal",
+                            "IMC >= 40 kg/m2 ou IMC >= 35 kg/m2 com Comorbidades Graves (DM2, HAS, SAOS, Dislipidemia) Refratárias ao Manejo Clínico por pelo menos 2 Anos"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Cirurgia Bariátrica e Metabólica",
+                "subfocos": [
+                    {
+                        "subfoco": "Indicações Formais e Critérios do CFM",
+                        "sub_subfocos": [
+                            "Cirurgia Metabólica para Diabéticos Tipo 2 com IMC >= 30 kg/m2 sem Resposta Clínica Otimizada",
+                            "Bypass Gástrico em Y de Roux (Fobi-Capella): Misto Restritivo e Disabsortivo Leve (Excelente para DRGE e Diabetes)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Técnicas Cirúrgicas e Complicações",
+                        "sub_subfocos": [
+                            "Gastrectomia Vertical / Sleeve: Restritivo Puro (Risco de Agravamento de DRGE)",
+                            "Complicações Agudas Graves: Fístula da Linha de Grampeamento (Taquicardia Sustentada > 120 bpm como Primeiro Sinal de Alarme), Embolia Pulmonar e Hérnia Interna de Petersen"
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     {
-      "tema": "Cirurgia Cardíaca",
-      "focos": [
-        {
-          "foco": "Cardiopatias Congênitas",
-          "subfocos": [
-            "Cardiopatias Acianóticas: CIA, CIV e PCA",
-            "Cardiopatias Congênitas",
-            "Manejo Neonatal: Prostaglandinas e Conduta Inicial"
-          ]
-        },
-        {
-          "foco": "Revascularização Miocárdica",
-          "subfocos": [
-            "Anatomia Coronariana e Indicações de Revascularização",
-            "Complicações e Manejo Pós-operatório",
-            "Técnicas Cirúrgicas: Enxertos, CEC e Revascularização Off-pump"
-          ]
-        },
-        {
-          "foco": "Trauma Cardíaco",
-          "subfocos": [
-            "Contusão Miocárdica: Diagnóstico e Manejo",
-            "Ferimentos Cardíacos Penetrantes",
-            "Tamponamento Cardíaco: Diagnóstico e Pericardiocentese",
-            "Toracotomia de Reanimação",
-            "Trauma Cardíaco"
-          ]
-        }
-      ]
+        "tema": "Cirurgia Hepato-Bilio-Pancreática",
+        "focos": [
+            {
+                "foco": "Colelitíase e Coledocolitíase",
+                "subfocos": [
+                    {
+                        "subfoco": "Colelitíase Sintomática e Indicações Cirúrgicas",
+                        "sub_subfocos": [
+                            "Cólica Biliar Típica: Dor em HCD Pós-Prandial Gordurosa com Duração Curta (< 6 Horas) sem Sinais Sistêmicos",
+                            "Indicações de Colecistectomia em Assintomáticos: Vesícula em Porcelana, Pólipos Biliares > 1 cm, Associação com Coledocolitíase ou Anemia Hemolítica"
+                        ]
+                    },
+                    {
+                        "subfoco": "Coledocolitíase: Diagnóstico e Estratégia Terapêutica",
+                        "sub_subfocos": [
+                            "Critérios Preditivos da ASGE: Muito Alto Risco (Cálculo Visualizado na USG, Colangite ou Bilirrubina > 4 com Colédoco Dilatado > 6 mm)",
+                            "Conduta em Alto Risco: CPRE (Colangiopancreatografia Retrógrada Endoscópica) Pré-Operatória com Papilotomia e Retirada dos Cálculos"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Colangite Aguda (Tríade de Charcot e Pêntade de Reynolds)",
+                "subfocos": [
+                    {
+                        "subfoco": "Colangite Aguda Não Supurativa (Tríade de Charcot)",
+                        "sub_subfocos": [
+                            "Colangiorressonância Magnética (CPRM) em Risco Intermediário e Exploração Cirúrgica do Colédoco",
+                            "Tríade de Charcot: Dor em Hipocôndrio Direito, Febre com Calafrios e Icterícia",
+                            "Antibioticoterapia Venosa de Amplo Espectro com Cobertura para Gram-Negativos e Enterococos"
+                        ]
+                    },
+                    {
+                        "subfoco": "Colangite Aguda Grave Supurativa (Pêntade de Reynolds)",
+                        "sub_subfocos": [
+                            "Pêntade de Reynolds: Tríade de Charcot associada a Choque Séptico / Hipotensão e Rebaixamento do Nível de Consciência / Confusão Mental",
+                            "Emergência Cirúrgica Absoluta com Indicação de Descompressão Biliar Urgente (CPRE de Urgência ou Drenagem Biliar Trans-Hepática Percutânea)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Neoplasias Malignas da Vesícula e Vias Biliares (Colangiocarcinoma)",
+                "subfocos": [
+                    {
+                        "subfoco": "Colangiocarcinoma e Tumor de Klatskin",
+                        "sub_subfocos": [
+                            "Tumor de Klatskin (Colangiocarcinoma Peri-Hilar na Confluência dos Ductos Hepáticos Direito e Esquerdo)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Câncer de Vesícula Biliar",
+                        "sub_subfocos": [
+                            "Quadro Clínico: Icterícia Colestática Progressiva Indolor com Prurido Intenso e Vesícula Biliar Murcha / Não Palpável",
+                            "Classificação de Bismuth-Corlette (Tipos I a IV)",
+                            "Achado Incidental Frequente Pós-Colecistectomia por Colelitíase",
+                            "Conduta pelo Estadiamento T: T1a (Confinado à Lâmina Própria - Colecistectomia Simples é Curativa) vs T1b/T2 em Diante (Reoperação com Ressecção Hepática em Cunha do Leito Vesicular + Linfadenectomia Portal)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Tumores Hepáticos Benignos e Malignos (Carcinoma Hepatocelular e Metástases)",
+                "subfocos": [
+                    {
+                        "subfoco": "Tumores Benignos do Fígado (Hemangioma, HNF e Adenoma)",
+                        "sub_subfocos": [
+                            "Hemangioma Cavernoso: Tumor Hepático Mais Comum, Captação Nodular Periférica Globuliforme na Fase Arterial com Preenchimento Centrípeto Lento",
+                            "Hiperplasia Nodular Focal (HNF): Cicatriz Estrelada Central Típica à Imagem, Conduta Expectante",
+                            "Adenoma Hepático: Risco de Sangramento e Degeneração Maligna em Mulheres Jovens sob Uso de ACO; Indicação Cirúrgica se Sintomático, Tamanho > 5 cm ou Homens",
+                            "Desenvolvimento quase Exclusivo em Fígado Cirrótico; Rastreamento Semestral com Ultrassonografia e Alfa-Fetoproteína"
+                        ]
+                    },
+                    {
+                        "subfoco": "Carcinoma Hepatocelular (CHC) e Critérios de Milão",
+                        "sub_subfocos": [
+                            "Padrão Tomográfico Patognomônico: Realce Intenso na Fase Arterial (*Wash-in*) com Lavagem Precoce na Fase Venosa (*Wash-out*)",
+                            "Critérios de Milão para Transplante Hepático: Nódulo Único <= 5 cm ou até 3 Nódulos <= 3 cm cada, sem Invasão Vascular"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Abscessos Hepáticos (Amebiano e Piogênico)",
+                "subfocos": [
+                    {
+                        "subfoco": "Abscesso Hepático Piogênico vs Amebiano",
+                        "sub_subfocos": [
+                            "Abscesso Piogênico: Múltiplo, Idosos, Origem Biliar / Pyleflebite (*E. coli*, *Klebsiella*); Tratamento com Antibióticos EV e Drenagem Percutânea Guiada por USG/TC",
+                            "Abscesso Amebiano (*Entamoeba histolytica*): Homens Jovens, Lesão Única em Lobo Direito com Conteúdo em \"Pasta de Anchova\"; Tratamento Primário Clínico com Metronidazol (Raramente Requer Cirurgia)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Cisto Hidático Hepático (Equinococose)",
+                        "sub_subfocos": [
+                            "Contaminação por *Echinococcus granulosus*, Calcificação em Casca de Ovo e Cistos Filhos",
+                            "Cuidado Cirúrgico com Risco de Ruptura e Choque Anafilático (Técnica PAIR)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Neoplasias do Pâncreas (Adenocarcinoma e Neoplasias Císticas)",
+                "subfocos": [
+                    {
+                        "subfoco": "Adenocarcinoma de Cabeça de Pâncreas",
+                        "sub_subfocos": [
+                            "Tríade Típica: Icterícia Colestática Indolor Flutuante/Progressiva, Perda Ponderal Acentuada e Vesícula Biliar Palpável e Indolor (Sinal de Courvoisier-Terrier)",
+                            "Marcador Tumoral CA 19-9 para Acompanhamento e Avaliação de Ressecabilidade Vascular na TC com Contraste (Artéria Mesentérica Superior, Tronco Celíaco)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Neoplasias Císticas do Pâncreas (IPMN, Cistoadenoma)",
+                        "sub_subfocos": [
+                            "Tratamento Cirúrgico Curativo: Gastroduodenopancreatectomia (Cirurgia de Whipple)",
+                            "IPMN (Neoplasia Mucinosa Papilar Intraductal): Dilatação do Ducto Pancreático Principal ou Ramos com Saída de Muco pela Papila",
+                            "Cistoadenoma Seroso (Benigno) vs Cistoadenoma Mucinoso (Potencial Maligno)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Cistos e Anomalias Congênitas da Via Biliar",
+                "subfocos": [
+                    {
+                        "subfoco": "Cistos de Colédoco e Classificação de Todani",
+                        "sub_subfocos": [
+                            "Classificação de Todani (Tipos I a V): Tipo I (Dilatação Fusiforme do Colédoco) como Mais Comum",
+                            "Risco Significativo de Degeneração para Colangiocarcinoma; Indicação de Ressecção Completa do Cisto com Hepatojejunostomia em Y de Roux"
+                        ]
+                    },
+                    {
+                        "subfoco": "Doença de Caroli (Todani Tipo V)",
+                        "sub_subfocos": [
+                            "Dilatações Císticas Saculares Intra-Hepáticas Congênitas associadas a Fibrose Hepática Congênita e Litíase Intra-Hepática Recorrente",
+                            "Risco de Colangite de Repetição e Indicação de Transplante Hepático em Formas Difusas Bilaterais"
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     {
-      "tema": "Cirurgia de Cabeça e Pescoço",
-      "focos": [
-        {
-          "foco": "Cirurgia da Tireoide: Bócio e Neoplasias",
-          "subfocos": [
-            "Anatomia e Técnica Cirúrgica da Tireoidectomia",
-            "Cirurgia da Tireoide: Bócio e Neoplasias",
-            "Complicações Pós-Tireoidectomia: Hipocalcemia e Hipoparatireoidismo",
-            "Complicações Pós-Tireoidectomia: Lesão do Nervo Laríngeo e Outras",
-            "Diagnóstico e Manejo de Nódulos Tireoidianos",
-            "Neoplasias da Tireoide: Classificação e Prognóstico"
-          ]
-        },
-        {
-          "foco": "Doenças das Glândulas Salivares",
-          "subfocos": [
-            "Parotidectomia e Lesão do Nervo Facial",
-            "Sialoadenites Agudas e Crônicas",
-            "Sialolitíase: Diagnóstico e Tratamento",
-            "Tumores de Parótida: Adenoma Pleomórfico"
-          ]
-        },
-        {
-          "foco": "Doenças das Paratireoides",
-          "subfocos": [
-            "Cintilografia com Sestamibi e Localização",
-            "Hiperparatireoidismo Primário: Adenoma Solitário",
-            "Hipocalcemia e Síndrome da Fome Óssea Pós-op",
-            "NEM 1 e NEM 2A: Hiperplasia das Paratireoides"
-          ]
-        },
-        {
-          "foco": "Massas Cervicais",
-          "subfocos": [
-            "Adenopatia Cervical: TB, CMV, Linfoma",
-            "Cisto Branquial: Localização e Tipo II",
-            "Cisto do Ducto Tireoglosso: Procedimento de Sistrunk",
-            "Higroma Cístico: Turner e Diagnóstico Pré-natal",
-            "Massas Cervicais",
-            "PAAF e Biópsia Excisional: Indicações"
-          ]
-        },
-        {
-          "foco": "Tumores de Cabeça e Pescoço",
-          "subfocos": [
-            "Carcinoma de Laringe e Hipofaringe",
-            "Carcinoma Epidermoide: Cavidade Oral e Orofaringe",
-            "Esvaziamento Cervical: Indicações e Técnicas",
-            "Traqueostomia e Via Aérea Cirúrgica",
-            "Tumores de Cabeça e Pescoço"
-          ]
-        }
-      ]
+        "tema": "Coloproctologia e Doenças Orificiais",
+        "focos": [
+            {
+                "foco": "Câncer de Cólon",
+                "subfocos": [
+                    {
+                        "subfoco": "Quadro Clínico por Topografia (Cólon Direito vs Esquerdo)",
+                        "sub_subfocos": [
+                            "Câncer de Cólon Direito (Ceco / Ascendente): Anemia Ferropriva Oculta, Fadiga, Massa Palpável em FID e Sangramento Oculto nas Fezes",
+                            "Câncer de Cólon Esquerdo (Descendente / Sigmoide): Mudança do Hábito Intestinal, Fezes em Fita, Obstrução Intestinal e Hematoquezia"
+                        ]
+                    },
+                    {
+                        "subfoco": "Tratamento Cirúrgico Oncológico do Câncer de Cólon",
+                        "sub_subfocos": [
+                            "Rastreamento Populacional com Colonoscopia a partir dos 45-50 Anos",
+                            "Colectomia com Ligadura Vascular na Origem e Linfadenectomia Obrigatória (Mínimo de 12 Linfonodos Avaliados)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Câncer de Reto e Canal Anal",
+                "subfocos": [
+                    {
+                        "subfoco": "Câncer de Reto: Terapia Neoadjuvante e Margem Distal",
+                        "sub_subfocos": [
+                            "Hemicolectomia Direita (Artérias Ileocólica e Cólica Direita) vs Hemicolectomia Esquerda (Artéria Cólica Esquerda)",
+                            "Indicações de Quimioterapia Adjuvante: Estágio III (Linfonodo Positivo) e Estágio II de Alto Risco",
+                            "Quimiorradioterapia Neoadjuvante Padrão para Tumores T3/T4 ou Linfonodos Positivos (N+)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Câncer de Canal Anal (Carcinoma Epidermoide)",
+                        "sub_subfocos": [
+                            "Ressecção Anterior Baixa (RAB) com Excisão Total do Mesorreto (ETM) e Anastomose Coloanal para Reto Médio/Alto",
+                            "Amputação Abdominoperineal do Reto (Cirurgia de Miles) com Colostomia Definitiva se Invasão do Esfíncter Anal em Reto Baixo"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Doença Hemorroidária",
+                "subfocos": [
+                    {
+                        "subfoco": "Hemorroidas Internas e Classificação em Graus I a IV",
+                        "sub_subfocos": [
+                            "Relação Etiológica Direta com Infecção pelo Papilomavírus Humano (HPV)",
+                            "Grau I (Sangramento sem Prolapso); Grau II (Prolapso com Redução Espontânea); Grau III (Prolapso que Exige Redução Manual); Grau IV (Prolapso Irredutível / Estrangulamento)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Tratamento Cirúrgico e Trombose Hemorroidária Externa",
+                        "sub_subfocos": [
+                            "Tratamento não Cirúrgico e Ambulatorial: Dieta Rica em Fibras, Banho de Assento e Ligadura Elástica (Padrão para Graus II e III)",
+                            "Hemorroidectomia Aberta (Milligan-Morgan) vs Fechada (Ferguson) para Graus III-IV Sintomáticos",
+                            "Trombose Hemorroidária Externa Aguda: Nódulo Perianal Doloroso e Violáceo; Excisão do Trombo / Tromboctomia se Atendimento em até 72 Horas"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Fissura Anal",
+                "subfocos": [
+                    {
+                        "subfoco": "Fissura Anal Aguda vs Crônica",
+                        "sub_subfocos": [
+                            "Dor Perianal Intensa em \"Rasgo\" Durante e após a Evacuação associada a Sangramento Vermelho Vivo no Papel Higiênico",
+                            "Tríade da Fissura Crônica: Plicoma Sentinela, Úlcera com Fibras do Esfíncter Interno Expostas e Papila Anal Hipertrófica"
+                        ]
+                    },
+                    {
+                        "subfoco": "Tratamento Clínico e Esfincterotomia",
+                        "sub_subfocos": [
+                            "Localização Mais Comum: Linha Média Posterior (90%)",
+                            "Tratamento Conservador de 1ª Linha: Pomadas de Nitratos (Dinitrato de Isossorbida) ou Bloqueadores de Canais de Cálcio Tópicos (Diltiazem / Nifedipino)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Abscessos Anorretais e Fístulas",
+                "subfocos": [
+                    {
+                        "subfoco": "Abscesso Perianal e Isquiorretal",
+                        "sub_subfocos": [
+                            "Teoria Criptoglandular: Obstrução e Infecção das Glândulas Anais de Chiari",
+                            "Conduta Imediata no Abscesso: Drenagem Cirúrgica sob Anestesia sem Aguardar Flutuação ou Antibioticoterapia Isolada",
+                            "Sequela Crônica Pós-Drenagem de Abscesso: Comunicação entre a Cripta Anal e a Pele Perianal"
+                        ]
+                    },
+                    {
+                        "subfoco": "Fístulas Anorretais e Regra de Goodsall-Salmon",
+                        "sub_subfocos": [
+                            "Regra de Goodsall-Salmon: Orifício Externo Anterior -> Trajeto Retilíneo Radial; Orifício Externo Posterior -> Trajeto Curvo que Desemboca na Linha Média Posterior",
+                            "Fistulotomia vs Fistulectomia e Uso de Sedênho / Flap de Avanço em Fístulas Complexas"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Doença Pilonidal Sacrococcígea",
+                "subfocos": [
+                    {
+                        "subfoco": "Quadro Clínico e Manejo da Crise Aguda",
+                        "sub_subfocos": [
+                            "Presença de Folículos Pilosos Infectados na Fenda Interglútea em Homens Jovens",
+                            "Drenagem Cirúrgica Simples do Abscesso Agudo"
+                        ]
+                    },
+                    {
+                        "subfoco": "Tratamento Definitivo da Doença Crônica",
+                        "sub_subfocos": [
+                            "Excisão Cirúrgica Ampla dos Trajetos com Cicatrização por Segunda Intenção ou Fechamento com Retalhos (Técnica de Limberg / Karydakis)",
+                            "Técnicas Minimamente Invasivas: Ablação Endoscópica a Laser (EPSiT) e Fechamento Primário com Retalho Fora da Linha Média",
+                            "Destruição dos Plexos Nervosos Entéricos pelo *Trypanosoma cruzi* com Fecaloma e Dilatação Colônica Severa",
+                            "Tratamento Eletivo: Cirurgia de Duhamel-Haddad (Retossigmoidectomia com Abaixamento Retro-Retal de Cólon)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Megacólon Chagásico e Volvo de Sigmoide",
+                "subfocos": [
+                    {
+                        "subfoco": "Megacólon Chagásico e Constipação Crônica",
+                        "sub_subfocos": [
+                            "Cirurgia Eletiva Programada Pós-Descompressão Endoscópica: Sigmoidectomia com Anastomose Primária"
+                        ]
+                    },
+                    {
+                        "subfoco": "Volvo de Sigmoide Recorrente",
+                        "sub_subfocos": [
+                            "Tratamento de Urgência no Volvo Isquêmico: Ressecção com Colostomia Terminal (Cirurgia de Hartmann)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Prolapso Retal",
+                "subfocos": [
+                    {
+                        "subfoco": "Prolapso Retal Completo vs Prolapso Mucoso",
+                        "sub_subfocos": [
+                            "Eversão de Todas as Camadas da Parede Retal através do Ânus em Mulheres Idosas com Incontinência Fecal",
+                            "Prega Circular Concéntrica (Prolapso Completo) vs Prega Radial (Prolapso Mucoso / Hemorroidário)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Abordagem Cirúrgica Abdominal vs Perineal",
+                        "sub_subfocos": [
+                            "Cirurgia Abdominal (Retopexia Ventral com Tela por Videolaparoscopia)",
+                            "Cirurgia Perineal para Idosos Frágeis (Procedimento de Altemeier ou Delorme)"
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     {
-      "tema": "Cirurgia Geral e Digestiva",
-      "focos": [
-        {
-          "foco": "Abdome Agudo",
-          "subfocos": [
-            "Abdome Agudo",
-            "Abdome Agudo Pós-Operatório",
-            "Abdome Agudo: Classificação e Etiologias",
-            "Abdome Agudo: Indicações Cirúrgicas e Condutas",
-            "Peritonite: Fisiopatologia e Classificação",
-            "Semiologia do Abdome Agudo e Propedêutica"
-          ]
-        },
-        {
-          "foco": "Abdome Agudo Hemorrágico",
-          "subfocos": [
-            "Diagnóstico por Imagem: FAST e TC",
-            "Etiologias de Hemoperitônio",
-            "Manejo Cirúrgico e Embolização"
-          ]
-        },
-        {
-          "foco": "Abdome Agudo Inflamatório",
-          "subfocos": [
-            "Abdome Agudo Inflamatório",
-            "Abdome Agudo Inflamatório: Etiologia e Epidemiologia",
-            "Apendicite e Diverticulite: Diagnóstico Diferencial no Abdome Agudo",
-            "Colangite e Colecistite: Reconhecimento no Abdome Agudo"
-          ]
-        },
-        {
-          "foco": "Abdome Agudo Obstrutivo: Diagnóstico e Classificação",
-          "subfocos": [
-            "Abdome Agudo Obstrutivo: Diagnóstico e Classificação",
-            "Definição e Classificação de Obstrução Intestinal",
-            "Etiologia: Bridas, Hérnias, Tumores",
-            "Obstrução Alta vs Baixa: Diferenciação",
-            "Quadro Clínico e Diagnóstico por Imagem",
-            "Sinais de Estrangulamento e Isquemia"
-          ]
-        },
-        {
-          "foco": "Abdome Agudo Perfurativo",
-          "subfocos": [
-            "Abdome Agudo Perfurativo",
-            "Abdome Agudo Perfurativo: Manejo Geral e Estabilização",
-            "Perfuração Colônica: Diverticular, Neoplásica e Outras",
-            "Perfuração Esofágica e de Intestino Delgado",
-            "Pneumoperitônio: Diagnóstico por Imagem",
-            "Úlcera Péptica Perfurada: Diagnóstico e Tratamento"
-          ]
-        },
-        {
-          "foco": "Abdome Agudo Vascular (Isquemia Mesentérica Aguda)",
-          "subfocos": [
-            "Abdome Agudo Vascular (Isquemia Mesentérica Aguda)",
-            "Anatomia Vascular Mesentérica",
-            "Isquemia Colônica e Colite Isquêmica",
-            "Isquemia Mesentérica Aguda: Fisiopatologia e Clínica",
-            "Isquemia Mesentérica: Etiologias Oclusivas e Não-Oclusivas",
-            "Tratamento Cirúrgico e Endovascular"
-          ]
-        },
-        {
-          "foco": "Acalasia",
-          "subfocos": [
-            "Acalasia",
-            "Cardiomiotomia de Heller com Fundoplicatura",
-            "Classificação de Chicago para Distúrbios Motores",
-            "Dilatação Pneumática com Balão",
-            "Esofagograma: Sinal do Bico de Pássaro",
-            "Manometria de Alta Resolução",
-            "POEM (Miotomia Endoscópica Peroral)"
-          ]
-        },
-        {
-          "foco": "Apendicite Aguda: Diagnóstico, Escore de Alvarado, Tratamento",
-          "subfocos": [
-            "Apendicite Aguda: Complicações e Manejo",
-            "Apendicite Aguda: Diagnóstico, Escore de Alvarado, Tratamento",
-            "Apendicite Complicada: Plastão, Abscesso e Diagnóstico Diferencial",
-            "Diagnóstico Clínico e Escore de Alvarado",
-            "Diagnóstico por Imagem",
-            "Fisiopatologia e Aspectos Gerais",
-            "Tratamento Cirúrgico: Técnica e Pós-operatório"
-          ]
-        },
-        {
-          "foco": "Colangite",
-          "subfocos": [
-            "Colangite",
-            "Diagnóstico e Critérios de Tókio",
-            "Drenagem Biliar: CPRE e Cirúrgica",
-            "Etiologia e Antibioticoterapia na Colangite",
-            "Manejo da Colangite Aguda Grave e Sepse Biliar"
-          ]
-        },
-        {
-          "foco": "Colecistite Aguda e Crônica",
-          "subfocos": [
-            "Anatomia e Variações da Via Biliar",
-            "Colecistite Aguda e Crônica",
-            "Colecistite Aguda Litiásica: Diagnóstico e Classificação",
-            "Colecistite Aguda Litiásica: Tratamento Clínico e Cirúrgico",
-            "Colecistite Alitiásica",
-            "Complicações da Colecistite Aguda e Síndrome de Mirizzi"
-          ]
-        },
-        {
-          "foco": "Coledocolitíase",
-          "subfocos": [
-            "Abordagens Terapêuticas: CPRE vs. Cirurgia",
-            "Coledocolitíase",
-            "Coledocolitíase Residual e Colangiografia Intraoperatória",
-            "Complicações: Pancreatite Biliar, Colangite e Obstrução",
-            "Diagnóstico por Imagem (US, MRCP, EUS)",
-            "Estratificação de Risco e Conduta"
-          ]
-        },
-        {
-          "foco": "Diverticulite Complicada",
-          "subfocos": [
-            "Abscesso Diverticular: Diagnóstico, Drenagem e Manejo",
-            "Classificação de Hinchey e Estadiamento",
-            "Diverticulite Aguda Não Complicada: Manejo Clínico",
-            "Diverticulite Complicada",
-            "Fístulas Diverticulares: Diagnóstico e Tratamento",
-            "Peritonite e Perfuração Livre: Conduta Cirúrgica",
-            "Tratamento Cirúrgico: Hartmann, Anastomose e Lavagem"
-          ]
-        },
-        {
-          "foco": "Doença de Crohn: Indicações e Técnicas Cirúrgicas",
-          "subfocos": [
-            "Estenoses, Abscessos e Complicações Cirúrgicas",
-            "Fístulas Entéricas e Perianais na Doença de Crohn",
-            "Indicações Cirúrgicas para Doença de Crohn",
-            "RCU: Proctocolectomia, IPAA e Indicações"
-          ]
-        },
-        {
-          "foco": "DRGE Cirúrgica",
-          "subfocos": [
-            "Complicações Cirúrgicas: Disfagia, Recorrência e Reoperação",
-            "Diagnóstico e Avaliação Pré-operatória da DRGE",
-            "DRGE Cirúrgica",
-            "Hérnias Hiatais e sua Relação com DRGE",
-            "Indicações Cirúrgicas e Fundoplicaturas Alternativas",
-            "Técnica Cirúrgica da Fundoplicatura de Nissen"
-          ]
-        },
-        {
-          "foco": "Esplenectomia e Doenças Esplênicas",
-          "subfocos": [
-            "Anatomia e Fisiologia Esplênica",
-            "Indicações de Esplenectomia e Técnica Cirúrgica",
-            "Pós-Esplenectomia: OPSI, Vacinação e Complicações"
-          ]
-        },
-        {
-          "foco": "Geral",
-          "subfocos": []
-        },
-        {
-          "foco": "HDA: Abordagem Cirúrgica e Hemostasia",
-          "subfocos": [
-            "Etiologias: Úlcera, Mallory-Weiss e Lesões Agudas de Mucosa",
-            "HDA: Abordagem Cirúrgica e Hemostasia",
-            "Manejo Inicial e Abordagem Clínica",
-            "Tratamento Endoscópico: Hemostasia e Dispositivos",
-            "Varizes Esofágicas e Hipertensão Portal: Manejo da HDA"
-          ]
-        },
-        {
-          "foco": "Lesão Iatrogênica de Via Biliar",
-          "subfocos": [
-            "Classificação de Strasberg e Bismuth",
-            "Critical View of Safety (CVS)",
-            "Hepaticojejunostomia em Y-de-Roux: Reconstrução",
-            "Lesão Iatrogênica de Via Biliar",
-            "Lesão Transecção vs Clipe em Via Biliar",
-            "Timing de Reparo: Imediato vs Tardio"
-          ]
-        },
-        {
-          "foco": "Megacólon Chagásico",
-          "subfocos": [
-            "Diagnóstico: Enema Opaco e Manometria",
-            "Fisiopatologia e Quadro Clínico",
-            "Tratamento Cirúrgico: Técnicas de Duhamel"
-          ]
-        },
-        {
-          "foco": "Obstrução da Saída Gástrica",
-          "subfocos": [
-            "Alcalose Hipoclorêmica Hipocalêmica",
-            "Gastrojejunostomia e Antrectomia",
-            "Obstrução da Saída Gástrica",
-            "Úlcera Péptica com Estenose Pilórica"
-          ]
-        },
-        {
-          "foco": "Obstrução Intestinal: Manejo e Indicação Cirúrgica",
-          "subfocos": [
-            "Íleo Biliar: Diagnóstico e Tratamento",
-            "Indicações de Cirurgia de Urgência",
-            "Obstrução Intestinal: Manejo e Indicação Cirúrgica",
-            "Pseudo-obstrução Colônica (Ogilvie)",
-            "Técnicas Cirúrgicas: Enterólise e Ressecção",
-            "Tratamento Clínico Inicial: SNG e Reposição"
-          ]
-        },
-        {
-          "foco": "Pancreatite Aguda",
-          "subfocos": [
-            "Critérios de Atlanta Revisados: Leve, Moderada, Grave",
-            "Escores: Ranson, BISAP e APACHE II",
-            "Etiologia: Biliar, Alcoólica e Outras",
-            "Manejo Inicial: Jejum, Analgesia, Hidratação",
-            "Pancreatite Aguda",
-            "TC de Abdome e Índice de Balthazar"
-          ]
-        },
-        {
-          "foco": "Pancreatite Aguda: Necrose, Pseudocisto e Infecção",
-          "subfocos": [
-            "Coleções Peripancreáticas e Classificação de Atlanta Revisada",
-            "Necrose Pancreática: Diagnóstico, Manejo e Intervenções",
-            "Pseudocisto Pancreático: Indicações e Métodos de Drenagem"
-          ]
-        },
-        {
-          "foco": "Pancreatite Crônica",
-          "subfocos": [
-            "Etiologia Alcoólica e Calcificações Pancreáticas",
-            "Insuficiência Exócrina: Esteatorreia e Reposição Enzimática",
-            "Pancreatite Crônica",
-            "Procedimento de Frey e Beger",
-            "Procedimento de Puestow-Partington",
-            "Pseudocisto e Estenose Biliar Secundária"
-          ]
-        },
-        {
-          "foco": "Perfuração Esofágica",
-          "subfocos": [
-            "Perfuração Esofágica: Diagnóstico por Imagem",
-            "Perfuração Esofágica: Manejo Clínico e Cirúrgico",
-            "Síndrome de Boerhaave: Etiologia e Fisiopatologia"
-          ]
-        },
-        {
-          "foco": "Perfuração Gastroduodenal",
-          "subfocos": [
-            "Etiologia, Fatores de Risco e Perfuração por AINE",
-            "Perfuração Gastroduodenal",
-            "Úlcera Péptica Perfurada: Diagnóstico e Achados Clínicos",
-            "Úlcera Perfurada: Rafia, Graham e Cirurgia Definitiva"
-          ]
-        },
-        {
-          "foco": "Pólipos e Síndromes Polipoides",
-          "subfocos": [
-            "Neoplasias do Intestino Delgado e Apêndice",
-            "Pólipos e Neoplasias Colorretais Benignas",
-            "Pólipos e Síndromes Polipoides",
-            "Pólipos Gástricos e Vesiculares",
-            "Polipose Adenomatosa Familiar (PAF)",
-            "Pseudomixoma Peritoneal e Tumores Peritoneais",
-            "Síndromes Polipoides Hereditárias (Exceto PAF)"
-          ]
-        },
-        {
-          "foco": "Queimaduras Cáusticas do Esôfago",
-          "subfocos": [
-            "Agentes: Ácidos vs Álcalis",
-            "Classificação Endoscópica de Zargar",
-            "Estenose Esofágica: Dilatação e Reconstrução",
-            "Manejo Agudo e Complicações"
-          ]
-        },
-        {
-          "foco": "Técnicas e Procedimentos Cirúrgicos",
-          "subfocos": [
-            "Anastomoses Gastrointestinais: Tipos e Técnicas",
-            "Cirurgias Hepáticas e Biliares",
-            "Esplenectomia: Indicações e Técnica",
-            "Gastrectomias: Total e Parcial",
-            "Ressecções Intestinais e Colectomias",
-            "Técnicas e Procedimentos Cirúrgicos"
-          ]
-        },
-        {
-          "foco": "Úlcera Péptica Complicada",
-          "subfocos": [
-            "Complicações Agudas: Perfuração e Sangramento",
-            "Complicações Tardia: Estenose e Síndromes Pós-cirúrgicas",
-            "Indicações Cirúrgicas e Úlcera Refratária",
-            "Técnicas Cirúrgicas: Vagotomia, Piloroplastia e Reconstruções",
-            "Úlcera Péptica Complicada"
-          ]
-        }
-      ]
+        "tema": "Hérnias e Parede Abdominal",
+        "focos": [
+            {
+                "foco": "Hérnia Inguinal (Indireta e Direta)",
+                "subfocos": [
+                    {
+                        "subfoco": "Anatomia Cirúrgica e Diferenciação Indireta vs Direta",
+                        "sub_subfocos": [
+                            "Hérnia Indireta: Causa Congênita por Patência do Conduto Peritoneovaginal, Passa pelo Anel Inguinal Profundo LATERAL aos Vasos Epigástricos Inferiores, Pode Descer à Bolsa Escrotal",
+                            "Hérnia Direta: Fraqueza da Fáscia Transversalis no Triângulo de Hesselbach MEDIAL aos Vasos Epigástricos Inferiores"
+                        ]
+                    },
+                    {
+                        "subfoco": "Técnicas de Correção Cirúrgica (Herniorrafia)",
+                        "sub_subfocos": [
+                            "Limites do Triângulo de Hesselbach: Vasos Epigástricos Inferiores, Borda Lateral do Reto Abdominal e Ligamento Inguinal",
+                            "Técnicas Anatômicas sem Tela: Bassini, Shouldice e McVay",
+                            "Hernioplastia Videolaparoscópica (TAPP - Transabdominal Pré-Peritoneal vs TEP - Totalmente Extraperitoneal): Indicações de Escolha em Hérnias Bilaterais e Recidivadas"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Hérnia Femoral (Crural)",
+                "subfocos": [
+                    {
+                        "subfoco": "Anatomia e Risco Elevado de Estrangulamento",
+                        "sub_subfocos": [
+                            "Mais Comum em Mulheres Idosas e Multíparas",
+                            "Localização Anatômica: Abaixo do Ligamento Inguinal, Medial à Veia Femoral no Canal Femoral",
+                            "Maior Índice de Estrangulamento entre Todas as Hérnias da Parede Abdominal (Indicação Cirúrgica Sempre Mandatória e Urgente)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Diagnóstico Diferencial da Massa Inguinocrural",
+                        "sub_subfocos": [
+                            "Técnica Cirúrgica de McVay (Fixação no Ligamento de Cooper) ou Uso de Tela Pré-Peritoneal",
+                            "Linfonodo de Cloquet Infartado, Aneurisma de Artéria Femoral e Ectasia de Veia Safena",
+                            "Variz de Safena Magna e Abscesso do Psoas com Projeção Crural"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Hérnia Incisional e Evisceração",
+                "subfocos": [
+                    {
+                        "subfoco": "Fatores de Risco e Correção da Hérnia Incisional",
+                        "sub_subfocos": [
+                            "Fatores Predisponentes: Infecção do Sítio Cirúrgico, Obesidade, Tabagismo, DM e Técnica Inadequada de Fechamento",
+                            "Uso Obrigatório de Tela de Reforço com Sobreposição Ampla (Overlap >= 5 cm)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Evisceração Pós-Operatória Aguda",
+                        "sub_subfocos": [
+                            "Técnicas de Separação de Componentes (Técnica de Ramirez e TAR) para Grandes Defeitos com Perda de Domicílio",
+                            "Deiscência Completa de Parede com Saída de Alças Intestinais para Fora da Cavidade",
+                            "Sinal Precoce: Saída Abundante de Secreção Serossanguínea em \"Água de Lavado de Carne\" pelo Curativo"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Hérnia Umbilical e Epigástrica",
+                "subfocos": [
+                    {
+                        "subfoco": "Hérnia Umbilical no Adulto vs na Criança",
+                        "sub_subfocos": [
+                            "Emergência Cirúrgica: Cobertura Provisória com Compressas Estéreis Úmidas e Reoperação Imediata",
+                            "Hérnia Umbilical no Adulto: Adquirida (Gravidez, Obesidade, Ascite Cirrótica), Baixo Índice de Fechamento Espontâneo, Uso de Tela se Defeito > 1-2 cm",
+                            "Hérnia Umbilical na Criança: Fechamento Espontâneo na Grande Maioria até os 4 a 5 Anos de Idade; Aguardar Cirurgia exceto se Defeito > 2 cm ou Estrangulamento"
+                        ]
+                    },
+                    {
+                        "subfoco": "Hérnia Epigástrica e Diástase dos Retos",
+                        "sub_subfocos": [
+                            "Hérnia Epigástrica: Defeito na Linha Alba entre o Xifoide e o Umbigo com Encarceramento Frequente de Gordura Pré- Peritoneal",
+                            "Diástase dos Retos: Afastamento da Linha Média sem Anel Herniário Verdadeiro (Sem Risco de Estrangulamento)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Hérnias Raras (Spiegel, Obturadora, Lombar)",
+                "subfocos": [
+                    {
+                        "subfoco": "Hérnia de Spiegel, Obturadora e Lombares",
+                        "sub_subfocos": [
+                            "Hérnia de Spiegel: Defeito na Linha Semilunar de Spiegel (Borda Lateral do Reto com Linha Arqueada de Douglas)",
+                            "Hérnia Obturadora: Típica em Idosas Emagrecidas, Sinal de Howship-Romberg (Dor na Face Medial da Coxa que Piora com Extensão e Adução por Compressão do Nervo Obturador)",
+                            "Hérnias Lombares: Petit (Trígono Lombar Inferior) e Grynfelt (Trígono Lombar Superior)",
+                            "Hérnia de Littré (Contém o Divertículo de Meckel no Saco Herniário)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Hérnias Especiais com Conteúdo Específico",
+                        "sub_subfocos": [
+                            "Hérnia de Amyand (Contém o Apêndice Cecal no Saco Inguinal) vs Hérnia de De Garengeot (Apêndice no Saco Femoral)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Hérnias Estranguladas e Encarceradas",
+                "subfocos": [
+                    {
+                        "subfoco": "Diferenciação Encarceramento vs Estrangulamento",
+                        "sub_subfocos": [
+                            "Hérnia de Richter (Pinçamento da Borda Antimesentérica da Alça com Estrangulamento sem Obstrução Mecânica Completa)",
+                            "Hérnia Encarcerada: Irredutibilidade sem Sofrimento Vascular Isquêmico",
+                            "Hérnia Estrangulada: Isquemia e Necrose da Alça, Dor Intensa Súbita, Hiperemia Cutânea Local, Febre e Sinais Sistêmicos",
+                            "Contraindicação Formal de Redução Manual Forçada (Manobra de Taxis) pelo Risco de Redução em Bloco de Alça Inviável"
+                        ]
+                    },
+                    {
+                        "subfoco": "Conduta Cirúrgica de Emergência",
+                        "sub_subfocos": [
+                            "Laparotomia / Inguinotomia de Emergência com Avaliação da Viabilidade da Alça",
+                            "Contraindicação Relativa de Prótese / Tela Sintética na Presença de Necrose e Contaminação Fecal"
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     {
-      "tema": "Cirurgia Pediátrica",
-      "focos": [
-        {
-          "foco": "Abdome Agudo em Pediatria",
-          "subfocos": [
-            "Abdome Agudo em Pediatria",
-            "Abdome Agudo Inflamatório em Recém-Nascidos",
-            "Apendicite Aguda: Diagnóstico e Apresentação Clínica",
-            "Apendicite Aguda: Tratamento e Complicações Pós-operatórias",
-            "Divertículo de Meckel: Apresentação e Complicações",
-            "Hérnias Abdominais em Pediatria"
-          ]
-        },
-        {
-          "foco": "Anomalias do Trato Urinário",
-          "subfocos": [
-            "Anomalias do Trato Urinário",
-            "Anomalias Ureterais: Megaureter e Duplicidade",
-            "Obstrução da Junção Uretero-Pélvica: Diagnóstico e Tratamento",
-            "Refluxo Vesico-Ureteral: Diagnóstico e Complicações",
-            "Testículo Retrátil: Diagnóstico e Manejo",
-            "Válvula de Uretra Posterior: Diagnóstico e Conduta"
-          ]
-        },
-        {
-          "foco": "Atresia de Esôfago e Fístula Traqueoesofágica",
-          "subfocos": [
-            "Classificação de Atresia de Esôfago (Tipos Gross)",
-            "Diagnóstico Pré-natal, Clínico e Anomalias Associadas",
-            "Tratamento Cirúrgico e Complicações"
-          ]
-        },
-        {
-          "foco": "Atresias Intestinais",
-          "subfocos": [
-            "Atresia Duodenal: Diagnóstico, Anomalias e Tratamento",
-            "Atresia Jejunoileal: Classificação, Diagnóstico e Cirurgia",
-            "Atresias Intestinais",
-            "Divertículo de Meckel: Apresentação e Fisiopatologia",
-            "Obstrução Intestinal Neonatal: Etiologias e Associações"
-          ]
-        },
-        {
-          "foco": "Defeitos de Fechamento da Parede Abdominal",
-          "subfocos": [
-            "Diferenças entre Onfalocele e Gastrosquise",
-            "Gastrosquise: Diagnóstico e Tratamento",
-            "Onfalocele: Diagnóstico e Tratamento"
-          ]
-        },
-        {
-          "foco": "Doença de Hirschsprung",
-          "subfocos": [
-            "Complicações da Doença de Hirschsprung",
-            "Doença de Hirschsprung",
-            "Fisiopatologia e Embriologia da Aganglionose",
-            "Manifestações Clínicas e Diagnóstico Neonatal",
-            "Métodos Diagnósticos: Enema Opaco e Biópsia Retal",
-            "Tratamento Cirúrgico: Técnicas e Indicações"
-          ]
-        },
-        {
-          "foco": "Estenose Hipertrófica de Piloro",
-          "subfocos": [
-            "Alterações Eletrolíticas e Metabólicas",
-            "Diagnóstico por Imagem",
-            "Estenose Hipertrófica de Piloro",
-            "Quadro Clínico e Achados ao Exame Físico",
-            "Tratamento Cirúrgico: Piloromiotomia de Ramstedt"
-          ]
-        },
-        {
-          "foco": "Hérnia Diafragmática Congênita",
-          "subfocos": [
-            "Correção Cirúrgica",
-            "Diagnóstico Pré-natal e Indicadores de Prognóstico",
-            "Estabilização Neonatal e ECMO",
-            "Fisiopatologia: Hipoplasia Pulmonar",
-            "Hérnia Diafragmática Congênita"
-          ]
-        },
-        {
-          "foco": "Hérnias e Massas Abdominais",
-          "subfocos": [
-            "Hérnia Inguinal Pediátrica: Diagnóstico e Tratamento",
-            "Hérnia Umbilical na Criança",
-            "Hérnias e Massas Abdominais",
-            "Hidrocele e Cisto de Cordão Espermático",
-            "Massas Abdominais Pediátricas: Diagnóstico Diferencial",
-            "Tumores Abdominais: Wilms e Neuroblastoma"
-          ]
-        },
-        {
-          "foco": "Invaginação Intestinal: Manejo Cirúrgico e Complicações",
-          "subfocos": [
-            "Cabeça de Invaginação: Divertículo de Meckel, Pólipo",
-            "Indicações de Cirurgia: Peritonite, Falha de Redução",
-            "Invaginação Intestinal: Manejo Cirúrgico e Complicações",
-            "Sinal do Alvo ao USG",
-            "Tríade Clássica: Dor, Massa, Fezes em Geleia"
-          ]
-        },
-        {
-          "foco": "Má-Rotação Intestinal e Vólvulo",
-          "subfocos": [
-            "Diagnóstico: Seriografia e USG",
-            "Embriologia e Tipos de Má-Rotação",
-            "Procedimento de Ladd",
-            "Vólvulo de Intestino Médio: Emergência Cirúrgica"
-          ]
-        },
-        {
-          "foco": "Malformações Congênitas",
-          "subfocos": [
-            "Ânus Imperfurado: Classificação e Tratamento",
-            "Atresia de Esôfago e Fístula Traqueoesofágica",
-            "Atresias Intestinais: Duodeno, Jejuno, Íleo",
-            "Doença de Hirschsprung",
-            "Estenose Hipertrófica do Piloro",
-            "Malformações Congênitas"
-          ]
-        },
-        {
-          "foco": "Traumas na Infância",
-          "subfocos": [
-            "ATLS Pediátrico: Reanimação e Acesso Venoso",
-            "Conduta no Trauma Pediátrico: TNO e Indicação Cirúrgica",
-            "Trauma Abdominal Pediátrico: Órgãos Sólidos",
-            "Trauma Cranioencefálico Pediátrico",
-            "Traumas na Infância"
-          ]
-        }
-      ]
+        "tema": "Princípios Cirúrgicos e Cuidados Perioperatórios",
+        "focos": [
+            {
+                "foco": "Avaliação de Risco Cirúrgico e Cardiopulmonar",
+                "subfocos": [
+                    {
+                        "subfoco": "Escores Cardiovasculares (Índice de Lee / RCRI)",
+                        "sub_subfocos": [
+                            "Os 6 Fatores do Índice de Risco Cardíaco Revisado (RCRI / Lee): Cirurgia de Alto Risco, Doença Isquêmica do Coração, Insuficiência Cardíaca, Doença Cerebrovascular, DM em Uso de Insulina, Creatinina > 2 mg/dL"
+                        ]
+                    },
+                    {
+                        "subfoco": "Classificação do Estado Físico ASA",
+                        "sub_subfocos": [
+                            "Classificação da Capacidade Funcional em Equivalentes Metabólicos (METs >= 4 Indica Boa Reserva Funcional)",
+                            "ASA I (Hígido), ASA II (Doença Sistêmica Leve sem Limitação), ASA III (Doença Sistêmica Grave com Limitação Funcional), ASA IV (Doença Sistêmica Ameaçadora à Vida), ASA V (Moribundo), ASA VI (Morte Encefálica)",
+                            "Sufixo \"E\" Adicionado para Cirurgias de Emergência"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Cicatrização, Fisiologia das Feridas e Queloides",
+                "subfocos": [
+                    {
+                        "subfoco": "Fases da Cicatrização e Fatores de Interferência",
+                        "sub_subfocos": [
+                            "As 3 Fases: Inflamatória (0-4 dias: Hemostasia, Neutrófilos e Macrófagos), Proliferativa (4-14 dias: Fibroblastos, Angiogênese e Síntese de Colágeno Tipo III), Remodelação (Semanas a Meses: Maturação e Substituição por Colágeno Tipo I)",
+                            "Fatores Sistêmicos que Prejudicam a Cicatrização: Tabagismo, Desnutrição / Hipoalbuminemia, Diabetes Descompensado, Uso de Corticoides e Deficiência de Vitamina C e Zinco"
+                        ]
+                    },
+                    {
+                        "subfoco": "Cicatrizes Patológicas: Queloide vs Cicatriz Hipertrófica",
+                        "sub_subfocos": [
+                            "Cicatriz Hipertrófica: Respeita os Limites da Ferida Original, Melhora Espontânea com o Tempo",
+                            "Queloide: Ultrapassa os Limites da Ferida Original, Não Regride Espontaneamente, Mais Comum em Negros, Tratamento com Injeção Intralesional de Triancinolona e Placas de Silicone",
+                            "Classificação das Feridas: Limpas (Cirurgias Eletivas sem Penetração em Tratos Oco), Limpas-Contaminadas (Abertura de Trato Digestivo, Respiratório ou Urinário com Mínimo Extravasamento), Contaminadas e Infectadas"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Infecção de Sítio Cirúrgico (ISC) e Profilaxia Antibiótica",
+                "subfocos": [
+                    {
+                        "subfoco": "Classificação CDC da ISC e Cirurgias por Potencial de Contaminação",
+                        "sub_subfocos": [
+                            "Classificação Anatômica da ISC: Superficial (Pele e Subcutâneo), Profunda (Fáscia e Músculo) e de Órgão/Cavidade",
+                            "Manifestação Típica entre o 4º e o 7º Dia Pós-Operatório (Hiperemia, Dor, Edema e Drenagem Purulenta)",
+                            "Antibiótico de Escolha na Maioria dos Procedimentos: Cefazolina (Cefalosporina de 1ª Geração)",
+                            "Momento Obrigatório da Administração: Até 60 Minutos Antes da Incisão da Pele (Na Indução Anestésica)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Profilaxia Antibiótica em Cirurgia",
+                        "sub_subfocos": [
+                            "Repique Intraoperatório se Tempo Cirúrgico Ultrapassar 2x a Meia-Vida do Fármaco e Suspensão da Profilaxia em até 24 Horas Pós-Operatórias",
+                            "Primeiras 24-48h (Wind): Atelectasia Pulmonar como Causa Mais Comum (Tratamento com Fisioterapia Respiratória e Deambulação Precoce)",
+                            "3º Dia (Water): Infecção do Trato Urinário por Cateter Vesical",
+                            "5º Dia (Wound): Infecção do Sítio Cirúrgico"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Complicações Pós-Operatórias (Febre, Atelectasia, TVP/TEP, Deiscência)",
+                "subfocos": [
+                    {
+                        "subfoco": "Febre Pós-Operatória (Mnemônico dos 5 Ws)",
+                        "sub_subfocos": [
+                            "7º Dia (Walking): Trombose Venosa Profunda e TEP"
+                        ]
+                    },
+                    {
+                        "subfoco": "Prevenção e Profilaxia de TVP/TEP no Paciente Cirúrgico",
+                        "sub_subfocos": [
+                            "Qualquer Momento (Wonder drugs): Febre Farmacológica",
+                            "Estratificação de Risco pelo Escore de Caprini",
+                            "Profilaxia Mecânica (Meias Elásticas de Compressão Graduada e Compressão Pneumática Intermitente)",
+                            "Profilaxia Farmacológica com Heparina de Baixo Peso Molecular (Enoxaparina 40 mg/dia) ou Heparina Não Fracionada"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Resposta Endócrino-Metabólica ao Trauma (REMIT)",
+                "subfocos": [
+                    {
+                        "subfoco": "Fisiopatologia Hormonal e Mediadores da REMIT",
+                        "sub_subfocos": [
+                            "Ativação do Eixo Simpático-Adrenal e Hormônios Contrarreguladores (Elevação de Cortisol, Glucagon, Catecolaminas, ADH e Aldosterona)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Protocolos Multimodais de Aceleração da Recuperação (ERAS / ACERTO)",
+                        "sub_subfocos": [
+                            "Estado Hipercatabólico, Resistência Periférica à Insulina com Hiperglicemia de Estresse e Retenção Hídrica e Salina com Perda de Potássio",
+                            "Abreviatura do Jejum Pré-Operatório com Bebidas Ricas em Carboidratos até 2 Horas Antes da Indução"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Técnica Cirúrgica, Fios e Drenos",
+                "subfocos": [
+                    {
+                        "subfoco": "Fios Cirúrgicos (Absorvíveis vs Inabsorvíveis)",
+                        "sub_subfocos": [
+                            "Realimentação Oral Precoce, Não Uso Sistemático de Sondas e Drenos e Deambulação Precoce",
+                            "Fios Absorvíveis Sintéticos: Poliglactina / Vicryl (Trançado) e Polidioxanona / PDS (Monofilamentar - Ideal para Fáscia)",
+                            "Fios Inabsorvíveis: Náilon e Polipropileno / Prolene (Monofilamentar, Mínima Reação Tecidual, Ideal para Pele e Vasos)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Drenos Cirúrgicos (Laminares vs Sucção Fechada)",
+                        "sub_subfocos": [
+                            "Catgut (Origem Animal, Reabsorção Rápida e Marcada Reação Inflamatória)",
+                            "Dreno de Penrose (Laminar, Gravitacional e Capilaridade - Sistema Aberto)",
+                            "Drenos de Sucção Fechada a Vácuo (Jackson-Pratt e Portovac: Menor Risco de Infecção Ascendente)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Suporte Nutricional no Perioperatório",
+                "subfocos": [
+                    {
+                        "subfoco": "Nutrição Enteral vs Parenteral no Paciente Cirúrgico",
+                        "sub_subfocos": [
+                            "Regra de Ouro: \"Se o Intestino Funciona, Use-o\" (Nutrição Enteral Precoce Previne Translocação Bacteriana e Atrofia de Vilosidades)",
+                            "Indicações Formais de Nutrição Parenteral Total (NPT): Íleo Prolongado Refratário, Fístula Enterocutânea de Alto Débito, Síndrome do Intestino Curto Extremo"
+                        ]
+                    },
+                    {
+                        "subfoco": "Síndrome de Realimentação e Imunonutrição",
+                        "sub_subfocos": [
+                            "Síndrome de Realimentação: Hipofosfatemia Severa Aguda, Hipocalemia, Hipomagnesemia e Arritmias Cardíacas Pós- Reintrodução Rápida de Glicose em Desnutridos Crônicos",
+                            "Imunonutrição Pré-Operatória com Arginina e Ácidos Graxos Ômega-3"
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     {
-      "tema": "Cirurgia Plástica e Reparadora",
-      "focos": [
-        {
-          "foco": "Enxertos e Retalhos Cutâneos",
-          "subfocos": [
-            "Enxerto de Espessura Parcial: Indicações",
-            "Enxerto de Espessura Total: Indicações",
-            "Enxertos e Retalhos Cutâneos",
-            "Escada Reconstrutiva de Mathes",
-            "Retalhos Livres Microcirúrgicos: TRAM, DIEP",
-            "Retalhos Pediculados: Rotação e Transposição"
-          ]
-        },
-        {
-          "foco": "Feridas Complexas e Úlceras",
-          "subfocos": [
-            "Feridas Complexas e Úlceras",
-            "Feridas Complexas: Reconstrução e Degeneração Maligna (Marjolin)",
-            "Terapia de Pressão Negativa (VAC) e Terapias Adjuvantes",
-            "Úlceras Crônicas: Pressão, Venosas e Pé Diabético"
-          ]
-        },
-        {
-          "foco": "Reconstrução Mamária",
-          "subfocos": [
-            "Reconstrução Imediata vs Tardia",
-            "Retalhos: TRAM, DIEP e Grande Dorsal",
-            "Simetrização e Reconstrução do CAP",
-            "Técnicas com Implantes e Expansores"
-          ]
-        },
-        {
-          "foco": "Sequelas de Queimaduras e Reconstrução",
-          "subfocos": [
-            "Cicatrizes Hipertróficas e Retrações",
-            "Enxertos e Retalhos para Cobertura",
-            "Liberação de Bridas e Zetaplastia",
-            "Reabilitação e Pressoterapia"
-          ]
-        },
-        {
-          "foco": "Traumas de Face e Tecidos Moles",
-          "subfocos": [
-            "Avaliação do Trauma Facial e Fraturas Nasais/Zigomáticas/Orbitárias",
-            "Fraturas Mandibulares e Maxilares (Le Fort)",
-            "Lesões de Tecidos Moles e Trauma Ocular",
-            "Traumas de Face e Tecidos Moles"
-          ]
-        }
-      ]
+        "tema": "Doenças Vasculares Cirúrgicas",
+        "focos": [
+            {
+                "foco": "Doença Arterial Obstrutiva Periférica (DAOP)",
+                "subfocos": [
+                    {
+                        "subfoco": "Fisiopatologia, Exame Físico e Classificação de Rutherford / Fontaine",
+                        "sub_subfocos": [
+                            "Estadiamento Clínico: Fontaine (I a IV: Claudicação Intermitente, Dor de Repouso e Úlcera Isquêmica) e Rutherford"
+                        ]
+                    },
+                    {
+                        "subfoco": "Tratamento Clínico de Otimização e Revascularização Cirúrgica / Endovascular",
+                        "sub_subfocos": [
+                            "Índice Tornozelo-Braquial (ITB <= 0,9 Indica DAOP; ITB < 0,4 Isquemia Crítica) e Palpação de Pulsos Periféricos",
+                            "Terapia Médica Padrão: Cessação do Tabagismo, Caminhada Supervisionada, Estatina de Alta Potência, AAS e Cilostazol",
+                            "Indicações de Revascularização (Bypass com Safena / Enxerto Protético vs Angioplastia Endovascular com Stent)",
+                            "Quadro Clínico Clássico dos 6 Ps: Pain (Dor), Pallor (Palidez), Pulselessness (Ausência de Pulso), Paresthesia (Parestesia), Paralysis (Paralisia) e Poikilothermia (Hipotermia)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Isquemia Arterial Aguda de Membros",
+                "subfocos": [
+                    {
+                        "subfoco": "Tétrade/Hexade dos 6 'Ps' e Diagnóstico Diferencial (Êmbolo vs Trombo)",
+                        "sub_subfocos": [
+                            "Diferenciação Etiológica: Embolia (Fonte Cardíaca/FA, Início Súbito, Sem Circulação Colateral) vs Trombose Arterial Prévia"
+                        ]
+                    },
+                    {
+                        "subfoco": "Classificação de Rutherford da Isquemia Aguda e Cirurgia de Urgência",
+                        "sub_subfocos": [
+                            "Classificação de Rutherford (I: Viável; IIa: Marginalmente Ameaçado; IIb: Imediatamente Ameaçado; III: Irreversível)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Aneurisma de Aorta Abdominal (AAA) e Torácica",
+                "subfocos": [
+                    {
+                        "subfoco": "Epidemiologia, Rastreamento e Indicações Cirúrgicas Eletivas",
+                        "sub_subfocos": [
+                            "Manejo Imediato com Heparinização Plena EV, Embolectomia Cirúrgica com Cateter de Fogarty e Fasciotomia Profilática",
+                            "Rastreamento com Ultrassonografia em Homens de 65-75 Anos Tabagistas (Definição de AAA: Diâmetro >= 3,0 cm)",
+                            "Indicações Cirúrgicas Canônicas: Diâmetro >= 5,5 cm em Homens (>= 5,0 cm em Mulheres), Crescimento > 1,0 cm/ano ou Presença de Sintomas"
+                        ]
+                    },
+                    {
+                        "subfoco": "Aneurisma Roto (Emergência Cirúrgica) e Técnicas (Aberta vs EVAR)",
+                        "sub_subfocos": [
+                            "Tríade do AAA Roto: Dor Lombar/Abdominal Súbita, Massa Pulsátil Palpável e Choque Hipovolêmico / Hipotensão",
+                            "Tratamento Cirúrgico Aberto com Prótese Dacron vs Correção Endovascular de Aneurisma (EVAR)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Doença Carotídea Extracraniana Cirúrgica",
+                "subfocos": [
+                    {
+                        "subfoco": "Estenose Carotídea Assintomática vs Sintomática (AIT / AVC)",
+                        "sub_subfocos": [
+                            "Investigação Propedêutica por Doppler de Artérias Carótidas e Vertebrais, Angio-TC e Angio-RNM",
+                            "Critérios de Indicação de Revascularização (Sintomáticos com Estenose >= 50-70%; Assintomáticos com Estenose >= 70- 80%)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Endarterectomia Carotídea vs Angioplastia com Stent e Complicações",
+                        "sub_subfocos": [
+                            "Angioplastia Carotídea com Stent e Sistema de Proteção Cerebral: Indicações Específicas (Pescoço Irradiado, Reestenose)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Insuficiência Venosa Crônica e Varizes de Membros Inferiores",
+                "subfocos": [
+                    {
+                        "subfoco": "Fisiopatologia, Classificação CEAP e Propedêutica",
+                        "sub_subfocos": [
+                            "Classificação CEAP (C0: Sem Sinais; C1: Telangiectasias; C2: Varizes; C3: Edema; C4: Alterações Tróficas/Dermatite Ocre; C5: Úlcera Cicatrizada; C6: Úlcera Ativa)",
+                            "Exame Físico Vascular, Prova de Brodie-Trendelenburg e Ultrassom Doppler Venoso Colorido (Mapeamento do Refluxo Safeno)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Manejo Clínico Conservador e Tratamento Cirúrgico / Termoablação",
+                        "sub_subfocos": [
+                            "Tratamento Conservador com Meias Elásticas de Compressão Graduada, Elevação de Membros e Cuidados com a Pele",
+                            "Opções Cirúrgicas: Safenectomia Tradicional, Termoablação por Laser / Radiofrequência e Escleroterapia com Espuma Densa"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Trombose Venosa Profunda (TVP) e Filtros de Veia Cava",
+                "subfocos": [
+                    {
+                        "subfoco": "Escore de Wells, Dímero-D e Doppler Venoso de Membros Inferiores",
+                        "sub_subfocos": [
+                            "Estratificação com Escore de Wells para TVP e Uso do Dímero-D de Alta Sensibilidade como Exame de Alto VPN"
+                        ]
+                    },
+                    {
+                        "subfoco": "Protocolos de Anticoagulação Plena e Filtro de Veia Cava Inferior",
+                        "sub_subfocos": [
+                            "Anticoagulação com Anticoagulantes Orais Diretos (DOACs: Rivaroxabana, Apixabana) vs HBPM e Varfarina",
+                            "Indicações Formais de Filtro de Veia Cava Inferior (FVCI): Contraindicação Absoluta à Anticoagulação ou TEP Recidivante em Anticoagulação Plena"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Acessos Vasculares para Hemodiálise",
+                "subfocos": [
+                    {
+                        "subfoco": "Fístula Arteriovenosa Autógena (FAV) vs Enxerto Protético (PTFE)",
+                        "sub_subfocos": [
+                            "Primeira Escolha Canônica: Fístula Autógena Radiocefálica (Brescia-Cimino) ou Braquiocefálica em Membro Não- Dominante",
+                            "Critérios de Maturação da Fístula (Regra dos 6: Fluxo > 600 mL/min, Diâmetro > 6 mm, Profundidade < 6 mm e Tempo >= 6 semanas)",
+                            "Identificação de Frêmito e Sopro Sistodiastólico na FAV e Propedêutica da Perda de Frêmito por Trombose"
+                        ]
+                    },
+                    {
+                        "subfoco": "Complicações de Acessos Vasculares: Trombose, Estenose e Síndrome de Roubo",
+                        "sub_subfocos": [
+                            "Síndrome de Roubo Arterial (Isquemia Distal da Mão com Dor, Palidez e Frialdade) e Conduta Cirúrgica (Banding / DRIL)"
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     {
-      "tema": "Cirurgia Torácica",
-      "focos": [
-        {
-          "foco": "Câncer de Pulmão: Ressecção e Estadiamento Cirúrgico",
-          "subfocos": [
-            "Estadiamento TNM e Ressecabilidade",
-            "Lobectomia vs Pneumonectomia",
-            "VATS e Cirurgia Minimamente Invasiva"
-          ]
-        },
-        {
-          "foco": "Derrame Pleural: Drenagem e Abordagem Cirúrgica",
-          "subfocos": [
-            "Empiema: Classificação e Tratamento",
-            "Indicações de Drenagem Torácica",
-            "Técnica de Drenagem Fechada"
-          ]
-        },
-        {
-          "foco": "Mediastino",
-          "subfocos": [
-            "Anatomia e Divisão do Mediastino",
-            "Mediastinite: Diagnóstico e Tratamento",
-            "Mediastino",
-            "Síndrome da Veia Cava Superior (SVCS)",
-            "Timoma e Miastenia Gravis: Diagnóstico e Tratamento"
-          ]
-        },
-        {
-          "foco": "Pneumotórax",
-          "subfocos": [
-            "Complicações e Manejo Pós-Drenagem",
-            "Pneumotórax",
-            "Pneumotórax Espontâneo Primário",
-            "Pneumotórax Hipertensivo: Diagnóstico e Manejo de Emergência",
-            "Pneumotórax Traumático"
-          ]
-        },
-        {
-          "foco": "Toracotomia de Emergência",
-          "subfocos": [
-            "Indicações de Toracotomia de Urgência/Emergência",
-            "Técnicas Cirúrgicas: Toracotomia e Acessos",
-            "Toracotomia de Emergência",
-            "Toracotomia de Reanimação e Condutas em PCR Traumática"
-          ]
-        }
-      ]
+        "tema": "Patologias Cirúrgicas Urológicas",
+        "focos": [
+            {
+                "foco": "Litíase Urinária e Cólica Nefrética Cirúrgica",
+                "subfocos": [
+                    {
+                        "subfoco": "Avaliação Propedêutica por Imagem e Manejo da Cólica Nefrética Aguda",
+                        "sub_subfocos": [
+                            "Tratamento da Dor Aguda com AINEs Intravenosos (Cetoprofeno) associados a Opiáceos e Hidratação Parcimoniosa"
+                        ]
+                    },
+                    {
+                        "subfoco": "Critérios de Intervenção Cirúrgica de Urgência e Eletiva (LECO, Ureterorrenolitotripsia, NLPC)",
+                        "sub_subfocos": [
+                            "Emergência Urológica Absoluta: Cálculo Obstrutivo Associado a Infecção Urinária / Sepse (Descompressão com Cateter Duplo J ou Nefrostomia)",
+                            "Tratamento Eletivo por Tamanho e Posição: Ureterolitotripsia Flexível a Laser, Litotripsia Extracorpórea (LECO) e Nefrolitotripsia Percutânea (NLPC > 2 cm)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Hiperplasia Prostática Benigna (HPB)",
+                "subfocos": [
+                    {
+                        "subfoco": "Quadro Clínico (Sintomas de Armazenamento e Esvaziamento) e Escore IPSS",
+                        "sub_subfocos": [
+                            "Sintomas do Trato Urinário Inferior (LUTS): Jato Fraco, Hesitação, Noctúria, Polaciúria e Sensação de Esvaziamento Incompleto"
+                        ]
+                    },
+                    {
+                        "subfoco": "Terapia Farmacológica Combinada e Ressecção Transuretral de Próstata (RTUP)",
+                        "sub_subfocos": [
+                            "Toque Retal (Próstata Aumentada, Lisa, Fibroelástica, Indolor e Sulco Mediano Preservado) e Dosagem de PSA",
+                            "Tratamento Medicamentoso: Alfa-Bloqueadores (Tansulosina) para Alívio Rápido + Inibidores da 5-Alfa-Redutase (Finasterida) para Redução de Volume",
+                            "Tratamento Cirúrgico: RTUP Monopolar/Bipolar (Próstatas < 80g) e Prostatectomia Suprapúbica Aberta / Enucleação a Laser (HoLEP > 80g)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Câncer de Próstata",
+                "subfocos": [
+                    {
+                        "subfoco": "Rastreamento, Biópsia Prostática Transretal e Escore de Gleason / ISUP",
+                        "sub_subfocos": [
+                            "Investigação Inicial: Alteração no Toque Retal (Nódulo Endurecido) ou Elevação de PSA (Avaliação de Fração Livre e Velocidade)",
+                            "Biópsia de Próstata Guiada por USG/RNM e Graduação Histopatológica de Gleason (Padrão Primário + Secundário) e Grupos ISUP (1 a 5)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Estratificação de Risco e Opções Terapêuticas (Vigilância, Prostatectomia e Hormonioterapia)",
+                        "sub_subfocos": [
+                            "Doença Localizada de Baixo Risco: Vigilância Ativa com PSA Periódico e Biópsias Seriadas",
+                            "Tratamento Curativo: Prostatectomia Radical (Aberta, Laparoscópica ou Robótica) vs Radioterapia e Terapia de Privação Androgênica (Bloqueio Hormonal)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Câncer Renal (Carcinoma de Células Renais)",
+                "subfocos": [
+                    {
+                        "subfoco": "Subtipos Histológicos, Tríade Clássica e Incidentalomas Renais",
+                        "sub_subfocos": [
+                            "Diagnóstico na Maioria dos Casos como Incidentaloma em Exame de Imagem (USG ou TC de Abdome)",
+                            "Tríade Clássica Tardia (Presente em < 10% dos casos): Hematúria Macroscópica, Dor em Flanco e Massa Abdominal Palpável"
+                        ]
+                    },
+                    {
+                        "subfoco": "Nefrectomia Parcial vs Radical e Síndromes Paraneoplásicas",
+                        "sub_subfocos": [
+                            "Subtipo Mais Comum: Carcinoma de Células Claras e Síndromes Paraneoplásicas (Eritrocitose por EPO, Hipercalcemia por PTHrP)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Câncer de Bexiga",
+                "subfocos": [
+                    {
+                        "subfoco": "Fatores de Risco (Tabagismo), Apresentação Clínica e Cistoscopia",
+                        "sub_subfocos": [
+                            "Principal Fator de Risco: Tabagismo e Exposição a Corantes de Anilina/Aminas Aromáticas",
+                            "Quadro Clínico Mais Comum: Hematúria Macroscópica Indolor, Total, Intermitente e com Coágulos"
+                        ]
+                    },
+                    {
+                        "subfoco": "Ressecção Transuretral de Bexiga (RTUB) e Invasão Muscular (Cistectomia Radical)",
+                        "sub_subfocos": [
+                            "Diagnóstico e Estadiamento Inicial por Cistoscopia com RTUB (Avaliação da Presença de Camada Muscular Própria na Amostra)",
+                            "Doença Não Músculo-Invasiva (RTUB + Imunoterapia Intravesical com BCG) vs Músculo-Invasiva (Cistectomia Radical + Neobexiga/Bricker)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Câncer de Testículo",
+                "subfocos": [
+                    {
+                        "subfoco": "Fatores de Risco (Criptorquidia), Apresentação Clínica e Marcadores Tumorais",
+                        "sub_subfocos": [
+                            "Principal Fator de Risco: Histórico de Criptorquidia; Apresentação como Nódulo Testicular Endurecido, Indolor e Fixo ao Parênquima",
+                            "Dosagem Pré-Operatória Mandatória de Marcadores: Alfa-fetoproteína (AFP), Beta-hCG e Desidrogenase Lática (LDH)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Orquiectomia Radical Inguinal e Diferenciação Seminoma vs Não-Seminoma",
+                        "sub_subfocos": [
+                            "Via de Acesso Cirúrgica Obrigatória: Orquiectomia Radical por Via Inguinal (Proibida Biópsia Transescrotal pelo Risco de Disseminação)",
+                            "Diferenciação Histopatológica: Seminoma (Alta Radiossensibilidade) vs Não-Seminoma (Teratoma, Carcinoma Embrionário, Coriocarcinoma)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Escroto Agudo (Torção Testicular e Orquiepididimite)",
+                "subfocos": [
+                    {
+                        "subfoco": "Diagnóstico Diferencial: Torção de Cordão Espermático vs Orquiepididimite Aguda",
+                        "sub_subfocos": [
+                            "Torção Testicular: Início Hiperagudo, Adolescentes, Testículo Elevado e Horizontalizado, Sinal de Prehn Negativo e Reflexo Cremastérico Ausente",
+                            "Orquiepididimite: Início Gradual, Disúria, Febre, Alívio da Dor à Elevação Testicular (Sinal de Prehn Positivo) e Reflexo Cremastérico Presente"
+                        ]
+                    },
+                    {
+                        "subfoco": "Janela Cirúrgica de Ouro (< 6 horas) e Orquidopexia Bilateral",
+                        "sub_subfocos": [
+                            "Emergência Cirúrgica Imediata: Exploração Escrotal de Urgência sem Perda de Tempo com Exames se Forte Suspeita Clínica",
+                            "Destorção Testicular, Avaliação da Viabilidade e Fixação Obrigatória do Testículo Contralateral (Orquidopexia Bilateral)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Trauma Urológico (Renal, Vesical e Uretral)",
+                "subfocos": [
+                    {
+                        "subfoco": "Trauma Renal: Mecanismos, TC com Contraste e Manejo Não-Operatório",
+                        "sub_subfocos": [
+                            "Indicações de TC com Contraste: Hematúria Macroscópica, Microematúria com Choque (PAS < 90 mmHg) ou Lesões Desacelerativas",
+                            "Classificação da AAST (Graus I a V) e Predomínio do Tratamento Não-Operatório com Repouso e Monitorização em Pacientes Estáveis",
+                            "Rotura Vesical Intraperitoneal (Dor Difusa, Indicação Cirúrgica Imediata) vs Extraperitoneal (Associada a Fratura de Pelve, Tratamento com SVD)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Trauma de Bexiga e Trauma de Uretra (Anterior vs Posterior)",
+                        "sub_subfocos": [
+                            "Trauma de Uretra: Sangue no Meato Uretral, Retenção Urinária e Hematoma Perineal (Proibida Cateterização Vesical; Realizar Uretrocistografia)"
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     {
-      "tema": "Cirurgia Vascular",
-      "focos": [
-        {
-          "foco": "Aneurismas",
-          "subfocos": [
-            "AAA Roto: Diagnóstico e Tratamento de Urgência",
-            "Aneurisma de Aorta Abdominal: Diagnóstico e Rastreamento",
-            "Aneurismas",
-            "Aneurismas Periféricos: Poplíteo e Femoral",
-            "Aneurismas Torácicos e Dissecção de Aorta",
-            "Tratamento: Cirurgia Aberta vs Endovascular (EVAR)"
-          ]
-        },
-        {
-          "foco": "Dissecção Aórtica",
-          "subfocos": [
-            "Classificação de Stanford e DeBakey",
-            "Diagnóstico por Imagem e Apresentação Clínica",
-            "Dissecção Aórtica",
-            "Tratamento Clínico vs. Cirúrgico/Endovascular"
-          ]
-        },
-        {
-          "foco": "Doença Venosa",
-          "subfocos": [
-            "Anatomia Venosa, Fisiologia e Diagnóstico por Doppler",
-            "Classificação CEAP e Estadiamento da Doença Venosa",
-            "Clínica e Tratamento de Varizes de Membros Inferiores",
-            "Doença Venosa",
-            "Manejo e Complicações da Úlcera Venosa",
-            "Síndrome Pós-Trombótica (SPT)"
-          ]
-        },
-        {
-          "foco": "Isquemia de Membro Aguda e Crônica",
-          "subfocos": [
-            "DAOP: Classificação de Fontaine e Rutherford",
-            "Etiologia: Embolia vs Trombose",
-            "Isquemia Aguda: 6 Ps e Classificação de Rutherford",
-            "Isquemia de Membro Aguda e Crônica",
-            "Revascularização: Angioplastia e Bypass",
-            "Tratamento de Isquemia Aguda: Embolectomia e Trombólise"
-          ]
-        },
-        {
-          "foco": "Trauma Vascular",
-          "subfocos": [
-            "Avaliação Clínica de Lesões Arteriais de Extremidades",
-            "Manejo e Reparo de Lesões Arteriais de Extremidades",
-            "Síndrome Compartimental Pós-Reperfusão",
-            "Trauma Vascular"
-          ]
-        },
-        {
-          "foco": "Tromboembolismo Venoso (TEV)",
-          "subfocos": [
-            "Filtro de Veia Cava Inferior: Indicações e Manejo",
-            "TEP: Diagnóstico Clínico e Estratificação de Risco",
-            "Tratamento Anticoagulante: Heparina, Varfarina e DOACs",
-            "Tromboembolismo Venoso (TEV)",
-            "Trombólise, Trombectomia e Intervenções",
-            "TVP: Diagnóstico Clínico e Fatores de Risco"
-          ]
-        }
-      ]
+        "tema": "Afecções Cirúrgicas do Tórax",
+        "focos": [
+            {
+                "foco": "Neoplasias Malignas Pulmonares (Câncer de Pulmão)",
+                "subfocos": [
+                    {
+                        "subfoco": "Tipos Histológicos, Rastreamento por TC de Baixa Dose e Diagnóstico",
+                        "sub_subfocos": [
+                            "Diferenciação Histológica: Não-Pequenas Células (Adenocarcinoma mais comum em não-fumantes, Carcinoma Epidermoide central) vs Pequenas Células (Oat-Cell, Central, Alta Agressividade)",
+                            "Rastreamento Anual com TC de Baixa Dose em Indivíduos de 50-80 Anos com Carga Tabágica >= 20 maços-ano"
+                        ]
+                    },
+                    {
+                        "subfoco": "Estadiamento TNM, Avaliação da Reserva Funcional Pulmonar e Ressecção",
+                        "sub_subfocos": [
+                            "Avaliação Funcional: Espirometria (VEF1 previsto pós-operatório > 30-40%) e Cintilografia Pulmonar",
+                            "Tratamento Cirúrgico Curativo para Estádios Iniciais (I e II): Lobectomia Pulmonar Anatômica com Linfadenectomia Mediastinal Sistêmica"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Derrame Pleural Neoplásico e Empiema Pleural Cirúrgico",
+                "subfocos": [
+                    {
+                        "subfoco": "Toracocentese Diagnóstica, Critérios de Light e Derrame Neoplásico",
+                        "sub_subfocos": [
+                            "Critérios de Light para Exsudato (Relação Proteína Pleural/Sérica > 0,5; LDH Pleural/Sérico > 0,6; LDH Pleural > 2/3 do limite superior)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Empiema Pleural: Fases Fisiopatológicas e Drenagem Torácica / Decorticação",
+                        "sub_subfocos": [
+                            "Manejo do Derrame Neoplásico Recidivante com Pleurodese Química (Talco / Doxiciclina) ou Cateter Pleural de Longa Permanência",
+                            "Fases do Derrame Parapneumônico: Exsudativa (Líquido Fluido, pH > 7,2), Fibrinopurulenta (pH < 7,2, Glicose < 40, Drenagem Obrigatória) e Organizada",
+                            "Indicações Cirúrgicas de Pleuroscopia (VATS) para Lise de Aderências e Decorticação Pulmonar Aberta na Fase de Encarceramento"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Pneumotórax Espontâneo",
+                "subfocos": [
+                    {
+                        "subfoco": "Pneumotórax Espontâneo Primário vs Secundário",
+                        "sub_subfocos": [
+                            "Primário: Jovens Altos, Magros, Tabagistas, por Ruptura de Blebs Apicais Subpleurais, sem Doença Pulmonar Prévia",
+                            "Secundário: Decorrente de Pneumopatia de Base (DPOC com Bolhas, Enfisema, Tuberculose Cavitária, Fibrose Cística)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Manejo Inicial, Drenagem Tubular em Selo d'Água e Cirurgia para Recidiva",
+                        "sub_subfocos": [
+                            "Conduta por Tamanho: Pequeno (< 2 cm na cúpula, assintomático: Observação e O2 a 100%) vs Grande (> 2 cm ou sintomático: Drenagem Torácica)",
+                            "Indicações de Tratamento Cirúrgico por Toracoscopia (VATS) com Bullectomia e Pleurodese: 2º Episódio (Recidiva), Fuga Aérea Persistente (> 48-72h) ou Hemopneumotórax"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Tumores de Mediastino",
+                "subfocos": [
+                    {
+                        "subfoco": "Anatomia Topográfica Mediastinal e Regra dos 4 Ts",
+                        "sub_subfocos": [
+                            "Mediastino Anterior (Regra dos 4 Ts: Timoma, Teratoma/Células Germinativas, Tireoide Ectópica e 'Terrível' Linfoma)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Investigação Radiológica e Abordagem Cirúrgica dos Timomas",
+                        "sub_subfocos": [
+                            "Mediastino Médio (Cistos Broncogênicos e Pericárdicos, Linfadenopatias) e Mediastino Posterior (Tumores Neuroogênicos: Schwanoma, Neurofibroma)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Bronquiectasias e Doenças Pleuropulmonares Supurativas",
+                "subfocos": [
+                    {
+                        "subfoco": "Fisiopatologia, Tomografia de Alta Resolução e Diagnóstico",
+                        "sub_subfocos": [
+                            "Tomografia Computadorizada de Tórax com Contraste e Ressonância Magnética para Avaliação de Invasão Vascular e Pericárdica",
+                            "Associação de Timoma com Miastenia Gravis e Técnica de Timectomia Radical Transtorácica ou Robótica",
+                            "Causas Principais: Sequela de Tuberculose, Infecções Pediátricas Graves na Infância, Fibrose Cística e Discinesia Ciliar"
+                        ]
+                    },
+                    {
+                        "subfoco": "Tratamento Clínico de Higiene Brônquica e Ressecção Pulmonar Cirúrgica",
+                        "sub_subfocos": [
+                            "Manejo Clínico Conservador com Fisioterapia Respiratória, Antibioticoterapia Guiada por Escarro e Broncodilatadores",
+                            "Indicações Cirúrgicas de Lobectomia / Segmentectomia: Doença Localizada Refratária ao Tratamento Clínico ou Hemoptise Maciça Ameaçadora à Vida"
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     {
-      "tema": "Coloproctologia",
-      "focos": [
-        {
-          "foco": "Câncer Anal",
-          "subfocos": [
-            "Cirurgia de Resgate e Amputação Abdominoperineal",
-            "Diagnóstico e Estadiamento do Câncer Anal",
-            "Tratamento Multimodal (Quimiorradioterapia)"
-          ]
-        },
-        {
-          "foco": "Distúrbios do Assoalho Pélvico",
-          "subfocos": [
-            "Distúrbios do Assoalho Pélvico",
-            "Enterocele e Sigmoidocele",
-            "Síndrome da Defecação Obstruída",
-            "Tratamento Cirúrgico: STARR e Mesh"
-          ]
-        },
-        {
-          "foco": "Doença Hemorroidária",
-          "subfocos": [
-            "Classificação de Doença Hemorroidária (Graus I-IV)",
-            "Doença Hemorroidária",
-            "Tratamento Cirúrgico: Hemorroidectomia e Técnicas (Ferguson, Milligan-Morgan, PPH)",
-            "Tratamento Conservador e Farmacológico (Graus I-II)",
-            "Trombose Hemorroidária: Diagnóstico e Manejo de Urgência"
-          ]
-        },
-        {
-          "foco": "Doença Pilonidal",
-          "subfocos": [
-            "Doença Pilonidal",
-            "Drenagem de Abscesso Pilonidal Agudo",
-            "Retalho de Limberg (Romboide)",
-            "Técnica de Karydakis (Lateralização)"
-          ]
-        },
-        {
-          "foco": "Estenoses e Complicações Anastomóticas",
-          "subfocos": [
-            "Deiscência de Anastomose: Diagnóstico e Conduta",
-            "Dilatação Endoscópica com Balão",
-            "Estenose de Anastomose Colorretal",
-            "Estenose de Anastomose Esofagojejunal",
-            "Estenoses e Complicações Anastomóticas"
-          ]
-        },
-        {
-          "foco": "Fissura Anal",
-          "subfocos": [
-            "Diagnóstico Clínico e Classificação (Aguda vs. Crônica)",
-            "Fissura Anal",
-            "Tratamento Cirúrgico: Esfincterotomia",
-            "Tratamento Clínico: Farmacológico e Conservador"
-          ]
-        },
-        {
-          "foco": "Fístulas e Abscessos Anorretais",
-          "subfocos": [
-            "Abscesso Perianal: Diagnóstico e Drenagem",
-            "Classificação de Parks e Regra de Goodsall",
-            "Fístulas Anais: Etiologia e Fisiopatologia",
-            "Fístulas e Abscessos Anorretais"
-          ]
-        },
-        {
-          "foco": "Prolapso Retal",
-          "subfocos": [
-            "Classificação: Mucoso vs Completo",
-            "Tratamento Abdominal: Retopexia",
-            "Tratamento Perineal: Delorme e Altemeier"
-          ]
-        }
-      ]
+        "tema": "Cirurgia Pediátrica e Neonatal",
+        "focos": [
+            {
+                "foco": "Atresia de Esôfago e Fístula Traqueoesofágica",
+                "subfocos": [
+                    {
+                        "subfoco": "Classificação Anatômica, Diagnóstico Neonatal e Sonda Orogástrica",
+                        "sub_subfocos": [
+                            "Tipo Mais Frequente (Tipo C / III de Gross: 85% dos casos): Atresia Proximal com Fístula Traqueoesofágica Distal",
+                            "Quadro Clínico Clássico: Sialorréia Abundante, Regurgitação das Primeiras Mamadas, Sufocamento e Impossibilidade de Progressão da Sonda Orogástrica (Para a 10-12 cm)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Propedêutica Radiológica (Presença de Ar no Abdome) e Correção Cirúrgica",
+                        "sub_subfocos": [
+                            "Radiografia Simples: Sonda Enovelada no Coto Proximal e Presença de Ar Gastrointestinal Confirmando Fístula Distal",
+                            "Preparo Pré-Operatório com Aspiração Contínua do Coto Proximal e Cirurgia com Ligadura da Fístula e Anastomose Primária do Esôfago"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Estenose Hipertrófica do Piloro",
+                "subfocos": [
+                    {
+                        "subfoco": "Quadro Clínico (Vômitos Não-Biliosos em Jato) e Distúrbio Hidroeletrolítico",
+                        "sub_subfocos": [
+                            "Apresentação Típica: Lactente Masculino de 3 a 6 Semanas com Vômitos Não-Biliosos Pós-Prandiais Progressivos 'Em Jato' e Fome Voraz",
+                            "Distúrbio Ácido-Base Típico Patognomônico: Alcalose Metabólica Hipoclorêmica e Hipocalêmica por Perda de Ácido Clorídrico Gástrico"
+                        ]
+                    },
+                    {
+                        "subfoco": "Diagnóstico Ultrassonográfico e Piloromiotomia de Fredet-Ramstedt",
+                        "sub_subfocos": [
+                            "Exame Físico (Palpação da 'Oliva Pilórica' em Hipocôndrio Direito) e Ultrassom (Espessura Muscular Pilórica >= 3-4 mm e Comprimento >= 14-16 mm)",
+                            "Preparo Obrigatório com Correção Hidroeletrolítica Antes de Qualquer Cirurgia, seguido de Piloromiotomia Extramucosa de Ramstedt"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Hérnia Diafragmática Congênita",
+                "subfocos": [
+                    {
+                        "subfoco": "Hérnia de Bochdalek vs Morgagni e Fisiopatologia da Hipoplasia Pulmonar",
+                        "sub_subfocos": [
+                            "Localização Mais Frequente: Hérnia Posterolateral Esquerda de Bochdalek (85-90% dos casos) com Herniação de Alças Intestinais para o Tórax",
+                            "Fisiopatologia Crítica: Hipoplasia Pulmonar Bilateral Grave e Hipertensão Pulmonar Persistente do Neonato"
+                        ]
+                    },
+                    {
+                        "subfoco": "Manejo Ventilatório Neonatal Imediato e Momento da Correção Cirúrgica",
+                        "sub_subfocos": [
+                            "Conduta em Sala de Parto: Intubação Orotraqueal Imediata (Proibida Ventilação com Bolsa e Máscara para Evitar Distensão de Alças) e SOG Calibrosa",
+                            "Estabilização Hemodinâmica e Respiratória Prévia com Óxido Nítrico Inalatório antes da Correção Cirúrgica Eletiva após 24-48h"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Malformações Anorretais (Ânus Imperfurado)",
+                "subfocos": [
+                    {
+                        "subfoco": "Classificação (Lesões Altas vs Baixas) e Fístulas Perineais / Urinárias",
+                        "sub_subfocos": [
+                            "Exame Físico Perineal Inicial após 16-24 Horas de Vida: Identificação de Fístulas no Períneo, Vestíbulo Vaginal ou Sistema Urinário",
+                            "Lesões Baixas (Fístula Perineal Visível, Abaixo do Músculo Elevador do Ânus) vs Lesões Altas (Sem Fístula Externa ou Fístula Retourinária/Retovaginal)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Invertograma / Radiografia em Posição Prona e Conduta (Anoplastia vs Colostomia)",
+                        "sub_subfocos": [
+                            "Propedêutica Radiológica (Invertograma ou Radiografia com Bacia Elevada após 24h) para Medir a Distância entre a Bolsa Retal e a Pele",
+                            "Conduta Cirúrgica: Lesões Baixas tratadas com Anoplastia Sagital Posterior Imediata; Lesões Altas tratadas com Colostomia em Alça e Reconstrução Tardia (Pena)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Gastrosquise e Onfalocele",
+                "subfocos": [
+                    {
+                        "subfoco": "Diferenciação Embriológica e Anatômica: Gastrosquise vs Onfalocele",
+                        "sub_subfocos": [
+                            "Gastrosquise: Defeito Paraumbilical à Direita do Cordão, Sem Membrana de Cobertura, Alças Espessadas e Inflamadas pelo Contato com Líquido Amniótico"
+                        ]
+                    },
+                    {
+                        "subfoco": "Cuidados Imediatos em Sala de Parto e Fechamento Primário vs Silo Gradual",
+                        "sub_subfocos": [
+                            "Onfalocele: Defeito Central no Ânulo Umbilical, Coberto por Membrana de Peritônio e Âmnio, Frequente Associação com Anomalias Cardíacas e Genéticas",
+                            "Proteção Térmica e Asséptica Imediata das Alças com Plástico Estéril e Sonda Gástrica Aberta sem Compressão dos Vasos Mesentéricos",
+                            "Redução das Vísceras: Fechamento Primário em Tempo Único vs Redução Escalonada com Silo de Molares para Evitar Síndrome Compartimental Abdominal"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Invaginação Intestinal (Intussuscepção)",
+                "subfocos": [
+                    {
+                        "subfoco": "Quadro Clínico (Dor Paroxística, Fezes em Geleia de Framboesa) e Ultrassom",
+                        "sub_subfocos": [
+                            "Tríade Semiológica: Crises de Choro Intenso com Flexão de Pernas, Vômitos e Eliminação de Fezes com Sangue e Muco ('Geleia de Framboesa')"
+                        ]
+                    },
+                    {
+                        "subfoco": "Redução Hidrostática / Pneumática vs Indicação Cirúrgica de Laparotomia",
+                        "sub_subfocos": [
+                            "Primeira Linha no Paciente Estável sem Sinais de Peritonite: Redução Não-Cirúrgica com Enema Pneumático ou Hidrostático Guiado por USG/Fluoroscopia",
+                            "Indicações Cirúrgicas Absolutas: Sinais de Peritonite, Perfuração Intestinal, Pneumoperitônio ou Falha da Redução Não- Invasiva"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Criptorquidia e Hérnias Congênitas",
+                "subfocos": [
+                    {
+                        "subfoco": "Fisiopatologia da Descida Testicular, Exame Físico e Idade para Correção",
+                        "sub_subfocos": [
+                            "Diagnóstico Clínico por Palpação em Posição de Alfaiate (Testículo Retrátil vs Ectópico vs Criptorquídico)",
+                            "Momento Cirúrgico Canônico: Intervenção entre 6 e 12 Meses de Idade (Risco Aumentado de Infertilidade e Neoplasia se Não Tratado)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Técnica de Orquidopexia e Hérnia Inguinal Indireta Congênita na Infância",
+                        "sub_subfocos": [
+                            "Orquidopexia por Via Inguinal com Dissecção Funicular e Fixação do Testículo em Bolsa Escrotal Subcutânea",
+                            "Hérnia Inguinal Pediátrica: Patência do Conduto Peritoniovaginal (Tratamento com Ligadura Alta do Saco Herniário sem Prótese)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Megacólon Congênito (Doença de Hirschsprung)",
+                "subfocos": [
+                    {
+                        "subfoco": "Fisiopatologia da Aganglionose Retal, Atraso na Eliminação de Mecônio e Toque",
+                        "sub_subfocos": [
+                            "Fisiopatologia: Ausência Congênita de Plexos Nervosos Entéricos (Meissner e Auerbach) no Segmento Retal Distal",
+                            "Apresentação Neonatal Típica: Atraso na Eliminação de Mecônio (> 48h), Distensão Abdominal e Saída Explosiva de Fezes/Gases ao Toque Retal"
+                        ]
+                    },
+                    {
+                        "subfoco": "Enema Opaco, Manometria Anorretal, Biópsia Retal e Cirurgia de Abaixamento",
+                        "sub_subfocos": [
+                            "Enema Opaco demonstrando Cone de Transição e Cirurgias Definitivas de Abaixamento de Cólon (Técnicas de Duhamel, Soave ou Swenson)"
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     {
-      "tema": "Geral",
-      "focos": [
-        {
-          "foco": "Geral",
-          "subfocos": []
-        }
-      ]
+        "tema": "Cirurgia Cervical e Tireoidiana",
+        "focos": [
+            {
+                "foco": "Nódulos e Câncer de Tireoide Cirúrgico",
+                "subfocos": [
+                    {
+                        "subfoco": "Avaliação Ultrassonográfica (Sistema ACR TI-RADS) e PAAF com Classificação de Bethesda",
+                        "sub_subfocos": [
+                            "Critérios Ultrassonográficos de Suspeita (Nódulo Sólido, Hipoecoico, Mais Alto que Largo, Margens Irregulares, Microcalcificações)",
+                            "Classificação Citopatológica de Bethesda (Bethesda II: Benigno; Bethesda III/IV: Atipia/Neoplasia Folicular; Bethesda V/VI: Maligno/Papilífero)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Carcinoma Papilífero e Folicular: Tireoidectomia Total vs Parcial e Esvaziamento Cervical",
+                        "sub_subfocos": [
+                            "Carcinoma Papilífero (Tipo Mais Comum, Disseminação Linfática, Corpos de Psamoma) e Indicação de Tireoidectomia com Esvaziamento Central",
+                            "Carcinoma Folicular (Disseminação Hematogênica) e Complicações Cirúrgicas (Lesão do Nervo Laríngeo Recorrente e Hipoparatireoidismo)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Hiperparatireoidismo e Cirurgia das Paratireoides",
+                "subfocos": [
+                    {
+                        "subfoco": "Diagnóstico Diferencial: Hiperparatireoidismo Primário, Secundário e Terciário",
+                        "sub_subfocos": [
+                            "Primário: Elevação Concomitante de Cálcio Sérico e PTH por Adenoma Único de Paratireoide (85% dos casos)",
+                            "Secundário: Decorrente de Insuficiência Renal Crônica (Hipocalcemia/Hiperfosfatemia com PTH Alto Reacional)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Localização Pré-Operatória (Cintilografia com Sestamibi) e Paratireoidectomia",
+                        "sub_subfocos": [
+                            "Exames de Localização: Cintilografia com 99mTc-Sestamibi e Ultrassonografia Cervical de Alta Resolução",
+                            "Paratireoidectomia Minimamente Invasiva com Dosagem Intraoperatória de PTH (Critério de Queda > 50% em 10 Minutos)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Câncer de Laringe e Cavidade Oral",
+                "subfocos": [
+                    {
+                        "subfoco": "Fatores de Risco (Tabagismo e Etilismo Sinergistas), Lesões Precursoras e Biópsia",
+                        "sub_subfocos": [
+                            "Sinergia de Risco: Associação de Tabagismo Intenso e Consumo de Álcool Aumenta Exponencialmente o Risco de Carcinoma Epidermoide (CEC)",
+                            "Lesões Potencialmente Malignas da Cavidade Oral: Leucoplasia e Eritroplastia (Maior Potencial de Transformação Maligna)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Quadro Clínico (Disfonia Persistente > 3 semanas) e Laringectomia com Traqueostomia",
+                        "sub_subfocos": [
+                            "Sinal de Alerta Canônico: Rouquidão / Disfonia Progressiva por mais de 3 Semanas em Fumante exige Videolaringoscopia Imediata",
+                            "Tratamento de Acordo com o Estádio: Radioterapia Exclusiva em Lesões Glóticas Iniciais vs Laringectomia Total com Esvaziamento Cervical"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Tumores de Glândulas Salivares",
+                "subfocos": [
+                    {
+                        "subfoco": "Diagnóstico Diferencial de Nódulos em Parótida e Submandibular",
+                        "sub_subfocos": [
+                            "Regra de Proporcionalidade: 80% dos Tumores Ocorrem na Parótida e 80% são Benignos; Nas Glândulas Menores, Maioria é Maligna",
+                            "Tumor Mais Comum: Adenoma Pleomórfico (Benigno, Crescimento Lento, Móvel) e Tumor de Warthin (Cistoadenoma Papilar Linfomatoso em Fumantes)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Parotidectomia Superficial com Preservação do Nervo Facial e Carcinoma Mucoepidermoide",
+                        "sub_subfocos": [
+                            "Parotidectomia Superficial / Total com Dissecção e Preservação Obrigatória dos Ramos do Nervo Facial (VII Par Craniano)",
+                            "Neoplasia Maligna Mais Comum: Carcinoma Mucoepidermoide e Carcinoma Adenoide Cístico (Invasão Perineural Típica)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Cistos Congênitos Cervicais (Tireoglosso e Branquial)",
+                "subfocos": [
+                    {
+                        "subfoco": "Cisto do Ducto Tireoglosso: Linha Média e Cirurgia de Sistrunk",
+                        "sub_subfocos": [
+                            "Apresentação: Massa Cística Indolor na Linha Média Cervical que se Eleva à Deglutição e Protrusão da Língua",
+                            "Cirurgia de Sistrunk: Excisão Completa do Cisto, do Trato Fictício e da Porção Central do Corpo do Osso Hioide para Prevenir Recidiva"
+                        ]
+                    },
+                    {
+                        "subfoco": "Cisto de Fenda Branquial: Borda Anterior do Esternocleidomastoideo",
+                        "sub_subfocos": [
+                            "Origem Embriológica Mais Frequente: Segunda Fenda Branquial (Localizado na Borda Anterior do Músculo ECM, Ângulo da Mandíbula)",
+                            "Diagnóstico Diferencial com Linfonodopatias e Exérese Cirúrgica Completa sem Romper a Cápsula"
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     {
-      "tema": "Hérnias da Parede Abdominal",
-      "focos": [
-        {
-          "foco": "Anatomia da Parede Abdominal e Canal Inguinal",
-          "subfocos": [
-            "Anatomia da Parede Abdominal e Canal Inguinal",
-            "Anatomia do Triângulo de Hesselbach",
-            "Anatomia Geral da Parede Abdominal",
-            "Cordão Espermático e Vascularização Inguinal",
-            "Inervação e Anatomia de Superfície",
-            "Limites e Estruturas do Canal Inguinal"
-          ]
-        },
-        {
-          "foco": "Complicações Pós-Operatórias e Recidiva de Hérnias",
-          "subfocos": [
-            "Complicações de Prótese: Infecção, Migração e Dor",
-            "Complicações Pós-Operatórias e Recidiva de Hérnias",
-            "Complicações Precoces: Seroma, Hematoma e Deiscência",
-            "Dor Crônica Pós-Herniorrafia (Inguinodinia)",
-            "Lesões Nervosas, Vasculares e Complicações Urinárias",
-            "Recidiva: Fatores de Risco, Diagnóstico e Reabordagem"
-          ]
-        },
-        {
-          "foco": "Hérnia Encarcerada e Estrangulada: Urgência Cirúrgica",
-          "subfocos": [
-            "Hérnia Encarcerada e Estrangulada: Urgência Cirúrgica",
-            "Hérnia Encarcerada: Diagnóstico e Manejo Clínico",
-            "Hérnia Estrangulada: Diagnóstico e Manejo Clínico",
-            "Tratamento Cirúrgico de Urgência para Hérnias"
-          ]
-        },
-        {
-          "foco": "Hérnia Femoral",
-          "subfocos": [
-            "Abordagem Pré-peritoneal: TEP e TAPP",
-            "Alto Risco de Encarceramento: Urgência Cirúrgica",
-            "Canal Femoral: Anel de Entrada e Limites",
-            "Diagnóstico Diferencial: Inguinal vs Femoral",
-            "Hérnia Femoral",
-            "Técnica de McVay para Hérnia Femoral"
-          ]
-        },
-        {
-          "foco": "Hérnia Incisional e Ventral: Diagnóstico e Tratamento",
-          "subfocos": [
-            "Classificação e Diagnóstico de Hérnias Ventrais/Incisionais",
-            "Complicações Pós-operatórias de Reparo de Hérnia",
-            "Fatores de Risco e Prevenção de Hérnias Incisionais",
-            "Hérnia Incisional e Ventral: Diagnóstico e Tratamento",
-            "Técnicas Cirúrgicas Específicas (Stoppa, Ramirez)",
-            "Técnicas de Reparo com Tela (Onlay, Sublay, Intraperitoneal)"
-          ]
-        },
-        {
-          "foco": "Hérnia Inguinal: Direta vs Indireta",
-          "subfocos": [
-            "Classificação de Nyhus: Tipos e Aplicações Clínicas",
-            "Conduta: Cirurgia vs. Observação e Escolha de Técnica",
-            "Hérnia Inguinal Direta: Anatomia e Fisiopatologia",
-            "Hérnia Inguinal Indireta: Anatomia e Origem Congênita",
-            "Hérnia Inguinal: Direta vs Indireta"
-          ]
-        },
-        {
-          "foco": "Hérnia Inguinal: Técnicas de Reparo (Lichtenstein, TEP, TAPP)",
-          "subfocos": [
-            "Complicações e Manejo Pós-operatório",
-            "Hérnia Inguinal: Técnicas de Reparo (Lichtenstein, TEP, TAPP)",
-            "Técnica de Lichtenstein: Princípios e Aplicações",
-            "Técnica TAPP: Abordagem Transabdominal Pré-peritoneal",
-            "Técnica TEP: Abordagem Totalmente Extraperitoneal",
-            "Técnicas Clássicas: Shouldice, McVay e Bassini"
-          ]
-        },
-        {
-          "foco": "Hérnia Umbilical e Epigástrica",
-          "subfocos": [
-            "Diástase dos Retos: Diferença de Hérnia",
-            "Hérnia Epigástrica: Gordura Pré-peritoneal",
-            "Hérnia Umbilical e Epigástrica",
-            "Hérnia Umbilical: Redutibildade e Risco de Encarceramento",
-            "Técnica de Reparo: Sutura Primária vs Tela"
-          ]
-        },
-        {
-          "foco": "Hérnias Raras: Spiegel, Obturatória, Lombar",
-          "subfocos": [
-            "Hérnia de Spiegel: Anatomia e Diagnóstico",
-            "Hérnia Obturatória: Apresentação Clínica e Diagnóstico",
-            "Hérnias Lombares: Anatomia e Classificação",
-            "Hérnias Raras: Spiegel, Obturatória, Lombar"
-          ]
-        },
-        {
-          "foco": "Hérnias: Conceitos, Classificação e Diagnóstico",
-          "subfocos": [
-            "Anatomia da Região Inguinal e Femoral",
-            "Classificação de Nyhus e EHS",
-            "Complicações: Encarceramento e Estrangulamento",
-            "Hérnia Direta vs Indireta: Diferenciação",
-            "Hérnia Femoral: Características e Riscos",
-            "Hérnias: Conceitos, Classificação e Diagnóstico"
-          ]
-        }
-      ]
+        "tema": "Queimaduras e Cirurgia Reparadora",
+        "focos": [
+            {
+                "foco": "Queimaduras Térmicas, Químicas e Elétricas (Reposição Volêmica e Conduta)",
+                "subfocos": [
+                    {
+                        "subfoco": "Avaliação da Área Queimada (Regra dos Nove de Wallace) e Fórmula de Parkland",
+                        "sub_subfocos": [
+                            "Cálculo da Superfície Corpórea Queimada (SCQ) pela Regra dos Nove de Wallace em Adultos (Cabeça 9%, Braços 9% cada, Tronco Ant 18%, Post 18%, Pernas 18% cada, Genitália 1%)",
+                            "Fórmula de Parkland Modificada: 2 a 4 mL x Peso (kg) x % SCQ de Ringer Lactato (Metade nas Primeiras 8h a contar da Queimadura e Metade nas 16h seguintes)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Queimaduras Circunferenciais (Escarotomia) e Lesão por Inalação",
+                        "sub_subfocos": [
+                            "Queimaduras de 3º Grau Circunferenciais em Tronco ou Membros com Síndrome Compartimental (Indicação de Escarotomia Descompressiva Imediata)",
+                            "Lesão por Inalação de Fumaça (Vibriças Queimadas, Fuligem na Orofaringe, Escarro Carbonáceo) exigindo Intubação Precoce"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Câncer de Pele Não-Melanoma (CBC e CEC) Cirúrgico",
+                "subfocos": [
+                    {
+                        "subfoco": "Carcinoma Basocelular (CBC): Subtipos Clínicos e Margens Cirúrgicas",
+                        "sub_subfocos": [
+                            "Neoplasia Maligna Mais Frequente: CBC Nodular (Pápula Perlácea com Telangiectasias Centrais em Áreas Fotoexpostas)",
+                            "Margens Cirúrgicas de Segurança: 4 mm para Lesões de Baixo Risco e Cirurgia Micrográfica de Mohs em Áreas Nobres da Face"
+                        ]
+                    },
+                    {
+                        "subfoco": "Carcinoma Espinocelular (CEC) e Ceratose Actínica",
+                        "sub_subfocos": [
+                            "Lesão Precursora: Ceratose Actínica; CEC com Placa Ulcerada, Crostosa, de Crescimento Rápido e Risco de Metástase Linfática",
+                            "Margens de Ressecção de 4 a 6 mm (ou 10 mm em Alto Risco) e Úlcera de Marjolin (CEC sobre Cicatriz de Queimadura Antiga)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Melanoma Cutâneo Cirúrgico",
+                "subfocos": [
+                    {
+                        "subfoco": "Regra do ABCDE, Biópsia Excisional e Espessura de Breslow",
+                        "sub_subfocos": [
+                            "Avaliação Dermatoscópica Canônica com Regra do ABCDE (Assimetria, Bordas Irregulares, Cores Múltiplas, Diâmetro > 6 mm e Evolução)",
+                            "Biópsia Excisional com Margem Estreita de 1-2 mm e Índice de Breslow (Medida Histológica da Invasão em Milímetros da Granulosa até a Célula Mais Profunda)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Ampliação de Margens e Biópsia de Linfonodo Sentinela (BLS)",
+                        "sub_subfocos": [
+                            "Margens Definitivas de Ampliação: In Situ (0,5 cm), Breslow <= 1 mm (1,0 cm), Breslow 1,01 a 2,0 mm (1 a 2 cm) e Breslow > 2 mm (2,0 cm)",
+                            "Indicação Formal de Linfonodo Sentinela: Melanomas com Breslow >= 0,8 mm (ou < 0,8 mm com Ulceração Histológica)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Retalhos e Enxertos Cutâneos",
+                "subfocos": [
+                    {
+                        "subfoco": "Princípios da Escada Reconstrutiva e Enxertos de Pele (Parcial vs Total)",
+                        "sub_subfocos": [
+                            "Diferença Biológica: Enxertos de Pele Parcial (Epiderme e Parte da Derme: Fácil Pega, Maior Contração Secundária) vs Pele Total (Menor Contração, Estética Superior)",
+                            "Fases de Integração do Enxerto: Embebição Plasmática (Primeiras 48h), Inosculação Capilar e Neovascularização"
+                        ]
+                    },
+                    {
+                        "subfoco": "Retalhos Cutâneos Locais e Microcirurgia Reconstrutiva",
+                        "sub_subfocos": [
+                            "Definição de Retalho: Tecido Transferido Mantendo seu Próprio Pedículo Vascular Nutridor (Retalhos de Avanço, Rotação e Transposição)",
+                            "Indicações de Retalhos: Cobertura de Estruturas Nobres Expostas (Ossos Desprovidos de Periósteo, Tendões Desprovidos de Paratendão e Vasos)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Feridas Complexas e Úlceras por Pressão",
+                "subfocos": [
+                    {
+                        "subfoco": "Estadiamento de Úlceras por Pressão (Estágios 1 a 4) e Prevenção",
+                        "sub_subfocos": [
+                            "Estadiamento Canônico: Estágio 1 (Eritema que Não Desaparece à Pressão em Pele Íntegra); Estágio 2 (Perda Parcial da Derme, Bolha); Estágio 3 (Perda Total da Pele com Exposição de Gordura); Estágio 4 (Exposição de Músculo/Osso)",
+                            "Prevenção Primária: Mudança de Decúbito a Cada 2 Horas, Colchão Pneumático de Pressão Alternada e Avaliação com Escala de Braden"
+                        ]
+                    },
+                    {
+                        "subfoco": "Desbridamento Cirúrgico, Curativos Especiais e Terapia por Pressão Negativa",
+                        "sub_subfocos": [
+                            "Tipos de Desbridamento: Cirúrgico Instrumental (Necrose Seca/Úmida Extensa) vs Autolítico e Enzimático (Colagenase)",
+                            "Terapia por Pressão Negativa (Curativo a Vácuo): Redução do Edema, Estímulo à Angiogênese e Formação de Tecido de Granulação Saudável"
+                        ]
+                    }
+                ]
+            }
+        ]
     },
     {
-      "tema": "Neurocirurgia",
-      "focos": [
-        {
-          "foco": "Doença Vascular Cerebral",
-          "subfocos": [
-            "Aneurisma Cerebral Roto: Clipagem vs Embolização",
-            "Doença Vascular Cerebral",
-            "Endarterectomia de Carótida: Indicações",
-            "Hematoma Intracraniano: Indicações de Evacuação",
-            "Hemorragia Subaracnóidea: Escala Hunt-Hess e Fisher",
-            "Vasoespasmo Pós-HSA e Hidrocefalia"
-          ]
-        },
-        {
-          "foco": "Geral",
-          "subfocos": []
-        },
-        {
-          "foco": "Hérnia de Disco",
-          "subfocos": [
-            "Hérnia de Disco",
-            "Indicações de Cirurgia: Síndrome da Cauda Equina",
-            "Níveis mais Acometidos: L4-L5 e L5-S1",
-            "Quadro Clínico: Lombalgia e Radiculopatia",
-            "Técnicas: Discectomia e Laminectomia"
-          ]
-        },
-        {
-          "foco": "Hidrocefalia",
-          "subfocos": [
-            "Classificação: Comunicante vs Obstrutiva",
-            "Derivação Ventrículo-Peritoneal (DVP)",
-            "Etiologia: Congênita e Adquirida"
-          ]
-        },
-        {
-          "foco": "Hipertensão Intracraniana",
-          "subfocos": [
-            "Craniectomia Descompressiva: Indicações",
-            "Hipertensão Intracraniana",
-            "Manitol, Solução Hipertônica e DVE",
-            "TCE e Hematomas Intracranianos",
-            "Tríade de Cushing e Herniação"
-          ]
-        },
-        {
-          "foco": "Manejo Definitivo de Trauma Raquimedular",
-          "subfocos": [
-            "Descompressão Medular",
-            "Estabilização da Coluna: Indicações",
-            "Fixação e Artrodese",
-            "Manejo Definitivo de Trauma Raquimedular",
-            "Reabilitação Pós-operatória"
-          ]
-        },
-        {
-          "foco": "Tumores do SNC",
-          "subfocos": [
-            "Complicações Pós-Neurocirúrgicas e Infecções do SNC",
-            "Metástases Cerebrais e Tumores Pediátricos",
-            "Tumores Primários: Gliomas, Meningiomas e Outros"
-          ]
-        }
-      ]
-    },
-    {
-      "tema": "Oncologia Cirúrgica",
-      "focos": [
-        {
-          "foco": "Câncer Colorretal",
-          "subfocos": [
-            "Câncer Colorretal",
-            "Câncer de Reto: Neoadjuvância e ETM",
-            "Diagnóstico e Estadiamento (TNM)",
-            "Epidemiologia e Fatores de Risco",
-            "Síndromes Hereditárias: PAF e Lynch",
-            "Tratamento Cirúrgico: Colectomias e Princípios Oncológicos"
-          ]
-        },
-        {
-          "foco": "Câncer de Esôfago",
-          "subfocos": [
-            "Câncer de Esôfago",
-            "Epidemiologia, Fatores de Risco e Subtipos Histológicos",
-            "Esôfago de Barrett e Displasia",
-            "Estadiamento, Diagnóstico por Imagem e Biópsia",
-            "Junção Esofagogástrica e Classificação de Siewert",
-            "Tratamento Cirúrgico, Neoadjuvante e Paliativo"
-          ]
-        },
-        {
-          "foco": "Câncer de Mama: Cirurgia Oncológica",
-          "subfocos": [
-            "Estadiamento, Subtipos Moleculares e Rastreamento",
-            "Linfonodo Sentinela: Técnica e Estadiamento Axilar",
-            "Tratamento Cirúrgico: Conservadora vs. Mastectomia"
-          ]
-        },
-        {
-          "foco": "Câncer de Pâncreas",
-          "subfocos": [
-            "Câncer de Pâncreas",
-            "Diagnóstico: Imagem e Marcadores Tumorais (CA 19-9)",
-            "Duodenopancreatectomia (Whipple) e Técnicas",
-            "Epidemiologia e Fatores de Risco",
-            "Estadiamento e Ressecabilidade",
-            "Tratamento Paliativo e Drenagem Biliar"
-          ]
-        },
-        {
-          "foco": "Câncer Gástrico",
-          "subfocos": [
-            "Câncer Gástrico",
-            "Câncer Gástrico Precoce: Ressecção Endoscópica",
-            "Classificação: Lauren e Borrmann",
-            "Epidemiologia e Fatores de Risco",
-            "Estadiamento e Avaliação de Ressecabilidade",
-            "Tratamento Cirúrgico: Gastrectomia e Linfadenectomia"
-          ]
-        },
-        {
-          "foco": "Carcinoma Hepatocelular",
-          "subfocos": [
-            "Carcinoma Hepatocelular",
-            "Diagnóstico por Imagem: Critérios LI-RADS",
-            "Epidemiologia: Cirrose e Hepatites como Fatores de Risco",
-            "Estadiamento Barcelona (BCLC) e Tratamento",
-            "Indicações de Transplante Hepático: Milão",
-            "Rastreamento em Cirróticos: USG e Alfafetoproteína"
-          ]
-        },
-        {
-          "foco": "Melanoma: Estadiamento e Biópsia de Linfonodo Sentinela",
-          "subfocos": [
-            "Biópsia Excisional: Técnica e Margens",
-            "Estadiamento: Fatores Prognósticos e Classificação",
-            "Linfonodo Sentinela: Indicações e Procedimento",
-            "Melanoma: Estadiamento e Biópsia de Linfonodo Sentinela",
-            "Regra ABCDE e Avaliação Clínica Inicial"
-          ]
-        },
-        {
-          "foco": "Metástases Hepáticas",
-          "subfocos": [
-            "Critérios de Ressecabilidade",
-            "Hepatectomia e Volume Hepático Residual",
-            "Metástases Hepáticas",
-            "Principais Tumores Primários: Colorretal",
-            "Tratamento Local: RFA e Quimioembolização"
-          ]
-        },
-        {
-          "foco": "Sarcomas de Partes Moles",
-          "subfocos": [
-            "Classificação, Subtipos Histológicos e Epidemiologia",
-            "Diagnóstico, Estadiamento e Biópsia",
-            "GIST: Epidemiologia e Localização",
-            "Localização, Metástases e Tratamento Adjuvante",
-            "Sarcomas: Tratamento Cirúrgico e Margens"
-          ]
-        },
-        {
-          "foco": "Tumores de Tireoide",
-          "subfocos": [
-            "Carcinoma Folicular e Diagnóstico Diferencial de Nódulos",
-            "Carcinoma Medular e Anaplásico: Diagnóstico e Tratamento",
-            "Carcinoma Papilífero: Diagnóstico, Prognóstico e Seguimento",
-            "Tumores de Tireoide"
-          ]
-        },
-        {
-          "foco": "Tumores Neuroendócrinos",
-          "subfocos": [
-            "Carcinoide Apendicular: Diagnóstico e Conduta",
-            "Feocromocitoma: Diagnóstico e Preparo Pré-operatório",
-            "Síndrome Carcinoide: Fisiopatologia e Manifestações",
-            "TNEGIs: Classificação, Prognóstico e Marcadores",
-            "Tumores Neuroendócrinos Pancreáticos (PNETs): Insulinoma e Gastrinoma"
-          ]
-        }
-      ]
-    },
-    {
-      "tema": "Ortopedia e Traumatologia",
-      "focos": [
-        {
-          "foco": "Fraturas da Coluna",
-          "subfocos": [
-            "Fratura do Odontóide e Jefferson",
-            "Fraturas da Coluna",
-            "Fraturas Osteoporóticas: Vertebroplastia",
-            "Indicações de Tratamento Cirúrgico"
-          ]
-        },
-        {
-          "foco": "Fraturas de MMII (Fêmur, Tíbia, Tornozelo, Quadril)",
-          "subfocos": [
-            "Fraturas de MMII (Fêmur, Tíbia, Tornozelo, Quadril)",
-            "Fraturas de Perna, Tornozelo e Pelve",
-            "Fraturas do Colo do Fêmur",
-            "Fraturas do Fêmur Proximal e Diáfise"
-          ]
-        },
-        {
-          "foco": "Fraturas de MMSS (Clavícula, Úmero, Rádio, Ulna)",
-          "subfocos": [
-            "Fratura de Clavícula: Tratamento",
-            "Fraturas de Antebraço: Monteggia e Galeazzi",
-            "Fraturas de MMSS (Clavícula, Úmero, Rádio, Ulna)",
-            "Fraturas do Rádio Distal: Colles e Smith",
-            "Fraturas do Úmero Proximal e Diáfise"
-          ]
-        },
-        {
-          "foco": "Geral",
-          "subfocos": []
-        },
-        {
-          "foco": "Lesões Ligamentares e Tendinosas (LCA, Menisco, Manguito)",
-          "subfocos": [
-            "Lesão do LCA: Diagnóstico e Reconstrução",
-            "Lesão do Manguito Rotador",
-            "Lesões Ligamentares e Tendinosas (LCA, Menisco, Manguito)",
-            "Lesões Meniscais: Tratamento",
-            "Ruptura do Tendão de Aquiles"
-          ]
-        },
-        {
-          "foco": "Luxações",
-          "subfocos": [
-            "Luxação de Cotovelo: Terrível Tríade",
-            "Luxação de Ombro: Anterior e Técnicas de Redução",
-            "Luxação de Quadril: Posterior e Necrose Avascular",
-            "Luxação Patelar e Acromioclavicular",
-            "Luxações"
-          ]
-        },
-        {
-          "foco": "Osteomielite e Infecções Osteoarticulares",
-          "subfocos": [
-            "Artrite Séptica: Punção e Drenagem",
-            "Osteomielite Crônica e Sequestro Ósseo",
-            "Osteomielite do Pé Diabético",
-            "Osteomielite e Infecções Osteoarticulares",
-            "Osteomielite Hematogênica Aguda Pediátrica",
-            "S. aureus e Antibioticoterapia Prolongada"
-          ]
-        },
-        {
-          "foco": "Síndrome Compartimental",
-          "subfocos": [
-            "Medida de Pressão e Critérios para Fasciotomia",
-            "Síndrome Compartimental",
-            "Síndrome Compartimental da Perna: Fraturas de Tíbia",
-            "Síndrome Compartimental do Antebraço: Volkmann",
-            "Técnica de Fasciotomia: 4 Compartimentos"
-          ]
-        }
-      ]
-    },
-    {
-      "tema": "Ostomias Intestinais",
-      "focos": [
-        {
-          "foco": "Complicações de Ostomias",
-          "subfocos": [
-            "Complicações de Ostomias",
-            "Dermatite e Estenose do Estoma",
-            "Hérnia Paraestomal",
-            "Prolapso de Estoma"
-          ]
-        },
-        {
-          "foco": "Princípios e Tipos de Ostomias",
-          "subfocos": [
-            "Colostomia Terminal: Hartmann",
-            "Ileostomia em Alça: Proteção de Anastomose",
-            "Ileostomia Terminal: Técnica de Brooke",
-            "Princípios e Tipos de Ostomias",
-            "Reconstrução do Trânsito: Timing e Técnica"
-          ]
-        }
-      ]
-    },
-    {
-      "tema": "Princípios Fundamentais em Cirurgia",
-      "focos": [
-        {
-          "foco": "Avaliação Pré-Operatória",
-          "subfocos": [
-            "ASA e Estratificação de Risco Cirúrgico",
-            "Avaliação de Risco Cardíaco (Goldman, Lee)",
-            "Avaliação de Risco Pulmonar e Renal",
-            "Avaliação Pré-Operatória",
-            "Jejum Pré-operatório e Preparo",
-            "Manejo de Medicamentos no Perioperatório"
-          ]
-        },
-        {
-          "foco": "Cicatrização e Feridas",
-          "subfocos": [
-            "Cicatrização e Feridas",
-            "Complicações: Cicatriz Hipertrófica e Queloide",
-            "Curativos e Terapia por Pressão Negativa",
-            "Fases da Cicatrização: Inflamatória, Proliferativa, Remodelação",
-            "Fatores que Afetam a Cicatrização",
-            "Tipos de Cicatrização: Primeira, Segunda e Terceira Intenção"
-          ]
-        },
-        {
-          "foco": "Cirurgia Minimamente Invasiva e Robótica",
-          "subfocos": [
-            "Cirurgia Minimamente Invasiva e Robótica",
-            "Colecistectomia Laparoscópica: Técnica e CVS",
-            "Conversão para Cirurgia Aberta: Indicações",
-            "Lesões de Acesso: Trocartes e Agulha de Veress",
-            "Plataforma Robótica: Controles e Instrumentos",
-            "Pneumoperitônio: Pressão e Efeitos Fisiológicos"
-          ]
-        },
-        {
-          "foco": "Complicações do Pneumoperitônio",
-          "subfocos": [
-            "Complicações Graves: Embolia Gasosa e Tromboembolismo",
-            "Efeitos Fisiológicos do Pneumoperitônio: Cardiopulmonar e CO₂",
-            "Lesões de Acesso e Manejo de Complicações"
-          ]
-        },
-        {
-          "foco": "Complicações Pós-operatórias",
-          "subfocos": [
-            "Complicações Pós-operatórias"
-          ]
-        },
-        {
-          "foco": "Distúrbios Hidroeletrolíticos e Ácido-Base",
-          "subfocos": [
-            "Acidose e Alcalose Metabólica",
-            "Distúrbios Hidroeletrolíticos e Ácido-Base",
-            "Distúrbios Mistos",
-            "Fluidoterapia e Protocolos de Reposição",
-            "Hipo e Hipercalemia",
-            "Hipo e Hipernatremia"
-          ]
-        },
-        {
-          "foco": "ERAS (Enhanced Recovery After Surgery)",
-          "subfocos": [
-            "Analgesia Multimodal",
-            "Elementos do Bundle",
-            "ERAS (Enhanced Recovery After Surgery)",
-            "Metas de Alta, Manejo de Fluidos e Indicadores",
-            "Otimização Pré-Operatória e Nutrição Precoce",
-            "Segurança Cirúrgica e Checklist"
-          ]
-        },
-        {
-          "foco": "Hemostasia e Hemoterapia no Paciente Cirúrgico",
-          "subfocos": [
-            "Coagulopatia Dilucional e Hipotermia",
-            "Concentrado de Hemácias: Indicações e Gatilhos",
-            "Concentrado de Plaquetas: Indicações",
-            "Hemostasia e Hemoterapia no Paciente Cirúrgico",
-            "Plasma Fresco Congelado e Crioprecipitado",
-            "Protocolo de Transfusão Maciça 1:1:1"
-          ]
-        },
-        {
-          "foco": "Manejo Perioperatório de Anticoagulantes e Antiagregantes",
-          "subfocos": [
-            "Antiagregantes: AAS, Clopidogrel e Ponte",
-            "Medicações de Uso Contínuo, Fitoterápicos e Coagulopatias",
-            "Reversão de Anticoagulação e Antiagregação em Hemorragia",
-            "Varfarina, DOACs e Heparinas no Perioperatório"
-          ]
-        },
-        {
-          "foco": "Nutrição Cirúrgica (Enteral e Parenteral)",
-          "subfocos": [
-            "Avaliação Nutricional: Triagem, Antropometria e Laboratório",
-            "Nutrição Cirúrgica (Enteral e Parenteral)",
-            "Nutrição Enteral: Vias de Acesso, Fórmulas e Complicações",
-            "Nutrição Parenteral: Indicações, Composição e Complicações",
-            "Síndrome de Realimentação e Imunonutrição",
-            "Timing Nutricional e Metas Calórico-Proteicas"
-          ]
-        },
-        {
-          "foco": "Profilaxia Tromboembólica Perioperatória",
-          "subfocos": [
-            "Compressão Pneumática Intermitente",
-            "Contraindicações e Alto Risco de Sangramento",
-            "Escore de Caprini: Estratificação de Risco VTE",
-            "Heparina Não-Fracionada vs HBPM",
-            "Profilaxia Estendida: Cirurgia Oncológica",
-            "Profilaxia Tromboembólica Perioperatória"
-          ]
-        },
-        {
-          "foco": "Propedêutica Cirúrgica",
-          "subfocos": [
-            "Estratificação de Risco: ASA, Goldman, Lee",
-            "Propedêutica Cirúrgica",
-            "Sinais de Apendicite: Blumberg, Rovsing, Dunphy",
-            "Sinais Vasculares: Pulsos, ITB, Sopros",
-            "Sinal de Carnett: Parede vs Visceral",
-            "Sinal de Murphy e Courvoisier-Terrier"
-          ]
-        },
-        {
-          "foco": "Resposta Endócrino-Metabólica ao Trauma (REMIT)",
-          "subfocos": [
-            "Alterações Metabólicas: Catabolismo, Insulina e Glucagon",
-            "Fases da Resposta ao Trauma: Fase Ebb e Fase Flow",
-            "Resposta Endócrino-Metabólica ao Trauma (REMIT)",
-            "Resposta Neuroendócrina e Adrenal ao Trauma",
-            "SIRS, Citocinas e Resposta Inflamatória ao Trauma"
-          ]
-        },
-        {
-          "foco": "Suporte Metabólico e Nutricional no Trauma",
-          "subfocos": [
-            "Fases do Trauma: Ebb e Flow",
-            "Hipermetabolismo e Catabolismo Proteico",
-            "Síndrome de Realimentação"
-          ]
-        },
-        {
-          "foco": "Técnica Cirúrgica e Instrumentação",
-          "subfocos": [
-            "Cuidados com Campo Cirúrgico e Assepsia",
-            "Fios e Suturas: Classificação e Indicações",
-            "Instrumental Cirúrgico e Nomenclatura",
-            "Princípios de Cirurgia Minimamente Invasiva",
-            "Técnica Cirúrgica e Instrumentação",
-            "Técnicas de Hemostasia e Diérese"
-          ]
-        }
-      ]
-    },
-    {
-      "tema": "Procedimentos Endoscópicos",
-      "focos": [
-        {
-          "foco": "Broncoscopia e Endoscopia Respiratória",
-          "subfocos": [
-            "Broncoscopia Flexível: BAL e Biópsias Transbrônquicas",
-            "Broncoscopia Rígida: Hemoptise Maciça e Corpo Estranho",
-            "Colocação de Stents Traqueobrônquicos",
-            "EBUS: Estadiamento de Câncer de Pulmão"
-          ]
-        },
-        {
-          "foco": "Colonoscopia e Retossigmoidoscopia",
-          "subfocos": [
-            "Perfuração e Síndrome Pós-polipectomia",
-            "Polipectomia, Mucosectomia (EMR) e ESD",
-            "Rastreamento de CCR: Diretrizes e Intervalos"
-          ]
-        },
-        {
-          "foco": "Complicações da Endoscopia",
-          "subfocos": [
-            "Pancreatite Pós-CPRE",
-            "Perfuração Colônica: Manejo Conservador vs Cirúrgico",
-            "Perfuração Esofágica Iatrogênica",
-            "Sangramento Pós-polipectomia Imediato e Tardio"
-          ]
-        },
-        {
-          "foco": "CPRE e Drenagem Biliar",
-          "subfocos": [
-            "CPRE e Drenagem Biliar",
-            "Drenagem Biliar: Próteses e Drenos",
-            "Indicações: Coledocolitíase e Estenoses",
-            "Papilotomia e Extração de Cálculos"
-          ]
-        },
-        {
-          "foco": "Endoscopia Digestiva Alta",
-          "subfocos": [
-            "Dilatação de Estenoses e Colocação de Stents",
-            "Hemostasia Endoscópica: Injeção, Clipes, Térmica",
-            "Ligadura Elástica de Varizes Esofágicas",
-            "Mucosectomia (EMR) e ESD para Lesões Precoces"
-          ]
-        }
-      ]
-    },
-    {
-      "tema": "Transplantes",
-      "focos": [
-        {
-          "foco": "Manutenção do Potencial Doador e Critérios de Doação",
-          "subfocos": [
-            "Critérios de Exclusão de Doadores",
-            "Diabetes Insipidus Central: DDAVP",
-            "Manutenção do Potencial Doador e Critérios de Doação",
-            "Protocolo de Morte Encefálica: Exames Confirmatórios",
-            "Tempestade Simpática e Instabilidade Hemodinâmica"
-          ]
-        },
-        {
-          "foco": "Morte Encefálica e Doação de Órgãos",
-          "subfocos": [
-            "Critérios Diagnósticos de Morte Encefálica",
-            "Legislação e Protocolo de Morte Encefálica no Brasil (CFM 2.173/2017)",
-            "Morte Encefálica e Doação de Órgãos",
-            "Processo de Captação de Órgãos e Logística de Doação"
-          ]
-        },
-        {
-          "foco": "Rejeição e Imunossupressão",
-          "subfocos": [
-            "Micofenolato e Azatioprina",
-            "Rejeição Aguda Celular: Biópsia e Pulsoterapia",
-            "Rejeição e Imunossupressão",
-            "Rejeição Hiperaguda: ABO e Anticorpos Pré-formados",
-            "Tacrolimus e Ciclosporina: Nefrotoxicidade"
-          ]
-        },
-        {
-          "foco": "Transplante Cardíaco e Pulmonar",
-          "subfocos": [
-            "DPOC e Fibrose: Indicações de Transplante Pulmonar",
-            "Vasculopatia do Enxerto Cardíaco"
-          ]
-        },
-        {
-          "foco": "Transplante Hepático",
-          "subfocos": [
-            "Complicações Pós-Transplante Hepático e Imunossupressão Específica",
-            "Critérios de Alocação: MELD, Situações Especiais e Transplante Intervivos",
-            "Indicações Gerais e Contraindicações Absolutas/Relativas"
-          ]
-        },
-        {
-          "foco": "Transplante Renal",
-          "subfocos": [
-            "DRC Estágio 5: Indicações e Lista de Espera",
-            "Nefropatia por Vírus BK",
-            "Transplante Renal",
-            "Trombose Vascular e Complicações Urológicas"
-          ]
-        }
-      ]
-    },
-    {
-      "tema": "Trauma e Emergência",
-      "focos": [
-        {
-          "foco": "Atendimento ao Politraumatizado",
-          "subfocos": [
-            "Atendimento ao Politraumatizado",
-            "Avaliação Inicial e Manejo do Politraumatizado",
-            "Controle de Danos e Tríade Letal",
-            "Procedimentos de Emergência em Trauma",
-            "Trauma de Extremidades e Urgências Vasculares"
-          ]
-        },
-        {
-          "foco": "Choque no Trauma",
-          "subfocos": [
-            "Choque Hemorrágico: Classificação, Fisiopatologia e Manejo",
-            "Choque no Trauma",
-            "Choque Séptico e Anafilático no Contexto do Trauma",
-            "Choque: Avaliação e Monitorização Hemodinâmica",
-            "Choques Não-Hemorrágicos no Trauma: Neurogênico, Obstrutivo e Cardiogênico",
-            "Tríade Letal, Transfusão Maciça e Damage Control Resuscitation"
-          ]
-        },
-        {
-          "foco": "FAST e Ultrassonografia no Trauma",
-          "subfocos": [
-            "eFAST: Avaliação Torácica e Limitações do FAST",
-            "FAST e Ultrassonografia no Trauma",
-            "Interpretação e Conduta no FAST",
-            "Janelas e Técnica do FAST",
-            "Ultrassonografia Point of Care (POCUS)"
-          ]
-        },
-        {
-          "foco": "Protocolos de Atendimento ao Trauma (ATLS)",
-          "subfocos": [
-            "Avaliação Primária: ABCDE do Trauma",
-            "Avaliação Secundária e Exames Complementares",
-            "Protocolos de Atendimento ao Trauma (ATLS)",
-            "Reposição Volêmica e Choque Hemorrágico",
-            "Triagem e Transferência do Politraumatizado",
-            "Via Aérea Definitiva e Cricotireoidostomia"
-          ]
-        },
-        {
-          "foco": "Queimaduras: Avaliação e Tratamento",
-          "subfocos": [
-            "Classificação: Profundidade e Extensão (Regra dos 9)",
-            "Critérios de Internação e Centro de Queimados",
-            "Lesão Inalatória e Manejo de Via Aérea",
-            "Queimaduras: Avaliação e Tratamento",
-            "Reposição Volêmica: Fórmula de Parkland",
-            "Tratamento Local e Enxertia de Pele"
-          ]
-        },
-        {
-          "foco": "Trauma Abdominal",
-          "subfocos": [
-            "Avaliação: FAST, Lavado e TC",
-            "Classificação: Contuso vs Penetrante",
-            "Indicações de Laparotomia Exploradora",
-            "Trauma Abdominal",
-            "Trauma Esplênico: Classificação e Conduta",
-            "Trauma Hepático: Classificação e Conduta"
-          ]
-        },
-        {
-          "foco": "Trauma Cranioencefálico",
-          "subfocos": [
-            "Classificação por Glasgow: Leve, Moderado, Grave",
-            "Hipertensão Intracraniana: Manejo",
-            "Indicações de Craniotomia Descompressiva",
-            "Lesão Axonal Difusa e Contusões",
-            "Lesões Focais: Hematoma Epidural e Subdural",
-            "Trauma Cranioencefálico"
-          ]
-        },
-        {
-          "foco": "Trauma Raquimedular Agudo (Inicial)",
-          "subfocos": [
-            "Avaliação e Diagnóstico de Lesão Medular",
-            "Choque Neurogênico e Manejo Hemodinâmico",
-            "Imobilização e Transporte em Trauma Raquimedular",
-            "Lesões Penetrantes Cervicais",
-            "Síndrome de Brown-Séquard",
-            "Trauma Raquimedular Agudo (Inicial)"
-          ]
-        },
-        {
-          "foco": "Trauma Torácico",
-          "subfocos": [
-            "Contusão Pulmonar: Achados e Manejo",
-            "Hemotórax Maciço: Diagnóstico e Tratamento",
-            "Pneumotórax Hipertensivo: Diagnóstico e Manejo Imediato",
-            "Tamponamento Cardíaco: Diagnóstico e Tratamento",
-            "Tórax Instável: Fisiopatologia e Conduta",
-            "Trauma Penetrante Torácico: Lesões Específicas",
-            "Trauma Torácico"
-          ]
-        }
-      ]
-    },
-    {
-      "tema": "Urologia",
-      "focos": [
-        {
-          "foco": "Afecções Escrotais Agudas: Torção, Orquite, Epididimite",
-          "subfocos": [
-            "Afecções Escrotais Agudas: Torção, Orquite, Epididimite",
-            "Orquite e Epididimite: Etiologia e Tratamento",
-            "Outras Afecções Escrotais Agudas e Crônicas",
-            "Torção Testicular: Diagnóstico e Manejo de Emergência"
-          ]
-        },
-        {
-          "foco": "Câncer de Bexiga: TU Superficial vs Músculo-Invasivo",
-          "subfocos": [
-            "Câncer de Bexiga: TU Superficial vs Músculo-Invasivo",
-            "Diagnóstico e Estadiamento TNM",
-            "Tumor de Bexiga Não Músculo-Invasivo: RTU e BCG",
-            "Tumor Músculo-Invasivo: Cistectomia e Derivação Urinária"
-          ]
-        },
-        {
-          "foco": "Câncer de Próstata: Rastreamento e Estadiamento",
-          "subfocos": [
-            "Câncer de Próstata",
-            "Câncer de Próstata: Rastreamento e Estadiamento",
-            "Diagnóstico por Imagem e Biópsia",
-            "Escore de Gleason e Estadiamento TNM",
-            "Rastreamento e Detecção Precoce do Câncer de Próstata",
-            "Tratamento e Manejo do Câncer de Próstata"
-          ]
-        },
-        {
-          "foco": "Câncer de Próstata: Tratamento Cirúrgico",
-          "subfocos": [
-            "Complicações: Incontinência e Disfunção Erétil",
-            "Estadiamento TNM e Grupos de Risco",
-            "Linfadenectomia Pélvica",
-            "Prostatectomia Radical: Técnica e Vias"
-          ]
-        },
-        {
-          "foco": "Câncer de Testículo e Tumores de Células Germinativas",
-          "subfocos": [
-            "Câncer de Testículo e Tumores de Células Germinativas",
-            "Diagnóstico e Marcadores Tumorais (AFP, Beta-HCG)",
-            "Estadiamento e Recorrência",
-            "Orquiectomia Radical: Indicações e Técnica"
-          ]
-        },
-        {
-          "foco": "Estenose Uretral, Fístulas e Trauma Uretral",
-          "subfocos": [
-            "Estenose Uretral, Fístulas e Trauma Uretral",
-            "Etiologia: Traumática, Iatrogênica, Inflamatória",
-            "Uretrocistografia e Cistoscopia",
-            "Uretroplastia e Fístulas"
-          ]
-        },
-        {
-          "foco": "Hiperplasia Prostática Benigna (HPB): Diagnóstico e Tratamento",
-          "subfocos": [
-            "Avaliação Diagnóstica: IPSS, PSA e Exames",
-            "Hiperplasia Prostática Benigna (HPB): Diagnóstico e Tratamento",
-            "HPB: Aspectos Anatômicos e Fisiopatológicos",
-            "Outras Técnicas Cirúrgicas e Retenção Urinária Aguda",
-            "RTU de Próstata: Indicações e Complicações",
-            "Tratamento Clínico: Alfa-bloqueadores e 5-ARIs"
-          ]
-        },
-        {
-          "foco": "Infecções Urinárias Complicadas",
-          "subfocos": [
-            "Abscesso Renal e Complicações Supurativas",
-            "Epidemiologia, Microbiologia e Bacteriúria Assintomática",
-            "Infecções Urinárias Complicadas",
-            "Pielonefrite e Infecções Renais",
-            "Prostatite, ISTs Urológicas e Casos Especiais"
-          ]
-        },
-        {
-          "foco": "Litíase Urinária: Diagnóstico e Abordagem",
-          "subfocos": [
-            "Cálculos Complexos, Coraliformes e Populações Especiais",
-            "Cólica Renal e Manejo Clínico: Expulsão e Analgesia",
-            "Litíase Urinária: Diagnóstico e Abordagem",
-            "Litíase Urinária: Diagnóstico por Imagem",
-            "Litíase Urinária: Fatores de Risco e Prevenção",
-            "Tratamento Intervencionista: LECO, Ureteroscopia e Percutânea"
-          ]
-        },
-        {
-          "foco": "Trauma Geniturinário",
-          "subfocos": [
-            "Manejo de Trauma Renal",
-            "Trauma de Bexiga: Intra e Extraperitoneal",
-            "Trauma Geniturinário",
-            "Trauma Geniturinário: Condutas Gerais e Diagnóstico",
-            "Trauma Peniano: Diagnóstico e Manejo",
-            "Trauma Renal: Classificação AAST e Manejo",
-            "Trauma Uretral: Lesão Anterior e Posterior"
-          ]
-        },
-        {
-          "foco": "Tumores Renais: Carcinoma de Células Renais",
-          "subfocos": [
-            "Apresentação Clínica e Diagnóstico do CCR",
-            "Classificação Histológica, Síndromes Associadas e Tumores Benignos",
-            "Tratamento Cirúrgico do CCR: Nefrectomia",
-            "Tratamento Sistêmico e Tumores de Via Urinária Superior",
-            "Tumores Renais: Carcinoma de Células Renais"
-          ]
-        }
-      ]
+        "tema": "Anestesia e Controle da Dor",
+        "focos": [
+            {
+                "foco": "Avaliação Pré-Anestésica (Classificação ASA)",
+                "subfocos": [
+                    {
+                        "subfoco": "Classificação do Estado Físico ASA (I a VI e Sufixo de Emergência)",
+                        "sub_subfocos": [
+                            "Definições: ASA I (Saudável); ASA II (Doença Sistêmica Leve sem Limitação: HAS controlada, Tabagista); ASA III (Doença Sistêmica Grave com Limitação Funcional); ASA IV (Ameaça Constante à Vida); ASA V (Moribundo)",
+                            "Adição do Sufixo 'E' para Cirurgias Realizadas em Caráter de Emergência (Ex: ASA II-E)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Tempo de Jejum Pré-Operatório e Manejo de Medicações Contínuas",
+                        "sub_subfocos": [
+                            "Tempos Mínimos de Jejum Canônicos: Líquidos Claros sem Resíduos (2 Horas), Leite Materno (4 Horas), Refeição Leve (6 Horas) e Refeição Gordurosa (8 Horas)",
+                            "Manejo Farmacológico: Manter Anti-hipertensivos (Exceto IECA/BRA que Devem ser Suspensos no Dia) e Suspender Hipoglicemiantes Orais e Anticoagulantes"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Anestesia Geral (Inalação, Venosa e Bloqueadores Neuromusculares)",
+                "subfocos": [
+                    {
+                        "subfoco": "Hipnóticos Venosos (Propofol, Etomidato, Cetamina) e Opioides",
+                        "sub_subfocos": [
+                            "Propofol (Vasodilatador e Hipotensor, Excelente para Via Aérea) vs Etomidato (Estabilidade Hemodinâmica Ideal no Choque, Inibição da Adrenal)",
+                            "Cetamina (Efeito Simpaticomimético, Broncodilatador, Ideal na Asma e Choque) e Fentanil/Remifentanil na Analgesia Intraoperatória"
+                        ]
+                    },
+                    {
+                        "subfoco": "Bloqueadores Neuromusculares (Succinilcolina vs Rocurônio) e Reversão com Sugamadex",
+                        "sub_subfocos": [
+                            "Succinilcolina: Despolarizante, Ação Ultrarrápida, Contraindicada em Grandes Queimados, Trauma Grave e Hipercalemia",
+                            "Rocurônio: Não-Despolarizante, Alternativa em Sequência Rápida e Reversão Específica Rápida com Sugamadex"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Bloqueios Neuroaxiais (Raquianestesia e Peridural)",
+                "subfocos": [
+                    {
+                        "subfoco": "Anatomia do Neuroeixo, Camadas Transpassadas e Raquianestesia",
+                        "sub_subfocos": [
+                            "Camadas Transpassadas na Punção Lombar: Pele, Tecido Subcutâneo, Ligamento Supraespinhoso, Interespinhoso, Flavo, Espaço Peridural, Dura-máter e Aracnoide",
+                            "Raquianestesia (Espaço Subaracnoideo com Líquor, Dose Baixa, Início Imediato, Bloqueio Motor Intenso e Risco de Hipotensão por Bloqueio Simpático)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Anestesia Peridural e Cefaleia Pós-Punção Dural (CPPD)",
+                        "sub_subfocos": [
+                            "Peridural: Identificação com Perda de Resistência (Agulha de Tuohy), Permite Cateter Contínuo e Analgesia de Parto/Pós- Operatória",
+                            "Cefaleia Pós-Punção de Dura-Máter: Caráter Ortostático Típico e Tratamento com Repouso, Cafeína e Tampão Sanguíneo Peridural (Blood Patch)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Anestésicos Locais e Toxicidade Sistêmica",
+                "subfocos": [
+                    {
+                        "subfoco": "Farmacologia dos Anestésicos Locais: Amino-Ésteres vs Amino-Amidas",
+                        "sub_subfocos": [
+                            "Diferenciação Química: Amino-Amidas (Lidocaína, Bupivacaína, Ropivacaína: Dois 'Is' no Nome, Metabolismo Hepático) vs Ésteres (Procaína)",
+                            "Dose Máxima Segura de Lidocaína (5 mg/kg sem Adrenalina e 7 mg/kg com Adrenalina) e Efeito Vasoconstritor da Adrenalina"
+                        ]
+                    },
+                    {
+                        "subfoco": "Intoxicação Sistêmica por Anestésicos Locais (LAST) e Emulsão Lipídica",
+                        "sub_subfocos": [
+                            "Sinais de LAST: Gosto Metálico, Dormência Perioral, Zumbido, Convulsões seguidas de Arritmias Ventriculares e Colapso Cardiovascular (Cardiotoxicidade da Bupivacaína)",
+                            "Tratamento Específico Imediato de Resgate: Emulsão Lipídica a 20% Intravenosa (Lipid Sink)"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Dor Pós-Operatória e Manejo Analgésico",
+                "subfocos": [
+                    {
+                        "subfoco": "Analgesia Multimodal Poupadores de Opioides",
+                        "sub_subfocos": [
+                            "Conceito de Analgesia Multimodal: Associação de Dipirona/Paracetamol + AINEs + Anestesia Regional para Reduzir Necessidade de Opioides",
+                            "Prevenção de Náuseas e Vômitos Pós-Operatórios (NVPO) com Dexametasona e Ondansetrona (Escore de Apfel)"
+                        ]
+                    },
+                    {
+                        "subfoco": "Analgesia Controlada pelo Paciente (PCA) e Complicações de Opioides",
+                        "sub_subfocos": [
+                            "Uso de PCA com Morfina Intravenosa com Intervalo de Bloqueio Seguro e Monitorização de Sedação e Depressão Respiratória",
+                            "Reversão Imediata de Depressão Respiratória Grave por Opioides com Naloxona Titulada"
+                        ]
+                    }
+                ]
+            },
+            {
+                "foco": "Hipertermia Maligna",
+                "subfocos": [
+                    {
+                        "subfoco": "Fisiopatologia, Agentes Desencadeantes e Quadro Clínico Precoce",
+                        "sub_subfocos": [
+                            "Canalopatia Autossômica Dominante do Receptor de Rianodina (RYR1) com Liberação Descontrolada de Cálcio no Retículo Sarcoplasmático",
+                            "Agentes Gatilho: Anestésicos Inalatórios Halogenados (Isoflurano, Sevoflurano, Desflurano) e Succinilcolina",
+                            "Primeiro Sinal Mais Precoce e Sensível: Aumento Inexplicável do CO2 Expirado (Hipercapnia / EtCO2) e Rigidez de Masseter, Taquicardia e Hipertermia Tardia"
+                        ]
+                    },
+                    {
+                        "subfoco": "Protocolo de Emergência Imediata e Antídoto Específico (Dantroleno)",
+                        "sub_subfocos": [
+                            "Ações Imediatas: Interromper Imediatamente os Anestésicos Gatilho, Hiperventilar com O2 a 100%, Trocar o Circuito e Resfriamento Ativo"
+                        ]
+                    }
+                ]
+            }
+        ]
     }
-  ]
+]
 };

@@ -2,51 +2,73 @@ import React from 'react';
 
 /**
  * Sanitiza e normaliza textos médicos de questões, eliminando:
- * - Entidades HTML (&#39;, &nbsp;, &quot;, &gt;, numéricas decimais/hexadecimais, etc.)
+ * - Resíduos de espaço insecável (\u00A0, &nbsp;) -> espaço comum ASCII 0x20
+ * - Caracteres invisíveis de largura zero (\u200B ZWSP, \u200C ZWNJ, \u200D ZWJ, \uFEFF BOM, \u2060 Word Joiner)
+ * - Tags HTML escapadas e entidades (&lt;p&gt;, &amp;, &quot;, &#39;, <br/>, <b>, <i>, etc.)
  * - Marcas d'água legadas de Telegram (T.ME, MEDOPEN, ACERVO GRATUITO)
  * - Cabeçalhos de apostilas e paginação de PDFs (Extensivo - Cirurgia 115/265)
  * - Menções a concorrentes (Estratégia, Sanar, etc.)
  * - LaTeX cru comum e fórmulas quebradas ($\le$, $\ge$, $\beta$, \times, etc.)
  * - Operadores de digitação informais (>=, <=, ->, +/-)
  * - Unidades físicas e gases arteriais sem sub/sobrescrito (kg/m2, cm3, PaO2)
- * - Tags HTML de bloco soltas (<p>, <div>, etc.)
  */
 export function sanitizeMedicalText(rawText: string | null | undefined): string {
   if (!rawText || typeof rawText !== 'string') return '';
 
   let text = rawText;
 
-  // 1. Decodificar Entidades HTML (Numéricas decimais, hexadecimais e nomeadas)
+  // 1. Eliminação cirúrgica imediata de caracteres invisíveis e controle zero-width
+  // (\u200B ZWSP, \u200C ZWNJ, \u200D ZWJ, \uFEFF BOM, \u2060 Word Joiner)
+  text = text.replace(/[\u200B-\u200D\uFEFF\u2060]/g, '');
+
+  // 2. Normalizar espaços insecáveis Unicode (\u00A0) para espaço ASCII comum
+  text = text.replace(/\u00A0/g, ' ');
+
+  // 3. Tratar entidades HTML duplamente escapadas recorrentes em bancos de dados
+  text = text
+    .replace(/&amp;nbsp;/gi, ' ')
+    .replace(/&amp;lt;/gi, '<')
+    .replace(/&amp;gt;/gi, '>')
+    .replace(/&amp;quot;/gi, '"')
+    .replace(/&amp;apos;|&amp;#0*39;/gi, "'")
+    .replace(/&amp;amp;/gi, '&');
+
+  // 4. Decodificar Entidades HTML Numéricas (decimais e hexadecimais)
   try {
     text = text
       .replace(/&#(\d+);/g, (_, dec) => {
         const code = Number(dec);
+        if (code === 160) return ' '; // &nbsp;
+        if (code === 8203 || code === 8204 || code === 8205 || code === 65279 || code === 8288) return ''; // ZWSP/BOM/WJ
         return code >= 32 && code <= 65535 ? String.fromCharCode(code) : '';
       })
       .replace(/&#x([0-9a-fA-F]+);/g, (_, hex) => {
         const code = parseInt(hex, 16);
+        if (code === 0xA0) return ' '; // &nbsp;
+        if (code === 0x200B || code === 0x200C || code === 0x200D || code === 0xFEFF || code === 0x2060) return '';
         return code >= 32 && code <= 65535 ? String.fromCharCode(code) : '';
       });
   } catch {
-    // Fallback silencioso caso ocorra erro inesperado de faixa de caractere
+    // Fallback silencioso
   }
 
+  // 5. Decodificar Entidades HTML Nomeadas
   text = text
-    .replace(/&apos;/g, "'")
-    .replace(/&quot;/g, '"')
-    .replace(/&nbsp;/g, ' ')
-    .replace(/&amp;/g, '&')
-    .replace(/&gt;/g, '>')
-    .replace(/&lt;/g, '<')
-    .replace(/&ge;/g, '≥')
-    .replace(/&le;/g, '≤')
-    .replace(/&plusmn;/g, '±')
-    .replace(/&deg;/g, '°')
-    .replace(/&middot;/g, '·')
-    .replace(/&times;/g, '×')
-    .replace(/&micro;/g, 'µ');
+    .replace(/&nbsp;/gi, ' ')
+    .replace(/&apos;|&#39;/gi, "'")
+    .replace(/&quot;/gi, '"')
+    .replace(/&gt;/gi, '>')
+    .replace(/&lt;/gi, '<')
+    .replace(/&amp;/gi, '&')
+    .replace(/&ge;/gi, '≥')
+    .replace(/&le;/gi, '≤')
+    .replace(/&plusmn;/gi, '±')
+    .replace(/&deg;/gi, '°')
+    .replace(/&middot;/gi, '·')
+    .replace(/&times;/gi, '×')
+    .replace(/&micro;/gi, 'µ');
 
-  // 2. Remover Marcas de Água de Telegram e Paginação de Apostilas
+  // 6. Remover Marcas de Água de Telegram e Paginação de Apostilas
   text = text
     .replace(/T\.ME(?:\/[^\s]*)?/gi, '')
     .replace(/MEDOPEN\s*-\s*ACERVO\s*MÉDICO\s*GRATUITO/gi, '')
@@ -61,23 +83,23 @@ export function sanitizeMedicalText(rawText: string | null | undefined): string 
     .replace(/estrat[ée]gia\s*vestibulares/gi, 'Base Teórica')
     .replace(/estrat[ée]gia/gi, 'Literatura Oficial');
 
-  // 3. Remover Resíduos de IA / Prompts / Templates
+  // 7. Remover Resíduos de IA / Prompts / Templates
   text = text
     .replace(/\[(?:RESPOSTA|JUSTIFICATIVA|COMENTÁRIO|GABARITO)\]/gi, '')
     .replace(/```(?:markdown)?/g, '')
     .replace(/Como inteligência artificial[^\n]*/gi, '');
 
-  // 4. Normalizar Tags HTML residuais
+  // 8. Normalizar Tags HTML residuais e converter para Markdown / Quebras Semânticas
   text = text
-    .replace(/<\/?(?:p|div|section)\b[^>]*>/gi, '\n')
+    .replace(/<\/?(?:p|div|section|article|header|footer)\b[^>]*>/gi, '\n\n')
+    .replace(/<li\b[^>]*>/gi, '\n• ')
+    .replace(/<\/(?:ul|ol|li)\b[^>]*>/gi, '\n')
     .replace(/<br\s*\/?>/gi, '\n')
-    .replace(/<strong\b[^>]*>(.*?)<\/strong>/gi, '**$1**')
-    .replace(/<b\b[^>]*>(.*?)<\/b>/gi, '**$1**')
-    .replace(/<em\b[^>]*>(.*?)<\/em>/gi, '*$1*')
-    .replace(/<i\b[^>]*>(.*?)<\/i>/gi, '*$1*')
-    .replace(/<\/?span\b[^>]*>/gi, '');
+    .replace(/<(?:strong|b)\b[^>]*>([\s\S]*?)<\/(?:strong|b)>/gi, '**$1**')
+    .replace(/<(?:em|i)\b[^>]*>([\s\S]*?)<\/(?:em|i)>/gi, '*$1*')
+    .replace(/<[^>]+>/g, ''); // Expurga todas as outras tags HTML (<span...>, <font...>, etc.)
 
-  // 5. Converter Códigos LaTeX e Delimitadores Matemáticos Comuns
+  // 9. Converter Códigos LaTeX e Delimitadores Matemáticos Comuns
   text = text
     // Menor ou igual / Maior ou igual
     .replace(/\$\s*\\le\s*\$|\\le\b|\$\s*\\leq\s*\$|\\leq\b/g, '≤')
@@ -113,19 +135,46 @@ export function sanitizeMedicalText(rawText: string | null | undefined): string 
   // 7. Formatar Unidades Físicas e Fisiologia Arterial
   text = text
     .replace(/\bkg\/m2\b/g, 'kg/m²')
-    .replace(/\bcm3\b/g, 'cm³')
-    .replace(/\bmm3\b/g, 'mm³')
-    .replace(/\bm2\b/g, 'm²')
+    .replace(/(\d+)\s*cm3\b|\bcm3\b/g, (_, n) => n ? `${n} cm³` : 'cm³')
+    .replace(/(\d+)\s*mm3\b|\bmm3\b/g, (_, n) => n ? `${n} mm³` : 'mm³')
+    .replace(/(\d+)\s*m2\b|\bm2\b/g, (_, n) => n ? `${n} m²` : 'm²')
     .replace(/\bPaO2\b/g, 'PaO₂')
     .replace(/\bPaCO2\b/g, 'PaCO₂')
     .replace(/\bFiO2\b/g, 'FiO₂')
     .replace(/\bSaO2\b/g, 'SaO₂')
     .replace(/\bSpO2\b/g, 'SpO₂')
-    .replace(/\bHCO3\b/g, 'HCO₃');
+    .replace(/\bSatO2\b/g, 'SatO₂')
+    .replace(/\bSO2\s*(\d{1,3}%)/gi, 'SO₂ $1')
+    .replace(/\bHCO3\b/g, 'HCO₃')
+    .replace(/\bEtCO2\b/g, 'EtCO₂')
+    .replace(/\bH2O\b/g, 'H₂O');
 
-  // 8. Normalizar Quebras de Linha e Espaçamentos Residuais
+  // 8. Correção Cirúrgica de Erros de OCR/CMap em Temperaturas e Indicadores Ordinais (° e º)
   text = text
+    // 8.1 Temperaturas com '0' em vez de '°' (ex.: T=390C, febre (T: 380 C), à 370C, 36 0C, 39-40 0C)
+    .replace(/(\bT\s*[:=]\s*|\bTax\s*[:=]?\s*|\btemperatura\s*(?:axilar\s*)?(?:de\s*)?|\bfebre\s*(?:de\s*)?|\bfebril\s*com\s*|[àa]\s+)(3[4-9]|4[0-3])0\s*°?\s*C\b/gi, '$1$2°C')
+    .replace(/\b(3[4-9]|4[0-3])0\s*°?\s*C\b/g, '$1°C')
+    .replace(/\b(3[4-9]|4[0-3])\s+0\s*C\b/g, '$1°C')
+    // 8.2 Temperaturas decimais corrompidas (ex.: 37,50C -> 37,5°C, 38.50C -> 38,5°C)
+    .replace(/\b(3[4-9]|4[0-3])([,\.]\d)0\s*°?\s*C\b/g, (_, intP, decP) => `${intP}${decP.replace('.', ',')}°C`)
+    // 8.3 Temperaturas com letra 'o' ou 'O' em vez de '°' (ex.: 38oC, 39o C, 40 oC, 38OC)
+    .replace(/\b(3[4-9]|4[0-3])([,\.]\d)?\s*[oO]\s*C\b/g, (_, intP, decP) => `${intP}${decP ? decP.replace('.', ',') : ''}°C`)
+    // 8.4 Indicadores ordinais masculinos com '0' por OCR (ex.: '150 dia pós', '20 grau', 'no 10 dia')
+    .replace(/\b150\s+dia\s+(pós|de)/gi, '15º dia $1')
+    .replace(/\b([1234])0\s+grau\b/gi, '$1º grau')
+    .replace(/\b(no|ao|do|o|pelo)\s+([1-9])0\s+(dia|trimestre|mês|ano)\b/gi, '$1 $2º $3')
+    // 8.5 Indicadores ordinais com letra 'o' (ex.: 1o dia, 2o trimestre, 1o grau, 5o dia, 40o dia)
+    .replace(/\b(\d{1,3})\s*[oO]\s+(dia|trimestre|grau|mês|ano|tempo|lugar|episódio|ciclo|parto|período|estágio|minuto|semestre|passo|nível|plano|pós|horário)\b/gi, '$1º $2')
+    // 8.6 Indicadores ordinais femininos com 'a' (ex.: 1a escolha, 2a linha, 1a dose, 1a semana)
+    .replace(/\b([1-9]|10)\s*a\s+(escolha|linha|dose|gestação|fase|vez|semana|hora|infância|intenção|tentativa|consulta|avaliação|etapa|opção|geração|posologia)\b/gi, '$1ª $2');
+
+  // 12. Normalizar Quebras de Linha, Espaços Insecáveis e Resíduos Finais
+  text = text
+    .replace(/\u00A0/g, ' ')
+    .replace(/[\u200B-\u200D\uFEFF\u2060]/g, '')
     .replace(/[ \t]{2,}/g, ' ')
+    .replace(/\n[ \t]+/g, '\n')
+    .replace(/[ \t]+\n/g, '\n')
     .replace(/\n{3,}/g, '\n\n')
     .trim();
 
@@ -146,7 +195,14 @@ export function renderFormattedMedicalText(
   if (!text) return null;
 
   const shouldSanitize = options?.enableSanitizer !== false;
-  const processedText = shouldSanitize ? sanitizeMedicalText(text) : text;
+  let processedText = shouldSanitize ? sanitizeMedicalText(text) : text;
+  // Blindagem defensiva: mesmo se desativado o sanitizador geral, nunca expor \u00A0 ou \u200B ao layout
+  if (!shouldSanitize) {
+    processedText = processedText
+      .replace(/\u00A0/g, ' ')
+      .replace(/[\u200B-\u200D\uFEFF\u2060]/g, '')
+      .replace(/[ \t]{2,}/g, ' ');
+  }
   const boldClass = options?.boldColorClass || 'font-bold text-slate-900 dark:text-white';
 
   const parseItalics = (str: string, parentKey: string | number) => {

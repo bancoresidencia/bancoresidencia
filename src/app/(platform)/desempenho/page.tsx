@@ -30,13 +30,14 @@ export default function DesempenhoPage() {
     userAnswers
   } = useStudentData();
 
-  const handleNavigateToBancoWithSubfoco = (specialty: string, tema: string, subfoco: string) => {
+  const handleNavigateToBancoWithSubfoco = (specialty: string, tema: string, subfoco: string, subSubfoco?: string) => {
     const params = new URLSearchParams({
       especialidade: specialty,
       tema,
       subfoco,
       mode: 'filtros'
     });
+    if (subSubfoco) params.set('subSubfoco', subSubfoco);
     router.push(`/questoes?${params.toString()}`);
   };
 
